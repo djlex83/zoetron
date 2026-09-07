@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 23:12:27",
+ "stand": "2026-09-07 23:23:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -184,6 +184,12 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -457,20 +463,14 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   }
  ],
- "haende_quote": 0.861,
- "simulationen_angewandt": 23,
+ "haende_quote": 0.862,
+ "simulationen_angewandt": 22,
  "swarm_scores": {
-  "n": 22,
+  "n": 21,
   "best": 9.0,
-  "schnitt": 5.64
+  "schnitt": 5.9
  },
  "score_nach_ziel_typ": {
   "analyse": {

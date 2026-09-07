@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11908 Fakten** · Stand 2026-09-07 23:14 UTC · aktualisiert bei jedem Herzschlag
+**11906 Fakten** · Stand 2026-09-07 23:25 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7161
 - **swarm_artifact:** 2114
@@ -11,10 +11,35 @@
 - **tool:** 181
 - **hand_result:** 136
 - **aktuell_organfehler:** 45
-- **aktuell_fussball_messlatte:** 33
+- **aktuell_fussball_messlatte:** 31
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907232245:5:7a25bb`
+*07.09. 23:22 UTC · Quelle: dream*
+
+Relative path handling is a systemic failure point: every tool invocation needs centralized absolute-path rewriting with fail-fast on missing ZOETRON_DATA.
+
+### `dream:20260907232245:4:8fe71f`
+*07.09. 23:22 UTC · Quelle: dream*
+
+Reflex actions lack output validation: successes are marked without verifying artifact existence, non-emptiness, or hash traceability, causing silent corruption.
+
+### `dream:20260907232245:3:cd1bfd`
+*07.09. 23:22 UTC · Quelle: dream*
+
+Swarm knowledge decays without nightly synthesis: inactive swarm data becomes stale within days, requiring automated dream-link analysis to generate transfer hypotheses.
+
+### `dream:20260907232245:2:298915`
+*07.09. 23:22 UTC · Quelle: dream*
+
+Stress-aware planning must gate complexity budgets before each step, not after failures, using metabolism state to cap tasks and iterations proactively.
+
+### `dream:20260907232245:1:d9fd34`
+*07.09. 23:22 UTC · Quelle: dream*
+
+Provider-specific failure modes (Nvidia 502, Google 429) require targeted fallback chains rather than generic retries, with inclusionai/ling-3.0-flash-fin:free serving as the reliable diagnostic backbone.
 
 ### `dream:20260907231202:5:408538`
 *07.09. 23:12 UTC · Quelle: dream*
@@ -45627,45 +45652,10 @@ ABGELEHNT von Evolution (Score 7): Zero-tuning discipline: fixed-hyperparameter 
 
 score=4; issues=Artefakt 3 verletzt den Vertrag und die No-Leak-Zusage massiv: `trainiere(train)` lädt selbst `/workspace/fussball/val.csv` und stimmt Mischgewicht (w_dc) sowie Draw-Faktor (m) per Grid-Search direkt auf dem Evaluationsset ab. Die anschließend
 
-### `aktuell_fussball_messlatte`
-*24.08. 23:21 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. ACHTUNG: zoetron_95fae6f5cf.py kam auf nur 24.25 % - schlechter als "immer Auswaertssieg" (30,2 %). Das ist k
-
-### `aktuell_fussball_messlatte`
-*24.08. 23:21 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. ACHTUNG: zoetron_95fae6f5cf.py kam auf nur 24.25 % - schlechter als "immer Auswaertssieg" (30,2 %). Das ist k
-
 ### `last_swarm_goal`
 *24.08. 23:18 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260824231729:5:d12e6b`
-*24.08. 23:17 UTC · Quelle: dream*
-
-Calibration error (predicted 4 vs actual 3) shows systematic overestimation of model adoption readiness.
-
-### `dream:20260824231729:4:b028d5`
-*24.08. 23:17 UTC · Quelle: dream*
-
-Evolution/swarm cycles improve scores (3→8-9) but fail to converge, suggesting stopping criteria or critic calibration issues.
-
-### `dream:20260824231729:3:cff992`
-*24.08. 23:17 UTC · Quelle: dream*
-
-MemoryStore lacks `add_fact` method, breaking hand execution and indicating interface drift between modules.
-
-### `dream:20260824231729:2:299600`
-*24.08. 23:17 UTC · Quelle: dream*
-
-Latency variance on free models is extreme (2s–90s), making fixed timeouts unreliable and requiring SLO-based fallback.
-
-### `dream:20260824231729:1:c94063`
-*24.08. 23:17 UTC · Quelle: dream*
-
-Free-tier models (stealth/ox-alpha, z-ai/glm-5.2) suffer frequent 429 rate-limit errors, causing cascading failures without retry logic.
 
 ### `last_swarm_critique`
 *24.08. 22:47 UTC · Quelle: critic*

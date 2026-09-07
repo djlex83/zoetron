@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 6×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative path handling is a systemic failure point: every tool invocation needs centralized absolute-path rewriting with fail-fast on missing ZOETRON_
+- Reflex actions lack output validation: successes are marked without verifying artifact existence, non-emptiness, or hash traceability, causing silent 
+- Swarm knowledge decays without nightly synthesis: inactive swarm data becomes stale within days, requiring automated dream-link analysis to generate t
+- Stress-aware planning must gate complexity budgets before each step, not after failures, using metabolism state to cap tasks and iterations proactivel
+- Provider-specific failure modes (Nvidia 502, Google 429) require targeted fallback chains rather than generic retries, with inclusionai/ling-3.0-flash
 - High metabolic stress correlates with planning overreach; capping tasks/iterations when stress >0.8 prevents cascade failures.
 - Relative path handling in tool calls causes silent data corruption unless a middleware guard rewrites to absolute ZOETRON_DATA paths at dispatch.
 - Simulated skills never reach production because no automated A/B gate validates them against live metrics before promotion.
@@ -51,11 +56,6 @@
 - Pruning discards causal metadata (experiment_id, parent_step_id), preventing post-hoc reconstruction of why decisions were made.
 - Skill proposals accumulate in the backlog but lack a promotion mechanism, so high-value capabilities (e.g., model_router, convergence gates) never rea
 - Model provider failures (502, 429) cascade into task failure without automatic circuit-breaker failover, making multi-provider routing a reliability p
-- Model failures cascade silently (502, 429) without automatic failover, wasting cycles and degrading task success rates.
-- Swarm knowledge refresh is driven only by manual reflex triggers, not automated schedules, causing stale critiques and goals.
-- Five concrete skill proposals (router, validator, scheduler, path guard, gatekeeper) were generated but remain unused by the swarm, revealing a deploy
-- Swarm evolution converges poorly (6/10, non-converged) despite multiple cycles, indicating critique quality or integration gaps.
-- Primary model (nemotron-3-ultra) suffers frequent overload failures and 40s+ latency spikes while flash models deliver 3-9s latency reliably.
 
 ---
 
