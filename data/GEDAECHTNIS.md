@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11892 Fakten** · Stand 2026-09-07 22:11 UTC · aktualisiert bei jedem Herzschlag
+**11895 Fakten** · Stand 2026-09-07 22:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7141
-- **swarm_artifact:** 2118
+- **dream:** 7146
+- **swarm_artifact:** 2116
 - **last_swarm_critique:** 827
 - **anti_pattern:** 567
 - **last_swarm_goal:** 559
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907222114:5:e96b54`
+*07.09. 22:21 UTC · Quelle: dream*
+
+Drive goals explicitly link swarm knowledge refresh and dream cross-referencing as a combined skill-generation pipeline, not separate activities.
+
+### `dream:20260907222114:4:15fa89`
+*07.09. 22:21 UTC · Quelle: dream*
+
+First reflex execution failed but second cycle produced a 292-line Python artifact; reflex persistence with artifact validation beats one-shot attempts.
+
+### `dream:20260907222114:3:2607d8`
+*07.09. 22:21 UTC · Quelle: dream*
+
+Metabolism stress=1.0 automatically caps planner budget to 3 tasks/1 iteration; planners that ignore this state overcommit and thrash.
+
+### `dream:20260907222114:2:b55c57`
+*07.09. 22:21 UTC · Quelle: dream*
+
+Nvidia Nemotron 502 errors and Gemma 429 rate limits are transient but frequent; single-model dependency without fallback chains stalls entire pipelines.
+
+### `dream:20260907222114:1:2fbe48`
+*07.09. 22:21 UTC · Quelle: dream*
+
+Relative paths cause silent tool failures (exit 0, zero files touched) unless intercepted and rewritten to absolute ZOETRON_DATA-rooted paths at the tool boundary.
 
 ### `dream:20260907220934:5:5c2f2d`
 *07.09. 22:09 UTC · Quelle: dream*
