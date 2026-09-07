@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 19:52:16",
+ "stand": "2026-09-07 20:03:44",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -430,6 +430,12 @@
   },
   {
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "traum-fähigkeiten-nutzbar-machen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 19:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 20:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,10 +16,10 @@
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
 - Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
 - Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject ca *(hatte die Idee 4×)*
+- Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 4×)*
+- Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 4×)*
+- Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 4×)*
 - SimulationGate: run simulation verdict; if revise, apply revisions and re-verify before committing artifact. *(hatte die Idee 3×)*
-- Add a mandatory skill validation gate requiring every proposed skill to be executed and scored within one cycl *(hatte die Idee 3×)*
-- Build a convergence gate that requires score >= 8 AND no critical risks from simulation AND critic sign-off be *(hatte die Idee 3×)*
-- Implement PreFlightCheck that queries the ModelHealthRegistry before every generation call, skipping providers *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -30,8 +30,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 13 completed dreams and 63 skill proposals exist but no promotion mechanism converts them into deployed capabilities.
+- 36 model errors and repeated stale-swarm signals indicate the system lacks automated model health monitoring and failover.
+- Pruning discards 10-30 facts/events per run without preserving experiment_id or decision_context, breaking causal traceability.
+- Reflex actions converge without scoring or critic approval, bypassing the quality gates required for deliberate actions.
+- Model latency consistently exceeds 30s per call, creating a systemic bottleneck that compounds across sequential reasoning steps.
 - Goal selection ignores metabolic state and iteration budgets, leading to resource exhaustion during conserve mode.
 - Relative paths and non-canonical ZOETRON_DATA references cause file-tool failures across environments.
 - Stale swarm feedback persists because no automated refresh mechanism triggers new critique cycles.
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin:free is the only model demonstrating consistent low-latency (<5s) success across all observed calls.
 - NVIDIA Nemotron 3 Ultra exhibits high latency (30-56s) and frequent 502 upstream overload errors, rendering it unreliable despite occasional successes
 - Free-tier Google Gemma models consistently return 429 rate-limit errors, making them unusable for reliable automated workflows.
-- Swarm knowledge staleness creates coordination drift; last_swarm_goal recall returns empty when sync hasn't run.
-- Simulation pre-check caught 5 risks and forced 3 revisions before execution, proving its value as a mandatory gate.
-- High metabolic stress (0.98) triggers conserve mode that caps iterations to 1, preventing multi-step error recovery.
-- Model cascade fails predictably: premium models (Nemotron, Gemma) hit 502/429 errors under load while inclusionai/ling-3.0-flash-fin:free remains avai
-- Relative path resolution fails silently when tools expect absolute data paths from ZOETRON_DATA env var.
 
 ---
 
