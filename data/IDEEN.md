@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 18:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 19:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
@@ -32,15 +32,20 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
+- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
-- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism stress at 0.982 triggers conserve mode (max 3 tasks, 1 iteration), starving the model-error investigation swarm before it can complete.
+- Pruning discards causal chains: 10 facts and 27 events removed without experiment_id, parent_step_id, or decision_context tags, making post-hoc debugg
+- Reflex convergence lacks guards: the 'Modellfehler systematisch untersuchen' reflex returned ok=false yet act_done was not blocked, unlike the success
+- Hand actions fail silently on path resolution: relative paths ignore ZOETRON_DATA and sys.argv[1], causing 'nichts gelesen' exits despite exit code 0.
+- Model failures cascade: nemotron-3-ultra returns 502 upstream errors and gemma models hit 429 rate limits, forcing fallback to inclusionai/ling-3.0-fl
 - Pruning removes 23-27 events per cycle but only 0-10 facts, suggesting event noise dominates while stale facts persist unchecked.
 - 70 skill proposals exist but none are validated; a test harness that executes each proposal against a benchmark suite is the only way to convert propo
 - Gemma-4 variants consistently hit 429 rate limits within minutes, requiring automatic blacklisting after first 429 to prevent cascade failures.
@@ -51,11 +56,6 @@
 - Reflex mode masks complexity: both swarm goals converged instantly via reflex, hiding whether actual collaboration quality improved.
 - Swarm knowledge decays exponentially: two separate reflex revivals within one cycle prove stale-data detection is reactive, not scheduled.
 - Model reliability degrades under load: nemotron-3-ultra shows 29-44s latency with no error tracking, causing silent failures that cascade into poor de
-- Pruning removes facts/events aggressively (5-9 facts, 15-39 events) without preserving decision-critical context.
-- Swarm knowledge staleness triggers reflex recovery but lacks proactive TTL-based refresh schedules.
-- Skill proposals accumulate but lack automatic deployment pipelines, creating a proposal-execution gap.
-- High latency (40-53s) on nemotron-3-ultra after recovery indicates intermittent degradation, not binary health.
-- Model endpoints fail silently with 502/429 errors rather than explicit rejections, requiring client-side circuit breakers.
 
 ---
 

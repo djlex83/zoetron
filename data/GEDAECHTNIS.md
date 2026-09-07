@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11837 Fakten** · Stand 2026-09-07 19:01 UTC · aktualisiert bei jedem Herzschlag
+**11832 Fakten** · Stand 2026-09-07 19:12 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7091
-- **swarm_artifact:** 2116
+- **swarm_artifact:** 2114
 - **last_swarm_critique:** 825
-- **anti_pattern:** 569
+- **anti_pattern:** 567
 - **last_swarm_goal:** 557
-- **strategy:** 286
+- **strategy:** 285
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907190924:5:c8af2d`
+*07.09. 19:09 UTC · Quelle: dream*
+
+Metabolism stress at 0.982 triggers conserve mode (max 3 tasks, 1 iteration), starving the model-error investigation swarm before it can complete.
+
+### `dream:20260907190924:4:6e8cbf`
+*07.09. 19:09 UTC · Quelle: dream*
+
+Pruning discards causal chains: 10 facts and 27 events removed without experiment_id, parent_step_id, or decision_context tags, making post-hoc debugging impossible.
+
+### `dream:20260907190924:3:67518f`
+*07.09. 19:09 UTC · Quelle: dream*
+
+Reflex convergence lacks guards: the 'Modellfehler systematisch untersuchen' reflex returned ok=false yet act_done was not blocked, unlike the successful 'Vorgeschlagene Fähigkeiten zusammenführen' reflex.
+
+### `dream:20260907190924:2:c0c54d`
+*07.09. 19:09 UTC · Quelle: dream*
+
+Hand actions fail silently on path resolution: relative paths ignore ZOETRON_DATA and sys.argv[1], causing 'nichts gelesen' exits despite exit code 0.
+
+### `dream:20260907190924:1:7d3fe0`
+*07.09. 19:09 UTC · Quelle: dream*
+
+Model failures cascade: nemotron-3-ultra returns 502 upstream errors and gemma models hit 429 rate limits, forcing fallback to inclusionai/ling-3.0-flash-fin which succeeds but adds 4s latency.
 
 ### `dream:20260907185824:5:d932a1`
 *07.09. 18:58 UTC · Quelle: dream*
@@ -45302,16 +45327,6 @@ Calibration consistently underestimates actual scores by ~3 points, indicating a
 
 Provider rate limits (429) arrive in correlated bursts, making reactive model rotation insufficient without proactive backoff.
 
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fußball: die Basislinie :2`
-*24.08. 19:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Ensemble-of-specialists with dynamic weight learning — attack uncertainty direct - Instead of one tuned model, train multiple structurally diverse base predictors: (1) an Elo-based Bradley-Terry/Davidson model with exponentia
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fußball: die Basislinie :0`
-*24.08. 19:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Nonparametric Bayesian model with full hyperparameter optimization via nested ti - Abandon hand-set hyperparameters entirely: build a hierarchical Bayesian model (e.g., bivariate Poisson / ordered logistic on goals or outcome
-
 ### `last_swarm_critique`
 *24.08. 19:06 UTC · Quelle: critic*
 
@@ -45321,31 +45336,6 @@ score=6; issues=Hyperparameters (K, HEIM, RETAIN, MARGIN, BINW, NBI, PRIOR) are 
 *24.08. 18:59 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608241859:5`
-*24.08. 18:59 UTC · Quelle: dream*
-
-The evolution run demonstrates that generating multiple variants and selecting via an incorruptible critic raises scores from 3/10 to ~8/10, proving the value of Best‑of‑N evaluation.
-
-### `dream:202608241859:4`
-*24.08. 18:59 UTC · Quelle: dream*
-
-Calibration showed a prediction of 5 versus actual 3 (error = 2), indicating overconfidence; updating predictions with observed outcomes yields better estimates.
-
-### `dream:202608241859:3`
-*24.08. 18:59 UTC · Quelle: dream*
-
-Latency spans from ~6 s to >90 s, showing high variance; adaptive timeouts based on recent latency statistics reduce wasted waits.
-
-### `dream:202608241859:2`
-*24.08. 18:59 UTC · Quelle: dream*
-
-502 upstream overload errors indicate occasional service instability, so a fallback model pool with health checks improves reliability.
-
-### `dream:202608241859:1`
-*24.08. 18:59 UTC · Quelle: dream*
-
-Frequent 429 errors reveal that request rate exceeds API limits, necessitating built‑in throttling and exponential back‑off.
 
 ### `last_swarm_critique`
 *24.08. 18:39 UTC · Quelle: critic*

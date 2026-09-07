@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-07 18:59:04",
+ "stand": "2026-09-07 19:10:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -133,12 +133,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
@@ -387,6 +381,12 @@
    "quote": 0.0
   },
   {
+   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -435,8 +435,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.849,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.854,
+ "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 22,
   "best": 9.0,
