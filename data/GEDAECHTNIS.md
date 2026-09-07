@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11776 Fakten** · Stand 2026-09-07 10:44 UTC · aktualisiert bei jedem Herzschlag
+**11766 Fakten** · Stand 2026-09-07 10:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6991
+- **dream:** 6981
 - **swarm_artifact:** 2140
 - **last_swarm_critique:** 821
 - **anti_pattern:** 585
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907105215:5:737fb5`
+*07.09. 10:52 UTC · Quelle: dream*
+
+Self-diagnosis confirms structural integrity (no organ errors), meaning failures are entirely external (upstream service issues), so resilience must come from routing diversity and cached error history rather than self-repair.
+
+### `dream:20260907105215:4:969bcf`
+*07.09. 10:52 UTC · Quelle: dream*
+
+The same models fail repeatedly across selection cycles because no shared, persistent error state exists between cycles, indicating a missing cross-session error memory that selectors can consult.
+
+### `dream:20260907105215:3:84731f`
+*07.09. 10:52 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they get implemented, creating a persistent gap between identified solutions and executed capabilities that the system must actively close.
+
+### `dream:20260907105215:2:ff0a95`
+*07.09. 10:52 UTC · Quelle: dream*
+
+The reflex-based error correction loop (`modellfehler-verstehen-und-beheben.py`) converges successfully but is inherently reactive; proactive pre-flight health probing before assignment prevents failures from occurring in the first place.
+
+### `dream:20260907105215:1:e60fae`
+*07.09. 10:52 UTC · Quelle: dream*
+
+Model failures follow predictable error signatures (502=overload, 429=rate-limit) that should trigger automatic cooldown-based routing rather than exhausting retries on known-bad endpoints.
 
 ### `anti_pattern:Previous attempt scored 6/10. Goal: Mehr Handlungen aus Idee:2`
 *07.09. 10:40 UTC · Quelle: evolution*
@@ -44947,85 +44972,10 @@ Model latency spans 17s to 754s (a 43x spread), meaning a single unbounded call 
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
 
-### `dream:202608241044:5`
-*24.08. 10:44 UTC · Quelle: dream*
-
-Five new skill_proposals were generated in one cycle while none were executed, confirming the recurring proposal-to-action gap named by drive goal 'Mehr gute Ideen wirklich umsetzen'.
-
-### `dream:202608241044:4`
-*24.08. 10:44 UTC · Quelle: dream*
-
-Two consecutive prune_runs removed 0 items, proving the current pruning criteria match nothing and require an active staleness rule instead of passive filtering.
-
-### `dream:202608241044:3`
-*24.08. 10:44 UTC · Quelle: dream*
-
-Conserve-mode budget (stress 1.0, max_tasks 3, max_iterations 1) did not stop a full 5-risk/5-revision simulation from running, meaning metabolism state must gate simulation depth before a swarm starts.
-
-### `dream:202608241044:2`
-*24.08. 10:44 UTC · Quelle: dream*
-
-ox-alpha latency varied ~10x (43.8s/651 tokens out vs 448.4s/17515 tokens out), so long-generation steps stall the pipeline and should be chunked or output-capped.
-
-### `dream:202608241044:1`
-*24.08. 10:44 UTC · Quelle: dream*
-
-Four models failed with 429 errors within the same second because requests were fired in parallel bursts at free-tier endpoints; serializing calls with per-model pacing would have prevented most failures.
-
-### `dream:202608241044:5`
-*24.08. 10:44 UTC · Quelle: dream*
-
-The football task's critic is the actual match result and odds data are banned, so any approach must rely on odds-free features and be judged solely by backtest accuracy against the 50.2% baseline.
-
-### `dream:202608241044:4`
-*24.08. 10:44 UTC · Quelle: dream*
-
-The simulate→revise gate surfaced 5 risks and applied 5 revisions before execution, proving pre-mortem simulation reliably hardens plans and should run even under tight budgets.
-
-### `dream:202608241044:3`
-*24.08. 10:44 UTC · Quelle: dream*
-
-At stress=1.0 the metabolism gate cut the budget to 3 tasks and 1 iteration, meaning high-stress periods demand single-pass execution of only the highest-value tasks instead of exploratory loops.
-
-### `dream:202608241044:2`
-*24.08. 10:44 UTC · Quelle: dream*
-
-ox-alpha latency spanned 43.8s–448.4s and tracked output volume (worst call emitted 17,515 tokens), so wall-clock blowups stem from unbounded generation length, not the model itself.
-
-### `dream:202608241044:1`
-*24.08. 10:44 UTC · Quelle: dream*
-
-Concurrent fan-out to free-tier OpenRouter models caused five near-simultaneous 429/502 failures within one second, while a heterogeneous fallback (dots-3-note-preview) restored service — so pace requests serially and keep a diverse, health-checked fallback or
-
 ### `last_swarm_goal`
 *24.08. 10:27 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608241027:5`
-*24.08. 10:27 UTC · Quelle: dream*
-
-Pruning ran but removed zero facts/events despite repeated failures, indicating the pruning trigger threshold is never reached under error-heavy workloads.
-
-### `dream:202608241027:4`
-*24.08. 10:27 UTC · Quelle: dream*
-
-Conservative metabolism budget (1 iteration, 3 tasks) is incompatible with multi-model fallback chains that consume 5+ model calls per logical step.
-
-### `dream:202608241027:3`
-*24.08. 10:27 UTC · Quelle: dream*
-
-Simulation produced 5 revisions but only 3 were applied, revealing a silent drop between verdict and execution that undermines the revision loop.
-
-### `dream:202608241027:2`
-*24.08. 10:27 UTC · Quelle: dream*
-
-stealth/ox-alpha latency varies 20x (11.8s–244.9s), making fixed timeouts either wasteful or deadline-missing; adaptive p95-based timeouts are mandatory.
-
-### `dream:202608241027:1`
-*24.08. 10:27 UTC · Quelle: dream*
-
-OpenRouter rate limits are shared across all free models, causing correlated 429 failures that require provider-level circuit breaking rather than per-model handling.
 
 ### `last_swarm_goal`
 *24.08. 10:10 UTC · Quelle: system*
