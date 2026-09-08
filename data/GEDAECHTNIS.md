@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11994 Fakten** · Stand 2026-09-08 08:29 UTC · aktualisiert bei jedem Herzschlag
+**12000 Fakten** · Stand 2026-09-08 08:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7271
+- **dream:** 7276
 - **swarm_artifact:** 2098
 - **last_swarm_critique:** 835
 - **last_swarm_goal:** 567
@@ -10,11 +10,41 @@
 - **strategy:** 276
 - **tool:** 184
 - **hand_result:** 139
-- **aktuell_organfehler:** 46
+- **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908083817:5:efdadf`
+*08.09. 08:38 UTC · Quelle: dream*
+
+Evaluation cycles waste resources on mismatched artifacts because pre-scoring schema validation gates are absent.
+
+### `dream:20260908083817:4:3b3890`
+*08.09. 08:38 UTC · Quelle: dream*
+
+Hand actions return null errors instead of structured context (stderr, exit codes), preventing automated recovery and pattern analysis.
+
+### `dream:20260908083817:3:2c54ff`
+*08.09. 08:38 UTC · Quelle: dream*
+
+Swarm knowledge staleness goes undetected until coordination degrades, requiring scheduled freshness checks with automatic renewal triggers.
+
+### `dream:20260908083817:2:938a60`
+*08.09. 08:38 UTC · Quelle: dream*
+
+Rate-limit errors (429) propagate across multiple providers simultaneously, indicating missing request scheduling and token-bucket throttling.
+
+### `dream:20260908083817:1:dc1956`
+*08.09. 08:38 UTC · Quelle: dream*
+
+Model provider failures cascade because no automatic failover exists between primary and flash models.
+
+### `aktuell_organfehler`
+*08.09. 08:35 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-08 08:25:59 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260908081146:5:5b4693`
 *08.09. 08:11 UTC · Quelle: dream*
