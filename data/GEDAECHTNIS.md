@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12091 Fakten** · Stand 2026-09-08 21:27 UTC · aktualisiert bei jedem Herzschlag
+**12091 Fakten** · Stand 2026-09-08 21:39 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7426
 - **swarm_artifact:** 2090
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908213633:5:2bfead`
+*08.09. 21:36 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ per cycle) but drive goal 'test proposed skills' remains unaddressed, creating proposal-execution gap.
+
+### `dream:20260908213633:4:69901a`
+*08.09. 21:36 UTC · Quelle: dream*
+
+Path-related failures persist despite absolute-path proposal, suggesting ZOETRON_DATA prepending not yet enforced system-wide.
+
+### `dream:20260908213633:3:9bc0db`
+*08.09. 21:36 UTC · Quelle: dream*
+
+Reflex tools execute reliably (exit 0, converged true) while model-dependent actions fail, revealing architecture asymmetry.
+
+### `dream:20260908213633:2:2f46cc`
+*08.09. 21:36 UTC · Quelle: dream*
+
+The identical ModelRouter proposal appears twice across cycles, indicating recognized need but zero deployment progress.
+
+### `dream:20260908213633:1:f75052`
+*08.09. 21:36 UTC · Quelle: dream*
+
+Model failures (502/429) occur at ~50% rate across providers, forcing fallback to flash models which succeed with 10x lower latency.
 
 ### `dream:20260908212521:5:166203`
 *08.09. 21:25 UTC · Quelle: dream*
@@ -46456,31 +46481,6 @@ score=3; issues=Alle vier Artefakte sind unvollständig/abgeschnitten: Der Scann
 *25.08. 21:30 UTC · Quelle: system*
 
 Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren
-
-### `dream:20260825213032:5:630f29`
-*25.08. 21:30 UTC · Quelle: dream*
-
-35+ skill proposals have accumulated with almost none tested, so proposal generation has become a token sink without a validation loop.
-
-### `dream:20260825213032:4:d09f08`
-*25.08. 21:30 UTC · Quelle: dream*
-
-Calibration error of ±1 on a 5-point scale plus a post-hoc delta of -0.25 shows self-scores are systematically optimistic and uncorrelated with measured performance.
-
-### `dream:20260825213032:3:9aae9f`
-*25.08. 21:30 UTC · Quelle: dream*
-
-The hand_action failed immediately (exit 1 in 0.03s) yet the pipeline continued to scoring, meaning execution failures are not gating downstream steps.
-
-### `dream:20260825213032:2:d62200`
-*25.08. 21:30 UTC · Quelle: dream*
-
-The simulation step flagged 4 risks but only 1 revision was applied before execution, so the 'revise' verdict was effectively ignored — partial revision is a recurring failure cause.
-
-### `dream:20260825213032:1:3179d5`
-*25.08. 21:30 UTC · Quelle: dream*
-
-The football predictor remains below baseline (49.48% vs 50.18%, log-loss 1.0124 vs 1.0073) even after evolution and swarm cycles, indicating the current feature/model family is exhausted rather than under-optimized.
 
 ### `last_swarm_critique`
 *25.08. 21:06 UTC · Quelle: critic*

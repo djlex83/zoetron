@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 21:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 21:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -8,9 +8,9 @@
 - Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 13×)*
 - Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 8×)*
 - Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 8×)*
+- Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 8×)*
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
-- Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 7×)*
 - Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
 - Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh  *(hatte die Idee 5×)*
 - Add convergence_guardrail that detects stalled optimization scores across 3+ cycles and triggers emergency evo *(hatte die Idee 5×)*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -37,10 +37,15 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (5+ per cycle) but drive goal 'test proposed skills' remains unaddressed, creating proposal-execution gap.
+- Path-related failures persist despite absolute-path proposal, suggesting ZOETRON_DATA prepending not yet enforced system-wide.
+- Reflex tools execute reliably (exit 0, converged true) while model-dependent actions fail, revealing architecture asymmetry.
+- The identical ModelRouter proposal appears twice across cycles, indicating recognized need but zero deployment progress.
+- Model failures (502/429) occur at ~50% rate across providers, forcing fallback to flash models which succeed with 10x lower latency.
 - High pruning activity (115 total events/facts pruned) indicates the system is actively shedding stale knowledge, but the drive goals reveal that stale
 - Flash-tier models (inclusionai/ling-3.0-flash-fin) succeeded with 4.0s latency when all primary providers failed, establishing low-latency alternative
 - Reflex-driven actions achieved convergence where deliberate swarm planning stalled, suggesting that lightweight autonomous triggers outperform multi-r
@@ -51,11 +56,6 @@
 - Calibration error of 5 points (predicted 7 vs actual 2) reveals a persistent overconfidence bias in self-assessment that correlates with missing execu
 - The inclusionai/ling-3.0-flash-fin model is the only consistently available free endpoint (2/2 successes, 1.3-6.1s latency), establishing it as the de
 - Free-tier models exhibit systematic unreliability: Google Gemma hits 429 rate limits and Nvidia Nemotron returns 502 upstream errors, making them unsu
-- Swarm and reflex both target 'model reliability' but operate disconnected: reflex tool fails, simulation approves, TOR rejects - no shared success cri
-- High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, preventing retry loops needed for transient model failures.
-- TOR gate rejects any artifact lacking an executable Python block - prose plans without code cannot pass verification.
-- File operations fail because relative paths are not resolved against ZOETRON_DATA environment variable before execution.
-- Primary models (nemotron, gemma) fail systematically under load with 502/429 errors while only inclusionai/ling-3.0-flash-fin:free delivers consistent
 
 ---
 
