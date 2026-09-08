@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 05:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 05:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,11 +29,11 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge degrades into staleness when refresh is demand-driven only, causing insights to go unused and decision quality to erode silently.
+- Calibration systematically underestimates task complexity (predicted 4 vs actual 7), leading to under-provisioned budgets and repeated revision cycles
+- Relative file paths resolved from sys.argv or environment variables cause silent read failures when not validated against an absolute data baseline be
+- Conserve-state budgets (max_iterations=1) are too restrictive to absorb revision overhead, as the simulation required 5 revisions but could only alloc
+- External model dependencies lack a fallback chain, so cascading provider failures (502, 429) block the entire pipeline instead of routing to alternati
 - Drive goals duplicate across cycles (model errors, swarm knowledge x2) because completion signals don't suppress re-emission of stale drives.
 - Dream-generated skill proposals (backoff, fallback chain, circuit breaker) accumulate but are not automatically validated or promoted to production co
 - Reflex-driven swarm refresh succeeds where manual hand_action fails, indicating reflexes encapsulate correct path logic that hand actions lack.
@@ -51,11 +56,6 @@
 - Swarm convergence requires minimum cycle counts (>=5) and stability thresholds (score variance <0.1) to avoid accepting stale or oscillating results.
 - Exponential backoff with jitter and concurrent request throttling stops 429 rate limits from collapsing the entire inference pipeline.
 - Provider-specific circuit breakers with health scores (success rate, p95 latency, error taxonomy) prevent cascading failures when upstream services re
-- Schema validation gates before scoring prevent wasted evaluation cycles on malformed artifacts.
-- Stale swarm knowledge and insufficient evolution rounds create capability drift that compounds over time.
-- Upstream 502 errors from providers require circuit-breaker patterns with automatic failover to healthy endpoints.
-- Cascading 429 errors indicate missing rate-limit-aware concurrency control across model calls.
-- Flash models consistently outperform large models on reliability and latency, making them preferable for production paths.
 
 ---
 

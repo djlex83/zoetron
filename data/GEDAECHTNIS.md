@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11964 Fakten** · Stand 2026-09-08 05:36 UTC · aktualisiert bei jedem Herzschlag
+**11978 Fakten** · Stand 2026-09-08 05:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7241
-- **swarm_artifact:** 2096
-- **last_swarm_critique:** 833
-- **last_swarm_goal:** 565
+- **dream:** 7246
+- **swarm_artifact:** 2102
+- **last_swarm_critique:** 834
+- **last_swarm_goal:** 566
 - **anti_pattern:** 555
 - **strategy:** 279
-- **tool:** 183
+- **tool:** 184
 - **hand_result:** 138
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 1
 
 ---
+
+### `tool:modell-fehler-systematisch-reduzieren`
+*08.09. 05:52 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler systematisch reduzieren'. Datei: data/tools/modell-fehler-systematisch-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*08.09. 05:52 UTC · Quelle: critic*
+
+score=9; issues=Fallback error data in Artifact 3 uses hardcoded counts (847, 623, 512...) - acceptable for bootstrap but should be replaced by real register data once available; Synthetic benchmarks in Artifact 1 assigned confidence 0.5 - acknowledged lower c
+
+### `last_swarm_goal`
+*08.09. 05:45 UTC · Quelle: system*
+
+Modell-Fehler systematisch reduzieren
+
+### `dream:20260908054424:5:48429e`
+*08.09. 05:44 UTC · Quelle: dream*
+
+Swarm knowledge degrades into staleness when refresh is demand-driven only, causing insights to go unused and decision quality to erode silently.
+
+### `dream:20260908054424:4:636356`
+*08.09. 05:44 UTC · Quelle: dream*
+
+Calibration systematically underestimates task complexity (predicted 4 vs actual 7), leading to under-provisioned budgets and repeated revision cycles.
+
+### `dream:20260908054424:3:876b6a`
+*08.09. 05:44 UTC · Quelle: dream*
+
+Relative file paths resolved from sys.argv or environment variables cause silent read failures when not validated against an absolute data baseline before hand actions.
+
+### `dream:20260908054424:2:5f4a47`
+*08.09. 05:44 UTC · Quelle: dream*
+
+Conserve-state budgets (max_iterations=1) are too restrictive to absorb revision overhead, as the simulation required 5 revisions but could only allocate 1 iteration.
+
+### `dream:20260908054424:1:638b20`
+*08.09. 05:44 UTC · Quelle: dream*
+
+External model dependencies lack a fallback chain, so cascading provider failures (502, 429) block the entire pipeline instead of routing to alternatives.
 
 ### `dream:20260908053232:5:dc15dc`
 *08.09. 05:32 UTC · Quelle: dream*
