@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 04:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 04:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model latency spikes 9x, showing health checks miss degraded-but-functional states.
+- Drive goals recycle the same three themes (stale knowledge, model errors, evolution rounds) across cycles, revealing no progress metric to close loops
+- Pruning aggressiveness varies widely (38 vs 20 events) without clear correlation to memory pressure, implying the prune policy lacks a stable trigger.
+- Reflex tools for targeted maintenance (knowledge refresh, error analysis) consistently converge in one shot, suggesting they should be first-line resp
+- Model latency exhibits high variance (15-143s) on the same provider, indicating unreliable infrastructure rather than workload differences.
 - Model failures are external-service-caused, not logic-caused, meaning the system cannot self-heal by retrying the same model — it must detect and rout
 - Metabolism signals (stress=1.0, conserve mode, max 3 tasks, 1 iteration) were present but not acted upon to throttle or skip non-critical operations l
 - The system spawned a swarm despite a prior reflex (entfernte-erinnerungen-verknüpfen.py) already failing, showing that swarm orchestration lacks a dep
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but rarely reach simulation or execution, creating a proposal-execution gap that prevents empirical validation.
 - Rate-limit errors (429) from multiple providers indicate missing request throttling and exponential backoff with jitter at the router level.
 - Model provider failures (502 overload, 429 rate limits) cascade into pipeline stalls because no circuit breaker or automatic failover exists.
-- Swarm knowledge decays silently; no automatic refresh trigger exists, leading to stale context for planning.
-- Skill proposals accumulate but are rarely executed, creating a proposal-execution gap that stalls capability growth.
-- Model latency varies wildly (22s to 125s) and 502/429 errors cascade without circuit breakers or fallback routing.
-- Swarm converges in a single cycle with no stability threshold, risking premature acceptance of suboptimal artifacts.
-- Calibration systematically underestimates outcomes (predicted 3 vs actual 9), indicating a persistent negative bias in the scoring model.
 
 ---
 

@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11960 Fakten** · Stand 2026-09-08 04:45 UTC · aktualisiert bei jedem Herzschlag
+**11960 Fakten** · Stand 2026-09-08 04:59 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7231
 - **swarm_artifact:** 2102
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908045634:5:d91ef5`
+*08.09. 04:56 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model latency spikes 9x, showing health checks miss degraded-but-functional states.
+
+### `dream:20260908045634:4:a5ef97`
+*08.09. 04:56 UTC · Quelle: dream*
+
+Drive goals recycle the same three themes (stale knowledge, model errors, evolution rounds) across cycles, revealing no progress metric to close loops.
+
+### `dream:20260908045634:3:12ef2f`
+*08.09. 04:56 UTC · Quelle: dream*
+
+Pruning aggressiveness varies widely (38 vs 20 events) without clear correlation to memory pressure, implying the prune policy lacks a stable trigger.
+
+### `dream:20260908045634:2:769d64`
+*08.09. 04:56 UTC · Quelle: dream*
+
+Reflex tools for targeted maintenance (knowledge refresh, error analysis) consistently converge in one shot, suggesting they should be first-line responses for stale/failure signals.
+
+### `dream:20260908045634:1:45dde0`
+*08.09. 04:56 UTC · Quelle: dream*
+
+Model latency exhibits high variance (15-143s) on the same provider, indicating unreliable infrastructure rather than workload differences.
 
 ### `tool:viele-skill-ideen-nutzbar-machen`
 *08.09. 04:43 UTC · Quelle: hands*
@@ -45876,31 +45901,6 @@ Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2) fail in synchronize
 *25.08. 04:45 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260825044447:5:fc5032`
-*25.08. 04:44 UTC · Quelle: dream*
-
-Calibration was exact (predicted 4 vs actual 4), so the score-prediction heuristic is trustworthy enough to gate whether a goal deserves another iteration budget.
-
-### `dream:20260825044447:4:0d8163`
-*25.08. 04:44 UTC · Quelle: dream*
-
-hand_action failed instantly (exit 1, 0.02s) and gh_issue_error shows MemoryStore lacks add_fact, indicating an interface mismatch between the planned action spec and the actual memory-store API that a pre-flight contract check would catch.
-
-### `dream:20260825044447:3:439bb8`
-*25.08. 04:44 UTC · Quelle: dream*
-
-Metabolism was in 'conserve' state capping the run at max_tasks=3/max_iterations=1, which likely prevented convergence within the observed 2 cycles.
-
-### `dream:20260825044447:2:03aae9`
-*25.08. 04:44 UTC · Quelle: dream*
-
-The evolution run produced a winning variant scored 9/10, but the swarm still finished at score 4 with converged=false, meaning the evolved winner was never integrated into the final deliverable.
-
-### `dream:20260825044447:1:57070b`
-*25.08. 04:44 UTC · Quelle: dream*
-
-The primary model (stealth/ox-alpha) and first fallback (z-ai/glm-5.2) both hit 429 rate limits repeatedly, while nvidia/nemotron-3-ultra-550b-a55b:free succeeded every time, so the fallback chain should be reordered or rate-limit-aware.
 
 ### `last_swarm_critique`
 *25.08. 04:20 UTC · Quelle: critic*
