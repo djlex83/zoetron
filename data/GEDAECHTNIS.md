@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12086 Fakten** · Stand 2026-09-08 15:46 UTC · aktualisiert bei jedem Herzschlag
+**12086 Fakten** · Stand 2026-09-08 16:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7366
-- **swarm_artifact:** 2104
+- **dream:** 7371
+- **swarm_artifact:** 2102
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
-- **anti_pattern:** 543
-- **strategy:** 273
+- **anti_pattern:** 541
+- **strategy:** 272
 - **tool:** 186
 - **hand_result:** 139
 - **aktuell_organfehler:** 51
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908155641:5:6ad114`
+*08.09. 15:56 UTC · Quelle: dream*
+
+Repeated model failures without adaptive routing create a retry loop that amplifies latency and waste, punishing the system for lacking failure-awareness.
+
+### `dream:20260908155641:4:6af5a1`
+*08.09. 15:56 UTC · Quelle: dream*
+
+Reflex-based execution converges reliably when the model layer is available, indicating the reflex pattern itself is sound and the model endpoint is the systemic bottleneck.
+
+### `dream:20260908155641:3:b77607`
+*08.09. 15:56 UTC · Quelle: dream*
+
+Stale swarm knowledge actively blocks new collaboration, so periodic refresh is a prerequisite rather than an optional maintenance task.
+
+### `dream:20260908155641:2:8bbb68`
+*08.09. 15:56 UTC · Quelle: dream*
+
+The dream module's hard 180s timeout causes total work loss without incremental checkpointing, making time-bound consolidation structurally fragile.
+
+### `dream:20260908155641:1:d5c996`
+*08.09. 15:56 UTC · Quelle: dream*
+
+Ultra-heavy models consistently fail under load (502) or rate-limit (429) while flash models complete in ~3s, proving model weight is inversely correlated with reliability in this environment.
 
 ### `dream:20260908154136:5:9699f5`
 *08.09. 15:41 UTC · Quelle: dream*
@@ -46416,16 +46441,6 @@ Repeated swarm cycles on the same goal without architectural change yield dimini
 *25.08. 16:05 UTC · Quelle: dream*
 
 High critic scores (9/10) can mask fundamental missing deliverables like executable code, creating false convergence signals.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :2`
-*25.08. 15:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Ensemble-/Marktagnostiker: Rating-Differenz-Heuristik kombiniert mit kontrariane - Radikal einfacher, aber rigoros evaluiert: Statt komplexem Modell eine transparente Zwei-Ebenen-Regelmaschine. Ebene 1: Elo-Differenz-Modell –
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :1`
-*25.08. 15:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Feature-basiertes Machine Learning: Gradient Boosting auf strukturierten Team-Me - Verlasse den Poisson-Ansatz komplett: Trainiere LightGBM/XGBoost als 3-Klassen-Klassifikator (H/D/A) ohne Quoten. Features pro Match: rollende
 
 ### `last_swarm_critique`
 *25.08. 15:46 UTC · Quelle: critic*

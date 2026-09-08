@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 15:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 15:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated model failures without adaptive routing create a retry loop that amplifies latency and waste, punishing the system for lacking failure-awaren
+- Reflex-based execution converges reliably when the model layer is available, indicating the reflex pattern itself is sound and the model endpoint is t
+- Stale swarm knowledge actively blocks new collaboration, so periodic refresh is a prerequisite rather than an optional maintenance task.
+- The dream module's hard 180s timeout causes total work loss without incremental checkpointing, making time-bound consolidation structurally fragile.
+- Ultra-heavy models consistently fail under load (502) or rate-limit (429) while flash models complete in ~3s, proving model weight is inversely correl
 - Pruning removes events but zero facts, indicating experience accumulates without semantic consolidation.
 - Swarm knowledge decays within a single cycle without automated refresh, forcing repeated manual re-initialization.
 - Five skill proposals from the previous dream cycle remain undeployed, revealing a broken proposal-to-production pipeline.
@@ -51,11 +56,6 @@
 - Rate limiting and upstream overload correlate with concurrent multi-model requests, meaning load distribution must be proactive (health-aware routing)
 - Skill proposals accumulate faster than they get deployed; without a verified pipeline from proposal to sandbox-tested registration, the capability reg
 - Infrastructure failures (502 upstream overload, 429 rate limits) are the dominant failure mode, not reasoning errors, so resilience and load managemen
-- Swarm convergence lacks objective termination criteria, relying on subjective scores instead of plateau detection and critic confidence thresholds.
-- Pruning discards 51 events per run without extracting reusable procedures, wasting failure-pattern intelligence.
-- Skill proposals accumulate but lack a verification pipeline; untested skills risk registry pollution and runtime failures.
-- Model error rate of 37.5% (27/72) and 429 responses demand circuit breakers with automatic flash-model failover, not just retries.
-- Ultra models (nemotron-3-ultra) consistently exceed 88s latency, causing 180s timeouts that force dream chunking and reflex fallbacks.
 
 ---
 
