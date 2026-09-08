@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 00:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 01:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
+- Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
-- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts/events but does not archive model-performance telemetry needed for router decisions.
+- Dream insights accumulate but lack a binding mechanism to convert them into tested skills or drive goals.
+- Swarm knowledge decays silently; no TTL or freshness check triggers proactive refresh, leading to duplicate stale goals.
+- Latency variance between models (3 s vs 60 s) wastes iteration budget and stalls decision loops.
+- Free-tier models fail under rate limits (429) without automatic fallback, causing 27+ errors per cycle.
 - Pruning destroys causal reconstructability because pruned facts/events lack experiment_id, parent_step_id, and decision_context tags for later graph r
 - File tool path resolution fails silently when paths aren't canonicalized to ZOETRON_DATA, needing a mandatory middleware guard on all file operations.
 - Swarm knowledge and episodic memories decay into staleness without scheduled reactivation jobs that re-fetch critiques and link temporally separated b
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors while model-layer failures dominate, revealing a blind spot in health monitoring scope.
 - Skill proposals accumulate in a backlog without an execution pipeline, causing a persistent gap between capability design and deployment.
 - Model failures cluster predictably by provider and error type (Nvidia 502 overload, Google 429 rate limits) enabling provider-aware circuit breaking.
-- Stress-aware planning is missing: high metabolism stress (>0.8) correlates with planning overcommitment and reflex budget overruns.
-- Relative path usage in tool invocations fails non-deterministically when ZOETRON_DATA env var is unset, requiring middleware normalization.
-- Swarm knowledge freshness decays silently; no automated trigger refreshes critiques when older than 24 hours, leading to stale drive signals.
-- Skill proposals accumulate without validation gates, risking registry pollution from untested or incompatible implementations.
-- Cascading model failures (502, 429) across multiple providers reveal absence of circuit breakers and latency-budgeted failover, causing unpredictable 
 
 ---
 

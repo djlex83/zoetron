@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 00:55:07",
+ "stand": "2026-09-08 01:24:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,21 +33,9 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-stark-reduzieren.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -58,6 +46,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -153,6 +147,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modellfehler-stark-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "simulationen-gezielt-einsetzen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -187,6 +187,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-dauerhaft-senken.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
@@ -369,12 +375,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-dauerhaft-senken.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -465,17 +465,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.866,
- "simulationen_angewandt": 21,
+ "haende_quote": 0.845,
+ "simulationen_angewandt": 22,
  "swarm_scores": {
-  "n": 20,
+  "n": 21,
   "best": 9.0,
-  "schnitt": 5.8
+  "schnitt": 5.62
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 19,
-   "schnitt": 6.05
+   "n": 20,
+   "schnitt": 5.85
   },
   "bau": {
    "n": 1,

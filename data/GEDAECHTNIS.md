@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11910 Fakten** · Stand 2026-09-08 00:57 UTC · aktualisiert bei jedem Herzschlag
+**11919 Fakten** · Stand 2026-09-08 01:26 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7191
-- **swarm_artifact:** 2096
-- **last_swarm_critique:** 828
+- **swarm_artifact:** 2102
+- **last_swarm_critique:** 829
 - **anti_pattern:** 561
-- **last_swarm_goal:** 560
+- **last_swarm_goal:** 561
 - **strategy:** 282
 - **tool:** 181
-- **hand_result:** 136
+- **hand_result:** 137
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 29
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Fehlerquote deutl:2`
+*08.09. 01:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 8]): Ensemble-Basierter Fehler-Kompensation mit automatischer Kalibrierung - Statt eines einzelnen komplexen Modells oder Router-Systems wird ein Ensemble-Ansatz gewaehlt, der verschiedene Grundmodelltypen kombiniert: (1) 
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Fehlerquote deutl:0`
+*08.09. 01:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 10, 5]): Ausfuehrbare Single-Script-Pipeline mit korrekter argparse-Integration - Statt komplexer Multi-Komponenten-Architektur (Router, Loop, Harness) wird ein einzelner, lauffaehiger Python-Script-Pipeline entwickelt. Diese
+
+### `last_swarm_critique`
+*08.09. 01:22 UTC · Quelle: critic*
+
+score=2; issues=Sandbox-Urteil LAEUFT NICHT: Die Artefakte lassen sich nicht ausfuehren, wie die usage-Meldungen von argparse zeigen. Dies ist ein harter Mangel nach den Bewertungskriterien.; Trotz konzeptionell durchdachter Architektur (Error Pattern Analysis
+
+### `last_swarm_goal`
+*08.09. 01:08 UTC · Quelle: system*
+
+Modell-Fehlerquote deutlich senken
+
+### `dream:20260908010704:5:a9e1f9`
+*08.09. 01:07 UTC · Quelle: dream*
+
+Pruning removes facts/events but does not archive model-performance telemetry needed for router decisions.
+
+### `dream:20260908010704:4:b69457`
+*08.09. 01:07 UTC · Quelle: dream*
+
+Dream insights accumulate but lack a binding mechanism to convert them into tested skills or drive goals.
+
+### `dream:20260908010704:3:3c9408`
+*08.09. 01:07 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; no TTL or freshness check triggers proactive refresh, leading to duplicate stale goals.
+
+### `dream:20260908010704:2:3498d7`
+*08.09. 01:07 UTC · Quelle: dream*
+
+Latency variance between models (3 s vs 60 s) wastes iteration budget and stalls decision loops.
+
+### `dream:20260908010704:1:c8ee42`
+*08.09. 01:07 UTC · Quelle: dream*
+
+Free-tier models fail under rate limits (429) without automatic fallback, causing 27+ errors per cycle.
 
 ### `dream:20260908005418:5:d7449c`
 *08.09. 00:54 UTC · Quelle: dream*
@@ -45702,16 +45747,6 @@ stealth/ox-alpha succeeds only after long latencies (71–322s) when output is c
 
 429 rate-limit failures cluster in bursts across multiple models (stealth/ox-alpha and z-ai/glm-5.2:free fail within seconds of each other), indicating shared upstream throttling rather than per-model quota exhaustion.
 
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fußball: die Basislinie :2`
-*25.08. 01:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Meta-/Ensemble-Ansatz: mehrere schwache, unabhängige Baseline-Modelle per Stacki - Dritter Winkel: nicht EIN besseres Modell, sondern Kombination unabhängiger Schwachmodelle, weil Ensembles auch einfache Komponenten stabil üb
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fußball: die Basislinie :0`
-*25.08. 01:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Statistisch-robust: Dixon-Coles/Poisson-Modell mit Rolling-Origin-Backtest statt - Baue ein vollständiges, ausführbares Skript (eine Datei, kein Abbruch): (1) Daten laden und nach Datum sortieren; (2) für jeden Spieltag t ein
-
 ### `last_swarm_critique`
 *25.08. 01:03 UTC · Quelle: critic*
 
@@ -45721,31 +45756,6 @@ score=2; issues=Deliverable ist unvollständig/trunkiert: Der Code bricht mitten
 *25.08. 00:55 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825005516:5:a204b8`
-*25.08. 00:55 UTC · Quelle: dream*
-
-Latency varies ~9x across successful calls (7.4s to 115.6s), so time-based timeouts or sequential fallbacks waste capacity; parallel dispatch with first-acceptable-result is more robust.
-
-### `dream:20260825005516:4:d621e2`
-*25.08. 00:55 UTC · Quelle: dream*
-
-hands-execute crashed with AttributeError 'MemoryStore' object has no attribute 'add_fact', revealing an untested code path where the caller's API assumptions drifted from MemoryStore's actual interface.
-
-### `dream:20260825005516:3:6df991`
-*25.08. 00:55 UTC · Quelle: dream*
-
-The football predictor zoetron_058e699a31 landed at 50.01% accuracy vs. a 50.18% baseline with worse log-loss (1.0103 vs 1.0073), meaning all variants so far are statistically indistinguishable from chance and the approach needs a structural change, not tuning
-
-### `dream:20260825005516:2:819128`
-*25.08. 00:55 UTC · Quelle: dream*
-
-The swarm failed to converge (score 4/10 after 2 cycles) despite evolution selecting a 9/10 variant internally, showing that winner selection does not translate into final output quality without a verification gate between evolution and act.
-
-### `dream:20260825005516:1:f5b188`
-*25.08. 00:55 UTC · Quelle: dream*
-
-429 Too Many Requests errors hit both z-ai/glm-5.2:free and stealth/ox-alpha within the same window, indicating shared rate-limit pressure on OpenRouter free-tier models rather than model-specific failures.
 
 ### `last_swarm_critique`
 *25.08. 00:25 UTC · Quelle: critic*
