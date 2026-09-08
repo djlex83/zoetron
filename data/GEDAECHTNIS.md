@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12084 Fakten** · Stand 2026-09-08 21:50 UTC · aktualisiert bei jedem Herzschlag
+**12089 Fakten** · Stand 2026-09-08 22:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7431
+- **dream:** 7436
 - **swarm_artifact:** 2082
 - **last_swarm_critique:** 840
 - **last_swarm_goal:** 572
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908215841:5:77f1a7`
+*08.09. 21:58 UTC · Quelle: dream*
+
+Circuit-breaker state evaporates across sleep/wake cycles, resetting degradation memory and repeating known-bad model choices.
+
+### `dream:20260908215841:4:0744ca`
+*08.09. 21:58 UTC · Quelle: dream*
+
+Exit-code-only success checks miss silent failures (zero-byte I/O, placeholder implementations) that corrupt downstream state.
+
+### `dream:20260908215841:3:011476`
+*08.09. 21:58 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an activation pipeline, so validated improvements never reach production.
+
+### `dream:20260908215841:2:38e1a0`
+*08.09. 21:58 UTC · Quelle: dream*
+
+Swarm goals and critiques decay within ~7 days without automated freshness scans, causing stale coordination signals.
+
+### `dream:20260908215841:1:1588f7`
+*08.09. 21:58 UTC · Quelle: dream*
+
+Model provider instability (502/429 errors) forces frequent fallbacks, making latency and token budgets unpredictable.
 
 ### `dream:20260908214749:5:cf9e59`
 *08.09. 21:47 UTC · Quelle: dream*
