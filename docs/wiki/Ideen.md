@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 16:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 16:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence detection relies on implicit heuristics rather than explicit epsilon-plateau thresholds and critic-confidence gates, risking premature ter
+- Swarm-generated goals/critiques age unchecked; no freshness TTL triggers regeneration, causing stale context to drive new cycles.
+- Skill proposals accumulate (5+ this cycle) but lack a mandatory sandbox validation gate, so most never reach production capability registry.
+- Fallback to inclusionai/ling-3.0-flash-fin succeeds but only reactively after user-facing failures, wasting latency and tokens on doomed requests.
+- Recurring 502/429 errors from primary providers (Nvidia, Google) indicate brittle single-provider dependence without proactive health-aware routing.
 - Pruning removed 45 events but kept 5 facts; fact distillation must cluster by error signature (502/429/timeout) to extract reusable retry/fallback pro
 - Swarm converged but score unknown; convergence monitor must require critic confidence >0.8 and score plateau detection before termination.
 - Multiple independent skill proposals converge on identical infrastructure: circuit breakers, fallback chains, health tracking, sandbox gates — these a
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but lack verification pipeline, risking registry pollution with untested code.
 - Flash models (ling-3.0-flash-fin) deliver 40x lower latency (3s vs 127s) for comparable tasks, making them superior for bulk work.
 - Model endpoints fail silently (502) or rate-limit (429) without automatic failover, causing 127s latency spikes when powerful models degrade.
-- Repeated model failures without adaptive routing create a retry loop that amplifies latency and waste, punishing the system for lacking failure-awaren
-- Reflex-based execution converges reliably when the model layer is available, indicating the reflex pattern itself is sound and the model endpoint is t
-- Stale swarm knowledge actively blocks new collaboration, so periodic refresh is a prerequisite rather than an optional maintenance task.
-- The dream module's hard 180s timeout causes total work loss without incremental checkpointing, making time-bound consolidation structurally fragile.
-- Ultra-heavy models consistently fail under load (502) or rate-limit (429) while flash models complete in ~3s, proving model weight is inversely correl
 
 ---
 

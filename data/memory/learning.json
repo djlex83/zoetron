@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-08 16:29:13",
+ "stand": "2026-09-08 16:44:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -33,15 +33,15 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -426,8 +426,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 21,
-   "schnitt": 5.38
+   "n": 20,
+   "schnitt": 5.45
   },
   "bau": {
    "n": 1,

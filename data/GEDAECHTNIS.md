@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12085 Fakten** · Stand 2026-09-08 16:31 UTC · aktualisiert bei jedem Herzschlag
+**12084 Fakten** · Stand 2026-09-08 16:46 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7376
-- **swarm_artifact:** 2100
+- **swarm_artifact:** 2099
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
 - **anti_pattern:** 539
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908164244:5:ca0707`
+*08.09. 16:42 UTC · Quelle: dream*
+
+Convergence detection relies on implicit heuristics rather than explicit epsilon-plateau thresholds and critic-confidence gates, risking premature termination.
+
+### `dream:20260908164244:4:99ff65`
+*08.09. 16:42 UTC · Quelle: dream*
+
+Swarm-generated goals/critiques age unchecked; no freshness TTL triggers regeneration, causing stale context to drive new cycles.
+
+### `dream:20260908164244:3:70eda9`
+*08.09. 16:42 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ this cycle) but lack a mandatory sandbox validation gate, so most never reach production capability registry.
+
+### `dream:20260908164244:2:729b1c`
+*08.09. 16:42 UTC · Quelle: dream*
+
+Fallback to inclusionai/ling-3.0-flash-fin succeeds but only reactively after user-facing failures, wasting latency and tokens on doomed requests.
+
+### `dream:20260908164244:1:7fddd0`
+*08.09. 16:42 UTC · Quelle: dream*
+
+Recurring 502/429 errors from primary providers (Nvidia, Google) indicate brittle single-provider dependence without proactive health-aware routing.
 
 ### `dream:20260908162645:5:b68881`
 *08.09. 16:26 UTC · Quelle: dream*
@@ -46416,31 +46441,6 @@ Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.00
 *25.08. 16:35 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825163537:5:9298e2`
-*25.08. 16:35 UTC · Quelle: dream*
-
-Swarm convergence stalls at score 9 despite evolution cycles, revealing a capability ceiling in the current approach.
-
-### `dream:20260825163537:4:1ca642`
-*25.08. 16:35 UTC · Quelle: dream*
-
-Evolutionary variants failed to surpass the previous best score (9), indicating diminishing returns without architectural changes.
-
-### `dream:20260825163537:3:57a00c`
-*25.08. 16:35 UTC · Quelle: dream*
-
-Calibration consistently underestimates difficulty (predicted 7 vs actual 9), suggesting the need for difficulty-aware estimation.
-
-### `dream:20260825163537:2:953ba9`
-*25.08. 16:35 UTC · Quelle: dream*
-
-Model interface errors ('str' object has no attribute 'role') across multiple providers indicate a systemic schema mismatch in role handling.
-
-### `dream:20260825163537:1:2fb19e`
-*25.08. 16:35 UTC · Quelle: dream*
-
-Prose-only artifacts prevent convergence; executable code blocks are necessary for measurable progress in prediction tasks.
 
 ### `last_swarm_critique`
 *25.08. 16:13 UTC · Quelle: critic*
