@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 00:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 00:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,16 +24,16 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress-aware planning is missing: high metabolism stress (>0.8) correlates with planning overcommitment and reflex budget overruns.
+- Relative path usage in tool invocations fails non-deterministically when ZOETRON_DATA env var is unset, requiring middleware normalization.
+- Swarm knowledge freshness decays silently; no automated trigger refreshes critiques when older than 24 hours, leading to stale drive signals.
+- Skill proposals accumulate without validation gates, risking registry pollution from untested or incompatible implementations.
+- Cascading model failures (502, 429) across multiple providers reveal absence of circuit breakers and latency-budgeted failover, causing unpredictable 
 - Stress-driven planning caps are reactive only; no predictive budget estimation prevents overshoot before execution.
 - Relative path failures recur across tools because path normalization is not enforced at the middleware layer.
 - Swarm knowledge staleness persists despite reflex updates because synchronization lacks versioned conflict resolution.
@@ -51,11 +56,6 @@
 - Calibration predicted 3 but actual score was 5 (abs_error: 2), revealing that the system's self-assessment of goal progress is systematically unreliab
 - The swarm failed to converge (converged: false) despite running evolution with 3 variants and scoring up to 9, suggesting that evolution alone does no
 - Rate-limit (429) and upstream overload (502) errors from multiple providers indicate that no single model endpoint is reliable enough to depend on wit
-- Swarm memory entries for goals and critiques become stale quickly; the system re-creates similar drive goals repeatedly instead of updating existing o
-- Metabolism budget (max_tasks=4, max_iterations=2) constrains parallel exploration, forcing sequential fallback attempts that increase total latency.
-- The skill-testing pipeline (simulation → tor) produces working artifacts despite intermediate tool failures, suggesting the orchestration layer is mor
-- Hand actions fail when they don't resolve absolute data paths via ZOETRON_DATA or sys.argv[1], succeeding only after explicit path handling.
-- Model reliability is highly inconsistent: nemotron-3-ultra fails with 502 upstream overload, gemma models hit 429 rate limits, while inclusionai/ling-
 
 ---
 

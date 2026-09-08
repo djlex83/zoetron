@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11910 Fakten** · Stand 2026-09-08 00:20 UTC · aktualisiert bei jedem Herzschlag
+**11900 Fakten** · Stand 2026-09-08 00:32 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7181
-- **swarm_artifact:** 2102
+- **swarm_artifact:** 2096
 - **last_swarm_critique:** 828
-- **anti_pattern:** 563
+- **anti_pattern:** 561
 - **last_swarm_goal:** 560
-- **strategy:** 283
+- **strategy:** 282
 - **tool:** 181
 - **hand_result:** 136
 - **aktuell_organfehler:** 45
-- **aktuell_fussball_messlatte:** 30
+- **aktuell_fussball_messlatte:** 29
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908002935:5:42bf42`
+*08.09. 00:29 UTC · Quelle: dream*
+
+Stress-aware planning is missing: high metabolism stress (>0.8) correlates with planning overcommitment and reflex budget overruns.
+
+### `dream:20260908002935:4:226d6f`
+*08.09. 00:29 UTC · Quelle: dream*
+
+Relative path usage in tool invocations fails non-deterministically when ZOETRON_DATA env var is unset, requiring middleware normalization.
+
+### `dream:20260908002935:3:d5f2b7`
+*08.09. 00:29 UTC · Quelle: dream*
+
+Swarm knowledge freshness decays silently; no automated trigger refreshes critiques when older than 24 hours, leading to stale drive signals.
+
+### `dream:20260908002935:2:6d5399`
+*08.09. 00:29 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates, risking registry pollution from untested or incompatible implementations.
+
+### `dream:20260908002935:1:0bc398`
+*08.09. 00:29 UTC · Quelle: dream*
+
+Cascading model failures (502, 429) across multiple providers reveal absence of circuit breakers and latency-budgeted failover, causing unpredictable latency spikes up to 32s.
 
 ### `dream:20260908001740:5:0f6978`
 *08.09. 00:17 UTC · Quelle: dream*
@@ -45672,21 +45697,6 @@ The swarm failed to converge (score 4/10 after 2 cycles) despite evolution selec
 
 429 Too Many Requests errors hit both z-ai/glm-5.2:free and stealth/ox-alpha within the same window, indicating shared rate-limit pressure on OpenRouter free-tier models rather than model-specific failures.
 
-### `aktuell_fussball_messlatte`
-*25.08. 00:27 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -2.35 -0.31 -0.12 -25.95 -0.19 -0.41. Der Log-Loss is
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :1`
-*25.08. 00:26 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Gradient Boosting auf reinen Tabellen-/Form-Features mit purged Time-Series-Spli - Komplett ausführbares Script: (1) Feature-Engineering ohne Quoten: rollierende Form (letzte 5/10 Spiele Punkte, Tordifferenz), xG-freie Proxy-
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :0`
-*25.08. 00:26 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Statistische Basislinien-Maximierung: Dixon-Coles/Poisson mit Bayes-Shrinkage al - Vollständig lauffähiges Python-Script (keine Abbrüche, alle Funktionen enden mit return): (1) Daten: openfootball/football-data CSV laden, nur
-
 ### `last_swarm_critique`
 *25.08. 00:25 UTC · Quelle: critic*
 
@@ -45696,31 +45706,6 @@ score=3; issues=All three implementations are incomplete (code cuts off mid-func
 *25.08. 00:17 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825001710:5:6eacd8`
-*25.08. 00:17 UTC · Quelle: dream*
-
-The evolution loop improved variant scores (4→9) but did not converge externally after 2 cycles, suggesting score-based stopping criteria must incorporate measured hit-rate, not just internal consensus.
-
-### `dream:20260825001710:4:b4da5f`
-*25.08. 00:17 UTC · Quelle: dream*
-
-The hands-execute step crashed on 'MemoryStore' lacking 'add_fact', showing interface drift between modules that a schema/contract test would have caught before runtime.
-
-### `dream:20260825001710:3:5e5860`
-*25.08. 00:17 UTC · Quelle: dream*
-
-Rate-limit failures (429) clustered across multiple free-tier models simultaneously, so retrying the same model immediately is wasteful; failover to a different provider tier is required.
-
-### `dream:20260825001710:2:222a52`
-*25.08. 00:17 UTC · Quelle: dream*
-
-Both football variants underperformed the 50.2% baseline (worst by -25.95pp), indicating the zoetron prediction approach has no edge and needs a fundamentally different strategy rather than parameter tuning.
-
-### `dream:20260825001710:1:809263`
-*25.08. 00:17 UTC · Quelle: dream*
-
-The swarm's internal critic scores (9/10 winner) diverged sharply from the external measurement (4/10), meaning self-evaluation without real-world validation systematically overestimates quality.
 
 ### `last_swarm_critique`
 *25.08. 00:08 UTC · Quelle: critic*
