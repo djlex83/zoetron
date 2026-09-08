@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 11:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 11:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,13 +25,13 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 58 events but zero facts means experience is discarded without extracting reusable knowledge.
+- Two swarm cycles with score 5/10 and no convergence indicates insufficient iterations or weak critic signal for complex goals.
+- Nemotron-3-Ultra latency (70-130s) exceeds interactive budgets; assign it only to offline builder roles, not planner/critic.
+- Critic outputs must be machine-parseable (e.g., JSON schema) or the evolution loop stalls on unparseable feedback.
+- Free-tier models exhibit cascading failures: rate limits (429) on Gemma and overload (502) on Nemotron make single-model reliance unsafe.
 - Stress levels above 0.75 trigger conserve mode with severely restricted budgets (max 3 tasks, 1 iteration), which can stall swarm progress unless work
 - Hand actions fail silently when path resolution is ambiguous (relative paths, missing sys.argv validation), causing zero-exit runs that appear success
 - Consolidation tasks that exceed ~180s will timeout unless split into checkpointed chunks, making incremental processing a structural requirement rathe
@@ -51,11 +56,6 @@
 - Dream consolidation itself hits 180s timeouts because it uses heavy models; splitting into 60s checkpointed chunks with flash models prevents cascade 
 - Heavy models (nemotron-3-ultra at 150s+ latency) are unusable for interactive loops; flash models (ling-3.0-flash at 4.5s) must be the default for cos
 - Rate limiting (429) on specific models like gemma-4-26b is a dominant failure mode that requires per-provider circuit breakers with automatic failover
-- Pruning removed 43 events but 0 facts, showing the system retains semantic knowledge while discarding operational noise, which is healthy but needs to
-- Dream proposals accumulate (rate-limit module, critic validator, convergence guardrail, promotion daemon, router, health monitor) but none are deploye
-- The reflex system successfully executes concrete tools (market data update) but has no visibility into model routing, creating a gap between action ex
-- Rate limits (429) and upstream overloads (502) are the dominant failure modes, not model quality, so routing must treat them as predictable infrastruc
-- Large models (Nemotron, Gemma) consistently fail with 429/502 errors under load while flash models (Ling) succeed reliably, proving flash models are t
 
 ---
 

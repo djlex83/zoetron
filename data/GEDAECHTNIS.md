@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12062 Fakten** · Stand 2026-09-08 11:19 UTC · aktualisiert bei jedem Herzschlag
+**12067 Fakten** · Stand 2026-09-08 11:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7326
+- **dream:** 7331
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 836
 - **last_swarm_goal:** 568
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908112916:5:7f7ad9`
+*08.09. 11:29 UTC · Quelle: dream*
+
+Pruning 58 events but zero facts means experience is discarded without extracting reusable knowledge.
+
+### `dream:20260908112916:4:4987ae`
+*08.09. 11:29 UTC · Quelle: dream*
+
+Two swarm cycles with score 5/10 and no convergence indicates insufficient iterations or weak critic signal for complex goals.
+
+### `dream:20260908112916:3:7136e1`
+*08.09. 11:29 UTC · Quelle: dream*
+
+Nemotron-3-Ultra latency (70-130s) exceeds interactive budgets; assign it only to offline builder roles, not planner/critic.
+
+### `dream:20260908112916:2:323842`
+*08.09. 11:29 UTC · Quelle: dream*
+
+Critic outputs must be machine-parseable (e.g., JSON schema) or the evolution loop stalls on unparseable feedback.
+
+### `dream:20260908112916:1:179907`
+*08.09. 11:29 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading failures: rate limits (429) on Gemma and overload (502) on Nemotron make single-model reliance unsafe.
 
 ### `dream:20260908111550:5:c6363c`
 *08.09. 11:15 UTC · Quelle: dream*
