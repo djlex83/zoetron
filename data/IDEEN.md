@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 17:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 17:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts but lacks procedural extraction; high-value error signatures (502, 429, timeout) should become reusable retry/fallback procedure
+- Swarm artifacts degrade without TTL-enforced freshness; stale goals/critiques directly impair coordination quality.
+- Role-based latency ceilings (critic/planner <5s, builder with hard timeout) prevent tail-latency cascades in swarm cycles.
+- Multiple independent proposals converge on identical infrastructure: circuit breakers, health scorecards, deployment pipelines, convergence watchdogs.
+- Recurring 502/429 errors and 100s+ latencies on nemotron-3-ultra demand systematic provider resilience with pre-warmed fallbacks.
 - No latency-aware routing exists: critic/planner stuck on ultra instead of flash, violating <5s role ceilings.
 - Pruning removes facts but not events, leaving error-pattern clusters unconsolidated into reusable procedures.
 - Stale swarm knowledge persists despite reflex refresh attempts, suggesting refresh lacks validation or integration.
@@ -51,11 +56,6 @@
 - The system generates high-quality skill proposals but lacks a validated deployment pipeline, causing a gap between proposed abilities and reliable exe
 - Dream and drive both timed out at 180 seconds, indicating that blocking operations without timeout guardrails stall the entire consolidation cycle.
 - Nvidia and Google providers repeatedly fail with 502/429 errors, while the inclusionai flash model succeeds with 3.6s latency, proving that heavy mode
-- Upstream service errors (502 from Nvidia, 429 from Google) are not transient noise but a pattern requiring architectural mitigation rather than retry 
-- Aggressive event pruning (up to 54 events per cycle) risks discarding cross-references needed for insight formation, suggesting pruning thresholds nee
-- Reflex-based recovery procedures (error reduction, dream linking, systematic learning) consistently converge, proving that structured fallback actions
-- Dream timeouts (180s) recur across multiple cycles, indicating a systemic processing bottleneck in the consolidation pipeline rather than isolated inc
-- Large models (550B-class) are unreliable under load, producing 502/429 errors, while flash models (4.3s latency) succeed consistently — model scale in
 
 ---
 

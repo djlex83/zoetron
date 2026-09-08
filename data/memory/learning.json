@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-08 17:43:49",
+ "stand": "2026-09-08 17:58:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
@@ -127,12 +127,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-verringern.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-stark-reduzieren.py",
@@ -328,6 +322,12 @@
   },
   {
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-verringern.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
