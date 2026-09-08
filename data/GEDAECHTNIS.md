@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12091 Fakten** · Stand 2026-09-08 15:30 UTC · aktualisiert bei jedem Herzschlag
+**12086 Fakten** · Stand 2026-09-08 15:46 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7366
 - **swarm_artifact:** 2104
@@ -10,11 +10,41 @@
 - **strategy:** 273
 - **tool:** 186
 - **hand_result:** 139
-- **aktuell_organfehler:** 50
-- **aktuell_fussball_messlatte:** 23
+- **aktuell_organfehler:** 51
+- **aktuell_fussball_messlatte:** 17
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908154136:5:9699f5`
+*08.09. 15:41 UTC · Quelle: dream*
+
+Pruning removes events but zero facts, indicating experience accumulates without semantic consolidation.
+
+### `dream:20260908154136:4:a12d42`
+*08.09. 15:41 UTC · Quelle: dream*
+
+Swarm knowledge decays within a single cycle without automated refresh, forcing repeated manual re-initialization.
+
+### `dream:20260908154136:3:768eb7`
+*08.09. 15:41 UTC · Quelle: dream*
+
+Five skill proposals from the previous dream cycle remain undeployed, revealing a broken proposal-to-production pipeline.
+
+### `dream:20260908154136:2:baece9`
+*08.09. 15:41 UTC · Quelle: dream*
+
+Three identical drive goals recur across cycles, proving that reflex actions resolve symptoms but not root causes.
+
+### `dream:20260908154136:1:a9d6fb`
+*08.09. 15:41 UTC · Quelle: dream*
+
+Model latency of 100-160s per call makes the primary model practically unusable for interactive tasks.
+
+### `aktuell_organfehler`
+*08.09. 15:37 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-08 15:25:39-15:28:39 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `aktuell_organfehler`
 *08.09. 15:21 UTC · Quelle: selbstdiagnose.py*
@@ -46402,65 +46432,10 @@ ABGELEHNT von Evolution (Score 6): Feature-basiertes Machine Learning: Gradient 
 
 score=3; issues=Deliverable ist unvollständig: Der Code bricht mitten im Trainingsschleifen-Update ab ('mu += log(max((w * (gh + ga)).sum(), 1e-9)'), fehlende schließende Klammern/Blöcke; nicht ausführbar.; Der Prosa-Text verspricht 'Kalibrierungs-Offsets auf 
 
-### `aktuell_fussball_messlatte`
-*25.08. 15:36 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45 -0.31 -0.41 -0.12 -1.66. Der Log-Loss ist
-
-### `aktuell_fussball_messlatte`
-*25.08. 15:36 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45 -0.31 -0.41 -0.12. Der Log-Loss ist die e
-
-### `aktuell_fussball_messlatte`
-*25.08. 15:36 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.01 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45 -0.31 -0.41. Der Log-Loss ist die empfind
-
-### `aktuell_fussball_messlatte`
-*25.08. 15:36 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.01 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45 -0.31. Der Log-Loss ist die empfindlicher
-
 ### `last_swarm_goal`
 *25.08. 15:35 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825153529:5:32443c`
-*25.08. 15:35 UTC · Quelle: dream*
-
-The identical skill proposal ('check memory for prior artifacts before building') was emitted in two separate dream cycles without being adopted or acted upon, indicating proposals are generated but never routed into execution.
-
-### `dream:20260825153529:4:a0dcc3`
-*25.08. 15:35 UTC · Quelle: dream*
-
-Prune runs removed 0 facts and 0 events twice while memory grew past 2400 entries, so the retention policy is effectively non-functional and stale facts will accumulate.
-
-### `dream:20260825153529:3:ed5573`
-*25.08. 15:35 UTC · Quelle: dream*
-
-Calibration error of 2 (predicted 7 vs actual 9) on the same goal type suggests effort estimates for football-prediction tasks are systematically underestimated and should be adjusted by prior abs_error.
-
-### `dream:20260825153529:2:e01f3c`
-*25.08. 15:35 UTC · Quelle: dream*
-
-The measured result (50.18% hits, log-loss 1.0073) exactly matches the baseline, meaning the swarm produced zero predictive edge despite high internal scores — internal critic scores do not measure real-world performance against the game outcome.
-
-### `dream:20260825153529:1:9a98be`
-*25.08. 15:35 UTC · Quelle: dream*
-
-Two consecutive swarm cycles on the football goal both ended at score 9 with converged=false because the artifact contained prose only and no executable Python block — code is a hard convergence requirement, not a stylistic preference.
-
-### `aktuell_fussball_messlatte`
-*25.08. 15:32 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.01 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45. Der Log-Loss ist die empfindlichere Groe
-
-### `aktuell_fussball_messlatte`
-*25.08. 15:32 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0103 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.01 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19. Der Log-Loss ist die empfindlichere Groesse: g
 
 ### `last_swarm_critique`
 *25.08. 15:05 UTC · Quelle: critic*
