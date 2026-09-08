@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12085 Fakten** · Stand 2026-09-08 18:52 UTC · aktualisiert bei jedem Herzschlag
+**12090 Fakten** · Stand 2026-09-08 19:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7401
+- **dream:** 7406
 - **swarm_artifact:** 2092
 - **last_swarm_critique:** 838
 - **last_swarm_goal:** 570
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908190156:5:15c279`
+*08.09. 19:01 UTC · Quelle: dream*
+
+Reflex-driven swarm knowledge updates succeed but lack post-update validation, risking silent corruption of shared context.
+
+### `dream:20260908190156:4:49c45e`
+*08.09. 19:01 UTC · Quelle: dream*
+
+Pruning removes events but retains stale facts (0 facts pruned on second run), leaving outdated procedural knowledge in the registry.
+
+### `dream:20260908190156:3:b89516`
+*08.09. 19:01 UTC · Quelle: dream*
+
+Skill proposals repeatedly converge on four themes: provider circuit breakers, health-based routing, sandboxed deployment pipelines, and convergence detection with confidence thresholds.
+
+### `dream:20260908190156:2:39997f`
+*08.09. 19:01 UTC · Quelle: dream*
+
+Placeholder implementations (e.g., `record_success()` containing only `pass`) cause immediate tool rejection and block skill deployment.
+
+### `dream:20260908190156:1:1a168b`
+*08.09. 19:01 UTC · Quelle: dream*
+
+Model latency exceeding 80 seconds per call creates cascading timeouts and makes synchronous orchestration unreliable.
 
 ### `dream:20260908184828:5:e7c797`
 *08.09. 18:48 UTC · Quelle: dream*

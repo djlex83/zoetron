@@ -27248,3 +27248,36 @@
 {"ts": 1788288364.345915, "kind": "reflex_ok", "payload": {}}
 {"ts": 1788288365.9840283, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
 {"ts": 1788288380.6679974, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788288380.667995, "schalter_geoeffnet": false}}
+{"ts": 1788288471.5351472, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 90.9, "tokens_ein": 1453, "tokens_aus": 1235}}
+{"ts": 1788288471.5360916, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router that tracks per-model error rates, latency percentiles, and 429/502 counts to dynamically rank fallbacks."}}
+{"ts": 1788288471.5361822, "kind": "skill_proposal", "payload": {"proposal": "Add a request-level timeout budget (e.g., 30s) with automatic fallback to next-ranked model on timeout or 429/502."}}
+{"ts": 1788288471.536261, "kind": "skill_proposal", "payload": {"proposal": "Build a circuit-breaker that trips after 3 errors in 5 minutes and enforces exponential backoff before retry."}}
+{"ts": 1788288471.5363445, "kind": "skill_proposal", "payload": {"proposal": "Create a stress-aware scheduler that pauses non-critical inference when system stress > 0.8 or herzschlag CI fails."}}
+{"ts": 1788288471.536419, "kind": "skill_proposal", "payload": {"proposal": "Wrap all model calls in a transactional executor that validates preconditions, dry-runs, and rolls back on partial failure."}}
+{"ts": 1788288471.5365424, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788288477.959368, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 4.1, "tokens_ein": 490, "tokens_aus": 961}}
+{"ts": 1788288477.9595702, "kind": "drive_goal", "payload": {"title": "Fehlerhafte Modelle verstehen und verbessern", "why": "Wir haben viele Fehler bei unseren Modellen. Wir müssen herausfinden, warum sie fehlschlagen, um sie besser zu machen.", "signal": "failure"}}
+{"ts": 1788288477.959654, "kind": "drive_goal", "payload": {"title": "Alte Marktanalysen wieder aufgreifen", "why": "Die alten Marktdaten sind veraltet. Wir sollten sie aktualisieren, um aktuelle Lücken im Markt zu finden.", "signal": "stale"}}
+{"ts": 1788288477.9597223, "kind": "drive_goal", "payload": {"title": "Neue Fähigkeiten in Simulationen testen", "why": "Wir schlagen viele neue Fähigkeiten vor, testen sie aber kaum. Wir müssen sie öfter in Simulationen ausprobieren.", "signal": "gap"}}
+{"ts": 1788288486.846067, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 3.61, "gelesen": 130}}
+{"ts": 1788288486.8475943, "kind": "reflex_used", "payload": {"goal": "Marktanalyse aktualisieren und Lücken schließen", "tool": "marktanalyse-abschließen-und-lücken-schl.py", "ok": true}}
+{"ts": 1788288487.3152072, "kind": "act_done", "payload": {"goal_title": "Marktanalyse aktualisieren und Lücken schließen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788288782.223647, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788288850.785366, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788288852.2587163, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788288860.682205, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788288860.6822026, "schalter_geoeffnet": false}}
+{"ts": 1788288888.5123322, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 27.8, "tokens_ein": 1438, "tokens_aus": 703}}
+{"ts": 1788288888.5131843, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with health checks, automatic fallback to designated reliable models, and exponential backoff on 429/5xx errors."}}
+{"ts": 1788288888.5132818, "kind": "skill_proposal", "payload": {"proposal": "Add a latency-aware scheduler that classifies models by speed tier and routes interactive vs. batch tasks accordingly."}}
+{"ts": 1788288888.5133667, "kind": "skill_proposal", "payload": {"proposal": "Create a data-contract validation step (JSON Schema/Pydantic) for all skill artifacts to prevent format-incompatibility critic flags."}}
+{"ts": 1788288888.5134468, "kind": "skill_proposal", "payload": {"proposal": "Wrap the evolution loop (propose → simulate → critic → mutate → score → promote) as a reusable, parameterized skill."}}
+{"ts": 1788288888.5135367, "kind": "skill_proposal", "payload": {"proposal": "Build a calibration tracker logging predicted vs. actual scores per task type to continuously refine the predictor and reduce wasted cycles."}}
+{"ts": 1788288888.5136237, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788288893.8239038, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 2.9, "tokens_ein": 490, "tokens_aus": 294}}
+{"ts": 1788288893.8240676, "kind": "drive_goal", "payload": {"title": "Haeufige Fehlerursachen besser verstehen", "why": "Es gibt sehr viele fehlgeschlagene Versuche. Wenn wir herausfinden, woran das liegt, koennen wir kuenftig viele Fehler vermeiden.", "signal": "failure"}}
+{"ts": 1788288893.8241987, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Faehigkeiten endlich umsetzen", "why": "Es liegen viele Vorschlaege fuer neue Faehigkeiten herum, die noch nicht genutzt wurden. Das Umsetzen macht uns langfristig viel leistungsfaehiger.", "signal": "gap"}}
+{"ts": 1788288893.82431, "kind": "drive_goal", "payload": {"title": "Alte Markanalysen wieder aufgreifen", "why": "Die letzten Untersuchungen zum Markt liegen ungenutzt herum. Wenn wir sie abschliessen, wissen wir besser, wo wir uns verbessern koennen.", "signal": "stale"}}
+{"ts": 1788288896.628873, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.27, "gelesen": 1}}
+{"ts": 1788288896.6301327, "kind": "reflex_used", "payload": {"goal": "Träume verbinden zu neuem Wissen", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
+{"ts": 1788288897.024016, "kind": "act_done", "payload": {"goal_title": "Träume verbinden zu neuem Wissen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788289193.374116, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

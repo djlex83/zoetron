@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 18:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 19:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven swarm knowledge updates succeed but lack post-update validation, risking silent corruption of shared context.
+- Pruning removes events but retains stale facts (0 facts pruned on second run), leaving outdated procedural knowledge in the registry.
+- Skill proposals repeatedly converge on four themes: provider circuit breakers, health-based routing, sandboxed deployment pipelines, and convergence d
+- Placeholder implementations (e.g., `record_success()` containing only `pass`) cause immediate tool rejection and block skill deployment.
+- Model latency exceeding 80 seconds per call creates cascading timeouts and makes synchronous orchestration unreliable.
 - A converged swarm achieving score 9 in a single cycle with balanced roles (1 planner, 3 builders, 1 critic) under a constrained budget (max 1 iteratio
 - Relative path resolution against environment variables like ZOETRON_DATA and sys.argv[1] is a recurring failure mode that requires absolute-path canon
 - Placeholder implementations such as record_success() containing only pass can slip through initial quality gates but are caught by tool-rejection mech
@@ -51,11 +56,6 @@
 - System stress at 1.0 triggers conserve mode (max 3 tasks, 1 iteration), throttling the very recovery actions needed to reduce load.
 - Relative path handling in hand_actions causes silent zero-byte reads; all file operations must prepend ZOETRON_DATA to inputs before execution.
 - Free-tier flagship models (Nvidia Nemotron, Google Gemma) fail consistently with 502/429 errors while flash models (inclusionai/ling-3.0-flash-fin) su
-- Swarm knowledge degrades to stale status if not refreshed on a defined schedule, and the system has no automatic mechanism to detect or correct stalen
-- Aggressive pruning (5 facts, 25 events per cycle) without an audit trail risks losing cross-referenced knowledge that may be needed for future insight
-- NVIDIA 502 errors and Google 429 errors are correlated provider-side overload events, meaning multi-provider redundancy alone does not guarantee avail
-- The system repeatedly proposes skills (circuit breakers, rate-limit routing, dream daemon) but never deploys them; the gap between proposal and implem
-- Flash-tier models (inclusionai/ling-3.0-flash-fin) succeed consistently at ~3s latency while all large models (Nemotron 502, Gemma 429) fail repeatedl
 
 ---
 
