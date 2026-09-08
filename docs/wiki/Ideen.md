@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 11:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 11:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,9 +30,9 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite clear systemic degradation (latency, stale skills, unpromoted proposals), revealing blind spots in he
+- Pruning removes events but never facts, suggesting fact-store bloat risk and missing semantic deduplication.
+- Swarm knowledge decays silently; only explicit reflex triggers refresh, causing stale-data-driven decisions between cycles.
+- Skill proposals repeat across sleep cycles (model_router, convergence_guardrail, dream_promotion_daemon) but none are deployed, indicating a broken pr
+- Model latency consistently exceeds 70s for nemotron-3-ultra, making it unsuitable for interactive loops without async handling or flash-model failover
 - Multiple skill proposals target the same failure modes (model health, critic validation, convergence) but none appear deployed, indicating a proposal-
 - Pruning removes events but never facts, causing unbounded fact growth despite regular maintenance runs.
 - Reflex actions converge reliably while swarm planning does not, revealing a gap between simple tool execution and multi-agent planning.
@@ -51,11 +56,6 @@
 - Nemotron-3-Ultra latency (70-130s) exceeds interactive budgets; assign it only to offline builder roles, not planner/critic.
 - Critic outputs must be machine-parseable (e.g., JSON schema) or the evolution loop stalls on unparseable feedback.
 - Free-tier models exhibit cascading failures: rate limits (429) on Gemma and overload (502) on Nemotron make single-model reliance unsafe.
-- Stress levels above 0.75 trigger conserve mode with severely restricted budgets (max 3 tasks, 1 iteration), which can stall swarm progress unless work
-- Hand actions fail silently when path resolution is ambiguous (relative paths, missing sys.argv validation), causing zero-exit runs that appear success
-- Consolidation tasks that exceed ~180s will timeout unless split into checkpointed chunks, making incremental processing a structural requirement rathe
-- Upstream 502 errors and 429 rate limits are systemic failure modes, not transient glitches; any system relying on a single model provider will repeate
-- Flash models (e.g., inclusionai/ling-3.0-flash-fin at 4.4s latency) outperform large models on both speed and reliability, making them the default cho
 
 ---
 

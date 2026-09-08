@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12072 Fakten** · Stand 2026-09-08 11:45 UTC · aktualisiert bei jedem Herzschlag
+**12077 Fakten** · Stand 2026-09-08 11:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7336
+- **dream:** 7341
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 836
 - **last_swarm_goal:** 568
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908115349:5:d38740`
+*08.09. 11:53 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite clear systemic degradation (latency, stale skills, unpromoted proposals), revealing blind spots in health metrics.
+
+### `dream:20260908115349:4:f40392`
+*08.09. 11:53 UTC · Quelle: dream*
+
+Pruning removes events but never facts, suggesting fact-store bloat risk and missing semantic deduplication.
+
+### `dream:20260908115349:3:a21590`
+*08.09. 11:53 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; only explicit reflex triggers refresh, causing stale-data-driven decisions between cycles.
+
+### `dream:20260908115349:2:513433`
+*08.09. 11:53 UTC · Quelle: dream*
+
+Skill proposals repeat across sleep cycles (model_router, convergence_guardrail, dream_promotion_daemon) but none are deployed, indicating a broken promotion pipeline.
+
+### `dream:20260908115349:1:1df3ab`
+*08.09. 11:53 UTC · Quelle: dream*
+
+Model latency consistently exceeds 70s for nemotron-3-ultra, making it unsuitable for interactive loops without async handling or flash-model failover.
 
 ### `dream:20260908114153:5:976cea`
 *08.09. 11:41 UTC · Quelle: dream*
