@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11977 Fakten** · Stand 2026-09-08 06:07 UTC · aktualisiert bei jedem Herzschlag
+**11988 Fakten** · Stand 2026-09-08 06:33 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7246
-- **swarm_artifact:** 2101
-- **last_swarm_critique:** 834
-- **last_swarm_goal:** 566
-- **anti_pattern:** 555
-- **strategy:** 279
+- **swarm_artifact:** 2106
+- **last_swarm_critique:** 835
+- **last_swarm_goal:** 567
+- **anti_pattern:** 557
+- **strategy:** 280
 - **tool:** 184
-- **hand_result:** 138
+- **hand_result:** 139
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Traumerfahrungen zu Fähi:1`
+*08.09. 06:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.3): Strukturiertes Bildungs-Prototyping - Ein stufiges Bildungscurriculum erstellen, das Träume als Ausgangsmaterial für Kompetenzentwicklung nutzt. Stufe 1: Traum-Mapping – Träume werden in Lernziele übersetzt (z.B. 'Fliegen i
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Traumerfahrungen zu Fähi:0`
+*08.09. 06:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.7): Psychologische Reflexionsmethode - Ein systematisches Traumtagebuch-Framework entwickeln, in dem jede Traumerfahrung in drei Schritten verarbeitet wird: (1) Traumprotokoll mit emotionaler und sensorischer Detailanalyse, (2)
+
+### `last_swarm_critique`
+*08.09. 06:28 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*08.09. 06:17 UTC · Quelle: system*
+
+Traumerfahrungen zu Fähigkeiten machen
+
+### `dream:20260908061623:5:62be9d`
+*08.09. 06:16 UTC · Quelle: dream*
+
+Point-estimate scoring without confidence intervals produces overconfident artifact rankings that misguide downstream selection.
+
+### `dream:20260908061623:4:86b9c0`
+*08.09. 06:16 UTC · Quelle: dream*
+
+Swarm convergence accepts suboptimal scores after too few cycles because stopping criteria lack minimum-cycle and stability-variance guards.
+
+### `dream:20260908061623:3:8a9a7a`
+*08.09. 06:16 UTC · Quelle: dream*
+
+High latency variance (28–92 s) for the same model reveals missing health-score routing that would shift traffic to faster healthy endpoints.
+
+### `dream:20260908061623:2:c349b5`
+*08.09. 06:16 UTC · Quelle: dream*
+
+Repeated identical skill proposals across dream cycles indicate a systemic gap between insight generation and implementation execution.
+
+### `dream:20260908061623:1:709fa5`
+*08.09. 06:16 UTC · Quelle: dream*
+
+Model provider failures (502 overload, 429 rate limits) cascade into pipeline stalls because no circuit breaker or automatic failover exists.
 
 ### `dream:20260908060442:5:92575c`
 *08.09. 06:04 UTC · Quelle: dream*
@@ -45941,31 +45986,6 @@ score=4; issues=Artefakt ist unvollständig/trunkiert: Das Skript bricht mitten 
 *25.08. 06:15 UTC · Quelle: system*
 
 Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)
-
-### `dream:20260825061532:5:ae9e4a`
-*25.08. 06:15 UTC · Quelle: dream*
-
-Metabolism correctly throttled to conserve mode under stress 1.0 (max 3 tasks, 1 iteration), but the swarm still ran a full simulation plus evolution, suggesting budget limits are not enforced against planned subtasks.
-
-### `dream:20260825061532:4:b295ac`
-*25.08. 06:15 UTC · Quelle: dream*
-
-Calibration is accurate on this goal (predicted 3 vs actual 3, abs_error 0), so predicted scores can be trusted as a gating signal before spending compute.
-
-### `dream:20260825061532:3:af8b37`
-*25.08. 06:15 UTC · Quelle: dream*
-
-The evolution loop works end-to-end when the primary model is available: a 3/10 deliverable was revised to a winning variant scoring 9/10 in one run.
-
-### `dream:20260825061532:2:5e62a9`
-*25.08. 06:15 UTC · Quelle: dream*
-
-Rate-limit failures cluster in bursts (three within ~10 seconds), indicating parallel or rapid sequential calls to the same provider; adding exponential backoff with jitter would eliminate most retries.
-
-### `dream:20260825061532:1:8afa22`
-*25.08. 06:15 UTC · Quelle: dream*
-
-Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) fail repeatedly with 429 rate limits while nvidia/nemotron-3-ultra succeeds consistently, so the fallback chain should try nemotron first for small tasks and reserve ox-alpha for large ones.
 
 ### `last_swarm_critique`
 *25.08. 06:08 UTC · Quelle: critic*
