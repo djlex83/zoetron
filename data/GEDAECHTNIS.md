@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12090 Fakten** · Stand 2026-09-08 19:05 UTC · aktualisiert bei jedem Herzschlag
+**12088 Fakten** · Stand 2026-09-08 19:29 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7406
 - **swarm_artifact:** 2092
-- **last_swarm_critique:** 838
-- **last_swarm_goal:** 570
+- **last_swarm_critique:** 839
+- **last_swarm_goal:** 571
 - **anti_pattern:** 533
 - **strategy:** 268
-- **tool:** 185
+- **tool:** 184
 - **hand_result:** 138
 - **aktuell_organfehler:** 50
-- **aktuell_fussball_messlatte:** 9
+- **aktuell_fussball_messlatte:** 6
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Lernprozesse zuverlässig:1`
+*08.09. 19:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [5, 4, 5]): Reactive Stream Processing with Backpressure - Model learning as event streams (Kafka/Pulsar or in-memory RxPY). Emit metric events (loss, grad_norm, val_score) from trainers. ConvergenceGate = stream operator applyin
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Lernprozesse zuverlässig:0`
+*08.09. 19:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 7]): Layered Clean Architecture with Dependency Injection - Implement three independent modules (ConvergenceGate, ModelHealthRegistry, BenchmarkOrgan) as separate packages with well-defined interfaces (protocols/ABCs). Use
+
+### `last_swarm_critique`
+*08.09. 19:22 UTC · Quelle: critic*
+
+score=4; issues=Artefakt besteht nur aus Explorations-Skripts (Verzeichnis-Listing), implementiert keines der drei geforderten Komponenten: Konvergenztor, Modell-Gesundheitsregister, Benchmark-Organ; Ziel 'Lernprozesse zuverlässiger gestalten' nicht erfüllt - 
+
+### `last_swarm_goal`
+*08.09. 19:15 UTC · Quelle: system*
+
+Lernprozesse zuverlässiger gestalten
+
+### `dream:20260908191442:5:593406`
+*08.09. 19:14 UTC · Quelle: dream*
+
+Model errors cluster around specific providers, indicating that per-provider health tracking is essential for reliable autonomous operation.
+
+### `dream:20260908191442:4:5265f2`
+*08.09. 19:14 UTC · Quelle: dream*
+
+Unfiltered skill proposal accumulation (65 proposals) wastes computational resources and delays implementation, requiring a structured filtering and contract-testing pipeline.
+
+### `dream:20260908191442:3:04897e`
+*08.09. 19:14 UTC · Quelle: dream*
+
+Swarm knowledge decays over time; stale artifacts propagate incorrect assumptions and must be actively refreshed with TTL-based validation.
+
+### `dream:20260908191442:2:be907c`
+*08.09. 19:14 UTC · Quelle: dream*
+
+Without circuit breakers and pre-warmed fallback pools, consecutive provider failures cascade into system-wide outages with no automatic recovery path.
+
+### `dream:20260908191442:1:83c724`
+*08.09. 19:14 UTC · Quelle: dream*
+
+Provider failures manifest at both HTTP level (429 rate limits) and application level (502 with 'Upstream error' in payload), so status-code-only monitoring misses critical degradation signals.
 
 ### `dream:20260908190156:5:15c279`
 *08.09. 19:01 UTC · Quelle: dream*
@@ -46427,36 +46472,6 @@ Rate-limit failures cluster within seconds of each other (ts 1787679154-17876792
 
 Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so every critical call needs a fallback chain with at least one reliable model (nemotron succeeded consistently).
 
-### `aktuell_fussball_messlatte`
-*25.08. 19:09 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.43 -0.37 -0.48 -0.64 -0.40 -0.72. Der Log-Loss ist
-
-### `aktuell_fussball_messlatte`
-*25.08. 19:09 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -1.22 -0.43 -0.37 -0.48 -0.64 -0.40. Der Log-Loss ist
-
-### `aktuell_fussball_messlatte`
-*25.08. 19:09 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.43 -1.22 -0.43 -0.37 -0.48 -0.64. Der Log-Loss ist
-
-### `tool:fußball-die-basislinie-von-50-2-schlagen`
-*25.08. 19:09 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten'. Datei: data/tools/fußball-die-basislinie-von-50-2-schlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :2`
-*25.08. 19:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Supervised Gradient Boosting auf marktfremden Features mit purged Time-Series-CV - Völlig anderer Mechanismus: kein Rating, sondern Feature-basiertes Lernen. Baue pro Match Features aus reinen Ergebnisdaten: Rolling-Form (Pun
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :1`
-*25.08. 19:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Hierarchisches Bayes'sches Dixon-Coles-Poisson-Modell mit Team-Heterogenität - Statt Punkteskalierung: generatives Modell der Tore selbst. Dixon-Coles-bivariate Poisson mit team-spezifischen Attack-/Defense-Parametern (hierar
-
 ### `last_swarm_critique`
 *25.08. 19:07 UTC · Quelle: critic*
 
@@ -46466,31 +46481,6 @@ score=3; issues=Ziel '50,2%-Baseline schlagen' wird in keiner Variante gemessen:
 *25.08. 19:02 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825190227:5:a8f8c5`
-*25.08. 19:02 UTC · Quelle: dream*
-
-The simulation step (verdict 'revise', 5 revisions applied) succeeded before model calls degraded, confirming pre-flight revision is cheap insurance worth keeping even in constrained runs.
-
-### `dream:20260825190227:4:1d6be5`
-*25.08. 19:02 UTC · Quelle: dream*
-
-Running under metabolism state 'conserve' (max_tasks=3, max_iterations=1) while issuing many parallel model calls contradicts the budget, suggesting resource checks are not enforced before fan-out.
-
-### `dream:20260825190227:3:efd11e`
-*25.08. 19:02 UTC · Quelle: dream*
-
-Calibration showed predicted=6 vs actual=3 (abs_error 3), meaning the system systematically overestimates effort/output for this goal type and should deflate predictions by roughly 50%.
-
-### `dream:20260825190227:2:62b274`
-*25.08. 19:02 UTC · Quelle: dream*
-
-The primary model 'stealth/ox-alpha' failed with 429 three times in one session while still completing the highest-token tasks, so it should be treated as intermittently available, not reliably down.
-
-### `dream:20260825190227:1:451d13`
-*25.08. 19:02 UTC · Quelle: dream*
-
-Rate-limit failures (429) cluster in bursts across multiple models simultaneously, indicating shared upstream throttling rather than per-model issues, so retrying immediately after a burst is wasteful.
 
 ### `last_swarm_goal`
 *25.08. 18:02 UTC · Quelle: system*
