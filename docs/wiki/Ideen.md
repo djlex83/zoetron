@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 20:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 21:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm and reflex both target 'model reliability' but operate disconnected: reflex tool fails, simulation approves, TOR rejects - no shared success cri
+- High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, preventing retry loops needed for transient model failures.
+- TOR gate rejects any artifact lacking an executable Python block - prose plans without code cannot pass verification.
+- File operations fail because relative paths are not resolved against ZOETRON_DATA environment variable before execution.
+- Primary models (nemotron, gemma) fail systematically under load with 502/429 errors while only inclusionai/ling-3.0-flash-fin:free delivers consistent
 - AST-level tool registration guards are absent, allowing no-op functions (pass/TODO/raise) to register and later produce exit-0 null results.
 - Circuit-breaker state evaporates across sleep/wake cycles, so degradation history never accumulates enough to trigger protective throttling.
 - Swarm-goal staleness persists because freshness scans are proposed but not scheduled; outdated memories repeatedly seed the same faulty plans.
@@ -51,11 +56,6 @@
 - Relative path resolution in hand_actions causes non-deterministic failures that absolute path anchoring (ZOETRON_DATA) would eliminate.
 - Tools frequently return exit code 0 while performing no actual work (silent failures), necessitating post-execution verification of side effects.
 - Model providers exhibit cascading failures (502/429) requiring automatic failover to flash models with persisted circuit-breaker state.
-- Evolutionary search improves scores (4→8) but fails to converge in 2 cycles, suggesting insufficient critic signal or search breadth.
-- Silent tool failures (scripts that print but write nothing) evade detection without explicit post-execution artifact verification.
-- Calibration consistently overestimates success by ~3 points (predicted 7 vs actual 4), indicating systematic difficulty underestimation.
-- Rate-limited providers (Google Gemma 429) fail predictably under concurrent load, requiring request spacing or fallback pools.
-- High-latency models (Nemotron >55s p95) frequently return 502 upstream overload errors, making them unreliable for time-critical loops.
 
 ---
 

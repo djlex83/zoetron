@@ -27608,3 +27608,22 @@
 {"ts": 1788295807.637561, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 3}}
 {"ts": 1788295807.6389575, "kind": "reflex_used", "payload": {"goal": "Skill-Tests verbessern aus vergangenen Fehlern", "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py", "ok": true}}
 {"ts": 1788295808.0115592, "kind": "act_done", "payload": {"goal_title": "Skill-Tests verbessern aus vergangenen Fehlern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788296105.8315933, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788296174.8313415, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788296176.4037392, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788296180.4818616, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788296180.4818585, "schalter_geoeffnet": false}}
+{"ts": 1788296211.176286, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 30.7, "tokens_ein": 1377, "tokens_aus": 653}}
+{"ts": 1788296211.1770527, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with real-time health scoring (error rate, latency, 429 frequency) and automatic fallback."}}
+{"ts": 1788296211.177118, "kind": "skill_proposal", "payload": {"proposal": "Add request-level timeout budgets with exponential backoff and circuit-breaker per model endpoint."}}
+{"ts": 1788296211.1771967, "kind": "skill_proposal", "payload": {"proposal": "Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context."}}
+{"ts": 1788296211.1772728, "kind": "skill_proposal", "payload": {"proposal": "Build a skill proposal lifecycle: proposal → sandbox test → benchmark → promote/discard with metrics."}}
+{"ts": 1788296211.1774514, "kind": "skill_proposal", "payload": {"proposal": "Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints."}}
+{"ts": 1788296211.1775227, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788296213.4239616, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788296213.4239593, "schalter_geoeffnet": false}}
+{"ts": 1788296231.6219175, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.2, "tokens_ein": 506, "tokens_aus": 443}}
+{"ts": 1788296231.6220582, "kind": "drive_goal", "payload": {"title": "Modell-Fehler systematisch reduzieren", "why": "Die Modelle scheitern fast doppelt so oft wie sie gelingen. Wenn wir die häufigsten Fehler verstehen und beheben, werden alle folgenden Schritte zuverlässiger.", "signal": "failure"}}
+{"ts": 1788296231.622151, "kind": "drive_goal", "payload": {"title": "Marktanalyse-Ergebnisse endlich nutzen", "why": "Drei fertige Analysen liegen ungenutzt herum. Wir müssen sie in konkrete Entscheidungen umsetzen, sonst war die Arbeit umsonst.", "signal": "stale"}}
+{"ts": 1788296231.622245, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich bauen", "why": "Es gibt 55 Vorschläge für neue Fähigkeiten, aber unklar ob welche umgesetzt wurden. Wir prüfen die besten und bauen sie wirklich ein.", "signal": "gap"}}
+{"ts": 1788296234.1839616, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.25, "gelesen": 8}}
+{"ts": 1788296234.1857383, "kind": "reflex_used", "payload": {"goal": "Neue Fähigkeiten aktiv erkunden", "tool": "neue-fähigkeiten-erlernen.py", "ok": true}}
+{"ts": 1788296234.7692363, "kind": "act_done", "payload": {"goal_title": "Neue Fähigkeiten aktiv erkunden", "score": null, "converged": true, "mode": "reflex"}}
