@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 05:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 06:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,8 +13,8 @@
 - ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 6×)*
 - ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 6×)*
 - Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
+- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 6×)*
 - StalenessDetector: proactively scan swarm data age on a scheduled basis (e.g., hourly), emitting drive_goal ev *(hatte die Idee 5×)*
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 5×)*
 - Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
 - Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject ca *(hatte die Idee 4×)*
 - Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours. *(hatte die Idee 4×)*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex selection remains manual (hardcoded tool mapping) despite a proposed registry index, forcing human-in-the-loop for every new signal type.
+- Prune runs execute regularly but lack memory-pressure gating, wasting cycles when pressure is low and risking OOM when pressure spikes unseen.
+- Drive goals for 'reduce model errors' and 'refresh swarm knowledge' re-emit with identical failure/stale signals, proving root causes remain unaddress
+- Skill proposals for circuit breakers, model routing, and latency SLO gates accumulate across multiple dream cycles but never graduate to implemented r
+- Model latency degrades monotonically across cycles (12s → 28s → 56s → 92s) while self-diagnosis reports zero organ errors, revealing a critical blind 
 - Swarm knowledge degrades into staleness when refresh is demand-driven only, causing insights to go unused and decision quality to erode silently.
 - Calibration systematically underestimates task complexity (predicted 4 vs actual 7), leading to under-provisioned budgets and repeated revision cycles
 - Relative file paths resolved from sys.argv or environment variables cause silent read failures when not validated against an absolute data baseline be
@@ -51,11 +56,6 @@
 - Reflex-driven swarm refresh succeeds where manual hand_action fails, indicating reflexes encapsulate correct path logic that hand actions lack.
 - Hand actions fail on path resolution because relative paths and ZOETRON_DATA env var are not reconciled before file access.
 - Model reliability is the primary systemic bottleneck: 3/4 models failed with 502/429 errors while only inclusionai/ling-3.0-flash-fin succeeded consis
-- Structured error objects capturing stderr, exit codes, and context from hand_actions enable automated recovery instead of silent null failures.
-- Flash models (sub-5s latency) must be automatic fallbacks when primary models exceed p95 latency >30s or error rates exceed thresholds.
-- Swarm convergence requires minimum cycle counts (>=5) and stability thresholds (score variance <0.1) to avoid accepting stale or oscillating results.
-- Exponential backoff with jitter and concurrent request throttling stops 429 rate limits from collapsing the entire inference pipeline.
-- Provider-specific circuit breakers with health scores (success rate, p95 latency, error taxonomy) prevent cascading failures when upstream services re
 
 ---
 

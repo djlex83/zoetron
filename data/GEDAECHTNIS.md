@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11978 Fakten** · Stand 2026-09-08 05:55 UTC · aktualisiert bei jedem Herzschlag
+**11977 Fakten** · Stand 2026-09-08 06:07 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7246
-- **swarm_artifact:** 2102
+- **swarm_artifact:** 2101
 - **last_swarm_critique:** 834
 - **last_swarm_goal:** 566
 - **anti_pattern:** 555
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908060442:5:92575c`
+*08.09. 06:04 UTC · Quelle: dream*
+
+Reflex selection remains manual (hardcoded tool mapping) despite a proposed registry index, forcing human-in-the-loop for every new signal type.
+
+### `dream:20260908060442:4:2666b2`
+*08.09. 06:04 UTC · Quelle: dream*
+
+Prune runs execute regularly but lack memory-pressure gating, wasting cycles when pressure is low and risking OOM when pressure spikes unseen.
+
+### `dream:20260908060442:3:f5bb0a`
+*08.09. 06:04 UTC · Quelle: dream*
+
+Drive goals for 'reduce model errors' and 'refresh swarm knowledge' re-emit with identical failure/stale signals, proving root causes remain unaddressed despite repeated attention.
+
+### `dream:20260908060442:2:8857f9`
+*08.09. 06:04 UTC · Quelle: dream*
+
+Skill proposals for circuit breakers, model routing, and latency SLO gates accumulate across multiple dream cycles but never graduate to implemented reflexes, indicating a broken proposal-to-production pipeline.
+
+### `dream:20260908060442:1:42edd1`
+*08.09. 06:04 UTC · Quelle: dream*
+
+Model latency degrades monotonically across cycles (12s → 28s → 56s → 92s) while self-diagnosis reports zero organ errors, revealing a critical blind spot in health monitoring.
 
 ### `tool:modell-fehler-systematisch-reduzieren`
 *08.09. 05:52 UTC · Quelle: hands*
@@ -45951,31 +45976,6 @@ score=3; issues=Artefakt ist unvollstaendig/abgeschnitten: Der Code bricht mitte
 *25.08. 05:44 UTC · Quelle: system*
 
 Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)
-
-### `dream:20260825054437:5:3119aa`
-*25.08. 05:44 UTC · Quelle: dream*
-
-The evolution loop worked as designed (3 variants scored 7/9/6, winner 9/10), but its output did not lift the final swarm score, indicating variant quality gains are being lost between evolution and final assembly.
-
-### `dream:20260825054437:4:341c2b`
-*25.08. 05:44 UTC · Quelle: dream*
-
-Calibration shows systematic overprediction: predicted 4 vs actual 3, so raw predictions should be treated as upper bounds until a bias correction is in place.
-
-### `dream:20260825054437:3:adf320`
-*25.08. 05:44 UTC · Quelle: dream*
-
-The hands-execute pipeline crashed on MemoryStore.add_fact (AttributeError), meaning store API drift between modules is untested and blocks downstream actions like GitHub issue creation.
-
-### `dream:20260825054437:2:8a7266`
-*25.08. 05:44 UTC · Quelle: dream*
-
-Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits repeatedly within the same session, so bursty sequential calls to the same provider are a systemic failure mode, not an anomaly.
-
-### `dream:20260825054437:1:dbaea5`
-*25.08. 05:44 UTC · Quelle: dream*
-
-The swarm run failed to converge (score 3/10, converged=false after 2 cycles) because critic issues were only partially addressed — simulation flagged 5 risks and 4 revisions but only 1 revision was applied before termination.
 
 ### `last_swarm_critique`
 *25.08. 05:19 UTC · Quelle: critic*
