@@ -1,14 +1,14 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 06:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 06:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 8×)*
+- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 8×)*
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 7×)*
 - ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 6×)*
 - Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
 - ErrorClassBackoffStrategy: encode distinct retry policies — exponential backoff with jitter for 429 rate limit *(hatte die Idee 5×)*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Automatic pruning (61 events, 6 facts) after convergence prevents context bloat without losing the durable fix pattern.
+- Circuit-breaker logic is absent: the system retries failing premium models instead of failing fast to healthy flash alternatives.
+- Calibration consistently underestimates post-fix success (predicted 6 vs actual 9), suggesting the planner's risk model overweights transient provider
+- Simulation-driven revision loops (verdict=revise → revisions=3 → score=9 converged) reliably convert flaky model chains into passing pipelines.
+- Free-tier flagship models (Nemotron, Gemma) fail reliably under load with 502/429 errors while smaller flash models (Ling-3.0-flash) sustain throughpu
 - Swarm knowledge decays without scheduled re-evaluation, turning past critiques into stale artifacts rather than living guidance.
 - Skill proposals accumulate but remain unimplemented without a dedicated promotion pipeline from dream to deployed capability.
 - Fixed iteration budgets under conserve mode ignore task risk profiles, guaranteeing under-provisioning for complex revisions.
@@ -51,11 +56,6 @@
 - High latency variance (28–92 s) for the same model reveals missing health-score routing that would shift traffic to faster healthy endpoints.
 - Repeated identical skill proposals across dream cycles indicate a systemic gap between insight generation and implementation execution.
 - Model provider failures (502 overload, 429 rate limits) cascade into pipeline stalls because no circuit breaker or automatic failover exists.
-- Reflex selection remains manual (hardcoded tool mapping) despite a proposed registry index, forcing human-in-the-loop for every new signal type.
-- Prune runs execute regularly but lack memory-pressure gating, wasting cycles when pressure is low and risking OOM when pressure spikes unseen.
-- Drive goals for 'reduce model errors' and 'refresh swarm knowledge' re-emit with identical failure/stale signals, proving root causes remain unaddress
-- Skill proposals for circuit breakers, model routing, and latency SLO gates accumulate across multiple dream cycles but never graduate to implemented r
-- Model latency degrades monotonically across cycles (12s → 28s → 56s → 92s) while self-diagnosis reports zero organ errors, revealing a critical blind 
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 06:43:37",
+ "stand": "2026-09-08 06:55:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,14 +10,14 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -216,12 +216,6 @@
    "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarm-wissen-auffrischen-und-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -459,7 +453,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.821,
+ "haende_quote": 0.82,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 24,

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11988 Fakten** · Stand 2026-09-08 06:45 UTC · aktualisiert bei jedem Herzschlag
+**11983 Fakten** · Stand 2026-09-08 06:57 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7251
-- **swarm_artifact:** 2104
+- **swarm_artifact:** 2102
 - **last_swarm_critique:** 835
 - **last_swarm_goal:** 567
-- **anti_pattern:** 555
-- **strategy:** 279
+- **anti_pattern:** 553
+- **strategy:** 278
 - **tool:** 184
 - **hand_result:** 139
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908065438:5:69e93b`
+*08.09. 06:54 UTC · Quelle: dream*
+
+Automatic pruning (61 events, 6 facts) after convergence prevents context bloat without losing the durable fix pattern.
+
+### `dream:20260908065438:4:a69c48`
+*08.09. 06:54 UTC · Quelle: dream*
+
+Circuit-breaker logic is absent: the system retries failing premium models instead of failing fast to healthy flash alternatives.
+
+### `dream:20260908065438:3:75f813`
+*08.09. 06:54 UTC · Quelle: dream*
+
+Calibration consistently underestimates post-fix success (predicted 6 vs actual 9), suggesting the planner's risk model overweights transient provider failures.
+
+### `dream:20260908065438:2:dde942`
+*08.09. 06:54 UTC · Quelle: dream*
+
+Simulation-driven revision loops (verdict=revise → revisions=3 → score=9 converged) reliably convert flaky model chains into passing pipelines.
+
+### `dream:20260908065438:1:b094d3`
+*08.09. 06:54 UTC · Quelle: dream*
+
+Free-tier flagship models (Nemotron, Gemma) fail reliably under load with 502/429 errors while smaller flash models (Ling-3.0-flash) sustain throughput.
 
 ### `dream:20260908064255:5:4b1286`
 *08.09. 06:42 UTC · Quelle: dream*
@@ -45947,16 +45972,6 @@ The swarm twice ended with verdict 'revise' and score 5 but converged=false, mea
 
 hands-execute crashed on 'MemoryStore' object has no attribute 'add_fact', revealing that store method signatures drift from call sites without a contract test.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Lokaler Schüler: das ers:1`
-*25.08. 06:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Budget-inversion: design around the € constraint first (QLoRA + tiny model + sho - Start from hard numbers instead of features: target ≤2GB VRAM / ≤€0.50 total. Concretely: Qwen2.5-0.5B-Instruct loaded 4-bit NF4 (weights ~0.4
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Lokaler Schüler: das ers:0`
-*25.08. 06:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Single-file completeness-first rewrite: one self-contained, fully runnable scrip - Discard the multi-command CLI structure entirely and write ONE complete, linearly-executable script `train_lora.py` (~300 lines) that runs top
-
 ### `last_swarm_critique`
 *25.08. 06:50 UTC · Quelle: critic*
 
@@ -45966,31 +45981,6 @@ score=3; issues=Script `scripts/train_lora.py` is truncated at `def cmd_che` —
 *25.08. 06:44 UTC · Quelle: system*
 
 Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)
-
-### `dream:20260825064435:5:217423`
-*25.08. 06:44 UTC · Quelle: dream*
-
-Swarm controller exits on low scores instead of replanning, wasting simulation effort.
-
-### `dream:20260825064435:4:d9f0b1`
-*25.08. 06:44 UTC · Quelle: dream*
-
-Prune runs consistently evict zero items, indicating the retention policy is not enforced.
-
-### `dream:20260825064435:3:6c3381`
-*25.08. 06:44 UTC · Quelle: dream*
-
-Thirty skill proposals have accumulated but only a handful are validated, creating an untested backlog.
-
-### `dream:20260825064435:2:f32ffa`
-*25.08. 06:44 UTC · Quelle: dream*
-
-Metabolism conserve mode imposes a 1-iteration budget that forces premature goal closure before convergence.
-
-### `dream:20260825064435:1:7e99b9`
-*25.08. 06:44 UTC · Quelle: dream*
-
-Rate-limiting (429) on primary models repeatedly halts execution because no automatic provider failover exists.
 
 ### `last_swarm_critique`
 *25.08. 06:20 UTC · Quelle: critic*
