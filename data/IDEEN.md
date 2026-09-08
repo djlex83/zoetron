@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 01:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 01:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Planning lacks stress-awareness: under high load the system still spawns unbounded tasks/iterations, amplifying latency cascades.
+- Relative path assumptions in tool invocations cause silent failures when working directory shifts, needing a normalization guard.
+- Skill proposals accumulate (75+) without validation, creating a promotion gap where useful capabilities never reach production.
+- Swarm critique data becomes stale after ~24 hours, causing drive signals to degrade and necessitating automated refresh schedulers.
+- Free-tier model providers frequently hit 429 rate limits and exhibit tail latencies >60s, requiring circuit-breaker failover to flash models.
 - Pruning removes facts/events but does not archive model-performance telemetry needed for router decisions.
 - Dream insights accumulate but lack a binding mechanism to convert them into tested skills or drive goals.
 - Swarm knowledge decays silently; no TTL or freshness check triggers proactive refresh, leading to duplicate stale goals.
@@ -51,11 +56,6 @@
 - Swarm knowledge and episodic memories decay into staleness without scheduled reactivation jobs that re-fetch critiques and link temporally separated b
 - Skill proposals accumulate without execution because no automated funnel promotes high-signal proposals (≥3 upvotes, clear metrics) to owned missions 
 - Model provider instability (502/429 errors across 3 models) causes cascading fallback latency and decision degradation, requiring per-provider circuit
-- Resource exhaustion (rate limits, upstream overload) cascades into wasted cycles because goal selection lacks metabolic gating.
-- Flash-tier models (ling-3.0-flash-fin) consistently succeed where flagship models fail, making latency-tier routing a reliability lever.
-- Self-diagnosis reports zero organ errors while model-layer failures dominate, revealing a blind spot in health monitoring scope.
-- Skill proposals accumulate in a backlog without an execution pipeline, causing a persistent gap between capability design and deployment.
-- Model failures cluster predictably by provider and error type (Nvidia 502 overload, Google 429 rate limits) enabling provider-aware circuit breaking.
 
 ---
 

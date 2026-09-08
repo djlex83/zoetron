@@ -1,17 +1,17 @@
 {
- "stand": "2026-09-08 01:24:20",
+ "stand": "2026-09-08 01:35:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 13,
    "erfolge": 13,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
@@ -66,12 +66,6 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -196,6 +190,12 @@
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0

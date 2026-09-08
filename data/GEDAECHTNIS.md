@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11919 Fakten** · Stand 2026-09-08 01:26 UTC · aktualisiert bei jedem Herzschlag
+**11924 Fakten** · Stand 2026-09-08 01:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7191
+- **dream:** 7196
 - **swarm_artifact:** 2102
 - **last_swarm_critique:** 829
 - **anti_pattern:** 561
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908013519:5:566af2`
+*08.09. 01:35 UTC · Quelle: dream*
+
+Planning lacks stress-awareness: under high load the system still spawns unbounded tasks/iterations, amplifying latency cascades.
+
+### `dream:20260908013519:4:3577f2`
+*08.09. 01:35 UTC · Quelle: dream*
+
+Relative path assumptions in tool invocations cause silent failures when working directory shifts, needing a normalization guard.
+
+### `dream:20260908013519:3:ea449c`
+*08.09. 01:35 UTC · Quelle: dream*
+
+Skill proposals accumulate (75+) without validation, creating a promotion gap where useful capabilities never reach production.
+
+### `dream:20260908013519:2:a4a105`
+*08.09. 01:35 UTC · Quelle: dream*
+
+Swarm critique data becomes stale after ~24 hours, causing drive signals to degrade and necessitating automated refresh schedulers.
+
+### `dream:20260908013519:1:a4c78f`
+*08.09. 01:35 UTC · Quelle: dream*
+
+Free-tier model providers frequently hit 429 rate limits and exhibit tail latencies >60s, requiring circuit-breaker failover to flash models.
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Fehlerquote deutl:2`
 *08.09. 01:22 UTC · Quelle: evolution*
