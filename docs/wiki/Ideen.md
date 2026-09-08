@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 07:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 08:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 9×)*
+- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 10×)*
 - Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 8×)*
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple redundant skill proposals (router, health monitor, flash-first) were generated independently, revealing a need for proposal deduplication bef
+- Pruning removes facts aggressively (10 facts) but preserves events, suggesting fact-store bloat is a bigger issue than event-log growth.
+- Reflex-driven skill execution (try-skills, update-swarm) converges reliably and should be the default pattern for maintenance goals.
+- No automatic failover triggered: the system experienced three consecutive model failures before a flash model was used, indicating missing circuit-bre
+- Primary models (Nemotron Ultra, Gemma variants) fail under load with 502/429 errors while flash models (Ling 3.0 Flash) consistently succeed at 4s lat
 - Fixed iteration budgets ignore risk context; a risk-aware allocator that scales max_iterations by (1 + risk_score) prevents premature conserve-state e
 - Swarm insights decay within 24 hours without automated critique re-evaluation and confidence-score updates.
 - Relative filesystem paths cause silent hand-action failures; all paths must be resolved to absolute using ZOETRON_DATA before any I/O operation.
@@ -51,11 +56,6 @@
 - Critic output is repeatedly unparseable, causing downstream evolution and scoring logic to fail or degrade silently.
 - Google gemma models consistently hit 429 rate limits under concurrent swarm load, indicating no backoff or retry strategy exists for rate-limited endp
 - The Nvidia nemotron-3-ultra model is intermittently unavailable (502/504) and extremely slow (45-78s latency), making it unreliable as a primary model
-- Swarm memory goes stale without scheduled refresh cycles, and disconnected dream memories from the same temporal window remain unlinked, losing cross-
-- High metabolic stress (1.0) triggers conserve mode that caps max_tasks=3 and max_iterations=1, throttling consolidation throughput exactly when dream 
-- Reflex tools (traum-ideen-zu-fähigkeiten-machen.py) can return ok:false without error details, making silent failures invisible to the orchestration l
-- Hand actions fail when using relative paths instead of the canonical ZOETRON_DATA environment variable, causing 'nothing read' errors that succeed onl
-- Model reliability varies wildly by provider: nemotron-3-ultra succeeds after retries but suffers 502/504 errors, while gemma-4 models hit 429 rate lim
 
 ---
 
