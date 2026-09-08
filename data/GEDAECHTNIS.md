@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12085 Fakten** · Stand 2026-09-08 17:32 UTC · aktualisiert bei jedem Herzschlag
+**12066 Fakten** · Stand 2026-09-08 17:46 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7381
-- **swarm_artifact:** 2100
+- **swarm_artifact:** 2092
 - **last_swarm_critique:** 838
 - **last_swarm_goal:** 570
-- **anti_pattern:** 537
-- **strategy:** 270
-- **tool:** 186
-- **hand_result:** 139
+- **anti_pattern:** 533
+- **strategy:** 268
+- **tool:** 185
+- **hand_result:** 138
 - **aktuell_organfehler:** 51
-- **aktuell_fussball_messlatte:** 12
+- **aktuell_fussball_messlatte:** 9
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908174148:5:8260fa`
+*08.09. 17:41 UTC · Quelle: dream*
+
+No latency-aware routing exists: critic/planner stuck on ultra instead of flash, violating <5s role ceilings.
+
+### `dream:20260908174148:4:85da23`
+*08.09. 17:41 UTC · Quelle: dream*
+
+Pruning removes facts but not events, leaving error-pattern clusters unconsolidated into reusable procedures.
+
+### `dream:20260908174148:3:e5414b`
+*08.09. 17:41 UTC · Quelle: dream*
+
+Stale swarm knowledge persists despite reflex refresh attempts, suggesting refresh lacks validation or integration.
+
+### `dream:20260908174148:2:f2300e`
+*08.09. 17:41 UTC · Quelle: dream*
+
+Identical skill proposals repeated across cycles indicate missing deduplication and proposal-tracking mechanism.
+
+### `dream:20260908174148:1:159b95`
+*08.09. 17:41 UTC · Quelle: dream*
+
+Ultra model latency (112-170s) exceeds practical thresholds, causing cascading timeouts and failed swarm cycles.
 
 ### `last_swarm_critique`
 *08.09. 17:29 UTC · Quelle: critic*
@@ -46352,31 +46377,6 @@ ORGANFEHLER im letzten Herzschlag: act -> rc. Phase endete mit rc=1 Diese Phase 
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
 
-### `aktuell_fussball_messlatte`
-*25.08. 17:39 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.55 -0.43 -1.22 -0.43 -0.37 -0.48. Der Log-Loss ist
-
-### `aktuell_fussball_messlatte`
-*25.08. 17:39 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -2.35 -0.55 -0.43 -1.22 -0.43 -0.37. Der Log-Loss ist
-
-### `tool:fußball-die-basislinie-von-50-2-schlagen`
-*25.08. 17:39 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten'. Datei: data/tools/fußball-die-basislinie-von-50-2-schlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :2`
-*25.08. 17:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): Temporal Convolutional Network (TCN) auf Sequenzen von Match-Events und Aggregie - Ansatz: Deep Learning auf Sequenzen der letzten 10 Spiele pro Team. Input pro Spiel: 20-dim Vektor (Tore, xG, Schüsse, Ballbesitz, Ecken, Kart
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :1`
-*25.08. 17:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Dynamisches Elo-Rating-System mit Bayes'scher Kalibrierung und Monte-Carlo-Simul - Ansatz: Erweitertes Elo mit separaten Heim-/Auswärts-Ratings, Tor-Differenz-Gewichtung, Form-Dämpfung (letzte 3 Spiele höher gewichtet), und L
-
 ### `last_swarm_critique`
 *25.08. 17:37 UTC · Quelle: critic*
 
@@ -46386,46 +46386,6 @@ score=3; issues=Kein einziger Evaluations-/Backtest-Befund vorhanden: Das Ziel '
 *25.08. 17:32 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825173232:5:5d25d3`
-*25.08. 17:32 UTC · Quelle: dream*
-
-The swarm goal (beat 50.2% football baseline without odds) has an unfakeable external critic (match results), making it the ideal testbed for validating whether proposed skills actually improve outcomes.
-
-### `dream:20260825173232:4:26b711`
-*25.08. 17:32 UTC · Quelle: dream*
-
-Skill proposals are generated at a high rate (5 per dream cycle) but the drive_goal 'gap' signal confirms near-zero adoption, revealing that proposal generation without an execution queue produces no value.
-
-### `dream:20260825173232:3:bc0a23`
-*25.08. 17:32 UTC · Quelle: dream*
-
-Metabolism state 'conserve' (max_tasks=3, max_iterations=1) combined with slow-model latency means single-shot prompts must be self-contained, since retry loops are unaffordable.
-
-### `dream:20260825173232:2:156f4d`
-*25.08. 17:32 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free succeeded in all three attempts but with high latency variance (9s–55s), so it is reliable yet slow and unsuitable as the sole fallback under tight iteration budgets.
-
-### `dream:20260825173232:1:4c38ef`
-*25.08. 17:32 UTC · Quelle: dream*
-
-The 429 failures on stealth/ox-alpha and z-ai/glm-5.2:free recur across every task cycle, indicating these endpoints are persistently rate-limited and should be demoted or backed off rather than retried each time.
-
-### `aktuell_fussball_messlatte`
-*25.08. 17:12 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.43 -2.35 -0.55 -0.43 -1.22 -0.43. Der Log-Loss ist
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :2`
-*25.08. 17:11 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Graph Neural Network on Match Interaction Graphs - Construct a temporal graph: nodes = teams, edges = matches played (weighted by recency decay). Node features = rolling stats (xG, possession, shots); edge features = venue, d
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :1`
-*25.08. 17:11 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Bayesian Dynamic Bradley-Terry Model with Time-Varying Strengths - Implement a hierarchical Bayesian model where each team has latent attack/defense strengths that follow a Gaussian random walk across matchweeks. Likelihood: 
 
 ### `last_swarm_critique`
 *25.08. 17:10 UTC · Quelle: critic*

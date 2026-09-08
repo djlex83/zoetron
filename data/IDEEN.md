@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 17:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 17:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No latency-aware routing exists: critic/planner stuck on ultra instead of flash, violating <5s role ceilings.
+- Pruning removes facts but not events, leaving error-pattern clusters unconsolidated into reusable procedures.
+- Stale swarm knowledge persists despite reflex refresh attempts, suggesting refresh lacks validation or integration.
+- Identical skill proposals repeated across cycles indicate missing deduplication and proposal-tracking mechanism.
+- Ultra model latency (112-170s) exceeds practical thresholds, causing cascading timeouts and failed swarm cycles.
 - Reflex cycles that learn from errors and test proposed skills both converged successfully, confirming that structured error-driven learning is the mos
 - Aggressive pruning (11 facts and 42 events in one cycle) shows the knowledge base is actively degrading stale data, but stale swarm data still degrade
 - The system generates high-quality skill proposals but lacks a validated deployment pipeline, causing a gap between proposed abilities and reliable exe
@@ -51,11 +56,6 @@
 - Reflex-based recovery procedures (error reduction, dream linking, systematic learning) consistently converge, proving that structured fallback actions
 - Dream timeouts (180s) recur across multiple cycles, indicating a systemic processing bottleneck in the consolidation pipeline rather than isolated inc
 - Large models (550B-class) are unreliable under load, producing 502/429 errors, while flash models (4.3s latency) succeed consistently — model scale in
-- Convergence detection relies on implicit heuristics rather than explicit epsilon-plateau thresholds and critic-confidence gates, risking premature ter
-- Swarm-generated goals/critiques age unchecked; no freshness TTL triggers regeneration, causing stale context to drive new cycles.
-- Skill proposals accumulate (5+ this cycle) but lack a mandatory sandbox validation gate, so most never reach production capability registry.
-- Fallback to inclusionai/ling-3.0-flash-fin succeeds but only reactively after user-facing failures, wasting latency and tokens on doomed requests.
-- Recurring 502/429 errors from primary providers (Nvidia, Google) indicate brittle single-provider dependence without proactive health-aware routing.
 
 ---
 
