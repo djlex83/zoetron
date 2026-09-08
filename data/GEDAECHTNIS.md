@@ -1,20 +1,25 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12094 Fakten** · Stand 2026-09-08 14:57 UTC · aktualisiert bei jedem Herzschlag
+**12090 Fakten** · Stand 2026-09-08 15:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7368
+- **dream:** 7366
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
-- **anti_pattern:** 545
-- **strategy:** 274
+- **anti_pattern:** 543
+- **strategy:** 273
 - **tool:** 186
 - **hand_result:** 139
-- **aktuell_organfehler:** 48
+- **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 23
 - **creator_teaching:** 1
 
 ---
+
+### `aktuell_organfehler`
+*08.09. 15:04 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-08 14:53:49 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260908143903:5:69c378`
 *08.09. 14:39 UTC · Quelle: dream*
@@ -46452,16 +46457,6 @@ Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.00
 
 Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0103 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.01 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19. Der Log-Loss ist die empfindlichere Groesse: g
 
-### `anti_pattern:Previous attempt scored 9/10. Goal: Fußball: die Basislinie :2`
-*25.08. 15:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): automated - script the whole path NICHT wiederholt anbieten.
-
-### `anti_pattern:Previous attempt scored 9/10. Goal: Fußball: die Basislinie :0`
-*25.08. 15:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): minimal - smallest working step NICHT wiederholt anbieten.
-
 ### `last_swarm_critique`
 *25.08. 15:05 UTC · Quelle: critic*
 
@@ -46471,16 +46466,6 @@ score=9; issues=
 *25.08. 15:05 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825150501:2:a4c59e`
-*25.08. 15:05 UTC · Quelle: dream*
-
-Failed tasks cluster around missing context, not wrong logic.
-
-### `dream:20260825150501:1:7a3951`
-*25.08. 15:05 UTC · Quelle: dream*
-
-Recurring theme across events: planning quality dominates outcomes.
 
 ### `last_swarm_critique`
 *25.08. 14:35 UTC · Quelle: critic*

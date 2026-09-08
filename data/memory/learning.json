@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 14:55:39",
+ "stand": "2026-09-08 15:12:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -403,9 +403,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.831,
+ "haende_quote": 0.832,
  "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 23,

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8405 Neuronen · 893010 bewertete Synapsen
+Stand: 8405 Neuronen · 892053 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -32,7 +32,7 @@ Stand: 8405 Neuronen · 893010 bewertete Synapsen
 
 | # | Stärke | Erinnerung A | Erinnerung B |
 |---|---|---|---|
-| 1 | **0.67** | 🚫 🚫 Gescheiterter Versuch für „Fußball: die Basi… | 🚫 🚫 Gescheiterter Versuch für „Fußball: die Basi… |
+| 1 | **0.67** | 🚫 🚫 Gescheiterter Versuch für „Ein Gedächtnis au… | 🚫 🚫 Gescheiterter Versuch für „Ein Gedächtnis au… |
 | 2 | **0.55** | 💭 Rate-limit failures (429) cluster in bursts ac… | 💭 Rate-limit failures (429) cluster in bursts ac… |
 | 3 | **0.55** | 🚫 🚫 Gescheiterter Versuch für „Fußball: die Basi… | 🚫 🚫 Gescheiterter Versuch für „Fußball: die Basi… |
 | 4 | **0.55** | 💭 Rate limits (429 errors) across multiple provi… | 💭 Rate limiting (429 errors) across multiple fre… |
