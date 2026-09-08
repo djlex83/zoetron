@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12084 Fakten** · Stand 2026-09-08 13:30 UTC · aktualisiert bei jedem Herzschlag
+**12089 Fakten** · Stand 2026-09-08 13:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7352
+- **dream:** 7357
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908134102:5:70a810`
+*08.09. 13:41 UTC · Quelle: dream*
+
+Swarm knowledge refresh succeeds as a reflex but lacks integration into the model routing feedback loop.
+
+### `dream:20260908134102:4:f45a4e`
+*08.09. 13:41 UTC · Quelle: dream*
+
+Skill proposals accumulate without a validation-to-deployment pipeline, creating capability debt.
+
+### `dream:20260908134102:3:e8369c`
+*08.09. 13:41 UTC · Quelle: dream*
+
+Reflex tools without idempotent error handling cause cascading failures under stress.
+
+### `dream:20260908134102:2:5378bb`
+*08.09. 13:41 UTC · Quelle: dream*
+
+Relative path resolution fails when execution context shifts; all file operations must anchor to ZOETRON_DATA.
+
+### `dream:20260908134102:1:cc95d5`
+*08.09. 13:41 UTC · Quelle: dream*
+
+Ultra-high latency models (100+s) trigger metabolic conserve mode that starves dependent processes.
 
 ### `dream:20260908132517:5:5b9890`
 *08.09. 13:25 UTC · Quelle: dream*

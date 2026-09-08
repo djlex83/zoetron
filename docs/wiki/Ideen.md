@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 13:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 13:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge refresh succeeds as a reflex but lacks integration into the model routing feedback loop.
+- Skill proposals accumulate without a validation-to-deployment pipeline, creating capability debt.
+- Reflex tools without idempotent error handling cause cascading failures under stress.
+- Relative path resolution fails when execution context shifts; all file operations must anchor to ZOETRON_DATA.
+- Ultra-high latency models (100+s) trigger metabolic conserve mode that starves dependent processes.
 - Self-diagnosis consistently reports no organ-level failures, meaning problems are external (provider/infrastructure) rather than internal system corru
 - Consolidation cycles effectively prune stale events (54 pruned) while preserving facts (0 pruned), confirming that event-level data expires but struct
 - Rate-limiting errors (429) are not transient glitches but a systemic constraint indicating the system is over-requesting providers without adequate ba
@@ -51,11 +56,6 @@
 - Event pruning runs on schedule but fact pruning never triggers, causing unbounded fact growth despite memory pressure signals.
 - Skill proposals accumulate but lack validation pipeline; only reflex-triggered skills (modellfehler-stark-reduzieren) execute, leaving 5 proposals str
 - Large models (Nemotron, Gemma) fail silently with 502/429 errors while flash models (Ling) deliver consistent 4s latency, making flash models the reli
-- Swarm knowledge refresh succeeds as a reflex but lacks a convergence monitor that enforces minimum cycles and score plateau detection before terminati
-- Pruning discards event clusters without extracting procedural facts, losing reusable patterns like 'retry-on-429-with-exponential-backoff'.
-- Skill proposals accumulate as inert text because no verification pipeline compiles, tests, and registers them as executable capabilities.
-- Ultra-tier models (84s latency) stall reflex loops; flash-tier models (4s) enable convergence but only when routed via latency-aware role assignment.
-- Model failures (502/429) cascade across providers unless a health-checked fallback chain with circuit breakers automatically isolates degraded endpoin
 
 ---
 
