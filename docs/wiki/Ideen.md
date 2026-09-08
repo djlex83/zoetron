@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 03:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 03:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 6 points (predicted 3 vs actual 9) indicates the predictor ignores model-reliability signals when estimating task difficulty.
+- Swarm convergence (score 9, 1 cycle) succeeded despite 6 model failures in the same window, showing planner/builder/critic roles tolerate partial mode
+- Nemotron-3-ultra latency varies 5x (22s–125s) for similar token counts, making it unreliable for time-bounded tasks.
+- inclusionai/ling-3.0-flash-fin:free is the only model with consistent sub-20s latency and zero observed failures across 3+ calls.
+- Free-tier models exhibit systematic failure modes: Nemotron returns 502 upstream errors under load, Gemma models hit 429 rate limits within minutes.
 - Model failure taxonomy matches proposed classifier: observed 502 (provider overload), 429 (rate limit), and timeout patterns align exactly with the 'm
 - Simulation-based revision loop works: 5 risks identified and 5 revisions applied for 'Träume in echte Fähigkeiten umsetzen', demonstrating viable vali
 - Metabolic conserve mode (stress 0.701, max_iterations=1) severely constrains skill-building capacity, causing premature termination of multi-step impl
@@ -51,11 +56,6 @@
 - Swarm convergence succeeds when triggered via reflex tools but lacks stability thresholds, risking premature acceptance of suboptimal scores.
 - High latency (26s+) on successful primary model calls indicates need for circuit breakers and latency-based failover thresholds.
 - Primary model providers (Nvidia, Google) frequently fail with 502/429 errors, requiring automatic fallback to reliable flash models like inclusionai.
-- Intermittent hand_action failures (exit 1/2) suggest missing idempotency or precondition checks.
-- Point-estimate calibration masks uncertainty; distributional predictions would prevent overconfident scoring.
-- Swarm convergence at 2 cycles with score 4/10 indicates premature termination criteria.
-- Schema mismatches in artifacts cause low scores but are detectable before evaluation via validation gates.
-- Model provider failures (502/429) cascade into pipeline failures without automated fallback routing.
 
 ---
 
