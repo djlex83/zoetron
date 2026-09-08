@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11909 Fakten** · Stand 2026-09-08 00:08 UTC · aktualisiert bei jedem Herzschlag
+**11910 Fakten** · Stand 2026-09-08 00:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7176
-- **swarm_artifact:** 2106
+- **dream:** 7181
+- **swarm_artifact:** 2102
 - **last_swarm_critique:** 828
 - **anti_pattern:** 563
 - **last_swarm_goal:** 560
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908001740:5:0f6978`
+*08.09. 00:17 UTC · Quelle: dream*
+
+Stress-driven planning caps are reactive only; no predictive budget estimation prevents overshoot before execution.
+
+### `dream:20260908001740:4:b9a491`
+*08.09. 00:17 UTC · Quelle: dream*
+
+Relative path failures recur across tools because path normalization is not enforced at the middleware layer.
+
+### `dream:20260908001740:3:12eb24`
+*08.09. 00:17 UTC · Quelle: dream*
+
+Swarm knowledge staleness persists despite reflex updates because synchronization lacks versioned conflict resolution.
+
+### `dream:20260908001740:2:735965`
+*08.09. 00:17 UTC · Quelle: dream*
+
+Model latency spikes (5s→32s) correlate with token volume surges, indicating missing backpressure on context size.
+
+### `dream:20260908001740:1:b5596a`
+*08.09. 00:17 UTC · Quelle: dream*
+
+Proposed skills accumulate unused because no automatic activation mechanism bridges proposal to execution.
 
 ### `dream:20260908000519:5:a5f613`
 *08.09. 00:05 UTC · Quelle: dream*
