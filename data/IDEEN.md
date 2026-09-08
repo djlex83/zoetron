@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 07:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 07:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
+- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 9×)*
 - Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 8×)*
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 8×)*
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
 - Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
@@ -26,21 +26,26 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fixed iteration budgets ignore risk context; a risk-aware allocator that scales max_iterations by (1 + risk_score) prevents premature conserve-state e
+- Swarm insights decay within 24 hours without automated critique re-evaluation and confidence-score updates.
+- Relative filesystem paths cause silent hand-action failures; all paths must be resolved to absolute using ZOETRON_DATA before any I/O operation.
+- Dream-generated skill proposals remain inert without a dedicated promotion daemon that validates, tests, and deploys exactly one proposal per sleep cy
+- Model provider failures (502/429) cascade into system unreliability unless a health-aware router with circuit breakers and sub-100ms failover to flash
 - Evolutionary variant scoring (7.7-8.7) significantly outperforms the base attempt (5/10), proving that iterative refinement is the primary driver of i
 - The swarm never converges (score stuck at 5/10 across 2 cycles), suggesting that unstable model availability prevents the planner-builder-critic loop 
 - Critic output is repeatedly unparseable, causing downstream evolution and scoring logic to fail or degrade silently.
@@ -51,11 +56,6 @@
 - Reflex tools (traum-ideen-zu-fähigkeiten-machen.py) can return ok:false without error details, making silent failures invisible to the orchestration l
 - Hand actions fail when using relative paths instead of the canonical ZOETRON_DATA environment variable, causing 'nothing read' errors that succeed onl
 - Model reliability varies wildly by provider: nemotron-3-ultra succeeds after retries but suffers 502/504 errors, while gemma-4 models hit 429 rate lim
-- Schema mismatches between artifacts and scoring logic waste computational cycles that could be eliminated entirely by enforcing validation gates befor
-- Null error returns from tool calls create invisible failure modes that prevent the system from learning from mistakes, since no actionable context is 
-- Swarm knowledge decays silently over time without scheduled renewal, causing coordination quality to degrade invisibly until convergence failures reve
-- Rate-limit errors (429) and upstream errors (502) share a root cause: insufficient request throttling and the absence of health-aware routing that det
-- Heavy LLM endpoints fail under load predictably; system reliability depends on always having lightweight fallback models ready to absorb traffic when 
 
 ---
 

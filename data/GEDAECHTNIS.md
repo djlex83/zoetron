@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11989 Fakten** · Stand 2026-09-08 07:48 UTC · aktualisiert bei jedem Herzschlag
+**11989 Fakten** · Stand 2026-09-08 08:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7261
-- **swarm_artifact:** 2100
+- **dream:** 7266
+- **swarm_artifact:** 2098
 - **last_swarm_critique:** 835
 - **last_swarm_goal:** 567
-- **anti_pattern:** 551
-- **strategy:** 277
+- **anti_pattern:** 549
+- **strategy:** 276
 - **tool:** 184
 - **hand_result:** 139
 - **aktuell_organfehler:** 46
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908075813:5:168a86`
+*08.09. 07:58 UTC · Quelle: dream*
+
+Fixed iteration budgets ignore risk context; a risk-aware allocator that scales max_iterations by (1 + risk_score) prevents premature conserve-state entry.
+
+### `dream:20260908075813:4:12f219`
+*08.09. 07:58 UTC · Quelle: dream*
+
+Swarm insights decay within 24 hours without automated critique re-evaluation and confidence-score updates.
+
+### `dream:20260908075813:3:76f05d`
+*08.09. 07:58 UTC · Quelle: dream*
+
+Relative filesystem paths cause silent hand-action failures; all paths must be resolved to absolute using ZOETRON_DATA before any I/O operation.
+
+### `dream:20260908075813:2:aebd2f`
+*08.09. 07:58 UTC · Quelle: dream*
+
+Dream-generated skill proposals remain inert without a dedicated promotion daemon that validates, tests, and deploys exactly one proposal per sleep cycle.
+
+### `dream:20260908075813:1:099d81`
+*08.09. 07:58 UTC · Quelle: dream*
+
+Model provider failures (502/429) cascade into system unreliability unless a health-aware router with circuit breakers and sub-100ms failover to flash models is enforced.
 
 ### `dream:20260908074531:5:a3f4c6`
 *08.09. 07:45 UTC · Quelle: dream*
@@ -45986,16 +46011,6 @@ The swarm's first attempt on the LoRA goal scored 3/10 but evolution over 3 vari
 *25.08. 12:21 UTC · Quelle: dream*
 
 429 rate-limit failures on openrouter.ai occur in a fixed pattern (stealth/ox-alpha then z-ai/glm-5.2:free) and are always recoverable by falling back to nvidia/nemotron-3-ultra-550b-a55b:free, so the fallback chain should be encoded as the default retry polic
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Lebender Steckbrief: die:2`
-*25.08. 07:50 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Test-anchored construction: invert the process — first write an executable verif - Create `verify_leben.py` with three assertions: (a) `docs/leben.html` exists, contains `<html`, a title, and at least N event entries; (b) `.g
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Lebender Steckbrief: die:0`
-*25.08. 07:50 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Static-first completeness: build the entire deliverable as a single self-contain - Write one file `build_leben.py` containing: (1) `load_heartbeats()` that reads heartbeat JSON/CSV files and returns a list of dicts, wrapped i
 
 ### `last_swarm_critique`
 *25.08. 07:49 UTC · Quelle: critic*
