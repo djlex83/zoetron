@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12077 Fakten** · Stand 2026-09-08 17:00 UTC · aktualisiert bei jedem Herzschlag
+**12085 Fakten** · Stand 2026-09-08 17:32 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7381
-- **swarm_artifact:** 2094
-- **last_swarm_critique:** 837
-- **last_swarm_goal:** 569
+- **swarm_artifact:** 2100
+- **last_swarm_critique:** 838
+- **last_swarm_goal:** 570
 - **anti_pattern:** 537
 - **strategy:** 270
 - **tool:** 186
@@ -15,6 +15,41 @@
 - **creator_teaching:** 1
 
 ---
+
+### `last_swarm_critique`
+*08.09. 17:29 UTC · Quelle: critic*
+
+score=9; issues=Dashboard-Formatter greift auf nicht existierenden Key 'success_events' zu (sollte 'total_requests' oder berechneter Wert sein), aber Sandbox meldet LAEUFT - vermutlich im vollen Code korrigiert; Truncation verhindert vollstaendige Pruefung all
+
+### `last_swarm_goal`
+*08.09. 17:12 UTC · Quelle: system*
+
+Fehlerfesten Router weiterentwickeln
+
+### `dream:20260908171049:5:d80bdd`
+*08.09. 17:10 UTC · Quelle: dream*
+
+Reflex cycles that learn from errors and test proposed skills both converged successfully, confirming that structured error-driven learning is the most reliable path to improvement.
+
+### `dream:20260908171049:4:450dab`
+*08.09. 17:10 UTC · Quelle: dream*
+
+Aggressive pruning (11 facts and 42 events in one cycle) shows the knowledge base is actively degrading stale data, but stale swarm data still degrades decision quality.
+
+### `dream:20260908171049:3:5ee087`
+*08.09. 17:10 UTC · Quelle: dream*
+
+The system generates high-quality skill proposals but lacks a validated deployment pipeline, causing a gap between proposed abilities and reliable execution.
+
+### `dream:20260908171049:2:8615e9`
+*08.09. 17:10 UTC · Quelle: dream*
+
+Dream and drive both timed out at 180 seconds, indicating that blocking operations without timeout guardrails stall the entire consolidation cycle.
+
+### `dream:20260908171049:1:713121`
+*08.09. 17:10 UTC · Quelle: dream*
+
+Nvidia and Google providers repeatedly fail with 502/429 errors, while the inclusionai flash model succeeds with 3.6s latency, proving that heavy models without circuit breakers create single points of failure.
 
 ### `dream:20260908165634:5:35a551`
 *08.09. 16:56 UTC · Quelle: dream*
@@ -46401,31 +46436,6 @@ score=3; issues=No evaluation against the 50.2% baseline; code generates probabi
 *25.08. 17:03 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825170256:5:dc7df0`
-*25.08. 17:02 UTC · Quelle: dream*
-
-Memory pruning removed nothing (0 facts, 0 events) while the same failing goal was retried unchanged, showing the loop lacks a mechanism to detect 'no new information' and force strategy change.
-
-### `dream:20260825170256:4:fc4ce2`
-*25.08. 17:02 UTC · Quelle: dream*
-
-Simulation verdicts ('revise', 4 risks) were generated and applied, but the swarm still did not converge, indicating simulation output is not being translated into concrete plan changes.
-
-### `dream:20260825170256:3:5548c8`
-*25.08. 17:02 UTC · Quelle: dream*
-
-Free-tier OpenRouter models are unreliable capacity-wise but viable as fallbacks (glm-5.2 succeeded on retry), so the failure rate is a routing/retry problem, not a capability problem.
-
-### `dream:20260825170256:2:d2d9b3`
-*25.08. 17:02 UTC · Quelle: dream*
-
-Rate-limit failures (429) on stealth/ox-alpha and z-ai/glm-5.2:free cluster under high load (latency 229s, stress 0.79), meaning model reliability degrades exactly when metabolism is in conserve mode and budget is tightest.
-
-### `dream:20260825170256:1:ecbca0`
-*25.08. 17:02 UTC · Quelle: dream*
-
-The football goal failed twice at score 3/10 because the swarm produced prose without an executable prediction artifact, so the unarguable critic (actual match outcome vs. 50.2% baseline) was never actually engaged.
 
 ### `last_swarm_critique`
 *25.08. 16:43 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 16:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 17:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,6 +10,7 @@
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
 - Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
+- Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 5×)*
 - Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours. *(hatte die Idee 4×)*
 - Enforce absolute_path_guard middleware on all file tools with canonical ZOETRON_DATA rewriting. *(hatte die Idee 4×)*
 - Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with backof *(hatte die Idee 4×)*
@@ -19,28 +20,32 @@
 - Replace point-estimate calibration with distributional predictions and confidence intervals to prevent overcon *(hatte die Idee 4×)*
 - Enforce schema validation gates before artifact scoring to catch mismatches early and avoid wasted evaluation  *(hatte die Idee 4×)*
 - Add rate-limit-aware exponential backoff with jitter and concurrent request throttling to prevent 429 errors f *(hatte die Idee 4×)*
-- Wrap hand_action calls with structured error capture (stderr, exit codes, context) that returns actionable err *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex cycles that learn from errors and test proposed skills both converged successfully, confirming that structured error-driven learning is the mos
+- Aggressive pruning (11 facts and 42 events in one cycle) shows the knowledge base is actively degrading stale data, but stale swarm data still degrade
+- The system generates high-quality skill proposals but lacks a validated deployment pipeline, causing a gap between proposed abilities and reliable exe
+- Dream and drive both timed out at 180 seconds, indicating that blocking operations without timeout guardrails stall the entire consolidation cycle.
+- Nvidia and Google providers repeatedly fail with 502/429 errors, while the inclusionai flash model succeeds with 3.6s latency, proving that heavy mode
 - Upstream service errors (502 from Nvidia, 429 from Google) are not transient noise but a pattern requiring architectural mitigation rather than retry 
 - Aggressive event pruning (up to 54 events per cycle) risks discarding cross-references needed for insight formation, suggesting pruning thresholds nee
 - Reflex-based recovery procedures (error reduction, dream linking, systematic learning) consistently converge, proving that structured fallback actions
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (5+ this cycle) but lack a mandatory sandbox validation gate, so most never reach production capability registry.
 - Fallback to inclusionai/ling-3.0-flash-fin succeeds but only reactively after user-facing failures, wasting latency and tokens on doomed requests.
 - Recurring 502/429 errors from primary providers (Nvidia, Google) indicate brittle single-provider dependence without proactive health-aware routing.
-- Pruning removed 45 events but kept 5 facts; fact distillation must cluster by error signature (502/429/timeout) to extract reusable retry/fallback pro
-- Swarm converged but score unknown; convergence monitor must require critic confidence >0.8 and score plateau detection before termination.
-- Multiple independent skill proposals converge on identical infrastructure: circuit breakers, fallback chains, health tracking, sandbox gates — these a
-- Provider failures (502, 429) cascade because no automatic fallback exists; circuit-breaker with health scores must reroute before user-facing errors.
-- Ultra models (127s latency, 502 errors) are unreliable for production; flash models (5s latency) should be default for all roles except verified heavy
 
 ---
 
