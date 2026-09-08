@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 02:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 02:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions failed 3 times with exit code 2 and null error messages, exposing a systemic gap in error reporting and retry logic for the action execut
+- The swarm did not converge after only 2 cycles with a final score of 2/10, indicating premature termination and insufficient evolutionary exploration 
+- Calibration predicted 5 but actual score was 2 (abs_error 3), revealing systematic overconfidence in performance estimation that must be corrected wit
+- The inclusionai/ling-3.0-flash-fin model delivered reliable results with 5.5-8.5s latency while the 550B-parameter nemotron model suffered 132-177s la
+- Nvidia endpoint 502 errors and Google 429 rate limits occurred repeatedly, proving that single-provider dependency is a critical failure mode requirin
 - Reflex mode converges reliably when self-diagnosis reports clean organs, indicating that structural health checks are a prerequisite for trustworthy a
 - Increasing prune counts (0→10 facts, 23→65 events) demonstrate that memory consolidation is accelerating but remains reactive rather than predictive.
 - Stale swarm knowledge recurs as a chronic condition, proving that one-off refresh cycles are insufficient and scheduled, trigger-based maintenance is 
@@ -51,11 +56,6 @@
 - 75+ skill proposals accumulate without validation pipeline, causing registry bloat and unused capabilities.
 - Swarm knowledge staleness triggers reflex-driven refreshes but lacks automated scheduling and temporal-conceptual memory linking.
 - Model latency of 50-94s for nemotron-3-ultra violates interactive budgets and demands tiered routing with flash-model fallbacks.
-- Planning lacks stress-awareness: under high load the system still spawns unbounded tasks/iterations, amplifying latency cascades.
-- Relative path assumptions in tool invocations cause silent failures when working directory shifts, needing a normalization guard.
-- Skill proposals accumulate (75+) without validation, creating a promotion gap where useful capabilities never reach production.
-- Swarm critique data becomes stale after ~24 hours, causing drive signals to degrade and necessitating automated refresh schedulers.
-- Free-tier model providers frequently hit 429 rate limits and exhibit tail latencies >60s, requiring circuit-breaker failover to flash models.
 
 ---
 

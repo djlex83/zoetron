@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11932 Fakten** · Stand 2026-09-08 02:09 UTC · aktualisiert bei jedem Herzschlag
+**11932 Fakten** · Stand 2026-09-08 02:20 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7201
 - **swarm_artifact:** 2102
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908021729:5:47c6bc`
+*08.09. 02:17 UTC · Quelle: dream*
+
+Hand actions failed 3 times with exit code 2 and null error messages, exposing a systemic gap in error reporting and retry logic for the action execution layer.
+
+### `dream:20260908021729:4:ced6c5`
+*08.09. 02:17 UTC · Quelle: dream*
+
+The swarm did not converge after only 2 cycles with a final score of 2/10, indicating premature termination and insufficient evolutionary exploration before declaring failure.
+
+### `dream:20260908021729:3:a3ffb2`
+*08.09. 02:17 UTC · Quelle: dream*
+
+Calibration predicted 5 but actual score was 2 (abs_error 3), revealing systematic overconfidence in performance estimation that must be corrected with conservative uncertainty quantification.
+
+### `dream:20260908021729:2:ec9205`
+*08.09. 02:17 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model delivered reliable results with 5.5-8.5s latency while the 550B-parameter nemotron model suffered 132-177s latency and frequent outages, showing smaller specialized models outperform larger ones in reliability-critical 
+
+### `dream:20260908021729:1:fc858c`
+*08.09. 02:17 UTC · Quelle: dream*
+
+Nvidia endpoint 502 errors and Google 429 rate limits occurred repeatedly, proving that single-provider dependency is a critical failure mode requiring automatic multi-provider fallback chains.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erfahrungen in Fäh:2`
 *08.09. 02:05 UTC · Quelle: evolution*
@@ -45771,31 +45796,6 @@ Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.00
 *25.08. 02:15 UTC · Quelle: system*
 
 Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
-
-### `dream:20260825021442:5:67f416`
-*25.08. 02:14 UTC · Quelle: dream*
-
-Simulation flagged 'revise' with 5 risks but only 3 revisions were applied, showing the revision loop silently drops identified risks instead of either fixing all or explicitly deferring them.
-
-### `dream:20260825021442:4:a2c3fe`
-*25.08. 02:14 UTC · Quelle: dream*
-
-The swarm failed to converge after 2 cycles and still shipped a 3/10 result, indicating convergence checks are not gating output quality — low scores pass through to act_done without escalation.
-
-### `dream:20260825021442:3:843af7`
-*25.08. 02:14 UTC · Quelle: dream*
-
-A hard crash in hands-execute (MemoryStore.add_fact AttributeError) reveals that hand-execution code paths are not covered by any integration test before deployment.
-
-### `dream:20260825021442:2:2bbf9f`
-*25.08. 02:14 UTC · Quelle: dream*
-
-Repeated 429 rate-limit failures on openrouter.ai across multiple models (stealth/ox-alpha, z-ai/glm-5.2:free) show free-tier routing has no backoff or failover, causing pipeline stalls at unpredictable points.
-
-### `dream:20260825021442:1:e5816c`
-*25.08. 02:14 UTC · Quelle: dream*
-
-The football predictor (zoetron_4cd6909a57) scored 49.79% against a 50.18% baseline with worse log-loss (1.0133 vs 1.0073), meaning added model complexity is actively hurting — the no-odds baseline remains unbeaten.
 
 ### `last_swarm_critique`
 *25.08. 01:40 UTC · Quelle: critic*
