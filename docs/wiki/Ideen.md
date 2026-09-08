@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 20:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 20:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- AST-level tool registration guards are absent, allowing no-op functions (pass/TODO/raise) to register and later produce exit-0 null results.
+- Circuit-breaker state evaporates across sleep/wake cycles, so degradation history never accumulates enough to trigger protective throttling.
+- Swarm-goal staleness persists because freshness scans are proposed but not scheduled; outdated memories repeatedly seed the same faulty plans.
+- Model endpoint instability (502/429) correlates with high metabolic stress, causing cascading reflex failures when fallbacks also saturate.
+- Silent I/O failures (exit 0 but zero bytes read/written) stem from unresolved relative paths despite ZOETRON_DATA and argv[1] being available.
 - Skill proposals accumulate without validation against replayed failures, risking regression deployment without automated rollback.
 - Optimization loops stall without convergence detection, wasting cycles on plateaued scores instead of triggering evolution restarts.
 - Relative path resolution in hand_actions causes non-deterministic failures that absolute path anchoring (ZOETRON_DATA) would eliminate.
@@ -51,11 +56,6 @@
 - Calibration consistently overestimates success by ~3 points (predicted 7 vs actual 4), indicating systematic difficulty underestimation.
 - Rate-limited providers (Google Gemma 429) fail predictably under concurrent load, requiring request spacing or fallback pools.
 - High-latency models (Nemotron >55s p95) frequently return 502 upstream overload errors, making them unreliable for time-critical loops.
-- Relative paths and environment-variable-dependent paths caused silent failures — always resolve to absolute paths and validate existence before script
-- Calibration predictions diverged significantly from actuals (predicted 7, actual 4) under maximum stress, meaning self-assessed confidence must be dis
-- Repeated 502 and 429 errors from primary and secondary API providers indicate that a circuit-breaker pattern with immediate fallback is essential to p
-- Under high service load, smaller flash-tier models (e.g., inclusionai/ling-3.0-flash-fin) consistently outperform large models in both reliability and
-- Exit code 0 does not guarantee meaningful work was done — always verify that files or artifacts actually exist and contain data, not just that a proce
 
 ---
 

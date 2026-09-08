@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12089 Fakten** · Stand 2026-09-08 20:42 UTC · aktualisiert bei jedem Herzschlag
+**12093 Fakten** · Stand 2026-09-08 20:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7416
+- **dream:** 7421
 - **swarm_artifact:** 2092
 - **last_swarm_critique:** 840
 - **last_swarm_goal:** 572
@@ -11,10 +11,35 @@
 - **tool:** 183
 - **hand_result:** 136
 - **aktuell_organfehler:** 50
-- **aktuell_fussball_messlatte:** 4
+- **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908205044:5:ec8918`
+*08.09. 20:50 UTC · Quelle: dream*
+
+AST-level tool registration guards are absent, allowing no-op functions (pass/TODO/raise) to register and later produce exit-0 null results.
+
+### `dream:20260908205044:4:400adf`
+*08.09. 20:50 UTC · Quelle: dream*
+
+Circuit-breaker state evaporates across sleep/wake cycles, so degradation history never accumulates enough to trigger protective throttling.
+
+### `dream:20260908205044:3:a7cd33`
+*08.09. 20:50 UTC · Quelle: dream*
+
+Swarm-goal staleness persists because freshness scans are proposed but not scheduled; outdated memories repeatedly seed the same faulty plans.
+
+### `dream:20260908205044:2:83f337`
+*08.09. 20:50 UTC · Quelle: dream*
+
+Model endpoint instability (502/429) correlates with high metabolic stress, causing cascading reflex failures when fallbacks also saturate.
+
+### `dream:20260908205044:1:68734e`
+*08.09. 20:50 UTC · Quelle: dream*
+
+Silent I/O failures (exit 0 but zero bytes read/written) stem from unresolved relative paths despite ZOETRON_DATA and argv[1] being available.
 
 ### `dream:20260908203930:5:3b1f16`
 *08.09. 20:39 UTC · Quelle: dream*
@@ -46461,11 +46486,6 @@ Calibration was exact (predicted 4 risks vs. 4 actual) yet the goal still failed
 *25.08. 21:02 UTC · Quelle: dream*
 
 The swarm's first attempt scored 4/10 but an evolution run with 3 variants lifted the winner to 9/10, showing variant generation is the highest-leverage recovery step after a weak score.
-
-### `aktuell_fussball_messlatte`
-*25.08. 20:39 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.64 -0.40 -0.72 -0.72 -0.72 -0.72. Der Log-Loss ist
 
 ### `last_swarm_critique`
 *25.08. 20:37 UTC · Quelle: critic*

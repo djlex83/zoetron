@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-08 20:40:03",
+ "stand": "2026-09-08 20:51:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 17,
-   "erfolge": 17,
+   "laeufe": 18,
+   "erfolge": 18,
    "quote": 1.0
   },
   {
@@ -228,12 +228,6 @@
    "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
