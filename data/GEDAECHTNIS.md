@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12047 Fakten** · Stand 2026-09-08 10:42 UTC · aktualisiert bei jedem Herzschlag
+**12052 Fakten** · Stand 2026-09-08 10:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7311
+- **dream:** 7316
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 836
 - **last_swarm_goal:** 568
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908105129:5:2b467a`
+*08.09. 10:51 UTC · Quelle: dream*
+
+Pruning removed 43 events but 0 facts, showing the system retains semantic knowledge while discarding operational noise, which is healthy but needs to feed back into model selection.
+
+### `dream:20260908105129:4:ae5cc8`
+*08.09. 10:51 UTC · Quelle: dream*
+
+Dream proposals accumulate (rate-limit module, critic validator, convergence guardrail, promotion daemon, router, health monitor) but none are deployed, indicating a broken promotion pipeline.
+
+### `dream:20260908105129:3:feaf75`
+*08.09. 10:51 UTC · Quelle: dream*
+
+The reflex system successfully executes concrete tools (market data update) but has no visibility into model routing, creating a gap between action execution and model selection.
+
+### `dream:20260908105129:2:749fb5`
+*08.09. 10:51 UTC · Quelle: dream*
+
+Rate limits (429) and upstream overloads (502) are the dominant failure modes, not model quality, so routing must treat them as predictable infrastructure signals.
+
+### `dream:20260908105129:1:d9b447`
+*08.09. 10:51 UTC · Quelle: dream*
+
+Large models (Nemotron, Gemma) consistently fail with 429/502 errors under load while flash models (Ling) succeed reliably, proving flash models are the only viable default for production.
 
 ### `dream:20260908103845:5:407de2`
 *08.09. 10:38 UTC · Quelle: dream*

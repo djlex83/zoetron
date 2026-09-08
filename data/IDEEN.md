@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 10:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 10:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 43 events but 0 facts, showing the system retains semantic knowledge while discarding operational noise, which is healthy but needs to
+- Dream proposals accumulate (rate-limit module, critic validator, convergence guardrail, promotion daemon, router, health monitor) but none are deploye
+- The reflex system successfully executes concrete tools (market data update) but has no visibility into model routing, creating a gap between action ex
+- Rate limits (429) and upstream overloads (502) are the dominant failure modes, not model quality, so routing must treat them as predictable infrastruc
+- Large models (Nemotron, Gemma) consistently fail with 429/502 errors under load while flash models (Ling) succeed reliably, proving flash models are t
 - Swarm skill validation is inactive despite high proposal volume, creating a deployment gap.
 - State pruning removes events but not stale facts, allowing semantic memory bloat from failed retries.
 - Convergence stalls go undetected without explicit guardrails tracking score plateaus across cycles.
@@ -51,11 +56,6 @@
 - Memory bloat correlates directly with failed model retries and redundant simulations, making post-cycle pruning a necessary but insufficient reactive 
 - Skill proposals accumulate faster than validation capacity, creating a backlog of untested capabilities that inflates memory without improving compete
 - Model reliability follows a predictable failure pattern: primary models fail with 502/504 errors while rate-limited models return 429, requiring autom
-- Pruning removes 47 then 26 events per cycle but zero facts, implying the fact store is stable while event noise dominates memory pressure.
-- Reflex tools achieve convergence (swarm score 8+, error reduction) where open-ended planning stalls, suggesting hard-coded procedures outperform LLM i
-- The dream module itself times out at 180s, indicating consolidation logic exceeds its budget and needs streaming or incremental processing.
-- Flash models (ling-3.0-flash-fin) deliver 10x lower latency (3.5s vs 56-67s) with zero observed failures in this window.
-- Free-tier large models (Nemotron, Gemma) fail frequently with 502 overloads and 429 rate limits, making them unreliable for primary routing.
 
 ---
 
