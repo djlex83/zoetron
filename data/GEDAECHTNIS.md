@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12081 Fakten** · Stand 2026-09-08 19:44 UTC · aktualisiert bei jedem Herzschlag
+**12097 Fakten** · Stand 2026-09-08 19:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7406
-- **swarm_artifact:** 2090
-- **last_swarm_critique:** 839
-- **last_swarm_goal:** 571
-- **anti_pattern:** 531
-- **strategy:** 267
+- **dream:** 7411
+- **swarm_artifact:** 2096
+- **last_swarm_critique:** 840
+- **last_swarm_goal:** 572
+- **anti_pattern:** 533
+- **strategy:** 268
 - **tool:** 183
 - **hand_result:** 138
 - **aktuell_organfehler:** 50
@@ -15,6 +15,51 @@
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Interne Modelle zuverläs:2`
+*08.09. 19:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 5, 8]): Diverse Ensemble Consensus with Disagreement Arbitration - Deploy N heterogeneous model variants (different architectures, seeds, training subsets) behind a ConsensusArbiter: (1) All variants infer in parallel (thread
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Interne Modelle zuverläs:1`
+*08.09. 19:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 6, 9]): Formal Contract Verification & Property-Based Testing - Adopt design-by-contract for models: (1) Define pre/post-conditions as executable contracts (input ranges, output bounds, monotonicity, invariants) using icontra
+
+### `last_swarm_critique`
+*08.09. 19:55 UTC · Quelle: critic*
+
+score=2; issues=Sandbox-Urteil lautet LAEUFT NICHT - kein lauffaehiger Python-Block, der das Ziel 'Interne Modelle zuverlässiger machen' erfüllt; Alle drei <invoke>-Blöcke enthalten identischen Code, der lediglich das Verzeichnis ZOETRON_DATA auflistet - keine
+
+### `last_swarm_goal`
+*08.09. 19:53 UTC · Quelle: system*
+
+Interne Modelle zuverlässiger machen
+
+### `dream:20260908195252:5:a49403`
+*08.09. 19:52 UTC · Quelle: dream*
+
+Circuit-breaker state is not persisted across sleep cycles, causing repeated hammering of known-degraded providers on wake.
+
+### `dream:20260908195252:4:a34351`
+*08.09. 19:52 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; stale goals persist for weeks without automatic freshness checks or forced regeneration triggers.
+
+### `dream:20260908195252:3:dbc648`
+*08.09. 19:52 UTC · Quelle: dream*
+
+Placeholder functions (pass/TODO/NotImplemented) reach production registry because no gate validates implementation completeness at registration time.
+
+### `dream:20260908195252:2:6f3635`
+*08.09. 19:52 UTC · Quelle: dream*
+
+Silent failures dominate: scripts exit 0 but touch zero target files because relative paths resolve against wrong working directory.
+
+### `dream:20260908195252:1:d68ab3`
+*08.09. 19:52 UTC · Quelle: dream*
+
+Free-tier flagship models (Nemotron, Gemma) consistently fail under load with 502/429 errors while flash-tier models (Ling-3.0-flash) maintain sub-5s latency and 100% success.
 
 ### `dream:20260908194138:5:5e7ea3`
 *08.09. 19:41 UTC · Quelle: dream*

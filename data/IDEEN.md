@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 19:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 19:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit-breaker state is not persisted across sleep cycles, causing repeated hammering of known-degraded providers on wake.
+- Swarm knowledge decays silently; stale goals persist for weeks without automatic freshness checks or forced regeneration triggers.
+- Placeholder functions (pass/TODO/NotImplemented) reach production registry because no gate validates implementation completeness at registration time.
+- Silent failures dominate: scripts exit 0 but touch zero target files because relative paths resolve against wrong working directory.
+- Free-tier flagship models (Nemotron, Gemma) consistently fail under load with 502/429 errors while flash-tier models (Ling-3.0-flash) maintain sub-5s 
 - Swarm knowledge decays within hours; periodic market-data refresh must be embedded in the reflex cycle to maintain routing accuracy.
 - Optimization loops stall indefinitely without convergence detection; automatic restart or model switch after 3+ flat cycles preserves progress.
 - Exit codes are unreliable success indicators; post-execution verification of actual file system touches prevents undetected data corruption.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays over time; stale artifacts propagate incorrect assumptions and must be actively refreshed with TTL-based validation.
 - Without circuit breakers and pre-warmed fallback pools, consecutive provider failures cascade into system-wide outages with no automatic recovery path
 - Provider failures manifest at both HTTP level (429 rate limits) and application level (502 with 'Upstream error' in payload), so status-code-only moni
-- Reflex-driven swarm knowledge updates succeed but lack post-update validation, risking silent corruption of shared context.
-- Pruning removes events but retains stale facts (0 facts pruned on second run), leaving outdated procedural knowledge in the registry.
-- Skill proposals repeatedly converge on four themes: provider circuit breakers, health-based routing, sandboxed deployment pipelines, and convergence d
-- Placeholder implementations (e.g., `record_success()` containing only `pass`) cause immediate tool rejection and block skill deployment.
-- Model latency exceeding 80 seconds per call creates cascading timeouts and makes synchronous orchestration unreliable.
 
 ---
 
