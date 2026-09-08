@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 12:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 12:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
-- Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge refresh succeeds as a reflex but lacks a convergence monitor that enforces minimum cycles and score plateau detection before terminati
+- Pruning discards event clusters without extracting procedural facts, losing reusable patterns like 'retry-on-429-with-exponential-backoff'.
+- Skill proposals accumulate as inert text because no verification pipeline compiles, tests, and registers them as executable capabilities.
+- Ultra-tier models (84s latency) stall reflex loops; flash-tier models (4s) enable convergence but only when routed via latency-aware role assignment.
+- Model failures (502/429) cascade across providers unless a health-checked fallback chain with circuit breakers automatically isolates degraded endpoin
 - Dream consolidation itself risks timeout (180 s limit) without incremental checkpointing, threatening the continuity of memory consolidation across sl
 - Accumulated skill proposals remain unimplemented due to the absence of a skill-learning mechanism, creating a persistent capability gap despite repeat
 - Reflex-mode goals (swarm knowledge refresh) converge reliably without any model calls, proving that codifying common patterns into deterministic scrip
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors despite repeated model failures, showing health checks do not cover inference reliability.
 - Identical skill proposals (model_router, provider_health_monitor, dream_promotion_daemon, convergence_guardrail, swarm_knowledge_refresh) recur across
 - Primary models (Nemotron, Gemma) suffer frequent 502/429 errors and >60s latency while flash models (Ling) succeed in ~3s, proving the system lacks au
-- Self-diagnosis reports zero organ errors despite clear systemic degradation (latency, stale skills, unpromoted proposals), revealing blind spots in he
-- Pruning removes events but never facts, suggesting fact-store bloat risk and missing semantic deduplication.
-- Swarm knowledge decays silently; only explicit reflex triggers refresh, causing stale-data-driven decisions between cycles.
-- Skill proposals repeat across sleep cycles (model_router, convergence_guardrail, dream_promotion_daemon) but none are deployed, indicating a broken pr
-- Model latency consistently exceeds 70s for nemotron-3-ultra, making it unsuitable for interactive loops without async handling or flash-model failover
 
 ---
 

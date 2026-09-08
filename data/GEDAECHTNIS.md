@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12086 Fakten** · Stand 2026-09-08 12:46 UTC · aktualisiert bei jedem Herzschlag
+**12091 Fakten** · Stand 2026-09-08 13:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7341
+- **dream:** 7346
 - **swarm_artifact:** 2110
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908125705:5:2c83ed`
+*08.09. 12:57 UTC · Quelle: dream*
+
+Swarm knowledge refresh succeeds as a reflex but lacks a convergence monitor that enforces minimum cycles and score plateau detection before terminating.
+
+### `dream:20260908125705:4:9ac145`
+*08.09. 12:57 UTC · Quelle: dream*
+
+Pruning discards event clusters without extracting procedural facts, losing reusable patterns like 'retry-on-429-with-exponential-backoff'.
+
+### `dream:20260908125705:3:851548`
+*08.09. 12:57 UTC · Quelle: dream*
+
+Skill proposals accumulate as inert text because no verification pipeline compiles, tests, and registers them as executable capabilities.
+
+### `dream:20260908125705:2:c3937b`
+*08.09. 12:57 UTC · Quelle: dream*
+
+Ultra-tier models (84s latency) stall reflex loops; flash-tier models (4s) enable convergence but only when routed via latency-aware role assignment.
+
+### `dream:20260908125705:1:e81fe5`
+*08.09. 12:57 UTC · Quelle: dream*
+
+Model failures (502/429) cascade across providers unless a health-checked fallback chain with circuit breakers automatically isolates degraded endpoints.
 
 ### `dream:20260908124232:5:771558`
 *08.09. 12:42 UTC · Quelle: dream*
