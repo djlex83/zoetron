@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12092 Fakten** · Stand 2026-09-08 13:15 UTC · aktualisiert bei jedem Herzschlag
+**12084 Fakten** · Stand 2026-09-08 13:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7347
-- **swarm_artifact:** 2110
+- **dream:** 7352
+- **swarm_artifact:** 2104
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
-- **anti_pattern:** 551
-- **strategy:** 277
+- **anti_pattern:** 549
+- **strategy:** 276
 - **tool:** 186
 - **hand_result:** 139
 - **aktuell_organfehler:** 47
-- **aktuell_fussball_messlatte:** 28
+- **aktuell_fussball_messlatte:** 24
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908132517:5:5b9890`
+*08.09. 13:25 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports no organ-level failures, meaning problems are external (provider/infrastructure) rather than internal system corruption.
+
+### `dream:20260908132517:4:bbbbc0`
+*08.09. 13:25 UTC · Quelle: dream*
+
+Consolidation cycles effectively prune stale events (54 pruned) while preserving facts (0 pruned), confirming that event-level data expires but structural knowledge endures.
+
+### `dream:20260908132517:3:91f310`
+*08.09. 13:25 UTC · Quelle: dream*
+
+Rate-limiting errors (429) are not transient glitches but a systemic constraint indicating the system is over-requesting providers without adequate backoff or caching.
+
+### `dream:20260908132517:2:033d45`
+*08.09. 13:25 UTC · Quelle: dream*
+
+Stale swarm knowledge actively degrades system decision quality and must be refreshed on a scheduled cycle rather than left to accumulate.
+
+### `dream:20260908132517:1:5fff67`
+*08.09. 13:25 UTC · Quelle: dream*
+
+Large-model providers (Nvidia, Google) are the primary failure source: 502 upstream overloads and 429 rate limits recur, while the small flash model succeeds consistently under 4 seconds.
 
 ### `dream:20260908131121:5:17e853`
 *08.09. 13:11 UTC · Quelle: dream*
@@ -46416,36 +46441,6 @@ Failed tasks cluster around missing context, not wrong logic.
 *25.08. 14:05 UTC · Quelle: dream*
 
 Recurring theme across events: planning quality dominates outcomes.
-
-### `aktuell_fussball_messlatte`
-*25.08. 13:21 UTC · Quelle: vorpruefung.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. ACHTUNG, zuletzt abgelehnt (zoetron_a0d6dc018c.py): VERTRAG VERLETZT: ACHSEN VERTAUSCHT: Im Mittel sagst du P
-
-### `aktuell_fussball_messlatte`
-*25.08. 13:20 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -25.95 -0.19 -0.41 -1.51 -0.69 -0.78. Der Log-Loss is
-
-### `aktuell_fussball_messlatte`
-*25.08. 13:20 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.12 -25.95 -0.19 -0.41 -1.51 -0.69. Der Log-Loss is
-
-### `aktuell_fussball_messlatte`
-*25.08. 13:19 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.31 -0.12 -25.95 -0.19 -0.41 -1.51. Der Log-Loss is
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
-*25.08. 13:18 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Decision Tree Ensemble with Feature Engineering from Raw Text Data - Build an ensemble of decision trees (e.g. Random Forest or Gradient Boosted Trees) trained on engineered features derived from pre-match news articles, team
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :0`
-*25.08. 13:18 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): Monte Carlo Simulation with Neural Network Calibration - Instead of relying on statistical distributions like Poisson, use a neural network to learn the probability distribution of goals directly from historical match data. T
 
 ### `last_swarm_critique`
 *25.08. 13:17 UTC · Quelle: critic*
