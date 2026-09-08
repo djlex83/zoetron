@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 03:58:25",
+ "stand": "2026-09-08 04:11:22",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,6 +39,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -46,12 +52,6 @@
   },
   {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -66,12 +66,6 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -144,6 +138,12 @@
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 3,
    "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {

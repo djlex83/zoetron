@@ -25135,3 +25135,23 @@
 {"ts": 1788235019.6333718, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 5}}
 {"ts": 1788235019.6348164, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fertigkeiten testen", "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py", "ok": true}}
 {"ts": 1788235020.106863, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fertigkeiten testen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788235283.9816122, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788235352.5741515, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788235354.1596143, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788235358.183197, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788235358.1831944, "schalter_geoeffnet": false}}
+{"ts": 1788235377.3929257, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 19.2, "tokens_ein": 1382, "tokens_aus": 837}}
+{"ts": 1788235377.3935366, "kind": "skill_proposal", "payload": {"proposal": "Deploy a model-health registry that tracks success-rate, p95 latency, and 429 count per endpoint; auto-quarantine any endpoint exceeding 10 % failure over 50 requests."}}
+{"ts": 1788235377.3935943, "kind": "skill_proposal", "payload": {"proposal": "Implement a fallback router: prefer ling-3.0-flash-fin as primary, route to nemotron-3-ultra only when primary latency > 15 s, blacklist free endpoints after first 429."}}
+{"ts": 1788235377.3936498, "kind": "skill_proposal", "payload": {"proposal": "Add per-request timeout (20 s) and retry budget (max 2 attempts with exponential backoff + jitter) before failing over to the next ranked model."}}
+{"ts": 1788235377.3937094, "kind": "skill_proposal", "payload": {"proposal": "Create a proposal-to-execution gate: every cycle must promote at least one skill proposal to a working prototype or archive it with a recorded reason."}}
+{"ts": 1788235377.3937845, "kind": "skill_proposal", "payload": {"proposal": "Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-effects, and promotes only those meeting thresholds."}}
+{"ts": 1788235377.3938437, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788235379.5918095, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788235379.5918064, "schalter_geoeffnet": false}}
+{"ts": 1788235419.7338316, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 40.1, "tokens_ein": 503, "tokens_aus": 683}}
+{"ts": 1788235419.7340183, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und reduzieren", "why": "Das Modell macht oft Fehler. Wir müssen lernen, warum es scheitert, damit es besser wird.", "signal": "failure"}}
+{"ts": 1788235419.7340996, "kind": "drive_goal", "payload": {"title": "Veraltetes Wissen aktualisieren und prüfen", "why": "Einige Informationen sind alt und möglicherweise falsch. Wir sollten sie überprüfen und neu bewerten.", "signal": "stale"}}
+{"ts": 1788235419.7341955, "kind": "drive_goal", "payload": {"title": "Neue Fähigkeiten aus Vorschlägen entwickeln", "why": "Es gibt viele Vorschläge für neue Fähigkeiten. Wir sollten die besten daraus bauen und testen.", "signal": "combination"}}
+{"ts": 1788235422.5837443, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 2}}
+{"ts": 1788235422.584918, "kind": "reflex_used", "payload": {"goal": "Marktanalyse aktuell halten", "tool": "alte-marktanalyse-aktualisieren-und-nutz.py", "ok": true}}
+{"ts": 1788235422.9705884, "kind": "act_done", "payload": {"goal_title": "Marktanalyse aktuell halten", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788235687.5007985, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
