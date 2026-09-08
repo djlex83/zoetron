@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 04:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 04:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model failures are external-service-caused, not logic-caused, meaning the system cannot self-heal by retrying the same model — it must detect and rout
+- Metabolism signals (stress=1.0, conserve mode, max 3 tasks, 1 iteration) were present but not acted upon to throttle or skip non-critical operations l
+- The system spawned a swarm despite a prior reflex (entfernte-erinnerungen-verknüpfen.py) already failing, showing that swarm orchestration lacks a dep
+- Retrying failed models immediately without backoff amplifies rate-limiting (429) and overload (502) errors, creating a self-reinforcing failure loop t
+- External API calls to Google and Nvidia endpoints are unreliable — 429 rate limits and 502 upstream errors recur, while inclusionai/ling-3.0-flash-fin
 - Hand_action and reflex tools return opaque failures (null error, ok:false) that prevent automated recovery or diagnostic correlation.
 - Swarm convergence accepts results after too few cycles without stability checks, risking premature acceptance of noisy outputs.
 - Skill proposals accumulate but rarely reach simulation or execution, creating a proposal-execution gap that prevents empirical validation.
@@ -51,11 +56,6 @@
 - Model latency varies wildly (22s to 125s) and 502/429 errors cascade without circuit breakers or fallback routing.
 - Swarm converges in a single cycle with no stability threshold, risking premature acceptance of suboptimal artifacts.
 - Calibration systematically underestimates outcomes (predicted 3 vs actual 9), indicating a persistent negative bias in the scoring model.
-- Calibration error of 6 points (predicted 3 vs actual 9) indicates the predictor ignores model-reliability signals when estimating task difficulty.
-- Swarm convergence (score 9, 1 cycle) succeeded despite 6 model failures in the same window, showing planner/builder/critic roles tolerate partial mode
-- Nemotron-3-ultra latency varies 5x (22s–125s) for similar token counts, making it unreliable for time-bounded tasks.
-- inclusionai/ling-3.0-flash-fin:free is the only model with consistent sub-20s latency and zero observed failures across 3+ calls.
-- Free-tier models exhibit systematic failure modes: Nemotron returns 502 upstream errors under load, Gemma models hit 429 rate limits within minutes.
 
 ---
 

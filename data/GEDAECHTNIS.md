@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11943 Fakten** · Stand 2026-09-08 04:25 UTC · aktualisiert bei jedem Herzschlag
+**11960 Fakten** · Stand 2026-09-08 04:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7226
-- **swarm_artifact:** 2096
-- **last_swarm_critique:** 832
-- **last_swarm_goal:** 564
-- **anti_pattern:** 553
-- **strategy:** 278
-- **tool:** 182
+- **dream:** 7231
+- **swarm_artifact:** 2102
+- **last_swarm_critique:** 833
+- **last_swarm_goal:** 565
+- **anti_pattern:** 555
+- **strategy:** 279
+- **tool:** 183
 - **hand_result:** 138
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 1
 
 ---
+
+### `tool:viele-skill-ideen-nutzbar-machen`
+*08.09. 04:43 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Viele Skill-Ideen nutzbar machen'. Datei: data/tools/viele-skill-ideen-nutzbar-machen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Viele Skill-Ideen nutzba:1`
+*08.09. 04:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Abstract Adapter & Plugin Bridge Architecture - Decouple skill idea definitions from execution mechanisms by introducing an abstract adapter layer. Each skill idea becomes a declarative specification (schema + constraints), a
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Viele Skill-Ideen nutzba:0`
+*08.09. 04:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Test-First Instrumented Implementation - Replace all stub/TODO implementations with a test-driven development pipeline. Before writing any tool logic, define concrete test cases for each skill idea (ideen) and each verificati
+
+### `last_swarm_critique`
+*08.09. 04:41 UTC · Quelle: critic*
+
+score=7; issues=Generated tools are stub implementations with TODO comments - not actually functional beyond returning mock results; No evidence of convergence gate verification (third artifact only shows directory exploration, not tool execution testing); Inv
+
+### `last_swarm_goal`
+*08.09. 04:33 UTC · Quelle: system*
+
+Viele Skill-Ideen nutzbar machen
+
+### `dream:20260908043310:5:27c383`
+*08.09. 04:33 UTC · Quelle: dream*
+
+Model failures are external-service-caused, not logic-caused, meaning the system cannot self-heal by retrying the same model — it must detect and route around the failure.
+
+### `dream:20260908043310:4:f213ed`
+*08.09. 04:33 UTC · Quelle: dream*
+
+Metabolism signals (stress=1.0, conserve mode, max 3 tasks, 1 iteration) were present but not acted upon to throttle or skip non-critical operations like swarm launches.
+
+### `dream:20260908043310:3:194431`
+*08.09. 04:33 UTC · Quelle: dream*
+
+The system spawned a swarm despite a prior reflex (entfernte-erinnerungen-verknüpfen.py) already failing, showing that swarm orchestration lacks a dependency check on prerequisite reflex success.
+
+### `dream:20260908043310:2:5db6d4`
+*08.09. 04:33 UTC · Quelle: dream*
+
+Retrying failed models immediately without backoff amplifies rate-limiting (429) and overload (502) errors, creating a self-reinforcing failure loop that wastes the limited task budget.
+
+### `dream:20260908043310:1:e1b4cc`
+*08.09. 04:33 UTC · Quelle: dream*
+
+External API calls to Google and Nvidia endpoints are unreliable — 429 rate limits and 502 upstream errors recur, while inclusionai/ling-3.0-flash-fin consistently succeeds, indicating a single reliable primary model with fallback ordering is essential.
 
 ### `dream:20260908042134:5:240de3`
 *08.09. 04:21 UTC · Quelle: dream*
