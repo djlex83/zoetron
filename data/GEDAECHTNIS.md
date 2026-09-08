@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11905 Fakten** · Stand 2026-09-07 23:57 UTC · aktualisiert bei jedem Herzschlag
+**11909 Fakten** · Stand 2026-09-08 00:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7171
-- **swarm_artifact:** 2107
+- **dream:** 7176
+- **swarm_artifact:** 2106
 - **last_swarm_critique:** 828
 - **anti_pattern:** 563
 - **last_swarm_goal:** 560
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908000519:5:a5f613`
+*08.09. 00:05 UTC · Quelle: dream*
+
+48 events were pruned while 0 facts survived pruning, suggesting the event log is noisy and the system retains little durable knowledge from individual episodes without explicit fact extraction.
+
+### `dream:20260908000519:4:810b2e`
+*08.09. 00:05 UTC · Quelle: dream*
+
+Latency for the same model (nvidia/nemotron-3-ultra) ranged from 5.8s to 96.8s, indicating that provider-side performance is highly variable and must be tracked per-model over time.
+
+### `dream:20260908000519:3:a66436`
+*08.09. 00:05 UTC · Quelle: dream*
+
+Calibration predicted 3 but actual score was 5 (abs_error: 2), revealing that the system's self-assessment of goal progress is systematically unreliable and needs a correction mechanism.
+
+### `dream:20260908000519:2:61099c`
+*08.09. 00:05 UTC · Quelle: dream*
+
+The swarm failed to converge (converged: false) despite running evolution with 3 variants and scoring up to 9, suggesting that evolution alone does not guarantee consensus when critic feedback is truncated or incomplete.
+
+### `dream:20260908000519:1:85328d`
+*08.09. 00:05 UTC · Quelle: dream*
+
+Rate-limit (429) and upstream overload (502) errors from multiple providers indicate that no single model endpoint is reliable enough to depend on without an automatic fallback chain.
 
 ### `dream:20260907235442:5:db740a`
 *07.09. 23:54 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 00:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 48 events were pruned while 0 facts survived pruning, suggesting the event log is noisy and the system retains little durable knowledge from individua
+- Latency for the same model (nvidia/nemotron-3-ultra) ranged from 5.8s to 96.8s, indicating that provider-side performance is highly variable and must 
+- Calibration predicted 3 but actual score was 5 (abs_error: 2), revealing that the system's self-assessment of goal progress is systematically unreliab
+- The swarm failed to converge (converged: false) despite running evolution with 3 variants and scoring up to 9, suggesting that evolution alone does no
+- Rate-limit (429) and upstream overload (502) errors from multiple providers indicate that no single model endpoint is reliable enough to depend on wit
 - Swarm memory entries for goals and critiques become stale quickly; the system re-creates similar drive goals repeatedly instead of updating existing o
 - Metabolism budget (max_tasks=4, max_iterations=2) constrains parallel exploration, forcing sequential fallback attempts that increase total latency.
 - The skill-testing pipeline (simulation → tor) produces working artifacts despite intermediate tool failures, suggesting the orchestration layer is mor
@@ -51,11 +56,6 @@
 - Reflex paths bypass convergence gates (score≥8, delta<0.1 over 3 cycles, critic approval), allowing premature act_done.
 - Model failure rate (29 failed attempts) demands per-provider circuit breakers with automatic failover within a strict latency budget.
 - Relative path usage instead of canonical ZOETRON_DATA paths causes silent hand_action failures with exit code 0 but no data read.
-- Reflex-driven exploration (verbundene-traeume-nach-neuen-fuehigkeit.py) converges reliably in reflex mode, suggesting that autonomous reflex loops out
-- Self-diagnosis executed on a clean provider breaks the bootstrap dependency where failed providers cannot analyze their own failures, making it a prov
-- Skill proposals consistently fail to convert into deployed abilities because there is no gated validation pipeline — proposals accumulate without sand
-- Swarm knowledge decays on a predictable timeline (~24h) and sits unused without scheduled refresh, creating a persistent gap between available collect
-- Provider failures are systemic rather than incidental — generic retries fail; structured fallback chains with circuit breakers and error-type classifi
 
 ---
 
