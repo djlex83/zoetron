@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8347 Neuronen · 875497 bewertete Synapsen
+Stand: 8348 Neuronen · 876477 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,16 +10,16 @@ Stand: 8347 Neuronen · 875497 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 983 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 993 | 0.23 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 984 | 0.24 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 994 | 0.23 |
 | 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 823 | 0.26 |
 | 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 840 | 0.25 |
 | 5 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 772 | 0.26 |
-| 6 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 840 | 0.23 |
-| 7 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 763 | 0.26 |
-| 8 | 💭 | Repeated 429 errors across four different models indicate system… | 784 | 0.24 |
-| 9 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 751 | 0.25 |
-| 10 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 761 | 0.25 |
+| 6 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 841 | 0.23 |
+| 7 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 764 | 0.26 |
+| 8 | 💭 | Repeated 429 errors across four different models indicate system… | 785 | 0.24 |
+| 9 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 752 | 0.25 |
+| 10 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 762 | 0.25 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 809 | 0.23 |
 | 12 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 778 | 0.24 |
 | 13 | 💭 | Primary models (Nemotron Ultra, Gemma variants) fail under load … | 723 | 0.25 |

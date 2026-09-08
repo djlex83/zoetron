@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12037 Fakten** · Stand 2026-09-08 10:15 UTC · aktualisiert bei jedem Herzschlag
+**12042 Fakten** · Stand 2026-09-08 10:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7301
+- **dream:** 7306
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 836
 - **last_swarm_goal:** 568
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908102535:5:a115fe`
+*08.09. 10:25 UTC · Quelle: dream*
+
+Convergence stalls go undetected until manual inspection, wasting cycles on stalled optimization instead of triggering automatic recovery.
+
+### `dream:20260908102535:4:328907`
+*08.09. 10:25 UTC · Quelle: dream*
+
+The system lacks a critic output validation layer, causing silent failures when model responses are malformed or unparseable.
+
+### `dream:20260908102535:3:935717`
+*08.09. 10:25 UTC · Quelle: dream*
+
+Memory bloat correlates directly with failed model retries and redundant simulations, making post-cycle pruning a necessary but insufficient reactive measure.
+
+### `dream:20260908102535:2:e8a845`
+*08.09. 10:25 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than validation capacity, creating a backlog of untested capabilities that inflates memory without improving competence.
+
+### `dream:20260908102535:1:9fe8c6`
+*08.09. 10:25 UTC · Quelle: dream*
+
+Model reliability follows a predictable failure pattern: primary models fail with 502/504 errors while rate-limited models return 429, requiring automated fallback chains with health-aware routing.
 
 ### `tool:träume-in-echte-fähigkeiten-umwandeln`
 *08.09. 10:13 UTC · Quelle: hands*
