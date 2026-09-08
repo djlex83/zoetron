@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12020 Fakten** · Stand 2026-09-08 09:40 UTC · aktualisiert bei jedem Herzschlag
+**12037 Fakten** · Stand 2026-09-08 10:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7296
-- **swarm_artifact:** 2098
-- **last_swarm_critique:** 835
-- **last_swarm_goal:** 567
-- **anti_pattern:** 549
-- **strategy:** 276
-- **tool:** 184
+- **dream:** 7301
+- **swarm_artifact:** 2104
+- **last_swarm_critique:** 836
+- **last_swarm_goal:** 568
+- **anti_pattern:** 551
+- **strategy:** 277
+- **tool:** 185
 - **hand_result:** 139
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 1
 
 ---
+
+### `tool:träume-in-echte-fähigkeiten-umwandeln`
+*08.09. 10:13 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume in echte Fähigkeiten umwandeln'. Datei: data/tools/träume-in-echte-fähigkeiten-umwandeln.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Träume in echte Fähigkei:2`
+*08.09. 10:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [5, 3, 6]): Social Commitment Marketplace - Verwandle Träume in verbindliche soziale Verträge auf einem 'Skill-Staking-Marktplatz'. Du definierst ein konkretes 30-Tage-Ziel ('30 Tage täglich 15 Min Spanisch-Output aufnehmen'), se
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Träume in echte Fähigkei:1`
+*08.09. 10:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 7]): Neuro-Plasticity Protocol - Nutze die biologischen Fenster der synaptischen Konsolidierung: 90-minütige Deep-Work-Blöcke (ultradian rhythm), gefolgt von 20-minütigem Non-Sleep-Deep-Rest (NSDR/Yoga Nidra) für Hippocamp
+
+### `last_swarm_critique`
+*08.09. 10:05 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*08.09. 09:53 UTC · Quelle: system*
+
+Träume in echte Fähigkeiten umwandeln
+
+### `dream:20260908095042:5:70fbc8`
+*08.09. 09:50 UTC · Quelle: dream*
+
+Pruning removes 47 then 26 events per cycle but zero facts, implying the fact store is stable while event noise dominates memory pressure.
+
+### `dream:20260908095042:4:4800d2`
+*08.09. 09:50 UTC · Quelle: dream*
+
+Reflex tools achieve convergence (swarm score 8+, error reduction) where open-ended planning stalls, suggesting hard-coded procedures outperform LLM improvisation for known patterns.
+
+### `dream:20260908095042:3:033be9`
+*08.09. 09:50 UTC · Quelle: dream*
+
+The dream module itself times out at 180s, indicating consolidation logic exceeds its budget and needs streaming or incremental processing.
+
+### `dream:20260908095042:2:c449a7`
+*08.09. 09:50 UTC · Quelle: dream*
+
+Flash models (ling-3.0-flash-fin) deliver 10x lower latency (3.5s vs 56-67s) with zero observed failures in this window.
+
+### `dream:20260908095042:1:a65e99`
+*08.09. 09:50 UTC · Quelle: dream*
+
+Free-tier large models (Nemotron, Gemma) fail frequently with 502 overloads and 429 rate limits, making them unreliable for primary routing.
 
 ### `dream:20260908093558:5:9fb485`
 *08.09. 09:35 UTC · Quelle: dream*

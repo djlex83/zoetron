@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 09:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 10:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,7 +10,6 @@
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
 - Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
-- ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 4×)*
 - Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours. *(hatte die Idee 4×)*
 - Enforce absolute_path_guard middleware on all file tools with canonical ZOETRON_DATA rewriting. *(hatte die Idee 4×)*
 - Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with backof *(hatte die Idee 4×)*
@@ -20,19 +19,20 @@
 - Replace point-estimate calibration with distributional predictions and confidence intervals to prevent overcon *(hatte die Idee 4×)*
 - Enforce schema validation gates before artifact scoring to catch mismatches early and avoid wasted evaluation  *(hatte die Idee 4×)*
 - Add rate-limit-aware exponential backoff with jitter and concurrent request throttling to prevent 429 errors f *(hatte die Idee 4×)*
+- Wrap hand_action calls with structured error capture (stderr, exit codes, context) that returns actionable err *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 47 then 26 events per cycle but zero facts, implying the fact store is stable while event noise dominates memory pressure.
+- Reflex tools achieve convergence (swarm score 8+, error reduction) where open-ended planning stalls, suggesting hard-coded procedures outperform LLM i
+- The dream module itself times out at 180s, indicating consolidation logic exceeds its budget and needs streaming or incremental processing.
+- Flash models (ling-3.0-flash-fin) deliver 10x lower latency (3.5s vs 56-67s) with zero observed failures in this window.
+- Free-tier large models (Nemotron, Gemma) fail frequently with 502 overloads and 429 rate limits, making them unreliable for primary routing.
 - The reflex-driven evolution loop converged successfully, proving that autonomous goal-driven iteration works when unblocked by model failures.
 - Skill proposals accumulate faster than they are implemented, creating a persistent knowledge-action gap that prevents the system from learning from it
 - Self-diagnosis consistently reports zero internal organ errors, confirming that failures are external and provider-side rather than stemming from flaw
@@ -51,11 +56,6 @@
 - Critic outputs frequently arrive malformed, causing silent failures that a fallback parser with safe default revision would prevent.
 - Rate limits hit multiple providers simultaneously, so request routing must track per-provider 429 rates and redistribute load before quota exhaustion.
 - Model failures cascade predictably: high latency precedes 502/429 errors, requiring automatic failover to flash models within 5s thresholds.
-- Convergence stalls and silent critic failures go undetected without explicit guardrails, causing wasted cycles on stalled optimization.
-- Reflex-driven tool execution (alte-marktanalyse-aktualisieren-und-nutz.py) succeeded where model-based planning failed, showing hardcoded fallbacks ou
-- Automatic pruning of stale facts and events (5 facts, 20 events) after each cycle prevents memory bloat from failed retries and redundant simulations.
-- The inclusionai/ling-3.0-flash-fin:free model delivers consistent low-latency success (3.8-4.5s) while larger models like nemotron-3-ultra exhibit 10x
-- Free-tier models consistently fail under load with 429 rate limits and 502 gateway errors, making them unreliable as primary providers.
 
 ---
 
