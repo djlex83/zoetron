@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11915 Fakten** · Stand 2026-09-08 01:48 UTC · aktualisiert bei jedem Herzschlag
+**11932 Fakten** · Stand 2026-09-08 02:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7196
-- **swarm_artifact:** 2096
-- **last_swarm_critique:** 829
-- **last_swarm_goal:** 561
-- **anti_pattern:** 559
-- **strategy:** 281
+- **dream:** 7201
+- **swarm_artifact:** 2102
+- **last_swarm_critique:** 830
+- **last_swarm_goal:** 562
+- **anti_pattern:** 561
+- **strategy:** 282
 - **tool:** 181
-- **hand_result:** 137
+- **hand_result:** 138
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 29
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erfahrungen in Fäh:2`
+*08.09. 02:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 5, 9]): Declarative Pipeline Definition with Automatic Schema Mediation - Express the pipeline as a DAG in a YAML/JSON config: nodes=[extract, propose, test], edges define field mappings with transforms (e.g., 'themes[0]'->'t
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erfahrungen in Fäh:1`
+*08.09. 02:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 6, 8]): Streaming Pipeline with Schema Adapters - Keep three stages but insert explicit adapter functions between them: Adapter1 normalizes Artifact1's {'themes':[], 'representative':str} -> Artifact2's {'theme':str, 'keyword
+
+### `last_swarm_critique`
+*08.09. 02:04 UTC · Quelle: critic*
+
+score=4; issues=Schema mismatch: Artifact 1 outputs clusters with 'themes' (list) and 'representative' (string), but Artifact 2 expects 'theme' (string), 'keywords', and 'representatives' (list) - pipeline breaks at handoff; Schema mismatch: Artifact 2 writes 
+
+### `last_swarm_goal`
+*08.09. 01:57 UTC · Quelle: system*
+
+Traum-Erfahrungen in Fähigkeiten umsetzen
+
+### `dream:20260908015628:5:d9b4eb`
+*08.09. 01:56 UTC · Quelle: dream*
+
+Reflex mode converges reliably when self-diagnosis reports clean organs, indicating that structural health checks are a prerequisite for trustworthy autonomous action.
+
+### `dream:20260908015628:4:19cbab`
+*08.09. 01:56 UTC · Quelle: dream*
+
+Increasing prune counts (0→10 facts, 23→65 events) demonstrate that memory consolidation is accelerating but remains reactive rather than predictive.
+
+### `dream:20260908015628:3:d747e5`
+*08.09. 01:56 UTC · Quelle: dream*
+
+Stale swarm knowledge recurs as a chronic condition, proving that one-off refresh cycles are insufficient and scheduled, trigger-based maintenance is required.
+
+### `dream:20260908015628:2:3f03bf`
+*08.09. 01:56 UTC · Quelle: dream*
+
+The persistent gap between 75+ generated skill proposals and actual implementation shows that proposal creation without automated promotion and execution pipelines produces dead knowledge.
+
+### `dream:20260908015628:1:064a36`
+*08.09. 01:56 UTC · Quelle: dream*
+
+Model error rates (~37% failure across 65 attempts) and latency variance (54–118s) reveal that no single provider is reliable enough for critical paths without circuit breakers and automatic failover.
 
 ### `dream:20260908014559:5:ca1485`
 *08.09. 01:45 UTC · Quelle: dream*

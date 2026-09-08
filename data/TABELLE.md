@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8226 Neuronen · 843661 bewertete Synapsen
+Stand: 8236 Neuronen · 845755 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,10 +13,10 @@ Stand: 8226 Neuronen · 843661 bewertete Synapsen
 | 1 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 969 | 0.23 |
 | 2 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 808 | 0.26 |
 | 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 822 | 0.25 |
-| 4 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 761 | 0.26 |
+| 4 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 762 | 0.26 |
 | 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 822 | 0.24 |
 | 6 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 740 | 0.26 |
-| 7 | 💭 | Repeated 429 errors across four different models indicate system… | 767 | 0.24 |
+| 7 | 💭 | Repeated 429 errors across four different models indicate system… | 768 | 0.24 |
 | 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 737 | 0.25 |
 | 9 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 753 | 0.25 |
 | 10 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 760 | 0.24 |

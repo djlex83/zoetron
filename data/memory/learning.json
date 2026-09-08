@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 01:46:24",
+ "stand": "2026-09-08 02:07:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -37,12 +37,6 @@
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 4,
-   "erfolge": 1,
-   "quote": 0.25
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
@@ -109,6 +103,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 3,
+   "erfolge": 1,
+   "quote": 0.333
   },
   {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
@@ -184,6 +184,12 @@
   },
   {
    "tool": "modellfehler-dauerhaft-senken.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -369,12 +375,6 @@
    "quote": 1.0
   },
   {
-   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -459,17 +459,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.845,
+ "haende_quote": 0.837,
  "simulationen_angewandt": 22,
  "swarm_scores": {
-  "n": 21,
+  "n": 22,
   "best": 9.0,
-  "schnitt": 5.62
+  "schnitt": 5.55
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 20,
-   "schnitt": 5.85
+   "schnitt": 5.7
   },
   "bau": {
    "n": 1,

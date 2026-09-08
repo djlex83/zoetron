@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 01:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 02:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex mode converges reliably when self-diagnosis reports clean organs, indicating that structural health checks are a prerequisite for trustworthy a
+- Increasing prune counts (0→10 facts, 23→65 events) demonstrate that memory consolidation is accelerating but remains reactive rather than predictive.
+- Stale swarm knowledge recurs as a chronic condition, proving that one-off refresh cycles are insufficient and scheduled, trigger-based maintenance is 
+- The persistent gap between 75+ generated skill proposals and actual implementation shows that proposal creation without automated promotion and execut
+- Model error rates (~37% failure across 65 attempts) and latency variance (54–118s) reveal that no single provider is reliable enough for critical path
 - 24 model errors remain unclassified; provider-specific error taxonomy is needed for targeted fallback strategies.
 - Reflex paths bypass convergence gates (score≥8, delta<0.1), risking premature completion on complex goals.
 - 75+ skill proposals accumulate without validation pipeline, causing registry bloat and unused capabilities.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (75+) without validation, creating a promotion gap where useful capabilities never reach production.
 - Swarm critique data becomes stale after ~24 hours, causing drive signals to degrade and necessitating automated refresh schedulers.
 - Free-tier model providers frequently hit 429 rate limits and exhibit tail latencies >60s, requiring circuit-breaker failover to flash models.
-- Pruning removes facts/events but does not archive model-performance telemetry needed for router decisions.
-- Dream insights accumulate but lack a binding mechanism to convert them into tested skills or drive goals.
-- Swarm knowledge decays silently; no TTL or freshness check triggers proactive refresh, leading to duplicate stale goals.
-- Latency variance between models (3 s vs 60 s) wastes iteration budget and stalls decision loops.
-- Free-tier models fail under rate limits (429) without automatic fallback, causing 27+ errors per cycle.
 
 ---
 
