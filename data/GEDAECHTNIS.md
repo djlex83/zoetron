@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12052 Fakten** · Stand 2026-09-08 10:54 UTC · aktualisiert bei jedem Herzschlag
+**12057 Fakten** · Stand 2026-09-08 11:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7316
+- **dream:** 7321
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 836
 - **last_swarm_goal:** 568
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908110347:5:31bd77`
+*08.09. 11:03 UTC · Quelle: dream*
+
+Self-diagnosis shows zero organ errors post-pruning, indicating that pruning (19 events) and reflex execution stabilize the system without model calls.
+
+### `dream:20260908110347:4:525693`
+*08.09. 11:03 UTC · Quelle: dream*
+
+Reflex patterns (swarm convergence, error reduction) succeed when codified as parameterized scripts, reducing reliance on slow model reasoning for common goals.
+
+### `dream:20260908110347:3:c62dd0`
+*08.09. 11:03 UTC · Quelle: dream*
+
+Dream consolidation itself hits 180s timeouts because it uses heavy models; splitting into 60s checkpointed chunks with flash models prevents cascade failures.
+
+### `dream:20260908110347:2:919de7`
+*08.09. 11:03 UTC · Quelle: dream*
+
+Heavy models (nemotron-3-ultra at 150s+ latency) are unusable for interactive loops; flash models (ling-3.0-flash at 4.5s) must be the default for cost_sensitive/high_volume goals.
+
+### `dream:20260908110347:1:8a0c3c`
+*08.09. 11:03 UTC · Quelle: dream*
+
+Rate limiting (429) on specific models like gemma-4-26b is a dominant failure mode that requires per-provider circuit breakers with automatic failover.
 
 ### `dream:20260908105129:5:2b467a`
 *08.09. 10:51 UTC · Quelle: dream*

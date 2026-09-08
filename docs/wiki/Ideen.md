@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 10:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 11:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,8 +29,8 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis shows zero organ errors post-pruning, indicating that pruning (19 events) and reflex execution stabilize the system without model calls
+- Reflex patterns (swarm convergence, error reduction) succeed when codified as parameterized scripts, reducing reliance on slow model reasoning for com
+- Dream consolidation itself hits 180s timeouts because it uses heavy models; splitting into 60s checkpointed chunks with flash models prevents cascade 
+- Heavy models (nemotron-3-ultra at 150s+ latency) are unusable for interactive loops; flash models (ling-3.0-flash at 4.5s) must be the default for cos
+- Rate limiting (429) on specific models like gemma-4-26b is a dominant failure mode that requires per-provider circuit breakers with automatic failover
 - Pruning removed 43 events but 0 facts, showing the system retains semantic knowledge while discarding operational noise, which is healthy but needs to
 - Dream proposals accumulate (rate-limit module, critic validator, convergence guardrail, promotion daemon, router, health monitor) but none are deploye
 - The reflex system successfully executes concrete tools (market data update) but has no visibility into model routing, creating a gap between action ex
@@ -51,11 +56,6 @@
 - Convergence stalls go undetected without explicit guardrails tracking score plateaus across cycles.
 - Duplicate skill proposals indicate missing deduplication and promotion pipeline from dream to deployed capability.
 - Model failures cluster around rate limits (429) and upstream overloads (502), requiring per-provider circuit breakers with automatic failover to flash
-- Convergence stalls go undetected until manual inspection, wasting cycles on stalled optimization instead of triggering automatic recovery.
-- The system lacks a critic output validation layer, causing silent failures when model responses are malformed or unparseable.
-- Memory bloat correlates directly with failed model retries and redundant simulations, making post-cycle pruning a necessary but insufficient reactive 
-- Skill proposals accumulate faster than validation capacity, creating a backlog of untested capabilities that inflates memory without improving compete
-- Model reliability follows a predictable failure pattern: primary models fail with 502/504 errors while rate-limited models return 429, requiring autom
 
 ---
 
