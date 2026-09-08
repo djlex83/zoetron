@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 03:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 03:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,9 +28,9 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model failure taxonomy matches proposed classifier: observed 502 (provider overload), 429 (rate limit), and timeout patterns align exactly with the 'm
+- Simulation-based revision loop works: 5 risks identified and 5 revisions applied for 'Träume in echte Fähigkeiten umsetzen', demonstrating viable vali
+- Metabolic conserve mode (stress 0.701, max_iterations=1) severely constrains skill-building capacity, causing premature termination of multi-step impl
+- Skill proposal-to-implementation pipeline is broken: the reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed with path resolution errors 
+- Primary model (nemotron-3-ultra) exhibits high latency variance (24-113s) and 502 overload failures, while fallback models (gemma-4) hit 429 rate limi
 - Rate limiting cascades into pipeline failures without exponential backoff and concurrent request throttling.
 - Hand_action error handling returns null errors, preventing root cause analysis of action failures.
 - Swarm convergence succeeds when triggered via reflex tools but lacks stability thresholds, risking premature acceptance of suboptimal scores.
@@ -51,11 +56,6 @@
 - Swarm convergence at 2 cycles with score 4/10 indicates premature termination criteria.
 - Schema mismatches in artifacts cause low scores but are detectable before evaluation via validation gates.
 - Model provider failures (502/429) cascade into pipeline failures without automated fallback routing.
-- Metabolic gating and dream-to-skill pipelines were proposed but not enacted, showing the system generates improvement ideas faster than it can validat
-- The simulation reflex executed successfully but drive goals still demand more simulations, indicating the reflex is triggered too narrowly (only on ex
-- Only one model (inclusionai/ling-3.0-flash-fin) succeeded consistently, proving that a single reliable fallback provider outperforms naive round-robin
-- The same proposal-to-mission funnel was submitted twice, revealing a systemic gap: high-signal proposals lack an automated promotion path to executabl
-- Free-tier model providers exhibit distinct, repeatable failure signatures (Nvidia 502 overload, Google 429 rate-limit) that demand provider-aware rout
 
 ---
 

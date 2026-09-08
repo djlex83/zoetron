@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11947 Fakten** · Stand 2026-09-08 03:28 UTC · aktualisiert bei jedem Herzschlag
+**11943 Fakten** · Stand 2026-09-08 03:49 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7216
-- **swarm_artifact:** 2101
+- **swarm_artifact:** 2100
 - **last_swarm_critique:** 832
 - **last_swarm_goal:** 564
-- **anti_pattern:** 559
-- **strategy:** 281
+- **anti_pattern:** 557
+- **strategy:** 280
 - **tool:** 182
 - **hand_result:** 138
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908034704:5:6f96d5`
+*08.09. 03:47 UTC · Quelle: dream*
+
+Model failure taxonomy matches proposed classifier: observed 502 (provider overload), 429 (rate limit), and timeout patterns align exactly with the 'model-error taxonomy classifier' skill proposal.
+
+### `dream:20260908034704:4:cdc37a`
+*08.09. 03:47 UTC · Quelle: dream*
+
+Simulation-based revision loop works: 5 risks identified and 5 revisions applied for 'Träume in echte Fähigkeiten umsetzen', demonstrating viable validate-then-build pattern.
+
+### `dream:20260908034704:3:69a655`
+*08.09. 03:47 UTC · Quelle: dream*
+
+Metabolic conserve mode (stress 0.701, max_iterations=1) severely constrains skill-building capacity, causing premature termination of multi-step implementation tasks.
+
+### `dream:20260908034704:2:401908`
+*08.09. 03:47 UTC · Quelle: dream*
+
+Skill proposal-to-implementation pipeline is broken: the reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed with path resolution errors ('nichts gelesen', relative paths not reaching ZOETRON_DATA), leaving 5+ proposals unbuilt.
+
+### `dream:20260908034704:1:d5d1f3`
+*08.09. 03:47 UTC · Quelle: dream*
+
+Primary model (nemotron-3-ultra) exhibits high latency variance (24-113s) and 502 overload failures, while fallback models (gemma-4) hit 429 rate limits, making ling-3.0-flash-fin the only consistently reliable provider at ~4s latency.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Erinnerungen sinnvoll ve:2`
 *08.09. 03:24 UTC · Quelle: evolution*
@@ -45816,41 +45841,6 @@ score=3; issues=Deliverable is truncated mid-implementation ('spath = s' in iter
 *25.08. 03:44 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260825034443:5:4a28fe`
-*25.08. 03:44 UTC · Quelle: dream*
-
-Error handling is fragmented: hand failures spawn GitHub issues but trigger no automatic recovery or model failover.
-
-### `dream:20260825034443:4:8b13ea`
-*25.08. 03:44 UTC · Quelle: dream*
-
-Model latency variance (26-48s for same model) makes interactive task planning unreliable without latency-aware routing.
-
-### `dream:20260825034443:3:54c851`
-*25.08. 03:44 UTC · Quelle: dream*
-
-Swarm consistently fails to converge (score 3, 2 cycles) on knowledge-distillation goals, suggesting insufficient critic depth or premature termination.
-
-### `dream:20260825034443:2:014eee`
-*25.08. 03:44 UTC · Quelle: dream*
-
-MemoryStore missing 'add_fact' method reveals absent interface contract enforcement, allowing silent no-op operations until runtime.
-
-### `dream:20260825034443:1:582870`
-*25.08. 03:44 UTC · Quelle: dream*
-
-Systemic 429 rate limits across all free-tier providers indicate shared quota exhaustion, not isolated endpoint failures.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Exemplar-Bank: von den e:2`
-*25.08. 03:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): Online Contextual Bandit with Reward-Model Distillation - Treat exemplar selection as a contextual bandit: context = query embedding (small projection head), arms = exemplar clusters (k-means on embeddings, updated nightly).
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Exemplar-Bank: von den e:1`
-*25.08. 03:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Hybrid BM25 + Metadata Filtering + LLM Reranker (Zero Embeddings) - Build a purely lexical/symbolic ExemplarBank: store exemplars in SQLite FTS5 (BM25) with columns for tags, outcome_score, task_type, timestamp. retrieve(quer
 
 ### `last_swarm_critique`
 *25.08. 03:20 UTC · Quelle: critic*
