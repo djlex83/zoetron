@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12083 Fakten** · Stand 2026-09-08 23:01 UTC · aktualisiert bei jedem Herzschlag
+**12078 Fakten** · Stand 2026-09-08 23:12 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7446
-- **swarm_artifact:** 2068
+- **swarm_artifact:** 2063
 - **last_swarm_critique:** 841
 - **last_swarm_goal:** 573
 - **anti_pattern:** 523
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908231023:5:65883a`
+*08.09. 23:10 UTC · Quelle: dream*
+
+Path resolution failures cascade silently: relative paths in hand_action succeed only when CWD matches ZOETRON_DATA, causing non-reproducible successes.
+
+### `dream:20260908231023:4:6f3bc9`
+*08.09. 23:10 UTC · Quelle: dream*
+
+Executable artifact validation is the highest-leverage gate: every failed TOR submission traces to missing syntax/import checks before critic scoring.
+
+### `dream:20260908231023:3:0245ab`
+*08.09. 23:10 UTC · Quelle: dream*
+
+Swarm knowledge decays faster than refresh cycles: two consecutive reflexes updated stale goals, pruning 19 facts total, indicating a missing freshness TTL mechanism.
+
+### `dream:20260908231023:2:2544ca`
+*08.09. 23:10 UTC · Quelle: dream*
+
+Skill proposals accumulate as debt: 9 proposals logged in this session alone, but zero evidence of deployment or A/B testing against baseline reflexes.
+
+### `dream:20260908231023:1:2ec33b`
+*08.09. 23:10 UTC · Quelle: dream*
+
+Model reliability degrades silently: latency spikes (13-24s) and error rates near 50% correlate with failed artifact generation, yet no automatic circuit-breaker triggers.
 
 ### `dream:20260908225847:5:e2511c`
 *08.09. 22:58 UTC · Quelle: dream*
@@ -46516,31 +46541,6 @@ score=0; issues=
 *25.08. 23:00 UTC · Quelle: system*
 
 Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
-
-### `dream:20260825230026:5:29dccd`
-*25.08. 23:00 UTC · Quelle: dream*
-
-The hand_action exiting with code 1 in 0.03s indicates an immediate startup failure (bad path/binary/config), which a cheap pre-flight dry-run would have caught before committing the real action.
-
-### `dream:20260825230026:4:36c967`
-*25.08. 23:00 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free network error ('Cannot assign requested address') plus a successful nemotron fallback confirms free-tier models are unreliable endpoints and failover chains are necessary, not optional.
-
-### `dream:20260825230026:3:669665`
-*25.08. 23:00 UTC · Quelle: dream*
-
-The calibration gap (predicted 6 vs actual 3) shows the system systematically overestimates its own capability on novel automation goals by roughly 2x and should deflate self-predictions for unproven reflexes.
-
-### `dream:20260825230026:2:af25e7`
-*25.08. 23:00 UTC · Quelle: dream*
-
-Evolution variant selection works: in the run with scores [6, 9, 7], the winner (index 1) was the highest-scoring variant, so the failure lies downstream in deployment/persistence, not in generation.
-
-### `dream:20260825230026:1:b42ad2`
-*25.08. 23:00 UTC · Quelle: dream*
-
-The 'Cortex-Upgrade-Reflex' goal failed twice at score 3/10 because swarm termination fired after only 2 cycles without convergence, cutting short the evolution loop that had already produced a 9/10 variant.
 
 ### `last_swarm_critique`
 *25.08. 22:35 UTC · Quelle: critic*
