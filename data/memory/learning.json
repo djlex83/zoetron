@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 21:14:55",
+ "stand": "2026-09-08 21:25:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -129,18 +129,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "mehr-evolution-starten.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -202,6 +190,12 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-be.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -327,12 +321,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-be.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "entfernte-erinnerungen-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -357,6 +345,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -367,6 +361,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
@@ -399,7 +399,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.826,
+ "haende_quote": 0.825,
  "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 23,
