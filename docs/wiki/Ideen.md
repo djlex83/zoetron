@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 07:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 07:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,12 +9,12 @@
 - Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 8×)*
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
-- ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 6×)*
 - Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
-- ErrorClassBackoffStrategy: encode distinct retry policies — exponential backoff with jitter for 429 rate limit *(hatte die Idee 5×)*
-- ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 5×)*
-- ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 5×)*
-- StalenessDetector: proactively scan swarm data age on a scheduled basis (e.g., hourly), emitting drive_goal ev *(hatte die Idee 5×)*
+- ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 5×)*
+- ErrorClassBackoffStrategy: encode distinct retry policies — exponential backoff with jitter for 429 rate limit *(hatte die Idee 4×)*
+- ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 4×)*
+- ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 4×)*
+- StalenessDetector: proactively scan swarm data age on a scheduled basis (e.g., hourly), emitting drive_goal ev *(hatte die Idee 4×)*
 - Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours. *(hatte die Idee 4×)*
 - Enforce absolute_path_guard middleware on all file tools with canonical ZOETRON_DATA rewriting. *(hatte die Idee 4×)*
 - Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with backof *(hatte die Idee 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Schema mismatches between artifacts and scoring logic waste computational cycles that could be eliminated entirely by enforcing validation gates befor
+- Null error returns from tool calls create invisible failure modes that prevent the system from learning from mistakes, since no actionable context is 
+- Swarm knowledge decays silently over time without scheduled renewal, causing coordination quality to degrade invisibly until convergence failures reve
+- Rate-limit errors (429) and upstream errors (502) share a root cause: insufficient request throttling and the absence of health-aware routing that det
+- Heavy LLM endpoints fail under load predictably; system reliability depends on always having lightweight fallback models ready to absorb traffic when 
 - Reflex selection remains hardcoded instead of signal-to-tool registry, limiting composability and auditability.
 - Drive goals for model errors lack resolved-flag verification, risking perpetual re-emission without outcome confirmation.
 - Pruning executes blindly without memory-pressure scalar, preventing OOM prediction and adaptive retention.
@@ -51,11 +56,6 @@
 - Calibration consistently underestimates post-fix success (predicted 6 vs actual 9), suggesting the planner's risk model overweights transient provider
 - Simulation-driven revision loops (verdict=revise → revisions=3 → score=9 converged) reliably convert flaky model chains into passing pipelines.
 - Free-tier flagship models (Nemotron, Gemma) fail reliably under load with 502/429 errors while smaller flash models (Ling-3.0-flash) sustain throughpu
-- Swarm knowledge decays without scheduled re-evaluation, turning past critiques into stale artifacts rather than living guidance.
-- Skill proposals accumulate but remain unimplemented without a dedicated promotion pipeline from dream to deployed capability.
-- Fixed iteration budgets under conserve mode ignore task risk profiles, guaranteeing under-provisioning for complex revisions.
-- Relative path handling without absolute baseline validation causes silent hand-action failures that waste cycles and erode trust.
-- Model provider diversity without automatic fallback creates single points of failure that cascade into system-wide resource exhaustion.
 
 ---
 
