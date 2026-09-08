@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 21:59:46",
+ "stand": "2026-09-08 22:10:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -21,13 +21,13 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0

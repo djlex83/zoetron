@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 21:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 22:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,9 +28,9 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model selection ignores measurable reliability (success rate, latency, executability), causing repeated avoidable failures.
+- Swarm knowledge refresh only triggers reactively via reflex, leaving collaboration stale for long periods.
+- Skill proposals accumulate but never become active goals, creating a persistent capability gap.
+- High-latency models (43s) are accepted without timeout guards, stalling the cognitive loop.
+- Rate-limited models (429 errors) repeatedly block progress because no automatic failover to reliable alternatives exists.
 - Circuit-breaker state evaporates across sleep/wake cycles, resetting degradation memory and repeating known-bad model choices.
 - Exit-code-only success checks miss silent failures (zero-byte I/O, placeholder implementations) that corrupt downstream state.
 - Skill proposals accumulate but lack an activation pipeline, so validated improvements never reach production.
@@ -51,11 +56,6 @@
 - Proposed skills accumulate without validation; a promotion daemon that tests one skill per sleep cycle against replayed failures would close the propo
 - Relative path usage in hand_actions causes silent failures where scripts exit 0 but touch wrong files, needing mandatory absolute path resolution.
 - Model failures cluster around rate limits (429) and gateway errors (502) with high latency, requiring automatic failover to faster models.
-- Skill proposals accumulate (5+ per cycle) but drive goal 'test proposed skills' remains unaddressed, creating proposal-execution gap.
-- Path-related failures persist despite absolute-path proposal, suggesting ZOETRON_DATA prepending not yet enforced system-wide.
-- Reflex tools execute reliably (exit 0, converged true) while model-dependent actions fail, revealing architecture asymmetry.
-- The identical ModelRouter proposal appears twice across cycles, indicating recognized need but zero deployment progress.
-- Model failures (502/429) occur at ~50% rate across providers, forcing fallback to flash models which succeed with 10x lower latency.
 
 ---
 

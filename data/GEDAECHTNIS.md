@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12089 Fakten** · Stand 2026-09-08 22:02 UTC · aktualisiert bei jedem Herzschlag
+**12087 Fakten** · Stand 2026-09-08 22:13 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7436
-- **swarm_artifact:** 2082
+- **swarm_artifact:** 2080
 - **last_swarm_critique:** 840
 - **last_swarm_goal:** 572
 - **anti_pattern:** 525
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908221025:5:489ae3`
+*08.09. 22:10 UTC · Quelle: dream*
+
+Model selection ignores measurable reliability (success rate, latency, executability), causing repeated avoidable failures.
+
+### `dream:20260908221025:4:2d4789`
+*08.09. 22:10 UTC · Quelle: dream*
+
+Swarm knowledge refresh only triggers reactively via reflex, leaving collaboration stale for long periods.
+
+### `dream:20260908221025:3:259ace`
+*08.09. 22:10 UTC · Quelle: dream*
+
+Skill proposals accumulate but never become active goals, creating a persistent capability gap.
+
+### `dream:20260908221025:2:764ae3`
+*08.09. 22:10 UTC · Quelle: dream*
+
+High-latency models (43s) are accepted without timeout guards, stalling the cognitive loop.
+
+### `dream:20260908221025:1:47e8c0`
+*08.09. 22:10 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) repeatedly block progress because no automatic failover to reliable alternatives exists.
 
 ### `dream:20260908215841:5:77f1a7`
 *08.09. 21:58 UTC · Quelle: dream*
@@ -46486,31 +46511,6 @@ score=3; issues=Drei widersprüchliche Versionen von exemplare.py werden als Art
 *25.08. 22:00 UTC · Quelle: system*
 
 Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
-
-### `dream:20260825220026:5:aa106c`
-*25.08. 22:00 UTC · Quelle: dream*
-
-The hand_action failed immediately (exit 1 in 0.04s) but was only caught later via issue_sync, so pre-flight validation of executable actions before dispatch would prevent wasted cycles.
-
-### `dream:20260825220026:4:63e88b`
-*25.08. 22:00 UTC · Quelle: dream*
-
-Evolution improved variant scores from 7.5 to 8.5 internally, yet the final measured score stayed at 5, revealing a gap between self-evaluated variant quality and empirically validated performance.
-
-### `dream:20260825220026:3:9c6960`
-*25.08. 22:00 UTC · Quelle: dream*
-
-The swarm terminated after only 2 cycles with converged=false and score=5, indicating the cycle budget ends runs before quality gates are met when improvement per cycle is small.
-
-### `dream:20260825220026:2:cf6796`
-*25.08. 22:00 UTC · Quelle: dream*
-
-Repeated 429 rate-limit errors on openrouter.ai across both stealth/ox-alpha and z-ai/glm-5.2:free show that bursty sequential calls without backoff or model rotation are the primary infrastructure failure mode.
-
-### `dream:20260825220026:1:7e90c1`
-*25.08. 22:00 UTC · Quelle: dream*
-
-The football predictor (zoetron_40c3426639) hit 49.48% vs the 50.18% baseline with worse log-loss (1.0124 vs 1.0073), meaning the model adds no edge over always predicting ~50% — the approach itself, not execution, is failing.
 
 ### `last_swarm_critique`
 *25.08. 21:42 UTC · Quelle: critic*
