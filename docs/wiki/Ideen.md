@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 16:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 16:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,16 +24,16 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 45 events but kept 5 facts; fact distillation must cluster by error signature (502/429/timeout) to extract reusable retry/fallback pro
+- Swarm converged but score unknown; convergence monitor must require critic confidence >0.8 and score plateau detection before termination.
+- Multiple independent skill proposals converge on identical infrastructure: circuit breakers, fallback chains, health tracking, sandbox gates — these a
+- Provider failures (502, 429) cascade because no automatic fallback exists; circuit-breaker with health scores must reroute before user-facing errors.
+- Ultra models (127s latency, 502 errors) are unreliable for production; flash models (5s latency) should be default for all roles except verified heavy
 - Pruning discards 35 events without extracting reusable failure patterns (retry policies, fallback chains).
 - Swarm knowledge stales rapidly without automated refresh cycles, degrading decision quality over time.
 - Skill proposals accumulate but lack verification pipeline, risking registry pollution with untested code.
@@ -51,11 +56,6 @@
 - Stale swarm knowledge actively blocks new collaboration, so periodic refresh is a prerequisite rather than an optional maintenance task.
 - The dream module's hard 180s timeout causes total work loss without incremental checkpointing, making time-bound consolidation structurally fragile.
 - Ultra-heavy models consistently fail under load (502) or rate-limit (429) while flash models complete in ~3s, proving model weight is inversely correl
-- Pruning removes events but zero facts, indicating experience accumulates without semantic consolidation.
-- Swarm knowledge decays within a single cycle without automated refresh, forcing repeated manual re-initialization.
-- Five skill proposals from the previous dream cycle remain undeployed, revealing a broken proposal-to-production pipeline.
-- Three identical drive goals recur across cycles, proving that reflex actions resolve symptoms but not root causes.
-- Model latency of 100-160s per call makes the primary model practically unusable for interactive tasks.
 
 ---
 

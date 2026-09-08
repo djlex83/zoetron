@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 16:14:25",
+ "stand": "2026-09-08 16:29:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -84,12 +84,6 @@
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -184,6 +178,12 @@
   },
   {
    "tool": "häufige-modellfehler-besser-verstehen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -406,6 +406,12 @@
   },
   {
    "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

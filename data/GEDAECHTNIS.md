@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12086 Fakten** · Stand 2026-09-08 16:16 UTC · aktualisiert bei jedem Herzschlag
+**12085 Fakten** · Stand 2026-09-08 16:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7371
-- **swarm_artifact:** 2102
+- **dream:** 7376
+- **swarm_artifact:** 2100
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
-- **anti_pattern:** 541
-- **strategy:** 272
+- **anti_pattern:** 539
+- **strategy:** 271
 - **tool:** 186
 - **hand_result:** 139
 - **aktuell_organfehler:** 51
-- **aktuell_fussball_messlatte:** 17
+- **aktuell_fussball_messlatte:** 16
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908162645:5:b68881`
+*08.09. 16:26 UTC · Quelle: dream*
+
+Pruning removed 45 events but kept 5 facts; fact distillation must cluster by error signature (502/429/timeout) to extract reusable retry/fallback procedures.
+
+### `dream:20260908162645:4:29e8ed`
+*08.09. 16:26 UTC · Quelle: dream*
+
+Swarm converged but score unknown; convergence monitor must require critic confidence >0.8 and score plateau detection before termination.
+
+### `dream:20260908162645:3:9e6334`
+*08.09. 16:26 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on identical infrastructure: circuit breakers, fallback chains, health tracking, sandbox gates — these are the highest-leverage builds.
+
+### `dream:20260908162645:2:f513eb`
+*08.09. 16:26 UTC · Quelle: dream*
+
+Provider failures (502, 429) cascade because no automatic fallback exists; circuit-breaker with health scores must reroute before user-facing errors.
+
+### `dream:20260908162645:1:469452`
+*08.09. 16:26 UTC · Quelle: dream*
+
+Ultra models (127s latency, 502 errors) are unreliable for production; flash models (5s latency) should be default for all roles except verified heavy reasoning.
 
 ### `dream:20260908161205:5:d46f3e`
 *08.09. 16:12 UTC · Quelle: dream*
@@ -46416,21 +46441,6 @@ Model interface errors ('str' object has no attribute 'role') across multiple pr
 *25.08. 16:35 UTC · Quelle: dream*
 
 Prose-only artifacts prevent convergence; executable code blocks are necessary for measurable progress in prediction tasks.
-
-### `aktuell_fussball_messlatte`
-*25.08. 16:16 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.45 -0.31 -0.41 -0.12 -1.66 -0.43. Der Log-Loss ist
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :1`
-*25.08. 16:14 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Elo-Rating-System mit dynamischem K-Faktor - Verwerfe das punkt-/torbasierte Scoring komplett und baue ein klassisches Fußball-Elo-System: Jedes Team startet bei 1500, nach jedem Spiel Elo-Update mit K=20 (K=32 für die ersten
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :0`
-*25.08. 16:14 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): Robuste Parameter-Kalibrierung statt kaputter Skalierung - Ersetze die Formel heim_vorteil = avg_gd * 25 mit Clip [20,100] durch eine direkte Kalibrierung des Heimvorteils auf Validierungsdaten: Suche heim_vorteil per Grid-Se
 
 ### `last_swarm_critique`
 *25.08. 16:13 UTC · Quelle: critic*
