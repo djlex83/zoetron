@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 08:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 09:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence stalls and silent critic failures go undetected without explicit guardrails, causing wasted cycles on stalled optimization.
+- Reflex-driven tool execution (alte-marktanalyse-aktualisieren-und-nutz.py) succeeded where model-based planning failed, showing hardcoded fallbacks ou
+- Automatic pruning of stale facts and events (5 facts, 20 events) after each cycle prevents memory bloat from failed retries and redundant simulations.
+- The inclusionai/ling-3.0-flash-fin:free model delivers consistent low-latency success (3.8-4.5s) while larger models like nemotron-3-ultra exhibit 10x
+- Free-tier models consistently fail under load with 429 rate limits and 502 gateway errors, making them unreliable as primary providers.
 - Relative file paths fail in hand_action because arguments aren't expanded through ZOETRON_DATA before execution.
 - Swarm vectors and coordination data stale within days without automated freshness checks and renewal reflexes.
 - Reflex tools and hand_actions return null or missing error fields on failure, preventing structured retry and root-cause analysis.
@@ -51,11 +56,6 @@
 - Swarm knowledge staleness goes undetected until coordination degrades, requiring scheduled freshness checks with automatic renewal triggers.
 - Rate-limit errors (429) propagate across multiple providers simultaneously, indicating missing request scheduling and token-bucket throttling.
 - Model provider failures cascade because no automatic failover exists between primary and flash models.
-- Multiple redundant skill proposals (router, health monitor, flash-first) were generated independently, revealing a need for proposal deduplication bef
-- Pruning removes facts aggressively (10 facts) but preserves events, suggesting fact-store bloat is a bigger issue than event-log growth.
-- Reflex-driven skill execution (try-skills, update-swarm) converges reliably and should be the default pattern for maintenance goals.
-- No automatic failover triggered: the system experienced three consecutive model failures before a flash model was used, indicating missing circuit-bre
-- Primary models (Nemotron Ultra, Gemma variants) fail under load with 502/429 errors while flash models (Ling 3.0 Flash) consistently succeed at 4s lat
 
 ---
 

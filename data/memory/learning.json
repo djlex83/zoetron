@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 08:54:47",
+ "stand": "2026-09-08 09:09:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -225,12 +225,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -430,6 +424,12 @@
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
