@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11927 Fakten** · Stand 2026-09-08 02:31 UTC · aktualisiert bei jedem Herzschlag
+**11932 Fakten** · Stand 2026-09-08 02:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7206
+- **dream:** 7211
 - **swarm_artifact:** 2096
 - **last_swarm_critique:** 830
 - **last_swarm_goal:** 562
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908023919:5:7c309d`
+*08.09. 02:39 UTC · Quelle: dream*
+
+Reflex-driven maintenance (e.g., schwarmwissen refresh) succeeds where deliberate planning stalls, suggesting automated upkeep beats scheduled intent.
+
+### `dream:20260908023919:4:b7b47b`
+*08.09. 02:39 UTC · Quelle: dream*
+
+Goal selection ignores metabolic state (latency budgets, error rates, iteration caps), causing overcommitment during degraded provider health.
+
+### `dream:20260908023919:3:5e6db2`
+*08.09. 02:39 UTC · Quelle: dream*
+
+Errors are only logged as raw strings; without a taxonomy classifying provider/error-type, automated fallback and retry policies cannot be targeted.
+
+### `dream:20260908023919:2:fd180f`
+*08.09. 02:39 UTC · Quelle: dream*
+
+Goals, simulations, and skill proposals are generated but rarely validated or deployed — execution gap spans simulation→practice, proposal→mission, and swarm→action.
+
+### `dream:20260908023919:1:5dd990`
+*08.09. 02:39 UTC · Quelle: dream*
+
+Model provider instability (502/429) cascades into task failure because fallback is reactive and lacks per-provider circuit breakers with sub-10s failover.
 
 ### `dream:20260908022823:5:a70178`
 *08.09. 02:28 UTC · Quelle: dream*
