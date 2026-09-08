@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 19:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 20:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative paths and environment-variable-dependent paths caused silent failures — always resolve to absolute paths and validate existence before script
+- Calibration predictions diverged significantly from actuals (predicted 7, actual 4) under maximum stress, meaning self-assessed confidence must be dis
+- Repeated 502 and 429 errors from primary and secondary API providers indicate that a circuit-breaker pattern with immediate fallback is essential to p
+- Under high service load, smaller flash-tier models (e.g., inclusionai/ling-3.0-flash-fin) consistently outperform large models in both reliability and
+- Exit code 0 does not guarantee meaningful work was done — always verify that files or artifacts actually exist and contain data, not just that a proce
 - Circuit-breaker state is not persisted across sleep cycles, causing repeated hammering of known-degraded providers on wake.
 - Swarm knowledge decays silently; stale goals persist for weeks without automatic freshness checks or forced regeneration triggers.
 - Placeholder functions (pass/TODO/NotImplemented) reach production registry because no gate validates implementation completeness at registration time.
@@ -51,11 +56,6 @@
 - Exit codes are unreliable success indicators; post-execution verification of actual file system touches prevents undetected data corruption.
 - Relative path handling in hand_actions leads to silent failures where scripts exit 0 but access wrong directories; absolute canonicalization against Z
 - Model provider instability (502/429 errors) causes cascading failures unless circuit breakers automatically failover to flash models within seconds.
-- Model errors cluster around specific providers, indicating that per-provider health tracking is essential for reliable autonomous operation.
-- Unfiltered skill proposal accumulation (65 proposals) wastes computational resources and delays implementation, requiring a structured filtering and c
-- Swarm knowledge decays over time; stale artifacts propagate incorrect assumptions and must be actively refreshed with TTL-based validation.
-- Without circuit breakers and pre-warmed fallback pools, consecutive provider failures cascade into system-wide outages with no automatic recovery path
-- Provider failures manifest at both HTTP level (429 rate limits) and application level (502 with 'Upstream error' in payload), so status-code-only moni
 
 ---
 

@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12097 Fakten** · Stand 2026-09-08 19:59 UTC · aktualisiert bei jedem Herzschlag
+**12090 Fakten** · Stand 2026-09-08 20:19 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7411
-- **swarm_artifact:** 2096
+- **swarm_artifact:** 2094
 - **last_swarm_critique:** 840
 - **last_swarm_goal:** 572
-- **anti_pattern:** 533
-- **strategy:** 268
+- **anti_pattern:** 531
+- **strategy:** 267
 - **tool:** 183
-- **hand_result:** 138
+- **hand_result:** 137
 - **aktuell_organfehler:** 50
-- **aktuell_fussball_messlatte:** 5
+- **aktuell_fussball_messlatte:** 4
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908201621:5:8e8fd7`
+*08.09. 20:16 UTC · Quelle: dream*
+
+Relative paths and environment-variable-dependent paths caused silent failures — always resolve to absolute paths and validate existence before script execution.
+
+### `dream:20260908201621:4:8a7832`
+*08.09. 20:16 UTC · Quelle: dream*
+
+Calibration predictions diverged significantly from actuals (predicted 7, actual 4) under maximum stress, meaning self-assessed confidence must be discounted when stress is elevated.
+
+### `dream:20260908201621:3:b11534`
+*08.09. 20:16 UTC · Quelle: dream*
+
+Repeated 502 and 429 errors from primary and secondary API providers indicate that a circuit-breaker pattern with immediate fallback is essential to prevent cascading delays.
+
+### `dream:20260908201621:2:a35b9e`
+*08.09. 20:16 UTC · Quelle: dream*
+
+Under high service load, smaller flash-tier models (e.g., inclusionai/ling-3.0-flash-fin) consistently outperform large models in both reliability and latency, making them the better default under stress.
+
+### `dream:20260908201621:1:ece87a`
+*08.09. 20:16 UTC · Quelle: dream*
+
+Exit code 0 does not guarantee meaningful work was done — always verify that files or artifacts actually exist and contain data, not just that a process terminated successfully.
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Interne Modelle zuverläs:2`
 *08.09. 19:56 UTC · Quelle: evolution*
@@ -46437,21 +46462,6 @@ Prediction calibration is systematically optimistic: predicted 5 vs actual 3 (ab
 
 Rate limits (429) cascade across models on the same provider (openrouter.ai), so fallback within one provider is not a real fallback — diversify providers or cache prior outputs.
 
-### `aktuell_fussball_messlatte`
-*25.08. 20:10 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.48 -0.64 -0.40 -0.72 -0.72 -0.72. Der Log-Loss ist
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :2`
-*25.08. 20:09 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Feature-basiertes Gradient Boosting auf nicht-preisbezogene Datenquellen - Baue einen XGBoost/LightGBM-Klassifikator, der ausschließlich Nicht-Quoten-Features nutzt: Rolling-Averages (Tore, xG falls verfügbar, Schüsse, Ballbe
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :1`
-*25.08. 20:09 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Market-Effizienz ausnutzen: Closing-Line-freie Kontrarian-Strategie auf systemat - Nutze bekannte, dokumentierte Verzerrungen in Fußballergebnissen ohne Quoten zu lesen: (1) Favoriten-Bias korrigieren - schwache Favoriten ver
-
 ### `last_swarm_critique`
 *25.08. 20:08 UTC · Quelle: critic*
 
@@ -46461,31 +46471,6 @@ score=5; issues=Critic output unparseable.
 *25.08. 20:02 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825200226:5:c1e015`
-*25.08. 20:02 UTC · Quelle: dream*
-
-The nachspiel metric showed zero delta (-0.2 to -0.2) across cycles, meaning repeated revision rounds without structural change produce no measurable improvement.
-
-### `dream:20260825200226:4:c2749d`
-*25.08. 20:02 UTC · Quelle: dream*
-
-A DNS name-resolution failure during act-create shows that network-level flakiness, not just API errors, interrupts goal execution and needs retry handling at the infrastructure layer.
-
-### `dream:20260825200226:3:ca5730`
-*25.08. 20:02 UTC · Quelle: dream*
-
-Model calls failed repeatedly with 429 Too Many Requests on two different providers within the same second, indicating shared upstream rate limiting rather than per-model quota exhaustion.
-
-### `dream:20260825200226:2:74c8b5`
-*25.08. 20:02 UTC · Quelle: dream*
-
-The swarm failed to converge in only 2 cycles while the metabolism was in conserve state (max_iterations=1), so non-convergence is likely caused by budget starvation rather than plan quality.
-
-### `dream:20260825200226:1:b7e0fd`
-*25.08. 20:02 UTC · Quelle: dream*
-
-Both football variants (49.83% and 49.72%) landed below the 50.18% baseline with worse log-loss than baseline, confirming that unaided reasoning without external signals cannot beat the bookmaker line.
 
 ### `last_swarm_critique`
 *25.08. 19:36 UTC · Quelle: critic*
