@@ -1,20 +1,50 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11987 Fakten** · Stand 2026-09-08 07:25 UTC · aktualisiert bei jedem Herzschlag
+**11989 Fakten** · Stand 2026-09-08 07:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7256
-- **swarm_artifact:** 2101
+- **dream:** 7261
+- **swarm_artifact:** 2100
 - **last_swarm_critique:** 835
 - **last_swarm_goal:** 567
-- **anti_pattern:** 553
-- **strategy:** 278
+- **anti_pattern:** 551
+- **strategy:** 277
 - **tool:** 184
 - **hand_result:** 139
-- **aktuell_organfehler:** 45
+- **aktuell_organfehler:** 46
 - **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908073426:5:d5cb60`
+*08.09. 07:34 UTC · Quelle: dream*
+
+Swarm memory goes stale without scheduled refresh cycles, and disconnected dream memories from the same temporal window remain unlinked, losing cross-episode pattern extraction.
+
+### `dream:20260908073426:4:c52eae`
+*08.09. 07:34 UTC · Quelle: dream*
+
+High metabolic stress (1.0) triggers conserve mode that caps max_tasks=3 and max_iterations=1, throttling consolidation throughput exactly when dream replay needs capacity.
+
+### `dream:20260908073426:3:833261`
+*08.09. 07:34 UTC · Quelle: dream*
+
+Reflex tools (traum-ideen-zu-fähigkeiten-machen.py) can return ok:false without error details, making silent failures invisible to the orchestration layer.
+
+### `dream:20260908073426:2:ea4324`
+*08.09. 07:34 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of the canonical ZOETRON_DATA environment variable, causing 'nothing read' errors that succeed only on retry with absolute paths.
+
+### `dream:20260908073426:1:f6b6c8`
+*08.09. 07:34 UTC · Quelle: dream*
+
+Model reliability varies wildly by provider: nemotron-3-ultra succeeds after retries but suffers 502/504 errors, while gemma-4 models hit 429 rate limits immediately, requiring a provider-aware fallback chain.
+
+### `aktuell_organfehler`
+*08.09. 07:32 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-08 07:23:14 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260908072014:5:a4c527`
 *08.09. 07:20 UTC · Quelle: dream*
@@ -45976,16 +46006,6 @@ The nvidia/nemotron-3-ultra-550b-a55b:free model successfully absorbed both fail
 *25.08. 07:44 UTC · Quelle: dream*
 
 429 rate-limit failures on openrouter.ai occurred twice in quick succession across both stealth/ox-alpha and z-ai/glm-5.2:free, indicating a shared provider-level quota rather than per-model throttling.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Lokaler Schüler: das ers:2`
-*25.08. 07:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): Interactive Jupyter-based development environment with live validation - Develop a Jupyter notebook that guides the user through the LoRA training process with live code execution and validation. The notebook: 1) Generates al
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Lokaler Schüler: das ers:1`
-*25.08. 07:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Dockerized microservices architecture with separate concern modules - Package the solution as a Docker Compose application with three services: 1) A 'builder' service that generates all files from a central configuration, 2)
 
 ### `last_swarm_critique`
 *25.08. 07:20 UTC · Quelle: critic*

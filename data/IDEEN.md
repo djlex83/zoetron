@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 07:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 07:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,14 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm memory goes stale without scheduled refresh cycles, and disconnected dream memories from the same temporal window remain unlinked, losing cross-
+- High metabolic stress (1.0) triggers conserve mode that caps max_tasks=3 and max_iterations=1, throttling consolidation throughput exactly when dream 
+- Reflex tools (traum-ideen-zu-fähigkeiten-machen.py) can return ok:false without error details, making silent failures invisible to the orchestration l
+- Hand actions fail when using relative paths instead of the canonical ZOETRON_DATA environment variable, causing 'nothing read' errors that succeed onl
+- Model reliability varies wildly by provider: nemotron-3-ultra succeeds after retries but suffers 502/504 errors, while gemma-4 models hit 429 rate lim
 - Schema mismatches between artifacts and scoring logic waste computational cycles that could be eliminated entirely by enforcing validation gates befor
 - Null error returns from tool calls create invisible failure modes that prevent the system from learning from mistakes, since no actionable context is 
 - Swarm knowledge decays silently over time without scheduled renewal, causing coordination quality to degrade invisibly until convergence failures reve
@@ -51,11 +56,6 @@
 - Pruning executes blindly without memory-pressure scalar, preventing OOM prediction and adaptive retention.
 - Swarm independently converged on model-error reduction (score 9/10) confirming systemic reliability as top bottleneck.
 - Model failures cascade from primary providers (502, 429, 99s latency) to flash fallback (4.9s) without proactive health-based routing.
-- Automatic pruning (61 events, 6 facts) after convergence prevents context bloat without losing the durable fix pattern.
-- Circuit-breaker logic is absent: the system retries failing premium models instead of failing fast to healthy flash alternatives.
-- Calibration consistently underestimates post-fix success (predicted 6 vs actual 9), suggesting the planner's risk model overweights transient provider
-- Simulation-driven revision loops (verdict=revise → revisions=3 → score=9 converged) reliably convert flaky model chains into passing pipelines.
-- Free-tier flagship models (Nemotron, Gemma) fail reliably under load with 502/429 errors while smaller flash models (Ling-3.0-flash) sustain throughpu
 
 ---
 
