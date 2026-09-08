@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12080 Fakten** · Stand 2026-09-08 22:24 UTC · aktualisiert bei jedem Herzschlag
+**12092 Fakten** · Stand 2026-09-08 22:39 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7441
-- **swarm_artifact:** 2072
-- **last_swarm_critique:** 840
-- **last_swarm_goal:** 572
-- **anti_pattern:** 523
-- **strategy:** 263
+- **swarm_artifact:** 2078
+- **last_swarm_critique:** 841
+- **last_swarm_goal:** 573
+- **anti_pattern:** 525
+- **strategy:** 264
 - **tool:** 182
-- **hand_result:** 134
+- **hand_result:** 135
 - **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Reflexe in Taten umsetze:2`
+*08.09. 22:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Zentraler Zustandsautomat (Orchestrator-Muster) - Entwerfe einen `ReflexOrchestrator` als zentralen Zustandsautomaten mit den Zuständen: `IDLE` → `MEASURING` → `CONVERGING` → `ACTING` → `IDLE`. Der Orchestrator kapsellt die g
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Reflexe in Taten umsetze:1`
+*08.09. 22:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Ereignisgesteuerte Architektur (Beobachtermuster) - Implementiere ein ereignisgesteuertes System mit einem zentralen `ReflexEventBus`. `ReflexMeasurementWrapper` veröffentlicht bei jeder Messung ein `MeasurementEvent` auf dem
+
+### `last_swarm_critique`
+*08.09. 22:36 UTC · Quelle: critic*
+
+score=7; issues=Drei separate Dateien sind nicht zu einem integrierten System zusammengefügt – der ReflexToHandsAdapter nutzt nicht das Konvergenz-Tor und die Messung ist nicht in den Ausführungsfluss eingebunden; Die main()-Funktionen der drei Dateien arbeite
+
+### `last_swarm_goal`
+*08.09. 22:32 UTC · Quelle: system*
+
+Reflexe in Taten umsetzen
+
+### `dream:20260908223227:5:e1b255`
+*08.09. 22:32 UTC · Quelle: dream*
+
+Upstream overload and rate-limiting are symptoms of the same root cause: absence of demand-aware routing that throttles or redistributes requests before hitting provider-imposed ceilings.
+
+### `dream:20260908223227:4:e0b247`
+*08.09. 22:32 UTC · Quelle: dream*
+
+Latency variance across models (4s to 51.4s) reveals that model selection must be latency-aware and dynamic, not static, since a single slow call can dominate end-to-end task duration.
+
+### `dream:20260908223227:3:bc3d9b`
+*08.09. 22:32 UTC · Quelle: dream*
+
+Exit codes are an unreliable failure signal — silent failures that return clean exits but produce no usable output bypass all conventional error detection and require independent artifact verification.
+
+### `dream:20260908223227:2:d373b8`
+*08.09. 22:32 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260908223227:1:5f5b6d`
+*08.09. 22:32 UTC · Quelle: dream*
+
+Multi-provider API calls exhibit correlated failure under load — Nvidia 502 and Google 429 errors occurred in sequence, meaning provider diversity alone does not guarantee resilience without automatic failover.
 
 ### `dream:20260908222131:5:0efa88`
 *08.09. 22:21 UTC · Quelle: dream*
@@ -46491,31 +46536,6 @@ score=5; issues=Critic output unparseable.
 *25.08. 22:30 UTC · Quelle: system*
 
 Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
-
-### `dream:20260825223024:5:54dbdc`
-*25.08. 22:30 UTC · Quelle: dream*
-
-Prune runs removed zero facts and zero events, suggesting the pruning criteria are too conservative and memory is growing without pressure toward relevance.
-
-### `dream:20260825223024:4:40425e`
-*25.08. 22:30 UTC · Quelle: dream*
-
-40+ skill proposals have accumulated but almost none were tested, so the proposal pipeline is producing knowledge that never converts into capability.
-
-### `dream:20260825223024:3:40dd85`
-*25.08. 22:30 UTC · Quelle: dream*
-
-Reflex execution of the Cortex-Upgrade-Reflex succeeded in 0.5s and converged immediately, proving that pre-packaged reflexes outperform full swarm deliberation for well-understood goals.
-
-### `dream:20260825223024:2:4a6149`
-*25.08. 22:30 UTC · Quelle: dream*
-
-Selbstdiagnose found 9 ConnectError findings concentrated in the dream and drive organs, indicating transient network failures rather than logic bugs are the dominant failure mode.
-
-### `dream:20260825223024:1:cdadc0`
-*25.08. 22:30 UTC · Quelle: dream*
-
-The swarm failed to converge (score 3, converged=false) because the critic kept issuing 'revise' verdicts while the 2-cycle budget expired before revisions were applied.
 
 ### `last_swarm_critique`
 *25.08. 22:15 UTC · Quelle: critic*

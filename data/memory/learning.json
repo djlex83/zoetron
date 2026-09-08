@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 22:22:01",
+ "stand": "2026-09-08 22:37:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,12 +81,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -135,18 +129,6 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "häufige-modellfehler-besser-verstehen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -178,6 +160,12 @@
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -315,6 +303,12 @@
    "quote": 0.0
   },
   {
+   "tool": "häufige-modellfehler-besser-verstehen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -357,6 +351,12 @@
    "quote": 1.0
   },
   {
+   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -391,19 +391,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-in-taten-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.826,
- "simulationen_angewandt": 23,
+ "haende_quote": 0.81,
+ "simulationen_angewandt": 25,
  "swarm_scores": {
-  "n": 23,
+  "n": 24,
   "best": 9.0,
-  "schnitt": 5.48
+  "schnitt": 5.54
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 5.32
+   "n": 23,
+   "schnitt": 5.39
   },
   "bau": {
    "n": 1,
