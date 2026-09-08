@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 11:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 11:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple skill proposals target the same failure modes (model health, critic validation, convergence) but none appear deployed, indicating a proposal-
+- Pruning removes events but never facts, causing unbounded fact growth despite regular maintenance runs.
+- Reflex actions converge reliably while swarm planning does not, revealing a gap between simple tool execution and multi-agent planning.
+- Swarm cycles evolve but fail to converge (score stuck at 5), suggesting missing convergence guardrails or inadequate critic feedback.
+- Model latency varies wildly (71-132s) and 33 model errors occurred, indicating unreliable provider performance requiring circuit breakers and failover
 - Pruning 58 events but zero facts means experience is discarded without extracting reusable knowledge.
 - Two swarm cycles with score 5/10 and no convergence indicates insufficient iterations or weak critic signal for complex goals.
 - Nemotron-3-Ultra latency (70-130s) exceeds interactive budgets; assign it only to offline builder roles, not planner/critic.
@@ -51,11 +56,6 @@
 - Consolidation tasks that exceed ~180s will timeout unless split into checkpointed chunks, making incremental processing a structural requirement rathe
 - Upstream 502 errors and 429 rate limits are systemic failure modes, not transient glitches; any system relying on a single model provider will repeate
 - Flash models (e.g., inclusionai/ling-3.0-flash-fin at 4.4s latency) outperform large models on both speed and reliability, making them the default cho
-- Self-diagnosis shows zero organ errors post-pruning, indicating that pruning (19 events) and reflex execution stabilize the system without model calls
-- Reflex patterns (swarm convergence, error reduction) succeed when codified as parameterized scripts, reducing reliance on slow model reasoning for com
-- Dream consolidation itself hits 180s timeouts because it uses heavy models; splitting into 60s checkpointed chunks with flash models prevents cascade 
-- Heavy models (nemotron-3-ultra at 150s+ latency) are unusable for interactive loops; flash models (ling-3.0-flash at 4.5s) must be the default for cos
-- Rate limiting (429) on specific models like gemma-4-26b is a dominant failure mode that requires per-provider circuit breakers with automatic failover
 
 ---
 

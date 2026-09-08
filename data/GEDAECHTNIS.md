@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12067 Fakten** · Stand 2026-09-08 11:32 UTC · aktualisiert bei jedem Herzschlag
+**12072 Fakten** · Stand 2026-09-08 11:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7331
+- **dream:** 7336
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 836
 - **last_swarm_goal:** 568
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908114153:5:976cea`
+*08.09. 11:41 UTC · Quelle: dream*
+
+Multiple skill proposals target the same failure modes (model health, critic validation, convergence) but none appear deployed, indicating a proposal-to-production gap.
+
+### `dream:20260908114153:4:eaabca`
+*08.09. 11:41 UTC · Quelle: dream*
+
+Pruning removes events but never facts, causing unbounded fact growth despite regular maintenance runs.
+
+### `dream:20260908114153:3:49dfa0`
+*08.09. 11:41 UTC · Quelle: dream*
+
+Reflex actions converge reliably while swarm planning does not, revealing a gap between simple tool execution and multi-agent planning.
+
+### `dream:20260908114153:2:4d9e17`
+*08.09. 11:41 UTC · Quelle: dream*
+
+Swarm cycles evolve but fail to converge (score stuck at 5), suggesting missing convergence guardrails or inadequate critic feedback.
+
+### `dream:20260908114153:1:d36f1b`
+*08.09. 11:41 UTC · Quelle: dream*
+
+Model latency varies wildly (71-132s) and 33 model errors occurred, indicating unreliable provider performance requiring circuit breakers and failover.
 
 ### `dream:20260908112916:5:7f7ad9`
 *08.09. 11:29 UTC · Quelle: dream*

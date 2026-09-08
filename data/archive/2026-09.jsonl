@@ -26167,3 +26167,20 @@
 {"ts": 1788260530.0594258, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 1.16, "gelesen": 0}}
 {"ts": 1788260532.2347388, "kind": "issue_synced", "payload": {"issue": 284, "state": "open"}}
 {"ts": 1788260810.9832425, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788262504.3000364, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788262505.8932571, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788262509.976517, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788262509.9765146, "schalter_geoeffnet": false}}
+{"ts": 1788262535.7951488, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 25.8, "tokens_ein": 1406, "tokens_aus": 1017}}
+{"ts": 1788262535.79567, "kind": "skill_proposal", "payload": {"proposal": "Implement a model health registry that tracks per-endpoint success rate, latency percentiles, and rate-limit state, and automatically deprioritizes endpoints after 3 consecutive 429 errors."}}
+{"ts": 1788262535.7957277, "kind": "skill_proposal", "payload": {"proposal": "Build a skill promotion pipeline that automatically moves proposals through simulation, dry-run, and canary stages before marking them as deployable goals."}}
+{"ts": 1788262535.7957954, "kind": "skill_proposal", "payload": {"proposal": "Add a data freshness daemon that scans all analysis artifacts nightly, flags those older than a configurable TTL, and triggers refresh workflows via existing reflex tools."}}
+{"ts": 1788262535.7958963, "kind": "skill_proposal", "payload": {"proposal": "Introduce dream checkpointing: persist partial consolidation state every 30 seconds so timeouts resume rather than restart, and prioritize high-signal events (failures, drive goals) over routine logs."}}
+{"ts": 1788262535.7959769, "kind": "skill_proposal", "payload": {"proposal": "Create a reflex tool generator that wraps any validated skill proposal into a standardized, tested Python script with schema-validated inputs and structured outputs, reducing hand-action boilerplate."}}
+{"ts": 1788262535.7960641, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788262542.9586837, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 5.0, "tokens_ein": 470, "tokens_aus": 610}}
+{"ts": 1788262542.958891, "kind": "drive_goal", "payload": {"title": "Aus Fehlern lernen und Modelle verbessern", "why": "Wir machen noch sehr viele Fehler im Vergleich zu erfolgreichen Aktionen. Wenn wir besser verstehen, was schiefgeht, können wir beim nächsten Mal klüger handeln.", "signal": "failure"}}
+{"ts": 1788262542.9589698, "kind": "drive_goal", "payload": {"title": "Alte Marktanalyse-Aufgaben abschließen", "why": "Es gibt alte Aufgaben zur Marktanalyse und Lückenanalyse, die schon lange unberührt liegen. Wir sollten sie fertigstellen, damit das Wissen nicht veraltet.", "signal": "stale"}}
+{"ts": 1788262542.959035, "kind": "drive_goal", "payload": {"title": "Simulations-Pipeline verbessern und erneut testen", "why": "Eine alte Simulation hat nur 7 von 10 Punkten erreicht. Wenn wir sie verbessern, können wir besser vorhersehen, ob unsere Ideen funktionieren.", "signal": "gap"}}
+{"ts": 1788262548.8953276, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 3.53, "gelesen": 126}}
+{"ts": 1788262548.8965294, "kind": "reflex_used", "payload": {"goal": "Marktanalyse abschließen", "tool": "marktanalyse-abschließen-und-lücken-schl.py", "ok": true}}
+{"ts": 1788262549.4106026, "kind": "act_done", "payload": {"goal_title": "Marktanalyse abschließen", "score": null, "converged": true, "mode": "reflex"}}
