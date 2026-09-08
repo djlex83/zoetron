@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 05:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 05:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Structured error objects capturing stderr, exit codes, and context from hand_actions enable automated recovery instead of silent null failures.
+- Flash models (sub-5s latency) must be automatic fallbacks when primary models exceed p95 latency >30s or error rates exceed thresholds.
+- Swarm convergence requires minimum cycle counts (>=5) and stability thresholds (score variance <0.1) to avoid accepting stale or oscillating results.
+- Exponential backoff with jitter and concurrent request throttling stops 429 rate limits from collapsing the entire inference pipeline.
+- Provider-specific circuit breakers with health scores (success rate, p95 latency, error taxonomy) prevent cascading failures when upstream services re
 - Schema validation gates before scoring prevent wasted evaluation cycles on malformed artifacts.
 - Stale swarm knowledge and insufficient evolution rounds create capability drift that compounds over time.
 - Upstream 502 errors from providers require circuit-breaker patterns with automatic failover to healthy endpoints.
@@ -51,11 +56,6 @@
 - Pruning aggressiveness varies widely (38 vs 20 events) without clear correlation to memory pressure, implying the prune policy lacks a stable trigger.
 - Reflex tools for targeted maintenance (knowledge refresh, error analysis) consistently converge in one shot, suggesting they should be first-line resp
 - Model latency exhibits high variance (15-143s) on the same provider, indicating unreliable infrastructure rather than workload differences.
-- Model failures are external-service-caused, not logic-caused, meaning the system cannot self-heal by retrying the same model — it must detect and rout
-- Metabolism signals (stress=1.0, conserve mode, max 3 tasks, 1 iteration) were present but not acted upon to throttle or skip non-critical operations l
-- The system spawned a swarm despite a prior reflex (entfernte-erinnerungen-verknüpfen.py) already failing, showing that swarm orchestration lacks a dep
-- Retrying failed models immediately without backoff amplifies rate-limiting (429) and overload (502) errors, creating a self-reinforcing failure loop t
-- External API calls to Google and Nvidia endpoints are unreliable — 429 rate limits and 502 upstream errors recur, while inclusionai/ling-3.0-flash-fin
 
 ---
 

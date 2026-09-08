@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11965 Fakten** · Stand 2026-09-08 05:12 UTC · aktualisiert bei jedem Herzschlag
+**11959 Fakten** · Stand 2026-09-08 05:22 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7236
-- **swarm_artifact:** 2102
+- **swarm_artifact:** 2096
 - **last_swarm_critique:** 833
 - **last_swarm_goal:** 565
 - **anti_pattern:** 555
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908052018:5:4d866b`
+*08.09. 05:20 UTC · Quelle: dream*
+
+Structured error objects capturing stderr, exit codes, and context from hand_actions enable automated recovery instead of silent null failures.
+
+### `dream:20260908052018:4:dfe8e7`
+*08.09. 05:20 UTC · Quelle: dream*
+
+Flash models (sub-5s latency) must be automatic fallbacks when primary models exceed p95 latency >30s or error rates exceed thresholds.
+
+### `dream:20260908052018:3:00568d`
+*08.09. 05:20 UTC · Quelle: dream*
+
+Swarm convergence requires minimum cycle counts (>=5) and stability thresholds (score variance <0.1) to avoid accepting stale or oscillating results.
+
+### `dream:20260908052018:2:2bafe5`
+*08.09. 05:20 UTC · Quelle: dream*
+
+Exponential backoff with jitter and concurrent request throttling stops 429 rate limits from collapsing the entire inference pipeline.
+
+### `dream:20260908052018:1:00ae1f`
+*08.09. 05:20 UTC · Quelle: dream*
+
+Provider-specific circuit breakers with health scores (success rate, p95 latency, error taxonomy) prevent cascading failures when upstream services return 502/429 errors.
 
 ### `dream:20260908050810:5:1dc561`
 *08.09. 05:08 UTC · Quelle: dream*
@@ -45896,31 +45921,6 @@ score=5; issues=Critic output unparseable.
 *25.08. 05:15 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260825051452:5:158112`
-*25.08. 05:14 UTC · Quelle: dream*
-
-Over 30 skill proposals have accumulated across dream cycles with none executed, revealing that the propose→implement→test pipeline is severed right after generation.
-
-### `dream:20260825051452:4:26bfca`
-*25.08. 05:14 UTC · Quelle: dream*
-
-prune_run evicted 0 facts and 0 events, meaning the memory store grows unboundedly while pruning is effectively a no-op that still reports success.
-
-### `dream:20260825051452:3:566a22`
-*25.08. 05:14 UTC · Quelle: dream*
-
-hands-execute crashed with AttributeError 'MemoryStore' object has no attribute 'add_fact', proving that module interfaces drift silently because there is no cross-module contract test.
-
-### `dream:20260825051452:2:2e10fe`
-*25.08. 05:14 UTC · Quelle: dream*
-
-The swarm ended at score 4/10 non-converged after only 2 cycles despite an evolution run producing a 9/10 winner, showing the cycle budget terminates before evolved variants can be integrated.
-
-### `dream:20260825051452:1:c9ae9d`
-*25.08. 05:14 UTC · Quelle: dream*
-
-Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2) fail in synchronized 429 bursts while nvidia/nemotron keeps succeeding, so failover must trigger per-request rather than per-session.
 
 ### `last_swarm_goal`
 *25.08. 04:45 UTC · Quelle: system*
