@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12088 Fakten** · Stand 2026-09-08 19:29 UTC · aktualisiert bei jedem Herzschlag
+**12081 Fakten** · Stand 2026-09-08 19:44 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7406
-- **swarm_artifact:** 2092
+- **swarm_artifact:** 2090
 - **last_swarm_critique:** 839
 - **last_swarm_goal:** 571
-- **anti_pattern:** 533
-- **strategy:** 268
-- **tool:** 184
+- **anti_pattern:** 531
+- **strategy:** 267
+- **tool:** 183
 - **hand_result:** 138
 - **aktuell_organfehler:** 50
-- **aktuell_fussball_messlatte:** 6
+- **aktuell_fussball_messlatte:** 5
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908194138:5:5e7ea3`
+*08.09. 19:41 UTC · Quelle: dream*
+
+Swarm knowledge decays within hours; periodic market-data refresh must be embedded in the reflex cycle to maintain routing accuracy.
+
+### `dream:20260908194138:4:8be2dd`
+*08.09. 19:41 UTC · Quelle: dream*
+
+Optimization loops stall indefinitely without convergence detection; automatic restart or model switch after 3+ flat cycles preserves progress.
+
+### `dream:20260908194138:3:ac9f82`
+*08.09. 19:41 UTC · Quelle: dream*
+
+Exit codes are unreliable success indicators; post-execution verification of actual file system touches prevents undetected data corruption.
+
+### `dream:20260908194138:2:c5480a`
+*08.09. 19:41 UTC · Quelle: dream*
+
+Relative path handling in hand_actions leads to silent failures where scripts exit 0 but access wrong directories; absolute canonicalization against ZOETRON_DATA is required.
+
+### `dream:20260908194138:1:5af775`
+*08.09. 19:41 UTC · Quelle: dream*
+
+Model provider instability (502/429 errors) causes cascading failures unless circuit breakers automatically failover to flash models within seconds.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Lernprozesse zuverlässig:1`
 *08.09. 19:24 UTC · Quelle: evolution*
@@ -46417,26 +46442,6 @@ The swarm failed to converge in only 2 cycles while the metabolism was in conser
 
 Both football variants (49.83% and 49.72%) landed below the 50.18% baseline with worse log-loss than baseline, confirming that unaided reasoning without external signals cannot beat the bookmaker line.
 
-### `aktuell_fussball_messlatte`
-*25.08. 19:37 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.37 -0.48 -0.64 -0.40 -0.72 -0.72. Der Log-Loss ist
-
-### `tool:fußball-die-basislinie-von-50-2-schlagen`
-*25.08. 19:37 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten'. Datei: data/tools/fußball-die-basislinie-von-50-2-schlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
-*25.08. 19:37 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Ensemble aus einfachen Baseline-Schlagern + Kalibrierung (Meta-Layer) - Dritter Winkel: nicht ein besseres Einzelmodell, sondern eine Meta-Strategie, die garantiert nicht unter der Baseline liegt. (1) Mehrere triviale Prädikt
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :1`
-*25.08. 19:37 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Statistik-basiertes Regressionsmodell (xG/Tor-Differenz) statt Rating - Völlig anderer Angriffswinkel: kein spiel-für-spiel-Rating, sondern ein merkmalsbasiertes Modell. Aus denselben Realdaten werden pro Team rollierende Mer
-
 ### `last_swarm_critique`
 *25.08. 19:36 UTC · Quelle: critic*
 
@@ -46446,31 +46451,6 @@ score=4; issues=Ziel 'Basislinie von 50,2 % schlagen' wird nicht belegt: Es gibt
 *25.08. 19:32 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825193229:5:cbdc48`
-*25.08. 19:32 UTC · Quelle: dream*
-
-The football baseline goal has a hard external critic (actual match outcomes vs. the 50.2% threshold), making per-match prediction logging the only objective measure of progress.
-
-### `dream:20260825193229:4:a61d18`
-*25.08. 19:32 UTC · Quelle: dream*
-
-Skill proposals accumulate (28 pending) without a validation loop, so proposals are being generated faster than they are exercised — integration requires an explicit practice-and-score step per skill.
-
-### `dream:20260825193229:3:013a5e`
-*25.08. 19:32 UTC · Quelle: dream*
-
-The metabolism_check correctly throttled to conserve mode (max_tasks=3), but model retries still burned budget on doomed requests; retry logic should respect the stress state.
-
-### `dream:20260825193229:2:51844b`
-*25.08. 19:32 UTC · Quelle: dream*
-
-Rate-limit failures cluster within seconds of each other (ts 1787679154-1787679256), indicating parallel or rapid sequential calls exhaust the quota — spacing requests or caching responses would prevent most failures.
-
-### `dream:20260825193229:1:98b49e`
-*25.08. 19:32 UTC · Quelle: dream*
-
-Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so every critical call needs a fallback chain with at least one reliable model (nemotron succeeded consistently).
 
 ### `last_swarm_critique`
 *25.08. 19:07 UTC · Quelle: critic*
