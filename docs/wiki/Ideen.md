@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 23:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 23:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,8 +28,8 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Flash-tier models (Ling-3.0-flash-fin at 3.0s) outperform heavy models (Nemotron at 19-24s) under load on both latency and reliability, suggesting tha
+- Event pruning volume spiked to 21 events in the second reflex run versus 0 in the first, indicating that stale event accumulation accelerates and must
+- Both reflex runs produced clean self-diagnoses (zero organ errors) despite external model failures, confirming that failures originate in the infrastr
+- Stale swarm knowledge actively blocks new impulses — the system flagged outdated swarm goals as a 'stale' signal, meaning periodic pruning and refresh
+- Single-provider model dependency is the primary failure mode: Nemotron 502, Gemma 429, and only the flash-tier Ling model survived, proving that endpo
 - Path resolution failures cascade silently: relative paths in hand_action succeed only when CWD matches ZOETRON_DATA, causing non-reproducible successe
 - Executable artifact validation is the highest-leverage gate: every failed TOR submission traces to missing syntax/import checks before critic scoring.
 - Swarm knowledge decays faster than refresh cycles: two consecutive reflexes updated stale goals, pruning 19 facts total, indicating a missing freshnes
@@ -51,11 +56,6 @@
 - Model errors represent a systemic reliability risk that demands automatic failover mechanisms based on error-rate thresholds, not just reactive error 
 - Stale swarm knowledge silently degrades decision quality over time and requires automated periodic freshness scanning rather than relying on manual re
 - The proposal-to-implementation gap is the system's primary systemic failure mode: skills are continuously suggested but never built, creating a persis
-- Upstream overload and rate-limiting are symptoms of the same root cause: absence of demand-aware routing that throttles or redistributes requests befo
-- Latency variance across models (4s to 51.4s) reveals that model selection must be latency-aware and dynamic, not static, since a single slow call can 
-- Exit codes are an unreliable failure signal — silent failures that return clean exits but produce no usable output bypass all conventional error detec
-- The gap between skill-proposal generation and actual implementation is a first-class failure mode: proposals accumulate as stale knowledge without exe
-- Multi-provider API calls exhibit correlated failure under load — Nvidia 502 and Google 429 errors occurred in sequence, meaning provider diversity alo
 
 ---
 

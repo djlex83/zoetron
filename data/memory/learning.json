@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 23:10:44",
+ "stand": "2026-09-08 23:27:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -30,12 +30,6 @@
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 6,
    "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -76,6 +70,12 @@
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -151,6 +151,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
@@ -241,12 +247,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "neue-fähigkeiten-erlernen.py",
@@ -405,8 +405,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.814,
- "simulationen_angewandt": 25,
+ "haende_quote": 0.811,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 24,
   "best": 9.0,
@@ -414,8 +414,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 5.32
+   "n": 23,
+   "schnitt": 5.39
   },
   "bau": {
    "n": 1,
