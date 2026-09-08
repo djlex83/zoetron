@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12095 Fakten** · Stand 2026-09-08 20:30 UTC · aktualisiert bei jedem Herzschlag
+**12089 Fakten** · Stand 2026-09-08 20:42 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7416
-- **swarm_artifact:** 2094
+- **swarm_artifact:** 2092
 - **last_swarm_critique:** 840
 - **last_swarm_goal:** 572
-- **anti_pattern:** 531
-- **strategy:** 267
+- **anti_pattern:** 529
+- **strategy:** 266
 - **tool:** 183
-- **hand_result:** 137
+- **hand_result:** 136
 - **aktuell_organfehler:** 50
 - **aktuell_fussball_messlatte:** 4
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908203930:5:3b1f16`
+*08.09. 20:39 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation against replayed failures, risking regression deployment without automated rollback.
+
+### `dream:20260908203930:4:bb4d53`
+*08.09. 20:39 UTC · Quelle: dream*
+
+Optimization loops stall without convergence detection, wasting cycles on plateaued scores instead of triggering evolution restarts.
+
+### `dream:20260908203930:3:269fa4`
+*08.09. 20:39 UTC · Quelle: dream*
+
+Relative path resolution in hand_actions causes non-deterministic failures that absolute path anchoring (ZOETRON_DATA) would eliminate.
+
+### `dream:20260908203930:2:9b78a5`
+*08.09. 20:39 UTC · Quelle: dream*
+
+Tools frequently return exit code 0 while performing no actual work (silent failures), necessitating post-execution verification of side effects.
+
+### `dream:20260908203930:1:389f6f`
+*08.09. 20:39 UTC · Quelle: dream*
+
+Model providers exhibit cascading failures (502/429) requiring automatic failover to flash models with persisted circuit-breaker state.
 
 ### `dream:20260908202826:5:fecdac`
 *08.09. 20:28 UTC · Quelle: dream*
@@ -46442,16 +46467,6 @@ The swarm's first attempt scored 4/10 but an evolution run with 3 variants lifte
 
 Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.64 -0.40 -0.72 -0.72 -0.72 -0.72. Der Log-Loss ist
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :1`
-*25.08. 20:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8.0): Marktunabhängiges Ensemble aus strukturellen Features statt Ratings allein - Verlasse den reinen Rating-Ansatz: Trainiere ein Gradient-Boosting-/Logit-Modell ausschließlich auf nicht-quotenbasierten, empirisch validierten F
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :0`
-*25.08. 20:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.5): Echtdaten-Backtesting mit Cross-Competition-Rating-Transfer - Baue die Pipeline auf öffentlich verfügbaren echten historischen Daten auf (z.B. football-data.co.uk: 20+ Ligen über 10+ Saisons, inkl. internationaler Spiele). 
-
 ### `last_swarm_critique`
 *25.08. 20:37 UTC · Quelle: critic*
 
@@ -46461,31 +46476,6 @@ score=5; issues=Kein empirischer Nachweis des Ziels: Der Selbsttest nutzt rein s
 *25.08. 20:32 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825203233:5:2dcd44`
-*25.08. 20:32 UTC · Quelle: dream*
-
-Metabolic stress (0.602, conserve state) capped the swarm at max_tasks=3/max_iterations=1, which likely contributed to the low first-attempt score; budget-constrained runs need cheaper pre-validation instead of full execution.
-
-### `dream:20260825203233:4:508036`
-*25.08. 20:32 UTC · Quelle: dream*
-
-Simulation consistently flags risks (5 then 4) and demands revisions, but only 1 of 4 revisions was applied in the second pass — unapplied revisions correlate with residual risk and should be applied fully before execution.
-
-### `dream:20260825203233:3:57e755`
-*25.08. 20:32 UTC · Quelle: dream*
-
-The first attempt scored 3/10 but evolution over 3 variants produced a winner scoring 9/10, confirming that iterative variant generation beats single-shot attempts on hard goals.
-
-### `dream:20260825203233:2:a051e6`
-*25.08. 20:32 UTC · Quelle: dream*
-
-Prediction calibration is systematically optimistic: predicted 5 vs actual 3 (abs_error 2), so future score predictions should be deflated by roughly the recent mean error.
-
-### `dream:20260825203233:1:d62655`
-*25.08. 20:32 UTC · Quelle: dream*
-
-Rate limits (429) cascade across models on the same provider (openrouter.ai), so fallback within one provider is not a real fallback — diversify providers or cache prior outputs.
 
 ### `last_swarm_critique`
 *25.08. 20:08 UTC · Quelle: critic*
