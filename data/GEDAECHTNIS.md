@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12087 Fakten** · Stand 2026-09-08 22:13 UTC · aktualisiert bei jedem Herzschlag
+**12080 Fakten** · Stand 2026-09-08 22:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
-- **swarm_artifact:** 2080
+- **dream:** 7441
+- **swarm_artifact:** 2072
 - **last_swarm_critique:** 840
 - **last_swarm_goal:** 572
-- **anti_pattern:** 525
-- **strategy:** 264
+- **anti_pattern:** 523
+- **strategy:** 263
 - **tool:** 182
-- **hand_result:** 135
+- **hand_result:** 134
 - **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908222131:5:0efa88`
+*08.09. 22:21 UTC · Quelle: dream*
+
+Confidence calibration is absent: predicted scores diverge from actual outcomes with no correction mechanism, undermining goal selection.
+
+### `dream:20260908222131:4:4b24c1`
+*08.09. 22:21 UTC · Quelle: dream*
+
+Executable artifact validation is missing: builder outputs lack mandatory sandbox-tested code blocks, allowing untested proposals to enter critic scoring.
+
+### `dream:20260908222131:3:36c89d`
+*08.09. 22:21 UTC · Quelle: dream*
+
+Swarm collaboration has decayed: drive goals explicitly note stale swarm knowledge and goals, yet reflex actions only refresh knowledge without structural repair.
+
+### `dream:20260908222131:2:5872a6`
+*08.09. 22:21 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain unused: 5+ concrete proposals (router, artifact gate, confidence calibration, two-stage critic, latency instrumentation) exist without implementation.
+
+### `dream:20260908222131:1:5f2089`
+*08.09. 22:21 UTC · Quelle: dream*
+
+Model reliability is the primary bottleneck: Nemotron-3-Ultra shows 502 errors and 26-51s latency, causing cascading failures in swarm/reflex/simulation loops.
 
 ### `dream:20260908221025:5:489ae3`
 *08.09. 22:10 UTC · Quelle: dream*
@@ -46491,16 +46516,6 @@ Selbstdiagnose found 9 ConnectError findings concentrated in the dream and drive
 *25.08. 22:30 UTC · Quelle: dream*
 
 The swarm failed to converge (score 3, converged=false) because the critic kept issuing 'revise' verdicts while the 2-cycle budget expired before revisions were applied.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Exemplar-Bank: von den e:2`
-*25.08. 22:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Pipeline-integrierte Selbstkuratierung: Automatische Extraktion statt manueller  - Baue die Exemplar-Bank als automatischen Reflexions-Schritt in den Workflow selbst, nicht als separates Skript-Bündel. Ein einziger Hook extra
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Exemplar-Bank: von den e:1`
-*25.08. 22:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Daten-getriebene Variante: Exemplar-Bank als reines Datenartefakt + generischer  - Trenne strikt Logik von Daten. exemplare.json speichert die kuratierten Best-Momente als Liste von Objekten {id, score, task_type, input, outp
 
 ### `last_swarm_critique`
 *25.08. 22:15 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 22:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 22:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Confidence calibration is absent: predicted scores diverge from actual outcomes with no correction mechanism, undermining goal selection.
+- Executable artifact validation is missing: builder outputs lack mandatory sandbox-tested code blocks, allowing untested proposals to enter critic scor
+- Swarm collaboration has decayed: drive goals explicitly note stale swarm knowledge and goals, yet reflex actions only refresh knowledge without struct
+- Skill proposals accumulate but remain unused: 5+ concrete proposals (router, artifact gate, confidence calibration, two-stage critic, latency instrume
+- Model reliability is the primary bottleneck: Nemotron-3-Ultra shows 502 errors and 26-51s latency, causing cascading failures in swarm/reflex/simulati
 - Model selection ignores measurable reliability (success rate, latency, executability), causing repeated avoidable failures.
 - Swarm knowledge refresh only triggers reactively via reflex, leaving collaboration stale for long periods.
 - Skill proposals accumulate but never become active goals, creating a persistent capability gap.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but lack an activation pipeline, so validated improvements never reach production.
 - Swarm goals and critiques decay within ~7 days without automated freshness scans, causing stale coordination signals.
 - Model provider instability (502/429 errors) forces frequent fallbacks, making latency and token budgets unpredictable.
-- Convergence stalls (3+ cycles without score improvement) go undetected, wasting compute; an automatic restart or model switch guardrail is needed.
-- Circuit-breaker state (success rates, p95 latency, error taxonomy) is lost across sleep/wake cycles, preventing degradation memory from guiding routin
-- Proposed skills accumulate without validation; a promotion daemon that tests one skill per sleep cycle against replayed failures would close the propo
-- Relative path usage in hand_actions causes silent failures where scripts exit 0 but touch wrong files, needing mandatory absolute path resolution.
-- Model failures cluster around rate limits (429) and gateway errors (502) with high latency, requiring automatic failover to faster models.
 
 ---
 

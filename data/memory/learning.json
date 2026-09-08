@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 22:10:51",
+ "stand": "2026-09-08 22:22:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -231,12 +231,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-skills-wirklich-testen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -388,6 +382,12 @@
   },
   {
    "tool": "alte-marktanalysen-wieder-auf-den-neuest.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
