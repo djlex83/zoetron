@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12091 Fakten** · Stand 2026-09-08 12:32 UTC · aktualisiert bei jedem Herzschlag
+**12086 Fakten** · Stand 2026-09-08 12:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7346
+- **dream:** 7341
 - **swarm_artifact:** 2110
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908124232:5:771558`
+*08.09. 12:42 UTC · Quelle: dream*
+
+Dream consolidation itself risks timeout (180 s limit) without incremental checkpointing, threatening the continuity of memory consolidation across sleep cycles.
+
+### `dream:20260908124232:4:0672f0`
+*08.09. 12:42 UTC · Quelle: dream*
+
+Accumulated skill proposals remain unimplemented due to the absence of a skill-learning mechanism, creating a persistent capability gap despite repeated identification.
+
+### `dream:20260908124232:3:fba8ee`
+*08.09. 12:42 UTC · Quelle: dream*
+
+Reflex-mode goals (swarm knowledge refresh) converge reliably without any model calls, proving that codifying common patterns into deterministic scripts drastically reduces model dependency.
+
+### `dream:20260908124232:2:f5c061`
+*08.09. 12:42 UTC · Quelle: dream*
+
+Flash models (Ling-3.0-flash-fin) deliver consistent low-latency success (3.3 s) for high-volume tasks, validating a flash-first routing strategy with large-model escalation only on quality-gate failure.
+
+### `dream:20260908124232:1:794cfe`
+*08.09. 12:42 UTC · Quelle: dream*
+
+Free-tier large models (Nemotron, Gemma) exhibit high failure rates (502 overload, 429 rate-limits) and extreme latency variance (84–95 s), making them unreliable for time-critical paths.
 
 ### `tool:modellfehler-systematisch-verringern`
 *08.09. 12:30 UTC · Quelle: hands*
@@ -46406,56 +46431,6 @@ OpenRouter free models are highly susceptible to 429 rate limits and 502 upstrea
 *25.08. 12:31 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825123128:5:75bf7e`
-*25.08. 12:31 UTC · Quelle: dream*
-
-Metabolism entered conserve mode (stress=1.0, max_tasks=1) while a new swarm started, guaranteeing resource starvation for the very goal that needs capacity.
-
-### `dream:20260825123128:4:317ed5`
-*25.08. 12:31 UTC · Quelle: dream*
-
-Same LoRA goal has been attempted repeatedly (swarm_finished, drive_whisper, swarm_started) without resolving the underlying MemoryStore blocker.
-
-### `dream:20260825123128:3:4ae678`
-*25.08. 12:31 UTC · Quelle: dream*
-
-Swarm evolved over 2 cycles but stalled at score 3 with converged=false, indicating the convergence gate accepts revisions without re-verifying critic approval.
-
-### `dream:20260825123128:2:97afcd`
-*25.08. 12:31 UTC · Quelle: dream*
-
-OpenRouter 429 errors cascade across three different models, revealing no rate-limit-aware fallback or circuit breaker in the model router.
-
-### `dream:20260825123128:1:70383b`
-*25.08. 12:31 UTC · Quelle: dream*
-
-MemoryStore interface drift caused a runtime AttributeError on 'add_fact' because no startup contract validation exists for store methods.
-
-### `dream:20260825122143:5:ddf3d4`
-*25.08. 12:21 UTC · Quelle: dream*
-
-The hands-execute step crashed with AttributeError 'MemoryStore' object has no attribute 'add_fact', indicating an API drift between the memory module and its consumers that no test currently catches.
-
-### `dream:20260825122143:4:caa330`
-*25.08. 12:21 UTC · Quelle: dream*
-
-Calibration error was only 1 point (predicted 4 vs actual 3), suggesting the scoring predictor is reliable enough to gate whether an evolution run is worth spending tokens.
-
-### `dream:20260825122143:3:1756fb`
-*25.08. 12:21 UTC · Quelle: dream*
-
-Simulation gates are working as intended: the 'revise' verdict (5 risks, 1 revision) preceded the failed attempt while the later 'go' verdict (3 revisions applied) preceded success, so verdicts correlate with outcome quality.
-
-### `dream:20260825122143:2:d20366`
-*25.08. 12:21 UTC · Quelle: dream*
-
-The swarm's first attempt on the LoRA goal scored 3/10 but evolution over 3 variants raised it to 9/10, confirming that critic-driven variant generation is the highest-leverage recovery path after a low score.
-
-### `dream:20260825122143:1:c34957`
-*25.08. 12:21 UTC · Quelle: dream*
-
-429 rate-limit failures on openrouter.ai occur in a fixed pattern (stealth/ox-alpha then z-ai/glm-5.2:free) and are always recoverable by falling back to nvidia/nemotron-3-ultra-550b-a55b:free, so the fallback chain should be encoded as the default retry polic
 
 ### `last_swarm_critique`
 *25.08. 07:49 UTC · Quelle: critic*

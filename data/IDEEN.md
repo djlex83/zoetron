@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 12:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 12:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,14 +24,14 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream consolidation itself risks timeout (180 s limit) without incremental checkpointing, threatening the continuity of memory consolidation across sl
+- Accumulated skill proposals remain unimplemented due to the absence of a skill-learning mechanism, creating a persistent capability gap despite repeat
+- Reflex-mode goals (swarm knowledge refresh) converge reliably without any model calls, proving that codifying common patterns into deterministic scrip
+- Flash models (Ling-3.0-flash-fin) deliver consistent low-latency success (3.3 s) for high-volume tasks, validating a flash-first routing strategy with
+- Free-tier large models (Nemotron, Gemma) exhibit high failure rates (502 overload, 429 rate-limits) and extreme latency variance (84–95 s), making the
 - Reflex successfully updated swarm goals but drive goals remain abstract ("connect dreams") without measurable success criteria, causing goal drift.
 - Pruning removes only events (37→74) never facts, suggesting fact-store bloat risk and missed opportunity to discard stale provider metrics.
 - Self-diagnosis reports zero organ errors despite repeated model failures, showing health checks do not cover inference reliability.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays silently; only explicit reflex triggers refresh, causing stale-data-driven decisions between cycles.
 - Skill proposals repeat across sleep cycles (model_router, convergence_guardrail, dream_promotion_daemon) but none are deployed, indicating a broken pr
 - Model latency consistently exceeds 70s for nemotron-3-ultra, making it unsuitable for interactive loops without async handling or flash-model failover
-- Multiple skill proposals target the same failure modes (model health, critic validation, convergence) but none appear deployed, indicating a proposal-
-- Pruning removes events but never facts, causing unbounded fact growth despite regular maintenance runs.
-- Reflex actions converge reliably while swarm planning does not, revealing a gap between simple tool execution and multi-agent planning.
-- Swarm cycles evolve but fail to converge (score stuck at 5), suggesting missing convergence guardrails or inadequate critic feedback.
-- Model latency varies wildly (71-132s) and 33 model errors occurred, indicating unreliable provider performance requiring circuit breakers and failover
 
 ---
 

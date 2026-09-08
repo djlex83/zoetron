@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 12:30:29",
+ "stand": "2026-09-08 12:44:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,13 +21,13 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
