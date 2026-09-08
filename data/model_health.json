@@ -1,14 +1,14 @@
 {
- "stand": 1788891794.0230553,
+ "stand": 1788892609.4436252,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 4572,
+   "laeufe": 4574,
    "fehler": 970,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 162992.65759253502,
+   "latenz_summe_s": 163161.9406118393,
    "letzter_fehler": "Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/",
    "letzte_sperre": 1788812017.8003707,
    "kontofehler": 6

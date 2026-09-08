@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12080 Fakten** · Stand 2026-09-08 18:25 UTC · aktualisiert bei jedem Herzschlag
+**12080 Fakten** · Stand 2026-09-08 18:39 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7396
 - **swarm_artifact:** 2092
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908183500:5:c1726f`
+*08.09. 18:35 UTC · Quelle: dream*
+
+Swarm knowledge grows stale without scheduled refresh, degrading router scoring and collaborative ideation over time.
+
+### `dream:20260908183500:4:bbdefc`
+*08.09. 18:35 UTC · Quelle: dream*
+
+Multiple skill proposals accumulate without a validation/deployment gate, leaving proven fixes (circuit breakers, path guards) unapplied.
+
+### `dream:20260908183500:3:f356e0`
+*08.09. 18:35 UTC · Quelle: dream*
+
+System stress at 1.0 triggers conserve mode (max 3 tasks, 1 iteration), throttling the very recovery actions needed to reduce load.
+
+### `dream:20260908183500:2:035b5f`
+*08.09. 18:35 UTC · Quelle: dream*
+
+Relative path handling in hand_actions causes silent zero-byte reads; all file operations must prepend ZOETRON_DATA to inputs before execution.
+
+### `dream:20260908183500:1:075a69`
+*08.09. 18:35 UTC · Quelle: dream*
+
+Free-tier flagship models (Nvidia Nemotron, Google Gemma) fail consistently with 502/429 errors while flash models (inclusionai/ling-3.0-flash-fin) succeed at ~3s latency.
 
 ### `dream:20260908182203:5:091134`
 *08.09. 18:22 UTC · Quelle: dream*
@@ -46416,31 +46441,6 @@ The primary model 'stealth/ox-alpha' failed with 429 three times in one session 
 *25.08. 19:02 UTC · Quelle: dream*
 
 Rate-limit failures (429) cluster in bursts across multiple models simultaneously, indicating shared upstream throttling rather than per-model issues, so retrying immediately after a burst is wasteful.
-
-### `dream:20260825183226:5:f9ae60`
-*25.08. 18:32 UTC · Quelle: dream*
-
-Self-diagnosis found zero organ defects while external metrics regressed, revealing that internal health checks do not detect performance degradation and must be paired with outcome-based critics.
-
-### `dream:20260825183226:4:231822`
-*25.08. 18:32 UTC · Quelle: dream*
-
-Recovery succeeded only via nvidia/nemotron-3.5-lightning:free after ~49s latency, indicating that a known-good fallback list ordered by historical success is more effective than retrying the failed model.
-
-### `dream:20260825183226:3:11464d`
-*25.08. 18:32 UTC · Quelle: dream*
-
-Five consecutive model failures were all rate-limit or upstream-overload errors (429/502) across four different providers, showing that free-tier OpenRouter capacity is the primary reliability bottleneck, not model quality.
-
-### `dream:20260825183226:2:f023e4`
-*25.08. 18:32 UTC · Quelle: dream*
-
-The nachspiel check shows the log-loss metric unchanged (vorher -0.2, jetzt -0.2), meaning recent swarm cycles produced zero measurable improvement and iteration without new information sources is wasted compute.
-
-### `dream:20260825183226:1:769c6b`
-*25.08. 18:32 UTC · Quelle: dream*
-
-Both football variants (zoetron_f37812f578 at 49.77%, zoetron_432d95898b at 48.98%) underperformed the 50.18% baseline on both hit rate and log-loss, confirming that prose-based prediction without structured data cannot beat the bookmaker baseline.
 
 ### `last_swarm_goal`
 *25.08. 18:02 UTC · Quelle: system*

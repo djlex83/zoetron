@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 18:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 18:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,7 +10,8 @@
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
 - Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
-- Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 5×)*
+- Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 6×)*
+- Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh  *(hatte die Idee 5×)*
 - Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours. *(hatte die Idee 4×)*
 - Enforce absolute_path_guard middleware on all file tools with canonical ZOETRON_DATA rewriting. *(hatte die Idee 4×)*
 - Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with backof *(hatte die Idee 4×)*
@@ -19,15 +20,14 @@
 - Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with expone *(hatte die Idee 4×)*
 - Replace point-estimate calibration with distributional predictions and confidence intervals to prevent overcon *(hatte die Idee 4×)*
 - Enforce schema validation gates before artifact scoring to catch mismatches early and avoid wasted evaluation  *(hatte die Idee 4×)*
-- Add rate-limit-aware exponential backoff with jitter and concurrent request throttling to prevent 429 errors f *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge grows stale without scheduled refresh, degrading router scoring and collaborative ideation over time.
+- Multiple skill proposals accumulate without a validation/deployment gate, leaving proven fixes (circuit breakers, path guards) unapplied.
+- System stress at 1.0 triggers conserve mode (max 3 tasks, 1 iteration), throttling the very recovery actions needed to reduce load.
+- Relative path handling in hand_actions causes silent zero-byte reads; all file operations must prepend ZOETRON_DATA to inputs before execution.
+- Free-tier flagship models (Nvidia Nemotron, Google Gemma) fail consistently with 502/429 errors while flash models (inclusionai/ling-3.0-flash-fin) su
 - Swarm knowledge degrades to stale status if not refreshed on a defined schedule, and the system has no automatic mechanism to detect or correct stalen
 - Aggressive pruning (5 facts, 25 events per cycle) without an audit trail risks losing cross-referenced knowledge that may be needed for future insight
 - NVIDIA 502 errors and Google 429 errors are correlated provider-side overload events, meaning multi-provider redundancy alone does not guarantee avail
@@ -51,11 +56,6 @@
 - Repeated 502 errors from Nvidia carry the message 'Service temporarily overloaded' yet return HTTP 200, meaning status-code-based health checks alone 
 - The fallback provider inclusionai/ling-3.0-flash-fin consistently succeeds with sub-4-second latency when all primary providers fail, proving that a r
 - The same three providers (nvidia/nemotron, google/gemma-4-31b, google/gemma-4-26b) fail repeatedly with 502/429 errors across multiple cycles, indicat
-- Pruning removes facts but lacks procedural extraction; high-value error signatures (502, 429, timeout) should become reusable retry/fallback procedure
-- Swarm artifacts degrade without TTL-enforced freshness; stale goals/critiques directly impair coordination quality.
-- Role-based latency ceilings (critic/planner <5s, builder with hard timeout) prevent tail-latency cascades in swarm cycles.
-- Multiple independent proposals converge on identical infrastructure: circuit breakers, health scorecards, deployment pipelines, convergence watchdogs.
-- Recurring 502/429 errors and 100s+ latencies on nemotron-3-ultra demand systematic provider resilience with pre-warmed fallbacks.
 
 ---
 
