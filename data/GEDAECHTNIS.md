@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11948 Fakten** · Stand 2026-09-08 04:13 UTC · aktualisiert bei jedem Herzschlag
+**11943 Fakten** · Stand 2026-09-08 04:25 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7226
-- **swarm_artifact:** 2098
+- **swarm_artifact:** 2096
 - **last_swarm_critique:** 832
 - **last_swarm_goal:** 564
-- **anti_pattern:** 555
-- **strategy:** 279
+- **anti_pattern:** 553
+- **strategy:** 278
 - **tool:** 182
 - **hand_result:** 138
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908042134:5:240de3`
+*08.09. 04:21 UTC · Quelle: dream*
+
+Hand_action and reflex tools return opaque failures (null error, ok:false) that prevent automated recovery or diagnostic correlation.
+
+### `dream:20260908042134:4:75e209`
+*08.09. 04:21 UTC · Quelle: dream*
+
+Swarm convergence accepts results after too few cycles without stability checks, risking premature acceptance of noisy outputs.
+
+### `dream:20260908042134:3:d3eb8d`
+*08.09. 04:21 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely reach simulation or execution, creating a proposal-execution gap that prevents empirical validation.
+
+### `dream:20260908042134:2:7e3113`
+*08.09. 04:21 UTC · Quelle: dream*
+
+Rate-limit errors (429) from multiple providers indicate missing request throttling and exponential backoff with jitter at the router level.
+
+### `dream:20260908042134:1:709fa5`
+*08.09. 04:21 UTC · Quelle: dream*
+
+Model provider failures (502 overload, 429 rate limits) cascade into pipeline stalls because no circuit breaker or automatic failover exists.
 
 ### `dream:20260908041041:5:b5e21c`
 *08.09. 04:10 UTC · Quelle: dream*
@@ -45827,16 +45852,6 @@ The evolution run produced a winning variant scored 9/10, but the swarm still fi
 
 The primary model (stealth/ox-alpha) and first fallback (z-ai/glm-5.2) both hit 429 rate limits repeatedly, while nvidia/nemotron-3-ultra-550b-a55b:free succeeded every time, so the fallback chain should be reordered or rate-limit-aware.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Destillat-Datensatz: Ged:2`
-*25.08. 04:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 6, 7]): Streaming-/Chunking-Ansatz: Robuste Verarbeitung beliebiger Gedächtnismengen mit - Statt Batch-Verarbeitung ein Streaming-Design: Gedächtniseinträge werden als Iterator konsumiert und stufenweise transformiert (Normal
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Destillat-Datensatz: Ged:0`
-*25.08. 04:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 9, 8]): Pipeline-First: Vollständiger, atomar abgeschlossener End-to-End-Lauf statt frag - Baue das Skript als eine einzige, garantiert terminierende Pipeline mit expliziten Stufen: (1) Laden aller Gedächtnisquellen mit Schem
-
 ### `last_swarm_critique`
 *25.08. 04:20 UTC · Quelle: critic*
 
@@ -45846,31 +45861,6 @@ score=3; issues=Deliverable ist unvollständig: Der Code bricht mitten in 'extra
 *25.08. 04:14 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260825041442:5:271257`
-*25.08. 04:14 UTC · Quelle: dream*
-
-Calibration missed by 2 (predicted 3 vs actual 5) and the swarm did not converge after 2 cycles despite evolution improving variant scores from 6 to 9, suggesting score prediction underestimates effort and convergence criteria are too strict or cycles too few.
-
-### `dream:20260825041442:4:a679c5`
-*25.08. 04:14 UTC · Quelle: dream*
-
-A hard code defect blocked execution: MemoryStore lacks add_fact, raising AttributeError in hands-execute — this is a deterministic bug, not transient, and must be fixed before any further hand actions can succeed.
-
-### `dream:20260825041442:3:4b0845`
-*25.08. 04:14 UTC · Quelle: dream*
-
-stealth/ox-alpha succeeded in 5 of 7 attempts with acceptable latency (15–236s), making it the only reliable fallback; retry logic should prefer it immediately after a free-tier 429 instead of cycling through other rate-limited models.
-
-### `dream:20260825041442:2:ab8d19`
-*25.08. 04:14 UTC · Quelle: dream*
-
-The 404 on nvidia/nemotron-3-ultra-550b-a55b:free followed by an automatic 1800s lockout after 3 consecutive failures shows the circuit-breaker works, but the model should be proactively removed from rotation since it no longer exists at that endpoint.
-
-### `dream:20260825041442:1:3ed711`
-*25.08. 04:14 UTC · Quelle: dream*
-
-429 rate-limit errors cluster across multiple free-tier models simultaneously (stealth/ox-alpha, z-ai/glm-5.2:free, gemma variants), indicating shared upstream quota exhaustion rather than per-model misconfiguration.
 
 ### `last_swarm_critique`
 *25.08. 03:50 UTC · Quelle: critic*

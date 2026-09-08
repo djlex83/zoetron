@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 04:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 04:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand_action and reflex tools return opaque failures (null error, ok:false) that prevent automated recovery or diagnostic correlation.
+- Swarm convergence accepts results after too few cycles without stability checks, risking premature acceptance of noisy outputs.
+- Skill proposals accumulate but rarely reach simulation or execution, creating a proposal-execution gap that prevents empirical validation.
+- Rate-limit errors (429) from multiple providers indicate missing request throttling and exponential backoff with jitter at the router level.
+- Model provider failures (502 overload, 429 rate limits) cascade into pipeline stalls because no circuit breaker or automatic failover exists.
 - Swarm knowledge decays silently; no automatic refresh trigger exists, leading to stale context for planning.
 - Skill proposals accumulate but are rarely executed, creating a proposal-execution gap that stalls capability growth.
 - Model latency varies wildly (22s to 125s) and 502/429 errors cascade without circuit breakers or fallback routing.
@@ -51,11 +56,6 @@
 - Nemotron-3-ultra latency varies 5x (22s–125s) for similar token counts, making it unreliable for time-bounded tasks.
 - inclusionai/ling-3.0-flash-fin:free is the only model with consistent sub-20s latency and zero observed failures across 3+ calls.
 - Free-tier models exhibit systematic failure modes: Nemotron returns 502 upstream errors under load, Gemma models hit 429 rate limits within minutes.
-- Model failure taxonomy matches proposed classifier: observed 502 (provider overload), 429 (rate limit), and timeout patterns align exactly with the 'm
-- Simulation-based revision loop works: 5 risks identified and 5 revisions applied for 'Träume in echte Fähigkeiten umsetzen', demonstrating viable vali
-- Metabolic conserve mode (stress 0.701, max_iterations=1) severely constrains skill-building capacity, causing premature termination of multi-step impl
-- Skill proposal-to-implementation pipeline is broken: the reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed with path resolution errors 
-- Primary model (nemotron-3-ultra) exhibits high latency variance (24-113s) and 502 overload failures, while fallback models (gemma-4) hit 429 rate limi
 
 ---
 
