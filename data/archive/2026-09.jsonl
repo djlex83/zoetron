@@ -26392,3 +26392,26 @@
 {"ts": 1788267100.077313, "kind": "act_done", "payload": {"goal_title": "Vorschläge prüfen und validieren", "score": 9, "converged": true}}
 {"ts": 1788267102.0350904, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 1.21, "gelesen": 92}}
 {"ts": 1788267104.6208084, "kind": "issue_synced", "payload": {"issue": 286, "state": "closed"}}
+{"ts": 1787662800.0, "key": "dream:20260825130045:4:c26281", "value": "High stress state (1.0) with strict budget constraints (max_tasks: 3) still allows for successful task completion if iterations are used efficiently.", "source": "dream"}
+{"ts": 1787662800.0, "key": "dream:20260825130045:3:41f347", "value": "System calibration is slightly optimistic (predicted 3, actual 2), indicating a need to adjust prediction weights for complex technical topics like LoRA.", "source": "dream"}
+{"ts": 1787662800.0, "key": "dream:20260825130045:2:24b9e1", "value": "Evolutionary generation of multiple variants significantly improves task scores (from 2/10 to 9/10) even under high system stress.", "source": "dream"}
+{"ts": 1787662800.0, "key": "dream:20260825130045:1:afee84", "value": "OpenRouter free models are highly susceptible to 429 rate limits and 502 upstream overloads, requiring robust fallback mechanisms.", "source": "dream"}
+{"ts": 1788267386.1310518, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788267954.9236178, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788267956.5336497, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788267960.7154722, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788267960.7154684, "schalter_geoeffnet": false}}
+{"ts": 1788268015.3615854, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 54.6, "tokens_ein": 1375, "tokens_aus": 611}}
+{"ts": 1788268015.3624542, "kind": "skill_proposal", "payload": {"proposal": "Implement a quota-aware model router that tracks per-endpoint rate-limit headers, enforces cooldowns after 429s, and prefers endpoints with remaining quota."}}
+{"ts": 1788268015.362544, "kind": "skill_proposal", "payload": {"proposal": "Build a skill graduation pipeline: proposal → simulation test → dry-run on shadow traffic → canary deployment → full activation, with automated gates at each stage."}}
+{"ts": 1788268015.362709, "kind": "skill_proposal", "payload": {"proposal": "Add external dependency health monitors that feed into self-diagnosis, treating API error rates as organ-level signals."}}
+{"ts": 1788268015.362857, "kind": "skill_proposal", "payload": {"proposal": "Create a pre-flight check for model calls that verifies endpoint availability via lightweight probe before committing full context."}}
+{"ts": 1788268015.3630164, "kind": "skill_proposal", "payload": {"proposal": "Design a local-first cognitive fallback that uses cached embeddings, rule-based reasoning, or smaller local models when all remote endpoints are rate-limited."}}
+{"ts": 1788268015.3631377, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788268017.909146, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788268017.9091434, "schalter_geoeffnet": false}}
+{"ts": 1788268084.0937135, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 66.2, "tokens_ein": 512, "tokens_aus": 407}}
+{"ts": 1788268084.0938635, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft (80 Fehler). Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788268084.093938, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich nutzen", "why": "Es gibt viele Vorschläge (45), aber unklar ob sie angewendet werden. Nutzen bringt echten Fortschritt.", "signal": "gap"}}
+{"ts": 1788268084.0940013, "kind": "drive_goal", "payload": {"title": "Alte Marktanalyse neu beleben", "why": "Drei Analyse-Ergebnisse liegen brach. Sie enthalten wertvolles Wissen für neue Entscheidungen.", "signal": "stale"}}
+{"ts": 1788268087.8034089, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.24, "gelesen": 237}}
+{"ts": 1788268087.8055294, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten endlich umsetzen", "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py", "ok": true}}
+{"ts": 1788268088.2659457, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten endlich umsetzen", "score": null, "converged": true, "mode": "reflex"}}

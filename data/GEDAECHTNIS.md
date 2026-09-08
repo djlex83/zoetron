@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12091 Fakten** · Stand 2026-09-08 13:00 UTC · aktualisiert bei jedem Herzschlag
+**12092 Fakten** · Stand 2026-09-08 13:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7346
+- **dream:** 7347
 - **swarm_artifact:** 2110
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908131121:5:17e853`
+*08.09. 13:11 UTC · Quelle: dream*
+
+Convergence detection relies on manual score thresholds; no watchdog monitors improvement delta across cycles to trigger model switch or evolution restart.
+
+### `dream:20260908131121:4:969563`
+*08.09. 13:11 UTC · Quelle: dream*
+
+Swarm knowledge goes stale because no automated refresh cycle exists; drive goals repeatedly flag 'stale' signal without resolution.
+
+### `dream:20260908131121:3:be6faa`
+*08.09. 13:11 UTC · Quelle: dream*
+
+Event pruning runs on schedule but fact pruning never triggers, causing unbounded fact growth despite memory pressure signals.
+
+### `dream:20260908131121:2:d61ecd`
+*08.09. 13:11 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack validation pipeline; only reflex-triggered skills (modellfehler-stark-reduzieren) execute, leaving 5 proposals stranded.
+
+### `dream:20260908131121:1:c80f5e`
+*08.09. 13:11 UTC · Quelle: dream*
+
+Large models (Nemotron, Gemma) fail silently with 502/429 errors while flash models (Ling) deliver consistent 4s latency, making flash models the reliable backbone.
 
 ### `dream:20260908125705:5:2c83ed`
 *08.09. 12:57 UTC · Quelle: dream*
@@ -46431,26 +46456,6 @@ score=4; issues=Artefakt 3 (Poisson/Dixon-Coles) bricht mitten im Code ab ('# L'
 *25.08. 13:00 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825130045:4:c26281`
-*25.08. 13:00 UTC · Quelle: dream*
-
-High stress state (1.0) with strict budget constraints (max_tasks: 3) still allows for successful task completion if iterations are used efficiently.
-
-### `dream:20260825130045:3:41f347`
-*25.08. 13:00 UTC · Quelle: dream*
-
-System calibration is slightly optimistic (predicted 3, actual 2), indicating a need to adjust prediction weights for complex technical topics like LoRA.
-
-### `dream:20260825130045:2:24b9e1`
-*25.08. 13:00 UTC · Quelle: dream*
-
-Evolutionary generation of multiple variants significantly improves task scores (from 2/10 to 9/10) even under high system stress.
-
-### `dream:20260825130045:1:afee84`
-*25.08. 13:00 UTC · Quelle: dream*
-
-OpenRouter free models are highly susceptible to 429 rate limits and 502 upstream overloads, requiring robust fallback mechanisms.
 
 ### `last_swarm_goal`
 *25.08. 12:31 UTC · Quelle: system*

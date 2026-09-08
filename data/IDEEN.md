@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 12:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 13:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence detection relies on manual score thresholds; no watchdog monitors improvement delta across cycles to trigger model switch or evolution res
+- Swarm knowledge goes stale because no automated refresh cycle exists; drive goals repeatedly flag 'stale' signal without resolution.
+- Event pruning runs on schedule but fact pruning never triggers, causing unbounded fact growth despite memory pressure signals.
+- Skill proposals accumulate but lack validation pipeline; only reflex-triggered skills (modellfehler-stark-reduzieren) execute, leaving 5 proposals str
+- Large models (Nemotron, Gemma) fail silently with 502/429 errors while flash models (Ling) deliver consistent 4s latency, making flash models the reli
 - Swarm knowledge refresh succeeds as a reflex but lacks a convergence monitor that enforces minimum cycles and score plateau detection before terminati
 - Pruning discards event clusters without extracting procedural facts, losing reusable patterns like 'retry-on-429-with-exponential-backoff'.
 - Skill proposals accumulate as inert text because no verification pipeline compiles, tests, and registers them as executable capabilities.
@@ -51,11 +56,6 @@
 - Reflex-mode goals (swarm knowledge refresh) converge reliably without any model calls, proving that codifying common patterns into deterministic scrip
 - Flash models (Ling-3.0-flash-fin) deliver consistent low-latency success (3.3 s) for high-volume tasks, validating a flash-first routing strategy with
 - Free-tier large models (Nemotron, Gemma) exhibit high failure rates (502 overload, 429 rate-limits) and extreme latency variance (84–95 s), making the
-- Reflex successfully updated swarm goals but drive goals remain abstract ("connect dreams") without measurable success criteria, causing goal drift.
-- Pruning removes only events (37→74) never facts, suggesting fact-store bloat risk and missed opportunity to discard stale provider metrics.
-- Self-diagnosis reports zero organ errors despite repeated model failures, showing health checks do not cover inference reliability.
-- Identical skill proposals (model_router, provider_health_monitor, dream_promotion_daemon, convergence_guardrail, swarm_knowledge_refresh) recur across
-- Primary models (Nemotron, Gemma) suffer frequent 502/429 errors and >60s latency while flash models (Ling) succeed in ~3s, proving the system lacks au
 
 ---
 
