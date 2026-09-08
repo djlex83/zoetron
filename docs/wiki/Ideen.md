@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 00:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 00:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning destroys causal reconstructability because pruned facts/events lack experiment_id, parent_step_id, and decision_context tags for later graph r
+- File tool path resolution fails silently when paths aren't canonicalized to ZOETRON_DATA, needing a mandatory middleware guard on all file operations.
+- Swarm knowledge and episodic memories decay into staleness without scheduled reactivation jobs that re-fetch critiques and link temporally separated b
+- Skill proposals accumulate without execution because no automated funnel promotes high-signal proposals (≥3 upvotes, clear metrics) to owned missions 
+- Model provider instability (502/429 errors across 3 models) causes cascading fallback latency and decision degradation, requiring per-provider circuit
 - Resource exhaustion (rate limits, upstream overload) cascades into wasted cycles because goal selection lacks metabolic gating.
 - Flash-tier models (ling-3.0-flash-fin) consistently succeed where flagship models fail, making latency-tier routing a reliability lever.
 - Self-diagnosis reports zero organ errors while model-layer failures dominate, revealing a blind spot in health monitoring scope.
@@ -51,11 +56,6 @@
 - Swarm knowledge freshness decays silently; no automated trigger refreshes critiques when older than 24 hours, leading to stale drive signals.
 - Skill proposals accumulate without validation gates, risking registry pollution from untested or incompatible implementations.
 - Cascading model failures (502, 429) across multiple providers reveal absence of circuit breakers and latency-budgeted failover, causing unpredictable 
-- Stress-driven planning caps are reactive only; no predictive budget estimation prevents overshoot before execution.
-- Relative path failures recur across tools because path normalization is not enforced at the middleware layer.
-- Swarm knowledge staleness persists despite reflex updates because synchronization lacks versioned conflict resolution.
-- Model latency spikes (5s→32s) correlate with token volume surges, indicating missing backpressure on context size.
-- Proposed skills accumulate unused because no automatic activation mechanism bridges proposal to execution.
 
 ---
 

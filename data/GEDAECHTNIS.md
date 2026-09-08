@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11905 Fakten** · Stand 2026-09-08 00:44 UTC · aktualisiert bei jedem Herzschlag
+**11910 Fakten** · Stand 2026-09-08 00:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7186
+- **dream:** 7191
 - **swarm_artifact:** 2096
 - **last_swarm_critique:** 828
 - **anti_pattern:** 561
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908005418:5:d7449c`
+*08.09. 00:54 UTC · Quelle: dream*
+
+Pruning destroys causal reconstructability because pruned facts/events lack experiment_id, parent_step_id, and decision_context tags for later graph reconstruction.
+
+### `dream:20260908005418:4:dab823`
+*08.09. 00:54 UTC · Quelle: dream*
+
+File tool path resolution fails silently when paths aren't canonicalized to ZOETRON_DATA, needing a mandatory middleware guard on all file operations.
+
+### `dream:20260908005418:3:fc4a7a`
+*08.09. 00:54 UTC · Quelle: dream*
+
+Swarm knowledge and episodic memories decay into staleness without scheduled reactivation jobs that re-fetch critiques and link temporally separated but conceptually related memories.
+
+### `dream:20260908005418:2:8b2ccd`
+*08.09. 00:54 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution because no automated funnel promotes high-signal proposals (≥3 upvotes, clear metrics) to owned missions with deadlines.
+
+### `dream:20260908005418:1:f83c58`
+*08.09. 00:54 UTC · Quelle: dream*
+
+Model provider instability (502/429 errors across 3 models) causes cascading fallback latency and decision degradation, requiring per-provider circuit breakers with sub-10s failover.
 
 ### `dream:20260908004121:5:ae8af6`
 *08.09. 00:41 UTC · Quelle: dream*
