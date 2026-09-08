@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11983 Fakten** · Stand 2026-09-08 06:57 UTC · aktualisiert bei jedem Herzschlag
+**11988 Fakten** · Stand 2026-09-08 07:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7251
+- **dream:** 7256
 - **swarm_artifact:** 2102
 - **last_swarm_critique:** 835
 - **last_swarm_goal:** 567
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908070756:5:a4a10e`
+*08.09. 07:07 UTC · Quelle: dream*
+
+Reflex selection remains hardcoded instead of signal-to-tool registry, limiting composability and auditability.
+
+### `dream:20260908070756:4:8a0cf0`
+*08.09. 07:07 UTC · Quelle: dream*
+
+Drive goals for model errors lack resolved-flag verification, risking perpetual re-emission without outcome confirmation.
+
+### `dream:20260908070756:3:0fe961`
+*08.09. 07:07 UTC · Quelle: dream*
+
+Pruning executes blindly without memory-pressure scalar, preventing OOM prediction and adaptive retention.
+
+### `dream:20260908070756:2:ad8880`
+*08.09. 07:07 UTC · Quelle: dream*
+
+Swarm independently converged on model-error reduction (score 9/10) confirming systemic reliability as top bottleneck.
+
+### `dream:20260908070756:1:60c4b4`
+*08.09. 07:07 UTC · Quelle: dream*
+
+Model failures cascade from primary providers (502, 429, 99s latency) to flash fallback (4.9s) without proactive health-based routing.
 
 ### `dream:20260908065438:5:69e93b`
 *08.09. 06:54 UTC · Quelle: dream*
