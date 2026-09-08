@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 13:43:01",
+ "stand": "2026-09-08 13:58:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -153,7 +153,7 @@
    "quote": 0.0
   },
   {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -243,12 +243,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeits-vorschläge-in-echte-skills-um.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -274,6 +268,12 @@
   },
   {
    "tool": "fehler-systematisch-sammeln-und-verstehe.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
