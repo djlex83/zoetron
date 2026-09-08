@@ -1,0 +1,45 @@
+{
+  "skill_candidates": [
+    {
+      "name": "Traum-Muster-Erkennung",
+      "description": "Fähigkeit, wiederkehrende Muster in Traum-Konsolidaten zu erkennen und zu kategorisieren",
+      "source_consolidate_id": "synthetic",
+      "confidence": 0.8,
+      "tags": [
+        "synthetic",
+        "pattern-recognition",
+        "dream-analysis"
+      ],
+      "extracted_at": "2026-09-08T02:57:12.475170"
+    },
+    {
+      "name": "Konsolidat-zu-Skill-Pipeline",
+      "description": "Automatische Extraktion von umsetzbaren Fähigkeiten aus Traum-Konsolidaten",
+      "source_consolidate_id": "synthetic",
+      "confidence": 0.9,
+      "tags": [
+        "synthetic",
+        "pipeline",
+        "skill-extraction"
+      ],
+      "extracted_at": "2026-09-08T02:57:12.475184"
+    },
+    {
+      "name": "Metabolisches Dream-Gating",
+      "description": "Energie-basierte Steuerung wann Träume in Skills umgewandelt werden",
+      "source_consolidate_id": "synthetic",
+      "confidence": 0.75,
+      "tags": [
+        "synthetic",
+        "metabolic",
+        "gating"
+      ],
+      "extracted_at": "2026-09-08T02:57:12.475189"
+    }
+  ],
+  "count": 3,
+  "fallback_used": true,
+  "dream_module_available": false,
+  "pipeline_exists": false,
+  "extracted_at": "2026-09-08T02:57:12.475269"
+}

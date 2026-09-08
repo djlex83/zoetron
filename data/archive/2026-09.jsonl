@@ -24867,3 +24867,28 @@
 {"ts": 1788230313.1543481, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.19, "gelesen": 2}}
 {"ts": 1788230313.155811, "kind": "reflex_used", "payload": {"goal": "Marktanalyse-Abschluss und Lücken schließen", "tool": "alte-marktanalyse-aktualisieren-und-nutz.py", "ok": true}}
 {"ts": 1788230313.6072671, "kind": "act_done", "payload": {"goal_title": "Marktanalyse-Abschluss und Lücken schließen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787625840.0, "key": "dream:20260825024450:5:17814c", "value": "MemoryStore contract violations (silent no-op prune) indicate missing interface verification at startup/CI, allowing broken methods to persist undetected.", "source": "dream"}
+{"ts": 1787625840.0, "key": "dream:20260825024450:4:0f594c", "value": "System operates in conserve mode (max 3 tasks, 1 iteration) while simultaneously attempting high-complexity swarm evolution, creating resource contention.", "source": "dream"}
+{"ts": 1787625840.0, "key": "dream:20260825024450:3:bca3f8", "value": "Football prediction swarm received 'go' verdict with 3 risks and 3 revisions, yet no post-swarm backtest against the 50.2% baseline occurred before memory insertion.", "source": "dream"}
+{"ts": 1787625840.0, "key": "dream:20260825024450:2:4f7dac", "value": "Multiple skill proposals exist (backoff, validation gates, calibration, contract tests, latency routing) but none have been executed or validated in production.", "source": "dream"}
+{"ts": 1787625840.0, "key": "dream:20260825024450:1:59a4f9", "value": "Rate limiting (429 errors) on primary models (stealth/ox-alpha, z-ai/glm-5.2) forces fallback to nemotron-3-ultra which consistently succeeds at ~13s latency.", "source": "dream"}
+{"ts": 1788230573.4158669, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788230641.8071916, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788230643.353204, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788230647.4481335, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788230647.4481308, "schalter_geoeffnet": false}}
+{"ts": 1788230655.448998, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 8.0, "tokens_ein": 1475, "tokens_aus": 684}}
+{"ts": 1788230655.4495273, "kind": "skill_proposal", "payload": {"proposal": "Implement a model-router that ranks candidates by recent 429/502 frequency and automatically prefers low-error models (e.g., ling-3.0-flash-fin)."}}
+{"ts": 1788230655.449589, "kind": "skill_proposal", "payload": {"proposal": "Add a request-level timeout and retry budget per model; abort and failover after 2 consecutive 429/502 instead of hammering the same endpoint."}}
+{"ts": 1788230655.4496465, "kind": "skill_proposal", "payload": {"proposal": "Instrument every external call with structured latency/error metrics (model, status, tokens, timestamp) to feed the router's scoring function."}}
+{"ts": 1788230655.4497, "kind": "skill_proposal", "payload": {"proposal": "Wrap hand-action and similar shell tools with a watchdog that captures stdout/stderr on non-zero exit and emits a structured failure event."}}
+{"ts": 1788230655.449761, "kind": "skill_proposal", "payload": {"proposal": "Introduce a 'convergence gate' for swarm tasks: if score < 7 after N cycles, auto-escalate to human or decompose into smaller sub-goals."}}
+{"ts": 1788230655.4498312, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788230657.7543886, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788230657.7543855, "schalter_geoeffnet": false}}
+{"ts": 1788230686.7647736, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 29.0, "tokens_ein": 522, "tokens_aus": 422}}
+{"ts": 1788230686.7649193, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell scheitert fast doppelt so oft wie es gelingt. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788230686.7649949, "kind": "drive_goal", "payload": {"title": "Marktanalyse endlich nutzen", "why": "Drei fertige Analyse-Schritte liegen seit langer Zeit ungenutzt herum. Wir sollten sie in echte Entscheidungen umsetzen.", "signal": "stale"}}
+{"ts": 1788230686.7650568, "kind": "drive_goal", "payload": {"title": "Neue Fähigkeiten besser prüfen", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber kaum getestet. Wir brauchen einen Weg, gute von schlechten zu trennen.", "signal": "combination"}}
+{"ts": 1788230695.6270173, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.42, "gelesen": 476}}
+{"ts": 1788230695.628446, "kind": "reflex_used", "payload": {"goal": "Fähigkeits-Messsystem für Selbstbewertung bauen", "tool": "fähigkeits-messlatte-bauen-capability-be.py", "ok": true}}
+{"ts": 1788230696.0209675, "kind": "act_done", "payload": {"goal_title": "Fähigkeits-Messsystem für Selbstbewertung bauen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788230955.6371293, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

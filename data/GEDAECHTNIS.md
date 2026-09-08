@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11932 Fakten** · Stand 2026-09-08 02:42 UTC · aktualisiert bei jedem Herzschlag
+**11941 Fakten** · Stand 2026-09-08 02:59 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7211
-- **swarm_artifact:** 2096
-- **last_swarm_critique:** 830
-- **last_swarm_goal:** 562
+- **swarm_artifact:** 2102
+- **last_swarm_critique:** 831
+- **last_swarm_goal:** 563
 - **anti_pattern:** 559
 - **strategy:** 281
-- **tool:** 181
+- **tool:** 182
 - **hand_result:** 138
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 1
 
 ---
+
+### `tool:träume-in-echte-fähigkeiten-umsetzen`
+*08.09. 02:57 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume in echte Fähigkeiten umsetzen'. Datei: data/tools/träume-in-echte-fähigkeiten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*08.09. 02:57 UTC · Quelle: critic*
+
+score=9; issues=Keine kritischen Mangel feststellbar. Die drei Artefakte bilden eine vollständige, lauffähige Pipeline (Extraktion → Validierung → Ausführung/Messung) mit Fallbacks, Logging, Konfiguration, Artefakt-Ausgabe und Feedback-Schleife. Sandbox bestät
+
+### `last_swarm_goal`
+*08.09. 02:52 UTC · Quelle: system*
+
+Träume in echte Fähigkeiten umsetzen
+
+### `dream:20260908025129:5:9b4d41`
+*08.09. 02:51 UTC · Quelle: dream*
+
+Metabolic gating and dream-to-skill pipelines were proposed but not enacted, showing the system generates improvement ideas faster than it can validate and deploy them.
+
+### `dream:20260908025129:4:573741`
+*08.09. 02:51 UTC · Quelle: dream*
+
+The simulation reflex executed successfully but drive goals still demand more simulations, indicating the reflex is triggered too narrowly (only on explicit goals) rather than as a default pre-action gate.
+
+### `dream:20260908025129:3:2c8e39`
+*08.09. 02:51 UTC · Quelle: dream*
+
+Only one model (inclusionai/ling-3.0-flash-fin) succeeded consistently, proving that a single reliable fallback provider outperforms naive round-robin across unreliable free tiers.
+
+### `dream:20260908025129:2:4117a1`
+*08.09. 02:51 UTC · Quelle: dream*
+
+The same proposal-to-mission funnel was submitted twice, revealing a systemic gap: high-signal proposals lack an automated promotion path to executable missions.
+
+### `dream:20260908025129:1:91c078`
+*08.09. 02:51 UTC · Quelle: dream*
+
+Free-tier model providers exhibit distinct, repeatable failure signatures (Nvidia 502 overload, Google 429 rate-limit) that demand provider-aware routing with circuit breakers.
 
 ### `dream:20260908023919:5:7c309d`
 *08.09. 02:39 UTC · Quelle: dream*
@@ -45796,31 +45836,6 @@ score=5; issues=Artifact 1 ist unvollständig/trunkiert: CLI endet mitten im Sta
 *25.08. 02:45 UTC · Quelle: system*
 
 Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
-
-### `dream:20260825024450:5:17814c`
-*25.08. 02:44 UTC · Quelle: dream*
-
-MemoryStore contract violations (silent no-op prune) indicate missing interface verification at startup/CI, allowing broken methods to persist undetected.
-
-### `dream:20260825024450:4:0f594c`
-*25.08. 02:44 UTC · Quelle: dream*
-
-System operates in conserve mode (max 3 tasks, 1 iteration) while simultaneously attempting high-complexity swarm evolution, creating resource contention.
-
-### `dream:20260825024450:3:bca3f8`
-*25.08. 02:44 UTC · Quelle: dream*
-
-Football prediction swarm received 'go' verdict with 3 risks and 3 revisions, yet no post-swarm backtest against the 50.2% baseline occurred before memory insertion.
-
-### `dream:20260825024450:2:4f7dac`
-*25.08. 02:44 UTC · Quelle: dream*
-
-Multiple skill proposals exist (backoff, validation gates, calibration, contract tests, latency routing) but none have been executed or validated in production.
-
-### `dream:20260825024450:1:59a4f9`
-*25.08. 02:44 UTC · Quelle: dream*
-
-Rate limiting (429 errors) on primary models (stealth/ox-alpha, z-ai/glm-5.2) forces fallback to nemotron-3-ultra which consistently succeeds at ~13s latency.
 
 ### `last_swarm_critique`
 *25.08. 02:21 UTC · Quelle: critic*

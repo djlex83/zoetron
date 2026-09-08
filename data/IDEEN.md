@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 02:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 02:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 5×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolic gating and dream-to-skill pipelines were proposed but not enacted, showing the system generates improvement ideas faster than it can validat
+- The simulation reflex executed successfully but drive goals still demand more simulations, indicating the reflex is triggered too narrowly (only on ex
+- Only one model (inclusionai/ling-3.0-flash-fin) succeeded consistently, proving that a single reliable fallback provider outperforms naive round-robin
+- The same proposal-to-mission funnel was submitted twice, revealing a systemic gap: high-signal proposals lack an automated promotion path to executabl
+- Free-tier model providers exhibit distinct, repeatable failure signatures (Nvidia 502 overload, Google 429 rate-limit) that demand provider-aware rout
 - Reflex-driven maintenance (e.g., schwarmwissen refresh) succeeds where deliberate planning stalls, suggesting automated upkeep beats scheduled intent.
 - Goal selection ignores metabolic state (latency budgets, error rates, iteration caps), causing overcommitment during degraded provider health.
 - Errors are only logged as raw strings; without a taxonomy classifying provider/error-type, automated fallback and retry policies cannot be targeted.
@@ -51,11 +56,6 @@
 - Hand tool fails with exit code 2 and zero bytes read, indicating path resolution or permission failures that bypass structured error handling.
 - Swarm evolution stalls at 2/10 score with only 2 cycles and non-convergence because critic sandbox validation is broken ("Sandbox-Urteil LAEUFT NICHT"
 - Primary model (nemotron-3-ultra) exhibits 30-67s latency and 502 upstream failures, while fallback models hit 429 rate limits, leaving only flash-tier
-- Hand actions failed 3 times with exit code 2 and null error messages, exposing a systemic gap in error reporting and retry logic for the action execut
-- The swarm did not converge after only 2 cycles with a final score of 2/10, indicating premature termination and insufficient evolutionary exploration 
-- Calibration predicted 5 but actual score was 2 (abs_error 3), revealing systematic overconfidence in performance estimation that must be corrected wit
-- The inclusionai/ling-3.0-flash-fin model delivered reliable results with 5.5-8.5s latency while the 550B-parameter nemotron model suffered 132-177s la
-- Nvidia endpoint 502 errors and Google 429 rate limits occurred repeatedly, proving that single-provider dependency is a critical failure mode requirin
 
 ---
 
