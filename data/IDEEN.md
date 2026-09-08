@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 18:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 18:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A converged swarm achieving score 9 in a single cycle with balanced roles (1 planner, 3 builders, 1 critic) under a constrained budget (max 1 iteratio
+- Relative path resolution against environment variables like ZOETRON_DATA and sys.argv[1] is a recurring failure mode that requires absolute-path canon
+- Placeholder implementations such as record_success() containing only pass can slip through initial quality gates but are caught by tool-rejection mech
+- When primary model providers return 502 upstream errors or 429 rate-limit responses, a low-latency flash model (10.7s) serves as an effective emergenc
+- Silent failures where scripts exit 0 without processing any files indicate that exit-code-only validation is insufficient; actual data-path engagement
 - Swarm knowledge grows stale without scheduled refresh, degrading router scoring and collaborative ideation over time.
 - Multiple skill proposals accumulate without a validation/deployment gate, leaving proven fixes (circuit breakers, path guards) unapplied.
 - System stress at 1.0 triggers conserve mode (max 3 tasks, 1 iteration), throttling the very recovery actions needed to reduce load.
@@ -51,11 +56,6 @@
 - NVIDIA 502 errors and Google 429 errors are correlated provider-side overload events, meaning multi-provider redundancy alone does not guarantee avail
 - The system repeatedly proposes skills (circuit breakers, rate-limit routing, dream daemon) but never deploys them; the gap between proposal and implem
 - Flash-tier models (inclusionai/ling-3.0-flash-fin) succeed consistently at ~3s latency while all large models (Nemotron 502, Gemma 429) fail repeatedl
-- Reflex-based execution (alte-träume-miteinander-verbinden.py) succeeds and converges, but the reflex layer lacks explicit error propagation — a failur
-- Knowledge staleness is a first-class failure mode: drive goals explicitly cite outdated swarm artifacts and unresolved dream connections, showing that
-- Repeated 502 errors from Nvidia carry the message 'Service temporarily overloaded' yet return HTTP 200, meaning status-code-based health checks alone 
-- The fallback provider inclusionai/ling-3.0-flash-fin consistently succeeds with sub-4-second latency when all primary providers fail, proving that a r
-- The same three providers (nvidia/nemotron, google/gemma-4-31b, google/gemma-4-26b) fail repeatedly with 502/429 errors across multiple cycles, indicat
 
 ---
 

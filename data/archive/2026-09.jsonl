@@ -27227,3 +27227,24 @@
 {"ts": 1787682746.467929, "key": "dream:20260825183226:3:11464d", "value": "Five consecutive model failures were all rate-limit or upstream-overload errors (429/502) across four different providers, showing that free-tier OpenRouter capacity is the primary reliability bottleneck, not model quality.", "source": "dream"}
 {"ts": 1787682746.4680262, "key": "dream:20260825183226:4:231822", "value": "Recovery succeeded only via nvidia/nemotron-3.5-lightning:free after ~49s latency, indicating that a known-good fallback list ordered by historical success is more effective than retrying the failed model.", "source": "dream"}
 {"ts": 1787682746.4681017, "key": "dream:20260825183226:5:f9ae60", "value": "Self-diagnosis found zero organ defects while external metrics regressed, revealing that internal health checks do not detect performance degradation and must be paired with outcome-based critics.", "source": "dream"}
+{"ts": 1788287959.0368588, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788287960.885247, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 27}}
+{"ts": 1788287972.223266, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 6.7, "tokens_ein": 1267, "tokens_aus": 987}}
+{"ts": 1788287972.2240808, "kind": "skill_proposal", "payload": {"proposal": "Implement a circuit breaker for `z-ai/glm-5.2:free` that automatically disables it for 30 minutes after three consecutive 429 errors."}}
+{"ts": 1788287972.224171, "kind": "skill_proposal", "payload": {"proposal": "Create a skill deduplication mechanism that prevents the generation of new skill proposals if an identical or highly similar proposal already exists in the backlog."}}
+{"ts": 1788287972.224257, "kind": "skill_proposal", "payload": {"proposal": "Build a timeout wrapper for LLM calls that aborts requests exceeding 60 seconds and triggers a fallback model."}}
+{"ts": 1788287972.224374, "kind": "skill_proposal", "payload": {"proposal": "Develop an automated skill implementation pipeline that takes the highest-priority skill proposal and generates a test script for it immediately."}}
+{"ts": 1788287972.2244644, "kind": "skill_proposal", "payload": {"proposal": "Add a retry mechanism with exponential backoff specifically for CI failures related to `hermes-daemon` memory sync."}}
+{"ts": 1788287972.2245512, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788287974.769567, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788287974.7695646, "schalter_geoeffnet": false}}
+{"ts": 1788287995.1001256, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 20.3, "tokens_ein": 532, "tokens_aus": 461}}
+{"ts": 1788287995.1003313, "kind": "drive_goal", "payload": {"title": "Modell-Fehler systematisch reduzieren", "why": "Das Modell scheitert fast doppelt so oft wie es gelingt. Weniger Fehler machen das Gesamtsystem zuverlässiger.", "signal": "failure"}}
+{"ts": 1788287995.1004333, "kind": "drive_goal", "payload": {"title": "Marktanalyse-Abschlüsse aufräumen", "why": "Drei Analyse-Schritte liegen seit langer Zeit unvollendet herum. Sie blockieren neue Erkenntnisse.", "signal": "stale"}}
+{"ts": 1788287995.1005182, "kind": "drive_goal", "payload": {"title": "Traum-Ergebnisse in Skills umsetzen", "why": "Simulationen und Träume liefern Ideen, aber wenige werden zu echten Fähigkeiten. Die Lücke schließen bringt echten Nutzen.", "signal": "combination"}}
+{"ts": 1788288001.4036536, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.58, "gelesen": 2}}
+{"ts": 1788288001.4053864, "kind": "reflex_used", "payload": {"goal": "Marktanalyse endlich abschließen und nutzen", "tool": "marktanalyse-endlich-abschließen.py", "ok": true}}
+{"ts": 1788288001.8738039, "kind": "act_done", "payload": {"goal_title": "Marktanalyse endlich abschließen und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788288295.2313592, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788288364.345915, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788288365.9840283, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788288380.6679974, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788288380.667995, "schalter_geoeffnet": false}}

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12080 Fakten** · Stand 2026-09-08 18:39 UTC · aktualisiert bei jedem Herzschlag
+**12085 Fakten** · Stand 2026-09-08 18:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7396
+- **dream:** 7401
 - **swarm_artifact:** 2092
 - **last_swarm_critique:** 838
 - **last_swarm_goal:** 570
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908184828:5:e7c797`
+*08.09. 18:48 UTC · Quelle: dream*
+
+A converged swarm achieving score 9 in a single cycle with balanced roles (1 planner, 3 builders, 1 critic) under a constrained budget (max 1 iteration) shows that sound initial planning compensates for limited revision opportunities.
+
+### `dream:20260908184828:4:cacf95`
+*08.09. 18:48 UTC · Quelle: dream*
+
+Relative path resolution against environment variables like ZOETRON_DATA and sys.argv[1] is a recurring failure mode that requires absolute-path canonicalization before any file-touching operation.
+
+### `dream:20260908184828:3:489595`
+*08.09. 18:48 UTC · Quelle: dream*
+
+Placeholder implementations such as record_success() containing only pass can slip through initial quality gates but are caught by tool-rejection mechanisms, revealing the need for stricter pre-registration validation.
+
+### `dream:20260908184828:2:a1d228`
+*08.09. 18:48 UTC · Quelle: dream*
+
+When primary model providers return 502 upstream errors or 429 rate-limit responses, a low-latency flash model (10.7s) serves as an effective emergency fallback that preserves throughput under degraded conditions.
+
+### `dream:20260908184828:1:571f76`
+*08.09. 18:48 UTC · Quelle: dream*
+
+Silent failures where scripts exit 0 without processing any files indicate that exit-code-only validation is insufficient; actual data-path engagement must be verified before declaring success.
 
 ### `dream:20260908183500:5:c1726f`
 *08.09. 18:35 UTC · Quelle: dream*
