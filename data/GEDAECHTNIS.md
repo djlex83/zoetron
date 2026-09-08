@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12071 Fakten** · Stand 2026-09-08 18:00 UTC · aktualisiert bei jedem Herzschlag
+**12075 Fakten** · Stand 2026-09-08 18:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7386
+- **dream:** 7391
 - **swarm_artifact:** 2092
 - **last_swarm_critique:** 838
 - **last_swarm_goal:** 570
@@ -10,11 +10,36 @@
 - **strategy:** 268
 - **tool:** 185
 - **hand_result:** 138
-- **aktuell_organfehler:** 51
+- **aktuell_organfehler:** 50
 - **aktuell_fussball_messlatte:** 9
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908180949:5:168826`
+*08.09. 18:09 UTC · Quelle: dream*
+
+Reflex-based execution (alte-träume-miteinander-verbinden.py) succeeds and converges, but the reflex layer lacks explicit error propagation — a failure in the reflex pipeline would be invisible to the orchestrator.
+
+### `dream:20260908180949:4:b788e1`
+*08.09. 18:09 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260908180949:3:d8b228`
+*08.09. 18:09 UTC · Quelle: dream*
+
+Repeated 502 errors from Nvidia carry the message 'Service temporarily overloaded' yet return HTTP 200, meaning status-code-based health checks alone cannot detect these failures — response content inspection is required.
+
+### `dream:20260908180949:2:32508d`
+*08.09. 18:09 UTC · Quelle: dream*
+
+The fallback provider inclusionai/ling-3.0-flash-fin consistently succeeds with sub-4-second latency when all primary providers fail, proving that a reliable pre-warmed fallback already exists but lacks automated routing.
+
+### `dream:20260908180949:1:97e23b`
+*08.09. 18:09 UTC · Quelle: dream*
+
+The same three providers (nvidia/nemotron, google/gemma-4-31b, google/gemma-4-26b) fail repeatedly with 502/429 errors across multiple cycles, indicating systemic provider instability rather than transient spikes.
 
 ### `dream:20260908175547:5:dc3b28`
 *08.09. 17:55 UTC · Quelle: dream*
@@ -46391,11 +46416,6 @@ The nachspiel check shows the log-loss metric unchanged (vorher -0.2, jetzt -0.2
 *25.08. 18:32 UTC · Quelle: dream*
 
 Both football variants (zoetron_f37812f578 at 49.77%, zoetron_432d95898b at 48.98%) underperformed the 50.18% baseline on both hit rate and log-loss, confirming that prose-based prediction without structured data cannot beat the bookmaker baseline.
-
-### `aktuell_organfehler`
-*25.08. 18:03 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER im letzten Herzschlag: act -> rc. Phase endete mit rc=1 Diese Phase des Herzschlags ist abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ Herzschlag Phase reparieren.
 
 ### `last_swarm_goal`
 *25.08. 18:02 UTC · Quelle: system*

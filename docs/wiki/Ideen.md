@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 17:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 18:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based execution (alte-träume-miteinander-verbinden.py) succeeds and converges, but the reflex layer lacks explicit error propagation — a failur
+- Knowledge staleness is a first-class failure mode: drive goals explicitly cite outdated swarm artifacts and unresolved dream connections, showing that
+- Repeated 502 errors from Nvidia carry the message 'Service temporarily overloaded' yet return HTTP 200, meaning status-code-based health checks alone 
+- The fallback provider inclusionai/ling-3.0-flash-fin consistently succeeds with sub-4-second latency when all primary providers fail, proving that a r
+- The same three providers (nvidia/nemotron, google/gemma-4-31b, google/gemma-4-26b) fail repeatedly with 502/429 errors across multiple cycles, indicat
 - Pruning removes facts but lacks procedural extraction; high-value error signatures (502, 429, timeout) should become reusable retry/fallback procedure
 - Swarm artifacts degrade without TTL-enforced freshness; stale goals/critiques directly impair coordination quality.
 - Role-based latency ceilings (critic/planner <5s, builder with hard timeout) prevent tail-latency cascades in swarm cycles.
@@ -51,11 +56,6 @@
 - Stale swarm knowledge persists despite reflex refresh attempts, suggesting refresh lacks validation or integration.
 - Identical skill proposals repeated across cycles indicate missing deduplication and proposal-tracking mechanism.
 - Ultra model latency (112-170s) exceeds practical thresholds, causing cascading timeouts and failed swarm cycles.
-- Reflex cycles that learn from errors and test proposed skills both converged successfully, confirming that structured error-driven learning is the mos
-- Aggressive pruning (11 facts and 42 events in one cycle) shows the knowledge base is actively degrading stale data, but stale swarm data still degrade
-- The system generates high-quality skill proposals but lacks a validated deployment pipeline, causing a gap between proposed abilities and reliable exe
-- Dream and drive both timed out at 180 seconds, indicating that blocking operations without timeout guardrails stall the entire consolidation cycle.
-- Nvidia and Google providers repeatedly fail with 502/429 errors, while the inclusionai flash model succeeds with 3.6s latency, proving that heavy mode
 
 ---
 
