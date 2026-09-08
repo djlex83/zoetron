@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 08:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 08:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 3×)*
+- Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative file paths fail in hand_action because arguments aren't expanded through ZOETRON_DATA before execution.
+- Swarm vectors and coordination data stale within days without automated freshness checks and renewal reflexes.
+- Reflex tools and hand_actions return null or missing error fields on failure, preventing structured retry and root-cause analysis.
+- Drive timeouts (180s) and model latency spikes (60s+) cascade into system-wide stalls, necessitating metabolic-aware scheduling that pauses consolidat
+- Primary model providers (Nemotron, Gemma) frequently return 502/429 errors under load, requiring automatic failover to flash models like inclusionai/l
 - Evaluation cycles waste resources on mismatched artifacts because pre-scoring schema validation gates are absent.
 - Hand actions return null errors instead of structured context (stderr, exit codes), preventing automated recovery and pattern analysis.
 - Swarm knowledge staleness goes undetected until coordination degrades, requiring scheduled freshness checks with automatic renewal triggers.
@@ -51,11 +56,6 @@
 - Reflex-driven skill execution (try-skills, update-swarm) converges reliably and should be the default pattern for maintenance goals.
 - No automatic failover triggered: the system experienced three consecutive model failures before a flash model was used, indicating missing circuit-bre
 - Primary models (Nemotron Ultra, Gemma variants) fail under load with 502/429 errors while flash models (Ling 3.0 Flash) consistently succeed at 4s lat
-- Fixed iteration budgets ignore risk context; a risk-aware allocator that scales max_iterations by (1 + risk_score) prevents premature conserve-state e
-- Swarm insights decay within 24 hours without automated critique re-evaluation and confidence-score updates.
-- Relative filesystem paths cause silent hand-action failures; all paths must be resolved to absolute using ZOETRON_DATA before any I/O operation.
-- Dream-generated skill proposals remain inert without a dedicated promotion daemon that validates, tests, and deploys exactly one proposal per sleep cy
-- Model provider failures (502/429) cascade into system unreliability unless a health-aware router with circuit breakers and sub-100ms failover to flash
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12000 Fakten** · Stand 2026-09-08 08:42 UTC · aktualisiert bei jedem Herzschlag
+**12005 Fakten** · Stand 2026-09-08 08:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7276
+- **dream:** 7281
 - **swarm_artifact:** 2098
 - **last_swarm_critique:** 835
 - **last_swarm_goal:** 567
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908085230:5:b54114`
+*08.09. 08:52 UTC · Quelle: dream*
+
+Relative file paths fail in hand_action because arguments aren't expanded through ZOETRON_DATA before execution.
+
+### `dream:20260908085230:4:fe1963`
+*08.09. 08:52 UTC · Quelle: dream*
+
+Swarm vectors and coordination data stale within days without automated freshness checks and renewal reflexes.
+
+### `dream:20260908085230:3:d4330f`
+*08.09. 08:52 UTC · Quelle: dream*
+
+Reflex tools and hand_actions return null or missing error fields on failure, preventing structured retry and root-cause analysis.
+
+### `dream:20260908085230:2:6e6d16`
+*08.09. 08:52 UTC · Quelle: dream*
+
+Drive timeouts (180s) and model latency spikes (60s+) cascade into system-wide stalls, necessitating metabolic-aware scheduling that pauses consolidation when stress exceeds 0.8.
+
+### `dream:20260908085230:1:c95212`
+*08.09. 08:52 UTC · Quelle: dream*
+
+Primary model providers (Nemotron, Gemma) frequently return 502/429 errors under load, requiring automatic failover to flash models like inclusionai/ling-3.0-flash-fin which maintain sub-4s latency.
 
 ### `dream:20260908083817:5:efdadf`
 *08.09. 08:38 UTC · Quelle: dream*
