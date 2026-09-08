@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 05:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 05:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,17 +23,17 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals duplicate across cycles (model errors, swarm knowledge x2) because completion signals don't suppress re-emission of stale drives.
+- Dream-generated skill proposals (backoff, fallback chain, circuit breaker) accumulate but are not automatically validated or promoted to production co
+- Reflex-driven swarm refresh succeeds where manual hand_action fails, indicating reflexes encapsulate correct path logic that hand actions lack.
+- Hand actions fail on path resolution because relative paths and ZOETRON_DATA env var are not reconciled before file access.
+- Model reliability is the primary systemic bottleneck: 3/4 models failed with 502/429 errors while only inclusionai/ling-3.0-flash-fin succeeded consis
 - Structured error objects capturing stderr, exit codes, and context from hand_actions enable automated recovery instead of silent null failures.
 - Flash models (sub-5s latency) must be automatic fallbacks when primary models exceed p95 latency >30s or error rates exceed thresholds.
 - Swarm convergence requires minimum cycle counts (>=5) and stability thresholds (score variance <0.1) to avoid accepting stale or oscillating results.
@@ -51,11 +56,6 @@
 - Upstream 502 errors from providers require circuit-breaker patterns with automatic failover to healthy endpoints.
 - Cascading 429 errors indicate missing rate-limit-aware concurrency control across model calls.
 - Flash models consistently outperform large models on reliability and latency, making them preferable for production paths.
-- Self-diagnosis reports zero organ errors while model latency spikes 9x, showing health checks miss degraded-but-functional states.
-- Drive goals recycle the same three themes (stale knowledge, model errors, evolution rounds) across cycles, revealing no progress metric to close loops
-- Pruning aggressiveness varies widely (38 vs 20 events) without clear correlation to memory pressure, implying the prune policy lacks a stable trigger.
-- Reflex tools for targeted maintenance (knowledge refresh, error analysis) consistently converge in one shot, suggesting they should be first-line resp
-- Model latency exhibits high variance (15-143s) on the same provider, indicating unreliable infrastructure rather than workload differences.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11959 Fakten** · Stand 2026-09-08 05:22 UTC · aktualisiert bei jedem Herzschlag
+**11964 Fakten** · Stand 2026-09-08 05:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7236
+- **dream:** 7241
 - **swarm_artifact:** 2096
 - **last_swarm_critique:** 833
 - **last_swarm_goal:** 565
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908053232:5:dc15dc`
+*08.09. 05:32 UTC · Quelle: dream*
+
+Drive goals duplicate across cycles (model errors, swarm knowledge x2) because completion signals don't suppress re-emission of stale drives.
+
+### `dream:20260908053232:4:e584b1`
+*08.09. 05:32 UTC · Quelle: dream*
+
+Dream-generated skill proposals (backoff, fallback chain, circuit breaker) accumulate but are not automatically validated or promoted to production code.
+
+### `dream:20260908053232:3:5ee579`
+*08.09. 05:32 UTC · Quelle: dream*
+
+Reflex-driven swarm refresh succeeds where manual hand_action fails, indicating reflexes encapsulate correct path logic that hand actions lack.
+
+### `dream:20260908053232:2:7c6e98`
+*08.09. 05:32 UTC · Quelle: dream*
+
+Hand actions fail on path resolution because relative paths and ZOETRON_DATA env var are not reconciled before file access.
+
+### `dream:20260908053232:1:5d6cfc`
+*08.09. 05:32 UTC · Quelle: dream*
+
+Model reliability is the primary systemic bottleneck: 3/4 models failed with 502/429 errors while only inclusionai/ling-3.0-flash-fin succeeded consistently.
 
 ### `dream:20260908052018:5:4d866b`
 *08.09. 05:20 UTC · Quelle: dream*
