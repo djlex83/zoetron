@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 04:57:13",
+ "stand": "2026-09-08 05:09:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,12 +39,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -58,6 +52,12 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
