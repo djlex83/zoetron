@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 06:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 06:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge decays without scheduled re-evaluation, turning past critiques into stale artifacts rather than living guidance.
+- Skill proposals accumulate but remain unimplemented without a dedicated promotion pipeline from dream to deployed capability.
+- Fixed iteration budgets under conserve mode ignore task risk profiles, guaranteeing under-provisioning for complex revisions.
+- Relative path handling without absolute baseline validation causes silent hand-action failures that waste cycles and erode trust.
+- Model provider diversity without automatic fallback creates single points of failure that cascade into system-wide resource exhaustion.
 - Point-estimate scoring without confidence intervals produces overconfident artifact rankings that misguide downstream selection.
 - Swarm convergence accepts suboptimal scores after too few cycles because stopping criteria lack minimum-cycle and stability-variance guards.
 - High latency variance (28–92 s) for the same model reveals missing health-score routing that would shift traffic to faster healthy endpoints.
@@ -51,11 +56,6 @@
 - Drive goals for 'reduce model errors' and 'refresh swarm knowledge' re-emit with identical failure/stale signals, proving root causes remain unaddress
 - Skill proposals for circuit breakers, model routing, and latency SLO gates accumulate across multiple dream cycles but never graduate to implemented r
 - Model latency degrades monotonically across cycles (12s → 28s → 56s → 92s) while self-diagnosis reports zero organ errors, revealing a critical blind 
-- Swarm knowledge degrades into staleness when refresh is demand-driven only, causing insights to go unused and decision quality to erode silently.
-- Calibration systematically underestimates task complexity (predicted 4 vs actual 7), leading to under-provisioned budgets and repeated revision cycles
-- Relative file paths resolved from sys.argv or environment variables cause silent read failures when not validated against an absolute data baseline be
-- Conserve-state budgets (max_iterations=1) are too restrictive to absorb revision overhead, as the simulation required 5 revisions but could only alloc
-- External model dependencies lack a fallback chain, so cascading provider failures (502, 429) block the entire pipeline instead of routing to alternati
 
 ---
 

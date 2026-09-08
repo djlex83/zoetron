@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11988 Fakten** · Stand 2026-09-08 06:33 UTC · aktualisiert bei jedem Herzschlag
+**11988 Fakten** · Stand 2026-09-08 06:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7246
-- **swarm_artifact:** 2106
+- **dream:** 7251
+- **swarm_artifact:** 2104
 - **last_swarm_critique:** 835
 - **last_swarm_goal:** 567
-- **anti_pattern:** 557
-- **strategy:** 280
+- **anti_pattern:** 555
+- **strategy:** 279
 - **tool:** 184
 - **hand_result:** 139
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908064255:5:4b1286`
+*08.09. 06:42 UTC · Quelle: dream*
+
+Swarm knowledge decays without scheduled re-evaluation, turning past critiques into stale artifacts rather than living guidance.
+
+### `dream:20260908064255:4:45b4ef`
+*08.09. 06:42 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain unimplemented without a dedicated promotion pipeline from dream to deployed capability.
+
+### `dream:20260908064255:3:69736f`
+*08.09. 06:42 UTC · Quelle: dream*
+
+Fixed iteration budgets under conserve mode ignore task risk profiles, guaranteeing under-provisioning for complex revisions.
+
+### `dream:20260908064255:2:998196`
+*08.09. 06:42 UTC · Quelle: dream*
+
+Relative path handling without absolute baseline validation causes silent hand-action failures that waste cycles and erode trust.
+
+### `dream:20260908064255:1:352730`
+*08.09. 06:42 UTC · Quelle: dream*
+
+Model provider diversity without automatic fallback creates single points of failure that cascade into system-wide resource exhaustion.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Traumerfahrungen zu Fähi:1`
 *08.09. 06:29 UTC · Quelle: evolution*
@@ -45966,16 +45991,6 @@ Metabolism conserve mode imposes a 1-iteration budget that forces premature goal
 *25.08. 06:44 UTC · Quelle: dream*
 
 Rate-limiting (429) on primary models repeatedly halts execution because no automatic provider failover exists.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Lokaler Schüler: das ers:1`
-*25.08. 06:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Interaktiver Notebook-Ansatz: Zell-für-Zell-Lernpfad statt Blackbox-Skript - Das Deliverable ist ein Jupyter-Notebook ('lora_lernpfad.ipynb') plus eine kurze Anleitung, das den Schüler aktiv durch die 6 Stationen führt: Zelle
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Lokaler Schüler: das ers:0`
-*25.08. 06:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Single-File-Strategie: Alles in EINEM ausführbaren Python-Skript - Statt mehrere Dateien (train_lora.py, merge_export.py, evaluate.py, Modelfile) zu erzeugen – die beim letzten Versuch trunciert/unvollständig blieben – wird A
 
 ### `last_swarm_critique`
 *25.08. 06:20 UTC · Quelle: critic*
