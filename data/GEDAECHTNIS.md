@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12098 Fakten** · Stand 2026-09-08 21:04 UTC · aktualisiert bei jedem Herzschlag
+**12091 Fakten** · Stand 2026-09-08 21:17 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7426
-- **swarm_artifact:** 2092
+- **swarm_artifact:** 2090
 - **last_swarm_critique:** 840
 - **last_swarm_goal:** 572
-- **anti_pattern:** 529
-- **strategy:** 266
-- **tool:** 183
+- **anti_pattern:** 527
+- **strategy:** 265
+- **tool:** 182
 - **hand_result:** 136
-- **aktuell_organfehler:** 50
+- **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908211352:5:fffee3`
+*08.09. 21:13 UTC · Quelle: dream*
+
+High-latency successes (9-47s) on Nemotron coincide with upstream overload errors, indicating that latency spikes are leading indicators of imminent 502 failures.
+
+### `dream:20260908211352:4:22d1b9`
+*08.09. 21:13 UTC · Quelle: dream*
+
+Swarm evolution produces high-scoring variants (8-9) that fail sandbox validation because critics evaluate prose quality instead of executability, creating a simulation-to-reality gap.
+
+### `dream:20260908211352:3:7d0944`
+*08.09. 21:13 UTC · Quelle: dream*
+
+Calibration error of 5 points (predicted 7 vs actual 2) reveals a persistent overconfidence bias in self-assessment that correlates with missing executable artifacts.
+
+### `dream:20260908211352:2:286602`
+*08.09. 21:13 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model is the only consistently available free endpoint (2/2 successes, 1.3-6.1s latency), establishing it as the de facto fallback for planning and critique roles.
+
+### `dream:20260908211352:1:673c67`
+*08.09. 21:13 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic unreliability: Google Gemma hits 429 rate limits and Nvidia Nemotron returns 502 upstream errors, making them unsuitable for critical-path execution.
 
 ### `dream:20260908210207:5:95ae4f`
 *08.09. 21:02 UTC · Quelle: dream*
@@ -46457,26 +46482,6 @@ A simulation verdict of 'revise' with 3 identified risks produced only 0 applied
 
 The swarm terminated after 2 cycles with score 5/10 and converged=false because the iteration budget (max_iterations=2) was exhausted before the critic's repeated 'revise' verdicts could be acted on, so low scores here reflect budget starvation rather than sol
 
-### `aktuell_organfehler`
-*25.08. 21:11 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-25 18:02:12-18:02:30 UTC): dream -> ConnectError in _exceptions.py:14; dream -> ConnectError in default.py:118; dream -> rc; drive -> ConnectError in _exceptions.py:14. [Errno -3] Temporary failure in name resolution | [Errno -3] Temporary
-
-### `tool:cortex-upgrade-reflex-neue-modelle-autom`
-*25.08. 21:08 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren'. Datei: data/tools/cortex-upgrade-reflex-neue-modelle-autom.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:1`
-*25.08. 21:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Event-getriebene Pipeline-Architektur mit klarer Zustandsmaschine - Statt einer linearen Datei ein ereignisbasiertes Design: Ein zentraler StateStore (state.json mit Feldern champion_id, champion_score, champion_p95, history)
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:0`
-*25.08. 21:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Monolithische Single-File-Komplettlösung mit strikter Reihenfolge - Schreibe das Artefakt als EINE vollständige Python-Datei, aber diesmal bottom-up in fester, nummerierter Struktur: (1) Imports + Konstanten (MODEL_REGISTRY, 
-
 ### `last_swarm_critique`
 *25.08. 21:06 UTC · Quelle: critic*
 
@@ -46486,31 +46491,6 @@ score=3; issues=Artefakt ist unvollstaendig/trunkiert: Code bricht mitten in Sch
 *25.08. 21:02 UTC · Quelle: system*
 
 Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren
-
-### `dream:20260825210232:5:272c59`
-*25.08. 21:02 UTC · Quelle: dream*
-
-Three skill proposals were emitted in a burst with no mechanism to test any of them, confirming proposal generation currently outpaces validation capacity.
-
-### `dream:20260825210232:4:461525`
-*25.08. 21:02 UTC · Quelle: dream*
-
-A single long model call (139.9s, ~6.8k output tokens) dominated the cycle's latency budget while short calls stayed under 3s, so cost control should target the planner/builder calls specifically.
-
-### `dream:20260825210232:3:aedfad`
-*25.08. 21:02 UTC · Quelle: dream*
-
-The 'bahnen' step reported delta 0.0 and 0 new edges despite 7 retrievals, indicating memory consolidation produced no durable traces for a completed-but-unconverged goal.
-
-### `dream:20260825210232:2:8c8c23`
-*25.08. 21:02 UTC · Quelle: dream*
-
-Calibration was exact (predicted 4 risks vs. 4 actual) yet the goal still failed to converge (score 4), proving that accurate risk prediction does not equal solution quality.
-
-### `dream:20260825210232:1:326e6e`
-*25.08. 21:02 UTC · Quelle: dream*
-
-The swarm's first attempt scored 4/10 but an evolution run with 3 variants lifted the winner to 9/10, showing variant generation is the highest-leverage recovery step after a weak score.
 
 ### `last_swarm_critique`
 *25.08. 20:37 UTC · Quelle: critic*

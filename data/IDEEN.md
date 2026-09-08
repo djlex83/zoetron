@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 21:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 21:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High-latency successes (9-47s) on Nemotron coincide with upstream overload errors, indicating that latency spikes are leading indicators of imminent 5
+- Swarm evolution produces high-scoring variants (8-9) that fail sandbox validation because critics evaluate prose quality instead of executability, cre
+- Calibration error of 5 points (predicted 7 vs actual 2) reveals a persistent overconfidence bias in self-assessment that correlates with missing execu
+- The inclusionai/ling-3.0-flash-fin model is the only consistently available free endpoint (2/2 successes, 1.3-6.1s latency), establishing it as the de
+- Free-tier models exhibit systematic unreliability: Google Gemma hits 429 rate limits and Nvidia Nemotron returns 502 upstream errors, making them unsu
 - Swarm and reflex both target 'model reliability' but operate disconnected: reflex tool fails, simulation approves, TOR rejects - no shared success cri
 - High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, preventing retry loops needed for transient model failures.
 - TOR gate rejects any artifact lacking an executable Python block - prose plans without code cannot pass verification.
@@ -51,11 +56,6 @@
 - Swarm-goal staleness persists because freshness scans are proposed but not scheduled; outdated memories repeatedly seed the same faulty plans.
 - Model endpoint instability (502/429) correlates with high metabolic stress, causing cascading reflex failures when fallbacks also saturate.
 - Silent I/O failures (exit 0 but zero bytes read/written) stem from unresolved relative paths despite ZOETRON_DATA and argv[1] being available.
-- Skill proposals accumulate without validation against replayed failures, risking regression deployment without automated rollback.
-- Optimization loops stall without convergence detection, wasting cycles on plateaued scores instead of triggering evolution restarts.
-- Relative path resolution in hand_actions causes non-deterministic failures that absolute path anchoring (ZOETRON_DATA) would eliminate.
-- Tools frequently return exit code 0 while performing no actual work (silent failures), necessitating post-execution verification of side effects.
-- Model providers exhibit cascading failures (502/429) requiring automatic failover to flash models with persisted circuit-breaker state.
 
 ---
 
