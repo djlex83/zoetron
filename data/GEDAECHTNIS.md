@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12091 Fakten** · Stand 2026-09-08 21:39 UTC · aktualisiert bei jedem Herzschlag
+**12084 Fakten** · Stand 2026-09-08 21:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7426
-- **swarm_artifact:** 2090
+- **dream:** 7431
+- **swarm_artifact:** 2082
 - **last_swarm_critique:** 840
 - **last_swarm_goal:** 572
-- **anti_pattern:** 527
-- **strategy:** 265
+- **anti_pattern:** 525
+- **strategy:** 264
 - **tool:** 182
-- **hand_result:** 136
+- **hand_result:** 135
 - **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908214749:5:cf9e59`
+*08.09. 21:47 UTC · Quelle: dream*
+
+Convergence stalls (3+ cycles without score improvement) go undetected, wasting compute; an automatic restart or model switch guardrail is needed.
+
+### `dream:20260908214749:4:fff7cb`
+*08.09. 21:47 UTC · Quelle: dream*
+
+Circuit-breaker state (success rates, p95 latency, error taxonomy) is lost across sleep/wake cycles, preventing degradation memory from guiding routing decisions.
+
+### `dream:20260908214749:3:1cf31f`
+*08.09. 21:47 UTC · Quelle: dream*
+
+Proposed skills accumulate without validation; a promotion daemon that tests one skill per sleep cycle against replayed failures would close the propose-deploy gap.
+
+### `dream:20260908214749:2:280ac9`
+*08.09. 21:47 UTC · Quelle: dream*
+
+Relative path usage in hand_actions causes silent failures where scripts exit 0 but touch wrong files, needing mandatory absolute path resolution.
+
+### `dream:20260908214749:1:390d8e`
+*08.09. 21:47 UTC · Quelle: dream*
+
+Model failures cluster around rate limits (429) and gateway errors (502) with high latency, requiring automatic failover to faster models.
 
 ### `dream:20260908213633:5:2bfead`
 *08.09. 21:36 UTC · Quelle: dream*
@@ -46461,16 +46486,6 @@ Repeated 429 rate-limit errors on openrouter.ai across both stealth/ox-alpha and
 *25.08. 22:00 UTC · Quelle: dream*
 
 The football predictor (zoetron_40c3426639) hit 49.48% vs the 50.18% baseline with worse log-loss (1.0124 vs 1.0073), meaning the model adds no edge over always predicting ~50% — the approach itself, not execution, is failing.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:2`
-*25.08. 21:43 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Event-getriebener Daemon mit State-Machine: Inkrementelle, resümierbare Pipeline - Architekturwechsel von 'Skripte, die komplett durchlaufen müssen' zu einer zustandsbasierten State-Machine (States: DISCOVER → EVALUATE → DECI
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:0`
-*25.08. 21:43 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Monolith-First: Ein einzelnes, abgeschlossenes Self-Check-Skript statt vier Arte - Statt vier getrennte Module (Scanner, Benchmark-Runner, Promotion-Engine, Router-Updater) wird ALLES in EIN einziges Python-Skript (cortex_ref
 
 ### `last_swarm_critique`
 *25.08. 21:42 UTC · Quelle: critic*
