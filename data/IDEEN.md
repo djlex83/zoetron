@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 20:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 20:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -11,8 +11,8 @@
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
 - Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 7×)*
 - Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
+- Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 6×)*
 - Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh  *(hatte die Idee 5×)*
-- Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 5×)*
 - Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours. *(hatte die Idee 4×)*
 - Enforce absolute_path_guard middleware on all file tools with canonical ZOETRON_DATA rewriting. *(hatte die Idee 4×)*
 - Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with backof *(hatte die Idee 4×)*
@@ -25,15 +25,15 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolutionary search improves scores (4→8) but fails to converge in 2 cycles, suggesting insufficient critic signal or search breadth.
+- Silent tool failures (scripts that print but write nothing) evade detection without explicit post-execution artifact verification.
+- Calibration consistently overestimates success by ~3 points (predicted 7 vs actual 4), indicating systematic difficulty underestimation.
+- Rate-limited providers (Google Gemma 429) fail predictably under concurrent load, requiring request spacing or fallback pools.
+- High-latency models (Nemotron >55s p95) frequently return 502 upstream overload errors, making them unreliable for time-critical loops.
 - Relative paths and environment-variable-dependent paths caused silent failures — always resolve to absolute paths and validate existence before script
 - Calibration predictions diverged significantly from actuals (predicted 7, actual 4) under maximum stress, meaning self-assessed confidence must be dis
 - Repeated 502 and 429 errors from primary and secondary API providers indicate that a circuit-breaker pattern with immediate fallback is essential to p
@@ -51,11 +56,6 @@
 - Placeholder functions (pass/TODO/NotImplemented) reach production registry because no gate validates implementation completeness at registration time.
 - Silent failures dominate: scripts exit 0 but touch zero target files because relative paths resolve against wrong working directory.
 - Free-tier flagship models (Nemotron, Gemma) consistently fail under load with 502/429 errors while flash-tier models (Ling-3.0-flash) maintain sub-5s 
-- Swarm knowledge decays within hours; periodic market-data refresh must be embedded in the reflex cycle to maintain routing accuracy.
-- Optimization loops stall indefinitely without convergence detection; automatic restart or model switch after 3+ flat cycles preserves progress.
-- Exit codes are unreliable success indicators; post-execution verification of actual file system touches prevents undetected data corruption.
-- Relative path handling in hand_actions leads to silent failures where scripts exit 0 but access wrong directories; absolute canonicalization against Z
-- Model provider instability (502/429 errors) causes cascading failures unless circuit breakers automatically failover to flash models within seconds.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12090 Fakten** · Stand 2026-09-08 20:19 UTC · aktualisiert bei jedem Herzschlag
+**12095 Fakten** · Stand 2026-09-08 20:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7411
+- **dream:** 7416
 - **swarm_artifact:** 2094
 - **last_swarm_critique:** 840
 - **last_swarm_goal:** 572
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908202826:5:fecdac`
+*08.09. 20:28 UTC · Quelle: dream*
+
+Evolutionary search improves scores (4→8) but fails to converge in 2 cycles, suggesting insufficient critic signal or search breadth.
+
+### `dream:20260908202826:4:aea184`
+*08.09. 20:28 UTC · Quelle: dream*
+
+Silent tool failures (scripts that print but write nothing) evade detection without explicit post-execution artifact verification.
+
+### `dream:20260908202826:3:33a2b4`
+*08.09. 20:28 UTC · Quelle: dream*
+
+Calibration consistently overestimates success by ~3 points (predicted 7 vs actual 4), indicating systematic difficulty underestimation.
+
+### `dream:20260908202826:2:6a1cfd`
+*08.09. 20:28 UTC · Quelle: dream*
+
+Rate-limited providers (Google Gemma 429) fail predictably under concurrent load, requiring request spacing or fallback pools.
+
+### `dream:20260908202826:1:540f94`
+*08.09. 20:28 UTC · Quelle: dream*
+
+High-latency models (Nemotron >55s p95) frequently return 502 upstream overload errors, making them unreliable for time-critical loops.
 
 ### `dream:20260908201621:5:8e8fd7`
 *08.09. 20:16 UTC · Quelle: dream*
