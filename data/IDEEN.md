@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 14:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 14:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence claims without rigorous plateau detection (score delta < 0.01 over N cycles) and critic confidence thresholds are unreliable and lead to p
+- Stale swarm knowledge degrades decision quality, so freshness validation must be a mandatory gate before any swarm goal or critique is consumed.
+- Rate limiting and upstream overload correlate with concurrent multi-model requests, meaning load distribution must be proactive (health-aware routing)
+- Skill proposals accumulate faster than they get deployed; without a verified pipeline from proposal to sandbox-tested registration, the capability reg
+- Infrastructure failures (502 upstream overload, 429 rate limits) are the dominant failure mode, not reasoning errors, so resilience and load managemen
 - Swarm convergence lacks objective termination criteria, relying on subjective scores instead of plateau detection and critic confidence thresholds.
 - Pruning discards 51 events per run without extracting reusable procedures, wasting failure-pattern intelligence.
 - Skill proposals accumulate but lack a verification pipeline; untested skills risk registry pollution and runtime failures.
@@ -51,11 +56,6 @@
 - Calibration underestimates outcome by 50 % (predicted 6 vs actual 9), indicating systematic optimism in success predictors.
 - Swarm converges in one cycle with 3:1 builder-to-planner ratio, showing parallel artifact generation outperforms sequential planning.
 - Large-model latency varies 2.8x (101–285 s) making nemotron-3-ultra unreliable for latency-sensitive goals.
-- Swarm knowledge refresh succeeds as a reflex but lacks integration into the model routing feedback loop.
-- Skill proposals accumulate without a validation-to-deployment pipeline, creating capability debt.
-- Reflex tools without idempotent error handling cause cascading failures under stress.
-- Relative path resolution fails when execution context shifts; all file operations must anchor to ZOETRON_DATA.
-- Ultra-high latency models (100+s) trigger metabolic conserve mode that starves dependent processes.
 
 ---
 

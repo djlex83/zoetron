@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12094 Fakten** · Stand 2026-09-08 14:29 UTC · aktualisiert bei jedem Herzschlag
+**12094 Fakten** · Stand 2026-09-08 14:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7365
+- **dream:** 7368
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
-- **anti_pattern:** 547
-- **strategy:** 275
+- **anti_pattern:** 545
+- **strategy:** 274
 - **tool:** 186
 - **hand_result:** 139
 - **aktuell_organfehler:** 48
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908143903:5:69c378`
+*08.09. 14:39 UTC · Quelle: dream*
+
+Convergence claims without rigorous plateau detection (score delta < 0.01 over N cycles) and critic confidence thresholds are unreliable and lead to premature termination.
+
+### `dream:20260908143903:4:53771f`
+*08.09. 14:39 UTC · Quelle: dream*
+
+Stale swarm knowledge degrades decision quality, so freshness validation must be a mandatory gate before any swarm goal or critique is consumed.
+
+### `dream:20260908143903:3:ed8d57`
+*08.09. 14:39 UTC · Quelle: dream*
+
+Rate limiting and upstream overload correlate with concurrent multi-model requests, meaning load distribution must be proactive (health-aware routing) rather than reactive (retry-after-failure).
+
+### `dream:20260908143903:2:747819`
+*08.09. 14:39 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they get deployed; without a verified pipeline from proposal to sandbox-tested registration, the capability registry stays stale and unused.
+
+### `dream:20260908143903:1:6db4c9`
+*08.09. 14:39 UTC · Quelle: dream*
+
+Infrastructure failures (502 upstream overload, 429 rate limits) are the dominant failure mode, not reasoning errors, so resilience and load management must be prioritized over optimization.
 
 ### `dream:20260908142509:5:840924`
 *08.09. 14:25 UTC · Quelle: dream*
@@ -46457,16 +46482,6 @@ Failed tasks cluster around missing context, not wrong logic.
 
 Recurring theme across events: planning quality dominates outcomes.
 
-### `anti_pattern:Previous attempt scored 9/10. Goal: Fußball: die Basislinie :2`
-*25.08. 14:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): automated - script the whole path NICHT wiederholt anbieten.
-
-### `anti_pattern:Previous attempt scored 9/10. Goal: Fußball: die Basislinie :0`
-*25.08. 14:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): minimal - smallest working step NICHT wiederholt anbieten.
-
 ### `last_swarm_critique`
 *25.08. 14:35 UTC · Quelle: critic*
 
@@ -46476,16 +46491,6 @@ score=9; issues=
 *25.08. 14:35 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825143502:2:a4c59e`
-*25.08. 14:35 UTC · Quelle: dream*
-
-Failed tasks cluster around missing context, not wrong logic.
-
-### `dream:20260825143502:1:7a3951`
-*25.08. 14:35 UTC · Quelle: dream*
-
-Recurring theme across events: planning quality dominates outcomes.
 
 ### `last_swarm_critique`
 *25.08. 14:05 UTC · Quelle: critic*
