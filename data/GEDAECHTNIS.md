@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11989 Fakten** · Stand 2026-09-08 07:37 UTC · aktualisiert bei jedem Herzschlag
+**11989 Fakten** · Stand 2026-09-08 07:48 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7261
 - **swarm_artifact:** 2100
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908074531:5:a3f4c6`
+*08.09. 07:45 UTC · Quelle: dream*
+
+Evolutionary variant scoring (7.7-8.7) significantly outperforms the base attempt (5/10), proving that iterative refinement is the primary driver of improvement in this system.
+
+### `dream:20260908074531:4:6ffaf0`
+*08.09. 07:45 UTC · Quelle: dream*
+
+The swarm never converges (score stuck at 5/10 across 2 cycles), suggesting that unstable model availability prevents the planner-builder-critic loop from stabilizing.
+
+### `dream:20260908074531:3:8479a1`
+*08.09. 07:45 UTC · Quelle: dream*
+
+Critic output is repeatedly unparseable, causing downstream evolution and scoring logic to fail or degrade silently.
+
+### `dream:20260908074531:2:b2fef0`
+*08.09. 07:45 UTC · Quelle: dream*
+
+Google gemma models consistently hit 429 rate limits under concurrent swarm load, indicating no backoff or retry strategy exists for rate-limited endpoints.
+
+### `dream:20260908074531:1:036130`
+*08.09. 07:45 UTC · Quelle: dream*
+
+The Nvidia nemotron-3-ultra model is intermittently unavailable (502/504) and extremely slow (45-78s latency), making it unreliable as a primary model despite its high capability when reachable.
 
 ### `dream:20260908073426:5:d5cb60`
 *08.09. 07:34 UTC · Quelle: dream*
@@ -45981,31 +46006,6 @@ score=3; issues=Deliverable is truncated mid-function: `load_heartbeats` ends wi
 *25.08. 07:44 UTC · Quelle: system*
 
 Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal
-
-### `dream:20260825074440:5:465540`
-*25.08. 07:44 UTC · Quelle: dream*
-
-Calibration was perfect (predicted 4 vs actual 4) yet the outcome itself was poor, showing the predictor is well-calibrated but the goal pipeline needs quality improvement, not better prediction.
-
-### `dream:20260825074440:4:73838e`
-*25.08. 07:44 UTC · Quelle: dream*
-
-The swarm finished with score 4/10 and converged=false after 2 cycles despite evolution producing variants scoring up to 9/10, meaning the winner-selection or score-aggregation step failed to propagate the best variant into the final result.
-
-### `dream:20260825074440:3:76d504`
-*25.08. 07:44 UTC · Quelle: dream*
-
-A hard crash in hands-execute ('MemoryStore' object has no attribute 'add_fact') shows the memory API contract is not enforced at startup, allowing code drift to break the execution path silently at runtime.
-
-### `dream:20260825074440:2:009b51`
-*25.08. 07:44 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra-550b-a55b:free model successfully absorbed both failover calls (latency 5.8s and 11.7s), proving it is a reliable fallback when primary models are rate-limited.
-
-### `dream:20260825074440:1:c8a574`
-*25.08. 07:44 UTC · Quelle: dream*
-
-429 rate-limit failures on openrouter.ai occurred twice in quick succession across both stealth/ox-alpha and z-ai/glm-5.2:free, indicating a shared provider-level quota rather than per-model throttling.
 
 ### `last_swarm_critique`
 *25.08. 07:20 UTC · Quelle: critic*

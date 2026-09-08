@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 07:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 07:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -37,10 +37,15 @@
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolutionary variant scoring (7.7-8.7) significantly outperforms the base attempt (5/10), proving that iterative refinement is the primary driver of i
+- The swarm never converges (score stuck at 5/10 across 2 cycles), suggesting that unstable model availability prevents the planner-builder-critic loop 
+- Critic output is repeatedly unparseable, causing downstream evolution and scoring logic to fail or degrade silently.
+- Google gemma models consistently hit 429 rate limits under concurrent swarm load, indicating no backoff or retry strategy exists for rate-limited endp
+- The Nvidia nemotron-3-ultra model is intermittently unavailable (502/504) and extremely slow (45-78s latency), making it unreliable as a primary model
 - Swarm memory goes stale without scheduled refresh cycles, and disconnected dream memories from the same temporal window remain unlinked, losing cross-
 - High metabolic stress (1.0) triggers conserve mode that caps max_tasks=3 and max_iterations=1, throttling consolidation throughput exactly when dream 
 - Reflex tools (traum-ideen-zu-fähigkeiten-machen.py) can return ok:false without error details, making silent failures invisible to the orchestration l
@@ -51,11 +56,6 @@
 - Swarm knowledge decays silently over time without scheduled renewal, causing coordination quality to degrade invisibly until convergence failures reve
 - Rate-limit errors (429) and upstream errors (502) share a root cause: insufficient request throttling and the absence of health-aware routing that det
 - Heavy LLM endpoints fail under load predictably; system reliability depends on always having lightweight fallback models ready to absorb traffic when 
-- Reflex selection remains hardcoded instead of signal-to-tool registry, limiting composability and auditability.
-- Drive goals for model errors lack resolved-flag verification, risking perpetual re-emission without outcome confirmation.
-- Pruning executes blindly without memory-pressure scalar, preventing OOM prediction and adaptive retention.
-- Swarm independently converged on model-error reduction (score 9/10) confirming systemic reliability as top bottleneck.
-- Model failures cascade from primary providers (502, 429, 99s latency) to flash fallback (4.9s) without proactive health-based routing.
 
 ---
 
