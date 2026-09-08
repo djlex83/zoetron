@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 23:27:50",
+ "stand": "2026-09-08 23:46:42",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,25 +33,13 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -76,6 +64,18 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -403,19 +403,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "simulationen-in-die-praxis-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.811,
- "simulationen_angewandt": 24,
+ "haende_quote": 0.79,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
-  "n": 24,
+  "n": 25,
   "best": 9.0,
-  "schnitt": 5.54
+  "schnitt": 5.48
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 23,
-   "schnitt": 5.39
+   "n": 24,
+   "schnitt": 5.33
   },
   "bau": {
    "n": 1,

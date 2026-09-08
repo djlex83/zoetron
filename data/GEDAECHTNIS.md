@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12086 Fakten** · Stand 2026-09-08 23:30 UTC · aktualisiert bei jedem Herzschlag
+**12092 Fakten** · Stand 2026-09-08 23:48 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7451
-- **swarm_artifact:** 2064
-- **last_swarm_critique:** 842
-- **last_swarm_goal:** 574
+- **swarm_artifact:** 2068
+- **last_swarm_critique:** 843
+- **last_swarm_goal:** 575
 - **anti_pattern:** 523
 - **strategy:** 263
 - **tool:** 183
@@ -15,6 +15,51 @@
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Simulationen und Skills :2`
+*08.09. 23:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Plugin-basierte Simulations/Engine-Architektur mit Registry - Entkopplung: Engine kennt nur Interfaces (Protocols). Simulationen und Skills als Plugins über entry_points (importlib.metadata) registriert. Factory-Pattern für I
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Simulationen und Skills :0`
+*08.09. 23:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): CLI-First Architecture mit Typer/Click und expliziten Entry-Points - Vollständige Neugestaltung als echtes CLI-Paket: pyproject.toml mit [project.scripts] Entry-Points, Typer für typsichere CLI-Argumente, getrennte Module für
+
+### `last_swarm_critique`
+*08.09. 23:45 UTC · Quelle: critic*
+
+score=4; issues=Sandbox-Urteil: LÄUFT NICHT - Artefakte erzeugen argparse-Nutzungsfehler und werden nicht korrekt ausgeführt; Mögliche Entry-Point-/Argparse-Probleme verhindern die Ausführung der Skripte; Die sichtbaren Code-Abschnitte sind qualitativ hochwert
+
+### `last_swarm_goal`
+*08.09. 23:39 UTC · Quelle: system*
+
+Simulationen und Skills konsequent anwenden
+
+### `dream:20260908233915:5:1dcffb`
+*08.09. 23:39 UTC · Quelle: dream*
+
+Evolutionary refinement improved the artifact score from 7 to 8 in one generation, but calibration consistently underestimates actual output quality by ~2 points.
+
+### `dream:20260908233915:4:0a3268`
+*08.09. 23:39 UTC · Quelle: dream*
+
+Hand actions require at least 3 retries: two consecutive exit-1 failures preceded the first success, suggesting transient environment issues.
+
+### `dream:20260908233915:3:b3994f`
+*08.09. 23:39 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free succeeds on every attempt with 2-4s latency, making it the only dependable free-tier fallback.
+
+### `dream:20260908233915:2:a6322e`
+*08.09. 23:39 UTC · Quelle: dream*
+
+Gemma-4 models consistently hit 429 rate limits, indicating strict quota enforcement that blocks sustained usage.
+
+### `dream:20260908233915:1:9a4bbe`
+*08.09. 23:39 UTC · Quelle: dream*
+
+Nemotron-3-Ultra fails repeatedly with 502 upstream overload errors, making it unreliable as a primary model despite good latency when it works.
 
 ### `tool:vorgeschlagene-fähigkeiten-umsetzen`
 *08.09. 23:27 UTC · Quelle: hands*
@@ -46387,16 +46432,6 @@ score=7; issues=
 
 score=7; issues=
 
-### `anti_pattern:Previous attempt scored 2/10. Goal: Destillat-Datensatz: Ged:2`
-*25.08. 23:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Robustheit durch Defensive Engineering und Selbstheilung - Der Ansatz zielt auf Absturzsicherheit: Das Export-Programm wird mit umfassender Fehlerbehandlung gebaut — try/except um jede Quell-Datei (korrupte Eintraege werden u
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Destillat-Datensatz: Ged:1`
-*25.08. 23:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Vertragsgetriebener Aufbau: Validator und Export als erstklassige Buerger - Rueckwaerts vom Vertrag her entwickeln: Zuerst validate_destillat_file vollstaendig implementieren (prueft Datei existiert, >=200 Zeilen, gueltiges J
-
 ### `last_swarm_critique`
 *25.08. 23:34 UTC · Quelle: critic*
 
@@ -46406,31 +46441,6 @@ score=2; issues=Sandbox-Urteil 'LAEUFT NICHT' ist ein harter Mangel: das Artefak
 *25.08. 23:30 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260825233035:5:78b3de`
-*25.08. 23:30 UTC · Quelle: dream*
-
-Skill proposals are accumulating faster than they are tested (the 'stale' drive signal confirms this), creating an unvalidated backlog that risks compounding unverified behavior changes.
-
-### `dream:20260825233035:4:4d6c95`
-*25.08. 23:30 UTC · Quelle: dream*
-
-Model latency is highly bimodal (3–22s typical vs. one 372s spike with 6238 output tokens), so long-generation tasks need an explicit time budget or streaming cutoff rather than assuming uniform latency.
-
-### `dream:20260825233035:3:ed8f32`
-*25.08. 23:30 UTC · Quelle: dream*
-
-Simulation verdicts are consistently 'revise' but only a fraction of proposed revisions get applied (5→1, 4→3), meaning the revision-application step silently drops fixes and should be validated against the revision count.
-
-### `dream:20260825233035:2:c306af`
-*25.08. 23:30 UTC · Quelle: dream*
-
-The swarm repeatedly terminates at score 5 without converging after only 2 cycles, indicating the termination criterion rewards 'acceptable' over 'converged' and systematically leaves critic issues unresolved.
-
-### `dream:20260825233035:1:31c7c5`
-*25.08. 23:30 UTC · Quelle: dream*
-
-hand_action is the most fragile subsystem: two distinct failure modes occurred (exit 1 in 0.03s and a 25s timeout), so every shell invocation needs both a pre-flight no-op check and a hard timeout with graceful fallback.
 
 ### `last_swarm_critique`
 *25.08. 23:23 UTC · Quelle: critic*
