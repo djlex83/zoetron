@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 00:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 00:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,8 +12,8 @@
 - ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 6×)*
 - ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 6×)*
 - ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 6×)*
+- Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 6×)*
 - StalenessDetector: proactively scan swarm data age on a scheduled basis (e.g., hourly), emitting drive_goal ev *(hatte die Idee 5×)*
-- Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 5×)*
 - Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
 - Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject ca *(hatte die Idee 4×)*
 - Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours. *(hatte die Idee 4×)*
@@ -26,8 +26,8 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Resource exhaustion (rate limits, upstream overload) cascades into wasted cycles because goal selection lacks metabolic gating.
+- Flash-tier models (ling-3.0-flash-fin) consistently succeed where flagship models fail, making latency-tier routing a reliability lever.
+- Self-diagnosis reports zero organ errors while model-layer failures dominate, revealing a blind spot in health monitoring scope.
+- Skill proposals accumulate in a backlog without an execution pipeline, causing a persistent gap between capability design and deployment.
+- Model failures cluster predictably by provider and error type (Nvidia 502 overload, Google 429 rate limits) enabling provider-aware circuit breaking.
 - Stress-aware planning is missing: high metabolism stress (>0.8) correlates with planning overcommitment and reflex budget overruns.
 - Relative path usage in tool invocations fails non-deterministically when ZOETRON_DATA env var is unset, requiring middleware normalization.
 - Swarm knowledge freshness decays silently; no automated trigger refreshes critiques when older than 24 hours, leading to stale drive signals.
@@ -51,11 +56,6 @@
 - Swarm knowledge staleness persists despite reflex updates because synchronization lacks versioned conflict resolution.
 - Model latency spikes (5s→32s) correlate with token volume surges, indicating missing backpressure on context size.
 - Proposed skills accumulate unused because no automatic activation mechanism bridges proposal to execution.
-- 48 events were pruned while 0 facts survived pruning, suggesting the event log is noisy and the system retains little durable knowledge from individua
-- Latency for the same model (nvidia/nemotron-3-ultra) ranged from 5.8s to 96.8s, indicating that provider-side performance is highly variable and must 
-- Calibration predicted 3 but actual score was 5 (abs_error: 2), revealing that the system's self-assessment of goal progress is systematically unreliab
-- The swarm failed to converge (converged: false) despite running evolution with 3 variants and scoring up to 9, suggesting that evolution alone does no
-- Rate-limit (429) and upstream overload (502) errors from multiple providers indicate that no single model endpoint is reliable enough to depend on wit
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11900 Fakten** · Stand 2026-09-08 00:32 UTC · aktualisiert bei jedem Herzschlag
+**11905 Fakten** · Stand 2026-09-08 00:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7181
+- **dream:** 7186
 - **swarm_artifact:** 2096
 - **last_swarm_critique:** 828
 - **anti_pattern:** 561
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908004121:5:ae8af6`
+*08.09. 00:41 UTC · Quelle: dream*
+
+Resource exhaustion (rate limits, upstream overload) cascades into wasted cycles because goal selection lacks metabolic gating.
+
+### `dream:20260908004121:4:9a141c`
+*08.09. 00:41 UTC · Quelle: dream*
+
+Flash-tier models (ling-3.0-flash-fin) consistently succeed where flagship models fail, making latency-tier routing a reliability lever.
+
+### `dream:20260908004121:3:ce4a52`
+*08.09. 00:41 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model-layer failures dominate, revealing a blind spot in health monitoring scope.
+
+### `dream:20260908004121:2:435613`
+*08.09. 00:41 UTC · Quelle: dream*
+
+Skill proposals accumulate in a backlog without an execution pipeline, causing a persistent gap between capability design and deployment.
+
+### `dream:20260908004121:1:72e4da`
+*08.09. 00:41 UTC · Quelle: dream*
+
+Model failures cluster predictably by provider and error type (Nvidia 502 overload, Google 429 rate limits) enabling provider-aware circuit breaking.
 
 ### `dream:20260908002935:5:42bf42`
 *08.09. 00:29 UTC · Quelle: dream*
