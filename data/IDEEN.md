@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 09:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 09:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 10×)*
+- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 11×)*
 - Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 8×)*
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
@@ -24,15 +24,15 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate without deployment; a dream-to-skill daemon validating and deploying one proposal per sleep cycle closes the proposal-actio
+- Convergence stalls waste cycles when scores plateau; a guardrail detecting N-cycle stagnation should trigger emergency evolution restart.
+- Critic outputs frequently arrive malformed, causing silent failures that a fallback parser with safe default revision would prevent.
+- Rate limits hit multiple providers simultaneously, so request routing must track per-provider 429 rates and redistribute load before quota exhaustion.
+- Model failures cascade predictably: high latency precedes 502/429 errors, requiring automatic failover to flash models within 5s thresholds.
 - Convergence stalls and silent critic failures go undetected without explicit guardrails, causing wasted cycles on stalled optimization.
 - Reflex-driven tool execution (alte-marktanalyse-aktualisieren-und-nutz.py) succeeded where model-based planning failed, showing hardcoded fallbacks ou
 - Automatic pruning of stale facts and events (5 facts, 20 events) after each cycle prevents memory bloat from failed retries and redundant simulations.
@@ -51,11 +56,6 @@
 - Reflex tools and hand_actions return null or missing error fields on failure, preventing structured retry and root-cause analysis.
 - Drive timeouts (180s) and model latency spikes (60s+) cascade into system-wide stalls, necessitating metabolic-aware scheduling that pauses consolidat
 - Primary model providers (Nemotron, Gemma) frequently return 502/429 errors under load, requiring automatic failover to flash models like inclusionai/l
-- Evaluation cycles waste resources on mismatched artifacts because pre-scoring schema validation gates are absent.
-- Hand actions return null errors instead of structured context (stderr, exit codes), preventing automated recovery and pattern analysis.
-- Swarm knowledge staleness goes undetected until coordination degrades, requiring scheduled freshness checks with automatic renewal triggers.
-- Rate-limit errors (429) propagate across multiple providers simultaneously, indicating missing request scheduling and token-bucket throttling.
-- Model provider failures cascade because no automatic failover exists between primary and flash models.
 
 ---
 

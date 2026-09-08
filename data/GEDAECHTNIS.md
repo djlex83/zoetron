@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12010 Fakten** · Stand 2026-09-08 09:11 UTC · aktualisiert bei jedem Herzschlag
+**12015 Fakten** · Stand 2026-09-08 09:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7286
+- **dream:** 7291
 - **swarm_artifact:** 2098
 - **last_swarm_critique:** 835
 - **last_swarm_goal:** 567
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908092133:5:f1de5a`
+*08.09. 09:21 UTC · Quelle: dream*
+
+Skill proposals accumulate without deployment; a dream-to-skill daemon validating and deploying one proposal per sleep cycle closes the proposal-action gap.
+
+### `dream:20260908092133:4:cb3d81`
+*08.09. 09:21 UTC · Quelle: dream*
+
+Convergence stalls waste cycles when scores plateau; a guardrail detecting N-cycle stagnation should trigger emergency evolution restart.
+
+### `dream:20260908092133:3:e101c1`
+*08.09. 09:21 UTC · Quelle: dream*
+
+Critic outputs frequently arrive malformed, causing silent failures that a fallback parser with safe default revision would prevent.
+
+### `dream:20260908092133:2:ad2616`
+*08.09. 09:21 UTC · Quelle: dream*
+
+Rate limits hit multiple providers simultaneously, so request routing must track per-provider 429 rates and redistribute load before quota exhaustion.
+
+### `dream:20260908092133:1:25c844`
+*08.09. 09:21 UTC · Quelle: dream*
+
+Model failures cascade predictably: high latency precedes 502/429 errors, requiring automatic failover to flash models within 5s thresholds.
 
 ### `dream:20260908090714:5:bacd3c`
 *08.09. 09:07 UTC · Quelle: dream*

@@ -25905,3 +25905,16 @@
 {"ts": 1788253299.611732, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788253299.6117291, "schalter_geoeffnet": false}}
 {"ts": 1788253460.7097871, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 161.1, "tokens_ein": 2578, "tokens_aus": 4652}}
 {"ts": 1788253461.7613742, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788253461.7613716, "schalter_geoeffnet": false}}
+{"ts": 1788253578.1331725, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 116.4, "tokens_ein": 3022, "tokens_aus": 4368}}
+{"ts": 1788253579.7221236, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.22, "gelesen": 43}}
+{"ts": 1788253579.722719, "kind": "tor", "payload": {"goal": "Gelernte Fähigkeiten besser verknüpfen", "gruen": true, "grund": "Artefakt laeuft (423 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788253580.836259, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788253580.8362556, "schalter_geoeffnet": false}}
+{"ts": 1788253627.2933056, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 46.5, "tokens_ein": 9989, "tokens_aus": 778}}
+{"ts": 1788253627.2938764, "kind": "calibration", "payload": {"goal": "Gelernte Fähigkeiten besser verknüpfen", "predicted": 6, "actual": 8, "abs_error": 2}}
+{"ts": 1788253627.2939427, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 8}}
+{"ts": 1788253627.6654851, "kind": "bahnen", "payload": {"goal": "Gelernte Fähigkeiten besser verknüpfen", "delta": 1.0, "kanten": 21, "hat_code": true, "score": 8, "abgerufen": 6, "ids": ["e:cc68a4674d02", "e:97dd42d8b3dd", "e:4549d090e1e1", "e:de7d346552fd", "g:6b6650c29e71", "f:b4e9d1ee0004"], "ziel_id": "g:3111eea95d68"}}
+{"ts": 1788253627.6656878, "kind": "swarm_finished", "payload": {"goal": "Gelernte Fähigkeiten besser verknüpfen", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1788253627.6663127, "kind": "act_done", "payload": {"goal_title": "Gelernte Fähigkeiten besser verknüpfen", "score": 8, "converged": true}}
+{"ts": 1788253629.3231597, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.23, "gelesen": 43}}
+{"ts": 1788253631.7989461, "kind": "issue_synced", "payload": {"issue": 282, "state": "closed"}}
+{"ts": 1788253912.0966313, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

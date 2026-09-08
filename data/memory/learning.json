@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-08 09:09:13",
+ "stand": "2026-09-08 09:23:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -177,6 +177,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "mehr-evolution-starten.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -298,12 +304,6 @@
   },
   {
    "tool": "fehler-systematisch-sammeln-und-verstehe.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
