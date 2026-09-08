@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12092 Fakten** · Stand 2026-09-08 22:39 UTC · aktualisiert bei jedem Herzschlag
+**12083 Fakten** · Stand 2026-09-08 23:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
-- **swarm_artifact:** 2078
+- **dream:** 7446
+- **swarm_artifact:** 2068
 - **last_swarm_critique:** 841
 - **last_swarm_goal:** 573
-- **anti_pattern:** 525
-- **strategy:** 264
+- **anti_pattern:** 523
+- **strategy:** 263
 - **tool:** 182
-- **hand_result:** 135
+- **hand_result:** 134
 - **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908225847:5:e2511c`
+*08.09. 22:58 UTC · Quelle: dream*
+
+Circuit-breaker state and degradation memory must persist across sleep/wake cycles; otherwise, the system loses learned reliability patterns and repeats the same failures.
+
+### `dream:20260908225847:4:043d8c`
+*08.09. 22:58 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260908225847:3:eb1ff3`
+*08.09. 22:58 UTC · Quelle: dream*
+
+Model errors represent a systemic reliability risk that demands automatic failover mechanisms based on error-rate thresholds, not just reactive error logging after failures occur.
+
+### `dream:20260908225847:2:beab59`
+*08.09. 22:58 UTC · Quelle: dream*
+
+Stale swarm knowledge silently degrades decision quality over time and requires automated periodic freshness scanning rather than relying on manual refresh triggers.
+
+### `dream:20260908225847:1:30403f`
+*08.09. 22:58 UTC · Quelle: dream*
+
+The proposal-to-implementation gap is the system's primary systemic failure mode: skills are continuously suggested but never built, creating a persistent disconnect between knowledge and action.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Reflexe in Taten umsetze:2`
 *08.09. 22:36 UTC · Quelle: evolution*
@@ -46516,16 +46541,6 @@ Evolution variant selection works: in the run with scores [6, 9, 7], the winner 
 *25.08. 23:00 UTC · Quelle: dream*
 
 The 'Cortex-Upgrade-Reflex' goal failed twice at score 3/10 because swarm termination fired after only 2 cycles without convergence, cutting short the evolution loop that had already produced a 9/10 variant.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Exemplar-Bank: von den e:2`
-*25.08. 22:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Verstärkungslern-Ansatz: Score-getriebene Selektion mit Kontrastiv-Lernen - Behandle jeden Lösungsmoment als Aktion mit Belohnung (Critic-Score): Führe ein Policy-Gedächtnis, das nicht nur gute Momente speichert, sondern expl
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Exemplar-Bank: von den e:0`
-*25.08. 22:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Retrieval-basierte Architektur: Exemplar-Bank als dedizierter Vektorspeicher - Baue eine explizite Exemplar-Bank als Vektor-Datenbank auf: Jeder erfolgreiche Lösungsmoment wird beim Entstehen automatisch erfasst, per Embeddin
 
 ### `last_swarm_critique`
 *25.08. 22:35 UTC · Quelle: critic*
