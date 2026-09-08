@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12086 Fakten** · Stand 2026-09-08 16:01 UTC · aktualisiert bei jedem Herzschlag
+**12086 Fakten** · Stand 2026-09-08 16:16 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7371
 - **swarm_artifact:** 2102
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908161205:5:d46f3e`
+*08.09. 16:12 UTC · Quelle: dream*
+
+Pruning discards 35 events without extracting reusable failure patterns (retry policies, fallback chains).
+
+### `dream:20260908161205:4:d5e3a7`
+*08.09. 16:12 UTC · Quelle: dream*
+
+Swarm knowledge stales rapidly without automated refresh cycles, degrading decision quality over time.
+
+### `dream:20260908161205:3:0971b4`
+*08.09. 16:12 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack verification pipeline, risking registry pollution with untested code.
+
+### `dream:20260908161205:2:1defd8`
+*08.09. 16:12 UTC · Quelle: dream*
+
+Flash models (ling-3.0-flash-fin) deliver 40x lower latency (3s vs 127s) for comparable tasks, making them superior for bulk work.
+
+### `dream:20260908161205:1:5c6a43`
+*08.09. 16:12 UTC · Quelle: dream*
+
+Model endpoints fail silently (502) or rate-limit (429) without automatic failover, causing 127s latency spikes when powerful models degrade.
 
 ### `dream:20260908155641:5:6ad114`
 *08.09. 15:56 UTC · Quelle: dream*
@@ -46416,31 +46441,6 @@ score=5; issues=Kernänderung faktisch wirkungslos/broken: heim_vorteil = avg_gd
 *25.08. 16:06 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825160550:5:dc5523`
-*25.08. 16:05 UTC · Quelle: dream*
-
-Memory pruning removed 0 facts/events despite repeated failures, so the system retains noise instead of discarding failed approaches.
-
-### `dream:20260825160550:4:b6937b`
-*25.08. 16:05 UTC · Quelle: dream*
-
-The baseline (50.18%) is essentially a coin flip; beating it requires structural features (odds, xG, team form) not prose heuristics.
-
-### `dream:20260825160550:3:916373`
-*25.08. 16:05 UTC · Quelle: dream*
-
-Calibration error of 2 points (predicted 7 vs actual 9) indicates the simulation verdict 'go' is unreliable for this task class.
-
-### `dream:20260825160550:2:ff354f`
-*25.08. 16:05 UTC · Quelle: dream*
-
-Repeated swarm cycles on the same goal without architectural change yield diminishing returns (scores 7→8→6 in evolution).
-
-### `dream:20260825160550:1:1e2d48`
-*25.08. 16:05 UTC · Quelle: dream*
-
-High critic scores (9/10) can mask fundamental missing deliverables like executable code, creating false convergence signals.
 
 ### `last_swarm_critique`
 *25.08. 15:46 UTC · Quelle: critic*

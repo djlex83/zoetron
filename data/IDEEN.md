@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 15:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 16:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning discards 35 events without extracting reusable failure patterns (retry policies, fallback chains).
+- Swarm knowledge stales rapidly without automated refresh cycles, degrading decision quality over time.
+- Skill proposals accumulate but lack verification pipeline, risking registry pollution with untested code.
+- Flash models (ling-3.0-flash-fin) deliver 40x lower latency (3s vs 127s) for comparable tasks, making them superior for bulk work.
+- Model endpoints fail silently (502) or rate-limit (429) without automatic failover, causing 127s latency spikes when powerful models degrade.
 - Repeated model failures without adaptive routing create a retry loop that amplifies latency and waste, punishing the system for lacking failure-awaren
 - Reflex-based execution converges reliably when the model layer is available, indicating the reflex pattern itself is sound and the model endpoint is t
 - Stale swarm knowledge actively blocks new collaboration, so periodic refresh is a prerequisite rather than an optional maintenance task.
@@ -51,11 +56,6 @@
 - Five skill proposals from the previous dream cycle remain undeployed, revealing a broken proposal-to-production pipeline.
 - Three identical drive goals recur across cycles, proving that reflex actions resolve symptoms but not root causes.
 - Model latency of 100-160s per call makes the primary model practically unusable for interactive tasks.
-- Convergence claims without rigorous plateau detection (score delta < 0.01 over N cycles) and critic confidence thresholds are unreliable and lead to p
-- Stale swarm knowledge degrades decision quality, so freshness validation must be a mandatory gate before any swarm goal or critique is consumed.
-- Rate limiting and upstream overload correlate with concurrent multi-model requests, meaning load distribution must be proactive (health-aware routing)
-- Skill proposals accumulate faster than they get deployed; without a verified pipeline from proposal to sandbox-tested registration, the capability reg
-- Infrastructure failures (502 upstream overload, 429 rate limits) are the dominant failure mode, not reasoning errors, so resilience and load managemen
 
 ---
 

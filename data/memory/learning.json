@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-08 15:58:52",
+ "stand": "2026-09-08 16:14:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
@@ -84,12 +84,6 @@
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "häufige-modellfehler-besser-verstehen.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -184,6 +178,12 @@
   },
   {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "häufige-modellfehler-besser-verstehen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
