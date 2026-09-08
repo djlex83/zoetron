@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11932 Fakten** · Stand 2026-09-08 02:20 UTC · aktualisiert bei jedem Herzschlag
+**11927 Fakten** · Stand 2026-09-08 02:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7201
-- **swarm_artifact:** 2102
+- **dream:** 7206
+- **swarm_artifact:** 2096
 - **last_swarm_critique:** 830
 - **last_swarm_goal:** 562
-- **anti_pattern:** 561
-- **strategy:** 282
+- **anti_pattern:** 559
+- **strategy:** 281
 - **tool:** 181
 - **hand_result:** 138
 - **aktuell_organfehler:** 45
-- **aktuell_fussball_messlatte:** 29
+- **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908022823:5:a70178`
+*08.09. 02:28 UTC · Quelle: dream*
+
+Aggressive event pruning (53 events, 0 facts) discards failure context needed for root-cause analysis while retaining no durable knowledge.
+
+### `dream:20260908022823:4:a17bd6`
+*08.09. 02:28 UTC · Quelle: dream*
+
+Three new drive goals (simulation application, error fixing, swarm revival) all stem from the same root: produced artifacts (simulations, critiques, fixes) are not being validated and promoted to production.
+
+### `dream:20260908022823:3:eaa94f`
+*08.09. 02:28 UTC · Quelle: dream*
+
+Hand tool fails with exit code 2 and zero bytes read, indicating path resolution or permission failures that bypass structured error handling.
+
+### `dream:20260908022823:2:588b16`
+*08.09. 02:28 UTC · Quelle: dream*
+
+Swarm evolution stalls at 2/10 score with only 2 cycles and non-convergence because critic sandbox validation is broken ("Sandbox-Urteil LAEUFT NICHT"), preventing quality feedback loops.
+
+### `dream:20260908022823:1:6e6875`
+*08.09. 02:28 UTC · Quelle: dream*
+
+Primary model (nemotron-3-ultra) exhibits 30-67s latency and 502 upstream failures, while fallback models hit 429 rate limits, leaving only flash-tier models (ling-3.0-flash-fin: 4s) reliable for production paths.
 
 ### `dream:20260908021729:5:47c6bc`
 *08.09. 02:17 UTC · Quelle: dream*
@@ -45772,25 +45797,10 @@ Multiple skill proposals exist (backoff, validation gates, calibration, contract
 
 Rate limiting (429 errors) on primary models (stealth/ox-alpha, z-ai/glm-5.2) forces fallback to nemotron-3-ultra which consistently succeeds at ~13s latency.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Exemplar-Bank: von den e:1`
-*25.08. 02:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 7, 9]): Swap the persistence layer instead of patching it: use an existing vector store  - Implement ExemplarBank as a thin facade over ChromaDB (persistent client): collection 'exemplars' stores the exemplar text as document
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Exemplar-Bank: von den e:0`
-*25.08. 02:22 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
 ### `last_swarm_critique`
 *25.08. 02:21 UTC · Quelle: critic*
 
 score=3; issues=exemplare.py is incomplete (cuts off at self.db_path.par), missing critical methods (get_similar_exemplars, add_exemplar, hash_exists, connection management); SQL injection vulnerabilities: multiple queries use f-strings instead of parameterize
-
-### `aktuell_fussball_messlatte`
-*25.08. 02:19 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -2.35 -0.31 -0.12 -25.95 -0.19 -0.41. Der Log-Loss is
 
 ### `last_swarm_goal`
 *25.08. 02:15 UTC · Quelle: system*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 02:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 02:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
+- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive event pruning (53 events, 0 facts) discards failure context needed for root-cause analysis while retaining no durable knowledge.
+- Three new drive goals (simulation application, error fixing, swarm revival) all stem from the same root: produced artifacts (simulations, critiques, f
+- Hand tool fails with exit code 2 and zero bytes read, indicating path resolution or permission failures that bypass structured error handling.
+- Swarm evolution stalls at 2/10 score with only 2 cycles and non-convergence because critic sandbox validation is broken ("Sandbox-Urteil LAEUFT NICHT"
+- Primary model (nemotron-3-ultra) exhibits 30-67s latency and 502 upstream failures, while fallback models hit 429 rate limits, leaving only flash-tier
 - Hand actions failed 3 times with exit code 2 and null error messages, exposing a systemic gap in error reporting and retry logic for the action execut
 - The swarm did not converge after only 2 cycles with a final score of 2/10, indicating premature termination and insufficient evolutionary exploration 
 - Calibration predicted 5 but actual score was 2 (abs_error 3), revealing systematic overconfidence in performance estimation that must be corrected wit
@@ -51,11 +56,6 @@
 - Stale swarm knowledge recurs as a chronic condition, proving that one-off refresh cycles are insufficient and scheduled, trigger-based maintenance is 
 - The persistent gap between 75+ generated skill proposals and actual implementation shows that proposal creation without automated promotion and execut
 - Model error rates (~37% failure across 65 attempts) and latency variance (54–118s) reveal that no single provider is reliable enough for critical path
-- 24 model errors remain unclassified; provider-specific error taxonomy is needed for targeted fallback strategies.
-- Reflex paths bypass convergence gates (score≥8, delta<0.1), risking premature completion on complex goals.
-- 75+ skill proposals accumulate without validation pipeline, causing registry bloat and unused capabilities.
-- Swarm knowledge staleness triggers reflex-driven refreshes but lacks automated scheduling and temporal-conceptual memory linking.
-- Model latency of 50-94s for nemotron-3-ultra violates interactive budgets and demands tiered routing with flash-model fallbacks.
 
 ---
 
