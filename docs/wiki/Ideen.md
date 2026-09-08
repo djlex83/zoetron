@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 18:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 18:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge degrades to stale status if not refreshed on a defined schedule, and the system has no automatic mechanism to detect or correct stalen
+- Aggressive pruning (5 facts, 25 events per cycle) without an audit trail risks losing cross-referenced knowledge that may be needed for future insight
+- NVIDIA 502 errors and Google 429 errors are correlated provider-side overload events, meaning multi-provider redundancy alone does not guarantee avail
+- The system repeatedly proposes skills (circuit breakers, rate-limit routing, dream daemon) but never deploys them; the gap between proposal and implem
+- Flash-tier models (inclusionai/ling-3.0-flash-fin) succeed consistently at ~3s latency while all large models (Nemotron 502, Gemma 429) fail repeatedl
 - Reflex-based execution (alte-träume-miteinander-verbinden.py) succeeds and converges, but the reflex layer lacks explicit error propagation — a failur
 - Knowledge staleness is a first-class failure mode: drive goals explicitly cite outdated swarm artifacts and unresolved dream connections, showing that
 - Repeated 502 errors from Nvidia carry the message 'Service temporarily overloaded' yet return HTTP 200, meaning status-code-based health checks alone 
@@ -51,11 +56,6 @@
 - Role-based latency ceilings (critic/planner <5s, builder with hard timeout) prevent tail-latency cascades in swarm cycles.
 - Multiple independent proposals converge on identical infrastructure: circuit breakers, health scorecards, deployment pipelines, convergence watchdogs.
 - Recurring 502/429 errors and 100s+ latencies on nemotron-3-ultra demand systematic provider resilience with pre-warmed fallbacks.
-- No latency-aware routing exists: critic/planner stuck on ultra instead of flash, violating <5s role ceilings.
-- Pruning removes facts but not events, leaving error-pattern clusters unconsolidated into reusable procedures.
-- Stale swarm knowledge persists despite reflex refresh attempts, suggesting refresh lacks validation or integration.
-- Identical skill proposals repeated across cycles indicate missing deduplication and proposal-tracking mechanism.
-- Ultra model latency (112-170s) exceeds practical thresholds, causing cascading timeouts and failed swarm cycles.
 
 ---
 
