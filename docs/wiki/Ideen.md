@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 14:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 14:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence lacks objective termination criteria, relying on subjective scores instead of plateau detection and critic confidence thresholds.
+- Pruning discards 51 events per run without extracting reusable procedures, wasting failure-pattern intelligence.
+- Skill proposals accumulate but lack a verification pipeline; untested skills risk registry pollution and runtime failures.
+- Model error rate of 37.5% (27/72) and 429 responses demand circuit breakers with automatic flash-model failover, not just retries.
+- Ultra models (nemotron-3-ultra) consistently exceed 88s latency, causing 180s timeouts that force dream chunking and reflex fallbacks.
 - Dream module self-generates skill proposals (flash routing, health tracking, incremental consolidation) but none are enacted in the same cycle.
 - Model error rate remains 37.5 % (27/45) despite swarm score 9, revealing score metric does not reflect downstream correctness.
 - Calibration underestimates outcome by 50 % (predicted 6 vs actual 9), indicating systematic optimism in success predictors.
@@ -51,11 +56,6 @@
 - Reflex tools without idempotent error handling cause cascading failures under stress.
 - Relative path resolution fails when execution context shifts; all file operations must anchor to ZOETRON_DATA.
 - Ultra-high latency models (100+s) trigger metabolic conserve mode that starves dependent processes.
-- Self-diagnosis consistently reports no organ-level failures, meaning problems are external (provider/infrastructure) rather than internal system corru
-- Consolidation cycles effectively prune stale events (54 pruned) while preserving facts (0 pruned), confirming that event-level data expires but struct
-- Rate-limiting errors (429) are not transient glitches but a systemic constraint indicating the system is over-requesting providers without adequate ba
-- Stale swarm knowledge actively degrades system decision quality and must be refreshed on a scheduled cycle rather than left to accumulate.
-- Large-model providers (Nvidia, Google) are the primary failure source: 502 upstream overloads and 429 rate limits recur, while the small flash model s
 
 ---
 

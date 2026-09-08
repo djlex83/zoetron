@@ -26571,3 +26571,38 @@
 {"ts": 1788271613.7504241, "kind": "act_done", "payload": {"goal_title": "Evolutionelle Verbesserung fördern", "score": 8, "converged": true}}
 {"ts": 1788271614.537865, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.46, "gelesen": 0}}
 {"ts": 1788271617.4848287, "kind": "issue_synced", "payload": {"issue": 288, "state": "closed"}}
+{"ts": 1788271902.6350257, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788271987.7778769, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788271989.6857233, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 20}}
+{"ts": 1788271995.3989668, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788271995.3989635, "schalter_geoeffnet": false}}
+{"ts": 1788272056.7880213, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 61.4, "tokens_ein": 1579, "tokens_aus": 988}}
+{"ts": 1788272056.7884994, "kind": "skill_proposal", "payload": {"proposal": "Implement a model fallback chain ordered by observed reliability: inclusionai/ling-3.0-flash-fin:free → z-ai/glm-5.2:free → nvidia/nemotron-3-ultra-550b-a55b:free."}}
+{"ts": 1788272056.7885723, "kind": "skill_proposal", "payload": {"proposal": "Add exponential backoff with jitter (base 2s, max 60s) on 429 responses and circuit-breaker on repeated 502s per model."}}
+{"ts": 1788272056.7886484, "kind": "skill_proposal", "payload": {"proposal": "Cache successful model completions keyed by prompt hash to avoid redundant API calls during high-stress conserve mode."}}
+{"ts": 1788272056.7887151, "kind": "skill_proposal", "payload": {"proposal": "Gate skill promotion on simulation verdict: only accept proposals with verdict=accept and risks=0 after revision cycles."}}
+{"ts": 1788272056.7887955, "kind": "skill_proposal", "payload": {"proposal": "Track per-model latency/availability metrics in a rolling window to dynamically reorder fallback priority at runtime."}}
+{"ts": 1788272056.7889051, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788272059.1329443, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788272059.1329415, "schalter_geoeffnet": false}}
+{"ts": 1788272097.2350314, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 38.1, "tokens_ein": 487, "tokens_aus": 660}}
+{"ts": 1788272097.2351744, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren und Zuverlässigkeit steigern", "why": "Das Modell macht zu viele Fehler. Wir müssen verstehen, warum es scheitert, und es robuster machen.", "signal": "failure"}}
+{"ts": 1788272097.2352521, "kind": "drive_goal", "payload": {"title": "Marktanalyse aktualisieren und Lücken schließen", "why": "Die alten Marktdaten sind veraltet. Wir brauchen frische Infos, um gute Entscheidungen zu treffen.", "signal": "stale"}}
+{"ts": 1788272097.2353206, "kind": "drive_goal", "payload": {"title": "Evolution-Modul mit adaptiven Raten verbessern", "why": "Das Evolutions-Modul kann sich besser anpassen, wenn es seine Mutationsraten selbst ändern lernt.", "signal": "gap"}}
+{"ts": 1788272100.331593, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.71, "gelesen": 4}}
+{"ts": 1788272100.3332858, "kind": "reflex_used", "payload": {"goal": "Alte Marktanalyse endlich abschließen", "tool": "alte-marktanalysen-verwerten.py", "ok": true}}
+{"ts": 1788272100.8013484, "kind": "act_done", "payload": {"goal_title": "Alte Marktanalyse endlich abschließen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788272384.8831975, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788272453.5079916, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788272455.1147056, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788272459.2069893, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788272459.2069864, "schalter_geoeffnet": false}}
+{"ts": 1788272535.632988, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 76.4, "tokens_ein": 1713, "tokens_aus": 1382}}
+{"ts": 1788272535.633512, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with health-aware fallback: on 429/5xx, retry with exponential backoff then switch to nemotron."}}
+{"ts": 1788272535.633603, "kind": "skill_proposal", "payload": {"proposal": "Wrap all LLM calls in async timeout guards (e.g., 120 s) with streaming fallback to prevent blocking."}}
+{"ts": 1788272535.6336653, "kind": "skill_proposal", "payload": {"proposal": "Add a calibration updater that logs predicted vs actual scores and adjusts future estimates via moving average."}}
+{"ts": 1788272535.6337159, "kind": "skill_proposal", "payload": {"proposal": "Codify the evolution loop (generate → critic → select → mutate) as a reusable skill evolve_artifact."}}
+{"ts": 1788272535.633794, "kind": "skill_proposal", "payload": {"proposal": "Codify the simulation gate (simulate → collect risks → auto-patch → re-simulate) as a reusable skill simulate_and_harden."}}
+{"ts": 1788272535.6338537, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788272538.1107879, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788272538.1107857, "schalter_geoeffnet": false}}
+{"ts": 1788272561.831112, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788272561.831107, "schalter_geoeffnet": false}}
+{"ts": 1788272562.0570354, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788272562.057032, "schalter_geoeffnet": false}}
+{"ts": 1788272562.20977, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788272562.2097676, "schalter_geoeffnet": false}}
+{"ts": 1788272562.3969257, "kind": "model_fail", "payload": {"model": "poolside/laguna-s-2.1:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788272562.3969235, "schalter_geoeffnet": false}}

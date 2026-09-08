@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12089 Fakten** · Stand 2026-09-08 14:14 UTC · aktualisiert bei jedem Herzschlag
+**12094 Fakten** · Stand 2026-09-08 14:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7360
+- **dream:** 7365
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908142509:5:840924`
+*08.09. 14:25 UTC · Quelle: dream*
+
+Swarm convergence lacks objective termination criteria, relying on subjective scores instead of plateau detection and critic confidence thresholds.
+
+### `dream:20260908142509:4:d158c8`
+*08.09. 14:25 UTC · Quelle: dream*
+
+Pruning discards 51 events per run without extracting reusable procedures, wasting failure-pattern intelligence.
+
+### `dream:20260908142509:3:34554b`
+*08.09. 14:25 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a verification pipeline; untested skills risk registry pollution and runtime failures.
+
+### `dream:20260908142509:2:0ad238`
+*08.09. 14:25 UTC · Quelle: dream*
+
+Model error rate of 37.5% (27/72) and 429 responses demand circuit breakers with automatic flash-model failover, not just retries.
+
+### `dream:20260908142509:1:801ecf`
+*08.09. 14:25 UTC · Quelle: dream*
+
+Ultra models (nemotron-3-ultra) consistently exceed 88s latency, causing 180s timeouts that force dream chunking and reflex fallbacks.
 
 ### `dream:20260908141054:5:a14e10`
 *08.09. 14:10 UTC · Quelle: dream*
