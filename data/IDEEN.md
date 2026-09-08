@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 02:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 03:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Intermittent hand_action failures (exit 1/2) suggest missing idempotency or precondition checks.
+- Point-estimate calibration masks uncertainty; distributional predictions would prevent overconfident scoring.
+- Swarm convergence at 2 cycles with score 4/10 indicates premature termination criteria.
+- Schema mismatches in artifacts cause low scores but are detectable before evaluation via validation gates.
+- Model provider failures (502/429) cascade into pipeline failures without automated fallback routing.
 - Metabolic gating and dream-to-skill pipelines were proposed but not enacted, showing the system generates improvement ideas faster than it can validat
 - The simulation reflex executed successfully but drive goals still demand more simulations, indicating the reflex is triggered too narrowly (only on ex
 - Only one model (inclusionai/ling-3.0-flash-fin) succeeded consistently, proving that a single reliable fallback provider outperforms naive round-robin
@@ -51,11 +56,6 @@
 - Errors are only logged as raw strings; without a taxonomy classifying provider/error-type, automated fallback and retry policies cannot be targeted.
 - Goals, simulations, and skill proposals are generated but rarely validated or deployed — execution gap spans simulation→practice, proposal→mission, an
 - Model provider instability (502/429) cascades into task failure because fallback is reactive and lacks per-provider circuit breakers with sub-10s fail
-- Aggressive event pruning (53 events, 0 facts) discards failure context needed for root-cause analysis while retaining no durable knowledge.
-- Three new drive goals (simulation application, error fixing, swarm revival) all stem from the same root: produced artifacts (simulations, critiques, f
-- Hand tool fails with exit code 2 and zero bytes read, indicating path resolution or permission failures that bypass structured error handling.
-- Swarm evolution stalls at 2/10 score with only 2 cycles and non-convergence because critic sandbox validation is broken ("Sandbox-Urteil LAEUFT NICHT"
-- Primary model (nemotron-3-ultra) exhibits 30-67s latency and 502 upstream failures, while fallback models hit 429 rate limits, leaving only flash-tier
 
 ---
 
