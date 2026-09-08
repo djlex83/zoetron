@@ -1,20 +1,50 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12089 Fakten** · Stand 2026-09-08 14:00 UTC · aktualisiert bei jedem Herzschlag
+**12089 Fakten** · Stand 2026-09-08 14:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7357
+- **dream:** 7360
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
-- **anti_pattern:** 549
-- **strategy:** 276
+- **anti_pattern:** 547
+- **strategy:** 275
 - **tool:** 186
 - **hand_result:** 139
-- **aktuell_organfehler:** 47
-- **aktuell_fussball_messlatte:** 24
+- **aktuell_organfehler:** 48
+- **aktuell_fussball_messlatte:** 23
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908141054:5:a14e10`
+*08.09. 14:10 UTC · Quelle: dream*
+
+Dream module self-generates skill proposals (flash routing, health tracking, incremental consolidation) but none are enacted in the same cycle.
+
+### `dream:20260908141054:4:3c1aa6`
+*08.09. 14:10 UTC · Quelle: dream*
+
+Model error rate remains 37.5 % (27/45) despite swarm score 9, revealing score metric does not reflect downstream correctness.
+
+### `dream:20260908141054:3:1f4480`
+*08.09. 14:10 UTC · Quelle: dream*
+
+Calibration underestimates outcome by 50 % (predicted 6 vs actual 9), indicating systematic optimism in success predictors.
+
+### `dream:20260908141054:2:f23a28`
+*08.09. 14:10 UTC · Quelle: dream*
+
+Swarm converges in one cycle with 3:1 builder-to-planner ratio, showing parallel artifact generation outperforms sequential planning.
+
+### `dream:20260908141054:1:82c4d5`
+*08.09. 14:10 UTC · Quelle: dream*
+
+Large-model latency varies 2.8x (101–285 s) making nemotron-3-ultra unreliable for latency-sensitive goals.
+
+### `aktuell_organfehler`
+*08.09. 14:07 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-08 13:56:23 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260908134102:5:70a810`
 *08.09. 13:41 UTC · Quelle: dream*
@@ -46432,21 +46462,6 @@ Failed tasks cluster around missing context, not wrong logic.
 
 Recurring theme across events: planning quality dominates outcomes.
 
-### `aktuell_fussball_messlatte`
-*25.08. 14:06 UTC · Quelle: bewerte.py*
-
-Fußball, externe Messung: noch keine eigene Einreichung von bewerte.py bewertet. Basislinie 50.18 % Treffer, Log-Loss 1.0073, ohne Quoten.
-
-### `anti_pattern:Previous attempt scored 9/10. Goal: Fußball: die Basislinie :2`
-*25.08. 14:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): automated - script the whole path NICHT wiederholt anbieten.
-
-### `anti_pattern:Previous attempt scored 9/10. Goal: Fußball: die Basislinie :0`
-*25.08. 14:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): minimal - smallest working step NICHT wiederholt anbieten.
-
 ### `last_swarm_critique`
 *25.08. 14:05 UTC · Quelle: critic*
 
@@ -46456,16 +46471,6 @@ score=9; issues=
 *25.08. 14:05 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825140507:2:a4c59e`
-*25.08. 14:05 UTC · Quelle: dream*
-
-Failed tasks cluster around missing context, not wrong logic.
-
-### `dream:20260825140507:1:7a3951`
-*25.08. 14:05 UTC · Quelle: dream*
-
-Recurring theme across events: planning quality dominates outcomes.
 
 ### `last_swarm_critique`
 *25.08. 13:17 UTC · Quelle: critic*
