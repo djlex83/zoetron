@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-08 03:10:06",
+ "stand": "2026-09-08 03:26:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -135,18 +135,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -232,6 +220,12 @@
   },
   {
    "tool": "schwarm-wissen-auffrischen-und-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -334,6 +328,12 @@
   },
   {
    "tool": "fehler-systematisch-sammeln-und-verstehe.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -457,19 +457,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "entfernte-erinnerungen-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.838,
- "simulationen_angewandt": 22,
+ "haende_quote": 0.832,
+ "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 22,
+  "n": 23,
   "best": 9.0,
-  "schnitt": 5.64
+  "schnitt": 5.43
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 20,
-   "schnitt": 5.7
+   "n": 21,
+   "schnitt": 5.48
   },
   "bau": {
    "n": 2,

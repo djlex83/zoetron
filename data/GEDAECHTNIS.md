@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11937 Fakten** · Stand 2026-09-08 03:12 UTC · aktualisiert bei jedem Herzschlag
+**11947 Fakten** · Stand 2026-09-08 03:28 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7216
-- **swarm_artifact:** 2096
-- **last_swarm_critique:** 831
-- **last_swarm_goal:** 563
-- **anti_pattern:** 557
-- **strategy:** 280
+- **swarm_artifact:** 2101
+- **last_swarm_critique:** 832
+- **last_swarm_goal:** 564
+- **anti_pattern:** 559
+- **strategy:** 281
 - **tool:** 182
 - **hand_result:** 138
 - **aktuell_organfehler:** 45
@@ -15,6 +15,51 @@
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Erinnerungen sinnvoll ve:2`
+*08.09. 03:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 6]): Temporal-Causal Narrative Chain Builder - Treat memories as events in a temporal-causal chain. Each memory gets: timestamp, actors, locations, actions, preconditions, effects. Build a causal reasoning engine that: 1) 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Erinnerungen sinnvoll ve:1`
+*08.09. 03:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 5, 7]): Dream-Inspired Offline Consolidation Engine - Simulate biological sleep/dream cycles: during 'wake' phase, memories are stored as raw episodes in episodic buffer. During 'sleep' phase, a background process replays mem
+
+### `last_swarm_critique`
+*08.09. 03:23 UTC · Quelle: critic*
+
+score=1; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Bash-Explorationsbefehle; Sandbox-Urteil: LAEUFT NICHT; Ziel 'Erinnerungen sinnvoll verknüpfen' nicht implementiert; Keine SemanticMemory-Erweiterung, kein Knowledge Graph, keine Dream-Konsolidi
+
+### `last_swarm_goal`
+*08.09. 03:20 UTC · Quelle: system*
+
+Erinnerungen sinnvoll verknüpfen
+
+### `dream:20260908032027:5:e68a52`
+*08.09. 03:20 UTC · Quelle: dream*
+
+Rate limiting cascades into pipeline failures without exponential backoff and concurrent request throttling.
+
+### `dream:20260908032027:4:0d57b2`
+*08.09. 03:20 UTC · Quelle: dream*
+
+Hand_action error handling returns null errors, preventing root cause analysis of action failures.
+
+### `dream:20260908032027:3:d96590`
+*08.09. 03:20 UTC · Quelle: dream*
+
+Swarm convergence succeeds when triggered via reflex tools but lacks stability thresholds, risking premature acceptance of suboptimal scores.
+
+### `dream:20260908032027:2:213914`
+*08.09. 03:20 UTC · Quelle: dream*
+
+High latency (26s+) on successful primary model calls indicates need for circuit breakers and latency-based failover thresholds.
+
+### `dream:20260908032027:1:55cc0c`
+*08.09. 03:20 UTC · Quelle: dream*
+
+Primary model providers (Nvidia, Google) frequently fail with 502/429 errors, requiring automatic fallback to reliable flash models like inclusionai.
 
 ### `dream:20260908030921:5:1c3291`
 *08.09. 03:09 UTC · Quelle: dream*
@@ -45816,31 +45861,6 @@ score=4; issues=Artefakt ist unvollständig: Der Code bricht mitten im Ausdruck 
 *25.08. 03:15 UTC · Quelle: system*
 
 Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
-
-### `dream:20260825031443:5:205de6`
-*25.08. 03:14 UTC · Quelle: dream*
-
-Current metabolism limits (max 3 tasks, 1 iteration) restrict experimentation; expanding iteration capacity while conserving resources would enhance learning.
-
-### `dream:20260825031443:4:a43e0f`
-*25.08. 03:14 UTC · Quelle: dream*
-
-Tasks parked after three failed attempts reveal a decision‑making bottleneck that can be automated with confidence‑based thresholds.
-
-### `dream:20260825031443:3:355636`
-*25.08. 03:14 UTC · Quelle: dream*
-
-The exemplar‑bank concept demonstrates that in‑context learning from prior high‑reward examples can accelerate skill acquisition without full retraining.
-
-### `dream:20260825031443:2:8341fa`
-*25.08. 03:14 UTC · Quelle: dream*
-
-Successful low‑latency runs show that limiting input token count while preserving essential context improves reliability.
-
-### `dream:20260825031443:1:462a3f`
-*25.08. 03:14 UTC · Quelle: dream*
-
-Repeated 429 'Too Many Requests' errors indicate that request throttling and retry mechanisms are needed to stabilize model access.
 
 ### `last_swarm_critique`
 *25.08. 02:57 UTC · Quelle: critic*

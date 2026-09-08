@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 03:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 03:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,17 +23,17 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Rate limiting cascades into pipeline failures without exponential backoff and concurrent request throttling.
+- Hand_action error handling returns null errors, preventing root cause analysis of action failures.
+- Swarm convergence succeeds when triggered via reflex tools but lacks stability thresholds, risking premature acceptance of suboptimal scores.
+- High latency (26s+) on successful primary model calls indicates need for circuit breakers and latency-based failover thresholds.
+- Primary model providers (Nvidia, Google) frequently fail with 502/429 errors, requiring automatic fallback to reliable flash models like inclusionai.
 - Intermittent hand_action failures (exit 1/2) suggest missing idempotency or precondition checks.
 - Point-estimate calibration masks uncertainty; distributional predictions would prevent overconfident scoring.
 - Swarm convergence at 2 cycles with score 4/10 indicates premature termination criteria.
@@ -51,11 +56,6 @@
 - Only one model (inclusionai/ling-3.0-flash-fin) succeeded consistently, proving that a single reliable fallback provider outperforms naive round-robin
 - The same proposal-to-mission funnel was submitted twice, revealing a systemic gap: high-signal proposals lack an automated promotion path to executabl
 - Free-tier model providers exhibit distinct, repeatable failure signatures (Nvidia 502 overload, Google 429 rate-limit) that demand provider-aware rout
-- Reflex-driven maintenance (e.g., schwarmwissen refresh) succeeds where deliberate planning stalls, suggesting automated upkeep beats scheduled intent.
-- Goal selection ignores metabolic state (latency budgets, error rates, iteration caps), causing overcommitment during degraded provider health.
-- Errors are only logged as raw strings; without a taxonomy classifying provider/error-type, automated fallback and retry policies cannot be targeted.
-- Goals, simulations, and skill proposals are generated but rarely validated or deployed — execution gap spans simulation→practice, proposal→mission, an
-- Model provider instability (502/429) cascades into task failure because fallback is reactive and lacks per-provider circuit breakers with sub-10s fail
 
 ---
 
