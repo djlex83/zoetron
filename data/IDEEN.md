@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 01:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 01:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 24 model errors remain unclassified; provider-specific error taxonomy is needed for targeted fallback strategies.
+- Reflex paths bypass convergence gates (score≥8, delta<0.1), risking premature completion on complex goals.
+- 75+ skill proposals accumulate without validation pipeline, causing registry bloat and unused capabilities.
+- Swarm knowledge staleness triggers reflex-driven refreshes but lacks automated scheduling and temporal-conceptual memory linking.
+- Model latency of 50-94s for nemotron-3-ultra violates interactive budgets and demands tiered routing with flash-model fallbacks.
 - Planning lacks stress-awareness: under high load the system still spawns unbounded tasks/iterations, amplifying latency cascades.
 - Relative path assumptions in tool invocations cause silent failures when working directory shifts, needing a normalization guard.
 - Skill proposals accumulate (75+) without validation, creating a promotion gap where useful capabilities never reach production.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays silently; no TTL or freshness check triggers proactive refresh, leading to duplicate stale goals.
 - Latency variance between models (3 s vs 60 s) wastes iteration budget and stalls decision loops.
 - Free-tier models fail under rate limits (429) without automatic fallback, causing 27+ errors per cycle.
-- Pruning destroys causal reconstructability because pruned facts/events lack experiment_id, parent_step_id, and decision_context tags for later graph r
-- File tool path resolution fails silently when paths aren't canonicalized to ZOETRON_DATA, needing a mandatory middleware guard on all file operations.
-- Swarm knowledge and episodic memories decay into staleness without scheduled reactivation jobs that re-fetch critiques and link temporally separated b
-- Skill proposals accumulate without execution because no automated funnel promotes high-signal proposals (≥3 upvotes, clear metrics) to owned missions 
-- Model provider instability (502/429 errors across 3 models) causes cascading fallback latency and decision degradation, requiring per-provider circuit
 
 ---
 

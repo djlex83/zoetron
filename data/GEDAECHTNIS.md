@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11924 Fakten** · Stand 2026-09-08 01:37 UTC · aktualisiert bei jedem Herzschlag
+**11915 Fakten** · Stand 2026-09-08 01:48 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7196
-- **swarm_artifact:** 2102
+- **swarm_artifact:** 2096
 - **last_swarm_critique:** 829
-- **anti_pattern:** 561
 - **last_swarm_goal:** 561
-- **strategy:** 282
+- **anti_pattern:** 559
+- **strategy:** 281
 - **tool:** 181
 - **hand_result:** 137
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908014559:5:ca1485`
+*08.09. 01:45 UTC · Quelle: dream*
+
+24 model errors remain unclassified; provider-specific error taxonomy is needed for targeted fallback strategies.
+
+### `dream:20260908014559:4:7ea0f0`
+*08.09. 01:45 UTC · Quelle: dream*
+
+Reflex paths bypass convergence gates (score≥8, delta<0.1), risking premature completion on complex goals.
+
+### `dream:20260908014559:3:f24ba2`
+*08.09. 01:45 UTC · Quelle: dream*
+
+75+ skill proposals accumulate without validation pipeline, causing registry bloat and unused capabilities.
+
+### `dream:20260908014559:2:0e136c`
+*08.09. 01:45 UTC · Quelle: dream*
+
+Swarm knowledge staleness triggers reflex-driven refreshes but lacks automated scheduling and temporal-conceptual memory linking.
+
+### `dream:20260908014559:1:09f235`
+*08.09. 01:45 UTC · Quelle: dream*
+
+Model latency of 50-94s for nemotron-3-ultra violates interactive budgets and demands tiered routing with flash-model fallbacks.
 
 ### `dream:20260908013519:5:566af2`
 *08.09. 01:35 UTC · Quelle: dream*
@@ -45727,16 +45752,6 @@ Repeated 429 rate-limit failures on openrouter.ai across multiple models (stealt
 
 The football predictor (zoetron_4cd6909a57) scored 49.79% against a 50.18% baseline with worse log-loss (1.0133 vs 1.0073), meaning added model complexity is actively hurting — the no-odds baseline remains unbeaten.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :2`
-*25.08. 01:42 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [4, 5, 5]): Ensemble aus spezialisierten Sub-Modellen mit selektivem Wetten - Statt eines Generalisten: Trainiere drei spezialisierte Klassifikatoren (Gradient Boosting auf Team-Stats, Poisson-Regression auf Torraten, LSTM auf Sp
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :0`
-*25.08. 01:42 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 9, 6]): Strukturelle Marktineffizienz durch Heimvorteil-Modellierung - Baue ein rein statistisches Modell auf historischen Ergebnisdaten (z.B. 5+ Saisons), das den systematischen Heimvorteil quantifiziert: Elo-Ratings mit Hei
-
 ### `last_swarm_critique`
 *25.08. 01:40 UTC · Quelle: critic*
 
@@ -45746,31 +45761,6 @@ score=5; issues=Critic output unparseable.
 *25.08. 01:36 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260825013556:5:bdc62a`
-*25.08. 01:35 UTC · Quelle: dream*
-
-The prune_run removed zero facts and zero events, so memory growth is unbounded and pruning logic is currently a no-op that should be investigated or given real retention criteria.
-
-### `dream:20260825013556:4:5f799d`
-*25.08. 01:35 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free completed both large tasks (3051 and 8284 output tokens) without failure, making it the most reliable fallback under current rate-limit conditions despite slower latency on one run (149.1s).
-
-### `dream:20260825013556:3:71f5b5`
-*25.08. 01:35 UTC · Quelle: dream*
-
-The football prediction task shows systematic overprediction (predicted 4 vs actual 3; delta -0.5 over 15 edges), meaning internal confidence/scoring runs consistently hot versus the 50.2% baseline.
-
-### `dream:20260825013556:2:77c276`
-*25.08. 01:35 UTC · Quelle: dream*
-
-stealth/ox-alpha succeeds only after long latencies (71–322s) when output is capped at 10000 tokens, suggesting near-timeout completions that inflate wall-clock time and increase exposure to subsequent 429s.
-
-### `dream:20260825013556:1:9c9943`
-*25.08. 01:35 UTC · Quelle: dream*
-
-429 rate-limit failures cluster in bursts across multiple models (stealth/ox-alpha and z-ai/glm-5.2:free fail within seconds of each other), indicating shared upstream throttling rather than per-model quota exhaustion.
 
 ### `last_swarm_critique`
 *25.08. 01:03 UTC · Quelle: critic*
