@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 16:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 16:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -37,10 +37,15 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Upstream service errors (502 from Nvidia, 429 from Google) are not transient noise but a pattern requiring architectural mitigation rather than retry 
+- Aggressive event pruning (up to 54 events per cycle) risks discarding cross-references needed for insight formation, suggesting pruning thresholds nee
+- Reflex-based recovery procedures (error reduction, dream linking, systematic learning) consistently converge, proving that structured fallback actions
+- Dream timeouts (180s) recur across multiple cycles, indicating a systemic processing bottleneck in the consolidation pipeline rather than isolated inc
+- Large models (550B-class) are unreliable under load, producing 502/429 errors, while flash models (4.3s latency) succeed consistently — model scale in
 - Convergence detection relies on implicit heuristics rather than explicit epsilon-plateau thresholds and critic-confidence gates, risking premature ter
 - Swarm-generated goals/critiques age unchecked; no freshness TTL triggers regeneration, causing stale context to drive new cycles.
 - Skill proposals accumulate (5+ this cycle) but lack a mandatory sandbox validation gate, so most never reach production capability registry.
@@ -51,11 +56,6 @@
 - Multiple independent skill proposals converge on identical infrastructure: circuit breakers, fallback chains, health tracking, sandbox gates — these a
 - Provider failures (502, 429) cascade because no automatic fallback exists; circuit-breaker with health scores must reroute before user-facing errors.
 - Ultra models (127s latency, 502 errors) are unreliable for production; flash models (5s latency) should be default for all roles except verified heavy
-- Pruning discards 35 events without extracting reusable failure patterns (retry policies, fallback chains).
-- Swarm knowledge stales rapidly without automated refresh cycles, degrading decision quality over time.
-- Skill proposals accumulate but lack verification pipeline, risking registry pollution with untested code.
-- Flash models (ling-3.0-flash-fin) deliver 40x lower latency (3s vs 127s) for comparable tasks, making them superior for bulk work.
-- Model endpoints fail silently (502) or rate-limit (429) without automatic failover, causing 127s latency spikes when powerful models degrade.
 
 ---
 

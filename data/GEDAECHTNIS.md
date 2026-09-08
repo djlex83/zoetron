@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12084 Fakten** · Stand 2026-09-08 16:46 UTC · aktualisiert bei jedem Herzschlag
+**12077 Fakten** · Stand 2026-09-08 17:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7376
-- **swarm_artifact:** 2099
+- **dream:** 7381
+- **swarm_artifact:** 2094
 - **last_swarm_critique:** 837
 - **last_swarm_goal:** 569
-- **anti_pattern:** 539
-- **strategy:** 271
+- **anti_pattern:** 537
+- **strategy:** 270
 - **tool:** 186
 - **hand_result:** 139
 - **aktuell_organfehler:** 51
-- **aktuell_fussball_messlatte:** 16
+- **aktuell_fussball_messlatte:** 12
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908165634:5:35a551`
+*08.09. 16:56 UTC · Quelle: dream*
+
+Upstream service errors (502 from Nvidia, 429 from Google) are not transient noise but a pattern requiring architectural mitigation rather than retry logic alone.
+
+### `dream:20260908165634:4:d911ea`
+*08.09. 16:56 UTC · Quelle: dream*
+
+Aggressive event pruning (up to 54 events per cycle) risks discarding cross-references needed for insight formation, suggesting pruning thresholds need failure-awareness.
+
+### `dream:20260908165634:3:12c5a4`
+*08.09. 16:56 UTC · Quelle: dream*
+
+Reflex-based recovery procedures (error reduction, dream linking, systematic learning) consistently converge, proving that structured fallback actions are more reliable than open-ended processing.
+
+### `dream:20260908165634:2:6b4858`
+*08.09. 16:56 UTC · Quelle: dream*
+
+Dream timeouts (180s) recur across multiple cycles, indicating a systemic processing bottleneck in the consolidation pipeline rather than isolated incidents.
+
+### `dream:20260908165634:1:87b862`
+*08.09. 16:56 UTC · Quelle: dream*
+
+Large models (550B-class) are unreliable under load, producing 502/429 errors, while flash models (4.3s latency) succeed consistently — model scale inversely correlates with operational stability.
 
 ### `dream:20260908164244:5:ca0707`
 *08.09. 16:42 UTC · Quelle: dream*
@@ -46402,40 +46427,10 @@ Rate-limit failures (429) on stealth/ox-alpha and z-ai/glm-5.2:free cluster unde
 
 The football goal failed twice at score 3/10 because the swarm produced prose without an executable prediction artifact, so the unarguable critic (actual match outcome vs. 50.2% baseline) was never actually engaged.
 
-### `aktuell_fussball_messlatte`
-*25.08. 16:47 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -1.66 -0.43 -2.35 -0.55 -0.43 -1.22. Der Log-Loss ist
-
-### `aktuell_fussball_messlatte`
-*25.08. 16:47 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.12 -1.66 -0.43 -2.35 -0.55 -0.43. Der Log-Loss ist
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
-*25.08. 16:44 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Marktmechanik-Ersatz ohne Quoten: Konsens-Aggregation vieler schwacher öffentlic - Da Quoten tabu sind, wird deren Information künstlich rekonstruiert: Ein Ensemble aus 10+ dekorrelierten schwachen Vorhersagern (Elo mit fixem
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :1`
-*25.08. 16:44 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Empirisch-direkt: Feature-freie Frequenzanalyse historischer Ergebnisse + kontra - Radikal anderes Paradigma: kein parametrisches Modell, sondern reine empirische Konditionalisierung. Für jedes Spiel werden historische Analog
-
 ### `last_swarm_critique`
 *25.08. 16:43 UTC · Quelle: critic*
 
 score=4; issues=Ziel '50,2 % schlagen' wird nirgends geprüft: Kein Backtest, keine Accuracy-/LogLoss-Berechnung, kein Vergleich gegen die Baseline. Alle drei Varianten liefern nur Modellcode ohne einen einzigen Evaluationsbeweis.; Drei sich widersprechende Art
-
-### `aktuell_fussball_messlatte`
-*25.08. 16:41 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.41 -0.12 -1.66 -0.43 -2.35 -0.55. Der Log-Loss ist
-
-### `aktuell_fussball_messlatte`
-*25.08. 16:40 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.31 -0.41 -0.12 -1.66 -0.43 -2.35. Der Log-Loss ist
 
 ### `last_swarm_goal`
 *25.08. 16:35 UTC · Quelle: system*
