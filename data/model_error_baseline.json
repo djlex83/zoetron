@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-08T12:30:21.003940",
+  "total_errors": 0,
+  "by_category": {},
+  "by_source": {
+    "event_log": 0,
+    "semantic_memory": 0
+  },
+  "error_rate_per_100_events": 0.0,
+  "registry_path": "/workspace/zoetron/data/model_errors_registry.json"
+}

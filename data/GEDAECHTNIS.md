@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12077 Fakten** · Stand 2026-09-08 11:56 UTC · aktualisiert bei jedem Herzschlag
+**12091 Fakten** · Stand 2026-09-08 12:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7341
-- **swarm_artifact:** 2104
-- **last_swarm_critique:** 836
-- **last_swarm_goal:** 568
+- **dream:** 7346
+- **swarm_artifact:** 2110
+- **last_swarm_critique:** 837
+- **last_swarm_goal:** 569
 - **anti_pattern:** 551
 - **strategy:** 277
-- **tool:** 185
+- **tool:** 186
 - **hand_result:** 139
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 1
 
 ---
+
+### `tool:modellfehler-systematisch-verringern`
+*08.09. 12:30 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler systematisch verringern'. Datei: data/tools/modellfehler-systematisch-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*08.09. 12:30 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*08.09. 12:09 UTC · Quelle: system*
+
+Modellfehler systematisch verringern
+
+### `dream:20260908120702:5:bd77f8`
+*08.09. 12:07 UTC · Quelle: dream*
+
+Reflex successfully updated swarm goals but drive goals remain abstract ("connect dreams") without measurable success criteria, causing goal drift.
+
+### `dream:20260908120702:4:ac6af6`
+*08.09. 12:07 UTC · Quelle: dream*
+
+Pruning removes only events (37→74) never facts, suggesting fact-store bloat risk and missed opportunity to discard stale provider metrics.
+
+### `dream:20260908120702:3:cc97b3`
+*08.09. 12:07 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, showing health checks do not cover inference reliability.
+
+### `dream:20260908120702:2:e38ca1`
+*08.09. 12:07 UTC · Quelle: dream*
+
+Identical skill proposals (model_router, provider_health_monitor, dream_promotion_daemon, convergence_guardrail, swarm_knowledge_refresh) recur across sleep cycles without deployment, indicating a broken proposal-to-production pipeline.
+
+### `dream:20260908120702:1:bd9b63`
+*08.09. 12:07 UTC · Quelle: dream*
+
+Primary models (Nemotron, Gemma) suffer frequent 502/429 errors and >60s latency while flash models (Ling) succeed in ~3s, proving the system lacks automatic failover.
 
 ### `dream:20260908115349:5:d38740`
 *08.09. 11:53 UTC · Quelle: dream*

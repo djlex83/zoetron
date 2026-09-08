@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 11:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 12:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex successfully updated swarm goals but drive goals remain abstract ("connect dreams") without measurable success criteria, causing goal drift.
+- Pruning removes only events (37→74) never facts, suggesting fact-store bloat risk and missed opportunity to discard stale provider metrics.
+- Self-diagnosis reports zero organ errors despite repeated model failures, showing health checks do not cover inference reliability.
+- Identical skill proposals (model_router, provider_health_monitor, dream_promotion_daemon, convergence_guardrail, swarm_knowledge_refresh) recur across
+- Primary models (Nemotron, Gemma) suffer frequent 502/429 errors and >60s latency while flash models (Ling) succeed in ~3s, proving the system lacks au
 - Self-diagnosis reports zero organ errors despite clear systemic degradation (latency, stale skills, unpromoted proposals), revealing blind spots in he
 - Pruning removes events but never facts, suggesting fact-store bloat risk and missing semantic deduplication.
 - Swarm knowledge decays silently; only explicit reflex triggers refresh, causing stale-data-driven decisions between cycles.
@@ -51,11 +56,6 @@
 - Reflex actions converge reliably while swarm planning does not, revealing a gap between simple tool execution and multi-agent planning.
 - Swarm cycles evolve but fail to converge (score stuck at 5), suggesting missing convergence guardrails or inadequate critic feedback.
 - Model latency varies wildly (71-132s) and 33 model errors occurred, indicating unreliable provider performance requiring circuit breakers and failover
-- Pruning 58 events but zero facts means experience is discarded without extracting reusable knowledge.
-- Two swarm cycles with score 5/10 and no convergence indicates insufficient iterations or weak critic signal for complex goals.
-- Nemotron-3-Ultra latency (70-130s) exceeds interactive budgets; assign it only to offline builder roles, not planner/critic.
-- Critic outputs must be machine-parseable (e.g., JSON schema) or the evolution loop stalls on unparseable feedback.
-- Free-tier models exhibit cascading failures: rate limits (429) on Gemma and overload (502) on Nemotron make single-model reliance unsafe.
 
 ---
 
