@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-08 11:04:54",
+ "stand": "2026-09-08 11:17:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -225,12 +225,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-in-handlungen-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -429,7 +423,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.821,
+ "haende_quote": 0.825,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 24,
@@ -437,13 +431,13 @@
   "schnitt": 5.46
  },
  "score_nach_ziel_typ": {
-  "bau": {
-   "n": 2,
-   "schnitt": 5.0
-  },
   "analyse": {
    "n": 22,
    "schnitt": 5.5
+  },
+  "bau": {
+   "n": 1,
+   "schnitt": 9.0
   }
  }
 }
