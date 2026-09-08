@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 09:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 09:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 11×)*
+- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 12×)*
 - Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 8×)*
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
@@ -23,17 +23,17 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex-driven evolution loop converged successfully, proving that autonomous goal-driven iteration works when unblocked by model failures.
+- Skill proposals accumulate faster than they are implemented, creating a persistent knowledge-action gap that prevents the system from learning from it
+- Self-diagnosis consistently reports zero internal organ errors, confirming that failures are external and provider-side rather than stemming from flaw
+- The absence of circuit breakers and health-aware routing means repeated provider failures cascade into wasted cycles, making the system its own worst 
+- Heavy LLM providers (Nvidia, Google) exhibit recurring 502/429 failures under load, while flash models consistently succeed with low latency — provide
 - Skill proposals accumulate without deployment; a dream-to-skill daemon validating and deploying one proposal per sleep cycle closes the proposal-actio
 - Convergence stalls waste cycles when scores plateau; a guardrail detecting N-cycle stagnation should trigger emergency evolution restart.
 - Critic outputs frequently arrive malformed, causing silent failures that a fallback parser with safe default revision would prevent.
@@ -51,11 +56,6 @@
 - Automatic pruning of stale facts and events (5 facts, 20 events) after each cycle prevents memory bloat from failed retries and redundant simulations.
 - The inclusionai/ling-3.0-flash-fin:free model delivers consistent low-latency success (3.8-4.5s) while larger models like nemotron-3-ultra exhibit 10x
 - Free-tier models consistently fail under load with 429 rate limits and 502 gateway errors, making them unreliable as primary providers.
-- Relative file paths fail in hand_action because arguments aren't expanded through ZOETRON_DATA before execution.
-- Swarm vectors and coordination data stale within days without automated freshness checks and renewal reflexes.
-- Reflex tools and hand_actions return null or missing error fields on failure, preventing structured retry and root-cause analysis.
-- Drive timeouts (180s) and model latency spikes (60s+) cascade into system-wide stalls, necessitating metabolic-aware scheduling that pauses consolidat
-- Primary model providers (Nemotron, Gemma) frequently return 502/429 errors under load, requiring automatic failover to flash models like inclusionai/l
 
 ---
 
