@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12042 Fakten** · Stand 2026-09-08 10:29 UTC · aktualisiert bei jedem Herzschlag
+**12047 Fakten** · Stand 2026-09-08 10:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7306
+- **dream:** 7311
 - **swarm_artifact:** 2104
 - **last_swarm_critique:** 836
 - **last_swarm_goal:** 568
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260908103845:5:407de2`
+*08.09. 10:38 UTC · Quelle: dream*
+
+Swarm skill validation is inactive despite high proposal volume, creating a deployment gap.
+
+### `dream:20260908103845:4:49e958`
+*08.09. 10:38 UTC · Quelle: dream*
+
+State pruning removes events but not stale facts, allowing semantic memory bloat from failed retries.
+
+### `dream:20260908103845:3:af9e77`
+*08.09. 10:38 UTC · Quelle: dream*
+
+Convergence stalls go undetected without explicit guardrails tracking score plateaus across cycles.
+
+### `dream:20260908103845:2:acc297`
+*08.09. 10:38 UTC · Quelle: dream*
+
+Duplicate skill proposals indicate missing deduplication and promotion pipeline from dream to deployed capability.
+
+### `dream:20260908103845:1:d388ec`
+*08.09. 10:38 UTC · Quelle: dream*
+
+Model failures cluster around rate limits (429) and upstream overloads (502), requiring per-provider circuit breakers with automatic failover to flash models.
 
 ### `dream:20260908102535:5:a115fe`
 *08.09. 10:25 UTC · Quelle: dream*

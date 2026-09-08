@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 10:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 10:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 12×)*
+- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 13×)*
 - Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 8×)*
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
@@ -32,8 +32,8 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm skill validation is inactive despite high proposal volume, creating a deployment gap.
+- State pruning removes events but not stale facts, allowing semantic memory bloat from failed retries.
+- Convergence stalls go undetected without explicit guardrails tracking score plateaus across cycles.
+- Duplicate skill proposals indicate missing deduplication and promotion pipeline from dream to deployed capability.
+- Model failures cluster around rate limits (429) and upstream overloads (502), requiring per-provider circuit breakers with automatic failover to flash
 - Convergence stalls go undetected until manual inspection, wasting cycles on stalled optimization instead of triggering automatic recovery.
 - The system lacks a critic output validation layer, causing silent failures when model responses are malformed or unparseable.
 - Memory bloat correlates directly with failed model retries and redundant simulations, making post-cycle pruning a necessary but insufficient reactive 
@@ -51,11 +56,6 @@
 - The dream module itself times out at 180s, indicating consolidation logic exceeds its budget and needs streaming or incremental processing.
 - Flash models (ling-3.0-flash-fin) deliver 10x lower latency (3.5s vs 56-67s) with zero observed failures in this window.
 - Free-tier large models (Nemotron, Gemma) fail frequently with 502 overloads and 429 rate limits, making them unreliable for primary routing.
-- The reflex-driven evolution loop converged successfully, proving that autonomous goal-driven iteration works when unblocked by model failures.
-- Skill proposals accumulate faster than they are implemented, creating a persistent knowledge-action gap that prevents the system from learning from it
-- Self-diagnosis consistently reports zero internal organ errors, confirming that failures are external and provider-side rather than stemming from flaw
-- The absence of circuit breakers and health-aware routing means repeated provider failures cascade into wasted cycles, making the system its own worst 
-- Heavy LLM providers (Nvidia, Google) exhibit recurring 502/429 failures under load, while flash models consistently succeed with low latency — provide
 
 ---
 
