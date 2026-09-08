@@ -15,7 +15,8 @@
       "why": "Der Critic ist streng - ein echter Erfolg beweist, dass Lernen und Werkzeuge zusammenwirken.",
       "created": "2026-08-23",
       "target_metric": "best_swarm_score>=8",
-      "done": false
+      "done": true,
+      "fulfilled_at": "2026-08-25T14:05:00"
     }
   ]
 }
