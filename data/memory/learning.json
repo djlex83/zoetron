@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-09 22:33:13",
+ "stand": "2026-09-09 22:49:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -52,6 +52,12 @@
   },
   {
    "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -127,12 +133,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "vergessene-schwarmprojekte-reaktivieren.py",

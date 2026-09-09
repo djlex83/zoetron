@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11807 Fakten** · Stand 2026-09-09 22:35 UTC · aktualisiert bei jedem Herzschlag
+**11802 Fakten** · Stand 2026-09-09 22:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7397
-- **swarm_artifact:** 1945
+- **dream:** 7402
+- **swarm_artifact:** 1939
 - **last_swarm_critique:** 861
 - **last_swarm_goal:** 595
-- **anti_pattern:** 451
-- **strategy:** 227
-- **tool:** 176
+- **anti_pattern:** 449
+- **strategy:** 226
+- **tool:** 175
 - **hand_result:** 110
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909224803:5:2a177f`
+*09.09. 22:48 UTC · Quelle: dream*
+
+Evolution produced high score variance (5, 9, 7) without reliable upward trajectory, suggesting mutation/crossover operators are not preserving or reliably improving solution quality.
+
+### `dream:20260909224803:4:358d79`
+*09.09. 22:48 UTC · Quelle: dream*
+
+Token output-to-input ratios exceeding 2:1 on multiple model calls indicate verbose, budget-inefficient responses that waste the strict iteration budget of 1.
+
+### `dream:20260909224803:3:f83984`
+*09.09. 22:48 UTC · Quelle: dream*
+
+Swarm failed to converge after 2 cycles with critic feedback limited to 'Only the audit', proving that a single-dimension critic role is insufficient for guiding evolutionary improvement.
+
+### `dream:20260909224803:2:29f97b`
+*09.09. 22:48 UTC · Quelle: dream*
+
+Self-predicted score of 2 vs. actual score of 6 (4-point calibration error) reveals the system systematically misjudges its own performance, risking premature termination or misallocated effort.
+
+### `dream:20260909224803:1:aa19e9`
+*09.09. 22:48 UTC · Quelle: dream*
+
+Cascading model failures (502 upstream error → 429 rate-limited fallbacks) without backoff or circuit breakers caused total pipeline stall, indicating that fallback strategies must include exponential delay and cached-state recovery.
 
 ### `tool:mehr-echte-aktionen-ausführen`
 *09.09. 22:33 UTC · Quelle: hands*
@@ -43820,21 +43845,6 @@ Simulation-driven revision (4 risks caught, 3 revisions proposed, 2 applied) pre
 *26.08. 22:55 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter suffer systematic 429 rate limits requiring aggressive retry-with-fallback strategies rather than single-model reliance.
-
-### `tool:best-of-n-mit-unbestechlichem-prüfer-tes`
-*26.08. 22:36 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)'. Datei: data/tools/best-of-n-mit-unbestechlichem-prüfer-tes.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Best-of-N mit unbestechl:2`
-*26.08. 22:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Test-Time Compute via Multi-Agent Debate & Heuristic Refinement - Instead of just generating N independent solutions, use a 'Generate-Critique-Refine' loop for test-time compute. Generate 3 initial solutions, then use a stric
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Best-of-N mit unbestechl:1`
-*26.08. 22:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Zero-Side-Effect Isolation & Deterministic Critic Sandbox - Avoid modifying existing files by generating a completely new, standalone module `best_of_n_evaluator.py`. Create an isolated sandbox using Python's `exec()` within 
 
 ### `last_swarm_critique`
 *26.08. 22:33 UTC · Quelle: critic*
