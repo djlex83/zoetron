@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 22:05:24",
+ "stand": "2026-09-09 22:16:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -177,6 +177,12 @@
    "quote": 1.0
   },
   {
+   "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modelle-zuverlässiger-machen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -204,12 +210,6 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -280,12 +280,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

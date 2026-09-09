@@ -32102,3 +32102,23 @@
 {"ts": 1788386679.1464057, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.25, "gelesen": 45}}
 {"ts": 1788386679.1484444, "kind": "reflex_used", "payload": {"goal": "Eigene Erinnerungen öfter nutzen", "tool": "alte-erinnerungen-aktualisieren.py", "ok": true}}
 {"ts": 1788386679.5776887, "kind": "act_done", "payload": {"goal_title": "Eigene Erinnerungen öfter nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787782023.3375342, "key": "hand_result:Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)", "value": "{\"ok\": false, \"stderr\": \"\"}", "source": "hands"}
+{"ts": 1788387039.271589, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788387107.6190982, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788387109.4636736, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 19}}
+{"ts": 1788387113.6244092, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788387113.624406, "schalter_geoeffnet": false}}
+{"ts": 1788387126.0783339, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 12.5, "tokens_ein": 1428, "tokens_aus": 760}}
+{"ts": 1788387126.0789044, "kind": "skill_proposal", "payload": {"proposal": "Implement a provider-aware router that tracks per-model 429/502 rates and latency, then prefers healthy models with exponential backoff on 429."}}
+{"ts": 1788387126.078962, "kind": "skill_proposal", "payload": {"proposal": "Add a path resolver middleware that expands any relative path using $ZOETRON_DATA before handing to filesystem tools."}}
+{"ts": 1788387126.0790172, "kind": "skill_proposal", "payload": {"proposal": "Build a skill compiler that takes a proposal JSON, writes a tested Python module under skills/, and registers it atomically."}}
+{"ts": 1788387126.0790713, "kind": "skill_proposal", "payload": {"proposal": "Create a metabolic governor that auto-throttles outbound model calls when stress > 0.8 and prioritizes skill-building tasks."}}
+{"ts": 1788387126.0791247, "kind": "skill_proposal", "payload": {"proposal": "Persist market analysis artifacts into a versioned knowledge store with TTL and a retrieval skill for drive-goal context."}}
+{"ts": 1788387126.07918, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788387128.9315453, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788387128.9315417, "schalter_geoeffnet": false}}
+{"ts": 1788387156.7654796, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 27.8, "tokens_ein": 519, "tokens_aus": 393}}
+{"ts": 1788387156.7656217, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht fast genauso viele Fehler wie Erfolge. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788387156.7657008, "kind": "drive_goal", "payload": {"title": "Simulationen konsequent anwenden", "why": "Es werden viele Simulationen gerechnet, aber kaum Ergebnisse genutzt. Anwendung bringt echten Nutzen.", "signal": "gap"}}
+{"ts": 1788387156.7657723, "kind": "drive_goal", "payload": {"title": "Marktanalyse sauber abschließen", "why": "Drei Teilaufgaben der Marktanalyse liegen seit langem unfertig herum. Abschluss schafft Klarheit für nächste Schritte.", "signal": "stale"}}
+{"ts": 1788387168.3547826, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 9.22, "gelesen": 1725}}
+{"ts": 1788387168.356599, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fertigkeiten einbauen", "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py", "ok": true}}
+{"ts": 1788387168.8279614, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fertigkeiten einbauen", "score": null, "converged": true, "mode": "reflex"}}
