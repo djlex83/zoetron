@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11916 Fakten** · Stand 2026-09-09 08:46 UTC · aktualisiert bei jedem Herzschlag
+**11906 Fakten** · Stand 2026-09-09 08:58 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7390
-- **swarm_artifact:** 2006
+- **swarm_artifact:** 2004
 - **last_swarm_critique:** 851
 - **last_swarm_goal:** 583
-- **anti_pattern:** 489
-- **strategy:** 246
-- **tool:** 179
-- **hand_result:** 121
+- **anti_pattern:** 485
+- **strategy:** 244
+- **tool:** 178
+- **hand_result:** 120
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909085522:5:458027`
+*09.09. 08:55 UTC · Quelle: dream*
+
+Swarm knowledge (goals, critiques) is stale and unversioned, causing repeated rediscovery of known failure modes like 429/502 errors and path issues.
+
+### `dream:20260909085522:4:3ef1bf`
+*09.09. 08:55 UTC · Quelle: dream*
+
+Path-resolution failures in hand_action and missing executable blocks in artifacts indicate a missing pre-flight validation layer for file-system and code-execution dependencies.
+
+### `dream:20260909085522:3:f5f010`
+*09.09. 08:55 UTC · Quelle: dream*
+
+Evolution runs with 3 variants improved scores from 1.0 to 8.7, proving that iterative critique-with-code beats single-shot prose generation.
+
+### `dream:20260909085522:2:2be30b`
+*09.09. 08:55 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 4 vs actual 1) reveals systematic overconfidence in simulation-based capability estimates without executable validation.
+
+### `dream:20260909085522:1:fb7a61`
+*09.09. 08:55 UTC · Quelle: dream*
+
+Model calls consistently exceed 130s latency and frequently timeout at 1500s, making synchronous reliance on nemotron-3-ultra unreliable for production paths.
 
 ### `dream:20260909084308:5:055d73`
 *09.09. 08:43 UTC · Quelle: dream*
@@ -45222,21 +45247,6 @@ OpenRouter free-tier models hit 429 rate limits in bursts; the swarm should trea
 
 The recurring failure mode is artifacts that fail at import time (exit 1 in ~0.03s), so every generated Python artifact must be syntax/import-checked (e.g., py_compile or a dry import) before being handed to the sandbox.
 
-### `tool:abgelehnte-werkzeuge-prüfen-und-verbesse`
-*26.08. 08:52 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Abgelehnte Werkzeuge prüfen und verbessern'. Datei: data/tools/abgelehnte-werkzeuge-prüfen-und-verbesse.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Abgelehnte Werkzeuge prü:2`
-*26.08. 08:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): Empirische Metrik-Basislinie: Verbesserung durch messbaren Nutzen statt Konformi - Definiere fuer jedes Werkzeug ein quantitatives Erfolgsmass anhand echter Nutzungsdaten/Szenarien (z.B. hand_action: Anteil korrekt ge
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Abgelehnte Werkzeuge prü:1`
-*26.08. 08:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 7, 9]): Adversariales Verfahren: Unabhaengiger Pruefer gegen den Verbesserer - Trenne Rollen strikt: Ein 'Improver'-Agent schlaegt fuer jedes abgelehnte Werkzeug einen Patch vor (Code-Diff oder neue Logik), ohne Zugriff auf d
-
 ### `last_swarm_critique`
 *26.08. 08:51 UTC · Quelle: critic*
 
@@ -45246,41 +45256,6 @@ score=5; issues=Die Re-Validierung ist zirkulaer/tautologisch: 'vorher' und 'nac
 *26.08. 08:48 UTC · Quelle: system*
 
 Abgelehnte Werkzeuge prüfen und verbessern
-
-### `dream:20260826084827:5:e0cd70`
-*26.08. 08:48 UTC · Quelle: dream*
-
-Prune runs removed zero facts/events while the bahnen graph shows 12 retrievals over the same goal edges, indicating memory growth is outpacing pruning and stale goal evidence may be causing repeated non-converging cycles.
-
-### `dream:20260826084827:4:23040b`
-*26.08. 08:48 UTC · Quelle: dream*
-
-A hand_action failed with exit code 1 in 0.37s with no error message captured, showing that tool failures are being logged without structured failure reasons, blocking root-cause analysis across cycles.
-
-### `dream:20260826084827:3:ea985a`
-*26.08. 08:48 UTC · Quelle: dream*
-
-Calibration is systematically optimistic: predicted score 4 vs actual 5 was close here, but the simulation verdict 'revise' (5 risks, 3 revisions) preceded a still-failing outcome, meaning risk detection alone does not prevent low scores without re-execution.
-
-### `dream:20260826084827:2:81b2d3`
-*26.08. 08:48 UTC · Quelle: dream*
-
-The swarm run on 'Modell-Fehler reduzieren durch bessere Skills' scored 5/10 and did not converge after 2 cycles despite evolution selecting a 9/10 variant, suggesting the winner's improvements were not carried into the final execution path.
-
-### `dream:20260826084827:1:9dbb6a`
-*26.08. 08:48 UTC · Quelle: dream*
-
-429 Too Many Requests errors on stealth/ox-alpha and z-ai/glm-5.2:free cluster in bursts (ts 1787731465-1787731539), indicating rate-limit exhaustion rather than model unavailability — a retry-with-backoff or fallback-to-nemotron policy is needed.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Abgelehnte Werkzeuge gen:1`
-*26.08. 08:42 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Testgetriebene Absicherung: Erst lauffähiges Gerüst, dann Logik schrittweise erg - Zweistufiges Vorgehen: Stufe 1 erzeugt ein absolut triviales, garantiert syntaktisch korrektes Skript (nur shebang, docstring, main()-Funktion
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Abgelehnte Werkzeuge gen:0`
-*26.08. 08:42 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
 
 ### `last_swarm_critique`
 *26.08. 08:41 UTC · Quelle: critic*

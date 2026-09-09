@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 08:44:10",
+ "stand": "2026-09-09 08:56:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,13 +27,13 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -63,7 +63,7 @@
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0

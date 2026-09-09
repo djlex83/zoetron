@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 08:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 08:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,10 +30,10 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
@@ -41,8 +41,12 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge (goals, critiques) is stale and unversioned, causing repeated rediscovery of known failure modes like 429/502 errors and path issues.
+- Path-resolution failures in hand_action and missing executable blocks in artifacts indicate a missing pre-flight validation layer for file-system and 
+- Evolution runs with 3 variants improved scores from 1.0 to 8.7, proving that iterative critique-with-code beats single-shot prose generation.
+- Calibration error of 3 points (predicted 4 vs actual 1) reveals systematic overconfidence in simulation-based capability estimates without executable 
+- Model calls consistently exceed 130s latency and frequently timeout at 1500s, making synchronous reliance on nemotron-3-ultra unreliable for productio
 - Metabolic stress at 1.0 forces conservative budgets (max_tasks=3, max_iterations=1) that starve swarm exploration; stress-aware scheduling must protec
-- Calibration error of 3 points (predicted 4 vs actual 1) reveals systematic overconfidence in simulation verdicts; per-tool uncertainty tracking is nee
 - File actions consistently fail on relative paths; all I/O must resolve absolute paths from ZOETRON_DATA and sys.argv[1] to avoid 'nothing read' errors
 - Swarm convergence fails when agents return prose instead of executable code; mandatory code-block validation before scoring stops early termination at
 - Model fallback chain is essential: nemotron is slow but reliable, gemma hits 429 rate limits, ling is fast but unproven; automatic health-aware routin
@@ -52,10 +56,6 @@
 - The system repeatedly proposes calibration/validation registries but never implements them, creating a proposal-implementation gap.
 - Free-tier model endpoints fail catastrophically under load (502/429), making them unreliable for production routing without fallback chains.
 - Self-diagnosis reports zero organ errors yet model subsystem degrades silently; health checks must cover external API dependencies.
-- Swarm knowledge decays silently: pruning removes 71 events per run while no sync daemon refreshes peer insights.
-- Reflex-driven goals succeed (model-error reduction converged) but only when concrete tools exist; proposals stall without automated promotion.
-- Primary model latency of 94.5s violates usability; a latency SLO (<5s) must gate model selection in the router.
-- Free-tier models fail predictably via 429 rate limits and 502 upstream overloads, requiring header-aware routing with jittered backoff.
 
 ---
 
