@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11783 Fakten** · Stand 2026-09-09 19:46 UTC · aktualisiert bei jedem Herzschlag
+**11783 Fakten** · Stand 2026-09-09 19:58 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7367
 - **swarm_artifact:** 1954
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909195530:5:25f0aa`
+*09.09. 19:55 UTC · Quelle: dream*
+
+Pruning removes 12 facts and 21 events per cycle yet stale knowledge signals persist, suggesting pruning targets symptoms not root causes of knowledge decay.
+
+### `dream:20260909195530:4:3d335f`
+*09.09. 19:55 UTC · Quelle: dream*
+
+Reflex execution succeeds for swarm knowledge refresh but subsequent hand actions fail, revealing a gap between reflex-level automation and deliberate action reliability.
+
+### `dream:20260909195530:3:4be25a`
+*09.09. 19:55 UTC · Quelle: dream*
+
+Drive goals recur identically across cycles (reduce model errors, refresh swarm knowledge, execute more actions), proving that proposed skills are not being promoted to deployed capabilities.
+
+### `dream:20260909195530:2:9e15d5`
+*09.09. 19:55 UTC · Quelle: dream*
+
+Hand actions fail due to path resolution confusion between sys.argv[1], ZOETRON_DATA, and relative paths, indicating missing path canonicalization logic.
+
+### `dream:20260909195530:1:ee1535`
+*09.09. 19:55 UTC · Quelle: dream*
+
+Model endpoint reliability is the primary systemic failure mode, with cascading 502 overloads and 429 rate limits across multiple providers causing decision paralysis.
 
 ### `dream:20260909194428:5:360f78`
 *09.09. 19:44 UTC · Quelle: dream*
@@ -43920,31 +43945,6 @@ score=2; issues=embedding_recall.py fehlt als separates Modul - die Embedding-Lo
 *26.08. 19:53 UTC · Quelle: system*
 
 Embedding-Recall statt reinem Wortvergleich
-
-### `dream:20260826195238:5:921458`
-*26.08. 19:52 UTC · Quelle: dream*
-
-Metabolism stress=1.0 with conserve budget (max 3 tasks) proves the system cannot execute consolidation while simultaneously serving inference, requiring architectural separation.
-
-### `dream:20260826195238:4:6fa4d6`
-*26.08. 19:52 UTC · Quelle: dream*
-
-Drive goals are 100% self-referential (model errors, skill gaps, dream loops), creating an insular optimization trap that ignores external user value signals.
-
-### `dream:20260826195238:3:a56f4b`
-*26.08. 19:52 UTC · Quelle: dream*
-
-Five skill proposals exist but zero are deployed, revealing a proposal-to-production gap caused by missing activation criteria and integration scaffolds.
-
-### `dream:20260826195238:2:dd78c6`
-*26.08. 19:52 UTC · Quelle: dream*
-
-A 9x latency variance (5.3s vs 45.7s) on the same model (nemotron-3-ultra) indicates non-deterministic queueing, not model slowness, requiring latency-aware routing.
-
-### `dream:20260826195238:1:0e6e92`
-*26.08. 19:52 UTC · Quelle: dream*
-
-Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502) failures, making single-model reliance untenable for production workloads.
 
 ### `last_swarm_critique`
 *26.08. 19:37 UTC · Quelle: critic*

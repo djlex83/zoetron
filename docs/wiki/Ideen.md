@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 19:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 19:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 12 facts and 21 events per cycle yet stale knowledge signals persist, suggesting pruning targets symptoms not root causes of knowledge
+- Reflex execution succeeds for swarm knowledge refresh but subsequent hand actions fail, revealing a gap between reflex-level automation and deliberate
+- Drive goals recur identically across cycles (reduce model errors, refresh swarm knowledge, execute more actions), proving that proposed skills are not
+- Hand actions fail due to path resolution confusion between sys.argv[1], ZOETRON_DATA, and relative paths, indicating missing path canonicalization log
+- Model endpoint reliability is the primary systemic failure mode, with cascading 502 overloads and 429 rate limits across multiple providers causing de
 - Skill proposals accumulate (5 in this cycle alone) but deployment validation via dream-simulation bridge is missing, creating a proposal-execution gap
 - Pruning removes facts/events but stale swarm knowledge persists because no automatic refresh mechanism exists.
 - Reflex-driven model-error reduction converges quickly, but the underlying model pool instability re-triggers the same goal repeatedly.
@@ -51,11 +56,6 @@
 - Recurring goals for 'reduce model errors' and 'refresh swarm data' indicate reflex fixes treat symptoms while root causes (no provider health tracking
 - Five concrete skill proposals (ModelRouter, LatencyBudget, DependencyHealth, EventLogHygiene, SkillValidationGate) were generated but none implemented
 - Model failures cascade across providers (502, 429) before accidental fallback succeeds, revealing no circuit-breaker or health-aware routing.
-- Metabolic stress and consecutive model failures are not gated, allowing new drive goals to pile onto an already degraded system.
-- Token-latency profiles per model are missing, preventing cost-aware selection and causing 30s+ latency spikes on large models.
-- Reflex tools execute in isolation; chaining verified reflexes (dream-connect → error-reduce → swarm-sync) would converge multi-goal tasks faster.
-- Swarm knowledge decays silently; full refreshes waste tokens while stale facts poison downstream reasoning.
-- Model routing lacks provider-aware circuit breaking, causing repeated 429/5xx failures that cascade into drive-goal retries.
 
 ---
 
