@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11837 Fakten** · Stand 2026-09-09 12:58 UTC · aktualisiert bei jedem Herzschlag
+**11831 Fakten** · Stand 2026-09-09 13:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7345
-- **swarm_artifact:** 1992
+- **swarm_artifact:** 1990
 - **last_swarm_critique:** 854
 - **last_swarm_goal:** 586
-- **anti_pattern:** 475
-- **strategy:** 239
+- **anti_pattern:** 473
+- **strategy:** 238
 - **tool:** 177
-- **hand_result:** 116
+- **hand_result:** 115
 - **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909130745:5:cae001`
+*09.09. 13:07 UTC · Quelle: dream*
+
+Aggressive pruning discards failure evidence needed for regression tests; tiered retention (last 100 failures + model_error facts for 30 days) preserves signal.
+
+### `dream:20260909130745:4:9d0deb`
+*09.09. 13:07 UTC · Quelle: dream*
+
+Hand actions lack path-resolution guards, risking silent failures when sys.argv[1] references missing or permission-denied paths under ZOETRON_DATA.
+
+### `dream:20260909130745:3:db78f7`
+*09.09. 13:07 UTC · Quelle: dream*
+
+Swarm knowledge decays silently >7 days without automated staleness detection or critique re-runs using healthy models.
+
+### `dream:20260909130745:2:5757be`
+*09.09. 13:07 UTC · Quelle: dream*
+
+Skill proposals repeatedly demand simulation-gated promotion against 50 historical failure cases, but no pipeline exists to enforce this gate before fact-store writes.
+
+### `dream:20260909130745:1:7e07cb`
+*09.09. 13:07 UTC · Quelle: dream*
+
+Model reliability is collapsing under rate limits (429) and upstream failures (502) across multiple providers, requiring circuit-breaker routing with latency-tiered fallbacks.
 
 ### `dream:20260909125411:5:02c8d7`
 *09.09. 12:54 UTC · Quelle: dream*
@@ -44411,41 +44436,6 @@ score=7; issues=Recall-Dimension misst nur Substring-Vorkommen im Dateikorpus (m
 *26.08. 13:05 UTC · Quelle: system*
 
 Fähigkeits-Messlatte bauen (Capability-Benchmark)
-
-### `dream:20260826130458:5:fd35b6`
-*26.08. 13:04 UTC · Quelle: dream*
-
-hand_action failed twice with exit 1 before succeeding on the third attempt, indicating a retry loop for shell actions resolves transient issues cheaply (0.19–0.32s per attempt).
-
-### `dream:20260826130458:4:fcab13`
-*26.08. 13:04 UTC · Quelle: dream*
-
-Calibration systematically underestimated effort (predicted 5 vs actual 9, abs_error 4), suggesting predictions should be inflated ~1.8x or recalibrated against recent cycle scores.
-
-### `dream:20260826130458:3:66ea8c`
-*26.08. 13:04 UTC · Quelle: dream*
-
-Free-tier endpoints fail in two distinct ways that need different handling: 429 rate limits (retryable with backoff) versus upstream 502/no-choices errors (better served by immediate failover to the next model).
-
-### `dream:20260826130458:2:8904d1`
-*26.08. 13:04 UTC · Quelle: dream*
-
-The fallback chain is effective: when stealth/ox-alpha and z-ai/glm-5.2 failed, nvidia/nemotron-3-ultra and dots-studio/dots-3-note-preview completed the task successfully, so ordering free-tier fallbacks after primary models prevents hard stalls.
-
-### `dream:20260826130458:1:314a4d`
-*26.08. 13:04 UTC · Quelle: dream*
-
-429 rate limits are the dominant failure mode (7 of 11 model_fail events), hitting multiple providers simultaneously, so bursts of parallel LLM calls exhaust shared OpenRouter quota within seconds.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeits-Messlatte bau:2`
-*26.08. 12:58 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): CI/CD Integrated Baseline & Trend Dashboard - Embed benchmark execution into the CI/CD pipeline (GitHub Actions, GitLab CI, Jenkins). On each merge, the pipeline runs the full suite, stores raw results and computed scores in 
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeits-Messlatte bau:0`
-*26.08. 12:58 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Modular Plugin Architecture - Create a lightweight core runner that discovers and loads capability plugins via entry points (e.g., setuptools entry_points or importlib.metadata). Each plugin encapsulates its own test suite, m
 
 ### `last_swarm_critique`
 *26.08. 12:57 UTC · Quelle: critic*

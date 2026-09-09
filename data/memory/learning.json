@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 12:56:11",
+ "stand": "2026-09-09 13:09:38",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,21 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -52,6 +46,12 @@
   },
   {
    "tool": "simulationen-gezielt-einsetzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0

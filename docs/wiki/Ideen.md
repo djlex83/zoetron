@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 12:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 13:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,12 +25,12 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning discards failure evidence needed for regression tests; tiered retention (last 100 failures + model_error facts for 30 days) preserv
+- Hand actions lack path-resolution guards, risking silent failures when sys.argv[1] references missing or permission-denied paths under ZOETRON_DATA.
+- Swarm knowledge decays silently >7 days without automated staleness detection or critique re-runs using healthy models.
+- Skill proposals repeatedly demand simulation-gated promotion against 50 historical failure cases, but no pipeline exists to enforce this gate before f
+- Model reliability is collapsing under rate limits (429) and upstream failures (502) across multiple providers, requiring circuit-breaker routing with 
 - Calibration drift goes undetected without cross-organ consistency checks linking prediction error, execution success, and swarm convergence.
 - Generated artifacts entering sandbox without syntax/type validation cause preventable rejections; static analysis must gate execution.
 - Swarm simulations without convergence gates waste cycles and produce low-quality proposals; hard stop criteria with human review are essential.
@@ -51,11 +56,6 @@
 - Calibration head drift (predicted vs actual score error > 2) goes undetected for multiple iterations because no convergence gate compares prediction e
 - Generated artifacts are executed in sandbox only after full generation, missing cheap pre-flight checks (AST parse, mypy, path existence) that would c
 - Model endpoint degradation (high latency, 502/429 errors) repeatedly stalls execution without automatic failover, causing cascading delays across all 
-- Swarm convergence in 1 cycle with score 8 was achieved because a fast fallback model produced a working 227-line artifact immediately, proving model a
-- The initial hand_action timeout (20s) on the first tool call indicates that synchronous blocking calls without fallback can stall the entire pipeline 
-- Cascading model failures across providers (Nvidia 502 → Google 429) reveal that retry logic must include provider diversity rather than blindly retryi
-- High system stress (0.911) forces conserve mode with minimal iterations, which paradoxically enabled single-cycle swarm convergence by constraining sc
-- When primary model providers return 502/429 errors, immediately switching to a smaller alternative model (like inclusionai/ling-3.0-flash-fin) resolve
 
 ---
 
