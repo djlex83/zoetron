@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12054 Fakten** · Stand 2026-09-09 00:46 UTC · aktualisiert bei jedem Herzschlag
+**12052 Fakten** · Stand 2026-09-09 00:58 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7446
-- **swarm_artifact:** 2052
+- **swarm_artifact:** 2050
 - **last_swarm_critique:** 843
 - **last_swarm_goal:** 575
 - **anti_pattern:** 515
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909005455:5:ff1cff`
+*09.09. 00:54 UTC · Quelle: dream*
+
+Model reliability varies significantly: inclusionai/ling-3.0-flash-fin succeeds consistently while nvidia and google models fail frequently, suggesting the need for reliability-based model routing.
+
+### `dream:20260909005455:4:4f26e3`
+*09.09. 00:54 UTC · Quelle: dream*
+
+Five simulation revisions were applied but the artifact still fails to run, proving that iterative revisions without addressing the root cause (argument parsing) are wasted effort.
+
+### `dream:20260909005455:3:99cb70`
+*09.09. 00:54 UTC · Quelle: dream*
+
+Performance calibration is systematically optimistic: predicted 6 vs actual 4, revealing a persistent overconfidence bias that must be corrected.
+
+### `dream:20260909005455:2:43006e`
+*09.09. 00:54 UTC · Quelle: dream*
+
+Hand actions and artifact execution fail because scripts are invoked without required arguments like --data-dir and --timeout, indicating no pre-execution argument validation exists.
+
+### `dream:20260909005455:1:9f0681`
+*09.09. 00:54 UTC · Quelle: dream*
+
+API calls lack exponential backoff and retry logic, causing cascading failures when providers return 429 or 502 errors repeatedly.
 
 ### `dream:20260909004313:5:2cf692`
 *09.09. 00:43 UTC · Quelle: dream*
@@ -46016,31 +46041,6 @@ score=7; issues=
 *26.08. 00:48 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260826004842:5:fd8fe9`
-*26.08. 00:48 UTC · Quelle: dream*
-
-Simulations and dreams are produced in volume but rarely linked to live tasks (e.g., the old dream matching the current organ error was never compared), so cross-referencing stored dreams against new failure signals is an untapped reliability gain.
-
-### `dream:20260826004842:4:d0dd3b`
-*26.08. 00:48 UTC · Quelle: dream*
-
-Latency variance is extreme (3.2s to 89.3s) and correlates with output size, meaning long generations should be budgeted explicitly under conserve-mode constraints (max 3 tasks, 1 iteration).
-
-### `dream:20260826004842:3:165e2f`
-*26.08. 00:48 UTC · Quelle: dream*
-
-Items parked after 3 failed attempts (e.g., the Destillat-Datensatz goal) stall indefinitely because there is no escalation path to the creator for decisions the system cannot make alone.
-
-### `dream:20260826004842:2:9c4bf0`
-*26.08. 00:48 UTC · Quelle: dream*
-
-The proposal backlog grows faster than it is consumed (30+ untested proposals), so idea generation without a fixed testing rate creates dead inventory.
-
-### `dream:20260826004842:1:0d1f58`
-*26.08. 00:48 UTC · Quelle: dream*
-
-Recurring model failures cluster around prediction tasks, suggesting the root cause is miscalibrated confidence rather than transient API errors.
 
 ### `last_swarm_critique`
 *26.08. 00:45 UTC · Quelle: critic*

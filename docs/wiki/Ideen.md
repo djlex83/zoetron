@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 00:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 00:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model reliability varies significantly: inclusionai/ling-3.0-flash-fin succeeds consistently while nvidia and google models fail frequently, suggestin
+- Five simulation revisions were applied but the artifact still fails to run, proving that iterative revisions without addressing the root cause (argume
+- Performance calibration is systematically optimistic: predicted 6 vs actual 4, revealing a persistent overconfidence bias that must be corrected.
+- Hand actions and artifact execution fail because scripts are invoked without required arguments like --data-dir and --timeout, indicating no pre-execu
+- API calls lack exponential backoff and retry logic, causing cascading failures when providers return 429 or 502 errors repeatedly.
 - Five skill proposals (router, backoff, bias, cache, parallelism) exist but none are implemented, confirmed by the drive goal 'Vorgeschlagene Fähigkeit
 - Metabolism stress=1.0 forces conserve mode (max_tasks=3, max_iterations=1), starving the evolution loops that could generate reliability improvements.
 - The simulation gate 'simulationen-in-die-praxis-umsetzen.py' returns ok=false while the drive goal demands more simulations, meaning the validation la
@@ -51,11 +56,6 @@
 - Evolution runs that fail to converge within 2 cycles produce only marginal score improvements (7→7.7/8.3), suggesting variant generation lacks suffici
 - The calibration predictor has a structural +2 underestimation bias for code-artifact generation goals, indicating the training data lacks sufficient c
 - Free-tier OpenRouter models fail in two distinct patterns—429 rate-limiting and 502 upstream overload—each requiring a different recovery strategy rat
-- Evolution loop improved score from 7.0 to 8.3 in one cycle, proving the critic→variant→select pipeline works when model calls succeed.
-- System entered conserve mode (stress=1.0, max_tasks=3) mid-pipeline, throttling parallelism exactly when swarm coordination needed it most.
-- Hand action timeout (20s, zero bytes read) indicates missing stream/chunk handling or deadlock in the capability-generation script.
-- Fallback cascade failed silently: both Google Gemma models returned 429 rate limits, leaving only inclusionai/ling-3.0-flash-fin as a working free tie
-- Primary model (nemotron-3-ultra) exhibits high latency variance (6-65s) and 502 failures under load, making it unreliable for time-bounded tasks.
 
 ---
 
