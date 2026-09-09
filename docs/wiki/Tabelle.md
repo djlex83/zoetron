@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8390 Neuronen · 918251 bewertete Synapsen
+Stand: 8391 Neuronen · 918906 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -14,8 +14,8 @@ Stand: 8390 Neuronen · 918251 bewertete Synapsen
 | 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1041 | 0.23 |
 | 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 851 | 0.26 |
 | 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 882 | 0.25 |
-| 5 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 802 | 0.26 |
-| 6 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 881 | 0.23 |
+| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 882 | 0.23 |
+| 6 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 802 | 0.26 |
 | 7 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 816 | 0.25 |
 | 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 789 | 0.25 |
 | 9 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 773 | 0.25 |

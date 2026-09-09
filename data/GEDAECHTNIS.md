@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11992 Fakten** · Stand 2026-09-09 06:21 UTC · aktualisiert bei jedem Herzschlag
+**11990 Fakten** · Stand 2026-09-09 06:35 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7445
-- **swarm_artifact:** 2014
+- **swarm_artifact:** 2012
 - **last_swarm_critique:** 849
 - **last_swarm_goal:** 581
 - **anti_pattern:** 497
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909063127:5:563977`
+*09.09. 06:31 UTC · Quelle: dream*
+
+Pruning runs (15 facts/1 event, then 0 facts/21 events) show asymmetric memory pressure: fact accumulation vs event burst cleanup.
+
+### `dream:20260909063127:4:035216`
+*09.09. 06:31 UTC · Quelle: dream*
+
+Static validation gates (syntax, imports, absolute paths, executable code blocks) consistently prevent downstream simulation failures.
+
+### `dream:20260909063127:3:d7dbbf`
+*09.09. 06:31 UTC · Quelle: dream*
+
+Staleness signals (swarm knowledge, peer critiques) require scheduled automation with concrete triggers (24h age, 10% delta) not just intent.
+
+### `dream:20260909063127:2:f1944a`
+*09.09. 06:31 UTC · Quelle: dream*
+
+Reflex-based skill validation (dream→proposal→reflex test→convergence) has succeeded twice, proving a reusable capability-growth loop.
+
+### `dream:20260909063127:1:5b69f3`
+*09.09. 06:31 UTC · Quelle: dream*
+
+Model reliability (73 errors vs 50 successes) drives cascading architectural investments in tiered routing, health tracking, and circuit breakers.
 
 ### `tool:schwarm-ergebnisse-in-handlungen-umsetze`
 *09.09. 06:19 UTC · Quelle: hands*
@@ -45661,31 +45686,6 @@ score=8; issues=Die Funktion evaluate() ist toter Code - die Logik ist in main()
 *26.08. 06:24 UTC · Quelle: system*
 
 Mehr Skill-Vorschläge wirklich ausprobieren
-
-### `dream:20260826062446:5:a0ac83`
-*26.08. 06:24 UTC · Quelle: dream*
-
-Latency is highly variable (3s to 150s per model call) while all calls succeeded, so retry storms are not yet a problem but per-model backoff should be built before it becomes one.
-
-### `dream:20260826062446:4:e796a2`
-*26.08. 06:24 UTC · Quelle: dream*
-
-The tool 'vorgeschlagene-fähigkeiten-tatsächlich-a' was rejected solely because it uses os.system/subprocess; destructive-operation rejection is the recurring cause of parked ideas and needs an explicit human-approval pathway rather than silent parking.
-
-### `dream:20260826062446:3:799526`
-*26.08. 06:24 UTC · Quelle: dream*
-
-Calibration error was small (predicted 6 vs actual 8, abs_error 2) and the score matched the trace weight (delta 1.0, 28 edges), indicating prediction accuracy is good enough to trust for planning estimates.
-
-### `dream:20260826062446:2:ae26f4`
-*26.08. 06:24 UTC · Quelle: dream*
-
-The simulation step's 'revise' verdict with 3 applied revisions directly preceded first-run success (exit 0), so pre-execution revision is the highest-leverage quality gate in the pipeline.
-
-### `dream:20260826062446:1:80bff2`
-*26.08. 06:24 UTC · Quelle: dream*
-
-The swarm successfully converted a stale backlog goal ('actually test proposed skills') into a converged artifact in 1 cycle with score 8, proving that picking one concrete backlog item beats broad exploration under conserve-mode budget (max_tasks=3).
 
 ### `last_swarm_critique`
 *26.08. 06:06 UTC · Quelle: critic*

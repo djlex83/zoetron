@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 06:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 06:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs (15 facts/1 event, then 0 facts/21 events) show asymmetric memory pressure: fact accumulation vs event burst cleanup.
+- Static validation gates (syntax, imports, absolute paths, executable code blocks) consistently prevent downstream simulation failures.
+- Staleness signals (swarm knowledge, peer critiques) require scheduled automation with concrete triggers (24h age, 10% delta) not just intent.
+- Reflex-based skill validation (dream→proposal→reflex test→convergence) has succeeded twice, proving a reusable capability-growth loop.
+- Model reliability (73 errors vs 50 successes) drives cascading architectural investments in tiered routing, health tracking, and circuit breakers.
 - Calibration drift (empirical 3/7 success ratio) indicates predicted scores need systematic per-model correction before trust.
 - Pruning aggressiveness correlates with experience density (15 facts/25 events vs 0/58), suggesting adaptive pruning thresholds tied to session intensi
 - Reflexive error-analysis and simulation-based skill testing independently converge on the same model-reliability gaps.
@@ -51,11 +56,6 @@
 - Sequential model fallback introduced compounding latency because each failure had to fully resolve before the next attempt, turning a brief outage int
 - The smaller inclusionai/ling-3.0-flash-fin model succeeded with sub-4-second latency when all larger models failed, demonstrating that model size corr
 - External provider failures (502 overload, 429 rate limits) were the dominant failure mode, not internal system errors, making provider health the prim
-- Calibration error of +300% (predicted 4 vs actual 1) reveals systematic overconfidence in planning estimates.
-- Absence of executable Python blocks in artifacts causes immediate convergence failure; prose-only outputs score 1/10.
-- NVIDIA Nemotron-3-Ultra succeeds but with 43-74s latency and intermittent 502 overload errors — only viable for non-interactive batch jobs.
-- inclusionai/ling-3.0-flash-fin:free delivers consistent sub-6s latency and should be the default primary model.
-- Free-tier Google Gemma models consistently hit 429 rate limits making them unreliable for production workflows.
 
 ---
 
