@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 23:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 23:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence via reflex mode alone is insufficient — a scored, multi-cycle gate with measurable metric deltas is needed to confirm genuine progress.
+- Self-diagnosis consistently reports zero internal organ errors, confirming that failures originate from external dependencies rather than the system's
+- Skill proposals accumulate faster than they can be tested and deployed, creating a growing backlog of unvalidated ideas that never become operational 
+- Pruning without a policy based on reuse-count and criticality risks losing high-value facts while retaining noise; 5 facts and 44 events were pruned i
+- External model failures (502 upstream overload, 429 rate limiting) are the dominant failure mode, not internal logic errors — the system needs automat
 - Knowledge pruning risks erasing cross-cutting patterns if it does not distinguish between ephemeral events and durable causal lessons.
 - The gap between generating proposals and executing them is the system's primary performance bottleneck, exceeding model accuracy or latency concerns.
 - Reflex-driven resolution converges faster than goal-driven re-planning for known failure modes, establishing a clear response hierarchy.
@@ -51,11 +56,6 @@
 - Swarm failed to converge after 2 cycles with critic feedback limited to 'Only the audit', proving that a single-dimension critic role is insufficient 
 - Self-predicted score of 2 vs. actual score of 6 (4-point calibration error) reveals the system systematically misjudges its own performance, risking p
 - Cascading model failures (502 upstream error → 429 rate-limited fallbacks) without backoff or circuit breakers caused total pipeline stall, indicating
-- Knowledge pruning must be policy-driven using reuse-count and criticality tags, otherwise high-value facts risk being lost while low-reuse noise consu
-- Skill proposals that skip validation gates produce unreliable implementations, so simulation benchmarks and latency/SLA checks must precede any promot
-- Stale swarm knowledge actively degrades decision quality, meaning knowledge bases require scheduled refresh cycles rather than passive storage to rema
-- The gap between skill proposals and deployed skills is the primary throughput bottleneck, as ideas accumulate without an execution pipeline to convert
-- Model failures are systemic rather than isolated, requiring circuit-breakers and fallback chains instead of simple retries to achieve reliable inferen
 
 ---
 
