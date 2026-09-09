@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 18:50:43",
+ "stand": "2026-09-09 19:11:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,15 +15,15 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -67,6 +67,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
@@ -135,12 +141,6 @@
    "quote": 1.0
   },
   {
-   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -204,12 +204,6 @@
    "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -435,12 +429,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.73,
- "simulationen_angewandt": 28,
+ "haende_quote": 0.715,
+ "simulationen_angewandt": 30,
  "swarm_scores": {
   "n": 28,
   "best": 9.0,
-  "schnitt": 5.39
+  "schnitt": 5.25
  },
  "score_nach_ziel_typ": {
   "analyse": {
@@ -448,8 +442,8 @@
    "schnitt": 5.16
   },
   "bau": {
-   "n": 2,
-   "schnitt": 8.5
+   "n": 3,
+   "schnitt": 6.0
   }
  }
 }
