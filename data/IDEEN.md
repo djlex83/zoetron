@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 21:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 22:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,10 +27,10 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Bahnen delta -0.5 with hat_code=false shows each cycle degrades without runnable code.
+- Calibration predicted 6 but actual score was 1—system vastly overestimates capability.
+- Artifacts contained zero executable Python blocks; prose-only output fails verification.
+- Only inclusionai/ling-3.0-flash-fin:free succeeded but with high latency variance (1.3–15.8s).
+- Gemma models consistently hit 429 rate limits making them unreliable for production workflows.
 - Skill proposals generated from failure patterns require validation against actual historical failure data to avoid addressing symptoms rather than cau
 - High-volume failure events (26 pruned) must be compressed before analysis, or noise obscures the root-cause signal.
 - A single healthy model sustained all successful operations, proving that latency-aware routing to a verified fallback prevents cascading failure.
@@ -51,11 +56,6 @@
 - Model-failure events flood the log (dozens per session) drowning signal; aggregation into 'degraded_period' facts is essential.
 - A single reliable model (inclusionai/ling-3.0-flash-fin:free) sustained all successful calls while three others repeatedly failed.
 - Rate limits (429) and upstream overloads (502) from free-tier providers cause cascading failures when no circuit-breaker isolates them.
-- Pruning removes 7 facts/16-27 events per cycle without retention criteria for high-value patterns, risking loss of reusable solutions.
-- Swarm convergence declares success with null scores and no improvement threshold, producing false positives.
-- Reflex-driven exploration (connecting old dreams, exploring linked dreams) consistently converges and yields actionable connections.
-- Skill proposals accumulate but lack an implementation→validation→deployment pipeline, so dreams never become usable capabilities.
-- Model provider instability (429/502/timeouts) cascades into task failures because no circuit-breaker or health-aware routing exists.
 
 ---
 
