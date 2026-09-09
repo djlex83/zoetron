@@ -1,4 +1,4 @@
 {
- "letzter_bericht": 1788970148.0232363,
- "letzte_nachricht": "🫀 Zoetron · 16:09 UTC · vor 41 min berichtet\n\n▸ Kein offenes Flüster-Ziel – er wählt selbst\n   Note 8 ✅ läuft · nemotron-3-ultra-5 · vor 13 min\n\n▸ Noten █▂█▂███  9 1 8 1 8 8 8\n   ⌀ 6.1 · best 9 · Latte 8 · Tor 5/8 grün\n\n▸ Takt 28 min · 424 von 1533 Aufrufen heute (27 %)\n▸ 0 offen · 8 erledigt · 15 geparkt · 171 Werkzeuge"
+ "letzter_bericht": 1788972704.8352277,
+ "letzte_nachricht": "🫀 Zoetron · 16:51 UTC · vor 42 min berichtet\n\n🔴 4 Organfehler seit dem letzten Bericht:\n   • dream: timeout [16:22]\n     Phase nach 180 s abgebrochen\n   • drive: timeout [16:25]\n     Phase nach 180 s abgebrochen\n   • act: RuntimeError router.py:431 [16:25]\n     all route candidates failed …\n   • act: rc [16:35]\n     Phase endete mit rc=1\n\n▸ Kein offenes Flüster-Ziel – er wählt selbst\n   Note 8 ✅ läuft · nemotron-3-ultra-5 · vor 56 min\n\n▸ Noten █▂█▂███  9 1 8 1 8 8 8\n   ⌀ 6.1 · best 9 · Latte 8 · Tor 5/8 grün\n\n▸ Takt 21 min · 426 von 1533 Aufrufen heute (27 %)\n▸ 0 offen · 8 erledigt · 15 geparkt · 171 Werkzeuge"
 }

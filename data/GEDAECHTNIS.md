@@ -1,20 +1,25 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11797 Fakten** · Stand 2026-09-09 16:37 UTC · aktualisiert bei jedem Herzschlag
+**11784 Fakten** · Stand 2026-09-09 16:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7327
-- **swarm_artifact:** 1982
+- **dream:** 7322
+- **swarm_artifact:** 1979
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
-- **anti_pattern:** 465
-- **strategy:** 234
+- **anti_pattern:** 463
+- **strategy:** 233
 - **tool:** 176
-- **hand_result:** 114
+- **hand_result:** 113
 - **aktuell_organfehler:** 48
-- **aktuell_fussball_messlatte:** 2
 - **creator_teaching:** 1
+- **aktuell_fussball_messlatte:** 1
 
 ---
+
+### `aktuell_organfehler`
+*09.09. 16:44 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-09 16:22:00-16:35:17 UTC): dream -> timeout; drive -> timeout; act -> RuntimeError in router.py:431; act -> rc. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen | all route candidates failed: nvidia/nemotron-3-ultra-550b-a55b:fr
 
 ### `last_swarm_goal`
 *09.09. 16:25 UTC · Quelle: system*
@@ -43936,51 +43941,6 @@ score=0; issues=Code läuft nicht: NameError in Funktion `_k_eff`, die Variablen
 *26.08. 16:41 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260826164035:5:0d2977`
-*26.08. 16:40 UTC · Quelle: dream*
-
-Observed latency of 23 seconds for some models points to the need for latency-aware model selection.
-
-### `dream:20260826164035:4:361412`
-*26.08. 16:40 UTC · Quelle: dream*
-
-The rejection of the artifact due to missing executable Python underscores the necessity of enforcing code generation in outputs.
-
-### `dream:20260826164035:3:bb34ec`
-*26.08. 16:40 UTC · Quelle: dream*
-
-The swarm achieved a high score but failed to converge, suggesting that convergence criteria are misaligned with task success.
-
-### `dream:20260826164035:2:0c10f1`
-*26.08. 16:40 UTC · Quelle: dream*
-
-A calibration error of 2 indicates that simulation risk scores are consistently underestimated and require adjustment.
-
-### `dream:20260826164035:1:1887c3`
-*26.08. 16:40 UTC · Quelle: dream*
-
-The repeated HTTP 429 and 502 errors from free models reveal a critical need for automatic fallback to alternative providers.
-
-### `aktuell_organfehler`
-*26.08. 16:32 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 16:13:07-16:32:04 UTC): retro -> kurz; dream -> timeout; drive -> timeout; will -> kurz. retro meldete einen Fehler | Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt ab
-
-### `aktuell_fussball_messlatte`
-*26.08. 16:32 UTC · Quelle: vorpruefung.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. ACHTUNG, zuletzt abgelehnt (zoetron_a4259bb284.py): NameError: name 'Spiele' is not defined. Did you mean: 's
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fußball: die Basislinie :2`
-*26.08. 16:31 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.5): Bayesian hierarchical Dixon‑Coles model with variational inference - 1. Model each team i with attack θ_i and defense δ_i parameters; home advantage γ; correlation ρ for low‑score draws (Dixon‑Coles). 2. Place weakly inform
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fußball: die Basislinie :1`
-*26.08. 16:31 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8.0): Gradient‑boosted trees on rich engineered features - 1. Build a feature matrix per match: rolling averages (last 5/10 games) of goals scored/conceded, shots, xG, possession; Elo rating diff; rest days; league position diff;
 
 ### `last_swarm_critique`
 *26.08. 16:29 UTC · Quelle: critic*
