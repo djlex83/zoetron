@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-09 18:09 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-09 18:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7347
+- **dream:** 7352
 - **swarm_artifact:** 1966
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
-- **anti_pattern:** 459
-- **strategy:** 231
+- **anti_pattern:** 457
+- **strategy:** 230
 - **tool:** 176
-- **hand_result:** 111
-- **aktuell_organfehler:** 47
+- **hand_result:** 110
+- **aktuell_organfehler:** 46
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909181822:5:b345cc`
+*09.09. 18:18 UTC · Quelle: dream*
+
+Dream insights can be operationalized by connecting them to swarm knowledge via dedicated reflex tools, closing the learning loop.
+
+### `dream:20260909181822:4:5994ac`
+*09.09. 18:18 UTC · Quelle: dream*
+
+Task duration predictions systematically underestimate actual effort (2.84s vs 0.28s for similar actions), necessitating a calibration multiplier.
+
+### `dream:20260909181822:3:8c336c`
+*09.09. 18:18 UTC · Quelle: dream*
+
+Memory growth is bounded by pruning events (23 pruned) after each swarm convergence, preventing resource exhaustion.
+
+### `dream:20260909181822:2:a7dbdf`
+*09.09. 18:18 UTC · Quelle: dream*
+
+Swarm knowledge updates converge reliably when driven by reflex tools that validate, update, and confirm in a single atomic cycle.
+
+### `dream:20260909181822:1:4f9689`
+*09.09. 18:18 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, requiring automatic circuit-breaker ejection and fallback to healthy alternatives.
 
 ### `dream:20260909180703:5:64f0ac`
 *09.09. 18:07 UTC · Quelle: dream*
@@ -43945,21 +43970,6 @@ Nvidia Nemotron models (both 3.5-lightning and 3-ultra) exhibit the highest reli
 *26.08. 18:32 UTC · Quelle: dream*
 
 OpenRouter free-tier rate limits (429) are the primary systemic bottleneck, affecting all models indiscriminately during burst usage.
-
-### `aktuell_organfehler`
-*26.08. 18:11 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 17:40:05-18:11:48 UTC): retro -> kurz; will -> kurz; genome -> kurz; lehrer -> kurz. retro meldete einen Fehler | will meldete einen Fehler | genome meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerz
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fakten-Ausbeute pro Beat:2`
-*26.08. 18:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score ?): Parallel Multi-Strategy Ensemble Fusion - Run four orthogonal extraction strategies concurrently on each beat: (A) Span-based QA (extractive), (B) Schema-guided generation (generative), (C) Pattern regex + NER (symbolic), (D)
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fakten-Ausbeute pro Beat:1`
-*26.08. 18:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score ?): Iterative Refinement Loop with Verifiable Critiques - Implement a generate-critique-repair loop: (1) Generator produces candidate facts with confidence scores; (2) Critic module (separate LLM call with structured output) vali
 
 ### `last_swarm_critique`
 *26.08. 18:05 UTC · Quelle: critic*

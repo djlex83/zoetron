@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 18:07:23",
+ "stand": "2026-09-09 18:18:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -54,12 +54,6 @@
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -141,12 +135,6 @@
    "quote": 0.0
   },
   {
-   "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -172,6 +160,12 @@
   },
   {
    "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -204,6 +198,12 @@
    "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 2,
    "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
+   "laeufe": 1,
+   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -421,9 +421,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "automatische-fehler-reduktions-pipeline-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.723,
+ "haende_quote": 0.722,
  "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 28,

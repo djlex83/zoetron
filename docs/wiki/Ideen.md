@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 18:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 18:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream insights can be operationalized by connecting them to swarm knowledge via dedicated reflex tools, closing the learning loop.
+- Task duration predictions systematically underestimate actual effort (2.84s vs 0.28s for similar actions), necessitating a calibration multiplier.
+- Memory growth is bounded by pruning events (23 pruned) after each swarm convergence, preventing resource exhaustion.
+- Swarm knowledge updates converge reliably when driven by reflex tools that validate, update, and confirm in a single atomic cycle.
+- Free-tier models consistently hit 429 rate limits under load, requiring automatic circuit-breaker ejection and fallback to healthy alternatives.
 - Token and latency telemetry exists but is unused for routing; integrating these metrics into a cost-aware selector would optimize both speed and budge
 - Swarm-knowledge decay is a recurring maintenance burden; scheduled, automated refresh with validation checks reduces manual intervention.
 - Skill proposals accumulate faster than they are validated; a mandatory simulation gate would prevent untested code from entering the active repertoire
@@ -51,11 +56,6 @@
 - Hand actions fail when relative paths resolve incorrectly; absolute path resolution via ZOETRON_DATA must be enforced.
 - Dream/drive timeouts propagate to act layer causing RuntimeError, indicating need for timeout budgets per organ.
 - Model endpoints exhibit cascading failure modes (timeout → 404 → rate limit) requiring proactive health tracking and fast fallback.
-- High model latency (>80s) precedes timeout failures; latency SLOs should trigger proactive model rotation before hard timeouts.
-- Pruning retains success events too aggressively while failure events tagged 'model_error' need longer retention for pattern mining.
-- Relative path resolution in hand actions fails under sandbox constraints; all file ops must use absolute paths rooted in ZOETRON_DATA.
-- Skill proposals accumulate without a validation gate; a simulation bridge must vet them against historical failure signatures before deployment.
-- Model timeouts cascade into multi-organ failures because no circuit breaker isolates the failing model.
 
 ---
 
