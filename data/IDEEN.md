@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 18:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 18:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,7 +9,6 @@
 - Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 9×)*
 - Add convergence_guardrail that detects stalled optimization scores across 3+ cycles and triggers emergency evo *(hatte die Idee 6×)*
 - Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh  *(hatte die Idee 5×)*
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 4×)*
 - Add rate-limit awareness module detecting 429 responses, pausing requests to that model for configurable backo *(hatte die Idee 4×)*
 - Build critic output validator with fallback parser handling malformed responses, defaulting to safe revision s *(hatte die Idee 4×)*
 - Create FactDistiller post-pruning pass: cluster high-value events by error signature, extract reusable procedu *(hatte die Idee 4×)*
@@ -20,6 +19,7 @@
 - Persist circuit-breaker counters (success rate, p95 latency, error taxonomy) to disk so degradation memory sur *(hatte die Idee 4×)*
 - Add pre-execution path-resolution audit: log resolved absolute paths for every ZOETRON_DATA and argv[1] refere *(hatte die Idee 4×)*
 - Require AST-level implementation check at tool registration: reject any function body lacking at least one non *(hatte die Idee 4×)*
+- Schedule automatic swarm-goal freshness scan every 24h: flag goals older than 7 days with no recent hand_actio *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate faster than validation; a simulation-to-production gate is missing.
+- Event log bloat from repeated 429s obscures real anomalies; aggregation into 'degraded_period' facts restores signal.
+- Reflex-driven error-reduction loops converge fast but only address symptoms, not the upstream provider instability.
+- Latency variance across providers spans 4s–69s, making fixed timeouts unsafe for swarm coordination.
+- Rate-limiting (429) on free-tier models is the dominant failure mode, not model capability.
 - Stress signals (failure, stale, combination) cluster around model reliability and data freshness, indicating these are the two systemic bottlenecks li
 - Successful model calls (inclusionai/ling-3.0-flash-fin) show 3-4s latency with ~1.5k tokens, establishing a baseline for timeout budgets and token-cos
 - Stale swarm data triggers new drive goals despite recent prune runs, revealing that pruning removes volume but not staleness – freshness requires acti
@@ -51,11 +56,6 @@
 - Memory growth is bounded by pruning events (23 pruned) after each swarm convergence, preventing resource exhaustion.
 - Swarm knowledge updates converge reliably when driven by reflex tools that validate, update, and confirm in a single atomic cycle.
 - Free-tier models consistently hit 429 rate limits under load, requiring automatic circuit-breaker ejection and fallback to healthy alternatives.
-- Token and latency telemetry exists but is unused for routing; integrating these metrics into a cost-aware selector would optimize both speed and budge
-- Swarm-knowledge decay is a recurring maintenance burden; scheduled, automated refresh with validation checks reduces manual intervention.
-- Skill proposals accumulate faster than they are validated; a mandatory simulation gate would prevent untested code from entering the active repertoire
-- The current three-strike ban policy reacts too late; proactive latency/error-rate thresholds would eject degrading models before they poison task pipe
-- Free-tier LLM endpoints exhibit high churn (404/429), requiring continuous health scoring and automatic failover rather than static model lists.
 
 ---
 

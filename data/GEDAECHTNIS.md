@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11791 Fakten** · Stand 2026-09-09 18:31 UTC · aktualisiert bei jedem Herzschlag
+**11785 Fakten** · Stand 2026-09-09 18:42 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7357
-- **swarm_artifact:** 1966
+- **swarm_artifact:** 1960
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
 - **anti_pattern:** 457
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909183955:5:07373b`
+*09.09. 18:39 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than validation; a simulation-to-production gate is missing.
+
+### `dream:20260909183955:4:606bc4`
+*09.09. 18:39 UTC · Quelle: dream*
+
+Event log bloat from repeated 429s obscures real anomalies; aggregation into 'degraded_period' facts restores signal.
+
+### `dream:20260909183955:3:17ad0c`
+*09.09. 18:39 UTC · Quelle: dream*
+
+Reflex-driven error-reduction loops converge fast but only address symptoms, not the upstream provider instability.
+
+### `dream:20260909183955:2:dee56a`
+*09.09. 18:39 UTC · Quelle: dream*
+
+Latency variance across providers spans 4s–69s, making fixed timeouts unsafe for swarm coordination.
+
+### `dream:20260909183955:1:2274c6`
+*09.09. 18:39 UTC · Quelle: dream*
+
+Rate-limiting (429) on free-tier models is the dominant failure mode, not model capability.
 
 ### `dream:20260909182911:5:2cf9dc`
 *09.09. 18:29 UTC · Quelle: dream*
@@ -43970,31 +43995,6 @@ score=2; issues=RETRO-Organ-Umbau auf JSON-Array fehlt komplett (nur Verzeichnis
 *26.08. 18:32 UTC · Quelle: system*
 
 Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust
-
-### `dream:20260826183237:5:c8089a`
-*26.08. 18:32 UTC · Quelle: dream*
-
-Latency on successful Nemotron calls ranges 19–223s, making synchronous calls unsuitable for tight loops without async queuing.
-
-### `dream:20260826183237:4:a5bcf7`
-*26.08. 18:32 UTC · Quelle: dream*
-
-Hand actions show high variance (0 vs 14 lines read) suggesting fragile selectors or unstable target pages rather than code defects.
-
-### `dream:20260826183237:3:aa4cd2`
-*26.08. 18:32 UTC · Quelle: dream*
-
-The simulation→revision→apply loop (5 revisions) successfully converged on a working 12-line Python artifact that tripled fact yield per beat.
-
-### `dream:20260826183237:2:1f4f9b`
-*26.08. 18:32 UTC · Quelle: dream*
-
-Nvidia Nemotron models (both 3.5-lightning and 3-ultra) exhibit the highest reliability but suffer intermittent 502 upstream overloads from Nvidia.
-
-### `dream:20260826183237:1:bebcb6`
-*26.08. 18:32 UTC · Quelle: dream*
-
-OpenRouter free-tier rate limits (429) are the primary systemic bottleneck, affecting all models indiscriminately during burst usage.
 
 ### `last_swarm_critique`
 *26.08. 18:05 UTC · Quelle: critic*
