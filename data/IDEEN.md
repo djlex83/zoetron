@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 07:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 07:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge refresh is a stated drive goal but the simulation-revision loop (verdict=revise, risks=1) stalls without a simulation-gated deployment
+- System operates in conserve mode (stress=0.7, max_tasks=3) while critical reliability skills (rate-limit backoff, model router, calibration guard) rem
+- Execution pipeline breaks at hand_action due to path resolution failures (sys.argv[1] vs ZOETRON_DATA mismatch) and reflex tool 'träume-in-handlungen-
+- Rate-limit handling is absent: repeated 429 errors on gemma models show no exponential backoff, jitter, or per-model quota tracking before hammering e
+- Primary models (nemotron, gemma) fail systematically with 502/429 errors while only ling-3.0-flash-fin succeeds, revealing a missing model health-awar
 - Skill proposals accumulate (10+ this session) but none are validated; a calibration tracker logging predicted vs actual scores per goal would close th
 - Rate-limit errors (429) are predictable and schedulable; a rate-limit-aware scheduler staggering requests across providers would eliminate this failur
 - Swarm simulations converge at 2 cycles because of hard-coded limit, not quality threshold; minimum 4 cycles with score>=8 early-stop is needed for con
@@ -51,11 +56,6 @@
 - Swarm feedback cycles of only 2 iterations are insufficient for convergence, leaving valuable critique unprocessed and stale goals unresolved.
 - Skill proposals consistently outpace their actual implementation and testing, creating a persistent gap between suggested capabilities and working too
 - Model failures are a recurring systemic issue across multiple consolidation cycles, not isolated incidents, and require persistent reliability trackin
-- Pruning runs (15 facts/1 event, then 0 facts/21 events) show asymmetric memory pressure: fact accumulation vs event burst cleanup.
-- Static validation gates (syntax, imports, absolute paths, executable code blocks) consistently prevent downstream simulation failures.
-- Staleness signals (swarm knowledge, peer critiques) require scheduled automation with concrete triggers (24h age, 10% delta) not just intent.
-- Reflex-based skill validation (dream→proposal→reflex test→convergence) has succeeded twice, proving a reusable capability-growth loop.
-- Model reliability (73 errors vs 50 successes) drives cascading architectural investments in tiered routing, health tracking, and circuit breakers.
 
 ---
 

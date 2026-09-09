@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 07:23:39",
+ "stand": "2026-09-09 07:36:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,25 +33,19 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -88,6 +82,12 @@
   },
   {
    "tool": "träume-besser-nutzen-lernen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
