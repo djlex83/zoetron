@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11779 Fakten** · Stand 2026-09-09 20:09 UTC · aktualisiert bei jedem Herzschlag
+**11784 Fakten** · Stand 2026-09-09 20:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7372
+- **dream:** 7377
 - **swarm_artifact:** 1948
 - **last_swarm_critique:** 858
 - **last_swarm_goal:** 592
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909201729:5:e5bda0`
+*09.09. 20:17 UTC · Quelle: dream*
+
+Simulation revision loops (4 revisions) correlate with unverified assumptions about environment dependencies (missing Zoetron path).
+
+### `dream:20260909201729:4:6fafaf`
+*09.09. 20:17 UTC · Quelle: dream*
+
+Evolutionary swarm search recovered a 1/10 artifact to 10/10 in 2 cycles, proving iterative critique+revision outperforms single-pass generation.
+
+### `dream:20260909201729:3:e3cc64`
+*09.09. 20:17 UTC · Quelle: dream*
+
+Calibration error of 600% (predicted 7 vs actual 1) reveals the estimator ignores model latency variance and tool failure rates.
+
+### `dream:20260909201729:2:7428b2`
+*09.09. 20:17 UTC · Quelle: dream*
+
+Hand actions fail silently with exit=1 and zero bytes read, indicating missing stderr capture or path resolution errors in the sandbox.
+
+### `dream:20260909201729:1:1313f3`
+*09.09. 20:17 UTC · Quelle: dream*
+
+Model provider failures (502/429) cascade into task failure without automatic fallback, causing 200s+ latency spikes before recovery.
 
 ### `dream:20260909200622:5:2c8e52`
 *09.09. 20:06 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 20:07:02",
+ "stand": "2026-09-09 20:17:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
@@ -430,6 +430,12 @@
   },
   {
    "tool": "alte-daten-durch-neue-fakten-ersetzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
