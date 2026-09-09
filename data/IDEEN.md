@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 15:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 15:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation-revision-swarm pipeline achieved convergence in one cycle with a 407-line Python artifact, demonstrating that structured multi-role swa
+- Calibration for the "Träume und Simulationen" goal underestimated actual effort by 100% (predicted 4 vs actual 8), revealing systematic planning optim
+- The inclusionai/ling-3.0-flash-fin:free model delivers low latency (3-11s) and high token throughput, establishing it as the most reliable free-tier o
+- Google Gemma models consistently hit 429 rate limits, indicating strict quota enforcement that blocks repeated usage.
+- The Nvidia Nemotron model exhibits high latency (93-153s) and frequent 502 upstream overload errors, making it unreliable for time-sensitive tasks.
 - Dreams remain isolated episodes; linking them via shared failure signatures (e.g., 429, path, timeout) would enable meta-learning across cycles.
 - High stress (0.63) triggers conserve mode that caps iterations at 1, preventing multi-step recovery from transient failures.
 - Swarm knowledge and dream outputs become stale within days, yet no automated refresh pipeline re-validates them with healthy models.
@@ -51,11 +56,6 @@
 - Skills are proposed repeatedly (router, retry wrapper, syntax check, promotion pipeline) but never validated against historical failures before deploy
 - Aggressive pruning (50 events first run) discards the very failure patterns needed to train the router and validate skills, creating a blind spot for 
 - Model reliability is highly inconsistent: only inclusionai/ling-3.0-flash-fin consistently succeeds (4s latency) while Nemotron and Gemma models repea
-- Score prediction is unreliable across cycles, with MAE exceeding 1.5, meaning evolution lacks a calibrated feedback signal to guide variant selection.
-- Convergence via reflex mode is achievable but only after multiple failed evolution iterations, indicating the initial search strategy is inefficient.
-- Aggressive pruning of events and facts destroys the failure-context trail needed for root-cause analysis across evolution cycles.
-- Generated artifacts consistently fail sandbox execution because no pre-flight validation (syntax, type-checking, path existence) is performed before i
-- Model latency spikes and error rates are a systemic failure mode that cascades into sandbox timeouts and invalid outputs, requiring circuit-breaking a
 
 ---
 

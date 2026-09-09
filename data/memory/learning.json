@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 15:27:26",
+ "stand": "2026-09-09 15:55:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -30,12 +30,6 @@
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "simulationen-gezielt-einsetzen.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -135,6 +129,18 @@
    "quote": 0.0
   },
   {
+   "tool": "simulationen-gezielt-einsetzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "träume-und-simulationen-häufiger-anwende.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -211,18 +217,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "träume-und-simulationen-häufiger-anwende.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-dauerhaft-senken.py",
@@ -417,17 +411,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.725,
- "simulationen_angewandt": 27,
+ "haende_quote": 0.722,
+ "simulationen_angewandt": 28,
  "swarm_scores": {
-  "n": 28,
+  "n": 29,
   "best": 9.0,
-  "schnitt": 5.32
+  "schnitt": 5.41
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 26,
-   "schnitt": 5.08
+   "n": 27,
+   "schnitt": 5.19
   },
   "bau": {
    "n": 2,
