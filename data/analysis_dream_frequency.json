@@ -1,0 +1,39 @@
+{
+  "data_root": "/workspace/zoetron/data",
+  "fell_back": false,
+  "organs_found": [
+    "organs",
+    "organe"
+  ],
+  "taktung": {
+    "config": {},
+    "state": {},
+    "events": [],
+    "thresholds": {}
+  },
+  "dream": {
+    "config": {},
+    "state": {},
+    "events": [],
+    "triggers": {}
+  },
+  "time_series": {
+    "total_events": 0,
+    "dream_count": 0,
+    "simulation_count": 0,
+    "intervals": [],
+    "by_day": {},
+    "first_event": null,
+    "last_event": null
+  },
+  "interdependencies": {
+    "unknown": {
+      "avg_pre_30min": 116.81978396816373,
+      "avg_post_30min": 112.10119386014782,
+      "total_events": 38648
+    }
+  },
+  "diagnosis": [
+    "NO dream/simulation events found in logs - organs may not be triggering at all"
+  ]
+}

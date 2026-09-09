@@ -1,20 +1,55 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11831 Fakten** · Stand 2026-09-09 13:11 UTC · aktualisiert bei jedem Herzschlag
+**11834 Fakten** · Stand 2026-09-09 13:39 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7345
-- **swarm_artifact:** 1990
-- **last_swarm_critique:** 854
-- **last_swarm_goal:** 586
-- **anti_pattern:** 473
-- **strategy:** 238
-- **tool:** 177
-- **hand_result:** 115
+- **swarm_artifact:** 1994
+- **last_swarm_critique:** 855
+- **last_swarm_goal:** 587
+- **anti_pattern:** 471
+- **strategy:** 237
+- **tool:** 176
+- **hand_result:** 116
 - **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `last_swarm_critique`
+*09.09. 13:37 UTC · Quelle: critic*
+
+score=8; issues=Artifact 2 uses fragile regex-based source code modification to inject dream trigger logic into taktung organ - could break if organ structure changes; Hardcoded import paths in Artifact 2 (organe.traum, organs.dream) may not match actual organ
+
+### `last_swarm_goal`
+*09.09. 13:23 UTC · Quelle: system*
+
+Träume und Simulationen öfter nutzen
+
+### `dream:20260909132124:5:7aad48`
+*09.09. 13:21 UTC · Quelle: dream*
+
+Unbounded iteration budgets under high stress (>0.9) waste cycles on doomed multi-cycle convergence instead of forcing single-cycle completion.
+
+### `dream:20260909132124:4:d154fc`
+*09.09. 13:21 UTC · Quelle: dream*
+
+Path-resolution errors in hand_action cause silent failures because sys.argv[1] expansion against ZOETRON_DATA and permission checks are missing.
+
+### `dream:20260909132124:3:995aee`
+*09.09. 13:21 UTC · Quelle: dream*
+
+Swarm knowledge becomes stale (>7 days) and corrupts decisions because no automated staleness detection triggers critique re-runs with healthy models.
+
+### `dream:20260909132124:2:79e413`
+*09.09. 13:21 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution because no simulation-gated promotion pipeline validates them against historical failure cases before fact-store write.
+
+### `dream:20260909132124:1:56a7a5`
+*09.09. 13:21 UTC · Quelle: dream*
+
+Model failures (502/429) cascade into pipeline stalls because no automatic fallback chaining or circuit breakers exist to eject unhealthy models immediately.
 
 ### `dream:20260909130745:5:cae001`
 *09.09. 13:07 UTC · Quelle: dream*
@@ -44386,46 +44421,6 @@ Calibration error was 3 points (predicted 5, actual 2), showing the critic/simul
 *26.08. 13:20 UTC · Quelle: dream*
 
 The benchmark task failed (2/10) primarily because the artifact contained prose instead of an executable Python block, so convergence requires artifacts to be runnable code from the start.
-
-### `dream:20260826131552:5:fff3dd`
-*26.08. 13:15 UTC · Quelle: dream*
-
-Old dream insights are never revisited after later work completes — a post-task linkage step comparing new results against stored dream insights would close this loop.
-
-### `dream:20260826131552:4:2fe0bc`
-*26.08. 13:15 UTC · Quelle: dream*
-
-Under metabolism stress=1.0/conserve mode (max_tasks=3, max_iterations=1), long-latency calls like stealth/ox-alpha at 117–256s consume most of the iteration budget, so conserve mode should prefer fast models first.
-
-### `dream:20260826131552:3:8ce34d`
-*26.08. 13:15 UTC · Quelle: dream*
-
-Calibration is systematically overconfident: predicted risk 5 vs actual 2 (abs_error 3) suggests the simulation phase inflates risk estimates for well-scoped goals and should be recalibrated against logged outcomes.
-
-### `dream:20260826131552:2:b733e4`
-*26.08. 13:15 UTC · Quelle: dream*
-
-The convergence gate correctly rejected the benchmark artifact because prose-only output contained no executable Python block — every goal requiring code must explicitly demand a runnable Python block in its prompt template.
-
-### `dream:20260826131552:1:8eec4b`
-*26.08. 13:15 UTC · Quelle: dream*
-
-Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so the fallback chain must treat 429 as a 'back off and rotate' signal rather than an immediate retry on the same model.
-
-### `tool:fähigkeits-messlatte-bauen-capability-be`
-*26.08. 13:13 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Messlatte bauen (Capability-Benchmark)'. Datei: data/tools/fähigkeits-messlatte-bauen-capability-be.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeits-Messlatte bau:2`
-*26.08. 13:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score {'elegance': 9, 'feasibility': 5, 'impact': 8}): Kalibriertes Kompetenz-Raster mit adversarieller Validierung: Metrik über Kontra - Statt einzelner Prüfitems baue ein psychometrisch angelehntes Raster: Für jede Dimension (Recall,
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeits-Messlatte bau:1`
-*26.08. 13:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score {'elegance': 6, 'feasibility': 6, 'impact': 9}): Verhaltensbasierte Benchmarking-Suiten: Capability-Proben statt Textprüfung - Definiere die Messlatte als Suite von ausführbaren Mini-Aufgaben (Capability Probes), die tatsächliche
 
 ### `last_swarm_critique`
 *26.08. 13:11 UTC · Quelle: critic*
