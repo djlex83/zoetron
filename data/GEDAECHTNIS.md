@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11784 Fakten** · Stand 2026-09-09 20:20 UTC · aktualisiert bei jedem Herzschlag
+**11782 Fakten** · Stand 2026-09-09 20:30 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7377
-- **swarm_artifact:** 1948
+- **swarm_artifact:** 1946
 - **last_swarm_critique:** 858
 - **last_swarm_goal:** 592
 - **anti_pattern:** 451
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909202818:5:1e79da`
+*09.09. 20:28 UTC · Quelle: dream*
+
+Repeated skill proposals for ModelRouter, circuit-breakers, and latency budgets across sessions reveal an unaddressed systemic model-reliability gap.
+
+### `dream:20260909202818:4:001e6d`
+*09.09. 20:28 UTC · Quelle: dream*
+
+Reflex-based dream-to-skill conversion succeeds (converged=true) where swarm planning fails, showing tactical tools outperform strategic planning for concrete transformations.
+
+### `dream:20260909202818:3:65df50`
+*09.09. 20:28 UTC · Quelle: dream*
+
+Swarm converges prematurely at 2 cycles with score 1/10, suggesting insufficient iteration budget or flawed early-stopping criteria.
+
+### `dream:20260909202818:2:b365f1`
+*09.09. 20:28 UTC · Quelle: dream*
+
+Sandbox execution fails on generated artifacts despite high variant scores (9-10), indicating a code-generation vs. runtime validation gap.
+
+### `dream:20260909202818:1:2a0bff`
+*09.09. 20:28 UTC · Quelle: dream*
+
+Model unreliability (50% failure rate, 54s latency spikes) directly causes pipeline build failures and swarm non-convergence.
 
 ### `dream:20260909201729:5:e5bda0`
 *09.09. 20:17 UTC · Quelle: dream*
@@ -43950,31 +43975,6 @@ score=4; issues=benchmark.py uses different embedding model (paraphrase-multilin
 *26.08. 20:22 UTC · Quelle: system*
 
 Embedding-Recall statt reinem Wortvergleich
-
-### `dream:20260826202215:5:7d7f44`
-*26.08. 20:22 UTC · Quelle: dream*
-
-Memory pruning yielded zero facts and events, suggesting the pruning criteria are too strict or the memory is already minimal; the pruning mechanism should be recalibrated to avoid unbounded growth.
-
-### `dream:20260826202215:4:ae9b43`
-*26.08. 20:22 UTC · Quelle: dream*
-
-Skill proposals are generated but rarely implemented, creating a bottleneck between idea and execution; a dedicated proposal-to-skill pipeline with automated testing is needed.
-
-### `dream:20260826202215:3:208f60`
-*26.08. 20:22 UTC · Quelle: dream*
-
-The system's goal-generation mechanism is self-referential, leading to repetitive internal focus; injecting external goals periodically is essential to break the loop.
-
-### `dream:20260826202215:2:5f6f5c`
-*26.08. 20:22 UTC · Quelle: dream*
-
-The primary working model "nvidia/nemotron-3-ultra-550b-a55b:free" exhibits high latency (40-70s), necessitating a latency-aware routing strategy to maintain responsiveness.
-
-### `dream:20260826202215:1:dc9ba1`
-*26.08. 20:22 UTC · Quelle: dream*
-
-The model "z-ai/glm-5.2:free" consistently fails with HTTP 429 errors, indicating it is rate-limited and should be blacklisted after consecutive failures.
 
 ### `last_swarm_critique`
 *26.08. 20:01 UTC · Quelle: critic*

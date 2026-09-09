@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8237 Neuronen · 921924 bewertete Synapsen
+Stand: 8239 Neuronen · 921701 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,16 +10,16 @@ Stand: 8237 Neuronen · 921924 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1062 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1062 | 0.23 |
-| 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 862 | 0.26 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1061 | 0.24 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1063 | 0.23 |
+| 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 860 | 0.26 |
 | 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 889 | 0.25 |
-| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 900 | 0.23 |
+| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 899 | 0.23 |
 | 6 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 812 | 0.26 |
 | 7 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 826 | 0.25 |
 | 8 | 💭 | Repeated 429 errors across four different models indicate system… | 834 | 0.24 |
-| 9 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 802 | 0.25 |
-| 10 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 881 | 0.23 |
+| 9 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 881 | 0.23 |
+| 10 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 801 | 0.25 |
 | 11 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 778 | 0.25 |
 | 12 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 855 | 0.23 |
 | 13 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 809 | 0.24 |

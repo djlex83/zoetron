@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 20:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 20:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,8 +31,8 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated skill proposals for ModelRouter, circuit-breakers, and latency budgets across sessions reveal an unaddressed systemic model-reliability gap.
+- Reflex-based dream-to-skill conversion succeeds (converged=true) where swarm planning fails, showing tactical tools outperform strategic planning for 
+- Swarm converges prematurely at 2 cycles with score 1/10, suggesting insufficient iteration budget or flawed early-stopping criteria.
+- Sandbox execution fails on generated artifacts despite high variant scores (9-10), indicating a code-generation vs. runtime validation gap.
+- Model unreliability (50% failure rate, 54s latency spikes) directly causes pipeline build failures and swarm non-convergence.
 - Simulation revision loops (4 revisions) correlate with unverified assumptions about environment dependencies (missing Zoetron path).
 - Evolutionary swarm search recovered a 1/10 artifact to 10/10 in 2 cycles, proving iterative critique+revision outperforms single-pass generation.
 - Calibration error of 600% (predicted 7 vs actual 1) reveals the estimator ignores model latency variance and tool failure rates.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without validation because the system lacks a closed-loop mechanism that tests each implemented skill against its originati
 - Hand actions repeatedly fail with "Kein Zoetron-Pfad gefunden" and "nichts gelesen" because path resolution relies on fragile relative paths and unval
 - Primary model endpoint (Nemotron) fails with 502 overload errors and extreme latency variance (19-207s), causing cascading task failures when no autom
-- Pruning removes 12 facts and 21 events per cycle yet stale knowledge signals persist, suggesting pruning targets symptoms not root causes of knowledge
-- Reflex execution succeeds for swarm knowledge refresh but subsequent hand actions fail, revealing a gap between reflex-level automation and deliberate
-- Drive goals recur identically across cycles (reduce model errors, refresh swarm knowledge, execute more actions), proving that proposed skills are not
-- Hand actions fail due to path resolution confusion between sys.argv[1], ZOETRON_DATA, and relative paths, indicating missing path canonicalization log
-- Model endpoint reliability is the primary systemic failure mode, with cascading 502 overloads and 429 rate limits across multiple providers causing de
 
 ---
 
