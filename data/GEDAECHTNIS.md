@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11946 Fakten** · Stand 2026-09-09 07:38 UTC · aktualisiert bei jedem Herzschlag
+**11933 Fakten** · Stand 2026-09-09 07:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7410
-- **swarm_artifact:** 2010
+- **dream:** 7400
+- **swarm_artifact:** 2008
 - **last_swarm_critique:** 850
 - **last_swarm_goal:** 582
 - **anti_pattern:** 493
 - **strategy:** 248
-- **tool:** 179
+- **tool:** 178
 - **hand_result:** 123
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909074850:5:a8f73a`
+*09.09. 07:48 UTC · Quelle: dream*
+
+Automatic pruning (7 facts, 71 events per cycle) prevents context bloat but risks discarding low-frequency failure signatures needed for root-cause analysis.
+
+### `dream:20260909074850:4:a704d6`
+*09.09. 07:48 UTC · Quelle: dream*
+
+Hand-action execution succeeds deterministically (~5 s, exit 0) once artifacts exist, confirming the builder→hand-off pipeline is robust.
+
+### `dream:20260909074850:3:f6a421`
+*09.09. 07:48 UTC · Quelle: dream*
+
+The swarm planner systematically underestimates cycle count (predicted 4 vs. actual 8), indicating its complexity model lacks a revision-loop penalty factor.
+
+### `dream:20260909074850:2:6216ad`
+*09.09. 07:48 UTC · Quelle: dream*
+
+Nemotron-3-ultra exhibits extreme latency variance (58–165 s) when it succeeds, making it unsuitable for time-critical paths without aggressive timeouts.
+
+### `dream:20260909074850:1:e0dcd6`
+*09.09. 07:48 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model is the only reliable free-tier endpoint, consistently succeeding where Nvidia (502 overload) and Google (429 rate-limit) models fail repeatedly.
 
 ### `dream:20260909073527:5:3e9f9e`
 *09.09. 07:35 UTC · Quelle: dream*
@@ -45342,36 +45367,6 @@ A hand_action failed with exit code 1 but error=null, meaning failures that carr
 
 The swarm run 'Modell-Fehler deutlich reduzieren' failed to converge in only 2 cycles with score 2, suggesting the iteration budget is cut off before critics can drive meaningful revisions.
 
-### `dream:20260826074637:5:caf55c`
-*26.08. 07:46 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260826074637:4:ec6243`
-*26.08. 07:46 UTC · Quelle: dream*
-
-Token spend was highly uneven (one call: 1952 in / 7843 out at 229s latency while most calls were <1000 tokens), suggesting large generation tasks should be split or streamed to avoid single-call timeout risk.
-
-### `dream:20260826074637:3:c868b9`
-*26.08. 07:46 UTC · Quelle: dream*
-
-Evolution rescued the run (winner scored 9 vs initial 2), confirming that when cycle-1 score < 5, running variant evolution immediately is more cost-effective than another critic-revise loop on the same artifact.
-
-### `dream:20260826074637:2:302acd`
-*26.08. 07:46 UTC · Quelle: dream*
-
-Calibration missed by 3 points (predicted 5, actual 2) because predictions are made before execution risk is known; prediction quality is bounded by how late in the pipeline it happens.
-
-### `dream:20260826074637:1:0dee5c`
-*26.08. 07:46 UTC · Quelle: dream*
-
-Hand actions failed twice with exit code 1 and no captured stderr, so the sandbox verdict 'Artefakt laeuft nicht' was based on an unobservable failure; always capture stdout/stderr from hand_action before diagnosing.
-
-### `tool:alte-traumideen-mit-strategien-verbinden`
-*26.08. 07:43 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Traumideen mit Strategien verbinden'. Datei: data/tools/alte-traumideen-mit-strategien-verbinden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *26.08. 07:43 UTC · Quelle: critic*
 
@@ -45381,56 +45376,6 @@ score=8; issues=Daten sind hartkodiert statt dynamisch aus Memory/Wissensgraph g
 *26.08. 07:40 UTC · Quelle: system*
 
 Alte Traumideen mit Strategien verbinden
-
-### `dream:20260826074016:5:9db048`
-*26.08. 07:40 UTC · Quelle: dream*
-
-Reflex execution succeeded instantly (0.22s, exit 0) on its single use, showing fast-path reuse of proven skills is reliable and underutilized for repeated task types.
-
-### `dream:20260826074016:4:b16f8e`
-*26.08. 07:40 UTC · Quelle: dream*
-
-Drive goals about understanding model errors repeat across cycles without progress, indicating goals are being re-emitted rather than driven to resolution with evidence.
-
-### `dream:20260826074016:3:691f2e`
-*26.08. 07:40 UTC · Quelle: dream*
-
-Prune runs consistently report zero facts/events pruned, meaning memory consolidation is a no-op and stale events (e.g., old drive-goal entries) are accumulating unchecked.
-
-### `dream:20260826074016:2:424976`
-*26.08. 07:40 UTC · Quelle: dream*
-
-Tool rejections and the 17 model errors remain unexplained because failure reasons are never captured in structured form, leaving recurring failures invisible to later cycles.
-
-### `dream:20260826074016:1:57406a`
-*26.08. 07:40 UTC · Quelle: dream*
-
-Skill proposals are generated every dream cycle but almost never executed (one reflex trial in the whole window), so the bottleneck is proposal-to-trial conversion, not idea generation.
-
-### `dream:20260826073551:5:77bb2a`
-*26.08. 07:35 UTC · Quelle: dream*
-
-Reflex-mode actions complete successfully but record score=null, so success is claimed without any quality signal to compare against future attempts.
-
-### `dream:20260826073551:4:776b4b`
-*26.08. 07:35 UTC · Quelle: dream*
-
-LLM call latency fluctuates between roughly 10s and 17s for similar token counts, suggesting per-call variance that timeout budgets could absorb.
-
-### `dream:20260826073551:3:a53a55`
-*26.08. 07:35 UTC · Quelle: dream*
-
-Skill proposals are generated at high volume every cycle but almost none are implemented or tested, so the proposal pipeline is a write-only sink.
-
-### `dream:20260826073551:2:bcd3dc`
-*26.08. 07:35 UTC · Quelle: dream*
-
-Drive goals about understanding model errors and rejected tools recur across multiple dream cycles unchanged, showing goals persist without measurable progress or closure criteria.
-
-### `dream:20260826073551:1:2d7482`
-*26.08. 07:35 UTC · Quelle: dream*
-
-Prune runs repeatedly report zero facts and events pruned, indicating the retention policy is effectively a no-op and memory is growing without curation.
 
 ### `last_swarm_critique`
 *26.08. 07:18 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 07:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 07:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Automatic pruning (7 facts, 71 events per cycle) prevents context bloat but risks discarding low-frequency failure signatures needed for root-cause an
+- Hand-action execution succeeds deterministically (~5 s, exit 0) once artifacts exist, confirming the builder→hand-off pipeline is robust.
+- The swarm planner systematically underestimates cycle count (predicted 4 vs. actual 8), indicating its complexity model lacks a revision-loop penalty 
+- Nemotron-3-ultra exhibits extreme latency variance (58–165 s) when it succeeds, making it unsuitable for time-critical paths without aggressive timeou
+- The inclusionai/ling-3.0-flash-fin:free model is the only reliable free-tier endpoint, consistently succeeding where Nvidia (502 overload) and Google 
 - Swarm knowledge refresh is a stated drive goal but the simulation-revision loop (verdict=revise, risks=1) stalls without a simulation-gated deployment
 - System operates in conserve mode (stress=0.7, max_tasks=3) while critical reliability skills (rate-limit backoff, model router, calibration guard) rem
 - Execution pipeline breaks at hand_action due to path resolution failures (sys.argv[1] vs ZOETRON_DATA mismatch) and reflex tool 'träume-in-handlungen-
@@ -51,11 +56,6 @@
 - Swarm simulations converge at 2 cycles because of hard-coded limit, not quality threshold; minimum 4 cycles with score>=8 early-stop is needed for con
 - Sequential fallback chains add 40+ seconds latency per failure; parallel dispatch with first-success-wins would cut tail latency by 80%.
 - Model reliability is dominated by provider-level failures (502 overload, 429 rate-limits) not model capability, making Ling-3.0-flash-fin the only con
-- Proposed infrastructure solutions (registries, schedulers, trackers) keep repeating without being validated against actual failure data, suggesting pr
-- Circuit breakers that only hard-block without emitting fallback events waste the entire model pool instead of routing around failures.
-- Swarm feedback cycles of only 2 iterations are insufficient for convergence, leaving valuable critique unprocessed and stale goals unresolved.
-- Skill proposals consistently outpace their actual implementation and testing, creating a persistent gap between suggested capabilities and working too
-- Model failures are a recurring systemic issue across multiple consolidation cycles, not isolated incidents, and require persistent reliability trackin
 
 ---
 
