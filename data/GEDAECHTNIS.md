@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12029 Fakten** · Stand 2026-09-09 02:37 UTC · aktualisiert bei jedem Herzschlag
+**12030 Fakten** · Stand 2026-09-09 02:53 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7441
 - **swarm_artifact:** 2040
-- **last_swarm_critique:** 845
-- **last_swarm_goal:** 577
+- **last_swarm_critique:** 846
+- **last_swarm_goal:** 578
 - **anti_pattern:** 509
 - **strategy:** 256
 - **tool:** 181
-- **hand_result:** 129
+- **hand_result:** 128
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Skills wi:2`
+*09.09. 02:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [5, 3, 6]): DAG-based Workflow Engine with Checkpointing - Build a workflow engine where skills are nodes in a directed acyclic graph. Each node defines: inputs (with defaults), outputs, retry policy, timeout, and idempotency key
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Skills wi:1`
+*09.09. 02:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 4, 5]): Jupyter Kernel Skill Runner - Implement a custom Jupyter kernel that treats each cell as a skill invocation. Skills are registered as kernel magics (%%skill_name). The kernel maintains a persistent namespace across ce
+
+### `last_swarm_critique`
+*09.09. 02:49 UTC · Quelle: critic*
+
+score=1; issues=Kein lauffaehiger Python-Block im Artefakt vorhanden - nur Bash-Commands und Prosa; Sandbox-Urteil bestaetigt: LAEUFT NICHT - Prosa allein konvergiert nicht; Das Ziel 'Vorgeschlagene Skills wirklich ausfuehren' kann ohne Python-Ausfuehrung nich
+
+### `last_swarm_goal`
+*09.09. 02:46 UTC · Quelle: system*
+
+Vorgeschlagene Skills wirklich ausführen
+
+### `dream:20260909024518:5:15da35`
+*09.09. 02:45 UTC · Quelle: dream*
+
+Rate-limit and overload errors recur across multiple models and timestamps, confirming these are structural endpoint failures rather than transient blips.
+
+### `dream:20260909024518:4:118971`
+*09.09. 02:45 UTC · Quelle: dream*
+
+Hand action fails silently (exit: 1, ok: false) likely due to unresolvable relative paths, pointing to a missing path-validation gate before execution.
+
+### `dream:20260909024518:3:70575c`
+*09.09. 02:45 UTC · Quelle: dream*
+
+Swarm runs fail to converge (converged: false, score: 1) within 2 cycles, suggesting role allocation or termination criteria are misaligned with task complexity.
+
+### `dream:20260909024518:2:99e5c2`
+*09.09. 02:45 UTC · Quelle: dream*
+
+Simulation produces revisions at high volume (5 proposed) but execution applies only a fraction (2 of 5), indicating a simulation-to-action gap that wastes consolidated knowledge.
+
+### `dream:20260909024518:1:316cbb`
+*09.09. 02:45 UTC · Quelle: dream*
+
+Free-tier model endpoints are systematically unreliable: NVIDIA returns 502 upstream overloads, Google Gemma returns 429 rate limits, while only inclusionai/ling-3.0-flash-fin completes consistently with sub-5s latency.
 
 ### `dream:20260909023417:5:cb15e5`
 *09.09. 02:34 UTC · Quelle: dream*
@@ -45752,16 +45797,6 @@ The swarm completed with score 1 but converged=false after only 2 cycles, showin
 
 429 rate-limit errors cluster on the same free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) at nearly identical timestamps, indicating shared quota exhaustion rather than model-specific faults, while nvidia/nemotron-3-ultra serves as a reliable same-cycle
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:2`
-*26.08. 02:43 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.3): Testgetriebene Absicherung: erst lauffähiger Kern, dann Features - Umkehrung des bisherigen Vorgehens: Zuerst wird ein absolut minimaler, trivial korrekter Kern geschrieben (eine Klasse Organismus mit Attribut wissen = list
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:0`
-*26.08. 02:43 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5.7): Robuster Single-File-Runner mit minimaler Syntax (keine f-Strings) - Schreibe die gesamte Implementierung als EINE Python-Datei, in der bewusst KEINE f-Strings, keine verschachtelten Quotes und keine mehrzeiligen Ausdrücke 
-
 ### `last_swarm_critique`
 *26.08. 02:42 UTC · Quelle: critic*
 
@@ -45771,31 +45806,6 @@ score=1; issues=Artefakt laeuft nicht: Syntaxfehler im f-String (Zeile 188, erst
 *26.08. 02:34 UTC · Quelle: system*
 
 Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen
-
-### `dream:20260826023411:5:72a491`
-*26.08. 02:34 UTC · Quelle: dream*
-
-Score fields are frequently null on completed acts, making it impossible to evaluate whether goals genuinely succeeded versus merely terminated.
-
-### `dream:20260826023411:4:faf5fd`
-*26.08. 02:34 UTC · Quelle: dream*
-
-Repeated prune runs report 0 facts/events pruned while memory keeps growing, indicating the pruning criteria are too conservative to actually bound memory.
-
-### `dream:20260826023411:3:6ebce5`
-*26.08. 02:34 UTC · Quelle: dream*
-
-Reflex-mode actions converge reliably and cheaply (0.2s hand_actions, converged=true), while deliberative model calls cost 8-17s, so routing well-known tasks through reflexes is the efficient path.
-
-### `dream:20260826023411:2:5e5b89`
-*26.08. 02:34 UTC · Quelle: dream*
-
-The system's own drive goals already identify the two core failure modes — untested proposals and unexplained model errors — meaning self-generated goals are correctly diagnosing problems but not yet driving execution.
-
-### `dream:20260826023411:1:b2c01b`
-*26.08. 02:34 UTC · Quelle: dream*
-
-Skill proposals are accumulating far faster than they are being tested (5+ new proposals per cycle vs. near-zero trials), so proposal generation without a testing pipeline produces no learning.
 
 ### `last_swarm_critique`
 *26.08. 02:17 UTC · Quelle: critic*
