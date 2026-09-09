@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12024 Fakten** · Stand 2026-09-09 03:14 UTC · aktualisiert bei jedem Herzschlag
+**12029 Fakten** · Stand 2026-09-09 03:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7435
+- **dream:** 7440
 - **swarm_artifact:** 2040
 - **last_swarm_critique:** 846
 - **last_swarm_goal:** 578
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909032310:5:9c6d85`
+*09.09. 03:23 UTC · Quelle: dream*
+
+Conserve mode starves iteration budgets: stress-aware scaling reduces predicted iterations below viable minimum (3), causing premature convergence on suboptimal plans.
+
+### `dream:20260909032310:4:57f621`
+*09.09. 03:23 UTC · Quelle: dream*
+
+Path resolution failures cascade silently: hand-action scripts succeed (exit 0) but read wrong data when ZOETRON_DATA/CWD/sys.argv[1] diverge, corrupting downstream decisions.
+
+### `dream:20260909032310:3:159609`
+*09.09. 03:23 UTC · Quelle: dream*
+
+Swarm knowledge decays faster than goals refresh: 'stale' signals repeat across cycles without automated audit, causing obsolete critiques to block new capabilities.
+
+### `dream:20260909032310:2:ea8fd5`
+*09.09. 03:23 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a mandatory promotion gate: 5 proposals generated, only 1 reflex actually tests them, leaving most unvalidated in production.
+
+### `dream:20260909032310:1:12b7e4`
+*09.09. 03:23 UTC · Quelle: dream*
+
+Model reliability degrades silently: 502/429 errors and latency spikes (18-65s) correlate with failed skill executions, yet no circuit-breaker triggers automatic fallback.
 
 ### `dream:20260909031202:5:a3b051`
 *09.09. 03:12 UTC · Quelle: dream*

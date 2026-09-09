@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 03:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 03:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Conserve mode starves iteration budgets: stress-aware scaling reduces predicted iterations below viable minimum (3), causing premature convergence on 
+- Path resolution failures cascade silently: hand-action scripts succeed (exit 0) but read wrong data when ZOETRON_DATA/CWD/sys.argv[1] diverge, corrupt
+- Swarm knowledge decays faster than goals refresh: 'stale' signals repeat across cycles without automated audit, causing obsolete critiques to block ne
+- Skill proposals accumulate but lack a mandatory promotion gate: 5 proposals generated, only 1 reflex actually tests them, leaving most unvalidated in 
+- Model reliability degrades silently: 502/429 errors and latency spikes (18-65s) correlate with failed skill executions, yet no circuit-breaker trigger
 - Confidence scores drift without calibration - predicted vs actual scores per goal-type are untracked, making convergence signals unreliable.
 - Builder artifacts reach critics without executable validation, wasting critic cycles on syntax/import errors that a sandbox smoke-test would catch ins
 - Simulation revisions accumulate (5 revisions in one case) but rarely translate into applied changes, creating a persistent simulation-to-action gap.
@@ -51,11 +56,6 @@
 - Swarm runs fail to converge (converged: false, score: 1) within 2 cycles, suggesting role allocation or termination criteria are misaligned with task 
 - Simulation produces revisions at high volume (5 proposed) but execution applies only a fraction (2 of 5), indicating a simulation-to-action gap that w
 - Free-tier model endpoints are systematically unreliable: NVIDIA returns 502 upstream overloads, Google Gemma returns 429 rate limits, while only inclu
-- Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds consistently at 4s latency but is only used reactively after failures.
-- Calibration is severely misaligned (predicted 7 vs actual 1), causing the system to pursue doomed strategies.
-- Hand actions consistently fail with exit code 1 and zero output, indicating systemic code execution environment breakage.
-- Backup models (gemma-4 variants) hit 429 rate limits immediately after primary failures, leaving no viable fallback.
-- Primary model (nemotron-3-ultra) suffers frequent 502 overload errors making it unreliable for critical paths.
 
 ---
 

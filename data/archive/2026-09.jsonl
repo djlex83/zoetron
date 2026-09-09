@@ -28763,3 +28763,22 @@
 {"ts": 1788318595.802679, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.26, "gelesen": 1}}
 {"ts": 1788318595.8045008, "kind": "reflex_used", "payload": {"goal": "Altes Wissen mit neuem verbinden", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
 {"ts": 1788318596.2926848, "kind": "act_done", "payload": {"goal_title": "Altes Wissen mit neuem verbinden", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788318907.8429534, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788319001.9778173, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788319003.4871762, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788319007.4363694, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788319007.4363663, "schalter_geoeffnet": false}}
+{"ts": 1788319022.799444, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 15.4, "tokens_ein": 1421, "tokens_aus": 785}}
+{"ts": 1788319022.799957, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoints exceeding 5 % error or 30 s p95."}}
+{"ts": 1788319022.8000093, "kind": "skill_proposal", "payload": {"proposal": "Wrap every LLM call in a circuit breaker (trip after 3 consecutive failures, 60 s cooldown) with a 2-retry, 10 s total timeout budget before failover."}}
+{"ts": 1788319022.8000588, "kind": "skill_proposal", "payload": {"proposal": "Add a background job that scans goals older than 7 days with no progress and either archives them or spawns a completion reflex."}}
+{"ts": 1788319022.8001082, "kind": "skill_proposal", "payload": {"proposal": "Create a proposal-to-goal converter that promotes any skill_proposal tagged \"high-impact\" into a drive_goal with an owner reflex and 48 h deadline."}}
+{"ts": 1788319022.8001566, "kind": "skill_proposal", "payload": {"proposal": "Emit structured telemetry (model, latency_ms, error_code, tokens_in, tokens_out, timestamp) to a rotating log for offline SLA analysis."}}
+{"ts": 1788319022.8002195, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788319028.3248246, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 3.7, "tokens_ein": 458, "tokens_aus": 707}}
+{"ts": 1788319028.3250382, "kind": "drive_goal", "payload": {"title": "Vorhersagefehler erkennen und beheben", "why": "Das System macht noch zu viele Fehler bei seinen Berechnungen. Wenn wir diese Fehler beheben, arbeitet es zuverlässiger.", "signal": "failure"}}
+{"ts": 1788319028.3251162, "kind": "drive_goal", "payload": {"title": "Alte Marktanalysen aktualisieren", "why": "Die gesammelten Informationen über den Markt sind veraltet. Wir brauchen aktuelle Daten, um gute Entscheidungen zu treffen.", "signal": "stale"}}
+{"ts": 1788319028.3251784, "kind": "drive_goal", "payload": {"title": "Neue Fähigkeiten sinnvoll auswählen", "why": "Es gibt sehr viele Vorschläge für neue Fähigkeiten. Wir sollten nur die besten auswählen und testen, um nicht überfordert zu sein.", "signal": "combination"}}
+{"ts": 1788319031.1900177, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.32, "gelesen": 6}}
+{"ts": 1788319031.1917205, "kind": "reflex_used", "payload": {"goal": "Regelmäßige Selbstkritik und Zielsetzung", "tool": "regelmäßige-selbstprüfung-etablieren.py", "ok": true}}
+{"ts": 1788319031.6235836, "kind": "act_done", "payload": {"goal_title": "Regelmäßige Selbstkritik und Zielsetzung", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788319344.4086485, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
