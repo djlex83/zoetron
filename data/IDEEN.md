@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 22:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 23:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Knowledge pruning risks erasing cross-cutting patterns if it does not distinguish between ephemeral events and durable causal lessons.
+- The gap between generating proposals and executing them is the system's primary performance bottleneck, exceeding model accuracy or latency concerns.
+- Reflex-driven resolution converges faster than goal-driven re-planning for known failure modes, establishing a clear response hierarchy.
+- Swarm learning tasks cannot reliably converge within 2 cycles; premature verdicts produce false negatives on collective intelligence goals.
+- Upstream service errors (502/429) are systemic rather than transient, requiring architectural fallback chains instead of simple retry logic.
 - Evolution produced high score variance (5, 9, 7) without reliable upward trajectory, suggesting mutation/crossover operators are not preserving or rel
 - Token output-to-input ratios exceeding 2:1 on multiple model calls indicate verbose, budget-inefficient responses that waste the strict iteration budg
 - Swarm failed to converge after 2 cycles with critic feedback limited to 'Only the audit', proving that a single-dimension critic role is insufficient 
@@ -51,11 +56,6 @@
 - Stale swarm knowledge actively degrades decision quality, meaning knowledge bases require scheduled refresh cycles rather than passive storage to rema
 - The gap between skill proposals and deployed skills is the primary throughput bottleneck, as ideas accumulate without an execution pipeline to convert
 - Model failures are systemic rather than isolated, requiring circuit-breakers and fallback chains instead of simple retries to achieve reliable inferen
-- Nemotron-3-ultra calls succeed but exhibit high latency variance (15-21s), making it unsuitable for latency-critical paths.
-- Pruning removed 111 events but only 15 facts, suggesting event-level noise dominates memory bloat.
-- Swarm terminated after only 2 cycles with score 1 despite simulation flagging 5 risks and applying 5 revisions – convergence gate fired prematurely.
-- Evolutionary search jumped solution quality from 1/10 to 7-8/10 in a single generation, proving the mutation/crossover operators work.
-- Google Gemma models consistently fail with 429 rate-limit errors while inclusionai/ling-3.0-flash-fin succeeds reliably.
 
 ---
 

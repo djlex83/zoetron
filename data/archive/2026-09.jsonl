@@ -32217,3 +32217,27 @@
 {"ts": 1788389085.9979854, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.04, "gelesen": 17}}
 {"ts": 1788389085.9994168, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py", "ok": true}}
 {"ts": 1788389086.3506668, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787784952.593049, "key": "dream:20260826225552:1:71d26a", "value": "Free-tier models on OpenRouter suffer systematic 429 rate limits requiring aggressive retry-with-fallback strategies rather than single-model reliance.", "source": "dream"}
+{"ts": 1787784952.5931306, "key": "dream:20260826225552:2:f426a1", "value": "Simulation-driven revision (4 risks caught, 3 revisions proposed, 2 applied) prevented deployment of flawed artifacts and is a high-leverage quality gate.", "source": "dream"}
+{"ts": 1787784952.5932, "key": "dream:20260826225552:3:7207b4", "value": "Model latency variance is extreme (5s to 107s) demanding per-model timeout budgets and async orchestration instead of global timeouts.", "source": "dream"}
+{"ts": 1787784952.5932708, "key": "dream:20260826225552:4:c44dac", "value": "Hand actions failed twice before succeeding, revealing missing idempotency and success-criteria validation in tool execution.", "source": "dream"}
+{"ts": 1787784952.5933607, "key": "dream:20260826225552:5:de4b24", "value": "Best-of-N with verifier converts test-time compute into quality but multiplies API calls, amplifying rate-limit exposure proportionally to N.", "source": "dream"}
+{"ts": 1788389448.4292657, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788389517.5567343, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788389519.1304967, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788389523.2239938, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788389523.2239912, "schalter_geoeffnet": false}}
+{"ts": 1788389534.0806794, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 10.9, "tokens_ein": 1357, "tokens_aus": 914}}
+{"ts": 1788389534.0813508, "kind": "skill_proposal", "payload": {"proposal": "Implement a provider-aware router that tracks per-model 429/502 rates and latency, then prefers healthy models with exponential backoff on 429."}}
+{"ts": 1788389534.081438, "kind": "skill_proposal", "payload": {"proposal": "Build a skill compiler that takes a proposal JSON, writes a tested Python module under skills/, and registers it atomically."}}
+{"ts": 1788389534.081524, "kind": "skill_proposal", "payload": {"proposal": "Add a path resolver middleware that expands any relative path using $ZOETRON_DATA before handing to filesystem tools."}}
+{"ts": 1788389534.0816422, "kind": "skill_proposal", "payload": {"proposal": "Create a metabolic governor that auto-throttles outbound model calls when stress > 0.8 and prioritizes skill-building tasks."}}
+{"ts": 1788389534.081731, "kind": "skill_proposal", "payload": {"proposal": "Implement exponential backoff with jitter (base 2s, max 60s) specifically for 429 errors before circuit-breaker activation."}}
+{"ts": 1788389534.081828, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788389537.0701675, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788389537.0701644, "schalter_geoeffnet": false}}
+{"ts": 1788389576.522669, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 39.5, "tokens_ein": 520, "tokens_aus": 343}}
+{"ts": 1788389576.5228424, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell macht noch mehr Fehler als Erfolge. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788389576.5229213, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich fertig bauen", "why": "Es gibt viele Ideen für neue Fähigkeiten, aber wenige werden zu Ende gebracht. Fertige Fähigkeiten erweitern den Handlungsspielraum.", "signal": "gap"}}
+{"ts": 1788389576.5229921, "kind": "drive_goal", "payload": {"title": "Liegende Marktanalysen zu Ende bringen", "why": "Drei Analyse-Schritte sind unvollendet geblieben. Abschließen schafft Klarheit für künftige Entscheidungen.", "signal": "stale"}}
+{"ts": 1788389579.2168252, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.34, "gelesen": 59}}
+{"ts": 1788389579.218254, "kind": "reflex_used", "payload": {"goal": "Marktanalyse-Ergebnisse endlich umsetzen", "tool": "marktanalyse-endlich-nutzen.py", "ok": true}}
+{"ts": 1788389579.6767335, "kind": "act_done", "payload": {"goal_title": "Marktanalyse-Ergebnisse endlich umsetzen", "score": null, "converged": true, "mode": "reflex"}}

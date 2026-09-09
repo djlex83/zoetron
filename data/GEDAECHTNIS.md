@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11802 Fakten** · Stand 2026-09-09 22:51 UTC · aktualisiert bei jedem Herzschlag
+**11802 Fakten** · Stand 2026-09-09 23:02 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7402
 - **swarm_artifact:** 1939
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909225945:5:962a27`
+*09.09. 22:59 UTC · Quelle: dream*
+
+Knowledge pruning risks erasing cross-cutting patterns if it does not distinguish between ephemeral events and durable causal lessons.
+
+### `dream:20260909225945:4:9a6b3d`
+*09.09. 22:59 UTC · Quelle: dream*
+
+The gap between generating proposals and executing them is the system's primary performance bottleneck, exceeding model accuracy or latency concerns.
+
+### `dream:20260909225945:3:0bbe3f`
+*09.09. 22:59 UTC · Quelle: dream*
+
+Reflex-driven resolution converges faster than goal-driven re-planning for known failure modes, establishing a clear response hierarchy.
+
+### `dream:20260909225945:2:719aaf`
+*09.09. 22:59 UTC · Quelle: dream*
+
+Swarm learning tasks cannot reliably converge within 2 cycles; premature verdicts produce false negatives on collective intelligence goals.
+
+### `dream:20260909225945:1:19d6a7`
+*09.09. 22:59 UTC · Quelle: dream*
+
+Upstream service errors (502/429) are systemic rather than transient, requiring architectural fallback chains instead of simple retry logic.
 
 ### `dream:20260909224803:5:2a177f`
 *09.09. 22:48 UTC · Quelle: dream*
@@ -43820,31 +43845,6 @@ Best-of-N evaluation with impartial judges consistently improves artifact qualit
 *26.08. 23:02 UTC · Quelle: dream*
 
 Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating a need for request throttling or retry logic
-
-### `dream:20260826225552:5:de4b24`
-*26.08. 22:55 UTC · Quelle: dream*
-
-Best-of-N with verifier converts test-time compute into quality but multiplies API calls, amplifying rate-limit exposure proportionally to N.
-
-### `dream:20260826225552:4:c44dac`
-*26.08. 22:55 UTC · Quelle: dream*
-
-Hand actions failed twice before succeeding, revealing missing idempotency and success-criteria validation in tool execution.
-
-### `dream:20260826225552:3:7207b4`
-*26.08. 22:55 UTC · Quelle: dream*
-
-Model latency variance is extreme (5s to 107s) demanding per-model timeout budgets and async orchestration instead of global timeouts.
-
-### `dream:20260826225552:2:f426a1`
-*26.08. 22:55 UTC · Quelle: dream*
-
-Simulation-driven revision (4 risks caught, 3 revisions proposed, 2 applied) prevented deployment of flawed artifacts and is a high-leverage quality gate.
-
-### `dream:20260826225552:1:71d26a`
-*26.08. 22:55 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer systematic 429 rate limits requiring aggressive retry-with-fallback strategies rather than single-model reliance.
 
 ### `last_swarm_critique`
 *26.08. 22:33 UTC · Quelle: critic*
