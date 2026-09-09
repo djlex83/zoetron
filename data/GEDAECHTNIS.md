@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-09 21:28 UTC · aktualisiert bei jedem Herzschlag
+**11784 Fakten** · Stand 2026-09-09 21:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7382
-- **swarm_artifact:** 1946
+- **dream:** 7387
+- **swarm_artifact:** 1940
 - **last_swarm_critique:** 859
 - **last_swarm_goal:** 593
 - **anti_pattern:** 449
 - **strategy:** 226
-- **tool:** 175
+- **tool:** 174
 - **hand_result:** 111
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909213640:5:74a911`
+*09.09. 21:36 UTC · Quelle: dream*
+
+Pruning removes 27 events per run but cannot keep pace with repetitive failure spam from unguarded providers.
+
+### `dream:20260909213640:4:54e11f`
+*09.09. 21:36 UTC · Quelle: dream*
+
+Drive goals for simulation and swarm renewal remain unexecuted because model unreliability blocks the planning loop.
+
+### `dream:20260909213640:3:3a454d`
+*09.09. 21:36 UTC · Quelle: dream*
+
+Model-failure events flood the log (dozens per session) drowning signal; aggregation into 'degraded_period' facts is essential.
+
+### `dream:20260909213640:2:64eed8`
+*09.09. 21:36 UTC · Quelle: dream*
+
+A single reliable model (inclusionai/ling-3.0-flash-fin:free) sustained all successful calls while three others repeatedly failed.
+
+### `dream:20260909213640:1:268930`
+*09.09. 21:36 UTC · Quelle: dream*
+
+Rate limits (429) and upstream overloads (502) from free-tier providers cause cascading failures when no circuit-breaker isolates them.
 
 ### `dream:20260909212555:5:568dd8`
 *09.09. 21:25 UTC · Quelle: dream*
@@ -43965,11 +43990,6 @@ Model reliability varies significantly under load, with some models consistently
 *26.08. 21:49 UTC · Quelle: dream*
 
 Rate limiting (429) and upstream overload (502) errors are systemic across multiple free-tier models, indicating infrastructure fragility rather than isolated failures
-
-### `tool:hebbisches-lernen-im-graph-synapsen-qual`
-*26.08. 21:30 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenza'. Datei: data/tools/hebbisches-lernen-im-graph-synapsen-qual.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *26.08. 21:30 UTC · Quelle: critic*
