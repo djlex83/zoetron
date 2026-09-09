@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 15:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 15:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 21×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dreams remain isolated episodes; linking them via shared failure signatures (e.g., 429, path, timeout) would enable meta-learning across cycles.
+- High stress (0.63) triggers conserve mode that caps iterations at 1, preventing multi-step recovery from transient failures.
+- Swarm knowledge and dream outputs become stale within days, yet no automated refresh pipeline re-validates them with healthy models.
+- Hand_action fails silently on relative paths because it does not expand sys.argv[1] against ZOETRON_DATA and verify permissions before execution.
+- Model failures cascade because no automatic fallback exists; 429/502 errors on primary models stall the whole system until a free model (ling-3.0-flas
 - Stale swarm knowledge persists until manual reflex triggers; automatic staleness detection (>7 days timestamp/version drift) with re-critique by healt
 - Simulation capability exists (drive goal) but is not wired into the skill lifecycle; every proposal should pass regression tests against 50 known fail
 - Skills are proposed repeatedly (router, retry wrapper, syntax check, promotion pipeline) but never validated against historical failures before deploy
@@ -51,11 +56,6 @@
 - Aggressive pruning of events and facts destroys the failure-context trail needed for root-cause analysis across evolution cycles.
 - Generated artifacts consistently fail sandbox execution because no pre-flight validation (syntax, type-checking, path existence) is performed before i
 - Model latency spikes and error rates are a systemic failure mode that cascades into sandbox timeouts and invalid outputs, requiring circuit-breaking a
-- Unbounded iteration budgets under high stress (>0.9) waste cycles on doomed multi-cycle convergence instead of forcing single-cycle completion.
-- Path-resolution errors in hand_action cause silent failures because sys.argv[1] expansion against ZOETRON_DATA and permission checks are missing.
-- Swarm knowledge becomes stale (>7 days) and corrupts decisions because no automated staleness detection triggers critique re-runs with healthy models.
-- Skill proposals accumulate without execution because no simulation-gated promotion pipeline validates them against historical failure cases before fac
-- Model failures (502/429) cascade into pipeline stalls because no automatic fallback chaining or circuit breakers exist to eject unhealthy models immed
 
 ---
 

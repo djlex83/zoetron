@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 15:12:09",
+ "stand": "2026-09-09 15:27:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "simulationen-gezielt-einsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -52,6 +46,12 @@
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -106,6 +106,12 @@
   },
   {
    "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -172,12 +178,6 @@
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0

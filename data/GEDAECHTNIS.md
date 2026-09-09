@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11807 Fakten** · Stand 2026-09-09 15:14 UTC · aktualisiert bei jedem Herzschlag
+**11803 Fakten** · Stand 2026-09-09 15:29 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7324
-- **swarm_artifact:** 1990
+- **swarm_artifact:** 1986
 - **last_swarm_critique:** 856
 - **last_swarm_goal:** 589
 - **anti_pattern:** 469
@@ -15,6 +15,36 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909152455:5:4039b0`
+*09.09. 15:24 UTC · Quelle: dream*
+
+Dreams remain isolated episodes; linking them via shared failure signatures (e.g., 429, path, timeout) would enable meta-learning across cycles.
+
+### `dream:20260909152455:4:941e02`
+*09.09. 15:24 UTC · Quelle: dream*
+
+High stress (0.63) triggers conserve mode that caps iterations at 1, preventing multi-step recovery from transient failures.
+
+### `dream:20260909152455:3:30b575`
+*09.09. 15:24 UTC · Quelle: dream*
+
+Swarm knowledge and dream outputs become stale within days, yet no automated refresh pipeline re-validates them with healthy models.
+
+### `dream:20260909152455:2:b7e25f`
+*09.09. 15:24 UTC · Quelle: dream*
+
+Hand_action fails silently on relative paths because it does not expand sys.argv[1] against ZOETRON_DATA and verify permissions before execution.
+
+### `dream:20260909152455:1:68908b`
+*09.09. 15:24 UTC · Quelle: dream*
+
+Model failures cascade because no automatic fallback exists; 429/502 errors on primary models stall the whole system until a free model (ling-3.0-flash-fin) succeeds.
+
+### `aktuell_organfehler`
+*09.09. 15:20 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-09 14:47:04-15:12:04 UTC): drive -> timeout; act -> timeout. Phase nach 180 s abgebrochen | Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, 
 
 ### `last_swarm_critique`
 *09.09. 15:12 UTC · Quelle: critic*
@@ -44256,36 +44286,6 @@ score=7; issues=
 *26.08. 15:09 UTC · Quelle: critic*
 
 score=7; issues=
-
-### `dream:20260826150800:5:903b33`
-*26.08. 15:08 UTC · Quelle: dream*
-
-The simulation revision loop (verdict: revise → 4 risks → 4 revisions → 3 applied) demonstrates that structured critique reduces risk count but not necessarily revision count.
-
-### `dream:20260826150800:4:2f49b6`
-*26.08. 15:08 UTC · Quelle: dream*
-
-High output token counts (≥6000) correlate with latency >150s across multiple models, suggesting token budget as a leading latency indicator.
-
-### `dream:20260826150800:3:f7278d`
-*26.08. 15:08 UTC · Quelle: dream*
-
-Model `stealth/ox-alpha` transitioned from functional (4.6s, 26.2s) to permanent 404 within 300s, indicating provider-side deprecation without notice.
-
-### `dream:20260826150800:2:06094d`
-*26.08. 15:08 UTC · Quelle: dream*
-
-The circuit breaker (3 consecutive errors → 1800s lockout) protects system stability but lacks error-type discrimination, penalizing transient 429/502 equally with permanent 404/401.
-
-### `dream:20260826150800:1:a36ca5`
-*26.08. 15:08 UTC · Quelle: dream*
-
-Free-tier models exhibit cascading failure modes: rate limits (429), auth expiration (401), upstream overload (502), and endpoint disappearance (404) often cluster in time.
-
-### `aktuell_organfehler`
-*26.08. 15:04 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 15:04:03 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Orga
 
 ### `last_swarm_goal`
 *26.08. 14:39 UTC · Quelle: system*
