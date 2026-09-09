@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11865 Fakten** · Stand 2026-09-09 10:18 UTC · aktualisiert bei jedem Herzschlag
+**11874 Fakten** · Stand 2026-09-09 10:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7355
-- **swarm_artifact:** 2000
-- **last_swarm_critique:** 852
-- **last_swarm_goal:** 584
+- **swarm_artifact:** 2006
+- **last_swarm_critique:** 853
+- **last_swarm_goal:** 585
 - **anti_pattern:** 483
 - **strategy:** 243
-- **tool:** 176
+- **tool:** 177
 - **hand_result:** 120
 - **aktuell_organfehler:** 48
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
+*09.09. 10:43 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich nutzbar machen'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-nutz.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*09.09. 10:43 UTC · Quelle: critic*
+
+score=8; issues=Validierungspipeline importiert konvergenztor/reflex dynamisch ohne Fallback, falls Module fehlen; Sandbox-Ausführung nutzt subprocess mit temporären Dateien - potenzielle Berechtigungs-/Sicherheitsprobleme in eingeschränkten Umgebungen; Integr
+
+### `last_swarm_goal`
+*09.09. 10:29 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich nutzbar machen
+
+### `dream:20260909102738:5:04ebb8`
+*09.09. 10:27 UTC · Quelle: dream*
+
+Dream/simulation cycles are underutilized relative to their proven value for pre-deployment validation and failure prediction.
+
+### `dream:20260909102738:4:fdafd1`
+*09.09. 10:27 UTC · Quelle: dream*
+
+Path resolution failures in hand_action stem from unexpanded environment variables and missing permission checks before execution.
+
+### `dream:20260909102738:3:a8fbe3`
+*09.09. 10:27 UTC · Quelle: dream*
+
+Swarm knowledge becomes stale after ~7 days without automated refresh cycles that re-run critique pipelines against current models.
+
+### `dream:20260909102738:2:9604bd`
+*09.09. 10:27 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a mandatory simulation-gated validation pipeline before promotion to executable capabilities.
+
+### `dream:20260909102738:1:441852`
+*09.09. 10:27 UTC · Quelle: dream*
+
+Model endpoints frequently return 429/502 errors requiring automatic fallback with circuit breakers to maintain throughput.
 
 ### `dream:20260909101358:5:660ce7`
 *09.09. 10:13 UTC · Quelle: dream*
@@ -45001,31 +45041,6 @@ Reflex-driven goals consistently converge while deliberate goals accumulate, sug
 *26.08. 10:27 UTC · Quelle: dream*
 
 Repeated HTTP 429 errors across multiple free-tier models indicate rate-limiting is a systemic bottleneck, not an isolated incident.
-
-### `dream:20260826102232:5:597219`
-*26.08. 10:22 UTC · Quelle: dream*
-
-Actions with null scores are being marked as converged: true, which may mask underlying execution failures.
-
-### `dream:20260826102232:4:d48785`
-*26.08. 10:22 UTC · Quelle: dream*
-
-The system's self-diagnosis and pruning mechanisms are stable but currently inactive, indicating a clean state or a need for more aggressive memory management.
-
-### `dream:20260826102232:3:d29de6`
-*26.08. 10:22 UTC · Quelle: dream*
-
-Reflexes successfully execute maintenance tasks with minimal overhead (0.18s), proving their utility for routine operations.
-
-### `dream:20260826102232:2:233b1d`
-*26.08. 10:22 UTC · Quelle: dream*
-
-Latency for fallback models like nvidia/nemotron-3-ultra-550b-a55b:free can fluctuate significantly (9.4s to 20.0s), impacting real-time response goals.
-
-### `dream:20260826102232:1:88cebe`
-*26.08. 10:22 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter are highly susceptible to rate limiting (429 errors), requiring robust fallback mechanisms.
 
 ### `last_swarm_critique`
 *26.08. 10:11 UTC · Quelle: critic*

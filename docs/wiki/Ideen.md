@@ -1,16 +1,15 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 10:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 10:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 12×)*
+- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 11×)*
 - Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 9×)*
 - Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 9×)*
 - Add convergence_guardrail that detects stalled optimization scores across 3+ cycles and triggers emergency evo *(hatte die Idee 6×)*
 - Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh  *(hatte die Idee 5×)*
-- Replace point-estimate calibration with distributional predictions and confidence intervals to prevent overcon *(hatte die Idee 4×)*
 - Enforce schema validation gates before artifact scoring to catch mismatches early and avoid wasted evaluation  *(hatte die Idee 4×)*
 - Add rate-limit-aware exponential backoff with jitter and concurrent request throttling to prevent 429 errors f *(hatte die Idee 4×)*
 - Wrap hand_action calls with structured error capture (stderr, exit codes, context) that returns actionable err *(hatte die Idee 4×)*
@@ -20,17 +19,18 @@
 - Deploy LatencyAwareRoleAssigner: map critic/planner to flash (<5s), builder to ultra with hard timeout budgets *(hatte die Idee 4×)*
 - Add ConvergenceMonitor: require minimum 3 swarm cycles, detect score plateau (delta<0.01 over 2 cycles), valid *(hatte die Idee 4×)*
 - Deploy model_router with per-provider circuit breakers tracking 429/502 rates, p95 latency, and success rate;  *(hatte die Idee 4×)*
+- Deploy ModelRouter with per-provider circuit breakers tracking 429/502 rates, p95 latency, and success rate; a *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream/simulation cycles are underutilized relative to their proven value for pre-deployment validation and failure prediction.
+- Path resolution failures in hand_action stem from unexpanded environment variables and missing permission checks before execution.
+- Swarm knowledge becomes stale after ~7 days without automated refresh cycles that re-run critique pipelines against current models.
+- Skill proposals accumulate but lack a mandatory simulation-gated validation pipeline before promotion to executable capabilities.
+- Model endpoints frequently return 429/502 errors requiring automatic fallback with circuit breakers to maintain throughput.
 - Stale swarm data degrades decision quality, and timestamp/version drift detection is necessary to maintain knowledge freshness and prevent cascading e
 - Artifact quality—specifically executable Python blocks with valid syntax and required imports—is a hard prerequisite for simulation success, and rejec
 - Reflex-based recovery works but is inherently reactive; proactive pre-flight validation and staleness detection prevent failures before they consume r
@@ -51,11 +56,6 @@
 - 75 skill proposals exist but only 43 models are validated; proposals accumulate without mandatory simulation gates.
 - Model latency varies 69–106 s on the same endpoint, indicating missing request-level timeouts and circuit-breaker logic.
 - Hand actions fail when using relative paths instead of the ZOETRON_DATA anchor, causing silent zero-byte reads.
-- Swarm planner systematically underestimates revision loops by ~4 cycles, causing repeated timeline overruns in multi-agent tasks.
-- Reflex-driven maintenance (schwarmwissen refresh) converges reliably in <1s, proving that deterministic scripts outperform LLM planning for known oper
-- Pruning discards 502/429 error clusters that are needed for weekly root-cause analysis, creating a blind spot for systematic provider degradation.
-- Skill proposals duplicate across cycles (model router, skill lifecycle proposed twice) because no deduplication or promotion gate exists between dream
-- Free-tier models exhibit provider-specific failure modes: NVIDIA nemotron returns 502 overload errors at ~100s latency, Google models return 429 rate 
 
 ---
 
