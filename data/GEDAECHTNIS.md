@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11801 Fakten** · Stand 2026-09-09 23:12 UTC · aktualisiert bei jedem Herzschlag
+**11797 Fakten** · Stand 2026-09-09 23:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7402
-- **swarm_artifact:** 1938
+- **dream:** 7407
+- **swarm_artifact:** 1933
 - **last_swarm_critique:** 861
 - **last_swarm_goal:** 595
-- **anti_pattern:** 449
-- **strategy:** 226
-- **tool:** 175
+- **anti_pattern:** 447
+- **strategy:** 225
+- **tool:** 174
 - **hand_result:** 110
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909232014:5:d20d6b`
+*09.09. 23:20 UTC · Quelle: dream*
+
+Metabolic state 'conserve' with max 1 iteration means every failed call costs a full cycle; resource-aware fallback must be faster than naive retry.
+
+### `dream:20260909232014:4:355a39`
+*09.09. 23:20 UTC · Quelle: dream*
+
+Simulation verdicts ('go') do not guarantee real execution success — the hand_action failure on empty paths reveals a simulation-to-reality validation gap.
+
+### `dream:20260909232014:3:2110b5`
+*09.09. 23:20 UTC · Quelle: dream*
+
+Unbounded failure event logging (44 events pruned) drowns actionable signal; without capping and aggregation, degradation periods become invisible in noise.
+
+### `dream:20260909232014:2:6462b0`
+*09.09. 23:20 UTC · Quelle: dream*
+
+A persistent gap exists between skill proposal and skill execution: 5+ skills were proposed but none reached active deployment, wasting consolidation cycles.
+
+### `dream:20260909232014:1:0b0829`
+*09.09. 23:20 UTC · Quelle: dream*
+
+Multi-provider model failures (502 from Nvidia, 429 from Google) are systemic, not isolated — a single retry loop cannot solve cascading upstream overload.
 
 ### `dream:20260909230958:5:9076ce`
 *09.09. 23:09 UTC · Quelle: dream*
@@ -43820,21 +43845,6 @@ Nemotron-3-Ultra succeeds reliably but with extreme latency variance (36-108s), 
 *26.08. 23:34 UTC · Quelle: dream*
 
 Rate limiting (429 errors) affects multiple free-tier models simultaneously, requiring provider diversity and request pacing.
-
-### `tool:cortex-upgrade-reflex-neue-modelle-autom`
-*26.08. 23:19 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren'. Datei: data/tools/cortex-upgrade-reflex-neue-modelle-autom.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Cortex-Upgrade-Reflex: n:1`
-*26.08. 23:17 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 9, 7]): CI/CD Pipeline with Automated Validation Gates - Treat model adoption as a software deployment pipeline. On new model artifact push to the model store, a CI/CD pipeline (GitHub Actions, GitLab CI, Argo CD) runs automa
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Cortex-Upgrade-Reflex: n:0`
-*26.08. 23:17 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 9, 8]): Event-Driven Model Registry Integration - Implement a model registry (e.g., MLflow, Weights & Biases, or custom) that emits events (via Kafka, NATS, or webhook) whenever a new model version is registered. The Cortex s
 
 ### `last_swarm_critique`
 *26.08. 23:15 UTC · Quelle: critic*
