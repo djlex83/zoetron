@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12029 Fakten** · Stand 2026-09-09 03:25 UTC · aktualisiert bei jedem Herzschlag
+**12034 Fakten** · Stand 2026-09-09 03:39 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7440
-- **swarm_artifact:** 2040
-- **last_swarm_critique:** 846
-- **last_swarm_goal:** 578
+- **swarm_artifact:** 2044
+- **last_swarm_critique:** 847
+- **last_swarm_goal:** 579
 - **anti_pattern:** 509
 - **strategy:** 256
 - **tool:** 181
 - **hand_result:** 128
-- **aktuell_organfehler:** 47
+- **aktuell_organfehler:** 46
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorschläge in echte Fähi:2`
+*09.09. 03:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Configuration-Driven DSL Compiler for Skill Generation - Create a Domain-Specific Language (DSL) embedded in Python that defines skill templates as code. The system works as follows: (1) A parser reads org-mode suggestion ent
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorschläge in echte Fähi:0`
+*09.09. 03:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Structured Multi-Stage Pipeline with Org-mode AST Parsing - Build a deterministic multi-stage pipeline: (1) Parse org-mode files into an Abstract Syntax Tree (AST) using a library like `orgmode-parser` or `pymdown-extensions`
+
+### `last_swarm_critique`
+*09.09. 03:35 UTC · Quelle: critic*
+
+score=3; issues=Das Artefakt ist ausschliesslich ein Verzeichnis-Erkundungsskript (Directory Walker) und fuehrt keine Konvertierung von Vorschlägen in Fähigkeiten durch.; Keine Konvertierungslogik vorhanden – es werden keine Vorschläge gelesen, verarbeitet ode
+
+### `last_swarm_goal`
+*09.09. 03:34 UTC · Quelle: system*
+
+Vorschläge in echte Fähigkeiten wandeln
+
+### `dream:20260909033411:5:45f462`
+*09.09. 03:34 UTC · Quelle: dream*
+
+Pruning removes events but not the structural deficits (model reliability, skill adoption) that generate those events.
+
+### `dream:20260909033411:4:4dc0ea`
+*09.09. 03:34 UTC · Quelle: dream*
+
+Reflex-driven simulation and skill-testing actions converge successfully, proving the reflex layer can close gaps when triggered.
+
+### `dream:20260909033411:3:27296a`
+*09.09. 03:34 UTC · Quelle: dream*
+
+Proposed skills (routing, sandbox checks, calibration, circuit breakers, mandatory simulation) directly target observed failure modes but lack implementation tracking.
+
+### `dream:20260909033411:2:32433a`
+*09.09. 03:34 UTC · Quelle: dream*
+
+Drive goals repeat across cycles (reduce model error, test skills, refresh swarm) indicating root causes remain unaddressed despite reflex executions.
+
+### `dream:20260909033411:1:ac3caa`
+*09.09. 03:34 UTC · Quelle: dream*
+
+Model endpoint failures (502/429) cascade into planning failures because no automatic fallback or circuit-breaking exists.
 
 ### `dream:20260909032310:5:9c6d85`
 *09.09. 03:23 UTC · Quelle: dream*
@@ -45741,46 +45786,6 @@ score=6; issues=Zwei divergierende Implementierungen von doc_check.py werden ein
 *26.08. 03:33 UTC · Quelle: system*
 
 Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten
-
-### `dream:20260826033304:5:6ac921`
-*26.08. 03:33 UTC · Quelle: dream*
-
-Zoem protocol simulation approved with 5 risks and 3 revisions indicates architectural complexity exceeds current verification capacity.
-
-### `dream:20260826033304:4:356681`
-*26.08. 03:33 UTC · Quelle: dream*
-
-Metabolism stress at 1.0 with conserve mode limits parallelism to 3 tasks, yet long-running model calls (100s+) starve the budget and block consolidation.
-
-### `dream:20260826033304:3:a585d9`
-*26.08. 03:33 UTC · Quelle: dream*
-
-The system accumulates skill proposals (e.g., error_attribution_log.py) but lacks a mechanism to enforce trial runs, creating a proposal-execution gap.
-
-### `dream:20260826033304:2:e61d11`
-*26.08. 03:33 UTC · Quelle: dream*
-
-Hand actions fail silently with exit code 1 and no error payload, preventing automated diagnosis of execution failures.
-
-### `dream:20260826033304:1:82718f`
-*26.08. 03:33 UTC · Quelle: dream*
-
-Rate limiting (429 errors) on primary models causes cascading fallback latency spikes up to 233s, making provider quota management a reliability bottleneck.
-
-### `aktuell_organfehler`
-*26.08. 03:31 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 03:30:52 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Orga
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Semantisches Dedup für I:2`
-*26.08. 03:30 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Human-in-the-Loop mit Kandidaten-Vorschlägen - Verzichte auf automatische Endentscheidungen: Das System erzeugt per billiger Ähnlichkeitsheuristik (String-Distanz + Keyword-Überlappung) eine priorisierte Liste von Duplikats-K
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Semantisches Dedup für I:0`
-*26.08. 03:30 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Deterministische Regel-Pipeline statt LLM-Kritik - Ersetze die fehleranfällige LLM-Critic-Auswertung durch eine deterministische Vorverarbeitungs-Pipeline: (1) Normalisierung (Lowercasing, Umlaut-Folding, Whitespace/Zeichensa
 
 ### `last_swarm_critique`
 *26.08. 03:29 UTC · Quelle: critic*
