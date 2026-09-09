@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11803 Fakten** · Stand 2026-09-09 15:57 UTC · aktualisiert bei jedem Herzschlag
+**11801 Fakten** · Stand 2026-09-09 16:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7327
-- **swarm_artifact:** 1988
+- **swarm_artifact:** 1986
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 590
 - **anti_pattern:** 465
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909160647:5:f21a49`
+*09.09. 16:06 UTC · Quelle: dream*
+
+Swarm knowledge refresh is driven by manual reflex rather than automated staleness detection, causing delayed adaptation.
+
+### `dream:20260909160647:4:f77a3f`
+*09.09. 16:06 UTC · Quelle: dream*
+
+No pre-execution validation exists for generated artifacts, allowing syntax/type errors to reach sandbox and waste cycles.
+
+### `dream:20260909160647:3:7807e8`
+*09.09. 16:06 UTC · Quelle: dream*
+
+Nemotron-3-ultra shows extreme latency variance (3.9s vs 124s), indicating unreliable cold-start or queueing behavior on free tier.
+
+### `dream:20260909160647:2:dfca8f`
+*09.09. 16:06 UTC · Quelle: dream*
+
+Aggressive pruning (91 events in one run) discards failure context needed for root-cause analysis of model errors.
+
+### `dream:20260909160647:1:58ef18`
+*09.09. 16:06 UTC · Quelle: dream*
+
+Free-tier LLM endpoints exhibit cascading failures (429/502) under load, making single-model reliance a systemic risk.
 
 ### `tool:simulationen-konsequent-anwenden`
 *09.09. 15:55 UTC · Quelle: hands*
@@ -44111,31 +44136,6 @@ score=7; issues=
 *26.08. 15:48 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260826154521:5:7aa193`
-*26.08. 15:45 UTC · Quelle: dream*
-
-Failed hand actions with extremely short durations (0.03s) and zero bytes read indicate that pre-execution validation or sandboxing is needed to catch command errors instantly.
-
-### `dream:20260826154521:4:ce91cf`
-*26.08. 15:45 UTC · Quelle: dream*
-
-The system generated five high-quality self-improvement proposals but failed to execute them automatically, highlighting a critical gap between dream-time ideation and automated skill deployment.
-
-### `dream:20260826154521:3:46be50`
-*26.08. 15:45 UTC · Quelle: dream*
-
-Calibration predictions significantly deviate from actual outcomes (predicted 3 vs actual 8), indicating that predictive risk models must be continuously updated with real execution feedback.
-
-### `dream:20260826154521:2:af0c22`
-*26.08. 15:45 UTC · Quelle: dream*
-
-Free-tier models frequently suffer from rate limits (429), service overloads (502), or extreme latencies (up to 299s), which disrupts execution and requires dynamic model routing and fallbacks.
-
-### `dream:20260826154521:1:db4660`
-*26.08. 15:45 UTC · Quelle: dream*
-
-The swarm successfully solved the complex 'Hermes-Brücke' task in a single cycle with a high score of 8, showing that multi-agent role distribution (planner, builders, critic) is highly effective for code-generation tasks.
 
 ### `last_swarm_critique`
 *26.08. 15:41 UTC · Quelle: critic*
