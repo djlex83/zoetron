@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12024 Fakten** · Stand 2026-09-09 02:25 UTC · aktualisiert bei jedem Herzschlag
+**12029 Fakten** · Stand 2026-09-09 02:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
+- **dream:** 7441
 - **swarm_artifact:** 2040
 - **last_swarm_critique:** 845
 - **last_swarm_goal:** 577
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909023417:5:cb15e5`
+*09.09. 02:34 UTC · Quelle: dream*
+
+Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds consistently at 4s latency but is only used reactively after failures.
+
+### `dream:20260909023417:4:ee2acb`
+*09.09. 02:34 UTC · Quelle: dream*
+
+Calibration is severely misaligned (predicted 7 vs actual 1), causing the system to pursue doomed strategies.
+
+### `dream:20260909023417:3:ca0dcb`
+*09.09. 02:34 UTC · Quelle: dream*
+
+Hand actions consistently fail with exit code 1 and zero output, indicating systemic code execution environment breakage.
+
+### `dream:20260909023417:2:7701a8`
+*09.09. 02:34 UTC · Quelle: dream*
+
+Backup models (gemma-4 variants) hit 429 rate limits immediately after primary failures, leaving no viable fallback.
+
+### `dream:20260909023417:1:432df4`
+*09.09. 02:34 UTC · Quelle: dream*
+
+Primary model (nemotron-3-ultra) suffers frequent 502 overload errors making it unreliable for critical paths.
 
 ### `dream:20260909022306:5:61c2bf`
 *09.09. 02:23 UTC · Quelle: dream*
