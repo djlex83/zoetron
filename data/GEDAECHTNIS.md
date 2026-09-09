@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12011 Fakten** · Stand 2026-09-09 05:36 UTC · aktualisiert bei jedem Herzschlag
+**12000 Fakten** · Stand 2026-09-09 05:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7450
-- **swarm_artifact:** 2024
+- **dream:** 7445
+- **swarm_artifact:** 2018
 - **last_swarm_critique:** 848
 - **last_swarm_goal:** 580
 - **anti_pattern:** 501
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909054503:5:701fb5`
+*09.09. 05:45 UTC · Quelle: dream*
+
+Calibration error of +300% (predicted 4 vs actual 1) reveals systematic overconfidence in planning estimates.
+
+### `dream:20260909054503:4:7cf6c6`
+*09.09. 05:45 UTC · Quelle: dream*
+
+Absence of executable Python blocks in artifacts causes immediate convergence failure; prose-only outputs score 1/10.
+
+### `dream:20260909054503:3:04af05`
+*09.09. 05:45 UTC · Quelle: dream*
+
+NVIDIA Nemotron-3-Ultra succeeds but with 43-74s latency and intermittent 502 overload errors — only viable for non-interactive batch jobs.
+
+### `dream:20260909054503:2:b4a1a2`
+*09.09. 05:45 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free delivers consistent sub-6s latency and should be the default primary model.
+
+### `dream:20260909054503:1:270a08`
+*09.09. 05:45 UTC · Quelle: dream*
+
+Free-tier Google Gemma models consistently hit 429 rate limits making them unreliable for production workflows.
 
 ### `dream:20260909053240:5:e8a0b2`
 *09.09. 05:32 UTC · Quelle: dream*
@@ -45697,31 +45722,6 @@ score=8; issues=Ziel erfüllt: Drei vorgeschlagene Fähigkeiten werden mit defin
 
 Vorgeschlagene Fähigkeiten tatsächlich ausprobieren
 
-### `dream:20260826054146:5:e5db1c`
-*26.08. 05:41 UTC · Quelle: dream*
-
-Hand actions fail repeatedly at task onset (3 consecutive exit=1), indicating missing preconditions or environment setup before code execution.
-
-### `dream:20260826054146:4:60f3df`
-*26.08. 05:41 UTC · Quelle: dream*
-
-Calibration consistently overestimates outcomes (predicted 5 vs actual 2), suggesting the predictor lacks feedback from execution failures and rate limits.
-
-### `dream:20260826054146:3:d5b831`
-*26.08. 05:41 UTC · Quelle: dream*
-
-Evolution produces high-scoring variants (9,9,10) but the swarm converges to score 2, showing a disconnect between variant evaluation and integrated system performance.
-
-### `dream:20260826054146:2:35c879`
-*26.08. 05:41 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260826054146:1:b5c436`
-*26.08. 05:41 UTC · Quelle: dream*
-
-Rate-limited models (stealth/ox-alpha, z-ai/glm-5.2) consistently fail with 429 errors while nvidia/nemotron-3-ultra succeeds, indicating provider-level quota exhaustion as a systemic bottleneck.
-
 ### `last_swarm_critique`
 *26.08. 05:36 UTC · Quelle: critic*
 
@@ -45731,31 +45731,6 @@ score=8; issues=Runner: Demo-Datei wird bei jedem Lauf neu angelegt falls fehlen
 *26.08. 05:32 UTC · Quelle: system*
 
 Mehr Simulationen wirklich anwenden
-
-### `dream:20260826053155:5:debcac`
-*26.08. 05:31 UTC · Quelle: dream*
-
-Selbstdiagnose reports zero findings while operational events show model_fail and converged=false, proving health checks miss structured event signals and need event ingestion.
-
-### `dream:20260826053155:4:eb1316`
-*26.08. 05:31 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than they are validated (many proposals, few implemented), so the bottleneck is a trial/promotion pipeline rather than idea generation.
-
-### `dream:20260826053155:3:79a15c`
-*26.08. 05:31 UTC · Quelle: dream*
-
-429 rate-limit errors cascade across models in failover order within the same second, meaning immediate sequential failover amplifies throttling instead of avoiding it.
-
-### `dream:20260826053155:2:935ee0`
-*26.08. 05:31 UTC · Quelle: dream*
-
-Repeated goals like 'Doku-Konsistenzwächter' get parked after 3 non-convergent attempts, indicating failure cause is goal scoping/verification criteria, not lack of retries.
-
-### `dream:20260826053155:1:e02ad8`
-*26.08. 05:31 UTC · Quelle: dream*
-
-Swarm runs repeatedly fail to converge (score 2 after 2 cycles) because termination is declared without the critic verifying closure of logged risks — risk count 4 with only 2 revisions shows risks are logged but not resolved.
 
 ### `last_swarm_critique`
 *26.08. 05:13 UTC · Quelle: critic*

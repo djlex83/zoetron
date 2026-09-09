@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of +300% (predicted 4 vs actual 1) reveals systematic overconfidence in planning estimates.
+- Absence of executable Python blocks in artifacts causes immediate convergence failure; prose-only outputs score 1/10.
+- NVIDIA Nemotron-3-Ultra succeeds but with 43-74s latency and intermittent 502 overload errors — only viable for non-interactive batch jobs.
+- inclusionai/ling-3.0-flash-fin:free delivers consistent sub-6s latency and should be the default primary model.
+- Free-tier Google Gemma models consistently hit 429 rate limits making them unreliable for production workflows.
 - Retry logic hammers failing endpoints without exponential backoff or Retry-After header parsing, worsening rate-limit collisions.
 - Simulation validator rejects artifacts lacking executable Python blocks; prose-only plans fail convergence checks.
 - The inclusionai/ling-3.0-flash-fin:free model succeeds consistently with 1.5-5.2s latency, making it the only reliable free-tier option observed.
@@ -51,11 +56,6 @@
 - Simulation-driven revision reduces risk but generates high revision counts (5 risks → 3 applied), indicating need for pre-simulation static checks.
 - Hand actions fail due to relative-path resolution against ZOETRON_DATA, requiring absolute-path enforcement before execution.
 - Free-tier models (nemotron, gemma) fail catastrophically under load (502/429), making tiered routing with health checks essential for reliability.
-- Pruning aggressively removes context (23 facts, 119 events) but the system still repeats the same artifact-execution failures.
-- Confidence calibration is absent: predicted scores (evolution winner 9/10) diverge wildly from actual outcomes (swarm score 3/10).
-- Critic feedback loops are ineffective when stage-1 static analysis (syntax, imports, execution) is skipped, allowing broken artifacts to reach semanti
-- The swarm evolution process consistently produces non-executable artifacts that fail the executable artifact gate (tool rejected for no return value).
-- Free-tier models exhibit systematic unreliability (502/429 errors) making them unsuitable for critical-path tasks without automated failover.
 
 ---
 
