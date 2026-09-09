@@ -1,20 +1,49 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11784 Fakten** · Stand 2026-09-09 16:53 UTC · aktualisiert bei jedem Herzschlag
+**11783 Fakten** · Stand 2026-09-09 17:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7322
-- **swarm_artifact:** 1979
+- **dream:** 7327
+- **swarm_artifact:** 1978
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
-- **anti_pattern:** 463
-- **strategy:** 233
+- **anti_pattern:** 461
+- **strategy:** 232
 - **tool:** 176
-- **hand_result:** 113
+- **hand_result:** 112
 - **aktuell_organfehler:** 48
 - **creator_teaching:** 1
-- **aktuell_fussball_messlatte:** 1
 
 ---
+
+### `dream:20260909170210:5:768d32`
+*09.09. 17:02 UTC · Quelle: dream*
+
+The 5-versus-8 effort misprediction and act/drive timeouts show that calibration must include provider retries and tool overhead while enforcing the remaining task budget.
+
+### `dream:20260909170210:4:fd0c81`
+*09.09. 17:02 UTC · Quelle: dream*
+
+Actuator failures without error details require bounded retries plus explicit post-action verification.
+
+### `dream:20260909170210:3:1b936a`
+*09.09. 17:02 UTC · Quelle: dream*
+
+Model latency and output volume vary enough that routing should consider task phase, expected output size, and current health rather than average speed alone.
+
+### `dream:20260909170210:2:1dc8e2`
+*09.09. 17:02 UTC · Quelle: dream*
+
+Repeated 429, 502, and timeout failures show that a fixed model preference is fragile and needs health-aware fallback.
+
+### `dream:20260909170210:1:b6a99d`
+*09.09. 17:02 UTC · Quelle: dream*
+
+Treat HTTP 200 responses with no choices as retryable transport failures rather than valid model outputs.
+
+### `aktuell_organfehler`
+*09.09. 17:00 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-09 16:48:17-16:51:17 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `aktuell_organfehler`
 *09.09. 16:44 UTC · Quelle: selbstdiagnose.py*
@@ -43911,26 +43940,6 @@ The small dots-studio model delivers reliable low-latency responses while large 
 *26.08. 17:18 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) is the systemic bottleneck across all model providers, not an individual model failure.
-
-### `aktuell_organfehler`
-*26.08. 16:52 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 16:32:06-16:52:24 UTC): retro -> kurz; will -> kurz; genome -> kurz; lehrer -> kurz. retro meldete einen Fehler | will meldete einen Fehler | genome meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerz
-
-### `aktuell_fussball_messlatte`
-*26.08. 16:52 UTC · Quelle: vorpruefung.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. ACHTUNG, zuletzt abgelehnt (zoetron_49c834d09c.py): NameError: name 'spiele_a' is not defined. Did you mean: 
-
-### `anti_pattern:Previous attempt scored 0/10. Goal: Fußball: die Basislinie :2`
-*26.08. 16:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 5, 9]): Dixon-Coles model with Monte Carlo simulation - Fit a Dixon-Coles bivariate Poisson model to historical data to estimate team attack/defense strengths and time decay. Simulate each upcoming match thousands of times to
-
-### `anti_pattern:Previous attempt scored 0/10. Goal: Fußball: die Basislinie :1`
-*26.08. 16:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 7, 8]): Machine learning with feature engineering - Create features such as rolling goal averages, form points, head-to-head records, home/away splits, and rest days. Train a gradient boosting classifier (e.g., XGBoost) with 
 
 ### `last_swarm_critique`
 *26.08. 16:46 UTC · Quelle: critic*
