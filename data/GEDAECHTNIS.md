@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-09 19:24 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-09 19:35 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7362
 - **swarm_artifact:** 1960
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909193313:5:9bc54c`
+*09.09. 19:33 UTC · Quelle: dream*
+
+Reflex scripts succeed at cleanup (exit 0) but are triggered reactively; no proactive health checks prevent the failures they clean up.
+
+### `dream:20260909193313:4:61f87a`
+*09.09. 19:33 UTC · Quelle: dream*
+
+Event log floods with individual model-failure facts (pruned 47 events) instead of aggregated degradation signals, wasting memory and attention.
+
+### `dream:20260909193313:3:f43bb3`
+*09.09. 19:33 UTC · Quelle: dream*
+
+Recurring goals for 'reduce model errors' and 'refresh swarm data' indicate reflex fixes treat symptoms while root causes (no provider health tracking, no latency budgets) persist.
+
+### `dream:20260909193313:2:a627db`
+*09.09. 19:33 UTC · Quelle: dream*
+
+Five concrete skill proposals (ModelRouter, LatencyBudget, DependencyHealth, EventLogHygiene, SkillValidationGate) were generated but none implemented, showing a proposal-to-production gap.
+
+### `dream:20260909193313:1:1227e0`
+*09.09. 19:33 UTC · Quelle: dream*
+
+Model failures cascade across providers (502, 429) before accidental fallback succeeds, revealing no circuit-breaker or health-aware routing.
 
 ### `dream:20260909192157:5:2ea95f`
 *09.09. 19:21 UTC · Quelle: dream*
@@ -43915,31 +43940,6 @@ score=3; issues=Die ersten beiden Artefakte ('Analyze drive.py' und 'Extend tele
 *26.08. 19:31 UTC · Quelle: system*
 
 Extern-Quote in DRIVE: raus aus der Selbst-Schleife
-
-### `dream:20260826193053:5:7b4d59`
-*26.08. 19:30 UTC · Quelle: dream*
-
-The critic flag "RETRO-Or" reveals retrieval/organization of source material as the cross-cutting failure mode.
-
-### `dream:20260826193053:4:48c093`
-*26.08. 19:30 UTC · Quelle: dream*
-
-Calibration is accurate (predicted=actual=2) but the baseline is too low, indicating the initial strategy not the estimator is the bottleneck.
-
-### `dream:20260826193053:3:dbc159`
-*26.08. 19:30 UTC · Quelle: dream*
-
-Evolutionary iteration with critic feedback lifted scores from 2/10 to 9–10/10, proving iterative refinement is the primary quality lever.
-
-### `dream:20260826193053:2:bfb6c0`
-*26.08. 19:30 UTC · Quelle: dream*
-
-Nvidia Nemotron models provide the only consistent successes but with high latency variance (16–136 s).
-
-### `dream:20260826193053:1:bae185`
-*26.08. 19:30 UTC · Quelle: dream*
-
-Free-tier models suffer pervasive 429 rate limits making them unreliable for production workloads.
 
 ### `last_swarm_critique`
 *26.08. 19:03 UTC · Quelle: critic*

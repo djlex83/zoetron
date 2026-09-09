@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 19:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 19:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 21×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex scripts succeed at cleanup (exit 0) but are triggered reactively; no proactive health checks prevent the failures they clean up.
+- Event log floods with individual model-failure facts (pruned 47 events) instead of aggregated degradation signals, wasting memory and attention.
+- Recurring goals for 'reduce model errors' and 'refresh swarm data' indicate reflex fixes treat symptoms while root causes (no provider health tracking
+- Five concrete skill proposals (ModelRouter, LatencyBudget, DependencyHealth, EventLogHygiene, SkillValidationGate) were generated but none implemented
+- Model failures cascade across providers (502, 429) before accidental fallback succeeds, revealing no circuit-breaker or health-aware routing.
 - Metabolic stress and consecutive model failures are not gated, allowing new drive goals to pile onto an already degraded system.
 - Token-latency profiles per model are missing, preventing cost-aware selection and causing 30s+ latency spikes on large models.
 - Reflex tools execute in isolation; chaining verified reflexes (dream-connect → error-reduce → swarm-sync) would converge multi-goal tasks faster.
@@ -51,11 +56,6 @@
 - Skill proposals evolve from reactive fixes (retry middleware, path resolution) to proactive architectures (model registry with scoring, simulation har
 - Self-diagnosis consistently reports zero organ errors while model failures persist, revealing that infrastructure-level failures are invisible to inte
 - External model failures (502 upstream overload, 429 rate limits) recur because no circuit breaker or fallback router exists, making the system critica
-- Self-diagnosis consistently reports zero organ errors despite persistent goal failures, proving the failures are process-level rather than component-l
-- Model latency improved from 29.5s to 22.1s between cycles, correlating with aggressive pruning, which suggests event hygiene directly impacts model pe
-- Event accumulation (24–30 events pruned per cycle) reveals the system generates stale or redundant events faster than it consumes them, pointing to a 
-- Reflex-driven actions consistently converge but never eliminate root causes, indicating that convergence without upstream event hygiene is insufficien
-- The recurring triad of model errors, stale swarm knowledge, and untested proposals signals systemic process gaps that demand structural interventions 
 
 ---
 
