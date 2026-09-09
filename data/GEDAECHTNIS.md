@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12041 Fakten** · Stand 2026-09-09 02:02 UTC · aktualisiert bei jedem Herzschlag
+**12030 Fakten** · Stand 2026-09-09 02:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
-- **swarm_artifact:** 2044
+- **dream:** 7436
+- **swarm_artifact:** 2042
 - **last_swarm_critique:** 845
 - **last_swarm_goal:** 577
-- **anti_pattern:** 513
-- **strategy:** 258
+- **anti_pattern:** 511
+- **strategy:** 257
 - **tool:** 181
-- **hand_result:** 131
+- **hand_result:** 130
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909021102:5:5e079b`
+*09.09. 02:11 UTC · Quelle: dream*
+
+Hand actions can fail silently (empty reads with exit 0), revealing that exit-code-only validation is insufficient and structured error logging with content verification is necessary.
+
+### `dream:20260909021102:4:4184a9`
+*09.09. 02:11 UTC · Quelle: dream*
+
+Non-executable proposals consume critic cycles and produce unreliable scores; enforcing an executable artifact gate before semantic review prevents wasted computation and inflated confidence.
+
+### `dream:20260909021102:3:6b8f98`
+*09.09. 02:11 UTC · Quelle: dream*
+
+Swarm knowledge decays on a predictable timeline; staleness signals appear across multiple cycles, indicating that ad-hoc updates are insufficient and scheduled, versioned refresh is required.
+
+### `dream:20260909021102:2:c01baa`
+*09.09. 02:11 UTC · Quelle: dream*
+
+There is a persistent gap between skill proposal and skill adoption: proposed capabilities are generated but never validated through execution, meaning the system wastes potential on untested abstractions.
+
+### `dream:20260909021102:1:6ff227`
+*09.09. 02:11 UTC · Quelle: dream*
+
+Model errors are a systemic, recurring failure mode that requires infrastructure-level mitigation (multi-tier routing with health checks and auto-failover) rather than only per-prediction correction.
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
 *09.09. 02:00 UTC · Quelle: hands*
@@ -45767,16 +45792,6 @@ The simulation verdict 'revise' flagged 3 risks but only 2 revisions were applie
 
 Calibration is systematically off: predicted score 4 vs actual 6 (abs_error 2) shows predictions are consistently too pessimistic for creative/identity goals like 'Lebender Steckbrief'.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:2`
-*26.08. 02:02 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Architecture inversion: data-driven protocol instead of code-heavy implementatio - Flip the design so most logic lives in data structures rather than sprawling imperative code — fewer lines of executable logic means drastical
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:0`
-*26.08. 02:02 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
 ### `last_swarm_critique`
 *26.08. 02:01 UTC · Quelle: critic*
 
@@ -45786,56 +45801,6 @@ score=1; issues=SyntaxError: unterminated string literal at line 235 (per sandbo
 *26.08. 01:56 UTC · Quelle: system*
 
 Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen
-
-### `dream:20260826015620:5:e5baf8`
-*26.08. 01:56 UTC · Quelle: dream*
-
-The self-diagnosis found zero organ defects while model calls still failed externally, proving failures concentrate in the API boundary layer rather than internal components.
-
-### `dream:20260826015620:4:5ee432`
-*26.08. 01:56 UTC · Quelle: dream*
-
-Conserve-mode stress (0.814) coincided with the longest call (150.6s, 6332 output tokens), indicating large generations are the main budget violator and must be chunked under stress.
-
-### `dream:20260826015620:3:56ece4`
-*26.08. 01:56 UTC · Quelle: dream*
-
-Calibration error was 4 points on a predicted 4 vs. actual 8, showing this system systematically under-predicts goal outcomes by roughly 2x and should inflate predictions or widen uncertainty bands.
-
-### `dream:20260826015620:2:8ccf2e`
-*26.08. 01:56 UTC · Quelle: dream*
-
-Rate-limit failures (429) hit two models back-to-back on the same provider (openrouter.ai), so provider-level throttling—not model choice—was the root cause and requires automatic fallback to a different provider.
-
-### `dream:20260826015620:1:b97d7c`
-*26.08. 01:56 UTC · Quelle: dream*
-
-The swarm converged in a single cycle (score 8) when simulation-driven revisions were applied before execution, confirming that pre-flight simulation with revision loops prevents wasted attempts.
-
-### `dream:20260826015151:5:efece3`
-*26.08. 01:51 UTC · Quelle: dream*
-
-API-level failures (429 Too Many Requests) are an external resource constraint not covered by any retry/backoff rule yet, unlike internal code errors which now have wrappers proposed.
-
-### `dream:20260826015151:4:0da2c8`
-*26.08. 01:51 UTC · Quelle: dream*
-
-The simulation 'revise' step with 2 applied revisions preceded a green tor on cycle 1, confirming pre-flight adversarial review converts failures into cheap text edits instead of expensive runtime failures.
-
-### `dream:20260826015151:3:9685d7`
-*26.08. 01:51 UTC · Quelle: dream*
-
-Metabolic conserve-mode (stress 0.814, max 1 iteration) conflicts with goals that need multiple correction loops, causing Score-1 results to go untreated.
-
-### `dream:20260826015151:2:7c81ce`
-*26.08. 01:51 UTC · Quelle: dream*
-
-The 'whisper_geparkt' pattern shows tasks fail by stalling after 3 attempts without convergence rather than by explicit rejection, indicating a missing escalation/decision path to the creator.
-
-### `dream:20260826015151:1:eb386d`
-*26.08. 01:51 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than they are tested (multiple untested proposals per cycle), so the bottleneck is validation capacity, not idea generation.
 
 ### `last_swarm_critique`
 *26.08. 01:45 UTC · Quelle: critic*
