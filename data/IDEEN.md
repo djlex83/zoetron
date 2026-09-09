@@ -1,14 +1,14 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 17:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 17:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 9×)*
 - Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 9×)*
-- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 6×)*
 - Add convergence_guardrail that detects stalled optimization scores across 3+ cycles and triggers emergency evo *(hatte die Idee 6×)*
+- Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error tax *(hatte die Idee 5×)*
 - Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh  *(hatte die Idee 5×)*
 - Add rate-limit awareness module detecting 429 responses, pausing requests to that model for configurable backo *(hatte die Idee 4×)*
 - Build critic output validator with fallback parser handling malformed responses, defaulting to safe revision s *(hatte die Idee 4×)*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failure rate exceeds 40%, revealing a monitoring blind spot for external dependency health.
+- Pruning 72 events but only 7 facts indicates event log bloat from repeated model failures, not knowledge growth.
+- Calibration error of 2 points (predicted 6 vs actual 8) correlates with model latency variance, not task complexity.
+- Simulation application succeeds only when model latency stays under 30s; above that threshold, swarm convergence degrades despite correct logic.
+- Model endpoints exhibit cascading failure modes: 502 upstream overload on primary model triggers fallback to rate-limited alternatives, causing 100+ s
 - Stale swarm data creates a compounding feedback loop where outdated information drives further stale decisions, making periodic pruning non-optional f
 - Simulation cycles that produce 5 revisions per run are resource-prohibitive under conserve mode, suggesting revision depth must be bounded by current 
 - File operation failures from relative path resolution (sys.argv/ZOETRON_DATA ambiguity) reveal that path validation must be absolute and explicit befo
@@ -51,11 +56,6 @@
 - Swarm knowledge degrades within 7 days due to timestamp/version drift, making periodic refresh mandatory rather than optional for decision quality.
 - Effort estimates systematically underestimate actual requirements by 100%, indicating a persistent cognitive bias that must be compensated through pro
 - Model failures (502 upstream overload, 429 rate limits) are systemic and recurring, not isolated, requiring architectural fault tolerance rather than 
-- The 5-versus-8 effort misprediction and act/drive timeouts show that calibration must include provider retries and tool overhead while enforcing the r
-- Actuator failures without error details require bounded retries plus explicit post-action verification.
-- Model latency and output volume vary enough that routing should consider task phase, expected output size, and current health rather than average spee
-- Repeated 429, 502, and timeout failures show that a fixed model preference is fragile and needs health-aware fallback.
-- Treat HTTP 200 responses with no choices as retryable transport failures rather than valid model outputs.
 
 ---
 

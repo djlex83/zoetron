@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11788 Fakten** · Stand 2026-09-09 17:25 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-09 17:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7332
-- **swarm_artifact:** 1978
+- **dream:** 7337
+- **swarm_artifact:** 1972
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
 - **anti_pattern:** 461
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909173401:5:2afd09`
+*09.09. 17:34 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failure rate exceeds 40%, revealing a monitoring blind spot for external dependency health.
+
+### `dream:20260909173401:4:3463a0`
+*09.09. 17:34 UTC · Quelle: dream*
+
+Pruning 72 events but only 7 facts indicates event log bloat from repeated model failures, not knowledge growth.
+
+### `dream:20260909173401:3:83fdd6`
+*09.09. 17:34 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 6 vs actual 8) correlates with model latency variance, not task complexity.
+
+### `dream:20260909173401:2:a79ca3`
+*09.09. 17:34 UTC · Quelle: dream*
+
+Simulation application succeeds only when model latency stays under 30s; above that threshold, swarm convergence degrades despite correct logic.
+
+### `dream:20260909173401:1:382e1d`
+*09.09. 17:34 UTC · Quelle: dream*
+
+Model endpoints exhibit cascading failure modes: 502 upstream overload on primary model triggers fallback to rate-limited alternatives, causing 100+ second latency spikes.
 
 ### `dream:20260909172242:5:2c4c6f`
 *09.09. 17:22 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 17:22:57",
+ "stand": "2026-09-09 17:34:24",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,13 +39,13 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -417,7 +417,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.722,
+ "haende_quote": 0.723,
  "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 28,

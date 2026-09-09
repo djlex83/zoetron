@@ -1,14 +1,14 @@
 {
- "stand": 1788974568.96626,
+ "stand": 1788975256.798396,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 4833,
+   "laeufe": 4835,
    "fehler": 1039,
    "fehler_in_folge": 0,
-   "gesperrt_bis": 1788975098.2380002,
-   "latenz_summe_s": 179118.04159545898,
+   "gesperrt_bis": 0.0,
+   "latenz_summe_s": 179200.7892856598,
    "letzter_fehler": "Client error '404 Not Found' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT",
    "letzte_sperre": 1788973298.2380013,
    "kontofehler": 6
