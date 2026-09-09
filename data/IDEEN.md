@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 17:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 17:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,8 +31,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory growth is unbounded without periodic pruning, as evidenced by successive prune runs removing 88 and 30 events, threatening system stability.
+- Dreams without a structured conversion pipeline remain unused, so the gap between generation and application is the primary bottleneck for skill growt
+- Swarm knowledge degrades within 7 days due to timestamp/version drift, making periodic refresh mandatory rather than optional for decision quality.
+- Effort estimates systematically underestimate actual requirements by 100%, indicating a persistent cognitive bias that must be compensated through pro
+- Model failures (502 upstream overload, 429 rate limits) are systemic and recurring, not isolated, requiring architectural fault tolerance rather than 
 - The 5-versus-8 effort misprediction and act/drive timeouts show that calibration must include provider retries and tool overhead while enforcing the r
 - Actuator failures without error details require bounded retries plus explicit post-action verification.
 - Model latency and output volume vary enough that routing should consider task phase, expected output size, and current health rather than average spee
@@ -51,11 +56,6 @@
 - Nemotron-3-ultra shows extreme latency variance (3.9s vs 124s), indicating unreliable cold-start or queueing behavior on free tier.
 - Aggressive pruning (91 events in one run) discards failure context needed for root-cause analysis of model errors.
 - Free-tier LLM endpoints exhibit cascading failures (429/502) under load, making single-model reliance a systemic risk.
-- The simulation-revision-swarm pipeline achieved convergence in one cycle with a 407-line Python artifact, demonstrating that structured multi-role swa
-- Calibration for the "Träume und Simulationen" goal underestimated actual effort by 100% (predicted 4 vs actual 8), revealing systematic planning optim
-- The inclusionai/ling-3.0-flash-fin:free model delivers low latency (3-11s) and high token throughput, establishing it as the most reliable free-tier o
-- Google Gemma models consistently hit 429 rate limits, indicating strict quota enforcement that blocks repeated usage.
-- The Nvidia Nemotron model exhibits high latency (93-153s) and frequent 502 upstream overload errors, making it unreliable for time-sensitive tasks.
 
 ---
 

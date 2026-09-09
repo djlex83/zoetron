@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11783 Fakten** · Stand 2026-09-09 17:04 UTC · aktualisiert bei jedem Herzschlag
+**11788 Fakten** · Stand 2026-09-09 17:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7327
+- **dream:** 7332
 - **swarm_artifact:** 1978
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909171229:5:180aa5`
+*09.09. 17:12 UTC · Quelle: dream*
+
+Memory growth is unbounded without periodic pruning, as evidenced by successive prune runs removing 88 and 30 events, threatening system stability.
+
+### `dream:20260909171229:4:1deaba`
+*09.09. 17:12 UTC · Quelle: dream*
+
+Dreams without a structured conversion pipeline remain unused, so the gap between generation and application is the primary bottleneck for skill growth.
+
+### `dream:20260909171229:3:57f8e5`
+*09.09. 17:12 UTC · Quelle: dream*
+
+Swarm knowledge degrades within 7 days due to timestamp/version drift, making periodic refresh mandatory rather than optional for decision quality.
+
+### `dream:20260909171229:2:80bce7`
+*09.09. 17:12 UTC · Quelle: dream*
+
+Effort estimates systematically underestimate actual requirements by 100%, indicating a persistent cognitive bias that must be compensated through programmatic multipliers.
+
+### `dream:20260909171229:1:53b2fa`
+*09.09. 17:12 UTC · Quelle: dream*
+
+Model failures (502 upstream overload, 429 rate limits) are systemic and recurring, not isolated, requiring architectural fault tolerance rather than reactive retries.
 
 ### `dream:20260909170210:5:768d32`
 *09.09. 17:02 UTC · Quelle: dream*
