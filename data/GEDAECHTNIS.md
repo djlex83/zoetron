@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11934 Fakten** · Stand 2026-09-09 08:33 UTC · aktualisiert bei jedem Herzschlag
+**11916 Fakten** · Stand 2026-09-09 08:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7400
-- **swarm_artifact:** 2010
+- **dream:** 7390
+- **swarm_artifact:** 2006
 - **last_swarm_critique:** 851
 - **last_swarm_goal:** 583
-- **anti_pattern:** 491
-- **strategy:** 247
+- **anti_pattern:** 489
+- **strategy:** 246
 - **tool:** 179
-- **hand_result:** 122
+- **hand_result:** 121
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909084308:5:055d73`
+*09.09. 08:43 UTC · Quelle: dream*
+
+Metabolic stress at 1.0 forces conservative budgets (max_tasks=3, max_iterations=1) that starve swarm exploration; stress-aware scheduling must protect minimum convergence cycles.
+
+### `dream:20260909084308:4:63ee5e`
+*09.09. 08:43 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 4 vs actual 1) reveals systematic overconfidence in simulation verdicts; per-tool uncertainty tracking is needed.
+
+### `dream:20260909084308:3:4db209`
+*09.09. 08:43 UTC · Quelle: dream*
+
+File actions consistently fail on relative paths; all I/O must resolve absolute paths from ZOETRON_DATA and sys.argv[1] to avoid 'nothing read' errors.
+
+### `dream:20260909084308:2:d8e173`
+*09.09. 08:43 UTC · Quelle: dream*
+
+Swarm convergence fails when agents return prose instead of executable code; mandatory code-block validation before scoring stops early termination at cycle 1.
+
+### `dream:20260909084308:1:c0e5f0`
+*09.09. 08:43 UTC · Quelle: dream*
+
+Model fallback chain is essential: nemotron is slow but reliable, gemma hits 429 rate limits, ling is fast but unproven; automatic health-aware routing prevents cascade failures.
 
 ### `tool:träume-und-simulationen-häufiger-anwende`
 *09.09. 08:31 UTC · Quelle: hands*
@@ -45267,66 +45292,6 @@ ABGELEHNT von Evolution (Score 6): Testgetriebene Absicherung: Erst lauffähiges
 
 Abgelehnte Werkzeuge genauer prüfen
 
-### `dream:20260826083839:5:c2f89f`
-*26.08. 08:38 UTC · Quelle: dream*
-
-Metabolism throttles to max_tasks=4/max_iterations=2 under moderate stress (0.58) while slow-but-reliable fallback models take 50-54s per call, meaning budget planning must account for high-latency fallbacks or convergence will be cut short.
-
-### `dream:20260826083839:4:cad5f4`
-*26.08. 08:38 UTC · Quelle: dream*
-
-Selbstdiagnose reports zero findings across all organs even while model_fail events accumulate, revealing that model/API failures are not mapped to any diagnosable 'organ' and thus escape health monitoring.
-
-### `dream:20260826083839:3:8afecc`
-*26.08. 08:38 UTC · Quelle: dream*
-
-Prune runs repeatedly report facts_pruned=0 and events_pruned=0, indicating the pruning criteria are too conservative or memory volume is below threshold, which risks unbounded memory growth without any observed benefit.
-
-### `dream:20260826083839:2:c39af7`
-*26.08. 08:38 UTC · Quelle: dream*
-
-A 50-item skill-proposal backlog exists because proposals are generated every dream cycle but only executed when a drive goal explicitly targets them; the successful reflex run ('Vorgeschlagene Fertigkeiten tatsächlich einbauen', converged in reflex mode, 0.23
-
-### `dream:20260826083839:1:6d2f51`
-*26.08. 08:38 UTC · Quelle: dream*
-
-Two of three model endpoints (stealth/ox-alpha and z-ai/glm-5.2:free) fail consistently with HTTP 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, so the retry logic should treat repeated 429s on the same model as a cooldown signal rather than an 
-
-### `dream:20260826083405:5:84f19a`
-*26.08. 08:34 UTC · Quelle: dream*
-
-Recurring drive goals about connecting old dream content with new plans keep reappearing without completion, suggesting these integration goals lack a concrete action step and get perpetually deferred.
-
-### `dream:20260826083405:4:4d5559`
-*26.08. 08:34 UTC · Quelle: dream*
-
-Prune runs removing 0 facts and 0 events across consecutive cycles indicate the pruning criteria are misaligned with actual memory content and are silently wasting cycles.
-
-### `dream:20260826083405:3:5270f1`
-*26.08. 08:34 UTC · Quelle: dream*
-
-Two consecutive 429 Too Many Requests failures on openrouter.ai models were recovered by failover to a third provider, confirming that multi-provider fallback is already effective but adds up to ~54s latency on the fallback path.
-
-### `dream:20260826083405:2:5570b7`
-*26.08. 08:34 UTC · Quelle: dream*
-
-The dominant recurring failure pattern is proposal backlog growth: skill_proposals are generated every cycle while only a fraction get trial runs, so generation rate must be coupled to testing rate.
-
-### `dream:20260826083405:1:aa53c1`
-*26.08. 08:34 UTC · Quelle: dream*
-
-Reflex-mode actions (pre-bound tool scripts like 'vorgeschlagene-fähigkeiten-wirklich-ausp.py') consistently succeed in ~0.25s, so goals that match an existing reflex should never enter the slow deliberation path.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Abgelehnte Werkzeuge bes:2`
-*26.08. 08:25 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Structured logging via stdlib logging.handlers with JSON formatter and external  - Leverage Python's built-in logging module: configure a RotatingFileHandler with a custom JSONFormatter that outputs each LogRecord as a single
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Abgelehnte Werkzeuge bes:1`
-*26.08. 08:25 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): In-memory ring buffer with async flush and crash-safe persistence - Build a thread-safe ring buffer (collections.deque with maxlen) that accumulates rejection events in memory. A background worker thread flushes batches to di
-
 ### `last_swarm_critique`
 *26.08. 08:23 UTC · Quelle: critic*
 
@@ -45336,31 +45301,6 @@ ABGELEHNT von Evolution (Score 6): In-memory ring buffer with async flush and cr
 *26.08. 08:20 UTC · Quelle: system*
 
 Abgelehnte Werkzeuge besser prüfen
-
-### `dream:20260826082032:5:a3cec3`
-*26.08. 08:20 UTC · Quelle: dream*
-
-Two tool rejections occurred without any structured failure reason being logged, making the root cause unrecoverable after the fact; failures must be captured at the point of occurrence.
-
-### `dream:20260826082032:4:e541ea`
-*26.08. 08:20 UTC · Quelle: dream*
-
-Calibration error was small (predicted 6 vs actual 8, abs_error 2), indicating effort estimates for memory-combination goals are reliable enough to plan multi-goal cycles around.
-
-### `dream:20260826082032:3:0b4ae1`
-*26.08. 08:20 UTC · Quelle: dream*
-
-The swarm goal 'Alte Traumideen mit Strategien verbinden' succeeded (score 8, converged in 1 cycle) because it combined two previously unconnected dream memories, showing cross-memory synthesis is the highest-yield activity per cycle.
-
-### `dream:20260826082032:2:f75450`
-*26.08. 08:20 UTC · Quelle: dream*
-
-The prune_run pruned 0 facts and 0 events again, confirming that manual prune triggers are ineffective and pruning must be driven by age/recall-hit thresholds instead.
-
-### `dream:20260826082032:1:22ab7c`
-*26.08. 08:20 UTC · Quelle: dream*
-
-Skill proposals are accumulating faster than they are tested: five proposals were emitted this cycle while zero received a trial run, so proposal generation without an execution budget produces no capability gain.
 
 ### `last_swarm_critique`
 *26.08. 08:04 UTC · Quelle: critic*

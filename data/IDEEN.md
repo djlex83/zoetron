@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 08:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 08:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren für bessere Ergebnisse *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolic stress at 1.0 forces conservative budgets (max_tasks=3, max_iterations=1) that starve swarm exploration; stress-aware scheduling must protec
+- Calibration error of 3 points (predicted 4 vs actual 1) reveals systematic overconfidence in simulation verdicts; per-tool uncertainty tracking is nee
+- File actions consistently fail on relative paths; all I/O must resolve absolute paths from ZOETRON_DATA and sys.argv[1] to avoid 'nothing read' errors
+- Swarm convergence fails when agents return prose instead of executable code; mandatory code-block validation before scoring stops early termination at
+- Model fallback chain is essential: nemotron is slow but reliable, gemma hits 429 rate limits, ling is fast but unproven; automatic health-aware routin
 - Skill proposals accumulate without execution gates; simulations and tests are proposed but not enforced as pre-merge requirements.
 - Pruning removes facts/events but preserves the structural causes of repeated failures (no circuit breakers, no model health tracking).
 - Self-diagnosis reports zero organ errors while model failures persist, indicating the diagnostic scope misses external dependency failures.
@@ -51,11 +56,6 @@
 - Reflex-driven goals succeed (model-error reduction converged) but only when concrete tools exist; proposals stall without automated promotion.
 - Primary model latency of 94.5s violates usability; a latency SLO (<5s) must gate model selection in the router.
 - Free-tier models fail predictably via 429 rate limits and 502 upstream overloads, requiring header-aware routing with jittered backoff.
-- Automatic pruning (7 facts, 71 events per cycle) prevents context bloat but risks discarding low-frequency failure signatures needed for root-cause an
-- Hand-action execution succeeds deterministically (~5 s, exit 0) once artifacts exist, confirming the builder→hand-off pipeline is robust.
-- The swarm planner systematically underestimates cycle count (predicted 4 vs. actual 8), indicating its complexity model lacks a revision-loop penalty 
-- Nemotron-3-ultra exhibits extreme latency variance (58–165 s) when it succeeds, making it unsuitable for time-critical paths without aggressive timeou
-- The inclusionai/ling-3.0-flash-fin:free model is the only reliable free-tier endpoint, consistently succeeding where Nvidia (502 overload) and Google 
 
 ---
 
