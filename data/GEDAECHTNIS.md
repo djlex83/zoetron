@@ -1,20 +1,50 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11895 Fakten** · Stand 2026-09-09 09:13 UTC · aktualisiert bei jedem Herzschlag
+**11892 Fakten** · Stand 2026-09-09 09:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7380
-- **swarm_artifact:** 2003
+- **dream:** 7385
+- **swarm_artifact:** 1998
 - **last_swarm_critique:** 851
 - **last_swarm_goal:** 583
-- **anti_pattern:** 485
-- **strategy:** 244
-- **tool:** 178
+- **anti_pattern:** 483
+- **strategy:** 243
+- **tool:** 177
 - **hand_result:** 120
-- **aktuell_organfehler:** 47
+- **aktuell_organfehler:** 48
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909092312:5:9cb4c9`
+*09.09. 09:23 UTC · Quelle: dream*
+
+Swarm planner systematically underestimates revision loops by ~4 cycles, causing repeated timeline overruns in multi-agent tasks.
+
+### `dream:20260909092312:4:9ecffd`
+*09.09. 09:23 UTC · Quelle: dream*
+
+Reflex-driven maintenance (schwarmwissen refresh) converges reliably in <1s, proving that deterministic scripts outperform LLM planning for known operational tasks.
+
+### `dream:20260909092312:3:d92ee2`
+*09.09. 09:23 UTC · Quelle: dream*
+
+Pruning discards 502/429 error clusters that are needed for weekly root-cause analysis, creating a blind spot for systematic provider degradation.
+
+### `dream:20260909092312:2:096f68`
+*09.09. 09:23 UTC · Quelle: dream*
+
+Skill proposals duplicate across cycles (model router, skill lifecycle proposed twice) because no deduplication or promotion gate exists between dream output and production registry.
+
+### `dream:20260909092312:1:f5f404`
+*09.09. 09:23 UTC · Quelle: dream*
+
+Free-tier models exhibit provider-specific failure modes: NVIDIA nemotron returns 502 overload errors at ~100s latency, Google models return 429 rate limits, while inclusionai/ling-3.0-flash-fin consistently succeeds at ~3s latency.
+
+### `aktuell_organfehler`
+*09.09. 09:19 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-09 09:09:39 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260909085522:5:458027`
 *09.09. 08:55 UTC · Quelle: dream*
@@ -45171,21 +45201,6 @@ Failures are invisible at the moment they happen: hand_action exited 1 in 0.03s 
 *26.08. 09:24 UTC · Quelle: dream*
 
 The evolution loop is decorative: the winning variant (score 9) was selected but its code never reached the next swarm cycle, so the system repeats the same failure instead of compounding its best ideas.
-
-### `tool:abgelehnte-werkzeuge-verstehen-und-verbe`
-*26.08. 09:10 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Abgelehnte Werkzeuge verstehen und verbessern'. Datei: data/tools/abgelehnte-werkzeuge-verstehen-und-verbe.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Abgelehnte Werkzeuge ver:2`
-*26.08. 09:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 5, 6]): Continuous Policy Learning via Rejection-as-Negative-Reward - Treat every tool rejection as a negative reward signal in a contextual bandit / RLHF framework. Log full context (user goal, conversation history, tool sch
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Abgelehnte Werkzeuge ver:0`
-*26.08. 09:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 4, 9]): Causal Root-Cause Analysis with Automated Remediation Synthesis - Build a causal inference engine that maps rejection patterns to root causes via counterfactual reasoning. Instead of keyword matching, use semantic emb
 
 ### `last_swarm_critique`
 *26.08. 09:07 UTC · Quelle: critic*
