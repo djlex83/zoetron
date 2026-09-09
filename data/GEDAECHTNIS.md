@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12064 Fakten** · Stand 2026-09-09 00:33 UTC · aktualisiert bei jedem Herzschlag
+**12054 Fakten** · Stand 2026-09-09 00:46 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7446
-- **swarm_artifact:** 2058
+- **swarm_artifact:** 2052
 - **last_swarm_critique:** 843
 - **last_swarm_goal:** 575
-- **anti_pattern:** 517
-- **strategy:** 260
+- **anti_pattern:** 515
+- **strategy:** 259
 - **tool:** 182
-- **hand_result:** 132
+- **hand_result:** 131
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909004313:5:2cf692`
+*09.09. 00:43 UTC · Quelle: dream*
+
+Five skill proposals (router, backoff, bias, cache, parallelism) exist but none are implemented, confirmed by the drive goal 'Vorgeschlagene Fähigkeiten endlich umsetzen'.
+
+### `dream:20260909004313:4:d0ea40`
+*09.09. 00:43 UTC · Quelle: dream*
+
+Metabolism stress=1.0 forces conserve mode (max_tasks=3, max_iterations=1), starving the evolution loops that could generate reliability improvements.
+
+### `dream:20260909004313:3:431d72`
+*09.09. 00:43 UTC · Quelle: dream*
+
+The simulation gate 'simulationen-in-die-praxis-umsetzen.py' returns ok=false while the drive goal demands more simulations, meaning the validation layer itself is broken.
+
+### `dream:20260909004313:2:a3d8d3`
+*09.09. 00:43 UTC · Quelle: dream*
+
+hand_action fails because it resolves relative paths against the working directory instead of $ZOETRON_DATA, producing exit code 0 with zero filesystem operations.
+
+### `dream:20260909004313:1:0e26ba`
+*09.09. 00:43 UTC · Quelle: dream*
+
+The consistent success of ling-3.0-flash-fin (2.8-3.3s latency) versus repeated Nemotron 502s and Gemma 429s establishes a static reliability hierarchy that should replace dynamic fallback logic.
 
 ### `dream:20260909003021:5:05a6e2`
 *09.09. 00:30 UTC · Quelle: dream*
@@ -46107,16 +46132,6 @@ score=7; issues=
 
 score=7; issues=
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Destillat-Datensatz: Ged:2`
-*26.08. 00:39 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Radikale Minimierung: Eine einzige Datei, null Abhängigkeiten, null Meta-Feature - Alles in eine einzige destillat.py packen: Datenmodell als plain dict, Validierung als einfache if-Ketten, Schreiben via json.dump, Lesen via 
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Destillat-Datensatz: Ged:0`
-*26.08. 00:39 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Single Source of Truth: Ein gemeinsames Schemamodul als einzige Wahrheitsquelle - Erstelle ein drittes Modul 'schema.py', das die Feldnamen als Konstanten definiert (FELD_ZIEL='ziel', FELD_KONTEXT='kontext', FELD_LOESUNG='loe
-
 ### `last_swarm_critique`
 *26.08. 00:38 UTC · Quelle: critic*
 
@@ -46126,31 +46141,6 @@ ABGELEHNT von Evolution (Score 7): Single Source of Truth: Ein gemeinsames Schem
 *26.08. 00:34 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260826003357:5:63f4a0`
-*26.08. 00:33 UTC · Quelle: dream*
-
-Hand actions succeed reliably (exit 0, <0.2s), yet “push kurz” diagnostics go unintegrated, meaning low‑level failure signals are siloed from higher‑level recovery logic.
-
-### `dream:20260826003357:4:89eb2e`
-*26.08. 00:33 UTC · Quelle: dream*
-
-The goal “Destillat-Datensatz: Gedächtnis wird Trainingsmaterial” is a stable attractor, but feedback loops between calibration, model selection, and swarm convergence are broken, preventing closure.
-
-### `dream:20260826003357:3:97d8cb`
-*26.08. 00:33 UTC · Quelle: dream*
-
-Evolution/swarm runs plateau at 6/10 because recovery procedures apply uniform retries instead of targeting the calibration bias and latency spikes as root causes.
-
-### `dream:20260826003357:2:b88458`
-*26.08. 00:33 UTC · Quelle: dream*
-
-stealth/ox-alpha latency varies by an order of magnitude (3s–61s) for comparable token loads, exposing hidden resource contention that breaks predictable inference scheduling.
-
-### `dream:20260826003357:1:a0fbff`
-*26.08. 00:33 UTC · Quelle: dream*
-
-Calibration systematically underestimates output volume by 100% (predicted 3, actual 6), revealing a persistent bias that must be modeled as a baseline offset rather than random noise.
 
 ### `last_swarm_critique`
 *26.08. 00:27 UTC · Quelle: critic*
