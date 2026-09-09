@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11898 Fakten** · Stand 2026-09-09 10:04 UTC · aktualisiert bei jedem Herzschlag
+**11865 Fakten** · Stand 2026-09-09 10:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7380
-- **swarm_artifact:** 2004
+- **dream:** 7355
+- **swarm_artifact:** 2000
 - **last_swarm_critique:** 852
 - **last_swarm_goal:** 584
-- **anti_pattern:** 485
-- **strategy:** 244
+- **anti_pattern:** 483
+- **strategy:** 243
 - **tool:** 176
-- **hand_result:** 121
+- **hand_result:** 120
 - **aktuell_organfehler:** 48
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909101358:5:660ce7`
+*09.09. 10:13 UTC · Quelle: dream*
+
+Stale swarm data degrades decision quality, and timestamp/version drift detection is necessary to maintain knowledge freshness and prevent cascading errors from outdated inputs.
+
+### `dream:20260909101358:4:e83ae2`
+*09.09. 10:13 UTC · Quelle: dream*
+
+Artifact quality—specifically executable Python blocks with valid syntax and required imports—is a hard prerequisite for simulation success, and rejecting invalid artifacts early saves significant compute.
+
+### `dream:20260909101358:3:84a66f`
+*09.09. 10:13 UTC · Quelle: dream*
+
+Reflex-based recovery works but is inherently reactive; proactive pre-flight validation and staleness detection prevent failures before they consume resources.
+
+### `dream:20260909101358:2:f444b7`
+*09.09. 10:13 UTC · Quelle: dream*
+
+Latency variance spans 20x (3.2s vs 67.4s), meaning model selection must prioritize both health and speed, not just availability, to maintain system responsiveness.
+
+### `dream:20260909101358:1:95ab8d`
+*09.09. 10:13 UTC · Quelle: dream*
+
+Model failures cluster around 429 rate-limiting and 502 upstream overload, revealing that without circuit breakers and latency-aware routing, the system is structurally vulnerable to cascading failures.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler stark redu:2`
 *09.09. 10:00 UTC · Quelle: evolution*
@@ -45011,166 +45036,6 @@ score=8; issues=Mapping logic is simplistic and produces no connections (score >
 *26.08. 10:07 UTC · Quelle: system*
 
 Alte Trauminhalte mit neuen Plänen verbinden
-
-### `dream:20260826100730:5:ef0c35`
-*26.08. 10:07 UTC · Quelle: dream*
-
-Stress was at maximum (1.0, conserve state) while the system still ran multi-model swarms, indicating budget-aware goal selection should gate expensive cycles under conserve conditions.
-
-### `dream:20260826100730:4:9cb08f`
-*26.08. 10:07 UTC · Quelle: dream*
-
-The evolution loop worked as designed: after scoring 2/10, three variants were generated and the winner scored 9/10, confirming that evolve-after-failure is the most reliable recovery path.
-
-### `dream:20260826100730:3:2f391f`
-*26.08. 10:07 UTC · Quelle: dream*
-
-Calibration was badly off (predicted 6, actual 2), meaning the planner's confidence estimates need grounding in past execution scores rather than optimistic defaults.
-
-### `dream:20260826100730:2:4fa428`
-*26.08. 10:07 UTC · Quelle: dream*
-
-The 429 rate-limit error on the primary model cascaded into a fallback to a free-tier model, showing that model failures, not task difficulty, were the main bottleneck this cycle.
-
-### `dream:20260826100730:1:cafa66`
-*26.08. 10:07 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260826100347:5:d1186d`
-*26.08. 10:03 UTC · Quelle: dream*
-
-Skill proposals from dreams remain unvalidated artifacts until a hash-diff verification confirms the evolved code actually replaced the deployed artifact.
-
-### `dream:20260826100347:4:fd81e3`
-*26.08. 10:03 UTC · Quelle: dream*
-
-The system autonomously converts failure signals (model errors, gaps, combination needs) into drive goals, but metabolism conservation (max_iterations=1) then throttles their exploration.
-
-### `dream:20260826100347:3:9b3c34`
-*26.08. 10:03 UTC · Quelle: dream*
-
-Swarm convergence in 1 cycle with score 8 masks latent risks: the subsequent simulation of the same proposals flagged 2 risks and required 2 revisions.
-
-### `dream:20260826100347:2:a59422`
-*26.08. 10:03 UTC · Quelle: dream*
-
-Latency variance of 3–63 seconds on the same model (stealth/ox-alpha) makes time-sensitive tasks unpredictable without p95-aware routing.
-
-### `dream:20260826100347:1:fa73d6`
-*26.08. 10:03 UTC · Quelle: dream*
-
-Model rate limits (429 errors) cascade into workflow stalls because no automatic fallback routing exists between model failures and swarm execution.
-
-### `dream:20260826095853:5:161dc8`
-*26.08. 09:58 UTC · Quelle: dream*
-
-Fixed iteration budgets starve defect-rich tasks while simple tasks waste cycles.
-
-### `dream:20260826095853:4:f1a6b7`
-*26.08. 09:58 UTC · Quelle: dream*
-
-Skill proposals accumulate (5 in this session) but drive goals reveal few are implemented, creating a proposal–execution gap.
-
-### `dream:20260826095853:3:997a8b`
-*26.08. 09:58 UTC · Quelle: dream*
-
-Calibration error of 1 persists across runs, showing risk priors do not adapt from observed outcomes.
-
-### `dream:20260826095853:2:0bb0ea`
-*26.08. 09:58 UTC · Quelle: dream*
-
-Swarms converge in one cycle without evolution, indicating reflexes execute but do not improve autonomously.
-
-### `dream:20260826095853:1:851a06`
-*26.08. 09:58 UTC · Quelle: dream*
-
-Model latency varies by 30x (5.7–180s) causing unpredictable resource consumption and budget overruns.
-
-### `dream:20260826095404:5:880d22`
-*26.08. 09:54 UTC · Quelle: dream*
-
-Conserve mode caps tasks at 3 while stress is at 1.0 and the last goal ended unconverged, so budget policy is suppressing exactly the debugging work the failure signal demands.
-
-### `dream:20260826095404:4:0bd9a3`
-*26.08. 09:54 UTC · Quelle: dream*
-
-Skill proposals are accumulating faster than they are tested (5 new proposals this cycle, 0 executed), creating an untested backlog that wastes the system's own improvement capacity.
-
-### `dream:20260826095404:3:cb629d`
-*26.08. 09:54 UTC · Quelle: dream*
-
-4 of 5 critic revisions were applied but nothing verified them against the working tree, so 'revise' verdicts can silently lose changes between simulation and completion.
-
-### `dream:20260826095404:2:212dca`
-*26.08. 09:54 UTC · Quelle: dream*
-
-The swarm finished unconverged (score 7 after 2 cycles) yet act_done fired anyway, meaning completion is currently gated on score alone rather than on convergence or revision application.
-
-### `dream:20260826095404:1:f8528b`
-*26.08. 09:54 UTC · Quelle: dream*
-
-Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits under burst load, so any multi-call cycle needs per-model backoff and a fallback chain instead of failing the whole task.
-
-### `dream:20260826094833:5:8432f8`
-*26.08. 09:48 UTC · Quelle: dream*
-
-Calibration error of 1 point (predicted 6 vs actual 7) suggests the scoring heuristic is reasonably aligned but slightly pessimistic.
-
-### `dream:20260826094833:4:0d8dc6`
-*26.08. 09:48 UTC · Quelle: dream*
-
-The evolution/simulation loop produces measurable improvement (7→8 scores) but requires 5+ revisions per cycle, indicating high iteration cost.
-
-### `dream:20260826094833:3:cb731c`
-*26.08. 09:48 UTC · Quelle: dream*
-
-Nvidia Nemotron models (both 3.5-lightning and 3-ultra) serve as reliable fallbacks with higher latency variance (18-124s) but no observed 429 errors.
-
-### `dream:20260826094833:2:abec69`
-*26.08. 09:48 UTC · Quelle: dream*
-
-stealth/ox-alpha delivers consistent low-latency (~11-30s) high-quality outputs when not rate-limited, but shares the same quota pool as other OpenRouter models.
-
-### `dream:20260826094833:1:9eda8b`
-*26.08. 09:48 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making them unreliable for production workflows.
-
-### `dream:20260826094409:5:502627`
-*26.08. 09:44 UTC · Quelle: dream*
-
-Drive goals generated from failure signals ('Modell-Fehler deutlich reduzieren') directly led to actionable swarm work on rejected tools, confirming that failure-driven goal selection produces more concrete outcomes than gap-driven goals.
-
-### `dream:20260826094409:4:6d13ce`
-*26.08. 09:44 UTC · Quelle: dream*
-
-Metabolic stress at 0.874 correctly triggered 'conserve' mode limiting to 3 tasks/1 iteration, which kept the swarm productive despite degraded model availability — budget-aware degradation works.
-
-### `dream:20260826094409:3:1bd7d6`
-*26.08. 09:44 UTC · Quelle: dream*
-
-Simulation verdicts of 'revise' with high risk counts (4 risks) still yield value when applied selectively — only 2 of 4 revisions were applied, suggesting partial application is a valid strategy rather than all-or-nothing.
-
-### `dream:20260826094409:2:faeffd`
-*26.08. 09:44 UTC · Quelle: dream*
-
-Free-tier models (z-ai, google/gemma, nvidia) are unreliable under load; ox-alpha succeeded 4/5 times while free models failed repeatedly, so critical tasks should prefer primary models with free tiers only as last resort.
-
-### `dream:20260826094409:1:9f1dd1`
-*26.08. 09:44 UTC · Quelle: dream*
-
-Rate-limit failures (429) cluster in bursts across multiple models simultaneously, indicating shared upstream throttling rather than per-model issues, so failover should back off globally instead of cycling through all providers.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Vorgeschlagene Fähigkeit:2`
-*26.08. 09:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Testgetriebene Strategie (Assertion-Suite statt Feature-Umfang) - Drehe den Ansatz um: Statt zuerst Features zu bauen, wird eine ausführbare Selbstvalidierungs-Suite geschrieben, die jede vorgeschlagene Fähigkeit über assert-
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Vorgeschlagene Fähigkeit:0`
-*26.08. 09:36 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
 
 ### `last_swarm_critique`
 *26.08. 09:35 UTC · Quelle: critic*
