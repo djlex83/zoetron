@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8440 Neuronen · 914784 bewertete Synapsen
+Stand: 8437 Neuronen · 915401 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -16,9 +16,9 @@ Stand: 8440 Neuronen · 914784 bewertete Synapsen
 | 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 875 | 0.25 |
 | 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 877 | 0.23 |
 | 6 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 795 | 0.26 |
-| 7 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 803 | 0.25 |
+| 7 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 804 | 0.25 |
 | 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 788 | 0.25 |
-| 9 | 💭 | Repeated 429 errors across four different models indicate system… | 804 | 0.24 |
+| 9 | 💭 | Repeated 429 errors across four different models indicate system… | 805 | 0.24 |
 | 10 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 764 | 0.25 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 847 | 0.23 |
 | 12 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 784 | 0.24 |

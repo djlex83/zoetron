@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12045 Fakten** · Stand 2026-09-09 01:11 UTC · aktualisiert bei jedem Herzschlag
+**12048 Fakten** · Stand 2026-09-09 01:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7446
-- **swarm_artifact:** 2047
-- **last_swarm_critique:** 843
-- **last_swarm_goal:** 575
+- **swarm_artifact:** 2048
+- **last_swarm_critique:** 844
+- **last_swarm_goal:** 576
 - **anti_pattern:** 513
 - **strategy:** 258
-- **tool:** 182
-- **hand_result:** 130
+- **tool:** 181
+- **hand_result:** 131
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:2`
+*09.09. 01:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Registry-basiertes Plugin-System mit zentralem Dispatcher - Baue ein zentrales Registrierungssystem auf, das Methoden nicht direkt verschachtelt, sondern über einen Dispatcher auflöst. Jede Fähigkeit wird als eigenständiges P
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:1`
+*09.09. 01:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Funktionale Komposition mit Higher-Order-Funktionen - Vermeide vollständig die Decorator-Syntax und rekursive Wrapper-Schleifen. Verwende stattdessen eine funktionale Kompositionsfunktion, die Originalfunktion und Erweiterung
+
+### `last_swarm_critique`
+*09.09. 01:33 UTC · Quelle: critic*
+
+score=1; issues=Artefakt laeuft nicht: Sandbox meldet RecursionError/Endlosschleife in _schutzwall.py:98 (r = alt(self, *a, **k)) - Decorator/Wrapper ruft sich selbst rekursiv auf; Kein lauffaehiger Python-Block -> Score 0-2 nach Notenskala
+
+### `last_swarm_goal`
+*09.09. 01:22 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten echt umsetzen
+
+### `dream:20260909012048:5:6129d1`
+*09.09. 01:20 UTC · Quelle: dream*
+
+Pruning (76 items) shows memory pressure but no downstream impact metrics to tune retention thresholds.
+
+### `dream:20260909012048:4:b17117`
+*09.09. 01:20 UTC · Quelle: dream*
+
+Swarm knowledge staleness >24h triggers manual refresh instead of automated versioned snapshots with peer-change detection.
+
+### `dream:20260909012048:3:b8ca0c`
+*09.09. 01:20 UTC · Quelle: dream*
+
+Confidence predictions are systematically overconfident (predicted * 0.4 correction needed), indicating miscalibrated self-assessment without persistent tracking.
+
+### `dream:20260909012048:2:765d6e`
+*09.09. 01:20 UTC · Quelle: dream*
+
+Execution validation is missing from the critic pipeline: broken code reaches semantic review, wasting cycles on unrunnable proposals.
+
+### `dream:20260909012048:1:0680ab`
+*09.09. 01:20 UTC · Quelle: dream*
+
+Free-tier models across all providers fail simultaneously under load (429/502), proving shared infrastructure bottlenecks require paid fallback or local inference.
 
 ### `dream:20260909010718:5:70e474`
 *09.09. 01:07 UTC · Quelle: dream*
@@ -45836,46 +45881,6 @@ score=8; issues=Mindest-Datensatzgröße von 5 Beispielen ist für echtes LoRA-T
 *26.08. 01:14 UTC · Quelle: system*
 
 Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)
-
-### `dream:20260826011416:5:9876e5`
-*26.08. 01:14 UTC · Quelle: dream*
-
-Der metabolism_check setzte den Swarm in 'conserve' mit max_iterations=1, und der Swarm endete konvergiert=false mit Score 1 – Ressourcenknappheit plus fehlgeschlagene erste Ausführung führen zu vorzeitigem Abbruch ohne eine zweite Korrekturrunde.
-
-### `dream:20260826011416:4:c65a9a`
-*26.08. 01:14 UTC · Quelle: dream*
-
-Der evolution_run war die wirksamste Reparatur-Schleife: aus Score 1/10 entstanden 3 Varianten mit Scores [7,9,8] – variantengenerierung plus Kritik ist das etablierte Verfahren zum Aufholen nach Fehlschlägen und sollte früher (direkt nach dem ersten Sandbox-F
-
-### `dream:20260826011416:3:e49750`
-*26.08. 01:14 UTC · Quelle: dream*
-
-Die Simulation lieferte erst 'revise' (5 Risiken), dann nach Revision 'go' – trotzdem schlug die Ausführung fehl, d.h. die statische Simulation erkennt Logikrisiken, aber keine Syntax-/Importfehler; ein tatsächlicher Compile-Check muss vor dem 'go' stehen.
-
-### `dream:20260826011416:2:d6d20b`
-*26.08. 01:14 UTC · Quelle: dream*
-
-Die Kalibrierung lag mit predicted=5 vs. actual=1 (abs_error=4) weit daneben: die Selbstbewertung vor der Ausführung überschätzt Erfolgswahrscheinlichkeiten systematisch, wenn Code nie wirklich ausgeführt wurde.
-
-### `dream:20260826011416:1:04da42`
-*26.08. 01:14 UTC · Quelle: dream*
-
-Alle drei fehlgeschlagenen hand_actions scheiterten in unter 0.03s mit exit 1 und error=null, was auf Syntaxfehler im generierten Code vor der Laufzeit hindeutet – konkret stand 'from __future__' an Zeile 17 statt am Dateianfang.
-
-### `tool:destillat-datensatz-gedächtnis-wird-trai`
-*26.08. 01:08 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Destillat-Datensatz: Gedächtnis wird Trainingsmaterial'. Datei: data/tools/destillat-datensatz-gedächtnis-wird-trai.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Destillat-Datensatz: Ged:2`
-*26.08. 01:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Aktive Datenbeschaffung: Seed-and-Grow-Strategie mit Rückkopplungsschleife - Kehre die Logik um: Statt passiv auf vorhandene Memories zu warten, erzeugt das System aktiv echtes Trainingsmaterial durch eine Selbstgesprächs-/Rü
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Destillat-Datensatz: Ged:0`
-*26.08. 01:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Quellen-Autonomie statt Demo-Daten: Multi-Source-Ingestion mit harten Fail-Krite - Baue das System so um, dass es ausschließlich aus echten Memory-Quellen speist und DEMO-Daten komplett entfernt oder strikt als separates Test
 
 ### `last_swarm_critique`
 *26.08. 01:06 UTC · Quelle: critic*

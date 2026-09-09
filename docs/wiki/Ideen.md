@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 01:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 01:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
@@ -37,10 +37,15 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning (76 items) shows memory pressure but no downstream impact metrics to tune retention thresholds.
+- Swarm knowledge staleness >24h triggers manual refresh instead of automated versioned snapshots with peer-change detection.
+- Confidence predictions are systematically overconfident (predicted * 0.4 correction needed), indicating miscalibrated self-assessment without persiste
+- Execution validation is missing from the critic pipeline: broken code reaches semantic review, wasting cycles on unrunnable proposals.
+- Free-tier models across all providers fail simultaneously under load (429/502), proving shared infrastructure bottlenecks require paid fallback or loc
 - Hand actions fail silently (exit 2, zero bytes read) suggesting tool-invocation contracts are unverified before runtime.
 - Swarm cycles repeat without convergence because revisions address semantic issues but not the root cause: unverified code executability.
 - Evolution scores (7-9) wildly overpredict final swarm scores (4/10), showing critic calibration drift when static execution checks are absent.
@@ -51,11 +56,6 @@
 - Performance calibration is systematically optimistic: predicted 6 vs actual 4, revealing a persistent overconfidence bias that must be corrected.
 - Hand actions and artifact execution fail because scripts are invoked without required arguments like --data-dir and --timeout, indicating no pre-execu
 - API calls lack exponential backoff and retry logic, causing cascading failures when providers return 429 or 502 errors repeatedly.
-- Five skill proposals (router, backoff, bias, cache, parallelism) exist but none are implemented, confirmed by the drive goal 'Vorgeschlagene Fähigkeit
-- Metabolism stress=1.0 forces conserve mode (max_tasks=3, max_iterations=1), starving the evolution loops that could generate reliability improvements.
-- The simulation gate 'simulationen-in-die-praxis-umsetzen.py' returns ok=false while the drive goal demands more simulations, meaning the validation la
-- hand_action fails because it resolves relative paths against the working directory instead of $ZOETRON_DATA, producing exit code 0 with zero filesyste
-- The consistent success of ling-3.0-flash-fin (2.8-3.3s latency) versus repeated Nemotron 502s and Gemma 429s establishes a static reliability hierarch
 
 ---
 
