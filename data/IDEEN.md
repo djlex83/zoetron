@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 04:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning aggressively removes context (23 facts, 119 events) but the system still repeats the same artifact-execution failures.
+- Confidence calibration is absent: predicted scores (evolution winner 9/10) diverge wildly from actual outcomes (swarm score 3/10).
+- Critic feedback loops are ineffective when stage-1 static analysis (syntax, imports, execution) is skipped, allowing broken artifacts to reach semanti
+- The swarm evolution process consistently produces non-executable artifacts that fail the executable artifact gate (tool rejected for no return value).
+- Free-tier models exhibit systematic unreliability (502/429 errors) making them unsuitable for critical-path tasks without automated failover.
 - Artifact incompleteness was the primary critic failure mode; enforce minimum artifact standards (runnable code, tests, docstring, integration hooks) b
 - Only inclusionai/ling-3.0-flash-fin:free remained consistently available across the session; maintain a verified model registry and deprioritize flaky
 - Evolutionary variant generation with critic feedback improved artifact scores from 3 to 8-9 in a single run; make evolution a standard step for skill 
@@ -51,11 +56,6 @@
 - The per-model lockout after 3 consecutive failures is effective but purely reactive; proactive health-checks before task assignment would prevent wast
 - Sequential model fallback fails catastrophically when multiple providers hit rate limits simultaneously — the system needs a parallel or cached-respon
 - Free-tier LLM endpoints are unreliable under load; larger models (550B) are disproportionately prone to upstream 502 overload errors compared to small
-- Non-convergence within 2 cycles indicates that the swarm lacks a validation gate to prune invalid proposals early, wasting computational budget on une
-- Fast and reliable models (e.g., ling-3.0-flash-fin at 2.8s) should be prioritized for latency-sensitive consolidation tasks, while heavy models are re
-- Swarm convergence failed because knowledge was stale; without scheduled refresh, the swarm repeats low-scoring iterations on outdated assumptions.
-- Upstream model failures (502/429) are recurring systemic risks, not edge cases; without automatic failover, a single provider outage can stall the ent
-- The primary failure mode is the gap between skill proposals and executable execution—builders produced non-runnable Python artifacts that critics coul
 
 ---
 

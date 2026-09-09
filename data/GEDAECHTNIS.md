@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12011 Fakten** · Stand 2026-09-09 04:57 UTC · aktualisiert bei jedem Herzschlag
+**12016 Fakten** · Stand 2026-09-09 05:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7440
+- **dream:** 7445
 - **swarm_artifact:** 2030
 - **last_swarm_critique:** 848
 - **last_swarm_goal:** 580
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909050716:5:083f19`
+*09.09. 05:07 UTC · Quelle: dream*
+
+Pruning aggressively removes context (23 facts, 119 events) but the system still repeats the same artifact-execution failures.
+
+### `dream:20260909050716:4:4b3ae0`
+*09.09. 05:07 UTC · Quelle: dream*
+
+Confidence calibration is absent: predicted scores (evolution winner 9/10) diverge wildly from actual outcomes (swarm score 3/10).
+
+### `dream:20260909050716:3:38ff66`
+*09.09. 05:07 UTC · Quelle: dream*
+
+Critic feedback loops are ineffective when stage-1 static analysis (syntax, imports, execution) is skipped, allowing broken artifacts to reach semantic review.
+
+### `dream:20260909050716:2:cdd379`
+*09.09. 05:07 UTC · Quelle: dream*
+
+The swarm evolution process consistently produces non-executable artifacts that fail the executable artifact gate (tool rejected for no return value).
+
+### `dream:20260909050716:1:786545`
+*09.09. 05:07 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic unreliability (502/429 errors) making them unsuitable for critical-path tasks without automated failover.
 
 ### `dream:20260909045440:5:b8481e`
 *09.09. 04:54 UTC · Quelle: dream*
