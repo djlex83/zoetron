@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-09 01:37:46",
+ "stand": "2026-09-09 02:00:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 18,
-   "erfolge": 18,
+   "laeufe": 17,
+   "erfolge": 17,
    "quote": 1.0
   },
   {
@@ -36,12 +36,6 @@
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -105,6 +99,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -121,6 +121,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
@@ -169,12 +175,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
@@ -411,17 +411,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.775,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.772,
+ "simulationen_angewandt": 27,
  "swarm_scores": {
-  "n": 25,
+  "n": 26,
   "best": 9.0,
-  "schnitt": 5.24
+  "schnitt": 5.27
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 24,
-   "schnitt": 5.08
+   "n": 25,
+   "schnitt": 5.12
   },
   "bau": {
    "n": 1,
