@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12080 Fakten** · Stand 2026-09-09 00:21 UTC · aktualisiert bei jedem Herzschlag
+**12064 Fakten** · Stand 2026-09-09 00:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7451
-- **swarm_artifact:** 2062
+- **dream:** 7446
+- **swarm_artifact:** 2058
 - **last_swarm_critique:** 843
 - **last_swarm_goal:** 575
-- **anti_pattern:** 521
-- **strategy:** 262
+- **anti_pattern:** 517
+- **strategy:** 260
 - **tool:** 182
-- **hand_result:** 133
+- **hand_result:** 132
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909003021:5:05a6e2`
+*09.09. 00:30 UTC · Quelle: dream*
+
+The system self-diagnosed no internal organ errors yet still experienced model failures, confirming that failures are external (API-side) rather than architectural, so resilience must be built at the routing layer.
+
+### `dream:20260909003021:4:e388f7`
+*09.09. 00:30 UTC · Quelle: dream*
+
+Sequential model calls during evolution create compounding latency when primary models fail, turning a ~10-second task into a 60+ second task due to cascading retries and fallbacks.
+
+### `dream:20260909003021:3:1ca146`
+*09.09. 00:30 UTC · Quelle: dream*
+
+Evolution runs that fail to converge within 2 cycles produce only marginal score improvements (7→7.7/8.3), suggesting variant generation lacks sufficient diversity to escape local optima.
+
+### `dream:20260909003021:2:0a7d6b`
+*09.09. 00:30 UTC · Quelle: dream*
+
+The calibration predictor has a structural +2 underestimation bias for code-artifact generation goals, indicating the training data lacks sufficient code-generation examples to calibrate accurately.
+
+### `dream:20260909003021:1:2ab976`
+*09.09. 00:30 UTC · Quelle: dream*
+
+Free-tier OpenRouter models fail in two distinct patterns—429 rate-limiting and 502 upstream overload—each requiring a different recovery strategy rather than a single retry policy.
 
 ### `dream:20260909001759:5:bcf4e5`
 *09.09. 00:17 UTC · Quelle: dream*
@@ -46172,26 +46197,6 @@ score=7; issues=
 
 score=7; issues=
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Lokaler Schüler: das ers:1`
-*26.08. 00:24 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Modularisierung: Duenn orchestriertes Hauptskript + externe Ressourcen statt mon - Verlasse das Prinzip 'alles im einen Artefakt'. Das Artefakt selbst bleibt bewusst duenn (<10000 Zeichen): es enthaelt ausschliesslich den Ein
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Lokaler Schüler: das ers:0`
-*26.08. 00:24 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Minimalismus zuerst: Hartes Zeichenbudget-Management als Designprinzip statt Nac - Baue das Artefakt von Grund auf mit einem strikten Budget von maximal 15000 Zeichen (25% Sicherheitspuffer unter dem 20000er-Limit). Strategie
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Lokaler Schüler: das ers:2`
-*26.08. 00:24 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Experiment-Driven Discovery Lab (Empirical, Hypothesis Loop) - Frame the session as a series of falsifiable mini-experiments the student designs themselves: 'Hypothesis: rank 4 vs rank 32 changes output quality' → run both on
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Lokaler Schüler: das ers:0`
-*26.08. 00:24 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Guided Notebook Walkthrough (Top-Down, Copy-Paste First) - Instead of explaining LoRA theory first, deliver a single ready-to-run Jupyter/Colab notebook that the student executes line by line. Each cell is annotated in plain 
-
 ### `last_swarm_critique`
 *26.08. 00:23 UTC · Quelle: critic*
 
@@ -46207,60 +46212,10 @@ score=5; issues=Critic output unparseable.
 
 Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)
 
-### `dream:20260826001938:5:b17a4f`
-*26.08. 00:19 UTC · Quelle: dream*
-
-Whispers parked after 3 failed attempts (e.g., Exemplar-Bank) indicate retry loops without escalation, so blocked items need an explicit decision path instead of silent parking.
-
-### `dream:20260826001938:4:9a0d1c`
-*26.08. 00:19 UTC · Quelle: dream*
-
-The recurring pattern across cycles is that proposals and critiques accumulate but are never executed — the bottleneck is application/testing of ideas, not idea generation.
-
-### `dream:20260826001938:3:2b4b15`
-*26.08. 00:19 UTC · Quelle: dream*
-
-Calibration shows systematic overconfidence (predicted 4 vs actual 2), so predictions should be discounted by roughly half or anchored to past per-goal-type accuracy.
-
-### `dream:20260826001938:2:eb6a50`
-*26.08. 00:19 UTC · Quelle: dream*
-
-The swarm cycle failed at the artifact-execution stage (hand_action exit 1), meaning generated code is never smoke-tested before the green-light check, wasting a full expensive cycle.
-
-### `dream:20260826001938:1:429ea5`
-*26.08. 00:19 UTC · Quelle: dream*
-
-Both model failures were HTTP 429 rate-limit errors from OpenRouter's free tier, so the root cause is missing exponential backoff and provider fallback, not model quality.
-
 ### `last_swarm_goal`
 *26.08. 00:17 UTC · Quelle: system*
 
 Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)
-
-### `dream:20260826001747:5:c71820`
-*26.08. 00:17 UTC · Quelle: dream*
-
-The parked whisper 'Exemplar-Bank' has exhausted 3 attempts without convergence, making it a blocking decision point for the creator rather than something further autonomous retries will resolve.
-
-### `dream:20260826001747:4:31ed0b`
-*26.08. 00:17 UTC · Quelle: dream*
-
-The drive_goal 'Gründe für die zwei Modellfehler finden' targets model calls that show no error field at all, so the failure cause must be inferred from latency/token anomalies (e.g., the 102.1s / 4338-token call) rather than explicit error messages.
-
-### `dream:20260826001747:3:0fc445`
-*26.08. 00:17 UTC · Quelle: dream*
-
-Skill proposals are accumulating faster than they are tested: five proposals were logged in this window but zero were executed, confirming the proposal-aging problem is already active.
-
-### `dream:20260826001747:2:ea052d`
-*26.08. 00:17 UTC · Quelle: dream*
-
-Successful hand_actions take 0.18-3.9s while all failures complete in under 0.5s (except the timeout), meaning sub-100ms exit-1 results are a reliable early signal to abort and re-plan rather than retry blindly.
-
-### `dream:20260826001747:1:7a3127`
-*26.08. 00:17 UTC · Quelle: dream*
-
-hand_action failures cluster into two distinct signatures: instant exit-1 failures (<0.05s) indicating bad arguments or missing preconditions, and one 30s timeout indicating a hung subprocess, so retry logic must treat them differently.
 
 ### `last_swarm_critique`
 *26.08. 00:11 UTC · Quelle: critic*
