@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 09:24:57",
+ "stand": "2026-09-09 10:02:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -67,12 +67,6 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "träume-besser-nutzen-lernen.py",
@@ -165,6 +159,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "vergessene-schwarmprojekte-reaktivieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -187,6 +187,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
@@ -295,12 +301,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-stark-verringern.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",
@@ -429,17 +429,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.778,
+ "haende_quote": 0.762,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 27,
   "best": 9.0,
-  "schnitt": 5.11
+  "schnitt": 5.0
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 26,
-   "schnitt": 4.96
+   "schnitt": 4.85
   },
   "bau": {
    "n": 1,

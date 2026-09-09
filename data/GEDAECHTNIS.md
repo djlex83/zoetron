@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11892 Fakten** · Stand 2026-09-09 09:27 UTC · aktualisiert bei jedem Herzschlag
+**11898 Fakten** · Stand 2026-09-09 10:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7385
-- **swarm_artifact:** 1998
-- **last_swarm_critique:** 851
-- **last_swarm_goal:** 583
-- **anti_pattern:** 483
-- **strategy:** 243
-- **tool:** 177
-- **hand_result:** 120
+- **dream:** 7380
+- **swarm_artifact:** 2004
+- **last_swarm_critique:** 852
+- **last_swarm_goal:** 584
+- **anti_pattern:** 485
+- **strategy:** 244
+- **tool:** 176
+- **hand_result:** 121
 - **aktuell_organfehler:** 48
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler stark redu:2`
+*09.09. 10:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.0): Template-basierte deterministische Komposition - Verwende ausschließlich vorkompilierte, bereits verifizierte Code-Templates, aus denen das Endergebnis zusammengesetzt wird. Es gibt kein de-novo Code-Generieren – stattdesse
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler stark redu:0`
+*09.09. 10:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.7): Declarative-Konfiguration statt Code-Generierung - Völlig auf Python-Code verzichten und das System als deklarative JSON/YAML-Konfiguration spezifizieren. Die gesamte Logik des Modell-Fehler-Taxonomie- und LLM-Router-System
+
+### `last_swarm_critique`
+*09.09. 09:57 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: Artefakt laeuft nicht (LAEUFT NICHT) - harter Vertragsbruch; Syntax/Runtime-Fehler in Model Error Taxonomy (line 94) und Resilient LLM Router (line 629): lambda-Dictionary-Struktur korrupt ('injecte | ace/...'); Keine Punkte fue
+
+### `last_swarm_goal`
+*09.09. 09:37 UTC · Quelle: system*
+
+Modell-Fehler stark reduzieren
+
+### `dream:20260909093629:5:c4e2ed`
+*09.09. 09:36 UTC · Quelle: dream*
+
+Pruning removes facts/events aggressively (up to 44 events/run) but no metric tracks whether pruned items were later needed.
+
+### `dream:20260909093629:4:b7adee`
+*09.09. 09:36 UTC · Quelle: dream*
+
+Swarm knowledge snapshots are stale (>24 h) and no automatic critique exchange triggers, degrading collective accuracy.
+
+### `dream:20260909093629:3:80cdd1`
+*09.09. 09:36 UTC · Quelle: dream*
+
+75 skill proposals exist but only 43 models are validated; proposals accumulate without mandatory simulation gates.
+
+### `dream:20260909093629:2:e892f0`
+*09.09. 09:36 UTC · Quelle: dream*
+
+Model latency varies 69–106 s on the same endpoint, indicating missing request-level timeouts and circuit-breaker logic.
+
+### `dream:20260909093629:1:682db3`
+*09.09. 09:36 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of the ZOETRON_DATA anchor, causing silent zero-byte reads.
 
 ### `dream:20260909092312:5:9cb4c9`
 *09.09. 09:23 UTC · Quelle: dream*
@@ -45137,36 +45182,6 @@ ABGELEHNT von Evolution (Score 8): Testgetriebene Strategie (Assertion-Suite sta
 
 Vorgeschlagene Fähigkeiten ausprobieren
 
-### `dream:20260826093145:5:b4de52`
-*26.08. 09:31 UTC · Quelle: dream*
-
-Model latency varied 14x (4.0s to 56.4s) at comparable token volumes, implying latency-based routing or timeouts are needed instead of assuming uniform provider performance.
-
-### `dream:20260826093145:4:0ad267`
-*26.08. 09:31 UTC · Quelle: dream*
-
-Two cycles were insufficient for convergence even after an evolution run, suggesting cycle budgets for revise-verdict tasks should scale with the number of open critic defects rather than being fixed at 2.
-
-### `dream:20260826093145:3:dc6fc5`
-*26.08. 09:31 UTC · Quelle: dream*
-
-Risk prediction is systematically miscalibrated downward (predicted 3 vs actual 5, abs_error 2), so raw model risk counts should be anchored to a rolling mean of observed actuals rather than trusted directly.
-
-### `dream:20260826093145:2:e7eb06`
-*26.08. 09:31 UTC · Quelle: dream*
-
-Evolution produced variants scoring 8-9/10 but the swarm's final score remained 5/10, indicating the winning variant was likely not integrated back into the deliverable or the scoring pipeline did not propagate the improved candidate.
-
-### `dream:20260826093145:1:eb7273`
-*26.08. 09:31 UTC · Quelle: dream*
-
-Execution success is not quality: the artifact compiled and ran (exit 0, 154 lines) yet scored only 5/10 because the critic's re-validation defect was never addressed, so 'it runs' must be treated as a necessary but insufficient gate.
-
-### `tool:reflexe-öfter-automatisch-einsetzen`
-*26.08. 09:29 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Reflexe öfter automatisch einsetzen'. Datei: data/tools/reflexe-öfter-automatisch-einsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *26.08. 09:29 UTC · Quelle: critic*
 
@@ -45176,31 +45191,6 @@ score=8; issues=Reflex-Quote wird nur gegen die Anzahl der Demo-Ereignisse gemes
 *26.08. 09:24 UTC · Quelle: system*
 
 Reflexe öfter automatisch einsetzen
-
-### `dream:20260826092419:5:ae6a68`
-*26.08. 09:24 UTC · Quelle: dream*
-
-Metabolism dropped to conserve mode (stress 1.0, budget capped at 3 tasks/1 iteration) exactly when deep debugging was needed, so resource throttling and failure recovery are currently anti-correlated.
-
-### `dream:20260826092419:4:013ffc`
-*26.08. 09:24 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than they are tested (5 proposals, 0 trials), so the proposal channel has become a write-only queue that creates an illusion of learning without behavioral change.
-
-### `dream:20260826092419:3:5046da`
-*26.08. 09:24 UTC · Quelle: dream*
-
-A score of 1/10 with converged=false after 2 cycles was still followed by goal re-emission ('Abgelehnte Werkzeuge prüfen und verbessern') rather than root-cause investigation, showing stagnation is recycled instead of escalated.
-
-### `dream:20260826092419:2:bb0ffe`
-*26.08. 09:24 UTC · Quelle: dream*
-
-Failures are invisible at the moment they happen: hand_action exited 1 in 0.03s with error=null and the selbstdiagnose found 'no organ defects', meaning the diagnostic layer only sees what the event stream records, not what actually broke.
-
-### `dream:20260826092419:1:41489e`
-*26.08. 09:24 UTC · Quelle: dream*
-
-The evolution loop is decorative: the winning variant (score 9) was selected but its code never reached the next swarm cycle, so the system repeats the same failure instead of compounding its best ideas.
 
 ### `last_swarm_critique`
 *26.08. 09:07 UTC · Quelle: critic*
