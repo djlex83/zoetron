@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 00:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 00:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
@@ -37,10 +37,15 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und verringern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution loop improved score from 7.0 to 8.3 in one cycle, proving the critic→variant→select pipeline works when model calls succeed.
+- System entered conserve mode (stress=1.0, max_tasks=3) mid-pipeline, throttling parallelism exactly when swarm coordination needed it most.
+- Hand action timeout (20s, zero bytes read) indicates missing stream/chunk handling or deadlock in the capability-generation script.
+- Fallback cascade failed silently: both Google Gemma models returned 429 rate limits, leaving only inclusionai/ling-3.0-flash-fin as a working free tie
+- Primary model (nemotron-3-ultra) exhibits high latency variance (6-65s) and 502 failures under load, making it unreliable for time-bounded tasks.
 - Swarm knowledge staleness (5+ outdated entries) degrades collaborative intelligence, yet refresh reflexes lack scheduled triggers.
 - Confidence predictions are systematically overconfident (predicted vs actual score gap), requiring persistent per-goal calibration loops.
 - 70+ skill proposals accumulate without implementation because no executable artifact gate validates them before critic scoring wastes compute.
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin:free succeeds on every attempt with 2-4s latency, making it the only dependable free-tier fallback.
 - Gemma-4 models consistently hit 429 rate limits, indicating strict quota enforcement that blocks sustained usage.
 - Nemotron-3-Ultra fails repeatedly with 502 upstream overload errors, making it unreliable as a primary model despite good latency when it works.
-- Flash-tier models (Ling-3.0-flash-fin at 3.0s) outperform heavy models (Nemotron at 19-24s) under load on both latency and reliability, suggesting tha
-- Event pruning volume spiked to 21 events in the second reflex run versus 0 in the first, indicating that stale event accumulation accelerates and must
-- Both reflex runs produced clean self-diagnoses (zero organ errors) despite external model failures, confirming that failures originate in the infrastr
-- Stale swarm knowledge actively blocks new impulses — the system flagged outdated swarm goals as a 'stale' signal, meaning periodic pruning and refresh
-- Single-provider model dependency is the primary failure mode: Nemotron 502, Gemma 429, and only the flash-tier Ling model survived, proving that endpo
 
 ---
 

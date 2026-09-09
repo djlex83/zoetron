@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12086 Fakten** · Stand 2026-09-09 00:08 UTC · aktualisiert bei jedem Herzschlag
+**12080 Fakten** · Stand 2026-09-09 00:21 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7451
 - **swarm_artifact:** 2062
 - **last_swarm_critique:** 843
 - **last_swarm_goal:** 575
-- **anti_pattern:** 523
-- **strategy:** 263
-- **tool:** 183
+- **anti_pattern:** 521
+- **strategy:** 262
+- **tool:** 182
 - **hand_result:** 133
-- **aktuell_organfehler:** 49
+- **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909001759:5:bcf4e5`
+*09.09. 00:17 UTC · Quelle: dream*
+
+Evolution loop improved score from 7.0 to 8.3 in one cycle, proving the critic→variant→select pipeline works when model calls succeed.
+
+### `dream:20260909001759:4:e2055d`
+*09.09. 00:17 UTC · Quelle: dream*
+
+System entered conserve mode (stress=1.0, max_tasks=3) mid-pipeline, throttling parallelism exactly when swarm coordination needed it most.
+
+### `dream:20260909001759:3:dcb265`
+*09.09. 00:17 UTC · Quelle: dream*
+
+Hand action timeout (20s, zero bytes read) indicates missing stream/chunk handling or deadlock in the capability-generation script.
+
+### `dream:20260909001759:2:f56a7f`
+*09.09. 00:17 UTC · Quelle: dream*
+
+Fallback cascade failed silently: both Google Gemma models returned 429 rate limits, leaving only inclusionai/ling-3.0-flash-fin as a working free tier.
+
+### `dream:20260909001759:1:d29a70`
+*09.09. 00:17 UTC · Quelle: dream*
+
+Primary model (nemotron-3-ultra) exhibits high latency variance (6-65s) and 502 failures under load, making it unreliable for time-bounded tasks.
 
 ### `dream:20260909000544:5:5b9395`
 *09.09. 00:05 UTC · Quelle: dream*
@@ -46237,36 +46262,6 @@ Successful hand_actions take 0.18-3.9s while all failures complete in under 0.5s
 
 hand_action failures cluster into two distinct signatures: instant exit-1 failures (<0.05s) indicating bad arguments or missing preconditions, and one 30s timeout indicating a hung subprocess, so retry logic must treat them differently.
 
-### `aktuell_organfehler`
-*26.08. 00:14 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 00:13:47 UTC): push -> kurz. push meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ Herz
-
-### `dream:20260826001316:5:fc274f`
-*26.08. 00:13 UTC · Quelle: dream*
-
-Pruning removed nothing (0 facts, 0 events), suggesting memory growth is unchecked while attention is spent on low-yield consolidation cycles.
-
-### `dream:20260826001316:4:a8037e`
-*26.08. 00:13 UTC · Quelle: dream*
-
-Five skill proposals were generated in this window but zero were executed or tested, confirming a persistent proposal-to-adoption gap that proposal-aging alone does not close.
-
-### `dream:20260826001316:3:f7320b`
-*26.08. 00:13 UTC · Quelle: dream*
-
-The single 30s timeout is an outlier failure mode distinct from fast exits and needs its own handling path (timeout budget + retry), as already proposed in the backlog.
-
-### `dream:20260826001316:2:5bb905`
-*26.08. 00:13 UTC · Quelle: dream*
-
-Failures are interleaved between successes rather than clustered, so they likely stem from specific action types or argument shapes, not a systemic environment outage.
-
-### `dream:20260826001316:1:e8f2e4`
-*26.08. 00:13 UTC · Quelle: dream*
-
-All hand_action failures except one exited within 0.03s, indicating immediate precondition/argument validation rejections rather than mid-execution errors.
-
 ### `last_swarm_critique`
 *26.08. 00:11 UTC · Quelle: critic*
 
@@ -46356,26 +46351,6 @@ score=7; issues=
 *26.08. 00:10 UTC · Quelle: critic*
 
 score=7; issues=
-
-### `aktuell_organfehler`
-*26.08. 00:06 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 00:06:23 UTC): push -> kurz. push meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ Herz
-
-### `tool:destillat-datensatz-gedächtnis-wird-trai`
-*26.08. 00:06 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Destillat-Datensatz: Gedächtnis wird Trainingsmaterial'. Datei: data/tools/destillat-datensatz-gedächtnis-wird-trai.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Destillat-Datensatz: Ged:2`
-*26.08. 00:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): CI/CD-getriebene Verifikation mit Test-first-Vertrag - Verlagere die Garantien von Skript-Ausgaben in eine CI-Pipeline: Schreibe zuerst Tests, die die Anforderungen kodifizieren – pytest-Test 'assert exported_pairs >= 200', T
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Destillat-Datensatz: Ged:1`
-*26.08. 00:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Inkrementeller Sammel-Puffer mit Schwellwert-Trigger - Statt nächtlich alles neu zu erzeugen, läuft ein kontinuierlicher Collector-Prozess, der tagsüber gefilterte Paare in einen Append-Only-Puffer (SQLite/JSONL mit Validieru
 
 ### `last_swarm_critique`
 *26.08. 00:04 UTC · Quelle: critic*
