@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation-before-action strategy was revised 5 times but still scored only 1, indicating that simulation volume alone does not guarantee quality 
+- The swarm did not converge within 2 cycles despite role evolution, likely due to unbalanced role distribution (3 builders vs 1 planner and 1 critic), 
+- Sequential model fallback introduced compounding latency because each failure had to fully resolve before the next attempt, turning a brief outage int
+- The smaller inclusionai/ling-3.0-flash-fin model succeeded with sub-4-second latency when all larger models failed, demonstrating that model size corr
+- External provider failures (502 overload, 429 rate limits) were the dominant failure mode, not internal system errors, making provider health the prim
 - Calibration error of +300% (predicted 4 vs actual 1) reveals systematic overconfidence in planning estimates.
 - Absence of executable Python blocks in artifacts causes immediate convergence failure; prose-only outputs score 1/10.
 - NVIDIA Nemotron-3-Ultra succeeds but with 43-74s latency and intermittent 502 overload errors — only viable for non-interactive batch jobs.
@@ -51,11 +56,6 @@
 - The inclusionai/ling-3.0-flash-fin:free model succeeds consistently with 1.5-5.2s latency, making it the only reliable free-tier option observed.
 - Circuit breaker activates after 3 consecutive failures (1800s block) but provides no automatic fallback, leaving the pipeline stalled.
 - Free-tier models exhibit systematic unreliability: Nemotron returns 502 overload errors while Gemma models hit 429 rate limits within minutes.
-- Swarm knowledge staleness exceeds 24h without automated refresh, causing redundant critiques and missed cross-pollination.
-- Confidence predictions deviate significantly from actual outcomes (calibration factor 0.4 initial), demanding automated tracking and retraining loops.
-- Simulation-driven revision reduces risk but generates high revision counts (5 risks → 3 applied), indicating need for pre-simulation static checks.
-- Hand actions fail due to relative-path resolution against ZOETRON_DATA, requiring absolute-path enforcement before execution.
-- Free-tier models (nemotron, gemma) fail catastrophically under load (502/429), making tiered routing with health checks essential for reliability.
 
 ---
 

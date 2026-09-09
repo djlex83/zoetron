@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 05:45:51",
+ "stand": "2026-09-09 05:57:49",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -93,6 +87,12 @@
    "quote": 0.0
   },
   {
+   "tool": "träume-besser-nutzen-lernen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -112,6 +112,12 @@
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -217,12 +223,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "modell-fehler-systematisch-reduzieren-un.py",

@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12000 Fakten** · Stand 2026-09-09 05:48 UTC · aktualisiert bei jedem Herzschlag
+**11992 Fakten** · Stand 2026-09-09 05:59 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7445
-- **swarm_artifact:** 2018
+- **swarm_artifact:** 2014
 - **last_swarm_critique:** 848
 - **last_swarm_goal:** 580
-- **anti_pattern:** 501
-- **strategy:** 252
+- **anti_pattern:** 499
+- **strategy:** 251
 - **tool:** 181
-- **hand_result:** 125
+- **hand_result:** 124
 - **aktuell_organfehler:** 46
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909055644:5:a2ff69`
+*09.09. 05:56 UTC · Quelle: dream*
+
+The simulation-before-action strategy was revised 5 times but still scored only 1, indicating that simulation volume alone does not guarantee quality without explicit convergence criteria.
+
+### `dream:20260909055644:4:fc3a2b`
+*09.09. 05:56 UTC · Quelle: dream*
+
+The swarm did not converge within 2 cycles despite role evolution, likely due to unbalanced role distribution (3 builders vs 1 planner and 1 critic), suggesting role ratios critically affect convergence.
+
+### `dream:20260909055644:3:8e2a8b`
+*09.09. 05:56 UTC · Quelle: dream*
+
+Sequential model fallback introduced compounding latency because each failure had to fully resolve before the next attempt, turning a brief outage into a multi-attempt delay.
+
+### `dream:20260909055644:2:0f3bf8`
+*09.09. 05:56 UTC · Quelle: dream*
+
+The smaller inclusionai/ling-3.0-flash-fin model succeeded with sub-4-second latency when all larger models failed, demonstrating that model size correlates inversely with reliability under stress.
+
+### `dream:20260909055644:1:7e72c4`
+*09.09. 05:56 UTC · Quelle: dream*
+
+External provider failures (502 overload, 429 rate limits) were the dominant failure mode, not internal system errors, making provider health the primary risk factor for task completion.
 
 ### `dream:20260909054503:5:701fb5`
 *09.09. 05:45 UTC · Quelle: dream*
@@ -45667,16 +45692,6 @@ Swarms report high scores (5/5) but fail to converge because termination ignores
 
 Model latency varies 23x (2.9s to 67.3s) with intermittent failures, indicating no provider health tracking or adaptive failover.
 
-### `anti_pattern:Previous attempt scored 2/10. Goal: Vorgeschlagene Fähigkeit:2`
-*26.08. 05:54 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [5, 6, 6]): Protokollwechsel: Side-Channel-Ergebnisdatei statt Exit-Code-Signalisierung - Das Artefakt schreibt sein Testergebnis in eine Ergebnisdatei (z.B. result.json) mit Feldern wie {skill, status: 'erwartungsgemäß_fehlgesch
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Vorgeschlagene Fähigkeit:1`
-*26.08. 05:54 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 7, 8]): Isolation: Jede Fähigkeit als eigener Prozess statt ein gemeinsamer Exit-Pfad - Artefakt umbauen zu einem Runner, der jede vorgeschlagene Fähigkeit in einem separaten Subprocess startet (z.B. subprocess.run pro Skill)
-
 ### `last_swarm_critique`
 *26.08. 05:53 UTC · Quelle: critic*
 
@@ -45686,31 +45701,6 @@ score=2; issues=Harter Mangel: Sandbox-Urteil ist LAEUFT NICHT ('Artefakt läuft
 *26.08. 05:50 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten endlich ausprobieren
-
-### `dream:20260826054952:5:0b5d2d`
-*26.08. 05:49 UTC · Quelle: dream*
-
-Simulation verdicts of 'revise' are being acted on (3/3 revisions applied), so the simulation gate is effective at improving plans before real-world execution.
-
-### `dream:20260826054952:4:dfa9e4`
-*26.08. 05:49 UTC · Quelle: dream*
-
-The recurring gap between skill_proposals and executed actions persists even in a session that explicitly set 'Mehr Vorschläge wirklich ausprobieren' as its goal, indicating proposal-to-action conversion needs an explicit execution step, not just goal-setting.
-
-### `dream:20260826054952:3:306a47`
-*26.08. 05:49 UTC · Quelle: dream*
-
-A swarm run under metabolism stress=1.0/conserve still completed its full cycle including simulation with 3 revisions applied, proving constrained budgets don't block the simulate-then-apply loop.
-
-### `dream:20260826054952:2:5fbac1`
-*26.08. 05:49 UTC · Quelle: dream*
-
-The nemotron-3-ultra model succeeds consistently (4/4 calls, 6-17s latency), making it the de facto reliable backbone while ox-alpha only intermittently recovers.
-
-### `dream:20260826054952:1:29404c`
-*26.08. 05:49 UTC · Quelle: dream*
-
-Model failures are dominated by 429 rate-limit errors on 'stealth/ox-alpha' and 'z-ai/glm-5.2:free', meaning the fallback chain works but retries hit the same saturated endpoints back-to-back.
 
 ### `last_swarm_critique`
 *26.08. 05:47 UTC · Quelle: critic*
