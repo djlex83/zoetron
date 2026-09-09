@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 06:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 06:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proposed infrastructure solutions (registries, schedulers, trackers) keep repeating without being validated against actual failure data, suggesting pr
+- Circuit breakers that only hard-block without emitting fallback events waste the entire model pool instead of routing around failures.
+- Swarm feedback cycles of only 2 iterations are insufficient for convergence, leaving valuable critique unprocessed and stale goals unresolved.
+- Skill proposals consistently outpace their actual implementation and testing, creating a persistent gap between suggested capabilities and working too
+- Model failures are a recurring systemic issue across multiple consolidation cycles, not isolated incidents, and require persistent reliability trackin
 - Pruning runs (15 facts/1 event, then 0 facts/21 events) show asymmetric memory pressure: fact accumulation vs event burst cleanup.
 - Static validation gates (syntax, imports, absolute paths, executable code blocks) consistently prevent downstream simulation failures.
 - Staleness signals (swarm knowledge, peer critiques) require scheduled automation with concrete triggers (24h age, 10% delta) not just intent.
@@ -51,11 +56,6 @@
 - Reflexive error-analysis and simulation-based skill testing independently converge on the same model-reliability gaps.
 - Latency variance across models spans two orders of magnitude (3.5s vs 125s), making latency-aware routing essential for task scheduling.
 - Free-tier models consistently hit 429 rate limits under load, requiring automatic fallback chains with health checks.
-- The simulation-before-action strategy was revised 5 times but still scored only 1, indicating that simulation volume alone does not guarantee quality 
-- The swarm did not converge within 2 cycles despite role evolution, likely due to unbalanced role distribution (3 builders vs 1 planner and 1 critic), 
-- Sequential model fallback introduced compounding latency because each failure had to fully resolve before the next attempt, turning a brief outage int
-- The smaller inclusionai/ling-3.0-flash-fin model succeeded with sub-4-second latency when all larger models failed, demonstrating that model size corr
-- External provider failures (502 overload, 429 rate limits) were the dominant failure mode, not internal system errors, making provider health the prim
 
 ---
 
