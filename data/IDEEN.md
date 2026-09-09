@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 21:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 21:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals generated from failure patterns require validation against actual historical failure data to avoid addressing symptoms rather than cau
+- High-volume failure events (26 pruned) must be compressed before analysis, or noise obscures the root-cause signal.
+- A single healthy model sustained all successful operations, proving that latency-aware routing to a verified fallback prevents cascading failure.
+- Simultaneous 429 errors across multiple providers indicate the system's own request concurrency is the bottleneck, not provider capacity.
+- Without circuit-breaking, the system exhausts retries on dead endpoints, converting transient errors into prolonged outages that compound resource was
 - Pruning removes 27 events per run but cannot keep pace with repetitive failure spam from unguarded providers.
 - Drive goals for simulation and swarm renewal remain unexecuted because model unreliability blocks the planning loop.
 - Model-failure events flood the log (dozens per session) drowning signal; aggregation into 'degraded_period' facts is essential.
@@ -51,11 +56,6 @@
 - Reflex-driven exploration (connecting old dreams, exploring linked dreams) consistently converges and yields actionable connections.
 - Skill proposals accumulate but lack an implementation→validation→deployment pipeline, so dreams never become usable capabilities.
 - Model provider instability (429/502/timeouts) cascades into task failures because no circuit-breaker or health-aware routing exists.
-- Circuit-breaker and timeout patterns recur across every proposed skill, suggesting they are universal requirements rather than domain-specific fixes.
-- Self-diagnosis and periodic pruning are effective maintenance mechanisms that keep the knowledge base clean, but they do not prevent upstream infrastr
-- There is a persistent gap between skill proposal generation and skill deployment—proposals accumulate faster than they are converted into tested, reus
-- Latency variance across models is extreme (3.4s vs 52.3s), indicating that naive sequential or random model selection is a severe performance bottlene
-- Model endpoint failures (502 overload, 429 rate-limiting) are the dominant systemic failure mode, and the current architecture lacks any circuit-break
 
 ---
 
