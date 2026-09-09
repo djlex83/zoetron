@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11859 Fakten** · Stand 2026-09-09 11:11 UTC · aktualisiert bei jedem Herzschlag
+**11864 Fakten** · Stand 2026-09-09 11:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7345
+- **dream:** 7350
 - **swarm_artifact:** 2004
 - **last_swarm_critique:** 853
 - **last_swarm_goal:** 585
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909112112:5:33b917`
+*09.09. 11:21 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while the system produces only failing artifacts and broken predictions.
+
+### `dream:20260909112112:4:b210eb`
+*09.09. 11:21 UTC · Quelle: dream*
+
+Evolution/swarm cycles run but never converge (score=1, converged=false) despite revisions and simulation feedback.
+
+### `dream:20260909112112:3:17dc3f`
+*09.09. 11:21 UTC · Quelle: dream*
+
+Calibration predicts 7 but actual score is 1 (error=6), indicating the reward predictor is decoupled from reality.
+
+### `dream:20260909112112:2:52d507`
+*09.09. 11:21 UTC · Quelle: dream*
+
+Generated code contains syntax errors (malformed lambda) that crash execution before any logic runs.
+
+### `dream:20260909112112:1:f57a96`
+*09.09. 11:21 UTC · Quelle: dream*
+
+Free-tier models (Nemotron, Gemma) fail reliably under load with 502/429 errors while only Ling-3.0-Flash-Fin succeeds consistently.
 
 ### `dream:20260909110713:5:2489b6`
 *09.09. 11:07 UTC · Quelle: dream*

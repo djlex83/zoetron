@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 11:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 11:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,9 +28,9 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while the system produces only failing artifacts and broken predictions.
+- Evolution/swarm cycles run but never converge (score=1, converged=false) despite revisions and simulation feedback.
+- Calibration predicts 7 but actual score is 1 (error=6), indicating the reward predictor is decoupled from reality.
+- Generated code contains syntax errors (malformed lambda) that crash execution before any logic runs.
+- Free-tier models (Nemotron, Gemma) fail reliably under load with 502/429 errors while only Ling-3.0-Flash-Fin succeeds consistently.
 - Active drive goals (dream insight utilization, simulation application) were ignored while the system chased a low-level model-error goal, indicating m
 - Calibration error of 6 (predicted 7 vs actual 1) reveals broken self-assessment; external validation gates are required before trusting internal score
 - Simulation verdict 'revise' with four revisions did not catch a lambda syntax error, proving sandbox validation must precede simulation approval.
@@ -51,11 +56,6 @@
 - Model latency varies 3× (69–213 s) with token bursts up to 8k, triggering silent timeouts in downstream organs.
 - Simulation-driven revision loops (verdict: revise → 4 revisions applied) catch reflex failures that unit tests miss.
 - Relative paths bypass ZOETRON_DATA at call time, causing hand actions to read nothing despite valid inputs.
-- Dream/simulation cycles are underutilized relative to their proven value for pre-deployment validation and failure prediction.
-- Path resolution failures in hand_action stem from unexpanded environment variables and missing permission checks before execution.
-- Swarm knowledge becomes stale after ~7 days without automated refresh cycles that re-run critique pipelines against current models.
-- Skill proposals accumulate but lack a mandatory simulation-gated validation pipeline before promotion to executable capabilities.
-- Model endpoints frequently return 429/502 errors requiring automatic fallback with circuit breakers to maintain throughput.
 
 ---
 
