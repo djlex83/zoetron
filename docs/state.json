@@ -1,58 +1,62 @@
 {
-  "generatedAt": "2026-08-24T23:11:33.269Z",
+  "generatedAt": "2026-08-28T14:40:54.186Z",
   "repo": "djlex83/zoetron",
   "memory": {
-    "facts": 2178,
-    "neurons": 1774,
-    "synapses": 33215,
-    "stand": "2026-08-24 22:26 UTC",
+    "facts": 5401,
+    "neurons": 3603,
+    "synapses": 120901,
+    "stand": "2026-08-28 14:01 UTC",
     "kinds": [
       {
         "kind": "dream",
-        "count": 982
+        "count": 2328
       },
       {
         "kind": "swarm_artifact",
-        "count": 647
-      },
-      {
-        "kind": "anti_pattern",
-        "count": 178
-      },
-      {
-        "kind": "last_swarm_goal",
-        "count": 151
-      },
-      {
-        "kind": "strategy",
-        "count": 110
+        "count": 1333
       },
       {
         "kind": "last_swarm_critique",
-        "count": 91
+        "count": 568
+      },
+      {
+        "kind": "anti_pattern",
+        "count": 439
+      },
+      {
+        "kind": "last_swarm_goal",
+        "count": 317
+      },
+      {
+        "kind": "strategy",
+        "count": 240
+      },
+      {
+        "kind": "hand_result",
+        "count": 63
+      },
+      {
+        "kind": "tool",
+        "count": 44
+      },
+      {
+        "kind": "aktuell_fussball_messlatte",
+        "count": 33
+      },
+      {
+        "kind": "aktuell_organfehler",
+        "count": 21
       },
       {
         "kind": "creator_teaching",
-        "count": 8
+        "count": 9
       },
       {
         "kind": "frontier",
         "count": 3
       },
       {
-        "kind": "artifact",
-        "count": 3
-      },
-      {
-        "kind": "best_swarm_score",
-        "count": 1
-      },
-      {
         "kind": "semantic_organ",
-        "count": 1
-      },
-      {
-        "kind": "tool",
         "count": 1
       },
       {
@@ -67,94 +71,130 @@
   },
   "learning": {
     "events": 4000,
-    "handsRate": 0.767,
-    "simulations": 84,
+    "handsRate": 0.623,
+    "simulations": 58,
     "swarm": {
-      "n": 38,
-      "best": 8,
-      "schnitt": 3.76
+      "n": 42,
+      "best": 9,
+      "schnitt": 4.88
     },
     "tools": [
       {
-        "name": "ci-pipeline-reparieren-und-simulation-va.py",
+        "name": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+        "runs": 21,
+        "wins": 21,
+        "rate": 1
+      },
+      {
+        "name": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
+        "runs": 19,
+        "wins": 6,
+        "rate": 0.316
+      },
+      {
+        "name": "alte-träume-miteinander-verbinden.py",
+        "runs": 11,
+        "wins": 11,
+        "rate": 1
+      },
+      {
+        "name": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+        "runs": 5,
+        "wins": 5,
+        "rate": 1
+      },
+      {
+        "name": "exemplar-bank-von-den-eigenen-besten-mom.py",
         "runs": 4,
         "wins": 4,
         "rate": 1
       },
       {
-        "name": "synapsen-semantisch-vernetzen.py",
+        "name": "neue-fähigkeiten-aktiv-vorschlagen.py",
+        "runs": 4,
+        "wins": 4,
+        "rate": 1
+      },
+      {
+        "name": "fähigkeiten-gezielt-trainieren.py",
+        "runs": 4,
+        "wins": 4,
+        "rate": 1
+      },
+      {
+        "name": "entfernte-erinnerungen-verknüpfen.py",
+        "runs": 3,
+        "wins": 0,
+        "rate": 0
+      },
+      {
+        "name": "fähigkeits-messlatte-bauen-capability-be.py",
         "runs": 2,
         "wins": 2,
         "rate": 1
       },
       {
-        "name": "fähigkeiten-selbstständig-üben.py",
+        "name": "cortex-upgrade-reflex-neue-modelle-autom.py",
+        "runs": 2,
+        "wins": 2,
+        "rate": 1
+      },
+      {
+        "name": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+        "runs": 2,
+        "wins": 2,
+        "rate": 1
+      },
+      {
+        "name": "destillat-datensatz-gedächtnis-wird-trai.py",
+        "runs": 1,
+        "wins": 0,
+        "rate": 0
+      },
+      {
+        "name": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
         "runs": 1,
         "wins": 1,
         "rate": 1
       },
       {
-        "name": "vorschläge-für-fähigkeiten-umsetzen.py",
+        "name": "neue-fähigkeiten-erlernen.py",
         "runs": 1,
         "wins": 1,
         "rate": 1
       },
       {
-        "name": "fehler-im-modell-vermeiden.py",
+        "name": "mehr-evolution-starten.py",
         "runs": 1,
         "wins": 1,
         "rate": 1
       },
       {
-        "name": "alte-träume-nach-ideen-durchsuchen.py",
+        "name": "aufgaben-priorisieren.py",
         "runs": 1,
-        "wins": 1,
-        "rate": 1
+        "wins": 0,
+        "rate": 0
       },
       {
-        "name": "fehler-in-modellen-finden.py",
+        "name": "fähigkeitsvorschläge-in-echte-skills-umw.py",
         "runs": 1,
-        "wins": 1,
-        "rate": 1
+        "wins": 0,
+        "rate": 0
       },
       {
-        "name": "modell-gesundheitsregister-mit-sicherung.py",
+        "name": "modellfehler-deutlich-reduzieren.py",
         "runs": 1,
-        "wins": 1,
-        "rate": 1
+        "wins": 0,
+        "rate": 0
       },
       {
-        "name": "konvergenz-tor-test-pflicht-vor-erfolg-c.py",
-        "runs": 1,
-        "wins": 1,
-        "rate": 1
-      },
-      {
-        "name": "fähigkeits-messlatte-bauen-capability-be.py",
-        "runs": 1,
-        "wins": 1,
-        "rate": 1
-      },
-      {
-        "name": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
-        "runs": 1,
-        "wins": 1,
-        "rate": 1
-      },
-      {
-        "name": "extern-quote-in-drive-raus-aus-der-selbs.py",
-        "runs": 1,
-        "wins": 1,
-        "rate": 1
-      },
-      {
-        "name": "fußball-die-basislinie-von-50-2-schlagen.py",
+        "name": "traumerkenntnisse-mit-wissen-verknüpfen.py",
         "runs": 1,
         "wins": 1,
         "rate": 1
       }
     ],
-    "stand": "2026-08-24 22:26:22"
+    "stand": "2026-08-28 14:00:47"
   },
   "missions": [
     {
@@ -206,9 +246,9 @@
     "quote": "Dream logs contain recurring error signatures (timeout, AttributeError) that are not systematically mined to seed evolution variants."
   },
   "beats": {
-    "last": "2026-08-25T01:11:31+02:00",
-    "per24h": 82,
-    "total": 365
+    "last": "2026-08-28T14:01:15+00:00",
+    "per24h": 50,
+    "total": 50
   },
   "wiki": [
     {
@@ -225,7 +265,7 @@
       "group": "wiki",
       "title": "Betrieb",
       "intro": "Der Daemon läuft als Hintergrundprozess auf dem Hermes-Host:",
-      "bytes": 2054
+      "bytes": 2110
     },
     {
       "slug": "Scoring",
@@ -257,7 +297,7 @@
       "group": "wiki",
       "title": "Organe (Detail)",
       "intro": "Planner → Builder → Critic, bis zu 3 Zyklen. Konvergiert bei Score ≥ 8.",
-      "bytes": 2841
+      "bytes": 5581
     },
     {
       "slug": "Roadmap",
@@ -265,7 +305,7 @@
       "group": "wiki",
       "title": "Roadmap",
       "intro": "- [x] 21 Organe, 67/67 Tests, CI grün",
-      "bytes": 2671
+      "bytes": 2806
     },
     {
       "slug": "Session-2026-08-23",
@@ -276,28 +316,36 @@
       "bytes": 2717
     },
     {
+      "slug": "Session-2026-08-25",
+      "path": "wiki/Session-2026-08-25.md",
+      "group": "wiki",
+      "title": "Sitzung 25.08.2026 — Verlust, Wiederherstellung, Vererbung",
+      "intro": "Der härteste Tag des Projekts. Vier Stunden Arbeit und 44 Artefakte sind",
+      "bytes": 5171
+    },
+    {
       "slug": "Home",
       "path": "wiki/Home.md",
       "group": "wiki",
       "title": "Zoetron – Wiki",
       "intro": "träumt, hat Neugier, Sinne, Hände – und evolviert. Seit dem 23.08.2026",
-      "bytes": 1370
+      "bytes": 1455
     },
     {
       "slug": "Tabelle",
       "path": "wiki/Tabelle.md",
       "group": "wiki",
       "title": "Zoetrons Bestenliste",
-      "intro": "Stand: 1774 Neuronen · 33215 bewertete Synapsen",
-      "bytes": 3735
+      "intro": "Stand: 3603 Neuronen · 120901 bewertete Synapsen",
+      "bytes": 3731
     },
     {
       "slug": "Ideen",
       "path": "wiki/Ideen.md",
       "group": "wiki",
       "title": "Zoetrons Ideen-Board (AUTONOM)",
-      "intro": "- Implement modelhealth.py with per-model EMA latency, 3-state circuit breaker (trip at 2× median, probe recove (hatte d",
-      "bytes": 5172
+      "intro": "- Build a model router that tracks per-endpoint 429 rates, latency percentiles, and success rates, then dynamica (hatte ",
+      "bytes": 5615
     },
     {
       "slug": "2026-W34",
