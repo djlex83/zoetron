@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 07:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 08:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,39 +23,39 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren für bessere Ergebnisse *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate without execution gates; simulations and tests are proposed but not enforced as pre-merge requirements.
+- Pruning removes facts/events but preserves the structural causes of repeated failures (no circuit breakers, no model health tracking).
+- Self-diagnosis reports zero organ errors while model failures persist, indicating the diagnostic scope misses external dependency failures.
+- The system repeatedly proposes calibration/validation registries but never implements them, creating a proposal-implementation gap.
+- Free-tier model endpoints fail catastrophically under load (502/429), making them unreliable for production routing without fallback chains.
+- Self-diagnosis reports zero organ errors yet model subsystem degrades silently; health checks must cover external API dependencies.
+- Swarm knowledge decays silently: pruning removes 71 events per run while no sync daemon refreshes peer insights.
+- Reflex-driven goals succeed (model-error reduction converged) but only when concrete tools exist; proposals stall without automated promotion.
+- Primary model latency of 94.5s violates usability; a latency SLO (<5s) must gate model selection in the router.
+- Free-tier models fail predictably via 429 rate limits and 502 upstream overloads, requiring header-aware routing with jittered backoff.
 - Automatic pruning (7 facts, 71 events per cycle) prevents context bloat but risks discarding low-frequency failure signatures needed for root-cause an
 - Hand-action execution succeeds deterministically (~5 s, exit 0) once artifacts exist, confirming the builder→hand-off pipeline is robust.
 - The swarm planner systematically underestimates cycle count (predicted 4 vs. actual 8), indicating its complexity model lacks a revision-loop penalty 
 - Nemotron-3-ultra exhibits extreme latency variance (58–165 s) when it succeeds, making it unsuitable for time-critical paths without aggressive timeou
 - The inclusionai/ling-3.0-flash-fin:free model is the only reliable free-tier endpoint, consistently succeeding where Nvidia (502 overload) and Google 
-- Swarm knowledge refresh is a stated drive goal but the simulation-revision loop (verdict=revise, risks=1) stalls without a simulation-gated deployment
-- System operates in conserve mode (stress=0.7, max_tasks=3) while critical reliability skills (rate-limit backoff, model router, calibration guard) rem
-- Execution pipeline breaks at hand_action due to path resolution failures (sys.argv[1] vs ZOETRON_DATA mismatch) and reflex tool 'träume-in-handlungen-
-- Rate-limit handling is absent: repeated 429 errors on gemma models show no exponential backoff, jitter, or per-model quota tracking before hammering e
-- Primary models (nemotron, gemma) fail systematically with 502/429 errors while only ling-3.0-flash-fin succeeds, revealing a missing model health-awar
-- Skill proposals accumulate (10+ this session) but none are validated; a calibration tracker logging predicted vs actual scores per goal would close th
-- Rate-limit errors (429) are predictable and schedulable; a rate-limit-aware scheduler staggering requests across providers would eliminate this failur
-- Swarm simulations converge at 2 cycles because of hard-coded limit, not quality threshold; minimum 4 cycles with score>=8 early-stop is needed for con
-- Sequential fallback chains add 40+ seconds latency per failure; parallel dispatch with first-success-wins would cut tail latency by 80%.
-- Model reliability is dominated by provider-level failures (502 overload, 429 rate-limits) not model capability, making Ling-3.0-flash-fin the only con
 
 ---
 

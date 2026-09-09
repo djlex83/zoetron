@@ -1,20 +1,85 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11933 Fakten** · Stand 2026-09-09 07:52 UTC · aktualisiert bei jedem Herzschlag
+**11934 Fakten** · Stand 2026-09-09 08:33 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7400
-- **swarm_artifact:** 2008
-- **last_swarm_critique:** 850
-- **last_swarm_goal:** 582
-- **anti_pattern:** 493
-- **strategy:** 248
-- **tool:** 178
-- **hand_result:** 123
+- **swarm_artifact:** 2010
+- **last_swarm_critique:** 851
+- **last_swarm_goal:** 583
+- **anti_pattern:** 491
+- **strategy:** 247
+- **tool:** 179
+- **hand_result:** 122
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `tool:träume-und-simulationen-häufiger-anwende`
+*09.09. 08:31 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume und Simulationen häufiger anwenden'. Datei: data/tools/träume-und-simulationen-häufiger-anwende.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*09.09. 08:31 UTC · Quelle: critic*
+
+score=9; issues=sys.path.insert(0, str(DATA_DIR.parent)) in mehreren Artefakten - brüchig bei anderer Verzeichnisstruktur; besser: expliziter Import-Pfad oder Package-Installation; Harte Konstanten (MAX_SIMULATIONS_PER_CYCLE=5, SIMULATION_TIMEOUT=30, DEDUPE_WI
+
+### `last_swarm_goal`
+*09.09. 08:17 UTC · Quelle: system*
+
+Träume und Simulationen häufiger anwenden
+
+### `dream:20260909081633:5:a64bf4`
+*09.09. 08:16 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution gates; simulations and tests are proposed but not enforced as pre-merge requirements.
+
+### `dream:20260909081633:4:069f46`
+*09.09. 08:16 UTC · Quelle: dream*
+
+Pruning removes facts/events but preserves the structural causes of repeated failures (no circuit breakers, no model health tracking).
+
+### `dream:20260909081633:3:0d035f`
+*09.09. 08:16 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, indicating the diagnostic scope misses external dependency failures.
+
+### `dream:20260909081633:2:33e0f5`
+*09.09. 08:16 UTC · Quelle: dream*
+
+The system repeatedly proposes calibration/validation registries but never implements them, creating a proposal-implementation gap.
+
+### `dream:20260909081633:1:80834e`
+*09.09. 08:16 UTC · Quelle: dream*
+
+Free-tier model endpoints fail catastrophically under load (502/429), making them unreliable for production routing without fallback chains.
+
+### `dream:20260909080202:5:607dff`
+*09.09. 08:02 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors yet model subsystem degrades silently; health checks must cover external API dependencies.
+
+### `dream:20260909080202:4:65a2cf`
+*09.09. 08:02 UTC · Quelle: dream*
+
+Swarm knowledge decays silently: pruning removes 71 events per run while no sync daemon refreshes peer insights.
+
+### `dream:20260909080202:3:2671c5`
+*09.09. 08:02 UTC · Quelle: dream*
+
+Reflex-driven goals succeed (model-error reduction converged) but only when concrete tools exist; proposals stall without automated promotion.
+
+### `dream:20260909080202:2:7aa5eb`
+*09.09. 08:02 UTC · Quelle: dream*
+
+Primary model latency of 94.5s violates usability; a latency SLO (<5s) must gate model selection in the router.
+
+### `dream:20260909080202:1:474552`
+*09.09. 08:02 UTC · Quelle: dream*
+
+Free-tier models fail predictably via 429 rate limits and 502 upstream overloads, requiring header-aware routing with jittered backoff.
 
 ### `dream:20260909074850:5:a8f73a`
 *09.09. 07:48 UTC · Quelle: dream*
@@ -45297,16 +45362,6 @@ The prune_run pruned 0 facts and 0 events again, confirming that manual prune tr
 
 Skill proposals are accumulating faster than they are tested: five proposals were emitted this cycle while zero received a trial run, so proposal generation without an execution budget produces no capability gain.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Fehler reduzieren:2`
-*26.08. 08:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Differentiable Skill Verification Layer - Attach a lightweight, trainable verification head per skill that predicts execution correctness from model activations and outputs. Train verifiers on (input, model_output, ground_tru
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Fehler reduzieren:0`
-*26.08. 08:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Skill Atomic Decomposition & Modular Training - Decompose each target skill into minimal, independently verifiable atomic sub-skills (e.g., 'retrieve relevant fact' → 'identify entity', 'query knowledge base', 'extract answer
-
 ### `last_swarm_critique`
 *26.08. 08:04 UTC · Quelle: critic*
 
@@ -45316,56 +45371,6 @@ score=5; issues=Critic output unparseable.
 *26.08. 07:57 UTC · Quelle: system*
 
 Modell-Fehler reduzieren durch bessere Skills
-
-### `dream:20260826075612:5:2dee34`
-*26.08. 07:56 UTC · Quelle: dream*
-
-Fast convergence via reflex mode (cycle 1, score >=8) occurs but isn't leveraged to create reusable templates, wasting proven role configurations.
-
-### `dream:20260826075612:4:b5b201`
-*26.08. 07:56 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than validation (45-50 pending) because no automatic injection mechanism exists; the backlog consumer proposal addresses this but remains untested.
-
-### `dream:20260826075612:3:5b6ce0`
-*26.08. 07:56 UTC · Quelle: dream*
-
-Calibration errors appear in multiple independent skill proposals (calibration_discount, calibration corrector), revealing a systemic miscalibration in score gating that distorts evolution decisions.
-
-### `dream:20260826075612:2:b73fd3`
-*26.08. 07:56 UTC · Quelle: dream*
-
-Reflex tools created for specific sub-tasks (connecting dreams, testing skills) succeed where planner-driven approaches stall, suggesting decomposition into dedicated scripts unlocks progress.
-
-### `dream:20260826075612:1:bdc76c`
-*26.08. 07:56 UTC · Quelle: dream*
-
-Recurring drive goals for identical issues (model errors, untested skill backlog) indicate that root causes persist despite repeated attention cycles.
-
-### `dream:20260826075106:5:b9353d`
-*26.08. 07:51 UTC · Quelle: dream*
-
-Prune runs consistently remove 0 facts and 0 events, so the pruning mechanism is effectively a no-op and memory growth is unchecked.
-
-### `dream:20260826075106:4:354296`
-*26.08. 07:51 UTC · Quelle: dream*
-
-Reflexes are nearly unused except when explicitly tied to a goal ('alte-traeume-miteinander-verbinden.py' succeeded immediately), showing reflex adoption depends on goal-linked triggering rather than availability.
-
-### `dream:20260826075106:3:fec3c3`
-*26.08. 07:51 UTC · Quelle: dream*
-
-45 accumulated skill proposals remain almost entirely untested while new ones keep being generated, indicating a proposal-to-validation bottleneck where production outpaces experimentation.
-
-### `dream:20260826075106:2:bcd6fc`
-*26.08. 07:51 UTC · Quelle: dream*
-
-A hand_action failed with exit code 1 but error=null, meaning failures that carry no diagnostic payload are indistinguishable from silent crashes and should trigger an explicit error-capture retry.
-
-### `dream:20260826075106:1:2d8d42`
-*26.08. 07:51 UTC · Quelle: dream*
-
-The swarm run 'Modell-Fehler deutlich reduzieren' failed to converge in only 2 cycles with score 2, suggesting the iteration budget is cut off before critics can drive meaningful revisions.
 
 ### `last_swarm_critique`
 *26.08. 07:43 UTC · Quelle: critic*
