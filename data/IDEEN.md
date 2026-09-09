@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 00:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 01:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions fail silently (exit 2, zero bytes read) suggesting tool-invocation contracts are unverified before runtime.
+- Swarm cycles repeat without convergence because revisions address semantic issues but not the root cause: unverified code executability.
+- Evolution scores (7-9) wildly overpredict final swarm scores (4/10), showing critic calibration drift when static execution checks are absent.
+- Builder agents produce non-executable artifacts that pass semantic review but fail sandbox execution, revealing a missing executable gate before criti
+- Free-tier models (Nemotron, Gemma) fail systematically under load with 502/429 errors while Ling-3.0-flash-fin remains reliable, indicating provider-l
 - Model reliability varies significantly: inclusionai/ling-3.0-flash-fin succeeds consistently while nvidia and google models fail frequently, suggestin
 - Five simulation revisions were applied but the artifact still fails to run, proving that iterative revisions without addressing the root cause (argume
 - Performance calibration is systematically optimistic: predicted 6 vs actual 4, revealing a persistent overconfidence bias that must be corrected.
@@ -51,11 +56,6 @@
 - The simulation gate 'simulationen-in-die-praxis-umsetzen.py' returns ok=false while the drive goal demands more simulations, meaning the validation la
 - hand_action fails because it resolves relative paths against the working directory instead of $ZOETRON_DATA, producing exit code 0 with zero filesyste
 - The consistent success of ling-3.0-flash-fin (2.8-3.3s latency) versus repeated Nemotron 502s and Gemma 429s establishes a static reliability hierarch
-- The system self-diagnosed no internal organ errors yet still experienced model failures, confirming that failures are external (API-side) rather than 
-- Sequential model calls during evolution create compounding latency when primary models fail, turning a ~10-second task into a 60+ second task due to c
-- Evolution runs that fail to converge within 2 cycles produce only marginal score improvements (7→7.7/8.3), suggesting variant generation lacks suffici
-- The calibration predictor has a structural +2 underestimation bias for code-artifact generation goals, indicating the training data lacks sufficient c
-- Free-tier OpenRouter models fail in two distinct patterns—429 rate-limiting and 502 upstream overload—each requiring a different recovery strategy rat
 
 ---
 
