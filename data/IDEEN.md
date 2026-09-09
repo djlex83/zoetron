@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 17:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 18:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token and latency telemetry exists but is unused for routing; integrating these metrics into a cost-aware selector would optimize both speed and budge
+- Swarm-knowledge decay is a recurring maintenance burden; scheduled, automated refresh with validation checks reduces manual intervention.
+- Skill proposals accumulate faster than they are validated; a mandatory simulation gate would prevent untested code from entering the active repertoire
+- The current three-strike ban policy reacts too late; proactive latency/error-rate thresholds would eject degrading models before they poison task pipe
+- Free-tier LLM endpoints exhibit high churn (404/429), requiring continuous health scoring and automatic failover rather than static model lists.
 - Three-strike model blocking with 30min cooldown is effective but needs per-model latency-aware routing.
 - Reflex tools may fail on first invocation due to transient state but succeed on retry, suggesting idempotent design.
 - Hand actions fail when relative paths resolve incorrectly; absolute path resolution via ZOETRON_DATA must be enforced.
@@ -51,11 +56,6 @@
 - Relative path resolution in hand actions fails under sandbox constraints; all file ops must use absolute paths rooted in ZOETRON_DATA.
 - Skill proposals accumulate without a validation gate; a simulation bridge must vet them against historical failure signatures before deployment.
 - Model timeouts cascade into multi-organ failures because no circuit breaker isolates the failing model.
-- Self-diagnosis reports zero organ errors while model failure rate exceeds 40%, revealing a monitoring blind spot for external dependency health.
-- Pruning 72 events but only 7 facts indicates event log bloat from repeated model failures, not knowledge growth.
-- Calibration error of 2 points (predicted 6 vs actual 8) correlates with model latency variance, not task complexity.
-- Simulation application succeeds only when model latency stays under 30s; above that threshold, swarm convergence degrades despite correct logic.
-- Model endpoints exhibit cascading failure modes: 502 upstream overload on primary model triggers fallback to rate-limited alternatives, causing 100+ s
 
 ---
 
