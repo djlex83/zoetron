@@ -1,20 +1,25 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11801 Fakten** · Stand 2026-09-09 16:11 UTC · aktualisiert bei jedem Herzschlag
+**11797 Fakten** · Stand 2026-09-09 16:37 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7327
-- **swarm_artifact:** 1986
+- **swarm_artifact:** 1982
 - **last_swarm_critique:** 857
-- **last_swarm_goal:** 590
+- **last_swarm_goal:** 591
 - **anti_pattern:** 465
 - **strategy:** 234
 - **tool:** 176
 - **hand_result:** 114
-- **aktuell_organfehler:** 49
+- **aktuell_organfehler:** 48
 - **aktuell_fussball_messlatte:** 2
 - **creator_teaching:** 1
 
 ---
+
+### `last_swarm_goal`
+*09.09. 16:25 UTC · Quelle: system*
+
+Fähigkeiten im Test anwenden
 
 ### `dream:20260909160647:5:f21a49`
 *09.09. 16:06 UTC · Quelle: dream*
@@ -43986,11 +43991,6 @@ score=1; issues=Artefakt läuft nicht: Sandbox-Urteil 'LAEUFT NICHT' mit Traceba
 *26.08. 16:20 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `aktuell_organfehler`
-*26.08. 16:13 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 16:13:00-16:13:05 UTC): act -> timeout; will -> kurz; genome -> kurz; lehrer -> kurz. Phase nach 1500 s abgebrochen | will meldete einen Fehler | genome meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgest
 
 ### `last_swarm_critique`
 *26.08. 16:09 UTC · Quelle: critic*
