@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-09 17:48 UTC · aktualisiert bei jedem Herzschlag
+**11792 Fakten** · Stand 2026-09-09 17:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7342
+- **dream:** 7347
 - **swarm_artifact:** 1972
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909175612:5:e8b376`
+*09.09. 17:56 UTC · Quelle: dream*
+
+Three-strike model blocking with 30min cooldown is effective but needs per-model latency-aware routing.
+
+### `dream:20260909175612:4:8c584a`
+*09.09. 17:56 UTC · Quelle: dream*
+
+Reflex tools may fail on first invocation due to transient state but succeed on retry, suggesting idempotent design.
+
+### `dream:20260909175612:3:beba1d`
+*09.09. 17:56 UTC · Quelle: dream*
+
+Hand actions fail when relative paths resolve incorrectly; absolute path resolution via ZOETRON_DATA must be enforced.
+
+### `dream:20260909175612:2:a198d6`
+*09.09. 17:56 UTC · Quelle: dream*
+
+Dream/drive timeouts propagate to act layer causing RuntimeError, indicating need for timeout budgets per organ.
+
+### `dream:20260909175612:1:32613e`
+*09.09. 17:56 UTC · Quelle: dream*
+
+Model endpoints exhibit cascading failure modes (timeout → 404 → rate limit) requiring proactive health tracking and fast fallback.
 
 ### `dream:20260909174456:5:cdcd1a`
 *09.09. 17:44 UTC · Quelle: dream*

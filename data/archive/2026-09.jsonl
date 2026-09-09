@@ -31365,3 +31365,33 @@
 {"ts": 1788370796.8475862, "kind": "act_done", "payload": {"goal_title": "Häufige Modellfehler besser verstehen", "score": 7, "converged": false}}
 {"ts": 1788370797.66257, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.47, "gelesen": 966}}
 {"ts": 1788370799.9713273, "kind": "issue_synced", "payload": {"issue": 316, "state": "open"}}
+{"ts": 1788371150.31896, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788371627.722549, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788371629.4675827, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 28}}
+{"ts": 1788371633.682164, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788371633.6821618, "schalter_geoeffnet": false}}
+{"ts": 1788371655.1018417, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 21.4, "tokens_ein": 1394, "tokens_aus": 564}}
+{"ts": 1788371655.1023462, "kind": "skill_proposal", "payload": {"proposal": "Implement circuit breaker per model endpoint with exponential backoff, health scores, and automatic failover to next provider on 429/502/404."}}
+{"ts": 1788371655.1024015, "kind": "skill_proposal", "payload": {"proposal": "Add reflex eligibility gate: match goal semantics against registered reflex patterns via embedding similarity, execute reflex immediately, skip model call."}}
+{"ts": 1788371655.1024544, "kind": "skill_proposal", "payload": {"proposal": "Extend selbstdiagnose to actively ping all model endpoints, search APIs, and critical services; record latency/error rates as organ metrics with alerts."}}
+{"ts": 1788371655.1025076, "kind": "skill_proposal", "payload": {"proposal": "Enforce fact TTL policy: auto-prune facts unaccessed >30 days or access_count <2; trigger prune_run on schedule and after each consolidation cycle."}}
+{"ts": 1788371655.1025598, "kind": "skill_proposal", "payload": {"proposal": "Build goal clustering daemon: merge drive_goals with overlapping signals (failure, stale, combination) into composite work packages with shared context."}}
+{"ts": 1788371655.1026125, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788371657.3500648, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788371657.3500624, "schalter_geoeffnet": false}}
+{"ts": 1788371666.4030414, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 9.1, "tokens_ein": 516, "tokens_aus": 647}}
+{"ts": 1788371666.4031847, "kind": "drive_goal", "payload": {"title": "Modellfehler systematisch reduzieren", "why": "Unsere Modelle scheitern oft. Wenn wir die häufigsten Fehler verstehen und beheben, werden alle Fähigkeiten zuverlässiger.", "signal": "failure"}}
+{"ts": 1788371666.4032514, "kind": "drive_goal", "payload": {"title": "Marktanalyse in echte Projekte umsetzen", "why": "Drei fertige Analysen liegen ungenutzt herum. Wir sollten daraus konkrete nächste Schritte machen.", "signal": "stale"}}
+{"ts": 1788371666.4033072, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich bauen", "why": "Es gibt viele Ideen für neue Skills, aber wenige werden umgesetzt. Wir brauchen einen Weg, die besten schnell zu testen.", "signal": "gap"}}
+{"ts": 1788371673.9276445, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 4.99, "gelesen": 352}}
+{"ts": 1788371673.9309466, "kind": "reflex_used", "payload": {"goal": "Veraltetes Analysewissen aktualisieren", "tool": "veraltete-marktkenntnisse-aktualisieren.py", "ok": false}}
+{"ts": 1788371676.3683467, "kind": "swarm_started", "payload": {"goal": "Veraltetes Analysewissen aktualisieren"}}
+{"ts": 1788371677.3043294, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1788371680.4895651, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1788371681.867153, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788371681.8671489, "schalter_geoeffnet": false}}
+{"ts": 1788371691.9598687, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 10.1, "tokens_ein": 3463, "tokens_aus": 526}}
+{"ts": 1788371693.1374075, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788371693.1374037, "schalter_geoeffnet": false}}
+{"ts": 1788371716.9894283, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 23.9, "tokens_ein": 424, "tokens_aus": 800}}
+{"ts": 1788371717.9627779, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788371717.9627757, "schalter_geoeffnet": false}}
+{"ts": 1788371733.9822164, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 16.0, "tokens_ein": 288, "tokens_aus": 707}}
+{"ts": 1788371733.9823742, "kind": "simulation", "payload": {"goal": "Veraltetes Analysewissen aktualisieren", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1788371733.9824753, "kind": "simulation_applied", "payload": {"revisions": 5}}
+{"ts": 1788371734.9951909, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788371734.9951885, "schalter_geoeffnet": false}}

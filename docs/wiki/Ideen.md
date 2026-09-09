@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 17:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 17:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three-strike model blocking with 30min cooldown is effective but needs per-model latency-aware routing.
+- Reflex tools may fail on first invocation due to transient state but succeed on retry, suggesting idempotent design.
+- Hand actions fail when relative paths resolve incorrectly; absolute path resolution via ZOETRON_DATA must be enforced.
+- Dream/drive timeouts propagate to act layer causing RuntimeError, indicating need for timeout budgets per organ.
+- Model endpoints exhibit cascading failure modes (timeout → 404 → rate limit) requiring proactive health tracking and fast fallback.
 - High model latency (>80s) precedes timeout failures; latency SLOs should trigger proactive model rotation before hard timeouts.
 - Pruning retains success events too aggressively while failure events tagged 'model_error' need longer retention for pattern mining.
 - Relative path resolution in hand actions fails under sandbox constraints; all file ops must use absolute paths rooted in ZOETRON_DATA.
@@ -51,11 +56,6 @@
 - Calibration error of 2 points (predicted 6 vs actual 8) correlates with model latency variance, not task complexity.
 - Simulation application succeeds only when model latency stays under 30s; above that threshold, swarm convergence degrades despite correct logic.
 - Model endpoints exhibit cascading failure modes: 502 upstream overload on primary model triggers fallback to rate-limited alternatives, causing 100+ s
-- Stale swarm data creates a compounding feedback loop where outdated information drives further stale decisions, making periodic pruning non-optional f
-- Simulation cycles that produce 5 revisions per run are resource-prohibitive under conserve mode, suggesting revision depth must be bounded by current 
-- File operation failures from relative path resolution (sys.argv/ZOETRON_DATA ambiguity) reveal that path validation must be absolute and explicit befo
-- Under high metabolic stress (0.811) with a budget of max 1 iteration, the system cannot afford iterative refinement loops — every task must have a gua
-- Upstream service failures (502/429) hit multiple providers simultaneously, indicating that lack of circuit-breaker and fallback logic causes cascading
 
 ---
 
