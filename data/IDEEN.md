@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 06:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,12 +25,12 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration drift (empirical 3/7 success ratio) indicates predicted scores need systematic per-model correction before trust.
+- Pruning aggressiveness correlates with experience density (15 facts/25 events vs 0/58), suggesting adaptive pruning thresholds tied to session intensi
+- Reflexive error-analysis and simulation-based skill testing independently converge on the same model-reliability gaps.
+- Latency variance across models spans two orders of magnitude (3.5s vs 125s), making latency-aware routing essential for task scheduling.
+- Free-tier models consistently hit 429 rate limits under load, requiring automatic fallback chains with health checks.
 - The simulation-before-action strategy was revised 5 times but still scored only 1, indicating that simulation volume alone does not guarantee quality 
 - The swarm did not converge within 2 cycles despite role evolution, likely due to unbalanced role distribution (3 builders vs 1 planner and 1 critic), 
 - Sequential model fallback introduced compounding latency because each failure had to fully resolve before the next attempt, turning a brief outage int
@@ -51,11 +56,6 @@
 - NVIDIA Nemotron-3-Ultra succeeds but with 43-74s latency and intermittent 502 overload errors — only viable for non-interactive batch jobs.
 - inclusionai/ling-3.0-flash-fin:free delivers consistent sub-6s latency and should be the default primary model.
 - Free-tier Google Gemma models consistently hit 429 rate limits making them unreliable for production workflows.
-- Retry logic hammers failing endpoints without exponential backoff or Retry-After header parsing, worsening rate-limit collisions.
-- Simulation validator rejects artifacts lacking executable Python blocks; prose-only plans fail convergence checks.
-- The inclusionai/ling-3.0-flash-fin:free model succeeds consistently with 1.5-5.2s latency, making it the only reliable free-tier option observed.
-- Circuit breaker activates after 3 consecutive failures (1800s block) but provides no automatic fallback, leaving the pipeline stalled.
-- Free-tier models exhibit systematic unreliability: Nemotron returns 502 overload errors while Gemma models hit 429 rate limits within minutes.
 
 ---
 
