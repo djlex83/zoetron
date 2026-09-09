@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 02:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 03:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,10 +28,10 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Confidence scores drift without calibration - predicted vs actual scores per goal-type are untracked, making convergence signals unreliable.
+- Builder artifacts reach critics without executable validation, wasting critic cycles on syntax/import errors that a sandbox smoke-test would catch ins
+- Simulation revisions accumulate (5 revisions in one case) but rarely translate into applied changes, creating a persistent simulation-to-action gap.
+- Swarm cycles consistently stall at non-convergence (score 6, converged=false) leaving stale critiques that block new skill adoption for days.
+- Free-tier model endpoints exhibit cascading failures (502 upstream errors, 429 rate limits) across multiple providers, necessitating multi-tier routin
 - Rate-limit and overload errors recur across multiple models and timestamps, confirming these are structural endpoint failures rather than transient bl
 - Hand action fails silently (exit: 1, ok: false) likely due to unresolvable relative paths, pointing to a missing path-validation gate before execution
 - Swarm runs fail to converge (converged: false, score: 1) within 2 cycles, suggesting role allocation or termination criteria are misaligned with task 
@@ -51,11 +56,6 @@
 - Hand actions consistently fail with exit code 1 and zero output, indicating systemic code execution environment breakage.
 - Backup models (gemma-4 variants) hit 429 rate limits immediately after primary failures, leaving no viable fallback.
 - Primary model (nemotron-3-ultra) suffers frequent 502 overload errors making it unreliable for critical paths.
-- Swarm goals are stale while failure signals accumulate: drive_goals show 'stale', 'failure', 'gap' signals but no goal-updating mechanism activates, l
-- System operates in chronic conservation mode: metabolism stress 0.935 forces max_tasks=3 and max_iterations=1, starving the iteration needed to debug 
-- Skill implementation pipeline is broken end-to-end: proposed skills trigger swarm/reflex/simulation but the implementation artifact throws Traceback a
-- Hand actions consistently fail to resolve data paths: scripts ignore sys.argv[1] and ZOETRON_DATA env var, using relative paths that resolve to empty 
-- Model API reliability is critically low: primary models (Nemotron, Gemma) fail via 502 overload and 429 rate limits, forcing fallback to slower/less c
 
 ---
 

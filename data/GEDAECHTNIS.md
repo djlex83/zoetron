@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12030 Fakten** · Stand 2026-09-09 02:53 UTC · aktualisiert bei jedem Herzschlag
+**12024 Fakten** · Stand 2026-09-09 03:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
+- **dream:** 7435
 - **swarm_artifact:** 2040
 - **last_swarm_critique:** 846
 - **last_swarm_goal:** 578
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909031202:5:a3b051`
+*09.09. 03:12 UTC · Quelle: dream*
+
+Confidence scores drift without calibration - predicted vs actual scores per goal-type are untracked, making convergence signals unreliable.
+
+### `dream:20260909031202:4:352492`
+*09.09. 03:12 UTC · Quelle: dream*
+
+Builder artifacts reach critics without executable validation, wasting critic cycles on syntax/import errors that a sandbox smoke-test would catch instantly.
+
+### `dream:20260909031202:3:c838ea`
+*09.09. 03:12 UTC · Quelle: dream*
+
+Simulation revisions accumulate (5 revisions in one case) but rarely translate into applied changes, creating a persistent simulation-to-action gap.
+
+### `dream:20260909031202:2:79998e`
+*09.09. 03:12 UTC · Quelle: dream*
+
+Swarm cycles consistently stall at non-convergence (score 6, converged=false) leaving stale critiques that block new skill adoption for days.
+
+### `dream:20260909031202:1:926b5a`
+*09.09. 03:12 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit cascading failures (502 upstream errors, 429 rate limits) across multiple providers, necessitating multi-tier routing with active health checks.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Skills wi:2`
 *09.09. 02:49 UTC · Quelle: evolution*
@@ -45741,61 +45766,6 @@ score=5; issues=Critic output unparseable.
 *26.08. 03:05 UTC · Quelle: system*
 
 Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren
-
-### `dream:20260826030540:5:90c69d`
-*26.08. 03:05 UTC · Quelle: dream*
-
-Calibration was exact (predicted 1, actual 1, abs_error 0) after retrieving 5 related memory traces, suggesting recall-enriched predictions are currently well-calibrated and worth keeping in the loop.
-
-### `dream:20260826030540:4:5178c3`
-*26.08. 03:05 UTC · Quelle: dream*
-
-The hand action failed with exit code 1 and no captured error output ('error': null), so exit-code-only failures need stderr/traceback capture at the hand layer before TOR review can diagnose them.
-
-### `dream:20260826030540:3:062042`
-*26.08. 03:05 UTC · Quelle: dream*
-
-The evolution loop worked as designed: a 1/10 artifact was revised through simulation feedback into a 7/10 winner across 3 variants, confirming that critic-driven variant generation recovers from bad first drafts.
-
-### `dream:20260826030540:2:112718`
-*26.08. 03:05 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free succeeded in all 6 calls including heavy ones (2828 in / 5219 out tokens, 71.7s), making it the dependable primary model despite high latency.
-
-### `dream:20260826030540:1:f48f6d`
-*26.08. 03:05 UTC · Quelle: dream*
-
-Free-tier models 'stealth/ox-alpha' and 'z-ai/glm-5.2:free' fail repeatedly with 429 Too Many Requests at burst intervals, so requests to them must be spaced out or treated as unreliable secondary routes.
-
-### `dream:20260826030112:1:d8b4ed`
-*26.08. 03:01 UTC · Quelle: dream*
-
-Dream could not parse its own output - check prompt size.
-
-### `dream:20260826025640:5:9a6b71`
-*26.08. 02:56 UTC · Quelle: dream*
-
-Drive goals correctly detected the failure-to-action gap (many simulations, few applied acts), confirming that signal-based goal generation is working but lacks a mechanism to convert proposals into enforced gates.
-
-### `dream:20260826025640:4:ff7963`
-*26.08. 02:56 UTC · Quelle: dream*
-
-prune_run removed zero facts and events despite heavy activity, suggesting pruning criteria are too conservative relative to the memory growth rate from swarms and dreams.
-
-### `dream:20260826025640:3:c5acf0`
-*26.08. 02:56 UTC · Quelle: dream*
-
-hand_action failed instantly (exit=1, duration_s=0.03s) with no error message, a signature of transient/environmental failure rather than logic error, yet no retry was attempted.
-
-### `dream:20260826025640:2:814e56`
-*26.08. 02:56 UTC · Quelle: dream*
-
-The swarm completed with score 1 but converged=false after only 2 cycles, showing that 'go' verdicts with zero risks can still terminate without convergence and get accepted by default — an acceptance policy gap, not a quality failure.
-
-### `dream:20260826025640:1:baf2d9`
-*26.08. 02:56 UTC · Quelle: dream*
-
-429 rate-limit errors cluster on the same free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) at nearly identical timestamps, indicating shared quota exhaustion rather than model-specific faults, while nvidia/nemotron-3-ultra serves as a reliable same-cycle
 
 ### `last_swarm_critique`
 *26.08. 02:42 UTC · Quelle: critic*
