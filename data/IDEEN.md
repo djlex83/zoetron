@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 18:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 18:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
@@ -36,11 +36,16 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
+- Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis consistently reports zero organ errors despite persistent goal failures, proving the failures are process-level rather than component-l
+- Model latency improved from 29.5s to 22.1s between cycles, correlating with aggressive pruning, which suggests event hygiene directly impacts model pe
+- Event accumulation (24–30 events pruned per cycle) reveals the system generates stale or redundant events faster than it consumes them, pointing to a 
+- Reflex-driven actions consistently converge but never eliminate root causes, indicating that convergence without upstream event hygiene is insufficien
+- The recurring triad of model errors, stale swarm knowledge, and untested proposals signals systemic process gaps that demand structural interventions 
 - Skill proposals accumulate faster than validation; a simulation-to-production gate is missing.
 - Event log bloat from repeated 429s obscures real anomalies; aggregation into 'degraded_period' facts restores signal.
 - Reflex-driven error-reduction loops converge fast but only address symptoms, not the upstream provider instability.
@@ -51,11 +56,6 @@
 - Stale swarm data triggers new drive goals despite recent prune runs, revealing that pruning removes volume but not staleness – freshness requires acti
 - Reflex tools (alte-träume-miteinander-verbinden.py, modellfehler-deutlich-reduzieren.py) consistently converge goals in single passes, suggesting refl
 - Repeated 429 errors on specific providers (google/gemma) indicate provider-level rate limits that require provider-aware fallback routing, not just re
-- Dream insights can be operationalized by connecting them to swarm knowledge via dedicated reflex tools, closing the learning loop.
-- Task duration predictions systematically underestimate actual effort (2.84s vs 0.28s for similar actions), necessitating a calibration multiplier.
-- Memory growth is bounded by pruning events (23 pruned) after each swarm convergence, preventing resource exhaustion.
-- Swarm knowledge updates converge reliably when driven by reflex tools that validate, update, and confirm in a single atomic cycle.
-- Free-tier models consistently hit 429 rate limits under load, requiring automatic circuit-breaker ejection and fallback to healthy alternatives.
 
 ---
 

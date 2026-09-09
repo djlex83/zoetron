@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11785 Fakten** · Stand 2026-09-09 18:42 UTC · aktualisiert bei jedem Herzschlag
+**11785 Fakten** · Stand 2026-09-09 18:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7357
+- **dream:** 7362
 - **swarm_artifact:** 1960
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
-- **anti_pattern:** 457
-- **strategy:** 230
-- **tool:** 176
+- **anti_pattern:** 455
+- **strategy:** 229
+- **tool:** 175
 - **hand_result:** 110
-- **aktuell_organfehler:** 46
+- **aktuell_organfehler:** 45
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909185025:5:ce0fe0`
+*09.09. 18:50 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero organ errors despite persistent goal failures, proving the failures are process-level rather than component-level.
+
+### `dream:20260909185025:4:cf373b`
+*09.09. 18:50 UTC · Quelle: dream*
+
+Model latency improved from 29.5s to 22.1s between cycles, correlating with aggressive pruning, which suggests event hygiene directly impacts model performance.
+
+### `dream:20260909185025:3:bda45e`
+*09.09. 18:50 UTC · Quelle: dream*
+
+Event accumulation (24–30 events pruned per cycle) reveals the system generates stale or redundant events faster than it consumes them, pointing to a need for upstream filtering.
+
+### `dream:20260909185025:2:71ef88`
+*09.09. 18:50 UTC · Quelle: dream*
+
+Reflex-driven actions consistently converge but never eliminate root causes, indicating that convergence without upstream event hygiene is insufficient.
+
+### `dream:20260909185025:1:f428a8`
+*09.09. 18:50 UTC · Quelle: dream*
+
+The recurring triad of model errors, stale swarm knowledge, and untested proposals signals systemic process gaps that demand structural interventions rather than repeated one-off fixes.
 
 ### `dream:20260909183955:5:07373b`
 *09.09. 18:39 UTC · Quelle: dream*
@@ -43965,26 +43990,6 @@ score=7; issues=
 *26.08. 18:50 UTC · Quelle: critic*
 
 score=7; issues=
-
-### `aktuell_organfehler`
-*26.08. 18:46 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 18:11:49-18:46:35 UTC): retro -> kurz; will -> kurz; genome -> kurz; lehrer -> kurz. retro meldete einen Fehler | will meldete einen Fehler | genome meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerz
-
-### `tool:fakten-ausbeute-pro-beat-verdreifachen-o`
-*26.08. 18:46 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust'. Datei: data/tools/fakten-ausbeute-pro-beat-verdreifachen-o.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:2`
-*26.08. 18:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 7, 4]): Automated Monitoring Loop & Reporting-First Iteration - Deploy HANDS ground-truth automation as a continuous feedback loop; implement novelty rate detection and facts-per-beat measurement as side-channel metrics; gene
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:1`
-*26.08. 18:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 5]): Algorithmic Extraction Density & Quality Gating - Redesign the beat-processing engine to triple facts-per-beat via multi-pass semantic extraction, cross-beat deduplication, and quality-preserving filters; integrate on
 
 ### `last_swarm_critique`
 *26.08. 18:37 UTC · Quelle: critic*
