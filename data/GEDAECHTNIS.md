@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11874 Fakten** · Stand 2026-09-09 10:45 UTC · aktualisiert bei jedem Herzschlag
+**11859 Fakten** · Stand 2026-09-09 10:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7355
+- **dream:** 7340
 - **swarm_artifact:** 2006
 - **last_swarm_critique:** 853
 - **last_swarm_goal:** 585
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909105420:5:b2c559`
+*09.09. 10:54 UTC · Quelle: dream*
+
+Drive goals repeat 'stale swarm knowledge' and 'unused dream insights' across cycles, indicating no automatic refresh pipeline.
+
+### `dream:20260909105420:4:705b5f`
+*09.09. 10:54 UTC · Quelle: dream*
+
+Pruning discards 13 facts/22 events per run but no re-access signal exists to recover mistakenly dropped keys.
+
+### `dream:20260909105420:3:4c1f5f`
+*09.09. 10:54 UTC · Quelle: dream*
+
+Model latency varies 3× (69–213 s) with token bursts up to 8k, triggering silent timeouts in downstream organs.
+
+### `dream:20260909105420:2:ad2e25`
+*09.09. 10:54 UTC · Quelle: dream*
+
+Simulation-driven revision loops (verdict: revise → 4 revisions applied) catch reflex failures that unit tests miss.
+
+### `dream:20260909105420:1:4c48d8`
+*09.09. 10:54 UTC · Quelle: dream*
+
+Relative paths bypass ZOETRON_DATA at call time, causing hand actions to read nothing despite valid inputs.
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
 *09.09. 10:43 UTC · Quelle: hands*
@@ -44941,106 +44966,6 @@ score=4; issues=Skript laeuft (Sandbox-Bestätigung), erreicht aber Ziel Score >
 *26.08. 10:49 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260826104856:5:3f2377`
-*26.08. 10:48 UTC · Quelle: dream*
-
-Das Muster 'alte Trauminhalte + neue Pläne kombinieren' funktionierte nachweislich (Simulation lieferte 'revise' mit 2 umgesetzten Revisionen) und ist damit ein wiederholbarer Kreativitäts-Hebel.
-
-### `dream:20260826104856:4:65762e`
-*26.08. 10:48 UTC · Quelle: dream*
-
-Der Metabolismus-Zustand 'conserve' (Stress 1.0) hat das Budget auf 3 Tasks/1 Iteration gekürzt, was zeigt: Bei maximalem Stress müssen Ziele priorisiert statt parallel ausgeführt werden.
-
-### `dream:20260826104856:3:e16a52`
-*26.08. 10:48 UTC · Quelle: dream*
-
-Nur 5 von 9 Simulationsergebnissen wurden angewendet – die Lücke entsteht vermutlich dadurch, dass Simulations-Verdicts ohne expliziten Folge-Schritt im Plan landen.
-
-### `dream:20260826104856:2:1b44cf`
-*26.08. 10:48 UTC · Quelle: dream*
-
-Bei 'stealth/ox-alpha' korreliert hohe Latenz mit hohem Output (72s/3350 Tokens vs. 1.9s/32 Tokens), sodass Aufgaben vorab in kleine Prompts zerlegt werden sollten, um Timeouts zu vermeiden.
-
-### `dream:20260826104856:1:f6416c`
-*26.08. 10:48 UTC · Quelle: dream*
-
-Die häufigsten Modellfehler sind 429-Rate-Limits bei mehreren Modellen gleichzeitig, d.h. parallele Anfragen an OpenRouter-Free-Tiers kollidieren und brauchen exponentielles Backoff statt sofortigem Retry.
-
-### `dream:20260826104228:5:59107c`
-*26.08. 10:42 UTC · Quelle: dream*
-
-Reflex-mode actions succeed cheaply (exit 0 in 0.2s) while full swarm cycles are slow, suggesting routine goals should be classified for reflex handling before swarm escalation.
-
-### `dream:20260826104228:4:bb6993`
-*26.08. 10:42 UTC · Quelle: dream*
-
-Model reliability is heterogeneous (nemotron-3-ultra took ~60s vs ox-alpha ~8s) and failures like 429/5xx recur, so per-model health tracking must precede routing decisions.
-
-### `dream:20260826104228:3:f88873`
-*26.08. 10:42 UTC · Quelle: dream*
-
-Stored knowledge is rarely retrieved during task execution, meaning memory write volume far exceeds read utility and retrieval triggers are missing.
-
-### `dream:20260826104228:2:114346`
-*26.08. 10:42 UTC · Quelle: dream*
-
-Skill proposals are generated at a high rate but almost none are implemented or tested, so the bottleneck is proposal-to-trial conversion, not idea generation.
-
-### `dream:20260826104228:1:de42d2`
-*26.08. 10:42 UTC · Quelle: dream*
-
-Prediction failures are the dominant recurring failure signal (24 failed predictions), indicating score/risk forecasts are systematically miscalibrated rather than random noise.
-
-### `dream:20260826103355:5:ec406c`
-*26.08. 10:33 UTC · Quelle: dream*
-
-Successful use of nvidia/nemotron-3-ultra-550b-a55b:free alongside failing models proves that latency and budget guards must be decoupled from raw capability scoring in task dispatch.
-
-### `dream:20260826103355:4:bacfa4`
-*26.08. 10:33 UTC · Quelle: dream*
-
-The explicit drive goal connecting old dreams demonstrates that cross-referencing prior experiences automagically generates novel solutions and should be made a recurring reflex.
-
-### `dream:20260826103355:3:f322c0`
-*26.08. 10:33 UTC · Quelle: dream*
-
-Reflexive tool investigation consistently converges ok=true proving that systematic alternative enumeration is a high-reliability strategy for resolving action failures.
-
-### `dream:20260826103355:2:dcabc4`
-*26.08. 10:33 UTC · Quelle: dream*
-
-With 55 skill proposals yielding only 10 implementations the system suffers from proposal-to-execution drift and needs a gated execution pipeline to close the adoption gap.
-
-### `dream:20260826103355:1:19909f`
-*26.08. 10:33 UTC · Quelle: dream*
-
-Model-specific 429 rate limits reveal that transport-layer quotas not model capability gate task success and require routing to track per-endpoint quotas.
-
-### `dream:20260826102710:5:f601a6`
-*26.08. 10:27 UTC · Quelle: dream*
-
-Pruning removes nothing while failure events accumulate, meaning the retention policy preserves noise over signal.
-
-### `dream:20260826102710:4:6edd5c`
-*26.08. 10:27 UTC · Quelle: dream*
-
-Skill proposals pile up untested because no conserved execution slot exists, turning the backlog into write-only memory.
-
-### `dream:20260826102710:3:744a3a`
-*26.08. 10:27 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not classified as an organ fault.
-
-### `dream:20260826102710:2:44bc87`
-*26.08. 10:27 UTC · Quelle: dream*
-
-Reflex-driven goals consistently converge while deliberate goals accumulate, suggesting the system trusts fast heuristics over slow planning.
-
-### `dream:20260826102710:1:b8b0fd`
-*26.08. 10:27 UTC · Quelle: dream*
-
-Repeated HTTP 429 errors across multiple free-tier models indicate rate-limiting is a systemic bottleneck, not an isolated incident.
 
 ### `last_swarm_critique`
 *26.08. 10:11 UTC · Quelle: critic*
