@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 19:11:41",
+ "stand": "2026-09-09 19:22:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -135,12 +135,6 @@
    "quote": 0.0
   },
   {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -199,6 +193,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
@@ -375,12 +375,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarm-wissen-auffrischen-und-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -397,6 +391,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "schwarm-ergebnisse-in-handlungen-umsetze.py",

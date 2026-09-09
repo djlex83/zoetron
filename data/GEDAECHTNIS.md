@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11790 Fakten** · Stand 2026-09-09 19:13 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-09 19:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7357
-- **swarm_artifact:** 1965
+- **dream:** 7362
+- **swarm_artifact:** 1960
 - **last_swarm_critique:** 858
 - **last_swarm_goal:** 592
-- **anti_pattern:** 457
-- **strategy:** 230
+- **anti_pattern:** 455
+- **strategy:** 229
 - **tool:** 175
 - **hand_result:** 111
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909192157:5:2ea95f`
+*09.09. 19:21 UTC · Quelle: dream*
+
+Metabolic stress and consecutive model failures are not gated, allowing new drive goals to pile onto an already degraded system.
+
+### `dream:20260909192157:4:e1dafd`
+*09.09. 19:21 UTC · Quelle: dream*
+
+Token-latency profiles per model are missing, preventing cost-aware selection and causing 30s+ latency spikes on large models.
+
+### `dream:20260909192157:3:5c6992`
+*09.09. 19:21 UTC · Quelle: dream*
+
+Reflex tools execute in isolation; chaining verified reflexes (dream-connect → error-reduce → swarm-sync) would converge multi-goal tasks faster.
+
+### `dream:20260909192157:2:edacee`
+*09.09. 19:21 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; full refreshes waste tokens while stale facts poison downstream reasoning.
+
+### `dream:20260909192157:1:9c4107`
+*09.09. 19:21 UTC · Quelle: dream*
+
+Model routing lacks provider-aware circuit breaking, causing repeated 429/5xx failures that cascade into drive-goal retries.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Traum-Simulation-Pipelin:1`
 *09.09. 19:11 UTC · Quelle: evolution*
@@ -43915,16 +43940,6 @@ Nvidia Nemotron models provide the only consistent successes but with high laten
 *26.08. 19:30 UTC · Quelle: dream*
 
 Free-tier models suffer pervasive 429 rate limits making them unreliable for production workloads.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:2`
-*26.08. 19:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Scoring Reformulation: Make extern quote a mathematical prerequisite for non-zer - Redefine the goal scoring function to return `-inf` (or 0 with a hard filter) when `extern_quote` is absent. The selector already picks `max(s
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:0`
-*26.08. 19:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Schema/Validation-First: Make extern quote a mandatory field at the data layer - Modify the goal schema (Pydantic/SQLModel) to require `extern_quote: str` as a non-optional field with validation. Add a database-level NOT NULL
 
 ### `last_swarm_critique`
 *26.08. 19:03 UTC · Quelle: critic*

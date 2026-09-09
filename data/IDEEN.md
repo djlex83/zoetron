@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 19:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 19:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,8 +9,6 @@
 - Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 9×)*
 - Add convergence_guardrail that detects stalled optimization scores across 3+ cycles and triggers emergency evo *(hatte die Idee 6×)*
 - Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh  *(hatte die Idee 5×)*
-- Add rate-limit awareness module detecting 429 responses, pausing requests to that model for configurable backo *(hatte die Idee 4×)*
-- Build critic output validator with fallback parser handling malformed responses, defaulting to safe revision s *(hatte die Idee 4×)*
 - Create FactDistiller post-pruning pass: cluster high-value events by error signature, extract reusable procedu *(hatte die Idee 4×)*
 - Deploy LatencyAwareRoleAssigner: map critic/planner to flash (<5s), builder to ultra with hard timeout budgets *(hatte die Idee 4×)*
 - Add ConvergenceMonitor: require minimum 3 swarm cycles, detect score plateau (delta<0.01 over 2 cycles), valid *(hatte die Idee 4×)*
@@ -20,6 +18,8 @@
 - Add pre-execution path-resolution audit: log resolved absolute paths for every ZOETRON_DATA and argv[1] refere *(hatte die Idee 4×)*
 - Require AST-level implementation check at tool registration: reject any function body lacking at least one non *(hatte die Idee 4×)*
 - Schedule automatic swarm-goal freshness scan every 24h: flag goals older than 7 days with no recent hand_actio *(hatte die Idee 4×)*
+- Create a swarm-knowledge refresher that detects staleness via timestamp/version drift >7 days, re-runs critiqu *(hatte die Idee 4×)*
+- Build reflex_library_for_common_goals: codify successful reflex patterns (swarm convergence, error reduction)  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,10 +27,10 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolic stress and consecutive model failures are not gated, allowing new drive goals to pile onto an already degraded system.
+- Token-latency profiles per model are missing, preventing cost-aware selection and causing 30s+ latency spikes on large models.
+- Reflex tools execute in isolation; chaining verified reflexes (dream-connect → error-reduce → swarm-sync) would converge multi-goal tasks faster.
+- Swarm knowledge decays silently; full refreshes waste tokens while stale facts poison downstream reasoning.
+- Model routing lacks provider-aware circuit breaking, causing repeated 429/5xx failures that cascade into drive-goal retries.
 - Proposed infrastructure fixes are never validated against the failures that triggered them, creating a persistent gap between intended resilience and 
 - The system generates high event volume (~30 events pruned per cycle) that must be aggressively consolidated, indicating a need for tighter event filte
 - Skill proposals evolve from reactive fixes (retry middleware, path resolution) to proactive architectures (model registry with scoring, simulation har
@@ -51,11 +56,6 @@
 - Event accumulation (24–30 events pruned per cycle) reveals the system generates stale or redundant events faster than it consumes them, pointing to a 
 - Reflex-driven actions consistently converge but never eliminate root causes, indicating that convergence without upstream event hygiene is insufficien
 - The recurring triad of model errors, stale swarm knowledge, and untested proposals signals systemic process gaps that demand structural interventions 
-- Skill proposals accumulate faster than validation; a simulation-to-production gate is missing.
-- Event log bloat from repeated 429s obscures real anomalies; aggregation into 'degraded_period' facts restores signal.
-- Reflex-driven error-reduction loops converge fast but only address symptoms, not the upstream provider instability.
-- Latency variance across providers spans 4s–69s, making fixed timeouts unsafe for swarm coordination.
-- Rate-limiting (429) on free-tier models is the dominant failure mode, not model capability.
 
 ---
 
