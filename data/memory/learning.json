@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-09 08:56:39",
+ "stand": "2026-09-09 09:10:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 17,
-   "erfolge": 17,
+   "laeufe": 18,
+   "erfolge": 18,
    "quote": 1.0
   },
   {
@@ -429,7 +429,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.777,
+ "haende_quote": 0.778,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 27,
