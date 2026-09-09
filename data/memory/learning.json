@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 18:18:46",
+ "stand": "2026-09-09 18:29:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -52,6 +46,12 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -424,6 +424,12 @@
   },
   {
    "tool": "automatische-fehler-reduktions-pipeline-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

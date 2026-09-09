@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-09 18:20 UTC · aktualisiert bei jedem Herzschlag
+**11791 Fakten** · Stand 2026-09-09 18:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7352
+- **dream:** 7357
 - **swarm_artifact:** 1966
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909182911:5:2cf9dc`
+*09.09. 18:29 UTC · Quelle: dream*
+
+Stress signals (failure, stale, combination) cluster around model reliability and data freshness, indicating these are the two systemic bottlenecks limiting autonomous progress.
+
+### `dream:20260909182911:4:a3f856`
+*09.09. 18:29 UTC · Quelle: dream*
+
+Successful model calls (inclusionai/ling-3.0-flash-fin) show 3-4s latency with ~1.5k tokens, establishing a baseline for timeout budgets and token-cost planning.
+
+### `dream:20260909182911:3:77d402`
+*09.09. 18:29 UTC · Quelle: dream*
+
+Stale swarm data triggers new drive goals despite recent prune runs, revealing that pruning removes volume but not staleness – freshness requires active validation, not just deletion.
+
+### `dream:20260909182911:2:b6b11b`
+*09.09. 18:29 UTC · Quelle: dream*
+
+Reflex tools (alte-träume-miteinander-verbinden.py, modellfehler-deutlich-reduzieren.py) consistently converge goals in single passes, suggesting reflex-first architecture outperforms planning for well-scoped tasks.
+
+### `dream:20260909182911:1:f72df4`
+*09.09. 18:29 UTC · Quelle: dream*
+
+Repeated 429 errors on specific providers (google/gemma) indicate provider-level rate limits that require provider-aware fallback routing, not just retry logic.
 
 ### `dream:20260909181822:5:b345cc`
 *09.09. 18:18 UTC · Quelle: dream*
