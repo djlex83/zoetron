@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 12:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 12:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 21×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -34,13 +34,18 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration drift goes undetected without cross-organ consistency checks linking prediction error, execution success, and swarm convergence.
+- Generated artifacts entering sandbox without syntax/type validation cause preventable rejections; static analysis must gate execution.
+- Swarm simulations without convergence gates waste cycles and produce low-quality proposals; hard stop criteria with human review are essential.
+- Aggressive pruning discards failure evidence needed for calibration and skill promotion; tiered retention preserves signal.
+- Model endpoint instability (502/429 errors) cascades into task failures unless proactive health probes and automatic failover are in place.
 - Cross-organ consistency (calibration error, execution success rate, swarm convergence) is never jointly evaluated, allowing contradictory signals to p
 - Swarm knowledge and drive goals become stale within a single sleep-wake cycle, yet no automated refresh mechanism links dream insights back into the s
 - Calibration head drift (predicted vs actual score error > 2) goes undetected for multiple iterations because no convergence gate compares prediction e
@@ -51,11 +56,6 @@
 - Cascading model failures across providers (Nvidia 502 → Google 429) reveal that retry logic must include provider diversity rather than blindly retryi
 - High system stress (0.911) forces conserve mode with minimal iterations, which paradoxically enabled single-cycle swarm convergence by constraining sc
 - When primary model providers return 502/429 errors, immediately switching to a smaller alternative model (like inclusionai/ling-3.0-flash-fin) resolve
-- System stress hits 0.91 (conserve mode) during concurrent model calls, proving that unbounded parallel requests exhaust the token budget without backp
-- Swarm knowledge staleness (>7 days) persists because no automated refresher detects timestamp/version drift and re-runs critique pipelines with health
-- hand_action timeouts (20s, 0 bytes read) stem from missing path-resolution guards that expand env vars, verify permissions, and fail fast with actiona
-- Skill proposals accumulate but never reach production because no simulation-gated promotion pipeline validates them against historical failure cases (
-- Model latency spikes (68-137s) and timeouts cascade into hand_action failures and reflex aborts, revealing no circuit-breaker or fallback logic for th
 
 ---
 

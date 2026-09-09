@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11842 Fakten** · Stand 2026-09-09 12:43 UTC · aktualisiert bei jedem Herzschlag
+**11837 Fakten** · Stand 2026-09-09 12:58 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7345
-- **swarm_artifact:** 1994
+- **swarm_artifact:** 1992
 - **last_swarm_critique:** 854
 - **last_swarm_goal:** 586
-- **anti_pattern:** 477
-- **strategy:** 240
+- **anti_pattern:** 475
+- **strategy:** 239
 - **tool:** 177
 - **hand_result:** 116
 - **aktuell_organfehler:** 49
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909125411:5:02c8d7`
+*09.09. 12:54 UTC · Quelle: dream*
+
+Calibration drift goes undetected without cross-organ consistency checks linking prediction error, execution success, and swarm convergence.
+
+### `dream:20260909125411:4:3f6d42`
+*09.09. 12:54 UTC · Quelle: dream*
+
+Generated artifacts entering sandbox without syntax/type validation cause preventable rejections; static analysis must gate execution.
+
+### `dream:20260909125411:3:e0f22c`
+*09.09. 12:54 UTC · Quelle: dream*
+
+Swarm simulations without convergence gates waste cycles and produce low-quality proposals; hard stop criteria with human review are essential.
+
+### `dream:20260909125411:2:9b9ddb`
+*09.09. 12:54 UTC · Quelle: dream*
+
+Aggressive pruning discards failure evidence needed for calibration and skill promotion; tiered retention preserves signal.
+
+### `dream:20260909125411:1:38fb56`
+*09.09. 12:54 UTC · Quelle: dream*
+
+Model endpoint instability (502/429 errors) cascades into task failures unless proactive health probes and automatic failover are in place.
 
 ### `dream:20260909123854:5:77d753`
 *09.09. 12:38 UTC · Quelle: dream*
@@ -44432,31 +44457,6 @@ score=1; issues=SANDBOX-URTEIL: LAEUFT NICHT - Syntaxfehler in Zeile 307: unvoll
 
 Fähigkeits-Messlatte bauen (Capability-Benchmark)
 
-### `dream:20260826125042:5:950471`
-*26.08. 12:50 UTC · Quelle: dream*
-
-Calibration predicted 3 but actual was 2 (abs_error=1), and bahnen score=2 with delta=-0.5 shows the reward signal is misaligned with true artifact quality.
-
-### `dream:20260826125042:4:6f3604`
-*26.08. 12:50 UTC · Quelle: dream*
-
-Evolution runs can jump scores from 2 to 8-9 in one generation, but only when the initial artifact is executable; non-runnable seeds waste cycles.
-
-### `dream:20260826125042:3:c91fb0`
-*26.08. 12:50 UTC · Quelle: dream*
-
-Simulation verdict 'go' was issued despite the artifact failing at runtime (traceback in tor log), revealing a gap between static analysis and execution validation.
-
-### `dream:20260826125042:2:1a68e2`
-*26.08. 12:50 UTC · Quelle: dream*
-
-hand_action failures return exit=1 with error=null and gelesen=0, hiding the actual traceback and preventing automated diagnosis or retry logic.
-
-### `dream:20260826125042:1:7d0600`
-*26.08. 12:50 UTC · Quelle: dream*
-
-Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) consistently hit 429 rate limits, making them unreliable for production loops without exponential backoff and model fallback chains.
-
 ### `last_swarm_critique`
 *26.08. 12:50 UTC · Quelle: critic*
 
@@ -44546,16 +44546,6 @@ score=7; issues=
 *26.08. 12:49 UTC · Quelle: critic*
 
 score=7; issues=
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fähigkeits-Messlatte bau:2`
-*26.08. 12:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Async Event-sourced Benchmark Engine - Build an asyncio-based engine where each benchmark is an async coroutine emitting domain events (BenchmarkStarted, BenchmarkPassed, BenchmarkFailed, MetricRecorded). Use an event store (
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fähigkeits-Messlatte bau:0`
-*26.08. 12:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Plugin-based Micro-benchmark Architecture - Implement a plugin system where each benchmark (C01-C10, P01-P10, R01-R05) is a self-contained module implementing a BenchmarkPlugin interface. Use entry_points (setuptools) or a si
 
 ### `last_swarm_critique`
 *26.08. 12:40 UTC · Quelle: critic*
