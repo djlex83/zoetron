@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 12:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 12:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 21×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Cross-organ consistency (calibration error, execution success rate, swarm convergence) is never jointly evaluated, allowing contradictory signals to p
+- Swarm knowledge and drive goals become stale within a single sleep-wake cycle, yet no automated refresh mechanism links dream insights back into the s
+- Calibration head drift (predicted vs actual score error > 2) goes undetected for multiple iterations because no convergence gate compares prediction e
+- Generated artifacts are executed in sandbox only after full generation, missing cheap pre-flight checks (AST parse, mypy, path existence) that would c
+- Model endpoint degradation (high latency, 502/429 errors) repeatedly stalls execution without automatic failover, causing cascading delays across all 
 - Swarm convergence in 1 cycle with score 8 was achieved because a fast fallback model produced a working 227-line artifact immediately, proving model a
 - The initial hand_action timeout (20s) on the first tool call indicates that synchronous blocking calls without fallback can stall the entire pipeline 
 - Cascading model failures across providers (Nvidia 502 → Google 429) reveal that retry logic must include provider diversity rather than blindly retryi
@@ -51,11 +56,6 @@
 - hand_action timeouts (20s, 0 bytes read) stem from missing path-resolution guards that expand env vars, verify permissions, and fail fast with actiona
 - Skill proposals accumulate but never reach production because no simulation-gated promotion pipeline validates them against historical failure cases (
 - Model latency spikes (68-137s) and timeouts cascade into hand_action failures and reflex aborts, revealing no circuit-breaker or fallback logic for th
-- Skill proposals accumulate (5 generated) but none are deployed, revealing a gap between proposal and production validation.
-- Pruning removes 38 facts and 101 events per run, risking loss of diagnostic context for recurring failures.
-- Hand actions initially fail (exit 1) but succeed on retry after model recovery, showing transient model errors block physical execution.
-- Swarm cycles fail to converge (score 1, converged false) despite revisions, suggesting the simulation critique loop lacks a convergence criterion.
-- The model inclusionai/ling-3.0-flash-fin consistently succeeds while nvidia/nemotron-3-ultra and google/gemma models fail with 502/429 errors, indicat
 
 ---
 

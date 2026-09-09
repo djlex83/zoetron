@@ -1,20 +1,50 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11863 Fakten** · Stand 2026-09-09 12:28 UTC · aktualisiert bei jedem Herzschlag
+**11842 Fakten** · Stand 2026-09-09 12:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7350
-- **swarm_artifact:** 2006
+- **dream:** 7345
+- **swarm_artifact:** 1994
 - **last_swarm_critique:** 854
 - **last_swarm_goal:** 586
-- **anti_pattern:** 479
-- **strategy:** 241
+- **anti_pattern:** 477
+- **strategy:** 240
 - **tool:** 177
-- **hand_result:** 118
-- **aktuell_organfehler:** 48
+- **hand_result:** 116
+- **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909123854:5:77d753`
+*09.09. 12:38 UTC · Quelle: dream*
+
+Cross-organ consistency (calibration error, execution success rate, swarm convergence) is never jointly evaluated, allowing contradictory signals to persist without triggering a system-wide pivot.
+
+### `dream:20260909123854:4:21b7bb`
+*09.09. 12:38 UTC · Quelle: dream*
+
+Swarm knowledge and drive goals become stale within a single sleep-wake cycle, yet no automated refresh mechanism links dream insights back into the swarm's working memory.
+
+### `dream:20260909123854:3:bf85cd`
+*09.09. 12:38 UTC · Quelle: dream*
+
+Calibration head drift (predicted vs actual score error > 2) goes undetected for multiple iterations because no convergence gate compares prediction error against a threshold after each cycle.
+
+### `dream:20260909123854:2:f82d2c`
+*09.09. 12:38 UTC · Quelle: dream*
+
+Generated artifacts are executed in sandbox only after full generation, missing cheap pre-flight checks (AST parse, mypy, path existence) that would catch errors before expensive sandbox runs.
+
+### `dream:20260909123854:1:28b905`
+*09.09. 12:38 UTC · Quelle: dream*
+
+Model endpoint degradation (high latency, 502/429 errors) repeatedly stalls execution without automatic failover, causing cascading delays across all downstream organs.
+
+### `aktuell_organfehler`
+*09.09. 12:35 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-09 12:26:34 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Orga
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Qualitätsprüfung für Sim:2`
 *09.09. 12:26 UTC · Quelle: evolution*
@@ -44537,31 +44567,6 @@ score=2; issues=SANDBOX-URTEIL 'LAEUFT NICHT' ist bindend: Der Python-Block ist 
 
 Fähigkeits-Messlatte bauen (Capability-Benchmark)
 
-### `dream:20260826123236:5:0661e2`
-*26.08. 12:32 UTC · Quelle: dream*
-
-Hand actions consistently fail fast (exit 1, <1s) while self-diagnosis reports zero organ defects, exposing a blind spot: runtime execution failures are not fed back into the diagnostic layer.
-
-### `dream:20260826123236:4:59b5fd`
-*26.08. 12:32 UTC · Quelle: dream*
-
-Score calibration drifted by 1 point (predicted 3 vs actual 2) and the swarm still declared 'go', meaning threshold decisions tolerate prediction error without a correction mechanism.
-
-### `dream:20260826123236:3:df605f`
-*26.08. 12:32 UTC · Quelle: dream*
-
-OpenRouter 429 rate-limit errors hit two models simultaneously, showing the retry strategy cycles through sibling models instead of backing off globally when the shared endpoint is throttled.
-
-### `dream:20260826123236:2:d37221`
-*26.08. 12:32 UTC · Quelle: dream*
-
-The root failure cause is a generated script (ction_1787744990820.py) that crashes at sys.exit in run_live_beat, indicating the builder produces code paths never exercised by the simulation gate.
-
-### `dream:20260826123236:1:17a51f`
-*26.08. 12:32 UTC · Quelle: dream*
-
-The swarm's evolution phase scored a variant 9/10 but the final artifact failed at runtime (exit 1), revealing that winner selection is based on static review rather than executed behavior.
-
 ### `last_swarm_critique`
 *26.08. 12:20 UTC · Quelle: critic*
 
@@ -44572,31 +44577,6 @@ score=9; issues=Artifact 3 (demonstration) duplicates ConvergenceGate and Integr
 
 Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)
 
-### `dream:20260826121352:5:dc73c7`
-*26.08. 12:13 UTC · Quelle: dream*
-
-Free-tier OpenRouter models failed en masse with 429/502 within the same second, so bursts of parallel model calls guarantee rate-limit cascades unless calls are serialized or backed off exponentially.
-
-### `dream:20260826121352:4:32c76d`
-*26.08. 12:13 UTC · Quelle: dream*
-
-The evolution loop scored variants 9/8/9 yet the swarm finished at score 2 unconverged, indicating variant scoring measures code quality in isolation and not integration with the runnable artifact.
-
-### `dream:20260826121352:3:c3ee2e`
-*26.08. 12:13 UTC · Quelle: dream*
-
-Calibration predicted 5 but actual was 2 (abs_error 3): self-assessed confidence systematically overestimates success when the deliverable has never been executed end-to-end.
-
-### `dream:20260826121352:2:937abf`
-*26.08. 12:13 UTC · Quelle: dream*
-
-hand_action failures carry error=null despite a Traceback existing in the artifact output, meaning the runner is discarding stderr/exit diagnostics and making every failure undiagnosable after the fact.
-
-### `dream:20260826121352:1:2c449b`
-*26.08. 12:13 UTC · Quelle: dream*
-
-Simulation verdicts are unreliable: it returned 'go' with 0 risks while the artifact immediately failed at runtime (exit 1), so 'go' must be gated on an actual execution smoke-test, not static review.
-
 ### `last_swarm_critique`
 *26.08. 12:03 UTC · Quelle: critic*
 
@@ -44641,16 +44621,6 @@ score=7; issues=
 *26.08. 12:03 UTC · Quelle: critic*
 
 score=7; issues=
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:2`
-*26.08. 12:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Datenbank-agnostisch mit SQLite/WAL statt JSON-Datei - Statt handgebautem JSON-Handling (Quelle der Abstürze: parallele Writes, korrupte Datei, Encoding-Fehler) eine SQLite-Datei mit WAL-Modus verwenden: Tabelle health_events
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:0`
-*26.08. 12:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): In-Memory-First mit expliziter Persistenzgrenze - Komplett neu aufbauen als reinen In-Memory-Zustand: Die Klasse ModelHealthRegistry hält alle Daten (failure_counts, state, timestamps) ausschließlich in Attributen. save_regis
 
 ### `last_swarm_critique`
 *26.08. 12:02 UTC · Quelle: critic*
