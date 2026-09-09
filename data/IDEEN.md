@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 20:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 20:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
-- Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis consistently reports zero organ errors despite repeated model failures, showing the diagnostic scope does not cover infrastructure-leve
+- Pruning runs remove up to 53 facts and events per cycle, indicating the knowledge base accumulates noise faster than it is consolidated into durable l
+- Stale swarm and dream data degrade downstream decision quality, and the system repeatedly flags them without a forced-refresh mechanism to break the s
+- Skill proposals are generated consistently but never transition to active skills without a validation gate, creating a persistent proposal-to-producti
+- Model failures cluster around upstream overload (502) and rate limiting (429), revealing the absence of any circuit-breaking or fallback mechanism bef
 - Repeated skill proposals for ModelRouter, circuit-breakers, and latency budgets across sessions reveal an unaddressed systemic model-reliability gap.
 - Reflex-based dream-to-skill conversion succeeds (converged=true) where swarm planning fails, showing tactical tools outperform strategic planning for 
 - Swarm converges prematurely at 2 cycles with score 1/10, suggesting insufficient iteration budget or flawed early-stopping criteria.
@@ -51,11 +56,6 @@
 - Calibration error of 600% (predicted 7 vs actual 1) reveals the estimator ignores model latency variance and tool failure rates.
 - Hand actions fail silently with exit=1 and zero bytes read, indicating missing stderr capture or path resolution errors in the sandbox.
 - Model provider failures (502/429) cascade into task failure without automatic fallback, causing 200s+ latency spikes before recovery.
-- Under maximum stress (1.0), the system attempts high-cost operations (207s model calls) instead of degrading task scope or switching to lighter models
-- Simulation predicts success (score 7) but artifact execution fails (actual 1) due to unverified environment dependencies (missing paths, broken import
-- Skill proposals accumulate without validation because the system lacks a closed-loop mechanism that tests each implemented skill against its originati
-- Hand actions repeatedly fail with "Kein Zoetron-Pfad gefunden" and "nichts gelesen" because path resolution relies on fragile relative paths and unval
-- Primary model endpoint (Nemotron) fails with 502 overload errors and extreme latency variance (19-207s), causing cascading task failures when no autom
 
 ---
 

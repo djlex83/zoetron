@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 20:28:49",
+ "stand": "2026-09-09 20:39:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -40,8 +40,8 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -127,12 +127,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
@@ -322,6 +316,12 @@
   },
   {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

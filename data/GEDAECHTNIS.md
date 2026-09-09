@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11782 Fakten** · Stand 2026-09-09 20:30 UTC · aktualisiert bei jedem Herzschlag
+**11780 Fakten** · Stand 2026-09-09 20:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7377
-- **swarm_artifact:** 1946
+- **dream:** 7382
+- **swarm_artifact:** 1942
 - **last_swarm_critique:** 858
 - **last_swarm_goal:** 592
-- **anti_pattern:** 451
-- **strategy:** 227
+- **anti_pattern:** 449
+- **strategy:** 226
 - **tool:** 175
 - **hand_result:** 111
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909203848:5:14eb93`
+*09.09. 20:38 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero organ errors despite repeated model failures, showing the diagnostic scope does not cover infrastructure-level failures.
+
+### `dream:20260909203848:4:c8f620`
+*09.09. 20:38 UTC · Quelle: dream*
+
+Pruning runs remove up to 53 facts and events per cycle, indicating the knowledge base accumulates noise faster than it is consolidated into durable lessons.
+
+### `dream:20260909203848:3:fb9653`
+*09.09. 20:38 UTC · Quelle: dream*
+
+Stale swarm and dream data degrade downstream decision quality, and the system repeatedly flags them without a forced-refresh mechanism to break the staleness cycle.
+
+### `dream:20260909203848:2:b2c2ee`
+*09.09. 20:38 UTC · Quelle: dream*
+
+Skill proposals are generated consistently but never transition to active skills without a validation gate, creating a persistent proposal-to-production gap.
+
+### `dream:20260909203848:1:40c334`
+*09.09. 20:38 UTC · Quelle: dream*
+
+Model failures cluster around upstream overload (502) and rate limiting (429), revealing the absence of any circuit-breaking or fallback mechanism before provider engagement.
 
 ### `dream:20260909202818:5:1e79da`
 *09.09. 20:28 UTC · Quelle: dream*
@@ -43955,16 +43980,6 @@ Metabolism-driven conservation mode severely limits parallel execution, causing 
 *26.08. 20:54 UTC · Quelle: dream*
 
 Free-tier models exhibit unreliable availability (429 errors) and high latency variance, necessitating a model router with health checks and fallback.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Embedding-Recall statt r:2`
-*26.08. 20:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Hybrid Lexical-Semantic Retrieval - Implement a two-stage retrieval pipeline: first use BM25 or TF-IDF to retrieve candidate facts, then rerank them with a cross-encoder model (e.g., sentence-transformers/cross-encoder) that 
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Embedding-Recall statt r:1`
-*26.08. 20:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Vector Database Integration - Integrate a vector database such as FAISS or Chroma. Generate embeddings for all facts with a chosen model, insert them into the database, and implement a recall function that queries the databas
 
 ### `last_swarm_critique`
 *26.08. 20:31 UTC · Quelle: critic*

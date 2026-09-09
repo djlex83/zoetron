@@ -1,16 +1,16 @@
 {
- "stand": 1788985704.7285514,
+ "stand": 1788986334.0893152,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 4870,
-   "fehler": 1048,
-   "fehler_in_folge": 1,
-   "gesperrt_bis": 0.0,
+   "laeufe": 4872,
+   "fehler": 1050,
+   "fehler_in_folge": 0,
+   "gesperrt_bis": 1788988130.4056551,
    "latenz_summe_s": 179947.94250249863,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502, 'metadata': {'error_type': 'pr",
-   "letzte_sperre": 1788973298.2380013,
+   "letzte_sperre": 1788986330.4056563,
    "kontofehler": 6
   },
   "nvidia/nemotron-3-super-120b-a12b:free": {
@@ -31,7 +31,7 @@
    "latenz_summe_s": 466.09503626823425,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 1267
+   "kontofehler": 1269
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 11,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 459.68022561073303,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 1247
+   "kontofehler": 1249
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -148,11 +148,11 @@
    "kontofehler": 3
   },
   "inclusionai/ling-3.0-flash-fin:free": {
-   "laeufe": 842,
+   "laeufe": 844,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 7876.70663189888,
+   "latenz_summe_s": 7883.990963459015,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
    "kontofehler": 3
