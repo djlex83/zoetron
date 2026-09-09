@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 10:55:40",
+ "stand": "2026-09-09 11:09:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,13 +21,13 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -115,12 +115,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
@@ -376,6 +370,12 @@
   },
   {
    "tool": "veraltete-marktanalyse-auffrischen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

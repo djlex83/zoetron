@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 10:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 11:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
@@ -33,7 +33,7 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Active drive goals (dream insight utilization, simulation application) were ignored while the system chased a low-level model-error goal, indicating m
+- Calibration error of 6 (predicted 7 vs actual 1) reveals broken self-assessment; external validation gates are required before trusting internal score
+- Simulation verdict 'revise' with four revisions did not catch a lambda syntax error, proving sandbox validation must precede simulation approval.
+- Nemotron-3-ultra exhibits high latency variance (69–228s) and 502 upstream errors, making it unreliable for iterative refinement loops.
+- Relative path resolution fails consistently across hand_actions because paths are not anchored to ZOETRON_DATA before execution.
 - Drive goals repeat 'stale swarm knowledge' and 'unused dream insights' across cycles, indicating no automatic refresh pipeline.
 - Pruning discards 13 facts/22 events per run but no re-access signal exists to recover mistakenly dropped keys.
 - Model latency varies 3× (69–213 s) with token bursts up to 8k, triggering silent timeouts in downstream organs.
@@ -51,11 +56,6 @@
 - Swarm knowledge becomes stale after ~7 days without automated refresh cycles that re-run critique pipelines against current models.
 - Skill proposals accumulate but lack a mandatory simulation-gated validation pipeline before promotion to executable capabilities.
 - Model endpoints frequently return 429/502 errors requiring automatic fallback with circuit breakers to maintain throughput.
-- Stale swarm data degrades decision quality, and timestamp/version drift detection is necessary to maintain knowledge freshness and prevent cascading e
-- Artifact quality—specifically executable Python blocks with valid syntax and required imports—is a hard prerequisite for simulation success, and rejec
-- Reflex-based recovery works but is inherently reactive; proactive pre-flight validation and staleness detection prevent failures before they consume r
-- Latency variance spans 20x (3.2s vs 67.4s), meaning model selection must prioritize both health and speed, not just availability, to maintain system r
-- Model failures cluster around 429 rate-limiting and 502 upstream overload, revealing that without circuit breakers and latency-aware routing, the syst
 
 ---
 

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11859 Fakten** · Stand 2026-09-09 10:57 UTC · aktualisiert bei jedem Herzschlag
+**11859 Fakten** · Stand 2026-09-09 11:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7340
-- **swarm_artifact:** 2006
+- **dream:** 7345
+- **swarm_artifact:** 2004
 - **last_swarm_critique:** 853
 - **last_swarm_goal:** 585
-- **anti_pattern:** 483
-- **strategy:** 243
+- **anti_pattern:** 481
+- **strategy:** 242
 - **tool:** 177
 - **hand_result:** 120
 - **aktuell_organfehler:** 48
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909110713:5:2489b6`
+*09.09. 11:07 UTC · Quelle: dream*
+
+Active drive goals (dream insight utilization, simulation application) were ignored while the system chased a low-level model-error goal, indicating missing goal-hierarchy enforcement.
+
+### `dream:20260909110713:4:cf310f`
+*09.09. 11:07 UTC · Quelle: dream*
+
+Calibration error of 6 (predicted 7 vs actual 1) reveals broken self-assessment; external validation gates are required before trusting internal scores.
+
+### `dream:20260909110713:3:7b66b8`
+*09.09. 11:07 UTC · Quelle: dream*
+
+Simulation verdict 'revise' with four revisions did not catch a lambda syntax error, proving sandbox validation must precede simulation approval.
+
+### `dream:20260909110713:2:c2274c`
+*09.09. 11:07 UTC · Quelle: dream*
+
+Nemotron-3-ultra exhibits high latency variance (69–228s) and 502 upstream errors, making it unreliable for iterative refinement loops.
+
+### `dream:20260909110713:1:fa58fe`
+*09.09. 11:07 UTC · Quelle: dream*
+
+Relative path resolution fails consistently across hand_actions because paths are not anchored to ZOETRON_DATA before execution.
 
 ### `dream:20260909105420:5:b2c559`
 *09.09. 10:54 UTC · Quelle: dream*
@@ -44946,16 +44971,6 @@ score=7; issues=
 *26.08. 11:13 UTC · Quelle: critic*
 
 score=7; issues=
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:1`
-*26.08. 11:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Architekturwechsel: Von parallelem Swarm zu sequentieller Pipeline mit Best-of-N - Ersetze das iterative Schwarm-Verhalten durch eine zweiphasige Pipeline: Phase 1 erzeugt N=8 unabhängige Kandidatenlösungen parallel (Diversit
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:0`
-*26.08. 11:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Reward-Engineering & Fitness-Landschaft - Der Score von 1.3 deutet auf ein Belohnungsproblem hin, nicht auf einen Ausführungsfehler. Analysiere die Scoring-Funktion und baue einen dichten, gestaffelten Reward: Zwischenziele m
 
 ### `last_swarm_critique`
 *26.08. 11:00 UTC · Quelle: critic*
