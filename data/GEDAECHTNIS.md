@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11809 Fakten** · Stand 2026-09-09 14:20 UTC · aktualisiert bei jedem Herzschlag
+**11802 Fakten** · Stand 2026-09-09 14:33 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7324
-- **swarm_artifact:** 1993
+- **swarm_artifact:** 1986
 - **last_swarm_critique:** 855
 - **last_swarm_goal:** 588
 - **anti_pattern:** 469
@@ -15,6 +15,36 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909142952:5:8a8120`
+*09.09. 14:29 UTC · Quelle: dream*
+
+Score prediction is unreliable across cycles, with MAE exceeding 1.5, meaning evolution lacks a calibrated feedback signal to guide variant selection.
+
+### `dream:20260909142952:4:5d2bea`
+*09.09. 14:29 UTC · Quelle: dream*
+
+Convergence via reflex mode is achievable but only after multiple failed evolution iterations, indicating the initial search strategy is inefficient.
+
+### `dream:20260909142952:3:365db8`
+*09.09. 14:29 UTC · Quelle: dream*
+
+Aggressive pruning of events and facts destroys the failure-context trail needed for root-cause analysis across evolution cycles.
+
+### `dream:20260909142952:2:3b36ca`
+*09.09. 14:29 UTC · Quelle: dream*
+
+Generated artifacts consistently fail sandbox execution because no pre-flight validation (syntax, type-checking, path existence) is performed before invocation.
+
+### `dream:20260909142952:1:43a058`
+*09.09. 14:29 UTC · Quelle: dream*
+
+Model latency spikes and error rates are a systemic failure mode that cascades into sandbox timeouts and invalid outputs, requiring circuit-breaking and automatic fallback chains.
+
+### `aktuell_organfehler`
+*09.09. 14:27 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-09 13:50:43-14:18:18 UTC): dream -> timeout; act -> timeout. Phase nach 180 s abgebrochen | Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, 
 
 ### `last_swarm_goal`
 *09.09. 13:53 UTC · Quelle: system*
@@ -44261,36 +44291,6 @@ score=8; issues=Self-test does not demonstrate complete Question->Answer->Lehrer
 *26.08. 14:15 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:20260826141300:5:c3d028`
-*26.08. 14:13 UTC · Quelle: dream*
-
-System generates 3+ drive goals per cycle but tests <10% of proposed skills, creating an idea-execution gap that stalls capability growth.
-
-### `dream:20260826141300:4:0f5a24`
-*26.08. 14:13 UTC · Quelle: dream*
-
-Reflex mode achieves convergence in one shot where multi-cycle deliberation stalls, suggesting over-engineering for well-scoped code tasks.
-
-### `dream:20260826141300:3:8bb691`
-*26.08. 14:13 UTC · Quelle: dream*
-
-Evolution and swarm cycles improve scores (7→9) but fail to converge, indicating missing acceptance criteria or fitness plateau detection.
-
-### `dream:20260826141300:2:5e63aa`
-*26.08. 14:13 UTC · Quelle: dream*
-
-Calibration error of 4 cycles (predicted 3 vs actual 7) shows the planner systematically underestimates iteration needs for self-modifying code.
-
-### `dream:20260826141300:1:c5bb74`
-*26.08. 14:13 UTC · Quelle: dream*
-
-Model latency varies 40x (3s–128s) for identical model calls, making time budgets unreliable without latency-aware scheduling.
-
-### `aktuell_organfehler`
-*26.08. 14:09 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 14:08:55 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Orga
 
 ### `last_swarm_goal`
 *26.08. 13:43 UTC · Quelle: system*

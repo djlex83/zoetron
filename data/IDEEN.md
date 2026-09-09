@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 14:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 14:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 21×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 22×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Score prediction is unreliable across cycles, with MAE exceeding 1.5, meaning evolution lacks a calibrated feedback signal to guide variant selection.
+- Convergence via reflex mode is achievable but only after multiple failed evolution iterations, indicating the initial search strategy is inefficient.
+- Aggressive pruning of events and facts destroys the failure-context trail needed for root-cause analysis across evolution cycles.
+- Generated artifacts consistently fail sandbox execution because no pre-flight validation (syntax, type-checking, path existence) is performed before i
+- Model latency spikes and error rates are a systemic failure mode that cascades into sandbox timeouts and invalid outputs, requiring circuit-breaking a
 - Unbounded iteration budgets under high stress (>0.9) waste cycles on doomed multi-cycle convergence instead of forcing single-cycle completion.
 - Path-resolution errors in hand_action cause silent failures because sys.argv[1] expansion against ZOETRON_DATA and permission checks are missing.
 - Swarm knowledge becomes stale (>7 days) and corrupts decisions because no automated staleness detection triggers critique re-runs with healthy models.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays silently >7 days without automated staleness detection or critique re-runs using healthy models.
 - Skill proposals repeatedly demand simulation-gated promotion against 50 historical failure cases, but no pipeline exists to enforce this gate before f
 - Model reliability is collapsing under rate limits (429) and upstream failures (502) across multiple providers, requiring circuit-breaker routing with 
-- Calibration drift goes undetected without cross-organ consistency checks linking prediction error, execution success, and swarm convergence.
-- Generated artifacts entering sandbox without syntax/type validation cause preventable rejections; static analysis must gate execution.
-- Swarm simulations without convergence gates waste cycles and produce low-quality proposals; hard stop criteria with human review are essential.
-- Aggressive pruning discards failure evidence needed for calibration and skill promotion; tiered retention preserves signal.
-- Model endpoint instability (502/429 errors) cascades into task failures unless proactive health probes and automatic failover are in place.
 
 ---
 

@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-09 14:18:23",
+ "stand": "2026-09-09 14:31:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
@@ -217,12 +217,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-verringern.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "traum-fähigkeiten-nutzbar-machen.py",
