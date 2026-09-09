@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12021 Fakten** · Stand 2026-09-09 04:44 UTC · aktualisiert bei jedem Herzschlag
+**12011 Fakten** · Stand 2026-09-09 04:57 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7440
-- **swarm_artifact:** 2036
+- **swarm_artifact:** 2030
 - **last_swarm_critique:** 848
 - **last_swarm_goal:** 580
-- **anti_pattern:** 505
-- **strategy:** 254
+- **anti_pattern:** 503
+- **strategy:** 253
 - **tool:** 181
-- **hand_result:** 127
+- **hand_result:** 126
 - **aktuell_organfehler:** 46
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909045440:5:b8481e`
+*09.09. 04:54 UTC · Quelle: dream*
+
+Artifact incompleteness was the primary critic failure mode; enforce minimum artifact standards (runnable code, tests, docstring, integration hooks) before scoring.
+
+### `dream:20260909045440:4:01ae9b`
+*09.09. 04:54 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free remained consistently available across the session; maintain a verified model registry and deprioritize flaky endpoints.
+
+### `dream:20260909045440:3:9d9038`
+*09.09. 04:54 UTC · Quelle: dream*
+
+Evolutionary variant generation with critic feedback improved artifact scores from 3 to 8-9 in a single run; make evolution a standard step for skill synthesis.
+
+### `dream:20260909045440:2:dc0fd8`
+*09.09. 04:54 UTC · Quelle: dream*
+
+Calibration predictions overestimate actual performance by ~57% (predicted 7 vs actual 3); apply a correction factor or require empirical validation before trusting estimates.
+
+### `dream:20260909045440:1:6c4ba3`
+*09.09. 04:54 UTC · Quelle: dream*
+
+Free-tier LLM endpoints on OpenRouter suffer frequent rate limits (429) and upstream failures (502); treat them as unreliable and implement fallback chains.
 
 ### `dream:20260909044153:5:4a2fdb`
 *09.09. 04:41 UTC · Quelle: dream*
@@ -45702,16 +45727,6 @@ Swarm convergence fails at score 5/10 despite a clear winning variant (9,9,9) be
 
 Primary models (stealth/ox-alpha, z-ai/glm-5.2) suffer systematic 429 rate-limiting, forcing fallback to slower nvidia/nemotron and degrading swarm latency by 2-3x.
 
-### `anti_pattern:Previous attempt scored 2/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*26.08. 04:50 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 6, 8]): Architectural Change: Verified Template Pipeline with Syntax Gate - Replace ad-hoc code generation with a Jinja2 template pipeline where each artifact template is pre-validated. Templates include a fixed header block 
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Ersten Swarm-Lauf mit Sc:0`
-*26.08. 04:50 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
 ### `last_swarm_critique`
 *26.08. 04:50 UTC · Quelle: critic*
 
@@ -45721,31 +45736,6 @@ ABGELEHNT von Evolution (Score [6, 6, 8]): Architectural Change: Verified Templa
 *26.08. 04:45 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260826044529:5:6ae192`
-*26.08. 04:45 UTC · Quelle: dream*
-
-Selbstdiagnose found zero organ defects while real failures (429s, non-converged swarm, blocked execution) occurred in the same window, showing current health checks monitor internals but miss external/behavioral failure signals.
-
-### `dream:20260826044529:4:be9c14`
-*26.08. 04:45 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than they are validated (5 proposals pending, 0 tested), creating a growing backlog that wastes dream output unless a sandbox trial-and-promotion loop exists.
-
-### `dream:20260826044529:3:5cadc1`
-*26.08. 04:45 UTC · Quelle: dream*
-
-Swarm convergence failed (score 6/10, converged=false after 2 cycles) even though all 3 revisions were applied, indicating the revise loop terminates on cycle budget rather than on risk closure — verdicts should gate on open risks, not remaining cycles.
-
-### `dream:20260826044529:2:97e733`
-*26.08. 04:45 UTC · Quelle: dream*
-
-The 'Doku-Konsistenzwächter' goal stalled not at generation but at execution: the swarm produced a subprocess-based artifact that was correctly blocked by the destructive-operation guard, meaning tool safety classification must be part of goal planning, not di
-
-### `dream:20260826044529:1:7a019a`
-*26.08. 04:45 UTC · Quelle: dream*
-
-Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in pairs within seconds, so nvidia/nemotron-3-ultra is the de facto reliable fallback and should be treated as primary until cooldowns are tracked.
 
 ### `last_swarm_critique`
 *26.08. 04:37 UTC · Quelle: critic*
