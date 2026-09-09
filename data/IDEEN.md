@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 11:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 11:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,7 +10,6 @@
 - Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 9×)*
 - Add convergence_guardrail that detects stalled optimization scores across 3+ cycles and triggers emergency evo *(hatte die Idee 6×)*
 - Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh  *(hatte die Idee 5×)*
-- Enforce schema validation gates before artifact scoring to catch mismatches early and avoid wasted evaluation  *(hatte die Idee 4×)*
 - Add rate-limit-aware exponential backoff with jitter and concurrent request throttling to prevent 429 errors f *(hatte die Idee 4×)*
 - Wrap hand_action calls with structured error capture (stderr, exit codes, context) that returns actionable err *(hatte die Idee 4×)*
 - Add rate-limit awareness module detecting 429 responses, pausing requests to that model for configurable backo *(hatte die Idee 4×)*
@@ -20,6 +19,7 @@
 - Add ConvergenceMonitor: require minimum 3 swarm cycles, detect score plateau (delta<0.01 over 2 cycles), valid *(hatte die Idee 4×)*
 - Deploy model_router with per-provider circuit breakers tracking 429/502 rates, p95 latency, and success rate;  *(hatte die Idee 4×)*
 - Deploy ModelRouter with per-provider circuit breakers tracking 429/502 rates, p95 latency, and success rate; a *(hatte die Idee 4×)*
+- Persist circuit-breaker counters (success rate, p95 latency, error taxonomy) to disk so degradation memory sur *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (5 generated) but none are deployed, revealing a gap between proposal and production validation.
+- Pruning removes 38 facts and 101 events per run, risking loss of diagnostic context for recurring failures.
+- Hand actions initially fail (exit 1) but succeed on retry after model recovery, showing transient model errors block physical execution.
+- Swarm cycles fail to converge (score 1, converged false) despite revisions, suggesting the simulation critique loop lacks a convergence criterion.
+- The model inclusionai/ling-3.0-flash-fin consistently succeeds while nvidia/nemotron-3-ultra and google/gemma models fail with 502/429 errors, indicat
 - Self-diagnosis reports zero organ errors while the system produces only failing artifacts and broken predictions.
 - Evolution/swarm cycles run but never converge (score=1, converged=false) despite revisions and simulation feedback.
 - Calibration predicts 7 but actual score is 1 (error=6), indicating the reward predictor is decoupled from reality.
@@ -51,11 +56,6 @@
 - Simulation verdict 'revise' with four revisions did not catch a lambda syntax error, proving sandbox validation must precede simulation approval.
 - Nemotron-3-ultra exhibits high latency variance (69–228s) and 502 upstream errors, making it unreliable for iterative refinement loops.
 - Relative path resolution fails consistently across hand_actions because paths are not anchored to ZOETRON_DATA before execution.
-- Drive goals repeat 'stale swarm knowledge' and 'unused dream insights' across cycles, indicating no automatic refresh pipeline.
-- Pruning discards 13 facts/22 events per run but no re-access signal exists to recover mistakenly dropped keys.
-- Model latency varies 3× (69–213 s) with token bursts up to 8k, triggering silent timeouts in downstream organs.
-- Simulation-driven revision loops (verdict: revise → 4 revisions applied) catch reflex failures that unit tests miss.
-- Relative paths bypass ZOETRON_DATA at call time, causing hand actions to read nothing despite valid inputs.
 
 ---
 

@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11864 Fakten** · Stand 2026-09-09 11:24 UTC · aktualisiert bei jedem Herzschlag
+**11858 Fakten** · Stand 2026-09-09 11:37 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7350
-- **swarm_artifact:** 2004
+- **swarm_artifact:** 2002
 - **last_swarm_critique:** 853
 - **last_swarm_goal:** 585
-- **anti_pattern:** 481
-- **strategy:** 242
+- **anti_pattern:** 479
+- **strategy:** 241
 - **tool:** 177
-- **hand_result:** 120
+- **hand_result:** 119
 - **aktuell_organfehler:** 48
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909113425:5:dca8b7`
+*09.09. 11:34 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 generated) but none are deployed, revealing a gap between proposal and production validation.
+
+### `dream:20260909113425:4:3aee5f`
+*09.09. 11:34 UTC · Quelle: dream*
+
+Pruning removes 38 facts and 101 events per run, risking loss of diagnostic context for recurring failures.
+
+### `dream:20260909113425:3:38bb21`
+*09.09. 11:34 UTC · Quelle: dream*
+
+Hand actions initially fail (exit 1) but succeed on retry after model recovery, showing transient model errors block physical execution.
+
+### `dream:20260909113425:2:a96276`
+*09.09. 11:34 UTC · Quelle: dream*
+
+Swarm cycles fail to converge (score 1, converged false) despite revisions, suggesting the simulation critique loop lacks a convergence criterion.
+
+### `dream:20260909113425:1:f53fe8`
+*09.09. 11:34 UTC · Quelle: dream*
+
+The model inclusionai/ling-3.0-flash-fin consistently succeeds while nvidia/nemotron-3-ultra and google/gemma models fail with 502/429 errors, indicating a clear reliability tier.
 
 ### `dream:20260909112112:5:33b917`
 *09.09. 11:21 UTC · Quelle: dream*
@@ -44817,16 +44842,6 @@ score=7; issues=
 
 score=7; issues=
 
-### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:1`
-*26.08. 11:30 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Testgetriebene Entwicklung (TDD): Die Tests werden zuerst entworfen und definier - Schritt 1: Formuliere zunaechst einen ausfuehrbaren Testplan als Python-unittest-Suite mit 8 Faellen: (1) Register speichert Modell-Status, (2
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:0`
-*26.08. 11:30 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Minimalismus & Verifikationsfirst: Statt komplexes Framework zuerst zu bauen, wi - Baue ein einzelnes Python-Skript (<150 Zeilen) mit nur drei Klassen: HealthRegister (dict-basiert), CircuitBreaker (Zustandsmaschine CLOSED/OP
-
 ### `last_swarm_critique`
 *26.08. 11:29 UTC · Quelle: critic*
 
@@ -44881,31 +44896,6 @@ score=2; issues=SANDBOX-URTEIL: LAEUFT NICHT (Traceback ab Zeile 233) - harter M
 *26.08. 11:24 UTC · Quelle: system*
 
 Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
-
-### `dream:20260826112438:5:518f58`
-*26.08. 11:24 UTC · Quelle: dream*
-
-Prune runs removed 0 facts and 0 events while selbstdiagnose found 0 defects, suggesting memory hygiene thresholds are set too conservatively to ever trigger.
-
-### `dream:20260826112438:4:ade6b6`
-*26.08. 11:24 UTC · Quelle: dream*
-
-A prior dream cycle already completed successfully (5 insights, 5 skills), so re-running consolidation immediately afterward produced redundant work rather than new learning.
-
-### `dream:20260826112438:3:710e32`
-*26.08. 11:24 UTC · Quelle: dream*
-
-The identical failure sequence repeating within ~150 seconds shows there is no cooldown or backoff after a 429, causing wasted retries against still-throttled endpoints.
-
-### `dream:20260826112438:2:4d8864`
-*26.08. 11:24 UTC · Quelle: dream*
-
-Only nvidia/nemotron-3.5-lightning:free succeeded both times, but at 94-144s latency and 3-5k output tokens, so it is reliable yet slow and should not be the default for latency-sensitive tasks.
-
-### `dream:20260826112438:1:fc18ce`
-*26.08. 11:24 UTC · Quelle: dream*
-
-Four of five candidate models failed with 429 rate-limit errors in two consecutive rounds, indicating the fallback chain is tried too fast and in the same order every time.
 
 ### `last_swarm_critique`
 *26.08. 11:14 UTC · Quelle: critic*
