@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Retry logic hammers failing endpoints without exponential backoff or Retry-After header parsing, worsening rate-limit collisions.
+- Simulation validator rejects artifacts lacking executable Python blocks; prose-only plans fail convergence checks.
+- The inclusionai/ling-3.0-flash-fin:free model succeeds consistently with 1.5-5.2s latency, making it the only reliable free-tier option observed.
+- Circuit breaker activates after 3 consecutive failures (1800s block) but provides no automatic fallback, leaving the pipeline stalled.
+- Free-tier models exhibit systematic unreliability: Nemotron returns 502 overload errors while Gemma models hit 429 rate limits within minutes.
 - Swarm knowledge staleness exceeds 24h without automated refresh, causing redundant critiques and missed cross-pollination.
 - Confidence predictions deviate significantly from actual outcomes (calibration factor 0.4 initial), demanding automated tracking and retraining loops.
 - Simulation-driven revision reduces risk but generates high revision counts (5 risks → 3 applied), indicating need for pre-simulation static checks.
@@ -51,11 +56,6 @@
 - Critic feedback loops are ineffective when stage-1 static analysis (syntax, imports, execution) is skipped, allowing broken artifacts to reach semanti
 - The swarm evolution process consistently produces non-executable artifacts that fail the executable artifact gate (tool rejected for no return value).
 - Free-tier models exhibit systematic unreliability (502/429 errors) making them unsuitable for critical-path tasks without automated failover.
-- Artifact incompleteness was the primary critic failure mode; enforce minimum artifact standards (runnable code, tests, docstring, integration hooks) b
-- Only inclusionai/ling-3.0-flash-fin:free remained consistently available across the session; maintain a verified model registry and deprioritize flaky
-- Evolutionary variant generation with critic feedback improved artifact scores from 3 to 8-9 in a single run; make evolution a standard step for skill 
-- Calibration predictions overestimate actual performance by ~57% (predicted 7 vs actual 3); apply a correction factor or require empirical validation b
-- Free-tier LLM endpoints on OpenRouter suffer frequent rate limits (429) and upstream failures (502); treat them as unreliable and implement fallback c
 
 ---
 

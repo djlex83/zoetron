@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12006 Fakten** · Stand 2026-09-09 05:23 UTC · aktualisiert bei jedem Herzschlag
+**12011 Fakten** · Stand 2026-09-09 05:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7445
+- **dream:** 7450
 - **swarm_artifact:** 2024
 - **last_swarm_critique:** 848
 - **last_swarm_goal:** 580
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909053240:5:e8a0b2`
+*09.09. 05:32 UTC · Quelle: dream*
+
+Retry logic hammers failing endpoints without exponential backoff or Retry-After header parsing, worsening rate-limit collisions.
+
+### `dream:20260909053240:4:0a7f27`
+*09.09. 05:32 UTC · Quelle: dream*
+
+Simulation validator rejects artifacts lacking executable Python blocks; prose-only plans fail convergence checks.
+
+### `dream:20260909053240:3:ba3fbc`
+*09.09. 05:32 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model succeeds consistently with 1.5-5.2s latency, making it the only reliable free-tier option observed.
+
+### `dream:20260909053240:2:d26819`
+*09.09. 05:32 UTC · Quelle: dream*
+
+Circuit breaker activates after 3 consecutive failures (1800s block) but provides no automatic fallback, leaving the pipeline stalled.
+
+### `dream:20260909053240:1:918883`
+*09.09. 05:32 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic unreliability: Nemotron returns 502 overload errors while Gemma models hit 429 rate limits within minutes.
 
 ### `dream:20260909051953:5:4f2205`
 *09.09. 05:19 UTC · Quelle: dream*

@@ -29130,3 +29130,24 @@
 {"ts": 1787721268.6965423, "key": "strategy:mehr_vorschläge_wirklich_ausprobieren", "value": "Experiment-Pipeline mit Budget und Feedback-Schleife - Variant 1 directly addresses the goal 'mehr Vorschläge wirklich ausprobieren' by making executed experiments the core KPI, with budgets and a structured feedback loop that also fix", "source": "evolution"}
 {"ts": 1787721302.4485633, "key": "hand_result:Mehr Vorschläge wirklich ausprobieren", "value": "{\"ok\": false, \"stderr\": \"[ERROR] Proposals directory not found: proposals\\n\"}", "source": "hands"}
 {"ts": 1788325769.1984382, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788326642.973972, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788326644.6985848, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 55}}
+{"ts": 1788326648.836327, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788326648.8363228, "schalter_geoeffnet": false}}
+{"ts": 1788326679.1025457, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 30.3, "tokens_ein": 1414, "tokens_aus": 669}}
+{"ts": 1788326679.1032386, "kind": "skill_proposal", "payload": {"proposal": "Implement a circuit-breaker router that switches to the next model after 2 consecutive 429s and applies exponential backoff before retrying the original."}}
+{"ts": 1788326679.103302, "kind": "skill_proposal", "payload": {"proposal": "Add a stale-work sweeper that archives or deletes tasks exceeding a configurable age threshold to reclaim storage and focus."}}
+{"ts": 1788326679.1033614, "kind": "skill_proposal", "payload": {"proposal": "Create a proposal-to-test pipeline requiring each skill proposal to pass an automated validation gate before being marked tested."}}
+{"ts": 1788326679.1034203, "kind": "skill_proposal", "payload": {"proposal": "Build a resource-aware scheduler that enforces conserve-mode budgets by capping concurrent tasks and iteration limits."}}
+{"ts": 1788326679.103477, "kind": "skill_proposal", "payload": {"proposal": "Introduce a file-path validator that confirms data accessibility before any hand_action invocation to prevent silent missing-file failures."}}
+{"ts": 1788326679.1035528, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788326684.4381669, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 3.4, "tokens_ein": 470, "tokens_aus": 290}}
+{"ts": 1788326684.4383323, "kind": "drive_goal", "payload": {"title": "Fehlerhafte Modelle besser verstehen", "why": "Viele Versuche schlagen fehl. Wenn wir verstehen warum, können wir in Zukunft weniger Fehler machen.", "signal": "failure"}}
+{"ts": 1788326684.4384077, "kind": "drive_goal", "payload": {"title": "Alte Marktdaten aktualisieren", "why": "Die Marktanalyse ist veraltet und unvollständig. Frische Daten helfen uns, bessere Entscheidungen zu treffen.", "signal": "stale"}}
+{"ts": 1788326684.438469, "kind": "drive_goal", "payload": {"title": "Neue Fähigkeiten gezielt üben", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber oft funktionieren sie noch nicht richtig. Mehr Übung macht uns zuverlässiger.", "signal": "combination"}}
+{"ts": 1788326687.1134653, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.32, "gelesen": 51}}
+{"ts": 1788326687.1154346, "kind": "reflex_used", "payload": {"goal": "Alte Marktanalyse endlich nutzen", "tool": "marktanalyse-endlich-nutzen.py", "ok": true}}
+{"ts": 1788326687.5018344, "kind": "act_done", "payload": {"goal_title": "Alte Marktanalyse endlich nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788327005.5529609, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788327074.1484954, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788327075.7692263, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788327080.119397, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788327080.1193907, "schalter_geoeffnet": false}}
