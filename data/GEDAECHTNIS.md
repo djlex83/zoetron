@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12016 Fakten** · Stand 2026-09-09 05:10 UTC · aktualisiert bei jedem Herzschlag
+**12006 Fakten** · Stand 2026-09-09 05:23 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7445
-- **swarm_artifact:** 2030
+- **swarm_artifact:** 2024
 - **last_swarm_critique:** 848
 - **last_swarm_goal:** 580
-- **anti_pattern:** 503
-- **strategy:** 253
+- **anti_pattern:** 501
+- **strategy:** 252
 - **tool:** 181
-- **hand_result:** 126
+- **hand_result:** 125
 - **aktuell_organfehler:** 46
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909051953:5:4f2205`
+*09.09. 05:19 UTC · Quelle: dream*
+
+Swarm knowledge staleness exceeds 24h without automated refresh, causing redundant critiques and missed cross-pollination.
+
+### `dream:20260909051953:4:8f0660`
+*09.09. 05:19 UTC · Quelle: dream*
+
+Confidence predictions deviate significantly from actual outcomes (calibration factor 0.4 initial), demanding automated tracking and retraining loops.
+
+### `dream:20260909051953:3:59966a`
+*09.09. 05:19 UTC · Quelle: dream*
+
+Simulation-driven revision reduces risk but generates high revision counts (5 risks → 3 applied), indicating need for pre-simulation static checks.
+
+### `dream:20260909051953:2:cab4d5`
+*09.09. 05:19 UTC · Quelle: dream*
+
+Hand actions fail due to relative-path resolution against ZOETRON_DATA, requiring absolute-path enforcement before execution.
+
+### `dream:20260909051953:1:9ca269`
+*09.09. 05:19 UTC · Quelle: dream*
+
+Free-tier models (nemotron, gemma) fail catastrophically under load (502/429), making tiered routing with health checks essential for reliability.
 
 ### `dream:20260909050716:5:083f19`
 *09.09. 05:07 UTC · Quelle: dream*
@@ -45707,16 +45732,6 @@ Repeated goals like 'Doku-Konsistenzwächter' get parked after 3 non-convergent 
 
 Swarm runs repeatedly fail to converge (score 2 after 2 cycles) because termination is declared without the critic verifying closure of logged risks — risk count 4 with only 2 revisions shows risks are logged but not resolved.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Mehr Vorschläge wirklich:2`
-*26.08. 05:14 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Inversion: Fehlertolerantes Prototyping statt Perfektion - Drehe die Strategie um: Statt perfekte, vollständig formulierte Lösungen anzustreben, werden absichtlich viele schnelle, rohe Prototypen erzeugt ('fail fast'-Ansatz).
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Mehr Vorschläge wirklich:0`
-*26.08. 05:14 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Strukturerzwingung durch starre Schemata - Erzwinge maschinenlesbare Ausgaben, indem jeder Lösungsvorschlag an ein festes, vordefiniertes JSON-Schema gebunden wird (z. B. {id, hypothese, test_schritt, erwartung, ergebnis}). J
-
 ### `last_swarm_critique`
 *26.08. 05:13 UTC · Quelle: critic*
 
@@ -45726,31 +45741,6 @@ score=5; issues=Critic output unparseable.
 *26.08. 05:09 UTC · Quelle: system*
 
 Mehr Vorschläge wirklich ausprobieren
-
-### `dream:20260826050935:5:c914e0`
-*26.08. 05:09 UTC · Quelle: dream*
-
-Metabolism stress and model quota exhaustion are coupled failure modes: high swarm activity triggers rate limits, which raises latency, which increases stress.
-
-### `dream:20260826050935:4:aa55ec`
-*26.08. 05:09 UTC · Quelle: dream*
-
-Skill proposals accumulate (5 in this cycle) but drive feedback indicates they aren't being trialed or retired, creating proposal debt.
-
-### `dream:20260826050935:3:701fc4`
-*26.08. 05:09 UTC · Quelle: dream*
-
-Destructive tool operations (subprocess) require human approval, creating a hard automation ceiling for any code-executing skill.
-
-### `dream:20260826050935:2:b0471f`
-*26.08. 05:09 UTC · Quelle: dream*
-
-Swarm convergence fails at score 5/10 despite a clear winning variant (9,9,9) because critic/builder roles don't exploit the best candidate across cycles.
-
-### `dream:20260826050935:1:2087c6`
-*26.08. 05:09 UTC · Quelle: dream*
-
-Primary models (stealth/ox-alpha, z-ai/glm-5.2) suffer systematic 429 rate-limiting, forcing fallback to slower nvidia/nemotron and degrading swarm latency by 2-3x.
 
 ### `last_swarm_critique`
 *26.08. 04:50 UTC · Quelle: critic*

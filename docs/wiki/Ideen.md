@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 05:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge staleness exceeds 24h without automated refresh, causing redundant critiques and missed cross-pollination.
+- Confidence predictions deviate significantly from actual outcomes (calibration factor 0.4 initial), demanding automated tracking and retraining loops.
+- Simulation-driven revision reduces risk but generates high revision counts (5 risks → 3 applied), indicating need for pre-simulation static checks.
+- Hand actions fail due to relative-path resolution against ZOETRON_DATA, requiring absolute-path enforcement before execution.
+- Free-tier models (nemotron, gemma) fail catastrophically under load (502/429), making tiered routing with health checks essential for reliability.
 - Pruning aggressively removes context (23 facts, 119 events) but the system still repeats the same artifact-execution failures.
 - Confidence calibration is absent: predicted scores (evolution winner 9/10) diverge wildly from actual outcomes (swarm score 3/10).
 - Critic feedback loops are ineffective when stage-1 static analysis (syntax, imports, execution) is skipped, allowing broken artifacts to reach semanti
@@ -51,11 +56,6 @@
 - Evolutionary variant generation with critic feedback improved artifact scores from 3 to 8-9 in a single run; make evolution a standard step for skill 
 - Calibration predictions overestimate actual performance by ~57% (predicted 7 vs actual 3); apply a correction factor or require empirical validation b
 - Free-tier LLM endpoints on OpenRouter suffer frequent rate limits (429) and upstream failures (502); treat them as unreliable and implement fallback c
-- 429 rate-limit errors and 502 upstream errors require fundamentally different handling: backoff-and-retry for 429 versus immediate provider switching 
-- The inclusionai/ling-3.0-flash-fin model proved that smaller, specialized models can outperform larger ones in both reliability and latency under cons
-- The per-model lockout after 3 consecutive failures is effective but purely reactive; proactive health-checks before task assignment would prevent wast
-- Sequential model fallback fails catastrophically when multiple providers hit rate limits simultaneously — the system needs a parallel or cached-respon
-- Free-tier LLM endpoints are unreliable under load; larger models (550B) are disproportionately prone to upstream 502 overload errors compared to small
 
 ---
 

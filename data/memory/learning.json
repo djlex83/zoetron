@@ -1,15 +1,15 @@
 {
- "stand": "2026-09-09 05:07:56",
+ "stand": "2026-09-09 05:21:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "tool": "veraltete-schwarmziele-aktualisieren.py",
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
-   "tool": "veraltete-schwarmziele-aktualisieren.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 15,
    "erfolge": 15,
    "quote": 1.0
@@ -409,6 +409,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.79,
