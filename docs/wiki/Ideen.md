@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 11:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 12:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence in 1 cycle with score 8 was achieved because a fast fallback model produced a working 227-line artifact immediately, proving model a
+- The initial hand_action timeout (20s) on the first tool call indicates that synchronous blocking calls without fallback can stall the entire pipeline 
+- Cascading model failures across providers (Nvidia 502 → Google 429) reveal that retry logic must include provider diversity rather than blindly retryi
+- High system stress (0.911) forces conserve mode with minimal iterations, which paradoxically enabled single-cycle swarm convergence by constraining sc
+- When primary model providers return 502/429 errors, immediately switching to a smaller alternative model (like inclusionai/ling-3.0-flash-fin) resolve
 - System stress hits 0.91 (conserve mode) during concurrent model calls, proving that unbounded parallel requests exhaust the token budget without backp
 - Swarm knowledge staleness (>7 days) persists because no automated refresher detects timestamp/version drift and re-runs critique pipelines with health
 - hand_action timeouts (20s, 0 bytes read) stem from missing path-resolution guards that expand env vars, verify permissions, and fail fast with actiona
@@ -51,11 +56,6 @@
 - Hand actions initially fail (exit 1) but succeed on retry after model recovery, showing transient model errors block physical execution.
 - Swarm cycles fail to converge (score 1, converged false) despite revisions, suggesting the simulation critique loop lacks a convergence criterion.
 - The model inclusionai/ling-3.0-flash-fin consistently succeeds while nvidia/nemotron-3-ultra and google/gemma models fail with 502/429 errors, indicat
-- Self-diagnosis reports zero organ errors while the system produces only failing artifacts and broken predictions.
-- Evolution/swarm cycles run but never converge (score=1, converged=false) despite revisions and simulation feedback.
-- Calibration predicts 7 but actual score is 1 (error=6), indicating the reward predictor is decoupled from reality.
-- Generated code contains syntax errors (malformed lambda) that crash execution before any logic runs.
-- Free-tier models (Nemotron, Gemma) fail reliably under load with 502/429 errors while only Ling-3.0-Flash-Fin succeeds consistently.
 
 ---
 

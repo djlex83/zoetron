@@ -1,0 +1,57 @@
+{
+  "all_passed": false,
+  "passed_count": 0,
+  "total_count": 4,
+  "convergence_passed": false,
+  "tool_validated": true,
+  "results": [
+    {
+      "contract_name": "CONVERGENCE_GATE",
+      "passed": false,
+      "message": "Simulation output failed convergence gating",
+      "details": {
+        "method": "zoetron.konvergenztor.pruefe"
+      },
+      "severity": "critical",
+      "timestamp": 0.0
+    },
+    {
+      "contract_name": "energy_range",
+      "passed": false,
+      "message": "Key 'energy' not found in simulation output",
+      "details": {
+        "expected_range": [
+          -1000000.0,
+          1000000.0
+        ],
+        "actual": null
+      },
+      "severity": "error",
+      "timestamp": 0.0
+    },
+    {
+      "contract_name": "time_monotonic",
+      "passed": false,
+      "message": "Key 'time' not found",
+      "details": {},
+      "severity": "error",
+      "timestamp": 0.0
+    },
+    {
+      "contract_name": "energy_conservation",
+      "passed": false,
+      "message": "Cannot verify conservation: initial=0.0, current=None",
+      "details": {
+        "quantity": "total_energy"
+      },
+      "severity": "error",
+      "timestamp": 0.0
+    }
+  ],
+  "summary": {
+    "status": "FAIL",
+    "passed": 0,
+    "failed": 4,
+    "total": 4
+  }
+}

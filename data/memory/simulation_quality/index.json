@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "keys": {
+    "quality_demo_convergent_test_conv_001": {
+      "offset": 0,
+      "timestamp": "2026-09-09T12:18:40.856261Z"
+    },
+    "trend_demo_convergent": {
+      "offset": 26918,
+      "timestamp": "2026-09-09T12:18:41.030325Z"
+    },
+    "quality_demo_unstable_test_unstable_001": {
+      "offset": 3901,
+      "timestamp": "2026-09-09T12:18:40.857757Z"
+    },
+    "trend_demo_unstable": {
+      "offset": 5327,
+      "timestamp": "2026-09-09T12:18:40.858121Z"
+    },
+    "quality_demo_convergent_trend_test_0": {
+      "offset": 5697,
+      "timestamp": "2026-09-09T12:18:40.860065Z"
+    },
+    "quality_demo_convergent_trend_test_1": {
+      "offset": 9797,
+      "timestamp": "2026-09-09T12:18:40.895454Z"
+    },
+    "quality_demo_convergent_trend_test_2": {
+      "offset": 14116,
+      "timestamp": "2026-09-09T12:18:40.932713Z"
+    },
+    "quality_demo_convergent_trend_test_3": {
+      "offset": 18644,
+      "timestamp": "2026-09-09T12:18:40.967899Z"
+    },
+    "quality_demo_convergent_trend_test_4": {
+      "offset": 23374,
+      "timestamp": "2026-09-09T12:18:41.019182Z"
+    }
+  }
+}

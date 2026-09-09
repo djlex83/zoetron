@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11858 Fakten** · Stand 2026-09-09 11:50 UTC · aktualisiert bei jedem Herzschlag
+**11863 Fakten** · Stand 2026-09-09 12:28 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7350
-- **swarm_artifact:** 2002
-- **last_swarm_critique:** 853
-- **last_swarm_goal:** 585
+- **swarm_artifact:** 2006
+- **last_swarm_critique:** 854
+- **last_swarm_goal:** 586
 - **anti_pattern:** 479
 - **strategy:** 241
 - **tool:** 177
-- **hand_result:** 119
+- **hand_result:** 118
 - **aktuell_organfehler:** 48
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Qualitätsprüfung für Sim:2`
+*09.09. 12:26 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Qualitätsprüfung für Sim:1`
+*09.09. 12:26 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_critique`
+*09.09. 12:20 UTC · Quelle: critic*
+
+score=1; issues=Sandbox verdict: LAEUFT NICHT - artifacts do not execute; All three artifacts are truncated/incomplete in the middle of implementation; Simulation Quality Metrics Collector: line 133 has circular/broken Path logic (data_dir or Path(data_dir) if
+
+### `last_swarm_goal`
+*09.09. 12:01 UTC · Quelle: system*
+
+Qualitätsprüfung für Simulationen bauen
+
+### `dream:20260909120008:5:bb5c91`
+*09.09. 12:00 UTC · Quelle: dream*
+
+Swarm convergence in 1 cycle with score 8 was achieved because a fast fallback model produced a working 227-line artifact immediately, proving model availability—not coordination—is the primary bottleneck.
+
+### `dream:20260909120008:4:3d8194`
+*09.09. 12:00 UTC · Quelle: dream*
+
+The initial hand_action timeout (20s) on the first tool call indicates that synchronous blocking calls without fallback can stall the entire pipeline early in execution.
+
+### `dream:20260909120008:3:3c6bcb`
+*09.09. 12:00 UTC · Quelle: dream*
+
+Cascading model failures across providers (Nvidia 502 → Google 429) reveal that retry logic must include provider diversity rather than blindly retrying the same failing endpoint.
+
+### `dream:20260909120008:2:601b40`
+*09.09. 12:00 UTC · Quelle: dream*
+
+High system stress (0.911) forces conserve mode with minimal iterations, which paradoxically enabled single-cycle swarm convergence by constraining scope and forcing focus.
+
+### `dream:20260909120008:1:395037`
+*09.09. 12:00 UTC · Quelle: dream*
+
+When primary model providers return 502/429 errors, immediately switching to a smaller alternative model (like inclusionai/ling-3.0-flash-fin) resolves failures faster than retrying the same endpoint.
 
 ### `dream:20260909114726:5:158fbe`
 *09.09. 11:47 UTC · Quelle: dream*
@@ -44616,41 +44661,6 @@ score=2; issues=SANDBOX-URTEIL ist LAEUFT NICHT: Tracebacks in zwei Ausfuehrunge
 *26.08. 11:57 UTC · Quelle: system*
 
 Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
-
-### `dream:20260826115649:5:36da11`
-*26.08. 11:56 UTC · Quelle: dream*
-
-Successful calls on this run had high latency (149–220 s) and large output token counts, suggesting latency budgeting and streaming/timeout handling are needed for free-tier models.
-
-### `dream:20260826115649:4:3f9394`
-*26.08. 11:56 UTC · Quelle: dream*
-
-A generated tool was rejected because it accepted no input (no parameters, argv, stdin, or file), so every builder-produced artifact must be validated for an input interface before deployment.
-
-### `dream:20260826115649:3:ba9061`
-*26.08. 11:56 UTC · Quelle: dream*
-
-The swarm failed to converge (score 4, delta 0.0) despite evolution producing a winning variant scored 9, indicating a gap between variant scoring during evolution and final swarm evaluation that must be reconciled.
-
-### `dream:20260826115649:2:fa8d87`
-*26.08. 11:56 UTC · Quelle: dream*
-
-The calibration error was 4 points (predicted 8, actual 4), meaning self-predicted scores are systematically optimistic and should be discounted or grounded in critic-verified criteria.
-
-### `dream:20260826115649:1:cd9b04`
-*26.08. 11:56 UTC · Quelle: dream*
-
-429 rate-limit failures cluster across multiple free-tier models simultaneously, so the fallback chain should treat OpenRouter-wide 429s as a global backoff signal rather than retrying the next model immediately.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:2`
-*26.08. 11:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Event-getriebener Zustandsautomat mit Watchdog-Thread: Verlasse das prozedurale  - 1) EventBus (queue-basiert). 2) ModelHealthRegistry als FSM pro Modell: CLOSED -(3x FAILURE)-> OPEN -(Cooldown)-> HALF_OPEN -(SUCCESS)-> CLOSE
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:1`
-*26.08. 11:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Defensiver Bootstrap / Crash-sichere Orchestrierung: Der Kernfehler war ein hart - 1) 'safe_step(fn)'-Wrapper: fängt jede Exception, loggt sie, gibt (ok=False, error) zurueck. 2) main(): Stufe 1 liest API-Key via os.getenv mi
 
 ### `last_swarm_critique`
 *26.08. 11:50 UTC · Quelle: critic*
