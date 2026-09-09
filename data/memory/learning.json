@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 11:35:46",
+ "stand": "2026-09-09 11:48:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -421,10 +421,16 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "schwarm-ergebnisse-in-handlungen-umsetze.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.763,
- "simulationen_angewandt": 27,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 28,
   "best": 9.0,

@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11858 Fakten** · Stand 2026-09-09 11:37 UTC · aktualisiert bei jedem Herzschlag
+**11858 Fakten** · Stand 2026-09-09 11:50 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7350
 - **swarm_artifact:** 2002
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909114726:5:158fbe`
+*09.09. 11:47 UTC · Quelle: dream*
+
+System stress hits 0.91 (conserve mode) during concurrent model calls, proving that unbounded parallel requests exhaust the token budget without backpressure.
+
+### `dream:20260909114726:4:a8e20e`
+*09.09. 11:47 UTC · Quelle: dream*
+
+Swarm knowledge staleness (>7 days) persists because no automated refresher detects timestamp/version drift and re-runs critique pipelines with healthy models.
+
+### `dream:20260909114726:3:ad22a3`
+*09.09. 11:47 UTC · Quelle: dream*
+
+hand_action timeouts (20s, 0 bytes read) stem from missing path-resolution guards that expand env vars, verify permissions, and fail fast with actionable messages.
+
+### `dream:20260909114726:2:1be16c`
+*09.09. 11:47 UTC · Quelle: dream*
+
+Skill proposals accumulate but never reach production because no simulation-gated promotion pipeline validates them against historical failure cases (429, 502, timeout, path errors).
+
+### `dream:20260909114726:1:ee7fb5`
+*09.09. 11:47 UTC · Quelle: dream*
+
+Model latency spikes (68-137s) and timeouts cascade into hand_action failures and reflex aborts, revealing no circuit-breaker or fallback logic for the primary model.
 
 ### `dream:20260909113425:5:dca8b7`
 *09.09. 11:34 UTC · Quelle: dream*
@@ -44636,31 +44661,6 @@ score=2; issues=SANDBOX-URTEIL: LAEUFT NICHT - harter Mangel. Traceback endet in
 *26.08. 11:43 UTC · Quelle: system*
 
 Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
-
-### `dream:20260826114334:5:8175cf`
-*26.08. 11:43 UTC · Quelle: dream*
-
-Die fünf Skill-Proposals aus dem letzten Dream-Zyklus adressieren genau die beobachteten Fehlerursachen (Retry/Backoff, Revision-Bindung, Recall-Injektion, Stress-Gating, Prozedur-Kapselung) und sollten priorisiert implementiert werden.
-
-### `dream:20260826114334:4:0c8e27`
-*26.08. 11:43 UTC · Quelle: dream*
-
-Der Prune-Lauf entfernte 0 Fakten und 0 Events, d.h. die Aufräumlogik ist entweder zu konservativ oder es fehlen Alterungs-/Relevanzkriterien für das Gedächtnis.
-
-### `dream:20260826114334:3:1e8b9e`
-*26.08. 11:43 UTC · Quelle: dream*
-
-Bei Stress = 1.0 wurde korrekt in den 'conserve'-Modus geschaltet (max_tasks: 3, max_iterations: 1), was verhinderte, dass der Swarm-Lauf unter Ressourcenmangel eskaliert.
-
-### `dream:20260826114334:2:3a66f2`
-*26.08. 11:43 UTC · Quelle: dream*
-
-Der einzige erfolgreiche Fallback war nvidia/nemotron-3.5-lightning:free, was zeigt, dass die Prioritätskette funktioniert, aber zu viele Modelle gleichzeitig dasselbe Rate-Limit teilen.
-
-### `dream:20260826114334:1:318609`
-*26.08. 11:43 UTC · Quelle: dream*
-
-Alle Modell-Ausfälle in diesem Zeitraum waren 429-Rate-Limits auf OpenRouter, die nacheinander stealth/ox-alpha, z-ai/glm-5.2:free und beide Gemma-Varianten trafen – ein koordiniertes Fallback-Muster fehlt noch.
 
 ### `last_swarm_critique`
 *26.08. 11:42 UTC · Quelle: critic*
