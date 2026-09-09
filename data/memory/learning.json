@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-09 20:39:02",
+ "stand": "2026-09-09 20:51:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -205,12 +205,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-dauerhaft-senken.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
@@ -445,19 +439,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.715,
- "simulationen_angewandt": 30,
+ "haende_quote": 0.726,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 28,
   "best": 9.0,
-  "schnitt": 5.25
+  "schnitt": 5.21
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 25,
-   "schnitt": 5.16
+   "schnitt": 5.12
   },
   "bau": {
    "n": 3,

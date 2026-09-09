@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 20:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 20:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
+- Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit-breaker and timeout patterns recur across every proposed skill, suggesting they are universal requirements rather than domain-specific fixes.
+- Self-diagnosis and periodic pruning are effective maintenance mechanisms that keep the knowledge base clean, but they do not prevent upstream infrastr
+- There is a persistent gap between skill proposal generation and skill deployment—proposals accumulate faster than they are converted into tested, reus
+- Latency variance across models is extreme (3.4s vs 52.3s), indicating that naive sequential or random model selection is a severe performance bottlene
+- Model endpoint failures (502 overload, 429 rate-limiting) are the dominant systemic failure mode, and the current architecture lacks any circuit-break
 - Self-diagnosis consistently reports zero organ errors despite repeated model failures, showing the diagnostic scope does not cover infrastructure-leve
 - Pruning runs remove up to 53 facts and events per cycle, indicating the knowledge base accumulates noise faster than it is consolidated into durable l
 - Stale swarm and dream data degrade downstream decision quality, and the system repeatedly flags them without a forced-refresh mechanism to break the s
@@ -51,11 +56,6 @@
 - Swarm converges prematurely at 2 cycles with score 1/10, suggesting insufficient iteration budget or flawed early-stopping criteria.
 - Sandbox execution fails on generated artifacts despite high variant scores (9-10), indicating a code-generation vs. runtime validation gap.
 - Model unreliability (50% failure rate, 54s latency spikes) directly causes pipeline build failures and swarm non-convergence.
-- Simulation revision loops (4 revisions) correlate with unverified assumptions about environment dependencies (missing Zoetron path).
-- Evolutionary swarm search recovered a 1/10 artifact to 10/10 in 2 cycles, proving iterative critique+revision outperforms single-pass generation.
-- Calibration error of 600% (predicted 7 vs actual 1) reveals the estimator ignores model latency variance and tool failure rates.
-- Hand actions fail silently with exit=1 and zero bytes read, indicating missing stderr capture or path resolution errors in the sandbox.
-- Model provider failures (502/429) cascade into task failure without automatic fallback, causing 200s+ latency spikes before recovery.
 
 ---
 
