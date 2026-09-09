@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 04:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 04:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 429 rate-limit errors and 502 upstream errors require fundamentally different handling: backoff-and-retry for 429 versus immediate provider switching 
+- The inclusionai/ling-3.0-flash-fin model proved that smaller, specialized models can outperform larger ones in both reliability and latency under cons
+- The per-model lockout after 3 consecutive failures is effective but purely reactive; proactive health-checks before task assignment would prevent wast
+- Sequential model fallback fails catastrophically when multiple providers hit rate limits simultaneously — the system needs a parallel or cached-respon
+- Free-tier LLM endpoints are unreliable under load; larger models (550B) are disproportionately prone to upstream 502 overload errors compared to small
 - Non-convergence within 2 cycles indicates that the swarm lacks a validation gate to prune invalid proposals early, wasting computational budget on une
 - Fast and reliable models (e.g., ling-3.0-flash-fin at 2.8s) should be prioritized for latency-sensitive consolidation tasks, while heavy models are re
 - Swarm convergence failed because knowledge was stale; without scheduled refresh, the swarm repeats low-scoring iterations on outdated assumptions.
@@ -51,11 +56,6 @@
 - Proposed skills (routing, sandbox checks, calibration, circuit breakers, mandatory simulation) directly target observed failure modes but lack impleme
 - Drive goals repeat across cycles (reduce model error, test skills, refresh swarm) indicating root causes remain unaddressed despite reflex executions.
 - Model endpoint failures (502/429) cascade into planning failures because no automatic fallback or circuit-breaking exists.
-- Conserve mode starves iteration budgets: stress-aware scaling reduces predicted iterations below viable minimum (3), causing premature convergence on 
-- Path resolution failures cascade silently: hand-action scripts succeed (exit 0) but read wrong data when ZOETRON_DATA/CWD/sys.argv[1] diverge, corrupt
-- Swarm knowledge decays faster than goals refresh: 'stale' signals repeat across cycles without automated audit, causing obsolete critiques to block ne
-- Skill proposals accumulate but lack a mandatory promotion gate: 5 proposals generated, only 1 reflex actually tests them, leaving most unvalidated in 
-- Model reliability degrades silently: 502/429 errors and latency spikes (18-65s) correlate with failed skill executions, yet no circuit-breaker trigger
 
 ---
 
