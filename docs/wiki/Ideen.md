@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-08 23:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 00:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge staleness (5+ outdated entries) degrades collaborative intelligence, yet refresh reflexes lack scheduled triggers.
+- Confidence predictions are systematically overconfident (predicted vs actual score gap), requiring persistent per-goal calibration loops.
+- 70+ skill proposals accumulate without implementation because no executable artifact gate validates them before critic scoring wastes compute.
+- Reflexes execute successfully (swarm update) but remain isolated from deliberate planning, creating a reflex-planning gap that prevents skill internal
+- Model endpoint instability (502/429 errors) causes 45% failure rate, making multi-tier routing with circuit-breakers essential for reliability.
 - Evolutionary refinement improved the artifact score from 7 to 8 in one generation, but calibration consistently underestimates actual output quality b
 - Hand actions require at least 3 retries: two consecutive exit-1 failures preceded the first success, suggesting transient environment issues.
 - inclusionai/ling-3.0-flash-fin:free succeeds on every attempt with 2-4s latency, making it the only dependable free-tier fallback.
@@ -51,11 +56,6 @@
 - Both reflex runs produced clean self-diagnoses (zero organ errors) despite external model failures, confirming that failures originate in the infrastr
 - Stale swarm knowledge actively blocks new impulses — the system flagged outdated swarm goals as a 'stale' signal, meaning periodic pruning and refresh
 - Single-provider model dependency is the primary failure mode: Nemotron 502, Gemma 429, and only the flash-tier Ling model survived, proving that endpo
-- Path resolution failures cascade silently: relative paths in hand_action succeed only when CWD matches ZOETRON_DATA, causing non-reproducible successe
-- Executable artifact validation is the highest-leverage gate: every failed TOR submission traces to missing syntax/import checks before critic scoring.
-- Swarm knowledge decays faster than refresh cycles: two consecutive reflexes updated stale goals, pruning 19 facts total, indicating a missing freshnes
-- Skill proposals accumulate as debt: 9 proposals logged in this session alone, but zero evidence of deployment or A/B testing against baseline reflexes
-- Model reliability degrades silently: latency spikes (13-24s) and error rates near 50% correlate with failed artifact generation, yet no automatic circ
 
 ---
 

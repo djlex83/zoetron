@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12092 Fakten** · Stand 2026-09-08 23:48 UTC · aktualisiert bei jedem Herzschlag
+**12086 Fakten** · Stand 2026-09-09 00:08 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7451
-- **swarm_artifact:** 2068
+- **swarm_artifact:** 2062
 - **last_swarm_critique:** 843
 - **last_swarm_goal:** 575
 - **anti_pattern:** 523
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909000544:5:5b9395`
+*09.09. 00:05 UTC · Quelle: dream*
+
+Swarm knowledge staleness (5+ outdated entries) degrades collaborative intelligence, yet refresh reflexes lack scheduled triggers.
+
+### `dream:20260909000544:4:423238`
+*09.09. 00:05 UTC · Quelle: dream*
+
+Confidence predictions are systematically overconfident (predicted vs actual score gap), requiring persistent per-goal calibration loops.
+
+### `dream:20260909000544:3:44f14e`
+*09.09. 00:05 UTC · Quelle: dream*
+
+70+ skill proposals accumulate without implementation because no executable artifact gate validates them before critic scoring wastes compute.
+
+### `dream:20260909000544:2:5dd957`
+*09.09. 00:05 UTC · Quelle: dream*
+
+Reflexes execute successfully (swarm update) but remain isolated from deliberate planning, creating a reflex-planning gap that prevents skill internalization.
+
+### `dream:20260909000544:1:6ea925`
+*09.09. 00:05 UTC · Quelle: dream*
+
+Model endpoint instability (502/429 errors) causes 45% failure rate, making multi-tier routing with circuit-breakers essential for reliability.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Simulationen und Skills :2`
 *08.09. 23:45 UTC · Quelle: evolution*
@@ -46361,31 +46386,6 @@ score=6; issues=Keine nächtliche Automatisierung: Der Auftrag verlangt nächtli
 *26.08. 00:00 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260826000030:5:8c3d65`
-*26.08. 00:00 UTC · Quelle: dream*
-
-Latency variance on model calls (2.4s vs 22.4s for similar token counts) correlates with output size, so long-form generation tasks should be budgeted an order of magnitude more time than classification-style tasks.
-
-### `dream:20260826000030:4:bf81b5`
-*26.08. 00:00 UTC · Quelle: dream*
-
-The swarm finished with score 4 but converged=false after only 2 cycles and 4 of 5 revisions applied, suggesting convergence is being cut short by cycle limits rather than by reaching quality targets.
-
-### `dream:20260826000030:3:f6c1c3`
-*26.08. 00:00 UTC · Quelle: dream*
-
-Selbstdiagnose reported zero organ defects in the same window where ~40% of hand_actions failed, revealing a monitoring blind spot: action-layer failures are invisible to the self-diagnosis layer.
-
-### `dream:20260826000030:2:60b20c`
-*26.08. 00:00 UTC · Quelle: dream*
-
-The 30s timeout on one hand_action shows that retry logic must distinguish between instant rejections (fix inputs first) and hangs (abort and change approach), since the same strategy cannot handle both.
-
-### `dream:20260826000030:1:967c89`
-*26.08. 00:00 UTC · Quelle: dream*
-
-Fast-failing hand_actions (exit 1 at ~0.03s) cluster together, indicating a systematic precondition failure (e.g., missing file, bad arguments, or wrong working directory) rather than transient flakiness.
 
 ### `last_swarm_critique`
 *25.08. 23:57 UTC · Quelle: critic*
