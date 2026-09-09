@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 06:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 07:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (10+ this session) but none are validated; a calibration tracker logging predicted vs actual scores per goal would close th
+- Rate-limit errors (429) are predictable and schedulable; a rate-limit-aware scheduler staggering requests across providers would eliminate this failur
+- Swarm simulations converge at 2 cycles because of hard-coded limit, not quality threshold; minimum 4 cycles with score>=8 early-stop is needed for con
+- Sequential fallback chains add 40+ seconds latency per failure; parallel dispatch with first-success-wins would cut tail latency by 80%.
+- Model reliability is dominated by provider-level failures (502 overload, 429 rate-limits) not model capability, making Ling-3.0-flash-fin the only con
 - Proposed infrastructure solutions (registries, schedulers, trackers) keep repeating without being validated against actual failure data, suggesting pr
 - Circuit breakers that only hard-block without emitting fallback events waste the entire model pool instead of routing around failures.
 - Swarm feedback cycles of only 2 iterations are insufficient for convergence, leaving valuable critique unprocessed and stale goals unresolved.
@@ -51,11 +56,6 @@
 - Staleness signals (swarm knowledge, peer critiques) require scheduled automation with concrete triggers (24h age, 10% delta) not just intent.
 - Reflex-based skill validation (dream→proposal→reflex test→convergence) has succeeded twice, proving a reusable capability-growth loop.
 - Model reliability (73 errors vs 50 successes) drives cascading architectural investments in tiered routing, health tracking, and circuit breakers.
-- Calibration drift (empirical 3/7 success ratio) indicates predicted scores need systematic per-model correction before trust.
-- Pruning aggressiveness correlates with experience density (15 facts/25 events vs 0/58), suggesting adaptive pruning thresholds tied to session intensi
-- Reflexive error-analysis and simulation-based skill testing independently converge on the same model-reliability gaps.
-- Latency variance across models spans two orders of magnitude (3.5s vs 125s), making latency-aware routing essential for task scheduling.
-- Free-tier models consistently hit 429 rate limits under load, requiring automatic fallback chains with health checks.
 
 ---
 

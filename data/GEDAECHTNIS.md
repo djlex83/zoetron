@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11978 Fakten** · Stand 2026-09-09 06:47 UTC · aktualisiert bei jedem Herzschlag
+**11982 Fakten** · Stand 2026-09-09 07:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7440
-- **swarm_artifact:** 2010
-- **last_swarm_critique:** 849
-- **last_swarm_goal:** 581
-- **anti_pattern:** 495
-- **strategy:** 249
+- **dream:** 7435
+- **swarm_artifact:** 2014
+- **last_swarm_critique:** 850
+- **last_swarm_goal:** 582
+- **anti_pattern:** 497
+- **strategy:** 250
 - **tool:** 180
 - **hand_result:** 124
 - **aktuell_organfehler:** 46
@@ -15,6 +15,51 @@
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten per Simulati:2`
+*09.09. 07:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.3): Property-Based Generative Testing Framework for Capability Contracts - Treat capabilities as pure functions with pre/postconditions and invariants. Use hypothesis-style generative testing to explore input space. Framework p
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten per Simulati:1`
+*09.09. 07:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.0): Agent-Based Modeling (ABM) Framework with Message Passing - Model capabilities as autonomous agents in a spatial/topological environment. Core: (1) Agent base with state machine (transitions: idle->busy->done/failed), mailb
+
+### `last_swarm_critique`
+*09.09. 07:14 UTC · Quelle: critic*
+
+score=1; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Bash-Explorationsbefehle; Ziel 'Simulations-Framework fuer Faehigkeiten-Tests aufbauen' nicht erfuellt: keine Implementierung, keine Tests, kein Framework-Code; Sandbox-Urteil: LAEUFT NICHT - Pr
+
+### `last_swarm_goal`
+*09.09. 06:58 UTC · Quelle: system*
+
+Fähigkeiten per Simulation testen
+
+### `dream:20260909065643:5:b5d5de`
+*09.09. 06:56 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ this session) but none are validated; a calibration tracker logging predicted vs actual scores per goal would close the propose-test loop.
+
+### `dream:20260909065643:4:f520f5`
+*09.09. 06:56 UTC · Quelle: dream*
+
+Rate-limit errors (429) are predictable and schedulable; a rate-limit-aware scheduler staggering requests across providers would eliminate this failure class.
+
+### `dream:20260909065643:3:41738e`
+*09.09. 06:56 UTC · Quelle: dream*
+
+Swarm simulations converge at 2 cycles because of hard-coded limit, not quality threshold; minimum 4 cycles with score>=8 early-stop is needed for convergence.
+
+### `dream:20260909065643:2:569b0c`
+*09.09. 06:56 UTC · Quelle: dream*
+
+Sequential fallback chains add 40+ seconds latency per failure; parallel dispatch with first-success-wins would cut tail latency by 80%.
+
+### `dream:20260909065643:1:2f5f7d`
+*09.09. 06:56 UTC · Quelle: dream*
+
+Model reliability is dominated by provider-level failures (502 overload, 429 rate-limits) not model capability, making Ling-3.0-flash-fin the only consistently usable endpoint.
 
 ### `dream:20260909064401:5:1e98e1`
 *09.09. 06:44 UTC · Quelle: dream*
@@ -45552,31 +45597,6 @@ score=5; issues=Critic output unparseable.
 
 Vorgeschlagene Fähigkeiten wirklich ausprobieren
 
-### `dream:20260826065333:5:3697c7`
-*26.08. 06:53 UTC · Quelle: dream*
-
-Self-diagnosis found zero organ failures while pruning removed nothing, suggesting memory pressure is not yet a bottleneck and diagnostic effort can stay lightweight.
-
-### `dream:20260826065333:4:f332a5`
-*26.08. 06:53 UTC · Quelle: dream*
-
-Single-cycle convergence with 3 roles (planner/builder/critic) achieved score 8 without evolution, indicating that pre-validated revisions reduce the need for evolutionary repair loops.
-
-### `dream:20260826065333:3:6061c2`
-*26.08. 06:53 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260826065333:2:5fcaf3`
-*26.08. 06:53 UTC · Quelle: dream*
-
-Calibration error of 2 (predicted 6 vs actual 8) shows predictions systematically undershoot for goals involving skill experimentation; per-goal-type calibration history is needed.
-
-### `dream:20260826065333:1:21f525`
-*26.08. 06:53 UTC · Quelle: dream*
-
-Simulation-to-action conversion works: all 3 revisions from simulation were applied and produced a 339-line runnable artifact that passed TOR on cycle 1, so simulating before building is a reliable quality gate.
-
 ### `last_swarm_critique`
 *26.08. 06:50 UTC · Quelle: critic*
 
@@ -45586,31 +45606,6 @@ score=8; issues=Seed-Vorschläge sind selbst-erfüllende Toy-Kommandos (echo des
 *26.08. 06:47 UTC · Quelle: system*
 
 Vorschläge wirklich ausprobieren statt sammeln
-
-### `dream:20260826064721:5:7b5511`
-*26.08. 06:47 UTC · Quelle: dream*
-
-Selbstdiagnose reported zero organ defects immediately after multiple model failures and a rejected action, indicating the diagnostic layer only checks internal organs and is blind to external API and permission-layer faults.
-
-### `dream:20260826064721:4:478d34`
-*26.08. 06:47 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than they are tested (many proposed, ~zero executed), so the proposal queue grows without producing validated capability.
-
-### `dream:20260826064721:3:781455`
-*26.08. 06:47 UTC · Quelle: dream*
-
-Destructive tools containing subprocess calls are silently rejected and parked instead of being routed to a human-approval issue, losing viable capabilities entirely.
-
-### `dream:20260826064721:2:00581c`
-*26.08. 06:47 UTC · Quelle: dream*
-
-The simulate->revise->execute pipeline leaks at the last step: 5 revisions were generated but only 1 was applied, meaning conversion of simulations into real actions is the bottleneck, not idea generation.
-
-### `dream:20260826064721:1:067fcc`
-*26.08. 06:47 UTC · Quelle: dream*
-
-Nearly half of model calls failed with 429 rate-limit errors on OpenRouter, and the system had no backoff or fallback routing, so single-provider saturation stalls entire swarm cycles.
 
 ### `last_swarm_critique`
 *26.08. 06:40 UTC · Quelle: critic*

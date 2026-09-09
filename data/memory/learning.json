@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 06:45:14",
+ "stand": "2026-09-09 07:23:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 12,
+   "erfolge": 12,
    "quote": 1.0
   },
   {
@@ -421,9 +421,15 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.787,
+ "haende_quote": 0.781,
  "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 26,
