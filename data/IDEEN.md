@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 17:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 17:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,8 +28,8 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High model latency (>80s) precedes timeout failures; latency SLOs should trigger proactive model rotation before hard timeouts.
+- Pruning retains success events too aggressively while failure events tagged 'model_error' need longer retention for pattern mining.
+- Relative path resolution in hand actions fails under sandbox constraints; all file ops must use absolute paths rooted in ZOETRON_DATA.
+- Skill proposals accumulate without a validation gate; a simulation bridge must vet them against historical failure signatures before deployment.
+- Model timeouts cascade into multi-organ failures because no circuit breaker isolates the failing model.
 - Self-diagnosis reports zero organ errors while model failure rate exceeds 40%, revealing a monitoring blind spot for external dependency health.
 - Pruning 72 events but only 7 facts indicates event log bloat from repeated model failures, not knowledge growth.
 - Calibration error of 2 points (predicted 6 vs actual 8) correlates with model latency variance, not task complexity.
@@ -51,11 +56,6 @@
 - File operation failures from relative path resolution (sys.argv/ZOETRON_DATA ambiguity) reveal that path validation must be absolute and explicit befo
 - Under high metabolic stress (0.811) with a budget of max 1 iteration, the system cannot afford iterative refinement loops — every task must have a gua
 - Upstream service failures (502/429) hit multiple providers simultaneously, indicating that lack of circuit-breaker and fallback logic causes cascading
-- Memory growth is unbounded without periodic pruning, as evidenced by successive prune runs removing 88 and 30 events, threatening system stability.
-- Dreams without a structured conversion pipeline remain unused, so the gap between generation and application is the primary bottleneck for skill growt
-- Swarm knowledge degrades within 7 days due to timestamp/version drift, making periodic refresh mandatory rather than optional for decision quality.
-- Effort estimates systematically underestimate actual requirements by 100%, indicating a persistent cognitive bias that must be compensated through pro
-- Model failures (502 upstream overload, 429 rate limits) are systemic and recurring, not isolated, requiring architectural fault tolerance rather than 
 
 ---
 

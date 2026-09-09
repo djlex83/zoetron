@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-09 17:36 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-09 17:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7337
+- **dream:** 7342
 - **swarm_artifact:** 1972
 - **last_swarm_critique:** 857
 - **last_swarm_goal:** 591
-- **anti_pattern:** 461
-- **strategy:** 232
+- **anti_pattern:** 459
+- **strategy:** 231
 - **tool:** 176
-- **hand_result:** 112
-- **aktuell_organfehler:** 48
+- **hand_result:** 111
+- **aktuell_organfehler:** 47
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909174456:5:cdcd1a`
+*09.09. 17:44 UTC · Quelle: dream*
+
+High model latency (>80s) precedes timeout failures; latency SLOs should trigger proactive model rotation before hard timeouts.
+
+### `dream:20260909174456:4:ea6628`
+*09.09. 17:44 UTC · Quelle: dream*
+
+Pruning retains success events too aggressively while failure events tagged 'model_error' need longer retention for pattern mining.
+
+### `dream:20260909174456:3:1f5db5`
+*09.09. 17:44 UTC · Quelle: dream*
+
+Relative path resolution in hand actions fails under sandbox constraints; all file ops must use absolute paths rooted in ZOETRON_DATA.
+
+### `dream:20260909174456:2:0a97c4`
+*09.09. 17:44 UTC · Quelle: dream*
+
+Skill proposals accumulate without a validation gate; a simulation bridge must vet them against historical failure signatures before deployment.
+
+### `dream:20260909174456:1:cb47ec`
+*09.09. 17:44 UTC · Quelle: dream*
+
+Model timeouts cascade into multi-organ failures because no circuit breaker isolates the failing model.
 
 ### `dream:20260909173401:5:2afd09`
 *09.09. 17:34 UTC · Quelle: dream*
@@ -43920,21 +43945,6 @@ Simulation generates revisions (5 risks, 5 revisions) but only 1 gets applied, i
 *26.08. 17:59 UTC · Quelle: dream*
 
 Free-tier models fail primarily due to 429 rate limits and 502 upstream overloads, making single-model reliance untenable.
-
-### `aktuell_organfehler`
-*26.08. 17:40 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-26 16:52:25-17:40:04 UTC): retro -> kurz; will -> kurz; genome -> kurz; lehrer -> kurz. retro meldete einen Fehler | will meldete einen Fehler | genome meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerz
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fakten-Ausbeute pro Beat:2`
-*26.08. 17:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Adaptive Multi-Strategy Fact Tripling Loop - Design an adaptive loop per beat: attempt 1 uses optimized LLM prompt for 5-10 JSON facts; if measurement shows < 3x aggregate, loop switches to HANDS symbolic extraction; if still
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fakten-Ausbeute pro Beat:1`
-*26.08. 17:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Symbolic Atomic Fact Enumeration & Consolidation - Replace RETRO's directory loading with a deterministic fact-extraction engine that outputs exactly 5-10 atomic JSON facts per beat using ontology-guided phrase extraction. In
 
 ### `last_swarm_critique`
 *26.08. 17:30 UTC · Quelle: critic*
