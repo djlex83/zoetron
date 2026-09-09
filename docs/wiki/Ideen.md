@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 20:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 21:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
-- Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 7 facts/16-27 events per cycle without retention criteria for high-value patterns, risking loss of reusable solutions.
+- Swarm convergence declares success with null scores and no improvement threshold, producing false positives.
+- Reflex-driven exploration (connecting old dreams, exploring linked dreams) consistently converges and yields actionable connections.
+- Skill proposals accumulate but lack an implementation→validation→deployment pipeline, so dreams never become usable capabilities.
+- Model provider instability (429/502/timeouts) cascades into task failures because no circuit-breaker or health-aware routing exists.
 - Circuit-breaker and timeout patterns recur across every proposed skill, suggesting they are universal requirements rather than domain-specific fixes.
 - Self-diagnosis and periodic pruning are effective maintenance mechanisms that keep the knowledge base clean, but they do not prevent upstream infrastr
 - There is a persistent gap between skill proposal generation and skill deployment—proposals accumulate faster than they are converted into tested, reus
@@ -51,11 +56,6 @@
 - Stale swarm and dream data degrade downstream decision quality, and the system repeatedly flags them without a forced-refresh mechanism to break the s
 - Skill proposals are generated consistently but never transition to active skills without a validation gate, creating a persistent proposal-to-producti
 - Model failures cluster around upstream overload (502) and rate limiting (429), revealing the absence of any circuit-breaking or fallback mechanism bef
-- Repeated skill proposals for ModelRouter, circuit-breakers, and latency budgets across sessions reveal an unaddressed systemic model-reliability gap.
-- Reflex-based dream-to-skill conversion succeeds (converged=true) where swarm planning fails, showing tactical tools outperform strategic planning for 
-- Swarm converges prematurely at 2 cycles with score 1/10, suggesting insufficient iteration budget or flawed early-stopping criteria.
-- Sandbox execution fails on generated artifacts despite high variant scores (9-10), indicating a code-generation vs. runtime validation gap.
-- Model unreliability (50% failure rate, 54s latency spikes) directly causes pipeline build failures and swarm non-convergence.
 
 ---
 

@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11796 Fakten** · Stand 2026-09-09 20:53 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-09 21:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7387
-- **swarm_artifact:** 1948
+- **dream:** 7382
+- **swarm_artifact:** 1946
 - **last_swarm_critique:** 859
 - **last_swarm_goal:** 593
-- **anti_pattern:** 451
-- **strategy:** 227
+- **anti_pattern:** 449
+- **strategy:** 226
 - **tool:** 175
 - **hand_result:** 111
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909212555:5:568dd8`
+*09.09. 21:25 UTC · Quelle: dream*
+
+Pruning removes 7 facts/16-27 events per cycle without retention criteria for high-value patterns, risking loss of reusable solutions.
+
+### `dream:20260909212555:4:78db61`
+*09.09. 21:25 UTC · Quelle: dream*
+
+Swarm convergence declares success with null scores and no improvement threshold, producing false positives.
+
+### `dream:20260909212555:3:b8cca8`
+*09.09. 21:25 UTC · Quelle: dream*
+
+Reflex-driven exploration (connecting old dreams, exploring linked dreams) consistently converges and yields actionable connections.
+
+### `dream:20260909212555:2:d62af5`
+*09.09. 21:25 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an implementation→validation→deployment pipeline, so dreams never become usable capabilities.
+
+### `dream:20260909212555:1:e6caaf`
+*09.09. 21:25 UTC · Quelle: dream*
+
+Model provider instability (429/502/timeouts) cascades into task failures because no circuit-breaker or health-aware routing exists.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Schwarm-Wissen regelmäßi:2`
 *09.09. 20:50 UTC · Quelle: evolution*
@@ -43956,41 +43981,6 @@ score=8; issues=hebbian.py nutzt lokalen Cache (_kanten_cache) statt echte bahne
 
 Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl
 
-### `dream:20260826212114:5:15fdab`
-*26.08. 21:21 UTC · Quelle: dream*
-
-Drive goals generated from this experience (reduce model errors, embedding recall) are correctly identified as failure-signal driven, but the metabolism_check stress=1.0 'conserve' state limits concurrent repair work to max 3 tasks / 1 iteration.
-
-### `dream:20260826212114:4:10d7f7`
-*26.08. 21:21 UTC · Quelle: dream*
-
-The existing skill_proposal for model routing was never operationalized — dream_finished marked 5 proposals but the next swarm immediately re-encountered the same 429 failures, indicating a gap between proposal generation and execution.
-
-### `dream:20260826212114:3:edb1aa`
-*26.08. 21:21 UTC · Quelle: dream*
-
-Token output varies 9× across successful models (Nemotron 665–852 vs dots-3-note 7252), so verbosity is a hidden cost dimension that must factor into model selection, not just latency.
-
-### `dream:20260826212114:2:01930e`
-*26.08. 21:21 UTC · Quelle: dream*
-
-NVIDIA Nemotron-3-Ultra is the only model with consistent success (3/3 OK) and reasonable latency (19.9s–85.3s), making it the current de-facto reliable backbone.
-
-### `dream:20260826212114:1:6515fc`
-*26.08. 21:21 UTC · Quelle: dream*
-
-Free-tier OpenRouter models (gemma-4-26b, laguna-s-2.1, minimax-m3, glm-5.2) hit 429 rate limits repeatedly in a single session, with glm-5.2 failing 4+ times and should be considered broken for now.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:2`
-*26.08. 21:00 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Lightweight Pre-trained Word2Vec Averaging - Use the `gensim` library with a small, pre-trained Word2Vec model (or download a lightweight one if network is available, otherwise fallback to a mock dictionary) to average word v
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:0`
-*26.08. 21:00 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): API-based Semantic Embedding with Strict Length Control - Use the OpenAI API (or similar) to generate embeddings for the article and queries. Hard-truncate the article text to 18,000 characters before processing to strictly s
-
 ### `last_swarm_critique`
 *26.08. 20:59 UTC · Quelle: critic*
 
@@ -44000,31 +43990,6 @@ score=3; issues=Code wurde nicht ausgeführt (Sandbox: NICHT AUSGEFÜHRT) - Lauf
 *26.08. 20:54 UTC · Quelle: system*
 
 Embedding-Recall statt reinem Wortvergleich
-
-### `dream:20260826205406:5:3f4e17`
-*26.08. 20:54 UTC · Quelle: dream*
-
-Rate-limited model (glm) intermittently recovers but remains untrustworthy for critical paths, requiring explicit circuit-breaker logic.
-
-### `dream:20260826205406:4:c5d55b`
-*26.08. 20:54 UTC · Quelle: dream*
-
-Embedding-based recall is validated as go by simulation but implementation is blocked by resource budget, creating a capability gap.
-
-### `dream:20260826205406:3:ef6f3f`
-*26.08. 20:54 UTC · Quelle: dream*
-
-Swarm initiatives lack coordination mechanism, leading to parallel uncoordinated efforts and parked whispers awaiting creator decisions.
-
-### `dream:20260826205406:2:263b29`
-*26.08. 20:54 UTC · Quelle: dream*
-
-Metabolism-driven conservation mode severely limits parallel execution, causing skill proposals to stall despite simulation approval.
-
-### `dream:20260826205406:1:b72309`
-*26.08. 20:54 UTC · Quelle: dream*
-
-Free-tier models exhibit unreliable availability (429 errors) and high latency variance, necessitating a model router with health checks and fallback.
 
 ### `last_swarm_critique`
 *26.08. 20:31 UTC · Quelle: critic*
