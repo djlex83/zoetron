@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 14:31:54",
+ "stand": "2026-09-09 15:12:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -36,12 +36,6 @@
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -93,10 +87,22 @@
    "quote": 1.0
   },
   {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
@@ -159,12 +165,6 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -217,12 +217,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "traum-fähigkeiten-nutzbar-machen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
@@ -423,12 +417,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.736,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.725,
+ "simulationen_angewandt": 27,
  "swarm_scores": {
-  "n": 27,
+  "n": 28,
   "best": 9.0,
-  "schnitt": 5.22
+  "schnitt": 5.32
  },
  "score_nach_ziel_typ": {
   "analyse": {
@@ -436,8 +430,8 @@
    "schnitt": 5.08
   },
   "bau": {
-   "n": 1,
-   "schnitt": 9.0
+   "n": 2,
+   "schnitt": 8.5
   }
  }
 }

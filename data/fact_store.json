@@ -1,0 +1,1067 @@
+{
+  "pipeline": "incremental_verification",
+  "proposal_id": "fallback_proposal",
+  "config": {
+    "test_case_count": 50,
+    "min_real_failures": 20
+  },
+  "registry_loaded": 0,
+  "real_cases_count": 0,
+  "synthetic_cases_added": 50,
+  "total_cases_run": 50,
+  "passed": 0,
+  "failed": 50,
+  "case_results": [
+    {
+      "case_id": "synth_0000_27aa59cf",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0001_1e3e726c",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0002_ec6cefb5",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0003_8099fa58",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0004_68329259",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0005_c189b0c0",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0006_64fe6d15",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0007_73d16d98",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0008_24511c43",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0009_d272a82f",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0010_f5098de4",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0011_2bc00a97",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0012_a67158b1",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0013_bb53909f",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0014_3aa2d858",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0015_98e9480c",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0016_8616cba1",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0017_c75c0853",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0018_424ad449",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0019_03bf8ca1",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0020_b64ff818",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0021_57d96814",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0022_75d23282",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0023_bf7610df",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0024_a94273a8",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0025_591e4163",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0026_b222a48f",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0027_e19648ba",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0028_8195060f",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0029_1fac53ee",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0030_2e76eae9",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0031_c4e7e2df",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0032_00354db9",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0033_a3538caf",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0034_9d2ec262",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0035_6657d404",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0036_b394c2c7",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0037_c7275bff",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0038_c68abc12",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0039_3f68133f",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0040_2a6ce8a9",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0041_8e0d906a",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0042_f00d66b4",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0043_f858dfbb",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0044_1bb1025a",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0045_a1435db9",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0046_38042e4f",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0047_5e1a7421",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0048_846807e7",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    },
+    {
+      "case_id": "synth_0049_0c68c703",
+      "provenance": "synthetic",
+      "tags": [
+        "synthetic",
+        "generated",
+        "fallback"
+      ],
+      "convergence": {
+        "converged": false,
+        "score": 0.0,
+        "method": "fallback",
+        "matching_keys": []
+      },
+      "simulation": {
+        "valid": true,
+        "score": 1.0,
+        "method": "fallback"
+      },
+      "passed": false
+    }
+  ],
+  "fact_store_written": false
+}

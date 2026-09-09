@@ -1,20 +1,55 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11802 Fakten** · Stand 2026-09-09 14:33 UTC · aktualisiert bei jedem Herzschlag
+**11807 Fakten** · Stand 2026-09-09 15:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7324
-- **swarm_artifact:** 1986
-- **last_swarm_critique:** 855
-- **last_swarm_goal:** 588
+- **swarm_artifact:** 1990
+- **last_swarm_critique:** 856
+- **last_swarm_goal:** 589
 - **anti_pattern:** 469
 - **strategy:** 236
 - **tool:** 175
-- **hand_result:** 116
+- **hand_result:** 115
 - **aktuell_organfehler:** 49
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `last_swarm_critique`
+*09.09. 15:12 UTC · Quelle: critic*
+
+score=8; issues=EphemeralSandbox nutzt exec() mit eingeschränkten builtins statt echter Isolation (gVisor/Firecracker nur als Kommentar, nicht implementiert); Fallback-Implementierungen für zoetron.konvergenztor und zoetron.simulate sind primitiv (Key-Matching
+
+### `last_swarm_goal`
+*09.09. 14:47 UTC · Quelle: system*
+
+Fähigkeitsvorschläge in echte Skills wandeln
+
+### `dream:20260909144404:5:167701`
+*09.09. 14:44 UTC · Quelle: dream*
+
+Stale swarm knowledge persists until manual reflex triggers; automatic staleness detection (>7 days timestamp/version drift) with re-critique by healthy models is missing.
+
+### `dream:20260909144404:4:5b53ed`
+*09.09. 14:44 UTC · Quelle: dream*
+
+Simulation capability exists (drive goal) but is not wired into the skill lifecycle; every proposal should pass regression tests against 50 known failure cases before fact-store write.
+
+### `dream:20260909144404:3:29bb11`
+*09.09. 14:44 UTC · Quelle: dream*
+
+Skills are proposed repeatedly (router, retry wrapper, syntax check, promotion pipeline) but never validated against historical failures before deployment, risking repeated bugs.
+
+### `dream:20260909144404:2:27c967`
+*09.09. 14:44 UTC · Quelle: dream*
+
+Aggressive pruning (50 events first run) discards the very failure patterns needed to train the router and validate skills, creating a blind spot for recurring 429/502/timeouts.
+
+### `dream:20260909144404:1:2f0d50`
+*09.09. 14:44 UTC · Quelle: dream*
+
+Model reliability is highly inconsistent: only inclusionai/ling-3.0-flash-fin consistently succeeds (4s latency) while Nemotron and Gemma models repeatedly fail with 502/429 errors, necessitating a circuit-breaker router.
 
 ### `dream:20260909142952:5:8a8120`
 *09.09. 14:29 UTC · Quelle: dream*
@@ -44256,31 +44291,6 @@ ORGANFEHLER (2026-08-26 15:04:03 UTC): act -> timeout. Phase nach 1500 s abgebro
 *26.08. 14:39 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260826143719:5:1fc0b2`
-*26.08. 14:37 UTC · Quelle: dream*
-
-Reflex tools effectively handle discrete tasks like bridge-building, but their utility depends on integration with broader goal-driven processes.
-
-### `dream:20260826143719:4:cc7f33`
-*26.08. 14:37 UTC · Quelle: dream*
-
-Calibration against historical errors is a recurring requirement for accurate planning and risk assessment.
-
-### `dream:20260826143719:3:073d76`
-*26.08. 14:37 UTC · Quelle: dream*
-
-Parked goals and unresolved ideas accumulate over time, suggesting a need for systematic lifecycle management to prevent stagnation.
-
-### `dream:20260826143719:2:9fa867`
-*26.08. 14:37 UTC · Quelle: dream*
-
-Model latency and error rates vary significantly, indicating that adaptive routing based on task complexity could enhance reliability.
-
-### `dream:20260826143719:1:cbb41b`
-*26.08. 14:37 UTC · Quelle: dream*
-
-The system consistently generates skill proposals but lacks an execution mechanism, causing ideas to expire without implementation.
 
 ### `last_swarm_critique`
 *26.08. 14:33 UTC · Quelle: critic*
