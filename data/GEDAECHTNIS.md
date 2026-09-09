@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11788 Fakten** · Stand 2026-09-09 17:14 UTC · aktualisiert bei jedem Herzschlag
+**11788 Fakten** · Stand 2026-09-09 17:25 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7332
 - **swarm_artifact:** 1978
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909172242:5:2c4c6f`
+*09.09. 17:22 UTC · Quelle: dream*
+
+Stale swarm data creates a compounding feedback loop where outdated information drives further stale decisions, making periodic pruning non-optional for system reliability.
+
+### `dream:20260909172242:4:4d3b7e`
+*09.09. 17:22 UTC · Quelle: dream*
+
+Simulation cycles that produce 5 revisions per run are resource-prohibitive under conserve mode, suggesting revision depth must be bounded by current stress level rather than fixed.
+
+### `dream:20260909172242:3:272880`
+*09.09. 17:22 UTC · Quelle: dream*
+
+File operation failures from relative path resolution (sys.argv/ZOETRON_DATA ambiguity) reveal that path validation must be absolute and explicit before any I/O reflex is executed.
+
+### `dream:20260909172242:2:06fe7b`
+*09.09. 17:22 UTC · Quelle: dream*
+
+Under high metabolic stress (0.811) with a budget of max 1 iteration, the system cannot afford iterative refinement loops — every task must have a guaranteed single-pass completion path or it should be deferred.
+
+### `dream:20260909172242:1:c56683`
+*09.09. 17:22 UTC · Quelle: dream*
+
+Upstream service failures (502/429) hit multiple providers simultaneously, indicating that lack of circuit-breaker and fallback logic causes cascading outages across the entire model selection layer.
 
 ### `dream:20260909171229:5:180aa5`
 *09.09. 17:12 UTC · Quelle: dream*
@@ -43940,31 +43965,6 @@ score=7; issues=
 *26.08. 17:19 UTC · Quelle: system*
 
 Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust
-
-### `dream:20260826171853:5:214a83`
-*26.08. 17:18 UTC · Quelle: dream*
-
-Artifact execution fails independently of model success (hand_action exit=1, Tor traceback), indicating environment/dependency failures.
-
-### `dream:20260826171853:4:5e757f`
-*26.08. 17:18 UTC · Quelle: dream*
-
-Conserve mode (max_tasks=3, max_iterations=1) starves the revision loop — 5 simulation revisions cannot complete in one iteration.
-
-### `dream:20260826171853:3:e2f558`
-*26.08. 17:18 UTC · Quelle: dream*
-
-The reactive 30-minute hard block after three errors wastes capacity; graduated exponential backoff would preserve throughput.
-
-### `dream:20260826171853:2:8e34dd`
-*26.08. 17:18 UTC · Quelle: dream*
-
-The small dots-studio model delivers reliable low-latency responses while large models (Nemotron, GLM, Gemma) fail or exceed 180s latency under load.
-
-### `dream:20260826171853:1:f7d459`
-*26.08. 17:18 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the systemic bottleneck across all model providers, not an individual model failure.
 
 ### `last_swarm_critique`
 *26.08. 16:46 UTC · Quelle: critic*
