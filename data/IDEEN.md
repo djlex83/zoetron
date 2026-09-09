@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 02:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 02:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,7 +31,7 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm goals are stale while failure signals accumulate: drive_goals show 'stale', 'failure', 'gap' signals but no goal-updating mechanism activates, l
+- System operates in chronic conservation mode: metabolism stress 0.935 forces max_tasks=3 and max_iterations=1, starving the iteration needed to debug 
+- Skill implementation pipeline is broken end-to-end: proposed skills trigger swarm/reflex/simulation but the implementation artifact throws Traceback a
+- Hand actions consistently fail to resolve data paths: scripts ignore sys.argv[1] and ZOETRON_DATA env var, using relative paths that resolve to empty 
+- Model API reliability is critically low: primary models (Nemotron, Gemma) fail via 502 overload and 429 rate limits, forcing fallback to slower/less c
 - Hand actions can fail silently (empty reads with exit 0), revealing that exit-code-only validation is insufficient and structured error logging with c
 - Non-executable proposals consume critic cycles and produce unreliable scores; enforcing an executable artifact gate before semantic review prevents wa
 - Swarm knowledge decays on a predictable timeline; staleness signals appear across multiple cycles, indicating that ad-hoc updates are insufficient and
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors, meaning failures originate at the procedure/skill layer rather than the structural layer — fixes must target
 - Skill proposals accumulate without execution: the gap between generating proposals and actually implementing them mirrors the same staleness pattern s
 - Upstream model failures (502 overload, 429 rate limits) are systemic, not isolated — the system lacks circuit breakers and intelligent fallback chains
-- Pruning (76 items) shows memory pressure but no downstream impact metrics to tune retention thresholds.
-- Swarm knowledge staleness >24h triggers manual refresh instead of automated versioned snapshots with peer-change detection.
-- Confidence predictions are systematically overconfident (predicted * 0.4 correction needed), indicating miscalibrated self-assessment without persiste
-- Execution validation is missing from the critic pipeline: broken code reaches semantic review, wasting cycles on unrunnable proposals.
-- Free-tier models across all providers fail simultaneously under load (429/502), proving shared infrastructure bottlenecks require paid fallback or loc
 
 ---
 

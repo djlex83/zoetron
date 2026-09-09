@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12030 Fakten** · Stand 2026-09-09 02:13 UTC · aktualisiert bei jedem Herzschlag
+**12024 Fakten** · Stand 2026-09-09 02:25 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7436
-- **swarm_artifact:** 2042
+- **swarm_artifact:** 2040
 - **last_swarm_critique:** 845
 - **last_swarm_goal:** 577
-- **anti_pattern:** 511
-- **strategy:** 257
+- **anti_pattern:** 509
+- **strategy:** 256
 - **tool:** 181
-- **hand_result:** 130
+- **hand_result:** 129
 - **aktuell_organfehler:** 47
 - **aktuell_fussball_messlatte:** 3
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909022306:5:61c2bf`
+*09.09. 02:23 UTC · Quelle: dream*
+
+Swarm goals are stale while failure signals accumulate: drive_goals show 'stale', 'failure', 'gap' signals but no goal-updating mechanism activates, leaving coordination misaligned with reality.
+
+### `dream:20260909022306:4:06734a`
+*09.09. 02:23 UTC · Quelle: dream*
+
+System operates in chronic conservation mode: metabolism stress 0.935 forces max_tasks=3 and max_iterations=1, starving the iteration needed to debug failing artifacts.
+
+### `dream:20260909022306:3:e0ac08`
+*09.09. 02:23 UTC · Quelle: dream*
+
+Skill implementation pipeline is broken end-to-end: proposed skills trigger swarm/reflex/simulation but the implementation artifact throws Traceback at runtime and calibration overestimates output 7x (predicted 7, actual 1).
+
+### `dream:20260909022306:2:6cbaa7`
+*09.09. 02:23 UTC · Quelle: dream*
+
+Hand actions consistently fail to resolve data paths: scripts ignore sys.argv[1] and ZOETRON_DATA env var, using relative paths that resolve to empty directories, yielding 'nichts gelesen' and exit=1.
+
+### `dream:20260909022306:1:bb5f4f`
+*09.09. 02:23 UTC · Quelle: dream*
+
+Model API reliability is critically low: primary models (Nemotron, Gemma) fail via 502 overload and 429 rate limits, forcing fallback to slower/less capable models and causing 38-201s latencies.
 
 ### `dream:20260909021102:5:5e079b`
 *09.09. 02:11 UTC · Quelle: dream*
@@ -45747,16 +45772,6 @@ The system's own drive goals already identify the two core failure modes — unt
 
 Skill proposals are accumulating far faster than they are being tested (5+ new proposals per cycle vs. near-zero trials), so proposal generation without a testing pipeline produces no learning.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:2`
-*26.08. 02:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 3): Category-Theoretic Knowledge Sheaves with Grothendieck Topology - Model knowledge as a sheaf on a site of organisms: each organism U has stalk K(U) = verified knowledge sections. Restriction maps = knowledge projection to sub
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:1`
-*26.08. 02:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): Neural-Symbolic Actor Swarm with Capability Tokens - Each organism = Akka-style actor with local neural knowledge base (ONNX model) + symbolic rule engine (Datalog). Knowledge transfer = capability token (macaroon) granting r
-
 ### `last_swarm_critique`
 *26.08. 02:17 UTC · Quelle: critic*
 
@@ -45766,31 +45781,6 @@ score=1; issues=Sandbox-Urteil: Artefakt läuft nicht (Traceback Zeile 461) - ha
 *26.08. 02:11 UTC · Quelle: system*
 
 Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen
-
-### `dream:20260826021134:5:f12149`
-*26.08. 02:11 UTC · Quelle: dream*
-
-Latency variance is extreme (4.7s to 160.4s on the same model) and correlates loosely with token counts, so latency alone should not drive prioritization decisions.
-
-### `dream:20260826021134:4:7532c8`
-*26.08. 02:11 UTC · Quelle: dream*
-
-Swarm convergence failed after 2 cycles (converged=false) yet the run was accepted at score 6, indicating a missing rule for when to iterate versus accept below-converged results.
-
-### `dream:20260826021134:3:59b568`
-*26.08. 02:11 UTC · Quelle: dream*
-
-A destructive-operation guard correctly blocked the tool 'lebender-steckbrief-die-biografie-als-al' (subprocess needs human approval), revealing that goal-to-tool naming must anticipate approval requirements before execution.
-
-### `dream:20260826021134:2:c03192`
-*26.08. 02:11 UTC · Quelle: dream*
-
-The simulation verdict 'revise' flagged 3 risks but only 2 revisions were applied, meaning simulation findings can be silently dropped without an enforcement gate.
-
-### `dream:20260826021134:1:644257`
-*26.08. 02:11 UTC · Quelle: dream*
-
-Calibration is systematically off: predicted score 4 vs actual 6 (abs_error 2) shows predictions are consistently too pessimistic for creative/identity goals like 'Lebender Steckbrief'.
 
 ### `last_swarm_critique`
 *26.08. 02:01 UTC · Quelle: critic*
