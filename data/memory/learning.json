@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 03:37:17",
+ "stand": "2026-09-09 04:21:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -67,12 +67,6 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
-  },
-  {
-   "tool": "modelle-zuverlässiger-machen.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
@@ -213,7 +207,19 @@
    "quote": 1.0
   },
   {
+   "tool": "modelle-zuverlässiger-machen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -381,12 +387,6 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "veraltete-marktanalyse-auffrischen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -411,8 +411,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.78,
- "simulationen_angewandt": 25,
+ "haende_quote": 0.786,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 26,
   "best": 9.0,
@@ -421,7 +421,7 @@
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 24,
-   "schnitt": 4.92
+   "schnitt": 4.67
   },
   "bau": {
    "n": 1,

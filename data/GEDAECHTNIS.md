@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12034 Fakten** · Stand 2026-09-09 03:39 UTC · aktualisiert bei jedem Herzschlag
+**12027 Fakten** · Stand 2026-09-09 04:23 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7440
-- **swarm_artifact:** 2044
-- **last_swarm_critique:** 847
-- **last_swarm_goal:** 579
-- **anti_pattern:** 509
-- **strategy:** 256
+- **swarm_artifact:** 2038
+- **last_swarm_critique:** 848
+- **last_swarm_goal:** 580
+- **anti_pattern:** 507
+- **strategy:** 255
 - **tool:** 181
 - **hand_result:** 128
 - **aktuell_organfehler:** 46
@@ -15,6 +15,51 @@
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Mehr Simulationen vor ec:2`
+*09.09. 04:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): Model Predictive Control with Ensemble Dynamics - Learn an ensemble of probabilistic dynamics models (e.g., Gaussian processes or dropout neural nets) from offline data. At each decision step: sample K particles from 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Mehr Simulationen vor ec:0`
+*09.09. 04:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 6]): Monte Carlo Tree Search with Progressive Widening - Implement MCTS where each real action is preceded by thousands of simulated rollouts. The tree expands dynamically: simulations traverse selection/expansion/simulati
+
+### `last_swarm_critique`
+*09.09. 04:17 UTC · Quelle: critic*
+
+score=1; issues=Kein ausführbarer Python-Block im Artefakt gefunden - alle Abschnitte sind Prosa/Planung ohne Code; Sandbox-Urteil bestätigt: LÄUFT NICHT - Prosa allein konvergiert nicht; Die Aufgabe 'Mehr Simulationen vor echten Handlungen' erfordert eine Imp
+
+### `last_swarm_goal`
+*09.09. 04:12 UTC · Quelle: system*
+
+Mehr Simulationen vor echten Handlungen
+
+### `dream:20260909041149:5:21529f`
+*09.09. 04:11 UTC · Quelle: dream*
+
+Non-convergence within 2 cycles indicates that the swarm lacks a validation gate to prune invalid proposals early, wasting computational budget on unexecutable artifacts.
+
+### `dream:20260909041149:4:d3a9f4`
+*09.09. 04:11 UTC · Quelle: dream*
+
+Fast and reliable models (e.g., ling-3.0-flash-fin at 2.8s) should be prioritized for latency-sensitive consolidation tasks, while heavy models are reserved for deep analysis only.
+
+### `dream:20260909041149:3:7a89f5`
+*09.09. 04:11 UTC · Quelle: dream*
+
+Swarm convergence failed because knowledge was stale; without scheduled refresh, the swarm repeats low-scoring iterations on outdated assumptions.
+
+### `dream:20260909041149:2:443820`
+*09.09. 04:11 UTC · Quelle: dream*
+
+Upstream model failures (502/429) are recurring systemic risks, not edge cases; without automatic failover, a single provider outage can stall the entire consolidation pipeline.
+
+### `dream:20260909041149:1:ac7b41`
+*09.09. 04:11 UTC · Quelle: dream*
+
+The primary failure mode is the gap between skill proposals and executable execution—builders produced non-runnable Python artifacts that critics could not evaluate, collapsing the entire evolution cycle.
 
 ### `anti_pattern:Previous attempt scored 3/10. Goal: Vorschläge in echte Fähi:2`
 *09.09. 03:35 UTC · Quelle: evolution*
@@ -45722,16 +45767,6 @@ The 'act' organ timed out at 1500s, indicating long-running actions lack interna
 
 Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, while nvidia/nemotron-3-ultra-550b-a55b:free consistently succeeded — the fallback chain should put proven-available models first during quota exhaustion.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Doku-Konsistenzwächter b:2`
-*26.08. 04:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [5, 4, 6]): Live metrics API + static-site include - Expose a tiny HTTP endpoint (e.g. /metrics) from the running service (or a sidecar) that serves the current metrics as JSON. Replace the hard-coded numbers in README.md, README
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Doku-Konsistenzwächter b:1`
-*26.08. 04:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 5, 7]): Bidirectional sync with git-aware conflict resolution - Treat the three docs as editable but guarded: a pre-commit hook parses each file for metric patterns, compares them against live code extraction, and auto-correc
-
 ### `last_swarm_critique`
 *26.08. 04:04 UTC · Quelle: critic*
 
@@ -45741,41 +45776,6 @@ score=5; issues=Fertig-wenn-Kriterium 3 nicht erfuellt: das Skript korrigiert di
 *26.08. 03:57 UTC · Quelle: system*
 
 Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten
-
-### `dream:20260826035713:5:90456e`
-*26.08. 03:57 UTC · Quelle: dream*
-
-Reflex tools (destillat-datensatz..., lebender-steckbrief...) successfully automated dedup, proving that targeted micro-tools can close maintenance loops.
-
-### `dream:20260826035713:4:e01a29`
-*26.08. 03:57 UTC · Quelle: dream*
-
-Semantic duplication across idea board and DRIVE goals inflates perceived novelty and wastes consolidation cycles; reflex-based dedup resolves this.
-
-### `dream:20260826035713:3:b1c159`
-*26.08. 03:57 UTC · Quelle: dream*
-
-Parked whispers (e.g., Zoem-Protokoll) stall indefinitely without a scheduled revisit mechanism or creator escalation path.
-
-### `dream:20260826035713:2:657922`
-*26.08. 03:57 UTC · Quelle: dream*
-
-Forty proposed skills remain untested because the system lacks an automated trial pipeline that validates and promotes useful skills.
-
-### `dream:20260826035713:1:a539bb`
-*26.08. 03:57 UTC · Quelle: dream*
-
-Model failure rate of ~33% (34 failures vs 69 successes) demands systematic error categorization and fallback routing.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Doku-Konsistenzwächter b:2`
-*26.08. 03:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Single-Source-of-Truth Code-Generierung (Model-Driven) - Zentrale Definition (config/spec.yaml) enthält alle konfigurierbaren Werte (Heartbeat=900s, Retry=3, Timeout=30s) samt menschenlesbaren Beschreibungen. Ein Generator (g
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Doku-Konsistenzwächter b:1`
-*26.08. 03:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Vertragsbasierte Laufzeit-Validierung (Design-by-Contract) - Dokumentation wird als ausführbare Verträge (JSON-Schema + Hypothesis-Strategien) formuliert. Ein einziger Test-Runner (doc_contract.py) startet die Applikation im 
 
 ### `last_swarm_critique`
 *26.08. 03:39 UTC · Quelle: critic*
