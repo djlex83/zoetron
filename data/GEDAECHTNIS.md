@@ -1,19 +1,69 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11795 Fakten** · Stand 2026-09-09 22:18 UTC · aktualisiert bei jedem Herzschlag
+**11807 Fakten** · Stand 2026-09-09 22:35 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7397
-- **swarm_artifact:** 1939
-- **last_swarm_critique:** 860
-- **last_swarm_goal:** 594
-- **anti_pattern:** 449
-- **strategy:** 226
-- **tool:** 175
+- **swarm_artifact:** 1945
+- **last_swarm_critique:** 861
+- **last_swarm_goal:** 595
+- **anti_pattern:** 451
+- **strategy:** 227
+- **tool:** 176
 - **hand_result:** 110
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `tool:mehr-echte-aktionen-ausführen`
+*09.09. 22:33 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Mehr echte Aktionen ausführen'. Datei: data/tools/mehr-echte-aktionen-ausführen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Mehr echte Aktionen ausf:2`
+*09.09. 22:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 6]): Declarative Action Graph with Stdlib Executor - Represent a sequence of actions as a directed acyclic graph in JSON/YAML. Nodes are atomic actions with type, parameters, and dependencies. A pure-Python interpreter loa
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Mehr echte Aktionen ausf:1`
+*09.09. 22:32 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_critique`
+*09.09. 22:31 UTC · Quelle: critic*
+
+score=7; issues=Drei Artefakte bilden eine kohärente Pipeline (Inventarisieren → Ausführen → Messen), die das Ziel 'Mehr echte Aktionen ausführen' adressiert. Alle drei laufen laut Sandbox-Urteil.; Schwäche: Hohe Abhängigkeit von externen Modulen (hands.py, ko
+
+### `last_swarm_goal`
+*09.09. 22:26 UTC · Quelle: system*
+
+Mehr echte Aktionen ausführen
+
+### `dream:20260909222637:5:eb72e7`
+*09.09. 22:26 UTC · Quelle: dream*
+
+Knowledge pruning must be policy-driven using reuse-count and criticality tags, otherwise high-value facts risk being lost while low-reuse noise consumes storage and attention.
+
+### `dream:20260909222637:4:c6fbc4`
+*09.09. 22:26 UTC · Quelle: dream*
+
+Skill proposals that skip validation gates produce unreliable implementations, so simulation benchmarks and latency/SLA checks must precede any promotion to active skill status.
+
+### `dream:20260909222637:3:ab50ed`
+*09.09. 22:26 UTC · Quelle: dream*
+
+Stale swarm knowledge actively degrades decision quality, meaning knowledge bases require scheduled refresh cycles rather than passive storage to remain useful.
+
+### `dream:20260909222637:2:a20f41`
+*09.09. 22:26 UTC · Quelle: dream*
+
+The gap between skill proposals and deployed skills is the primary throughput bottleneck, as ideas accumulate without an execution pipeline to convert them into validated, active capabilities.
+
+### `dream:20260909222637:1:7252f7`
+*09.09. 22:26 UTC · Quelle: dream*
+
+Model failures are systemic rather than isolated, requiring circuit-breakers and fallback chains instead of simple retries to achieve reliable inference.
 
 ### `dream:20260909221554:5:8e6577`
 *09.09. 22:15 UTC · Quelle: dream*
@@ -43885,31 +43935,6 @@ score=7; issues=
 *26.08. 22:25 UTC · Quelle: system*
 
 Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
-
-### `dream:20260826222433:5:2a25fe`
-*26.08. 22:24 UTC · Quelle: dream*
-
-Token throughput varies wildly: minimax processes ~13k tokens in 76s while nemotron handles ~1.2k–5.5k tokens in 22–116s, making latency-cost tradeoffs unpredictable.
-
-### `dream:20260826222433:4:6e76b4`
-*26.08. 22:24 UTC · Quelle: dream*
-
-The simulation-revision loop (3 revisions applied for Hebbian synapse-quality goal) demonstrates that structured critique cycles converge even under model unreliability.
-
-### `dream:20260826222433:3:61e7f6`
-*26.08. 22:24 UTC · Quelle: dream*
-
-Operating in 'conserve' metabolism with max_iterations=1 forces single-pass execution, eliminating retry loops that could absorb transient 429/502 errors.
-
-### `dream:20260826222433:2:b99e87`
-*26.08. 22:24 UTC · Quelle: dream*
-
-minimax/minimax-m3:free and nvidia/nemotron-3-ultra-550b-a55b:free are the only models showing consistent success under load, but nemotron exhibits high latency variance (22–116s) and intermittent 502 upstream errors.
-
-### `dream:20260826222433:1:dd065c`
-*26.08. 22:24 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making provider diversity insufficient without request pacing.
 
 ### `last_swarm_critique`
 *26.08. 22:02 UTC · Quelle: critic*
