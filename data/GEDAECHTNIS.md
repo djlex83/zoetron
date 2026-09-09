@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-09 19:35 UTC · aktualisiert bei jedem Herzschlag
+**11783 Fakten** · Stand 2026-09-09 19:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7362
-- **swarm_artifact:** 1960
+- **dream:** 7367
+- **swarm_artifact:** 1954
 - **last_swarm_critique:** 858
 - **last_swarm_goal:** 592
-- **anti_pattern:** 455
-- **strategy:** 229
+- **anti_pattern:** 453
+- **strategy:** 228
 - **tool:** 175
 - **hand_result:** 111
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909194428:5:360f78`
+*09.09. 19:44 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this cycle alone) but deployment validation via dream-simulation bridge is missing, creating a proposal-execution gap.
+
+### `dream:20260909194428:4:3c5897`
+*09.09. 19:44 UTC · Quelle: dream*
+
+Pruning removes facts/events but stale swarm knowledge persists because no automatic refresh mechanism exists.
+
+### `dream:20260909194428:3:a7bda9`
+*09.09. 19:44 UTC · Quelle: dream*
+
+Reflex-driven model-error reduction converges quickly, but the underlying model pool instability re-triggers the same goal repeatedly.
+
+### `dream:20260909194428:2:3be497`
+*09.09. 19:44 UTC · Quelle: dream*
+
+Drive goals for model-error reduction, swarm freshness, and action-execution gap recur every cycle, indicating systemic fixes are not persisting.
+
+### `dream:20260909194428:1:9fda77`
+*09.09. 19:44 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model is the only reliable provider; all others fail with 502 upstream errors or 429 rate limits under load.
 
 ### `dream:20260909193313:5:9bc54c`
 *09.09. 19:33 UTC · Quelle: dream*
@@ -43920,16 +43945,6 @@ A 9x latency variance (5.3s vs 45.7s) on the same model (nemotron-3-ultra) indic
 *26.08. 19:52 UTC · Quelle: dream*
 
 Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502) failures, making single-model reliance untenable for production workloads.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Extern-Quote in DRIVE: r:1`
-*26.08. 19:39 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Configuration-driven feature toggle - Introduce a YAML/JSON config file (e.g., `drive_config.yaml`) that defines `extern_frequency: 3` and `include_extern_quote: true`. Modify drive.py to read this config at startup and apply
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Extern-Quote in DRIVE: r:0`
-*26.08. 19:39 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Direct AST-driven source rewriting - Write a single Python script that parses drive.py and telegrambericht.py with the ast module, locates the target selection logic and the weekly report generation, and injects the required 
 
 ### `last_swarm_critique`
 *26.08. 19:37 UTC · Quelle: critic*

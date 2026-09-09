@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 19:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 19:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,16 +19,16 @@
 - Require AST-level implementation check at tool registration: reject any function body lacking at least one non *(hatte die Idee 4×)*
 - Schedule automatic swarm-goal freshness scan every 24h: flag goals older than 7 days with no recent hand_actio *(hatte die Idee 4×)*
 - Create a swarm-knowledge refresher that detects staleness via timestamp/version drift >7 days, re-runs critiqu *(hatte die Idee 4×)*
-- Build reflex_library_for_common_goals: codify successful reflex patterns (swarm convergence, error reduction)  *(hatte die Idee 3×)*
+- Add rate-limit awareness module detecting 429 responses, pausing requests to that model for configurable backo *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (5 in this cycle alone) but deployment validation via dream-simulation bridge is missing, creating a proposal-execution gap
+- Pruning removes facts/events but stale swarm knowledge persists because no automatic refresh mechanism exists.
+- Reflex-driven model-error reduction converges quickly, but the underlying model pool instability re-triggers the same goal repeatedly.
+- Drive goals for model-error reduction, swarm freshness, and action-execution gap recur every cycle, indicating systemic fixes are not persisting.
+- The inclusionai/ling-3.0-flash-fin model is the only reliable provider; all others fail with 502 upstream errors or 429 rate limits under load.
 - Reflex scripts succeed at cleanup (exit 0) but are triggered reactively; no proactive health checks prevent the failures they clean up.
 - Event log floods with individual model-failure facts (pruned 47 events) instead of aggregated degradation signals, wasting memory and attention.
 - Recurring goals for 'reduce model errors' and 'refresh swarm data' indicate reflex fixes treat symptoms while root causes (no provider health tracking
@@ -51,11 +56,6 @@
 - Reflex tools execute in isolation; chaining verified reflexes (dream-connect → error-reduce → swarm-sync) would converge multi-goal tasks faster.
 - Swarm knowledge decays silently; full refreshes waste tokens while stale facts poison downstream reasoning.
 - Model routing lacks provider-aware circuit breaking, causing repeated 429/5xx failures that cascade into drive-goal retries.
-- Proposed infrastructure fixes are never validated against the failures that triggered them, creating a persistent gap between intended resilience and 
-- The system generates high event volume (~30 events pruned per cycle) that must be aggressively consolidated, indicating a need for tighter event filte
-- Skill proposals evolve from reactive fixes (retry middleware, path resolution) to proactive architectures (model registry with scoring, simulation har
-- Self-diagnosis consistently reports zero organ errors while model failures persist, revealing that infrastructure-level failures are invisible to inte
-- External model failures (502 upstream overload, 429 rate limits) recur because no circuit breaker or fallback router exists, making the system critica
 
 ---
 
