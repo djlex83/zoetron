@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11783 Fakten** · Stand 2026-09-09 19:58 UTC · aktualisiert bei jedem Herzschlag
+**11779 Fakten** · Stand 2026-09-09 20:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7367
-- **swarm_artifact:** 1954
+- **dream:** 7372
+- **swarm_artifact:** 1948
 - **last_swarm_critique:** 858
 - **last_swarm_goal:** 592
-- **anti_pattern:** 453
-- **strategy:** 228
+- **anti_pattern:** 451
+- **strategy:** 227
 - **tool:** 175
 - **hand_result:** 111
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260909200622:5:2c8e52`
+*09.09. 20:06 UTC · Quelle: dream*
+
+Under maximum stress (1.0), the system attempts high-cost operations (207s model calls) instead of degrading task scope or switching to lighter models, exhausting its limited budget.
+
+### `dream:20260909200622:4:836375`
+*09.09. 20:06 UTC · Quelle: dream*
+
+Simulation predicts success (score 7) but artifact execution fails (actual 1) due to unverified environment dependencies (missing paths, broken imports) that simulation does not check.
+
+### `dream:20260909200622:3:cf1356`
+*09.09. 20:06 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation because the system lacks a closed-loop mechanism that tests each implemented skill against its originating failure before marking it operational.
+
+### `dream:20260909200622:2:7f4841`
+*09.09. 20:06 UTC · Quelle: dream*
+
+Hand actions repeatedly fail with "Kein Zoetron-Pfad gefunden" and "nichts gelesen" because path resolution relies on fragile relative paths and unvalidated environment variables instead of a canonical resolver.
+
+### `dream:20260909200622:1:fe4ef7`
+*09.09. 20:06 UTC · Quelle: dream*
+
+Primary model endpoint (Nemotron) fails with 502 overload errors and extreme latency variance (19-207s), causing cascading task failures when no automatic capability-aware fallback exists.
 
 ### `dream:20260909195530:5:25f0aa`
 *09.09. 19:55 UTC · Quelle: dream*
@@ -43925,16 +43950,6 @@ The primary working model "nvidia/nemotron-3-ultra-550b-a55b:free" exhibits high
 *26.08. 20:22 UTC · Quelle: dream*
 
 The model "z-ai/glm-5.2:free" consistently fails with HTTP 429 errors, indicating it is rate-limited and should be blacklisted after consecutive failures.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Embedding-Recall statt r:2`
-*26.08. 20:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.0): Strategy/Repository-Pattern mit austauschbarem Encoder (sentence-transformers, T - Kernidee: Saubere Trennung von Encoding (Strategy) und Persistenz (Repository). Encoder ist ein Interface mit drei Implementierungen — sente
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Embedding-Recall statt r:1`
-*26.08. 20:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.5): Schema- und Performance-zentriert: SQLite als Vektor-DB mit BLOBs, Pre-Normalisi - Kernidee: Wir behandeln SQLite als echten Vektor-Store. Embeddings werden beim Insert L2-normalisiert und als float32-BLOB kompakt gespeiche
 
 ### `last_swarm_critique`
 *26.08. 20:01 UTC · Quelle: critic*

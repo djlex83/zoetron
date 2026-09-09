@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 19:55:56",
+ "stand": "2026-09-09 20:07:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -48,12 +48,6 @@
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -133,6 +127,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
@@ -424,6 +424,12 @@
   },
   {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-daten-durch-neue-fakten-ersetzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
