@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-10 08:09 UTC · aktualisiert bei jedem Herzschlag
+**11783 Fakten** · Stand 2026-09-10 08:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7454
-- **swarm_artifact:** 1893
+- **dream:** 7459
+- **swarm_artifact:** 1887
 - **last_swarm_critique:** 867
 - **last_swarm_goal:** 601
-- **anti_pattern:** 435
-- **strategy:** 219
+- **anti_pattern:** 433
+- **strategy:** 218
 - **tool:** 173
 - **hand_result:** 102
 - **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910081740:5:07b7f5`
+*10.09. 08:17 UTC · Quelle: dream*
+
+The system enters conserve mode under high stress with severely limited budgets (max 3 tasks, 1 iteration), meaning non-critical goals like swarm and evolution must be deferred until capacity recovers.
+
+### `dream:20260910081740:4:f575d3`
+*10.09. 08:17 UTC · Quelle: dream*
+
+Consecutive model failures trigger automatic locking (e.g., 1800s cooldown after 3 failures), but the system must also prevent locked models from being retried during that window.
+
+### `dream:20260910081740:3:d8ea38`
+*10.09. 08:17 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution validation — proposals that lack executable code artifacts waste scoring and simulation cycles.
+
+### `dream:20260910081740:2:f2f890`
+*10.09. 08:17 UTC · Quelle: dream*
+
+Relative file paths silently fail during file operations; all paths must be resolved to absolute before any I/O action to prevent zero-output runs.
+
+### `dream:20260910081740:1:18b024`
+*10.09. 08:17 UTC · Quelle: dream*
+
+Free-tier API models are the dominant failure point — 429 rate limits and timeouts occur far more often than capability failures, making model reliability the primary bottleneck.
 
 ### `dream:20260910080715:5:9daa08`
 *10.09. 08:07 UTC · Quelle: dream*
@@ -43899,16 +43924,6 @@ Repeated 429 errors across multiple free-tier models indicate systemic rate-limi
 *27.08. 08:17 UTC · Quelle: hands*
 
 Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten aus Vorschlägen wirklich lernen'. Datei: data/tools/fähigkeiten-aus-vorschlägen-wirklich-ler.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten aus Vorschlä:2`
-*27.08. 08:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Causal Mechanism Distillation into Composable Modules - Parse proposals to extract causal graphs (variables, interventions, outcomes) using LLMs + causal discovery. Distill each into a Structural Causal Model (SCM) module wit
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten aus Vorschlä:0`
-*27.08. 08:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Neuro-Symbolic Program Synthesis with Iterative Verification - Treat each proposal as a specification for an executable skill. Use an LLM to generate candidate Python implementations (skill code + tests), then run them in a s
 
 ### `last_swarm_critique`
 *27.08. 08:13 UTC · Quelle: critic*

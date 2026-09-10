@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 08:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 08:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system enters conserve mode under high stress with severely limited budgets (max 3 tasks, 1 iteration), meaning non-critical goals like swarm and 
+- Consecutive model failures trigger automatic locking (e.g., 1800s cooldown after 3 failures), but the system must also prevent locked models from bein
+- Skill proposals accumulate without execution validation — proposals that lack executable code artifacts waste scoring and simulation cycles.
+- Relative file paths silently fail during file operations; all paths must be resolved to absolute before any I/O action to prevent zero-output runs.
+- Free-tier API models are the dominant failure point — 429 rate limits and timeouts occur far more often than capability failures, making model reliabi
 - Artifacts lacking executable code blocks waste computation cycles during scoring and simulation, making pre-validation of actionability essential for 
 - A significant gap exists between the volume of generated skill proposals and actual swarm utilization, indicating that swarm intelligence is the highe
 - Stale swarm goals actively degrade decision quality, making periodic goal refresh a mandatory maintenance cycle rather than a best-effort cleanup task
@@ -51,11 +56,6 @@
 - The co-occurrence of model failures and stale-data signals reveals that system degradation is multi-modal: both dependency health and knowledge freshn
 - Reflex-driven recovery from stale swarm data converges reliably, suggesting that pre-built reflex pathways are more robust than ad-hoc re-planning whe
 - Model failures cluster around upstream overload (502) and rate limits (429), indicating that concurrent unthrottled calls to shared APIs are the prima
-- Low-latency models (inclusionai/ling-3.0-flash-fin at ~2s) do not guarantee task success; task structure and artifact format dominate outcome quality.
-- Evolutionary variant generation with scoring selection (scores 6.7→8.3→9.0) reliably outperforms direct single-shot generation for this task type.
-- The calibration gap (predicted 5 vs actual 0) reveals the system overestimates progress when no executable code exists in the artifact.
-- Prose-only artifacts cannot converge on skill-consolidation tasks; an executable Python block is a mandatory prerequisite for any non-zero score.
-- Free-tier OpenRouter models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently hit 429 rate limits and must be excluded from the active model pool or g
 
 ---
 
