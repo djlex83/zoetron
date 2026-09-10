@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-calibration was inaccurate (predicted 3, actual 1, abs_error 2), indicating the system's internal confidence estimates do not reliably match real
+- Evolutionary variant generation (3 variants) improved scores from 1/10 to 8/10, demonstrating that multi-variant exploration is highly effective for p
+- The inclusionai/ling-3.0-flash-fin model is the only consistently reliable model across all attempts, succeeding every time with variable latency and 
+- Artifacts containing only prose without executable Python blocks fail to converge, as explicitly flagged by the convergence check in the [tor] signal.
+- Google models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently fail with HTTP 429 rate-limit errors on OpenRouter, making them unreliable for any pro
 - Relative path resolution in sys.argv[1] and ZOETRON_DATA caused silent data-path failures; all paths must be resolved to absolute and validated before
 - Simulation revisions were only partially applied (3 of 5 recommended), suggesting the revision pipeline lacks a completion gate or verification step.
 - Under conserve state with stress=1.0 and minimal budget, cycling through multiple models wastes resources; the system should lock onto the single prov
@@ -51,11 +56,6 @@
 - Stale swarm knowledge actively degrades decision quality, and the system's own pruning of 5 facts and 14 events demonstrates that regular consolidatio
 - Consecutive model failures follow a pattern where the system recovers only by switching to an alternate model, confirming that a ranked fallback chain
 - Provider-level rate limits (429 errors) affect all models on the same API provider simultaneously, so per-model failure tracking is insufficient and p
-- Regular pruning (8 facts, 33 events) is necessary but insufficient on its own; consolidation must run on a fixed schedule to prevent event accumulatio
-- The inclusionai/ling-3.0-flash-fin model succeeded consistently under both high and low token loads, indicating that smaller verified models are more 
-- Without an activation gate, skill proposals accumulate faster than they can be implemented, creating a backlog that mimics progress without producing 
-- Stale goals and outdated criticisms cause the system to build new conclusions on false assumptions, making verification of foundational data a prerequ
-- Cascading model failures occur when fallback models share the same rate-limit boundaries, meaning a single upstream bottleneck can take down all alter
 
 ---
 

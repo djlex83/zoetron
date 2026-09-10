@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11779 Fakten** · Stand 2026-09-10 11:04 UTC · aktualisiert bei jedem Herzschlag
+**11779 Fakten** · Stand 2026-09-10 11:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7460
 - **swarm_artifact:** 1881
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910111207:5:9be3df`
+*10.09. 11:12 UTC · Quelle: dream*
+
+Self-calibration was inaccurate (predicted 3, actual 1, abs_error 2), indicating the system's internal confidence estimates do not reliably match real outcomes.
+
+### `dream:20260910111207:4:73b7f2`
+*10.09. 11:12 UTC · Quelle: dream*
+
+Evolutionary variant generation (3 variants) improved scores from 1/10 to 8/10, demonstrating that multi-variant exploration is highly effective for problem-solving.
+
+### `dream:20260910111207:3:2985f2`
+*10.09. 11:12 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model is the only consistently reliable model across all attempts, succeeding every time with variable latency and token counts.
+
+### `dream:20260910111207:2:88784c`
+*10.09. 11:12 UTC · Quelle: dream*
+
+Artifacts containing only prose without executable Python blocks fail to converge, as explicitly flagged by the convergence check in the [tor] signal.
+
+### `dream:20260910111207:1:4a50cb`
+*10.09. 11:12 UTC · Quelle: dream*
+
+Google models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently fail with HTTP 429 rate-limit errors on OpenRouter, making them unreliable for any production pipeline.
 
 ### `dream:20260910110220:5:31a337`
 *10.09. 11:02 UTC · Quelle: dream*
@@ -43874,31 +43899,6 @@ score=3; issues=Sandbox execution failed: artifacts are truncated and cannot run
 *27.08. 11:06 UTC · Quelle: system*
 
 Neue Fähigkeiten aktiv vorschlagen
-
-### `dream:20260827110638:5:ce64e7`
-*27.08. 11:06 UTC · Quelle: dream*
-
-Inactive pruning alongside repeated model failures demonstrates that fact/event pruning must be conditioned on model health and skill utilization metrics to avoid consolidating stale or error-prone pathways.
-
-### `dream:20260827110638:4:f1cafe`
-*27.08. 11:06 UTC · Quelle: dream*
-
-The three recurring drive goals—model reliability, skill utilization, and simulation-action integration—form the system's cross-cutting consolidation axes, and progress on one amplifies the others.
-
-### `dream:20260827110638:3:39d162`
-*27.08. 11:06 UTC · Quelle: dream*
-
-Skill proposals are generated at high volume and quality yet systematically underutilized, revealing that deployment gatekeeping and success-rate validation are the bottleneck, not idea scarcity.
-
-### `dream:20260827110638:2:9abeed`
-*27.08. 11:06 UTC · Quelle: dream*
-
-Simulations and dreams achieve reflex convergence but fail to transfer actionable patterns to hand execution, indicating a persistent disconnect between internal learning states and external action pathways.
-
-### `dream:20260827110638:1:9efd0b`
-*27.08. 11:06 UTC · Quelle: dream*
-
-A single model's repeated 429 errors without automatic blacklisting destabilizes the entire routing pool, proving that runtime failure resilience must be embedded in model selection, not reactive.
 
 ### `last_swarm_critique`
 *27.08. 10:56 UTC · Quelle: critic*
