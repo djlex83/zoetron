@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 16:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 16:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
+- Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Wiederverwendbares Erfahrungswissen braucht Zeitstempel, Modell- und Fehlerkontext sowie ein Aktualitätskriterium, sonst werden veraltete oder doppelt
+- Eine syntaktisch plausible Antwort ist noch kein belastbares Ergebnis; erst ausführbare Syntax- und Laufzeittests belegen die Funktion.
+- Der erfolgreiche Anbieter liefert ein Wiederverwendbares Fallback-Ziel, während mehrfach abgelehnte Modelle für den aktuellen Lauf als blockiert gelte
+- Ein einzelner erfolgreicher Lauf mit 25–34 Sekunden Latenz zeigt, dass Timeouts anhand realer Tail-Latenzen statt optimistischer Grenzwerte konfigurie
+- Wiederholte Aufrufe derselben 429- oder timeout-anfälligen Modelle erhöhen die Ausfallwahrscheinlichkeit, ohne die Erfolgschance substantiell zu verbe
 - Eine fehlerfreie Reflex-Selbstdiagnose bestätigt nur den geprüften engen Geltungsbereich und ersetzt keine Syntax-, Abhängigkeits- und Funktionstests 
 - Wiederholt ähnlich umfangreiches Pruning deutet darauf hin, dass Replay- und Ausführungsereignisse überwiegend flüchtig sind und nur belastbare Ergebn
 - Der zweimal erfolgreiche Einsatz von poolside/laguna-s-2.1:free belegt, dass ein vorab geprüfter Fallback anhand aktueller Erfolgsquote, Latenz und To
@@ -51,11 +56,6 @@
 - Leichte Modelle sollten Standardaufgaben übernehmen, während größere Modelle nur bei nachgewiesenem Fähigkeitenbedarf eingesetzt werden, um Kosten und
 - Ein erfolgreicher Reflexlauf mit null Selbstdiagnose-Befunden belegt nur die Ausführung, nicht aber Robustheit oder Aufgabenqualität.
 - Wiederholte 429-Fehler über mehrere Modelle zeigen, dass ein einzelner Fallback nicht ausreicht und jeder Anbieter eigene Backoff-, Retry-Budget- und 
-- Router-, Health-Ledger-, Backoff- und Frischeprüfungs-Vorschläge beschreiben denselben Zuverlässigkeitsbereich und sollten zu einem einzigen testbaren
-- Kontext-Pruning kann Diagnosewissen vernichten; Fehlerklassen, Circuit-Breaker-Zustände, erfolgreiche Fallbacks und Provenienz müssen beim Beschneiden
-- Erfolgreiche Schwarm-Auffrischungs- und Reaktivierungs-Reflexe ohne Organfehler zeigen, dass regelmäßige Frischeprüfungen veraltete Wissensbestände wi
-- Ein kleines, gesundes Modell kann größere oder überlastete Modelle zuverlässig ersetzen; die Auswahl sollte sich an aktueller Gesundheit, Latenz und K
-- Modellausfälle häufen sich pro Endpunkt und Fehlertyp; Timeouts und 429 erfordern getrennte, endpunktspezifische Schutz- und Wiederanlaufstrategien.
 
 ---
 

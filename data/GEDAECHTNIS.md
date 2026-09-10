@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11806 Fakten** · Stand 2026-09-10 16:34 UTC · aktualisiert bei jedem Herzschlag
+**11803 Fakten** · Stand 2026-09-10 16:46 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7531
-- **swarm_artifact:** 1847
+- **swarm_artifact:** 1844
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
 - **anti_pattern:** 429
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910164347:5:c9e9a0`
+*10.09. 16:43 UTC · Quelle: dream*
+
+Wiederverwendbares Erfahrungswissen braucht Zeitstempel, Modell- und Fehlerkontext sowie ein Aktualitätskriterium, sonst werden veraltete oder doppelte Versuche erneut ausgewählt.
+
+### `dream:20260910164347:4:bccd97`
+*10.09. 16:43 UTC · Quelle: dream*
+
+Eine syntaktisch plausible Antwort ist noch kein belastbares Ergebnis; erst ausführbare Syntax- und Laufzeittests belegen die Funktion.
+
+### `dream:20260910164347:3:7b8758`
+*10.09. 16:43 UTC · Quelle: dream*
+
+Der erfolgreiche Anbieter liefert ein Wiederverwendbares Fallback-Ziel, während mehrfach abgelehnte Modelle für den aktuellen Lauf als blockiert gelten sollten.
+
+### `dream:20260910164347:2:95d24e`
+*10.09. 16:43 UTC · Quelle: dream*
+
+Ein einzelner erfolgreicher Lauf mit 25–34 Sekunden Latenz zeigt, dass Timeouts anhand realer Tail-Latenzen statt optimistischer Grenzwerte konfiguriert werden müssen.
+
+### `dream:20260910164347:1:70916d`
+*10.09. 16:43 UTC · Quelle: dream*
+
+Wiederholte Aufrufe derselben 429- oder timeout-anfälligen Modelle erhöhen die Ausfallwahrscheinlichkeit, ohne die Erfolgschance substantiell zu verbessern.
 
 ### `dream:20260910163136:5:2ae1ac`
 *10.09. 16:31 UTC · Quelle: dream*
@@ -44119,31 +44144,6 @@ score=6; issues=Skill-Pipeline nur Skelett (Dataclasses), keine Pipeline-Logik, 
 *27.08. 16:30 UTC · Quelle: system*
 
 Weniger menschliche Hilfe nötig
-
-### `dream:20260827162925:5:f5bbb8`
-*27.08. 16:29 UTC · Quelle: dream*
-
-Zero pruning across consecutive cycles indicates thresholds are too loose or nothing is actually stale, wasting consolidation compute.
-
-### `dream:20260827162925:4:84a101`
-*27.08. 16:29 UTC · Quelle: dream*
-
-The core execution gap is generating skill proposals without a closure mechanism to convert them into deployed, working reflex tools.
-
-### `dream:20260827162925:3:d7922d`
-*27.08. 16:29 UTC · Quelle: dream*
-
-Simulation outputs that produce no return value or written artifact are rejected by the tool system, making output-only approaches ineffective.
-
-### `dream:20260827162925:2:ba1e79`
-*27.08. 16:29 UTC · Quelle: dream*
-
-Primary model rate-limiting (429) is the dominant failure mode, and high-latency fallbacks (19-40s) create secondary time-budget violations.
-
-### `dream:20260827162925:1:9cdcd1`
-*27.08. 16:29 UTC · Quelle: dream*
-
-Reflex-based execution converges reliably, while pure proposal generation without implementation leaves the same problems recurring across cycles.
 
 ### `last_swarm_critique`
 *27.08. 15:40 UTC · Quelle: critic*
