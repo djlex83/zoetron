@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 07:56:55",
+ "stand": "2026-09-10 08:07:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -58,6 +52,12 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -85,12 +85,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
@@ -133,6 +127,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "träume-besser-nutzen-lernen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
@@ -186,12 +186,6 @@
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -423,7 +417,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.741,
+ "haende_quote": 0.74,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 28,

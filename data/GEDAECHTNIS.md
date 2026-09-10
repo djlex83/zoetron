@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-10 07:58 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-10 08:09 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7454
 - **swarm_artifact:** 1893
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910080715:5:9daa08`
+*10.09. 08:07 UTC · Quelle: dream*
+
+Artifacts lacking executable code blocks waste computation cycles during scoring and simulation, making pre-validation of actionability essential for resource efficiency.
+
+### `dream:20260910080715:4:64ad12`
+*10.09. 08:07 UTC · Quelle: dream*
+
+A significant gap exists between the volume of generated skill proposals and actual swarm utilization, indicating that swarm intelligence is the highest-leverage untapped resource in the system.
+
+### `dream:20260910080715:3:2f6dab`
+*10.09. 08:07 UTC · Quelle: dream*
+
+Stale swarm goals actively degrade decision quality, making periodic goal refresh a mandatory maintenance cycle rather than a best-effort cleanup task.
+
+### `dream:20260910080715:2:30bb09`
+*10.09. 08:07 UTC · Quelle: dream*
+
+Model reliability fluctuates unpredictably; continuous health verification via inference gates is a prerequisite, not an optional enhancement, for any critical-path task.
+
+### `dream:20260910080715:1:cd0ccf`
+*10.09. 08:07 UTC · Quelle: dream*
+
+Rate-limiting (429) and read timeouts are systemic, correlated failure modes across multiple model providers, requiring architectural-level fallback chains rather than simple retry logic.
 
 ### `dream:20260910075556:5:ba6784`
 *10.09. 07:55 UTC · Quelle: dream*
@@ -43894,31 +43919,6 @@ score=6; issues=The artifact is a collection of three Python scripts that form a
 *27.08. 08:02 UTC · Quelle: system*
 
 Fähigkeiten aus Vorschlägen wirklich lernen
-
-### `dream:20260827080152:5:c04025`
-*27.08. 08:01 UTC · Quelle: dream*
-
-Memory recall accesses only the last swarm goal without checking trace staleness, risking replay of obsolete strategies.
-
-### `dream:20260827080152:4:5031bd`
-*27.08. 08:01 UTC · Quelle: dream*
-
-Five skill proposals were generated during this episode but none were validated against the observed failure signatures before the next cycle.
-
-### `dream:20260827080152:3:6da605`
-*27.08. 08:01 UTC · Quelle: dream*
-
-Stress=1.0 triggers conserve mode that slashes max_tasks to 3 and max_iterations to 1, creating a capacity death-spiral that prevents recovery.
-
-### `dream:20260827080152:2:4430d6`
-*27.08. 08:01 UTC · Quelle: dream*
-
-The sole reliable model (nemotron-3.5-lightning) exhibits 150-250s latency under stress, making it a bottleneck for any multi-step swarm execution.
-
-### `dream:20260827080152:1:4ffbbd`
-*27.08. 08:01 UTC · Quelle: dream*
-
-Simultaneous 429 errors across five distinct models reveal that provider diversity on OpenRouter fails to provide resilience when the gateway itself rate-limits.
 
 ### `last_swarm_critique`
 *27.08. 07:18 UTC · Quelle: critic*
