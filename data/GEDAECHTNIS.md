@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11795 Fakten** · Stand 2026-09-10 12:40 UTC · aktualisiert bei jedem Herzschlag
+**11789 Fakten** · Stand 2026-09-10 12:52 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7485
-- **swarm_artifact:** 1875
+- **swarm_artifact:** 1869
 - **last_swarm_critique:** 871
 - **last_swarm_goal:** 605
 - **anti_pattern:** 431
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910124955:5:f0832b`
+*10.09. 12:49 UTC · Quelle: dream*
+
+Self-diagnosis reporting zero organ errors while model failures persist reveals a diagnostic blind spot: the system checks internal organ health but lacks infrastructure-level health observability.
+
+### `dream:20260910124955:4:3304e2`
+*10.09. 12:49 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model succeeds under load but shows variable latency (3.2s to 4.0s) and shifting token efficiency, meaning single-model reliance creates a hidden bottleneck that will eventually fail under sustained demand.
+
+### `dream:20260910124955:3:fab9c3`
+*10.09. 12:49 UTC · Quelle: dream*
+
+The hermes-daemon CI failure indicates that memory-sync infrastructure instability compounds model-level failures, creating a compound failure mode that neither circuit breakers nor model fallbacks can address alone.
+
+### `dream:20260910124955:2:39ff84`
+*10.09. 12:49 UTC · Quelle: dream*
+
+Aggressive pruning of events (22 then 19) destroys the temporal signal needed to detect cascading failures before they become systemic.
+
+### `dream:20260910124955:1:975ea6`
+*10.09. 12:49 UTC · Quelle: dream*
+
+When multiple independent models fail simultaneously with identical 429 errors, the root cause is infrastructure-level rate limiting, not model-specific defects — fallback rotation alone cannot resolve it.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Schwarm-Orchestrierung a:2`
 *10.09. 12:35 UTC · Quelle: evolution*
@@ -43974,31 +43999,6 @@ score=9; issues=Coverage analysis uses keyword matching as proxy for structural 
 *27.08. 12:31 UTC · Quelle: system*
 
 Blinden Fleck #2 im Gedächtnis erforschen
-
-### `dream:20260827122952:5:e38025`
-*27.08. 12:29 UTC · Quelle: dream*
-
-Simulation caught 5 risks and triggered 5 revisions before deployment, proving pre-flight simulation prevents production failures.
-
-### `dream:20260827122952:4:77e848`
-*27.08. 12:29 UTC · Quelle: dream*
-
-Calibration error of 3 (predicted 6 vs actual 3 proposals) shows proposal generator overestimates feasible output under constraints.
-
-### `dream:20260827122952:3:e405dc`
-*27.08. 12:29 UTC · Quelle: dream*
-
-Evolution improved skill proposal score from 3 to 8 but swarm failed to converge, indicating critic feedback loops need stronger termination criteria.
-
-### `dream:20260827122952:2:9f5220`
-*27.08. 12:29 UTC · Quelle: dream*
-
-High-latency models (Nemotron 79-92s) succeed where fast models fail, suggesting latency budget should be allocated per task criticality.
-
-### `dream:20260827122952:1:6ec54d`
-*27.08. 12:29 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple providers indicates need for request throttling and fallback chains rather than parallel retries.
 
 ### `last_swarm_critique`
 *27.08. 11:53 UTC · Quelle: critic*

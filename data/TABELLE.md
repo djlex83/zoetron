@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8292 Neuronen · 921051 bewertete Synapsen
+Stand: 8291 Neuronen · 920371 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,18 +12,18 @@ Stand: 8292 Neuronen · 921051 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1083 | 0.24 |
 | 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1066 | 0.23 |
-| 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 879 | 0.25 |
+| 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 878 | 0.25 |
 | 4 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 845 | 0.26 |
-| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 906 | 0.23 |
+| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 905 | 0.23 |
 | 6 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 829 | 0.25 |
 | 7 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 795 | 0.26 |
 | 8 | 💭 | Repeated 429 errors across four different models indicate system… | 847 | 0.24 |
 | 9 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 880 | 0.23 |
 | 10 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 886 | 0.23 |
-| 11 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 846 | 0.24 |
-| 12 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 819 | 0.24 |
-| 13 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 778 | 0.26 |
-| 14 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 792 | 0.25 |
+| 11 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 847 | 0.24 |
+| 12 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 818 | 0.24 |
+| 13 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 792 | 0.25 |
+| 14 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 777 | 0.26 |
 | 15 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 885 | 0.22 |
 
 ## Die 15 stärksten Synapsen
