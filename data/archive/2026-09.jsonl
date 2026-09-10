@@ -36197,3 +36197,22 @@
 {"ts": 1788476791.5157826, "kind": "act_done", "payload": {"goal_title": "Simulationen gezielt einsetzen", "score": 8, "converged": true}}
 {"ts": 1788476792.4794946, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.6, "gelesen": 1360}}
 {"ts": 1788476794.7748601, "kind": "issue_synced", "payload": {"issue": 349, "state": "closed"}}
+{"ts": 1788477220.722218, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788477425.453348, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788477427.0072534, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788477431.075974, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788477431.0759711, "schalter_geoeffnet": false}}
+{"ts": 1788477449.893134, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.8, "tokens_ein": 1339, "tokens_aus": 683}}
+{"ts": 1788477449.8939476, "kind": "skill_proposal", "payload": {"proposal": "Implement model router with per-model circuit breakers, exponential backoff, and latency-weighted fallback chain across free tiers."}}
+{"ts": 1788477449.8940432, "kind": "skill_proposal", "payload": {"proposal": "Build skill proposal validator requiring concrete success criteria, rollback triggers, and resource budget before allocation."}}
+{"ts": 1788477449.89416, "kind": "skill_proposal", "payload": {"proposal": "Create calibration logger recording (prediction, actual, context) per task to train a correction model for future estimates."}}
+{"ts": 1788477449.894255, "kind": "skill_proposal", "payload": {"proposal": "Design replay buffer logging model selection, latency, error type, and input hash for offline policy optimization."}}
+{"ts": 1788477449.8943207, "kind": "skill_proposal", "payload": {"proposal": "Add automated stale-goal detector that triggers refresh when source data age exceeds threshold or failure rate spikes."}}
+{"ts": 1788477449.8943784, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788477452.0868964, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788477452.0868936, "schalter_geoeffnet": false}}
+{"ts": 1788477506.2506356, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 54.2, "tokens_ein": 502, "tokens_aus": 914}}
+{"ts": 1788477506.2508183, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und reduzieren", "why": "Das Modell scheitert oft. Wir müssen lernen, warum es fehlschlägt, damit es besser wird.", "signal": "failure"}}
+{"ts": 1788477506.2509007, "kind": "drive_goal", "payload": {"title": "Marktanalyse in Handlung umsetzen", "why": "Die Marktanalyse liegt seit langer Zeit rum. Wir sollten sie nutzen, um echte Entscheidungen zu treffen.", "signal": "stale"}}
+{"ts": 1788477506.2509642, "kind": "drive_goal", "payload": {"title": "Simulation mit echtem Handeln verbinden", "why": "Wir haben Simulations-Ideen, aber handeln wenig. Beides zusammen bringt echte Fortschritte.", "signal": "combination"}}
+{"ts": 1788477509.363954, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.77, "gelesen": 4}}
+{"ts": 1788477509.3662496, "kind": "reflex_used", "payload": {"goal": "Marktanalyse-Ergebnisse in Handlungen umsetzen", "tool": "marktanalyse-in-handlung-umsetzen.py", "ok": true}}
+{"ts": 1788477509.8092074, "kind": "act_done", "payload": {"goal_title": "Marktanalyse-Ergebnisse in Handlungen umsetzen", "score": null, "converged": true, "mode": "reflex"}}

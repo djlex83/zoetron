@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 23:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 23:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative path resolution against ZOETRON_DATA is missing at hand-action entry, causing silent misalignment.
+- Swarm effort estimates are systematically optimistic; a 4-5x calibration multiplier is the minimum correction factor.
+- Skill proposals accumulate without implementation validation, turning into latent technical debt.
+- Swarm knowledge decays faster than refresh cycles trigger; stale-data goals fire too late to prevent bad decisions.
+- Model infrastructure errors (429/502) are the dominant failure mode, not model capability — retry + fallback must live in the router, not the caller.
 - Drive goals recur (Vorhersage-Fehler, Modell-Fehler, Schwarm-Lernen) because reflexes converge locally but lack a mechanism to verify systemic fix per
 - Pruning discards 36+ events per run with no audit trail, risking loss of low-frequency high-impact patterns needed for rare failure diagnosis.
 - Selbstdiagnose reports zero organ errors while model failures persist, revealing a blind spot: external provider health is not monitored as an organ.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (79+ ideas) but lack mandatory validation gate with automated benchmark, soak period, and measurable convergence criteria b
 - Model reliability degrades silently (429s, latency spikes, 19 prediction errors) without circuit-breaker state exposed to planner for proactive fallba
 - Stale knowledge signals (stale, gap) repeatedly trigger reflex updates but lack systematic freshness tracking and automated refresh scheduling.
-- Pruning removes facts aggressively (15–19 per run) but never prunes failed skill proposals, leaving the proposal pool polluted.
-- Reflex actions succeed when they target a single, well-scoped goal (e.g., 'update memories'), but planner-assigned multi-step goals still suffer from 
-- Swarm coordination knowledge has a half-life of ~1 consolidation cycle; without scheduled refresh, the system plans with stale partner capabilities.
-- Skill proposals accumulate (75+) without validation gates, creating decision paralysis; a staged gate (probe → shadow → canary → adopt) would convert 
-- Model reliability degrades silently via 429 rate limits rather than explicit failures, requiring proactive circuit-breaking instead of reactive retrie
 
 ---
 
