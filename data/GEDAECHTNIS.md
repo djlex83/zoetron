@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11798 Fakten** · Stand 2026-09-10 17:45 UTC · aktualisiert bei jedem Herzschlag
+**11798 Fakten** · Stand 2026-09-10 18:06 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7541
 - **swarm_artifact:** 1835
-- **last_swarm_critique:** 872
-- **last_swarm_goal:** 607
-- **anti_pattern:** 425
-- **strategy:** 214
-- **tool:** 167
-- **hand_result:** 98
-- **aktuell_organfehler:** 39
+- **last_swarm_critique:** 873
+- **last_swarm_goal:** 608
+- **anti_pattern:** 423
+- **strategy:** 213
+- **tool:** 168
+- **hand_result:** 97
+- **aktuell_organfehler:** 40
 
 ---
+
+### `tool:fernere-erinnerungen-verbinden`
+*10.09. 18:04 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fernere Erinnerungen verbinden'. Datei: data/tools/fernere-erinnerungen-verbinden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*10.09. 18:03 UTC · Quelle: critic*
+
+score=8; issues=Schwellenwerte (SEMANTIC_OVERLAP_THRESHOLD=0.4, MAX_NEW_EDGES_PER_CLUSTER=3) sind hartcodiert statt konfigurierbar; Die Validierungs-Komponente erscheint als Shell-Exploration statt als dediziertes Python-Modul mit Metrik-Logging; Keine explizi
+
+### `last_swarm_goal`
+*10.09. 17:55 UTC · Quelle: system*
+
+Fernere Erinnerungen verbinden
+
+### `dream:20260910175413:5:7e36f9`
+*10.09. 17:54 UTC · Quelle: dream*
+
+Pruning old facts/events prevents memory bloat but must preserve the validation history needed for model routing decisions.
+
+### `dream:20260910175413:4:0234e3`
+*10.09. 17:54 UTC · Quelle: dream*
+
+Stale swarm knowledge degrades decision quality; the reflex that refreshes it works and should be scheduled regularly.
+
+### `dream:20260910175413:3:0591f7`
+*10.09. 17:54 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an automated validation pipeline to prove they actually improve outcomes.
+
+### `dream:20260910175413:2:6734da`
+*10.09. 17:54 UTC · Quelle: dream*
+
+A single reliable model (nex-agi/nex-n2.5-pro:free) becomes a single point of failure when all others are rate-limited.
+
+### `dream:20260910175413:1:398ea3`
+*10.09. 17:54 UTC · Quelle: dream*
+
+Free tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without circuit breakers.
+
+### `aktuell_organfehler`
+*10.09. 17:51 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-10 17:43:21 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Orga
 
 ### `last_swarm_goal`
 *10.09. 17:18 UTC · Quelle: system*
@@ -44115,16 +44160,6 @@ Nvidia Nemotron exhibits both rate limits and upstream 502 errors, indicating du
 
 Free-tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for autonomous operation.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Gedanken und Erinnerunge:2`
-*27.08. 17:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [4, 7, 4]): Agentenbasierte Interaktion über Standard-IN/OUT - Ersetze alle internen Module durch einen einfachen Agenten, der über Standard-Eingabe/Ausgabe kommuniziert. Der Agent liest Prompts von stdin, verarbeitet sie mit ein
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Gedanken und Erinnerunge:1`
-*27.08. 17:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 9, 6]): Dateibasierte Persistenz statt komplexer Module - Verwende das lokale Dateisystem als primäre Speicher- und Verbindungsstruktur. Speichere jeden Gedanken und jede Erinnerung als JSON-Zeile in einer Textdatei. Verknüpf
-
 ### `last_swarm_critique`
 *27.08. 17:40 UTC · Quelle: critic*
 
@@ -44134,31 +44169,6 @@ score=1; issues=Alle drei Artefakte scheitern beim Import: Modul 'bahnen' nicht 
 *27.08. 17:29 UTC · Quelle: system*
 
 Gedanken und Erinnerungen besser verbinden
-
-### `dream:20260827172900:5:46165c`
-*27.08. 17:29 UTC · Quelle: dream*
-
-Simulation verdict 'revise' with 5 risks indicates policy instability; each revision cycle consumes budget without converging.
-
-### `dream:20260827172900:4:4ef5fa`
-*27.08. 17:29 UTC · Quelle: dream*
-
-Metabolism stress=1.0 triggers conserve mode that limits parallel recovery attempts, turning transient failures into sustained outages.
-
-### `dream:20260827172900:3:ec4f04`
-*27.08. 17:29 UTC · Quelle: dream*
-
-Five skill proposals exist but none are instantiated as executable tools, creating a proposal-execution gap that stalls capability growth.
-
-### `dream:20260827172900:2:b6369f`
-*27.08. 17:29 UTC · Quelle: dream*
-
-Latency variance from 7.9s to 143s violates reflex budgets; slow models must be excluded from time-critical paths.
-
-### `dream:20260827172900:1:ec8793`
-*27.08. 17:29 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free show that static model routing hammers rate-limited providers instead of backing off.
 
 ### `last_swarm_critique`
 *27.08. 17:07 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 17:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 18:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning old facts/events prevents memory bloat but must preserve the validation history needed for model routing decisions.
+- Stale swarm knowledge degrades decision quality; the reflex that refreshes it works and should be scheduled regularly.
+- Skill proposals accumulate but lack an automated validation pipeline to prove they actually improve outcomes.
+- A single reliable model (nex-agi/nex-n2.5-pro:free) becomes a single point of failure when all others are rate-limited.
+- Free tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without circuit breakers.
 - Neue Fähigkeiten bleiben riskant, solange sie nur vorgeschlagen und nicht an realen früheren Fehlern reproduzierbar getestet wurden.
 - Die stark schwankende erfolgreiche Latenz zeigt, dass Modellwahl und Anbieterverfügbarkeit gemeinsam nach Aufwand, Qualität und Erfolgsaussicht gerout
 - Ein Abschluss mit `converged=true` bei `score=null` ist nicht belastbar, weil objektive Evidenz für eine Verbesserung fehlt.
@@ -51,11 +56,6 @@
 - Beim Pruning dürfen Fehler, Fallback-Erfolge, Wiederanlaufdaten und Provenienz nicht verloren gehen, weil sie für Diagnose und Lernen besonders wertvo
 - Ein Router muss Verfügbarkeit, Latenz, Tokenverbrauch, Kosten und Aktualität gemeinsam bewerten und überlastete Endpunkte automatisch kaltstellen.
 - Wiederholte 429-Fehler einzelner kostenloser Endpunkte bei gleichzeitig erfolgreichen Aufrufen anderer Modelle deuten auf endpunktspezifische Drosselu
-- Failure patterns persist across sessions, meaning historical error data must be retained and cross-referenced to predict and prevent recurring provide
-- Successful model calls show significant variance in latency and token usage, implying that performance metrics should guide routing decisions alongsid
-- Cascading failures occur when repeated errors trigger account lockouts (e.g., 3 consecutive errors causing 1800s lockout), amplifying initial issues i
-- Models that initially succeed can later fail with 429 errors, suggesting dynamic rate limits that require continuous monitoring rather than static pro
-- Rate-limit errors (429) and timeouts are the dominant failure modes across multiple providers, indicating systemic throttling rather than isolated mod
 
 ---
 

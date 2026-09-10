@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 17:43:26",
+ "stand": "2026-09-10 18:04:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -117,12 +117,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -177,6 +171,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -208,6 +208,12 @@
   },
   {
    "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
@@ -297,12 +303,6 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -369,17 +369,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.774,
- "simulationen_angewandt": 35,
+ "haende_quote": 0.776,
+ "simulationen_angewandt": 36,
  "swarm_scores": {
   "n": 25,
   "best": 9.0,
-  "schnitt": 4.2
+  "schnitt": 4.48
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 23,
-   "schnitt": 4.17
+   "schnitt": 4.48
   },
   "bau": {
    "n": 2,
