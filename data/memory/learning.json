@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 21:49:48",
+ "stand": "2026-09-10 22:00:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -181,12 +181,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
@@ -385,9 +379,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeits-vorschläge-verbessern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.778,
+ "haende_quote": 0.779,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 24,

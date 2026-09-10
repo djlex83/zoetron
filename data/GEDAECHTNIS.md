@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11767 Fakten** · Stand 2026-09-10 21:51 UTC · aktualisiert bei jedem Herzschlag
+**11771 Fakten** · Stand 2026-09-10 22:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7546
+- **dream:** 7551
 - **swarm_artifact:** 1811
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
 - **anti_pattern:** 415
 - **strategy:** 209
 - **tool:** 165
-- **hand_result:** 96
+- **hand_result:** 95
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910215936:5:3a2306`
+*10.09. 21:59 UTC · Quelle: dream*
+
+Reflex-driven maintenance (schwarm refresh, skill testing) converges reliably but only when triggered; scheduling and stale-signal detection must be automated.
+
+### `dream:20260910215936:4:e7c3aa`
+*10.09. 21:59 UTC · Quelle: dream*
+
+Modeling errors (50) exceed successes (36) because error patterns are not systematically categorized and fed back into model selection and prompt engineering.
+
+### `dream:20260910215936:3:2afd99`
+*10.09. 21:59 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; a stale-fact detector tracking last-access timestamps and contradiction flags must trigger proactive refresh reflexes.
+
+### `dream:20260910215936:2:667644`
+*10.09. 21:59 UTC · Quelle: dream*
+
+Sixty-five proposed skills remain unvalidated because no automated test gate exists, causing registry bloat and wasted simulation cycles.
+
+### `dream:20260910215936:1:20b343`
+*10.09. 21:59 UTC · Quelle: dream*
+
+Free tier model endpoints exhibit cascading 429/502 failures under load, requiring a router with per-model circuit breakers, health scoring, and automatic fallback to reliable inclusionai variants.
 
 ### `dream:20260910214923:5:0382ae`
 *10.09. 21:49 UTC · Quelle: dream*

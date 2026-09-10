@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 21:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven maintenance (schwarm refresh, skill testing) converges reliably but only when triggered; scheduling and stale-signal detection must be a
+- Modeling errors (50) exceed successes (36) because error patterns are not systematically categorized and fed back into model selection and prompt engi
+- Swarm knowledge decays silently; a stale-fact detector tracking last-access timestamps and contradiction flags must trigger proactive refresh reflexes
+- Sixty-five proposed skills remain unvalidated because no automated test gate exists, causing registry bloat and wasted simulation cycles.
+- Free tier model endpoints exhibit cascading 429/502 failures under load, requiring a router with per-model circuit breakers, health scoring, and autom
 - Reflex-driven maintenance (schwarmwissen refresh) succeeds autonomously, proving the reflex loop can offload routine upkeep.
 - Selbstdiagnose and pruning operate correctly but do not yet probe external model health before task assignment.
 - Existing circuit-breaker and backoff proposals are fragmented; a unified model router with health-aware fallback is missing.
@@ -51,11 +56,6 @@
 - Planner predictions ignore observed success rates, causing systematic under-allocation of cycles when models are degraded.
 - Error logs and recovery traces are pruned aggressively (22 events pruned, 0 facts) while stale facts persist, destroying the evidence needed for calib
 - Rate limiting (429) cascades across multiple providers simultaneously, indicating shared quota pools or correlated traffic spikes that single-model fa
-- No reserved compute budget for consolidation under load creates a death spiral where high pressure eliminates the very mechanism that reduces future p
-- Pruner discards error logs, recovery traces, and validation receipts while retaining stale facts, destroying the evidence needed for failure replay an
-- Swarm convergence on complex tasks occurs after single critic cycles without dissent thresholds, causing premature approval of flawed solutions.
-- Eleven completed dreams produced zero utilized insights, revealing a broken feedback loop where consolidation outputs never reach execution.
-- Model error rate of 68 failures vs 42 successes indicates systemic reliability failure requiring provider-aware routing with circuit breakers and auto
 
 ---
 
