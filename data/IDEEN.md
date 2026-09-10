@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 00:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 01:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
-- Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Schwarmwissen wieder auffrischen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Only inclusionai/ling-3.0-flash-fin:free responds successfully, creating a single point of failure.
+- Calibration overestimated success by 200% (predicted 3 vs actual 1), indicating need for better difficulty estimation.
+- Evolutionary variant generation improved a 1/10 score to 9/10, proving iterative refinement with selection works.
+- Tasks requiring executable code fail when models return only prose; artifacts must contain runnable Python blocks.
+- Gemma models (31b and 26b) consistently hit 429 rate limits, making them unreliable for production use.
 - Proposed revisions are being under-applied (5 proposed, 3 applied), indicating incomplete execution of corrective actions before cycle progression.
 - Retrying rate-limited models without exponential backoff compounds the throttling problem and wastes computational cycles.
 - Prose-only artifacts fail to converge; executable Python code blocks are mandatory for task completion and must be enforced in all generated outputs.
@@ -51,11 +56,6 @@
 - System operates in permanent conserve mode (stress=1.0, max_tasks=3, max_iterations=1) preventing meaningful multi-cycle evolution or swarm refresh cy
 - Model banning mechanism (1800s after 3 consecutive errors) is reactive not preventive - it triggers after damage is done rather than routing around kn
 - Free-tier models exhibit catastrophic reliability: 75% of configured models (Nemotron, both Gemmas) fail with 404/429 errors while only inclusionai/li
-- The absence of per-model reliability scorecards forces the router to treat all providers equally, repeatedly selecting degraded models over proven-sta
-- Evolution runs terminated after only 2 cycles leave score variance unexplained, meaning convergence claims are unreliable without minimum cycle guaran
-- Retry logic without exponential backoff and jitter creates retry storms that worsen rate-limit conditions instead of resolving them.
-- inclusionai/ling-3.0-flash-fin is the only consistently reliable model in the current provider set, succeeding with low latency across multiple sessio
-- Provider-side failures (429 rate limits, 404 endpoint removal) are systemic and cascade through the system when no circuit breaker isolates them.
 
 ---
 

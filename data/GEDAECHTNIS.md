@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11788 Fakten** · Stand 2026-09-10 00:57 UTC · aktualisiert bei jedem Herzschlag
+**11782 Fakten** · Stand 2026-09-10 01:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7417
-- **swarm_artifact:** 1921
+- **dream:** 7412
+- **swarm_artifact:** 1920
 - **last_swarm_critique:** 862
 - **last_swarm_goal:** 596
 - **anti_pattern:** 443
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910010541:5:a6aa47`
+*10.09. 01:05 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free responds successfully, creating a single point of failure.
+
+### `dream:20260910010541:4:fb99db`
+*10.09. 01:05 UTC · Quelle: dream*
+
+Calibration overestimated success by 200% (predicted 3 vs actual 1), indicating need for better difficulty estimation.
+
+### `dream:20260910010541:3:209fc3`
+*10.09. 01:05 UTC · Quelle: dream*
+
+Evolutionary variant generation improved a 1/10 score to 9/10, proving iterative refinement with selection works.
+
+### `dream:20260910010541:2:34e0eb`
+*10.09. 01:05 UTC · Quelle: dream*
+
+Tasks requiring executable code fail when models return only prose; artifacts must contain runnable Python blocks.
+
+### `dream:20260910010541:1:dd7d44`
+*10.09. 01:05 UTC · Quelle: dream*
+
+Gemma models (31b and 26b) consistently hit 429 rate limits, making them unreliable for production use.
 
 ### `dream:20260910005448:5:9f927f`
 *10.09. 00:54 UTC · Quelle: dream*
@@ -43800,56 +43825,6 @@ score=2; issues=destillat.py output format violates contract: produces {"prompt"
 *27.08. 01:02 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260827010152:5:1f3128`
-*27.08. 01:01 UTC · Quelle: dream*
-
-Hand actions fail on first attempt (exit 1) then succeed on retry, indicating transient environment/permission issues.
-
-### `dream:20260827010152:4:8cab96`
-*27.08. 01:01 UTC · Quelle: dream*
-
-The Exemplar-Bank pipeline (simulation→tor→calibration→bahnen) runs end-to-end but calibration drift (pred 3 vs actual 2) signals reward-model misalignment.
-
-### `dream:20260827010152:3:c0e5dd`
-*27.08. 01:01 UTC · Quelle: dream*
-
-minimax/minimax-m3:free delivers high output throughput (9.6k tokens) at moderate latency, making it the current best free option.
-
-### `dream:20260827010152:2:ecb562`
-*27.08. 01:01 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra exhibits extreme latency variance (31–111s) rendering it unsuitable for latency-sensitive steps.
-
-### `dream:20260827010152:1:446b9c`
-*27.08. 01:01 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable for production workflows.
-
-### `dream:20260827005527:5:d33ba3`
-*27.08. 00:55 UTC · Quelle: dream*
-
-The Cortex-Upgrade-Reflex failed to converge after three attempts, highlighting the need for explicit creator intervention when automated promotion lacks sufficient health data.
-
-### `dream:20260827005527:4:f3bc42`
-*27.08. 00:55 UTC · Quelle: dream*
-
-Proposed skills remain unused because they are not integrated into active reflex loops or triggered by real-time failure signals, resulting in wasted development effort.
-
-### `dream:20260827005527:3:64ce38`
-*27.08. 00:55 UTC · Quelle: dream*
-
-Whisper messages are frequently lost due to lack of delivery confirmation or retry mechanisms, creating a critical communication gap in goal propagation.
-
-### `dream:20260827005527:2:1dbed6`
-*27.08. 00:55 UTC · Quelle: dream*
-
-Successful model calls (nvidia/nemotron-3-ultra-550b-a55b:free) show stable latency and token efficiency across varying input sizes, suggesting reliable performance under stress.
-
-### `dream:20260827005527:1:01fdb2`
-*27.08. 00:55 UTC · Quelle: dream*
-
-Free-tier models from certain providers (e.g., z-ai/glm-5.2:free) consistently fail with 429 errors under concurrent load, indicating rate-limit exhaustion rather than model instability.
 
 ### `last_swarm_critique`
 *27.08. 00:36 UTC · Quelle: critic*
