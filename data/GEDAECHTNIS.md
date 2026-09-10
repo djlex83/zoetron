@@ -1,19 +1,74 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11799 Fakten** · Stand 2026-09-10 01:44 UTC · aktualisiert bei jedem Herzschlag
+**11801 Fakten** · Stand 2026-09-10 02:16 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7427
 - **swarm_artifact:** 1921
-- **last_swarm_critique:** 863
-- **last_swarm_goal:** 597
+- **last_swarm_critique:** 864
+- **last_swarm_goal:** 598
 - **anti_pattern:** 443
 - **strategy:** 223
-- **tool:** 172
-- **hand_result:** 108
+- **tool:** 173
+- **hand_result:** 107
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:selflearn_unzuverlaessige_werkzeuge`
+*10.09. 02:14 UTC · Quelle: selflearn*
+
+Diese Werkzeuge scheiterten haeufig (<34% Erfolg): modellfehler-stark-verringern, modelle-zuverlässiger-machen, vorgeschlagene-fähigkeiten-wirklich-fert. Erst Ursache pruefen, dann erneut einsetzen.
+
+### `tool:alte-schwarm-informationen-erneuern-und-`
+*10.09. 02:14 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Schwarm-Informationen erneuern und prüfen'. Datei: data/tools/alte-schwarm-informationen-erneuern-und-.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Schwarm-Information:2`
+*10.09. 02:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Event-Sourcing mit Materialized Views - Quell-Events (JSONL) sind unveränderliches Append-Only-Log. Separate 'View-Builder' Prozesse (Cron/On-Demand) bauen abgeleitete Indizes: (1) timeline.db (SQLite: id, ts, type, tags, ref
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Schwarm-Information:0`
+*10.09. 02:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Selbstenthaltene Monolith-Architektur - Alle externe Abhängigkeiten (reflex, widerspruch, semantic) durch Inline-Implementierungen im Artefakt ersetzen. Ein einziges Skript 'swarm_audit.py' enthält: (1) Event-Loader mit einhe
+
+### `last_swarm_critique`
+*10.09. 02:13 UTC · Quelle: critic*
+
+score=7; issues=Reflex-Skript und Konsistenzprüfung hängen von externen Modulen ab (reflex, widerspruch, semantic), die nicht im Artefakt enthalten sind - Laufzeitfehler möglich bei fehlenden Dependencies; Audit-Skript: Doppelte Code-Logik in load_events() und
+
+### `last_swarm_goal`
+*10.09. 02:09 UTC · Quelle: system*
+
+Alte Schwarm-Informationen erneuern und prüfen
+
+### `dream:20260910020859:5:6f06dd`
+*10.09. 02:08 UTC · Quelle: dream*
+
+Drive goals capture correct priorities (model errors, skill testing, swarm freshness) but have no resolution deadline or escalation path.
+
+### `dream:20260910020859:4:2fabeb`
+*10.09. 02:08 UTC · Quelle: dream*
+
+Swarm knowledge refresh works via reflex but lacks scheduled freshness enforcement, leading to stale critiques.
+
+### `dream:20260910020859:3:803310`
+*10.09. 02:08 UTC · Quelle: dream*
+
+The nemotron model shows high latency variance (8–15s) and 502 errors under load, making single-model dependency unsafe.
+
+### `dream:20260910020859:2:30c29e`
+*10.09. 02:08 UTC · Quelle: dream*
+
+Skill proposals accumulate in logs but lack an automated validation gate (syntax check, simulation, score threshold) before deployment.
+
+### `dream:20260910020859:1:72486b`
+*10.09. 02:08 UTC · Quelle: dream*
+
+Model provider failures (502/429) are the primary system bottleneck, yet self-diagnosis only checks internal organs, not external API health.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modelle zuverlässiger ma:2`
 *10.09. 01:41 UTC · Quelle: evolution*
@@ -43846,21 +43901,6 @@ High stress metabolism state ('conserve') successfully limits task execution bud
 
 Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overloads (502) during high-stress or high-frequency swarm operations.
 
-### `anti_pattern:selflearn_unzuverlaessige_werkzeuge`
-*27.08. 01:50 UTC · Quelle: selflearn*
-
-Diese Werkzeuge scheiterten haeufig (<34% Erfolg): destillat-datensatz-gedächtnis-wird-trai. Erst Ursache pruefen, dann erneut einsetzen.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Destillat-Datensatz: Ged:2`
-*27.08. 01:49 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 4, 10]): Teacher-Student Active Distillation - Instead of passively extracting existing memories, use a teacher LLM to actively synthesize training pairs from memory snippets. destillat.py samples diverse memory chunks, promp
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Destillat-Datensatz: Ged:0`
-*27.08. 01:49 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 8, 6]): Monolithic Extraction & Validation Script - Create a single self-contained destillat.py that directly connects to the memory backend (e.g., SQLite, vector store, or API), extracts all memory entries, applies quality f
-
 ### `last_swarm_critique`
 *27.08. 01:48 UTC · Quelle: critic*
 
@@ -43870,31 +43910,6 @@ score=1; issues=No destillat.py artifact was provided - only an audit script and
 *27.08. 01:44 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260827014404:5:3f3728`
-*27.08. 01:44 UTC · Quelle: dream*
-
-Self-diagnosis and pruning report zero issues while external model failures persist, indicating observability gaps at the integration layer.
-
-### `dream:20260827014404:4:0c1468`
-*27.08. 01:44 UTC · Quelle: dream*
-
-High latency variance (9–40 s) on the same model signals upstream instability needing circuit-breaker guards.
-
-### `dream:20260827014404:3:5fdd93`
-*27.08. 01:44 UTC · Quelle: dream*
-
-Evolution cycles improve variant quality (4→9) but swarm convergence fails when critic-to-builder ratio is too low (1:3).
-
-### `dream:20260827014404:2:7a1b54`
-*27.08. 01:44 UTC · Quelle: dream*
-
-Model fallback chains must be pre-validated and ranked by reliability metrics, not discovered during task execution.
-
-### `dream:20260827014404:1:8c4cf0`
-*27.08. 01:44 UTC · Quelle: dream*
-
-Rate limits (429 errors) across multiple providers constitute a systemic bottleneck requiring proactive health tracking rather than reactive retries.
 
 ### `last_swarm_critique`
 *27.08. 01:06 UTC · Quelle: critic*
