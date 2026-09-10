@@ -5,8 +5,8 @@
       "source_module": "selflearn",
       "first_learned": "2026-08-27T20:19:32.101256",
       "proficiency": 0.6,
-      "usage_count": 11,
-      "last_used": "2026-09-07T13:24:18.167824",
+      "usage_count": 12,
+      "last_used": "2026-09-10T15:46:23.332998",
       "metadata": {
         "task": "analyze_modules"
       }
@@ -16,8 +16,8 @@
       "source_module": "werkbank",
       "first_learned": "2026-08-27T20:19:32.101764",
       "proficiency": 0.4,
-      "usage_count": 11,
-      "last_used": "2026-09-07T13:24:18.168461",
+      "usage_count": 12,
+      "last_used": "2026-09-10T15:46:23.333704",
       "metadata": {
         "task": "add_tracking"
       }
@@ -27,8 +27,8 @@
       "source_module": "selflearn",
       "first_learned": "2026-08-27T20:19:32.102139",
       "proficiency": 0.8,
-      "usage_count": 11,
-      "last_used": "2026-09-07T13:24:18.168900",
+      "usage_count": 12,
+      "last_used": "2026-09-10T15:46:23.334197",
       "metadata": {
         "task": "json_tracking"
       }
@@ -37,6 +37,6 @@
   "metadata": {
     "created": "2026-08-27T20:19:32.101248",
     "version": "1.0",
-    "last_updated": "2026-09-07T13:24:18.168973"
+    "last_updated": "2026-09-10T15:46:23.334283"
   }
 }

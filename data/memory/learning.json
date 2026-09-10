@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 15:34:10",
+ "stand": "2026-09-10 15:46:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -189,12 +189,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktanalyse-auffrischen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -376,6 +370,12 @@
   },
   {
    "tool": "mehr-evolution-starten.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "neue-fähigkeiten-erlernen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

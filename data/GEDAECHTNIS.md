@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11790 Fakten** · Stand 2026-09-10 15:36 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-10 15:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7506
-- **swarm_artifact:** 1853
+- **dream:** 7511
+- **swarm_artifact:** 1847
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
-- **anti_pattern:** 431
-- **strategy:** 217
+- **anti_pattern:** 429
+- **strategy:** 216
 - **tool:** 167
 - **hand_result:** 99
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910154508:5:2113d5`
+*10.09. 15:45 UTC · Quelle: dream*
+
+Lange Antworten verursachen hohe Latenz und Tokenkosten; ein kleiner ausführbarer Kern ist robuster als umfangreiche, erst danach testbare Prosa.
+
+### `dream:20260910154508:4:6d2f73`
+*10.09. 15:45 UTC · Quelle: dream*
+
+Die Evolution verbesserte die Bewertungen deutlich, doch ein Variantensieger ist erst dann belastbar, wenn seine Auswahlregel eindeutig ist und das Ergebnis anschließend ausgeführt wird.
+
+### `dream:20260910154508:3:c5c681`
+*10.09. 15:45 UTC · Quelle: dream*
+
+Die Prognose 3 bei tatsächlich 1 Zyklus zeigt zu optimistische Konfidenz nach Vorfehlern; weitere Schätzungen müssen den beobachteten absoluten Fehler konservativ einpreisen.
+
+### `dream:20260910154508:2:992419`
+*10.09. 15:45 UTC · Quelle: dream*
+
+Wiederholte 429-Fehler bei Google-Gemma erzeugten keinen Nutzen; nach einem Rate-Limit sollte der Workflow den Anbieter sofort meiden und auf einen bestätigt funktionierenden Anbieter wechseln.
+
+### `dream:20260910154508:1:75fdc1`
+*10.09. 15:45 UTC · Quelle: dream*
+
+Der primäre Misserfolgsmodus war ein nicht ausführbares Artefakt: Jede Lösung muss vor der Bewertung mindestens einen lauffähigen Python-Block enthalten.
 
 ### `dream:20260910153349:5:6370d7`
 *10.09. 15:33 UTC · Quelle: dream*
@@ -44019,16 +44044,6 @@ Primary model rate-limiting (429) is the dominant failure mode, and high-latency
 *27.08. 16:29 UTC · Quelle: dream*
 
 Reflex-based execution converges reliably, while pure proposal generation without implementation leaves the same problems recurring across cycles.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
-*27.08. 15:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Retrieval‑augmented skill library composition - Maintain a curated repository of verified skill modules indexed by semantic descriptors. For a new proposal, retrieve the nearest‑matching modules via embedding similarity, then
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
-*27.08. 15:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Formal specification‑guided program synthesis - Translate each proposal into a precise formal specification (e.g., pre‑/post‑conditions, invariants) using a lightweight DSL. Feed the specification to a program‑synthesis engin
 
 ### `last_swarm_critique`
 *27.08. 15:40 UTC · Quelle: critic*
