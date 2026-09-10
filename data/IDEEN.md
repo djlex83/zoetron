@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Infrastructure-level errors are currently being processed as task-level failures, obscuring true model performance.
+- Stale swarm intelligence occurs when decision-making cycles outpace the validity of the environmental state.
+- Low convergence scores coupled with high revision counts indicate an ineffective evolutionary loop.
+- Swarm convergence is highly sensitive to the availability and consistency of the underlying LLM providers.
+- Heavy reliance on specific free model endpoints creates a systemic single point of failure via rate-limiting.
 - Self-calibration was inaccurate (predicted 3, actual 1, abs_error 2), indicating the system's internal confidence estimates do not reliably match real
 - Evolutionary variant generation (3 variants) improved scores from 1/10 to 8/10, demonstrating that multi-variant exploration is highly effective for p
 - The inclusionai/ling-3.0-flash-fin model is the only consistently reliable model across all attempts, succeeding every time with variable latency and 
@@ -51,11 +56,6 @@
 - Under conserve state with stress=1.0 and minimal budget, cycling through multiple models wastes resources; the system should lock onto the single prov
 - Repeated 429 rate-limit errors from specific models (gemma-4-31b-it, gemma-4-26b-a4b-it) indicate these models must be blacklisted or cooldown-tracked
 - Exit code 0 does not guarantee task completion; scripts that silently skip file/directory access must be detected by validating actual I/O, not just r
-- The system successfully converged on skill-linking via reflex mode after model failures, indicating that reflex-driven consolidation is more reliable 
-- Executing actions without validating the data path first produces meaningless results (hand_action returned ok=false with no file touched), so precond
-- Stale swarm knowledge actively degrades decision quality, and the system's own pruning of 5 facts and 14 events demonstrates that regular consolidatio
-- Consecutive model failures follow a pattern where the system recovers only by switching to an alternate model, confirming that a ranked fallback chain
-- Provider-level rate limits (429 errors) affect all models on the same API provider simultaneously, so per-model failure tracking is insufficient and p
 
 ---
 

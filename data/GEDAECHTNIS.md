@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11779 Fakten** · Stand 2026-09-10 11:14 UTC · aktualisiert bei jedem Herzschlag
+**11775 Fakten** · Stand 2026-09-10 11:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7460
-- **swarm_artifact:** 1881
+- **dream:** 7465
+- **swarm_artifact:** 1875
 - **last_swarm_critique:** 870
 - **last_swarm_goal:** 604
-- **anti_pattern:** 433
-- **strategy:** 218
+- **anti_pattern:** 431
+- **strategy:** 217
 - **tool:** 170
 - **hand_result:** 101
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910112231:5:bdea0f`
+*10.09. 11:22 UTC · Quelle: dream*
+
+Infrastructure-level errors are currently being processed as task-level failures, obscuring true model performance.
+
+### `dream:20260910112231:4:d63da3`
+*10.09. 11:22 UTC · Quelle: dream*
+
+Stale swarm intelligence occurs when decision-making cycles outpace the validity of the environmental state.
+
+### `dream:20260910112231:3:a61302`
+*10.09. 11:22 UTC · Quelle: dream*
+
+Low convergence scores coupled with high revision counts indicate an ineffective evolutionary loop.
+
+### `dream:20260910112231:2:828b9d`
+*10.09. 11:22 UTC · Quelle: dream*
+
+Swarm convergence is highly sensitive to the availability and consistency of the underlying LLM providers.
+
+### `dream:20260910112231:1:4c41b2`
+*10.09. 11:22 UTC · Quelle: dream*
+
+Heavy reliance on specific free model endpoints creates a systemic single point of failure via rate-limiting.
 
 ### `dream:20260910111207:5:9be3df`
 *10.09. 11:12 UTC · Quelle: dream*
@@ -43879,16 +43904,6 @@ Rate limiting (429) is the dominant failure mode across multiple providers, indi
 *27.08. 11:22 UTC · Quelle: hands*
 
 Ausfuehrbares Python-Werkzeug aus Ziel 'Neue Fähigkeiten aktiv vorschlagen'. Datei: data/tools/neue-fähigkeiten-aktiv-vorschlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Neue Fähigkeiten aktiv v:2`
-*27.08. 11:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Competitive Capability Benchmarking - Create an automated benchmarking suite that: (1) defines a standardized capability taxonomy across domains, (2) scrapes documentation/API specs of 10+ competitor systems, (3) runs compara
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Neue Fähigkeiten aktiv v:1`
-*27.08. 11:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): User Interaction Gap Analysis - Deploy an instrumentation layer that captures all user requests, failed commands, clarification cycles, and fallback behaviors in production. Cluster these interactions using embeddings to disc
 
 ### `last_swarm_critique`
 *27.08. 11:17 UTC · Quelle: critic*
