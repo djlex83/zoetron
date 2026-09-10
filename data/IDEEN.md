@@ -1,11 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 01:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 01:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 6×)*
+- ModelRouterSkill: priority-ordered provider pool with 5-minute circuit-break on 429/502/timeout errors and dyn *(hatte die Idee 5×)*
 - Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 4×)*
 - Add convergence_guardrail that detects stalled optimization scores across 3+ cycles and triggers emergency evo *(hatte die Idee 4×)*
 - Deploy ModelRouter with per-provider circuit breakers tracking 429/502 rates, p95 latency, and success rate; a *(hatte die Idee 4×)*
@@ -18,7 +19,6 @@
 - DependencyHealthSkill: track 5-min failure rate per provider; auto-disable when >20%. *(hatte die Idee 4×)*
 - EventLogHygieneSkill: cap model-failure events at 50/session; aggregate excess into single 'degraded_period' f *(hatte die Idee 4×)*
 - SkillValidationGateSkill: require passing simulation benchmark + latency/error SLA before promoting proposal t *(hatte die Idee 4×)*
-- ModelRouterSkill: priority-ordered provider pool with 5-minute circuit-break on 429/502/timeout errors and dyn *(hatte die Idee 4×)*
 - Implement silent-failure detector that verifies actual file/directory access after script completion, raising  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning effectively reduces memory bloat but must be paired with durable insight extraction to avoid losing cross-episode patterns.
+- Reflex-driven learning (e.g., dream utilization) converges faster than deliberative swarms for well-scoped improvements.
+- Simultaneous multi-model failures cascade into system chaos; a circuit-breaker router with priority pools can isolate and contain blast radius.
+- Swarm convergence fails when critiques are stale; freshness scheduling and evidence logging are needed to prevent wasted cycles.
+- Rate limiting (429) on free-tier models is a systemic bottleneck requiring proactive provider health monitoring and automatic failover.
 - Only inclusionai/ling-3.0-flash-fin:free responds successfully, creating a single point of failure.
 - Calibration overestimated success by 200% (predicted 3 vs actual 1), indicating need for better difficulty estimation.
 - Evolutionary variant generation improved a 1/10 score to 9/10, proving iterative refinement with selection works.
@@ -51,11 +56,6 @@
 - Prose-only artifacts fail to converge; executable Python code blocks are mandatory for task completion and must be enforced in all generated outputs.
 - inclusionai/ling-3.0-flash-fin is the only reliably functioning model in this environment, succeeding on every call with sub-5s latency, and should be
 - Free-tier OpenRouter models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently return 429 rate-limit errors and must never be used as primary models fo
-- Swarm intelligence is stale: drive goals explicitly note swarm critiques/goals are outdated, yet metabolism budget prevents launching new swarm tasks.
-- Skill proposal pipeline is broken: proposals accumulate (extend evolution runs, build reliability scorecard) but reflex execution fails (modellfehler-
-- System operates in permanent conserve mode (stress=1.0, max_tasks=3, max_iterations=1) preventing meaningful multi-cycle evolution or swarm refresh cy
-- Model banning mechanism (1800s after 3 consecutive errors) is reactive not preventive - it triggers after damage is done rather than routing around kn
-- Free-tier models exhibit catastrophic reliability: 75% of configured models (Nemotron, both Gemmas) fail with 404/429 errors while only inclusionai/li
 
 ---
 

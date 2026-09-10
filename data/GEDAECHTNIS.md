@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11782 Fakten** · Stand 2026-09-10 01:08 UTC · aktualisiert bei jedem Herzschlag
+**11778 Fakten** · Stand 2026-09-10 01:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7412
-- **swarm_artifact:** 1920
+- **dream:** 7417
+- **swarm_artifact:** 1915
 - **last_swarm_critique:** 862
 - **last_swarm_goal:** 596
-- **anti_pattern:** 443
-- **strategy:** 223
-- **tool:** 173
+- **anti_pattern:** 441
+- **strategy:** 222
+- **tool:** 172
 - **hand_result:** 108
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910011615:5:1f0d74`
+*10.09. 01:16 UTC · Quelle: dream*
+
+Pruning effectively reduces memory bloat but must be paired with durable insight extraction to avoid losing cross-episode patterns.
+
+### `dream:20260910011615:4:24783f`
+*10.09. 01:16 UTC · Quelle: dream*
+
+Reflex-driven learning (e.g., dream utilization) converges faster than deliberative swarms for well-scoped improvements.
+
+### `dream:20260910011615:3:0d1575`
+*10.09. 01:16 UTC · Quelle: dream*
+
+Simultaneous multi-model failures cascade into system chaos; a circuit-breaker router with priority pools can isolate and contain blast radius.
+
+### `dream:20260910011615:2:86e2fd`
+*10.09. 01:16 UTC · Quelle: dream*
+
+Swarm convergence fails when critiques are stale; freshness scheduling and evidence logging are needed to prevent wasted cycles.
+
+### `dream:20260910011615:1:5f9dd3`
+*10.09. 01:16 UTC · Quelle: dream*
+
+Rate limiting (429) on free-tier models is a systemic bottleneck requiring proactive provider health monitoring and automatic failover.
 
 ### `dream:20260910010541:5:a6aa47`
 *10.09. 01:05 UTC · Quelle: dream*
@@ -43800,21 +43825,6 @@ Model fallback chains must be pre-validated and ranked by reliability metrics, n
 *27.08. 01:44 UTC · Quelle: dream*
 
 Rate limits (429 errors) across multiple providers constitute a systemic bottleneck requiring proactive health tracking rather than reactive retries.
-
-### `tool:destillat-datensatz-gedächtnis-wird-trai`
-*27.08. 01:08 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Destillat-Datensatz: Gedächtnis wird Trainingsmaterial'. Datei: data/tools/destillat-datensatz-gedächtnis-wird-trai.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Destillat-Datensatz: Ged:1`
-*27.08. 01:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Adapter wrapper module - Create a separate module that defines a transformation function which converts the current output format into the required schema. This function can be applied after destillat.py runs. NICHT wiederhol
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Destillat-Datensatz: Ged:0`
-*27.08. 01:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Direct refactoring of destillat.py - Modify destillat.py to directly output a dictionary with top-level keys goal, context, solution, score, and test_status. Populate these fields from the existing data and set test_status to
 
 ### `last_swarm_critique`
 *27.08. 01:06 UTC · Quelle: critic*
