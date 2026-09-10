@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11789 Fakten** · Stand 2026-09-10 09:56 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-10 10:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7465
-- **swarm_artifact:** 1885
+- **dream:** 7470
+- **swarm_artifact:** 1881
 - **last_swarm_critique:** 869
 - **last_swarm_goal:** 603
-- **anti_pattern:** 433
-- **strategy:** 218
+- **anti_pattern:** 431
+- **strategy:** 217
 - **tool:** 171
-- **hand_result:** 102
+- **hand_result:** 101
 - **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910100511:5:7f81cf`
+*10.09. 10:05 UTC · Quelle: dream*
+
+Pruning 22 events while consolidating only 5 facts reveals that the system accumulates stale state faster than it distills durable knowledge, degrading decision quality over time.
+
+### `dream:20260910100511:4:ca30e8`
+*10.09. 10:05 UTC · Quelle: dream*
+
+429 rate-limit errors are predictable precursors, not surprises; response headers and request frequency should trigger preemptive traffic shifting before blocks occur.
+
+### `dream:20260910100511:3:5e5a4f`
+*10.09. 10:05 UTC · Quelle: dream*
+
+The gap between proposed skills and operationalized defenses is itself a failure mode—ideas without implementation deadlines decay into cognitive debt.
+
+### `dream:20260910100511:2:4bf21f`
+*10.09. 10:05 UTC · Quelle: dream*
+
+The sole reliable model (inclusionai/ling-3.0-flash-fin) creates a dangerous single-point-of-failure; the system must maintain at least three pre-verified fallback models per task class.
+
+### `dream:20260910100511:1:71c5c7`
+*10.09. 10:05 UTC · Quelle: dream*
+
+Recurring timeouts and 429 errors on identical models across multiple timestamps indicate systemic provider-side instability that demands circuit-breaker logic rather than naive retries.
 
 ### `dream:20260910095231:5:278f2e`
 *10.09. 09:52 UTC · Quelle: dream*
@@ -43924,16 +43949,6 @@ Nvidia Nemotron models show higher reliability but extreme latency variance (8-1
 *27.08. 10:13 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) across multiple free-tier models is the primary systemic failure mode, not model capability.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: IMPORT und EXPORT fertig:2`
-*27.08. 09:58 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.7): Zweiphasiger Diff-Export mit Delta-Kompression - Export-Skript erzeugt zuerst einen vollständigen Snapshot, danach nur Deltas als Patch-Datei. Verwende ein Schema-basiertes Format (z.B. JSON-Schema), das zur Laufzeit alle V
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: IMPORT und EXPORT fertig:1`
-*27.08. 09:58 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.3): Event-Sourcing mit Replay - Statt State zu exportieren, exportiere eine chronologische Liste aller Mutationen (Events) als JSON-Array. Jedes Event enthält Operationstyp, Zeitstempel, Schlüssel und Wert. Beim Import werden d
 
 ### `last_swarm_critique`
 *27.08. 09:56 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 09:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 10:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,7 +29,7 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 22 events while consolidating only 5 facts reveals that the system accumulates stale state faster than it distills durable knowledge, degradin
+- 429 rate-limit errors are predictable precursors, not surprises; response headers and request frequency should trigger preemptive traffic shifting bef
+- The gap between proposed skills and operationalized defenses is itself a failure mode—ideas without implementation deadlines decay into cognitive debt
+- The sole reliable model (inclusionai/ling-3.0-flash-fin) creates a dangerous single-point-of-failure; the system must maintain at least three pre-veri
+- Recurring timeouts and 429 errors on identical models across multiple timestamps indicate systemic provider-side instability that demands circuit-brea
 - The revision loop applied 3 revisions to the simulation but the final score remained 1, suggesting revisions address surface issues rather than the ro
 - Calibration predicted 4 for 'Simulationen in Taten umsetzen' but actual was 1 (abs_error: 3), revealing a severe overestimation bias that must be corr
 - The evolutionary swarm produced non-executable Python code (critic: 'LAEUFT NICHT: Kein ausführbarer Python'), scoring 1/10 despite 3 variants and 2 c
@@ -51,11 +56,6 @@
 - The reflex-based error-reduction procedure (modellfehler-reduzieren-fuer-zuverlaessi.py) converged successfully, proving that structured procedural re
 - Model reliability is highly uneven: inclusionai/ling-3.0-flash-fin succeeds consistently under load while google/gemma models fail repeatedly, making 
 - External API rate limits (429 errors) are the dominant failure cause, not internal system defects — self-diagnosis confirmed zero organ errors across 
-- Consecutive model failures cascade into lockouts that compound the original problem, meaning failure isolation must happen before retry logic to preve
-- The reflex-based self-healing loop (schwarmwissen-wieder-auffrischen.py) and self-diagnosis both completed successfully, proving that internal mainten
-- The inclusionai/ling-3.0-flash-fin model is the only consistently reliable model across the entire experience window, succeeding on every invocation w
-- The nvidia/nemotron-3-ultra-550b model's 1800-second lockout after 3 consecutive failures creates a recovery deadlock where the model cannot be retrie
-- 429 rate-limit errors from OpenRouter are the dominant systemic failure mode, affecting multiple models simultaneously and indicating a provider-side 
 
 ---
 
