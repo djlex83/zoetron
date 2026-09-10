@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 20:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 20:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts/events aggressively (14/48) without visible criteria, risking loss of rare but critical patterns.
+- Reflex tools execute successfully (verbundene-traeume, schwarmlernen) but their outputs aren't fed back into skill synthesis.
+- Drive goals repeatedly signal stale, gap, and failure states but lack automated escalation into concrete remediation.
+- The poolside/laguna-s-2.1:free model consistently succeeds with low latency, suggesting a stable fallback anchor.
+- Free-tier models frequently hit 429 rate limits and 502 upstream errors, making single-model reliance unreliable.
 - Pruning aggressively removes facts/events but skill proposals accumulate unvalidated, creating a promotion gap.
 - Self-diagnosis reports zero organ errors while systemic failures (model, convergence) persist, revealing a monitoring blind spot.
 - Synchronous hand actions block for 20+ seconds on timeout, demanding async execution with configurable deadlines.
@@ -51,11 +56,6 @@
 - Evolutionary variant generation improved a 1/10 scoring solution to 8/10 in one cycle, confirming iteration beats single-shot generation.
 - inclusionai/ling-3.0-flash-sante:free delivers successful completions at 2-6s latency, outperforming other free models on speed and reliability.
 - Google Gemma models consistently hit 429 rate limits making them unreliable for high-throughput tasks.
-- Bahnen score of 1 with delta -0.5 shows capability consolidation regresses when infrastructure failures dominate.
-- Calibration error (predicted 2, actual 1) indicates the planner overestimates throughput when rate limits are active.
-- Hand actions lack retry/backoff logic: a single 30s timeout cascades into artifact failure (tor grün=false) without fallback.
-- poolside/laguna-s-2.1:free shows bimodal latency (1-2s vs 40s) suggesting cold-start or queueing effects, while inclusionai/ling-3.0-flash-vl:free con
-- Rate limiting (HTTP 429) from OpenRouter is the dominant failure mode across all model providers, making free-tier models unreliable for production wo
 
 ---
 

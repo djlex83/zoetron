@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 20:05 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-10 20:16 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7551
 - **swarm_artifact:** 1819
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910201357:5:479301`
+*10.09. 20:13 UTC · Quelle: dream*
+
+Pruning removes facts/events aggressively (14/48) without visible criteria, risking loss of rare but critical patterns.
+
+### `dream:20260910201357:4:a8e78d`
+*10.09. 20:13 UTC · Quelle: dream*
+
+Reflex tools execute successfully (verbundene-traeume, schwarmlernen) but their outputs aren't fed back into skill synthesis.
+
+### `dream:20260910201357:3:27cddf`
+*10.09. 20:13 UTC · Quelle: dream*
+
+Drive goals repeatedly signal stale, gap, and failure states but lack automated escalation into concrete remediation.
+
+### `dream:20260910201357:2:58b614`
+*10.09. 20:13 UTC · Quelle: dream*
+
+The poolside/laguna-s-2.1:free model consistently succeeds with low latency, suggesting a stable fallback anchor.
+
+### `dream:20260910201357:1:9cd076`
+*10.09. 20:13 UTC · Quelle: dream*
+
+Free-tier models frequently hit 429 rate limits and 502 upstream errors, making single-model reliance unreliable.
 
 ### `dream:20260910200253:5:99e4dd`
 *10.09. 20:02 UTC · Quelle: dream*
@@ -44132,31 +44157,6 @@ score=7; issues=Integration durch String-Anhängen an bestehende Module ist frag
 *27.08. 20:10 UTC · Quelle: system*
 
 Neue Fähigkeiten erlernen
-
-### `dream:20260827201020:5:4f6d40`
-*27.08. 20:10 UTC · Quelle: dream*
-
-Simulation-based revision loops (verdict: revise, 3 risks → 3 revisions) converge but lack success-rate telemetry.
-
-### `dream:20260827201020:4:7a8c3a`
-*27.08. 20:10 UTC · Quelle: dream*
-
-Latency spans 2–42s on successes, demanding adaptive timeouts tied to per-model rolling percentiles.
-
-### `dream:20260827201020:3:f8043f`
-*27.08. 20:10 UTC · Quelle: dream*
-
-Poolside/laguna-s-2.1:free shows highest reliability and lowest latency variance, making it the primary fallback candidate.
-
-### `dream:20260827201020:2:62a8c1`
-*27.08. 20:10 UTC · Quelle: dream*
-
-Consecutive failure tracking (3 errors → 1800s block) effectively prevents cascade overload but needs per-model circuit breakers.
-
-### `dream:20260827201020:1:7baed4`
-*27.08. 20:10 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the dominant systemic failure across all free-tier models, requiring request pacing rather than model switching.
 
 ### `last_swarm_critique`
 *27.08. 19:45 UTC · Quelle: critic*
