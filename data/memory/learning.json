@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 15:57:28",
+ "stand": "2026-09-10 16:08:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -43,12 +43,6 @@
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 4,
-   "erfolge": 3,
-   "quote": 0.75
   },
   {
    "tool": "simulationen-gezielt-einsetzen.py",
@@ -123,6 +117,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 2,
+   "quote": 0.667
+  },
+  {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -186,12 +186,6 @@
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -375,7 +369,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.755,
+ "haende_quote": 0.754,
  "simulationen_angewandt": 36,
  "swarm_scores": {
   "n": 27,

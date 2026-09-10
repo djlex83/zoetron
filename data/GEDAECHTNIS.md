@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11791 Fakten** · Stand 2026-09-10 15:59 UTC · aktualisiert bei jedem Herzschlag
+**11796 Fakten** · Stand 2026-09-10 16:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7516
+- **dream:** 7521
 - **swarm_artifact:** 1847
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910160732:5:c90d4f`
+*10.09. 16:07 UTC · Quelle: dream*
+
+Router-, Health-Ledger-, Backoff- und Frischeprüfungs-Vorschläge beschreiben denselben Zuverlässigkeitsbereich und sollten zu einem einzigen testbaren Workflow verschmolzen werden.
+
+### `dream:20260910160732:4:a652f8`
+*10.09. 16:07 UTC · Quelle: dream*
+
+Kontext-Pruning kann Diagnosewissen vernichten; Fehlerklassen, Circuit-Breaker-Zustände, erfolgreiche Fallbacks und Provenienz müssen beim Beschneiden erhalten bleiben.
+
+### `dream:20260910160732:3:051427`
+*10.09. 16:07 UTC · Quelle: dream*
+
+Erfolgreiche Schwarm-Auffrischungs- und Reaktivierungs-Reflexe ohne Organfehler zeigen, dass regelmäßige Frischeprüfungen veraltete Wissensbestände wirksam wieder nutzbar machen.
+
+### `dream:20260910160732:2:b93169`
+*10.09. 16:07 UTC · Quelle: dream*
+
+Ein kleines, gesundes Modell kann größere oder überlastete Modelle zuverlässig ersetzen; die Auswahl sollte sich an aktueller Gesundheit, Latenz und Kontingentlage orientieren, nicht an Modellgröße.
+
+### `dream:20260910160732:1:040653`
+*10.09. 16:07 UTC · Quelle: dream*
+
+Modellausfälle häufen sich pro Endpunkt und Fehlertyp; Timeouts und 429 erfordern getrennte, endpunktspezifische Schutz- und Wiederanlaufstrategien.
 
 ### `dream:20260910155654:5:62a30b`
 *10.09. 15:56 UTC · Quelle: dream*

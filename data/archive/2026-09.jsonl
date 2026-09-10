@@ -34988,3 +34988,22 @@
 {"ts": 1788450739.2111313, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788450739.2111282, "schalter_geoeffnet": false}}
 {"ts": 1788450855.8547213, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 116.6, "tokens_ein": 2111, "tokens_aus": 3053}}
 {"ts": 1788450856.8435402, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788450856.8435364, "schalter_geoeffnet": false}}
+{"ts": 1788450977.311032, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 120.5, "tokens_ein": 2516, "tokens_aus": 3784}}
+{"ts": 1788450978.2474906, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788450978.2474868, "schalter_geoeffnet": false}}
+{"ts": 1788451044.8878522, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 66.6, "tokens_ein": 2929, "tokens_aus": 4173}}
+{"ts": 1788451046.0891452, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.72, "gelesen": 1}}
+{"ts": 1788451046.6600037, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.57, "gelesen": 1}}
+{"ts": 1788451046.660281, "kind": "tor", "payload": {"goal": "Modellfehler durch Kalibrierung senken", "gruen": true, "grund": "Artefakt laeuft (364 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788451047.8972435, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788451047.897238, "schalter_geoeffnet": false}}
+{"ts": 1788451096.4802132, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 48.6, "tokens_ein": 9710, "tokens_aus": 880}}
+{"ts": 1788451096.4807944, "kind": "calibration", "payload": {"goal": "Modellfehler durch Kalibrierung senken", "predicted": 6, "actual": 8, "abs_error": 2}}
+{"ts": 1788451096.4808745, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 8}}
+{"ts": 1788451096.9489837, "kind": "bahnen", "payload": {"goal": "Modellfehler durch Kalibrierung senken", "delta": 1.0, "kanten": 21, "hat_code": true, "score": 8, "abgerufen": 6, "ids": ["e:f9bee97167d6", "e:b4bb85bb7163", "e:1e5fbc167dc8", "f:7c369f1c342d", "g:571c958230d6", "f:ebef158656f3"], "ziel_id": "g:b211d87b462d"}}
+{"ts": 1788451096.9492059, "kind": "swarm_finished", "payload": {"goal": "Modellfehler durch Kalibrierung senken", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1788451096.9495034, "kind": "act_done", "payload": {"goal_title": "Modellfehler durch Kalibrierung senken", "score": 8, "converged": true}}
+{"ts": 1788451097.9578388, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.52, "gelesen": 1}}
+{"ts": 1788451100.1626494, "kind": "issue_synced", "payload": {"issue": 341, "state": "closed"}}
+{"ts": 1788451508.528432, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788451577.406094, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788451578.9848387, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788451583.0897124, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788451583.0897095, "schalter_geoeffnet": false}}

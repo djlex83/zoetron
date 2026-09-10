@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 15:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 16:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,10 +25,10 @@
 
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Router-, Health-Ledger-, Backoff- und Frischeprüfungs-Vorschläge beschreiben denselben Zuverlässigkeitsbereich und sollten zu einem einzigen testbaren
+- Kontext-Pruning kann Diagnosewissen vernichten; Fehlerklassen, Circuit-Breaker-Zustände, erfolgreiche Fallbacks und Provenienz müssen beim Beschneiden
+- Erfolgreiche Schwarm-Auffrischungs- und Reaktivierungs-Reflexe ohne Organfehler zeigen, dass regelmäßige Frischeprüfungen veraltete Wissensbestände wi
+- Ein kleines, gesundes Modell kann größere oder überlastete Modelle zuverlässig ersetzen; die Auswahl sollte sich an aktueller Gesundheit, Latenz und K
+- Modellausfälle häufen sich pro Endpunkt und Fehlertyp; Timeouts und 429 erfordern getrennte, endpunktspezifische Schutz- und Wiederanlaufstrategien.
 - Pruning without causal preservation risks erasing failure root causes, reducing future diagnostic accuracy.
 - Cascading model failures occur when fallback mechanisms are absent, amplifying initial errors into system-wide degradation.
 - Self-diagnosis currently lacks integration with failure pattern recognition, missing opportunities to detect recurring infrastructure issues.
@@ -51,11 +56,6 @@
 - Die Prognose 3 bei tatsächlich 1 Zyklus zeigt zu optimistische Konfidenz nach Vorfehlern; weitere Schätzungen müssen den beobachteten absoluten Fehler
 - Wiederholte 429-Fehler bei Google-Gemma erzeugten keinen Nutzen; nach einem Rate-Limit sollte der Workflow den Anbieter sofort meiden und auf einen be
 - Der primäre Misserfolgsmodus war ein nicht ausführbares Artefakt: Jede Lösung muss vor der Bewertung mindestens einen lauffähigen Python-Block enthalt
-- Metabolism state 'conserve' with max_tasks=3 and max_iterations=1 limits parallelism and iteration depth, directly contributing to premature task term
-- Simulations with high risk scores (5/5) and multiple revisions (3) led to incomplete convergence, indicating that overly complex goals may exceed curr
-- Tasks requiring executable code (e.g., Python blocks) failed when only prose was generated, showing that artifact format validation must be enforced b
-- The inclusionai/ling-3.0-flash-fin model consistently succeeded across varying token loads and latencies, suggesting it is more robust under resource 
-- Repeated 429 errors from Google Gemma models indicate rate-limiting under concurrent load, making them unreliable for high-frequency or parallel task 
 
 ---
 
