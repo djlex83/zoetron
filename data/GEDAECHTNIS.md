@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 20:59 UTC · aktualisiert bei jedem Herzschlag
+**11792 Fakten** · Stand 2026-09-10 21:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7561
+- **dream:** 7566
 - **swarm_artifact:** 1813
-- **last_swarm_critique:** 874
-- **last_swarm_goal:** 609
+- **last_swarm_critique:** 875
+- **last_swarm_goal:** 610
 - **anti_pattern:** 417
 - **strategy:** 210
 - **tool:** 165
-- **hand_result:** 97
+- **hand_result:** 96
 - **aktuell_organfehler:** 40
 
 ---
+
+### `last_swarm_critique`
+*10.09. 21:17 UTC · Quelle: critic*
+
+score=9; issues=Code-Duplikation: Scoring-Logik in Artefakt 2 und 3 redundant implementiert statt shared Module; Inventar-Artefakt (1) wird von Review-Reflex (3) nicht konsumiert – Plans werden doppelt geladen; Keine explizite Integration-Test-Abdeckung sichtb
+
+### `last_swarm_goal`
+*10.09. 21:09 UTC · Quelle: system*
+
+Alte Pläne regelmäßig prüfen
+
+### `dream:20260910210828:5:f10ab8`
+*10.09. 21:08 UTC · Quelle: dream*
+
+Drive signals (failure, stale, gap) map to distinct remediation archetypes but lack automated escalation to scheduled reflex invocations with measurable outcomes.
+
+### `dream:20260910210828:4:d1d3be`
+*10.09. 21:08 UTC · Quelle: dream*
+
+Aggressive pruning (22 events in one cycle) risks discarding low-frequency high-impact patterns without audit trail or recovery mechanism.
+
+### `dream:20260910210828:3:7cd3db`
+*10.09. 21:08 UTC · Quelle: dream*
+
+Reflex-based execution converges reliably (2/2 converged) but operates blind: no success metrics, latency budgets, or health telemetry feed back into planning.
+
+### `dream:20260910210828:2:48ac6c`
+*10.09. 21:08 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a promotion pipeline: 10 proposals generated across two dream cycles, yet 'gap' signal persists indicating zero adoption into production reflexes.
+
+### `dream:20260910210828:1:3cf1e1`
+*10.09. 21:08 UTC · Quelle: dream*
+
+Model unreliability cascades across goals: repeated 'failure' signals correlate with high latency variance (33-65s) and drive recursive remediation attempts.
 
 ### `dream:20260910205705:5:08fb90`
 *10.09. 20:57 UTC · Quelle: dream*

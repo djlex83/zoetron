@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 20:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 21:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive signals (failure, stale, gap) map to distinct remediation archetypes but lack automated escalation to scheduled reflex invocations with measurab
+- Aggressive pruning (22 events in one cycle) risks discarding low-frequency high-impact patterns without audit trail or recovery mechanism.
+- Reflex-based execution converges reliably (2/2 converged) but operates blind: no success metrics, latency budgets, or health telemetry feed back into 
+- Skill proposals accumulate but lack a promotion pipeline: 10 proposals generated across two dream cycles, yet 'gap' signal persists indicating zero ad
+- Model unreliability cascades across goals: repeated 'failure' signals correlate with high latency variance (33-65s) and drive recursive remediation at
 - Five skill proposals exist but remain unimplemented, creating a proposal-execution gap that perpetuates known failure patterns.
 - Aggressive pruning (36 events) followed by minimal pruning (1 event) indicates system stabilizes after initial consolidation.
 - Self-diagnosis only checks internal organ health, missing external API failures which constitute the dominant failure mode.
@@ -51,11 +56,6 @@
 - Planner predictions diverge from reality when not calibrated against observed success rates.
 - Hard failures in hand actions waste compute; retry loops with partial result emission improve resilience.
 - Rate limiting (429 errors) is a systemic failure mode that cascades across models and requires adaptive fallback strategies.
-- File paths are resolved ad-hoc per action instead of being canonicalized once against ZOETRON_DATA and sys.argv[1], causing silent path mismatches.
-- Model calls show high latency variance (30-119s) and repeated 429 errors, yet no router exists to circuit-break, fallback, or load-balance across prov
-- Error logs, recovery traces, and calibration misses are pruned aggressively while stale facts persist, destroying the evidence needed for failure repl
-- Swarm convergence happens in a single cycle without mandatory dissent, causing premature approval of flawed approaches.
-- Skill proposals accumulate but rarely become executable code because no automated pipeline validates, tests, and promotes them.
 
 ---
 
