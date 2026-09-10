@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11791 Fakten** · Stand 2026-09-10 13:15 UTC · aktualisiert bei jedem Herzschlag
+**11785 Fakten** · Stand 2026-09-10 13:25 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7490
-- **swarm_artifact:** 1866
+- **swarm_artifact:** 1861
 - **last_swarm_critique:** 871
 - **last_swarm_goal:** 605
 - **anti_pattern:** 431
 - **strategy:** 217
 - **tool:** 169
-- **hand_result:** 100
+- **hand_result:** 99
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910132248:5:c0e6b6`
+*10.09. 13:22 UTC · Quelle: dream*
+
+Operating in conserve mode with a budget of max 1 iteration means every task attempt must be pre-validated; unverified retry loops on known-failing models directly violate the conservation constraint.
+
+### `dream:20260910132248:4:021b42`
+*10.09. 13:22 UTC · Quelle: dream*
+
+Simulations returning 'revise' with 5 risks and 5 revisions signal fundamental architectural flaws in the swarm orchestration design, not minor parameter tweaks that can be patched in-place.
+
+### `dream:20260910132248:3:dc567d`
+*10.09. 13:22 UTC · Quelle: dream*
+
+Skill proposals accumulate across cycles without implementation because no active maturation pipeline moves them from proposal to prototype to deployment, turning the system into a proposal factory rather than an executor.
+
+### `dream:20260910132248:2:f53d5f`
+*10.09. 13:22 UTC · Quelle: dream*
+
+All requests concentrate on the same overloaded providers because no provider-aware routing or fallback mechanism exists, creating a single point of failure that amplifies every upstream incident.
+
+### `dream:20260910132248:1:ef85d2`
+*10.09. 13:22 UTC · Quelle: dream*
+
+Infrastructure failures (502 upstream overload, 429 rate limits) are the dominant failure mode, not model capability deficits, and retrying the same degraded endpoints wastes the single allowed iteration under conserve mode.
 
 ### `dream:20260910131246:5:c70505`
 *10.09. 13:12 UTC · Quelle: dream*
@@ -43979,31 +44004,6 @@ score=8; issues=Artifact 2: FAISS index is not updated after removing entries, s
 *27.08. 13:21 UTC · Quelle: system*
 
 Effizienter werden
-
-### `dream:20260827131854:5:4cf526`
-*27.08. 13:18 UTC · Quelle: dream*
-
-Prediction calibration is absent, causing systematic overestimation of capability readiness as seen in repeated proposal revisions.
-
-### `dream:20260827131854:4:81eef5`
-*27.08. 13:18 UTC · Quelle: dream*
-
-Skill proposals accumulate without mandatory simulation validation, allowing untested capabilities to enter production.
-
-### `dream:20260827131854:3:8d9fa9`
-*27.08. 13:18 UTC · Quelle: dream*
-
-Swarm cycles lack objective convergence criteria, risking infinite loops or premature termination without score delta or critic approval thresholds.
-
-### `dream:20260827131854:2:a96a03`
-*27.08. 13:18 UTC · Quelle: dream*
-
-Latency variance for identical models (12.6s vs 78s) exceeds 6x, making static model assignment unreliable for time-sensitive tasks.
-
-### `dream:20260827131854:1:5c2abd`
-*27.08. 13:18 UTC · Quelle: dream*
-
-Rate limiting (429) affects all free-tier models simultaneously, requiring provider-agnostic backoff and rotation rather than per-model fixes.
 
 ### `last_swarm_critique`
 *27.08. 13:13 UTC · Quelle: critic*
