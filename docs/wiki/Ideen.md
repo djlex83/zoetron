@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 10:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 10:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,12 +26,12 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system successfully converged on skill-linking via reflex mode after model failures, indicating that reflex-driven consolidation is more reliable 
+- Executing actions without validating the data path first produces meaningless results (hand_action returned ok=false with no file touched), so precond
+- Stale swarm knowledge actively degrades decision quality, and the system's own pruning of 5 facts and 14 events demonstrates that regular consolidatio
+- Consecutive model failures follow a pattern where the system recovers only by switching to an alternate model, confirming that a ranked fallback chain
+- Provider-level rate limits (429 errors) affect all models on the same API provider simultaneously, so per-model failure tracking is insufficient and p
 - Regular pruning (8 facts, 33 events) is necessary but insufficient on its own; consolidation must run on a fixed schedule to prevent event accumulatio
 - The inclusionai/ling-3.0-flash-fin model succeeded consistently under both high and low token loads, indicating that smaller verified models are more 
 - Without an activation gate, skill proposals accumulate faster than they can be implemented, creating a backlog that mimics progress without producing 
@@ -51,11 +56,6 @@
 - The system lacks any pre-execution validation of generated code, allowing non-runnable or schema-invalid outputs to consume scoring resources before b
 - Transient failures (timeouts and 429 rate limits) are the dominant failure mode, and the absence of retry or backoff logic turns every temporary blip 
 - All model calls funnel through a single OpenRouter endpoint, making rate-limit failures systemic rather than model-specific, which means diversificati
-- Skill proposals without verified executable paths against current resource constraints are worthless; every proposed skill must be validated against m
-- Repeated 429 errors from the same API provider indicate a need for provider-level rate limit awareness, not just per-model tracking, since multiple mo
-- Under conserve/metabolic-stress conditions with minimal budget, the system must not attempt swarm operations or complex multi-step skill execution bec
-- A circuit breaker pattern is essential: after 2 consecutive failures from any model, that model should be proactively excluded from routing decisions 
-- When multiple external API providers return rate-limit or timeout errors simultaneously, the system must immediately route all traffic to the single k
 
 ---
 

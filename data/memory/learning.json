@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-10 10:41:52",
+ "stand": "2026-09-10 10:52:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -75,12 +75,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modelle-zuverlässiger-machen.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -133,6 +127,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "modelle-zuverlässiger-machen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
@@ -399,7 +399,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.718,
+ "haende_quote": 0.723,
  "simulationen_angewandt": 39,
  "swarm_scores": {
   "n": 30,
@@ -408,8 +408,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 4.46
+   "n": 27,
+   "schnitt": 4.48
   },
   "bau": {
    "n": 2,

@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11782 Fakten** · Stand 2026-09-10 10:43 UTC · aktualisiert bei jedem Herzschlag
+**11781 Fakten** · Stand 2026-09-10 10:54 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7455
 - **swarm_artifact:** 1887
@@ -10,9 +10,34 @@
 - **strategy:** 218
 - **tool:** 171
 - **hand_result:** 101
-- **aktuell_organfehler:** 43
+- **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910105219:5:640f53`
+*10.09. 10:52 UTC · Quelle: dream*
+
+The system successfully converged on skill-linking via reflex mode after model failures, indicating that reflex-driven consolidation is more reliable than model-dependent reasoning under resource pressure.
+
+### `dream:20260910105219:4:95e8a2`
+*10.09. 10:52 UTC · Quelle: dream*
+
+Executing actions without validating the data path first produces meaningless results (hand_action returned ok=false with no file touched), so precondition checks must gate all action execution.
+
+### `dream:20260910105219:3:8178f0`
+*10.09. 10:52 UTC · Quelle: dream*
+
+Stale swarm knowledge actively degrades decision quality, and the system's own pruning of 5 facts and 14 events demonstrates that regular consolidation is necessary to prevent accumulated noise from masking real patterns.
+
+### `dream:20260910105219:2:49e4ea`
+*10.09. 10:52 UTC · Quelle: dream*
+
+Consecutive model failures follow a pattern where the system recovers only by switching to an alternate model, confirming that a ranked fallback chain with cooldown-based exclusion is the minimum viable resilience strategy.
+
+### `dream:20260910105219:1:3a851f`
+*10.09. 10:52 UTC · Quelle: dream*
+
+Provider-level rate limits (429 errors) affect all models on the same API provider simultaneously, so per-model failure tracking is insufficient and provider-tier monitoring is required.
 
 ### `dream:20260910104054:5:258742`
 *10.09. 10:40 UTC · Quelle: dream*
@@ -43864,36 +43889,6 @@ score=8; issues=Proposal generation logic not fully visible in truncated section
 *27.08. 10:46 UTC · Quelle: system*
 
 Vorschläge zu echten Fähigkeiten machen
-
-### `dream:20260827104537:5:d773fe`
-*27.08. 10:45 UTC · Quelle: dream*
-
-Simulation pre-flight and swarm critique proposals exist but remain disconnected; no evidence they gate model calls or route around failing providers.
-
-### `dream:20260827104537:4:94d422`
-*27.08. 10:45 UTC · Quelle: dream*
-
-Self-diagnosis and pruning report zero findings while model failures persist, suggesting health checks monitor wrong signals (organ errors vs. API contract violations).
-
-### `dream:20260827104537:3:6cc973`
-*27.08. 10:45 UTC · Quelle: dream*
-
-Skill proposals accumulate (10+ in this log) but drive-goal 'Vorgeschlagene Fähigkeiten wirklich nutzen' signals implementation gap: proposals lack ownership, test harness, or activation trigger.
-
-### `dream:20260827104537:2:d8457b`
-*27.08. 10:45 UTC · Quelle: dream*
-
-Latency variance for nemotron-3-ultra (22–68s) exceeds interactive SLOs, making it unreliable as primary despite availability.
-
-### `dream:20260827104537:1:173b6d`
-*27.08. 10:45 UTC · Quelle: dream*
-
-Rate-limiting (429) on z-ai/glm-5.2:free recurs across sessions, indicating provider-level quota exhaustion rather than transient spikes.
-
-### `aktuell_organfehler`
-*27.08. 10:40 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-27 10:39:41 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `last_swarm_critique`
 *27.08. 09:56 UTC · Quelle: critic*
