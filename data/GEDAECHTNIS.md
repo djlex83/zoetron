@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11791 Fakten** · Stand 2026-09-10 20:48 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-10 20:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7566
+- **dream:** 7561
 - **swarm_artifact:** 1813
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910205705:5:08fb90`
+*10.09. 20:57 UTC · Quelle: dream*
+
+Five skill proposals exist but remain unimplemented, creating a proposal-execution gap that perpetuates known failure patterns.
+
+### `dream:20260910205705:4:80ec09`
+*10.09. 20:57 UTC · Quelle: dream*
+
+Aggressive pruning (36 events) followed by minimal pruning (1 event) indicates system stabilizes after initial consolidation.
+
+### `dream:20260910205705:3:ea2936`
+*10.09. 20:57 UTC · Quelle: dream*
+
+Self-diagnosis only checks internal organ health, missing external API failures which constitute the dominant failure mode.
+
+### `dream:20260910205705:2:a1ca38`
+*10.09. 20:57 UTC · Quelle: dream*
+
+Reflex-based actions converge reliably (2/2) while model-dependent actions fail at 67% rate (82 errors vs 40 successes).
+
+### `dream:20260910205705:1:0230ff`
+*10.09. 20:57 UTC · Quelle: dream*
+
+Free-tier model APIs exhibit cascading failures (429/502 errors) making them unreliable for critical paths without robust fallback routing.
 
 ### `dream:20260910204602:5:d100d1`
 *10.09. 20:46 UTC · Quelle: dream*
@@ -44157,56 +44182,6 @@ score=8; issues=Hardcoded thresholds (30s latency, 24h window, failure rate cuto
 *27.08. 20:54 UTC · Quelle: system*
 
 Organfehler beheben
-
-### `dream:20260827205328:5:b97bb2`
-*27.08. 20:53 UTC · Quelle: dream*
-
-Anti-pattern recall successfully retrieved prior failure modes, but simulation still detected 5 risks post-evolution, indicating memory retrieval needs tighter coupling with critic prompts.
-
-### `dream:20260827205328:4:b1dea2`
-*27.08. 20:53 UTC · Quelle: dream*
-
-Latency variance among working models (2.3s to 84s) makes timeout-aware model selection critical for interactive loops.
-
-### `dream:20260827205328:3:e88669`
-*27.08. 20:53 UTC · Quelle: dream*
-
-Evolutionary variant selection improved score from 7 to 9, but swarm convergence failed after 2 cycles, suggesting critic/builder ratio (1:4) lacks sufficient adversarial pressure.
-
-### `dream:20260827205328:2:d053a7`
-*27.08. 20:53 UTC · Quelle: dream*
-
-Sandbox validation revealed only 33% artifact runnability initially, indicating code generation must include executable verification before swarm commitment.
-
-### `dream:20260827205328:1:5cb4b9`
-*27.08. 20:53 UTC · Quelle: dream*
-
-Rate limiting (429) across multiple free-tier models causes cascading failures; a model router with exponential backoff and provider diversity is essential for reliability.
-
-### `dream:20260827204751:5:5d266b`
-*27.08. 20:47 UTC · Quelle: dream*
-
-Hand-action execution (0.33 s, exit 0) confirms the generated code artifact is syntactically valid and runnable without immediate errors.
-
-### `dream:20260827204751:4:50804d`
-*27.08. 20:47 UTC · Quelle: dream*
-
-Calibration loop (simulation → tor → calibration → bahnen) produced accurate effort prediction (predicted=actual=7) and verified artifact generation (186-line Python file).
-
-### `dream:20260827204751:3:98fa92`
-*27.08. 20:47 UTC · Quelle: dream*
-
-The system's multi-model fallback strategy (Nemotron → GLM → Gemma → Poolside) successfully achieved task completion despite 10+ consecutive rate-limit failures.
-
-### `dream:20260827204751:2:720fd9`
-*27.08. 20:47 UTC · Quelle: dream*
-
-Nemotron-3-Ultra exhibits high latency variance (33–155 s) and occasional 502 upstream errors, indicating unstable capacity allocation behind the free endpoint.
-
-### `dream:20260827204751:1:0ac5a8`
-*27.08. 20:47 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive 429 rate limiting, making them unreliable for production workloads without aggressive backoff and fallback chains.
 
 ### `last_swarm_critique`
 *27.08. 20:20 UTC · Quelle: critic*
