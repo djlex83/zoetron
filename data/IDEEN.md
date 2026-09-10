@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 09:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 09:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,17 +23,17 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 9 facts and 1 event during consolidation shows the system discards degraded information reactively, but no proactive freshness policy prevents
+- Stale swarm data and repeated model failures share a root cause: the system lacks proactive freshness and refresh mechanisms for its information pipel
+- The reflex-based error-reduction procedure (modellfehler-reduzieren-fuer-zuverlaessi.py) converged successfully, proving that structured procedural re
+- Model reliability is highly uneven: inclusionai/ling-3.0-flash-fin succeeds consistently under load while google/gemma models fail repeatedly, making 
+- External API rate limits (429 errors) are the dominant failure cause, not internal system defects — self-diagnosis confirmed zero organ errors across 
 - Consecutive model failures cascade into lockouts that compound the original problem, meaning failure isolation must happen before retry logic to preve
 - The reflex-based self-healing loop (schwarmwissen-wieder-auffrischen.py) and self-diagnosis both completed successfully, proving that internal mainten
 - The inclusionai/ling-3.0-flash-fin model is the only consistently reliable model across the entire experience window, succeeding on every invocation w
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (4.1–21.2s) across all recorded calls, establishing it as the only proven reliab
 - The nvidia/nemotron-3-ultra-550b model timed out on read operations and triggered a 1800-second lockout after only 3 consecutive failures, showing tha
 - Repeated 429 rate-limit errors on google/gemma-4-31b-it and google/gemma-4-26b-a4b-it indicate the system retries failed models instead of excluding t
-- The system enters conserve mode under high stress with severely limited budgets (max 3 tasks, 1 iteration), meaning non-critical goals like swarm and 
-- Consecutive model failures trigger automatic locking (e.g., 1800s cooldown after 3 failures), but the system must also prevent locked models from bein
-- Skill proposals accumulate without execution validation — proposals that lack executable code artifacts waste scoring and simulation cycles.
-- Relative file paths silently fail during file operations; all paths must be resolved to absolute before any I/O action to prevent zero-output runs.
-- Free-tier API models are the dominant failure point — 429 rate limits and timeouts occur far more often than capability failures, making model reliabi
 
 ---
 
