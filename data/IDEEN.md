@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 01:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 01:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,14 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning effectiveness swings wildly (47 events pruned vs 0) indicating triggers are ad-hoc rather than pressure- or schedule-based.
+- Evolution runs terminate at 2 cycles without convergence detection, leaving score variance unexplained and optimization incomplete.
+- Model routing reacts to failures instead of probing health proactively, causing repeated 429/502 errors before fallback activation wastes latency budg
+- The system generates high-value skill proposals (circuit-breaker, health checks, reliability scorecards) but lacks an execution pipeline, creating a p
+- Primary models (nemotron, gemma) fail consistently with rate limits (429) and upstream errors (502), while fallback model ling-3.0-flash-fin delivers 
 - Circuit-breaker logic exists in proposals but isn't deployed, causing repeated hammering of overloaded endpoints.
 - Pruning removes 45+ events per cycle yet model-failure events persist, showing reactive cleanup doesn't prevent recurrence.
 - Simulation runs exceed application by 3:1 ratio, wasting compute on unconverted experience.
@@ -51,11 +56,6 @@
 - Simultaneous multi-model failures cascade into system chaos; a circuit-breaker router with priority pools can isolate and contain blast radius.
 - Swarm convergence fails when critiques are stale; freshness scheduling and evidence logging are needed to prevent wasted cycles.
 - Rate limiting (429) on free-tier models is a systemic bottleneck requiring proactive provider health monitoring and automatic failover.
-- Only inclusionai/ling-3.0-flash-fin:free responds successfully, creating a single point of failure.
-- Calibration overestimated success by 200% (predicted 3 vs actual 1), indicating need for better difficulty estimation.
-- Evolutionary variant generation improved a 1/10 score to 9/10, proving iterative refinement with selection works.
-- Tasks requiring executable code fail when models return only prose; artifacts must contain runnable Python blocks.
-- Gemma models (31b and 26b) consistently hit 429 rate limits, making them unreliable for production use.
 
 ---
 

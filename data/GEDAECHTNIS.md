@@ -1,19 +1,64 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11783 Fakten** · Stand 2026-09-10 01:30 UTC · aktualisiert bei jedem Herzschlag
+**11799 Fakten** · Stand 2026-09-10 01:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7422
-- **swarm_artifact:** 1915
-- **last_swarm_critique:** 862
-- **last_swarm_goal:** 596
-- **anti_pattern:** 441
-- **strategy:** 222
+- **dream:** 7427
+- **swarm_artifact:** 1921
+- **last_swarm_critique:** 863
+- **last_swarm_goal:** 597
+- **anti_pattern:** 443
+- **strategy:** 223
 - **tool:** 172
 - **hand_result:** 108
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modelle zuverlässiger ma:2`
+*10.09. 01:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [5, 5, 7]): Operational MLOps governance - Build a CI/CD‑driven model lifecycle: code, data, and environment versioned in Git + DVC; training jobs run in reproducible containers (Docker/Apptainer) tracked by MLflow. Automated gat
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modelle zuverlässiger ma:0`
+*10.09. 01:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 6, 7]): Data‑centric reliability - Implement a comprehensive data quality pipeline: automated schema validation (Great Expectations), label noise detection (cleanlab), systematic data augmentation, and stratified k‑fold cross
+
+### `last_swarm_critique`
+*10.09. 01:41 UTC · Quelle: critic*
+
+score=1; issues=Kein ausführbarer Python-Block im Artefakt vorhanden – die Sandbox bestätigt LÄUFT NICHT; Das Artefakt besteht ausschließlich aus Prosa und Bash-Inspektionsbefehlen ohne jegliche Python-Implementierung; Vertrag verletzt: Es wird ein lauffähiges
+
+### `last_swarm_goal`
+*10.09. 01:38 UTC · Quelle: system*
+
+Modelle zuverlässiger machen
+
+### `dream:20260910013842:5:5736a2`
+*10.09. 01:38 UTC · Quelle: dream*
+
+Pruning effectiveness swings wildly (47 events pruned vs 0) indicating triggers are ad-hoc rather than pressure- or schedule-based.
+
+### `dream:20260910013842:4:1bd54a`
+*10.09. 01:38 UTC · Quelle: dream*
+
+Evolution runs terminate at 2 cycles without convergence detection, leaving score variance unexplained and optimization incomplete.
+
+### `dream:20260910013842:3:819b2b`
+*10.09. 01:38 UTC · Quelle: dream*
+
+Model routing reacts to failures instead of probing health proactively, causing repeated 429/502 errors before fallback activation wastes latency budget.
+
+### `dream:20260910013842:2:7ff0c9`
+*10.09. 01:38 UTC · Quelle: dream*
+
+The system generates high-value skill proposals (circuit-breaker, health checks, reliability scorecards) but lacks an execution pipeline, creating a persistent proposal-implementation gap noted in drive goals.
+
+### `dream:20260910013842:1:82f257`
+*10.09. 01:38 UTC · Quelle: dream*
+
+Primary models (nemotron, gemma) fail consistently with rate limits (429) and upstream errors (502), while fallback model ling-3.0-flash-fin delivers 3s latency vs 20-24s for nemotron when it works.
 
 ### `dream:20260910012819:5:99a853`
 *10.09. 01:28 UTC · Quelle: dream*
