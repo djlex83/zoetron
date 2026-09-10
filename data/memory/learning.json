@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-10 07:45:28",
+ "stand": "2026-09-10 07:56:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -135,12 +135,6 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -232,6 +226,12 @@
   },
   {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

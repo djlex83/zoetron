@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11790 Fakten** · Stand 2026-09-10 07:47 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-10 07:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7458
+- **dream:** 7454
 - **swarm_artifact:** 1893
 - **last_swarm_critique:** 867
 - **last_swarm_goal:** 601
@@ -10,9 +10,39 @@
 - **strategy:** 219
 - **tool:** 173
 - **hand_result:** 102
-- **aktuell_organfehler:** 42
+- **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910075556:5:ba6784`
+*10.09. 07:55 UTC · Quelle: dream*
+
+Successful model fallback (inclusionai after Nvidia/Google failures) demonstrates that maintaining a diverse model pool with at least one low-latency option is a critical resilience pattern.
+
+### `dream:20260910075556:4:675ada`
+*10.09. 07:55 UTC · Quelle: dream*
+
+Pruning stale facts and events during consolidation prevents error propagation from outdated assumptions, making periodic pruning a necessary maintenance invariant.
+
+### `dream:20260910075556:3:7dcfc7`
+*10.09. 07:55 UTC · Quelle: dream*
+
+The co-occurrence of model failures and stale-data signals reveals that system degradation is multi-modal: both dependency health and knowledge freshness must be monitored simultaneously.
+
+### `dream:20260910075556:2:f6ad56`
+*10.09. 07:55 UTC · Quelle: dream*
+
+Reflex-driven recovery from stale swarm data converges reliably, suggesting that pre-built reflex pathways are more robust than ad-hoc re-planning when knowledge expires.
+
+### `dream:20260910075556:1:d29e1c`
+*10.09. 07:55 UTC · Quelle: dream*
+
+Model failures cluster around upstream overload (502) and rate limits (429), indicating that concurrent unthrottled calls to shared APIs are the primary systemic fragility.
+
+### `aktuell_organfehler`
+*10.09. 07:53 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-10 07:44:53-07:45:23 UTC): dream -> ConnectError in _exceptions.py:14; dream -> ConnectError in default.py:118; dream -> rc; drive -> ConnectError in _exceptions.py:14. [Errno -3] Temporary failure in name resolution | [Errno -3] Temporary
 
 ### `tool:fähigkeiten-zuverlässig-machen-vor-erwei`
 *10.09. 07:12 UTC · Quelle: hands*
@@ -43889,51 +43919,6 @@ The sole reliable model (nemotron-3.5-lightning) exhibits 150-250s latency under
 *27.08. 08:01 UTC · Quelle: dream*
 
 Simultaneous 429 errors across five distinct models reveal that provider diversity on OpenRouter fails to provide resilience when the gateway itself rate-limits.
-
-### `dream:20260827075324:5:3b025d`
-*27.08. 07:53 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite repeated model failures, revealing a monitoring blind spot for external API dependencies.
-
-### `dream:20260827075324:4:04eba9`
-*27.08. 07:53 UTC · Quelle: dream*
-
-Memory blind-spot detection activates but lacks automated exploration policies, leaving gaps unaddressed across cycles.
-
-### `dream:20260827075324:3:7724d8`
-*27.08. 07:53 UTC · Quelle: dream*
-
-Proposed skills directly mirror observed failure modes (rate limiting, artifact validation, metabolic scheduling), suggesting the system self-diagnoses accurately.
-
-### `dream:20260827075324:2:48e0b1`
-*27.08. 07:53 UTC · Quelle: dream*
-
-A single working model (nemotron-3.5-lightning) exhibits extreme latency (57-151s), indicating capacity saturation rather than transient errors.
-
-### `dream:20260827075324:1:f1bb4d`
-*27.08. 07:53 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows.
-
-### `dream:20260827074631:4:778250`
-*27.08. 07:46 UTC · Quelle: dream*
-
-Model availability is highly stochastic, making single-model dependency a high-risk failure mode.
-
-### `dream:20260827074631:3:8aa7c6`
-*27.08. 07:46 UTC · Quelle: dream*
-
-Drive timeouts suggest that I/O latency spikes can cause critical blocking in the execution loop.
-
-### `dream:20260827074631:2:0d5d2b`
-*27.08. 07:46 UTC · Quelle: dream*
-
-A significant discrepancy between predicted and actual task scores reveals a failure in current complexity estimation heuristics.
-
-### `dream:20260827074631:1:a8d7eb`
-*27.08. 07:46 UTC · Quelle: dream*
-
-Frequent 429 errors indicate that relying on 'free' tier model endpoints without an adaptive backoff mechanism causes systemic execution failure.
 
 ### `last_swarm_critique`
 *27.08. 07:18 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 07:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 07:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful model fallback (inclusionai after Nvidia/Google failures) demonstrates that maintaining a diverse model pool with at least one low-latency 
+- Pruning stale facts and events during consolidation prevents error propagation from outdated assumptions, making periodic pruning a necessary maintena
+- The co-occurrence of model failures and stale-data signals reveals that system degradation is multi-modal: both dependency health and knowledge freshn
+- Reflex-driven recovery from stale swarm data converges reliably, suggesting that pre-built reflex pathways are more robust than ad-hoc re-planning whe
+- Model failures cluster around upstream overload (502) and rate limits (429), indicating that concurrent unthrottled calls to shared APIs are the prima
 - Low-latency models (inclusionai/ling-3.0-flash-fin at ~2s) do not guarantee task success; task structure and artifact format dominate outcome quality.
 - Evolutionary variant generation with scoring selection (scores 6.7→8.3→9.0) reliably outperforms direct single-shot generation for this task type.
 - The calibration gap (predicted 5 vs actual 0) reveals the system overestimates progress when no executable code exists in the artifact.
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin:free delivers consistent sub-7s latency across varied token loads, proving smaller specialized models outperform unreli
 - The circuit breaker (3 strikes → 30min block) correctly isolates cascading failures but leaves the swarm dependent on a single working model.
 - Free-tier flagship models (Nemotron, Gemma) fail reliably under load via 502 overloads and 429 rate limits, making them unsuitable for primary inferen
-- Convergence is declared on score alone without independent critic sign-off, so goals marked 'converged' still emit failed reflexes and stale knowledge
-- System enters conserve mode (stress=1.0) with a 3-task budget, yet continues spawning swarms and model calls, guaranteeing contention and timeout spir
-- Reflex scripts assume absolute paths and environment variables that don't hold in the sandbox, causing silent zero-byte failures that cascade into swa
-- Skill proposals accumulate but lack an execution pipeline — proposals are generated, validated, and then stall because no background worker deploys th
-- Free-tier model endpoints (Nemotron, Gemma) fail reliably under load with 502/429 errors, making health-probing and cached fallback routing essential 
 
 ---
 
