@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 10:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative path resolution in sys.argv[1] and ZOETRON_DATA caused silent data-path failures; all paths must be resolved to absolute and validated before
+- Simulation revisions were only partially applied (3 of 5 recommended), suggesting the revision pipeline lacks a completion gate or verification step.
+- Under conserve state with stress=1.0 and minimal budget, cycling through multiple models wastes resources; the system should lock onto the single prov
+- Repeated 429 rate-limit errors from specific models (gemma-4-31b-it, gemma-4-26b-a4b-it) indicate these models must be blacklisted or cooldown-tracked
+- Exit code 0 does not guarantee task completion; scripts that silently skip file/directory access must be detected by validating actual I/O, not just r
 - The system successfully converged on skill-linking via reflex mode after model failures, indicating that reflex-driven consolidation is more reliable 
 - Executing actions without validating the data path first produces meaningless results (hand_action returned ok=false with no file touched), so precond
 - Stale swarm knowledge actively degrades decision quality, and the system's own pruning of 5 facts and 14 events demonstrates that regular consolidatio
@@ -51,11 +56,6 @@
 - Without an activation gate, skill proposals accumulate faster than they can be implemented, creating a backlog that mimics progress without producing 
 - Stale goals and outdated criticisms cause the system to build new conclusions on false assumptions, making verification of foundational data a prerequ
 - Cascading model failures occur when fallback models share the same rate-limit boundaries, meaning a single upstream bottleneck can take down all alter
-- The absence of early termination criteria causes the system to continue mutating even when all scores fall below threshold, wasting compute on problem
-- Scoring predictions are systematically overconfident, indicating a calibration deficit that propagates poor decisions through the entire evolutionary 
-- The system lacks any pre-execution validation of generated code, allowing non-runnable or schema-invalid outputs to consume scoring resources before b
-- Transient failures (timeouts and 429 rate limits) are the dominant failure mode, and the absence of retry or backoff logic turns every temporary blip 
-- All model calls funnel through a single OpenRouter endpoint, making rate-limit failures systemic rather than model-specific, which means diversificati
 
 ---
 

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11781 Fakten** · Stand 2026-09-10 10:54 UTC · aktualisiert bei jedem Herzschlag
+**11779 Fakten** · Stand 2026-09-10 11:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7455
-- **swarm_artifact:** 1887
+- **dream:** 7460
+- **swarm_artifact:** 1881
 - **last_swarm_critique:** 870
 - **last_swarm_goal:** 604
 - **anti_pattern:** 433
 - **strategy:** 218
-- **tool:** 171
+- **tool:** 170
 - **hand_result:** 101
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910110220:5:31a337`
+*10.09. 11:02 UTC · Quelle: dream*
+
+Relative path resolution in sys.argv[1] and ZOETRON_DATA caused silent data-path failures; all paths must be resolved to absolute and validated before execution.
+
+### `dream:20260910110220:4:30c2dc`
+*10.09. 11:02 UTC · Quelle: dream*
+
+Simulation revisions were only partially applied (3 of 5 recommended), suggesting the revision pipeline lacks a completion gate or verification step.
+
+### `dream:20260910110220:3:e265d5`
+*10.09. 11:02 UTC · Quelle: dream*
+
+Under conserve state with stress=1.0 and minimal budget, cycling through multiple models wastes resources; the system should lock onto the single proven-reliable model (inclusionai/ling-3.0-flash-fin).
+
+### `dream:20260910110220:2:f1f0ee`
+*10.09. 11:02 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors from specific models (gemma-4-31b-it, gemma-4-26b-a4b-it) indicate these models must be blacklisted or cooldown-tracked rather than retried in a tight loop.
+
+### `dream:20260910110220:1:8a8e1d`
+*10.09. 11:02 UTC · Quelle: dream*
+
+Exit code 0 does not guarantee task completion; scripts that silently skip file/directory access must be detected by validating actual I/O, not just return codes.
 
 ### `dream:20260910105219:5:640f53`
 *10.09. 10:52 UTC · Quelle: dream*
@@ -43874,11 +43899,6 @@ Simulations and dreams achieve reflex convergence but fail to transfer actionabl
 *27.08. 11:06 UTC · Quelle: dream*
 
 A single model's repeated 429 errors without automatic blacklisting destabilizes the entire routing pool, proving that runtime failure resilience must be embedded in model selection, not reactive.
-
-### `tool:vorschläge-zu-echten-fähigkeiten-machen`
-*27.08. 10:56 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Vorschläge zu echten Fähigkeiten machen'. Datei: data/tools/vorschläge-zu-echten-fähigkeiten-machen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *27.08. 10:56 UTC · Quelle: critic*
