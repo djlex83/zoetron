@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11771 Fakten** · Stand 2026-09-10 22:02 UTC · aktualisiert bei jedem Herzschlag
+**11776 Fakten** · Stand 2026-09-10 22:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7551
+- **dream:** 7556
 - **swarm_artifact:** 1811
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910221021:5:243410`
+*10.09. 22:10 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors but does not emit operational health metrics (model success rates, convergence rates, latency percentiles) needed for drive-goal generation.
+
+### `dream:20260910221021:4:8a358d`
+*10.09. 22:10 UTC · Quelle: dream*
+
+Pruning discarded 23 events and 7 facts without logging retention criteria or impact scores, risking loss of low-frequency high-impact patterns.
+
+### `dream:20260910221021:3:50cfbd`
+*10.09. 22:10 UTC · Quelle: dream*
+
+Drive goals generated from failure/stale/gap signals lack automatic escalation to reflex invocations with retry budgets, leaving remediation manual.
+
+### `dream:20260910221021:2:433563`
+*10.09. 22:10 UTC · Quelle: dream*
+
+Sixty-five proposed skills remain unvalidated because no automated promotion gate exists to benchmark, soak, and converge them before activation.
+
+### `dream:20260910221021:1:afe2f7`
+*10.09. 22:10 UTC · Quelle: dream*
+
+Model provider failures (502/429 errors) dominate recent experience, with only inclusionai/ling-3.0-flash-sante succeeding, indicating critical need for automated fallback routing.
 
 ### `dream:20260910215936:5:3a2306`
 *10.09. 21:59 UTC · Quelle: dream*

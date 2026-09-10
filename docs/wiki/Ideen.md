@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,9 +28,9 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
@@ -41,10 +41,14 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Selbstdiagnose reports zero organ errors but does not emit operational health metrics (model success rates, convergence rates, latency percentiles) ne
+- Pruning discarded 23 events and 7 facts without logging retention criteria or impact scores, risking loss of low-frequency high-impact patterns.
+- Drive goals generated from failure/stale/gap signals lack automatic escalation to reflex invocations with retry budgets, leaving remediation manual.
+- Sixty-five proposed skills remain unvalidated because no automated promotion gate exists to benchmark, soak, and converge them before activation.
+- Model provider failures (502/429 errors) dominate recent experience, with only inclusionai/ling-3.0-flash-sante succeeding, indicating critical need f
 - Reflex-driven maintenance (schwarm refresh, skill testing) converges reliably but only when triggered; scheduling and stale-signal detection must be a
 - Modeling errors (50) exceed successes (36) because error patterns are not systematically categorized and fed back into model selection and prompt engi
 - Swarm knowledge decays silently; a stale-fact detector tracking last-access timestamps and contradiction flags must trigger proactive refresh reflexes
-- Sixty-five proposed skills remain unvalidated because no automated test gate exists, causing registry bloat and wasted simulation cycles.
 - Free tier model endpoints exhibit cascading 429/502 failures under load, requiring a router with per-model circuit breakers, health scoring, and autom
 - Reflex-driven maintenance (schwarmwissen refresh) succeeds autonomously, proving the reflex loop can offload routine upkeep.
 - Selbstdiagnose and pruning operate correctly but do not yet probe external model health before task assignment.
@@ -52,10 +56,6 @@
 - inclusionai/ling-3.0-flash-sante:free consistently succeeds where larger models fail, suggesting smaller specialized models are more reliable under qu
 - Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making single-model reliance untenable.
 - Consolidation/dream has no protected compute budget, so it is the first capability dropped under load — precisely when failure analysis is most needed
-- No canonical path resolver exists, forcing every hand action to reimplement ZOETRON_DATA/sys.argv[1] resolution and creating silent failures when cont
-- Planner predictions ignore observed success rates, causing systematic under-allocation of cycles when models are degraded.
-- Error logs and recovery traces are pruned aggressively (22 events pruned, 0 facts) while stale facts persist, destroying the evidence needed for calib
-- Rate limiting (429) cascades across multiple providers simultaneously, indicating shared quota pools or correlated traffic spikes that single-model fa
 
 ---
 

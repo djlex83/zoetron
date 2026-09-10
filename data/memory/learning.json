@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 22:00:09",
+ "stand": "2026-09-10 22:10:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -171,6 +171,12 @@
    "quote": 0.0
   },
   {
+   "tool": "marktanalyse-endlich-nutzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -279,12 +285,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -387,7 +387,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.779,
+ "haende_quote": 0.781,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 24,
