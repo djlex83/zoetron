@@ -34435,3 +34435,27 @@
 {"ts": 1788437395.5907602, "kind": "act_done", "payload": {"goal_title": "Skill-Vorschläge in echte Fähigkeiten wandeln", "score": 1, "converged": false}}
 {"ts": 1788437397.5436924, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.35, "gelesen": 14}}
 {"ts": 1788437400.7408466, "kind": "issue_synced", "payload": {"issue": 337, "state": "open"}}
+{"ts": 1787833404.3281286, "key": "dream:20260827122324:1:74f50c", "value": "Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.", "source": "dream"}
+{"ts": 1787833404.328222, "key": "dream:20260827122324:2:c40fe6", "value": "Nvidia Nemotron models (both lightning and ultra) succeed where others fail but occasionally return 502 upstream overload errors.", "source": "dream"}
+{"ts": 1787833404.3282955, "key": "dream:20260827122324:3:ce61fc", "value": "The simulation→revision loop (5 risks → 5 revisions) converges reliably and produces runnable Python artifacts.", "source": "dream"}
+{"ts": 1787833404.328362, "key": "dream:20260827122324:4:5dff69", "value": "Hand actions (tool executions) complete in sub-second latency with zero failures in this trace.", "source": "dream"}
+{"ts": 1787833404.3284218, "key": "dream:20260827122324:5:4ac580", "value": "Token throughput varies wildly: nemotron-3.5-lightning took 107s for 3k output tokens while nemotron-3-ultra did 5k tokens in 135s.", "source": "dream"}
+{"ts": 1788437802.9673555, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788438100.4950633, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788438102.2635403, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 24}}
+{"ts": 1788438108.3061361, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788438108.3061333, "schalter_geoeffnet": false}}
+{"ts": 1788438156.5610044, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 48.3, "tokens_ein": 1705, "tokens_aus": 956}}
+{"ts": 1788438156.5616071, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with health-aware fallback chain: track success/latency/rate-limit per model, auto-switch on 429/502."}}
+{"ts": 1788438156.5616627, "kind": "skill_proposal", "payload": {"proposal": "Add request queuing with token-bucket rate limiting per provider to avoid 429 bursts."}}
+{"ts": 1788438156.5617144, "kind": "skill_proposal", "payload": {"proposal": "Wrap all model calls in async timeout (e.g., 30s) with streaming fallback to faster models."}}
+{"ts": 1788438156.561792, "kind": "skill_proposal", "payload": {"proposal": "Create a model selection policy: prefer low-latency reliable models (ling-3.0-flash-fin) for interactive, high-capacity for batch."}}
+{"ts": 1788438156.5618498, "kind": "skill_proposal", "payload": {"proposal": "Add circuit breaker: after N consecutive failures, quarantine model for cooldown period."}}
+{"ts": 1788438156.561903, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788438158.868775, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788438158.8687274, "schalter_geoeffnet": false}}
+{"ts": 1788438222.6413229, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 63.8, "tokens_ein": 529, "tokens_aus": 425}}
+{"ts": 1788438222.6414487, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell macht noch zu viele Fehler. Wenn es verlässlicher wird, können wir ihm mehr Aufgaben anvertrauen.", "signal": "failure"}}
+{"ts": 1788438222.6415179, "kind": "drive_goal", "payload": {"title": "Fähigkeits-Vorschläge in echte Skills verwandeln", "why": "Es liegen viele Vorschläge für neue Fähigkeiten vor, aber sie werden noch nicht umgesetzt. Wir wollen sie nutzbar machen.", "signal": "combination"}}
+{"ts": 1788438222.6415782, "kind": "drive_goal", "payload": {"title": "Marktanalyse endlich abschließen", "why": "Die Analyse des KI-Marktes liegt seit langem unvollendet herum. Wir brauchen das Ergebnis, um gute Entscheidungen zu treffen.", "signal": "stale"}}
+{"ts": 1788438231.9558797, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 6.7, "gelesen": 1812}}
+{"ts": 1788438231.9581506, "kind": "reflex_used", "payload": {"goal": "Marktanalyse aktuell halten", "tool": "marktanalyse-in-handeln-umsetzen.py", "ok": true}}
+{"ts": 1788438232.5363216, "kind": "act_done", "payload": {"goal_title": "Marktanalyse aktuell halten", "score": null, "converged": true, "mode": "reflex"}}

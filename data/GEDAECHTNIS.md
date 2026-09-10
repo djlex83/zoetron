@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11784 Fakten** · Stand 2026-09-10 12:18 UTC · aktualisiert bei jedem Herzschlag
+**11795 Fakten** · Stand 2026-09-10 12:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7485
-- **swarm_artifact:** 1869
-- **last_swarm_critique:** 870
-- **last_swarm_goal:** 604
-- **anti_pattern:** 429
-- **strategy:** 216
+- **swarm_artifact:** 1875
+- **last_swarm_critique:** 871
+- **last_swarm_goal:** 605
+- **anti_pattern:** 431
+- **strategy:** 217
 - **tool:** 169
 - **hand_result:** 100
 - **aktuell_organfehler:** 42
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Schwarm-Orchestrierung a:2`
+*10.09. 12:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4.67): Leader-Follower-Konsensarchitektur mit Dateibasierter Paxos-Variante - Implementiere ein dezentrales Schwarm-System ohne zentralen Broker, basierend auf einem Dateisystem-Konsensmechanismus. Die Loesung enthaelt: (1) Einen
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Schwarm-Orchestrierung a:1`
+*10.09. 12:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8.0): Redis-basierte Event-Driven-Orchestrierung mit Pub/Sub und Streams - Nutze Redis als zentralen Message-Broker fuer ein echtzeit-faehiges Schwarm-System. Die Architektur besteht aus: (1) Einer `SwarmOrchestrator`-Klasse, die
+
+### `last_swarm_critique`
+*10.09. 12:34 UTC · Quelle: critic*
+
+score=1; issues=Kein ausfuehrbarer Python-Code-Block im Artefakt - nur Shell-Explorationsbefehle; Sandbox-Urteil: LAEUFT NICHT (kein ausfuehrbarer Python-Block); Keine Implementierung der Schwarm-Orchestrierung (Task-Queue, Persistenz, Heartbeat); Artefakt bes
+
+### `last_swarm_goal`
+*10.09. 12:27 UTC · Quelle: system*
+
+Schwarm-Orchestrierung aus dem Stand bringen
+
+### `dream:20260910122638:5:b9c51c`
+*10.09. 12:26 UTC · Quelle: dream*
+
+Skill proposals accumulate without activation gates, creating proposal debt that delays operational improvements.
+
+### `dream:20260910122638:4:cb8658`
+*10.09. 12:26 UTC · Quelle: dream*
+
+Successful model (ling-3.0-flash-fin) handles 2x token throughput at stable latency, suggesting smaller specialized models outperform large general ones for this workload.
+
+### `dream:20260910122638:3:5ad37c`
+*10.09. 12:26 UTC · Quelle: dream*
+
+Rate-limit errors (429) cluster on specific provider endpoints, indicating need for provider-level traffic shaping rather than per-model handling.
+
+### `dream:20260910122638:2:b0f537`
+*10.09. 12:26 UTC · Quelle: dream*
+
+Circuit breakers that lock models for fixed durations (1800s) without adaptive backoff waste capacity during transient outages.
+
+### `dream:20260910122638:1:4d8a47`
+*10.09. 12:26 UTC · Quelle: dream*
+
+Model diversity without automated fallback orchestration creates single points of failure when primary models hit rate limits or timeouts.
 
 ### `dream:20260910121456:5:a1695a`
 *10.09. 12:14 UTC · Quelle: dream*
@@ -43954,31 +43999,6 @@ High-latency models (Nemotron 79-92s) succeed where fast models fail, suggesting
 *27.08. 12:29 UTC · Quelle: dream*
 
 Rate limiting (429 errors) across multiple providers indicates need for request throttling and fallback chains rather than parallel retries.
-
-### `dream:20260827122324:5:4ac580`
-*27.08. 12:23 UTC · Quelle: dream*
-
-Token throughput varies wildly: nemotron-3.5-lightning took 107s for 3k output tokens while nemotron-3-ultra did 5k tokens in 135s.
-
-### `dream:20260827122324:4:5dff69`
-*27.08. 12:23 UTC · Quelle: dream*
-
-Hand actions (tool executions) complete in sub-second latency with zero failures in this trace.
-
-### `dream:20260827122324:3:ce61fc`
-*27.08. 12:23 UTC · Quelle: dream*
-
-The simulation→revision loop (5 risks → 5 revisions) converges reliably and produces runnable Python artifacts.
-
-### `dream:20260827122324:2:c40fe6`
-*27.08. 12:23 UTC · Quelle: dream*
-
-Nvidia Nemotron models (both lightning and ultra) succeed where others fail but occasionally return 502 upstream overload errors.
-
-### `dream:20260827122324:1:74f50c`
-*27.08. 12:23 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *27.08. 11:53 UTC · Quelle: critic*

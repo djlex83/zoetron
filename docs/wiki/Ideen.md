@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 12:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 12:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
@@ -33,14 +33,19 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate without activation gates, creating proposal debt that delays operational improvements.
+- Successful model (ling-3.0-flash-fin) handles 2x token throughput at stable latency, suggesting smaller specialized models outperform large general on
+- Rate-limit errors (429) cluster on specific provider endpoints, indicating need for provider-level traffic shaping rather than per-model handling.
+- Circuit breakers that lock models for fixed durations (1800s) without adaptive backoff waste capacity during transient outages.
+- Model diversity without automated fallback orchestration creates single points of failure when primary models hit rate limits or timeouts.
 - Pruning removes noise effectively but risks discarding causal chains that explain why failures occurred in the first place.
 - Self-diagnosis produces clean local results but misses cross-session failure patterns unless explicitly linked to consolidated dream memory.
 - Swarm intelligence degrades silently when underlying environmental data becomes stale, and convergence achieved without freshness guarantees produces 
@@ -51,11 +56,6 @@
 - The system's self-diagnosis and pruning mechanisms are functioning correctly, but they react to problems rather than preventing them upstream.
 - The inclusionai/ling-3.0-flash-fin model consistently succeeds when gemma models fail, proving that provider diversity is a more reliable resilience s
 - 429 rate-limit errors from OpenRouter are correlated across models from the same provider, meaning a single provider outage cascades into multiple sim
-- Pruning 7 facts and 20 events while simultaneously encountering repeated model failures suggests that failure-mode knowledge may have been discarded a
-- The gap between generating skill proposals and implementing them is itself a durable failure pattern—ideas without completion tracking remain inert.
-- Self-diagnosis confirmed no internal organ failures, proving the root cause is external API behavior, yet the system continued attempting failed model
-- The consistent success of inclusionai/ling-3.0-flash-fin:free reveals that a single reliable fallback model exists but is not being systematically pri
-- Repeated 429 errors from the same API models indicate the absence of a circuit-breaker pattern, causing the system to keep hammering rate-limited endp
 
 ---
 
