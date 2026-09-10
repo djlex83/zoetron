@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 13:23:02",
+ "stand": "2026-09-10 13:32:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -174,12 +174,6 @@
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -382,6 +376,12 @@
   },
   {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "mehr-evolution-starten.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

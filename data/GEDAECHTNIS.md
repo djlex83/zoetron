@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11785 Fakten** · Stand 2026-09-10 13:25 UTC · aktualisiert bei jedem Herzschlag
+**11783 Fakten** · Stand 2026-09-10 13:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7490
-- **swarm_artifact:** 1861
+- **dream:** 7495
+- **swarm_artifact:** 1855
 - **last_swarm_critique:** 871
 - **last_swarm_goal:** 605
 - **anti_pattern:** 431
 - **strategy:** 217
-- **tool:** 169
+- **tool:** 168
 - **hand_result:** 99
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910133245:5:8ec050`
+*10.09. 13:32 UTC · Quelle: dream*
+
+Calibration predictions significantly miss actual outcomes (predicted 2, actual 1), suggesting the system overestimates its progress on complex orchestration tasks.
+
+### `dream:20260910133245:4:74556a`
+*10.09. 13:32 UTC · Quelle: dream*
+
+Tasks requiring iterative refinement (5+ revisions, evolution runs with 3+ variants) need explicit convergence criteria beyond prose descriptions to avoid infinite revision loops.
+
+### `dream:20260910133245:3:f251c8`
+*10.09. 13:32 UTC · Quelle: dream*
+
+Upstream service overload (502) and rate limiting (429) are systemic API failures that recur across multiple model providers, indicating infrastructure instability rather than isolated incidents.
+
+### `dream:20260910133245:2:3e1f31`
+*10.09. 13:32 UTC · Quelle: dream*
+
+The lightweight fallback model (inclusionai/ling-3.0-flash-fin) is the only reliably available model in this environment, consistently succeeding when primary and secondary models fail with 502/429 errors.
+
+### `dream:20260910133245:1:7d33af`
+*10.09. 13:32 UTC · Quelle: dream*
+
+Prose-only artifacts fail to converge on technical tasks like swarm orchestration; executable Python blocks are a non-negotiable requirement for task completion.
 
 ### `dream:20260910132248:5:c0e6b6`
 *10.09. 13:22 UTC · Quelle: dream*
@@ -43989,11 +44014,6 @@ Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting that requires ex
 *27.08. 13:54 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-27 13:52:14 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `tool:effizienter-werden`
-*27.08. 13:31 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Effizienter werden'. Datei: data/tools/effizienter-werden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *27.08. 13:31 UTC · Quelle: critic*

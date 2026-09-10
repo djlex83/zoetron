@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 13:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 13:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
+- Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predictions significantly miss actual outcomes (predicted 2, actual 1), suggesting the system overestimates its progress on complex orches
+- Tasks requiring iterative refinement (5+ revisions, evolution runs with 3+ variants) need explicit convergence criteria beyond prose descriptions to a
+- Upstream service overload (502) and rate limiting (429) are systemic API failures that recur across multiple model providers, indicating infrastructur
+- The lightweight fallback model (inclusionai/ling-3.0-flash-fin) is the only reliably available model in this environment, consistently succeeding when
+- Prose-only artifacts fail to converge on technical tasks like swarm orchestration; executable Python blocks are a non-negotiable requirement for task 
 - Operating in conserve mode with a budget of max 1 iteration means every task attempt must be pre-validated; unverified retry loops on known-failing mo
 - Simulations returning 'revise' with 5 risks and 5 revisions signal fundamental architectural flaws in the swarm orchestration design, not minor parame
 - Skill proposals accumulate across cycles without implementation because no active maturation pipeline moves them from proposal to prototype to deploym
@@ -51,11 +56,6 @@
 - Pruning 19-22 events per run risks severing causal chains that connect repeated failures to their root causes, making systemic patterns invisible.
 - inclusionai/ling-3.0-flash-fin succeeds consistently while others fail, revealing a reliability asymmetry that should be the primary routing signal.
 - The same providers (nemotron, gemma) fail identically across multiple cycles, proving that blind retries without provider switching waste resources an
-- Aggressive pruning (19-22 events per cycle) risks discarding potentially useful contextual data before it can inform cross-cutting pattern recognition
-- The hermes-daemon heartbeat and memory-sync pipeline is a recurring failure point that undermines system stability and needs architectural hardening.
-- Reflex-driven self-healing mechanisms (like swarm knowledge refresh) have proven reliable recovery paths that should be generalized to other failure m
-- Provider concentration creates correlated failures: when multiple models share the same underlying provider, a single provider-side issue disables all
-- 429 rate-limit errors and read timeouts are fundamentally different failure classes requiring distinct retry strategies — backoff for rate limits, tim
 
 ---
 
