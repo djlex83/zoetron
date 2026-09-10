@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11779 Fakten** · Stand 2026-09-10 12:06 UTC · aktualisiert bei jedem Herzschlag
+**11784 Fakten** · Stand 2026-09-10 12:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7480
+- **dream:** 7485
 - **swarm_artifact:** 1869
 - **last_swarm_critique:** 870
 - **last_swarm_goal:** 604
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910121456:5:a1695a`
+*10.09. 12:14 UTC · Quelle: dream*
+
+Pruning removes noise effectively but risks discarding causal chains that explain why failures occurred in the first place.
+
+### `dream:20260910121456:4:1706b5`
+*10.09. 12:14 UTC · Quelle: dream*
+
+Self-diagnosis produces clean local results but misses cross-session failure patterns unless explicitly linked to consolidated dream memory.
+
+### `dream:20260910121456:3:a5abf8`
+*10.09. 12:14 UTC · Quelle: dream*
+
+Swarm intelligence degrades silently when underlying environmental data becomes stale, and convergence achieved without freshness guarantees produces brittle outcomes.
+
+### `dream:20260910121456:2:bf3253`
+*10.09. 12:14 UTC · Quelle: dream*
+
+Model reliability is highly provider-dependent; a single consistently successful model outperforms multiple unreliable ones, making selection data-driven rather than arbitrary.
+
+### `dream:20260910121456:1:18f7c7`
+*10.09. 12:14 UTC · Quelle: dream*
+
+Rate-limiting errors (429) are a systemic API constraint rather than transient noise, requiring architectural fallback strategies instead of simple retry logic.
 
 ### `dream:20260910120419:5:5b89d6`
 *10.09. 12:04 UTC · Quelle: dream*
