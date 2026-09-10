@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11796 Fakten** · Stand 2026-09-10 16:10 UTC · aktualisiert bei jedem Herzschlag
+**11801 Fakten** · Stand 2026-09-10 16:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7521
+- **dream:** 7526
 - **swarm_artifact:** 1847
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910161816:5:3b6d7c`
+*10.09. 16:18 UTC · Quelle: dream*
+
+Beim Prunen sollten veraltete Fakten und Ereignisse entfernt werden, während Fehlerprotokolle, Gegenmaßnahmen und deren Wirksamkeitsnachweise erhalten bleiben.
+
+### `dream:20260910161816:4:ad2ff8`
+*10.09. 16:18 UTC · Quelle: dream*
+
+Skill-Vorschläge bleiben Hypothesen, bis sie unter den tatsächlich aufgetretenen Fehlermustern bestanden und messbar Nutzen geliefert haben.
+
+### `dream:20260910161816:3:d275c5`
+*10.09. 16:18 UTC · Quelle: dream*
+
+Leichte Modelle sollten Standardaufgaben übernehmen, während größere Modelle nur bei nachgewiesenem Fähigkeitenbedarf eingesetzt werden, um Kosten und Ausfallrisiko zu begrenzen.
+
+### `dream:20260910161816:2:c7c9d9`
+*10.09. 16:18 UTC · Quelle: dream*
+
+Ein erfolgreicher Reflexlauf mit null Selbstdiagnose-Befunden belegt nur die Ausführung, nicht aber Robustheit oder Aufgabenqualität.
+
+### `dream:20260910161816:1:c4d34c`
+*10.09. 16:18 UTC · Quelle: dream*
+
+Wiederholte 429-Fehler über mehrere Modelle zeigen, dass ein einzelner Fallback nicht ausreicht und jeder Anbieter eigene Backoff-, Retry-Budget- und Circuit-Breaker-Zustände benötigt.
 
 ### `dream:20260910160732:5:c90d4f`
 *10.09. 16:07 UTC · Quelle: dream*

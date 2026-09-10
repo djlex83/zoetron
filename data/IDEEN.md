@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 16:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 16:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Beim Prunen sollten veraltete Fakten und Ereignisse entfernt werden, während Fehlerprotokolle, Gegenmaßnahmen und deren Wirksamkeitsnachweise erhalten
+- Skill-Vorschläge bleiben Hypothesen, bis sie unter den tatsächlich aufgetretenen Fehlermustern bestanden und messbar Nutzen geliefert haben.
+- Leichte Modelle sollten Standardaufgaben übernehmen, während größere Modelle nur bei nachgewiesenem Fähigkeitenbedarf eingesetzt werden, um Kosten und
+- Ein erfolgreicher Reflexlauf mit null Selbstdiagnose-Befunden belegt nur die Ausführung, nicht aber Robustheit oder Aufgabenqualität.
+- Wiederholte 429-Fehler über mehrere Modelle zeigen, dass ein einzelner Fallback nicht ausreicht und jeder Anbieter eigene Backoff-, Retry-Budget- und 
 - Router-, Health-Ledger-, Backoff- und Frischeprüfungs-Vorschläge beschreiben denselben Zuverlässigkeitsbereich und sollten zu einem einzigen testbaren
 - Kontext-Pruning kann Diagnosewissen vernichten; Fehlerklassen, Circuit-Breaker-Zustände, erfolgreiche Fallbacks und Provenienz müssen beim Beschneiden
 - Erfolgreiche Schwarm-Auffrischungs- und Reaktivierungs-Reflexe ohne Organfehler zeigen, dass regelmäßige Frischeprüfungen veraltete Wissensbestände wi
@@ -51,11 +56,6 @@
 - Self-diagnosis currently lacks integration with failure pattern recognition, missing opportunities to detect recurring infrastructure issues.
 - Stale swarm data directly correlates with failed convergence, suggesting outdated knowledge undermines goal achievement.
 - Provider failures cluster around timeout and rate-limit errors, indicating systemic reliability gaps rather than isolated incidents.
-- Lange Antworten verursachen hohe Latenz und Tokenkosten; ein kleiner ausführbarer Kern ist robuster als umfangreiche, erst danach testbare Prosa.
-- Die Evolution verbesserte die Bewertungen deutlich, doch ein Variantensieger ist erst dann belastbar, wenn seine Auswahlregel eindeutig ist und das Er
-- Die Prognose 3 bei tatsächlich 1 Zyklus zeigt zu optimistische Konfidenz nach Vorfehlern; weitere Schätzungen müssen den beobachteten absoluten Fehler
-- Wiederholte 429-Fehler bei Google-Gemma erzeugten keinen Nutzen; nach einem Rate-Limit sollte der Workflow den Anbieter sofort meiden und auf einen be
-- Der primäre Misserfolgsmodus war ein nicht ausführbares Artefakt: Jede Lösung muss vor der Bewertung mindestens einen lauffähigen Python-Block enthalt
 
 ---
 
