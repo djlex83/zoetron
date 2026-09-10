@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 03:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 03:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,7 +19,7 @@
 - ModelRouterSkill: priority-ordered provider pool with 5-min circuit-break on 429/502/timeout and dynamic reord *(hatte die Idee 3×)*
 - Replace fixed 2-cycle evolution with adaptive loop: continue until convergence metric (score delta < 0.01) or  *(hatte die Idee 3×)*
 - Build DriveResolutionTracker: persist each drive_goal with deadline; auto-escalate to structured swarm if unre *(hatte die Idee 3×)*
-- Implement a model router that tracks per-model error rates and latency, automatically failing over to inclusio *(hatte die Idee 2×)*
+- Implement an automatic model fallback chain that routes to low-latency flash-tier models after two consecutive *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,11 +27,11 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive event pruning (72 events in one run) discards diagnostic context needed for root-cause analysis of model failures.
+- Reflex-driven maintenance tasks (swarm refresh, dream-to-skill) converge reliably while autonomous planning stalls.
+- Immediate retries on 429 errors amplify throttling; exponential backoff with jitter is absent despite repeated occurrences.
+- Skill proposal volume is high but conversion to stable capabilities is near zero, indicating a missing stabilization pipeline.
+- Reactive model fallback succeeds but wastes cycles on known-rate-limited models instead of proactively avoiding them.
 - Swarm knowledge staleness triggers drive goals but relies on reflex tools; scheduled proactive refresh with freshness metrics would prevent stale-data
 - Fixed-cycle evolution loops waste compute or stop prematurely; adaptive convergence thresholds (score delta < 0.01) with variance logging yield better
 - Hand actions fail on relative paths because the system lacks enforced absolute-path derivation from ZOETRON_DATA with pre-invocation existence checks.
@@ -51,11 +56,6 @@
 - Swarm evolution with only 2 cycles and asymmetric roles (1 planner, 3 builders, 1 critic) yields partial improvement (7/10) but fails to converge.
 - Circuit breaker (3 consecutive failures → 30-min block) effectively isolates failing models but requires a validated fallback (ling-3.0-flash-fin).
 - Free-tier models from major providers (Nvidia Nemotron, Google Gemma) suffer frequent 502/429 errors making them unreliable for production workflows.
-- Simulation green-light (risks=4) combined with calibration miss suggests risk assessment ignores model-availability risk.
-- Evolution runs with 3 variants reliably produce 9-10/10 scores from 7/10 baselines, proving iterative refinement outperforms single-pass generation.
-- Nemotron-3-ultra latency varies 3.3x (17-57s) for similar token loads, indicating unstable upstream capacity that corrupts planning.
-- Calibration error of 5 points (predicted 2 vs actual 7) reveals systematic underestimation of task complexity for swarm-refresh operations.
-- Provider-specific failure modes dominate: Nvidia returns 502 overload errors while Google returns 429 rate limits, making inclusionai/ling-3.0-flash-f
 
 ---
 

@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11791 Fakten** · Stand 2026-09-10 03:40 UTC · aktualisiert bei jedem Herzschlag
+**11785 Fakten** · Stand 2026-09-10 03:51 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7443
-- **swarm_artifact:** 1907
+- **swarm_artifact:** 1901
 - **last_swarm_critique:** 864
 - **last_swarm_goal:** 598
 - **anti_pattern:** 437
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910034922:5:1f3b8d`
+*10.09. 03:49 UTC · Quelle: dream*
+
+Aggressive event pruning (72 events in one run) discards diagnostic context needed for root-cause analysis of model failures.
+
+### `dream:20260910034922:4:f3eb29`
+*10.09. 03:49 UTC · Quelle: dream*
+
+Reflex-driven maintenance tasks (swarm refresh, dream-to-skill) converge reliably while autonomous planning stalls.
+
+### `dream:20260910034922:3:579d73`
+*10.09. 03:49 UTC · Quelle: dream*
+
+Immediate retries on 429 errors amplify throttling; exponential backoff with jitter is absent despite repeated occurrences.
+
+### `dream:20260910034922:2:4e0fb2`
+*10.09. 03:49 UTC · Quelle: dream*
+
+Skill proposal volume is high but conversion to stable capabilities is near zero, indicating a missing stabilization pipeline.
+
+### `dream:20260910034922:1:f7d8b3`
+*10.09. 03:49 UTC · Quelle: dream*
+
+Reactive model fallback succeeds but wastes cycles on known-rate-limited models instead of proactively avoiding them.
 
 ### `dream:20260910033824:5:e1a558`
 *10.09. 03:38 UTC · Quelle: dream*
@@ -43894,31 +43919,6 @@ ABGELEHNT von Evolution (Score 6): Formal protocol specification with reference 
 *27.08. 03:40 UTC · Quelle: system*
 
 Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen
-
-### `dream:20260827034033:5:77671b`
-*27.08. 03:40 UTC · Quelle: dream*
-
-Simulation verdicts ('go', risks=0) diverge from execution reality when static analysis misses runtime constraints like output size limits.
-
-### `dream:20260827034033:4:a69bac`
-*27.08. 03:40 UTC · Quelle: dream*
-
-Conservative metabolism budgets (max 1 iteration) conflict with multi-model fallback chains, guaranteeing abandonment before recovery can occur.
-
-### `dream:20260827034033:3:60fba1`
-*27.08. 03:40 UTC · Quelle: dream*
-
-Code generation exceeding hard character limits (20k) silently prevents execution without truncation logic, turning valid output into total task failure.
-
-### `dream:20260827034033:2:684724`
-*27.08. 03:40 UTC · Quelle: dream*
-
-Latency variance of 2-154 seconds for identical models reveals non-deterministic queue positioning, making timeout-based fallbacks unreliable without adaptive thresholds.
-
-### `dream:20260827034033:1:ca065d`
-*27.08. 03:40 UTC · Quelle: dream*
-
-Free-tier model endpoints exhibit cascading failure modes: rate limits (429) dominate across providers, while upstream overloads (502) indicate shared infrastructure saturation.
 
 ### `last_swarm_critique`
 *27.08. 03:09 UTC · Quelle: critic*
