@@ -1,10 +1,10 @@
 {
-  "audit_timestamp": "2026-09-10T04:34:05.515623",
+  "audit_timestamp": "2026-09-10T09:54:30.083035",
   "threshold_days": 7,
-  "total_events_audited": 80526,
-  "stale_count": 193,
-  "fresh_count": 190,
-  "no_timestamp_count": 80143,
+  "total_events_audited": 81250,
+  "stale_count": 219,
+  "fresh_count": 165,
+  "no_timestamp_count": 80866,
   "stale_events": [
     {
       "mode": "normal",
@@ -19,7 +19,7 @@
       "timestamp": 1787837425.6170628,
       "ts": 1787837425.6170652,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -35,7 +35,7 @@
       "timestamp": 1787837497.8504727,
       "ts": 1787837497.8504748,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -50,8 +50,8 @@
       "window_size": 10,
       "timestamp": 1787900765.9753509,
       "ts": 1787900765.9753523,
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -66,8 +66,8 @@
       "window_size": 10,
       "timestamp": 1787900845.5511236,
       "ts": 1787900845.5511253,
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -83,7 +83,7 @@
       "timestamp": 1788030824.0855668,
       "ts": 1788030824.0855682,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -99,7 +99,23 @@
       "timestamp": 1788030834.0460286,
       "ts": 1788030834.0460298,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "mode": "normal",
+      "max_concurrent": 8,
+      "max_iterations": 5,
+      "stress": 0.5,
+      "avg_stress": 0.5,
+      "taktung_budget": 100,
+      "budget_remaining": 100,
+      "hysteresis_threshold": 0.75,
+      "window_size": 10,
+      "timestamp": 1788334726.3261428,
+      "ts": 1788334726.326146,
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -111,7 +127,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -123,7 +139,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -135,7 +151,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -147,7 +163,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -583,7 +599,7 @@
       "timestamp": "2026-08-27T18:07:37.437362",
       "fell_back": false,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -608,7 +624,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -633,7 +649,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -658,7 +674,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -676,7 +692,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -694,7 +710,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -712,7 +728,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -726,7 +742,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -740,7 +756,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -758,7 +774,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -772,7 +788,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -786,7 +802,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -804,7 +820,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -818,7 +834,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -832,7 +848,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -850,7 +866,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -868,7 +884,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -886,7 +902,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -904,7 +920,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -922,7 +938,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -947,7 +963,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -972,7 +988,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -997,7 +1013,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1015,7 +1031,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1033,7 +1049,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1051,7 +1067,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1065,7 +1081,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1079,7 +1095,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1097,7 +1113,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1111,7 +1127,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1125,7 +1141,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1143,7 +1159,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1157,7 +1173,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1171,7 +1187,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1189,7 +1205,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1207,7 +1223,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1225,7 +1241,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1243,7 +1259,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1292,7 +1308,7 @@
         "Create integration tests for full pipeline flow"
       ],
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1310,7 +1326,7 @@
         "details": []
       },
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1323,7 +1339,7 @@
       "timestamp": 1787746767.7634919,
       "status": "open",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1335,8 +1351,8 @@
         "tools_available": 12
       },
       "timestamp": "2026-08-27T05:46:53.478426",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1348,8 +1364,8 @@
         "tools_available": 12
       },
       "timestamp": "2026-08-27T05:47:59.764993",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1405,7 +1421,7 @@
         }
       ],
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1427,7 +1443,7 @@
       },
       "fallback_used": false,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1449,7 +1465,7 @@
       },
       "fallback_used": false,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1482,7 +1498,7 @@
       ],
       "results": [],
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1535,7 +1551,7 @@
       },
       "used_fallback_data": false,
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1587,7 +1603,7 @@
       },
       "used_fallback_data": false,
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1759,7 +1775,7 @@
         }
       ],
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1816,7 +1832,7 @@
       "bottleneck": "reflex",
       "total_avg_latency": 0.019044745205610527,
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1873,7 +1889,7 @@
       "bottleneck": "reflex",
       "total_avg_latency": 0.013112438601092435,
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1891,7 +1907,7 @@
         "total_flagged": 0
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -1915,7 +1931,7 @@
       "anzahl_fehlerquellen": 0,
       "anzahl_empfehlungen": 0,
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -2168,8 +2184,8 @@
           "total_neighbor_weight": 0.05
         }
       },
-      "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 9,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -2422,8 +2438,8 @@
           "total_neighbor_weight": 0.05
         }
       },
-      "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 9,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -10295,7 +10311,7 @@
         "with_errors": 167
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11234,7 +11250,7 @@
       ],
       "fallback_mode": false,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11488,7 +11504,378 @@
         }
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T07:38:52.402569",
+      "total_skills": 12,
+      "global_stats": {
+        "avg_connection_density": 0.2641,
+        "median_connection_density": 0.2945,
+        "avg_isolation_score": 0.0,
+        "avg_reachable_skills": 10.17,
+        "max_connection_density": 0.5818,
+        "min_connection_density": 0.0045
+      },
+      "isolated_skills": [],
+      "well_connected_skills": [
+        {
+          "skill_id": "skill_python",
+          "name": "Python Programmierung",
+          "connection_density": 0.5818,
+          "reachable_skills": 10
+        },
+        {
+          "skill_id": "skill_ci_cd",
+          "name": "CI/CD Pipelines",
+          "connection_density": 0.54,
+          "reachable_skills": 10
+        },
+        {
+          "skill_id": "skill_docker",
+          "name": "Docker & Container",
+          "connection_density": 0.36,
+          "reachable_skills": 9
+        },
+        {
+          "skill_id": "skill_testing",
+          "name": "Automated Testing",
+          "connection_density": 0.3273,
+          "reachable_skills": 10
+        },
+        {
+          "skill_id": "skill_ml",
+          "name": "Machine Learning",
+          "connection_density": 0.3155,
+          "reachable_skills": 11
+        }
+      ],
+      "top_connections": [
+        {
+          "source": "skill_python",
+          "target": "skill_ml",
+          "weight": 0.9,
+          "source_name": "Python Programmierung",
+          "target_name": "Machine Learning"
+        },
+        {
+          "source": "skill_docker",
+          "target": "skill_ci_cd",
+          "weight": 0.9,
+          "source_name": "Docker & Container",
+          "target_name": "CI/CD Pipelines"
+        },
+        {
+          "source": "skill_python",
+          "target": "skill_testing",
+          "weight": 0.8,
+          "source_name": "Python Programmierung",
+          "target_name": "Automated Testing"
+        },
+        {
+          "source": "skill_docker",
+          "target": "skill_aws",
+          "weight": 0.8,
+          "source_name": "Docker & Container",
+          "target_name": "AWS Cloud"
+        },
+        {
+          "source": "skill_ml",
+          "target": "skill_python",
+          "weight": 0.7200000000000001,
+          "source_name": "Machine Learning",
+          "target_name": "Python Programmierung"
+        },
+        {
+          "source": "skill_ci_cd",
+          "target": "skill_docker",
+          "weight": 0.7200000000000001,
+          "source_name": "CI/CD Pipelines",
+          "target_name": "Docker & Container"
+        },
+        {
+          "source": "skill_python",
+          "target": "skill_data_viz",
+          "weight": 0.7,
+          "source_name": "Python Programmierung",
+          "target_name": "Data Visualization"
+        },
+        {
+          "source": "skill_aws",
+          "target": "skill_ci_cd",
+          "weight": 0.7,
+          "source_name": "AWS Cloud",
+          "target_name": "CI/CD Pipelines"
+        },
+        {
+          "source": "skill_testing",
+          "target": "skill_ci_cd",
+          "weight": 0.7,
+          "source_name": "Automated Testing",
+          "target_name": "CI/CD Pipelines"
+        },
+        {
+          "source": "skill_testing",
+          "target": "skill_python",
+          "weight": 0.6400000000000001,
+          "source_name": "Automated Testing",
+          "target_name": "Python Programmierung"
+        }
+      ],
+      "skill_details": {
+        "skill_python": {
+          "name": "Python Programmierung",
+          "connection_density": 0.5818,
+          "reachable_skills": 10,
+          "avg_path_length": 0.06,
+          "cluster_coefficient": 0.2,
+          "pagerank_score": 1.0,
+          "isolation_score": 0.0,
+          "direct_connections": 6,
+          "total_neighbor_weight": 6.4
+        },
+        "skill_ml": {
+          "name": "Machine Learning",
+          "connection_density": 0.3155,
+          "reachable_skills": 11,
+          "avg_path_length": 0.06,
+          "cluster_coefficient": 0.5,
+          "pagerank_score": 0.4061,
+          "isolation_score": 0.0,
+          "direct_connections": 4,
+          "total_neighbor_weight": 3.47
+        },
+        "skill_data_viz": {
+          "name": "Data Visualization",
+          "connection_density": 0.2945,
+          "reachable_skills": 11,
+          "avg_path_length": 0.05,
+          "cluster_coefficient": 1.0,
+          "pagerank_score": 0.4412,
+          "isolation_score": 0.0,
+          "direct_connections": 3,
+          "total_neighbor_weight": 3.24
+        },
+        "skill_sql": {
+          "name": "SQL & Databases",
+          "connection_density": 0.2455,
+          "reachable_skills": 10,
+          "avg_path_length": 0.03,
+          "cluster_coefficient": 1.0,
+          "pagerank_score": 0.3782,
+          "isolation_score": 0.0,
+          "direct_connections": 3,
+          "total_neighbor_weight": 2.7
+        },
+        "skill_docker": {
+          "name": "Docker & Container",
+          "connection_density": 0.36,
+          "reachable_skills": 9,
+          "avg_path_length": 0.04,
+          "cluster_coefficient": 0.3333,
+          "pagerank_score": 0.5045,
+          "isolation_score": 0.0,
+          "direct_connections": 3,
+          "total_neighbor_weight": 3.96
+        },
+        "skill_react": {
+          "name": "React Frontend",
+          "connection_density": 0.0655,
+          "reachable_skills": 10,
+          "avg_path_length": 0.05,
+          "cluster_coefficient": 0.0,
+          "pagerank_score": 0.1194,
+          "isolation_score": 0.0,
+          "direct_connections": 1,
+          "total_neighbor_weight": 0.72
+        },
+        "skill_aws": {
+          "name": "AWS Cloud",
+          "connection_density": 0.2455,
+          "reachable_skills": 9,
+          "avg_path_length": 0.04,
+          "cluster_coefficient": 1.0,
+          "pagerank_score": 0.4254,
+          "isolation_score": 0.0,
+          "direct_connections": 2,
+          "total_neighbor_weight": 2.7
+        },
+        "skill_git": {
+          "name": "Git Version Control",
+          "connection_density": 0.18,
+          "reachable_skills": 10,
+          "avg_path_length": 0.05,
+          "cluster_coefficient": 1.0,
+          "pagerank_score": 0.2052,
+          "isolation_score": 0.0,
+          "direct_connections": 2,
+          "total_neighbor_weight": 1.98
+        },
+        "skill_testing": {
+          "name": "Automated Testing",
+          "connection_density": 0.3273,
+          "reachable_skills": 10,
+          "avg_path_length": 0.04,
+          "cluster_coefficient": 0.3333,
+          "pagerank_score": 0.5263,
+          "isolation_score": 0.0,
+          "direct_connections": 3,
+          "total_neighbor_weight": 3.6
+        },
+        "skill_ci_cd": {
+          "name": "CI/CD Pipelines",
+          "connection_density": 0.54,
+          "reachable_skills": 10,
+          "avg_path_length": 0.04,
+          "cluster_coefficient": 0.2,
+          "pagerank_score": 1.0,
+          "isolation_score": 0.0,
+          "direct_connections": 5,
+          "total_neighbor_weight": 5.94
+        },
+        "skill_isolated_1": {
+          "name": "Isolierte Fähigkeit A",
+          "connection_density": 0.0091,
+          "reachable_skills": 11,
+          "avg_path_length": 0.04,
+          "cluster_coefficient": 0.0,
+          "pagerank_score": 0.0063,
+          "isolation_score": 0.0,
+          "direct_connections": 1,
+          "total_neighbor_weight": 0.1
+        },
+        "skill_isolated_2": {
+          "name": "Isolierte Fähigkeit B",
+          "connection_density": 0.0045,
+          "reachable_skills": 11,
+          "avg_path_length": 0.04,
+          "cluster_coefficient": 0.0,
+          "pagerank_score": 0.0199,
+          "isolation_score": 0.0,
+          "direct_connections": 1,
+          "total_neighbor_weight": 0.05
+        }
+      },
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T07:38:53",
+      "test_mode": true,
+      "isolation": "non_critical_paths_only",
+      "data_dir": "/workspace/zoetron/data",
+      "organ_loaded": true,
+      "iterations": 5,
+      "measurements": {
+        "reflex": {
+          "values": [
+            0.004642020998289809,
+            0.004563001013593748,
+            0.005915729998378083,
+            0.004766563011799008,
+            0.004723343008663505
+          ],
+          "min": 0.004563001013593748,
+          "max": 0.005915729998378083,
+          "avg": 0.00492213160614483,
+          "unit": "seconds",
+          "description": "Reflex-Latenz: Grundreaktionszeit"
+        },
+        "werkzeuge": {
+          "values": [
+            0.0019023519998881966,
+            0.0022992760059423745,
+            0.0023873960017226636,
+            0.0018432530050631613,
+            0.003438502986682579
+          ],
+          "min": 0.0018432530050631613,
+          "max": 0.003438502986682579,
+          "avg": 0.002374155999859795,
+          "unit": "seconds",
+          "description": "Werkzeuge-Latenz: Werkzeug-Ausführungszeit"
+        },
+        "konvergenz": {
+          "values": [
+            0.002037534024566412,
+            0.0024252159928437322,
+            0.002433346991892904,
+            0.0020379640045575798,
+            0.0035109440214000642
+          ],
+          "min": 0.002037534024566412,
+          "max": 0.0035109440214000642,
+          "avg": 0.0024890010070521386,
+          "unit": "seconds",
+          "description": "Konvergenz-Latenz: Konvergenz-Prozesszeit"
+        }
+      },
+      "bottleneck": "reflex",
+      "total_avg_latency": 0.009785288613056765,
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T07:42:47.099253+00:00",
+      "organ": "retro",
+      "type": "self_reflection",
+      "summary": "Analysiert 38 Events: 0 erfolgreich, 0 fehlgeschlagen, 38 unklar.",
+      "metrics": {
+        "total_events": 38,
+        "ok": 0,
+        "failed": 0,
+        "unknown": 38,
+        "success_rate": 0.0,
+        "unique_goals": 0,
+        "unique_tools": 0
+      },
+      "top_goals": [],
+      "top_tools": [],
+      "failure_hotspots": [],
+      "blind_spots": [],
+      "recent_failures": [],
+      "recommendations": [
+        "Keine Ziele in Events gefunden – Ziel-Tracking verbessern"
+      ],
+      "artefakte_count": 746,
+      "memory_files_count": 4,
+      "data_dir": "/workspace/zoetron/data",
+      "elapsed_sec": 0.29,
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T07:43:12.299568+00:00",
+      "organ": "retro",
+      "type": "self_reflection",
+      "summary": "Analysiert 38 Events: 0 erfolgreich, 0 fehlgeschlagen, 38 unklar.",
+      "metrics": {
+        "total_events": 38,
+        "ok": 0,
+        "failed": 0,
+        "unknown": 38,
+        "success_rate": 0.0,
+        "unique_goals": 0,
+        "unique_tools": 0
+      },
+      "top_goals": [],
+      "top_tools": [],
+      "failure_hotspots": [],
+      "blind_spots": [],
+      "recent_failures": [],
+      "recommendations": [
+        "Keine Ziele in Events gefunden – Ziel-Tracking verbessern"
+      ],
+      "artefakte_count": 748,
+      "memory_files_count": 4,
+      "data_dir": "/workspace/zoetron/data",
+      "elapsed_sec": 0.27,
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11500,7 +11887,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11512,7 +11899,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11523,8 +11910,8 @@
       "timestamp": "2026-08-28T07:06:07.279549",
       "scores": {},
       "aggregate_score": 0.0,
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11535,8 +11922,8 @@
       "timestamp": "2026-08-28T07:07:27.046147",
       "scores": {},
       "aggregate_score": 0.0,
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11548,7 +11935,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11560,7 +11947,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11573,7 +11960,7 @@
       "artifact_path": "/workspace/zoetron/data",
       "timestamp": 1787746767.440911,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11586,7 +11973,7 @@
       ],
       "timestamp": 1787746767.7634919,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11705,7 +12092,7 @@
         "ziel_erreicht": true
       },
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11718,8 +12105,8 @@
       "total_errors": 12,
       "window_hours": 1,
       "timestamp": "2026-08-30T05:22:33.728735",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11732,8 +12119,8 @@
       "total_errors": 16,
       "window_hours": 1,
       "timestamp": "2026-08-30T06:52:02.116119",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11747,7 +12134,21 @@
       "window_hours": 1,
       "timestamp": "2026-09-01T17:57:02.315006",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "level": "WARNING",
+      "type": "high_error_rate",
+      "provider": "openai",
+      "model_id": "gpt-4",
+      "hourly_rate": 24.0,
+      "threshold": 10,
+      "total_errors": 24,
+      "window_hours": 1,
+      "timestamp": "2026-09-02T05:46:15.816414",
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -11808,8 +12209,8 @@
         "status": "completed"
       },
       "timestamp": "2026-08-30T09:11:22.596373Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -12785,7 +13186,7 @@
         }
       ],
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -13761,7 +14162,7 @@
         }
       ],
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -14957,7 +15358,373 @@
         }
       ],
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:50:45.141548",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.0025499903131,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:50:45.142253",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.0023100001272,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:50:45.142933",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.002199987648,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:50:45.143561",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.0017599959392,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:50:45.144163",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.0019200087991,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:50:45.144767",
+      "model_id": "claude-3-opus",
+      "error_type": "token_error",
+      "severity": 0.6,
+      "latency_ms": 0.002929999027401209,
+      "tokens_used": 200000,
+      "tokens_limit": 100000,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:50:45.145356",
+      "model_id": "claude-3-opus",
+      "error_type": "token_error",
+      "severity": 0.6,
+      "latency_ms": 0.002189975930377841,
+      "tokens_used": 200000,
+      "tokens_limit": 100000,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:50:45.145951",
+      "model_id": "claude-3-opus",
+      "error_type": "token_error",
+      "severity": 0.6,
+      "latency_ms": 0.0019700091797858477,
+      "tokens_used": 200000,
+      "tokens_limit": 100000,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:51:50.825411",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.0038699945435,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:51:50.826369",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.0024000182748,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:51:50.827220",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.0015600235201,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:51:50.828209",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.0017799902707,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:51:50.829058",
+      "model_id": "gpt-4",
+      "error_type": "rate_limit",
+      "severity": 0.7,
+      "latency_ms": 1000.0020500156097,
+      "tokens_used": 500,
+      "tokens_limit": null,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:51:50.830076",
+      "model_id": "claude-3-opus",
+      "error_type": "token_error",
+      "severity": 0.6,
+      "latency_ms": 0.003610010026022792,
+      "tokens_used": 200000,
+      "tokens_limit": 100000,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:51:50.831139",
+      "model_id": "claude-3-opus",
+      "error_type": "token_error",
+      "severity": 0.6,
+      "latency_ms": 0.0029200164135545492,
+      "tokens_used": 200000,
+      "tokens_limit": 100000,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:51:50.832034",
+      "model_id": "claude-3-opus",
+      "error_type": "token_error",
+      "severity": 0.6,
+      "latency_ms": 0.002469983883202076,
+      "tokens_used": 200000,
+      "tokens_limit": 100000,
+      "retry_count": 0,
+      "context": {},
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-02T05:50:50.452466+00:00",
+      "results": [
+        {
+          "model_id": "gpt-4o-mini",
+          "timestamp": "2026-09-02T05:50:46.825343+00:00",
+          "latency_ms": 148.15205666430606,
+          "error_rate": 0.08333333333333333,
+          "token_cost_per_1k": 0.001248,
+          "tokens_tested": 624,
+          "requests_made": 12,
+          "requests_failed": 1,
+          "p50_latency_ms": 144.00405500782654,
+          "p95_latency_ms": 165.75703100534156,
+          "p99_latency_ms": 165.75703100534156,
+          "health_score": 79.77012766690272,
+          "metadata": {
+            "config": {
+              "test_prompts": [
+                "Erkläre kurz das Konzept der Rekursion in der Programmierung.",
+                "Was ist der Unterschied zwischen synchroner und asynchroner Ausführung?",
+                "Nenne drei Vorteile von funktionaler Programmierung.",
+                "Wie funktioniert ein Hash-Tabelle (Dictionary) intern?",
+                "Was bedeutet 'Big O Notation' und warum ist sie wichtig?"
+              ],
+              "max_tokens_per_request": 150,
+              "timeout_seconds": 30.0,
+              "concurrent_requests": 3,
+              "warmup_requests": 2,
+              "measurement_requests": 10,
+              "models_to_test": []
+            },
+            "adapter_type": "SimulatedModelAdapter"
+          }
+        },
+        {
+          "model_id": "gpt-3.5-turbo",
+          "timestamp": "2026-09-02T05:50:48.681022+00:00",
+          "latency_ms": 308.73625179810915,
+          "error_rate": 0.0,
+          "token_cost_per_1k": 0.001384,
+          "tokens_tested": 692,
+          "requests_made": 12,
+          "requests_failed": 0,
+          "p50_latency_ms": 301.81766298483126,
+          "p95_latency_ms": 347.4823400028981,
+          "p99_latency_ms": 347.4823400028981,
+          "health_score": 67.74237482018908,
+          "metadata": {
+            "config": {
+              "test_prompts": [
+                "Erkläre kurz das Konzept der Rekursion in der Programmierung.",
+                "Was ist der Unterschied zwischen synchroner und asynchroner Ausführung?",
+                "Nenne drei Vorteile von funktionaler Programmierung.",
+                "Wie funktioniert ein Hash-Tabelle (Dictionary) intern?",
+                "Was bedeutet 'Big O Notation' und warum ist sie wichtig?"
+              ],
+              "max_tokens_per_request": 150,
+              "timeout_seconds": 30.0,
+              "concurrent_requests": 3,
+              "warmup_requests": 2,
+              "measurement_requests": 10,
+              "models_to_test": []
+            },
+            "adapter_type": "SimulatedModelAdapter"
+          }
+        },
+        {
+          "model_id": "claude-3-haiku",
+          "timestamp": "2026-09-02T05:50:49.566288+00:00",
+          "latency_ms": 144.3068811277044,
+          "error_rate": 0.16666666666666666,
+          "token_cost_per_1k": 0.001098,
+          "tokens_tested": 549,
+          "requests_made": 12,
+          "requests_failed": 2,
+          "p50_latency_ms": 143.98218601127155,
+          "p95_latency_ms": 165.74361099628732,
+          "p99_latency_ms": 165.74361099628732,
+          "health_score": 76.13797855389623,
+          "metadata": {
+            "config": {
+              "test_prompts": [
+                "Erkläre kurz das Konzept der Rekursion in der Programmierung.",
+                "Was ist der Unterschied zwischen synchroner und asynchroner Ausführung?",
+                "Nenne drei Vorteile von funktionaler Programmierung.",
+                "Wie funktioniert ein Hash-Tabelle (Dictionary) intern?",
+                "Was bedeutet 'Big O Notation' und warum ist sie wichtig?"
+              ],
+              "max_tokens_per_request": 150,
+              "timeout_seconds": 30.0,
+              "concurrent_requests": 3,
+              "warmup_requests": 2,
+              "measurement_requests": 10,
+              "models_to_test": []
+            },
+            "adapter_type": "SimulatedModelAdapter"
+          }
+        },
+        {
+          "model_id": "llama-3-8b",
+          "timestamp": "2026-09-02T05:50:50.451516+00:00",
+          "latency_ms": 148.66845132847732,
+          "error_rate": 0.08333333333333333,
+          "token_cost_per_1k": 0.001248,
+          "tokens_tested": 624,
+          "requests_made": 12,
+          "requests_failed": 1,
+          "p50_latency_ms": 143.9790449803695,
+          "p95_latency_ms": 165.75914100394584,
+          "p99_latency_ms": 165.75914100394584,
+          "health_score": 79.7184882004856,
+          "metadata": {
+            "config": {
+              "test_prompts": [
+                "Erkläre kurz das Konzept der Rekursion in der Programmierung.",
+                "Was ist der Unterschied zwischen synchroner und asynchroner Ausführung?",
+                "Nenne drei Vorteile von funktionaler Programmierung.",
+                "Wie funktioniert ein Hash-Tabelle (Dictionary) intern?",
+                "Was bedeutet 'Big O Notation' und warum ist sie wichtig?"
+              ],
+              "max_tokens_per_request": 150,
+              "timeout_seconds": 30.0,
+              "concurrent_requests": 3,
+              "warmup_requests": 2,
+              "measurement_requests": 10,
+              "models_to_test": []
+            },
+            "adapter_type": "SimulatedModelAdapter"
+          }
+        }
+      ],
+      "summary": {
+        "models_tested": 4,
+        "best_model": "gpt-4o-mini",
+        "worst_model": "gpt-3.5-turbo",
+        "avg_health_score": 75.8422423103684
+      },
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -14985,7 +15752,7 @@
       "created_at": "2026-08-27T11:17:07.536828",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15013,7 +15780,7 @@
       "created_at": "2026-08-27T11:17:07.537230",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15041,7 +15808,7 @@
       "created_at": "2026-08-27T11:17:07.537456",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15069,7 +15836,7 @@
       "created_at": "2026-08-27T11:22:04.954121",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15097,7 +15864,7 @@
       "created_at": "2026-08-27T11:22:04.954482",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15125,7 +15892,7 @@
       "created_at": "2026-08-27T11:22:04.954850",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15153,7 +15920,7 @@
       "created_at": "2026-08-27T18:46:00.179702",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15181,7 +15948,7 @@
       "created_at": "2026-08-27T18:46:00.180070",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15209,7 +15976,7 @@
       "created_at": "2026-08-27T18:46:00.180451",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15237,7 +16004,7 @@
       "created_at": "2026-08-27T18:50:36.394747",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15265,7 +16032,7 @@
       "created_at": "2026-08-27T18:50:36.395312",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15293,7 +16060,7 @@
       "created_at": "2026-08-27T18:50:36.395865",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15321,7 +16088,7 @@
       "created_at": "2026-08-27T21:24:59.148889",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15349,7 +16116,7 @@
       "created_at": "2026-08-27T21:24:59.149328",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15377,7 +16144,7 @@
       "created_at": "2026-08-27T21:24:59.149770",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15404,8 +16171,8 @@
       "priority": 66,
       "created_at": "2026-08-28T05:33:34.588913",
       "status": "pending",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15432,8 +16199,8 @@
       "priority": 49,
       "created_at": "2026-08-28T05:33:34.589330",
       "status": "pending",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15460,8 +16227,8 @@
       "priority": 43,
       "created_at": "2026-08-28T05:33:34.589691",
       "status": "pending",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15488,8 +16255,8 @@
       "priority": 66,
       "created_at": "2026-08-28T07:06:07.022204",
       "status": "pending",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15516,8 +16283,8 @@
       "priority": 49,
       "created_at": "2026-08-28T07:06:07.022543",
       "status": "pending",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15544,8 +16311,8 @@
       "priority": 43,
       "created_at": "2026-08-28T07:06:07.022734",
       "status": "pending",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15572,8 +16339,8 @@
       "priority": 66,
       "created_at": "2026-08-28T07:07:26.733472",
       "status": "pending",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15600,8 +16367,8 @@
       "priority": 49,
       "created_at": "2026-08-28T07:07:26.733813",
       "status": "pending",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15628,8 +16395,8 @@
       "priority": 43,
       "created_at": "2026-08-28T07:07:26.734034",
       "status": "pending",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15657,7 +16424,7 @@
       "created_at": "2026-08-29T18:29:18.107553",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15685,7 +16452,7 @@
       "created_at": "2026-08-29T18:29:18.107924",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15713,7 +16480,7 @@
       "created_at": "2026-08-29T18:29:18.108282",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15741,7 +16508,7 @@
       "created_at": "2026-08-29T19:13:51.086683",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15769,7 +16536,7 @@
       "created_at": "2026-08-29T19:13:51.087029",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15797,7 +16564,7 @@
       "created_at": "2026-08-29T19:13:51.087242",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15825,7 +16592,7 @@
       "created_at": "2026-08-29T19:14:00.307302",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15853,7 +16620,7 @@
       "created_at": "2026-08-29T19:14:00.307632",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15881,7 +16648,7 @@
       "created_at": "2026-08-29T19:14:00.307835",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15909,7 +16676,7 @@
       "created_at": "2026-08-31T14:46:21.064596",
       "status": "pending",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15937,7 +16704,7 @@
       "created_at": "2026-08-31T14:46:21.065002",
       "status": "pending",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15965,7 +16732,7 @@
       "created_at": "2026-08-31T14:46:21.065368",
       "status": "pending",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -15993,7 +16760,7 @@
       "created_at": "2026-09-01T19:16:51.944353",
       "status": "pending",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16021,7 +16788,7 @@
       "created_at": "2026-09-01T19:16:51.944748",
       "status": "pending",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16049,7 +16816,7 @@
       "created_at": "2026-09-01T19:16:51.945162",
       "status": "pending",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16091,8 +16858,8 @@
         "timestamp": "2026-08-30T09:11:22.596057Z"
       },
       "timestamp": "2026-08-30T09:11:22.596599Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16103,8 +16870,8 @@
         "source": "branchen_keywords.json"
       },
       "timestamp": "2026-08-30T09:11:22.596775Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16115,8 +16882,8 @@
         "source": "branchen_keywords.json"
       },
       "timestamp": "2026-08-30T09:11:22.596999Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16127,8 +16894,8 @@
         "source": "branchen_keywords.json"
       },
       "timestamp": "2026-08-30T09:11:22.597128Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16139,8 +16906,8 @@
         "source": "branchen_keywords.json"
       },
       "timestamp": "2026-08-30T09:11:22.597250Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16151,8 +16918,8 @@
         "source": "branchen_keywords.json"
       },
       "timestamp": "2026-08-30T09:11:22.597363Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16164,8 +16931,8 @@
         "source": "CRM export"
       },
       "timestamp": "2026-08-30T09:11:22.597481Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16177,8 +16944,8 @@
         "source": "CRM export"
       },
       "timestamp": "2026-08-30T09:11:22.597597Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16190,8 +16957,8 @@
         "source": "CRM export"
       },
       "timestamp": "2026-08-30T09:11:22.597710Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16200,8 +16967,8 @@
       "relation": "ANALYZES",
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.596867Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16210,8 +16977,8 @@
       "relation": "ANALYZES",
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597063Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16220,8 +16987,8 @@
       "relation": "ANALYZES",
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597188Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16230,8 +16997,8 @@
       "relation": "ANALYZES",
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597305Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16240,8 +17007,8 @@
       "relation": "ANALYZES",
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597420Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16250,8 +17017,8 @@
       "relation": "COMPETES_WITH",
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597537Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16260,8 +17027,8 @@
       "relation": "COMPETES_WITH",
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597652Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16270,8 +17037,8 @@
       "relation": "COMPETES_WITH",
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597777Z",
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16281,8 +17048,8 @@
       },
       "status": "success",
       "timestamp": "2026-08-26T06:09:15.112365",
-      "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 15,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16300,8 +17067,8 @@
         "reason": "alle Kriterien erfüllt"
       },
       "decision": "keep",
-      "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 15,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16319,8 +17086,8 @@
         "reason": "alle Kriterien erfüllt"
       },
       "decision": "keep",
-      "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 15,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16335,7 +17102,7 @@
       "baseline": true,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16350,7 +17117,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16365,7 +17132,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16380,7 +17147,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16395,7 +17162,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16409,8 +17176,8 @@
       "recall": 5,
       "baseline": false,
       "datenquelle": "sys.argv[1]",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16425,7 +17192,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16440,7 +17207,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16455,7 +17222,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16470,7 +17237,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16486,7 +17253,7 @@
         "missing_fields": 15
       },
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16496,7 +17263,7 @@
       "proficiency": 0.6,
       "timestamp": "2026-08-27T20:19:32.101261",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16506,7 +17273,7 @@
       "proficiency": 0.4,
       "timestamp": "2026-08-27T20:19:32.101771",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16516,7 +17283,7 @@
       "proficiency": 0.8,
       "timestamp": "2026-08-27T20:19:32.102146",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16526,7 +17293,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.398396",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16536,7 +17303,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.398916",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16546,7 +17313,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.399398",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16556,7 +17323,7 @@
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.703127",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16566,7 +17333,7 @@
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.703789",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16576,7 +17343,7 @@
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.705225",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16585,8 +17352,8 @@
       "proficiency": 0.6,
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.031694",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16595,8 +17362,8 @@
       "proficiency": 0.4,
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.032388",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16605,8 +17372,8 @@
       "proficiency": 0.8,
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.032791",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16615,8 +17382,8 @@
       "proficiency": 0.6,
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.742748",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16625,8 +17392,8 @@
       "proficiency": 0.4,
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.743221",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16635,8 +17402,8 @@
       "proficiency": 0.8,
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.743623",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16646,7 +17413,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.595259",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16656,7 +17423,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.595807",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16666,7 +17433,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.596302",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16676,7 +17443,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.096694",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16686,7 +17453,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.097190",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16696,7 +17463,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.097561",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16706,7 +17473,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.315389",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16716,7 +17483,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.315931",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16726,7 +17493,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.316504",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16738,7 +17505,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.172699",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16750,7 +17517,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.173200",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16762,7 +17529,43 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.173576",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "type": "skill_used",
+      "skill": "code_analysis",
+      "erfolg": null,
+      "proficiency_vorher": 0.6,
+      "proficiency": 0.6,
+      "usage_count": 9,
+      "timestamp": "2026-09-02T07:06:57.480246",
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "type": "skill_used",
+      "skill": "module_extension",
+      "erfolg": null,
+      "proficiency_vorher": 0.4,
+      "proficiency": 0.4,
+      "usage_count": 9,
+      "timestamp": "2026-09-02T07:06:57.480709",
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
+      "_stale": true
+    },
+    {
+      "type": "skill_used",
+      "skill": "persistent_storage",
+      "erfolg": null,
+      "proficiency_vorher": 0.8,
+      "proficiency": 0.8,
+      "usage_count": 9,
+      "timestamp": "2026-09-02T07:06:57.481106",
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16785,7 +17588,7 @@
         "Marktanalyse: Marktanalyse nicht geladen: senses-Organ nicht gefunden"
       ],
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -16890,8 +17693,8 @@
         "applied_at": "2026-08-29T05:20:50.881465"
       },
       "timestamp": "2026-08-29T05:20:50.881797",
-      "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_age_days": 12,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -17816,7 +18619,7 @@
       "timestamp": 1788106503.6919951,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -18741,7 +19544,7 @@
       "timestamp": 1788106874.6082578,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -19666,7 +20469,7 @@
       "timestamp": 1788204007.2886496,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -20591,7 +21394,7 @@
       "timestamp": 1788260189.2448132,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -20623,7 +21426,7 @@
       "max": 0.5615306462039242,
       "min": 0.4511184702271502,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -20655,7 +21458,7 @@
       "max": 0.48158445813285994,
       "min": 0.3648959317837833,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -20687,7 +21490,7 @@
       "max": 0.48827620793494436,
       "min": 0.3777743589332794,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -20719,7 +21522,7 @@
       "max": 0.4885136925266441,
       "min": 0.38232571599632287,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     },
     {
@@ -20751,7 +21554,7 @@
       "max": 0.4885136925266441,
       "min": 0.370869899858136,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623",
+      "_audit_checked_at": "2026-09-10T09:54:30.083035",
       "_stale": true
     }
   ],
@@ -20766,25 +21569,10 @@
       "budget_remaining": 100,
       "hysteresis_threshold": 0.75,
       "window_size": 10,
-      "timestamp": 1788334726.3261428,
-      "ts": 1788334726.326146,
-      "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
-    },
-    {
-      "mode": "normal",
-      "max_concurrent": 8,
-      "max_iterations": 5,
-      "stress": 0.5,
-      "avg_stress": 0.5,
-      "taktung_budget": 100,
-      "budget_remaining": 100,
-      "hysteresis_threshold": 0.75,
-      "window_size": 10,
       "timestamp": 1788670722.5027614,
       "ts": 1788670722.5027628,
-      "_audit_age_days": 3,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_age_days": 4,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "event_id": "401b73d9",
@@ -20807,8 +21595,8 @@
         "completed_at": null
       },
       "correlation_id": "cc492c4e",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "event_id": "3a136f27",
@@ -20831,8 +21619,8 @@
         "completed_at": null
       },
       "correlation_id": "c449901a",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "event_id": "5f612642",
@@ -20855,8 +21643,8 @@
         "completed_at": null
       },
       "correlation_id": "44c348ea",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "event_id": "2ecd09b1",
@@ -20872,8 +21660,8 @@
         ]
       },
       "correlation_id": "agent-001",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "event_id": "cb21646f",
@@ -20889,8 +21677,8 @@
         ]
       },
       "correlation_id": "agent-002",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "event_id": "acd3f415",
@@ -20906,8 +21694,8 @@
         ]
       },
       "correlation_id": "agent-003",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "event_id": "8a3ba951",
@@ -20919,8 +21707,8 @@
         "task_name": "Research Requirements"
       },
       "correlation_id": "cc492c4e",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "event_id": "c88c771c",
@@ -20932,8 +21720,25 @@
         "task_name": "Research Requirements"
       },
       "correlation_id": "cc492c4e",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
+    },
+    {
+      "event_id": "29abf303",
+      "event_type": "task_completed",
+      "timestamp": 1788410991.7793157,
+      "payload": {
+        "task_id": "cc492c4e",
+        "agent_id": "agent-001",
+        "result": {
+          "processed_by": "agent-001",
+          "role": "researcher",
+          "output": "Task 'Research Requirements' abgeschlossen von researcher-Agent"
+        }
+      },
+      "correlation_id": "cc492c4e",
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     }
   ],
   "no_timestamp_events_sample": [
@@ -20941,7 +21746,7 @@
       "last_count": 30,
       "earliest_next": 1787355972.2539115,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "tag": "2026-08-24",
@@ -20953,7 +21758,7 @@
       "seit": 0.0,
       "zuletzt_frei": 1787529861.1142402,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "version": 1,
@@ -20982,14 +21787,14 @@
       ],
       "first_boot": "2026-08-23T00:10:46",
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
-      "versatz": 11229217,
+      "versatz": 11375777,
       "finger": "b'[2026-08-25 14:04:55] daemon gestartet (pid 563)\\n[2026-08-25 14:04:55] === HERZSCHLAG BEGINN ===\\n[2026-08-25 14:04:55] p'",
-      "ts": 1789014717.911217,
+      "ts": 1789032349.498228,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "title": "Semantic-Knowledge-Graph als Organ einbauen",
@@ -20997,7 +21802,7 @@
       "signal": "gap",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "title": "Semantic-Knowledge-Graph als Organ einbauen (Code-Pflicht)",
@@ -21005,7 +21810,7 @@
       "signal": "failure",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "title": "MemoryStore-Vertragswächter bauen (Contract-Validator)",
@@ -21013,7 +21818,7 @@
       "signal": "gap",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "title": "Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)",
@@ -21024,7 +21829,7 @@
       "_geparkt": true,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
@@ -21035,7 +21840,7 @@
       "_geparkt": false,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     },
     {
       "title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)",
@@ -21046,8 +21851,8 @@
       "_geparkt": true,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T04:34:05.515623"
+      "_audit_checked_at": "2026-09-10T09:54:30.083035"
     }
   ],
-  "recommendation": "193 von 80526 Einträgen sind stale (älter als 7 Tage). Diese sollten erneuert werden."
+  "recommendation": "219 von 81250 Einträgen sind stale (älter als 7 Tage). Diese sollten erneuert werden."
 }

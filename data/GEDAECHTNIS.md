@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11801 Fakten** · Stand 2026-09-10 09:19 UTC · aktualisiert bei jedem Herzschlag
+**11789 Fakten** · Stand 2026-09-10 09:56 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7465
-- **swarm_artifact:** 1893
+- **swarm_artifact:** 1885
 - **last_swarm_critique:** 869
 - **last_swarm_goal:** 603
-- **anti_pattern:** 435
-- **strategy:** 219
-- **tool:** 172
+- **anti_pattern:** 433
+- **strategy:** 218
+- **tool:** 171
 - **hand_result:** 102
 - **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910095231:5:278f2e`
+*10.09. 09:52 UTC · Quelle: dream*
+
+The revision loop applied 3 revisions to the simulation but the final score remained 1, suggesting revisions address surface issues rather than the root cause of non-executable output.
+
+### `dream:20260910095231:4:d3568d`
+*10.09. 09:52 UTC · Quelle: dream*
+
+Calibration predicted 4 for 'Simulationen in Taten umsetzen' but actual was 1 (abs_error: 3), revealing a severe overestimation bias that must be corrected.
+
+### `dream:20260910095231:3:8ba748`
+*10.09. 09:52 UTC · Quelle: dream*
+
+The evolutionary swarm produced non-executable Python code (critic: 'LAEUFT NICHT: Kein ausführbarer Python'), scoring 1/10 despite 3 variants and 2 convergence cycles, indicating a fundamental code-generation quality failure.
+
+### `dream:20260910095231:2:ca7620`
+*10.09. 09:52 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin is the only model that succeeds reliably across multiple calls, though latency varies from 2.1s to 9.3s depending on token volume.
+
+### `dream:20260910095231:1:8b537c`
+*10.09. 09:52 UTC · Quelle: dream*
+
+Google/gemma-4-31b-it and gemma-4-26b-a4b-it models consistently fail with 429 rate-limit errors, making them unreliable for any task pipeline in this environment.
 
 ### `tool:traumerkenntnisse-in-fähigkeiten-umsetze`
 *10.09. 09:17 UTC · Quelle: hands*
@@ -43919,46 +43944,6 @@ score=1; issues=Artefakt laeuft nicht (Sandbox: LAEUFT NICHT) - Export-Skript br
 *27.08. 09:39 UTC · Quelle: system*
 
 IMPORT und EXPORT fertigstellen
-
-### `dream:20260827093831:5:98e921`
-*27.08. 09:38 UTC · Quelle: dream*
-
-The goal 'make proposed skills usable' repeats across swarm, reflex, and simulation, confirming skill usability as a non-negotiable cross-cutting constraint.
-
-### `dream:20260827093831:4:3c6f5a`
-*27.08. 09:38 UTC · Quelle: dream*
-
-Silent path-resolution failures occur when absolute data-path enforcement is absent, even with input available in sys.argv and ZOETRON_DATA.
-
-### `dream:20260827093831:3:018a46`
-*27.08. 09:38 UTC · Quelle: dream*
-
-System conserves tasks (max_tasks=3, stress=1.0) when model reliability drops, encoding a volume-reliability trade-off.
-
-### `dream:20260827093831:2:350e57`
-*27.08. 09:38 UTC · Quelle: dream*
-
-Nemotron-3-ultra-550b free-model latency spans 25–81s, making fixed timeouts unreliable and adaptive wait strategies essential.
-
-### `dream:20260827093831:1:4e45fb`
-*27.08. 09:38 UTC · Quelle: dream*
-
-Free-tier models under sequential requests hit 429 rate limits predictably, requiring throttling or tier-promotion fallbacks.
-
-### `tool:simulations-lernschleife-schließen`
-*27.08. 09:23 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Simulations-Lernschleife schließen'. Datei: data/tools/simulations-lernschleife-schließen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Simulations-Lernschleife:2`
-*27.08. 09:23 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Differenzierbare Simulation & End-to-End Gradienten - Implementieren Sie die Simulationsumgebung (oder einen Surrogat-Modell-Zwilling) in einem autodiff-fähigen Framework (JAX, PyTorch, DiffTaichi). Statt RL (Policy Gradient)
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Simulations-Lernschleife:0`
-*27.08. 09:23 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Architektur-Wechsel: Event-Sourcing & CQRS - Ersetzen Sie den monolithischen Simulations-Runner durch eine ereignisgesteuerte Architektur. Die Simulation schreibt unveränderliche Events (StateChanged, ActionExecuted, RewardCa
 
 ### `last_swarm_critique`
 *27.08. 09:22 UTC · Quelle: critic*

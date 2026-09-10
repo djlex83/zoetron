@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 09:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 09:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
@@ -34,13 +34,18 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The revision loop applied 3 revisions to the simulation but the final score remained 1, suggesting revisions address surface issues rather than the ro
+- Calibration predicted 4 for 'Simulationen in Taten umsetzen' but actual was 1 (abs_error: 3), revealing a severe overestimation bias that must be corr
+- The evolutionary swarm produced non-executable Python code (critic: 'LAEUFT NICHT: Kein ausführbarer Python'), scoring 1/10 despite 3 variants and 2 c
+- inclusionai/ling-3.0-flash-fin is the only model that succeeds reliably across multiple calls, though latency varies from 2.1s to 9.3s depending on to
+- Google/gemma-4-31b-it and gemma-4-26b-a4b-it models consistently fail with 429 rate-limit errors, making them unreliable for any task pipeline in this
 - Pruning 9 facts and 1 event during consolidation shows the system discards degraded information reactively, but no proactive freshness policy prevents
 - Stale swarm data and repeated model failures share a root cause: the system lacks proactive freshness and refresh mechanisms for its information pipel
 - The reflex-based error-reduction procedure (modellfehler-reduzieren-fuer-zuverlaessi.py) converged successfully, proving that structured procedural re
@@ -51,11 +56,6 @@
 - The inclusionai/ling-3.0-flash-fin model is the only consistently reliable model across the entire experience window, succeeding on every invocation w
 - The nvidia/nemotron-3-ultra-550b model's 1800-second lockout after 3 consecutive failures creates a recovery deadlock where the model cannot be retrie
 - 429 rate-limit errors from OpenRouter are the dominant systemic failure mode, affecting multiple models simultaneously and indicating a provider-side 
-- No circuit-breaker or exponential-backoff mechanism is evident in the replay data; the system continues hammering rate-limited endpoints rather than b
-- The simulation verdict explicitly flagged 'make capabilities reliable before expansion' with 5 risks and 5 revisions, confirming that reliability was 
-- inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (4.1–21.2s) across all recorded calls, establishing it as the only proven reliab
-- The nvidia/nemotron-3-ultra-550b model timed out on read operations and triggered a 1800-second lockout after only 3 consecutive failures, showing tha
-- Repeated 429 rate-limit errors on google/gemma-4-31b-it and google/gemma-4-26b-a4b-it indicate the system retries failed models instead of excluding t
 
 ---
 
