@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,8 +29,8 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm converges in 1 cycle but reflex tools (kritiken-und-ziele-regelmäßig-prüfen.py) still return ok:false — convergence ≠ tool readiness.
+- Hand-action failures stem from relative path resolution against ZOETRON_DATA; sys.argv[1] paths are not auto-absolutized.
+- Calibration consistently underestimates effort (predicted 2 vs actual 9) — planning estimates need a 4-5x upward factor for swarm tasks.
+- Nemotron is the most reliable model but latency varies 6x (26s–147s), so timeout budgets must assume worst-case, not median.
+- 429 rate-limit errors dominate failures across 3 different models on OpenRouter — a shared provider-side throttle, not model-specific bugs.
 - Selbstdiagnose reports zero organ errors but does not emit operational health metrics (model success rates, convergence rates, latency percentiles) ne
 - Pruning discarded 23 events and 7 facts without logging retention criteria or impact scores, risking loss of low-frequency high-impact patterns.
 - Drive goals generated from failure/stale/gap signals lack automatic escalation to reflex invocations with retry budgets, leaving remediation manual.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays silently; a stale-fact detector tracking last-access timestamps and contradiction flags must trigger proactive refresh reflexes
 - Free tier model endpoints exhibit cascading 429/502 failures under load, requiring a router with per-model circuit breakers, health scoring, and autom
 - Reflex-driven maintenance (schwarmwissen refresh) succeeds autonomously, proving the reflex loop can offload routine upkeep.
-- Selbstdiagnose and pruning operate correctly but do not yet probe external model health before task assignment.
-- Existing circuit-breaker and backoff proposals are fragmented; a unified model router with health-aware fallback is missing.
-- inclusionai/ling-3.0-flash-sante:free consistently succeeds where larger models fail, suggesting smaller specialized models are more reliable under qu
-- Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making single-model reliance untenable.
-- Consolidation/dream has no protected compute budget, so it is the first capability dropped under load — precisely when failure analysis is most needed
 
 ---
 

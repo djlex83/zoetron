@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11776 Fakten** · Stand 2026-09-10 22:12 UTC · aktualisiert bei jedem Herzschlag
+**11771 Fakten** · Stand 2026-09-10 22:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7556
+- **dream:** 7551
 - **swarm_artifact:** 1811
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910222021:5:dae44f`
+*10.09. 22:20 UTC · Quelle: dream*
+
+Swarm converges in 1 cycle but reflex tools (kritiken-und-ziele-regelmäßig-prüfen.py) still return ok:false — convergence ≠ tool readiness.
+
+### `dream:20260910222021:4:d4a967`
+*10.09. 22:20 UTC · Quelle: dream*
+
+Hand-action failures stem from relative path resolution against ZOETRON_DATA; sys.argv[1] paths are not auto-absolutized.
+
+### `dream:20260910222021:3:a7237b`
+*10.09. 22:20 UTC · Quelle: dream*
+
+Calibration consistently underestimates effort (predicted 2 vs actual 9) — planning estimates need a 4-5x upward factor for swarm tasks.
+
+### `dream:20260910222021:2:9720e5`
+*10.09. 22:20 UTC · Quelle: dream*
+
+Nemotron is the most reliable model but latency varies 6x (26s–147s), so timeout budgets must assume worst-case, not median.
+
+### `dream:20260910222021:1:e73e77`
+*10.09. 22:20 UTC · Quelle: dream*
+
+429 rate-limit errors dominate failures across 3 different models on OpenRouter — a shared provider-side throttle, not model-specific bugs.
 
 ### `dream:20260910221021:5:243410`
 *10.09. 22:10 UTC · Quelle: dream*
@@ -44087,56 +44112,6 @@ nvidia/nemotron-3-ultra-550b consistently succeeds with acceptable latency (23-3
 *27.08. 22:21 UTC · Quelle: dream*
 
 429 errors on z-ai/glm-5.2:free are recurring and predictable, indicating a need for proactive rate-limit handling rather than reactive retries.
-
-### `dream:20260827221514:5:72b6ba`
-*27.08. 22:15 UTC · Quelle: dream*
-
-Tool-refusal reflexes work in isolation but do not generalize across similar failure modes without explicit learning.
-
-### `dream:20260827221514:4:c55dc9`
-*27.08. 22:15 UTC · Quelle: dream*
-
-Dream-cycle insights are not consistently translated into actionable model-selection heuristics or routing policies.
-
-### `dream:20260827221514:3:8ab374`
-*27.08. 22:15 UTC · Quelle: dream*
-
-Skill proposals are generated frequently but rarely validated or deployed, creating a gap between ideation and execution.
-
-### `dream:20260827221514:2:37c42e`
-*27.08. 22:15 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b:free consistently succeeds but with variable latency (9.2s–21.9s), suggesting it is a reliable fallback.
-
-### `dream:20260827221514:1:4f72f9`
-*27.08. 22:15 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate systemic rate-limiting that causes cascading task failures.
-
-### `dream:20260827221109:5:bd142a`
-*27.08. 22:11 UTC · Quelle: dream*
-
-No sandbox validation exists for generated code or skills, allowing untested artifacts to enter the swarm and risk cascading failures.
-
-### `dream:20260827221109:4:324d38`
-*27.08. 22:11 UTC · Quelle: dream*
-
-Dream cycles produce insights (e.g., convergence criteria, risk injection) that remain unconnected to live swarm parameters or model-selection heuristics.
-
-### `dream:20260827221109:3:b8b990`
-*27.08. 22:11 UTC · Quelle: dream*
-
-Five separate skill proposals redundantly address model routing, revealing a proposal-to-deployment gap where ideas accumulate but never ship.
-
-### `dream:20260827221109:2:3183c1`
-*27.08. 22:11 UTC · Quelle: dream*
-
-The only working model (nvidia/nemotron-3-ultra) exhibits 15-23s latency, which stalls swarm cycles and violates sub-10s planning budgets.
-
-### `dream:20260827221109:1:f0e3de`
-*27.08. 22:11 UTC · Quelle: dream*
-
-Free-tier model z-ai/glm-5.2:free fails 100% of the time with 429 rate-limit errors, making it unusable without automated failover.
 
 ### `last_swarm_critique`
 *27.08. 21:47 UTC · Quelle: critic*
