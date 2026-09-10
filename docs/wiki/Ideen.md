@@ -1,11 +1,14 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 15:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 15:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - ModelRouterSkill: priority-ordered provider pool with 5-minute circuit-break on 429/502/timeout errors and dyn *(hatte die Idee 6×)*
+- Build a provider health scorecard tracking per-model error rates, latency percentiles, and rate-limit frequenc *(hatte die Idee 5×)*
+- Implement exponential backoff with jitter and automatic provider switching when 429 or timeout errors exceed a *(hatte die Idee 5×)*
+- Develop a dream-memory linkage protocol that cross-references self-diagnosis results with past dream patterns  *(hatte die Idee 5×)*
 - LatencyBudgetSkill: enforce 30s max per call; abort + fallback before swarm engagement. *(hatte die Idee 4×)*
 - DependencyHealthSkill: track 5-min failure rate per provider; auto-disable when >20%. *(hatte die Idee 4×)*
 - EventLogHygieneSkill: cap model-failure events at 50/session; aggregate excess into single 'degraded_period' f *(hatte die Idee 4×)*
@@ -13,13 +16,10 @@
 - EventLogHygieneSkill: cap model-failure events at 50 per session and aggregate excess into a single 'degraded_ *(hatte die Idee 4×)*
 - Replace fixed 2-cycle evolution with adaptive loop: continue until convergence metric (score delta < 0.01) or  *(hatte die Idee 4×)*
 - Deploy SwarmFreshnessScheduler + ConvergenceEvidenceLogger: timestamp every critique, log score trajectory per *(hatte die Idee 4×)*
-- Build a provider health scorecard tracking per-model error rates, latency percentiles, and rate-limit frequenc *(hatte die Idee 4×)*
-- Implement exponential backoff with jitter and automatic provider switching when 429 or timeout errors exceed a *(hatte die Idee 4×)*
-- Develop a dream-memory linkage protocol that cross-references self-diagnosis results with past dream patterns  *(hatte die Idee 4×)*
+- Create a causal-preservation pruning rule that retains event chains leading to failures even when individual i *(hatte die Idee 4×)*
+- Design a swarm-data freshness validator that automatically invalidates swarm decisions when the age of underly *(hatte die Idee 4×)*
 - ModelRouterSkill: priority-ordered provider pool with 5-min circuit-break on 429/502/timeout and dynamic reord *(hatte die Idee 3×)*
 - Build automated skill proposal executor that validates, prioritizes via impact/effort scoring, and deploys app *(hatte die Idee 3×)*
-- Build DriveResolutionTracker: persist each drive_goal with deadline; auto-escalate to structured swarm if unre *(hatte die Idee 3×)*
-- Standardize path resolution in hand actions by enforcing absolute path derivation from ZOETRON_DATA env var, r *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning without causal preservation risks erasing failure root causes, reducing future diagnostic accuracy.
+- Cascading model failures occur when fallback mechanisms are absent, amplifying initial errors into system-wide degradation.
+- Self-diagnosis currently lacks integration with failure pattern recognition, missing opportunities to detect recurring infrastructure issues.
+- Stale swarm data directly correlates with failed convergence, suggesting outdated knowledge undermines goal achievement.
+- Provider failures cluster around timeout and rate-limit errors, indicating systemic reliability gaps rather than isolated incidents.
 - Lange Antworten verursachen hohe Latenz und Tokenkosten; ein kleiner ausführbarer Kern ist robuster als umfangreiche, erst danach testbare Prosa.
 - Die Evolution verbesserte die Bewertungen deutlich, doch ein Variantensieger ist erst dann belastbar, wenn seine Auswahlregel eindeutig ist und das Er
 - Die Prognose 3 bei tatsächlich 1 Zyklus zeigt zu optimistische Konfidenz nach Vorfehlern; weitere Schätzungen müssen den beobachteten absoluten Fehler
@@ -51,11 +56,6 @@
 - Tasks requiring executable code (e.g., Python blocks) failed when only prose was generated, showing that artifact format validation must be enforced b
 - The inclusionai/ling-3.0-flash-fin model consistently succeeded across varying token loads and latencies, suggesting it is more robust under resource 
 - Repeated 429 errors from Google Gemma models indicate rate-limiting under concurrent load, making them unreliable for high-frequency or parallel task 
-- Stale swarm knowledge and disconnected remote dreams degrade task performance when not actively refreshed or reconnected.
-- Convergence without measurable score improvement or hat_code confirmation indicates false-positive completion signals.
-- Tasks lacking executable artifacts (code blocks) fail validation silently, leading to wasted cycles and undetected dead ends.
-- Lightweight flash models consistently succeed under load where larger models fail, indicating a reliability-over-capability trade-off.
-- Rate-limit failures (429) on larger models are systemic and cause cascading task failures when no fallback mechanism exists.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 15:48 UTC · aktualisiert bei jedem Herzschlag
+**11791 Fakten** · Stand 2026-09-10 15:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7511
+- **dream:** 7516
 - **swarm_artifact:** 1847
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910155654:5:62a30b`
+*10.09. 15:56 UTC · Quelle: dream*
+
+Pruning without causal preservation risks erasing failure root causes, reducing future diagnostic accuracy.
+
+### `dream:20260910155654:4:2d3819`
+*10.09. 15:56 UTC · Quelle: dream*
+
+Cascading model failures occur when fallback mechanisms are absent, amplifying initial errors into system-wide degradation.
+
+### `dream:20260910155654:3:4865cf`
+*10.09. 15:56 UTC · Quelle: dream*
+
+Self-diagnosis currently lacks integration with failure pattern recognition, missing opportunities to detect recurring infrastructure issues.
+
+### `dream:20260910155654:2:872fc8`
+*10.09. 15:56 UTC · Quelle: dream*
+
+Stale swarm data directly correlates with failed convergence, suggesting outdated knowledge undermines goal achievement.
+
+### `dream:20260910155654:1:a2da40`
+*10.09. 15:56 UTC · Quelle: dream*
+
+Provider failures cluster around timeout and rate-limit errors, indicating systemic reliability gaps rather than isolated incidents.
 
 ### `dream:20260910154508:5:2113d5`
 *10.09. 15:45 UTC · Quelle: dream*
