@@ -1,17 +1,17 @@
 {
- "stand": "2026-09-10 05:26:10",
+ "stand": "2026-09-10 05:44:42",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 12,
+   "erfolge": 12,
    "quote": 1.0
   },
   {
@@ -63,12 +63,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-stark-reduzieren.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-stark-verringern.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -106,6 +100,12 @@
   },
   {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
@@ -177,10 +177,10 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
@@ -198,12 +198,6 @@
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -423,17 +417,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.751,
- "simulationen_angewandt": 30,
+ "haende_quote": 0.743,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
-  "n": 27,
+  "n": 28,
   "best": 9.0,
-  "schnitt": 5.04
+  "schnitt": 4.86
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 25,
-   "schnitt": 5.08
+   "n": 26,
+   "schnitt": 4.88
   },
   "bau": {
    "n": 2,

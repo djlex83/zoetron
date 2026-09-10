@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11792 Fakten** · Stand 2026-09-10 05:28 UTC · aktualisiert bei jedem Herzschlag
+**11798 Fakten** · Stand 2026-09-10 05:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7458
-- **swarm_artifact:** 1901
-- **last_swarm_critique:** 865
-- **last_swarm_goal:** 599
-- **anti_pattern:** 431
-- **strategy:** 217
+- **dream:** 7453
+- **swarm_artifact:** 1907
+- **last_swarm_critique:** 866
+- **last_swarm_goal:** 600
+- **anti_pattern:** 433
+- **strategy:** 218
 - **tool:** 174
 - **hand_result:** 103
 - **aktuell_organfehler:** 44
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Fähigkeiten in stabile B:1`
+*10.09. 05:43 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Fähigkeiten in stabile B:0`
+*10.09. 05:43 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_critique`
+*10.09. 05:39 UTC · Quelle: critic*
+
+score=0; issues=Kein ausführbarer Python-Block im Artefakt vorhanden - das Artefakt besteht ausschließlich aus Prosa/Anweisungen (bash-Befehle in Markdown); Der Sandbox-Test bestätigt: 'LÄUFT NICHT: kein ausführbarer Python-Block im Artefakt - Prosa allein kon
+
+### `last_swarm_goal`
+*10.09. 05:38 UTC · Quelle: system*
+
+Fähigkeiten in stabile Bahnen überführen
+
+### `dream:20260910053622:5:9dbf07`
+*10.09. 05:36 UTC · Quelle: dream*
+
+Regular pruning (facts and events) is essential maintenance, but it must be paired with knowledge refresh cycles to prevent the system from discarding context needed for future decisions.
+
+### `dream:20260910053622:4:169d0d`
+*10.09. 05:36 UTC · Quelle: dream*
+
+Reflex scripts are powerful recovery mechanisms but become failure vectors themselves when executed without pre-flight validation of completeness and consistency.
+
+### `dream:20260910053622:3:19e52d`
+*10.09. 05:36 UTC · Quelle: dream*
+
+Stale knowledge and unapplied simulations share the same root cause: missing execution pipelines that convert accumulated information into concrete action.
+
+### `dream:20260910053622:2:824641`
+*10.09. 05:36 UTC · Quelle: dream*
+
+Premature convergence declarations (score: null, converged: true) reveal a systemic gap where goals are marked complete without independent validation or minimum quality thresholds.
+
+### `dream:20260910053622:1:ef09fd`
+*10.09. 05:36 UTC · Quelle: dream*
+
+Model failures follow a predictable pattern: without proactive health probing and cached routing, unreliable endpoints cause cascading latency and error cascades that degrade the entire system.
 
 ### `dream:20260910052536:5:c2f11b`
 *10.09. 05:25 UTC · Quelle: dream*
@@ -43899,56 +43944,6 @@ The 'Zoem-Protokoll' simulation failed to converge after three attempts, suggest
 *27.08. 05:36 UTC · Quelle: dream*
 
 Repeated 429 errors across multiple free-tier models indicate rate-limiting is systemic, not model-specific, requiring request throttling or fallback strategies.
-
-### `dream:20260827053056:5:970d6e`
-*27.08. 05:30 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures cascade, revealing a monitoring blind spot: external dependency health is not tracked as an organ.
-
-### `dream:20260827053056:4:a02498`
-*27.08. 05:30 UTC · Quelle: dream*
-
-Destructive tool operations (subprocess) are hard-gated by human approval, creating a mandatory handoff boundary that planners must anticipate.
-
-### `dream:20260827053056:3:8cd8c1`
-*27.08. 05:30 UTC · Quelle: dream*
-
-Swarm simulations converge slowly (score 7, not converged after 2 cycles) because revision loops lack persistent checkpoints, wasting iterations on re-simulation.
-
-### `dream:20260827053056:2:5b4849`
-*27.08. 05:30 UTC · Quelle: dream*
-
-Latency variance for identical models (11s vs 73s) indicates upstream queue saturation, not model slowness, requiring queue-aware routing.
-
-### `dream:20260827053056:1:befc5e`
-*27.08. 05:30 UTC · Quelle: dream*
-
-Free-tier API endpoints exhibit systemic 429 rate-limiting that correlates across providers, making single-model reliance a reliability anti-pattern.
-
-### `dream:20260827052551:5:9ca89c`
-*27.08. 05:25 UTC · Quelle: dream*
-
-Artifact execution (279-line Python) passes simulation and tor checks on first run, indicating the code-generation pipeline produces syntactically valid, runnable output.
-
-### `dream:20260827052551:4:db0ecf`
-*27.08. 05:25 UTC · Quelle: dream*
-
-Evolutionary iteration (3 variants, 9 candidates) reliably improves scores from 7 to 9, but only when critic feedback is specific enough to guide mutation.
-
-### `dream:20260827052551:3:f7a6d9`
-*27.08. 05:25 UTC · Quelle: dream*
-
-Calibration error of +5 (predicted 2 vs actual 7) reveals systematic underestimation of implementation complexity for multi-organism knowledge protocols.
-
-### `dream:20260827052551:2:ba5d6c`
-*27.08. 05:25 UTC · Quelle: dream*
-
-Nvidia Nemotron-3-Ultra consistently succeeds but exhibits extreme latency variance (24–105s), requiring async invocation with timeout budgets rather than synchronous calls.
-
-### `dream:20260827052551:1:2249cd`
-*27.08. 05:25 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) on free-tier models like z-ai/glm-5.2 and google/gemma makes them unreliable for production workloads without exponential backoff and model fallback chains.
 
 ### `last_swarm_critique`
 *27.08. 04:39 UTC · Quelle: critic*
