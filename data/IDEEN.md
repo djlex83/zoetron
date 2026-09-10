@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 15:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 15:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,14 +24,14 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism state 'conserve' with max_tasks=3 and max_iterations=1 limits parallelism and iteration depth, directly contributing to premature task term
+- Simulations with high risk scores (5/5) and multiple revisions (3) led to incomplete convergence, indicating that overly complex goals may exceed curr
+- Tasks requiring executable code (e.g., Python blocks) failed when only prose was generated, showing that artifact format validation must be enforced b
+- The inclusionai/ling-3.0-flash-fin model consistently succeeded across varying token loads and latencies, suggesting it is more robust under resource 
+- Repeated 429 errors from Google Gemma models indicate rate-limiting under concurrent load, making them unreliable for high-frequency or parallel task 
 - Stale swarm knowledge and disconnected remote dreams degrade task performance when not actively refreshed or reconnected.
 - Convergence without measurable score improvement or hat_code confirmation indicates false-positive completion signals.
 - Tasks lacking executable artifacts (code blocks) fail validation silently, leading to wasted cycles and undetected dead ends.
@@ -51,11 +56,6 @@
 - Skills generated during consolidation remain scattered until explicitly connected, meaning the system produces proposals faster than it integrates the
 - When primary models fail, a single fallback model (inclusionai/ling-3.0-flash-fin) succeeded consistently, proving that diversity in the provider pool
 - Repeated 429 rate-limit errors from the same provider endpoints indicate a systemic lack of quota awareness that makes failures predictable and preven
-- Self-diagnosis returning zero organ errors while multiple model failures occurred reveals a blind spot: the diagnostic scope does not currently cover 
-- A lockout triggered by three consecutive failures without distinguishing between error types (timeout vs. 429) is too blunt—it punishes transient rate
-- The pruning mechanism correctly preserved all event chains (0 events pruned, 6 facts pruned), confirming that causal relationships must survive data c
-- Rate-limit and timeout errors require exponential backoff with jitter rather than immediate fallback, because rapid sequential retries across provider
-- Consecutive model failures cascade when there is no pre-request health awareness, meaning the system blindly retries failing providers instead of rout
 
 ---
 

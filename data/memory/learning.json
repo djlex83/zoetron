@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 15:24:05",
+ "stand": "2026-09-10 15:34:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,12 +21,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
    "laeufe": 6,
    "erfolge": 6,
@@ -34,6 +28,12 @@
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -177,6 +177,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -298,12 +304,6 @@
   },
   {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
