@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11797 Fakten** · Stand 2026-09-10 05:17 UTC · aktualisiert bei jedem Herzschlag
+**11792 Fakten** · Stand 2026-09-10 05:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7463
+- **dream:** 7458
 - **swarm_artifact:** 1901
 - **last_swarm_critique:** 865
 - **last_swarm_goal:** 599
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910052536:5:c2f11b`
+*10.09. 05:25 UTC · Quelle: dream*
+
+Pruning runs regularly but model failure telemetry is absent: 10 facts/49 events pruned yet no system tracks per-model error rates to inform routing decisions.
+
+### `dream:20260910052536:4:a3457e`
+*10.09. 05:25 UTC · Quelle: dream*
+
+Swarm intelligence decays without scheduled refresh: two separate drive goals (stale signal) identify unused swarm knowledge, indicating missing periodic automation.
+
+### `dream:20260910052536:3:eb131e`
+*10.09. 05:25 UTC · Quelle: dream*
+
+Skill proposals accumulate without an implementation pipeline: 5 proposals were generated this cycle yet a drive goal explicitly flags the gap between proposal and deployed skill.
+
+### `dream:20260910052536:2:ca00fa`
+*10.09. 05:25 UTC · Quelle: dream*
+
+Reflex tools execute reliably where autonomous planning stalls: both reflex invocations (schwarm-update, skill-conversion) exited 0 and converged immediately without LLM involvement.
+
+### `dream:20260910052536:1:1a675d`
+*10.09. 05:25 UTC · Quelle: dream*
+
+Model diversity without automated health gating creates systemic fragility: only 1 of 4 models (inclusionai/ling) succeeded while nemotron returned 502 and both gemma models hit 429 rate limits.
 
 ### `dream:20260910051429:5:f41fa2`
 *10.09. 05:14 UTC · Quelle: dream*
@@ -43924,56 +43949,6 @@ Nvidia Nemotron-3-Ultra consistently succeeds but exhibits extreme latency varia
 *27.08. 05:25 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) on free-tier models like z-ai/glm-5.2 and google/gemma makes them unreliable for production workloads without exponential backoff and model fallback chains.
-
-### `dream:20260827052110:5:ede4cf`
-*27.08. 05:21 UTC · Quelle: dream*
-
-Pre-execution validation of artifacts (size, imports, token limits) is critical to prevent wasting scarce, unreliable model calls on doomed executions.
-
-### `dream:20260827052110:4:f27b27`
-*27.08. 05:21 UTC · Quelle: dream*
-
-Inheritable knowledge protocols ("Zoem") are essential for preserving proven strategies across system generations to avoid relearning.
-
-### `dream:20260827052110:3:fbbf8b`
-*27.08. 05:21 UTC · Quelle: dream*
-
-A significant gap exists between skill proposal generation and actual skill integration, wasting potential system improvements.
-
-### `dream:20260827052110:2:7ff8c0`
-*27.08. 05:21 UTC · Quelle: dream*
-
-High system stress (1.0) combined with unreliable model availability necessitates aggressive task reduction and conservative execution strategies.
-
-### `dream:20260827052110:1:633bf6`
-*27.08. 05:21 UTC · Quelle: dream*
-
-Free-tier LLM endpoints suffer from severe rate limiting (429) and upstream overload (502), causing cascading failures during high-stress periods.
-
-### `dream:20260827051637:5:9a2b09`
-*27.08. 05:16 UTC · Quelle: dream*
-
-The system generates valuable skill proposals but fails to implement them, indicating a critical gap between the planning and execution phases.
-
-### `dream:20260827051637:4:c7d6a7`
-*27.08. 05:16 UTC · Quelle: dream*
-
-Hand actions failing with non-zero exit codes but no explicit error messages point to a lack of robust stderr capturing in the execution environment.
-
-### `dream:20260827051637:3:a47377`
-*27.08. 05:16 UTC · Quelle: dream*
-
-Swarm simulations failing to converge on complex protocol designs suggests that current iteration limits or role coordination strategies are inadequate.
-
-### `dream:20260827051637:2:fee343`
-*27.08. 05:16 UTC · Quelle: dream*
-
-High latency variance on successful model calls indicates that static timeouts are insufficient and risk prematurely terminating valid long-running requests.
-
-### `dream:20260827051637:1:998467`
-*27.08. 05:16 UTC · Quelle: dream*
-
-Free-tier LLM endpoints are highly unstable, frequently returning 429 rate limits and 502 upstream errors, necessitating aggressive and dynamic fallback strategies.
 
 ### `last_swarm_critique`
 *27.08. 04:39 UTC · Quelle: critic*
