@@ -1,14 +1,16 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 16:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 16:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - ModelRouterSkill: priority-ordered provider pool with 5-minute circuit-break on 429/502/timeout errors and dyn *(hatte die Idee 6×)*
-- Build a provider health scorecard tracking per-model error rates, latency percentiles, and rate-limit frequenc *(hatte die Idee 5×)*
-- Implement exponential backoff with jitter and automatic provider switching when 429 or timeout errors exceed a *(hatte die Idee 5×)*
-- Develop a dream-memory linkage protocol that cross-references self-diagnosis results with past dream patterns  *(hatte die Idee 5×)*
+- Build a provider health scorecard tracking per-model error rates, latency percentiles, and rate-limit frequenc *(hatte die Idee 6×)*
+- Implement exponential backoff with jitter and automatic provider switching when 429 or timeout errors exceed a *(hatte die Idee 6×)*
+- Develop a dream-memory linkage protocol that cross-references self-diagnosis results with past dream patterns  *(hatte die Idee 6×)*
+- Create a causal-preservation pruning rule that retains event chains leading to failures even when individual i *(hatte die Idee 5×)*
+- Design a swarm-data freshness validator that automatically invalidates swarm decisions when the age of underly *(hatte die Idee 5×)*
 - LatencyBudgetSkill: enforce 30s max per call; abort + fallback before swarm engagement. *(hatte die Idee 4×)*
 - DependencyHealthSkill: track 5-min failure rate per provider; auto-disable when >20%. *(hatte die Idee 4×)*
 - EventLogHygieneSkill: cap model-failure events at 50/session; aggregate excess into single 'degraded_period' f *(hatte die Idee 4×)*
@@ -16,8 +18,6 @@
 - EventLogHygieneSkill: cap model-failure events at 50 per session and aggregate excess into a single 'degraded_ *(hatte die Idee 4×)*
 - Replace fixed 2-cycle evolution with adaptive loop: continue until convergence metric (score delta < 0.01) or  *(hatte die Idee 4×)*
 - Deploy SwarmFreshnessScheduler + ConvergenceEvidenceLogger: timestamp every critique, log score trajectory per *(hatte die Idee 4×)*
-- Create a causal-preservation pruning rule that retains event chains leading to failures even when individual i *(hatte die Idee 4×)*
-- Design a swarm-data freshness validator that automatically invalidates swarm decisions when the age of underly *(hatte die Idee 4×)*
 - ModelRouterSkill: priority-ordered provider pool with 5-min circuit-break on 429/502/timeout and dynamic reord *(hatte die Idee 3×)*
 - Build automated skill proposal executor that validates, prioritizes via impact/effort scoring, and deploys app *(hatte die Idee 3×)*
 
@@ -25,10 +25,10 @@
 
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Failure patterns persist across sessions, meaning historical error data must be retained and cross-referenced to predict and prevent recurring provide
+- Successful model calls show significant variance in latency and token usage, implying that performance metrics should guide routing decisions alongsid
+- Cascading failures occur when repeated errors trigger account lockouts (e.g., 3 consecutive errors causing 1800s lockout), amplifying initial issues i
+- Models that initially succeed can later fail with 429 errors, suggesting dynamic rate limits that require continuous monitoring rather than static pro
+- Rate-limit errors (429) and timeouts are the dominant failure modes across multiple providers, indicating systemic throttling rather than isolated mod
 - Wiederverwendbares Erfahrungswissen braucht Zeitstempel, Modell- und Fehlerkontext sowie ein Aktualitätskriterium, sonst werden veraltete oder doppelt
 - Eine syntaktisch plausible Antwort ist noch kein belastbares Ergebnis; erst ausführbare Syntax- und Laufzeittests belegen die Funktion.
 - Der erfolgreiche Anbieter liefert ein Wiederverwendbares Fallback-Ziel, während mehrfach abgelehnte Modelle für den aktuellen Lauf als blockiert gelte
@@ -51,11 +56,6 @@
 - Der zweimal erfolgreiche Einsatz von poolside/laguna-s-2.1:free belegt, dass ein vorab geprüfter Fallback anhand aktueller Erfolgsquote, Latenz und To
 - Ein Read-Timeout ist von einer 429-Ratenbegrenzung zu unterscheiden und benötigt eigene Fristen-, Abbruch- und Wiederanlaufregeln.
 - Wiederholte 429-Fehler bei denselben Google-Gemma-Modellen zeigen, dass weitere direkte Retries nach einem kurzen Schwellenwert ineffizient sind und e
-- Beim Prunen sollten veraltete Fakten und Ereignisse entfernt werden, während Fehlerprotokolle, Gegenmaßnahmen und deren Wirksamkeitsnachweise erhalten
-- Skill-Vorschläge bleiben Hypothesen, bis sie unter den tatsächlich aufgetretenen Fehlermustern bestanden und messbar Nutzen geliefert haben.
-- Leichte Modelle sollten Standardaufgaben übernehmen, während größere Modelle nur bei nachgewiesenem Fähigkeitenbedarf eingesetzt werden, um Kosten und
-- Ein erfolgreicher Reflexlauf mit null Selbstdiagnose-Befunden belegt nur die Ausführung, nicht aber Robustheit oder Aufgabenqualität.
-- Wiederholte 429-Fehler über mehrere Modelle zeigen, dass ein einzelner Fallback nicht ausreicht und jeder Anbieter eigene Backoff-, Retry-Budget- und 
 
 ---
 

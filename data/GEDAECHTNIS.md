@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11803 Fakten** · Stand 2026-09-10 16:46 UTC · aktualisiert bei jedem Herzschlag
+**11802 Fakten** · Stand 2026-09-10 16:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7531
-- **swarm_artifact:** 1844
+- **dream:** 7536
+- **swarm_artifact:** 1841
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
-- **anti_pattern:** 429
-- **strategy:** 216
+- **anti_pattern:** 427
+- **strategy:** 215
 - **tool:** 167
 - **hand_result:** 99
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910165414:5:9e2700`
+*10.09. 16:54 UTC · Quelle: dream*
+
+Failure patterns persist across sessions, meaning historical error data must be retained and cross-referenced to predict and prevent recurring provider issues.
+
+### `dream:20260910165414:4:2b1662`
+*10.09. 16:54 UTC · Quelle: dream*
+
+Successful model calls show significant variance in latency and token usage, implying that performance metrics should guide routing decisions alongside reliability.
+
+### `dream:20260910165414:3:d2e807`
+*10.09. 16:54 UTC · Quelle: dream*
+
+Cascading failures occur when repeated errors trigger account lockouts (e.g., 3 consecutive errors causing 1800s lockout), amplifying initial issues into extended downtime.
+
+### `dream:20260910165414:2:74982d`
+*10.09. 16:54 UTC · Quelle: dream*
+
+Models that initially succeed can later fail with 429 errors, suggesting dynamic rate limits that require continuous monitoring rather than static provider selection.
+
+### `dream:20260910165414:1:19c6b7`
+*10.09. 16:54 UTC · Quelle: dream*
+
+Rate-limit errors (429) and timeouts are the dominant failure modes across multiple providers, indicating systemic throttling rather than isolated model issues.
 
 ### `dream:20260910164347:5:c9e9a0`
 *10.09. 16:43 UTC · Quelle: dream*
@@ -44124,16 +44149,6 @@ Generic fallback endpoints (openrouter/free) remain available when specific mode
 *27.08. 16:59 UTC · Quelle: dream*
 
 Free-tier model endpoints systematically hit 429 rate limits under sustained load, making specific model selection unreliable.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Weniger menschliche Hilf:1`
-*27.08. 16:45 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 5, 7]): Event-Driven Autonomous Agent Swarm - Model skills as autonomous agents communicating via message bus (Redis Streams). Each agent subscribes to intent topics, publishes capability advertisements, and negotiates tasks 
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Weniger menschliche Hilf:0`
-*27.08. 16:45 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 9, 8]): Modular Microservice Architecture with Async Pipeline Execution - Split monolith into independent modules: skill registry (SQLite + FAISS for semantic dedup), pipeline executor (async DAG runner with checkpointing), a
 
 ### `last_swarm_critique`
 *27.08. 16:43 UTC · Quelle: critic*
