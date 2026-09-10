@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 04:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 04:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,7 +19,7 @@
 - ModelRouterSkill: priority-ordered provider pool with 5-min circuit-break on 429/502/timeout and dynamic reord *(hatte die Idee 3×)*
 - Replace fixed 2-cycle evolution with adaptive loop: continue until convergence metric (score delta < 0.01) or  *(hatte die Idee 3×)*
 - Build DriveResolutionTracker: persist each drive_goal with deadline; auto-escalate to structured swarm if unre *(hatte die Idee 3×)*
-- Implement an automatic model fallback chain that routes to low-latency flash-tier models after two consecutive *(hatte die Idee 2×)*
+- Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -37,10 +37,15 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system self-diagnosed cleanly and pruned nothing, confirming structural health but revealing that staleness and validation gaps are invisible to o
+- Informal result schemas prevent programmatic retry and escalation, forcing manual intervention after every reflex failure.
+- Skills proposed without dream-based validation create a persistent gap between idea generation and reliable execution.
+- Stale swarm critiques and unlinked dream memories silently degrade decision quality because no freshness or connection audit exists.
+- Unprotected external model calls without circuit breakers cause cascading 429 rate-limit failures that propagate through the entire planning pipeline.
 - Drive goals proliferate but lack deadline tracking and escalation paths leading to unresolved systemic issues.
 - Swarm critique freshness degrades silently without automated staleness detection or refresh triggers.
 - Skill proposals accumulate without mandatory validation pipeline causing deployment of untested capabilities.
@@ -51,11 +56,6 @@
 - Immediate retries on 429 errors amplify throttling; exponential backoff with jitter is absent despite repeated occurrences.
 - Skill proposal volume is high but conversion to stable capabilities is near zero, indicating a missing stabilization pipeline.
 - Reactive model fallback succeeds but wastes cycles on known-rate-limited models instead of proactively avoiding them.
-- Swarm knowledge staleness triggers drive goals but relies on reflex tools; scheduled proactive refresh with freshness metrics would prevent stale-data
-- Fixed-cycle evolution loops waste compute or stop prematurely; adaptive convergence thresholds (score delta < 0.01) with variance logging yield better
-- Hand actions fail on relative paths because the system lacks enforced absolute-path derivation from ZOETRON_DATA with pre-invocation existence checks.
-- Skill proposals accumulate without deployment because no automated validation/execution pipeline exists, creating a proposal-to-production gap.
-- Free-tier model endpoints exhibit cascading failures (429/502) requiring proactive health probes and circuit-breaker fallback promotion to maintain av
 
 ---
 

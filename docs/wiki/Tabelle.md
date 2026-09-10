@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8256 Neuronen · 925243 bewertete Synapsen
+Stand: 8259 Neuronen · 924637 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 8256 Neuronen · 925243 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1076 | 0.24 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1075 | 0.24 |
 | 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1072 | 0.23 |
 | 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 892 | 0.25 |
-| 4 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 858 | 0.26 |
+| 4 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 857 | 0.26 |
 | 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 906 | 0.23 |
 | 6 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 829 | 0.25 |
-| 7 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 807 | 0.26 |
-| 8 | 💭 | Repeated 429 errors across four different models indicate system… | 843 | 0.24 |
+| 7 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 806 | 0.26 |
+| 8 | 💭 | Repeated 429 errors across four different models indicate system… | 842 | 0.24 |
 | 9 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 889 | 0.23 |
 | 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 867 | 0.23 |
-| 11 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 802 | 0.25 |
-| 12 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 782 | 0.26 |
+| 11 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 801 | 0.25 |
+| 12 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 781 | 0.26 |
 | 13 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 816 | 0.24 |
 | 14 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 832 | 0.24 |
-| 15 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 880 | 0.22 |
+| 15 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 881 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 

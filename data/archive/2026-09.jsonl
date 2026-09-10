@@ -33092,3 +33092,8 @@
 {"ts": 1788407366.4762, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 1.09, "gelesen": 0}}
 {"ts": 1788407368.924786, "kind": "issue_synced", "payload": {"issue": 326, "state": "open"}}
 {"ts": 1788407743.3309736, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787803476.4088218, "key": "dream:20260827040436:1:34784f", "value": "Rate limiting (429) affects all free models simultaneously, indicating shared quota exhaustion rather than per-model limits.", "source": "dream"}
+{"ts": 1787803476.4089158, "key": "dream:20260827040436:2:3f69d4", "value": "Nvidia Nemotron-3-Ultra is the only model returning successes but with extreme latency variance (15–69s), making it unreliable for time-bounded tasks.", "source": "dream"}
+{"ts": 1787803476.4089985, "key": "dream:20260827040436:3:4a309b", "value": "The system enters conserve mode (max_tasks=3, max_iterations=1) yet continues issuing model calls beyond budget, revealing a budget enforcement gap.", "source": "dream"}
+{"ts": 1787803476.409069, "key": "dream:20260827040436:4:2ee6b8", "value": "Simulation produced 5 revisions but the artifact still fails at runtime due to a missing genome file (/workspace/zoetron/data/memory), showing revision loops without dependency validation.", "source": "dream"}
+{"ts": 1787803476.4091349, "key": "dream:20260827040436:5:5ffbad", "value": "Hand actions fail repeatedly (exit=1, gelesen=0) after one success, likely because the missing genome file breaks downstream tooling.", "source": "dream"}

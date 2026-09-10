@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-10 04:01:48",
+ "stand": "2026-09-10 04:12:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -216,12 +216,6 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
