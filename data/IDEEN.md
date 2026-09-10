@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 23:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 23:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - EventLogHygieneSkill: cap model-failure events at 50 per session and aggregate excess into a single 'degraded_ *(hatte die Idee 4×)*
 - Replace fixed 2-cycle evolution with adaptive loop: continue until convergence metric (score delta < 0.01) or  *(hatte die Idee 4×)*
 - Deploy SwarmFreshnessScheduler + ConvergenceEvidenceLogger: timestamp every critique, log score trajectory per *(hatte die Idee 4×)*
+- Create skill promotion gate requiring automated benchmark pass, soak period, and explicit convergence contract *(hatte die Idee 4×)*
 - Build automated skill proposal executor that validates, prioritizes via impact/effort scoring, and deploys app *(hatte die Idee 3×)*
 - Build DriveResolutionTracker: persist each drive_goal with deadline; auto-escalate to structured swarm if unre *(hatte die Idee 3×)*
 - Standardize path resolution in hand actions by enforcing absolute path derivation from ZOETRON_DATA env var, r *(hatte die Idee 3×)*
 - Standardize ReflexResult schema: require {ok, exit_code, stdout, stderr, error_type, recovery_hint} so planner *(hatte die Idee 3×)*
 - Implement ModelCircuitBreaker: wrap each model call with latency/error budgets, auto-failover to a ranked fall *(hatte die Idee 3×)*
-- Build a multi-model fallback registry with at least three pre-verified models per task type, auto-promoted bas *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals recur (Vorhersage-Fehler, Modell-Fehler, Schwarm-Lernen) because reflexes converge locally but lack a mechanism to verify systemic fix per
+- Pruning discards 36+ events per run with no audit trail, risking loss of low-frequency high-impact patterns needed for rare failure diagnosis.
+- Selbstdiagnose reports zero organ errors while model failures persist, revealing a blind spot: external provider health is not monitored as an organ.
+- Skill proposals accumulate (5 generated) but none activate because no promotion gate enforces benchmarks, soak periods, or convergence contracts.
+- Model provider instability (502/429 errors across 3 models) causes ~33% failure rate, making all downstream reasoning unreliable without a router.
 - Self-diagnosis only checks internal organs, missing external model endpoint health probes that cause downstream task failures.
 - Pruning discards patterns (19 events, 1 fact) without audit trail logging retention criteria or discarded pattern signatures for later recovery.
 - Skill proposals accumulate (79+ ideas) but lack mandatory validation gate with automated benchmark, soak period, and measurable convergence criteria b
@@ -51,11 +56,6 @@
 - Swarm coordination knowledge has a half-life of ~1 consolidation cycle; without scheduled refresh, the system plans with stale partner capabilities.
 - Skill proposals accumulate (75+) without validation gates, creating decision paralysis; a staged gate (probe → shadow → canary → adopt) would convert 
 - Model reliability degrades silently via 429 rate limits rather than explicit failures, requiring proactive circuit-breaking instead of reactive retrie
-- Consolidation/dream runs compete with task intake for compute and lose under conserve mode, starving the very process that reduces future load.
-- Swarm knowledge decays silently (stale signal) with no automatic refresh trigger, causing repeated manual refresh goals.
-- 75 skill proposals accumulate without a validation gate, creating a 'proposal graveyard' that consumes review cycles but yields no promoted skills.
-- Pruning discards error logs and recovery traces by default while preserving stale facts, inverting the value hierarchy for debugging.
-- Model failure rate of ~41% (25/61) triggers cascading goals but reflexes converge reliably, suggesting the error-recovery loop works but upstream mode
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11770 Fakten** · Stand 2026-09-10 23:04 UTC · aktualisiert bei jedem Herzschlag
+**11775 Fakten** · Stand 2026-09-10 23:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7560
+- **dream:** 7565
 - **swarm_artifact:** 1805
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910231212:5:d77234`
+*10.09. 23:12 UTC · Quelle: dream*
+
+Drive goals recur (Vorhersage-Fehler, Modell-Fehler, Schwarm-Lernen) because reflexes converge locally but lack a mechanism to verify systemic fix persistence.
+
+### `dream:20260910231212:4:e88463`
+*10.09. 23:12 UTC · Quelle: dream*
+
+Pruning discards 36+ events per run with no audit trail, risking loss of low-frequency high-impact patterns needed for rare failure diagnosis.
+
+### `dream:20260910231212:3:e70c19`
+*10.09. 23:12 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors while model failures persist, revealing a blind spot: external provider health is not monitored as an organ.
+
+### `dream:20260910231212:2:f1e59c`
+*10.09. 23:12 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 generated) but none activate because no promotion gate enforces benchmarks, soak periods, or convergence contracts.
+
+### `dream:20260910231212:1:276f6d`
+*10.09. 23:12 UTC · Quelle: dream*
+
+Model provider instability (502/429 errors across 3 models) causes ~33% failure rate, making all downstream reasoning unreliable without a router.
 
 ### `dream:20260910230149:5:59f0e0`
 *10.09. 23:01 UTC · Quelle: dream*

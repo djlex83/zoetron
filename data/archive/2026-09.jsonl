@@ -36183,3 +36183,17 @@
 {"ts": 1788476400.9969234, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788476400.9969208, "schalter_geoeffnet": false}}
 {"ts": 1788476455.7173421, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 54.7, "tokens_ein": 2064, "tokens_aus": 5039}}
 {"ts": 1788476456.492723, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788476456.4927204, "schalter_geoeffnet": false}}
+{"ts": 1788476630.2018034, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 173.7, "tokens_ein": 2495, "tokens_aus": 9948}}
+{"ts": 1788476631.1214283, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788476631.121426, "schalter_geoeffnet": false}}
+{"ts": 1788476770.5158432, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 139.4, "tokens_ein": 2953, "tokens_aus": 7348}}
+{"ts": 1788476771.5907958, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.66, "gelesen": 1360}}
+{"ts": 1788476771.5909982, "kind": "tor", "payload": {"goal": "Simulationen gezielt einsetzen", "gruen": true, "grund": "Artefakt laeuft (464 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788476772.5382867, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788476772.5382836, "schalter_geoeffnet": false}}
+{"ts": 1788476791.106375, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.6, "tokens_ein": 9579, "tokens_aus": 1271}}
+{"ts": 1788476791.1072137, "kind": "calibration", "payload": {"goal": "Simulationen gezielt einsetzen", "predicted": 5, "actual": 8, "abs_error": 3}}
+{"ts": 1788476791.1072805, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 8}}
+{"ts": 1788476791.5150754, "kind": "bahnen", "payload": {"goal": "Simulationen gezielt einsetzen", "delta": 1.0, "kanten": 10, "hat_code": true, "score": 8, "abgerufen": 4, "ids": ["e:e3030558a4c3", "e:c3309e73022f", "f:c98ac74a8a97", "f:7c702432501d"], "ziel_id": "g:c72e773a251d"}}
+{"ts": 1788476791.5152705, "kind": "swarm_finished", "payload": {"goal": "Simulationen gezielt einsetzen", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1788476791.5157826, "kind": "act_done", "payload": {"goal_title": "Simulationen gezielt einsetzen", "score": 8, "converged": true}}
+{"ts": 1788476792.4794946, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.6, "gelesen": 1360}}
+{"ts": 1788476794.7748601, "kind": "issue_synced", "payload": {"issue": 349, "state": "closed"}}
