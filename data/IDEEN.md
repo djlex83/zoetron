@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,27 +24,31 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system's self-diagnosis and pruning mechanisms are healthy, confirming that organizational hygiene is not the source of recent failures.
+- The existing circuit breaker triggers too late (after 3 consecutive failures), allowing damage to propagate before isolation occurs.
+- Timeouts and rate-limit errors require fundamentally different recovery strategies: timeouts warrant longer cooldowns while 429 errors need immediate 
+- The inclusionai/ling-3.0-flash-fin model is the only consistently reliable fallback across all failure scenarios and should be treated as the system's
+- Provider-level rate limits (429 errors) cascade across all models from the same API provider, meaning per-model circuit breakers cannot prevent system
 - Event accumulation outpaces knowledge distillation without scheduled compaction, causing pruning to lag behind reality and degrading the fidelity of c
 - Stale swarm processes actively degrade decision quality, so periodic forced refresh is a maintenance requirement, not an optional improvement.
 - Skill proposals accumulate faster than they get implemented, meaning without activation gates and deadlines, the backlog becomes a graveyard of intent
-- The inclusionai/ling-3.0-flash-fin model is the only consistently reliable performer, revealing dangerous single-point-of-failure dependency that must
 - Rate-limit (429) and timeout failures are systemic across multiple external models, indicating that retry logic alone is insufficient and architectura
 - Infrastructure-level errors are currently being processed as task-level failures, obscuring true model performance.
 - Stale swarm intelligence occurs when decision-making cycles outpace the validity of the environmental state.
@@ -52,10 +56,6 @@
 - Swarm convergence is highly sensitive to the availability and consistency of the underlying LLM providers.
 - Heavy reliance on specific free model endpoints creates a systemic single point of failure via rate-limiting.
 - Self-calibration was inaccurate (predicted 3, actual 1, abs_error 2), indicating the system's internal confidence estimates do not reliably match real
-- Evolutionary variant generation (3 variants) improved scores from 1/10 to 8/10, demonstrating that multi-variant exploration is highly effective for p
-- Artifacts containing only prose without executable Python blocks fail to converge, as explicitly flagged by the convergence check in the [tor] signal.
-- Google models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently fail with HTTP 429 rate-limit errors on OpenRouter, making them unreliable for any pro
-- Relative path resolution in sys.argv[1] and ZOETRON_DATA caused silent data-path failures; all paths must be resolved to absolute and validated before
 
 ---
 

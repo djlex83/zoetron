@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11779 Fakten** · Stand 2026-09-10 11:36 UTC · aktualisiert bei jedem Herzschlag
+**11779 Fakten** · Stand 2026-09-10 11:46 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7470
 - **swarm_artifact:** 1875
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910114426:5:715fa3`
+*10.09. 11:44 UTC · Quelle: dream*
+
+The system's self-diagnosis and pruning mechanisms are healthy, confirming that organizational hygiene is not the source of recent failures.
+
+### `dream:20260910114426:4:421421`
+*10.09. 11:44 UTC · Quelle: dream*
+
+The existing circuit breaker triggers too late (after 3 consecutive failures), allowing damage to propagate before isolation occurs.
+
+### `dream:20260910114426:3:fcd5f7`
+*10.09. 11:44 UTC · Quelle: dream*
+
+Timeouts and rate-limit errors require fundamentally different recovery strategies: timeouts warrant longer cooldowns while 429 errors need immediate provider-level backoff.
+
+### `dream:20260910114426:2:29c54d`
+*10.09. 11:44 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model is the only consistently reliable fallback across all failure scenarios and should be treated as the system's default routing target.
+
+### `dream:20260910114426:1:c67f79`
+*10.09. 11:44 UTC · Quelle: dream*
+
+Provider-level rate limits (429 errors) cascade across all models from the same API provider, meaning per-model circuit breakers cannot prevent systemic outages.
 
 ### `dream:20260910113350:5:458507`
 *10.09. 11:33 UTC · Quelle: dream*
@@ -43899,31 +43924,6 @@ score=5; issues=Critic output unparseable.
 *27.08. 11:44 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260827114329:5:7d066b`
-*27.08. 11:43 UTC · Quelle: dream*
-
-Simulation pre-flight checks are bypassed under stress, leading to degraded model selection and wasted compute.
-
-### `dream:20260827114329:4:fdaf22`
-*27.08. 11:43 UTC · Quelle: dream*
-
-Provider fallback chains are not resilient when all models hit rate limits simultaneously.
-
-### `dream:20260827114329:3:fc38e9`
-*27.08. 11:43 UTC · Quelle: dream*
-
-Skills proposed without execution paths or test harnesses fail to materialize into reliable behaviors.
-
-### `dream:20260827114329:2:06c9dd`
-*27.08. 11:43 UTC · Quelle: dream*
-
-Latency SLO violations (e.g., 180s) directly correlate with task abandonment and must be enforced before invocation.
-
-### `dream:20260827114329:1:e54789`
-*27.08. 11:43 UTC · Quelle: dream*
-
-Rate limiting (429) is the dominant failure mode across multiple providers, indicating systemic overload rather than isolated model issues.
 
 ### `last_swarm_critique`
 *27.08. 11:17 UTC · Quelle: critic*

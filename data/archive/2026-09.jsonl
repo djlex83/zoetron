@@ -34338,3 +34338,27 @@
 {"ts": 1788434766.8348527, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 0}}
 {"ts": 1788434769.1795654, "kind": "issue_synced", "payload": {"issue": 336, "state": "open"}}
 {"ts": 1788435166.266582, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787831009.082572, "key": "dream:20260827114329:1:e54789", "value": "Rate limiting (429) is the dominant failure mode across multiple providers, indicating systemic overload rather than isolated model issues.", "source": "dream"}
+{"ts": 1787831009.0826583, "key": "dream:20260827114329:2:06c9dd", "value": "Latency SLO violations (e.g., 180s) directly correlate with task abandonment and must be enforced before invocation.", "source": "dream"}
+{"ts": 1787831009.0827334, "key": "dream:20260827114329:3:fc38e9", "value": "Skills proposed without execution paths or test harnesses fail to materialize into reliable behaviors.", "source": "dream"}
+{"ts": 1787831009.082798, "key": "dream:20260827114329:4:fdaf22", "value": "Provider fallback chains are not resilient when all models hit rate limits simultaneously.", "source": "dream"}
+{"ts": 1787831009.0828733, "key": "dream:20260827114329:5:7d066b", "value": "Simulation pre-flight checks are bypassed under stress, leading to degraded model selection and wasted compute.", "source": "dream"}
+{"ts": 1788435695.1006622, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788435697.0282066, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 34}}
+{"ts": 1788435701.2408752, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788435701.2408714, "schalter_geoeffnet": false}}
+{"ts": 1788435779.8545523, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 78.6, "tokens_ein": 1266, "tokens_aus": 1300}}
+{"ts": 1788435779.855148, "kind": "skill_proposal", "payload": {"proposal": "Implement a model-resilience middleware: per-provider circuit breaker, exponential backoff with jitter (base 2s, cap 30s), Retry-After header respect, and automatic fallback to next-healthy tier."}}
+{"ts": 1788435779.855205, "kind": "skill_proposal", "payload": {"proposal": "Build a skill-compilation pipeline that lints, type-checks, and runs unit tests on generated code before atomically promoting to the reflex registry with rollback on failure."}}
+{"ts": 1788435779.85526, "kind": "skill_proposal", "payload": {"proposal": "Create a predictive budget allocator that estimates task complexity from prompt tokens and historical latency/success to pre-select the optimal model tier."}}
+{"ts": 1788435779.855313, "kind": "skill_proposal", "payload": {"proposal": "Develop a knowledge-rehydration skill that scans stale facts/market analyses nightly, extracts actionable patterns via LLM, and overwrites outdated memory entries with versioned updates."}}
+{"ts": 1788435779.8553767, "kind": "skill_proposal", "payload": {"proposal": "Add a proposal-to-production pipeline requiring simulation verdict=accept, load test (latency <30s p95), and canary deploy (5% traffic) before skill promotion."}}
+{"ts": 1788435779.855435, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788435783.2697432, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788435783.26974, "schalter_geoeffnet": false}}
+{"ts": 1788435830.4204743, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 47.1, "tokens_ein": 531, "tokens_aus": 467}}
+{"ts": 1788435830.4206052, "kind": "drive_goal", "payload": {"title": "Modellfehler systematisch reduzieren", "why": "Das System scheitert öfter als es gelingt. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788435830.420674, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "why": "Viele neue Fähigkeiten werden vorgeschlagen, aber kaum getestet. Wir müssen die besten davon tatsächlich einsetzen.", "signal": "gap"}}
+{"ts": 1788435830.4207315, "kind": "drive_goal", "payload": {"title": "Marktanalyse endlich abschließen", "why": "Drei Analyse-Schritte liegen seit langem unvollendet herum. Fertige Analysen helfen bei klügeren Zielen.", "signal": "stale"}}
+{"ts": 1788435831.9752004, "kind": "drive_mission", "payload": {"title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "why": "Der Critic ist streng - ein echter Erfolg beweist, dass Lernen und Werkzeuge zusammenwirken."}}
+{"ts": 1788435833.0625901, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.47, "gelesen": 63}}
+{"ts": 1788435833.0640943, "kind": "reflex_used", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py", "ok": true}}
+{"ts": 1788435833.5302777, "kind": "act_done", "payload": {"goal_title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": null, "converged": true, "mode": "reflex"}}
