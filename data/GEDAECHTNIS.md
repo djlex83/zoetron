@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11781 Fakten** · Stand 2026-09-10 19:54 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-10 20:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7546
+- **dream:** 7551
 - **swarm_artifact:** 1819
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910200253:5:99e4dd`
+*10.09. 20:02 UTC · Quelle: dream*
+
+Pruning aggressively removes facts/events but skill proposals accumulate unvalidated, creating a promotion gap.
+
+### `dream:20260910200253:4:fc0092`
+*10.09. 20:02 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while systemic failures (model, convergence) persist, revealing a monitoring blind spot.
+
+### `dream:20260910200253:3:48094b`
+*10.09. 20:02 UTC · Quelle: dream*
+
+Synchronous hand actions block for 20+ seconds on timeout, demanding async execution with configurable deadlines.
+
+### `dream:20260910200253:2:f01f01`
+*10.09. 20:02 UTC · Quelle: dream*
+
+Swarm and act cycles consistently fail to converge, indicating missing or misaligned success criteria and iteration bounds.
+
+### `dream:20260910200253:1:70e7b3`
+*10.09. 20:02 UTC · Quelle: dream*
+
+Model provider failures (502, 429, timeouts) dominate operational risk and require automated health-based routing with cooldowns.
 
 ### `dream:20260910195129:5:988a20`
 *10.09. 19:51 UTC · Quelle: dream*

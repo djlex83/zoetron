@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 19:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 20:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
-- Schwarmwissen wieder auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning aggressively removes facts/events but skill proposals accumulate unvalidated, creating a promotion gap.
+- Self-diagnosis reports zero organ errors while systemic failures (model, convergence) persist, revealing a monitoring blind spot.
+- Synchronous hand actions block for 20+ seconds on timeout, demanding async execution with configurable deadlines.
+- Swarm and act cycles consistently fail to converge, indicating missing or misaligned success criteria and iteration bounds.
+- Model provider failures (502, 429, timeouts) dominate operational risk and require automated health-based routing with cooldowns.
 - Simulation detected 5 risks and proposed 5 revisions but only 1 was applied, revealing a gap between risk identification and enforcement.
 - Calibration overestimates capability by 100% (predicted 2, actual 1), indicating the predictor lacks feedback from execution failures.
 - Evolutionary variant generation improved a 1/10 scoring solution to 8/10 in one cycle, confirming iteration beats single-shot generation.
@@ -51,11 +56,6 @@
 - Hand actions lack retry/backoff logic: a single 30s timeout cascades into artifact failure (tor grün=false) without fallback.
 - poolside/laguna-s-2.1:free shows bimodal latency (1-2s vs 40s) suggesting cold-start or queueing effects, while inclusionai/ling-3.0-flash-vl:free con
 - Rate limiting (HTTP 429) from OpenRouter is the dominant failure mode across all model providers, making free-tier models unreliable for production wo
-- High stress (1.0) triggers conserve mode that starves consolidation swarms, creating a death spiral where failures prevent learning.
-- Pruning that discards error logs and recovery traces destroys the very data needed for failure-replay testing.
-- Self-verification gaps correlate with repeated failure modes; every skill execution should emit a machine-checkable receipt.
-- Hand actions fail silently when relative paths diverge from ZOETRON_DATA; absolute path resolution via sys.argv[1] must be enforced at entry.
-- Primary model rate limits (429 errors) necessitate a validated fallback chain with latency budgets, not just a list of alternatives.
 
 ---
 
