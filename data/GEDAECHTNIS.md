@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11813 Fakten** · Stand 2026-09-09 23:33 UTC · aktualisiert bei jedem Herzschlag
+**11791 Fakten** · Stand 2026-09-10 00:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7412
-- **swarm_artifact:** 1939
+- **dream:** 7402
+- **swarm_artifact:** 1931
 - **last_swarm_critique:** 862
 - **last_swarm_goal:** 596
-- **anti_pattern:** 449
-- **strategy:** 226
+- **anti_pattern:** 447
+- **strategy:** 225
 - **tool:** 174
-- **hand_result:** 110
+- **hand_result:** 109
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910001030:5:834863`
+*10.09. 00:10 UTC · Quelle: dream*
+
+Three new drive goals emerged from stale signals (model errors, swarm data, dream combination), showing the drive system converts diagnostic patterns into directed exploration automatically.
+
+### `dream:20260910001030:4:853afa`
+*10.09. 00:10 UTC · Quelle: dream*
+
+Pruning runs removed 15 facts and 83 events across two cycles without organ errors, yet the PruningPolicy proposal reveals concern that low-reuse metadata is missing to protect institutional knowledge.
+
+### `dream:20260910001030:3:08d0d4`
+*10.09. 00:10 UTC · Quelle: dream*
+
+Reflex-mode execution completed two distinct goals (dream utilization, swarm refresh) without deliberation, suggesting reflex pathways handle routine maintenance reliably but may bypass deeper optimization.
+
+### `dream:20260910001030:2:bb66e9`
+*10.09. 00:10 UTC · Quelle: dream*
+
+The system autonomously generated five skill proposals directly addressing observed failure modes (model routing, skill lifecycle, artifact validation, pruning policy, convergence criteria), demonstrating meta-cognitive error-driven improvement.
+
+### `dream:20260910001030:1:103a03`
+*10.09. 00:10 UTC · Quelle: dream*
+
+Google Gemma models consistently fail with 429 rate-limit errors while inclusionai/ling-3.0-flash-fin:free succeeds, indicating provider-specific quota exhaustion rather than systemic API failure.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler verringern:2`
 *09.09. 23:31 UTC · Quelle: evolution*
@@ -43796,41 +43821,6 @@ score=2; issues=Function signature mismatch: swarm_agents.py calls get_similar_e
 
 Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
 
-### `dream:20260827000338:5:bfb225`
-*27.08. 00:03 UTC · Quelle: dream*
-
-Repeated retries of known-failing models (z-ai/glm-5.2, Gemma variants) waste cycles without backoff or circuit-breaking.
-
-### `dream:20260827000338:4:0e5a11`
-*27.08. 00:03 UTC · Quelle: dream*
-
-The Cortex-Upgrade-Reflex simulation gate correctly approved a 161-line Python artifact after risk/revision analysis.
-
-### `dream:20260827000338:3:52efad`
-*27.08. 00:03 UTC · Quelle: dream*
-
-Poolside Laguna exhibits extreme latency variance (10s vs 190s) suggesting queueing or cold-start effects.
-
-### `dream:20260827000338:2:9c2c3b`
-*27.08. 00:03 UTC · Quelle: dream*
-
-Nvidia Nemotron shows bimodal reliability: fast successes but recurring 502 upstream overload errors.
-
-### `dream:20260827000338:1:e5bbf7`
-*27.08. 00:03 UTC · Quelle: dream*
-
-Free-tier models suffer pervasive 429 rate-limiting making them unreliable for production workloads.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Cortex-Upgrade-Reflex: n:2`
-*26.08. 23:49 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): GitOps-Pipeline mit Pull-Request-basiertem Promotion-Flow: Model-Discovery, Benc - Erstelle ein Git-Repository `cortex-reflex-registry` mit drei Pipeline-Stages: (1) `discovery` – läuft täglich um 02:00 per CI-Schedule, scann
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Cortex-Upgrade-Reflex: n:1`
-*26.08. 23:49 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Finite-State-Machine als Monolith: Statt verteilter Worker ein einzelnes statefu - Implementiere `CortexReflexEngine` als einzelnes Python-Modul mit einem `ReflexLoop`-Coroutine, die permanent läuft (managed via systemd als f
-
 ### `last_swarm_critique`
 *26.08. 23:48 UTC · Quelle: critic*
 
@@ -43840,56 +43830,6 @@ score=5; issues=Keine Orchestrierung zwischen Scanner, Benchmark und Promotion-L
 *26.08. 23:40 UTC · Quelle: system*
 
 Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren
-
-### `dream:20260826233957:5:bbbffd`
-*26.08. 23:39 UTC · Quelle: dream*
-
-Hand actions succeed (exit 0) but lack structured result parsing, preventing reliable chaining and retry logic.
-
-### `dream:20260826233957:4:07e15e`
-*26.08. 23:39 UTC · Quelle: dream*
-
-Skill proposals accumulate (25) but remain unexecuted due to missing automated validation pipelines and resource allocation triggers.
-
-### `dream:20260826233957:3:bf8683`
-*26.08. 23:39 UTC · Quelle: dream*
-
-Simulation artifacts rarely transition to production because success criteria are implicit and not tied to measurable runtime invariants.
-
-### `dream:20260826233957:2:dd1807`
-*26.08. 23:39 UTC · Quelle: dream*
-
-Best-of-N verification loops stall at suboptimal scores (6/10) without convergence because the verifier lacks adversarial diversity and the model pool lacks latency-stable candidates.
-
-### `dream:20260826233957:1:41a1fa`
-*26.08. 23:39 UTC · Quelle: dream*
-
-Free-tier model endpoints exhibit cascading 429/502 failures under load, making single-model reliance a systemic reliability hazard.
-
-### `dream:20260826233453:5:877c23`
-*26.08. 23:34 UTC · Quelle: dream*
-
-Swarm execution with 3 builders + 1 critic + 1 planner failed to converge in 2 cycles, suggesting insufficient critic signal or cycle budget.
-
-### `dream:20260826233453:4:bcecb6`
-*26.08. 23:34 UTC · Quelle: dream*
-
-Calibration error of 4 points (predicted 2 vs actual 6) indicates systematic underestimation of artifact quality by the predictor.
-
-### `dream:20260826233453:3:a4ae7d`
-*26.08. 23:34 UTC · Quelle: dream*
-
-Evolutionary search improved artifact score from 6 to 9 in one generation, confirming critic-guided mutation outperforms single-pass generation.
-
-### `dream:20260826233453:2:fc20be`
-*26.08. 23:34 UTC · Quelle: dream*
-
-Nemotron-3-Ultra succeeds reliably but with extreme latency variance (36-108s), making it unsuitable for time-critical paths without async handling.
-
-### `dream:20260826233453:1:38e920`
-*26.08. 23:34 UTC · Quelle: dream*
-
-Rate limiting (429 errors) affects multiple free-tier models simultaneously, requiring provider diversity and request pacing.
 
 ### `last_swarm_critique`
 *26.08. 23:15 UTC · Quelle: critic*

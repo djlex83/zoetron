@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-09 23:31:52",
+ "stand": "2026-09-10 00:10:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -46,8 +46,8 @@
   },
   {
    "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -205,12 +205,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "modellfehler-systematisch-reduzieren.py",
@@ -430,7 +424,7 @@
   }
  ],
  "haende_quote": 0.742,
- "simulationen_angewandt": 31,
+ "simulationen_angewandt": 30,
  "swarm_scores": {
   "n": 28,
   "best": 9.0,

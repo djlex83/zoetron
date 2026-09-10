@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-09 23:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 00:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 7×)*
-- Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 6×)*
+- Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill p *(hatte die Idee 5×)*
 - Add convergence_guardrail that detects stalled optimization scores across 3+ cycles and triggers emergency evo *(hatte die Idee 5×)*
 - Deploy ModelRouter with per-provider circuit breakers tracking 429/502 rates, p95 latency, and success rate; a *(hatte die Idee 4×)*
 - Persist circuit-breaker counters (success rate, p95 latency, error taxonomy) to disk so degradation memory sur *(hatte die Idee 4×)*
@@ -18,29 +18,34 @@
 - DependencyHealthSkill: track 5-min failure rate per provider; auto-disable when >20%. *(hatte die Idee 4×)*
 - EventLogHygieneSkill: cap model-failure events at 50/session; aggregate excess into single 'degraded_period' f *(hatte die Idee 4×)*
 - SkillValidationGateSkill: require passing simulation benchmark + latency/error SLA before promoting proposal t *(hatte die Idee 4×)*
-- Deploy model_router with per-provider circuit breakers tracking 429/502 rates, p95 latency, and success rate;  *(hatte die Idee 3×)*
 - Implement silent-failure detector that verifies actual file/directory access after script completion, raising  *(hatte die Idee 3×)*
+- Implement post-execution filesystem diff: snapshot target directory before/after script run; raise if zero byt *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three new drive goals emerged from stale signals (model errors, swarm data, dream combination), showing the drive system converts diagnostic patterns 
+- Pruning runs removed 15 facts and 83 events across two cycles without organ errors, yet the PruningPolicy proposal reveals concern that low-reuse meta
+- Reflex-mode execution completed two distinct goals (dream utilization, swarm refresh) without deliberation, suggesting reflex pathways handle routine 
+- The system autonomously generated five skill proposals directly addressing observed failure modes (model routing, skill lifecycle, artifact validation
+- Google Gemma models consistently fail with 429 rate-limit errors while inclusionai/ling-3.0-flash-fin:free succeeds, indicating provider-specific quot
 - Simultaneous model failures suggest no circuit-breaker or cooldown mechanism exists, causing retry storms against already-overloaded endpoints.
 - The tor artifact validator (confirming 202-line Python artifact execution) provides reliable ground-truth signal that calibration predicted within 1 u
 - Evolution runs with 3 variants per generation improved scores from 7 to 8-9 range, but 2 cycles were insufficient for full convergence.
@@ -51,11 +56,6 @@
 - Unbounded failure event logging (44 events pruned) drowns actionable signal; without capping and aggregation, degradation periods become invisible in 
 - A persistent gap exists between skill proposal and skill execution: 5+ skills were proposed but none reached active deployment, wasting consolidation 
 - Multi-provider model failures (502 from Nvidia, 429 from Google) are systemic, not isolated — a single retry loop cannot solve cascading upstream over
-- Convergence via reflex mode alone is insufficient — a scored, multi-cycle gate with measurable metric deltas is needed to confirm genuine progress.
-- Self-diagnosis consistently reports zero internal organ errors, confirming that failures originate from external dependencies rather than the system's
-- Skill proposals accumulate faster than they can be tested and deployed, creating a growing backlog of unvalidated ideas that never become operational 
-- Pruning without a policy based on reuse-count and criticality risks losing high-value facts while retaining noise; 5 facts and 44 events were pruned i
-- External model failures (502 upstream overload, 429 rate limiting) are the dominant failure mode, not internal logic errors — the system needs automat
 
 ---
 
