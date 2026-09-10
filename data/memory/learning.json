@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 03:05:09",
+ "stand": "2026-09-10 03:16:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -159,6 +159,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -213,12 +219,6 @@
    "quote": 1.0
   },
   {
-   "tool": "mehr-evolution-starten.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -232,12 +232,6 @@
   },
   {
    "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
