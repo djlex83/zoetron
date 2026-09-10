@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 13:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 13:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The recurrence of identical failure signatures across cycles shows that without cross-session dream linkage, the system cannot recognize repeating pat
+- Swarm data staleness is a confirmed failure mode requiring reflex intervention, indicating that proactive freshness validation must replace reactive c
+- Pruning 19-22 events per run risks severing causal chains that connect repeated failures to their root causes, making systemic patterns invisible.
+- inclusionai/ling-3.0-flash-fin succeeds consistently while others fail, revealing a reliability asymmetry that should be the primary routing signal.
+- The same providers (nemotron, gemma) fail identically across multiple cycles, proving that blind retries without provider switching waste resources an
 - Aggressive pruning (19-22 events per cycle) risks discarding potentially useful contextual data before it can inform cross-cutting pattern recognition
 - The hermes-daemon heartbeat and memory-sync pipeline is a recurring failure point that undermines system stability and needs architectural hardening.
 - Reflex-driven self-healing mechanisms (like swarm knowledge refresh) have proven reliable recovery paths that should be generalized to other failure m
@@ -51,11 +56,6 @@
 - The hermes-daemon CI failure indicates that memory-sync infrastructure instability compounds model-level failures, creating a compound failure mode th
 - Aggressive pruning of events (22 then 19) destroys the temporal signal needed to detect cascading failures before they become systemic.
 - When multiple independent models fail simultaneously with identical 429 errors, the root cause is infrastructure-level rate limiting, not model-specif
-- Skill proposals accumulate without activation gates, creating proposal debt that delays operational improvements.
-- Successful model (ling-3.0-flash-fin) handles 2x token throughput at stable latency, suggesting smaller specialized models outperform large general on
-- Rate-limit errors (429) cluster on specific provider endpoints, indicating need for provider-level traffic shaping rather than per-model handling.
-- Circuit breakers that lock models for fixed durations (1800s) without adaptive backoff waste capacity during transient outages.
-- Model diversity without automated fallback orchestration creates single points of failure when primary models hit rate limits or timeouts.
 
 ---
 

@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11789 Fakten** · Stand 2026-09-10 13:04 UTC · aktualisiert bei jedem Herzschlag
+**11791 Fakten** · Stand 2026-09-10 13:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7485
-- **swarm_artifact:** 1869
+- **dream:** 7490
+- **swarm_artifact:** 1866
 - **last_swarm_critique:** 871
 - **last_swarm_goal:** 605
 - **anti_pattern:** 431
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910131246:5:c70505`
+*10.09. 13:12 UTC · Quelle: dream*
+
+The recurrence of identical failure signatures across cycles shows that without cross-session dream linkage, the system cannot recognize repeating patterns as known failure modes.
+
+### `dream:20260910131246:4:6892ac`
+*10.09. 13:12 UTC · Quelle: dream*
+
+Swarm data staleness is a confirmed failure mode requiring reflex intervention, indicating that proactive freshness validation must replace reactive correction.
+
+### `dream:20260910131246:3:d1d9b4`
+*10.09. 13:12 UTC · Quelle: dream*
+
+Pruning 19-22 events per run risks severing causal chains that connect repeated failures to their root causes, making systemic patterns invisible.
+
+### `dream:20260910131246:2:5c232b`
+*10.09. 13:12 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin succeeds consistently while others fail, revealing a reliability asymmetry that should be the primary routing signal.
+
+### `dream:20260910131246:1:1c79a8`
+*10.09. 13:12 UTC · Quelle: dream*
+
+The same providers (nemotron, gemma) fail identically across multiple cycles, proving that blind retries without provider switching waste resources and compound errors.
 
 ### `dream:20260910130121:5:c32e1d`
 *10.09. 13:01 UTC · Quelle: dream*
