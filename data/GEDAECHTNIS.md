@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11785 Fakten** · Stand 2026-09-10 06:47 UTC · aktualisiert bei jedem Herzschlag
+**11785 Fakten** · Stand 2026-09-10 06:59 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7458
 - **swarm_artifact:** 1893
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910065623:5:790584`
+*10.09. 06:56 UTC · Quelle: dream*
+
+Simulation approved 'go' despite 80% model failure rate, indicating the verdict logic ignores inference-layer health signals.
+
+### `dream:20260910065623:4:0340fd`
+*10.09. 06:56 UTC · Quelle: dream*
+
+High stress (1.0) with conservative budget (max_tasks=3, max_iterations=1) forces brittle execution — no retry headroom for transient provider errors.
+
+### `dream:20260910065623:3:1d4b24`
+*10.09. 06:56 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free delivers consistent sub-7s latency across varied token loads, proving smaller specialized models outperform unreliable giants in production.
+
+### `dream:20260910065623:2:1b2e4d`
+*10.09. 06:56 UTC · Quelle: dream*
+
+The circuit breaker (3 strikes → 30min block) correctly isolates cascading failures but leaves the swarm dependent on a single working model.
+
+### `dream:20260910065623:1:762da8`
+*10.09. 06:56 UTC · Quelle: dream*
+
+Free-tier flagship models (Nemotron, Gemma) fail reliably under load via 502 overloads and 429 rate limits, making them unsuitable for primary inference paths.
 
 ### `dream:20260910064448:5:764a29`
 *10.09. 06:44 UTC · Quelle: dream*
@@ -43899,31 +43924,6 @@ Repeated 429 throttling on rate-limited models under high load reveals that stre
 *27.08. 07:01 UTC · Quelle: dream*
 
 When internal stress crosses 0.8, the system auto-conserves by capping tasks at 3 and iterations at 1, preventing failure cascades but requiring explicit wake-up signals to resume full capacity.
-
-### `dream:20260827065107:5:c37ec2`
-*27.08. 06:51 UTC · Quelle: dream*
-
-Hand actions with exit code 0 succeeded (10 lines read), while exit code 1 failed despite similar duration, indicating silent failures require explicit error capture.
-
-### `dream:20260827065107:4:172dce`
-*27.08. 06:51 UTC · Quelle: dream*
-
-Calibration predicted score 5 but actual was 8, revealing systematic underestimation of swarm convergence speed in early cycles.
-
-### `dream:20260827065107:3:786926`
-*27.08. 06:51 UTC · Quelle: dream*
-
-Successful model calls (nvidia/nemotron-3.5-lightning:free) show high latency (101s) but stable output, implying reliability correlates with lower concurrency.
-
-### `dream:20260827065107:2:9d0b5e`
-*27.08. 06:51 UTC · Quelle: dream*
-
-Nvidia's nemotron-3-ultra-550b:free returns 502 upstream errors intermittently, suggesting backend instability rather than client-side issues.
-
-### `dream:20260827065107:1:30a77e`
-*27.08. 06:51 UTC · Quelle: dream*
-
-Rate-limited models (429 errors) consistently fail under concurrent load, indicating OpenRouter's free tier throttles aggressively during swarm bursts.
 
 ### `last_swarm_critique`
 *27.08. 06:31 UTC · Quelle: critic*

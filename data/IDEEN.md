@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 06:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 06:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,8 +28,8 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation approved 'go' despite 80% model failure rate, indicating the verdict logic ignores inference-layer health signals.
+- High stress (1.0) with conservative budget (max_tasks=3, max_iterations=1) forces brittle execution — no retry headroom for transient provider errors.
+- inclusionai/ling-3.0-flash-fin:free delivers consistent sub-7s latency across varied token loads, proving smaller specialized models outperform unreli
+- The circuit breaker (3 strikes → 30min block) correctly isolates cascading failures but leaves the swarm dependent on a single working model.
+- Free-tier flagship models (Nemotron, Gemma) fail reliably under load via 502 overloads and 429 rate limits, making them unsuitable for primary inferen
 - Convergence is declared on score alone without independent critic sign-off, so goals marked 'converged' still emit failed reflexes and stale knowledge
 - System enters conserve mode (stress=1.0) with a 3-task budget, yet continues spawning swarms and model calls, guaranteeing contention and timeout spir
 - Reflex scripts assume absolute paths and environment variables that don't hold in the sandbox, causing silent zero-byte failures that cascade into swa
@@ -51,11 +56,6 @@
 - The gap between 76 skill proposals and their actual implementation is the system's largest productivity bottleneck, not model availability.
 - Reflex-based execution consistently converges for known task types, making it the reliable default path over LLM-mediated planning.
 - Model failures (502 upstream overload, 429 rate-limiting) are systemic across providers and require proactive health-gating rather than reactive retry
-- Reflex results lack a machine-readable schema, preventing planners from programmatically retrying, escalating, or routing failures.
-- Hand actions fail due to unresolved relative paths; no normalization against ZOETRON_DATA or argv[1] occurs before execution.
-- Swarm knowledge decays silently; refresh only triggers on manual drive goals, not schedules or staleness metrics.
-- Skill proposals accumulate but lack an automated path to implementation and validation, creating a proposal graveyard.
-- Model instability (502/429 errors across 3+ models) is the primary reliability bottleneck, not task logic.
 
 ---
 
