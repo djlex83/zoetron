@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 23:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis only checks internal organs, missing external model endpoint health probes that cause downstream task failures.
+- Pruning discards patterns (19 events, 1 fact) without audit trail logging retention criteria or discarded pattern signatures for later recovery.
+- Skill proposals accumulate (79+ ideas) but lack mandatory validation gate with automated benchmark, soak period, and measurable convergence criteria b
+- Model reliability degrades silently (429s, latency spikes, 19 prediction errors) without circuit-breaker state exposed to planner for proactive fallba
+- Stale knowledge signals (stale, gap) repeatedly trigger reflex updates but lack systematic freshness tracking and automated refresh scheduling.
 - Pruning removes facts aggressively (15–19 per run) but never prunes failed skill proposals, leaving the proposal pool polluted.
 - Reflex actions succeed when they target a single, well-scoped goal (e.g., 'update memories'), but planner-assigned multi-step goals still suffer from 
 - Swarm coordination knowledge has a half-life of ~1 consolidation cycle; without scheduled refresh, the system plans with stale partner capabilities.
@@ -51,11 +56,6 @@
 - 75 skill proposals accumulate without a validation gate, creating a 'proposal graveyard' that consumes review cycles but yields no promoted skills.
 - Pruning discards error logs and recovery traces by default while preserving stale facts, inverting the value hierarchy for debugging.
 - Model failure rate of ~41% (25/61) triggers cascading goals but reflexes converge reliably, suggesting the error-recovery loop works but upstream mode
-- Aggressive pruning (83 events in one run) risks discarding diagnostic context needed for failure replay and calibration.
-- Model latency varies 16-27s for same model, suggesting need for routing, fallback, and circuit-breaker infrastructure.
-- Swarm converges in 1 cycle with zero evolution and no dissent, indicating insufficient critic engagement for complex tasks.
-- Critical tools like extract_plans() remain unimplemented placeholders (NotImplementedError), blocking goal execution despite high swarm scores.
-- Calibration predictions underestimate actual complexity by 7x (predicted 2 vs actual 9), requiring systematic correction factors per task type.
 
 ---
 

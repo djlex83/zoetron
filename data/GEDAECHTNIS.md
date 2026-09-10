@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11765 Fakten** · Stand 2026-09-10 22:53 UTC · aktualisiert bei jedem Herzschlag
+**11770 Fakten** · Stand 2026-09-10 23:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7555
+- **dream:** 7560
 - **swarm_artifact:** 1805
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910230149:5:59f0e0`
+*10.09. 23:01 UTC · Quelle: dream*
+
+Self-diagnosis only checks internal organs, missing external model endpoint health probes that cause downstream task failures.
+
+### `dream:20260910230149:4:f52156`
+*10.09. 23:01 UTC · Quelle: dream*
+
+Pruning discards patterns (19 events, 1 fact) without audit trail logging retention criteria or discarded pattern signatures for later recovery.
+
+### `dream:20260910230149:3:ecb585`
+*10.09. 23:01 UTC · Quelle: dream*
+
+Skill proposals accumulate (79+ ideas) but lack mandatory validation gate with automated benchmark, soak period, and measurable convergence criteria before registry entry.
+
+### `dream:20260910230149:2:2085f6`
+*10.09. 23:01 UTC · Quelle: dream*
+
+Model reliability degrades silently (429s, latency spikes, 19 prediction errors) without circuit-breaker state exposed to planner for proactive fallback.
+
+### `dream:20260910230149:1:5cb063`
+*10.09. 23:01 UTC · Quelle: dream*
+
+Stale knowledge signals (stale, gap) repeatedly trigger reflex updates but lack systematic freshness tracking and automated refresh scheduling.
 
 ### `dream:20260910225128:5:b323eb`
 *10.09. 22:51 UTC · Quelle: dream*
