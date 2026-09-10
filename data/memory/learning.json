@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 07:12:10",
+ "stand": "2026-09-10 07:45:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -133,12 +133,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
@@ -385,6 +379,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
