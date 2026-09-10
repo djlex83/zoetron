@@ -33156,3 +33156,20 @@
 {"ts": 1788408979.3438869, "kind": "act_done", "payload": {"goal_title": "Modellfehler dauerhaft reduzieren", "score": 8, "converged": true}}
 {"ts": 1788408980.1811786, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.46, "gelesen": 0}}
 {"ts": 1788408983.2097342, "kind": "issue_synced", "payload": {"issue": 327, "state": "closed"}}
+{"ts": 1787805157.6843998, "key": "dream:20260827043237:1:b0ef12", "value": "Free-tier model 429 errors reveal that rate limiting, not model capability, is the primary failure cause when fallback chains exhaust iteration budgets under conserve state.", "source": "dream"}
+{"ts": 1787805157.6844888, "key": "dream:20260827043237:2:a93a26", "value": "Latency variance in successful models (12.6s to 91.7s) correlates with token volume, indicating that adaptive timeouts must be token-aware, not just time-aware.", "source": "dream"}
+{"ts": 1787805157.684564, "key": "dream:20260827043237:3:962cc7", "value": "The metabolism budget (max_iterations=1, max_tasks=3) is fundamentally mismatched with fallback-driven revision loops, requiring depth-proportional headroom (N+1 iterations for N fallbacks).", "source": "dream"}
+{"ts": 1787805157.684631, "key": "dream:20260827043237:4:dd674e", "value": "Simulation revisions run 5 times with 5 risks yet rarely transfer, signaling that missing contract validation before handoff causes deployable artifact failure.", "source": "dream"}
+{"ts": 1787805157.6846964, "key": "dream:20260827043237:5:bc28ef", "value": "Drive goals consistently identify the same gaps (reduce errors, use skills, close loops), revealing that systemic budget and validation mechanisms, not ad-hoc fixes, are the durable solution.", "source": "dream"}
+{"ts": 1788409359.2242677, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788409951.843363, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788409953.6866457, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 37}}
+{"ts": 1788409958.0677378, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788409958.067735, "schalter_geoeffnet": false}}
+{"ts": 1788409979.830824, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 21.8, "tokens_ein": 1423, "tokens_aus": 1001}}
+{"ts": 1788409979.8313177, "kind": "skill_proposal", "payload": {"proposal": "Implement provider-diverse model registry with per-provider quota tracking, automatic circuit breaking, and health-based fallback ranking."}}
+{"ts": 1788409979.8313677, "kind": "skill_proposal", "payload": {"proposal": "Create latency-aware router that selects models by composite score (latency * cost * availability) under current stress level and task type."}}
+{"ts": 1788409979.8314157, "kind": "skill_proposal", "payload": {"proposal": "Build automatic skill proposal evaluator that scores proposals by relevance to recent failure patterns and triggers implementation of top-ranked proposals."}}
+{"ts": 1788409979.8314614, "kind": "skill_proposal", "payload": {"proposal": "Develop hand action path resolver that canonicalizes paths using ZOETRON_DATA, validates existence, and reports resolved absolute path before execution."}}
+{"ts": 1788409979.8315074, "kind": "skill_proposal", "payload": {"proposal": "Add continuous model health profiler that benchmarks models per task type and maintains ranked fallback list with real-time availability signals."}}
+{"ts": 1788409979.831553, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788409982.1995716, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788409982.1995683, "schalter_geoeffnet": false}}

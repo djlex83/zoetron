@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 04:23:15",
+ "stand": "2026-09-10 04:34:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -141,12 +141,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -208,6 +202,12 @@
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -411,7 +411,7 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

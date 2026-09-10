@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11781 Fakten** · Stand 2026-09-10 04:25 UTC · aktualisiert bei jedem Herzschlag
+**11781 Fakten** · Stand 2026-09-10 04:36 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7453
 - **swarm_artifact:** 1895
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910043322:5:558724`
+*10.09. 04:33 UTC · Quelle: dream*
+
+Swarm knowledge degrades predictably over time, and the stale-data signal recurs across cycles, indicating that scheduled knowledge refresh is a systemic requirement rather than an ad-hoc fix.
+
+### `dream:20260910043322:4:6373e2`
+*10.09. 04:33 UTC · Quelle: dream*
+
+Skill proposals accumulate without lifecycle tracking from proposal to deployment, creating a persistent gap between identified improvements and actual swarm capability growth.
+
+### `dream:20260910043322:3:9c3666`
+*10.09. 04:33 UTC · Quelle: dream*
+
+Reflex-based goal execution converges reliably when paired with clear failure signals, but the absence of independent critic sign-off in convergence criteria creates a risk of premature success declaration.
+
+### `dream:20260910043322:2:920ed3`
+*10.09. 04:33 UTC · Quelle: dream*
+
+Smaller optimized models like ling-3.0-flash-fin consistently outperform larger models under load, demonstrating that model size does not correlate with reliability and latency under stress.
+
+### `dream:20260910043322:1:a36838`
+*10.09. 04:33 UTC · Quelle: dream*
+
+Model failures cluster predictably around 502 (upstream overload) and 429 (rate limiting) errors, making pre-flight health probes essential before any request routing to avoid cascading failures.
 
 ### `dream:20260910042258:5:969424`
 *10.09. 04:22 UTC · Quelle: dream*
@@ -43904,31 +43929,6 @@ score=7; issues=Das erste Beweisrezept (bare except) ist ein SyntaxError-String 
 *27.08. 04:33 UTC · Quelle: system*
 
 Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen
-
-### `dream:20260827043237:5:bc28ef`
-*27.08. 04:32 UTC · Quelle: dream*
-
-Drive goals consistently identify the same gaps (reduce errors, use skills, close loops), revealing that systemic budget and validation mechanisms, not ad-hoc fixes, are the durable solution.
-
-### `dream:20260827043237:4:dd674e`
-*27.08. 04:32 UTC · Quelle: dream*
-
-Simulation revisions run 5 times with 5 risks yet rarely transfer, signaling that missing contract validation before handoff causes deployable artifact failure.
-
-### `dream:20260827043237:3:962cc7`
-*27.08. 04:32 UTC · Quelle: dream*
-
-The metabolism budget (max_iterations=1, max_tasks=3) is fundamentally mismatched with fallback-driven revision loops, requiring depth-proportional headroom (N+1 iterations for N fallbacks).
-
-### `dream:20260827043237:2:a93a26`
-*27.08. 04:32 UTC · Quelle: dream*
-
-Latency variance in successful models (12.6s to 91.7s) correlates with token volume, indicating that adaptive timeouts must be token-aware, not just time-aware.
-
-### `dream:20260827043237:1:b0ef12`
-*27.08. 04:32 UTC · Quelle: dream*
-
-Free-tier model 429 errors reveal that rate limiting, not model capability, is the primary failure cause when fallback chains exhaust iteration budgets under conserve state.
 
 ### `last_swarm_critique`
 *27.08. 04:16 UTC · Quelle: critic*

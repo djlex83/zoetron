@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 04:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 04:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge degrades predictably over time, and the stale-data signal recurs across cycles, indicating that scheduled knowledge refresh is a syste
+- Skill proposals accumulate without lifecycle tracking from proposal to deployment, creating a persistent gap between identified improvements and actua
+- Reflex-based goal execution converges reliably when paired with clear failure signals, but the absence of independent critic sign-off in convergence c
+- Smaller optimized models like ling-3.0-flash-fin consistently outperform larger models under load, demonstrating that model size does not correlate wi
+- Model failures cluster predictably around 502 (upstream overload) and 429 (rate limiting) errors, making pre-flight health probes essential before any
 - Dream consolidation produces skill proposals but lacks automated testing loops to validate proposals before deployment.
 - Swarm knowledge staleness triggers (median age >24h, delta < epsilon for 3 cycles) are detectable and should automate refresh workflows.
 - Effort estimation for 'Alte Schwarm-Informationen erneuern' tasks shows a consistent 5-point calibration error, requiring a 3.5x correction factor.
@@ -51,11 +56,6 @@
 - Skills proposed without dream-based validation create a persistent gap between idea generation and reliable execution.
 - Stale swarm critiques and unlinked dream memories silently degrade decision quality because no freshness or connection audit exists.
 - Unprotected external model calls without circuit breakers cause cascading 429 rate-limit failures that propagate through the entire planning pipeline.
-- Drive goals proliferate but lack deadline tracking and escalation paths leading to unresolved systemic issues.
-- Swarm critique freshness degrades silently without automated staleness detection or refresh triggers.
-- Skill proposals accumulate without mandatory validation pipeline causing deployment of untested capabilities.
-- InclusionAI Ling model serves as sole reliable provider creating dangerous single-point-of-failure dependency.
-- Google Gemma models consistently hit 429 rate limits making them unreliable for production workloads.
 
 ---
 
