@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 10:07 UTC · aktualisiert bei jedem Herzschlag
+**11797 Fakten** · Stand 2026-09-10 10:18 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7470
-- **swarm_artifact:** 1881
-- **last_swarm_critique:** 869
-- **last_swarm_goal:** 603
-- **anti_pattern:** 431
-- **strategy:** 217
+- **swarm_artifact:** 1887
+- **last_swarm_critique:** 870
+- **last_swarm_goal:** 604
+- **anti_pattern:** 433
+- **strategy:** 218
 - **tool:** 171
 - **hand_result:** 101
 - **aktuell_organfehler:** 43
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modellfehler systematisc:2`
+*10.09. 10:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Ensemble-Fusion mit Gewichteter Fehler-Kompensation - import numpy as np from sklearn.tree import DecisionTreeRegressor from sklearn.linear_model import Ridge from sklearn.neighbors import KNeighborsRegressor from sklearn.met
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modellfehler systematisc:1`
+*10.09. 10:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Kreuzvalidierungsbasierte iterative Fehlerdiagnose und -korrektur - import numpy as np from sklearn.model_selection import KFold from sklearn.linear_model import LinearRegression from sklearn.preprocessing import PolynomialFe
+
+### `last_swarm_critique`
+*10.09. 10:15 UTC · Quelle: critic*
+
+score=1; issues=LAEUFT NICHT: Kein ausführbarer Python-Block im Artefakt vorhanden. Das Sandbox-Urteil bestätigt, dass nur Prosa und Bash-Erkundungsbefehle vorliegen.; Die Bash-Befehle (find, ls) sind keine Python-Implementierung und können nicht als Artefakt 
+
+### `last_swarm_goal`
+*10.09. 10:15 UTC · Quelle: system*
+
+Modellfehler systematisch reduzieren
+
+### `dream:20260910101514:5:cdcc0f`
+*10.09. 10:15 UTC · Quelle: dream*
+
+Skill proposals without verified executable paths against current resource constraints are worthless; every proposed skill must be validated against metabolic budget and available tool capacity before being queued.
+
+### `dream:20260910101514:4:310073`
+*10.09. 10:15 UTC · Quelle: dream*
+
+Repeated 429 errors from the same API provider indicate a need for provider-level rate limit awareness, not just per-model tracking, since multiple models behind one provider fail together.
+
+### `dream:20260910101514:3:b07021`
+*10.09. 10:15 UTC · Quelle: dream*
+
+Under conserve/metabolic-stress conditions with minimal budget, the system must not attempt swarm operations or complex multi-step skill execution because insufficient resources cause cascading timeouts and reflex failures.
+
+### `dream:20260910101514:2:fa4f2d`
+*10.09. 10:15 UTC · Quelle: dream*
+
+A circuit breaker pattern is essential: after 2 consecutive failures from any model, that model should be proactively excluded from routing decisions rather than waiting for a lockout threshold to accumulate damage.
+
+### `dream:20260910101514:1:6b7a02`
+*10.09. 10:15 UTC · Quelle: dream*
+
+When multiple external API providers return rate-limit or timeout errors simultaneously, the system must immediately route all traffic to the single known-healthy model instead of continuing to probe failed endpoints.
 
 ### `dream:20260910100511:5:7f81cf`
 *10.09. 10:05 UTC · Quelle: dream*
@@ -43924,31 +43969,6 @@ Upstream provider overload (502 errors) can occur even on successful endpoints, 
 *27.08. 10:16 UTC · Quelle: dream*
 
 Free models on OpenRouter are highly rate-limited (429 errors) and require robust fallback or retry mechanisms.
-
-### `dream:20260827101333:5:a87182`
-*27.08. 10:13 UTC · Quelle: dream*
-
-Drive goals for reliability, evolution, and dream consolidation remain unaddressed because the execution layer fails at the model-inference prerequisite.
-
-### `dream:20260827101333:4:884f7c`
-*27.08. 10:13 UTC · Quelle: dream*
-
-Simulation learning loops proceed despite known risks (3) and revisions (2), indicating insufficient validation gates before commitment.
-
-### `dream:20260827101333:3:fbf362`
-*27.08. 10:13 UTC · Quelle: dream*
-
-The system operates at maximum stress (1.0) in conserve mode with severely constrained budgets, causing task starvation and preventing evolutionary cycles.
-
-### `dream:20260827101333:2:0abf0f`
-*27.08. 10:13 UTC · Quelle: dream*
-
-Nvidia Nemotron models show higher reliability but extreme latency variance (8-177s), making them unsuitable for time-bounded tasks without fallback.
-
-### `dream:20260827101333:1:9f86d2`
-*27.08. 10:13 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) across multiple free-tier models is the primary systemic failure mode, not model capability.
 
 ### `last_swarm_critique`
 *27.08. 09:56 UTC · Quelle: critic*

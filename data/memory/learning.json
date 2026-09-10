@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-10 10:05:25",
+ "stand": "2026-09-10 10:16:34",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
@@ -25,12 +25,6 @@
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 5,
-   "erfolge": 4,
-   "quote": 0.8
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
@@ -55,6 +49,12 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 4,
+   "erfolge": 3,
+   "quote": 0.75
   },
   {
    "tool": "simulationen-gezielt-einsetzen.py",
@@ -135,12 +135,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-stark-reduzieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -186,12 +180,6 @@
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-marktanalysen-wieder-auf-den-neuest.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -283,6 +271,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modellfehler-stark-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
@@ -397,19 +391,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-systematisch-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.727,
- "simulationen_angewandt": 37,
+ "haende_quote": 0.718,
+ "simulationen_angewandt": 39,
  "swarm_scores": {
-  "n": 29,
+  "n": 30,
   "best": 9.0,
-  "schnitt": 4.59
+  "schnitt": 4.47
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 27,
-   "schnitt": 4.59
+   "n": 28,
+   "schnitt": 4.46
   },
   "bau": {
    "n": 2,
