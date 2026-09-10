@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11797 Fakten** · Stand 2026-09-10 14:17 UTC · aktualisiert bei jedem Herzschlag
+**11810 Fakten** · Stand 2026-09-10 14:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7510
-- **swarm_artifact:** 1855
-- **last_swarm_critique:** 871
-- **last_swarm_goal:** 605
-- **anti_pattern:** 431
-- **strategy:** 217
-- **tool:** 168
+- **dream:** 7515
+- **swarm_artifact:** 1859
+- **last_swarm_critique:** 872
+- **last_swarm_goal:** 606
+- **anti_pattern:** 433
+- **strategy:** 218
+- **tool:** 167
 - **hand_result:** 99
 - **aktuell_organfehler:** 41
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fernen Träume neu verbin:2`
+*10.09. 14:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 5]): Temporal-Pattern-Reconnection - Reconnect dreams based on temporal sequence patterns rather than content similarity. The hypothesis: distant dreams share latent temporal rhythms.  1. Load dreams sorted by timestamp in
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fernen Träume neu verbin:1`
+*10.09. 14:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 6, 7]): Embedding-Space Projection - Treat each dream as a high-dimensional embedding vector. Distant dreams occupy remote regions in embedding space. The reconnection strategy:  1. Load dreams as structured text records (id,
+
+### `last_swarm_critique`
+*10.09. 14:25 UTC · Quelle: critic*
+
+score=1; issues=LÄUFT NICHT: Kein ausführbarer Python-Block im Artefakt – das SANDBOX-URTEIL bestätigt, dass kein Python-Code lauffähig ist; Die drei Code-Blöcke sind redundante Verzeichnis-Erkundungen (os.walk), die nichts zur Zielaufgabe 'Fernen Träume neu v
+
+### `last_swarm_goal`
+*10.09. 14:24 UTC · Quelle: system*
+
+Fernen Träume neu verbinden
+
+### `dream:20260910142445:5:013137`
+*10.09. 14:24 UTC · Quelle: dream*
+
+Without a convergence gate requiring measurable progress, revision cycles risk looping indefinitely without actual improvement in task scores.
+
+### `dream:20260910142445:4:229d39`
+*10.09. 14:24 UTC · Quelle: dream*
+
+Memory pruning (7 facts, 26 events) actively maintains system health, but the zero-finding selbstdiagnose suggests the system may be discarding signals that would be useful for future convergence tracking.
+
+### `dream:20260910142445:3:6ab5c7`
+*10.09. 14:24 UTC · Quelle: dream*
+
+Reflex-driven procedures like schwarmwissen-regelmäßig-aktualisieren.py succeed reliably, proving that codified routines outperform ad-hoc decision-making in this system.
+
+### `dream:20260910142445:2:3e2951`
+*10.09. 14:24 UTC · Quelle: dream*
+
+The lightweight flash model (inclusionai/ling-3.0-flash-fin) is the only consistently reliable model, demonstrating an inverse correlation between model size and API reliability under load.
+
+### `dream:20260910142445:1:18c6d8`
+*10.09. 14:24 UTC · Quelle: dream*
+
+Rate-limit errors (429) are the dominant and recurring failure mode across multiple large models, indicating a systemic API capacity constraint rather than isolated incidents.
 
 ### `dream:20260910141440:5:45f600`
 *10.09. 14:14 UTC · Quelle: dream*
@@ -44069,11 +44114,6 @@ Free-tier models fail predominantly due to rate limits (429) and upstream overlo
 *27.08. 14:24 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-27 14:08:22 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `tool:mehr-evolution-starten`
-*27.08. 14:23 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Mehr Evolution starten'. Datei: data/tools/mehr-evolution-starten.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *27.08. 14:23 UTC · Quelle: critic*

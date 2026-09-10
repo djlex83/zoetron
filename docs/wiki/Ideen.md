@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 14:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 14:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
+- Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Without a convergence gate requiring measurable progress, revision cycles risk looping indefinitely without actual improvement in task scores.
+- Memory pruning (7 facts, 26 events) actively maintains system health, but the zero-finding selbstdiagnose suggests the system may be discarding signal
+- Reflex-driven procedures like schwarmwissen-regelmäßig-aktualisieren.py succeed reliably, proving that codified routines outperform ad-hoc decision-ma
+- The lightweight flash model (inclusionai/ling-3.0-flash-fin) is the only consistently reliable model, demonstrating an inverse correlation between mod
+- Rate-limit errors (429) are the dominant and recurring failure mode across multiple large models, indicating a systemic API capacity constraint rather
 - Memory pruning (11 facts, 22 events) combined with zero self-diagnosis organ errors confirms the internal system is healthy; the failure surface is en
 - Repeated model failures without adaptive routing suggest the system lacks a real-time health signal to distinguish temporarily rate-limited endpoints 
 - Stale swarm knowledge degrades decision quality, and the reflex-based refresh mechanism converges successfully, proving that scheduled knowledge expir
@@ -51,11 +56,6 @@
 - Pruning 33 events alongside 3 facts risks destroying the causal chains that explain why failures occurred, making post-mortem analysis and pattern rec
 - The reactive lockout mechanism (locking a model after 3 consecutive failures) is too late to prevent cascading damage; failures accumulate before the 
 - Google/gemma models consistently return 429 rate-limit errors while inclusionai/ling-3.0-flash-fin succeeds reliably, revealing that provider failure 
-- Reflex-driven memory consolidation (linking related memories) converges reliably and compensates for model instability, but the system depends on it a
-- Swarm-orchestration knowledge degrades into staleness when not actively refreshed, reducing the quality of multi-agent coordination over time.
-- A persistent gap exists between generating skill proposals and completing their implementation, causing capability ideas to accumulate without ever be
-- Transient API errors (timeouts, rate limits) become permanent task failures because the system lacks any retry, backoff, or circuit-breaker mechanism 
-- Model failures are systemic and correlated by provider rather than random, with Google-hosted models failing simultaneously via timeouts and 429 rate 
 
 ---
 
