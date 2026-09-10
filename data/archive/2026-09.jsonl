@@ -33535,3 +33535,5 @@
 {"ts": 1788417018.3495917, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten testen und behalten", "score": 4, "converged": false}}
 {"ts": 1788417019.7122896, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.42, "gelesen": 1}}
 {"ts": 1788417021.8607264, "kind": "issue_synced", "payload": {"issue": 330, "state": "open"}}
+{"ts": 1787812390.7936864, "key": "aktuell_organfehler", "value": "ORGANFEHLER (2026-08-27 06:28:18 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ Herzschlag Phase reparieren.", "source": "selbstdiagnose.py"}
+{"ts": 1788417407.273915, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

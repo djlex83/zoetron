@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 06:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 06:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,9 +28,9 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence is declared on score alone without independent critic sign-off, so goals marked 'converged' still emit failed reflexes and stale knowledge
+- System enters conserve mode (stress=1.0) with a 3-task budget, yet continues spawning swarms and model calls, guaranteeing contention and timeout spir
+- Reflex scripts assume absolute paths and environment variables that don't hold in the sandbox, causing silent zero-byte failures that cascade into swa
+- Skill proposals accumulate but lack an execution pipeline — proposals are generated, validated, and then stall because no background worker deploys th
+- Free-tier model endpoints (Nemotron, Gemma) fail reliably under load with 502/429 errors, making health-probing and cached fallback routing essential 
 - Cross-domain combination—linking dream clusters with swarm results—reliably surfaces novel insights that neither source produces alone.
 - Swarm knowledge degrades on a predictable schedule, meaning stale-data alerts and scheduled refresh cycles outperform ad-hoc updates.
 - The gap between 76 skill proposals and their actual implementation is the system's largest productivity bottleneck, not model availability.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays silently; refresh only triggers on manual drive goals, not schedules or staleness metrics.
 - Skill proposals accumulate but lack an automated path to implementation and validation, creating a proposal graveyard.
 - Model instability (502/429 errors across 3+ models) is the primary reliability bottleneck, not task logic.
-- Aggressive pruning (46 events, 5 facts) per cycle may discard failure context needed for root-cause replay.
-- Automatic skill proposals emerge during operation but lack a validation gate before persistence, risking hallucinated capabilities.
-- Single-cycle swarm convergence with 4 builders but only 1 critic suggests critique depth is insufficient for durable quality.
-- Calibration error of 300% (predicted 2 vs actual 8) indicates the effort estimator lacks feedback from actual swarm cycle costs.
-- Free-tier model endpoints (NVIDIA Nemotron, Google Gemma) fail systematically under load with 502/429 errors while inclusionai/ling-3.0-flash-fin succ
 
 ---
 

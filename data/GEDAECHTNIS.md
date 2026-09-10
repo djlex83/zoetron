@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11781 Fakten** · Stand 2026-09-10 06:35 UTC · aktualisiert bei jedem Herzschlag
+**11785 Fakten** · Stand 2026-09-10 06:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7453
+- **dream:** 7458
 - **swarm_artifact:** 1893
 - **last_swarm_critique:** 866
 - **last_swarm_goal:** 600
@@ -10,9 +10,34 @@
 - **strategy:** 218
 - **tool:** 172
 - **hand_result:** 102
-- **aktuell_organfehler:** 44
+- **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910064448:5:764a29`
+*10.09. 06:44 UTC · Quelle: dream*
+
+Convergence is declared on score alone without independent critic sign-off, so goals marked 'converged' still emit failed reflexes and stale knowledge.
+
+### `dream:20260910064448:4:21240b`
+*10.09. 06:44 UTC · Quelle: dream*
+
+System enters conserve mode (stress=1.0) with a 3-task budget, yet continues spawning swarms and model calls, guaranteeing contention and timeout spirals.
+
+### `dream:20260910064448:3:40c729`
+*10.09. 06:44 UTC · Quelle: dream*
+
+Reflex scripts assume absolute paths and environment variables that don't hold in the sandbox, causing silent zero-byte failures that cascade into swarm aborts.
+
+### `dream:20260910064448:2:bf8fe4`
+*10.09. 06:44 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an execution pipeline — proposals are generated, validated, and then stall because no background worker deploys them with rollback and audit.
+
+### `dream:20260910064448:1:9d62eb`
+*10.09. 06:44 UTC · Quelle: dream*
+
+Free-tier model endpoints (Nemotron, Gemma) fail reliably under load with 502/429 errors, making health-probing and cached fallback routing essential for production stability.
 
 ### `dream:20260910063302:5:a37d16`
 *10.09. 06:33 UTC · Quelle: dream*
@@ -43899,11 +43924,6 @@ Nvidia's nemotron-3-ultra-550b:free returns 502 upstream errors intermittently, 
 *27.08. 06:51 UTC · Quelle: dream*
 
 Rate-limited models (429 errors) consistently fail under concurrent load, indicating OpenRouter's free tier throttles aggressively during swarm bursts.
-
-### `aktuell_organfehler`
-*27.08. 06:33 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-27 06:28:18 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `last_swarm_critique`
 *27.08. 06:31 UTC · Quelle: critic*
