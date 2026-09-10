@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 21:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 21:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
-- Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No reserved compute budget for consolidation under load creates a death spiral where high pressure eliminates the very mechanism that reduces future p
+- Pruner discards error logs, recovery traces, and validation receipts while retaining stale facts, destroying the evidence needed for failure replay an
+- Swarm convergence on complex tasks occurs after single critic cycles without dissent thresholds, causing premature approval of flawed solutions.
+- Eleven completed dreams produced zero utilized insights, revealing a broken feedback loop where consolidation outputs never reach execution.
+- Model error rate of 68 failures vs 42 successes indicates systemic reliability failure requiring provider-aware routing with circuit breakers and auto
 - Drive signals (failure, stale, gap) map to distinct remediation archetypes but lack automated escalation to scheduled reflex invocations with measurab
 - Aggressive pruning (22 events in one cycle) risks discarding low-frequency high-impact patterns without audit trail or recovery mechanism.
 - Reflex-based execution converges reliably (2/2 converged) but operates blind: no success metrics, latency budgets, or health telemetry feed back into 
@@ -51,11 +56,6 @@
 - Self-diagnosis only checks internal organ health, missing external API failures which constitute the dominant failure mode.
 - Reflex-based actions converge reliably (2/2) while model-dependent actions fail at 67% rate (82 errors vs 40 successes).
 - Free-tier model APIs exhibit cascading failures (429/502 errors) making them unreliable for critical paths without robust fallback routing.
-- Skills proposed without verification often fail in practice, creating a gap between idea and execution.
-- Stale swarm knowledge degrades collaboration quality and must be periodically refreshed.
-- Planner predictions diverge from reality when not calibrated against observed success rates.
-- Hard failures in hand actions waste compute; retry loops with partial result emission improve resilience.
-- Rate limiting (429 errors) is a systemic failure mode that cascades across models and requires adaptive fallback strategies.
 
 ---
 

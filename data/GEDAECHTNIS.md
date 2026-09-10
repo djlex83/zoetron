@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11792 Fakten** · Stand 2026-09-10 21:19 UTC · aktualisiert bei jedem Herzschlag
+**11782 Fakten** · Stand 2026-09-10 21:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7566
+- **dream:** 7556
 - **swarm_artifact:** 1813
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910212755:5:1b5bdd`
+*10.09. 21:27 UTC · Quelle: dream*
+
+No reserved compute budget for consolidation under load creates a death spiral where high pressure eliminates the very mechanism that reduces future pressure.
+
+### `dream:20260910212755:4:6f8cd0`
+*10.09. 21:27 UTC · Quelle: dream*
+
+Pruner discards error logs, recovery traces, and validation receipts while retaining stale facts, destroying the evidence needed for failure replay and calibration.
+
+### `dream:20260910212755:3:f4397c`
+*10.09. 21:27 UTC · Quelle: dream*
+
+Swarm convergence on complex tasks occurs after single critic cycles without dissent thresholds, causing premature approval of flawed solutions.
+
+### `dream:20260910212755:2:4ed691`
+*10.09. 21:27 UTC · Quelle: dream*
+
+Eleven completed dreams produced zero utilized insights, revealing a broken feedback loop where consolidation outputs never reach execution.
+
+### `dream:20260910212755:1:c0b644`
+*10.09. 21:27 UTC · Quelle: dream*
+
+Model error rate of 68 failures vs 42 successes indicates systemic reliability failure requiring provider-aware routing with circuit breakers and automatic failover.
 
 ### `last_swarm_critique`
 *10.09. 21:17 UTC · Quelle: critic*
@@ -44132,81 +44157,6 @@ Latency variance across working models spans 6–80 seconds, causing unpredictab
 *27.08. 21:29 UTC · Quelle: dream*
 
 Free-tier model endpoints consistently fail with 429 rate-limit errors under load, making naive round-robin selection unreliable.
-
-### `dream:20260827212451:5:7ad274`
-*27.08. 21:24 UTC · Quelle: dream*
-
-No facts or events were pruned despite high error volume, meaning the memory retention policy preserves noise over signal.
-
-### `dream:20260827212451:4:230fc8`
-*27.08. 21:24 UTC · Quelle: dream*
-
-Reflex-driven goal conversion succeeds where deliberative planning stalls, showing lightweight procedural knowledge outperforms heavy simulation for routine tasks.
-
-### `dream:20260827212451:3:bdc589`
-*27.08. 21:24 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite repeated model failures, indicating health checks don't capture external dependency degradation.
-
-### `dream:20260827212451:2:e9228f`
-*27.08. 21:24 UTC · Quelle: dream*
-
-The swarm process evolves solutions but fails to converge within 2 cycles, suggesting insufficient iteration budget or missing convergence criteria.
-
-### `dream:20260827212451:1:9d0943`
-*27.08. 21:24 UTC · Quelle: dream*
-
-Free-tier API endpoints consistently fail under load with 429/502 errors, making them unreliable as primary inference providers.
-
-### `dream:20260827212031:5:8d278b`
-*27.08. 21:20 UTC · Quelle: dream*
-
-Swarm evolution improves scores (7→9) but fails to converge in 2 cycles, indicating insufficient critic signal or premature termination.
-
-### `dream:20260827212031:4:6766a7`
-*27.08. 21:20 UTC · Quelle: dream*
-
-Model latency variance (5s–51s) for successful calls exceeds acceptable thresholds for interactive workflows, requiring timeout-aware routing.
-
-### `dream:20260827212031:3:fe8835`
-*27.08. 21:20 UTC · Quelle: dream*
-
-Calibration consistently underestimates actual performance by ~3 points (predicted 4 vs actual 7), suggesting pessimistic prior on capability.
-
-### `dream:20260827212031:2:491221`
-*27.08. 21:20 UTC · Quelle: dream*
-
-String-append integration pattern flagged by critic creates brittle compositions that hinder evolution convergence beyond score 7.
-
-### `dream:20260827212031:1:42337b`
-*27.08. 21:20 UTC · Quelle: dream*
-
-Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
-
-### `dream:20260827211313:5:07c4ab`
-*27.08. 21:13 UTC · Quelle: dream*
-
-The learning loop (simulation→hand_action→tor) completed a full cycle with a 340-line Python artifact, proving end-to-end skill acquisition works.
-
-### `dream:20260827211313:4:1da834`
-*27.08. 21:13 UTC · Quelle: dream*
-
-Poolside Laguna-S-2.1 is the only model with zero 5xx errors and consistent 20-60s latency, making it the current reliability anchor.
-
-### `dream:20260827211313:3:b40bdf`
-*27.08. 21:13 UTC · Quelle: dream*
-
-InclusionAI Ling-3.0-Flash-Fin delivers 10x lower latency (4.7s) than alternatives but remains unvalidated at scale with only one success sample.
-
-### `dream:20260827211313:2:c32d1f`
-*27.08. 21:13 UTC · Quelle: dream*
-
-Nvidia Nemotron-3-Ultra exhibits cascading degradation: 502 upstream errors under load and latency tripling from 55s to 192s across three successful calls.
-
-### `dream:20260827211313:1:05d4c4`
-*27.08. 21:13 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the dominant failure mode across 4/6 model providers, making free-tier endpoints unreliable for sustained workloads.
 
 ### `last_swarm_critique`
 *27.08. 21:04 UTC · Quelle: critic*
