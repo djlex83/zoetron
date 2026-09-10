@@ -36130,3 +36130,22 @@
 {"ts": 1788475202.9471836, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.62, "gelesen": 2}}
 {"ts": 1788475202.9491394, "kind": "reflex_used", "payload": {"goal": "Marktanalyse abschließen und aktualisieren", "tool": "marktanalyse-endlich-abschließen.py", "ok": true}}
 {"ts": 1788475203.4001737, "kind": "act_done", "payload": {"goal_title": "Marktanalyse abschließen und aktualisieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788475632.4341655, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788475701.1644695, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788475702.9204912, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 33}}
+{"ts": 1788475707.7986114, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788475707.7986085, "schalter_geoeffnet": false}}
+{"ts": 1788475733.7721403, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 26.0, "tokens_ein": 1362, "tokens_aus": 976}}
+{"ts": 1788475733.7726927, "kind": "skill_proposal", "payload": {"proposal": "Implement a unified model router that tracks 429/502 rates per model, applies 120 s cooldown after any 429, decays health score exponentially, and auto-excludes models below 0.3 health."}}
+{"ts": 1788475733.7727494, "kind": "skill_proposal", "payload": {"proposal": "Add a skill-gate: every proposal must include a single-file implementation sketch and a 5-minute smoke test script before entering the backlog."}}
+{"ts": 1788475733.7729552, "kind": "skill_proposal", "payload": {"proposal": "Create an insight-to-goal bridge: when dream insight confidence > 0.8, auto-spawn a drive_goal with a concrete first action and a reference to the required skill."}}
+{"ts": 1788475733.7730143, "kind": "skill_proposal", "payload": {"proposal": "Enforce a swarm latency budget: if fallback p95 latency > 60 s, automatically decompose the parent goal into sub-goals each with a < 30 s wall-clock target."}}
+{"ts": 1788475733.7730665, "kind": "skill_proposal", "payload": {"proposal": "Deploy fact-TTL with access-frequency weighting: facts untouched for 7 days and read < 3 times auto-expire; log every expiration for dream review."}}
+{"ts": 1788475733.7731194, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788475736.2851934, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788475736.2851908, "schalter_geoeffnet": false}}
+{"ts": 1788475748.2624369, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 12.0, "tokens_ein": 520, "tokens_aus": 794}}
+{"ts": 1788475748.2625763, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren und Zuverlässigkeit steigern", "why": "Das Modell macht zu viele Fehler. Wir müssen verstehen warum und es verbessern.", "signal": "failure"}}
+{"ts": 1788475748.262653, "kind": "drive_goal", "payload": {"title": "Marktanalyse-Ergebnisse endlich konkret nutzen", "why": "Die alten Analysen liegen ungenutzt herum. Wir sollten sie in echte Schritte umsetzen.", "signal": "stale"}}
+{"ts": 1788475748.2627287, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich einbauen", "why": "Viele Fähigkeiten wurden vorgeschlagen aber nicht umgesetzt. Das Potenzial wird verschwendet.", "signal": "gap"}}
+{"ts": 1788475751.0500872, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 27}}
+{"ts": 1788475751.0521803, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Skills wirklich nutzbar machen", "tool": "vorgeschlagene-skills-nutzbar-machen.py", "ok": true}}
+{"ts": 1788475751.4638762, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Skills wirklich nutzbar machen", "score": null, "converged": true, "mode": "reflex"}}
