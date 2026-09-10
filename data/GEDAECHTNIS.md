@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11783 Fakten** · Stand 2026-09-10 13:35 UTC · aktualisiert bei jedem Herzschlag
+**11788 Fakten** · Stand 2026-09-10 13:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7495
+- **dream:** 7500
 - **swarm_artifact:** 1855
 - **last_swarm_critique:** 871
 - **last_swarm_goal:** 605
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910134236:5:e11c05`
+*10.09. 13:42 UTC · Quelle: dream*
+
+Simulation-recommended revisions were not fully validated before task completion, creating a systematic gap between planned infrastructure fixes and their actual application.
+
+### `dream:20260910134236:4:52043e`
+*10.09. 13:42 UTC · Quelle: dream*
+
+Self-diagnosis found zero internal organ errors, pinpointing the root cause in external infrastructure dependency instability rather than any flaw in the system's own organizational structure.
+
+### `dream:20260910134236:3:521a1e`
+*10.09. 13:42 UTC · Quelle: dream*
+
+Swarm orchestration failed because the builder role produced non-executable Python, indicating a missing code-verification step that should block task completion until all generated code passes syntax and import checks.
+
+### `dream:20260910134236:2:0e9f23`
+*10.09. 13:42 UTC · Quelle: dream*
+
+The 8x gap between evolution variant scores (8.0) and final swarm execution scores (1.0) reveals that variant selection lacks executable-code validation gates before promotion.
+
+### `dream:20260910134236:1:0559b4`
+*10.09. 13:42 UTC · Quelle: dream*
+
+External API failures (429 rate limits, 502 service overloads) cascade directly into task-level failures because no circuit breaker or fallback mechanism exists in the current architecture.
 
 ### `dream:20260910133245:5:8ec050`
 *10.09. 13:32 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": 1789047170.9371192,
+ "stand": 1789047762.2892783,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -31,7 +31,7 @@
    "latenz_summe_s": 503.63105940818787,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 1391
+   "kontofehler": 1393
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 12,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 490.30709886550903,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 1370
+   "kontofehler": 1372
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -148,11 +148,11 @@
    "kontofehler": 3
   },
   "inclusionai/ling-3.0-flash-fin:free": {
-   "laeufe": 964,
+   "laeufe": 966,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 8418.53979563713,
+   "latenz_summe_s": 8425.633404970169,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
    "kontofehler": 4

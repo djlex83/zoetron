@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 13:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 13:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
-- Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-recommended revisions were not fully validated before task completion, creating a systematic gap between planned infrastructure fixes and t
+- Self-diagnosis found zero internal organ errors, pinpointing the root cause in external infrastructure dependency instability rather than any flaw in 
+- Swarm orchestration failed because the builder role produced non-executable Python, indicating a missing code-verification step that should block task
+- The 8x gap between evolution variant scores (8.0) and final swarm execution scores (1.0) reveals that variant selection lacks executable-code validati
+- External API failures (429 rate limits, 502 service overloads) cascade directly into task-level failures because no circuit breaker or fallback mechan
 - Calibration predictions significantly miss actual outcomes (predicted 2, actual 1), suggesting the system overestimates its progress on complex orches
 - Tasks requiring iterative refinement (5+ revisions, evolution runs with 3+ variants) need explicit convergence criteria beyond prose descriptions to a
 - Upstream service overload (502) and rate limiting (429) are systemic API failures that recur across multiple model providers, indicating infrastructur
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across cycles without implementation because no active maturation pipeline moves them from proposal to prototype to deploym
 - All requests concentrate on the same overloaded providers because no provider-aware routing or fallback mechanism exists, creating a single point of f
 - Infrastructure failures (502 upstream overload, 429 rate limits) are the dominant failure mode, not model capability deficits, and retrying the same d
-- The recurrence of identical failure signatures across cycles shows that without cross-session dream linkage, the system cannot recognize repeating pat
-- Swarm data staleness is a confirmed failure mode requiring reflex intervention, indicating that proactive freshness validation must replace reactive c
-- Pruning 19-22 events per run risks severing causal chains that connect repeated failures to their root causes, making systemic patterns invisible.
-- inclusionai/ling-3.0-flash-fin succeeds consistently while others fail, revealing a reliability asymmetry that should be the primary routing signal.
-- The same providers (nemotron, gemma) fail identically across multiple cycles, proving that blind retries without provider switching waste resources an
 
 ---
 
