@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11781 Fakten** · Stand 2026-09-10 04:36 UTC · aktualisiert bei jedem Herzschlag
+**11781 Fakten** · Stand 2026-09-10 04:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7453
-- **swarm_artifact:** 1895
+- **dream:** 7458
+- **swarm_artifact:** 1893
 - **last_swarm_critique:** 864
 - **last_swarm_goal:** 598
-- **anti_pattern:** 433
-- **strategy:** 218
+- **anti_pattern:** 431
+- **strategy:** 217
 - **tool:** 173
 - **hand_result:** 103
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910044434:5:d26287`
+*10.09. 04:44 UTC · Quelle: dream*
+
+Fixed 2-cycle evolution ignores convergence signals, wasting compute or stopping prematurely without variance tracking.
+
+### `dream:20260910044434:4:3accf0`
+*10.09. 04:44 UTC · Quelle: dream*
+
+Hand actions fail on relative paths because path resolution isn't anchored to ZOETRON_DATA with existence validation.
+
+### `dream:20260910044434:3:2822aa`
+*10.09. 04:44 UTC · Quelle: dream*
+
+Swarm knowledge becomes stale within cycles because no scheduled refresh or coordination revival mechanism exists.
+
+### `dream:20260910044434:2:851ca5`
+*10.09. 04:44 UTC · Quelle: dream*
+
+Skill proposals accumulate (60+) but lack validation, prioritization, and deployment pipelines, creating a proposal-execution gap.
+
+### `dream:20260910044434:1:432384`
+*10.09. 04:44 UTC · Quelle: dream*
+
+Model failures (54+) stem from absent proactive health monitoring and no automated fallback promotion after repeated provider errors.
 
 ### `dream:20260910043322:5:558724`
 *10.09. 04:33 UTC · Quelle: dream*
@@ -43909,16 +43934,6 @@ Nvidia Nemotron models show higher success rates but extreme latency variance (1
 *27.08. 05:02 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) across multiple free-tier models is the primary failure mode, making free-tier reliance unreliable for production workloads.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Zoem-Protokoll: vererbba:2`
-*27.08. 04:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Declarative Recipe DSL + Z3 Verification - Eliminate executable code from recipes entirely. Define a typed declarative DSL (JSON/YAML) for knowledge transfer: `{'preconditions': [...], 'transform': {'type': 'map', 'fn': 'lamb
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Zoem-Protokoll: vererbba:0`
-*27.08. 04:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Static Analysis & AST Rewriting - Replace exec() with a two-phase pipeline: 1) Parse recipe into AST, run security linter that rejects/rewrites dangerous nodes (bare except, import *, __builtins__ mutation, eval/exec calls, s
 
 ### `last_swarm_critique`
 *27.08. 04:39 UTC · Quelle: critic*
