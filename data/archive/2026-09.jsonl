@@ -32644,3 +32644,22 @@
 {"ts": 1788398027.122118, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.35, "gelesen": 59}}
 {"ts": 1788398027.124491, "kind": "reflex_used", "payload": {"goal": "Marktanalyse abschließen und Ergebnisse nutzen", "tool": "marktanalyse-endlich-nutzen.py", "ok": true}}
 {"ts": 1788398027.6167796, "kind": "act_done", "payload": {"goal_title": "Marktanalyse abschließen und Ergebnisse nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788398394.8621027, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788398463.3427215, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788398464.8477888, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788398468.824895, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788398468.8248928, "schalter_geoeffnet": false}}
+{"ts": 1788398484.0902982, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 15.3, "tokens_ein": 1520, "tokens_aus": 1036}}
+{"ts": 1788398484.0907114, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with fallback chain, per-model rate-limit tracking, and automatic cooldown/backoff."}}
+{"ts": 1788398484.090763, "kind": "skill_proposal", "payload": {"proposal": "Create a path resolver utility that expands all file arguments to absolute paths under ZOETRON_DATA before any I/O."}}
+{"ts": 1788398484.0908124, "kind": "skill_proposal", "payload": {"proposal": "Add a reflex validator that dry-runs proposed scripts in a sandbox and rejects them on non-zero exit or missing imports."}}
+{"ts": 1788398484.0908554, "kind": "skill_proposal", "payload": {"proposal": "Design a stress-aware scheduler that queues low-priority goals during conserve mode and auto-resumes when stress < 0.7."}}
+{"ts": 1788398484.0908976, "kind": "skill_proposal", "payload": {"proposal": "Build a goal triage protocol that ranks drives by signal severity (failure > stale > gap) and allocates budget proportionally."}}
+{"ts": 1788398484.09094, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788398486.249032, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788398486.2490292, "schalter_geoeffnet": false}}
+{"ts": 1788398496.6199737, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 10.4, "tokens_ein": 511, "tokens_aus": 464}}
+{"ts": 1788398496.620102, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht zu viele Fehler, was unsere Vorhersagen unzuverlässig macht. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788398496.6201751, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich ausführen", "why": "Wir schlagen viele neue Fähigkeiten vor, führen sie aber selten aus. Nur durch Ausführen lernen wir wirklich.", "signal": "gap"}}
+{"ts": 1788398496.6202497, "kind": "drive_goal", "payload": {"title": "Alte Marktanalysen endlich nutzen", "why": "Drei fertige Marktanalysen liegen ungenutzt herum. Ihr Wissen hilft uns, bessere Chancen zu erkennen.", "signal": "stale"}}
+{"ts": 1788398507.8088074, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 8.61, "gelesen": 1726}}
+{"ts": 1788398507.8103607, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten testen und nutzen", "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py", "ok": true}}
+{"ts": 1788398508.2146885, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten testen und nutzen", "score": null, "converged": true, "mode": "reflex"}}
