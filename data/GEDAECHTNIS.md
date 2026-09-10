@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 20:38 UTC · aktualisiert bei jedem Herzschlag
+**11791 Fakten** · Stand 2026-09-10 20:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7561
+- **dream:** 7566
 - **swarm_artifact:** 1813
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910204602:5:d100d1`
+*10.09. 20:46 UTC · Quelle: dream*
+
+Skills proposed without verification often fail in practice, creating a gap between idea and execution.
+
+### `dream:20260910204602:4:b0758f`
+*10.09. 20:46 UTC · Quelle: dream*
+
+Stale swarm knowledge degrades collaboration quality and must be periodically refreshed.
+
+### `dream:20260910204602:3:c0a819`
+*10.09. 20:46 UTC · Quelle: dream*
+
+Planner predictions diverge from reality when not calibrated against observed success rates.
+
+### `dream:20260910204602:2:10f8c0`
+*10.09. 20:46 UTC · Quelle: dream*
+
+Hard failures in hand actions waste compute; retry loops with partial result emission improve resilience.
+
+### `dream:20260910204602:1:23744e`
+*10.09. 20:46 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is a systemic failure mode that cascades across models and requires adaptive fallback strategies.
 
 ### `dream:20260910203519:5:e7cff7`
 *10.09. 20:35 UTC · Quelle: dream*

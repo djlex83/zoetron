@@ -1,12 +1,12 @@
 {
- "stand": 1789072544.7236013,
+ "stand": 1789073190.9777644,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 5058,
-   "fehler": 1127,
-   "fehler_in_folge": 0,
+   "laeufe": 5060,
+   "fehler": 1129,
+   "fehler_in_folge": 2,
    "gesperrt_bis": 0.0,
    "latenz_summe_s": 184689.98219299316,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502, 'metadata': {'error_type': 'pr",
@@ -31,7 +31,7 @@
    "latenz_summe_s": 503.63105940818787,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 1452
+   "kontofehler": 1454
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 13,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 490.30709886550903,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 1430
+   "kontofehler": 1432
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -92,14 +92,14 @@
    "letzte_sperre": 1787553147.7341604
   },
   "poolside/laguna-s-2.1:free": {
-   "laeufe": 302,
+   "laeufe": 303,
    "fehler": 1,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 4958.996656417847,
+   "latenz_summe_s": 4967.790196895599,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
-   "kontofehler": 311
+   "kontofehler": 312
   },
   "nvidia/nemotron-3-nano-30b-a3b:free": {
    "laeufe": 3,
@@ -167,11 +167,11 @@
    "letzte_sperre": 0.0
   },
   "inclusionai/ling-3.0-flash-sante:free": {
-   "laeufe": 5,
+   "laeufe": 6,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 32.751455783843994,
+   "latenz_summe_s": 40.22851800918579,
    "letzter_fehler": "",
    "letzte_sperre": 0.0
   },
