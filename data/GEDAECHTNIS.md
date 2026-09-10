@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11782 Fakten** · Stand 2026-09-10 21:30 UTC · aktualisiert bei jedem Herzschlag
+**11777 Fakten** · Stand 2026-09-10 21:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7556
+- **dream:** 7551
 - **swarm_artifact:** 1813
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910213842:5:df1458`
+*10.09. 21:38 UTC · Quelle: dream*
+
+Consolidation/dream has no protected compute budget, so it is the first capability dropped under load — precisely when failure analysis is most needed.
+
+### `dream:20260910213842:4:6bbd1b`
+*10.09. 21:38 UTC · Quelle: dream*
+
+No canonical path resolver exists, forcing every hand action to reimplement ZOETRON_DATA/sys.argv[1] resolution and creating silent failures when contexts shift.
+
+### `dream:20260910213842:3:88d008`
+*10.09. 21:38 UTC · Quelle: dream*
+
+Planner predictions ignore observed success rates, causing systematic under-allocation of cycles when models are degraded.
+
+### `dream:20260910213842:2:f69c4b`
+*10.09. 21:38 UTC · Quelle: dream*
+
+Error logs and recovery traces are pruned aggressively (22 events pruned, 0 facts) while stale facts persist, destroying the evidence needed for calibration and replay.
+
+### `dream:20260910213842:1:bd92e9`
+*10.09. 21:38 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across multiple providers simultaneously, indicating shared quota pools or correlated traffic spikes that single-model fallbacks cannot resolve.
 
 ### `dream:20260910212755:5:1b5bdd`
 *10.09. 21:27 UTC · Quelle: dream*
@@ -44107,56 +44132,6 @@ Nvidia Nemotron shows high latency variance (17–88 s) and occasional 502 error
 *27.08. 21:38 UTC · Quelle: dream*
 
 Rate limiting (429) on free-tier models (Z.ai GLM, Google Gemma) is the dominant failure mode, making them unreliable under sustained load.
-
-### `dream:20260827213354:5:46f91a`
-*27.08. 21:33 UTC · Quelle: dream*
-
-Drive goals reveal persistent execution gap: repair intentions and skill proposals accumulate but rarely transition to deployed fixes.
-
-### `dream:20260827213354:4:90f11d`
-*27.08. 21:33 UTC · Quelle: dream*
-
-Simulations approve risky operations (5 risks, 5 revisions) without reducing actual failure rates, suggesting simulation fidelity gaps.
-
-### `dream:20260827213354:3:2aa741`
-*27.08. 21:33 UTC · Quelle: dream*
-
-The system operates at maximum stress (1.0) with conservative budget, causing task queuing that compounds model timeout failures.
-
-### `dream:20260827213354:2:b0db00`
-*27.08. 21:33 UTC · Quelle: dream*
-
-Nemotron-3-Ultra is the only consistently available model but exhibits extreme latency variance (7-123s), indicating upstream queueing or cold-start issues.
-
-### `dream:20260827213354:1:0c0f0b`
-*27.08. 21:33 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the systemic failure mode across all free-tier models, making them unreliable for production workloads.
-
-### `dream:20260827212932:5:d9c021`
-*27.08. 21:29 UTC · Quelle: dream*
-
-Swarm termination currently relies on implicit convergence without measurable score-delta or critic-veto thresholds, risking premature or stalled cycles.
-
-### `dream:20260827212932:4:a5d1f4`
-*27.08. 21:29 UTC · Quelle: dream*
-
-Reflex-based goal conversion works for simple tooling tasks but lacks a sandbox gate to catch runtime errors before swarm consumption.
-
-### `dream:20260827212932:3:5bcad5`
-*27.08. 21:29 UTC · Quelle: dream*
-
-The system generates skill proposals faster than it validates or deploys them, creating an execution gap that self-diagnosis does not close.
-
-### `dream:20260827212932:2:9aa8aa`
-*27.08. 21:29 UTC · Quelle: dream*
-
-Latency variance across working models spans 6–80 seconds, causing unpredictable swarm cycle times unless roles are latency-matched.
-
-### `dream:20260827212932:1:034354`
-*27.08. 21:29 UTC · Quelle: dream*
-
-Free-tier model endpoints consistently fail with 429 rate-limit errors under load, making naive round-robin selection unreliable.
 
 ### `last_swarm_critique`
 *27.08. 21:04 UTC · Quelle: critic*

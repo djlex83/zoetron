@@ -35953,3 +35953,14 @@
 {"ts": 1788470536.9247308, "kind": "act_done", "payload": {"goal_title": "Selbstverbesserung schneller vorantreiben", "score": 2, "converged": false}}
 {"ts": 1788470539.52427, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 1.93, "gelesen": 0}}
 {"ts": 1788470541.6467106, "kind": "issue_synced", "payload": {"issue": 348, "state": "open"}}
+{"ts": 1787866172.355695, "key": "dream:20260827212932:1:034354", "value": "Free-tier model endpoints consistently fail with 429 rate-limit errors under load, making naive round-robin selection unreliable.", "source": "dream"}
+{"ts": 1787866172.3557875, "key": "dream:20260827212932:2:9aa8aa", "value": "Latency variance across working models spans 6–80 seconds, causing unpredictable swarm cycle times unless roles are latency-matched.", "source": "dream"}
+{"ts": 1787866172.3558707, "key": "dream:20260827212932:3:5bcad5", "value": "The system generates skill proposals faster than it validates or deploys them, creating an execution gap that self-diagnosis does not close.", "source": "dream"}
+{"ts": 1787866172.3559625, "key": "dream:20260827212932:4:a5d1f4", "value": "Reflex-based goal conversion works for simple tooling tasks but lacks a sandbox gate to catch runtime errors before swarm consumption.", "source": "dream"}
+{"ts": 1787866172.3560338, "key": "dream:20260827212932:5:d9c021", "value": "Swarm termination currently relies on implicit convergence without measurable score-delta or critic-veto thresholds, risking premature or stalled cycles.", "source": "dream"}
+{"ts": 1787866434.7921193, "key": "dream:20260827213354:1:0c0f0b", "value": "Rate limiting (HTTP 429) is the systemic failure mode across all free-tier models, making them unreliable for production workloads.", "source": "dream"}
+{"ts": 1787866434.792226, "key": "dream:20260827213354:2:b0db00", "value": "Nemotron-3-Ultra is the only consistently available model but exhibits extreme latency variance (7-123s), indicating upstream queueing or cold-start issues.", "source": "dream"}
+{"ts": 1787866434.7923136, "key": "dream:20260827213354:3:2aa741", "value": "The system operates at maximum stress (1.0) with conservative budget, causing task queuing that compounds model timeout failures.", "source": "dream"}
+{"ts": 1787866434.7923818, "key": "dream:20260827213354:4:90f11d", "value": "Simulations approve risky operations (5 risks, 5 revisions) without reducing actual failure rates, suggesting simulation fidelity gaps.", "source": "dream"}
+{"ts": 1787866434.7925103, "key": "dream:20260827213354:5:46f91a", "value": "Drive goals reveal persistent execution gap: repair intentions and skill proposals accumulate but rarely transition to deployed fixes.", "source": "dream"}
+{"ts": 1788470959.682923, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

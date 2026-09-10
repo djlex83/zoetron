@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 21:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 21:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,13 +25,13 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Consolidation/dream has no protected compute budget, so it is the first capability dropped under load — precisely when failure analysis is most needed
+- No canonical path resolver exists, forcing every hand action to reimplement ZOETRON_DATA/sys.argv[1] resolution and creating silent failures when cont
+- Planner predictions ignore observed success rates, causing systematic under-allocation of cycles when models are degraded.
+- Error logs and recovery traces are pruned aggressively (22 events pruned, 0 facts) while stale facts persist, destroying the evidence needed for calib
+- Rate limiting (429) cascades across multiple providers simultaneously, indicating shared quota pools or correlated traffic spikes that single-model fa
 - No reserved compute budget for consolidation under load creates a death spiral where high pressure eliminates the very mechanism that reduces future p
 - Pruner discards error logs, recovery traces, and validation receipts while retaining stale facts, destroying the evidence needed for failure replay an
 - Swarm convergence on complex tasks occurs after single critic cycles without dissent thresholds, causing premature approval of flawed solutions.
@@ -51,11 +56,6 @@
 - Reflex-based execution converges reliably (2/2 converged) but operates blind: no success metrics, latency budgets, or health telemetry feed back into 
 - Skill proposals accumulate but lack a promotion pipeline: 10 proposals generated across two dream cycles, yet 'gap' signal persists indicating zero ad
 - Model unreliability cascades across goals: repeated 'failure' signals correlate with high latency variance (33-65s) and drive recursive remediation at
-- Five skill proposals exist but remain unimplemented, creating a proposal-execution gap that perpetuates known failure patterns.
-- Aggressive pruning (36 events) followed by minimal pruning (1 event) indicates system stabilizes after initial consolidation.
-- Self-diagnosis only checks internal organ health, missing external API failures which constitute the dominant failure mode.
-- Reflex-based actions converge reliably (2/2) while model-dependent actions fail at 67% rate (82 errors vs 40 successes).
-- Free-tier model APIs exhibit cascading failures (429/502 errors) making them unreliable for critical paths without robust fallback routing.
 
 ---
 
