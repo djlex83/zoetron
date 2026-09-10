@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 03:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 03:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,7 +12,6 @@
 - EventLogHygieneSkill: cap model-failure events at 50/session; aggregate excess into single 'degraded_period' f *(hatte die Idee 4×)*
 - SkillValidationGateSkill: require passing simulation benchmark + latency/error SLA before promoting proposal t *(hatte die Idee 4×)*
 - EventLogHygieneSkill: cap model-failure events at 50 per session and aggregate excess into a single 'degraded_ *(hatte die Idee 4×)*
-- Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 3×)*
 - Persist circuit-breaker counters (success rate, p95 latency, error taxonomy) to disk so degradation memory sur *(hatte die Idee 3×)*
 - Add pre-execution path-resolution audit: log resolved absolute paths for every ZOETRON_DATA and argv[1] refere *(hatte die Idee 3×)*
 - Require AST-level implementation check at tool registration: reject any function body lacking at least one non *(hatte die Idee 3×)*
@@ -20,27 +19,33 @@
 - Enforce an executable artifact gate: every builder output must pass sandbox smoke-test (imports, syntax, 5s ex *(hatte die Idee 3×)*
 - Implement a two-stage critic pipeline where stage 1 runs static analysis (pyflakes, mypy, sandbox exec) and ca *(hatte die Idee 3×)*
 - Add a confidence calibration loop that tracks predicted vs actual score per goal-type, applies correction fact *(hatte die Idee 3×)*
+- Add pre-execution syntax/type check (ast.parse + mypy --strict) on all generated artifacts; reject before sand *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Automated pruning (19 facts, 57 events per run) maintains memory hygiene but trigger criteria and recall impact need monitoring.
+- Simulation-driven revision generates 5 risks and 5 revisions but only 60% application rate, indicating over-generation or filtering gaps.
+- Swarm evolution with only 2 cycles and asymmetric roles (1 planner, 3 builders, 1 critic) yields partial improvement (7/10) but fails to converge.
+- Circuit breaker (3 consecutive failures → 30-min block) effectively isolates failing models but requires a validated fallback (ling-3.0-flash-fin).
+- Free-tier models from major providers (Nvidia Nemotron, Google Gemma) suffer frequent 502/429 errors making them unreliable for production workflows.
 - Simulation green-light (risks=4) combined with calibration miss suggests risk assessment ignores model-availability risk.
 - Evolution runs with 3 variants reliably produce 9-10/10 scores from 7/10 baselines, proving iterative refinement outperforms single-pass generation.
 - Nemotron-3-ultra latency varies 3.3x (17-57s) for similar token loads, indicating unstable upstream capacity that corrupts planning.
@@ -51,11 +56,6 @@
 - Reflex tools (e.g., alte-erinnerungen-auf-wert-prüfen.py) return ok:false without structured error payloads, making automated recovery impossible.
 - Hand actions fail on path resolution because relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero-file operations despite apparent success
 - Model provider failures cascade silently: primary models (Nemotron, Gemma) fail with 502/429 errors while fallback (Ling) succeeds, but no circuit-bre
-- Accumulated factual noise (16 facts, 23 events pruned) shows that without periodic pruning, the system's knowledge base dilutes actionable signal with
-- Missing pre-deployment validation gates allowed non-executable skill artifacts to reach production, proving that syntax checking and simulated executi
-- Stale swarm critiques degrade output quality over time, requiring timestamp-based freshness signals to trigger regeneration before outdated feedback p
-- Swarm convergence failure at score 1/10 with 2 cycles indicates broken quality feedback: builders produced artifacts missing executable Python blocks 
-- External model providers without circuit breakers cause cascading failures: 429/502 errors from Nvidia and Google killed multiple swarm cycles while i
 
 ---
 

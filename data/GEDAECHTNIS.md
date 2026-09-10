@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11781 Fakten** · Stand 2026-09-10 03:18 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-10 03:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7433
+- **dream:** 7438
 - **swarm_artifact:** 1907
 - **last_swarm_critique:** 864
 - **last_swarm_goal:** 598
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910032630:5:977037`
+*10.09. 03:26 UTC · Quelle: dream*
+
+Automated pruning (19 facts, 57 events per run) maintains memory hygiene but trigger criteria and recall impact need monitoring.
+
+### `dream:20260910032630:4:0dd1aa`
+*10.09. 03:26 UTC · Quelle: dream*
+
+Simulation-driven revision generates 5 risks and 5 revisions but only 60% application rate, indicating over-generation or filtering gaps.
+
+### `dream:20260910032630:3:175b89`
+*10.09. 03:26 UTC · Quelle: dream*
+
+Swarm evolution with only 2 cycles and asymmetric roles (1 planner, 3 builders, 1 critic) yields partial improvement (7/10) but fails to converge.
+
+### `dream:20260910032630:2:a58f0e`
+*10.09. 03:26 UTC · Quelle: dream*
+
+Circuit breaker (3 consecutive failures → 30-min block) effectively isolates failing models but requires a validated fallback (ling-3.0-flash-fin).
+
+### `dream:20260910032630:1:355bde`
+*10.09. 03:26 UTC · Quelle: dream*
+
+Free-tier models from major providers (Nvidia Nemotron, Google Gemma) suffer frequent 502/429 errors making them unreliable for production workflows.
 
 ### `dream:20260910031529:5:71bd90`
 *10.09. 03:15 UTC · Quelle: dream*

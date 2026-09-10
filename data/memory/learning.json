@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 03:16:01",
+ "stand": "2026-09-10 03:27:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -85,6 +85,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
@@ -184,12 +190,6 @@
   },
   {
    "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
