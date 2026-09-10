@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 08:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 09:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Consecutive model failures cascade into lockouts that compound the original problem, meaning failure isolation must happen before retry logic to preve
+- The reflex-based self-healing loop (schwarmwissen-wieder-auffrischen.py) and self-diagnosis both completed successfully, proving that internal mainten
+- The inclusionai/ling-3.0-flash-fin model is the only consistently reliable model across the entire experience window, succeeding on every invocation w
+- The nvidia/nemotron-3-ultra-550b model's 1800-second lockout after 3 consecutive failures creates a recovery deadlock where the model cannot be retrie
+- 429 rate-limit errors from OpenRouter are the dominant systemic failure mode, affecting multiple models simultaneously and indicating a provider-side 
 - No circuit-breaker or exponential-backoff mechanism is evident in the replay data; the system continues hammering rate-limited endpoints rather than b
 - The simulation verdict explicitly flagged 'make capabilities reliable before expansion' with 5 risks and 5 revisions, confirming that reliability was 
 - inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (4.1–21.2s) across all recorded calls, establishing it as the only proven reliab
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without execution validation — proposals that lack executable code artifacts waste scoring and simulation cycles.
 - Relative file paths silently fail during file operations; all paths must be resolved to absolute before any I/O action to prevent zero-output runs.
 - Free-tier API models are the dominant failure point — 429 rate limits and timeouts occur far more often than capability failures, making model reliabi
-- Artifacts lacking executable code blocks waste computation cycles during scoring and simulation, making pre-validation of actionability essential for 
-- A significant gap exists between the volume of generated skill proposals and actual swarm utilization, indicating that swarm intelligence is the highe
-- Stale swarm goals actively degrade decision quality, making periodic goal refresh a mandatory maintenance cycle rather than a best-effort cleanup task
-- Model reliability fluctuates unpredictably; continuous health verification via inference gates is a prerequisite, not an optional enhancement, for any
-- Rate-limiting (429) and read timeouts are systemic, correlated failure modes across multiple model providers, requiring architectural-level fallback c
 
 ---
 

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11798 Fakten** · Stand 2026-09-10 08:31 UTC · aktualisiert bei jedem Herzschlag
+**11789 Fakten** · Stand 2026-09-10 09:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7464
-- **swarm_artifact:** 1893
+- **dream:** 7465
+- **swarm_artifact:** 1887
 - **last_swarm_critique:** 868
 - **last_swarm_goal:** 602
-- **anti_pattern:** 435
-- **strategy:** 219
-- **tool:** 172
+- **anti_pattern:** 433
+- **strategy:** 218
+- **tool:** 171
 - **hand_result:** 102
 - **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910090322:5:7f206f`
+*10.09. 09:03 UTC · Quelle: dream*
+
+Consecutive model failures cascade into lockouts that compound the original problem, meaning failure isolation must happen before retry logic to prevent systemic collapse.
+
+### `dream:20260910090322:4:9f463e`
+*10.09. 09:03 UTC · Quelle: dream*
+
+The reflex-based self-healing loop (schwarmwissen-wieder-auffrischen.py) and self-diagnosis both completed successfully, proving that internal maintenance routines are robust even when external model calls fail.
+
+### `dream:20260910090322:3:36207e`
+*10.09. 09:03 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model is the only consistently reliable model across the entire experience window, succeeding on every invocation with sub-5-second latency.
+
+### `dream:20260910090322:2:f66164`
+*10.09. 09:03 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b model's 1800-second lockout after 3 consecutive failures creates a recovery deadlock where the model cannot be retried even after the transient fault clears.
+
+### `dream:20260910090322:1:77ae4a`
+*10.09. 09:03 UTC · Quelle: dream*
+
+429 rate-limit errors from OpenRouter are the dominant systemic failure mode, affecting multiple models simultaneously and indicating a provider-side ceiling rather than individual model faults.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen in Taten um:1`
 *10.09. 08:28 UTC · Quelle: evolution*
@@ -43920,21 +43945,6 @@ Nvidia Nemotron succeeds most often but exhibits high latency variance (29-152s)
 
 Free-tier models consistently fail with 429 rate limits, making them unreliable as primary providers.
 
-### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
-*27.08. 08:48 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich nutzbar machen'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-nutz.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:2`
-*27.08. 08:46 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.3): adaptive_organ_feedback_ecosystem - Implement a closed-loop system that continuously monitors organ-state metrics, auto-routes proposed skills to the optimal execution path, and validates usability in real-time. Skills earn
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:0`
-*27.08. 08:46 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8.3): executable_skill_validator_with_organ_contracts - Build a concrete, runnable skill validator module that maps proposed skills to existing system organs (specifically the 'hands' organ) via strict interface contracts. The va
-
 ### `last_swarm_critique`
 *27.08. 08:43 UTC · Quelle: critic*
 
@@ -43944,26 +43954,6 @@ score=4; issues=Only provides audit/discovery script (step 1), no actual skill v
 *27.08. 08:38 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten wirklich nutzbar machen
-
-### `dream:20260827083734:4:0fe561`
-*27.08. 08:37 UTC · Quelle: dream*
-
-Reflex-based skill usage shows convergence but lacks measurable impact scoring, limiting feedback-driven improvement.
-
-### `dream:20260827083734:3:131612`
-*27.08. 08:37 UTC · Quelle: dream*
-
-Drive goals related to resource conservation and systematic task handling remain unmet, signaling gaps in long-term planning.
-
-### `dream:20260827083734:2:682866`
-*27.08. 08:37 UTC · Quelle: dream*
-
-Latency and token efficiency vary significantly between models, suggesting performance can be optimized through dynamic selection.
-
-### `dream:20260827083734:1:b06c0c`
-*27.08. 08:37 UTC · Quelle: dream*
-
-Repeated 429 errors across multiple free-tier models indicate systemic rate-limiting rather than isolated model failures.
 
 ### `last_swarm_critique`
 *27.08. 08:13 UTC · Quelle: critic*
