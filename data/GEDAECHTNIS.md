@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11783 Fakten** · Stand 2026-09-10 00:46 UTC · aktualisiert bei jedem Herzschlag
+**11788 Fakten** · Stand 2026-09-10 00:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7412
+- **dream:** 7417
 - **swarm_artifact:** 1921
 - **last_swarm_critique:** 862
 - **last_swarm_goal:** 596
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910005448:5:9f927f`
+*10.09. 00:54 UTC · Quelle: dream*
+
+Proposed revisions are being under-applied (5 proposed, 3 applied), indicating incomplete execution of corrective actions before cycle progression.
+
+### `dream:20260910005448:4:78ecba`
+*10.09. 00:54 UTC · Quelle: dream*
+
+Retrying rate-limited models without exponential backoff compounds the throttling problem and wastes computational cycles.
+
+### `dream:20260910005448:3:9f09af`
+*10.09. 00:54 UTC · Quelle: dream*
+
+Prose-only artifacts fail to converge; executable Python code blocks are mandatory for task completion and must be enforced in all generated outputs.
+
+### `dream:20260910005448:2:af8c5d`
+*10.09. 00:54 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin is the only reliably functioning model in this environment, succeeding on every call with sub-5s latency, and should be the default fallback.
+
+### `dream:20260910005448:1:1d7601`
+*10.09. 00:54 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently return 429 rate-limit errors and must never be used as primary models for repeated API calls.
 
 ### `dream:20260910004428:5:ff226b`
 *10.09. 00:44 UTC · Quelle: dream*

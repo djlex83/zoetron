@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 00:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 00:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -35,12 +35,17 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Schwarmwissen wieder auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proposed revisions are being under-applied (5 proposed, 3 applied), indicating incomplete execution of corrective actions before cycle progression.
+- Retrying rate-limited models without exponential backoff compounds the throttling problem and wastes computational cycles.
+- Prose-only artifacts fail to converge; executable Python code blocks are mandatory for task completion and must be enforced in all generated outputs.
+- inclusionai/ling-3.0-flash-fin is the only reliably functioning model in this environment, succeeding on every call with sub-5s latency, and should be
+- Free-tier OpenRouter models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently return 429 rate-limit errors and must never be used as primary models fo
 - Swarm intelligence is stale: drive goals explicitly note swarm critiques/goals are outdated, yet metabolism budget prevents launching new swarm tasks.
 - Skill proposal pipeline is broken: proposals accumulate (extend evolution runs, build reliability scorecard) but reflex execution fails (modellfehler-
 - System operates in permanent conserve mode (stress=1.0, max_tasks=3, max_iterations=1) preventing meaningful multi-cycle evolution or swarm refresh cy
@@ -51,11 +56,6 @@
 - Retry logic without exponential backoff and jitter creates retry storms that worsen rate-limit conditions instead of resolving them.
 - inclusionai/ling-3.0-flash-fin is the only consistently reliable model in the current provider set, succeeding with low latency across multiple sessio
 - Provider-side failures (429 rate limits, 404 endpoint removal) are systemic and cascade through the system when no circuit breaker isolates them.
-- Pruning removes 37 events and 9 facts per cycle, yet model-failure events dominate the log, so aggressive capping and aggregation of repeated failures
-- Skill proposals accumulate (5 this cycle) but none enter sandbox testing, revealing a broken proposal-to-deployed pipeline that wastes metabolic budge
-- Drive goals for model-error reduction and swarm refresh recur across sleep cycles, indicating that symptom-level fixes (single model swap, one swarm u
-- Reflex-driven swarm-goal refresh converges in one shot, showing that stale-data signals map cleanly to deterministic repair tools when the tool contra
-- Google Gemma models consistently fail with 429 rate-limit errors while inclusionai/ling-3.0-flash-fin:free succeeds reliably, proving the need for a p
 
 ---
 
