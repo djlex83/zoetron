@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 13:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 13:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven memory consolidation (linking related memories) converges reliably and compensates for model instability, but the system depends on it a
+- Swarm-orchestration knowledge degrades into staleness when not actively refreshed, reducing the quality of multi-agent coordination over time.
+- A persistent gap exists between generating skill proposals and completing their implementation, causing capability ideas to accumulate without ever be
+- Transient API errors (timeouts, rate limits) become permanent task failures because the system lacks any retry, backoff, or circuit-breaker mechanism 
+- Model failures are systemic and correlated by provider rather than random, with Google-hosted models failing simultaneously via timeouts and 429 rate 
 - Simulation-recommended revisions were not fully validated before task completion, creating a systematic gap between planned infrastructure fixes and t
 - Self-diagnosis found zero internal organ errors, pinpointing the root cause in external infrastructure dependency instability rather than any flaw in 
 - Swarm orchestration failed because the builder role produced non-executable Python, indicating a missing code-verification step that should block task
@@ -51,11 +56,6 @@
 - Upstream service overload (502) and rate limiting (429) are systemic API failures that recur across multiple model providers, indicating infrastructur
 - The lightweight fallback model (inclusionai/ling-3.0-flash-fin) is the only reliably available model in this environment, consistently succeeding when
 - Prose-only artifacts fail to converge on technical tasks like swarm orchestration; executable Python blocks are a non-negotiable requirement for task 
-- Operating in conserve mode with a budget of max 1 iteration means every task attempt must be pre-validated; unverified retry loops on known-failing mo
-- Simulations returning 'revise' with 5 risks and 5 revisions signal fundamental architectural flaws in the swarm orchestration design, not minor parame
-- Skill proposals accumulate across cycles without implementation because no active maturation pipeline moves them from proposal to prototype to deploym
-- All requests concentrate on the same overloaded providers because no provider-aware routing or fallback mechanism exists, creating a single point of f
-- Infrastructure failures (502 upstream overload, 429 rate limits) are the dominant failure mode, not model capability deficits, and retrying the same d
 
 ---
 

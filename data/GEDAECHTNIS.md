@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11788 Fakten** · Stand 2026-09-10 13:44 UTC · aktualisiert bei jedem Herzschlag
+**11793 Fakten** · Stand 2026-09-10 13:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7500
+- **dream:** 7505
 - **swarm_artifact:** 1855
 - **last_swarm_critique:** 871
 - **last_swarm_goal:** 605
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910135321:5:c255af`
+*10.09. 13:53 UTC · Quelle: dream*
+
+Reflex-driven memory consolidation (linking related memories) converges reliably and compensates for model instability, but the system depends on it as a crutch rather than fixing the underlying reliability problem.
+
+### `dream:20260910135321:4:416785`
+*10.09. 13:53 UTC · Quelle: dream*
+
+Swarm-orchestration knowledge degrades into staleness when not actively refreshed, reducing the quality of multi-agent coordination over time.
+
+### `dream:20260910135321:3:6992ca`
+*10.09. 13:53 UTC · Quelle: dream*
+
+A persistent gap exists between generating skill proposals and completing their implementation, causing capability ideas to accumulate without ever becoming usable abilities.
+
+### `dream:20260910135321:2:a76186`
+*10.09. 13:53 UTC · Quelle: dream*
+
+Transient API errors (timeouts, rate limits) become permanent task failures because the system lacks any retry, backoff, or circuit-breaker mechanism to recover from them.
+
+### `dream:20260910135321:1:7f9033`
+*10.09. 13:53 UTC · Quelle: dream*
+
+Model failures are systemic and correlated by provider rather than random, with Google-hosted models failing simultaneously via timeouts and 429 rate limits while a single non-Google provider remained consistently available.
 
 ### `dream:20260910134236:5:e11c05`
 *10.09. 13:42 UTC · Quelle: dream*
