@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11779 Fakten** · Stand 2026-09-10 11:46 UTC · aktualisiert bei jedem Herzschlag
+**11778 Fakten** · Stand 2026-09-10 11:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7470
-- **swarm_artifact:** 1875
+- **dream:** 7475
+- **swarm_artifact:** 1869
 - **last_swarm_critique:** 870
 - **last_swarm_goal:** 604
 - **anti_pattern:** 431
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910115419:5:61aa24`
+*10.09. 11:54 UTC · Quelle: dream*
+
+Pruning 7 facts and 20 events while simultaneously encountering repeated model failures suggests that failure-mode knowledge may have been discarded alongside stale data.
+
+### `dream:20260910115419:4:b9ac1e`
+*10.09. 11:54 UTC · Quelle: dream*
+
+The gap between generating skill proposals and implementing them is itself a durable failure pattern—ideas without completion tracking remain inert.
+
+### `dream:20260910115419:3:ddbc8c`
+*10.09. 11:54 UTC · Quelle: dream*
+
+Self-diagnosis confirmed no internal organ failures, proving the root cause is external API behavior, yet the system continued attempting failed models without adaptive routing.
+
+### `dream:20260910115419:2:c522e1`
+*10.09. 11:54 UTC · Quelle: dream*
+
+The consistent success of inclusionai/ling-3.0-flash-fin:free reveals that a single reliable fallback model exists but is not being systematically prioritized over known-failing ones.
+
+### `dream:20260910115419:1:8a337b`
+*10.09. 11:54 UTC · Quelle: dream*
+
+Repeated 429 errors from the same API models indicate the absence of a circuit-breaker pattern, causing the system to keep hammering rate-limited endpoints instead of routing to healthy alternatives.
 
 ### `dream:20260910114426:5:715fa3`
 *10.09. 11:44 UTC · Quelle: dream*

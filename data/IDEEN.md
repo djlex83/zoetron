@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 7 facts and 20 events while simultaneously encountering repeated model failures suggests that failure-mode knowledge may have been discarded a
+- The gap between generating skill proposals and implementing them is itself a durable failure pattern—ideas without completion tracking remain inert.
+- Self-diagnosis confirmed no internal organ failures, proving the root cause is external API behavior, yet the system continued attempting failed model
+- The consistent success of inclusionai/ling-3.0-flash-fin:free reveals that a single reliable fallback model exists but is not being systematically pri
+- Repeated 429 errors from the same API models indicate the absence of a circuit-breaker pattern, causing the system to keep hammering rate-limited endp
 - The system's self-diagnosis and pruning mechanisms are healthy, confirming that organizational hygiene is not the source of recent failures.
 - The existing circuit breaker triggers too late (after 3 consecutive failures), allowing damage to propagate before isolation occurs.
 - Timeouts and rate-limit errors require fundamentally different recovery strategies: timeouts warrant longer cooldowns while 429 errors need immediate 
@@ -51,11 +56,6 @@
 - Skill proposals accumulate faster than they get implemented, meaning without activation gates and deadlines, the backlog becomes a graveyard of intent
 - Rate-limit (429) and timeout failures are systemic across multiple external models, indicating that retry logic alone is insufficient and architectura
 - Infrastructure-level errors are currently being processed as task-level failures, obscuring true model performance.
-- Stale swarm intelligence occurs when decision-making cycles outpace the validity of the environmental state.
-- Low convergence scores coupled with high revision counts indicate an ineffective evolutionary loop.
-- Swarm convergence is highly sensitive to the availability and consistency of the underlying LLM providers.
-- Heavy reliance on specific free model endpoints creates a systemic single point of failure via rate-limiting.
-- Self-calibration was inaccurate (predicted 3, actual 1, abs_error 2), indicating the system's internal confidence estimates do not reliably match real
 
 ---
 
