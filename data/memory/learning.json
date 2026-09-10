@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 20:25:18",
+ "stand": "2026-09-10 20:36:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,6 +45,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -54,18 +60,6 @@
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -145,6 +139,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",

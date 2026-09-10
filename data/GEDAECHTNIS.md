@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11781 Fakten** · Stand 2026-09-10 20:27 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-10 20:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7556
+- **dream:** 7561
 - **swarm_artifact:** 1813
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910203519:5:e7cff7`
+*10.09. 20:35 UTC · Quelle: dream*
+
+File paths are resolved ad-hoc per action instead of being canonicalized once against ZOETRON_DATA and sys.argv[1], causing silent path mismatches.
+
+### `dream:20260910203519:4:60a6c8`
+*10.09. 20:35 UTC · Quelle: dream*
+
+Model calls show high latency variance (30-119s) and repeated 429 errors, yet no router exists to circuit-break, fallback, or load-balance across providers.
+
+### `dream:20260910203519:3:754c3b`
+*10.09. 20:35 UTC · Quelle: dream*
+
+Error logs, recovery traces, and calibration misses are pruned aggressively while stale facts persist, destroying the evidence needed for failure replay.
+
+### `dream:20260910203519:2:212060`
+*10.09. 20:35 UTC · Quelle: dream*
+
+Swarm convergence happens in a single cycle without mandatory dissent, causing premature approval of flawed approaches.
+
+### `dream:20260910203519:1:15bd9c`
+*10.09. 20:35 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely become executable code because no automated pipeline validates, tests, and promotes them.
 
 ### `dream:20260910202452:5:7889ab`
 *10.09. 20:24 UTC · Quelle: dream*
