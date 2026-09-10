@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 00:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 00:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm intelligence is stale: drive goals explicitly note swarm critiques/goals are outdated, yet metabolism budget prevents launching new swarm tasks.
+- Skill proposal pipeline is broken: proposals accumulate (extend evolution runs, build reliability scorecard) but reflex execution fails (modellfehler-
+- System operates in permanent conserve mode (stress=1.0, max_tasks=3, max_iterations=1) preventing meaningful multi-cycle evolution or swarm refresh cy
+- Model banning mechanism (1800s after 3 consecutive errors) is reactive not preventive - it triggers after damage is done rather than routing around kn
+- Free-tier models exhibit catastrophic reliability: 75% of configured models (Nemotron, both Gemmas) fail with 404/429 errors while only inclusionai/li
 - The absence of per-model reliability scorecards forces the router to treat all providers equally, repeatedly selecting degraded models over proven-sta
 - Evolution runs terminated after only 2 cycles leave score variance unexplained, meaning convergence claims are unreliable without minimum cycle guaran
 - Retry logic without exponential backoff and jitter creates retry storms that worsen rate-limit conditions instead of resolving them.
@@ -51,11 +56,6 @@
 - Drive goals for model-error reduction and swarm refresh recur across sleep cycles, indicating that symptom-level fixes (single model swap, one swarm u
 - Reflex-driven swarm-goal refresh converges in one shot, showing that stale-data signals map cleanly to deterministic repair tools when the tool contra
 - Google Gemma models consistently fail with 429 rate-limit errors while inclusionai/ling-3.0-flash-fin:free succeeds reliably, proving the need for a p
-- Three new drive goals emerged from stale signals (model errors, swarm data, dream combination), showing the drive system converts diagnostic patterns 
-- Pruning runs removed 15 facts and 83 events across two cycles without organ errors, yet the PruningPolicy proposal reveals concern that low-reuse meta
-- Reflex-mode execution completed two distinct goals (dream utilization, swarm refresh) without deliberation, suggesting reflex pathways handle routine 
-- The system autonomously generated five skill proposals directly addressing observed failure modes (model routing, skill lifecycle, artifact validation
-- Simultaneous model failures suggest no circuit-breaker or cooldown mechanism exists, causing retry storms against already-overloaded endpoints.
 
 ---
 

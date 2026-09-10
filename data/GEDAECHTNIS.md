@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-10 00:36 UTC · aktualisiert bei jedem Herzschlag
+**11783 Fakten** · Stand 2026-09-10 00:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7407
-- **swarm_artifact:** 1926
+- **dream:** 7412
+- **swarm_artifact:** 1921
 - **last_swarm_critique:** 862
 - **last_swarm_goal:** 596
-- **anti_pattern:** 445
-- **strategy:** 224
-- **tool:** 174
+- **anti_pattern:** 443
+- **strategy:** 223
+- **tool:** 173
 - **hand_result:** 108
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910004428:5:ff226b`
+*10.09. 00:44 UTC · Quelle: dream*
+
+Swarm intelligence is stale: drive goals explicitly note swarm critiques/goals are outdated, yet metabolism budget prevents launching new swarm tasks.
+
+### `dream:20260910004428:4:34e6e3`
+*10.09. 00:44 UTC · Quelle: dream*
+
+Skill proposal pipeline is broken: proposals accumulate (extend evolution runs, build reliability scorecard) but reflex execution fails (modellfehler-stark-verringern.py ok=false) and hand actions cannot access real data paths.
+
+### `dream:20260910004428:3:4c6819`
+*10.09. 00:44 UTC · Quelle: dream*
+
+System operates in permanent conserve mode (stress=1.0, max_tasks=3, max_iterations=1) preventing meaningful multi-cycle evolution or swarm refresh cycles.
+
+### `dream:20260910004428:2:c232cc`
+*10.09. 00:44 UTC · Quelle: dream*
+
+Model banning mechanism (1800s after 3 consecutive errors) is reactive not preventive - it triggers after damage is done rather than routing around known-bad models proactively.
+
+### `dream:20260910004428:1:b66fbf`
+*10.09. 00:44 UTC · Quelle: dream*
+
+Free-tier models exhibit catastrophic reliability: 75% of configured models (Nemotron, both Gemmas) fail with 404/429 errors while only inclusionai/ling-3.0-flash-fin succeeds consistently.
 
 ### `dream:20260910003341:5:28fda3`
 *10.09. 00:33 UTC · Quelle: dream*
@@ -43800,21 +43825,6 @@ Successful model calls (nvidia/nemotron-3-ultra-550b-a55b:free) show stable late
 *27.08. 00:55 UTC · Quelle: dream*
 
 Free-tier models from certain providers (e.g., z-ai/glm-5.2:free) consistently fail with 429 errors under concurrent load, indicating rate-limit exhaustion rather than model instability.
-
-### `tool:exemplar-bank-von-den-eigenen-besten-mom`
-*27.08. 00:37 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Exemplar-Bank: von den eigenen besten Momenten lernen (In-Co'. Datei: data/tools/exemplar-bank-von-den-eigenen-besten-mom.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Exemplar-Bank: von den e:2`
-*27.08. 00:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): Continuous Shadow-Mode with Canary Rollout - Deploy exemplar logic as a feature-flagged shadow path: 100% of requests execute both paths (with/without exemplars) but only control path returns to user. Sidecar collector stream
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Exemplar-Bank: von den e:1`
-*27.08. 00:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Offline Evaluation-First Architecture with Golden Set - Separate the problem into two phases: Phase 1 (offline) curates a frozen 'golden set' of 200 representative tasks with ground-truth scores. Phase 2 (online) runs a singl
 
 ### `last_swarm_critique`
 *27.08. 00:36 UTC · Quelle: critic*
