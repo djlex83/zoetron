@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 11:54:33",
+ "stand": "2026-09-10 12:04:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,6 +27,12 @@
    "quote": 1.0
   },
   {
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -36,18 +42,6 @@
    "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -103,6 +97,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "träume-in-echte-fähigkeiten-umwandeln.py",

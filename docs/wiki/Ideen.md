@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 12:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,13 +26,13 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated consecutive 429 errors on the same models indicate a persistent unavailability pattern, not transient throttling, and should trigger permanen
+- Skill proposals generated during consolidation are valuable but risk becoming stale themselves if not tracked against actual implementation status.
+- The system's self-diagnosis and pruning mechanisms are functioning correctly, but they react to problems rather than preventing them upstream.
+- The inclusionai/ling-3.0-flash-fin model consistently succeeds when gemma models fail, proving that provider diversity is a more reliable resilience s
+- 429 rate-limit errors from OpenRouter are correlated across models from the same provider, meaning a single provider outage cascades into multiple sim
 - Pruning 7 facts and 20 events while simultaneously encountering repeated model failures suggests that failure-mode knowledge may have been discarded a
 - The gap between generating skill proposals and implementing them is itself a durable failure pattern—ideas without completion tracking remain inert.
 - Self-diagnosis confirmed no internal organ failures, proving the root cause is external API behavior, yet the system continued attempting failed model
@@ -51,11 +56,6 @@
 - Timeouts and rate-limit errors require fundamentally different recovery strategies: timeouts warrant longer cooldowns while 429 errors need immediate 
 - The inclusionai/ling-3.0-flash-fin model is the only consistently reliable fallback across all failure scenarios and should be treated as the system's
 - Provider-level rate limits (429 errors) cascade across all models from the same API provider, meaning per-model circuit breakers cannot prevent system
-- Event accumulation outpaces knowledge distillation without scheduled compaction, causing pruning to lag behind reality and degrading the fidelity of c
-- Stale swarm processes actively degrade decision quality, so periodic forced refresh is a maintenance requirement, not an optional improvement.
-- Skill proposals accumulate faster than they get implemented, meaning without activation gates and deadlines, the backlog becomes a graveyard of intent
-- Rate-limit (429) and timeout failures are systemic across multiple external models, indicating that retry logic alone is insufficient and architectura
-- Infrastructure-level errors are currently being processed as task-level failures, obscuring true model performance.
 
 ---
 

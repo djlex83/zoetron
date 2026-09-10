@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11778 Fakten** · Stand 2026-09-10 11:56 UTC · aktualisiert bei jedem Herzschlag
+**11779 Fakten** · Stand 2026-09-10 12:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7475
+- **dream:** 7480
 - **swarm_artifact:** 1869
 - **last_swarm_critique:** 870
 - **last_swarm_goal:** 604
-- **anti_pattern:** 431
-- **strategy:** 217
+- **anti_pattern:** 429
+- **strategy:** 216
 - **tool:** 169
-- **hand_result:** 101
+- **hand_result:** 100
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910120419:5:5b89d6`
+*10.09. 12:04 UTC · Quelle: dream*
+
+Repeated consecutive 429 errors on the same models indicate a persistent unavailability pattern, not transient throttling, and should trigger permanent exclusion until proven otherwise.
+
+### `dream:20260910120419:4:c538bc`
+*10.09. 12:04 UTC · Quelle: dream*
+
+Skill proposals generated during consolidation are valuable but risk becoming stale themselves if not tracked against actual implementation status.
+
+### `dream:20260910120419:3:0b44ac`
+*10.09. 12:04 UTC · Quelle: dream*
+
+The system's self-diagnosis and pruning mechanisms are functioning correctly, but they react to problems rather than preventing them upstream.
+
+### `dream:20260910120419:2:94ee78`
+*10.09. 12:04 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model consistently succeeds when gemma models fail, proving that provider diversity is a more reliable resilience strategy than model redundancy within one provider.
+
+### `dream:20260910120419:1:b0abeb`
+*10.09. 12:04 UTC · Quelle: dream*
+
+429 rate-limit errors from OpenRouter are correlated across models from the same provider, meaning a single provider outage cascades into multiple simultaneous failures.
 
 ### `dream:20260910115419:5:61aa24`
 *10.09. 11:54 UTC · Quelle: dream*
@@ -43929,16 +43954,6 @@ Nvidia Nemotron models (both lightning and ultra) succeed where others fail but 
 *27.08. 12:23 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*27.08. 11:54 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): Simplification & Modularization - Critic-as-Tool - Decompose the critic into discrete, single-responsibility tools (SyntaxChecker, LogicValidator, StyleAnalyzer, ScoreAssessor) each returning tiny, rigidly-typed resul
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:1`
-*27.08. 11:54 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 7, 7]): Validation-First Pipeline - Parse-Don't-Trust - Invert the flow: before any evolution step, run a dedicated parsing agent that takes raw critic output, attempts structured extraction with multiple strategies (regex, J
 
 ### `last_swarm_critique`
 *27.08. 11:53 UTC · Quelle: critic*
