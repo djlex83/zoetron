@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 18:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 18:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
-- Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs are reducing memory load but may be removing potentially useful historical context without sufficient relevance filtering.
+- Drive goals related to error detection, plan staleness, and memory gaps are actively influencing reflex execution and pruning behavior.
+- Successful model calls (nex-n2.5-pro) show consistent performance with moderate latency and token usage, indicating reliability in fallback routing.
+- Timeout errors on large models (e.g., nemotron-3-ultra-550b) suggest resource contention or latency ceilings under load.
+- 429 Too Many Requests errors from OpenRouter are systemic across multiple models, indicating rate-limit exhaustion rather than model-specific failures
 - Pruning old facts/events prevents memory bloat but must preserve the validation history needed for model routing decisions.
 - Stale swarm knowledge degrades decision quality; the reflex that refreshes it works and should be scheduled regularly.
 - Skill proposals accumulate but lack an automated validation pipeline to prove they actually improve outcomes.
@@ -51,11 +56,6 @@
 - Ein Abschluss mit `converged=true` bei `score=null` ist nicht belastbar, weil objektive Evidenz für eine Verbesserung fehlt.
 - Ein Pruning, das viele Ereignisse aber keine Fakten löscht, kann Fehler-, Recovery- und Validierungswissen entfernen, das für Regressionstests wertvol
 - Wiederholte 429-Fehler über mehrere kostenlose Anbieter und anschließende Timeouts zeigen ein Verfügbarkeitsproblem des Providers, nicht zwangsläufig 
-- Ähnliche Skill-Vorschläge sollten nach Fehlerdomäne zu einem einzigen getesteten Workflow zusammengeführt werden, statt redundante Einzelfähigkeiten a
-- Ein leichter Reflexpfad kann Orchestrierung auch ohne festgestellte Organfehler erfolgreich wiederherstellen und sollte als gesicherter Notfallmechani
-- Beim Pruning dürfen Fehler, Fallback-Erfolge, Wiederanlaufdaten und Provenienz nicht verloren gehen, weil sie für Diagnose und Lernen besonders wertvo
-- Ein Router muss Verfügbarkeit, Latenz, Tokenverbrauch, Kosten und Aktualität gemeinsam bewerten und überlastete Endpunkte automatisch kaltstellen.
-- Wiederholte 429-Fehler einzelner kostenloser Endpunkte bei gleichzeitig erfolgreichen Aufrufen anderer Modelle deuten auf endpunktspezifische Drosselu
 
 ---
 

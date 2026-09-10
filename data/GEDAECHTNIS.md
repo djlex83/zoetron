@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11798 Fakten** · Stand 2026-09-10 18:06 UTC · aktualisiert bei jedem Herzschlag
+**11796 Fakten** · Stand 2026-09-10 18:21 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7541
-- **swarm_artifact:** 1835
-- **last_swarm_critique:** 873
-- **last_swarm_goal:** 608
+- **swarm_artifact:** 1831
+- **last_swarm_critique:** 874
+- **last_swarm_goal:** 609
 - **anti_pattern:** 423
 - **strategy:** 213
 - **tool:** 168
@@ -13,6 +13,51 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten zusammenführ:2`
+*10.09. 18:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Pipeline mit Speicher- und Zeitbudgets - Eine feste Pipeline aus 3 Stufen: 1) Dateiensammlung mit strikter Größenbegrenzung (max 100MB pro Datei, max 1000 Dateien), 2) parallele Verarbeitung mit multiprocessing.Pool mit Timeo
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten zusammenführ:1`
+*10.09. 18:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-driven Index-basierter Ansatz - Dateien werden nicht durchsuht, sondern indexiert: Ein Hintergrundprozess erstellt zuerst einen Index aller Textdateien mit ihren Größen und Zeilenanzahlen (ohne Inhalt zu laden). Dann wi
+
+### `last_swarm_critique`
+*10.09. 18:17 UTC · Quelle: critic*
+
+score=1; issues=LAEUFT NICHT: Timeout nach 30.0s – Artefakt vollstaendig nicht lauffaehig, harter Mangel per Rubrik; Rekursives glob ueber mehrere Dateiendungen (json, yaml, yml, txt, md) ohne Praematur kann bei grossen Verzeichnissen extrem langsam sein; Rege
+
+### `last_swarm_goal`
+*10.09. 18:16 UTC · Quelle: system*
+
+Fähigkeiten zusammenführen und verfestigen
+
+### `dream:20260910181548:5:90368c`
+*10.09. 18:15 UTC · Quelle: dream*
+
+Pruning runs are reducing memory load but may be removing potentially useful historical context without sufficient relevance filtering.
+
+### `dream:20260910181548:4:c1ee08`
+*10.09. 18:15 UTC · Quelle: dream*
+
+Drive goals related to error detection, plan staleness, and memory gaps are actively influencing reflex execution and pruning behavior.
+
+### `dream:20260910181548:3:873852`
+*10.09. 18:15 UTC · Quelle: dream*
+
+Successful model calls (nex-n2.5-pro) show consistent performance with moderate latency and token usage, indicating reliability in fallback routing.
+
+### `dream:20260910181548:2:8f4a73`
+*10.09. 18:15 UTC · Quelle: dream*
+
+Timeout errors on large models (e.g., nemotron-3-ultra-550b) suggest resource contention or latency ceilings under load.
+
+### `dream:20260910181548:1:e168a4`
+*10.09. 18:15 UTC · Quelle: dream*
+
+429 Too Many Requests errors from OpenRouter are systemic across multiple models, indicating rate-limit exhaustion rather than model-specific failures.
 
 ### `tool:fernere-erinnerungen-verbinden`
 *10.09. 18:04 UTC · Quelle: hands*
@@ -44115,16 +44160,6 @@ The 'bahnen' module import failure halts artifact execution, revealing a missing
 
 Free-tier LLM endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*27.08. 18:11 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): ensemble-critic consensus with fallback - Deploy three heterogeneous critics (rule-based, LLM-based, embedding-similarity) in parallel. Each produces structured output; a consensus aggregator accepts only when ≥2 agree on par
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:1`
-*27.08. 18:11 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): fitness-landscape reshaping via curriculum - Replace direct optimization on the target task with a curriculum of progressively harder sub-tasks. Start swarm on a simplified version where critic output is trivially parseable (
-
 ### `last_swarm_critique`
 *27.08. 18:10 UTC · Quelle: critic*
 
@@ -44134,31 +44169,6 @@ score=5; issues=Critic output unparseable.
 *27.08. 18:02 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260827180138:5:831368`
-*27.08. 18:01 UTC · Quelle: dream*
-
-Simulation-based revision loops (3 risks → 3 revisions) effectively harden plans before execution.
-
-### `dream:20260827180138:4:88ec73`
-*27.08. 18:01 UTC · Quelle: dream*
-
-High metabolic stress (1.0) with conserve-mode budgets forces single-iteration execution, eliminating retry depth.
-
-### `dream:20260827180138:3:5b2644`
-*27.08. 18:01 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success with sub-40s latency under load.
-
-### `dream:20260827180138:2:512e1a`
-*27.08. 18:01 UTC · Quelle: dream*
-
-Nvidia Nemotron exhibits both rate limits and upstream 502 errors, indicating dual failure modes.
-
-### `dream:20260827180138:1:2fc19e`
-*27.08. 18:01 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for autonomous operation.
 
 ### `last_swarm_critique`
 *27.08. 17:40 UTC · Quelle: critic*
