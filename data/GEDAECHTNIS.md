@@ -1,18 +1,48 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11802 Fakten** · Stand 2026-09-10 17:08 UTC · aktualisiert bei jedem Herzschlag
+**11798 Fakten** · Stand 2026-09-10 17:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7536
-- **swarm_artifact:** 1841
+- **dream:** 7541
+- **swarm_artifact:** 1835
 - **last_swarm_critique:** 872
-- **last_swarm_goal:** 606
-- **anti_pattern:** 427
-- **strategy:** 215
+- **last_swarm_goal:** 607
+- **anti_pattern:** 425
+- **strategy:** 214
 - **tool:** 167
-- **hand_result:** 99
+- **hand_result:** 98
 - **aktuell_organfehler:** 39
 
 ---
+
+### `last_swarm_goal`
+*10.09. 17:18 UTC · Quelle: system*
+
+Schwarm-System auf frischen Stand bringen
+
+### `dream:20260910171714:5:4ac710`
+*10.09. 17:17 UTC · Quelle: dream*
+
+Neue Fähigkeiten bleiben riskant, solange sie nur vorgeschlagen und nicht an realen früheren Fehlern reproduzierbar getestet wurden.
+
+### `dream:20260910171714:4:0f1490`
+*10.09. 17:17 UTC · Quelle: dream*
+
+Die stark schwankende erfolgreiche Latenz zeigt, dass Modellwahl und Anbieterverfügbarkeit gemeinsam nach Aufwand, Qualität und Erfolgsaussicht geroutet werden müssen.
+
+### `dream:20260910171714:3:8f3390`
+*10.09. 17:17 UTC · Quelle: dream*
+
+Ein Abschluss mit `converged=true` bei `score=null` ist nicht belastbar, weil objektive Evidenz für eine Verbesserung fehlt.
+
+### `dream:20260910171714:2:dd40c4`
+*10.09. 17:17 UTC · Quelle: dream*
+
+Ein Pruning, das viele Ereignisse aber keine Fakten löscht, kann Fehler-, Recovery- und Validierungswissen entfernen, das für Regressionstests wertvoll ist.
+
+### `dream:20260910171714:1:369550`
+*10.09. 17:17 UTC · Quelle: dream*
+
+Wiederholte 429-Fehler über mehrere kostenlose Anbieter und anschließende Timeouts zeigen ein Verfügbarkeitsproblem des Providers, nicht zwangsläufig ein Qualitätsproblem des Modells.
 
 ### `dream:20260910170552:5:ee753f`
 *10.09. 17:05 UTC · Quelle: dream*
@@ -44129,16 +44159,6 @@ Latency variance from 7.9s to 143s violates reflex budgets; slow models must be 
 *27.08. 17:29 UTC · Quelle: dream*
 
 Repeated 429 errors on z-ai/glm-5.2:free show that static model routing hammers rate-limited providers instead of backing off.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten echt testen :2`
-*27.08. 17:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): in-process-interpreter-with-effect-tracking - Embed a real Python interpreter (via `Py_RunString`/`PyEval_EvalCode` through `ctypes` or `cffi` to libpython) or use `PyPy`'s sandboxing, but simpler: use `exec` with a custom `s
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten echt testen :1`
-*27.08. 17:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): docker-container-isolation - Execute skills inside ephemeral Docker containers for true isolation. Convergence gate uses `docker` Python SDK or CLI (`docker run --rm --network=none --cpus=0.5 --memory=128m --pids-limit=64 -v 
 
 ### `last_swarm_critique`
 *27.08. 17:07 UTC · Quelle: critic*

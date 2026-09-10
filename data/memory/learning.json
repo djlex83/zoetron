@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 17:06:22",
+ "stand": "2026-09-10 17:43:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-gezielt-einsetzen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -66,12 +60,6 @@
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -105,6 +93,12 @@
    "quote": 1.0
   },
   {
+   "tool": "simulationen-gezielt-einsetzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "träume-und-simulationen-häufiger-anwende.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -120,12 +114,6 @@
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -159,6 +147,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -187,6 +181,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "vorschläge-in-echte-fähigkeiten-wandeln.py",
@@ -279,6 +279,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -339,12 +345,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -369,8 +369,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.781,
- "simulationen_angewandt": 34,
+ "haende_quote": 0.774,
+ "simulationen_angewandt": 35,
  "swarm_scores": {
   "n": 25,
   "best": 9.0,
