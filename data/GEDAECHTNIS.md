@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11777 Fakten** · Stand 2026-09-10 21:41 UTC · aktualisiert bei jedem Herzschlag
+**11767 Fakten** · Stand 2026-09-10 21:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7551
-- **swarm_artifact:** 1813
+- **dream:** 7546
+- **swarm_artifact:** 1811
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
-- **anti_pattern:** 417
-- **strategy:** 210
+- **anti_pattern:** 415
+- **strategy:** 209
 - **tool:** 165
 - **hand_result:** 96
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910214923:5:0382ae`
+*10.09. 21:49 UTC · Quelle: dream*
+
+Reflex-driven maintenance (schwarmwissen refresh) succeeds autonomously, proving the reflex loop can offload routine upkeep.
+
+### `dream:20260910214923:4:b2af56`
+*10.09. 21:49 UTC · Quelle: dream*
+
+Selbstdiagnose and pruning operate correctly but do not yet probe external model health before task assignment.
+
+### `dream:20260910214923:3:c43052`
+*10.09. 21:49 UTC · Quelle: dream*
+
+Existing circuit-breaker and backoff proposals are fragmented; a unified model router with health-aware fallback is missing.
+
+### `dream:20260910214923:2:3185ab`
+*10.09. 21:49 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-sante:free consistently succeeds where larger models fail, suggesting smaller specialized models are more reliable under quota pressure.
+
+### `dream:20260910214923:1:d06b50`
+*10.09. 21:49 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making single-model reliance untenable.
 
 ### `dream:20260910213842:5:df1458`
 *10.09. 21:38 UTC · Quelle: dream*
@@ -44063,16 +44088,6 @@ The only working model (nvidia/nemotron-3-ultra) exhibits 15-23s latency, which 
 
 Free-tier model z-ai/glm-5.2:free fails 100% of the time with 429 rate-limit errors, making it unusable without automated failover.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:2`
-*27.08. 21:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Contract-Based Validation Framework - Build a runtime contract system that validates invariants at every function boundary. Before any variable is accessed, check its existence through a proxy/wrapper layer. Implement post-co
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:0`
-*27.08. 21:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Self-Contained Execution Model - Rewrite the entire script as a single self-contained module with strict variable naming consistency checks. Use defensive programming with try/except blocks around all variable references. Imp
-
 ### `last_swarm_critique`
 *27.08. 21:47 UTC · Quelle: critic*
 
@@ -44082,56 +44097,6 @@ score=1; issues=NameError: undefined variable 'artefakte_out' (typo: defined as 
 *27.08. 21:43 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten echt ausprobieren
-
-### `dream:20260827214302:5:48b79e`
-*27.08. 21:43 UTC · Quelle: dream*
-
-The reflex-driven skill-training tool successfully synthesized proposals but lacks a promotion pipeline to production.
-
-### `dream:20260827214302:4:0f8668`
-*27.08. 21:43 UTC · Quelle: dream*
-
-Self-diagnosis capability has atrophied from disuse while model reliability degrades.
-
-### `dream:20260827214302:3:aa9a5e`
-*27.08. 21:43 UTC · Quelle: dream*
-
-Existing skill proposals (router, backoff, monitoring, bootstrap, health dashboard) remain unexecuted despite clear need.
-
-### `dream:20260827214302:2:9c5db1`
-*27.08. 21:43 UTC · Quelle: dream*
-
-Absence of implemented circuit-breakers and backoff turns transient overloads into cascading total outages.
-
-### `dream:20260827214302:1:73664a`
-*27.08. 21:43 UTC · Quelle: dream*
-
-Free-tier models share a common OpenRouter quota bucket causing simultaneous 429 failures across all providers.
-
-### `dream:20260827213830:5:fc922e`
-*27.08. 21:38 UTC · Quelle: dream*
-
-Calibration systematically underestimates actual cycles (predicted 6 vs actual 8), revealing a persistent optimism bias in planning.
-
-### `dream:20260827213830:4:22cf8f`
-*27.08. 21:38 UTC · Quelle: dream*
-
-Hand actions fail intermittently (exit 1) yet succeed on immediate retry, indicating transient environment or resource contention.
-
-### `dream:20260827213830:3:b5259f`
-*27.08. 21:38 UTC · Quelle: dream*
-
-Poolside Laguna succeeds consistently but at high latency (~185 s), suitable only for non-urgent, quality-critical workloads.
-
-### `dream:20260827213830:2:7a476e`
-*27.08. 21:38 UTC · Quelle: dream*
-
-Nvidia Nemotron shows high latency variance (17–88 s) and occasional 502 errors, rendering it unpredictable for time-sensitive tasks.
-
-### `dream:20260827213830:1:942011`
-*27.08. 21:38 UTC · Quelle: dream*
-
-Rate limiting (429) on free-tier models (Z.ai GLM, Google Gemma) is the dominant failure mode, making them unreliable under sustained load.
 
 ### `last_swarm_critique`
 *27.08. 21:04 UTC · Quelle: critic*

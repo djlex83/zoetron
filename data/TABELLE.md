@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8335 Neuronen · 911204 bewertete Synapsen
+Stand: 8328 Neuronen · 910492 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,18 +11,18 @@ Stand: 8335 Neuronen · 911204 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1085 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1061 | 0.23 |
-| 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 882 | 0.25 |
-| 4 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 845 | 0.26 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1062 | 0.23 |
+| 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 880 | 0.25 |
+| 4 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 844 | 0.26 |
 | 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 905 | 0.23 |
 | 6 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 829 | 0.25 |
 | 7 | 💭 | Repeated 429 errors across four different models indicate system… | 852 | 0.24 |
 | 8 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 881 | 0.23 |
-| 9 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 786 | 0.26 |
+| 9 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 785 | 0.26 |
 | 10 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 855 | 0.24 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 887 | 0.23 |
 | 12 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 827 | 0.24 |
-| 13 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 780 | 0.25 |
+| 13 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 779 | 0.26 |
 | 14 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 791 | 0.25 |
 | 15 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 890 | 0.22 |
 
