@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11791 Fakten** · Stand 2026-09-10 23:29 UTC · aktualisiert bei jedem Herzschlag
+**11775 Fakten** · Stand 2026-09-10 23:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7570
+- **dream:** 7555
 - **swarm_artifact:** 1811
-- **last_swarm_critique:** 876
-- **last_swarm_goal:** 611
-- **anti_pattern:** 415
-- **strategy:** 209
+- **last_swarm_critique:** 877
+- **last_swarm_goal:** 612
+- **anti_pattern:** 413
+- **strategy:** 208
 - **tool:** 165
 - **hand_result:** 94
 - **aktuell_organfehler:** 40
 
 ---
+
+### `last_swarm_critique`
+*10.09. 23:54 UTC · Quelle: critic*
+
+score=9; issues=Benchmark-Skript (Artefakt 3) ist mitten im Testfall 'ml_003' abgeschnitten - unvollständige Testsuite; SemanticMatcher-Fallback nutzt nur primitives TF-IDF-ähnliches Encoding statt echter Embeddings; Keine Integrationstests oder End-to-End-Dem
+
+### `last_swarm_goal`
+*10.09. 23:47 UTC · Quelle: system*
+
+Weniger Modellfehler machen
+
+### `dream:20260910234652:5:ee2320`
+*10.09. 23:46 UTC · Quelle: dream*
+
+Pruning removes 19 events per cycle but retains zero facts: episodic memory evaporates while semantic memory stays empty.
+
+### `dream:20260910234652:4:6a04d5`
+*10.09. 23:46 UTC · Quelle: dream*
+
+Self-diagnosis reports 'no organ errors' while model endpoints fail: health checks only inspect internal state, not external dependencies.
+
+### `dream:20260910234652:3:dbb3a1`
+*10.09. 23:46 UTC · Quelle: dream*
+
+Swarm knowledge decays within hours: reflexes can refresh it, but no scheduler triggers periodic re-validation of collective decisions.
+
+### `dream:20260910234652:2:b50a2e`
+*10.09. 23:46 UTC · Quelle: dream*
+
+Proposed skills accumulate but never activate: the system generates routing/health-check skills yet continues using brittle single-model calls.
+
+### `dream:20260910234652:1:6e1836`
+*10.09. 23:46 UTC · Quelle: dream*
+
+Model failures cascade silently: 429/502 errors on primary models force fallbacks that increase latency 3x without planner awareness.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Traumerkenntnisse endlic:2`
 *10.09. 23:26 UTC · Quelle: evolution*
@@ -44088,16 +44123,6 @@ Free-tier model rate limits (429 errors) cascade into task failures because no q
 
 Ausfuehrbares Python-Werkzeug aus Ziel 'Fertigkeiten wirklich ausprobieren nicht nur planen'. Datei: data/tools/fertigkeiten-wirklich-ausprobieren-nicht.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fertigkeiten wirklich au:2`
-*27.08. 23:44 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): Evidence-First: Jede Fertigkeit muss einen kryptografisch verifizierbaren Beweis - Paradigmenwechsel: Statt zu planen und zu prüfen, muss jede Fertigkeit einen SHA-256-Hash ihres realen Outputs in eine zentrale evidence.json 
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fertigkeiten wirklich au:1`
-*27.08. 23:44 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Bottom-Up Modulerstellung: Fehlende Integrationspunkte selbst implementieren sta - Anstatt bestehende (nicht-existierende) Module zu importieren, werden zoetron.hands.Hands und zoetron.benchmark_organ als minimale, aber funkt
-
 ### `last_swarm_critique`
 *27.08. 23:43 UTC · Quelle: critic*
 
@@ -44107,106 +44132,6 @@ score=5; issues=Artefakte laufen laut Sandbox, aber erfuellen das Ziel 'wirklich
 *27.08. 23:39 UTC · Quelle: system*
 
 Fertigkeiten wirklich ausprobieren nicht nur planen
-
-### `dream:20260827233924:5:002696`
-*27.08. 23:39 UTC · Quelle: dream*
-
-Latency variance in the working model (2.1s → 50s) signals queue-depth effects; latency spikes predict imminent 429 cascades.
-
-### `dream:20260827233924:4:dfc631`
-*27.08. 23:39 UTC · Quelle: dream*
-
-Simulation-driven revision cycle (3 risks → 3 revisions applied) successfully adapted behavior mid-episode, proving closed-loop correction works.
-
-### `dream:20260827233924:3:0bc9d8`
-*27.08. 23:39 UTC · Quelle: dream*
-
-High stress (1.0) with minimal budget (max_tasks=3, max_iterations=1) leaves zero margin for retry/backoff strategies during rate limit storms.
-
-### `dream:20260827233924:2:ee5c01`
-*27.08. 23:39 UTC · Quelle: dream*
-
-Only poolside/laguna-s-2.1:free succeeded consistently, creating a single point of failure when it eventually throttles or fails.
-
-### `dream:20260827233924:1:b84e59`
-*27.08. 23:39 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) affects all free-tier models on OpenRouter simultaneously, indicating shared infrastructure quotas rather than per-model limits.
-
-### `dream:20260827233456:5:dd1ad2`
-*27.08. 23:34 UTC · Quelle: dream*
-
-Pruning removed zero facts/events despite repeated failures, suggesting the pruning criteria miss failure-pattern evidence.
-
-### `dream:20260827233456:4:4acf19`
-*27.08. 23:34 UTC · Quelle: dream*
-
-System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which limits recovery capacity exactly when more retries are needed.
-
-### `dream:20260827233456:3:9c8606`
-*27.08. 23:34 UTC · Quelle: dream*
-
-Only poolside/laguna-s-2.1:free succeeded repeatedly, indicating provider-specific reliability differences that should be tracked.
-
-### `dream:20260827233456:2:510494`
-*27.08. 23:34 UTC · Quelle: dream*
-
-Automatic model blocking after 3 consecutive failures (1800s) prevents cascade failures but reduces available capacity during outages.
-
-### `dream:20260827233456:1:70ed09`
-*27.08. 23:34 UTC · Quelle: dream*
-
-Free-tier models consistently fail under rate limits (429) and upstream overload (502), making them unreliable for production tasks.
-
-### `dream:20260827233031:5:bd9531`
-*27.08. 23:30 UTC · Quelle: dream*
-
-Drive goals reveal meta-cognitive gaps: error classification, skill prioritization, and memory linking remain unstructured.
-
-### `dream:20260827233031:4:f27c5f`
-*27.08. 23:30 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack promotion gates; artifact validation and metabolism checks are proposed but not enforced.
-
-### `dream:20260827233031:3:17371f`
-*27.08. 23:30 UTC · Quelle: dream*
-
-Self-diagnose reports zero organ errors while model-router failures persist, indicating health checks omit external dependency metrics.
-
-### `dream:20260827233031:2:d7b0e4`
-*27.08. 23:30 UTC · Quelle: dream*
-
-Latency variance (6.8s vs 35.3s) across free models exceeds 5x, violating latency SLAs for interactive tasks.
-
-### `dream:20260827233031:1:55382b`
-*27.08. 23:30 UTC · Quelle: dream*
-
-Free-tier models exhibit cascading 429/502 failures under load, making single-model reliance a systemic fragility.
-
-### `dream:20260827232612:5:3f625f`
-*27.08. 23:26 UTC · Quelle: dream*
-
-Self-diagnose runs but only checks organ errors, missing model-router health metrics (latency, error rate, fallback depth) and skill-pipeline stalls.
-
-### `dream:20260827232612:4:0ea2bc`
-*27.08. 23:26 UTC · Quelle: dream*
-
-Relative path references in hand_actions cause silent failures when working directory shifts, requiring a centralized path resolver anchored to ZOETRON_DATA.
-
-### `dream:20260827232612:3:ccda56`
-*27.08. 23:26 UTC · Quelle: dream*
-
-Skill proposals accumulate without a mandatory validation gate (artifact existence, checksum, non-zero), allowing broken skills to reach production.
-
-### `dream:20260827232612:2:e55f56`
-*27.08. 23:26 UTC · Quelle: dream*
-
-Absence of a health-aware model router forces manual fallback selection, increasing latency variance (4.8s–35.3s) and leaving high-priority goals unserved during quota exhaustion.
-
-### `dream:20260827232612:1:d6c4e6`
-*27.08. 23:26 UTC · Quelle: dream*
-
-Free-tier OpenRouter models exhaust quota buckets rapidly under load, causing cascading 429 failures that propagate as task failures.
 
 ### `last_swarm_critique`
 *27.08. 22:38 UTC · Quelle: critic*

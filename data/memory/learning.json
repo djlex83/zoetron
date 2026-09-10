@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 23:27:25",
+ "stand": "2026-09-10 23:54:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -159,6 +159,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modelle-zuverlässiger-machen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -265,12 +271,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "modelle-zuverlässiger-machen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",
@@ -387,12 +387,12 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.782,
+ "haende_quote": 0.793,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 24,
   "best": 9.0,
-  "schnitt": 4.25
+  "schnitt": 4.58
  },
  "score_nach_ziel_typ": {
   "analyse": {
@@ -400,8 +400,8 @@
    "schnitt": 4.38
   },
   "bau": {
-   "n": 2,
-   "schnitt": 4.5
+   "n": 3,
+   "schnitt": 6.0
   }
  }
 }
