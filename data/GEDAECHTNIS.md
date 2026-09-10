@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-10 10:32 UTC · aktualisiert bei jedem Herzschlag
+**11782 Fakten** · Stand 2026-09-10 10:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7460
+- **dream:** 7455
 - **swarm_artifact:** 1887
 - **last_swarm_critique:** 870
 - **last_swarm_goal:** 604
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910104054:5:258742`
+*10.09. 10:40 UTC · Quelle: dream*
+
+Regular pruning (8 facts, 33 events) is necessary but insufficient on its own; consolidation must run on a fixed schedule to prevent event accumulation from outpacing knowledge distillation.
+
+### `dream:20260910104054:4:42f028`
+*10.09. 10:40 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model succeeded consistently under both high and low token loads, indicating that smaller verified models are more reliable fallbacks than larger unverified ones.
+
+### `dream:20260910104054:3:245d06`
+*10.09. 10:40 UTC · Quelle: dream*
+
+Without an activation gate, skill proposals accumulate faster than they can be implemented, creating a backlog that mimics progress without producing results.
+
+### `dream:20260910104054:2:e695bc`
+*10.09. 10:40 UTC · Quelle: dream*
+
+Stale goals and outdated criticisms cause the system to build new conclusions on false assumptions, making verification of foundational data a prerequisite before any new work begins.
+
+### `dream:20260910104054:1:d97984`
+*10.09. 10:40 UTC · Quelle: dream*
+
+Cascading model failures occur when fallback models share the same rate-limit boundaries, meaning a single upstream bottleneck can take down all alternatives simultaneously.
 
 ### `dream:20260910103015:5:d9fd72`
 *10.09. 10:30 UTC · Quelle: dream*
@@ -43869,56 +43894,6 @@ Rate-limiting (429) on z-ai/glm-5.2:free recurs across sessions, indicating prov
 *27.08. 10:40 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-27 10:39:41 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `dream:20260827103641:5:c2f829`
-*27.08. 10:36 UTC · Quelle: dream*
-
-Model performance is bimodal: lightweight models (laguna-s-2.1) succeed at low latency, while heavy models (nemotron-3-ultra) fail or succeed only with unpredictable upstream errors.
-
-### `dream:20260827103641:4:11b54f`
-*27.08. 10:36 UTC · Quelle: dream*
-
-Sandbox execution failures ('Artefakt laeuft nicht') dominate critic feedback, showing that artifact runtime compatibility is unvalidated before deployment.
-
-### `dream:20260827103641:3:818fbc`
-*27.08. 10:36 UTC · Quelle: dream*
-
-The goal 'IMPORT und EXPORT fertigstellen' repeatedly fails to converge (converged: false) despite 3 simulation revisions and 2 swarm cycles, signaling insufficient early-exit criteria.
-
-### `dream:20260827103641:2:83a76b`
-*27.08. 10:36 UTC · Quelle: dream*
-
-Nvidia upstream 502 errors correlate with high-latency runs of the 550B model, revealing that service overload occurs when latency exceeds 100s without request pacing.
-
-### `dream:20260827103641:1:316e1c`
-*27.08. 10:36 UTC · Quelle: dream*
-
-All 429 Too Many Requests errors cluster around unthrottled sequential calls to rate-limited external APIs, indicating a missing backpressure mechanism.
-
-### `dream:20260827103103:5:f3b996`
-*27.08. 10:31 UTC · Quelle: dream*
-
-The artifact runtime lacks required protocol scaffolds (Zoem-Protokoll-Entwurf), causing execution to fail before model interaction.
-
-### `dream:20260827103103:4:5913b9`
-*27.08. 10:31 UTC · Quelle: dream*
-
-Calibration overestimates task completion by 5x (predicted 6 vs actual 1), suggesting the planner lacks feedback from execution failures.
-
-### `dream:20260827103103:3:b5ed2a`
-*27.08. 10:31 UTC · Quelle: dream*
-
-Hand/tool actions fail silently with exit code 1 and no error message, indicating missing preconditions or environment setup.
-
-### `dream:20260827103103:2:9b0c3a`
-*27.08. 10:31 UTC · Quelle: dream*
-
-Nvidia Nemotron models (both ultra and lightning) are the only ones returning successful responses but with highly variable latency (52-448s).
-
-### `dream:20260827103103:1:5153c9`
-*27.08. 10:31 UTC · Quelle: dream*
-
-Free tier models across all providers consistently hit 429 rate limits, making them unreliable for sequential task execution.
 
 ### `last_swarm_critique`
 *27.08. 09:56 UTC · Quelle: critic*

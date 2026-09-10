@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 10:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 10:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Regular pruning (8 facts, 33 events) is necessary but insufficient on its own; consolidation must run on a fixed schedule to prevent event accumulatio
+- The inclusionai/ling-3.0-flash-fin model succeeded consistently under both high and low token loads, indicating that smaller verified models are more 
+- Without an activation gate, skill proposals accumulate faster than they can be implemented, creating a backlog that mimics progress without producing 
+- Stale goals and outdated criticisms cause the system to build new conclusions on false assumptions, making verification of foundational data a prerequ
+- Cascading model failures occur when fallback models share the same rate-limit boundaries, meaning a single upstream bottleneck can take down all alter
 - The absence of early termination criteria causes the system to continue mutating even when all scores fall below threshold, wasting compute on problem
 - Scoring predictions are systematically overconfident, indicating a calibration deficit that propagates poor decisions through the entire evolutionary 
 - The system lacks any pre-execution validation of generated code, allowing non-runnable or schema-invalid outputs to consume scoring resources before b
@@ -51,11 +56,6 @@
 - Under conserve/metabolic-stress conditions with minimal budget, the system must not attempt swarm operations or complex multi-step skill execution bec
 - A circuit breaker pattern is essential: after 2 consecutive failures from any model, that model should be proactively excluded from routing decisions 
 - When multiple external API providers return rate-limit or timeout errors simultaneously, the system must immediately route all traffic to the single k
-- Pruning 22 events while consolidating only 5 facts reveals that the system accumulates stale state faster than it distills durable knowledge, degradin
-- 429 rate-limit errors are predictable precursors, not surprises; response headers and request frequency should trigger preemptive traffic shifting bef
-- The gap between proposed skills and operationalized defenses is itself a failure mode—ideas without implementation deadlines decay into cognitive debt
-- The sole reliable model (inclusionai/ling-3.0-flash-fin) creates a dangerous single-point-of-failure; the system must maintain at least three pre-veri
-- Recurring timeouts and 429 errors on identical models across multiple timestamps indicate systemic provider-side instability that demands circuit-brea
 
 ---
 

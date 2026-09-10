@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 10:30:29",
+ "stand": "2026-09-10 10:41:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -180,12 +180,6 @@
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -397,6 +391,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.718,
