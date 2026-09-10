@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 18:19:06",
+ "stand": "2026-09-10 18:54:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -165,6 +165,12 @@
    "quote": 1.0
   },
   {
+   "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -256,12 +262,6 @@
   },
   {
    "tool": "alte-daten-durch-neue-fakten-ersetzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -363,7 +363,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.764,
+ "haende_quote": 0.766,
  "simulationen_angewandt": 36,
  "swarm_scores": {
   "n": 26,

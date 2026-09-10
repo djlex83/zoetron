@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11796 Fakten** · Stand 2026-09-10 18:21 UTC · aktualisiert bei jedem Herzschlag
+**11786 Fakten** · Stand 2026-09-10 18:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7541
+- **dream:** 7531
 - **swarm_artifact:** 1831
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910185317:5:2bcacf`
+*10.09. 18:53 UTC · Quelle: dream*
+
+System operates at maximum stress with minimal budget (max_tasks=3, max_iterations=1), preventing recovery actions from executing.
+
+### `dream:20260910185317:4:d65c84`
+*10.09. 18:53 UTC · Quelle: dream*
+
+File path resolution fails silently in hand actions because relative paths and environment variables (ZOETRON_DATA) are not normalized before use.
+
+### `dream:20260910185317:3:47dd28`
+*10.09. 18:53 UTC · Quelle: dream*
+
+Swarm knowledge goes stale because refresh depends on manual triggers rather than scheduled or event-driven updates.
+
+### `dream:20260910185317:2:214d22`
+*10.09. 18:53 UTC · Quelle: dream*
+
+Proposed skills accumulate without validation, creating 'proposal theater' where nothing is actually tested before adoption.
+
+### `dream:20260910185317:1:a7e330`
+*10.09. 18:53 UTC · Quelle: dream*
+
+Model provider failures cascade because the system lacks automatic failover with health-aware routing.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten zusammenführ:2`
 *10.09. 18:18 UTC · Quelle: evolution*
@@ -44084,81 +44109,6 @@ The system enters conserve mode (stress=1.0) precisely when model reliability is
 *27.08. 18:53 UTC · Quelle: dream*
 
 Free-tier models exhibit cascading failure modes (429 rate limits, 502 upstream overload) that cluster in time, making sequential fallback strategies ineffective under load.
-
-### `dream:20260827185003:5:5590db`
-*27.08. 18:50 UTC · Quelle: dream*
-
-Proposed skills accumulate but remain unused because no automatic skill-activation mechanism exists.
-
-### `dream:20260827185003:4:291bb1`
-*27.08. 18:50 UTC · Quelle: dream*
-
-Metabolism conserve mode (stress 1.0) caps iterations at 1, preventing multi-step refinement needed for swarm convergence.
-
-### `dream:20260827185003:3:06960c`
-*27.08. 18:50 UTC · Quelle: dream*
-
-Hand actions fail silently (exit 1, zero bytes read) indicating tool execution environment misconfiguration.
-
-### `dream:20260827185003:2:6227c2`
-*27.08. 18:50 UTC · Quelle: dream*
-
-Swarm convergence stalls at score 1 because the critic rejects builder output without actionable feedback loops.
-
-### `dream:20260827185003:1:956fb9`
-*27.08. 18:50 UTC · Quelle: dream*
-
-Free-tier models (GLM, Gemma, Poolside) consistently hit 429 rate limits, making them unreliable for production workflows.
-
-### `dream:20260827184542:5:2b188f`
-*27.08. 18:45 UTC · Quelle: dream*
-
-Simulation vetoed the plan (verdict=revise, 5 risks) and 2/4 revisions were applied, showing pre-execution critique catches critical flaws.
-
-### `dream:20260827184542:4:1995b5`
-*27.08. 18:45 UTC · Quelle: dream*
-
-Evolutionary search with 3 variants lifted score from 1/10 to 8-10/10 in one generation, proving iterative refinement outperforms one-shot generation.
-
-### `dream:20260827184542:3:bd08bc`
-*27.08. 18:45 UTC · Quelle: dream*
-
-Memory retrieval succeeds (4 items fetched) but graph construction fails (kanten=0, delta=-0.5), indicating a broken linking mechanism, not a retrieval problem.
-
-### `dream:20260827184542:2:08b55b`
-*27.08. 18:45 UTC · Quelle: dream*
-
-Calibration error of 4 points (predicted 5 vs actual 1) reveals the planner fundamentally misjudges connection-building difficulty.
-
-### `dream:20260827184542:1:c7edfd`
-*27.08. 18:45 UTC · Quelle: dream*
-
-Free-tier model endpoints fail catastrophically under load (429/502 errors), making single-model reliance a systemic fragility.
-
-### `dream:20260827184033:5:38a978`
-*27.08. 18:40 UTC · Quelle: dream*
-
-Simulation flags high risk (5/5) and recommends 3 revisions but only 1 is applied, suggesting a gap between risk assessment and mitigation execution.
-
-### `dream:20260827184033:4:f62fb7`
-*27.08. 18:40 UTC · Quelle: dream*
-
-Calibration predictions deviate by 4 points (predicted 5 vs actual 1), showing the reward estimator is uncalibrated for this task domain.
-
-### `dream:20260827184033:3:29fa84`
-*27.08. 18:40 UTC · Quelle: dream*
-
-Hand actions repeatedly exit with code 1 and zero bytes read, indicating a systematic I/O or permission failure in the file-reading subsystem.
-
-### `dream:20260827184033:2:b43431`
-*27.08. 18:40 UTC · Quelle: dream*
-
-The 'bahnen' module import failure halts artifact execution, revealing a missing dependency installation step in the deployment pipeline.
-
-### `dream:20260827184033:1:97f871`
-*27.08. 18:40 UTC · Quelle: dream*
-
-Free-tier LLM endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *27.08. 18:10 UTC · Quelle: critic*

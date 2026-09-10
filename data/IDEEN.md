@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 18:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 18:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System operates at maximum stress with minimal budget (max_tasks=3, max_iterations=1), preventing recovery actions from executing.
+- File path resolution fails silently in hand actions because relative paths and environment variables (ZOETRON_DATA) are not normalized before use.
+- Swarm knowledge goes stale because refresh depends on manual triggers rather than scheduled or event-driven updates.
+- Proposed skills accumulate without validation, creating 'proposal theater' where nothing is actually tested before adoption.
+- Model provider failures cascade because the system lacks automatic failover with health-aware routing.
 - Pruning runs are reducing memory load but may be removing potentially useful historical context without sufficient relevance filtering.
 - Drive goals related to error detection, plan staleness, and memory gaps are actively influencing reflex execution and pruning behavior.
 - Successful model calls (nex-n2.5-pro) show consistent performance with moderate latency and token usage, indicating reliability in fallback routing.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but lack an automated validation pipeline to prove they actually improve outcomes.
 - A single reliable model (nex-agi/nex-n2.5-pro:free) becomes a single point of failure when all others are rate-limited.
 - Free tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without circuit breakers.
-- Neue Fähigkeiten bleiben riskant, solange sie nur vorgeschlagen und nicht an realen früheren Fehlern reproduzierbar getestet wurden.
-- Die stark schwankende erfolgreiche Latenz zeigt, dass Modellwahl und Anbieterverfügbarkeit gemeinsam nach Aufwand, Qualität und Erfolgsaussicht gerout
-- Ein Abschluss mit `converged=true` bei `score=null` ist nicht belastbar, weil objektive Evidenz für eine Verbesserung fehlt.
-- Ein Pruning, das viele Ereignisse aber keine Fakten löscht, kann Fehler-, Recovery- und Validierungswissen entfernen, das für Regressionstests wertvol
-- Wiederholte 429-Fehler über mehrere kostenlose Anbieter und anschließende Timeouts zeigen ein Verfügbarkeitsproblem des Providers, nicht zwangsläufig 
 
 ---
 
