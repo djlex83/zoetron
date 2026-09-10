@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11775 Fakten** · Stand 2026-09-10 11:25 UTC · aktualisiert bei jedem Herzschlag
+**11779 Fakten** · Stand 2026-09-10 11:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7465
+- **dream:** 7470
 - **swarm_artifact:** 1875
 - **last_swarm_critique:** 870
 - **last_swarm_goal:** 604
 - **anti_pattern:** 431
 - **strategy:** 217
-- **tool:** 170
+- **tool:** 169
 - **hand_result:** 101
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910113350:5:458507`
+*10.09. 11:33 UTC · Quelle: dream*
+
+Event accumulation outpaces knowledge distillation without scheduled compaction, causing pruning to lag behind reality and degrading the fidelity of consolidated lessons.
+
+### `dream:20260910113350:4:73c378`
+*10.09. 11:33 UTC · Quelle: dream*
+
+Stale swarm processes actively degrade decision quality, so periodic forced refresh is a maintenance requirement, not an optional improvement.
+
+### `dream:20260910113350:3:cc7b6a`
+*10.09. 11:33 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they get implemented, meaning without activation gates and deadlines, the backlog becomes a graveyard of intentions rather than actions.
+
+### `dream:20260910113350:2:d0f978`
+*10.09. 11:33 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model is the only consistently reliable performer, revealing dangerous single-point-of-failure dependency that must be diversified.
+
+### `dream:20260910113350:1:1db57b`
+*10.09. 11:33 UTC · Quelle: dream*
+
+Rate-limit (429) and timeout failures are systemic across multiple external models, indicating that retry logic alone is insufficient and architectural failover is required.
 
 ### `dream:20260910112231:5:bdea0f`
 *10.09. 11:22 UTC · Quelle: dream*
@@ -43899,11 +43924,6 @@ Latency SLO violations (e.g., 180s) directly correlate with task abandonment and
 *27.08. 11:43 UTC · Quelle: dream*
 
 Rate limiting (429) is the dominant failure mode across multiple providers, indicating systemic overload rather than isolated model issues.
-
-### `tool:neue-fähigkeiten-aktiv-vorschlagen`
-*27.08. 11:22 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Neue Fähigkeiten aktiv vorschlagen'. Datei: data/tools/neue-fähigkeiten-aktiv-vorschlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *27.08. 11:17 UTC · Quelle: critic*

@@ -34317,3 +34317,24 @@
 {"ts": 1788434497.2464707, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.19, "gelesen": 0}}
 {"ts": 1788434497.2466514, "kind": "tor", "payload": {"goal": "Modellfehler systematisch reduzieren", "gruen": true, "grund": "Artefakt laeuft (52 Zeilen Python)", "zyklus": 1}}
 {"ts": 1788434498.2562532, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788434498.256251, "schalter_geoeffnet": false}}
+{"ts": 1787829724.9899108, "key": "tool:neue-fähigkeiten-aktiv-vorschlagen", "value": "Ausfuehrbares Python-Werkzeug aus Ziel 'Neue Fähigkeiten aktiv vorschlagen'. Datei: data/tools/neue-fähigkeiten-aktiv-vorschlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.", "source": "hands"}
+{"ts": 1788434568.9587672, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 70.7, "tokens_ein": 6817, "tokens_aus": 1300}}
+{"ts": 1788434568.9593186, "kind": "calibration", "payload": {"goal": "Modellfehler systematisch reduzieren", "predicted": 8, "actual": 7, "abs_error": 1}}
+{"ts": 1788434568.9593825, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 7}}
+{"ts": 1788434568.9595454, "kind": "bahnen", "payload": {"goal": "Modellfehler systematisch reduzieren", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 7, "abgerufen": 4, "ids": ["e:e6e8a7c2a8af", "e:5669e483a25a", "e:cb50d808880c", "e:b211d87b462d"], "ziel_id": "g:6df6ababd373"}}
+{"ts": 1788434569.5684793, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788434569.5684733, "schalter_geoeffnet": false}}
+{"ts": 1788434633.1167152, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 63.5, "tokens_ein": 218, "tokens_aus": 1144}}
+{"ts": 1788434633.6988285, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788434633.6988263, "schalter_geoeffnet": false}}
+{"ts": 1788434678.1745293, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 44.5, "tokens_ein": 653, "tokens_aus": 1408}}
+{"ts": 1788434678.175002, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 7/10. Goal: Modellfehler systematisch reduzieren\nCritic issues: Nur Infrastruktur/Monitoring - k", "variants": 3, "winner_index": 0, "scores": [9, 7, 9, 8, 6, 8, 9, 3, 6]}}
+{"ts": 1788434683.2751114, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788434683.2751093, "schalter_geoeffnet": false}}
+{"ts": 1788434716.7401838, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 33.5, "tokens_ein": 424, "tokens_aus": 548}}
+{"ts": 1788434717.9350705, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788434717.9350681, "schalter_geoeffnet": false}}
+{"ts": 1788434766.2345936, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 48.3, "tokens_ein": 509, "tokens_aus": 1337}}
+{"ts": 1788434766.2347631, "kind": "simulation", "payload": {"goal": "Modellfehler systematisch reduzieren", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1788434766.2348752, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1788434766.2349744, "kind": "swarm_finished", "payload": {"goal": "Modellfehler systematisch reduzieren", "score": 7, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1788434766.2353165, "kind": "act_done", "payload": {"goal_title": "Modellfehler systematisch reduzieren", "score": 7, "converged": false}}
+{"ts": 1788434766.8348527, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 0}}
+{"ts": 1788434769.1795654, "kind": "issue_synced", "payload": {"issue": 336, "state": "open"}}
+{"ts": 1788435166.266582, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

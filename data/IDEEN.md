@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 11:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,11 +25,11 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event accumulation outpaces knowledge distillation without scheduled compaction, causing pruning to lag behind reality and degrading the fidelity of c
+- Stale swarm processes actively degrade decision quality, so periodic forced refresh is a maintenance requirement, not an optional improvement.
+- Skill proposals accumulate faster than they get implemented, meaning without activation gates and deadlines, the backlog becomes a graveyard of intent
+- The inclusionai/ling-3.0-flash-fin model is the only consistently reliable performer, revealing dangerous single-point-of-failure dependency that must
+- Rate-limit (429) and timeout failures are systemic across multiple external models, indicating that retry logic alone is insufficient and architectura
 - Infrastructure-level errors are currently being processed as task-level failures, obscuring true model performance.
 - Stale swarm intelligence occurs when decision-making cycles outpace the validity of the environmental state.
 - Low convergence scores coupled with high revision counts indicate an ineffective evolutionary loop.
@@ -48,14 +53,9 @@
 - Heavy reliance on specific free model endpoints creates a systemic single point of failure via rate-limiting.
 - Self-calibration was inaccurate (predicted 3, actual 1, abs_error 2), indicating the system's internal confidence estimates do not reliably match real
 - Evolutionary variant generation (3 variants) improved scores from 1/10 to 8/10, demonstrating that multi-variant exploration is highly effective for p
-- The inclusionai/ling-3.0-flash-fin model is the only consistently reliable model across all attempts, succeeding every time with variable latency and 
 - Artifacts containing only prose without executable Python blocks fail to converge, as explicitly flagged by the convergence check in the [tor] signal.
 - Google models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently fail with HTTP 429 rate-limit errors on OpenRouter, making them unreliable for any pro
 - Relative path resolution in sys.argv[1] and ZOETRON_DATA caused silent data-path failures; all paths must be resolved to absolute and validated before
-- Simulation revisions were only partially applied (3 of 5 recommended), suggesting the revision pipeline lacks a completion gate or verification step.
-- Under conserve state with stress=1.0 and minimal budget, cycling through multiple models wastes resources; the system should lock onto the single prov
-- Repeated 429 rate-limit errors from specific models (gemma-4-31b-it, gemma-4-26b-a4b-it) indicate these models must be blacklisted or cooldown-tracked
-- Exit code 0 does not guarantee task completion; scripts that silently skip file/directory access must be detected by validating actual I/O, not just r
 
 ---
 
