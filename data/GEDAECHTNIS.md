@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11802 Fakten** · Stand 2026-09-10 16:56 UTC · aktualisiert bei jedem Herzschlag
+**11802 Fakten** · Stand 2026-09-10 17:08 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7536
 - **swarm_artifact:** 1841
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910170552:5:ee753f`
+*10.09. 17:05 UTC · Quelle: dream*
+
+Ähnliche Skill-Vorschläge sollten nach Fehlerdomäne zu einem einzigen getesteten Workflow zusammengeführt werden, statt redundante Einzelfähigkeiten anzuhäufen.
+
+### `dream:20260910170552:4:2bfcdd`
+*10.09. 17:05 UTC · Quelle: dream*
+
+Ein leichter Reflexpfad kann Orchestrierung auch ohne festgestellte Organfehler erfolgreich wiederherstellen und sollte als gesicherter Notfallmechanismus erhalten bleiben.
+
+### `dream:20260910170552:3:543f02`
+*10.09. 17:05 UTC · Quelle: dream*
+
+Beim Pruning dürfen Fehler, Fallback-Erfolge, Wiederanlaufdaten und Provenienz nicht verloren gehen, weil sie für Diagnose und Lernen besonders wertvoll sind.
+
+### `dream:20260910170552:2:5e8522`
+*10.09. 17:05 UTC · Quelle: dream*
+
+Ein Router muss Verfügbarkeit, Latenz, Tokenverbrauch, Kosten und Aktualität gemeinsam bewerten und überlastete Endpunkte automatisch kaltstellen.
+
+### `dream:20260910170552:1:9537b4`
+*10.09. 17:05 UTC · Quelle: dream*
+
+Wiederholte 429-Fehler einzelner kostenloser Endpunkte bei gleichzeitig erfolgreichen Aufrufen anderer Modelle deuten auf endpunktspezifische Drosselung hin, nicht auf einen allgemeinen Ausfall.
 
 ### `dream:20260910165414:5:9e2700`
 *10.09. 16:54 UTC · Quelle: dream*
@@ -44124,31 +44149,6 @@ score=6; issues=Konvergenz-Tor verwendet `io.StringIO()` in `run_restricted_skil
 *27.08. 17:00 UTC · Quelle: system*
 
 Fähigkeiten echt testen nicht nur vorschlagen
-
-### `dream:20260827165952:5:1f1483`
-*27.08. 16:59 UTC · Quelle: dream*
-
-Local hand-action verification (0.22s) is orders of magnitude faster and more reliable than any external model call.
-
-### `dream:20260827165952:4:d8f833`
-*27.08. 16:59 UTC · Quelle: dream*
-
-Latency variance across successful calls spans 10x (11.8s to 117.3s), requiring adaptive timeouts rather than fixed thresholds.
-
-### `dream:20260827165952:3:407fb2`
-*27.08. 16:59 UTC · Quelle: dream*
-
-Simulation-driven revision (3 risks → 3 revisions → green TOR) successfully produced a working 164-line Python artifact in one cycle.
-
-### `dream:20260827165952:2:91f683`
-*27.08. 16:59 UTC · Quelle: dream*
-
-Generic fallback endpoints (openrouter/free) remain available when specific models are rate-limited, providing a stable last resort.
-
-### `dream:20260827165952:1:1a4ed5`
-*27.08. 16:59 UTC · Quelle: dream*
-
-Free-tier model endpoints systematically hit 429 rate limits under sustained load, making specific model selection unreliable.
 
 ### `last_swarm_critique`
 *27.08. 16:43 UTC · Quelle: critic*

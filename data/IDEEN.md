@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 16:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 17:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Ähnliche Skill-Vorschläge sollten nach Fehlerdomäne zu einem einzigen getesteten Workflow zusammengeführt werden, statt redundante Einzelfähigkeiten a
+- Ein leichter Reflexpfad kann Orchestrierung auch ohne festgestellte Organfehler erfolgreich wiederherstellen und sollte als gesicherter Notfallmechani
+- Beim Pruning dürfen Fehler, Fallback-Erfolge, Wiederanlaufdaten und Provenienz nicht verloren gehen, weil sie für Diagnose und Lernen besonders wertvo
+- Ein Router muss Verfügbarkeit, Latenz, Tokenverbrauch, Kosten und Aktualität gemeinsam bewerten und überlastete Endpunkte automatisch kaltstellen.
+- Wiederholte 429-Fehler einzelner kostenloser Endpunkte bei gleichzeitig erfolgreichen Aufrufen anderer Modelle deuten auf endpunktspezifische Drosselu
 - Failure patterns persist across sessions, meaning historical error data must be retained and cross-referenced to predict and prevent recurring provide
 - Successful model calls show significant variance in latency and token usage, implying that performance metrics should guide routing decisions alongsid
 - Cascading failures occur when repeated errors trigger account lockouts (e.g., 3 consecutive errors causing 1800s lockout), amplifying initial issues i
@@ -51,11 +56,6 @@
 - Der erfolgreiche Anbieter liefert ein Wiederverwendbares Fallback-Ziel, während mehrfach abgelehnte Modelle für den aktuellen Lauf als blockiert gelte
 - Ein einzelner erfolgreicher Lauf mit 25–34 Sekunden Latenz zeigt, dass Timeouts anhand realer Tail-Latenzen statt optimistischer Grenzwerte konfigurie
 - Wiederholte Aufrufe derselben 429- oder timeout-anfälligen Modelle erhöhen die Ausfallwahrscheinlichkeit, ohne die Erfolgschance substantiell zu verbe
-- Eine fehlerfreie Reflex-Selbstdiagnose bestätigt nur den geprüften engen Geltungsbereich und ersetzt keine Syntax-, Abhängigkeits- und Funktionstests 
-- Wiederholt ähnlich umfangreiches Pruning deutet darauf hin, dass Replay- und Ausführungsereignisse überwiegend flüchtig sind und nur belastbare Ergebn
-- Der zweimal erfolgreiche Einsatz von poolside/laguna-s-2.1:free belegt, dass ein vorab geprüfter Fallback anhand aktueller Erfolgsquote, Latenz und To
-- Ein Read-Timeout ist von einer 429-Ratenbegrenzung zu unterscheiden und benötigt eigene Fristen-, Abbruch- und Wiederanlaufregeln.
-- Wiederholte 429-Fehler bei denselben Google-Gemma-Modellen zeigen, dass weitere direkte Retries nach einem kurzen Schwellenwert ineffizient sind und e
 
 ---
 
