@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 04:12:29",
+ "stand": "2026-09-10 04:23:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,15 +33,15 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -138,12 +138,6 @@
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -268,6 +262,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-be.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

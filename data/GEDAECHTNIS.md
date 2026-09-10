@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 04:14 UTC · aktualisiert bei jedem Herzschlag
+**11781 Fakten** · Stand 2026-09-10 04:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7448
-- **swarm_artifact:** 1901
+- **dream:** 7453
+- **swarm_artifact:** 1895
 - **last_swarm_critique:** 864
 - **last_swarm_goal:** 598
-- **anti_pattern:** 435
-- **strategy:** 219
+- **anti_pattern:** 433
+- **strategy:** 218
 - **tool:** 173
-- **hand_result:** 104
+- **hand_result:** 103
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910042258:5:969424`
+*10.09. 04:22 UTC · Quelle: dream*
+
+Dream consolidation produces skill proposals but lacks automated testing loops to validate proposals before deployment.
+
+### `dream:20260910042258:4:8cd471`
+*10.09. 04:22 UTC · Quelle: dream*
+
+Swarm knowledge staleness triggers (median age >24h, delta < epsilon for 3 cycles) are detectable and should automate refresh workflows.
+
+### `dream:20260910042258:3:95fc87`
+*10.09. 04:22 UTC · Quelle: dream*
+
+Effort estimation for 'Alte Schwarm-Informationen erneuern' tasks shows a consistent 5-point calibration error, requiring a 3.5x correction factor.
+
+### `dream:20260910042258:2:91a91b`
+*10.09. 04:22 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model serves as a reliable fallback with 3.4s latency, validating a prioritized failover chain strategy.
+
+### `dream:20260910042258:1:d3a264`
+*10.09. 04:22 UTC · Quelle: dream*
+
+Free-tier model endpoints (Nvidia Nemotron, Google Gemma) consistently fail with 502/429 errors under load, making them unreliable for production use.
 
 ### `dream:20260910041139:5:b77c8f`
 *10.09. 04:11 UTC · Quelle: dream*
@@ -43904,16 +43929,6 @@ Latency variance in successful models (12.6s to 91.7s) correlates with token vol
 *27.08. 04:32 UTC · Quelle: dream*
 
 Free-tier model 429 errors reveal that rate limiting, not model capability, is the primary failure cause when fallback chains exhaust iteration budgets under conserve state.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Zoem-Protokoll: vererbba:2`
-*27.08. 04:18 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): Capability-Based Secure Execution with WebAssembly Components - Replace the empty-__builtins__ Python exec with a WebAssembly Component Model runtime (wasmtime + wit-bindgen). Each Organism is a Wasm component with ex
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Zoem-Protokoll: vererbba:1`
-*27.08. 04:18 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [10, 4, 9]): Formal Verification via Dependent Type Theory - Encode the Zoem protocol in a proof assistant (Lean 4 or Coq). Define Organism as a dependent type indexed by its knowledge state. Anti-pattern Zoem is a Sigma-type: Σ 
 
 ### `last_swarm_critique`
 *27.08. 04:16 UTC · Quelle: critic*

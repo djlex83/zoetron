@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 04:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 04:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,12 +19,12 @@
 - ModelRouterSkill: priority-ordered provider pool with 5-min circuit-break on 429/502/timeout and dynamic reord *(hatte die Idee 3×)*
 - Replace fixed 2-cycle evolution with adaptive loop: continue until convergence metric (score delta < 0.01) or  *(hatte die Idee 3×)*
 - Build DriveResolutionTracker: persist each drive_goal with deadline; auto-escalate to structured swarm if unre *(hatte die Idee 3×)*
-- Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before exec *(hatte die Idee 2×)*
+- Persist circuit-breaker counters (success rate, p95 latency, error taxonomy) to disk so degradation memory sur *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream consolidation produces skill proposals but lacks automated testing loops to validate proposals before deployment.
+- Swarm knowledge staleness triggers (median age >24h, delta < epsilon for 3 cycles) are detectable and should automate refresh workflows.
+- Effort estimation for 'Alte Schwarm-Informationen erneuern' tasks shows a consistent 5-point calibration error, requiring a 3.5x correction factor.
+- The inclusionai/ling-3.0-flash-fin model serves as a reliable fallback with 3.4s latency, validating a prioritized failover chain strategy.
+- Free-tier model endpoints (Nvidia Nemotron, Google Gemma) consistently fail with 502/429 errors under load, making them unreliable for production use.
 - The system self-diagnosed cleanly and pruned nothing, confirming structural health but revealing that staleness and validation gaps are invisible to o
 - Informal result schemas prevent programmatic retry and escalation, forcing manual intervention after every reflex failure.
 - Skills proposed without dream-based validation create a persistent gap between idea generation and reliable execution.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without mandatory validation pipeline causing deployment of untested capabilities.
 - InclusionAI Ling model serves as sole reliable provider creating dangerous single-point-of-failure dependency.
 - Google Gemma models consistently hit 429 rate limits making them unreliable for production workloads.
-- Aggressive event pruning (72 events in one run) discards diagnostic context needed for root-cause analysis of model failures.
-- Reflex-driven maintenance tasks (swarm refresh, dream-to-skill) converge reliably while autonomous planning stalls.
-- Immediate retries on 429 errors amplify throttling; exponential backoff with jitter is absent despite repeated occurrences.
-- Skill proposal volume is high but conversion to stable capabilities is near zero, indicating a missing stabilization pipeline.
-- Reactive model fallback succeeds but wastes cycles on known-rate-limited models instead of proactively avoiding them.
 
 ---
 
