@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11791 Fakten** · Stand 2026-09-10 00:12 UTC · aktualisiert bei jedem Herzschlag
+**11788 Fakten** · Stand 2026-09-10 00:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7402
-- **swarm_artifact:** 1931
+- **dream:** 7407
+- **swarm_artifact:** 1927
 - **last_swarm_critique:** 862
 - **last_swarm_goal:** 596
-- **anti_pattern:** 447
-- **strategy:** 225
+- **anti_pattern:** 445
+- **strategy:** 224
 - **tool:** 174
-- **hand_result:** 109
+- **hand_result:** 108
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910002105:5:516990`
+*10.09. 00:21 UTC · Quelle: dream*
+
+Pruning removes 37 events and 9 facts per cycle, yet model-failure events dominate the log, so aggressive capping and aggregation of repeated failures is required to keep signal visible.
+
+### `dream:20260910002105:4:af5a4d`
+*10.09. 00:21 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 this cycle) but none enter sandbox testing, revealing a broken proposal-to-deployed pipeline that wastes metabolic budget on unimplemented ideas.
+
+### `dream:20260910002105:3:b5a93b`
+*10.09. 00:21 UTC · Quelle: dream*
+
+Drive goals for model-error reduction and swarm refresh recur across sleep cycles, indicating that symptom-level fixes (single model swap, one swarm update) do not resolve the structural root causes.
+
+### `dream:20260910002105:2:5298c6`
+*10.09. 00:21 UTC · Quelle: dream*
+
+Reflex-driven swarm-goal refresh converges in one shot, showing that stale-data signals map cleanly to deterministic repair tools when the tool contract is stable.
+
+### `dream:20260910002105:1:a6446c`
+*10.09. 00:21 UTC · Quelle: dream*
+
+Google Gemma models consistently fail with 429 rate-limit errors while inclusionai/ling-3.0-flash-fin:free succeeds reliably, proving the need for a priority-ordered provider pool with automatic circuit-breaking.
 
 ### `dream:20260910001030:5:834863`
 *10.09. 00:10 UTC · Quelle: dream*
@@ -43800,16 +43825,6 @@ Latency variance across models exceeds 30x (2.7s vs 69s), requiring dynamic rout
 *27.08. 00:31 UTC · Quelle: dream*
 
 Rate limits (429) on z-ai/glm-5.2:free are the dominant failure mode, not model quality.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Exemplar-Bank: von den e:2`
-*27.08. 00:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Event-Sourced Exemplar Store with CQRS - Implement ExemplarBank as an event-sourced aggregate: commands (StoreExemplar, RateExemplar) emit events persisted to an event log. Read model (ExemplarQueryView) projects events into 
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Exemplar-Bank: von den e:1`
-*27.08. 00:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Real Swarm Execution Engine for A/B Testing - Replace the simulated A/B framework with a SwarmExecutionEngine that spawns actual subprocesses running the full swarm pipeline (planner → coder → tester → critic) for each varian
 
 ### `last_swarm_critique`
 *27.08. 00:11 UTC · Quelle: critic*
