@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11784 Fakten** · Stand 2026-09-10 06:24 UTC · aktualisiert bei jedem Herzschlag
+**11781 Fakten** · Stand 2026-09-10 06:35 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7453
-- **swarm_artifact:** 1895
+- **swarm_artifact:** 1893
 - **last_swarm_critique:** 866
 - **last_swarm_goal:** 600
 - **anti_pattern:** 433
 - **strategy:** 218
-- **tool:** 173
+- **tool:** 172
 - **hand_result:** 102
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910063302:5:a37d16`
+*10.09. 06:33 UTC · Quelle: dream*
+
+Cross-domain combination—linking dream clusters with swarm results—reliably surfaces novel insights that neither source produces alone.
+
+### `dream:20260910063302:4:3ba458`
+*10.09. 06:33 UTC · Quelle: dream*
+
+Swarm knowledge degrades on a predictable schedule, meaning stale-data alerts and scheduled refresh cycles outperform ad-hoc updates.
+
+### `dream:20260910063302:3:03a852`
+*10.09. 06:33 UTC · Quelle: dream*
+
+The gap between 76 skill proposals and their actual implementation is the system's largest productivity bottleneck, not model availability.
+
+### `dream:20260910063302:2:618616`
+*10.09. 06:33 UTC · Quelle: dream*
+
+Reflex-based execution consistently converges for known task types, making it the reliable default path over LLM-mediated planning.
+
+### `dream:20260910063302:1:c2cbd1`
+*10.09. 06:33 UTC · Quelle: dream*
+
+Model failures (502 upstream overload, 429 rate-limiting) are systemic across providers and require proactive health-gating rather than reactive retry logic.
 
 ### `dream:20260910062125:5:f3e098`
 *10.09. 06:21 UTC · Quelle: dream*
@@ -43880,11 +43905,6 @@ Rate-limited models (429 errors) consistently fail under concurrent load, indica
 
 ORGANFEHLER (2026-08-27 06:28:18 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
-### `tool:fähigkeitsvorschläge-in-echte-skills-umw`
-*27.08. 06:31 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeitsvorschläge in echte Skills umwandeln'. Datei: data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *27.08. 06:31 UTC · Quelle: critic*
 
@@ -43894,31 +43914,6 @@ score=8; issues=
 *27.08. 06:28 UTC · Quelle: system*
 
 Fähigkeitsvorschläge in echte Skills umwandeln
-
-### `dream:20260827062518:5:64bb11`
-*27.08. 06:25 UTC · Quelle: dream*
-
-Memory pruning removed zero items, suggesting current retention policies are appropriate but also that stale low-signal entries may persist indefinitely.
-
-### `dream:20260827062518:4:7a09e2`
-*27.08. 06:25 UTC · Quelle: dream*
-
-Drive goals accumulate but lack automatic scheduling or convergence tracking, causing high-value objectives (model fixing, skill activation) to stall.
-
-### `dream:20260827062518:3:c7ce68`
-*27.08. 06:25 UTC · Quelle: dream*
-
-Documentation drift was detected and auto-corrected via a reflex action, proving that code-derived metrics can enforce consistency without LLM calls.
-
-### `dream:20260827062518:2:dbd0f3`
-*27.08. 06:25 UTC · Quelle: dream*
-
-The poolside/laguna-s-2.1:free model consistently succeeds with ~8s latency, making it a reliable primary candidate for critical paths.
-
-### `dream:20260827062518:1:48b56e`
-*27.08. 06:25 UTC · Quelle: dream*
-
-Rate limiting (429) and upstream overload (502) errors dominate model failures, indicating reliance on free-tier endpoints without backoff or fallback logic.
 
 ### `last_swarm_critique`
 *27.08. 06:18 UTC · Quelle: critic*

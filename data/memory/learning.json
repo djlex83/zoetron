@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 06:22:29",
+ "stand": "2026-09-10 06:33:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,12 +21,6 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -34,6 +28,12 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -61,12 +61,6 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-stark-verringern.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -177,10 +171,22 @@
    "quote": 1.0
   },
   {
+   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
@@ -232,12 +238,6 @@
   },
   {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -423,7 +423,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.744,
+ "haende_quote": 0.748,
  "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 28,
@@ -432,8 +432,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 26,
-   "schnitt": 4.88
+   "n": 25,
+   "schnitt": 4.72
   },
   "bau": {
    "n": 2,

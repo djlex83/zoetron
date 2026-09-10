@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 06:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 06:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Cross-domain combination—linking dream clusters with swarm results—reliably surfaces novel insights that neither source produces alone.
+- Swarm knowledge degrades on a predictable schedule, meaning stale-data alerts and scheduled refresh cycles outperform ad-hoc updates.
+- The gap between 76 skill proposals and their actual implementation is the system's largest productivity bottleneck, not model availability.
+- Reflex-based execution consistently converges for known task types, making it the reliable default path over LLM-mediated planning.
+- Model failures (502 upstream overload, 429 rate-limiting) are systemic across providers and require proactive health-gating rather than reactive retry
 - Reflex results lack a machine-readable schema, preventing planners from programmatically retrying, escalating, or routing failures.
 - Hand actions fail due to unresolved relative paths; no normalization against ZOETRON_DATA or argv[1] occurs before execution.
 - Swarm knowledge decays silently; refresh only triggers on manual drive goals, not schedules or staleness metrics.
@@ -51,11 +56,6 @@
 - Single-cycle swarm convergence with 4 builders but only 1 critic suggests critique depth is insufficient for durable quality.
 - Calibration error of 300% (predicted 2 vs actual 8) indicates the effort estimator lacks feedback from actual swarm cycle costs.
 - Free-tier model endpoints (NVIDIA Nemotron, Google Gemma) fail systematically under load with 502/429 errors while inclusionai/ling-3.0-flash-fin succ
-- Regular pruning (facts and events) is essential maintenance, but it must be paired with knowledge refresh cycles to prevent the system from discarding
-- Reflex scripts are powerful recovery mechanisms but become failure vectors themselves when executed without pre-flight validation of completeness and 
-- Stale knowledge and unapplied simulations share the same root cause: missing execution pipelines that convert accumulated information into concrete ac
-- Premature convergence declarations (score: null, converged: true) reveal a systemic gap where goals are marked complete without independent validation
-- Model failures follow a predictable pattern: without proactive health probing and cached routing, unreliable endpoints cause cascading latency and err
 
 ---
 
