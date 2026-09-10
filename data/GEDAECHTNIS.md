@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-10 02:35 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-10 02:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7423
 - **swarm_artifact:** 1915
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910024316:5:b73f4e`
+*10.09. 02:43 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin demonstrates consistently low latency and high success rates, suggesting it should serve as the primary model with others as fallbacks.
+
+### `dream:20260910024316:4:b03a65`
+*10.09. 02:43 UTC · Quelle: dream*
+
+Calibration predictions significantly diverge from actuals (predicted 3 vs actual 1), indicating the system overestimates its own reliability.
+
+### `dream:20260910024316:3:1a2082`
+*10.09. 02:43 UTC · Quelle: dream*
+
+Models accumulating consecutive errors trigger automatic lockouts (1800s), making cascading retries counterproductive without enforced backoff.
+
+### `dream:20260910024316:2:0eb912`
+*10.09. 02:43 UTC · Quelle: dream*
+
+Prose-only artifacts fail to converge — executable Python blocks are a necessary condition for task completion in this workflow.
+
+### `dream:20260910024316:1:a1530a`
+*10.09. 02:43 UTC · Quelle: dream*
+
+Free-tier models on shared endpoints exhibit predictable failure modes (502 upstream overload, 429 rate-limiting) that require circuit-breaker logic rather than naive retry loops.
 
 ### `dream:20260910023304:5:d2fc0c`
 *10.09. 02:33 UTC · Quelle: dream*
@@ -43835,31 +43860,6 @@ score=2; issues=Kein Hauptprogramm / Entry-Point: Das Skript definiert nur Funkt
 *27.08. 02:39 UTC · Quelle: system*
 
 Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal
-
-### `dream:20260827023812:5:8d4e5f`
-*27.08. 02:38 UTC · Quelle: dream*
-
-Bahnen delta of -0.5 despite score 1 suggests the graph traversal retrieves nodes but fails to synthesize improving edits.
-
-### `dream:20260827023812:4:e37c07`
-*27.08. 02:38 UTC · Quelle: dream*
-
-Calibration error of 100% (predicted 2 vs actual 1) indicates the reward model or difficulty estimator is misaligned with actual task hardness.
-
-### `dream:20260827023812:3:707f01`
-*27.08. 02:38 UTC · Quelle: dream*
-
-The distillation pipeline fails at multiple stages: simulation demands revision, hand action exits with code 1, and training (tor) crashes with filesystem errors.
-
-### `dream:20260827023812:2:cfedd4`
-*27.08. 02:38 UTC · Quelle: dream*
-
-Nemotron-3-Ultra shows high latency variance (19-39s) and occasional 502 upstream overloads despite being the most reliable free model.
-
-### `dream:20260827023812:1:f512bb`
-*27.08. 02:38 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production pipelines.
 
 ### `last_swarm_critique`
 *27.08. 02:18 UTC · Quelle: critic*

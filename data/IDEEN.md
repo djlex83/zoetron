@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 02:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 02:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- inclusionai/ling-3.0-flash-fin demonstrates consistently low latency and high success rates, suggesting it should serve as the primary model with othe
+- Calibration predictions significantly diverge from actuals (predicted 3 vs actual 1), indicating the system overestimates its own reliability.
+- Models accumulating consecutive errors trigger automatic lockouts (1800s), making cascading retries counterproductive without enforced backoff.
+- Prose-only artifacts fail to converge — executable Python blocks are a necessary condition for task completion in this workflow.
+- Free-tier models on shared endpoints exhibit predictable failure modes (502 upstream overload, 429 rate-limiting) that require circuit-breaker logic r
 - Aggressive event pruning (69 events, 0 facts) during conserve mode preserves factual knowledge but discards contextual experience, which may impair fu
 - Hand-action failures from path resolution bugs (relative paths vs sys.argv/ZOETRON_DATA mismatch) indicate that environment configuration errors are a
 - The system generates high-quality skill proposals (circuit-breakers, health checks, adaptive loops) but lacks the execution pipeline to deploy them, c
@@ -51,11 +56,6 @@
 - The nemotron model shows high latency variance (8–15s) and 502 errors under load, making single-model dependency unsafe.
 - Skill proposals accumulate in logs but lack an automated validation gate (syntax check, simulation, score threshold) before deployment.
 - Model provider failures (502/429) are the primary system bottleneck, yet self-diagnosis only checks internal organs, not external API health.
-- Pruning effectiveness swings wildly (47 events pruned vs 0) indicating triggers are ad-hoc rather than pressure- or schedule-based.
-- Evolution runs terminate at 2 cycles without convergence detection, leaving score variance unexplained and optimization incomplete.
-- Model routing reacts to failures instead of probing health proactively, causing repeated 429/502 errors before fallback activation wastes latency budg
-- The system generates high-value skill proposals (circuit-breaker, health checks, reliability scorecards) but lacks an execution pipeline, creating a p
-- Primary models (nemotron, gemma) fail consistently with rate limits (429) and upstream errors (502), while fallback model ling-3.0-flash-fin delivers 
 
 ---
 
