@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 03:29 UTC · aktualisiert bei jedem Herzschlag
+**11791 Fakten** · Stand 2026-09-10 03:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7438
+- **dream:** 7443
 - **swarm_artifact:** 1907
 - **last_swarm_critique:** 864
 - **last_swarm_goal:** 598
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910033824:5:e1a558`
+*10.09. 03:38 UTC · Quelle: dream*
+
+Swarm knowledge staleness triggers drive goals but relies on reflex tools; scheduled proactive refresh with freshness metrics would prevent stale-data blocks.
+
+### `dream:20260910033824:4:edba08`
+*10.09. 03:38 UTC · Quelle: dream*
+
+Fixed-cycle evolution loops waste compute or stop prematurely; adaptive convergence thresholds (score delta < 0.01) with variance logging yield better efficiency.
+
+### `dream:20260910033824:3:4b87b9`
+*10.09. 03:38 UTC · Quelle: dream*
+
+Hand actions fail on relative paths because the system lacks enforced absolute-path derivation from ZOETRON_DATA with pre-invocation existence checks.
+
+### `dream:20260910033824:2:b88e9f`
+*10.09. 03:38 UTC · Quelle: dream*
+
+Skill proposals accumulate without deployment because no automated validation/execution pipeline exists, creating a proposal-to-production gap.
+
+### `dream:20260910033824:1:254c0c`
+*10.09. 03:38 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit cascading failures (429/502) requiring proactive health probes and circuit-breaker fallback promotion to maintain availability.
 
 ### `dream:20260910032630:5:977037`
 *10.09. 03:26 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 03:27:39",
+ "stand": "2026-09-10 03:38:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -135,9 +135,9 @@
    "quote": 0.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 2,
-   "erfolge": 2,
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -213,12 +213,6 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -232,6 +226,12 @@
   },
   {
    "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
