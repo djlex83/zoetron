@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (83 events in one run) risks discarding diagnostic context needed for failure replay and calibration.
+- Model latency varies 16-27s for same model, suggesting need for routing, fallback, and circuit-breaker infrastructure.
+- Swarm converges in 1 cycle with zero evolution and no dissent, indicating insufficient critic engagement for complex tasks.
+- Critical tools like extract_plans() remain unimplemented placeholders (NotImplementedError), blocking goal execution despite high swarm scores.
+- Calibration predictions underestimate actual complexity by 7x (predicted 2 vs actual 9), requiring systematic correction factors per task type.
 - Swarm converges in 1 cycle but reflex tools (kritiken-und-ziele-regelmäßig-prüfen.py) still return ok:false — convergence ≠ tool readiness.
 - Hand-action failures stem from relative path resolution against ZOETRON_DATA; sys.argv[1] paths are not auto-absolutized.
 - Calibration consistently underestimates effort (predicted 2 vs actual 9) — planning estimates need a 4-5x upward factor for swarm tasks.
@@ -51,11 +56,6 @@
 - Drive goals generated from failure/stale/gap signals lack automatic escalation to reflex invocations with retry budgets, leaving remediation manual.
 - Sixty-five proposed skills remain unvalidated because no automated promotion gate exists to benchmark, soak, and converge them before activation.
 - Model provider failures (502/429 errors) dominate recent experience, with only inclusionai/ling-3.0-flash-sante succeeding, indicating critical need f
-- Reflex-driven maintenance (schwarm refresh, skill testing) converges reliably but only when triggered; scheduling and stale-signal detection must be a
-- Modeling errors (50) exceed successes (36) because error patterns are not systematically categorized and fed back into model selection and prompt engi
-- Swarm knowledge decays silently; a stale-fact detector tracking last-access timestamps and contradiction flags must trigger proactive refresh reflexes
-- Free tier model endpoints exhibit cascading 429/502 failures under load, requiring a router with per-model circuit breakers, health scoring, and autom
-- Reflex-driven maintenance (schwarmwissen refresh) succeeds autonomously, proving the reflex loop can offload routine upkeep.
 
 ---
 

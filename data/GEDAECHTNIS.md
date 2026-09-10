@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11771 Fakten** · Stand 2026-09-10 22:22 UTC · aktualisiert bei jedem Herzschlag
+**11766 Fakten** · Stand 2026-09-10 22:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7551
+- **dream:** 7546
 - **swarm_artifact:** 1811
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910223051:5:0b80a9`
+*10.09. 22:30 UTC · Quelle: dream*
+
+Aggressive pruning (83 events in one run) risks discarding diagnostic context needed for failure replay and calibration.
+
+### `dream:20260910223051:4:0ac9f0`
+*10.09. 22:30 UTC · Quelle: dream*
+
+Model latency varies 16-27s for same model, suggesting need for routing, fallback, and circuit-breaker infrastructure.
+
+### `dream:20260910223051:3:f55a15`
+*10.09. 22:30 UTC · Quelle: dream*
+
+Swarm converges in 1 cycle with zero evolution and no dissent, indicating insufficient critic engagement for complex tasks.
+
+### `dream:20260910223051:2:6247af`
+*10.09. 22:30 UTC · Quelle: dream*
+
+Critical tools like extract_plans() remain unimplemented placeholders (NotImplementedError), blocking goal execution despite high swarm scores.
+
+### `dream:20260910223051:1:bc6372`
+*10.09. 22:30 UTC · Quelle: dream*
+
+Calibration predictions underestimate actual complexity by 7x (predicted 2 vs actual 9), requiring systematic correction factors per task type.
 
 ### `dream:20260910222021:5:dae44f`
 *10.09. 22:20 UTC · Quelle: dream*
@@ -44062,56 +44087,6 @@ Häufige Fehlermuster untersuchen und beheben
 *27.08. 22:33 UTC · Quelle: dream*
 
 Dream could not parse its own output - check prompt size.
-
-### `dream:20260827222803:5:6746b8`
-*27.08. 22:28 UTC · Quelle: dream*
-
-Simulation verdicts (revise, risks=3) are generated but not enforced; hand_action errors prevent the revised plan from ever being applied.
-
-### `dream:20260827222803:4:5ea0a8`
-*27.08. 22:28 UTC · Quelle: dream*
-
-Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), yet the system still launches multi-step swarms that exceed budget and stall.
-
-### `dream:20260827222803:3:1753ba`
-*27.08. 22:28 UTC · Quelle: dream*
-
-Skill proposals accumulate but never reach production because the promotion pipeline lacks mandatory artifact validation and the reflex executor cannot locate input files.
-
-### `dream:20260827222803:2:ca8a65`
-*27.08. 22:28 UTC · Quelle: dream*
-
-Hand actions fail because they resolve relative paths instead of the mandated absolute data root (ZOETRON_DATA + sys.argv[1]), breaking every file operation.
-
-### `dream:20260827222803:1:ffb5e8`
-*27.08. 22:28 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits and 502 upstream errors, requiring a routed fallback chain with circuit breakers and paid-model escalation for critical paths.
-
-### `dream:20260827222126:5:56a9f6`
-*27.08. 22:21 UTC · Quelle: dream*
-
-The simulation→hand_action→tor cycle lacks artifact validation, risking promotion of unverified or broken skills into production.
-
-### `dream:20260827222126:4:32644b`
-*27.08. 22:21 UTC · Quelle: dream*
-
-Rolling p95 latency and error-rate monitoring enables early detection of model degradation before it impacts task completion.
-
-### `dream:20260827222126:3:098fde`
-*27.08. 22:21 UTC · Quelle: dream*
-
-Exponential backoff with jitter and circuit-breaking must be applied uniformly across all model calls to prevent cascading failures.
-
-### `dream:20260827222126:2:551ffd`
-*27.08. 22:21 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b consistently succeeds with acceptable latency (23-39s), making it a reliable primary model.
-
-### `dream:20260827222126:1:97984b`
-*27.08. 22:21 UTC · Quelle: dream*
-
-429 errors on z-ai/glm-5.2:free are recurring and predictable, indicating a need for proactive rate-limit handling rather than reactive retries.
 
 ### `last_swarm_critique`
 *27.08. 21:47 UTC · Quelle: critic*
