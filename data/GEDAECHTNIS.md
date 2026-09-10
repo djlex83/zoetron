@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11766 Fakten** · Stand 2026-09-10 22:33 UTC · aktualisiert bei jedem Herzschlag
+**11760 Fakten** · Stand 2026-09-10 22:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7546
-- **swarm_artifact:** 1811
+- **dream:** 7550
+- **swarm_artifact:** 1805
 - **last_swarm_critique:** 875
 - **last_swarm_goal:** 610
-- **anti_pattern:** 415
-- **strategy:** 209
+- **anti_pattern:** 413
+- **strategy:** 208
 - **tool:** 165
-- **hand_result:** 95
+- **hand_result:** 94
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910224117:5:9d56e2`
+*10.09. 22:41 UTC · Quelle: dream*
+
+Consolidation/dream runs compete with task intake for compute and lose under conserve mode, starving the very process that reduces future load.
+
+### `dream:20260910224117:4:0f7166`
+*10.09. 22:41 UTC · Quelle: dream*
+
+Swarm knowledge decays silently (stale signal) with no automatic refresh trigger, causing repeated manual refresh goals.
+
+### `dream:20260910224117:3:a580f7`
+*10.09. 22:41 UTC · Quelle: dream*
+
+75 skill proposals accumulate without a validation gate, creating a 'proposal graveyard' that consumes review cycles but yields no promoted skills.
+
+### `dream:20260910224117:2:449f7b`
+*10.09. 22:41 UTC · Quelle: dream*
+
+Pruning discards error logs and recovery traces by default while preserving stale facts, inverting the value hierarchy for debugging.
+
+### `dream:20260910224117:1:9a76ff`
+*10.09. 22:41 UTC · Quelle: dream*
+
+Model failure rate of ~41% (25/61) triggers cascading goals but reflexes converge reliably, suggesting the error-recovery loop works but upstream model selection does not.
 
 ### `dream:20260910223051:5:0b80a9`
 *10.09. 22:30 UTC · Quelle: dream*
@@ -44063,16 +44088,6 @@ Absence of a health-aware model router forces manual fallback selection, increas
 
 Free-tier OpenRouter models exhaust quota buckets rapidly under load, causing cascading 429 failures that propagate as task failures.
 
-### `anti_pattern:Previous attempt scored 0/10. Goal: Häufige Fehlermuster unt:1`
-*27.08. 22:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Testgetrieben: Fehlerzähl-Maschine zuerst bauen - Einen separaten Testrunner schreiben, der absichtlich fehlerhafte Eingaben generiert und prüft, ob _fehler_zusammenfassen sie korrekt erkennt. Diesen Testrunner als erstes aus
-
-### `anti_pattern:Previous attempt scored 0/10. Goal: Häufige Fehlermuster unt:0`
-*27.08. 22:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Defensiv-Iterativ: Schritt-für-Schritt-Validierung - Jede Funktion in isolierten Code-Blocks implementieren und sofort nach Schreiben ausführen, um Syntax- und Laufzeitfehler früh zu erkennen. Jeden Block mit try/except siche
-
 ### `last_swarm_critique`
 *27.08. 22:38 UTC · Quelle: critic*
 
@@ -44082,11 +44097,6 @@ score=0; issues=LAEUFT NICHT: Artefakt laeuft nicht: timeout after 30.0s; Kein l
 *27.08. 22:34 UTC · Quelle: system*
 
 Häufige Fehlermuster untersuchen und beheben
-
-### `dream:20260827223357:1:d8b4ed`
-*27.08. 22:33 UTC · Quelle: dream*
-
-Dream could not parse its own output - check prompt size.
 
 ### `last_swarm_critique`
 *27.08. 21:47 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 22:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Consolidation/dream runs compete with task intake for compute and lose under conserve mode, starving the very process that reduces future load.
+- Swarm knowledge decays silently (stale signal) with no automatic refresh trigger, causing repeated manual refresh goals.
+- 75 skill proposals accumulate without a validation gate, creating a 'proposal graveyard' that consumes review cycles but yields no promoted skills.
+- Pruning discards error logs and recovery traces by default while preserving stale facts, inverting the value hierarchy for debugging.
+- Model failure rate of ~41% (25/61) triggers cascading goals but reflexes converge reliably, suggesting the error-recovery loop works but upstream mode
 - Aggressive pruning (83 events in one run) risks discarding diagnostic context needed for failure replay and calibration.
 - Model latency varies 16-27s for same model, suggesting need for routing, fallback, and circuit-breaker infrastructure.
 - Swarm converges in 1 cycle with zero evolution and no dissent, indicating insufficient critic engagement for complex tasks.
@@ -51,11 +56,6 @@
 - Calibration consistently underestimates effort (predicted 2 vs actual 9) — planning estimates need a 4-5x upward factor for swarm tasks.
 - Nemotron is the most reliable model but latency varies 6x (26s–147s), so timeout budgets must assume worst-case, not median.
 - 429 rate-limit errors dominate failures across 3 different models on OpenRouter — a shared provider-side throttle, not model-specific bugs.
-- Selbstdiagnose reports zero organ errors but does not emit operational health metrics (model success rates, convergence rates, latency percentiles) ne
-- Pruning discarded 23 events and 7 facts without logging retention criteria or impact scores, risking loss of low-frequency high-impact patterns.
-- Drive goals generated from failure/stale/gap signals lack automatic escalation to reflex invocations with retry budgets, leaving remediation manual.
-- Sixty-five proposed skills remain unvalidated because no automated promotion gate exists to benchmark, soak, and converge them before activation.
-- Model provider failures (502/429 errors) dominate recent experience, with only inclusionai/ling-3.0-flash-sante succeeding, indicating critical need f
 
 ---
 

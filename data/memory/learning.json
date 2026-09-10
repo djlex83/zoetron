@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 22:31:23",
+ "stand": "2026-09-10 22:41:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -187,12 +187,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
@@ -387,7 +381,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.781,
+ "haende_quote": 0.786,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 24,
@@ -396,8 +390,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 4.59
+   "n": 21,
+   "schnitt": 4.38
   },
   "bau": {
    "n": 2,
