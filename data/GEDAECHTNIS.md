@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 19:31 UTC · aktualisiert bei jedem Herzschlag
+**11784 Fakten** · Stand 2026-09-10 19:42 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7541
-- **swarm_artifact:** 1825
+- **swarm_artifact:** 1823
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
 - **anti_pattern:** 421
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910193940:5:7f99b3`
+*10.09. 19:39 UTC · Quelle: dream*
+
+Bahnen score of 1 with delta -0.5 shows capability consolidation regresses when infrastructure failures dominate.
+
+### `dream:20260910193940:4:29ec19`
+*10.09. 19:39 UTC · Quelle: dream*
+
+Calibration error (predicted 2, actual 1) indicates the planner overestimates throughput when rate limits are active.
+
+### `dream:20260910193940:3:10be10`
+*10.09. 19:39 UTC · Quelle: dream*
+
+Hand actions lack retry/backoff logic: a single 30s timeout cascades into artifact failure (tor grün=false) without fallback.
+
+### `dream:20260910193940:2:ef9cea`
+*10.09. 19:39 UTC · Quelle: dream*
+
+poolside/laguna-s-2.1:free shows bimodal latency (1-2s vs 40s) suggesting cold-start or queueing effects, while inclusionai/ling-3.0-flash-vl:free consistently succeeds with 7-22s latency.
+
+### `dream:20260910193940:1:2dbcd4`
+*10.09. 19:39 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) from OpenRouter is the dominant failure mode across all model providers, making free-tier models unreliable for production workloads.
 
 ### `dream:20260910192807:5:406f65`
 *10.09. 19:28 UTC · Quelle: dream*
@@ -44109,31 +44134,6 @@ score=7; issues=Nur 1 von 3 Artefakten durch Sandbox als lauffähig bestätigt (
 *27.08. 19:33 UTC · Quelle: system*
 
 Aufgaben priorisieren
-
-### `dream:20260827193252:5:3ae8a4`
-*27.08. 19:32 UTC · Quelle: dream*
-
-Dream-generated skill proposals skew toward infrastructure robustness (rate limits, caching, backoff) rather than novel task capabilities.
-
-### `dream:20260827193252:4:fe3816`
-*27.08. 19:32 UTC · Quelle: dream*
-
-Self-diagnosis and pruning consistently report zero issues, suggesting the system's internal health checks are functioning but may lack sensitivity.
-
-### `dream:20260827193252:3:8ea24c`
-*27.08. 19:32 UTC · Quelle: dream*
-
-Reflex mode reliably converges for both collaboration-improvement and skill-proposal goals, confirming it as a robust execution mode.
-
-### `dream:20260827193252:2:e6ac3b`
-*27.08. 19:32 UTC · Quelle: dream*
-
-Nemotron-3-ultra is the only consistent success model but exhibits high latency variance (12.7s to 80.2s), requiring timeout-aware callers.
-
-### `dream:20260827193252:1:03a85f`
-*27.08. 19:32 UTC · Quelle: dream*
-
-GLM-5.2 free tier fails systematically with 429 rate limits across three consecutive calls, making it an unreliable provider.
 
 ### `last_swarm_critique`
 *27.08. 18:58 UTC · Quelle: critic*
