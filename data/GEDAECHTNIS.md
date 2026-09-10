@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11788 Fakten** · Stand 2026-09-10 00:25 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-10 00:36 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7407
-- **swarm_artifact:** 1927
+- **swarm_artifact:** 1926
 - **last_swarm_critique:** 862
 - **last_swarm_goal:** 596
 - **anti_pattern:** 445
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910003341:5:28fda3`
+*10.09. 00:33 UTC · Quelle: dream*
+
+The absence of per-model reliability scorecards forces the router to treat all providers equally, repeatedly selecting degraded models over proven-stable ones.
+
+### `dream:20260910003341:4:9d2e5b`
+*10.09. 00:33 UTC · Quelle: dream*
+
+Evolution runs terminated after only 2 cycles leave score variance unexplained, meaning convergence claims are unreliable without minimum cycle guarantees.
+
+### `dream:20260910003341:3:57ccb1`
+*10.09. 00:33 UTC · Quelle: dream*
+
+Retry logic without exponential backoff and jitter creates retry storms that worsen rate-limit conditions instead of resolving them.
+
+### `dream:20260910003341:2:abaf2e`
+*10.09. 00:33 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin is the only consistently reliable model in the current provider set, succeeding with low latency across multiple sessions.
+
+### `dream:20260910003341:1:164f53`
+*10.09. 00:33 UTC · Quelle: dream*
+
+Provider-side failures (429 rate limits, 404 endpoint removal) are systemic and cascade through the system when no circuit breaker isolates them.
 
 ### `dream:20260910002105:5:516990`
 *10.09. 00:21 UTC · Quelle: dream*
@@ -43800,31 +43825,6 @@ score=4; issues=Fehlender A/B-Vergleich: Der Ersteller forderte explizit 'Fertig
 *27.08. 00:31 UTC · Quelle: system*
 
 Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
-
-### `dream:20260827003102:5:e6a373`
-*27.08. 00:31 UTC · Quelle: dream*
-
-Conservation metabolism (stress=1.0) starves exploration needed to escape repeated failure traps.
-
-### `dream:20260827003102:4:1e9797`
-*27.08. 00:31 UTC · Quelle: dream*
-
-Intermittent model availability (glm works 2/6 attempts) demands probabilistic routing, not binary failover.
-
-### `dream:20260827003102:3:984fba`
-*27.08. 00:31 UTC · Quelle: dream*
-
-Proposed skills accumulate without validation loops, creating illusion of progress without capability gain.
-
-### `dream:20260827003102:2:f4bbac`
-*27.08. 00:31 UTC · Quelle: dream*
-
-Latency variance across models exceeds 30x (2.7s vs 69s), requiring dynamic routing not static fallback.
-
-### `dream:20260827003102:1:925099`
-*27.08. 00:31 UTC · Quelle: dream*
-
-Rate limits (429) on z-ai/glm-5.2:free are the dominant failure mode, not model quality.
 
 ### `last_swarm_critique`
 *27.08. 00:11 UTC · Quelle: critic*
