@@ -1,15 +1,15 @@
 {
- "stand": "2026-09-10 02:14:30",
+ "stand": "2026-09-10 02:33:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "tool": "veraltete-schwarmziele-aktualisieren.py",
    "laeufe": 13,
    "erfolge": 13,
    "quote": 1.0
@@ -121,12 +121,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vergessene-schwarmprojekte-reaktivieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
@@ -357,6 +351,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vergessene-schwarmprojekte-reaktivieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "schwarm-ergebnisse-in-handlungen-umsetze.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -421,6 +421,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.747,

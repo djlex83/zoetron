@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11801 Fakten** · Stand 2026-09-10 02:16 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-10 02:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7427
-- **swarm_artifact:** 1921
+- **dream:** 7423
+- **swarm_artifact:** 1915
 - **last_swarm_critique:** 864
 - **last_swarm_goal:** 598
-- **anti_pattern:** 443
-- **strategy:** 223
+- **anti_pattern:** 441
+- **strategy:** 222
 - **tool:** 173
-- **hand_result:** 107
+- **hand_result:** 106
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910023304:5:d2fc0c`
+*10.09. 02:33 UTC · Quelle: dream*
+
+Aggressive event pruning (69 events, 0 facts) during conserve mode preserves factual knowledge but discards contextual experience, which may impair future simulation accuracy if patterns are lost.
+
+### `dream:20260910023304:4:4f8aee`
+*10.09. 02:33 UTC · Quelle: dream*
+
+Hand-action failures from path resolution bugs (relative paths vs sys.argv/ZOETRON_DATA mismatch) indicate that environment configuration errors are a recurring, under-addressed failure mode distinct from model failures.
+
+### `dream:20260910023304:3:d1dc23`
+*10.09. 02:33 UTC · Quelle: dream*
+
+The system generates high-quality skill proposals (circuit-breakers, health checks, adaptive loops) but lacks the execution pipeline to deploy them, creating a persistent gap between diagnosis and remediation.
+
+### `dream:20260910023304:2:52030d`
+*10.09. 02:33 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin is the only model in the current set that consistently succeeds with low latency (2.6s), making it the de facto critical-path default until other providers prove stable.
+
+### `dream:20260910023304:1:edd4a8`
+*10.09. 02:33 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
 
 ### `anti_pattern:selflearn_unzuverlaessige_werkzeuge`
 *10.09. 02:14 UTC · Quelle: selflearn*
@@ -43836,41 +43861,6 @@ Nemotron-3-Ultra shows high latency variance (19-39s) and occasional 502 upstrea
 
 Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production pipelines.
 
-### `dream:20260827023134:5:ef1f47`
-*27.08. 02:31 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while external API failures dominate, proving internal health checks miss dependency-level pathologies.
-
-### `dream:20260827023134:4:8c5463`
-*27.08. 02:31 UTC · Quelle: dream*
-
-Metabolism stress at 1.0 (conserve state) correlates with model failures and non-converging tasks, indicating load shedding is reactive not predictive.
-
-### `dream:20260827023134:3:9d96c9`
-*27.08. 02:31 UTC · Quelle: dream*
-
-Five dream-generated skill proposals exist but none are implemented, exposing a systemic idea-to-execution gap in the consolidation loop.
-
-### `dream:20260827023134:2:5d5e50`
-*27.08. 02:31 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra shows 3x latency variance (25-84s), making it unreliable for time-bounded tasks without SLA monitoring.
-
-### `dream:20260827023134:1:50c18e`
-*27.08. 02:31 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free reveal that free-tier rate limits cause cascading failures when routing lacks health-aware fallbacks.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Destillat-Datensatz: Ged:2`
-*27.08. 02:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Event-Sourced Append-Only Log mit Projectionen - Rohdaten als unveränderliche Events in einem Append-Only Log speichern (SQLite-Tabelle, DuckDB, oder Kafka-Topic). Jedes Event: {id, timestamp, source, payload, schema_version}
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Destillat-Datensatz: Ged:1`
-*27.08. 02:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Deklarative Pipeline-Engine (Config-Driven, Runtime-Interpreted) - Gesamte Logik in eine YAML/JSON-Konfiguration verlagern: sources (Globs, Parser), validators (JSON-Schema-Referenzen, custom rules als Expr), transformers (Fe
-
 ### `last_swarm_critique`
 *27.08. 02:18 UTC · Quelle: critic*
 
@@ -43880,26 +43870,6 @@ score=7; issues=Heuristische Feldzuordnung (Keyword-Matching auf 'score', 'test'
 *27.08. 02:09 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:20260827020854:4:a29b89`
-*27.08. 02:08 UTC · Quelle: dream*
-
-Simulation phase acts as a reliable gatekeeper, allowing progression ('go') despite external API instability, provided risks and revisions are tracked.
-
-### `dream:20260827020854:3:5b03cb`
-*27.08. 02:08 UTC · Quelle: dream*
-
-Fallback models like 'poolside/laguna-s-2.1:free' and 'nvidia/nemotron-3-ultra-550b-a55b:free' can recover from temporary 502 errors if retried, unlike persistent 429s on 'z-ai/glm-5.2:free'.
-
-### `dream:20260827020854:2:c20437`
-*27.08. 02:08 UTC · Quelle: dream*
-
-High stress metabolism state ('conserve') successfully limits task execution budget, preventing runaway loops when external APIs are failing.
-
-### `dream:20260827020854:1:21baa4`
-*27.08. 02:08 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overloads (502) during high-stress or high-frequency swarm operations.
 
 ### `last_swarm_critique`
 *27.08. 01:48 UTC · Quelle: critic*
