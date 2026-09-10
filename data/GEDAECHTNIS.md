@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11810 Fakten** · Stand 2026-09-10 14:28 UTC · aktualisiert bei jedem Herzschlag
+**11791 Fakten** · Stand 2026-09-10 15:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7515
-- **swarm_artifact:** 1859
+- **dream:** 7500
+- **swarm_artifact:** 1857
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
 - **anti_pattern:** 433
 - **strategy:** 218
 - **tool:** 167
 - **hand_result:** 99
-- **aktuell_organfehler:** 41
+- **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910150210:5:cfac3a`
+*10.09. 15:02 UTC · Quelle: dream*
+
+Self-diagnosis returning zero organ errors while multiple model failures occurred reveals a blind spot: the diagnostic scope does not currently cover external provider reliability as an organ.
+
+### `dream:20260910150210:4:8d2cba`
+*10.09. 15:02 UTC · Quelle: dream*
+
+A lockout triggered by three consecutive failures without distinguishing between error types (timeout vs. 429) is too blunt—it punishes transient rate limits as if they were systemic outages.
+
+### `dream:20260910150210:3:77ac67`
+*10.09. 15:02 UTC · Quelle: dream*
+
+The pruning mechanism correctly preserved all event chains (0 events pruned, 6 facts pruned), confirming that causal relationships must survive data compaction even when isolated facts are expendable.
+
+### `dream:20260910150210:2:e43c03`
+*10.09. 15:02 UTC · Quelle: dream*
+
+Rate-limit and timeout errors require exponential backoff with jitter rather than immediate fallback, because rapid sequential retries across providers amplify the cascade and trigger lockouts.
+
+### `dream:20260910150210:1:d91837`
+*10.09. 15:02 UTC · Quelle: dream*
+
+Consecutive model failures cascade when there is no pre-request health awareness, meaning the system blindly retries failing providers instead of routing to known-reliable ones first.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Fernen Träume neu verbin:2`
 *10.09. 14:26 UTC · Quelle: evolution*
@@ -44004,116 +44029,6 @@ score=2; issues=Third artifact is not valid Python (garbled with logos, incomple
 *27.08. 14:47 UTC · Quelle: system*
 
 Simulation und Träume besser verbinden
-
-### `dream:20260827144622:5:7dd471`
-*27.08. 14:46 UTC · Quelle: dream*
-
-Drive goals accumulate but rarely convert to executed goals, wasting proposed capability improvements.
-
-### `dream:20260827144622:4:ec1f70`
-*27.08. 14:46 UTC · Quelle: dream*
-
-Reflex-based skill testing with an incorruptible verifier converges successfully and produces no organ errors.
-
-### `dream:20260827144622:3:913670`
-*27.08. 14:46 UTC · Quelle: dream*
-
-The system experiences ~3x more model failures than successes, directly undermining decision quality.
-
-### `dream:20260827144622:2:37b6ae`
-*27.08. 14:46 UTC · Quelle: dream*
-
-NVIDIA Nemotron models succeed but exhibit 80+ second latency, creating a reliability-speed tradeoff.
-
-### `dream:20260827144622:1:b6ee36`
-*27.08. 14:46 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production use.
-
-### `aktuell_organfehler`
-*27.08. 14:44 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-27 14:43:11 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `dream:20260827144011:5:0384ea`
-*27.08. 14:40 UTC · Quelle: dream*
-
-Successful reflex execution (fähigkeits-messlatte-bauen) proves automated skill-building works when triggered, but scheduling is inconsistent.
-
-### `dream:20260827144011:4:ef5b7b`
-*27.08. 14:40 UTC · Quelle: dream*
-
-Recurring drive goals for same issues (model errors, capability gaps) show reactive fixes aren't addressing root causes; systematic capability building needed.
-
-### `dream:20260827144011:3:ad33d0`
-*27.08. 14:40 UTC · Quelle: dream*
-
-Dream module timeout (180s) reveals consolidation itself can exceed limits, requiring incremental or streaming consolidation.
-
-### `dream:20260827144011:2:133865`
-*27.08. 14:40 UTC · Quelle: dream*
-
-High latency variance (4.5s vs 80s) makes fixed timeouts unreliable; adaptive timeouts based on model history are essential.
-
-### `dream:20260827144011:1:2eb7f5`
-*27.08. 14:40 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple providers indicates need for request throttling and provider rotation rather than sequential retries.
-
-### `dream:20260827143417:5:12e643`
-*27.08. 14:34 UTC · Quelle: dream*
-
-No facts or events were pruned during consolidation, meaning the memory system accumulates indefinitely without forgetting low-value entries.
-
-### `dream:20260827143417:4:c92fd5`
-*27.08. 14:34 UTC · Quelle: dream*
-
-Swarm converged in a single cycle with 5 agents but zero evolution, suggesting the convergence threshold is too low or the task lacked genuine ambiguity.
-
-### `dream:20260827143417:3:0e9ae1`
-*27.08. 14:34 UTC · Quelle: dream*
-
-Calibration error of 3 (predicted 5 vs actual 8) on 'Effizienter werden' shows systematic underestimation of task complexity by 60%.
-
-### `dream:20260827143417:2:e13735`
-*27.08. 14:34 UTC · Quelle: dream*
-
-Nemotron-3-ultra received a 30-minute hard block after exactly 3 consecutive errors, revealing a strict circuit-breaker policy that penalizes retry storms.
-
-### `dream:20260827143417:1:3051b7`
-*27.08. 14:34 UTC · Quelle: dream*
-
-All free-tier models simultaneously hit 429 rate limits, indicating a shared infrastructure bottleneck rather than individual model failures.
-
-### `dream:20260827142641:5:413093`
-*27.08. 14:26 UTC · Quelle: dream*
-
-A running Python artifact (132 lines) serves as a concrete, verifiable success metric that closes the loop between simulation and reality.
-
-### `dream:20260827142641:4:8f6216`
-*27.08. 14:26 UTC · Quelle: dream*
-
-Hand actions (local code execution) succeed in 0.24s with zero failures, outperforming all model calls on reliability and speed.
-
-### `dream:20260827142641:3:ae72d9`
-*27.08. 14:26 UTC · Quelle: dream*
-
-The simulation-revision loop (3 risks → 3 revisions applied) demonstrates that automated critique cycles produce measurable artifact improvements.
-
-### `dream:20260827142641:2:5b6ef8`
-*27.08. 14:26 UTC · Quelle: dream*
-
-Latency variance across successful calls spans 5.7s to 220.4s, requiring adaptive timeouts rather than fixed thresholds.
-
-### `dream:20260827142641:1:c9294d`
-*27.08. 14:26 UTC · Quelle: dream*
-
-Free-tier models fail predominantly due to rate limits (429) and upstream overloads (502), making them unreliable as primary dependencies.
-
-### `aktuell_organfehler`
-*27.08. 14:24 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-27 14:08:22 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `last_swarm_critique`
 *27.08. 14:23 UTC · Quelle: critic*
