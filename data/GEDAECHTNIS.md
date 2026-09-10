@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-10 02:45 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-10 02:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7423
-- **swarm_artifact:** 1915
+- **dream:** 7428
+- **swarm_artifact:** 1913
 - **last_swarm_critique:** 864
 - **last_swarm_goal:** 598
-- **anti_pattern:** 441
-- **strategy:** 222
+- **anti_pattern:** 439
+- **strategy:** 221
 - **tool:** 173
 - **hand_result:** 106
 - **aktuell_organfehler:** 44
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910025334:5:bda3e7`
+*10.09. 02:53 UTC · Quelle: dream*
+
+Accumulated factual noise (16 facts, 23 events pruned) shows that without periodic pruning, the system's knowledge base dilutes actionable signal with obsolete experience.
+
+### `dream:20260910025334:4:6d21ea`
+*10.09. 02:53 UTC · Quelle: dream*
+
+Missing pre-deployment validation gates allowed non-executable skill artifacts to reach production, proving that syntax checking and simulated execution must gate skill activation.
+
+### `dream:20260910025334:3:33bc43`
+*10.09. 02:53 UTC · Quelle: dream*
+
+Stale swarm critiques degrade output quality over time, requiring timestamp-based freshness signals to trigger regeneration before outdated feedback poisons subsequent cycles.
+
+### `dream:20260910025334:2:c71bc5`
+*10.09. 02:53 UTC · Quelle: dream*
+
+Swarm convergence failure at score 1/10 with 2 cycles indicates broken quality feedback: builders produced artifacts missing executable Python blocks and critics could not enforce standards early enough.
+
+### `dream:20260910025334:1:f12236`
+*10.09. 02:53 UTC · Quelle: dream*
+
+External model providers without circuit breakers cause cascading failures: 429/502 errors from Nvidia and Google killed multiple swarm cycles while inclusionai/ling-3.0-flash-fin remained the only reliable provider.
 
 ### `dream:20260910024316:5:b73f4e`
 *10.09. 02:43 UTC · Quelle: dream*
@@ -43840,16 +43865,6 @@ Nemotron-3-ultra succeeds on every call but exhibits extreme latency variance (1
 *27.08. 03:04 UTC · Quelle: dream*
 
 Free-tier models (glm-5.2) consistently fail with 429 rate-limit errors, making them unreliable for production paths without exponential backoff and circuit-breaker logic.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Lebender Steckbrief: die:2`
-*27.08. 02:46 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 7]): CLI-First Application with Config-Driven Data - Build a proper CLI tool using `argparse`/`click`: `lebender-steckbrief build --config bio.yaml --template templates/profile.html --output docs/leben.html`. Biography dat
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Lebender Steckbrief: die:0`
-*27.08. 02:46 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
 
 ### `last_swarm_critique`
 *27.08. 02:45 UTC · Quelle: critic*

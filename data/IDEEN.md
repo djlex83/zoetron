@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 02:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 02:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Accumulated factual noise (16 facts, 23 events pruned) shows that without periodic pruning, the system's knowledge base dilutes actionable signal with
+- Missing pre-deployment validation gates allowed non-executable skill artifacts to reach production, proving that syntax checking and simulated executi
+- Stale swarm critiques degrade output quality over time, requiring timestamp-based freshness signals to trigger regeneration before outdated feedback p
+- Swarm convergence failure at score 1/10 with 2 cycles indicates broken quality feedback: builders produced artifacts missing executable Python blocks 
+- External model providers without circuit breakers cause cascading failures: 429/502 errors from Nvidia and Google killed multiple swarm cycles while i
 - inclusionai/ling-3.0-flash-fin demonstrates consistently low latency and high success rates, suggesting it should serve as the primary model with othe
 - Calibration predictions significantly diverge from actuals (predicted 3 vs actual 1), indicating the system overestimates its own reliability.
 - Models accumulating consecutive errors trigger automatic lockouts (1800s), making cascading retries counterproductive without enforced backoff.
@@ -51,11 +56,6 @@
 - The system generates high-quality skill proposals (circuit-breakers, health checks, adaptive loops) but lacks the execution pipeline to deploy them, c
 - inclusionai/ling-3.0-flash-fin is the only model in the current set that consistently succeeds with low latency (2.6s), making it the de facto critica
 - Provider failures (502 from Nvidia overload, 429 from Google rate limits) are systemic and correlated, meaning the system cannot rely on any single ex
-- Drive goals capture correct priorities (model errors, skill testing, swarm freshness) but have no resolution deadline or escalation path.
-- Swarm knowledge refresh works via reflex but lacks scheduled freshness enforcement, leading to stale critiques.
-- The nemotron model shows high latency variance (8–15s) and 502 errors under load, making single-model dependency unsafe.
-- Skill proposals accumulate in logs but lack an automated validation gate (syntax check, simulation, score threshold) before deployment.
-- Model provider failures (502/429) are the primary system bottleneck, yet self-diagnosis only checks internal organs, not external API health.
 
 ---
 
