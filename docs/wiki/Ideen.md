@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 19:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 19:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High stress (1.0) triggers conserve mode that starves consolidation swarms, creating a death spiral where failures prevent learning.
+- Pruning that discards error logs and recovery traces destroys the very data needed for failure-replay testing.
+- Self-verification gaps correlate with repeated failure modes; every skill execution should emit a machine-checkable receipt.
+- Hand actions fail silently when relative paths diverge from ZOETRON_DATA; absolute path resolution via sys.argv[1] must be enforced at entry.
+- Primary model rate limits (429 errors) necessitate a validated fallback chain with latency budgets, not just a list of alternatives.
 - Smaller vision-language model (ling-3.0-flash-vl) consistently succeeds where larger text models fail, favoring latency over parameter count.
 - Aggressive pruning (49 events, 15 facts) risks discarding failure context needed for future debugging.
 - Single-cycle swarm convergence with high score (8) suggests premature termination - critics may not be exercising sufficient scrutiny.
@@ -51,11 +56,6 @@
 - Calibration prediction error of 6 (predicted 2, actual 8) reveals unreliable confidence estimation in planning modules
 - The nvidia/nemotron-3-ultra-550b-a55b:free model consistently times out and should be deprioritized or removed from the active pool
 - Repeated 429 errors across multiple models indicate rate limiting is a systemic bottleneck requiring request throttling or retry logic
-- System operates at maximum stress with minimal budget (max_tasks=3, max_iterations=1), preventing recovery actions from executing.
-- File path resolution fails silently in hand actions because relative paths and environment variables (ZOETRON_DATA) are not normalized before use.
-- Swarm knowledge goes stale because refresh depends on manual triggers rather than scheduled or event-driven updates.
-- Proposed skills accumulate without validation, creating 'proposal theater' where nothing is actually tested before adoption.
-- Model provider failures cascade because the system lacks automatic failover with health-aware routing.
 
 ---
 
