@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11777 Fakten** · Stand 2026-09-10 19:07 UTC · aktualisiert bei jedem Herzschlag
+**11781 Fakten** · Stand 2026-09-10 19:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7531
+- **dream:** 7536
 - **swarm_artifact:** 1825
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
 - **anti_pattern:** 421
 - **strategy:** 212
-- **tool:** 168
+- **tool:** 167
 - **hand_result:** 97
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910191537:5:b96e01`
+*10.09. 19:15 UTC · Quelle: dream*
+
+Smaller vision-language model (ling-3.0-flash-vl) consistently succeeds where larger text models fail, favoring latency over parameter count.
+
+### `dream:20260910191537:4:e6f78a`
+*10.09. 19:15 UTC · Quelle: dream*
+
+Aggressive pruning (49 events, 15 facts) risks discarding failure context needed for future debugging.
+
+### `dream:20260910191537:3:81d007`
+*10.09. 19:15 UTC · Quelle: dream*
+
+Single-cycle swarm convergence with high score (8) suggests premature termination - critics may not be exercising sufficient scrutiny.
+
+### `dream:20260910191537:2:187fa9`
+*10.09. 19:15 UTC · Quelle: dream*
+
+Calibration error of 6x (predicted 2 vs actual 8) reveals systematic underestimation of memory connection complexity.
+
+### `dream:20260910191537:1:76f8f4`
+*10.09. 19:15 UTC · Quelle: dream*
+
+Rate limiting (429 errors) cascades across multiple providers simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 
 ### `dream:20260910190432:5:ea7272`
 *10.09. 19:04 UTC · Quelle: dream*
@@ -44084,11 +44109,6 @@ Nemotron-3-ultra is the only consistent success model but exhibits high latency 
 *27.08. 19:32 UTC · Quelle: dream*
 
 GLM-5.2 free tier fails systematically with 429 rate limits across three consecutive calls, making it an unreliable provider.
-
-### `tool:fähigkeiten-gezielt-trainieren`
-*27.08. 19:03 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten gezielt trainieren'. Datei: data/tools/fähigkeiten-gezielt-trainieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *27.08. 18:58 UTC · Quelle: critic*

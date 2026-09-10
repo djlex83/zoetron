@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 19:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 19:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Smaller vision-language model (ling-3.0-flash-vl) consistently succeeds where larger text models fail, favoring latency over parameter count.
+- Aggressive pruning (49 events, 15 facts) risks discarding failure context needed for future debugging.
+- Single-cycle swarm convergence with high score (8) suggests premature termination - critics may not be exercising sufficient scrutiny.
+- Calibration error of 6x (predicted 2 vs actual 8) reveals systematic underestimation of memory connection complexity.
+- Rate limiting (429 errors) cascades across multiple providers simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 - Sequential model failures trigger cascading rate limits, suggesting a need for parallel execution with staggered retries
 - The inclusionai/ling-3.0-flash-vl:free model shows stable performance across varying token loads, making it a reliable fallback option
 - Calibration prediction error of 6 (predicted 2, actual 8) reveals unreliable confidence estimation in planning modules
@@ -51,11 +56,6 @@
 - Swarm knowledge goes stale because refresh depends on manual triggers rather than scheduled or event-driven updates.
 - Proposed skills accumulate without validation, creating 'proposal theater' where nothing is actually tested before adoption.
 - Model provider failures cascade because the system lacks automatic failover with health-aware routing.
-- Pruning runs are reducing memory load but may be removing potentially useful historical context without sufficient relevance filtering.
-- Drive goals related to error detection, plan staleness, and memory gaps are actively influencing reflex execution and pruning behavior.
-- Successful model calls (nex-n2.5-pro) show consistent performance with moderate latency and token usage, indicating reliability in fallback routing.
-- Timeout errors on large models (e.g., nemotron-3-ultra-550b) suggest resource contention or latency ceilings under load.
-- 429 Too Many Requests errors from OpenRouter are systemic across multiple models, indicating rate-limit exhaustion rather than model-specific failures
 
 ---
 
