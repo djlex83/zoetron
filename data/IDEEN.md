@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 06:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 06:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex results lack a machine-readable schema, preventing planners from programmatically retrying, escalating, or routing failures.
+- Hand actions fail due to unresolved relative paths; no normalization against ZOETRON_DATA or argv[1] occurs before execution.
+- Swarm knowledge decays silently; refresh only triggers on manual drive goals, not schedules or staleness metrics.
+- Skill proposals accumulate but lack an automated path to implementation and validation, creating a proposal graveyard.
+- Model instability (502/429 errors across 3+ models) is the primary reliability bottleneck, not task logic.
 - Aggressive pruning (46 events, 5 facts) per cycle may discard failure context needed for root-cause replay.
 - Automatic skill proposals emerge during operation but lack a validation gate before persistence, risking hallucinated capabilities.
 - Single-cycle swarm convergence with 4 builders but only 1 critic suggests critique depth is insufficient for durable quality.
@@ -51,11 +56,6 @@
 - Stale knowledge and unapplied simulations share the same root cause: missing execution pipelines that convert accumulated information into concrete ac
 - Premature convergence declarations (score: null, converged: true) reveal a systemic gap where goals are marked complete without independent validation
 - Model failures follow a predictable pattern: without proactive health probing and cached routing, unreliable endpoints cause cascading latency and err
-- Pruning runs regularly but model failure telemetry is absent: 10 facts/49 events pruned yet no system tracks per-model error rates to inform routing d
-- Swarm intelligence decays without scheduled refresh: two separate drive goals (stale signal) identify unused swarm knowledge, indicating missing perio
-- Skill proposals accumulate without an implementation pipeline: 5 proposals were generated this cycle yet a drive goal explicitly flags the gap between
-- Reflex tools execute reliably where autonomous planning stalls: both reflex invocations (schwarm-update, skill-conversion) exited 0 and converged imme
-- Model diversity without automated health gating creates systemic fragility: only 1 of 4 models (inclusionai/ling) succeeded while nemotron returned 50
 
 ---
 

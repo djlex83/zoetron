@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8250 Neuronen · 923869 bewertete Synapsen
+Stand: 8252 Neuronen · 924414 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,18 +11,18 @@ Stand: 8250 Neuronen · 923869 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1078 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1069 | 0.23 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1070 | 0.23 |
 | 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 891 | 0.25 |
 | 4 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 857 | 0.26 |
 | 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 908 | 0.23 |
-| 6 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 829 | 0.25 |
+| 6 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 830 | 0.25 |
 | 7 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 805 | 0.26 |
-| 8 | 💭 | Repeated 429 errors across four different models indicate system… | 840 | 0.24 |
+| 8 | 💭 | Repeated 429 errors across four different models indicate system… | 841 | 0.24 |
 | 9 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 890 | 0.23 |
 | 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 871 | 0.23 |
 | 11 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 797 | 0.25 |
 | 12 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 780 | 0.26 |
-| 13 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 814 | 0.24 |
+| 13 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 815 | 0.24 |
 | 14 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 835 | 0.24 |
 | 15 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 884 | 0.22 |
 

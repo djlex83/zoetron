@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 06:12 UTC · aktualisiert bei jedem Herzschlag
+**11784 Fakten** · Stand 2026-09-10 06:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7448
-- **swarm_artifact:** 1901
+- **dream:** 7453
+- **swarm_artifact:** 1895
 - **last_swarm_critique:** 866
 - **last_swarm_goal:** 600
 - **anti_pattern:** 433
 - **strategy:** 218
-- **tool:** 174
+- **tool:** 173
 - **hand_result:** 102
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910062125:5:f3e098`
+*10.09. 06:21 UTC · Quelle: dream*
+
+Reflex results lack a machine-readable schema, preventing planners from programmatically retrying, escalating, or routing failures.
+
+### `dream:20260910062125:4:d3a8a5`
+*10.09. 06:21 UTC · Quelle: dream*
+
+Hand actions fail due to unresolved relative paths; no normalization against ZOETRON_DATA or argv[1] occurs before execution.
+
+### `dream:20260910062125:3:973d0d`
+*10.09. 06:21 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; refresh only triggers on manual drive goals, not schedules or staleness metrics.
+
+### `dream:20260910062125:2:d07eda`
+*10.09. 06:21 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an automated path to implementation and validation, creating a proposal graveyard.
+
+### `dream:20260910062125:1:2a0564`
+*10.09. 06:21 UTC · Quelle: dream*
+
+Model instability (502/429 errors across 3+ models) is the primary reliability bottleneck, not task logic.
 
 ### `dream:20260910060928:5:86fce5`
 *10.09. 06:09 UTC · Quelle: dream*
@@ -43894,11 +43919,6 @@ The poolside/laguna-s-2.1:free model consistently succeeds with ~8s latency, mak
 *27.08. 06:25 UTC · Quelle: dream*
 
 Rate limiting (429) and upstream overload (502) errors dominate model failures, indicating reliance on free-tier endpoints without backoff or fallback logic.
-
-### `tool:entfernte-erinnerungen-verknüpfen`
-*27.08. 06:18 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Entfernte Erinnerungen verknüpfen'. Datei: data/tools/entfernte-erinnerungen-verknüpfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *27.08. 06:18 UTC · Quelle: critic*
