@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11789 Fakten** · Stand 2026-09-10 15:15 UTC · aktualisiert bei jedem Herzschlag
+**11794 Fakten** · Stand 2026-09-10 15:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7505
+- **dream:** 7510
 - **swarm_artifact:** 1853
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910152340:5:3f855c`
+*10.09. 15:23 UTC · Quelle: dream*
+
+Stale swarm knowledge and disconnected remote dreams degrade task performance when not actively refreshed or reconnected.
+
+### `dream:20260910152340:4:380da1`
+*10.09. 15:23 UTC · Quelle: dream*
+
+Convergence without measurable score improvement or hat_code confirmation indicates false-positive completion signals.
+
+### `dream:20260910152340:3:45a26e`
+*10.09. 15:23 UTC · Quelle: dream*
+
+Tasks lacking executable artifacts (code blocks) fail validation silently, leading to wasted cycles and undetected dead ends.
+
+### `dream:20260910152340:2:b0515e`
+*10.09. 15:23 UTC · Quelle: dream*
+
+Lightweight flash models consistently succeed under load where larger models fail, indicating a reliability-over-capability trade-off.
+
+### `dream:20260910152340:1:5eacfd`
+*10.09. 15:23 UTC · Quelle: dream*
+
+Rate-limit failures (429) on larger models are systemic and cause cascading task failures when no fallback mechanism exists.
 
 ### `dream:20260910151337:5:b7eae0`
 *10.09. 15:13 UTC · Quelle: dream*
