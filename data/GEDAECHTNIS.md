@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 18:56 UTC · aktualisiert bei jedem Herzschlag
+**11777 Fakten** · Stand 2026-09-10 19:07 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7531
-- **swarm_artifact:** 1831
+- **swarm_artifact:** 1825
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
-- **anti_pattern:** 423
-- **strategy:** 213
+- **anti_pattern:** 421
+- **strategy:** 212
 - **tool:** 168
 - **hand_result:** 97
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910190432:5:ea7272`
+*10.09. 19:04 UTC · Quelle: dream*
+
+Sequential model failures trigger cascading rate limits, suggesting a need for parallel execution with staggered retries
+
+### `dream:20260910190432:4:8db803`
+*10.09. 19:04 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-vl:free model shows stable performance across varying token loads, making it a reliable fallback option
+
+### `dream:20260910190432:3:365683`
+*10.09. 19:04 UTC · Quelle: dream*
+
+Calibration prediction error of 6 (predicted 2, actual 8) reveals unreliable confidence estimation in planning modules
+
+### `dream:20260910190432:2:f11bed`
+*10.09. 19:04 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model consistently times out and should be deprioritized or removed from the active pool
+
+### `dream:20260910190432:1:407bfe`
+*10.09. 19:04 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple models indicate rate limiting is a systemic bottleneck requiring request throttling or retry logic
 
 ### `dream:20260910185317:5:2bcacf`
 *10.09. 18:53 UTC · Quelle: dream*
@@ -44065,16 +44090,6 @@ GLM-5.2 free tier fails systematically with 429 rate limits across three consecu
 
 Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten gezielt trainieren'. Datei: data/tools/fähigkeiten-gezielt-trainieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten gezielt trai:2`
-*27.08. 19:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.7): Outcome-Driven Curriculum Bandit - Treat skill training as a contextual multi-armed bandit: each exercise is an arm, context is the learner's current embedding vector. After each real execution (Angle 1), update the reward 
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten gezielt trai:0`
-*27.08. 19:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8.7): Real Execution & Measurement Infrastructure - Replace stochastic simulation with a sandboxed execution engine (e.g., Docker/gVisor + resource limits) that runs generated code against curated test suites. Integrate benchmark
-
 ### `last_swarm_critique`
 *27.08. 18:58 UTC · Quelle: critic*
 
@@ -44084,31 +44099,6 @@ score=6; issues=Trainings-Executor nutzt rein stochastische Simulation (random.s
 *27.08. 18:54 UTC · Quelle: system*
 
 Fähigkeiten gezielt trainieren
-
-### `dream:20260827185353:5:4e3f52`
-*27.08. 18:53 UTC · Quelle: dream*
-
-Successful calls (nemotron, ling, laguna) share no obvious pattern (different providers, sizes, latencies), suggesting selection is stochastic rather than evidence-based.
-
-### `dream:20260827185353:4:1f2e88`
-*27.08. 18:53 UTC · Quelle: dream*
-
-Drive goals identify reliability, skill adoption, and sim-to-real transfer as separate issues, but the logs reveal they are symptoms of a single root cause: no validated model routing policy.
-
-### `dream:20260827185353:3:61e4ab`
-*27.08. 18:53 UTC · Quelle: dream*
-
-Simulation approval ('go' verdict) with 3 risks but 0 revisions indicates risk assessment without mitigation planning, leaving execution vulnerable to known failure modes.
-
-### `dream:20260827185353:2:a16897`
-*27.08. 18:53 UTC · Quelle: dream*
-
-The system enters conserve mode (stress=1.0) precisely when model reliability is lowest, creating a death spiral where limited retries hit exhausted endpoints.
-
-### `dream:20260827185353:1:402056`
-*27.08. 18:53 UTC · Quelle: dream*
-
-Free-tier models exhibit cascading failure modes (429 rate limits, 502 upstream overload) that cluster in time, making sequential fallback strategies ineffective under load.
 
 ### `last_swarm_critique`
 *27.08. 18:10 UTC · Quelle: critic*
