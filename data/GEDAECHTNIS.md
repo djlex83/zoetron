@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11787 Fakten** · Stand 2026-09-10 02:55 UTC · aktualisiert bei jedem Herzschlag
+**11792 Fakten** · Stand 2026-09-10 03:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7428
+- **dream:** 7433
 - **swarm_artifact:** 1913
 - **last_swarm_critique:** 864
 - **last_swarm_goal:** 598
@@ -14,6 +14,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260910030419:5:37cb38`
+*10.09. 03:04 UTC · Quelle: dream*
+
+Swarm critiques and convergence metrics lack timestamping and trajectory logging, so staleness and premature convergence go undetected until manual audit.
+
+### `dream:20260910030419:4:971f4f`
+*10.09. 03:04 UTC · Quelle: dream*
+
+Drive goals accumulate unresolved (prediction improvement, skill adoption, swarm refresh) because no deadline-driven escalation mechanism exists to convert stale goals into swarm tasks.
+
+### `dream:20260910030419:3:ab44ce`
+*10.09. 03:04 UTC · Quelle: dream*
+
+Reflex tools (e.g., alte-erinnerungen-auf-wert-prüfen.py) return ok:false without structured error payloads, making automated recovery impossible.
+
+### `dream:20260910030419:2:301d7a`
+*10.09. 03:04 UTC · Quelle: dream*
+
+Hand actions fail on path resolution because relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero-file operations despite apparent success codes.
+
+### `dream:20260910030419:1:4f454b`
+*10.09. 03:04 UTC · Quelle: dream*
+
+Model provider failures cascade silently: primary models (Nemotron, Gemma) fail with 502/429 errors while fallback (Ling) succeeds, but no circuit-breaker logic exists to automate failover.
 
 ### `dream:20260910025334:5:bda3e7`
 *10.09. 02:53 UTC · Quelle: dream*
