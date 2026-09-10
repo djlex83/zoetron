@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 15:03:10",
+ "stand": "2026-09-10 15:13:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -381,12 +381,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.75,
- "simulationen_angewandt": 37,
+ "haende_quote": 0.755,
+ "simulationen_angewandt": 36,
  "swarm_scores": {
-  "n": 28,
+  "n": 27,
   "best": 9.0,
-  "schnitt": 4.14
+  "schnitt": 4.15
  },
  "score_nach_ziel_typ": {
   "analyse": {

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11791 Fakten** · Stand 2026-09-10 15:05 UTC · aktualisiert bei jedem Herzschlag
+**11789 Fakten** · Stand 2026-09-10 15:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7500
-- **swarm_artifact:** 1857
+- **dream:** 7505
+- **swarm_artifact:** 1853
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
-- **anti_pattern:** 433
-- **strategy:** 218
+- **anti_pattern:** 431
+- **strategy:** 217
 - **tool:** 167
 - **hand_result:** 99
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910151337:5:b7eae0`
+*10.09. 15:13 UTC · Quelle: dream*
+
+Reflex-based recovery tools work reliably for known failure patterns, but only if the system has previously encountered and catalogued the failure mode.
+
+### `dream:20260910151337:4:560102`
+*10.09. 15:13 UTC · Quelle: dream*
+
+Swarm coordination data degrades silently over time without freshness triggers, causing the system to rely on stale collective intelligence.
+
+### `dream:20260910151337:3:6c9b72`
+*10.09. 15:13 UTC · Quelle: dream*
+
+Skills generated during consolidation remain scattered until explicitly connected, meaning the system produces proposals faster than it integrates them into durable procedures.
+
+### `dream:20260910151337:2:e263f4`
+*10.09. 15:13 UTC · Quelle: dream*
+
+When primary models fail, a single fallback model (inclusionai/ling-3.0-flash-fin) succeeded consistently, proving that diversity in the provider pool is a resilience mechanism, not just a cost option.
+
+### `dream:20260910151337:1:8f19f2`
+*10.09. 15:13 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors from the same provider endpoints indicate a systemic lack of quota awareness that makes failures predictable and preventable.
 
 ### `dream:20260910150210:5:cfac3a`
 *10.09. 15:02 UTC · Quelle: dream*
@@ -44009,16 +44034,6 @@ Reflex actions and self-diagnosis run reliably even when the primary cognitive m
 *27.08. 15:27 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter are highly susceptible to rate limits (429) and upstream overloads (502), causing cascading cognitive failures.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Simulation und Träume be:2`
-*27.08. 15:09 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5.5): Neuro-Symbolic Dream Compilation to Verified Simulation Specs - Implement a neuro-symbolic compiler: a seq2seq transformer (fine-tuned on dream-simulation pairs) translates dream text into an intermediate representation (IR
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Simulation und Träume be:1`
-*27.08. 15:09 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.0): Causal Intervention Framework with Counterfactual Dreams - Model the simulation as a structural causal model (SCM) where each organ is a causal mechanism. Dreams are treated as counterfactual interventions: a dream narrativ
 
 ### `last_swarm_critique`
 *27.08. 15:08 UTC · Quelle: critic*
