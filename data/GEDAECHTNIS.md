@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11784 Fakten** · Stand 2026-09-10 19:42 UTC · aktualisiert bei jedem Herzschlag
+**11781 Fakten** · Stand 2026-09-10 19:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7541
-- **swarm_artifact:** 1823
+- **dream:** 7546
+- **swarm_artifact:** 1819
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
-- **anti_pattern:** 421
-- **strategy:** 212
-- **tool:** 167
+- **anti_pattern:** 419
+- **strategy:** 211
+- **tool:** 166
 - **hand_result:** 97
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910195129:5:988a20`
+*10.09. 19:51 UTC · Quelle: dream*
+
+Simulation detected 5 risks and proposed 5 revisions but only 1 was applied, revealing a gap between risk identification and enforcement.
+
+### `dream:20260910195129:4:60d317`
+*10.09. 19:51 UTC · Quelle: dream*
+
+Calibration overestimates capability by 100% (predicted 2, actual 1), indicating the predictor lacks feedback from execution failures.
+
+### `dream:20260910195129:3:b8a37e`
+*10.09. 19:51 UTC · Quelle: dream*
+
+Evolutionary variant generation improved a 1/10 scoring solution to 8/10 in one cycle, confirming iteration beats single-shot generation.
+
+### `dream:20260910195129:2:3ccb0c`
+*10.09. 19:51 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-sante:free delivers successful completions at 2-6s latency, outperforming other free models on speed and reliability.
+
+### `dream:20260910195129:1:7d72c7`
+*10.09. 19:51 UTC · Quelle: dream*
+
+Google Gemma models consistently hit 429 rate limits making them unreliable for high-throughput tasks.
 
 ### `dream:20260910193940:5:7f99b3`
 *10.09. 19:39 UTC · Quelle: dream*
@@ -44107,23 +44132,6 @@ Consecutive failure tracking (3 errors → 1800s block) effectively prevents cas
 *27.08. 20:10 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) is the dominant systemic failure across all free-tier models, requiring request pacing rather than model switching.
-
-### `tool:aufgaben-priorisieren`
-*27.08. 19:49 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Aufgaben priorisieren'. Datei: data/tools/aufgaben-priorisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Aufgaben priorisieren
-Cr:2`
-*27.08. 19:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Rule-based engine with plugin architecture and real-time integration - Implement a rule engine where each prioritization criterion (urgency, importance, dependencies, business value) is a separate plugin implementing a common
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Aufgaben priorisieren
-Cr:1`
-*27.08. 19:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Machine learning-based prioritization with feedback loop - Replace the hardcoded weighted formula with a learn-to-rank model (e.g., LambdaMART, XGBoost Ranker) trained on historical expert prioritization decisions extracted f
 
 ### `last_swarm_critique`
 *27.08. 19:45 UTC · Quelle: critic*

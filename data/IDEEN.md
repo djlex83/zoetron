@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 19:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 19:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation detected 5 risks and proposed 5 revisions but only 1 was applied, revealing a gap between risk identification and enforcement.
+- Calibration overestimates capability by 100% (predicted 2, actual 1), indicating the predictor lacks feedback from execution failures.
+- Evolutionary variant generation improved a 1/10 scoring solution to 8/10 in one cycle, confirming iteration beats single-shot generation.
+- inclusionai/ling-3.0-flash-sante:free delivers successful completions at 2-6s latency, outperforming other free models on speed and reliability.
+- Google Gemma models consistently hit 429 rate limits making them unreliable for high-throughput tasks.
 - Bahnen score of 1 with delta -0.5 shows capability consolidation regresses when infrastructure failures dominate.
 - Calibration error (predicted 2, actual 1) indicates the planner overestimates throughput when rate limits are active.
 - Hand actions lack retry/backoff logic: a single 30s timeout cascades into artifact failure (tor grün=false) without fallback.
@@ -51,11 +56,6 @@
 - Self-verification gaps correlate with repeated failure modes; every skill execution should emit a machine-checkable receipt.
 - Hand actions fail silently when relative paths diverge from ZOETRON_DATA; absolute path resolution via sys.argv[1] must be enforced at entry.
 - Primary model rate limits (429 errors) necessitate a validated fallback chain with latency budgets, not just a list of alternatives.
-- Smaller vision-language model (ling-3.0-flash-vl) consistently succeeds where larger text models fail, favoring latency over parameter count.
-- Aggressive pruning (49 events, 15 facts) risks discarding failure context needed for future debugging.
-- Single-cycle swarm convergence with high score (8) suggests premature termination - critics may not be exercising sufficient scrutiny.
-- Calibration error of 6x (predicted 2 vs actual 8) reveals systematic underestimation of memory connection complexity.
-- Rate limiting (429 errors) cascades across multiple providers simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 
 ---
 
