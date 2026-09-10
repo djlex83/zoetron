@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11793 Fakten** · Stand 2026-09-10 13:56 UTC · aktualisiert bei jedem Herzschlag
+**11792 Fakten** · Stand 2026-09-10 14:07 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7505
 - **swarm_artifact:** 1855
@@ -10,9 +10,34 @@
 - **strategy:** 217
 - **tool:** 168
 - **hand_result:** 99
-- **aktuell_organfehler:** 42
+- **aktuell_organfehler:** 41
 
 ---
+
+### `dream:20260910140447:5:eb50ca`
+*10.09. 14:04 UTC · Quelle: dream*
+
+Relying on a single reliable model (inclusionai/ling-3.0-flash-fin) as the only fallback concentrates risk and creates a bottleneck that could fail under increased load.
+
+### `dream:20260910140447:4:f22e5f`
+*10.09. 14:04 UTC · Quelle: dream*
+
+Self-diagnosis only checks internal organ health and is blind to external infrastructure failures such as provider rate limits and timeouts, creating a blind spot in the system's fault detection.
+
+### `dream:20260910140447:3:7db478`
+*10.09. 14:04 UTC · Quelle: dream*
+
+Pruning 33 events alongside 3 facts risks destroying the causal chains that explain why failures occurred, making post-mortem analysis and pattern recognition impossible.
+
+### `dream:20260910140447:2:cd51b4`
+*10.09. 14:04 UTC · Quelle: dream*
+
+The reactive lockout mechanism (locking a model after 3 consecutive failures) is too late to prevent cascading damage; failures accumulate before the system isolates the problematic provider.
+
+### `dream:20260910140447:1:f47efc`
+*10.09. 14:04 UTC · Quelle: dream*
+
+Google/gemma models consistently return 429 rate-limit errors while inclusionai/ling-3.0-flash-fin succeeds reliably, revealing that provider failure patterns are predictable and should drive proactive routing rather than repeated retries.
 
 ### `dream:20260910135321:5:c255af`
 *10.09. 13:53 UTC · Quelle: dream*
@@ -44034,36 +44059,6 @@ score=8; issues=Hardcoded timeline dates (2026-01-19) reduce reusability; should
 *27.08. 14:09 UTC · Quelle: system*
 
 Mehr Evolution starten
-
-### `dream:20260827135727:5:a26e11`
-*27.08. 13:57 UTC · Quelle: dream*
-
-Simulation verdict=revise with 2 risks indicates task prioritization logic needs refinement before execution
-
-### `dream:20260827135727:4:203555`
-*27.08. 13:57 UTC · Quelle: dream*
-
-Metabolism stress=1.0 with max_tasks=3 forces prioritization of reliable models over experimental ones
-
-### `dream:20260827135727:3:5b1e49`
-*27.08. 13:57 UTC · Quelle: dream*
-
-Endpoint returning 200 with no choices (Nvidia 502) reveals silent failure mode requiring explicit response validation
-
-### `dream:20260827135727:2:466e18`
-*27.08. 13:57 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b shows high latency variance (15s-229s) suggesting load balancing issues under stress
-
-### `dream:20260827135727:1:9b04a0`
-*27.08. 13:57 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting that requires exponential backoff or model rotation
-
-### `aktuell_organfehler`
-*27.08. 13:54 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-27 13:52:14 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `last_swarm_critique`
 *27.08. 13:31 UTC · Quelle: critic*

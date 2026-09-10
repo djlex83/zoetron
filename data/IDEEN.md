@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 13:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 14:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,8 +31,8 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relying on a single reliable model (inclusionai/ling-3.0-flash-fin) as the only fallback concentrates risk and creates a bottleneck that could fail un
+- Self-diagnosis only checks internal organ health and is blind to external infrastructure failures such as provider rate limits and timeouts, creating 
+- Pruning 33 events alongside 3 facts risks destroying the causal chains that explain why failures occurred, making post-mortem analysis and pattern rec
+- The reactive lockout mechanism (locking a model after 3 consecutive failures) is too late to prevent cascading damage; failures accumulate before the 
+- Google/gemma models consistently return 429 rate-limit errors while inclusionai/ling-3.0-flash-fin succeeds reliably, revealing that provider failure 
 - Reflex-driven memory consolidation (linking related memories) converges reliably and compensates for model instability, but the system depends on it a
 - Swarm-orchestration knowledge degrades into staleness when not actively refreshed, reducing the quality of multi-agent coordination over time.
 - A persistent gap exists between generating skill proposals and completing their implementation, causing capability ideas to accumulate without ever be
@@ -51,11 +56,6 @@
 - Swarm orchestration failed because the builder role produced non-executable Python, indicating a missing code-verification step that should block task
 - The 8x gap between evolution variant scores (8.0) and final swarm execution scores (1.0) reveals that variant selection lacks executable-code validati
 - External API failures (429 rate limits, 502 service overloads) cascade directly into task-level failures because no circuit breaker or fallback mechan
-- Calibration predictions significantly miss actual outcomes (predicted 2, actual 1), suggesting the system overestimates its progress on complex orches
-- Tasks requiring iterative refinement (5+ revisions, evolution runs with 3+ variants) need explicit convergence criteria beyond prose descriptions to a
-- Upstream service overload (502) and rate limiting (429) are systemic API failures that recur across multiple model providers, indicating infrastructur
-- The lightweight fallback model (inclusionai/ling-3.0-flash-fin) is the only reliably available model in this environment, consistently succeeding when
-- Prose-only artifacts fail to converge on technical tasks like swarm orchestration; executable Python blocks are a non-negotiable requirement for task 
 
 ---
 

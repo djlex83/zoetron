@@ -34723,3 +34723,9 @@
 {"ts": 1788443077.4036124, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.1, "gelesen": 0}}
 {"ts": 1788443079.097719, "kind": "issue_synced", "payload": {"issue": 202, "state": "open"}}
 {"ts": 1788443485.1107042, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787838893.6376362, "key": "aktuell_organfehler", "value": "ORGANFEHLER (2026-08-27 13:52:14 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ Herzschlag Phase reparieren.", "source": "selbstdiagnose.py"}
+{"ts": 1787839047.033542, "key": "dream:20260827135727:1:9b04a0", "value": "Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting that requires exponential backoff or model rotation", "source": "dream"}
+{"ts": 1787839047.033616, "key": "dream:20260827135727:2:466e18", "value": "nvidia/nemotron-3-ultra-550b shows high latency variance (15s-229s) suggesting load balancing issues under stress", "source": "dream"}
+{"ts": 1787839047.0336723, "key": "dream:20260827135727:3:5b1e49", "value": "Endpoint returning 200 with no choices (Nvidia 502) reveals silent failure mode requiring explicit response validation", "source": "dream"}
+{"ts": 1787839047.0337255, "key": "dream:20260827135727:4:203555", "value": "Metabolism stress=1.0 with max_tasks=3 forces prioritization of reliable models over experimental ones", "source": "dream"}
+{"ts": 1787839047.0337868, "key": "dream:20260827135727:5:a26e11", "value": "Simulation verdict=revise with 2 risks indicates task prioritization logic needs refinement before execution", "source": "dream"}
