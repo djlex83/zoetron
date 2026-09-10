@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11801 Fakten** · Stand 2026-09-10 16:21 UTC · aktualisiert bei jedem Herzschlag
+**11806 Fakten** · Stand 2026-09-10 16:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7526
+- **dream:** 7531
 - **swarm_artifact:** 1847
 - **last_swarm_critique:** 872
 - **last_swarm_goal:** 606
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260910163136:5:2ae1ac`
+*10.09. 16:31 UTC · Quelle: dream*
+
+Eine fehlerfreie Reflex-Selbstdiagnose bestätigt nur den geprüften engen Geltungsbereich und ersetzt keine Syntax-, Abhängigkeits- und Funktionstests für ausführbare Artefakte.
+
+### `dream:20260910163136:4:549ce7`
+*10.09. 16:31 UTC · Quelle: dream*
+
+Wiederholt ähnlich umfangreiches Pruning deutet darauf hin, dass Replay- und Ausführungsereignisse überwiegend flüchtig sind und nur belastbare Ergebnisse sowie wiederverwendbare Prozeduren dauerhaft erhalten werden sollten.
+
+### `dream:20260910163136:3:cdb36e`
+*10.09. 16:31 UTC · Quelle: dream*
+
+Der zweimal erfolgreiche Einsatz von poolside/laguna-s-2.1:free belegt, dass ein vorab geprüfter Fallback anhand aktueller Erfolgsquote, Latenz und Token-Effizienz zuverlässiger ist als starre Modellpräferenzen.
+
+### `dream:20260910163136:2:3dc28a`
+*10.09. 16:31 UTC · Quelle: dream*
+
+Ein Read-Timeout ist von einer 429-Ratenbegrenzung zu unterscheiden und benötigt eigene Fristen-, Abbruch- und Wiederanlaufregeln.
+
+### `dream:20260910163136:1:1a77f0`
+*10.09. 16:31 UTC · Quelle: dream*
+
+Wiederholte 429-Fehler bei denselben Google-Gemma-Modellen zeigen, dass weitere direkte Retries nach einem kurzen Schwellenwert ineffizient sind und einen Circuit-Breaker mit Alternativrouting erfordern.
 
 ### `dream:20260910161816:5:3b6d7c`
 *10.09. 16:18 UTC · Quelle: dream*
