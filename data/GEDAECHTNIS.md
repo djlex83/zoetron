@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11786 Fakten** · Stand 2026-09-10 20:16 UTC · aktualisiert bei jedem Herzschlag
+**11781 Fakten** · Stand 2026-09-10 20:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7551
-- **swarm_artifact:** 1819
+- **dream:** 7556
+- **swarm_artifact:** 1813
 - **last_swarm_critique:** 874
 - **last_swarm_goal:** 609
-- **anti_pattern:** 419
-- **strategy:** 211
-- **tool:** 166
+- **anti_pattern:** 417
+- **strategy:** 210
+- **tool:** 165
 - **hand_result:** 97
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260910202452:5:7889ab`
+*10.09. 20:24 UTC · Quelle: dream*
+
+Calibration drift goes undetected because predicted vs actual complexity is never recorded per task-type.
+
+### `dream:20260910202452:4:a6c89f`
+*10.09. 20:24 UTC · Quelle: dream*
+
+Provider-agnostic scheduling ignores per-model circuit-breaker state, causing repeated hammering of degraded endpoints.
+
+### `dream:20260910202452:3:acd9ef`
+*10.09. 20:24 UTC · Quelle: dream*
+
+Pruning aggressively discards error logs and recovery traces needed for failure-replay validation of new skills.
+
+### `dream:20260910202452:2:300502`
+*10.09. 20:24 UTC · Quelle: dream*
+
+Swarm feedback loops exist but converge in single cycles without dissent thresholds, rubber-stamping flawed proposals.
+
+### `dream:20260910202452:1:ce1ad4`
+*10.09. 20:24 UTC · Quelle: dream*
+
+High model latency variance (33-119s) correlates with cascading 429 errors and failed skill validations.
 
 ### `dream:20260910201357:5:479301`
 *10.09. 20:13 UTC · Quelle: dream*
@@ -44132,21 +44157,6 @@ Nemotron-3-Ultra exhibits high latency variance (33–155 s) and occasional 502 
 *27.08. 20:47 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter suffer pervasive 429 rate limiting, making them unreliable for production workloads without aggressive backoff and fallback chains.
-
-### `tool:neue-fähigkeiten-erlernen`
-*27.08. 20:24 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Neue Fähigkeiten erlernen'. Datei: data/tools/neue-fähigkeiten-erlernen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Neue Fähigkeiten erlerne:2`
-*27.08. 20:22 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Neue Fähigkeiten erlerne:1`
-*27.08. 20:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Configuration-Driven Framework with Schema Validation - Externalize all hardcoded values (paths, P95 calculation method, whisper weights, timeout formulas) into a validated configuration schema (JSON Schema / Pydantic Setting
 
 ### `last_swarm_critique`
 *27.08. 20:20 UTC · Quelle: critic*
