@@ -1,0 +1,13 @@
+{
+  "messe_reflex": 0.7167,
+  "messe_werkzeuge": 0.7733,
+  "messe_konvergenz": 0.82,
+  "threshold_reflex": 0.7,
+  "threshold_werkzeuge": 0.75,
+  "threshold_konvergenz": 0.8,
+  "reflex_bestanden": true,
+  "werkzeuge_bestanden": true,
+  "konvergenz_bestanden": true,
+  "reliability_score": 0.77,
+  "baseline_etabliert": true
+}

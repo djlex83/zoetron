@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 06:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 07:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,14 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Low-latency models (inclusionai/ling-3.0-flash-fin at ~2s) do not guarantee task success; task structure and artifact format dominate outcome quality.
+- Evolutionary variant generation with scoring selection (scores 6.7→8.3→9.0) reliably outperforms direct single-shot generation for this task type.
+- The calibration gap (predicted 5 vs actual 0) reveals the system overestimates progress when no executable code exists in the artifact.
+- Prose-only artifacts cannot converge on skill-consolidation tasks; an executable Python block is a mandatory prerequisite for any non-zero score.
+- Free-tier OpenRouter models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently hit 429 rate limits and must be excluded from the active model pool or g
 - Simulation approved 'go' despite 80% model failure rate, indicating the verdict logic ignores inference-layer health signals.
 - High stress (1.0) with conservative budget (max_tasks=3, max_iterations=1) forces brittle execution — no retry headroom for transient provider errors.
 - inclusionai/ling-3.0-flash-fin:free delivers consistent sub-7s latency across varied token loads, proving smaller specialized models outperform unreli
@@ -51,11 +56,6 @@
 - Reflex scripts assume absolute paths and environment variables that don't hold in the sandbox, causing silent zero-byte failures that cascade into swa
 - Skill proposals accumulate but lack an execution pipeline — proposals are generated, validated, and then stall because no background worker deploys th
 - Free-tier model endpoints (Nemotron, Gemma) fail reliably under load with 502/429 errors, making health-probing and cached fallback routing essential 
-- Cross-domain combination—linking dream clusters with swarm results—reliably surfaces novel insights that neither source produces alone.
-- Swarm knowledge degrades on a predictable schedule, meaning stale-data alerts and scheduled refresh cycles outperform ad-hoc updates.
-- The gap between 76 skill proposals and their actual implementation is the system's largest productivity bottleneck, not model availability.
-- Reflex-based execution consistently converges for known task types, making it the reliable default path over LLM-mediated planning.
-- Model failures (502 upstream overload, 429 rate-limiting) are systemic across providers and require proactive health-gating rather than reactive retry
 
 ---
 

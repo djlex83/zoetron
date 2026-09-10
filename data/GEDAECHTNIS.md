@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11785 Fakten** · Stand 2026-09-10 06:59 UTC · aktualisiert bei jedem Herzschlag
+**11797 Fakten** · Stand 2026-09-10 07:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7458
-- **swarm_artifact:** 1893
-- **last_swarm_critique:** 866
-- **last_swarm_goal:** 600
-- **anti_pattern:** 433
-- **strategy:** 218
-- **tool:** 172
+- **swarm_artifact:** 1899
+- **last_swarm_critique:** 867
+- **last_swarm_goal:** 601
+- **anti_pattern:** 435
+- **strategy:** 219
+- **tool:** 173
 - **hand_result:** 102
 - **aktuell_organfehler:** 43
 
 ---
+
+### `tool:fähigkeiten-zuverlässig-machen-vor-erwei`
+*10.09. 07:12 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten zuverlässig machen vor Erweiterung'. Datei: data/tools/fähigkeiten-zuverlässig-machen-vor-erwei.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeiten zuverlässig :1`
+*10.09. 07:11 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Externer Supervisor / Watchdog-Pattern mit Entkopplung - Zerlege Artefakt 2 in zwei unabhängige Komponenten: den Konvergenz-Gate selbst und einen externen Supervisor (Watchdog). Der Supervisor wird als separates Singleton-Obj
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeiten zuverlässig :0`
+*10.09. 07:11 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Interne Zustandsmaschine mit expliziten Statusübergängen - Ersetze die fehlerhafte Zeitbasierte Timeout-Logik durch eine explizite Zustandsmaschine (State Machine) in Artefakt 2. Jeder Fähigkeits-Check durchläuft klar definie
+
+### `last_swarm_critique`
+*10.09. 07:11 UTC · Quelle: critic*
+
+score=7; issues=Timeout-Logik in Artefakt 2 (Konvergenz-Tor) ist defekt: `_startzeit` wird gesetzt und sofort geprüft – die Bedingung `(time.time() - self._startzeit) > self._timeout` ist immer False, das Timeout funktioniert nie.; Eskalationspfad in Artefakt 
+
+### `last_swarm_goal`
+*10.09. 07:09 UTC · Quelle: system*
+
+Fähigkeiten zuverlässig machen vor Erweiterung
+
+### `dream:20260910070802:5:b55db7`
+*10.09. 07:08 UTC · Quelle: dream*
+
+Low-latency models (inclusionai/ling-3.0-flash-fin at ~2s) do not guarantee task success; task structure and artifact format dominate outcome quality.
+
+### `dream:20260910070802:4:89c2d4`
+*10.09. 07:08 UTC · Quelle: dream*
+
+Evolutionary variant generation with scoring selection (scores 6.7→8.3→9.0) reliably outperforms direct single-shot generation for this task type.
+
+### `dream:20260910070802:3:99c46c`
+*10.09. 07:08 UTC · Quelle: dream*
+
+The calibration gap (predicted 5 vs actual 0) reveals the system overestimates progress when no executable code exists in the artifact.
+
+### `dream:20260910070802:2:558717`
+*10.09. 07:08 UTC · Quelle: dream*
+
+Prose-only artifacts cannot converge on skill-consolidation tasks; an executable Python block is a mandatory prerequisite for any non-zero score.
+
+### `dream:20260910070802:1:d4c87e`
+*10.09. 07:08 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (gemma-4-31b-it, gemma-4-26b-a4b-it) consistently hit 429 rate limits and must be excluded from the active model pool or gated behind exponential backoff.
 
 ### `dream:20260910065623:5:790584`
 *10.09. 06:56 UTC · Quelle: dream*
@@ -43899,31 +43949,6 @@ score=5; issues=Alle drei Bloecke haben ausgiebige Fallback-Pfade bei ImportErro
 *27.08. 07:04 UTC · Quelle: system*
 
 Simulationen konsequent anwenden
-
-### `dream:20260827070133:5:d0da00`
-*27.08. 07:01 UTC · Quelle: dream*
-
-Tagging consolidated memories with a staleness metric and re-encoding them during low-stress windows preserves long-term retention and prevents skill decay.
-
-### `dream:20260827070133:4:434192`
-*27.08. 07:01 UTC · Quelle: dream*
-
-Promoting skills from critic-identified failures via automatic code-edit loops creates a closed-loop where each failure directly engineers the next capable iteration.
-
-### `dream:20260827070133:3:4b385b`
-*27.08. 07:01 UTC · Quelle: dream*
-
-A 5-revision simulation-revision cycle with risk-aware pruning reliably integrates distant memories without catastrophic interference, establishing a durable consolidation threshold.
-
-### `dream:20260827070133:2:e49306`
-*27.08. 07:01 UTC · Quelle: dream*
-
-Repeated 429 throttling on rate-limited models under high load reveals that stress-aware adaptive retries with exponential backoff tied to internal budget state are essential for uninterrupted operation.
-
-### `dream:20260827070133:1:0a4098`
-*27.08. 07:01 UTC · Quelle: dream*
-
-When internal stress crosses 0.8, the system auto-conserves by capping tasks at 3 and iterations at 1, preventing failure cascades but requiring explicit wake-up signals to resume full capacity.
 
 ### `last_swarm_critique`
 *27.08. 06:31 UTC · Quelle: critic*
