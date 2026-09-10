@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 12:50:59",
+ "stand": "2026-09-10 13:02:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -42,12 +42,6 @@
    "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -112,6 +106,12 @@
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -385,6 +385,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "selbstprüfung-regelmäßig-erneuern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.722,

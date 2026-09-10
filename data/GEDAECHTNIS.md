@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11789 Fakten** · Stand 2026-09-10 12:52 UTC · aktualisiert bei jedem Herzschlag
+**11789 Fakten** · Stand 2026-09-10 13:04 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7485
 - **swarm_artifact:** 1869
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 42
 
 ---
+
+### `dream:20260910130121:5:c32e1d`
+*10.09. 13:01 UTC · Quelle: dream*
+
+Aggressive pruning (19-22 events per cycle) risks discarding potentially useful contextual data before it can inform cross-cutting pattern recognition.
+
+### `dream:20260910130121:4:8132d1`
+*10.09. 13:01 UTC · Quelle: dream*
+
+The hermes-daemon heartbeat and memory-sync pipeline is a recurring failure point that undermines system stability and needs architectural hardening.
+
+### `dream:20260910130121:3:2b4182`
+*10.09. 13:01 UTC · Quelle: dream*
+
+Reflex-driven self-healing mechanisms (like swarm knowledge refresh) have proven reliable recovery paths that should be generalized to other failure modes.
+
+### `dream:20260910130121:2:989bb9`
+*10.09. 13:01 UTC · Quelle: dream*
+
+Provider concentration creates correlated failures: when multiple models share the same underlying provider, a single provider-side issue disables all of them simultaneously.
+
+### `dream:20260910130121:1:69dccc`
+*10.09. 13:01 UTC · Quelle: dream*
+
+429 rate-limit errors and read timeouts are fundamentally different failure classes requiring distinct retry strategies — backoff for rate limits, timeout-specific handling for slow responses.
 
 ### `dream:20260910124955:5:f0832b`
 *10.09. 12:49 UTC · Quelle: dream*
@@ -43964,31 +43989,6 @@ score=9; issues=Die drei Artefakte funktionieren einzeln, aber die Integration z
 *27.08. 12:57 UTC · Quelle: system*
 
 Wichtige Aufgaben systematisch bearbeiten
-
-### `dream:20260827125715:5:0aa0ee`
-*27.08. 12:57 UTC · Quelle: dream*
-
-The nemotron-3.5-lightning model provides the highest throughput and stable latency for batch swarm evaluation, making it the optimal default engine for convergence-driven runs.
-
-### `dream:20260827125715:4:98e7fd`
-*27.08. 12:57 UTC · Quelle: dream*
-
-Calibration predictions systematically underestimate swarm performance by ~2 points, indicating a conservative bias that can be corrected via a fixed offset adjustment in future tracking.
-
-### `dream:20260827125715:3:ecfcd0`
-*27.08. 12:57 UTC · Quelle: dream*
-
-Hand-action execution fails on first attempt due to missing state priming, but succeeds on retry, establishing a mandatory pre-execution initialization procedure.
-
-### `dream:20260827125715:2:0057de`
-*27.08. 12:57 UTC · Quelle: dream*
-
-Swarm code variants that increase agent diversity consistently achieve score ≥8, demonstrating that parameter mutation over model scaling is the primary convergence lever.
-
-### `dream:20260827125715:1:b1c219`
-*27.08. 12:57 UTC · Quelle: dream*
-
-Free-tier LLM endpoints enforce hard rate limits (429/502), making exponential backoff with jitter a non-negotiable prerequisite for uninterrupted swarm optimization.
 
 ### `last_swarm_critique`
 *27.08. 12:48 UTC · Quelle: critic*
