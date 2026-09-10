@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-10 08:17:54",
+ "stand": "2026-09-10 08:29:45",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,13 +15,13 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -30,12 +30,6 @@
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -105,6 +99,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -135,18 +135,6 @@
    "quote": 1.0
   },
   {
-   "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -157,6 +145,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-in-taten-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
@@ -243,12 +237,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-in-taten-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "viele-skill-vorschläge-prüfen-und-beste-.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -280,6 +268,12 @@
   },
   {
    "tool": "vorschläge-in-echte-fähigkeiten-wandeln.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -369,6 +363,12 @@
    "quote": 0.0
   },
   {
+   "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -411,17 +411,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.74,
- "simulationen_angewandt": 33,
+ "haende_quote": 0.73,
+ "simulationen_angewandt": 35,
  "swarm_scores": {
-  "n": 28,
+  "n": 29,
   "best": 9.0,
-  "schnitt": 4.79
+  "schnitt": 4.66
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 26,
-   "schnitt": 4.81
+   "n": 27,
+   "schnitt": 4.67
   },
   "bau": {
    "n": 2,

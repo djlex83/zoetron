@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11783 Fakten** · Stand 2026-09-10 08:19 UTC · aktualisiert bei jedem Herzschlag
+**11798 Fakten** · Stand 2026-09-10 08:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7459
-- **swarm_artifact:** 1887
-- **last_swarm_critique:** 867
-- **last_swarm_goal:** 601
-- **anti_pattern:** 433
-- **strategy:** 218
-- **tool:** 173
+- **dream:** 7464
+- **swarm_artifact:** 1893
+- **last_swarm_critique:** 868
+- **last_swarm_goal:** 602
+- **anti_pattern:** 435
+- **strategy:** 219
+- **tool:** 172
 - **hand_result:** 102
 - **aktuell_organfehler:** 43
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen in Taten um:1`
+*10.09. 08:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Modular-Composition-First: Build reusable components (CircuitBreaker, RetryHandl - Create multiple artifact blocks where each block defines one composable Python class: (1) CircuitBreaker with state tracking (CLOSED/OPEN/HALF
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen in Taten um:0`
+*10.09. 08:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Direct-Code-First: Write the complete executable simulation script in a single P - Produce a single self-contained Python3 artifact block that directly imports zoetron.simulate.Simulate and zoetron.hands.Hands, then implement
+
+### `last_swarm_critique`
+*10.09. 08:28 UTC · Quelle: critic*
+
+score=1; issues=LAEUFT NICHT: Kein ausführbarer Python-Block im Artefakt vorhanden. Die Sandbox bestätigt, dass Prosa allein nicht konvergiert.; Alle Artefakt-Blöcke enthalten nur deutsche Kommentar-Prosa und leere `python3`-Aufrufe ohne tatsächlichen Code.; K
+
+### `last_swarm_goal`
+*10.09. 08:28 UTC · Quelle: system*
+
+Simulationen in Taten umsetzen
+
+### `dream:20260910082751:5:c7fcbd`
+*10.09. 08:27 UTC · Quelle: dream*
+
+No circuit-breaker or exponential-backoff mechanism is evident in the replay data; the system continues hammering rate-limited endpoints rather than backing off or failing over.
+
+### `dream:20260910082751:4:c2ce8c`
+*10.09. 08:27 UTC · Quelle: dream*
+
+The simulation verdict explicitly flagged 'make capabilities reliable before expansion' with 5 risks and 5 revisions, confirming that reliability was a known concern that was only partially addressed.
+
+### `dream:20260910082751:3:122431`
+*10.09. 08:27 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (4.1–21.2s) across all recorded calls, establishing it as the only proven reliable model in the current pool.
+
+### `dream:20260910082751:2:e8fb4b`
+*10.09. 08:27 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b model timed out on read operations and triggered a 1800-second lockout after only 3 consecutive failures, showing that large-parameter models carry disproportionately high timeout risk.
+
+### `dream:20260910082751:1:381241`
+*10.09. 08:27 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors on google/gemma-4-31b-it and google/gemma-4-26b-a4b-it indicate the system retries failed models instead of excluding them from the active pool during cooldown.
 
 ### `dream:20260910081740:5:07b7f5`
 *10.09. 08:17 UTC · Quelle: dream*
@@ -43919,11 +43964,6 @@ Latency and token efficiency vary significantly between models, suggesting perfo
 *27.08. 08:37 UTC · Quelle: dream*
 
 Repeated 429 errors across multiple free-tier models indicate systemic rate-limiting rather than isolated model failures.
-
-### `tool:fähigkeiten-aus-vorschlägen-wirklich-ler`
-*27.08. 08:17 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten aus Vorschlägen wirklich lernen'. Datei: data/tools/fähigkeiten-aus-vorschlägen-wirklich-ler.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *27.08. 08:13 UTC · Quelle: critic*

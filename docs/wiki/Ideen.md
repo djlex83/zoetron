@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 08:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 08:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No circuit-breaker or exponential-backoff mechanism is evident in the replay data; the system continues hammering rate-limited endpoints rather than b
+- The simulation verdict explicitly flagged 'make capabilities reliable before expansion' with 5 risks and 5 revisions, confirming that reliability was 
+- inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (4.1–21.2s) across all recorded calls, establishing it as the only proven reliab
+- The nvidia/nemotron-3-ultra-550b model timed out on read operations and triggered a 1800-second lockout after only 3 consecutive failures, showing tha
+- Repeated 429 rate-limit errors on google/gemma-4-31b-it and google/gemma-4-26b-a4b-it indicate the system retries failed models instead of excluding t
 - The system enters conserve mode under high stress with severely limited budgets (max 3 tasks, 1 iteration), meaning non-critical goals like swarm and 
 - Consecutive model failures trigger automatic locking (e.g., 1800s cooldown after 3 failures), but the system must also prevent locked models from bein
 - Skill proposals accumulate without execution validation — proposals that lack executable code artifacts waste scoring and simulation cycles.
@@ -51,11 +56,6 @@
 - Stale swarm goals actively degrade decision quality, making periodic goal refresh a mandatory maintenance cycle rather than a best-effort cleanup task
 - Model reliability fluctuates unpredictably; continuous health verification via inference gates is a prerequisite, not an optional enhancement, for any
 - Rate-limiting (429) and read timeouts are systemic, correlated failure modes across multiple model providers, requiring architectural-level fallback c
-- Successful model fallback (inclusionai after Nvidia/Google failures) demonstrates that maintaining a diverse model pool with at least one low-latency 
-- Pruning stale facts and events during consolidation prevents error propagation from outdated assumptions, making periodic pruning a necessary maintena
-- The co-occurrence of model failures and stale-data signals reveals that system degradation is multi-modal: both dependency health and knowledge freshn
-- Reflex-driven recovery from stale swarm data converges reliably, suggesting that pre-built reflex pathways are more robust than ad-hoc re-planning whe
-- Model failures cluster around upstream overload (502) and rate limits (429), indicating that concurrent unthrottled calls to shared APIs are the prima
 
 ---
 
