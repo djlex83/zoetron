@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 05:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 05:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,12 +28,12 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fact pruning actively consolidates memory (5–10 facts per run), confirming that the system's forgetting mechanism is functional and should be leverage
+- Reflex-based actions converge reliably when the underlying tool succeeds, but the absence of a standardized ReflexResult schema prevents planners from
+- A persistent proposal-to-implementation gap exists: skills suggested during dream consolidation are registered as proposals but never automatically va
+- Swarm data decays on a roughly 24-hour cycle; waiting until staleness is detected means the system has already been operating on outdated critiques an
+- Model calls without circuit breakers or ranked fallbacks cascade into unrecoverable failures when upstream providers return 502/429 errors, wasting cy
 - Aggressive pruning erases diagnostic traces; a retention window for error-context events preserves failure analysis capability.
 - Fixed-cycle evolution wastes compute; adaptive loops converging on score delta <0.01 or max 10 cycles with variance logging improve efficiency.
 - Skill proposals accumulate without validation gates; syntax check, sandbox execution, and integration tests must precede registry activation.
@@ -51,11 +56,6 @@
 - Swarm knowledge becomes stale within cycles because no scheduled refresh or coordination revival mechanism exists.
 - Skill proposals accumulate (60+) but lack validation, prioritization, and deployment pipelines, creating a proposal-execution gap.
 - Model failures (54+) stem from absent proactive health monitoring and no automated fallback promotion after repeated provider errors.
-- Swarm knowledge degrades predictably over time, and the stale-data signal recurs across cycles, indicating that scheduled knowledge refresh is a syste
-- Skill proposals accumulate without lifecycle tracking from proposal to deployment, creating a persistent gap between identified improvements and actua
-- Reflex-based goal execution converges reliably when paired with clear failure signals, but the absence of independent critic sign-off in convergence c
-- Smaller optimized models like ling-3.0-flash-fin consistently outperform larger models under load, demonstrating that model size does not correlate wi
-- Model failures cluster predictably around 502 (upstream overload) and 429 (rate limiting) errors, making pre-flight health probes essential before any
 
 ---
 

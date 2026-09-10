@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11797 Fakten** · Stand 2026-09-10 05:06 UTC · aktualisiert bei jedem Herzschlag
+**11797 Fakten** · Stand 2026-09-10 05:17 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7463
 - **swarm_artifact:** 1901
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 44
 
 ---
+
+### `dream:20260910051429:5:f41fa2`
+*10.09. 05:14 UTC · Quelle: dream*
+
+Fact pruning actively consolidates memory (5–10 facts per run), confirming that the system's forgetting mechanism is functional and should be leveraged as a regular maintenance procedure.
+
+### `dream:20260910051429:4:5fd895`
+*10.09. 05:14 UTC · Quelle: dream*
+
+Reflex-based actions converge reliably when the underlying tool succeeds, but the absence of a standardized ReflexResult schema prevents planners from programmatically retrying or escalating on failure.
+
+### `dream:20260910051429:3:ee8443`
+*10.09. 05:14 UTC · Quelle: dream*
+
+A persistent proposal-to-implementation gap exists: skills suggested during dream consolidation are registered as proposals but never automatically validated or converted into executable skills.
+
+### `dream:20260910051429:2:e3d2fc`
+*10.09. 05:14 UTC · Quelle: dream*
+
+Swarm data decays on a roughly 24-hour cycle; waiting until staleness is detected means the system has already been operating on outdated critiques and insights.
+
+### `dream:20260910051429:1:ab0e88`
+*10.09. 05:14 UTC · Quelle: dream*
+
+Model calls without circuit breakers or ranked fallbacks cascade into unrecoverable failures when upstream providers return 502/429 errors, wasting cycles and breaking goal convergence.
 
 ### `tool:ferne-traumverbindungen-neu-erkunden`
 *10.09. 05:04 UTC · Quelle: hands*
@@ -43949,31 +43974,6 @@ High latency variance on successful model calls indicates that static timeouts a
 *27.08. 05:16 UTC · Quelle: dream*
 
 Free-tier LLM endpoints are highly unstable, frequently returning 429 rate limits and 502 upstream errors, necessitating aggressive and dynamic fallback strategies.
-
-### `dream:20260827050222:5:bfea19`
-*27.08. 05:02 UTC · Quelle: dream*
-
-Zoem-Protokoll development cycles through simulation→revision→application loops (5 revisions applied), showing iterative refinement works but consumes disproportionate resources under current constraints.
-
-### `dream:20260827050222:4:decf49`
-*27.08. 05:02 UTC · Quelle: dream*
-
-29 skill proposals exist but remain unused, revealing a gap between skill generation and skill deployment/execution pipelines.
-
-### `dream:20260827050222:3:932e9a`
-*27.08. 05:02 UTC · Quelle: dream*
-
-The system operates under maximum stress (1.0) with severely constrained compute budget (3 tasks, 1 iteration), forcing conservative operation that stalls progress on goals like IMPORT/EXPORT.
-
-### `dream:20260827050222:2:cd7e52`
-*27.08. 05:02 UTC · Quelle: dream*
-
-Nvidia Nemotron models show higher success rates but extreme latency variance (15-353s), indicating unpredictable queue times on the provider side.
-
-### `dream:20260827050222:1:6ed3b7`
-*27.08. 05:02 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) across multiple free-tier models is the primary failure mode, making free-tier reliance unreliable for production workloads.
 
 ### `last_swarm_critique`
 *27.08. 04:39 UTC · Quelle: critic*
