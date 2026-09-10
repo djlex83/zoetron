@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11797 Fakten** · Stand 2026-09-10 10:18 UTC · aktualisiert bei jedem Herzschlag
+**11787 Fakten** · Stand 2026-09-10 10:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7470
+- **dream:** 7460
 - **swarm_artifact:** 1887
 - **last_swarm_critique:** 870
 - **last_swarm_goal:** 604
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 43
 
 ---
+
+### `dream:20260910103015:5:d9fd72`
+*10.09. 10:30 UTC · Quelle: dream*
+
+The absence of early termination criteria causes the system to continue mutating even when all scores fall below threshold, wasting compute on problems that require root-cause intervention rather than further mutation.
+
+### `dream:20260910103015:4:c4a809`
+*10.09. 10:30 UTC · Quelle: dream*
+
+Scoring predictions are systematically overconfident, indicating a calibration deficit that propagates poor decisions through the entire evolutionary loop.
+
+### `dream:20260910103015:3:e43018`
+*10.09. 10:30 UTC · Quelle: dream*
+
+The system lacks any pre-execution validation of generated code, allowing non-runnable or schema-invalid outputs to consume scoring resources before being rejected.
+
+### `dream:20260910103015:2:1c96d2`
+*10.09. 10:30 UTC · Quelle: dream*
+
+Transient failures (timeouts and 429 rate limits) are the dominant failure mode, and the absence of retry or backoff logic turns every temporary blip into a complete pipeline stall.
+
+### `dream:20260910103015:1:70b7c0`
+*10.09. 10:30 UTC · Quelle: dream*
+
+All model calls funnel through a single OpenRouter endpoint, making rate-limit failures systemic rather than model-specific, which means diversification of API endpoints is a structural necessity.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modellfehler systematisc:2`
 *10.09. 10:16 UTC · Quelle: evolution*
@@ -43894,81 +43919,6 @@ Nvidia Nemotron models (both ultra and lightning) are the only ones returning su
 *27.08. 10:31 UTC · Quelle: dream*
 
 Free tier models across all providers consistently hit 429 rate limits, making them unreliable for sequential task execution.
-
-### `dream:20260827102556:5:260cd6`
-*27.08. 10:25 UTC · Quelle: dream*
-
-High numbers of simulation risks suggest that initial proposals require stricter validation before entering the simulation phase.
-
-### `dream:20260827102556:4:1d0def`
-*27.08. 10:25 UTC · Quelle: dream*
-
-The gap between proposed skills and their actual application highlights the need for an automated skill deployment pipeline.
-
-### `dream:20260827102556:3:1c9f82`
-*27.08. 10:25 UTC · Quelle: dream*
-
-High system stress combined with frequent model failures indicates the system should reduce concurrent task loads and rely on more reliable models during conserve mode.
-
-### `dream:20260827102556:2:75052e`
-*27.08. 10:25 UTC · Quelle: dream*
-
-Highly variable latency in nvidia/nemotron-3-ultra-550b-a55b:free (33s to 222s) necessitates adaptive, per-model timeout configurations.
-
-### `dream:20260827102556:1:d5fbcd`
-*27.08. 10:25 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model is chronically rate-limited and should be temporarily blacklisted to prevent repeated 429 failures.
-
-### `dream:20260827102211:5:01bb68`
-*27.08. 10:22 UTC · Quelle: dream*
-
-Simulation revisions (4 applied) fail to close the learning loop, implying revisions address symptoms not root causes.
-
-### `dream:20260827102211:4:3aaa32`
-*27.08. 10:22 UTC · Quelle: dream*
-
-Swarm convergence stalls at 5/10 after 2 cycles with evolved=true, suggesting the critic quality gate is insufficient.
-
-### `dream:20260827102211:3:4f6cef`
-*27.08. 10:22 UTC · Quelle: dream*
-
-Latency variance exceeds 100x (0.5s to 109s) across models, making fixed timeouts either too aggressive or too permissive.
-
-### `dream:20260827102211:2:656ed7`
-*27.08. 10:22 UTC · Quelle: dream*
-
-Critic outputs remain unparseable despite evolution, indicating missing structured-output enforcement in the prompt chain.
-
-### `dream:20260827102211:1:0c1dc6`
-*27.08. 10:22 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits under load, causing cascade failures that halt learning loops.
-
-### `dream:20260827101657:5:18dd89`
-*27.08. 10:16 UTC · Quelle: dream*
-
-Swarm convergence is not guaranteed within 2 cycles for complex goals like closing a simulation learning loop.
-
-### `dream:20260827101657:4:d83968`
-*27.08. 10:16 UTC · Quelle: dream*
-
-Evolution runs can improve scores (5 to 8) even when critic output is unparseable, indicating the builder variants are robust.
-
-### `dream:20260827101657:3:c47b41`
-*27.08. 10:16 UTC · Quelle: dream*
-
-Model latency varies wildly (4s to 126s), so timeout settings must be generous or dynamically adjusted.
-
-### `dream:20260827101657:2:1458fc`
-*27.08. 10:16 UTC · Quelle: dream*
-
-Upstream provider overload (502 errors) can occur even on successful endpoints, necessitating handling of empty choices in 200 responses.
-
-### `dream:20260827101657:1:7568cc`
-*27.08. 10:16 UTC · Quelle: dream*
-
-Free models on OpenRouter are highly rate-limited (429 errors) and require robust fallback or retry mechanisms.
 
 ### `last_swarm_critique`
 *27.08. 09:56 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 10:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 10:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltetes Schwarm-Wissen erneuern *(wieder aufgegriffen: 3×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The absence of early termination criteria causes the system to continue mutating even when all scores fall below threshold, wasting compute on problem
+- Scoring predictions are systematically overconfident, indicating a calibration deficit that propagates poor decisions through the entire evolutionary 
+- The system lacks any pre-execution validation of generated code, allowing non-runnable or schema-invalid outputs to consume scoring resources before b
+- Transient failures (timeouts and 429 rate limits) are the dominant failure mode, and the absence of retry or backoff logic turns every temporary blip 
+- All model calls funnel through a single OpenRouter endpoint, making rate-limit failures systemic rather than model-specific, which means diversificati
 - Skill proposals without verified executable paths against current resource constraints are worthless; every proposed skill must be validated against m
 - Repeated 429 errors from the same API provider indicate a need for provider-level rate limit awareness, not just per-model tracking, since multiple mo
 - Under conserve/metabolic-stress conditions with minimal budget, the system must not attempt swarm operations or complex multi-step skill execution bec
@@ -51,11 +56,6 @@
 - The gap between proposed skills and operationalized defenses is itself a failure mode—ideas without implementation deadlines decay into cognitive debt
 - The sole reliable model (inclusionai/ling-3.0-flash-fin) creates a dangerous single-point-of-failure; the system must maintain at least three pre-veri
 - Recurring timeouts and 429 errors on identical models across multiple timestamps indicate systemic provider-side instability that demands circuit-brea
-- The revision loop applied 3 revisions to the simulation but the final score remained 1, suggesting revisions address surface issues rather than the ro
-- Calibration predicted 4 for 'Simulationen in Taten umsetzen' but actual was 1 (abs_error: 3), revealing a severe overestimation bias that must be corr
-- The evolutionary swarm produced non-executable Python code (critic: 'LAEUFT NICHT: Kein ausführbarer Python'), scoring 1/10 despite 3 variants and 2 c
-- inclusionai/ling-3.0-flash-fin is the only model that succeeds reliably across multiple calls, though latency varies from 2.1s to 9.3s depending on to
-- Google/gemma-4-31b-it and gemma-4-26b-a4b-it models consistently fail with 429 rate-limit errors, making them unreliable for any task pipeline in this
 
 ---
 
