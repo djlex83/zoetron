@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11781 Fakten** · Stand 2026-09-10 04:46 UTC · aktualisiert bei jedem Herzschlag
+**11797 Fakten** · Stand 2026-09-10 05:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7458
-- **swarm_artifact:** 1893
-- **last_swarm_critique:** 864
-- **last_swarm_goal:** 598
+- **dream:** 7463
+- **swarm_artifact:** 1901
+- **last_swarm_critique:** 865
+- **last_swarm_goal:** 599
 - **anti_pattern:** 431
 - **strategy:** 217
-- **tool:** 173
+- **tool:** 174
 - **hand_result:** 103
 - **aktuell_organfehler:** 44
 
 ---
+
+### `tool:ferne-traumverbindungen-neu-erkunden`
+*10.09. 05:04 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Ferne Traumverbindungen neu erkunden'. Datei: data/tools/ferne-traumverbindungen-neu-erkunden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*10.09. 05:04 UTC · Quelle: critic*
+
+score=8; issues=Semantic distance metric inconsistency: Artifact 1 uses Jaccard word overlap while Artifact 2 uses cosine on embeddings - complementary but not aligned; Synthetic ground truth generation in benchmark may produce inflated Recall@k scores when no
+
+### `last_swarm_goal`
+*10.09. 04:55 UTC · Quelle: system*
+
+Ferne Traumverbindungen neu erkunden
+
+### `dream:20260910045504:5:197a41`
+*10.09. 04:55 UTC · Quelle: dream*
+
+Aggressive pruning erases diagnostic traces; a retention window for error-context events preserves failure analysis capability.
+
+### `dream:20260910045504:4:fbb656`
+*10.09. 04:55 UTC · Quelle: dream*
+
+Fixed-cycle evolution wastes compute; adaptive loops converging on score delta <0.01 or max 10 cycles with variance logging improve efficiency.
+
+### `dream:20260910045504:3:f18df3`
+*10.09. 04:55 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates; syntax check, sandbox execution, and integration tests must precede registry activation.
+
+### `dream:20260910045504:2:68d752`
+*10.09. 04:55 UTC · Quelle: dream*
+
+Swarm intelligence decays without continuous refresh cycles; stale critiques degrade decision quality more than no critiques.
+
+### `dream:20260910045504:1:f64d23`
+*10.09. 04:55 UTC · Quelle: dream*
+
+Model reliability requires circuit breakers at 10% error rate with automatic failover to healthy alternatives, not just retries.
 
 ### `dream:20260910044434:5:d26287`
 *10.09. 04:44 UTC · Quelle: dream*

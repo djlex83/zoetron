@@ -33204,3 +33204,22 @@
 {"ts": 1788410479.4983387, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.63, "gelesen": 2}}
 {"ts": 1788410479.499884, "kind": "reflex_used", "payload": {"goal": "Marktanalyse-Ergebnisse endlich nutzen", "tool": "marktanalyse-endlich-abschließen.py", "ok": true}}
 {"ts": 1788410479.9138596, "kind": "act_done", "payload": {"goal_title": "Marktanalyse-Ergebnisse endlich nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788410856.8727436, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788410925.4415202, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788410927.2131267, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 18}}
+{"ts": 1788410931.4484339, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788410931.4484313, "schalter_geoeffnet": false}}
+{"ts": 1788410953.6981852, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.2, "tokens_ein": 1752, "tokens_aus": 1064}}
+{"ts": 1788410953.6987116, "kind": "skill_proposal", "payload": {"proposal": "Implement model router with health-checks, latency tracking, and automatic fallback to nemotron when glm-5.2 returns 429."}}
+{"ts": 1788410953.6987789, "kind": "skill_proposal", "payload": {"proposal": "Add pre-flight sandbox validator that checks data directories, permissions, and dependency imports before committing artifact."}}
+{"ts": 1788410953.6988354, "kind": "skill_proposal", "payload": {"proposal": "Deploy calibration tracker that records prediction vs actual for each goal and downweights planners with persistent overconfidence."}}
+{"ts": 1788410953.6988883, "kind": "skill_proposal", "payload": {"proposal": "Create adversarial simulation mode that generates counterfactuals where sim score high but execution fails, to harden simulator."}}
+{"ts": 1788410953.6989412, "kind": "skill_proposal", "payload": {"proposal": "Build execution environment snapshot/restore to reproduce sandbox state for deterministic debugging of artifact failures."}}
+{"ts": 1788410953.6989994, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788410955.9076242, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788410955.907621, "schalter_geoeffnet": false}}
+{"ts": 1788410983.0049343, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 27.1, "tokens_ein": 524, "tokens_aus": 599}}
+{"ts": 1788410983.0050685, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren und Zuverlässigkeit steigern", "why": "Viele Modell-Fehler zeigen, dass Vorhersagen oft falsch sind. Bessere Modelle helfen, richtige Entscheidungen zu treffen.", "signal": "failure"}}
+{"ts": 1788410983.0051441, "kind": "drive_goal", "payload": {"title": "Marktanalyse aktualisieren und Lücken schließen", "why": "Alte Marktanalysen liegen ungenutzt herum. Aktuelle Infos helfen, gute Chancen zu finden.", "signal": "stale"}}
+{"ts": 1788410983.005207, "kind": "drive_goal", "payload": {"title": "Neue Fähigkeiten testen und nutzbar machen", "why": "Viele vorgeschlagene Fähigkeiten warten auf Prüfung. Getestete Fähigkeiten erweitern, was das System kann.", "signal": "gap"}}
+{"ts": 1788410995.2968478, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.38, "gelesen": 1}}
+{"ts": 1788410995.2986338, "kind": "reflex_used", "payload": {"goal": "Ausfallsicheres Routing aufbauen", "tool": "schwarm-orchestrierung-vollständig-aufba.py", "ok": true}}
+{"ts": 1788410995.7423425, "kind": "act_done", "payload": {"goal_title": "Ausfallsicheres Routing aufbauen", "score": null, "converged": true, "mode": "reflex"}}

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 04:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-10 05:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning erases diagnostic traces; a retention window for error-context events preserves failure analysis capability.
+- Fixed-cycle evolution wastes compute; adaptive loops converging on score delta <0.01 or max 10 cycles with variance logging improve efficiency.
+- Skill proposals accumulate without validation gates; syntax check, sandbox execution, and integration tests must precede registry activation.
+- Swarm intelligence decays without continuous refresh cycles; stale critiques degrade decision quality more than no critiques.
+- Model reliability requires circuit breakers at 10% error rate with automatic failover to healthy alternatives, not just retries.
 - Fixed 2-cycle evolution ignores convergence signals, wasting compute or stopping prematurely without variance tracking.
 - Hand actions fail on relative paths because path resolution isn't anchored to ZOETRON_DATA with existence validation.
 - Swarm knowledge becomes stale within cycles because no scheduled refresh or coordination revival mechanism exists.
@@ -51,11 +56,6 @@
 - Reflex-based goal execution converges reliably when paired with clear failure signals, but the absence of independent critic sign-off in convergence c
 - Smaller optimized models like ling-3.0-flash-fin consistently outperform larger models under load, demonstrating that model size does not correlate wi
 - Model failures cluster predictably around 502 (upstream overload) and 429 (rate limiting) errors, making pre-flight health probes essential before any
-- Dream consolidation produces skill proposals but lacks automated testing loops to validate proposals before deployment.
-- Swarm knowledge staleness triggers (median age >24h, delta < epsilon for 3 cycles) are detectable and should automate refresh workflows.
-- Effort estimation for 'Alte Schwarm-Informationen erneuern' tasks shows a consistent 5-point calibration error, requiring a 3.5x correction factor.
-- The inclusionai/ling-3.0-flash-fin model serves as a reliable fallback with 3.4s latency, validating a prioritized failover chain strategy.
-- Free-tier model endpoints (Nvidia Nemotron, Google Gemma) consistently fail with 502/429 errors under load, making them unreliable for production use.
 
 ---
 
