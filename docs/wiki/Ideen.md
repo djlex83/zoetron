@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 01:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 01:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 39 events and 6 facts during active goal pursuit discards failure patterns needed for root-cause analysis and future debugging.
+- Swarm converged in 1 cycle with score 9 but calibration error 8 indicates false convergence - success metrics are decoupled from reality.
+- Tool rejected for 'no return value, nothing written' reveals skills must produce verifiable artifacts (files, state changes, structured returns) not j
+- Calibration error of 800% (predicted 1 vs actual 9) proves the system cannot estimate its own capability, making all planning unreliable.
+- Model latency varies 17x (10.5s to 175.6s) for identical model calls, breaking planning assumptions and causing timeout cascades.
 - Swarm knowledge staleness drives redundant drive goals because no automated freshness check exists for collective memory.
 - Skill proposals accumulate in logs but never activate because the insight-to-skill pipeline lacks a verified execution step.
 - Calibration error of 800% (predicted 1 vs actual 9) reveals the planner's outcome model is decoupled from reality, causing repeated simulation revisio
@@ -51,11 +56,6 @@
 - Swarm cycles terminate without convergence (score 1, converged=false), indicating missing acceptance criteria or stop conditions.
 - Evolutionary refinement boosted a 1/10 draft to 9/10 in one pass, proving that iterative critique loops are high-leverage.
 - Model failures cluster around rate limits (429) and upstream overloads (502), making static model assignment unreliable.
-- The skill-conversion reflex failed repeatedly — translating insights into executable skills needs a structured template, not free-form prose.
-- High stress (1.0) forces conserve mode with max 1 iteration, which prevents swarm goals from completing — stress management is a prerequisite for swar
-- Hand actions can exit 0 without touching any file — silent failures must be detected by verifying actual filesystem changes, not just exit codes.
-- Artifacts containing only prose never converge — executable Python code blocks are a hard requirement for progress.
-- Model failures are predictable by type (502 overload, 429 rate limit) — a fallback chain with circuit breakers would prevent cascading failures.
 
 ---
 

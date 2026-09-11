@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11755 Fakten** · Stand 2026-09-11 01:21 UTC · aktualisiert bei jedem Herzschlag
+**11750 Fakten** · Stand 2026-09-11 01:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7560
-- **swarm_artifact:** 1793
+- **dream:** 7565
+- **swarm_artifact:** 1787
 - **last_swarm_critique:** 877
 - **last_swarm_goal:** 612
-- **anti_pattern:** 411
-- **strategy:** 207
+- **anti_pattern:** 409
+- **strategy:** 206
 - **tool:** 163
-- **hand_result:** 92
+- **hand_result:** 91
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911014108:5:8987c9`
+*11.09. 01:41 UTC · Quelle: dream*
+
+Pruning 39 events and 6 facts during active goal pursuit discards failure patterns needed for root-cause analysis and future debugging.
+
+### `dream:20260911014108:4:3dae4e`
+*11.09. 01:41 UTC · Quelle: dream*
+
+Swarm converged in 1 cycle with score 9 but calibration error 8 indicates false convergence - success metrics are decoupled from reality.
+
+### `dream:20260911014108:3:c550a2`
+*11.09. 01:41 UTC · Quelle: dream*
+
+Tool rejected for 'no return value, nothing written' reveals skills must produce verifiable artifacts (files, state changes, structured returns) not just stdout to pass promotion.
+
+### `dream:20260911014108:2:7130b8`
+*11.09. 01:41 UTC · Quelle: dream*
+
+Calibration error of 800% (predicted 1 vs actual 9) proves the system cannot estimate its own capability, making all planning unreliable.
+
+### `dream:20260911014108:1:5516ce`
+*11.09. 01:41 UTC · Quelle: dream*
+
+Model latency varies 17x (10.5s to 175.6s) for identical model calls, breaking planning assumptions and causing timeout cascades.
 
 ### `dream:20260911011440:5:45f0c8`
 *11.09. 01:14 UTC · Quelle: dream*
@@ -44077,16 +44102,6 @@ Hand actions fail when using relative paths instead of absolute paths rooted at 
 *28.08. 01:42 UTC · Quelle: dream*
 
 Free model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production tasks.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten schneller in:2`
-*28.08. 01:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.0): Static Analysis + Lightweight Simulation - Instead of running code, perform static analysis to validate skill structure and simulate execution. Parse the skill module with AST to check for required functions, type annotatio
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten schneller in:0`
-*28.08. 01:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.3): Container-based Isolation - Use Docker containers to run each skill test in a fully isolated environment. Define a minimal base image with all required dependencies (including psutil) pre-installed. The test runner launches
 
 ### `last_swarm_critique`
 *28.08. 01:20 UTC · Quelle: critic*
