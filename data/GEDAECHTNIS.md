@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11587 Fakten** · Stand 2026-09-11 17:47 UTC · aktualisiert bei jedem Herzschlag
+**11576 Fakten** · Stand 2026-09-11 18:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7470
-- **swarm_artifact:** 1731
+- **dream:** 7465
+- **swarm_artifact:** 1725
 - **last_swarm_critique:** 889
 - **last_swarm_goal:** 624
 - **anti_pattern:** 391
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911181413:5:efb89c`
+*11.09. 18:14 UTC · Quelle: dream*
+
+Pruning 28 events while keeping facts intact shows that aggressive event cleanup can coexist with preservation of durable knowledge, but zero facts pruned hints at conservative retention.
+
+### `dream:20260911181413:4:f9ab9a`
+*11.09. 18:14 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple free-tier models suggest a shared upstream rate budget that is being exhausted by concurrent or rapid-fire requests.
+
+### `dream:20260911181413:3:ab1830`
+*11.09. 18:14 UTC · Quelle: dream*
+
+Fallback model dots-studio/dots-3-note-preview:free succeeds but with 25–40 s latency, showing that reliability gains come at a significant performance cost.
+
+### `dream:20260911181413:2:8374e6`
+*11.09. 18:14 UTC · Quelle: dream*
+
+A three-strike lockout rule successfully prevents cascading failures but leaves a 30-minute gap during which the blocked model cannot be retried even if the underlying condition improves.
+
+### `dream:20260911181413:1:21b93f`
+*11.09. 18:14 UTC · Quelle: dream*
+
+Model failures cluster around timeouts and HTTP 429 rate-limit errors, indicating the system is hitting external API constraints rather than experiencing internal logic faults.
 
 ### `last_swarm_critique`
 *11.09. 17:41 UTC · Quelle: critic*
@@ -43377,56 +43402,6 @@ score=1; issues=Sandbox-Urteil: LAEUFT NICHT - verbotenes Muster 'shutdown' erka
 *28.08. 18:03 UTC · Quelle: system*
 
 Fertigkeiten durch Träume prüfen und festigen
-
-### `dream:20260828180226:5:15c7aa`
-*28.08. 18:02 UTC · Quelle: dream*
-
-High stress (1.0) triggers conserve mode that caps tasks/iterations, making any single failure catastrophic for progress.
-
-### `dream:20260828180226:4:f96789`
-*28.08. 18:02 UTC · Quelle: dream*
-
-Memory staleness causes misdirected reflexes (e.g., 'alte-erinnerungen-auf-wert-prüfen.py' failed) and wasted cycles.
-
-### `dream:20260828180226:3:9f20dd`
-*28.08. 18:02 UTC · Quelle: dream*
-
-Skill proposals accumulate without execution because no automatic hand-action spawning mechanism exists.
-
-### `dream:20260828180226:2:257d98`
-*28.08. 18:02 UTC · Quelle: dream*
-
-Hand actions fail silently when data paths are invalid, wasting the entire iteration budget under conserve mode.
-
-### `dream:20260828180226:1:7bdca8`
-*28.08. 18:02 UTC · Quelle: dream*
-
-Rate limiting (429 errors) affects all free-tier models simultaneously, indicating a shared quota pool rather than per-model limits.
-
-### `dream:20260828175523:5:7e6108`
-*28.08. 17:55 UTC · Quelle: dream*
-
-Model heterogeneity (different latencies, error patterns, rate limits) demands continuous per-model scoring for intelligent routing and fallback decisions.
-
-### `dream:20260828175523:4:14a1ff`
-*28.08. 17:55 UTC · Quelle: dream*
-
-Dream-to-action conversion remains incomplete: approved skill proposals do not automatically spawn hand actions, causing proposal stagnation.
-
-### `dream:20260828175523:3:e9fb21`
-*28.08. 17:55 UTC · Quelle: dream*
-
-Pre-flight verification of model availability and rate-limit headroom prevents cascade failures in swarm executions, as evidenced by the existing skill proposal.
-
-### `dream:20260828175523:2:7bdd96`
-*28.08. 17:55 UTC · Quelle: dream*
-
-Dependence on a single working model (poolside/laguna-s-2.1:free) creates a critical single point of failure for all LLM-dependent tasks.
-
-### `dream:20260828175523:1:f72357`
-*28.08. 17:55 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple free-tier models is a systemic bottleneck requiring proactive health management, not just reactive retries.
 
 ### `last_swarm_critique`
 *28.08. 16:52 UTC · Quelle: critic*
