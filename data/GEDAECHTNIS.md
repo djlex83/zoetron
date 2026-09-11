@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11564 Fakten** · Stand 2026-09-11 20:15 UTC · aktualisiert bei jedem Herzschlag
+**11559 Fakten** · Stand 2026-09-11 20:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7475
+- **dream:** 7470
 - **swarm_artifact:** 1713
 - **last_swarm_critique:** 890
 - **last_swarm_goal:** 625
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911202353:5:5b6295`
+*11.09. 20:23 UTC · Quelle: dream*
+
+Simulation-driven goal revision successfully identified 3 risks and applied 3 corrections, proving the review loop works under tight budgets.
+
+### `dream:20260911202353:4:75a4fe`
+*11.09. 20:23 UTC · Quelle: dream*
+
+Operating in 'conserve' metabolism with max_tasks=3 and max_iterations=1 forces serial execution and eliminates retry headroom.
+
+### `dream:20260911202353:3:f34d6f`
+*11.09. 20:23 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only model delivering consistent successes, albeit with highly variable latency (5–77 s).
+
+### `dream:20260911202353:2:bc1283`
+*11.09. 20:23 UTC · Quelle: dream*
+
+Nemotron-3-Ultra suffers read timeouts that trigger 30-minute lockouts after three consecutive failures, removing it from the available pool.
+
+### `dream:20260911202353:1:156032`
+*11.09. 20:23 UTC · Quelle: dream*
+
+Google Gemma models consistently return 429 rate-limit errors under load, making them unreliable for high-throughput tasks.
 
 ### `dream:20260911201324:5:de9eb4`
 *11.09. 20:13 UTC · Quelle: dream*
@@ -43342,56 +43367,6 @@ score=9; issues=AST parent tracking not implemented (getattr(node, 'parent') wil
 *28.08. 20:22 UTC · Quelle: system*
 
 Kritik- und Ziel-Prozesse auffrischen
-
-### `dream:20260828202120:5:f472d7`
-*28.08. 20:21 UTC · Quelle: dream*
-
-Drive goals compete for the same tiny iteration budget; 'reduce model errors' starves 'update market analyses' and 'test skills'.
-
-### `dream:20260828202120:4:6eb98e`
-*28.08. 20:21 UTC · Quelle: dream*
-
-High stress (1.0) with conserve-mode budget (max_tasks=3) forces premature termination of diagnostic swarms before root cause is found.
-
-### `dream:20260828202120:3:c0afec`
-*28.08. 20:21 UTC · Quelle: dream*
-
-The hand_action tool fails because it resolves relative paths against the working directory instead of the canonical ZOETRON_DATA root.
-
-### `dream:20260828202120:2:0f230a`
-*28.08. 20:21 UTC · Quelle: dream*
-
-NVIDIA Nemotron-3-Ultra shows partial reliability: it succeeds under load but emits 502 upstream errors when NVIDIA's inference fleet is saturated.
-
-### `dream:20260828202120:1:da23cd`
-*28.08. 20:21 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) across multiple providers indicates systemic quota exhaustion, not isolated model failures.
-
-### `dream:20260828201705:5:1d5719`
-*28.08. 20:17 UTC · Quelle: dream*
-
-System enters conserve mode (stress=1.0) limiting to 3 tasks, requiring atomic task decomposition for progress.
-
-### `dream:20260828201705:4:ba854c`
-*28.08. 20:17 UTC · Quelle: dream*
-
-Fallback models (Nemotron) succeed but with 16-50s latency, making them unsuitable for time-critical paths without async handling.
-
-### `dream:20260828201705:3:28aadb`
-*28.08. 20:17 UTC · Quelle: dream*
-
-All file operations fail when paths aren't strictly resolved against ZOETRON_DATA environment variable.
-
-### `dream:20260828201705:2:d16889`
-*28.08. 20:17 UTC · Quelle: dream*
-
-Swarm simulations produce revisions that don't translate to convergence, indicating a simulation-reality gap in evaluation criteria.
-
-### `dream:20260828201705:1:70bd8a`
-*28.08. 20:17 UTC · Quelle: dream*
-
-Free tier models consistently hit 429 rate limits requiring automatic failover with exponential backoff before switching.
 
 ### `last_swarm_critique`
 *28.08. 19:41 UTC · Quelle: critic*

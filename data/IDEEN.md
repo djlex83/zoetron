@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 20:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 20:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-driven goal revision successfully identified 3 risks and applied 3 corrections, proving the review loop works under tight budgets.
+- Operating in 'conserve' metabolism with max_tasks=3 and max_iterations=1 forces serial execution and eliminates retry headroom.
+- dots-studio/dots-3-note-preview:free is the only model delivering consistent successes, albeit with highly variable latency (5–77 s).
+- Nemotron-3-Ultra suffers read timeouts that trigger 30-minute lockouts after three consecutive failures, removing it from the available pool.
+- Google Gemma models consistently return 429 rate-limit errors under load, making them unreliable for high-throughput tasks.
 - High stress (1.0) triggers conserve mode that severely limits throughput, yet metabolism checks are too infrequent to prevent overload.
 - Hand actions fail due to unresolved relative paths against the true data root (ZOETRON_DATA), requiring absolute path resolution before I/O.
 - Model blocking after 3 consecutive errors exists but lacks integration with health-based routing to prevent repeated attempts on degraded models.
@@ -51,11 +56,6 @@
 - Metabolic stress signals exist but no scheduler reads them to shed load before budget exhaustion, causing cascading failures under pressure.
 - Skill proposals for resilience (backoff, health scoring, caching, Retry-After) are generated repeatedly but never enacted, revealing an execution gap 
 - Model failures (timeouts, 429s) dominate latency and block progress, yet the fallback chain reacts sequentially instead of routing proactively to the 
-- Memory pruning (15 facts, 29 events) runs regularly yet stale swarm data persists, showing that pruning alone cannot refresh external knowledge depend
-- Skill proposals accumulate (5 in last dream) but drive goals flag a utilization gap, revealing a missing activation gate between proposal and deployme
-- Reflex tools for model repair and swarm refresh succeed consistently, proving that automated remediation works when triggered but lacks proactive heal
-- Nemotron-3-ultra exhibits extreme latency variance (20s to 98s) even on success, making it unreliable for time-bounded tasks without a timeout fallbac
-- Multiple free-tier models fail simultaneously with 429 rate limits, indicating shared quota exhaustion rather than individual model faults.
 
 ---
 
