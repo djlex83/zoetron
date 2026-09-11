@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 12:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 12:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand action timeouts (20s) coincide with model latency spikes, revealing a missing deadline-aware cancellation layer.
+- Reflex tool execution fails silently under conserve-mode budget constraints, leaving proposed skills unimplemented despite swarm initiation.
+- The single working model (dots-studio) exhibits 20-27s latency, making it unsuitable for interactive loops without async queuing.
+- Timeout failures on nemotron correlate with upstream 502 overload errors, suggesting provider-side saturation not client-side latency.
+- Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota pools rather than per-model limits.
 - Repeated model failures trigger new skill proposals (fallback, wrappers, queues) that duplicate earlier unimplemented ideas, indicating a failure to c
 - Swarm critiques and objectives have gone stale without a periodic audit mechanism, causing perspective decay and strategic drift over time.
 - Forty skill proposals accumulate while only twenty-four goals exist, exposing a broken promotion pipeline that never graduates validated proposals int
@@ -51,11 +56,6 @@
 - Swarm feedback signals (critiques, goals) are stale, cutting off external corrective input that previously drove course corrections.
 - Over 40 skill proposals exist but only 24 drive goals, revealing a systemic bottleneck where proposals are generated but not validated, promoted, or i
 - Model endpoints frequently return 429 errors and high latency (up to 52s) without a shared rate-limiting layer, causing cascading failures across task
-- Aggressive pruning (39 facts, 127 events per run) may discard context needed for debugging recurring failures like model 429 patterns.
-- Skill proposals accumulate but are not automatically implemented, creating a gap between identified improvements and operational capabilities.
-- The swarm process consistently fails to converge (converged: false) despite multiple cycles, suggesting missing convergence criteria or insufficient c
-- Models that initially fail with 429 often succeed on retry after a delay, indicating transient capacity limits rather than permanent unavailability.
-- Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making naive single-model selection unreliable.
 
 ---
 

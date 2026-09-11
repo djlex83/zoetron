@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11594 Fakten** · Stand 2026-09-11 12:08 UTC · aktualisiert bei jedem Herzschlag
+**11590 Fakten** · Stand 2026-09-11 12:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7469
-- **swarm_artifact:** 1741
+- **dream:** 7474
+- **swarm_artifact:** 1735
 - **last_swarm_critique:** 884
 - **last_swarm_goal:** 619
-- **anti_pattern:** 395
-- **strategy:** 200
+- **anti_pattern:** 393
+- **strategy:** 199
 - **tool:** 161
 - **hand_result:** 86
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911121717:5:e8d121`
+*11.09. 12:17 UTC · Quelle: dream*
+
+Hand action timeouts (20s) coincide with model latency spikes, revealing a missing deadline-aware cancellation layer.
+
+### `dream:20260911121717:4:eb7526`
+*11.09. 12:17 UTC · Quelle: dream*
+
+Reflex tool execution fails silently under conserve-mode budget constraints, leaving proposed skills unimplemented despite swarm initiation.
+
+### `dream:20260911121717:3:2562ae`
+*11.09. 12:17 UTC · Quelle: dream*
+
+The single working model (dots-studio) exhibits 20-27s latency, making it unsuitable for interactive loops without async queuing.
+
+### `dream:20260911121717:2:964cd1`
+*11.09. 12:17 UTC · Quelle: dream*
+
+Timeout failures on nemotron correlate with upstream 502 overload errors, suggesting provider-side saturation not client-side latency.
+
+### `dream:20260911121717:1:8a998a`
+*11.09. 12:17 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota pools rather than per-model limits.
 
 ### `dream:20260911120556:5:857903`
 *11.09. 12:05 UTC · Quelle: dream*
@@ -43439,16 +43464,6 @@ Simulation revisions and evolution runs improved scores from 1/10 to 9/7/6, but 
 *28.08. 12:41 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter are systematically unreliable due to 429 rate limiting, making nvidia/nemotron-3-ultra-550b-a55b:free the only viable model in this session.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Gebrauchswert alter Erin:2`
-*28.08. 12:15 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.3): Online Adaptive Utility Learner with Human-in-the-Loop - Reformulate as contextual bandit problem: each memory = arm, utility = reward signal. Context features: access recency/frequency, semantic neighborhood density, consi
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Gebrauchswert alter Erin:1`
-*28.08. 12:15 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.3): Memory Knowledge Graph with Centrality Analytics - Model memories as nodes in a heterogeneous graph (MemoryNode, ConceptNode, TemporalNode, EntityNode) with typed edges (references, contradicts, elaborates, supersedes, co-o
 
 ### `last_swarm_critique`
 *28.08. 12:10 UTC · Quelle: critic*
