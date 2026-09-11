@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11703 Fakten** · Stand 2026-09-11 04:34 UTC · aktualisiert bei jedem Herzschlag
+**11703 Fakten** · Stand 2026-09-11 04:44 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7550
 - **swarm_artifact:** 1769
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911044150:5:213e81`
+*11.09. 04:41 UTC · Quelle: dream*
+
+Redundant proposals (PathResolver, circuit-breaker) appear repeatedly because there is no consolidation step that merges similar proposals into single implemented artifacts.
+
+### `dream:20260911044150:4:602981`
+*11.09. 04:41 UTC · Quelle: dream*
+
+The absence of a pre-flight health probe means tasks are assigned to already-failing models, wasting tokens and latency before failure is detected.
+
+### `dream:20260911044150:3:dec814`
+*11.09. 04:41 UTC · Quelle: dream*
+
+Stale swarm knowledge (>7 days) causes the system to act on outdated facts, compounding failure rates when combined with unreliable model responses.
+
+### `dream:20260911044150:2:85e3c7`
+*11.09. 04:41 UTC · Quelle: dream*
+
+Skill proposals accumulate without simulator validation, creating a gap between proposed capabilities and proven functionality that wastes planning cycles.
+
+### `dream:20260911044150:1:6d09b5`
+*11.09. 04:41 UTC · Quelle: dream*
+
+Recurring 429/502 errors across multiple providers indicate systemic upstream instability, not isolated incidents, requiring architectural resilience rather than per-model fixes.
 
 ### `dream:20260911043155:5:5e3fcc`
 *11.09. 04:31 UTC · Quelle: dream*
@@ -43917,31 +43942,6 @@ Hand actions repeatedly fail with exit code 1 and zero bytes read, indicating sa
 *28.08. 04:44 UTC · Quelle: dream*
 
 The model "z-ai/glm-5.2:free" consistently returns 429 rate-limit errors and should be excluded from the routing pool or wrapped with exponential backoff.
-
-### `dream:20260828043936:5:ca10f7`
-*28.08. 04:39 UTC · Quelle: dream*
-
-Calibration tracking exists but produces incomplete records, preventing bias correction from closing the loop on estimation accuracy.
-
-### `dream:20260828043936:4:37c64e`
-*28.08. 04:39 UTC · Quelle: dream*
-
-Simulation-based validation catches errors before deployment but requires multiple revision cycles, indicating incomplete pre-flight checks.
-
-### `dream:20260828043936:3:03d9f7`
-*28.08. 04:39 UTC · Quelle: dream*
-
-High system stress triggers conservative mode that limits parallel exploration, creating a feedback loop where failures increase stress.
-
-### `dream:20260828043936:2:f20102`
-*28.08. 04:39 UTC · Quelle: dream*
-
-Hand actions fail silently with exit codes but no error context, making debugging impossible without structured error capture.
-
-### `dream:20260828043936:1:74439f`
-*28.08. 04:39 UTC · Quelle: dream*
-
-Rate limiting (429) is the dominant failure mode across free-tier models, requiring proactive rate-limit awareness and fallback strategies.
 
 ### `last_swarm_critique`
 *28.08. 04:26 UTC · Quelle: critic*

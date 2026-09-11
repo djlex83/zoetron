@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Redundant proposals (PathResolver, circuit-breaker) appear repeatedly because there is no consolidation step that merges similar proposals into single
+- The absence of a pre-flight health probe means tasks are assigned to already-failing models, wasting tokens and latency before failure is detected.
+- Stale swarm knowledge (>7 days) causes the system to act on outdated facts, compounding failure rates when combined with unreliable model responses.
+- Skill proposals accumulate without simulator validation, creating a gap between proposed capabilities and proven functionality that wastes planning cy
+- Recurring 429/502 errors across multiple providers indicate systemic upstream instability, not isolated incidents, requiring architectural resilience 
 - Effort estimates for swarm tasks are consistently 4-5x too low, requiring a calibrated multiplier.
 - Path-resolution failures recur because hand_actions lack a universal pre-flight validator for argv/env expansion.
 - Proposed skills accumulate unused because no mandatory simulation gate exists before deployment.
@@ -51,11 +56,6 @@
 - Swarm decisions converge prematurely due to the absence of minimum critic cycles and dissent thresholds, causing unchallenged consensus and systematic
 - Hand actions repeatedly risk path and data-alignment errors because relative paths are never absolutized against ZOETRON_DATA before execution, a prob
 - Model endpoint failures (502/429/timeouts) are the dominant recurring failure mode, and the same retry-with-fallback proposal surfaced twice across dr
-- Self-diagnosis found no organ errors and pruning removed 55 events, confirming that the system's internal hygiene mechanisms function correctly but do
-- The calibration goal itself scored 4/10 despite multiple re-attempts, suggesting that accuracy-checking procedures are being performed but the underly
-- Evolution scores [9, 8, 6] diverged sharply from the final act score of 4, revealing evaluation instability where variant-level improvements are not r
-- Swarm convergence was not achieved in only 2 cycles with a single critic, indicating that convergence gates must enforce minimum critic diversity and 
-- Transient API failures (429 rate limits, 502 upstream overloads) are a recurring systemic risk that requires automatic retry-with-backoff and model fa
 
 ---
 
