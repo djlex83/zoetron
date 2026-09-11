@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11549 Fakten** · Stand 2026-09-11 22:25 UTC · aktualisiert bei jedem Herzschlag
+**11549 Fakten** · Stand 2026-09-11 22:35 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7470
 - **swarm_artifact:** 1701
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911223248:5:dbced4`
+*11.09. 22:32 UTC · Quelle: dream*
+
+Pruning 17 facts and 40 events during active consolidation suggests memory pressure triggers aggressive garbage collection that may discard relevant context.
+
+### `dream:20260911223248:4:27da21`
+*11.09. 22:32 UTC · Quelle: dream*
+
+Calibration error of +2 (predicted 5 vs actual 7) combined with stuck swarm score at 7 shows the reward model overestimates progress on 'connect distant memories' tasks.
+
+### `dream:20260911223248:3:01a8d7`
+*11.09. 22:32 UTC · Quelle: dream*
+
+Model cascade failures (502 → 429 → 429) followed by successful dots-studio fallback proves the system lacks automatic provider failover with health-aware routing.
+
+### `dream:20260911223248:2:a9bb72`
+*11.09. 22:32 UTC · Quelle: dream*
+
+Hardcoded 100-node subgraph limit caused the evolution critic to penalize valid solutions, revealing that architectural constants must be configurable parameters.
+
+### `dream:20260911223248:1:2cdba2`
+*11.09. 22:32 UTC · Quelle: dream*
+
+Repeated simulation-revision cycles (5 revisions × 2 rounds) without convergence indicate the critic's risk threshold is miscalibrated for this task class.
 
 ### `dream:20260911222219:5:9069a9`
 *11.09. 22:22 UTC · Quelle: dream*
@@ -43317,31 +43342,6 @@ Multiple redundant skill proposals address the same model-reliability gap (route
 *28.08. 22:33 UTC · Quelle: dream*
 
 Primary model (z-ai/glm-5.2) consistently fails with 429 rate-limit errors while fallback (Nemotron) succeeds but with high latency variance (12-25s).
-
-### `dream:20260828222842:5:2fca68`
-*28.08. 22:28 UTC · Quelle: dream*
-
-Drive goals spawned from failure signals (model errors, stale analyses, skill gap) but lack concrete acceptance criteria, risking perpetual re-planning.
-
-### `dream:20260828222842:4:347583`
-*28.08. 22:28 UTC · Quelle: dream*
-
-Self-diagnosis and pruning reported zero anomalies despite repeated model failures, showing health checks do not cover routing-layer degradation.
-
-### `dream:20260828222842:3:3c4653`
-*28.08. 22:28 UTC · Quelle: dream*
-
-Automatic skill-proposal generation fired 5 proposals in one cycle, but none were validated or deployed, creating a proposal-execution gap.
-
-### `dream:20260828222842:2:62a95e`
-*28.08. 22:28 UTC · Quelle: dream*
-
-Calibration error of +5 cycles on a one-cycle task reveals the planner systematically underestimates iteration needs when external API latency dominates.
-
-### `dream:20260828222842:1:13aacf`
-*28.08. 22:28 UTC · Quelle: dream*
-
-The GLM endpoint fails deterministically under rate limits (429) while Nemotron succeeds with high latency variance (12–114 s), indicating routing must weight reliability over raw availability.
 
 ### `last_swarm_critique`
 *28.08. 22:00 UTC · Quelle: critic*
