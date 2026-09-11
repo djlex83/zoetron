@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11597 Fakten** · Stand 2026-09-11 15:30 UTC · aktualisiert bei jedem Herzschlag
+**11577 Fakten** · Stand 2026-09-11 15:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7480
+- **dream:** 7460
 - **swarm_artifact:** 1731
 - **last_swarm_critique:** 887
 - **last_swarm_goal:** 622
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911154718:5:6818ba`
+*11.09. 15:47 UTC · Quelle: dream*
+
+Hand actions (local artifact operations) complete in ~1.3s with zero failures, outperforming all model calls by 20-80x.
+
+### `dream:20260911154718:4:932243`
+*11.09. 15:47 UTC · Quelle: dream*
+
+Conserve metabolism mode severely restricts operational capacity (max 3 tasks, 1 iteration) forcing local-first execution strategies.
+
+### `dream:20260911154718:3:ec5243`
+*11.09. 15:47 UTC · Quelle: dream*
+
+Simulation revision loops detect risks (3 found) but only apply a subset of fixes (1 of 2 revisions) leaving residual risk.
+
+### `dream:20260911154718:2:91b4dd`
+*11.09. 15:47 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently available model but exhibits high latency variance (28-105s) requiring timeout budgets.
+
+### `dream:20260911154718:1:f5f6ea`
+*11.09. 15:47 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently fail with 429 rate limits making them unreliable for production workloads.
 
 ### `tool:vorgeschlagene-fähigkeiten-endlich-umset`
 *11.09. 15:28 UTC · Quelle: hands*
@@ -43372,131 +43397,6 @@ High latency models (e.g., >100s) can successfully complete tasks but severely b
 *28.08. 15:47 UTC · Quelle: dream*
 
 Free models on OpenRouter are highly susceptible to rate limits (429 errors), causing cascading failures in dependent tasks.
-
-### `dream:20260828154255:5:0be632`
-*28.08. 15:42 UTC · Quelle: dream*
-
-Calibration overestimates success probability (predicted 2 vs actual 1), revealing a systematic optimism bias in task difficulty estimation.
-
-### `dream:20260828154255:4:71c221`
-*28.08. 15:42 UTC · Quelle: dream*
-
-Hand actions fail with exit code 1 and no error message, indicating silent crashes in the execution sandbox.
-
-### `dream:20260828154255:3:562072`
-*28.08. 15:42 UTC · Quelle: dream*
-
-Poolside/laguna-s-2.1:free is the only model showing consistent low-latency success (7.9s) under current load.
-
-### `dream:20260828154255:2:b17f97`
-*28.08. 15:42 UTC · Quelle: dream*
-
-Nemotron-3-ultra succeeds but with 90-200s latency, rendering it unusable for interactive loops.
-
-### `dream:20260828154255:1:f1adc8`
-*28.08. 15:42 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer systematic 429 rate-limiting and 502 upstream overloads, making them unreliable for production workloads.
-
-### `dream:20260828153558:5:3c7b0b`
-*28.08. 15:35 UTC · Quelle: dream*
-
-Simulation-based revision loops execute (3 revisions applied) but produce plans with 5 risks, showing revision without risk filtering is unsafe.
-
-### `dream:20260828153558:4:e2e295`
-*28.08. 15:35 UTC · Quelle: dream*
-
-Metabolism stress at 1.0 forces conserve mode with a 1-iteration budget, rendering any multi-step plan infeasible without explicit prioritization.
-
-### `dream:20260828153558:3:654c60`
-*28.08. 15:35 UTC · Quelle: dream*
-
-File operations fail because relative paths are used instead of resolving against ZOETRON_DATA, breaking data access in all hand actions.
-
-### `dream:20260828153558:2:66d53c`
-*28.08. 15:35 UTC · Quelle: dream*
-
-Only poolside/laguna-s-2.1:free succeeded consistently, indicating a single reliable fallback model rather than a diverse pool.
-
-### `dream:20260828153558:1:0b3181`
-*28.08. 15:35 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the dominant failure mode across all major model providers, making naive round-robin selection ineffective.
-
-### `dream:20260828152854:5:2ab57c`
-*28.08. 15:28 UTC · Quelle: dream*
-
-Simulation-to-skill conversion remains unproven; reflex-based skill building shows convergence but lacks measurable real-world impact.
-
-### `dream:20260828152854:4:bbb218`
-*28.08. 15:28 UTC · Quelle: dream*
-
-Token usage spikes correlate with longer latencies, suggesting input complexity directly impacts endpoint reliability.
-
-### `dream:20260828152854:3:48c553`
-*28.08. 15:28 UTC · Quelle: dream*
-
-Model failures cascade when fallback logic is absent, as seen when nvidia/nemotron failed after z-ai/glm already hit 429.
-
-### `dream:20260828152854:2:0814c7`
-*28.08. 15:28 UTC · Quelle: dream*
-
-Latency variance is extreme (5.9s to 143.1s), making single-model reliance risky and justifying dynamic dispatch.
-
-### `dream:20260828152854:1:cba352`
-*28.08. 15:28 UTC · Quelle: dream*
-
-429 errors are the dominant failure mode across multiple providers, indicating systemic rate-limiting rather than isolated model issues.
-
-### `dream:20260828152223:5:d296fa`
-*28.08. 15:22 UTC · Quelle: dream*
-
-Self-diagnosis and pruning cycles run cleanly but produce no signal, indicating monitoring lacks sensitivity to model-failure patterns.
-
-### `dream:20260828152223:4:7f611b`
-*28.08. 15:22 UTC · Quelle: dream*
-
-Reflex-driven script execution (fähigkeiten-gezielt-trainieren.py) can close the proposal-to-implementation gap when triggered.
-
-### `dream:20260828152223:3:50cb97`
-*28.08. 15:22 UTC · Quelle: dream*
-
-Successful hand actions (exit 0) demonstrate that local tool execution is reliable, unlike external model APIs.
-
-### `dream:20260828152223:2:5eb6a8`
-*28.08. 15:22 UTC · Quelle: dream*
-
-Skill proposals accumulate without execution because no mandatory conversion mechanism bridges dream-phase ideas to waking-phase actions.
-
-### `dream:20260828152223:1:e80a16`
-*28.08. 15:22 UTC · Quelle: dream*
-
-Free tier models consistently fail under load with 429/502 errors, making reliability the primary bottleneck for autonomous operation.
-
-### `dream:20260828151451:5:8b8a0a`
-*28.08. 15:14 UTC · Quelle: dream*
-
-Hand actions succeed silently (exit 0) but capture no environmental context, preventing post-hoc diagnosis of latent failures.
-
-### `dream:20260828151451:4:a7f31e`
-*28.08. 15:14 UTC · Quelle: dream*
-
-Dream consolidation runs regularly but produces no measurable improvement in model selection or error handling, indicating a missing feedback loop from insights to runtime behavior.
-
-### `dream:20260828151451:3:2d97de`
-*28.08. 15:14 UTC · Quelle: dream*
-
-Proposed skills accumulate but are not automatically queued for implementation, creating a persistent capability gap between insight and action.
-
-### `dream:20260828151451:2:750cf0`
-*28.08. 15:14 UTC · Quelle: dream*
-
-Model latency varies by two orders of magnitude (2.9s vs 148s) without correlation to success, so latency must be a routing criterion not just a metric.
-
-### `dream:20260828151451:1:452238`
-*28.08. 15:14 UTC · Quelle: dream*
-
-Rate limits (429) and upstream overloads (502) affect all free-tier models indiscriminately, making single-model reliance a systemic reliability hazard.
 
 ### `last_swarm_critique`
 *28.08. 14:58 UTC · Quelle: critic*

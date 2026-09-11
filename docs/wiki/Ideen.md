@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 15:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 15:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions (local artifact operations) complete in ~1.3s with zero failures, outperforming all model calls by 20-80x.
+- Conserve metabolism mode severely restricts operational capacity (max 3 tasks, 1 iteration) forcing local-first execution strategies.
+- Simulation revision loops detect risks (3 found) but only apply a subset of fixes (1 of 2 revisions) leaving residual risk.
+- dots-studio/dots-3-note-preview:free is the only consistently available model but exhibits high latency variance (28-105s) requiring timeout budgets.
+- Free-tier models on OpenRouter consistently fail with 429 rate limits making them unreliable for production workloads.
 - Pruning removed 9 facts but zero events, suggesting fact-store bloat outpaces event-log growth and requires separate retention policies.
 - Reflex-driven goal renewal succeeded without model calls, demonstrating that critical maintenance tasks can bypass unreliable model endpoints entirely
 - Successful model latency of 23.2s exceeds typical cycle budgets, confirming need for deadline-aware execution with partial result returns.
@@ -51,11 +56,6 @@
 - Reflex-driven swarm data updates consistently succeed with low duration (0.61-2.85s), indicating reliable automation for routine tasks.
 - Successful model calls show latency variance (35-50s) suggesting token count and model load impact performance more than model choice.
 - Repeated 429 errors across multiple models indicate systemic rate-limiting that requires adaptive backoff rather than model switching.
-- Validating proposed skills against historical failure cases ensures only demonstrably effective skills are promoted.
-- Regular pruning of outdated facts and events is essential to maintain system efficiency and prevent knowledge clutter.
-- Integrating dream-derived insights with real actions creates a feedback loop that enhances overall decision-making intelligence.
-- Stale swarm goals directly cause incorrect conclusions and must be updated via automated reflexes with freshness scoring.
-- Frequent 429 errors across multiple free models indicate quota exhaustion and require a dynamic model router that monitors health and switches proacti
 
 ---
 
