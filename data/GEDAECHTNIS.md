@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11525 Fakten** · Stand 2026-09-11 23:37 UTC · aktualisiert bei jedem Herzschlag
+**11530 Fakten** · Stand 2026-09-11 23:55 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7456
 - **swarm_artifact:** 1695
-- **last_swarm_critique:** 892
-- **last_swarm_goal:** 627
-- **anti_pattern:** 383
-- **strategy:** 194
+- **last_swarm_critique:** 893
+- **last_swarm_goal:** 628
+- **anti_pattern:** 385
+- **strategy:** 195
 - **tool:** 158
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:aktualisiere-swarm-fakten`
+*11.09. 23:53 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Aktualisiere swarm Fakten'. Datei: data/tools/aktualisiere-swarm-fakten.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Aktualisiere swarm Fakte:2`
+*11.09. 23:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Knowledge Graph + Vector Store Hybrid with Semantic Merge - Replace JSONL files with a dual-store: (1) Neo4j/SQLite graph for explicit relationships (fact → source, fact → contradicts, fact → supersedes, entity → entity). (2)
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Aktualisiere swarm Fakte:1`
+*11.09. 23:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Event-Driven Architecture with Fact Lifecycle Events - Model facts as event-sourced aggregates: every fact has a lifecycle (Created → StaleDetected → EnrichmentRequested → Enriched → Verified → Merged | Rejected). Replace cro
+
+### `last_swarm_critique`
+*11.09. 23:49 UTC · Quelle: critic*
+
+score=4; issues=Fixed updater only adds timestamps (refreshed_at, last_seen) without actually refreshing stale fact content; Stale facts detected by extract_stale_facts() are never passed to or used by the fixed updater; Verification script's new_facts list is
+
+### `last_swarm_goal`
+*11.09. 23:45 UTC · Quelle: system*
+
+Aktualisiere swarm Fakten
+
+### `dream:20260911234501:5:e73e92`
+*11.09. 23:45 UTC · Quelle: dream*
+
+Pruning aggressiveness (15-28 facts/events per run) risks discarding low-frequency but high-value patterns unless tagged for retention.
+
+### `dream:20260911234501:4:7e72f1`
+*11.09. 23:45 UTC · Quelle: dream*
+
+Dream insights accumulate but lack a promotion gate; only 5/5 proposals from prior dream were instantiated as callable skills.
+
+### `dream:20260911234501:3:ae67a3`
+*11.09. 23:45 UTC · Quelle: dream*
+
+Swarm knowledge staleness triggers recurrent drive goals, indicating missing automated freshness SLA enforcement.
+
+### `dream:20260911234501:2:c1c41f`
+*11.09. 23:45 UTC · Quelle: dream*
+
+Reflex-driven automation (träume-besser-nutzen-lernen.py, veraltete-marktdaten-regelmaessig-aktuali.py) converges reliably without human intervention when tool contracts are stable.
+
+### `dream:20260911234501:1:7d543c`
+*11.09. 23:45 UTC · Quelle: dream*
+
+Model endpoint failures (502/429) cascade across providers, requiring automatic failover with exponential backoff to maintain throughput.
 
 ### `dream:20260911233441:5:610151`
 *11.09. 23:34 UTC · Quelle: dream*
@@ -43208,11 +43258,6 @@ Self-diagnosis reports zero organ errors while external metrics show 57% model f
 
 Repeated 429 errors on z-ai/glm-5.2:free reveal missing per-provider circuit breakers, causing 60 failures versus 45 successes and forcing fallback to higher-latency models.
 
-### `tool:marktanalyse-abschließen-und-lücken-schl`
-*28.08. 23:40 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse abschließen und Lücken schließen'. Datei: data/tools/marktanalyse-abschließen-und-lücken-schl.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *28.08. 23:40 UTC · Quelle: critic*
 
@@ -43222,31 +43267,6 @@ score=8; issues=Lückenanalyse-Artikel ist unvollständig (17959 Zeichen gekappt
 *28.08. 23:35 UTC · Quelle: system*
 
 Marktanalyse abschließen und Lücken schließen
-
-### `dream:20260828233457:5:030bea`
-*28.08. 23:34 UTC · Quelle: dream*
-
-Simulations produce 'go' verdicts with risks/revisions but no automatic mechanism injects those revisions into the next execution plan.
-
-### `dream:20260828233457:4:5b9855`
-*28.08. 23:34 UTC · Quelle: dream*
-
-Stress=1.0 triggers conserve mode (max_tasks=3), which starves the very retries needed to recover from model failures, creating a negative feedback loop.
-
-### `dream:20260828233457:3:b16e94`
-*28.08. 23:34 UTC · Quelle: dream*
-
-Reflex tools show binary reliability: 'marktanalyse-endlich-abschließen.py' converges, while 'träume-in-taten-umsetzen.py' fails silently, indicating missing pre-flight validation.
-
-### `dream:20260828233457:2:8ee97f`
-*28.08. 23:34 UTC · Quelle: dream*
-
-Hand actions fail when tools use relative paths that don't resolve against the actual ZOETRON_DATA mount point, revealing a path-abstraction leak.
-
-### `dream:20260828233457:1:b187d5`
-*28.08. 23:34 UTC · Quelle: dream*
-
-Repeated 429 errors on the primary model without a circuit breaker cause cascading fallback to a high-latency secondary model, wasting 30+ seconds per cycle.
 
 ### `last_swarm_critique`
 *28.08. 23:02 UTC · Quelle: critic*

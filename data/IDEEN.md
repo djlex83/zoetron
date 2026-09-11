@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 23:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 23:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning aggressiveness (15-28 facts/events per run) risks discarding low-frequency but high-value patterns unless tagged for retention.
+- Dream insights accumulate but lack a promotion gate; only 5/5 proposals from prior dream were instantiated as callable skills.
+- Swarm knowledge staleness triggers recurrent drive goals, indicating missing automated freshness SLA enforcement.
+- Reflex-driven automation (träume-besser-nutzen-lernen.py, veraltete-marktdaten-regelmaessig-aktuali.py) converges reliably without human intervention 
+- Model endpoint failures (502/429) cascade across providers, requiring automatic failover with exponential backoff to maintain throughput.
 - Ten skill proposals generated from dreams but drive goal 'Traum-Erkenntnisse besser nutzen' persists, exposing a broken proposal-to-implementation pip
 - Pruning intensity tripled (5→15 facts) between cycles while consolidation was active, suggesting memory pressure grows faster than pruning policy adap
 - Model latency variance (12s–41s) and repeated 502/429-focused skill proposals reveal unstable model infrastructure that reflexes cannot fix.
@@ -51,11 +56,6 @@
 - Hardcoded graph limits and convergence thresholds prevent adaptive optimization, wasting cycles on plateaued searches.
 - Stale swarm goals and dream insights accumulate undetected, degrading collaboration quality until manual refresh is triggered.
 - Model provider failures (27 errors) cascade into system-wide unreliability because no circuit breaker or automatic failover exists.
-- Reflex-driven swarm updates converge reliably, proving that deterministic, low-latency tools outperform LLM calls for routine knowledge sync.
-- Pruning (47→18 events) and clean self-diagnoses show memory hygiene works, but model-error-driven drive goals indicate upstream instability is the pri
-- Relative file paths in hand_action succeed only because CWD is stable; any context switch would break I/O without a ZOETRON_DATA resolver.
-- Fallback to dots-studio/dots-3-note-preview succeeds but only after serial failures, wasting 50+ seconds per request cycle.
-- Multiple free-tier models (Nemotron, Gemma variants) fail intermittently with 502/429 errors, making provider diversity without health-aware routing a
 
 ---
 

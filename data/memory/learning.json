@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 23:35:46",
+ "stand": "2026-09-11 23:53:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,15 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -42,12 +42,6 @@
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -70,6 +64,12 @@
   },
   {
    "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -403,19 +403,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.823,
+ "haende_quote": 0.819,
  "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 22,
+  "n": 23,
   "best": 9.0,
-  "schnitt": 3.86
+  "schnitt": 3.87
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 21,
-   "schnitt": 3.62
+   "n": 22,
+   "schnitt": 3.64
   },
   "bau": {
    "n": 1,
