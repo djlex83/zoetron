@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11600 Fakten** · Stand 2026-09-11 13:36 UTC · aktualisiert bei jedem Herzschlag
+**11601 Fakten** · Stand 2026-09-11 13:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7489
+- **dream:** 7494
 - **swarm_artifact:** 1729
 - **last_swarm_critique:** 885
 - **last_swarm_goal:** 620
-- **anti_pattern:** 393
-- **strategy:** 199
+- **anti_pattern:** 391
+- **strategy:** 198
 - **tool:** 160
-- **hand_result:** 86
+- **hand_result:** 85
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911134436:5:940f11`
+*11.09. 13:44 UTC · Quelle: dream*
+
+Calibration overestimates success by 2 points (predicted 2, actual 0), revealing systematic optimism bias.
+
+### `dream:20260911134436:4:6a8d4d`
+*11.09. 13:44 UTC · Quelle: dream*
+
+poolside/laguna-s-2.1:free delivers low latency (7s) when not rate-limited, making it the only viable free option.
+
+### `dream:20260911134436:3:d5cc15`
+*11.09. 13:44 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free succeeds but with 50-60s latency, unsuitable for interactive loops.
+
+### `dream:20260911134436:2:7ce47b`
+*11.09. 13:44 UTC · Quelle: dream*
+
+Nvidia Nemotron endpoints return 502 upstream errors under load, indicating unstable upstream capacity.
+
+### `dream:20260911134436:1:6215e4`
+*11.09. 13:44 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate limits making them unreliable for production workflows.
 
 ### `dream:20260911133337:5:a9220a`
 *11.09. 13:33 UTC · Quelle: dream*
@@ -43512,18 +43537,6 @@ The swarm goal was successfully converged with a score of 8+, validating the int
 *28.08. 13:53 UTC · Quelle: dream*
 
 Model failures cluster around rate limits (429) and upstream overload (502), indicating a need for robust fallback chains and retry logic with exponential backoff.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Traumlernen ausweiten
-Cr:2`
-*28.08. 13:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Template engine with placeholder substitution - Use Python's string.Template or similar lightweight templating with $$ placeholders instead of f-strings or embedded formatting. Keep all markdown structure in external template
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Traumlernen ausweiten
-Cr:0`
-*28.08. 13:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): String delimiter isolation via base64 encoding - Wrap all markdown content containing triple backticks and special characters in base64 encoding before writing to file. Decode only at runtime when outputting, avoiding any dir
 
 ### `last_swarm_critique`
 *28.08. 13:32 UTC · Quelle: critic*

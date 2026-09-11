@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration overestimates success by 2 points (predicted 2, actual 0), revealing systematic optimism bias.
+- poolside/laguna-s-2.1:free delivers low latency (7s) when not rate-limited, making it the only viable free option.
+- dots-studio/dots-3-note-preview:free succeeds but with 50-60s latency, unsuitable for interactive loops.
+- Nvidia Nemotron endpoints return 502 upstream errors under load, indicating unstable upstream capacity.
+- Free-tier models on OpenRouter suffer pervasive 429 rate limits making them unreliable for production workflows.
 - The simulation requiring two revisions reveals that initial plan generation often misses risks; a pre-simulation validation step can reduce iteration 
 - The tor event failure due to a missing artifact underscores the necessity of a pre-execution checklist that verifies the runtime environment before st
 - The hand_action failure with exit 1 and null error indicates that action scripts lack proper exception propagation and logging, hindering diagnosis.
@@ -51,11 +56,6 @@
 - Simulations are generated but rarely applied because the system lacks a fast-path mechanism to translate successful simulation patterns into immediate
 - Model failures (502 upstream overload, 429 rate limits) cascade into failed hand_actions and broken reflex chains when no fallback routing exists.
 - Stale swarm goals and unused criticism accumulate because there is no automated pipeline that converts collective feedback into updated drive goals.
-- Model latency varies wildly (7.7s to 57.7s), demanding deadline-aware execution to prevent cascade delays.
-- Stale swarm goals and outdated knowledge fragments persist despite periodic pruning, indicating need for proactive refresh.
-- Reflex tools like 'träume-besser-nutzen-lernen.py' successfully bridge learning and action when explicitly triggered.
-- Skill proposals accumulate without deployment, creating a gap between generation and practical application.
-- Model endpoints frequently fail with 502/429 errors, requiring automated routing and circuit breakers for resilience.
 
 ---
 
