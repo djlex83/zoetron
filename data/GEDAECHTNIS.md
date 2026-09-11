@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11641 Fakten** · Stand 2026-09-11 08:18 UTC · aktualisiert bei jedem Herzschlag
+**11639 Fakten** · Stand 2026-09-11 08:28 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7509
-- **swarm_artifact:** 1751
+- **swarm_artifact:** 1749
 - **last_swarm_critique:** 881
 - **last_swarm_goal:** 616
 - **anti_pattern:** 397
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911082620:5:b169fd`
+*11.09. 08:26 UTC · Quelle: dream*
+
+The reflex intended to halve model errors did not succeed, suggesting that the underlying tool or approach is not fit for purpose.
+
+### `dream:20260911082620:4:10c72a`
+*11.09. 08:26 UTC · Quelle: dream*
+
+A hand action failed because it could not find a file or directory at the expected path, pointing to a gap in input validation.
+
+### `dream:20260911082620:3:48e7c4`
+*11.09. 08:26 UTC · Quelle: dream*
+
+Certain free models, like inclusionai/ling-3.0-flash-fin:free, respond successfully and quickly, making them suitable for latency-sensitive tasks.
+
+### `dream:20260911082620:2:69094f`
+*11.09. 08:26 UTC · Quelle: dream*
+
+High system stress combined with a conservative budget (max 3 tasks, 1 iteration) limits the ability to recover from failures.
+
+### `dream:20260911082620:1:d74556`
+*11.09. 08:26 UTC · Quelle: dream*
+
+The system repeatedly encounters HTTP 429 errors when calling several free models, which blocks progress and requires a retry or fallback strategy.
 
 ### `dream:20260911081553:5:6ff54b`
 *11.09. 08:15 UTC · Quelle: dream*
@@ -43649,31 +43674,6 @@ score=6; issues=Nur das erste Artefakt (ModelHealthRegister) ist vollständig un
 *28.08. 08:18 UTC · Quelle: system*
 
 Modellfehler deutlich reduzieren
-
-### `dream:20260828081758:5:ac385e`
-*28.08. 08:17 UTC · Quelle: dream*
-
-The reflex-based goal 'Mehr Träume zum Lernen nutzen' converged successfully, suggesting that reflex-mode execution is more resilient than model-dependent inference when providers are degraded.
-
-### `dream:20260828081758:4:8f808b`
-*28.08. 08:17 UTC · Quelle: dream*
-
-Self-diagnosis reported zero organ errors while model failures persisted, confirming that the failures are external infrastructure-level events that internal health checks cannot detect or prevent.
-
-### `dream:20260828081758:3:3caf25`
-*28.08. 08:17 UTC · Quelle: dream*
-
-Even the sole successful model (poolside/laguna-s-2.1) exhibited 3x latency variance between calls (6.1s vs 18.0s), meaning a single working endpoint is insufficient for reliable operation.
-
-### `dream:20260828081758:2:242ffc`
-*28.08. 08:17 UTC · Quelle: dream*
-
-The gap between generated skill proposals and their actual implementation is itself a systemic failure mode — five proposals were produced but none were yet converted into running capabilities.
-
-### `dream:20260828081758:1:535a69`
-*28.08. 08:17 UTC · Quelle: dream*
-
-Cascading 429 and 502 errors across four different models simultaneously reveals the absence of any model-level fallback or health-tracking mechanism, making the system entirely dependent on whatever single endpoint happens to be alive.
 
 ### `last_swarm_critique`
 *28.08. 07:53 UTC · Quelle: critic*

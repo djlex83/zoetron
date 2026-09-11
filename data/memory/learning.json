@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 08:16:30",
+ "stand": "2026-09-11 08:26:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "laeufe": 12,
+   "erfolge": 12,
    "quote": 1.0
   },
   {
-   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 11,
    "erfolge": 11,
    "quote": 1.0
@@ -48,12 +48,6 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -153,6 +147,12 @@
    "quote": 0.0
   },
   {
+   "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -168,12 +168,6 @@
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-daten-durch-neue-fakten-ersetzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -399,7 +393,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.845,
+ "haende_quote": 0.844,
  "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 23,

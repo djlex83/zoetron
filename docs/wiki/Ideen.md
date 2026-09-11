@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 08:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 08:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,7 +29,7 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex intended to halve model errors did not succeed, suggesting that the underlying tool or approach is not fit for purpose.
+- A hand action failed because it could not find a file or directory at the expected path, pointing to a gap in input validation.
+- Certain free models, like inclusionai/ling-3.0-flash-fin:free, respond successfully and quickly, making them suitable for latency-sensitive tasks.
+- High system stress combined with a conservative budget (max 3 tasks, 1 iteration) limits the ability to recover from failures.
+- The system repeatedly encounters HTTP 429 errors when calling several free models, which blocks progress and requires a retry or fallback strategy.
 - Drive goals highlight reliability, swarm freshness, and dream-skill connection as top priorities for system evolution.
 - Skill proposals consistently target resilience patterns (circuit breakers, backoff, validators) but lack integration with the model router.
 - Timeouts on specific models reveal latency variance requires adaptive selection, not static fallback.
@@ -51,11 +56,6 @@
 - Concurrent failures across multiple providers reveal the fragility of static routing and the need for dynamic health-based failover.
 - Timeouts on specific models (e.g., nemotron) indicate the necessity of strict latency thresholds and automatic circuit-breaking.
 - Rate limiting (429) on free-tier models is a systemic bottleneck requiring per-provider request throttling and exponential backoff.
-- Model availability is highly non-uniform, requiring a fallback strategy to maintain operational continuity.
-- Model outputs that provide only prose instead of executable code blocks cause terminal task failure.
-- High system stress (1.0) correlates with increased API failure rates and the necessity of 'conserve' mode.
-- Frequent 429 and 502 errors indicate that free-tier model endpoints are too volatile for reliable task execution.
-- Metabolic stress at 1.0 should trigger conserve mode, but the system continues queuing non-critical tasks — backpressure mechanisms are missing under 
 
 ---
 
