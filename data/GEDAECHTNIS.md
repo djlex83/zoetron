@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11532 Fakten** · Stand 2026-09-11 23:05 UTC · aktualisiert bei jedem Herzschlag
+**11530 Fakten** · Stand 2026-09-11 23:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7456
-- **swarm_artifact:** 1698
+- **dream:** 7461
+- **swarm_artifact:** 1695
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
-- **anti_pattern:** 385
-- **strategy:** 195
-- **tool:** 159
+- **anti_pattern:** 383
+- **strategy:** 194
+- **tool:** 158
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911231300:5:94fc88`
+*11.09. 23:13 UTC · Quelle: dream*
+
+Reflex-driven swarm updates converge reliably, proving that deterministic, low-latency tools outperform LLM calls for routine knowledge sync.
+
+### `dream:20260911231300:4:54e40d`
+*11.09. 23:13 UTC · Quelle: dream*
+
+Pruning (47→18 events) and clean self-diagnoses show memory hygiene works, but model-error-driven drive goals indicate upstream instability is the primary performance bottleneck.
+
+### `dream:20260911231300:3:311739`
+*11.09. 23:13 UTC · Quelle: dream*
+
+Relative file paths in hand_action succeed only because CWD is stable; any context switch would break I/O without a ZOETRON_DATA resolver.
+
+### `dream:20260911231300:2:70965c`
+*11.09. 23:13 UTC · Quelle: dream*
+
+Fallback to dots-studio/dots-3-note-preview succeeds but only after serial failures, wasting 50+ seconds per request cycle.
+
+### `dream:20260911231300:1:74b13b`
+*11.09. 23:13 UTC · Quelle: dream*
+
+Multiple free-tier models (Nemotron, Gemma variants) fail intermittently with 502/429 errors, making provider diversity without health-aware routing a reliability anti-pattern.
 
 ### `dream:20260911230307:5:5ed80f`
 *11.09. 23:03 UTC · Quelle: dream*
@@ -43247,21 +43272,6 @@ Fallback to nvidia/nemotron-3-ultra succeeds but exhibits 9–15 s latency, viol
 *28.08. 23:20 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, indicating a hard quota ceiling that makes it unreliable as a primary endpoint.
-
-### `tool:marktanalyse-endlich-umsetzen`
-*28.08. 23:05 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse endlich umsetzen'. Datei: data/tools/marktanalyse-endlich-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich ums:2`
-*28.08. 23:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.7): Event-Driven Stream Processing Architecture - Redesign as async event pipeline: Artifact 1 API clients become event producers publishing MarketDataEvent to a message bus (Redis Streams/Kafka/in-memory). Artifact 2 pipeline 
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich ums:0`
-*28.08. 23:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8.0): Direct API Integration with Dependency Injection - Replace all mock senses in Artifact 2 with concrete implementations that directly wrap Artifact 1's financial API clients (AlphaVantage, TwelveData, Finnhub, Polygon). Crea
 
 ### `last_swarm_critique`
 *28.08. 23:02 UTC · Quelle: critic*

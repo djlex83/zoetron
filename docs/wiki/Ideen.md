@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 23:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 23:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven swarm updates converge reliably, proving that deterministic, low-latency tools outperform LLM calls for routine knowledge sync.
+- Pruning (47→18 events) and clean self-diagnoses show memory hygiene works, but model-error-driven drive goals indicate upstream instability is the pri
+- Relative file paths in hand_action succeed only because CWD is stable; any context switch would break I/O without a ZOETRON_DATA resolver.
+- Fallback to dots-studio/dots-3-note-preview succeeds but only after serial failures, wasting 50+ seconds per request cycle.
+- Multiple free-tier models (Nemotron, Gemma variants) fail intermittently with 502/429 errors, making provider diversity without health-aware routing a
 - The pruning of facts and events without considering their relevance to current drive goals may be removing critical context, leading to repeated learn
 - The gap between skill proposals and actual skills points to a lack of a conversion mechanism, such as an automated pipeline from proposal to implement
 - The staleness of swarm knowledge suggests that the current update mechanisms are either too infrequent or not deeply integrated into the system's core
@@ -51,11 +56,6 @@
 - Overlapping drive goals such as error reduction and skill testing create conflict and require explicit sequencing.
 - High latency and variable token usage in free models suggest per-model timeout and token budgets are needed.
 - Repeated 429 errors from free OpenRouter models indicate rate limiting is the dominant failure cause.
-- System autonomously generates skill proposals from failures but lacks an activation pipeline to promote proposals into deployed capabilities.
-- Simulation revision loop executes 5 revisions yet still returns 'revise', revealing a missing convergence criterion or ineffective feedback applicatio
-- Fallback model (dots-studio) succeeds but at 27-35s latency, creating a reliability-latency tradeoff that blocks time-sensitive paths.
-- Swarm convergence stalls at score 7 with 3:1 builder-to-critic ratio, indicating insufficient adversarial pressure for quality gate.
-- Primary models (Nemotron, Gemma) fail systematically with transient 502/429 errors, making single-model reliance a critical reliability risk.
 
 ---
 

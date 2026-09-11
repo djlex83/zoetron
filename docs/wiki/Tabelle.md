@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8173 Neuronen · 862897 bewertete Synapsen
+Stand: 8169 Neuronen · 862503 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -16,9 +16,9 @@ Stand: 8173 Neuronen · 862897 bewertete Synapsen
 | 4 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 876 | 0.23 |
 | 5 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 845 | 0.24 |
 | 6 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 801 | 0.25 |
-| 7 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 807 | 0.25 |
+| 7 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 808 | 0.25 |
 | 8 | 💭 | Rate limiting (429) and upstream overload (502) are recurring fa… | 837 | 0.24 |
-| 9 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 851 | 0.24 |
+| 9 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 852 | 0.24 |
 | 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 858 | 0.23 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 871 | 0.23 |
 | 12 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 894 | 0.22 |

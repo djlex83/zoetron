@@ -1,0 +1,181 @@
+{
+  "scan_time": "2026-09-11T23:13:27.982210",
+  "total_files": 841,
+  "total_size_bytes": 299262049,
+  "total_size_mb": 285.4,
+  "by_action": {
+    "keep": 501,
+    "delete": 4,
+    "review": 210,
+    "archive": 126
+  },
+  "by_category": {
+    "memory": 96,
+    "temp": 3,
+    "unknown": 210,
+    "result": 65,
+    "backup": 1,
+    "artifact": 465,
+    "log": 1
+  },
+  "archive_size_mb": 8.32,
+  "delete_size_mb": 0.01,
+  "top_delete_candidates": [
+    {
+      "path": "/workspace/zoetron/data/artefakte/ci_repair_report_20260905_212432.tmp",
+      "rel_path": "artefakte/ci_repair_report_20260905_212432.tmp",
+      "size_bytes": 3249,
+      "modified": 1788643472.1301146,
+      "modified_iso": "2026-09-05T21:24:32.130115",
+      "age_days": 6.1,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    },
+    {
+      "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "rel_path": "tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "size_bytes": 2681,
+      "modified": 1787812317.2147682,
+      "modified_iso": "2026-08-27T06:31:57.214768",
+      "age_days": 15.7,
+      "category": "backup",
+      "action": "delete",
+      "reason": "Old backup - superseded"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/ci_repair_report_20260905_212636.tmp",
+      "rel_path": "artefakte/ci_repair_report_20260905_212636.tmp",
+      "size_bytes": 808,
+      "modified": 1788643596.1985645,
+      "modified_iso": "2026-09-05T21:26:36.198565",
+      "age_days": 6.1,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    },
+    {
+      "path": "/workspace/zoetron/data/memory/convergence_gate_state.json.tmp",
+      "rel_path": "memory/convergence_gate_state.json.tmp",
+      "size_bytes": 550,
+      "modified": 1787746836.8862145,
+      "modified_iso": "2026-08-26T12:20:36.886214",
+      "age_days": 16.5,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    }
+  ],
+  "top_archive_candidates": [
+    {
+      "path": "/workspace/zoetron/data/artefakte/slow_facts_index.json",
+      "rel_path": "artefakte/slow_facts_index.json",
+      "size_bytes": 3836084,
+      "modified": 1788506279.0892098,
+      "modified_iso": "2026-09-04T07:17:59.089210",
+      "age_days": 7.7,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/vorschlagspruefung_ergebnis.json",
+      "rel_path": "artefakte/vorschlagspruefung_ergebnis.json",
+      "size_bytes": 706235,
+      "modified": 1788267101.9604259,
+      "modified_iso": "2026-09-01T12:51:41.960426",
+      "age_days": 10.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/gruppenaufgaben-locator-report.json",
+      "rel_path": "artefakte/gruppenaufgaben-locator-report.json",
+      "size_bytes": 606383,
+      "modified": 1788559673.965726,
+      "modified_iso": "2026-09-04T22:07:53.965726",
+      "age_days": 7.0,
+      "category": "result",
+      "action": "archive",
+      "reason": "Result/output file - preserve for history"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/marktanalyse_inventar.json",
+      "rel_path": "artefakte/marktanalyse_inventar.json",
+      "size_bytes": 478037,
+      "modified": 1788469694.6664977,
+      "modified_iso": "2026-09-03T21:08:14.666498",
+      "age_days": 8.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/selbstdiagnose_bericht.json",
+      "rel_path": "artefakte/selbstdiagnose_bericht.json",
+      "size_bytes": 218216,
+      "modified": 1787900849.1866405,
+      "modified_iso": "2026-08-28T07:07:29.186641",
+      "age_days": 14.7,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/simulations_fehleranalyse_20260903_100734.json",
+      "rel_path": "artefakte/simulations_fehleranalyse_20260903_100734.json",
+      "size_bytes": 164788,
+      "modified": 1788430054.5613666,
+      "modified_iso": "2026-09-03T10:07:34.561367",
+      "age_days": 8.5,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/simulations_fehleranalyse_20260903_100648.json",
+      "rel_path": "artefakte/simulations_fehleranalyse_20260903_100648.json",
+      "size_bytes": 162445,
+      "modified": 1788430008.279214,
+      "modified_iso": "2026-09-03T10:06:48.279214",
+      "age_days": 8.5,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/vorgeschlagene-faehigkeiten.json",
+      "rel_path": "artefakte/vorgeschlagene-faehigkeiten.json",
+      "size_bytes": 152739,
+      "modified": 1788543543.5941885,
+      "modified_iso": "2026-09-04T17:39:03.594188",
+      "age_days": 7.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/konvergenztor_ergebnis_20260901_125049.json",
+      "rel_path": "artefakte/konvergenztor_ergebnis_20260901_125049.json",
+      "size_bytes": 132028,
+      "modified": 1788267049.1672492,
+      "modified_iso": "2026-09-01T12:50:49.167249",
+      "age_days": 10.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260904_134600.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260904_134600.json",
+      "size_bytes": 78403,
+      "modified": 1788529560.1482017,
+      "modified_iso": "2026-09-04T13:46:00.148202",
+      "age_days": 7.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    }
+  ]
+}
