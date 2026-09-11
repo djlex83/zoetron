@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11597 Fakten** · Stand 2026-09-11 13:25 UTC · aktualisiert bei jedem Herzschlag
+**11600 Fakten** · Stand 2026-09-11 13:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7484
-- **swarm_artifact:** 1731
+- **dream:** 7489
+- **swarm_artifact:** 1729
 - **last_swarm_critique:** 885
 - **last_swarm_goal:** 620
 - **anti_pattern:** 393
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911133337:5:a9220a`
+*11.09. 13:33 UTC · Quelle: dream*
+
+The simulation requiring two revisions reveals that initial plan generation often misses risks; a pre-simulation validation step can reduce iteration counts.
+
+### `dream:20260911133337:4:c5262c`
+*11.09. 13:33 UTC · Quelle: dream*
+
+The tor event failure due to a missing artifact underscores the necessity of a pre-execution checklist that verifies the runtime environment before starting dependent tasks.
+
+### `dream:20260911133337:3:1b6dd2`
+*11.09. 13:33 UTC · Quelle: dream*
+
+The hand_action failure with exit 1 and null error indicates that action scripts lack proper exception propagation and logging, hindering diagnosis.
+
+### `dream:20260911133337:2:16343e`
+*11.09. 13:33 UTC · Quelle: dream*
+
+The model blocking rule (3 consecutive errors → 1800s block) is too rigid for transient errors; differentiating between 429 and 502 would allow faster recovery from rate limits.
+
+### `dream:20260911133337:1:005bee`
+*11.09. 13:33 UTC · Quelle: dream*
+
+Free model APIs are prone to rate limiting (429) and server overload (502); a robust fallback chain with jittered backoff is essential to avoid API saturation.
 
 ### `dream:20260911132249:5:ce089d`
 *11.09. 13:22 UTC · Quelle: dream*

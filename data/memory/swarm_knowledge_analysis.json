@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-09-10T22:20:38.217802",
+  "timestamp": "2026-09-11T13:34:18.487434",
   "data_dir": "/workspace/zoetron/data",
   "counts": {
-    "events": 2010,
-    "facts": 4190,
+    "events": 2068,
+    "facts": 4132,
     "graph_nodes": 0,
     "graph_edges": 0,
     "semantic_vectors": 0,

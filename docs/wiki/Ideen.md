@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,10 +28,10 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation requiring two revisions reveals that initial plan generation often misses risks; a pre-simulation validation step can reduce iteration 
+- The tor event failure due to a missing artifact underscores the necessity of a pre-execution checklist that verifies the runtime environment before st
+- The hand_action failure with exit 1 and null error indicates that action scripts lack proper exception propagation and logging, hindering diagnosis.
+- The model blocking rule (3 consecutive errors → 1800s block) is too rigid for transient errors; differentiating between 429 and 502 would allow faster
+- Free model APIs are prone to rate limiting (429) and server overload (502); a robust fallback chain with jittered backoff is essential to avoid API sa
 - Skill proposals remain unvalidated because there is no closed-loop system that tests proposed skills against real failure scenarios and measures impro
 - Conserve-mode constraints (max_tasks=3, max_iterations=1) cause premature termination of multi-step goals like 'Traum-Erinnerungen verbinden' before c
 - Simulations are generated but rarely applied because the system lacks a fast-path mechanism to translate successful simulation patterns into immediate
@@ -51,11 +56,6 @@
 - Reflex tools like 'träume-besser-nutzen-lernen.py' successfully bridge learning and action when explicitly triggered.
 - Skill proposals accumulate without deployment, creating a gap between generation and practical application.
 - Model endpoints frequently fail with 502/429 errors, requiring automated routing and circuit breakers for resilience.
-- Memory pruning removes events but retains few facts, suggesting experience isn't being distilled into durable semantic knowledge that could inform fut
-- Reflex-based fixes (e.g., data replacement) address symptoms but not root causes because infrastructure skills (rate limiter, router, cache) remain un
-- Swarm feedback becomes stale within cycles because no periodic audit mechanism refreshes objectives or injects fresh perspectives to prevent strategic
-- Model failures persist at nearly 2:1 ratio because coordinated 429 storms and static endpoint selection overwhelm the system despite repeated proposal
-- Skill proposals recur across dream cycles without adoption because no automated promotion pipeline exists to graduate validated proposals into permane
 
 ---
 

@@ -38481,3 +38481,24 @@
 {"ts": 1788527758.9390392, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 6.76, "gelesen": 423}}
 {"ts": 1788527758.940965, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten echt umsetzen", "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py", "ok": true}}
 {"ts": 1788527759.4018734, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten echt umsetzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787923836.7476315, "key": "swarm_artifact:Draft deliverable for: Traumlernen ausweiten", "value": "```python\n#!/usr/bin/env python3\n\"\"\"\nDraft deliverable for 'Traumlernen ausweiten' (Expanding Dream Learning).\nReads existing memory/artefacts to ground the deliverable in real data.\n\"\"\"\n\nimport sys\ni", "source": "builder"}
+{"ts": 1787923936.1833956, "key": "swarm_artifact:Draft deliverable for: Traumlernen ausweiten", "value": "[score 1] ```python\n#!/usr/bin/env python3\n\"\"\"\nDraft deliverable for 'Traumlernen ausweiten' (Expanding Dream Learning).\nReads existing memory/artefacts to ground the deliverable in real data.\n\"\"\"", "source": "builder"}
+{"ts": 1788528234.461081, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788528303.2529883, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788528305.138861, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 30}}
+{"ts": 1788528310.7329834, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788528310.732981, "schalter_geoeffnet": false}}
+{"ts": 1788528336.884507, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 26.2, "tokens_ein": 1343, "tokens_aus": 815}}
+{"ts": 1788528336.885045, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with priority-ordered fallback chain, automatic 429/502 detection, exponential backoff (base 2 s, max 60 s), and per-model success-rate tracking."}}
+{"ts": 1788528336.8851042, "kind": "skill_proposal", "payload": {"proposal": "Create a fast-path skill that probes inclusionai/ling-3.0-flash-fin:free first for latency-sensitive tasks, escalating to nemotron only on quality gates."}}
+{"ts": 1788528336.8851607, "kind": "skill_proposal", "payload": {"proposal": "Build a critic-evolution loop skill: generate → score → critique → mutate → select winner, with configurable variant count and quality threshold."}}
+{"ts": 1788528336.8852189, "kind": "skill_proposal", "payload": {"proposal": "Add a calibration monitor that logs predicted vs actual scores per task type and triggers retraining when MAE exceeds 0.5."}}
+{"ts": 1788528336.8852727, "kind": "skill_proposal", "payload": {"proposal": "Design a hand-action wrapper that validates artifact syntax (Python AST parse) before committing, reducing failed evolution cycles."}}
+{"ts": 1788528336.88533, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788528339.327577, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788528339.327574, "schalter_geoeffnet": false}}
+{"ts": 1788528371.0300164, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.7, "tokens_ein": 527, "tokens_aus": 506}}
+{"ts": 1788528371.0301545, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788528371.030227, "kind": "drive_goal", "payload": {"title": "Fähigkeiten im Simulation testen", "why": "Viele Ideen werden nicht ausprobiert. Simulation prüft sie sicher vor der Tat.", "signal": "gap"}}
+{"ts": 1788528371.03029, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Ergebnisse aufräumen", "why": "Drei Marktanalysen liegen ungenutzt herum. Aufräumen schafft Platz für Neues.", "signal": "stale"}}
+{"ts": 1788528373.78797, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.3, "gelesen": 2}}
+{"ts": 1788528373.7899303, "kind": "reflex_used", "payload": {"goal": "Kritik und Ziele regelmäßig erneuern", "tool": "selbstprüfung-regelmäßig-erneuern.py", "ok": true}}
+{"ts": 1788528374.2553136, "kind": "act_done", "payload": {"goal_title": "Kritik und Ziele regelmäßig erneuern", "score": null, "converged": true, "mode": "reflex"}}
