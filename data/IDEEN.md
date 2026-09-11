@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 00:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 01:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge staleness drives redundant drive goals because no automated freshness check exists for collective memory.
+- Skill proposals accumulate in logs but never activate because the insight-to-skill pipeline lacks a verified execution step.
+- Calibration error of 800% (predicted 1 vs actual 9) reveals the planner's outcome model is decoupled from reality, causing repeated simulation revisio
+- Hand actions consistently fail due to unresolved path variables (sys.argv[1], ZOETRON_DATA) rather than code defects, blocking skill deployment.
+- Model reliability collapses under load without automated failover, as evidenced by 175s latency spikes and 429/502 errors triggering conserve mode.
 - Health probes and circuit breakers are proposed but not yet deployed, leaving the planner blind to real-time model availability.
 - Pruning removes 29 facts and 45 events per run, yet stale knowledge persists, suggesting pruning thresholds are too conservative.
 - Swarm cycles terminate without convergence (score 1, converged=false), indicating missing acceptance criteria or stop conditions.
@@ -51,11 +56,6 @@
 - Hand actions can exit 0 without touching any file — silent failures must be detected by verifying actual filesystem changes, not just exit codes.
 - Artifacts containing only prose never converge — executable Python code blocks are a hard requirement for progress.
 - Model failures are predictable by type (502 overload, 429 rate limit) — a fallback chain with circuit breakers would prevent cascading failures.
-- Effort estimates for swarm tasks are systematically too low by 4-5x; calibration multiplier prevents schedule collapse.
-- Skill proposals accumulate without a conversion pipeline — proposals decay into noise without a 'proposal→skill' implementation step.
-- Swarm convergence marked true with null score indicates premature convergence — require minimum critic cycles or dissent threshold.
-- Model calls fail ~50% from 429/502; exponential backoff with automatic fallback to slower but stable models is essential.
-- Relative path resolution is the dominant hand-action failure mode — always absolutize against ZOETRON_DATA before execution.
 
 ---
 
