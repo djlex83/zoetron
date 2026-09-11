@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 18:38:15",
+ "stand": "2026-09-11 18:50:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
-   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 9,
    "erfolge": 9,
    "quote": 1.0
@@ -28,8 +28,8 @@
   },
   {
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {

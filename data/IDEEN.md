@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 18:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 18:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,14 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals (reliability, freshness, combination) generate intent but lack a concrete executor that translates signals into verified code changes.
+- Proposed reliability skills (health dashboard, activation gate) remain unimplemented while the system repeatedly suffers the exact failures they would
+- Metabolism stress at 1.0 triggers conserve mode but the scheduler still spawns swarms and retries failed models, ignoring the max_tasks=3 budget.
+- The dream-to-action pipeline fails because reflex tools execute without validating file-path resolution against ZOETRON_DATA, causing hand actions to 
+- Free-tier model APIs exhibit cascading 429 rate-limit failures under load, leaving only a single high-latency fallback model operational.
 - Self-diagnosis reported zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not treated as organ d
 - Event pruning removed 22 entries while fact count stayed flat, suggesting experiential data accumulates faster than distilled knowledge.
 - Automated reflex execution (veraltete-schwarmziele-aktualisieren.py) succeeded without human intervention, proving the reflex layer can maintain syste
@@ -51,11 +56,6 @@
 - Immediate retries after a 429 without backoff increase the chance of continued failure.
 - Models with lower latency and smaller token usage are more likely to succeed, suggesting that request size and timing affect availability.
 - The dominant failure cause is HTTP 429 rate limiting, indicating that request concurrency exceeds provider quotas.
-- Pruning 28 events while keeping facts intact shows that aggressive event cleanup can coexist with preservation of durable knowledge, but zero facts pr
-- Repeated 429 errors across multiple free-tier models suggest a shared upstream rate budget that is being exhausted by concurrent or rapid-fire request
-- Fallback model dots-studio/dots-3-note-preview:free succeeds but with 25–40 s latency, showing that reliability gains come at a significant performanc
-- A three-strike lockout rule successfully prevents cascading failures but leaves a 30-minute gap during which the blocked model cannot be retried even 
-- Model failures cluster around timeouts and HTTP 429 rate-limit errors, indicating the system is hitting external API constraints rather than experienc
 
 ---
 

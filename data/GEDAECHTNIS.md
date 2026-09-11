@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11577 Fakten** · Stand 2026-09-11 18:40 UTC · aktualisiert bei jedem Herzschlag
+**11567 Fakten** · Stand 2026-09-11 18:52 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7470
-- **swarm_artifact:** 1725
+- **swarm_artifact:** 1719
 - **last_swarm_critique:** 889
 - **last_swarm_goal:** 624
-- **anti_pattern:** 389
-- **strategy:** 197
-- **tool:** 160
+- **anti_pattern:** 387
+- **strategy:** 196
+- **tool:** 159
 - **hand_result:** 84
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911184911:5:8da554`
+*11.09. 18:49 UTC · Quelle: dream*
+
+Drive goals (reliability, freshness, combination) generate intent but lack a concrete executor that translates signals into verified code changes.
+
+### `dream:20260911184911:4:f0b374`
+*11.09. 18:49 UTC · Quelle: dream*
+
+Proposed reliability skills (health dashboard, activation gate) remain unimplemented while the system repeatedly suffers the exact failures they would prevent.
+
+### `dream:20260911184911:3:ce016e`
+*11.09. 18:49 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 triggers conserve mode but the scheduler still spawns swarms and retries failed models, ignoring the max_tasks=3 budget.
+
+### `dream:20260911184911:2:ea66cc`
+*11.09. 18:49 UTC · Quelle: dream*
+
+The dream-to-action pipeline fails because reflex tools execute without validating file-path resolution against ZOETRON_DATA, causing hand actions to read nothing.
+
+### `dream:20260911184911:1:8aa824`
+*11.09. 18:49 UTC · Quelle: dream*
+
+Free-tier model APIs exhibit cascading 429 rate-limit failures under load, leaving only a single high-latency fallback model operational.
 
 ### `dream:20260911183701:5:e6ce4a`
 *11.09. 18:37 UTC · Quelle: dream*
@@ -43358,21 +43383,6 @@ Nvidia Nemotron-3-Ultra succeeds where others fail but exhibits high latency var
 
 Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
 
-### `tool:träume-besser-zum-lernen-nutzen`
-*28.08. 18:46 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Träume besser zum Lernen nutzen'. Datei: data/tools/träume-besser-zum-lernen-nutzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Träume besser zum Lernen:2`
-*28.08. 18:45 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Predictive Dream Compression & Distillation - Treat dreams as compressed latent representations of learning state: (1) DreamEncoder trains a VAE on historical dream→learning-outcome pairs, learning to predict which dream feat
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Träume besser zum Lernen:0`
-*28.08. 18:45 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Neuro-symbolic Dream-to-Knowledge Bridge - Implement a direct pipeline: (1) DreamCapture hook intercepts dream.py output in real-time, (2) DreamParser extracts entities, relations, and emotional valence using spaCy + custom o
-
 ### `last_swarm_critique`
 *28.08. 18:43 UTC · Quelle: critic*
 
@@ -43382,31 +43392,6 @@ score=4; issues=Artifacts are primarily exploratory/audit tools (audit script + 
 *28.08. 18:37 UTC · Quelle: system*
 
 Träume besser zum Lernen nutzen
-
-### `dream:20260828183719:5:67d73c`
-*28.08. 18:37 UTC · Quelle: dream*
-
-Rate-limit headers (Retry-After, X-RateLimit-Remaining) are emitted but ignored, causing reactive 429 storms instead of proactive throttling.
-
-### `dream:20260828183719:4:250ab7`
-*28.08. 18:37 UTC · Quelle: dream*
-
-Proposed resilience skills (circuit-breaker, pre-flight, dispatcher) remain unimplemented because no "dream-to-action" enforcement exists.
-
-### `dream:20260828183719:3:8f5afa`
-*28.08. 18:37 UTC · Quelle: dream*
-
-Swarm evolved but failed to converge (score 6, cycles 2), indicating revision loops lack a hard acceptance gate.
-
-### `dream:20260828183719:2:2963a9`
-*28.08. 18:37 UTC · Quelle: dream*
-
-Successful calls (inclusionai/ling, nvidia/nemotron-3-ultra) share low latency and stable headers, suggesting health signals are predictable from first response.
-
-### `dream:20260828183719:1:b64d92`
-*28.08. 18:37 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for sustained swarm workloads.
 
 ### `last_swarm_critique`
 *28.08. 18:12 UTC · Quelle: critic*
