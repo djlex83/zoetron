@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 01:42:13",
+ "stand": "2026-09-11 02:08:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,13 +39,13 @@
    "quote": 1.0
   },
   {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -76,6 +76,12 @@
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -121,12 +127,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
@@ -192,12 +192,6 @@
    "tool": "neue-fähigkeiten-erlernen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarm-ergebnisse-in-handlungen-umsetze.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -387,7 +381,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.797,
+ "haende_quote": 0.796,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 23,

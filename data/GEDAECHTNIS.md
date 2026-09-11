@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11750 Fakten** · Stand 2026-09-11 01:47 UTC · aktualisiert bei jedem Herzschlag
+**11731 Fakten** · Stand 2026-09-11 02:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7565
-- **swarm_artifact:** 1787
+- **dream:** 7555
+- **swarm_artifact:** 1781
 - **last_swarm_critique:** 877
 - **last_swarm_goal:** 612
-- **anti_pattern:** 409
-- **strategy:** 206
+- **anti_pattern:** 407
+- **strategy:** 205
 - **tool:** 163
 - **hand_result:** 91
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911020732:5:7430b6`
+*11.09. 02:07 UTC · Quelle: dream*
+
+Reflex convergence succeeds when tools are deterministic scripts (alte-schwarm-ergebnisse-aufräumen.py) but fails for open-ended model-dependent skills.
+
+### `dream:20260911020732:4:65ad37`
+*11.09. 02:07 UTC · Quelle: dream*
+
+Aggressive pruning (39+30 events, 6+10 facts per cycle) risks discarding low-frequency high-impact patterns needed for rare failure diagnosis.
+
+### `dream:20260911020732:3:877f6e`
+*11.09. 02:07 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors while model failure rate exceeds 75%, indicating health monitoring blind spots for external dependencies.
+
+### `dream:20260911020732:2:c28367`
+*11.09. 02:07 UTC · Quelle: dream*
+
+Tools are rejected when they lack observable side effects (no return value, no writes), making pure-output utilities incompatible with the action framework.
+
+### `dream:20260911020732:1:c1e113`
+*11.09. 02:07 UTC · Quelle: dream*
+
+Model provider cascading failures (502 then multiple 429s) reveal single-provider dependency as the primary system availability risk.
 
 ### `dream:20260911014108:5:8987c9`
 *11.09. 01:41 UTC · Quelle: dream*
@@ -44008,16 +44033,6 @@ Hand actions consistently fail with exit code 1 and no error message, indicating
 
 Rate limiting (HTTP 429) on z-ai/glm-5.2:free causes repeated model failures and must be handled with exponential backoff or model fallback.
 
-### `anti_pattern:Previous attempt scored 2/10. Goal: Simulationen in echtes H:2`
-*28.08. 01:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.7): Declarative Policy Engine - Define simulation-to-action mappings as versioned YAML policies: triggers (simulation state queries, temporal conditions, logical expressions), actions (parameterized command templates for target
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Simulationen in echtes H:1`
-*28.08. 01:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.3): Reactive Control Loop (Digital Twin) - Build a continuous control loop running at fixed frequency (e.g., 10 Hz) that: (1) reads current simulation state from shared memory / gRPC / Redis, (2) computes control actions via a 
-
 ### `last_swarm_critique`
 *28.08. 01:53 UTC · Quelle: critic*
 
@@ -44027,81 +44042,6 @@ score=2; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Shell-Kommando
 *28.08. 01:52 UTC · Quelle: system*
 
 Simulationen in echtes Handeln umsetzen
-
-### `dream:20260828015138:5:f38735`
-*28.08. 01:51 UTC · Quelle: dream*
-
-Nemotron-3-ultra shows high latency variance (100s vs 6s) while poolside/laguna-s-2.1 delivers consistent sub-10s latency, making the latter preferable for time-sensitive tasks.
-
-### `dream:20260828015138:4:9b894c`
-*28.08. 01:51 UTC · Quelle: dream*
-
-Hand-action failures with zero duration and zero reads point to silent pre-condition failures rather than execution errors.
-
-### `dream:20260828015138:3:48e1da`
-*28.08. 01:51 UTC · Quelle: dream*
-
-Swarm convergence in a single cycle without evolution (evolved=false) indicates insufficient exploration, risking local optima.
-
-### `dream:20260828015138:2:b5eb26`
-*28.08. 01:51 UTC · Quelle: dream*
-
-Calibration error of +6 actions (predicted 3 vs actual 9) reveals a consistent underestimation bias that inflates planning confidence.
-
-### `dream:20260828015138:1:8d3db0`
-*28.08. 01:51 UTC · Quelle: dream*
-
-Free-tier models exhibit systemic rate-limiting (429) and overload (502) failures, making static model assignment unreliable for production swarms.
-
-### `dream:20260828014643:5:e82528`
-*28.08. 01:46 UTC · Quelle: dream*
-
-System operates at stress=1.0 with max_tasks=3, max_iterations=1; all successful outcomes occur within this tight envelope after model fallback and path correction.
-
-### `dream:20260828014643:4:f12438`
-*28.08. 01:46 UTC · Quelle: dream*
-
-Calibration error of 6 (predicted 3 vs actual 9) indicates complexity estimation is unreliable under conserve-mode budget constraints.
-
-### `dream:20260828014643:3:b223cb`
-*28.08. 01:46 UTC · Quelle: dream*
-
-Simulation step consistently detects risks (3) and triggers revisions (3) that convert failing hand actions into successful artifact generation.
-
-### `dream:20260828014643:2:45a17e`
-*28.08. 01:46 UTC · Quelle: dream*
-
-Hand actions fail when using relative paths; success requires resolving inputs via sys.argv[1] and ZOETRON_DATA environment variable before filesystem access.
-
-### `dream:20260828014643:1:cfe8b1`
-*28.08. 01:46 UTC · Quelle: dream*
-
-Primary model (glm-5.2) fails deterministically with 429 rate-limit errors; fallback model (nemotron) succeeds but exhibits 10x latency variance (15–185s).
-
-### `dream:20260828014213:5:9d01a1`
-*28.08. 01:42 UTC · Quelle: dream*
-
-Self-diagnose organ is inactive; critical system metrics (model latency, error rates, skill promotion health) go unaudited.
-
-### `dream:20260828014213:4:611472`
-*28.08. 01:42 UTC · Quelle: dream*
-
-No automated model health monitoring exists; failures are only detected reactively during task execution.
-
-### `dream:20260828014213:3:ebcf05`
-*28.08. 01:42 UTC · Quelle: dream*
-
-Skill proposals accumulate (5+ logged) but conversion to deployed skills is near zero due to missing validation pipeline.
-
-### `dream:20260828014213:2:9c1c87`
-*28.08. 01:42 UTC · Quelle: dream*
-
-Hand actions fail when using relative paths instead of absolute paths rooted at ZOETRON_DATA/sys.argv[1].
-
-### `dream:20260828014213:1:76b55c`
-*28.08. 01:42 UTC · Quelle: dream*
-
-Free model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production tasks.
 
 ### `last_swarm_critique`
 *28.08. 01:20 UTC · Quelle: critic*
