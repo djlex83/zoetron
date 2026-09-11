@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11559 Fakten** · Stand 2026-09-11 20:26 UTC · aktualisiert bei jedem Herzschlag
+**11569 Fakten** · Stand 2026-09-11 20:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7470
+- **dream:** 7475
 - **swarm_artifact:** 1713
-- **last_swarm_critique:** 890
-- **last_swarm_goal:** 625
-- **anti_pattern:** 385
-- **strategy:** 195
-- **tool:** 160
-- **hand_result:** 82
+- **last_swarm_critique:** 891
+- **last_swarm_goal:** 626
+- **anti_pattern:** 387
+- **strategy:** 196
+- **tool:** 161
+- **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:fähigkeits-vorschläge-umsetzen`
+*11.09. 20:45 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Vorschläge umsetzen'. Datei: data/tools/fähigkeits-vorschläge-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeits-Vorschläge um:1`
+*11.09. 20:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Collaborative filtering with implicit feedback - Leverage user interactions (clicks, saves, applications) to build a user-skill matrix, apply matrix factorization or nearest neighbors to recommend skills that similar users ha
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeits-Vorschläge um:0`
+*11.09. 20:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Content-based skill recommendation using NLP and taxonomy mapping - Parse user resumes and job postings with NLP to extract skills, map to a standardized taxonomy (e.g., ESCO), and suggest missing or trending skills based on 
+
+### `last_swarm_critique`
+*11.09. 20:42 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*11.09. 20:35 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge umsetzen
+
+### `dream:20260911203435:5:100f08`
+*11.09. 20:34 UTC · Quelle: dream*
+
+Despite the artifact running (83 lines of Python) and the tor flag being green, the bahnen score only reached 3 with a negative delta of -0.5, suggesting the solution is incomplete.
+
+### `dream:20260911203435:4:f75e0f`
+*11.09. 20:34 UTC · Quelle: dream*
+
+Calibration predicted a score of 5 but the actual was 3 (absolute error 2), indicating the scoring model needs recalibration.
+
+### `dream:20260911203435:3:3a2e50`
+*11.09. 20:34 UTC · Quelle: dream*
+
+The evolution_run procedure improved the swarm-goal-renewal output from 3/10 to 8/10 by generating three variants and selecting the highest-scoring one.
+
+### `dream:20260911203435:2:d57e37`
+*11.09. 20:34 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only working model but exhibits high latency variance (5.5s to 42.9s) and large output token swings (1326 to 3853 tokens).
+
+### `dream:20260911203435:1:16a338`
+*11.09. 20:34 UTC · Quelle: dream*
+
+The gemma-4 models (31b-it and 26b-a4b-it) consistently fail with HTTP 429 rate-limit errors, making them unreliable for production use.
 
 ### `dream:20260911202353:5:5b6295`
 *11.09. 20:23 UTC · Quelle: dream*

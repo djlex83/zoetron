@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8177 Neuronen · 866722 bewertete Synapsen
+Stand: 8186 Neuronen · 868262 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,19 +11,19 @@ Stand: 8177 Neuronen · 866722 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1061 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1062 | 0.23 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1063 | 0.23 |
 | 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 848 | 0.25 |
 | 4 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 883 | 0.23 |
-| 5 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 807 | 0.26 |
+| 5 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 808 | 0.26 |
 | 6 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 850 | 0.24 |
-| 7 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 811 | 0.25 |
+| 7 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 812 | 0.25 |
 | 8 | 💭 | Rate limiting (429) and upstream overload (502) are recurring fa… | 838 | 0.24 |
 | 9 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 853 | 0.24 |
 | 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 859 | 0.23 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 876 | 0.23 |
 | 12 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 895 | 0.22 |
 | 13 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 862 | 0.23 |
-| 14 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 751 | 0.26 |
+| 14 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 752 | 0.26 |
 | 15 | 💭 | The primary model (z-ai/glm-5.2) repeatedly fails with 429 error… | 783 | 0.25 |
 
 ## Die 15 stärksten Synapsen

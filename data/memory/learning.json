@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 20:24:36",
+ "stand": "2026-09-11 20:45:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -66,12 +66,6 @@
    "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -133,6 +127,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "traumerkenntnisse-in-fähigkeiten-umsetze.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
@@ -237,12 +237,6 @@
    "quote": 1.0
   },
   {
-   "tool": "traumerkenntnisse-in-fähigkeiten-umsetze.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "modelle-zuverlässiger-machen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -313,6 +307,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "modell-fehler-verstehen-und-senken.py",
@@ -399,17 +399,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.809,
- "simulationen_angewandt": 34,
+ "haende_quote": 0.805,
+ "simulationen_angewandt": 36,
  "swarm_scores": {
-  "n": 23,
+  "n": 24,
   "best": 9.0,
-  "schnitt": 3.57
+  "schnitt": 3.62
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 3.32
+   "n": 23,
+   "schnitt": 3.39
   },
   "bau": {
    "n": 1,

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 20:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 20:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Despite the artifact running (83 lines of Python) and the tor flag being green, the bahnen score only reached 3 with a negative delta of -0.5, suggest
+- Calibration predicted a score of 5 but the actual was 3 (absolute error 2), indicating the scoring model needs recalibration.
+- The evolution_run procedure improved the swarm-goal-renewal output from 3/10 to 8/10 by generating three variants and selecting the highest-scoring on
+- dots-studio/dots-3-note-preview:free is the only working model but exhibits high latency variance (5.5s to 42.9s) and large output token swings (1326 
+- The gemma-4 models (31b-it and 26b-a4b-it) consistently fail with HTTP 429 rate-limit errors, making them unreliable for production use.
 - Simulation-driven goal revision successfully identified 3 risks and applied 3 corrections, proving the review loop works under tight budgets.
 - Operating in 'conserve' metabolism with max_tasks=3 and max_iterations=1 forces serial execution and eliminates retry headroom.
 - dots-studio/dots-3-note-preview:free is the only model delivering consistent successes, albeit with highly variable latency (5–77 s).
@@ -51,11 +56,6 @@
 - Model blocking after 3 consecutive errors exists but lacks integration with health-based routing to prevent repeated attempts on degraded models.
 - The dots-studio model succeeds consistently but with high latency, making it a reliable fallback if prioritized first in the chain.
 - Rate limits (429) on Google models and timeouts on Nvidia model indicate that retry logic without exponential backoff and Retry-After parsing causes c
-- Dream cycles produce high-value patches (executor, scheduler) but lack a sandboxed verify-then-merge loop, so insights accumulate without deployment.
-- Swarm knowledge refresh succeeds via reflex but remains a one-off; no periodic staleness detector triggers autonomous re-sync.
-- Metabolic stress signals exist but no scheduler reads them to shed load before budget exhaustion, causing cascading failures under pressure.
-- Skill proposals for resilience (backoff, health scoring, caching, Retry-After) are generated repeatedly but never enacted, revealing an execution gap 
-- Model failures (timeouts, 429s) dominate latency and block progress, yet the fallback chain reacts sequentially instead of routing proactively to the 
 
 ---
 
