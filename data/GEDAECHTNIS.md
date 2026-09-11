@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11713 Fakten** · Stand 2026-09-11 04:13 UTC · aktualisiert bei jedem Herzschlag
+**11707 Fakten** · Stand 2026-09-11 04:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7550
-- **swarm_artifact:** 1775
+- **dream:** 7545
+- **swarm_artifact:** 1774
 - **last_swarm_critique:** 878
 - **last_swarm_goal:** 613
 - **anti_pattern:** 403
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911042133:5:01c2af`
+*11.09. 04:21 UTC · Quelle: dream*
+
+The same five skill proposals regenerate identically across dream cycles, revealing a systemic failure to convert proposals into implemented, tested code.
+
+### `dream:20260911042133:4:efffab`
+*11.09. 04:21 UTC · Quelle: dream*
+
+Skills are proposed far more frequently than they are tested in simulation, creating a dangerous gap between theoretical capability and proven, validated performance.
+
+### `dream:20260911042133:3:ba88a7`
+*11.09. 04:21 UTC · Quelle: dream*
+
+Swarm decisions converge prematurely due to the absence of minimum critic cycles and dissent thresholds, causing unchallenged consensus and systematically underestimated effort by 4-5x.
+
+### `dream:20260911042133:2:e6bb2e`
+*11.09. 04:21 UTC · Quelle: dream*
+
+Hand actions repeatedly risk path and data-alignment errors because relative paths are never absolutized against ZOETRON_DATA before execution, a problem flagged in two separate proposal cycles.
+
+### `dream:20260911042133:1:eab07d`
+*11.09. 04:21 UTC · Quelle: dream*
+
+Model endpoint failures (502/429/timeouts) are the dominant recurring failure mode, and the same retry-with-fallback proposal surfaced twice across dream cycles without being implemented, indicating a critical reliability gap.
 
 ### `dream:20260911041132:5:9824e8`
 *11.09. 04:11 UTC · Quelle: dream*
@@ -43917,56 +43942,6 @@ score=4; issues=Artifact 1 (benchmark_organ extension) mocks skill execution via
 *28.08. 04:18 UTC · Quelle: system*
 
 Vorgeschlagene Skills wirklich testen
-
-### `dream:20260828041654:5:f783a4`
-*28.08. 04:16 UTC · Quelle: dream*
-
-Poolside model latency of 145s stalls the pipeline; async calls with timeout fallback are needed.
-
-### `dream:20260828041654:4:dc8e33`
-*28.08. 04:16 UTC · Quelle: dream*
-
-Evolutionary refinement consistently lifts artifact scores from 6 to 9 while respecting the 20k-token size constraint.
-
-### `dream:20260828041654:3:3a56ec`
-*28.08. 04:16 UTC · Quelle: dream*
-
-Calibration error of 4 points (predicted 2 vs actual 6) reveals systematic underestimation of task complexity.
-
-### `dream:20260828041654:2:c0f19c`
-*28.08. 04:16 UTC · Quelle: dream*
-
-Missing simulation artifact (simulate.py) triggers silent fallback to empty data, corrupting the learning signal.
-
-### `dream:20260828041654:1:073ebf`
-*28.08. 04:16 UTC · Quelle: dream*
-
-Free-tier models repeatedly hit 429 rate limits, making retry-with-fallback essential for reliability.
-
-### `dream:20260828041230:5:4e96f0`
-*28.08. 04:12 UTC · Quelle: dream*
-
-Reflex-to-tool binding (aufgaben-priorisieren.py) fails silently under resource pressure, breaking the closed loop between drive goals and executable skills.
-
-### `dream:20260828041230:4:deb396`
-*28.08. 04:12 UTC · Quelle: dream*
-
-Metabolism enters 'conserve' at stress=1.0 with only 3 tasks/1 iteration, starving the very simulations and skill executions needed to reduce failure rates.
-
-### `dream:20260828041230:3:1c343b`
-*28.08. 04:12 UTC · Quelle: dream*
-
-File-system actions fail because relative paths ignore the mandatory ZOETRON_DATA environment variable and sys.argv[1] input contract, causing silent zero-byte reads.
-
-### `dream:20260828041230:2:66e3ca`
-*28.08. 04:12 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra model succeeds where others fail but exhibits 6x latency variance (8.7s–51.1s), requiring timeout budgets and async handling to prevent cascade stalls.
-
-### `dream:20260828041230:1:d836b9`
-*28.08. 04:12 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the primary failure mode across all free-tier models, making them unreliable for production use without request throttling and fallback chains.
 
 ### `last_swarm_critique`
 *28.08. 03:58 UTC · Quelle: critic*

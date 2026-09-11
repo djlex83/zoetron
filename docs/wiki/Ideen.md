@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,10 +26,10 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The same five skill proposals regenerate identically across dream cycles, revealing a systemic failure to convert proposals into implemented, tested c
+- Skills are proposed far more frequently than they are tested in simulation, creating a dangerous gap between theoretical capability and proven, valida
+- Swarm decisions converge prematurely due to the absence of minimum critic cycles and dissent thresholds, causing unchallenged consensus and systematic
+- Hand actions repeatedly risk path and data-alignment errors because relative paths are never absolutized against ZOETRON_DATA before execution, a prob
+- Model endpoint failures (502/429/timeouts) are the dominant recurring failure mode, and the same retry-with-fallback proposal surfaced twice across dr
 - Self-diagnosis found no organ errors and pruning removed 55 events, confirming that the system's internal hygiene mechanisms function correctly but do
 - The calibration goal itself scored 4/10 despite multiple re-attempts, suggesting that accuracy-checking procedures are being performed but the underly
 - Evolution scores [9, 8, 6] diverged sharply from the final act score of 4, revealing evaluation instability where variant-level improvements are not r
@@ -51,11 +56,6 @@
 - InclusionAI Ling 3.0 Flash Sante is the only model with 100% success rate and stable low latency (<6s) across varying token loads, marking it as the c
 - Nvidia Nemotron 3 Ultra exhibits bimodal latency (10s vs 58s) and frequent 502 upstream overload errors, indicating unstable inference infrastructure 
 - Free-tier models from Google (Gemma) and Poolside consistently hit 429 rate limits, making them unreliable for production workloads without exponentia
-- Path resolution failures in hand_action calls (exit code 1, zero bytes read) point to unresolved environment or configuration issues blocking task exe
-- Stale swarm results combined with low utilization of proposed skills indicate a decay in knowledge freshness and implementation fidelity over time.
-- Model performance varies drastically under load, with latency increasing from 17.8s to 58.0s and frequent failures, suggesting dynamic resource alloca
-- The gap between proposed skills and their execution reveals a structural failure in translating abstract proposals into concrete, actionable tool call
-- Repeated 429/502 errors on primary models indicate systemic rate-limiting and upstream overload that cannot be resolved by simple retry logic alone.
 
 ---
 

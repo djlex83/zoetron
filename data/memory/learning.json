@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 04:12:02",
+ "stand": "2026-09-11 04:22:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -34,8 +34,8 @@
   },
   {
    "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -403,14 +403,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.843,
  "simulationen_angewandt": 30,
  "swarm_scores": {
-  "n": 23,
+  "n": 22,
   "best": 9.0,
-  "schnitt": 4.26
+  "schnitt": 4.09
  },
  "score_nach_ziel_typ": {
   "analyse": {
