@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 06:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 06:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,11 +27,11 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance (4s vs 38s) on the same model indicates unreliable infrastructure that requires degraded-mode fallbacks.
+- Reflex convergence goes unmonitored, missing opportunities to promote stable behaviors into default procedures.
+- Stale knowledge (>7 days) persists without automated archival, causing the system to replay outdated patterns during consolidation.
+- Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that may never be deployed.
+- Model failures cluster around rate limits (429) and upstream overloads (502), making proactive health probes and circuit breakers essential for reliab
 - The reflex tool 'träume-in-echte-fähigkeiten-umsetzen.py' returns ok=false, breaking the dream-to-skill pipeline despite swarm initiation.
 - Metabolism stress at 1.0 forces conserve mode (max_tasks=3, max_iterations=1), throttling all autonomous activity including dream consolidation.
 - Hand actions fail because relative paths are resolved against the working directory instead of ZOETRON_DATA, causing silent zero-byte reads.
@@ -51,11 +56,6 @@
 - Model selection discovers reliable models (Poolside) by chance rather than policy; a reliability-aware router would prevent known-failing models from 
 - Proposed skills accumulate unused because no automated pipeline converts approved proposals into deployed, tested code.
 - Provider-tier failures (Nvidia 502, Google 429) are systematic and require provider-level circuit breaking, not per-model retries.
-- Swarm knowledge staleness (7-day threshold) is detected but no automated refresh triggers exist, causing drift in collaborative decisions.
-- Pruning runs consistently remove 5-7 facts and 18-19 events per cycle, suggesting a stable churn rate that could be tuned by importance scoring.
-- Reflex scripts (modellfehler-stark-reduzieren.py) fire reactively after failures instead of preventing them via pre-flight probes.
-- Proposed skills accumulate but remain undeployed because no gate validates them against live traffic before registration.
-- Model failures cluster around rate limits (429) and upstream overloads (502), indicating the current round-robin selection ignores real-time provider 
 
 ---
 

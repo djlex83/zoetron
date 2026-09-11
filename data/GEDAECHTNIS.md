@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11688 Fakten** · Stand 2026-09-11 06:16 UTC · aktualisiert bei jedem Herzschlag
+**11668 Fakten** · Stand 2026-09-11 06:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7540
-- **swarm_artifact:** 1763
+- **dream:** 7530
+- **swarm_artifact:** 1757
 - **last_swarm_critique:** 880
 - **last_swarm_goal:** 615
-- **anti_pattern:** 399
-- **strategy:** 202
+- **anti_pattern:** 397
+- **strategy:** 201
 - **tool:** 162
-- **hand_result:** 88
+- **hand_result:** 87
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911064308:5:f6e870`
+*11.09. 06:43 UTC · Quelle: dream*
+
+Latency variance (4s vs 38s) on the same model indicates unreliable infrastructure that requires degraded-mode fallbacks.
+
+### `dream:20260911064308:4:58ead2`
+*11.09. 06:43 UTC · Quelle: dream*
+
+Reflex convergence goes unmonitored, missing opportunities to promote stable behaviors into default procedures.
+
+### `dream:20260911064308:3:eed473`
+*11.09. 06:43 UTC · Quelle: dream*
+
+Stale knowledge (>7 days) persists without automated archival, causing the system to replay outdated patterns during consolidation.
+
+### `dream:20260911064308:2:3a358c`
+*11.09. 06:43 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that may never be deployed.
+
+### `dream:20260911064308:1:cd1024`
+*11.09. 06:43 UTC · Quelle: dream*
+
+Model failures cluster around rate limits (429) and upstream overloads (502), making proactive health probes and circuit breakers essential for reliability.
 
 ### `last_swarm_critique`
 *11.09. 06:10 UTC · Quelle: critic*
@@ -43773,66 +43798,6 @@ Nemotron-3-ultra latency varies 6x (15–95s), making fixed timeouts unreliable 
 
 Repeated 429 errors on z-ai/glm-5.2:free indicate a persistent rate-limit bottleneck that wastes cycles without automatic circuit-breaking.
 
-### `dream:20260828064014:5:0c5ef3`
-*28.08. 06:40 UTC · Quelle: dream*
-
-'nvidia/nemotron-3-ultra-550b-a55b:free' exhibits high latency variance (4.8s to 79.4s) and occasional 502 upstream errors under load.
-
-### `dream:20260828064014:4:151812`
-*28.08. 06:40 UTC · Quelle: dream*
-
-The calibration for the goal 'Mehr Experimente für neue Lösungen wagen' significantly underestimated the outcome (predicted 3, actual 7).
-
-### `dream:20260828064014:3:e38217`
-*28.08. 06:40 UTC · Quelle: dream*
-
-'inclusionai/ling-3.0-flash-fin:free' provides a reliable, low-latency alternative (5.7s) when primary models are overloaded.
-
-### `dream:20260828064014:2:5b59f2`
-*28.08. 06:40 UTC · Quelle: dream*
-
-Free models on OpenRouter are highly susceptible to cascading 429 errors during rapid sequential or concurrent requests.
-
-### `dream:20260828064014:1:82a124`
-*28.08. 06:40 UTC · Quelle: dream*
-
-The model 'z-ai/glm-5.2:free' is persistently rate-limited (429 errors) and should be temporarily blacklisted to avoid wasting cycles.
-
-### `dream:20260828063556:5:0e23e3`
-*28.08. 06:35 UTC · Quelle: dream*
-
-The simulation gate rejected the first experiment plan (risk=4) and required three revisions, proving that uncalibrated risk estimates waste cycles.
-
-### `dream:20260828063556:4:b2998a`
-*28.08. 06:35 UTC · Quelle: dream*
-
-System stress hit 1.0 and forced 'conserve' mode (max 3 tasks, 1 iteration), which directly blocks the swarm goal of 'more experiments'.
-
-### `dream:20260828063556:3:75d482`
-*28.08. 06:35 UTC · Quelle: dream*
-
-Five concrete skill proposals exist but none have entered the validation pipeline, revealing a missing 'proposal → production' automation loop.
-
-### `dream:20260828063556:2:36f995`
-*28.08. 06:35 UTC · Quelle: dream*
-
-The fallback model 'nvidia/nemotron-3-ultra' shows extreme latency variance (11.8 s – 90.2 s), so static timeouts either kill valid requests or stall the system.
-
-### `dream:20260828063556:1:982de0`
-*28.08. 06:35 UTC · Quelle: dream*
-
-The model 'z-ai/glm-5.2:free' fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without a request-spacing or quota-aware router.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*28.08. 06:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [5, 4, 6]): Dynamic Path Resolution + Import Hook: Redirect wherever organs ARE to where the - Install a sys.meta_path import hook (PEP 302 finder) at the very top of the entry script that intercepts any import of organ modules a
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:1`
-*28.08. 06:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 6, 9]): In-Memory Virtual Filesystem: Eliminate disk dependency entirely - Replace all file-based organ loading with an in-memory registry. Define a dict ORGANS = {'swarm.py': '...', 'konvergenztor.py': '...', ...} containing
-
 ### `last_swarm_critique`
 *28.08. 06:19 UTC · Quelle: critic*
 
@@ -43842,31 +43807,6 @@ score=1; issues=Alle drei Artefakte scheitern sofort beim Start: Organe (swarm.p
 *28.08. 06:11 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260828061054:5:37db3d`
-*28.08. 06:10 UTC · Quelle: dream*
-
-Hand actions fail silently (exit 1, no error output), requiring explicit validation gates before tool execution.
-
-### `dream:20260828061054:4:f70d6e`
-*28.08. 06:10 UTC · Quelle: dream*
-
-Simulation revisions (5 risks → 5 revisions) work but need a hard risk-count threshold to bound iteration loops.
-
-### `dream:20260828061054:3:7168f4`
-*28.08. 06:10 UTC · Quelle: dream*
-
-Evolution cycles boost scores (1→9) but swarm fails to converge, indicating missing convergence criteria (score plateau + risk threshold).
-
-### `dream:20260828061054:2:01b30a`
-*28.08. 06:10 UTC · Quelle: dream*
-
-Fallback model latency variance (15–105s) demands per-model timeout budgets and latency-aware routing to prevent stalls.
-
-### `dream:20260828061054:1:1f3a8f`
-*28.08. 06:10 UTC · Quelle: dream*
-
-Rate-limited models (429 errors) cascade into repeated failures unless automatically excluded after N consecutive occurrences.
 
 ### `last_swarm_critique`
 *28.08. 05:49 UTC · Quelle: critic*

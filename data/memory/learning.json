@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 06:14:29",
+ "stand": "2026-09-11 06:43:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -168,12 +168,6 @@
    "tool": "neue-fähigkeiten-erlernen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
