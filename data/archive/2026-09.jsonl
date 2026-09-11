@@ -39421,3 +39421,19 @@
 {"ts": 1788551266.0138092, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 282}}
 {"ts": 1788551266.0158136, "kind": "reflex_used", "payload": {"goal": "Altes Wissen zusammenführen", "tool": "wissenswidersprüche-auflösen.py", "ok": true}}
 {"ts": 1788551266.5257082, "kind": "act_done", "payload": {"goal_title": "Altes Wissen zusammenführen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788551743.8413694, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788551812.273316, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788551813.767971, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788551821.1358764, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 3.7, "tokens_ein": 1483, "tokens_aus": 596}}
+{"ts": 1788551821.1364279, "kind": "skill_proposal", "payload": {"proposal": "Implement a circuit breaker pattern for all model API calls with configurable failure thresholds, exponential backoff, and automatic fallback to a reliable secondary model."}}
+{"ts": 1788551821.136502, "kind": "skill_proposal", "payload": {"proposal": "Create a dynamic model routing policy that tracks recent 429/502 errors per model and temporarily deprioritizes failing endpoints."}}
+{"ts": 1788551821.1365612, "kind": "skill_proposal", "payload": {"proposal": "Develop a latency-aware model selection heuristic that avoids high-latency models for time-sensitive sub-tasks."}}
+{"ts": 1788551821.136617, "kind": "dream_finished", "payload": {"insights": 4, "skill_proposals": 3}}
+{"ts": 1788551823.4486752, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788551823.4486723, "schalter_geoeffnet": false}}
+{"ts": 1788551833.5485005, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 10.1, "tokens_ein": 510, "tokens_aus": 807}}
+{"ts": 1788551833.5486903, "kind": "drive_goal", "payload": {"title": "Modellfehler deutlich reduzieren", "why": "Das Modell scheitert oft. Weniger Fehler machen das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1788551833.5487876, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Daten aufräumen", "why": "Es liegen noch offene Schwarm-Aufgaben herum. Aufräumen schafft Platz für Neues.", "signal": "stale"}}
+{"ts": 1788551833.5488575, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten umsetzen", "why": "Viele Fähigkeiten werden nur vorgeschlagen, aber nicht gebaut. Umsetzung bringt echten Nutzen.", "signal": "gap"}}
+{"ts": 1788551836.477146, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.45, "gelesen": 57}}
+{"ts": 1788551836.4797192, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Arbeiten aufräumen", "tool": "alte-schwarm-ergebnisse-aufräumen.py", "ok": true}}
+{"ts": 1788551836.9707985, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Arbeiten aufräumen", "score": null, "converged": true, "mode": "reflex"}}

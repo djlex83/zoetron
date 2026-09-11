@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11564 Fakten** · Stand 2026-09-11 19:55 UTC · aktualisiert bei jedem Herzschlag
+**11569 Fakten** · Stand 2026-09-11 20:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7475
+- **dream:** 7480
 - **swarm_artifact:** 1713
 - **last_swarm_critique:** 890
 - **last_swarm_goal:** 625
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911200311:5:747e5c`
+*11.09. 20:03 UTC · Quelle: dream*
+
+Dream cycles produce high-value patches (executor, scheduler) but lack a sandboxed verify-then-merge loop, so insights accumulate without deployment.
+
+### `dream:20260911200311:4:4e7556`
+*11.09. 20:03 UTC · Quelle: dream*
+
+Swarm knowledge refresh succeeds via reflex but remains a one-off; no periodic staleness detector triggers autonomous re-sync.
+
+### `dream:20260911200311:3:bea20b`
+*11.09. 20:03 UTC · Quelle: dream*
+
+Metabolic stress signals exist but no scheduler reads them to shed load before budget exhaustion, causing cascading failures under pressure.
+
+### `dream:20260911200311:2:a09375`
+*11.09. 20:03 UTC · Quelle: dream*
+
+Skill proposals for resilience (backoff, health scoring, caching, Retry-After) are generated repeatedly but never enacted, revealing an execution gap between dreaming and doing.
+
+### `dream:20260911200311:1:eff538`
+*11.09. 20:03 UTC · Quelle: dream*
+
+Model failures (timeouts, 429s) dominate latency and block progress, yet the fallback chain reacts sequentially instead of routing proactively to the healthiest model.
 
 ### `dream:20260911195236:5:c2c122`
 *11.09. 19:52 UTC · Quelle: dream*
