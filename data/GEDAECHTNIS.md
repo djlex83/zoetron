@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11604 Fakten** · Stand 2026-09-11 14:41 UTC · aktualisiert bei jedem Herzschlag
+**11597 Fakten** · Stand 2026-09-11 15:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7485
-- **swarm_artifact:** 1735
-- **last_swarm_critique:** 886
-- **last_swarm_goal:** 621
+- **dream:** 7480
+- **swarm_artifact:** 1731
+- **last_swarm_critique:** 887
+- **last_swarm_goal:** 622
 - **anti_pattern:** 393
 - **strategy:** 199
-- **tool:** 161
-- **hand_result:** 85
+- **tool:** 162
+- **hand_result:** 84
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-endlich-umset`
+*11.09. 15:28 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten endlich umsetzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-endlich-umset.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:2`
+*11.09. 15:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Declarative Skill Registry with Plugin Architecture - Externalize skill definitions into versioned plugin packages (each a directory with manifest.yaml, detector.py, planner.py). The core loads plugins at startup, wat
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:1`
+*11.09. 15:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 5, 9]): Recursive Memory Indexing with Adaptive Planning - First build a complete, typed memory graph: walk the memory directory recursively, classify every filesystem node (regular file, dir, symlink, fifo, socket), extract 
+
+### `last_swarm_critique`
+*11.09. 15:23 UTC · Quelle: critic*
+
+score=7; issues=Skill detection uses a hardcoded list, missing any proposed skills not in that list; Fallback to default skill set when none found may produce a plan unrelated to actual memory content; Plan structure is static; does not derive details from the
+
+### `last_swarm_goal`
+*11.09. 15:16 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten endlich umsetzen
+
+### `dream:20260911151445:5:43eb24`
+*11.09. 15:14 UTC · Quelle: dream*
+
+Pruning removed 9 facts but zero events, suggesting fact-store bloat outpaces event-log growth and requires separate retention policies.
+
+### `dream:20260911151445:4:bfff2e`
+*11.09. 15:14 UTC · Quelle: dream*
+
+Reflex-driven goal renewal succeeded without model calls, demonstrating that critical maintenance tasks can bypass unreliable model endpoints entirely.
+
+### `dream:20260911151445:3:747fc0`
+*11.09. 15:14 UTC · Quelle: dream*
+
+Successful model latency of 23.2s exceeds typical cycle budgets, confirming need for deadline-aware execution with partial result returns.
+
+### `dream:20260911151445:2:1ae394`
+*11.09. 15:14 UTC · Quelle: dream*
+
+Automatic lockout after three consecutive failures (1800s) exists but operates in isolation from traffic routing, leaving requests stranded on locked models.
+
+### `dream:20260911151445:1:6b6a16`
+*11.09. 15:14 UTC · Quelle: dream*
+
+Provider-level 429 errors cascade across multiple models simultaneously, requiring provider-aware routing rather than model-level failover alone.
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-umse`
 *11.09. 14:39 UTC · Quelle: hands*
@@ -43448,16 +43498,6 @@ Model latency varies by two orders of magnitude (2.9s vs 148s) without correlati
 
 Rate limits (429) and upstream overloads (502) affect all free-tier models indiscriminately, making single-model reliance a systemic reliability hazard.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen für echte A:2`
-*28.08. 15:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Property-Based Contract Testing with Hypothesis + Schema Validation - Define the simulation's input/output contract as JSON Schemas (or Pydantic models). Use Hypothesis to generate thousands of valid input payloads from the i
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen für echte A:1`
-*28.08. 15:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Pure-Python In-Process Sandbox with Capability Restriction - Execute simulations in the same process but inside a restricted execution context using Python's built-in sandboxing primitives: create a custom sys.meta_path impor
-
 ### `last_swarm_critique`
 *28.08. 14:58 UTC · Quelle: critic*
 
@@ -43467,56 +43507,6 @@ score=1; issues=Sandbox-Urteil: LAEUFT NICHT - beide Artefakte werfen Tracebacks
 *28.08. 14:46 UTC · Quelle: system*
 
 Simulationen für echte Aufgaben testen
-
-### `dream:20260828144509:5:6ad114`
-*28.08. 14:45 UTC · Quelle: dream*
-
-A single fast reliable model (ling-3.0-flash-fin at 10s) outperforms slower 'premium' models on reliability, proving that operational consistency beats theoretical quality under rate limits.
-
-### `dream:20260828144509:4:3029dd`
-*28.08. 14:45 UTC · Quelle: dream*
-
-Dreams and simulations run in isolation; feeding dream-generated hypotheses into simulation verdicts and simulation failures into dream consolidation would close the learning loop.
-
-### `dream:20260828144509:3:bf9f3f`
-*28.08. 14:45 UTC · Quelle: dream*
-
-Skill proposals accumulate (30+) but lack automated validation; a proposal→simulation→merge pipeline with risk_count<2 and latency_p95<30s gates would convert ideas into capabilities.
-
-### `dream:20260828144509:2:4d4e05`
-*28.08. 14:45 UTC · Quelle: dream*
-
-Latency variance between models is extreme (10s vs 141s for success), so model selection must weight p95 latency and success probability, not just capability.
-
-### `dream:20260828144509:1:023037`
-*28.08. 14:45 UTC · Quelle: dream*
-
-Free-tier models across all providers consistently hit 429 rate limits, making provider-aware token-bucket rate limiting with 429-triggered exponential backoff a survival requirement.
-
-### `dream:20260828143725:5:57656e`
-*28.08. 14:37 UTC · Quelle: dream*
-
-Self-diagnosis reports zero internal organ errors, confirming that failures are external (infrastructure/API) rather than logic defects.
-
-### `dream:20260828143725:4:02b170`
-*28.08. 14:37 UTC · Quelle: dream*
-
-Convergence predictions systematically underestimate actual iterations needed, indicating a calibration bias that compounds over swarm runs.
-
-### `dream:20260828143725:3:21bcc7`
-*28.08. 14:37 UTC · Quelle: dream*
-
-Model latency varies by over 12x (6.4s to 80.8s), making fixed global timeouts unreliable and causing premature failures on slow endpoints.
-
-### `dream:20260828143725:2:570862`
-*28.08. 14:37 UTC · Quelle: dream*
-
-The system exhibits a persistent execution gap: proposals are generated but only a fraction are converted into reflex actions within a bounded cycle count.
-
-### `dream:20260828143725:1:ca8d1e`
-*28.08. 14:37 UTC · Quelle: dream*
-
-API rate limiting (429) is the dominant systemic failure mode, affecting the majority of recent model calls across multiple providers simultaneously.
 
 ### `last_swarm_critique`
 *28.08. 13:32 UTC · Quelle: critic*

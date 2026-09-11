@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 14:40:00",
+ "stand": "2026-09-11 15:28:31",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 12,
-   "erfolge": 12,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 11,
    "erfolge": 11,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -69,6 +69,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 1,
+   "quote": 0.333
+  },
+  {
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -103,12 +109,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 1,
-   "quote": 0.5
   },
   {
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
@@ -156,12 +156,6 @@
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -393,17 +387,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.834,
- "simulationen_angewandt": 32,
+ "haende_quote": 0.829,
+ "simulationen_angewandt": 34,
  "swarm_scores": {
-  "n": 22,
+  "n": 23,
   "best": 9.0,
-  "schnitt": 3.73
+  "schnitt": 3.87
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 21,
-   "schnitt": 3.48
+   "n": 22,
+   "schnitt": 3.64
   },
   "bau": {
    "n": 1,

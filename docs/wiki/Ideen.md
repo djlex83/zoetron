@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 14:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 15:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 9 facts but zero events, suggesting fact-store bloat outpaces event-log growth and requires separate retention policies.
+- Reflex-driven goal renewal succeeded without model calls, demonstrating that critical maintenance tasks can bypass unreliable model endpoints entirely
+- Successful model latency of 23.2s exceeds typical cycle budgets, confirming need for deadline-aware execution with partial result returns.
+- Automatic lockout after three consecutive failures (1800s) exists but operates in isolation from traffic routing, leaving requests stranded on locked 
+- Provider-level 429 errors cascade across multiple models simultaneously, requiring provider-aware routing rather than model-level failover alone.
 - Self-diagnosis consistently reports zero organ failures, confirming system stability despite external API issues.
 - Pruning runs effectively reduce memory load (2 facts, 19 events) without disrupting active processes, showing safe garbage collection.
 - Reflex-driven swarm data updates consistently succeed with low duration (0.61-2.85s), indicating reliable automation for routine tasks.
@@ -51,11 +56,6 @@
 - Integrating dream-derived insights with real actions creates a feedback loop that enhances overall decision-making intelligence.
 - Stale swarm goals directly cause incorrect conclusions and must be updated via automated reflexes with freshness scoring.
 - Frequent 429 errors across multiple free models indicate quota exhaustion and require a dynamic model router that monitors health and switches proacti
-- Regular pruning of facts and events helps keep the knowledge base relevant and manageable.
-- The system's ability to switch to an alternative model after failures shows the importance of maintaining a diverse model pool.
-- Successful execution of the reflex tool demonstrates that specialized scripts can reliably update stale swarm goals.
-- Consecutive timeouts on a specific model suggest it is overloaded and should be temporarily blacklisted.
-- Repeated 429 errors from multiple providers indicate global rate limiting, requiring adaptive backoff and fallback.
 
 ---
 
