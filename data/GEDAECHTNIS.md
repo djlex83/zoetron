@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11710 Fakten** · Stand 2026-09-11 03:32 UTC · aktualisiert bei jedem Herzschlag
+**11715 Fakten** · Stand 2026-09-11 03:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7540
+- **dream:** 7545
 - **swarm_artifact:** 1777
 - **last_swarm_critique:** 878
 - **last_swarm_goal:** 613
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911034038:5:daba8d`
+*11.09. 03:40 UTC · Quelle: dream*
+
+Aggressive pruning (48 events in one run) risks discarding causal chains needed for later root-cause analysis.
+
+### `dream:20260911034038:4:42a8bc`
+*11.09. 03:40 UTC · Quelle: dream*
+
+Hand actions repeatedly fail due to unexpanded environment variables and relative paths in tool arguments.
+
+### `dream:20260911034038:3:3e9ed3`
+*11.09. 03:40 UTC · Quelle: dream*
+
+Swarm knowledge becomes stale within days without a scheduled refresh mechanism that triggers new voting rounds.
+
+### `dream:20260911034038:2:fa2881`
+*11.09. 03:40 UTC · Quelle: dream*
+
+Dream-generated skill proposals accumulate but lack an automated pipeline to validate, package, and register them as callable skills.
+
+### `dream:20260911034038:1:4b9a8d`
+*11.09. 03:40 UTC · Quelle: dream*
+
+Model reliability degrades silently without pre-flight health probes and automated failover to known-good fallbacks.
 
 ### `dream:20260911033005:5:857edd`
 *11.09. 03:30 UTC · Quelle: dream*

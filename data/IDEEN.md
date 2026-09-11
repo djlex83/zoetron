@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 03:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 03:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,12 +24,12 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (48 events in one run) risks discarding causal chains needed for later root-cause analysis.
+- Hand actions repeatedly fail due to unexpanded environment variables and relative paths in tool arguments.
+- Swarm knowledge becomes stale within days without a scheduled refresh mechanism that triggers new voting rounds.
+- Dream-generated skill proposals accumulate but lack an automated pipeline to validate, package, and register them as callable skills.
+- Model reliability degrades silently without pre-flight health probes and automated failover to known-good fallbacks.
 - Reflex-based skill execution is reliable and should be generalized into a reusable factory pattern for rapid skill deployment.
 - Initial effort estimates in swarm planning are consistently underestimated, requiring a calibration multiplier for realistic scheduling.
 - Swarm convergence is unreliable without explicit gating criteria such as minimum critic cycles or dissent thresholds.
@@ -51,11 +56,6 @@
 - Pruning discards patterns without preserving low-frequency high-impact signatures, risking loss of rare but critical failure-recovery knowledge.
 - Skill proposals accumulate (10+ in this cycle) but execution rate remains near zero, creating a proposal-execution gap that stalls capability growth.
 - Model endpoint instability (429/502 errors) and high latency (34s) cause cascading failures across reflexes and drive-goal execution.
-- Path resolution failures (sys.argv[1], ZOETRON_DATA) repeat across hand_actions; a single PathResolver utility eliminates this class of bugs.
-- Skill proposals accumulate faster than they are merged; a consolidation reflex must run after every N proposals.
-- Swarm knowledge staleness recurs because no scheduled refresh drive exists; cron-driven goals prevent drift.
-- High latency variance (9.5s vs 55s) across free models makes fixed timeouts unreliable; adaptive timeouts needed.
-- Model 429 errors cascade into planner instability unless automatic failover with health probes exists.
 
 ---
 

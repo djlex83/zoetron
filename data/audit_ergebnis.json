@@ -1,10 +1,10 @@
 {
-  "audit_timestamp": "2026-09-10T22:31:07.783938",
+  "audit_timestamp": "2026-09-11T03:40:57.063936",
   "threshold_days": 7,
-  "total_events_audited": 83120,
-  "stale_count": 221,
-  "fresh_count": 178,
-  "no_timestamp_count": 82721,
+  "total_events_audited": 84528,
+  "stale_count": 224,
+  "fresh_count": 176,
+  "no_timestamp_count": 84128,
   "stale_events": [
     {
       "mode": "normal",
@@ -19,7 +19,7 @@
       "timestamp": 1787837425.6170628,
       "ts": 1787837425.6170652,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -35,7 +35,7 @@
       "timestamp": 1787837497.8504727,
       "ts": 1787837497.8504748,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -51,7 +51,7 @@
       "timestamp": 1787900765.9753509,
       "ts": 1787900765.9753523,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -67,7 +67,7 @@
       "timestamp": 1787900845.5511236,
       "ts": 1787900845.5511253,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -83,7 +83,7 @@
       "timestamp": 1788030824.0855668,
       "ts": 1788030824.0855682,
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -99,7 +99,7 @@
       "timestamp": 1788030834.0460286,
       "ts": 1788030834.0460298,
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -115,7 +115,7 @@
       "timestamp": 1788334726.3261428,
       "ts": 1788334726.326146,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -127,7 +127,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -139,7 +139,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -151,7 +151,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -163,7 +163,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -599,7 +599,7 @@
       "timestamp": "2026-08-27T18:07:37.437362",
       "fell_back": false,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -624,7 +624,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -649,7 +649,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -674,7 +674,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -692,7 +692,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -710,7 +710,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -728,7 +728,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -742,7 +742,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -756,7 +756,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -774,7 +774,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -788,7 +788,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -802,7 +802,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -820,7 +820,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -834,7 +834,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -848,7 +848,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -866,7 +866,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -884,7 +884,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -902,7 +902,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -920,7 +920,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -938,7 +938,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -963,7 +963,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -988,7 +988,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1013,7 +1013,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1031,7 +1031,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1049,7 +1049,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1067,7 +1067,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1081,7 +1081,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1095,7 +1095,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1113,7 +1113,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1127,7 +1127,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1141,7 +1141,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1159,7 +1159,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1173,7 +1173,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1187,7 +1187,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1205,7 +1205,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1223,7 +1223,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1241,7 +1241,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1259,7 +1259,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1308,7 +1308,7 @@
         "Create integration tests for full pipeline flow"
       ],
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1326,7 +1326,7 @@
         "details": []
       },
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1722,7 +1722,7 @@
         ]
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1735,7 +1735,7 @@
       "timestamp": 1787746767.7634919,
       "status": "open",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1748,7 +1748,7 @@
       },
       "timestamp": "2026-08-27T05:46:53.478426",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1761,7 +1761,7 @@
       },
       "timestamp": "2026-08-27T05:47:59.764993",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1817,7 +1817,7 @@
         }
       ],
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1838,8 +1838,8 @@
         }
       },
       "fallback_used": false,
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1860,8 +1860,8 @@
         }
       },
       "fallback_used": false,
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1894,7 +1894,7 @@
       ],
       "results": [],
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1946,8 +1946,8 @@
         "events_analyzed": 50
       },
       "used_fallback_data": false,
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -1998,8 +1998,8 @@
         "events_analyzed": 50
       },
       "used_fallback_data": false,
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -2170,8 +2170,8 @@
           "gap_severity": "medium"
         }
       ],
-      "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 12,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -2227,8 +2227,8 @@
       },
       "bottleneck": "reflex",
       "total_avg_latency": 0.019044745205610527,
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -2284,8 +2284,8 @@
       },
       "bottleneck": "reflex",
       "total_avg_latency": 0.013112438601092435,
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -2303,7 +2303,7 @@
         "total_flagged": 0
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -2326,8 +2326,8 @@
       "fallback_aktiv": false,
       "anzahl_fehlerquellen": 0,
       "anzahl_empfehlungen": 0,
-      "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 10,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -2581,7 +2581,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -2835,7 +2835,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -10707,7 +10707,7 @@
         "with_errors": 167
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -11646,7 +11646,7 @@
       ],
       "fallback_mode": false,
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -11899,8 +11899,8 @@
           "total_neighbor_weight": 0.05
         }
       },
-      "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 9,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12154,7 +12154,7 @@
         }
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12211,7 +12211,7 @@
       "bottleneck": "reflex",
       "total_avg_latency": 0.009785288613056765,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12241,7 +12241,7 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.29,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12271,7 +12271,7 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.27,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12301,7 +12301,7 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.29,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12313,7 +12313,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12325,7 +12325,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12337,7 +12337,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12349,7 +12349,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12361,7 +12361,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12373,7 +12373,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12386,7 +12386,7 @@
       "artifact_path": "/workspace/zoetron/data",
       "timestamp": 1787746767.440911,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12399,7 +12399,7 @@
       ],
       "timestamp": 1787746767.7634919,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12517,8 +12517,8 @@
         "verdict": "MIT_EXEMPLAR_BESSER",
         "ziel_erreicht": true
       },
-      "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 15,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12532,7 +12532,7 @@
       "window_hours": 1,
       "timestamp": "2026-08-30T05:22:33.728735",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12546,7 +12546,7 @@
       "window_hours": 1,
       "timestamp": "2026-08-30T06:52:02.116119",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12560,7 +12560,7 @@
       "window_hours": 1,
       "timestamp": "2026-09-01T17:57:02.315006",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12574,7 +12574,7 @@
       "window_hours": 1,
       "timestamp": "2026-09-02T05:46:15.816414",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -12636,7 +12636,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596373Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -13612,7 +13612,7 @@
         }
       ],
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -14588,7 +14588,7 @@
         }
       ],
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15784,7 +15784,7 @@
         }
       ],
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15798,7 +15798,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15812,7 +15812,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15826,7 +15826,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15840,7 +15840,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15854,7 +15854,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15868,7 +15868,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15882,7 +15882,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15896,7 +15896,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15910,7 +15910,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15924,7 +15924,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15938,7 +15938,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15952,7 +15952,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15966,7 +15966,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15980,7 +15980,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -15994,7 +15994,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16008,7 +16008,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16150,7 +16150,17 @@
         "avg_health_score": 75.8422423103684
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
+      "_stale": true
+    },
+    {
+      "token": "c9cecc20c0087ca5",
+      "operation": "memory_write",
+      "payload_hash": "4a644ead8db0cde3a87104e4b4898cd4567013f54a14e1a2c53438aa7700985c",
+      "created_at": "2026-09-03T01:34:06.313460+00:00",
+      "cycle_id": "cycle_20260903_013405_1765d6d5",
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16178,7 +16188,7 @@
       "created_at": "2026-08-27T11:17:07.536828",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16206,7 +16216,7 @@
       "created_at": "2026-08-27T11:17:07.537230",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16234,7 +16244,7 @@
       "created_at": "2026-08-27T11:17:07.537456",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16262,7 +16272,7 @@
       "created_at": "2026-08-27T11:22:04.954121",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16290,7 +16300,7 @@
       "created_at": "2026-08-27T11:22:04.954482",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16318,7 +16328,7 @@
       "created_at": "2026-08-27T11:22:04.954850",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16346,7 +16356,7 @@
       "created_at": "2026-08-27T18:46:00.179702",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16374,7 +16384,7 @@
       "created_at": "2026-08-27T18:46:00.180070",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16402,7 +16412,7 @@
       "created_at": "2026-08-27T18:46:00.180451",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16430,7 +16440,7 @@
       "created_at": "2026-08-27T18:50:36.394747",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16458,7 +16468,7 @@
       "created_at": "2026-08-27T18:50:36.395312",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16486,7 +16496,7 @@
       "created_at": "2026-08-27T18:50:36.395865",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16514,7 +16524,7 @@
       "created_at": "2026-08-27T21:24:59.148889",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16542,7 +16552,7 @@
       "created_at": "2026-08-27T21:24:59.149328",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16570,7 +16580,7 @@
       "created_at": "2026-08-27T21:24:59.149770",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16598,7 +16608,7 @@
       "created_at": "2026-08-28T05:33:34.588913",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16626,7 +16636,7 @@
       "created_at": "2026-08-28T05:33:34.589330",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16654,7 +16664,7 @@
       "created_at": "2026-08-28T05:33:34.589691",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16682,7 +16692,7 @@
       "created_at": "2026-08-28T07:06:07.022204",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16710,7 +16720,7 @@
       "created_at": "2026-08-28T07:06:07.022543",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16738,7 +16748,7 @@
       "created_at": "2026-08-28T07:06:07.022734",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16766,7 +16776,7 @@
       "created_at": "2026-08-28T07:07:26.733472",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16794,7 +16804,7 @@
       "created_at": "2026-08-28T07:07:26.733813",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16822,7 +16832,7 @@
       "created_at": "2026-08-28T07:07:26.734034",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16850,7 +16860,7 @@
       "created_at": "2026-08-29T18:29:18.107553",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16878,7 +16888,7 @@
       "created_at": "2026-08-29T18:29:18.107924",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16906,7 +16916,7 @@
       "created_at": "2026-08-29T18:29:18.108282",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16934,7 +16944,7 @@
       "created_at": "2026-08-29T19:13:51.086683",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16962,7 +16972,7 @@
       "created_at": "2026-08-29T19:13:51.087029",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -16990,7 +17000,7 @@
       "created_at": "2026-08-29T19:13:51.087242",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17018,7 +17028,7 @@
       "created_at": "2026-08-29T19:14:00.307302",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17046,7 +17056,7 @@
       "created_at": "2026-08-29T19:14:00.307632",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17074,7 +17084,7 @@
       "created_at": "2026-08-29T19:14:00.307835",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17102,7 +17112,7 @@
       "created_at": "2026-08-31T14:46:21.064596",
       "status": "pending",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17130,7 +17140,7 @@
       "created_at": "2026-08-31T14:46:21.065002",
       "status": "pending",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17158,7 +17168,7 @@
       "created_at": "2026-08-31T14:46:21.065368",
       "status": "pending",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17186,7 +17196,7 @@
       "created_at": "2026-09-01T19:16:51.944353",
       "status": "pending",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17214,7 +17224,7 @@
       "created_at": "2026-09-01T19:16:51.944748",
       "status": "pending",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17242,7 +17252,7 @@
       "created_at": "2026-09-01T19:16:51.945162",
       "status": "pending",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17285,7 +17295,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596599Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17297,7 +17307,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596775Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17309,7 +17319,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596999Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17321,7 +17331,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597128Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17333,7 +17343,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597250Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17345,7 +17355,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597363Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17358,7 +17368,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597481Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17371,7 +17381,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597597Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17384,7 +17394,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597710Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17394,7 +17404,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.596867Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17404,7 +17414,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597063Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17414,7 +17424,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597188Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17424,7 +17434,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597305Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17434,7 +17444,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597420Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17444,7 +17454,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597537Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17454,7 +17464,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597652Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17464,7 +17474,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597777Z",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17475,7 +17485,7 @@
       "status": "success",
       "timestamp": "2026-08-26T06:09:15.112365",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17494,7 +17504,7 @@
       },
       "decision": "keep",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17513,7 +17523,7 @@
       },
       "decision": "keep",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17528,7 +17538,7 @@
       "baseline": true,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17543,7 +17553,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17558,7 +17568,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17573,7 +17583,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17588,7 +17598,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17603,7 +17613,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17618,7 +17628,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17632,8 +17642,8 @@
       "recall": 5,
       "baseline": false,
       "datenquelle": "sys.argv[1]",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17648,7 +17658,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17662,8 +17672,8 @@
       "recall": 5,
       "baseline": false,
       "datenquelle": "sys.argv[1]",
-      "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 10,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17678,8 +17688,8 @@
         "duplicates": 0,
         "missing_fields": 15
       },
-      "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 15,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17689,7 +17699,7 @@
       "proficiency": 0.6,
       "timestamp": "2026-08-27T20:19:32.101261",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17699,7 +17709,7 @@
       "proficiency": 0.4,
       "timestamp": "2026-08-27T20:19:32.101771",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17709,7 +17719,7 @@
       "proficiency": 0.8,
       "timestamp": "2026-08-27T20:19:32.102146",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17719,7 +17729,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.398396",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17729,7 +17739,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.398916",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17739,7 +17749,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.399398",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17748,8 +17758,8 @@
       "proficiency": 0.6,
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.703127",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17758,8 +17768,8 @@
       "proficiency": 0.4,
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.703789",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17768,8 +17778,8 @@
       "proficiency": 0.8,
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.705225",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17779,7 +17789,7 @@
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.031694",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17789,7 +17799,7 @@
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.032388",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17799,7 +17809,7 @@
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.032791",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17809,7 +17819,7 @@
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.742748",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17819,7 +17829,7 @@
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.743221",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17829,7 +17839,7 @@
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.743623",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17839,7 +17849,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.595259",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17849,7 +17859,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.595807",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17859,7 +17869,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.596302",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17869,7 +17879,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.096694",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17879,7 +17889,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.097190",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17889,7 +17899,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.097561",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17899,7 +17909,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.315389",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17909,7 +17919,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.315931",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17919,7 +17929,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.316504",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17931,7 +17941,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.172699",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17943,7 +17953,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.173200",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17955,7 +17965,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.173576",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17967,7 +17977,7 @@
       "usage_count": 9,
       "timestamp": "2026-09-02T07:06:57.480246",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17979,7 +17989,7 @@
       "usage_count": 9,
       "timestamp": "2026-09-02T07:06:57.480709",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -17991,7 +18001,7 @@
       "usage_count": 9,
       "timestamp": "2026-09-02T07:06:57.481106",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -18013,8 +18023,8 @@
       "blocking_issues": [
         "Marktanalyse: Marktanalyse nicht geladen: senses-Organ nicht gefunden"
       ],
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -18120,7 +18130,7 @@
       },
       "timestamp": "2026-08-29T05:20:50.881797",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -19045,7 +19055,7 @@
       "timestamp": 1788106503.6919951,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -19970,7 +19980,7 @@
       "timestamp": 1788106874.6082578,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -20895,7 +20905,7 @@
       "timestamp": 1788204007.2886496,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -21820,7 +21830,1857 @@
       "timestamp": 1788260189.2448132,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
+      "_stale": true
+    },
+    {
+      "source": "fallback_mock",
+      "success": true,
+      "data": {
+        "cycles": 100,
+        "agents": 50,
+        "metrics": {
+          "throughput": [
+            97.83864505633107,
+            97.40644599502721,
+            98.33026207648507,
+            110.52975587648295,
+            98.08617574325669,
+            77.53969878488564,
+            104.98477516101573,
+            95.98993782254247,
+            96.74561973782207,
+            101.73827180051282,
+            103.48446605360081,
+            117.45338029898714,
+            109.84954760198003,
+            101.65760766165748,
+            88.92517596482769,
+            84.78006448768424,
+            103.69513292816804,
+            119.66621240806072,
+            100.62485295855076,
+            98.40515059343824,
+            107.97664330601305,
+            78.19682052986983,
+            95.3158402428316,
+            107.35543798890288,
+            113.1010657806917,
+            96.39055491017297,
+            105.64899788031866,
+            103.72320173992621,
+            111.73490213055463,
+            83.30166678627741,
+            108.52376031378078,
+            77.2821941241229,
+            60.700818666717225,
+            90.89663907700746,
+            86.26284930481008,
+            113.1401836458461,
+            109.96398849419343,
+            81.71387888056458,
+            112.71042135022,
+            84.96695763636475,
+            98.70634230495574,
+            95.59150333065202,
+            101.71629786191382,
+            112.27954467315651,
+            109.57620686188665,
+            105.24827652803813,
+            109.74922146709449,
+            107.17738056475177,
+            90.595218021706,
+            89.23943359275134,
+            92.9504758879598,
+            107.48989600715173,
+            96.24826643503924,
+            135.0363133372082,
+            87.7106118672026,
+            83.51688100146762,
+            111.52710273204545,
+            121.32774972015199,
+            107.5853903625889,
+            112.5372601895151,
+            121.39517466163244,
+            98.58958785975544,
+            78.65561600291534,
+            92.0188517752193,
+            114.29343635974865,
+            78.34482390882567,
+            100.50296981180892,
+            103.79856039013093,
+            95.26611752779495,
+            110.85447979552146,
+            108.7116961228985,
+            134.82112775351095,
+            109.29951651659704,
+            90.85894812035407,
+            91.57303611498955,
+            87.5262834813699,
+            114.28410339723732,
+            91.49750747779449,
+            98.94608839449104,
+            111.23953928934513,
+            89.1480551402289,
+            95.59513054573422,
+            72.38070601594126,
+            83.7628207144193,
+            91.48395381712226,
+            106.23641482775007,
+            117.90239908664945,
+            99.72299780254433,
+            103.92046418799704,
+            102.51954052820848,
+            116.27111670180406,
+            113.4003279810731,
+            104.10539973111314,
+            84.83583544832032,
+            113.55077971516891,
+            105.71570691933628,
+            118.40412324571331,
+            99.55140110978179,
+            129.2965138672577,
+            94.61685489517266
+          ],
+          "latency": [
+            65.93060414263043,
+            51.15118972607233,
+            44.83730990754498,
+            38.715521272076046,
+            48.48969448461163,
+            64.23321026167184,
+            58.163744966147284,
+            56.88883864266003,
+            26.241274269088024,
+            57.10964204570039,
+            55.558524109198416,
+            44.50073715594673,
+            43.726156338196034,
+            49.97689548186419,
+            67.24876263148732,
+            39.44899300577676,
+            45.72194965263715,
+            63.61784750350584,
+            45.538492005722496,
+            46.3574852413906,
+            50.977763472886764,
+            37.58710623364304,
+            52.199454301500126,
+            37.90382403026365,
+            58.851983103581446,
+            50.031808227579894,
+            72.8343146684775,
+            52.808405135310345,
+            63.65689490432749,
+            36.96736028282636,
+            48.77860656478135,
+            53.23145654014103,
+            67.45720918371049,
+            33.190840619790364,
+            59.906196798088224,
+            55.91354013815916,
+            65.3354619573813,
+            57.1238551807872,
+            50.520711851039486,
+            44.78350349581841,
+            37.5182028215728,
+            51.954227649029704,
+            48.08303231004689,
+            70.20267338079641,
+            43.88975172015152,
+            53.20391845205113,
+            34.309985803242704,
+            46.04537421673822,
+            52.61147880091099,
+            58.239600125195054,
+            64.481016868281,
+            49.55851823670731,
+            38.82755120939114,
+            54.5785039949154,
+            55.16987098413793,
+            54.916583428382694,
+            42.99712300825267,
+            61.333843975868874,
+            50.87895910904515,
+            56.99824621715986,
+            62.74073240094448,
+            56.092723205658515,
+            52.86516027981771,
+            71.52795235100524,
+            52.4370304097215,
+            47.040357672279185,
+            51.119670375830296,
+            64.82768668437134,
+            51.187124868868004,
+            55.19377655139212,
+            61.95731440332163,
+            44.871413897731706,
+            32.734302307463544,
+            52.99423152216441,
+            52.29734794523969,
+            43.91989821439186,
+            58.71086381042417,
+            56.0756737698457,
+            40.05007578400584,
+            55.182184440212026,
+            48.038950410974245,
+            35.16974729792719,
+            54.52950233065968,
+            49.54785373320609,
+            42.54717100810132,
+            55.229455868967484,
+            54.88093272192379,
+            44.22462816055702,
+            54.00352190534677,
+            60.15064936192444,
+            42.873333643142985,
+            53.808900274015926,
+            50.02755750481307,
+            72.66010310650884,
+            31.37697029221813,
+            56.952839314064626,
+            46.937549802187846,
+            48.99802451170167,
+            69.01588976383269,
+            49.91426848739206
+          ],
+          "error_rate": [
+            0.04240943703775568,
+            0.015578520345864533,
+            0.023505120413481094,
+            0.015091524983251085,
+            0.013093119873821162,
+            0.02062483126451532,
+            0.017174284746508978,
+            0.022024915839864274,
+            -0.0010502786772416395,
+            0.040024676886096,
+            0.018330030912187212,
+            0.03742905506233993,
+            0.009928878738935217,
+            0.022925357047242686,
+            0.051649421014768854,
+            0.011302708168937107,
+            0.005047002268917345,
+            0.014534904646633595,
+            0.02472488427322606,
+            0.026933400400612963,
+            0.03290366688021426,
+            0.01742987601606685,
+            0.0039774924049969795,
+            0.015649701955249146,
+            0.03240222694801757,
+            0.024656626531712914,
+            0.0004306121462499639,
+            0.019649484883118438,
+            0.033981680913221304,
+            0.04126548136950435,
+            0.025616866387847777,
+            0.02309302312799502,
+            0.00759794332014271,
+            0.011567571260324948,
+            0.02046915857506166,
+            0.025031977408135293,
+            0.025801841911197648,
+            0.01521791444865864,
+            0.008480577715764846,
+            0.01222218158900087,
+            0.008430256057402387,
+            0.026434091827639932,
+            -0.003122811060456601,
+            0.016667219743905063,
+            0.024498783321012112,
+            0.0352201272466494,
+            0.020712996750509718,
+            0.0300128393951411,
+            0.01600995928218908,
+            0.012555960134679092,
+            0.013256069615625341,
+            0.035273357819018324,
+            0.02994221143897746,
+            0.024873979264626152,
+            0.05330268863561771,
+            0.019676586274738506,
+            0.026203496510288013,
+            0.023075915525585113,
+            0.0177811430987584,
+            0.04316171347771517,
+            0.03506604803037114,
+            0.006005203653794455,
+            0.016001536777147846,
+            0.02428336538368287,
+            0.027831832150420475,
+            0.006515529301866203,
+            -0.0025556158702180302,
+            0.0009363303123821783,
+            0.01928888536658781,
+            0.018967968209603225,
+            0.023452193761145143,
+            0.012303252221209416,
+            0.007757623240939376,
+            -0.00023045057579349632,
+            0.02329187358747437,
+            0.023700539584877767,
+            0.029929936703557113,
+            0.027907956879792327,
+            0.018092844190630578,
+            0.03349260962753485,
+            0.018636330884734507,
+            0.013391636136819277,
+            0.014794215566964319,
+            0.014151883552946064,
+            -0.0016573671950034126,
+            0.02156326052985767,
+            0.022498855917621657,
+            0.01637734189117902,
+            0.012861585299135853,
+            0.02371803824355276,
+            0.03716870587547691,
+            0.020382551525049815,
+            0.014923663927902935,
+            0.014085527975770694,
+            0.01930243561854838,
+            0.007352344289585578,
+            0.018747393118019203,
+            0.02061182264336781,
+            0.0384467868776619,
+            0.02943473764113375
+          ],
+          "resource_usage": [
+            0.803402923564988,
+            0.628705145890076,
+            0.7669921543236242,
+            0.5860617525450083,
+            0.7311960696690869,
+            0.7418737260418858,
+            0.6233590583937763,
+            0.8999379805161489,
+            0.7567373662750663,
+            0.5097271697105491,
+            0.7552859886595809,
+            0.6592588181109992,
+            0.7001376215816302,
+            0.7465764790914182,
+            0.7390532667311541,
+            0.4960848656965384,
+            0.5841680256386415,
+            0.7772624158574591,
+            0.830120424922929,
+            0.89031528866625,
+            0.8803168238653105,
+            0.494446339536952,
+            0.7769482120936451,
+            0.5083709798884896,
+            0.8613600728541995,
+            0.7253349402822048,
+            0.585883121202296,
+            0.900990094709114,
+            0.7643970870290872,
+            0.5108851111048527,
+            0.729346811746062,
+            0.6268860092334619,
+            0.7111295479970239,
+            0.6534805385444636,
+            0.8373493886268655,
+            0.5576713611816425,
+            0.7317405168261416,
+            0.8814188340599977,
+            0.6173039701029728,
+            0.7210648676058218,
+            0.7202001640950076,
+            0.6310297811121411,
+            0.7647893622765252,
+            0.7097050281809896,
+            0.6056232495216876,
+            0.8762016104898851,
+            0.7791614996589802,
+            0.6832893054977468,
+            0.6363325232556536,
+            0.6215637377789474,
+            0.8230940972560552,
+            0.685352176545945,
+            0.7459438203864756,
+            0.6815543299107064,
+            0.7616409469817358,
+            0.6884020869874116,
+            0.7763853872477069,
+            0.6816789090178471,
+            0.7829587297118521,
+            0.7672384109349637,
+            0.6883390199338819,
+            0.6140222759573413,
+            0.6059880009456193,
+            0.6259263179859229,
+            0.6015512356715189,
+            0.7865796421254051,
+            0.6953397687489596,
+            0.857010097757253,
+            0.927932982770514,
+            0.7024222471072236,
+            0.5451982797656627,
+            0.6618546468459718,
+            0.6924651583083556,
+            0.5511557654847199,
+            0.6749506722696947,
+            0.7286946309141884,
+            0.6540572153802624,
+            0.6231574077087143,
+            0.6241243240437191,
+            0.8786683730359413,
+            0.6840353919702309,
+            0.6170069885316435,
+            0.6627101609304874,
+            0.7954343708045369,
+            0.6315311955957442,
+            0.7481847309331828,
+            0.77278849488997,
+            0.7749117832200975,
+            0.839969467119665,
+            0.6449518020363592,
+            0.8132732862181997,
+            0.620714640018863,
+            0.6603460123000774,
+            0.8196087173060365,
+            0.7822375403111176,
+            0.7002097550598406,
+            0.5808586173970122,
+            0.7561659827093324,
+            0.6369627300516769,
+            0.6076115171790086
+          ]
+        },
+        "events": [
+          {
+            "tick": 0,
+            "type": "spawn",
+            "count": 4
+          },
+          {
+            "tick": 1,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 2,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 3,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 4,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 5,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 6,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 7,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 8,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 9,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 10,
+            "type": "spawn",
+            "count": 1
+          },
+          {
+            "tick": 11,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 12,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 13,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 14,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 15,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 16,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 17,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 18,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 19,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 20,
+            "type": "spawn",
+            "count": 5
+          },
+          {
+            "tick": 21,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 22,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 23,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 24,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 25,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 26,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 27,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 28,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 29,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 30,
+            "type": "spawn",
+            "count": 2
+          },
+          {
+            "tick": 31,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 32,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 33,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 34,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 35,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 36,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 37,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 38,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 39,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 40,
+            "type": "spawn",
+            "count": 2
+          },
+          {
+            "tick": 41,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 42,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 43,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 44,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 45,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 46,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 47,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 48,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 49,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 50,
+            "type": "spawn",
+            "count": 5
+          },
+          {
+            "tick": 51,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 52,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 53,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 54,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 55,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 56,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 57,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 58,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 59,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 60,
+            "type": "spawn",
+            "count": 3
+          },
+          {
+            "tick": 61,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 62,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 63,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 64,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 65,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 66,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 67,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 68,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 69,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 70,
+            "type": "spawn",
+            "count": 3
+          },
+          {
+            "tick": 71,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 72,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 73,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 74,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 75,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 76,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 77,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 78,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 79,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 80,
+            "type": "spawn",
+            "count": 1
+          },
+          {
+            "tick": 81,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 82,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 83,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 84,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 85,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 86,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 87,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 88,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 89,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 90,
+            "type": "spawn",
+            "count": 4
+          },
+          {
+            "tick": 91,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 92,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 93,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 94,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 95,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 96,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 97,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 98,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 99,
+            "type": "process",
+            "count": 4
+          }
+        ]
+      },
+      "timestamp": 1788398981.2022645,
+      "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
+      "_stale": true
+    },
+    {
+      "source": "fallback_mock",
+      "success": true,
+      "data": {
+        "cycles": 100,
+        "agents": 50,
+        "metrics": {
+          "throughput": [
+            97.83864505633107,
+            97.40644599502721,
+            98.33026207648507,
+            110.52975587648295,
+            98.08617574325669,
+            77.53969878488564,
+            104.98477516101573,
+            95.98993782254247,
+            96.74561973782207,
+            101.73827180051282,
+            103.48446605360081,
+            117.45338029898714,
+            109.84954760198003,
+            101.65760766165748,
+            88.92517596482769,
+            84.78006448768424,
+            103.69513292816804,
+            119.66621240806072,
+            100.62485295855076,
+            98.40515059343824,
+            107.97664330601305,
+            78.19682052986983,
+            95.3158402428316,
+            107.35543798890288,
+            113.1010657806917,
+            96.39055491017297,
+            105.64899788031866,
+            103.72320173992621,
+            111.73490213055463,
+            83.30166678627741,
+            108.52376031378078,
+            77.2821941241229,
+            60.700818666717225,
+            90.89663907700746,
+            86.26284930481008,
+            113.1401836458461,
+            109.96398849419343,
+            81.71387888056458,
+            112.71042135022,
+            84.96695763636475,
+            98.70634230495574,
+            95.59150333065202,
+            101.71629786191382,
+            112.27954467315651,
+            109.57620686188665,
+            105.24827652803813,
+            109.74922146709449,
+            107.17738056475177,
+            90.595218021706,
+            89.23943359275134,
+            92.9504758879598,
+            107.48989600715173,
+            96.24826643503924,
+            135.0363133372082,
+            87.7106118672026,
+            83.51688100146762,
+            111.52710273204545,
+            121.32774972015199,
+            107.5853903625889,
+            112.5372601895151,
+            121.39517466163244,
+            98.58958785975544,
+            78.65561600291534,
+            92.0188517752193,
+            114.29343635974865,
+            78.34482390882567,
+            100.50296981180892,
+            103.79856039013093,
+            95.26611752779495,
+            110.85447979552146,
+            108.7116961228985,
+            134.82112775351095,
+            109.29951651659704,
+            90.85894812035407,
+            91.57303611498955,
+            87.5262834813699,
+            114.28410339723732,
+            91.49750747779449,
+            98.94608839449104,
+            111.23953928934513,
+            89.1480551402289,
+            95.59513054573422,
+            72.38070601594126,
+            83.7628207144193,
+            91.48395381712226,
+            106.23641482775007,
+            117.90239908664945,
+            99.72299780254433,
+            103.92046418799704,
+            102.51954052820848,
+            116.27111670180406,
+            113.4003279810731,
+            104.10539973111314,
+            84.83583544832032,
+            113.55077971516891,
+            105.71570691933628,
+            118.40412324571331,
+            99.55140110978179,
+            129.2965138672577,
+            94.61685489517266
+          ],
+          "latency": [
+            65.93060414263043,
+            51.15118972607233,
+            44.83730990754498,
+            38.715521272076046,
+            48.48969448461163,
+            64.23321026167184,
+            58.163744966147284,
+            56.88883864266003,
+            26.241274269088024,
+            57.10964204570039,
+            55.558524109198416,
+            44.50073715594673,
+            43.726156338196034,
+            49.97689548186419,
+            67.24876263148732,
+            39.44899300577676,
+            45.72194965263715,
+            63.61784750350584,
+            45.538492005722496,
+            46.3574852413906,
+            50.977763472886764,
+            37.58710623364304,
+            52.199454301500126,
+            37.90382403026365,
+            58.851983103581446,
+            50.031808227579894,
+            72.8343146684775,
+            52.808405135310345,
+            63.65689490432749,
+            36.96736028282636,
+            48.77860656478135,
+            53.23145654014103,
+            67.45720918371049,
+            33.190840619790364,
+            59.906196798088224,
+            55.91354013815916,
+            65.3354619573813,
+            57.1238551807872,
+            50.520711851039486,
+            44.78350349581841,
+            37.5182028215728,
+            51.954227649029704,
+            48.08303231004689,
+            70.20267338079641,
+            43.88975172015152,
+            53.20391845205113,
+            34.309985803242704,
+            46.04537421673822,
+            52.61147880091099,
+            58.239600125195054,
+            64.481016868281,
+            49.55851823670731,
+            38.82755120939114,
+            54.5785039949154,
+            55.16987098413793,
+            54.916583428382694,
+            42.99712300825267,
+            61.333843975868874,
+            50.87895910904515,
+            56.99824621715986,
+            62.74073240094448,
+            56.092723205658515,
+            52.86516027981771,
+            71.52795235100524,
+            52.4370304097215,
+            47.040357672279185,
+            51.119670375830296,
+            64.82768668437134,
+            51.187124868868004,
+            55.19377655139212,
+            61.95731440332163,
+            44.871413897731706,
+            32.734302307463544,
+            52.99423152216441,
+            52.29734794523969,
+            43.91989821439186,
+            58.71086381042417,
+            56.0756737698457,
+            40.05007578400584,
+            55.182184440212026,
+            48.038950410974245,
+            35.16974729792719,
+            54.52950233065968,
+            49.54785373320609,
+            42.54717100810132,
+            55.229455868967484,
+            54.88093272192379,
+            44.22462816055702,
+            54.00352190534677,
+            60.15064936192444,
+            42.873333643142985,
+            53.808900274015926,
+            50.02755750481307,
+            72.66010310650884,
+            31.37697029221813,
+            56.952839314064626,
+            46.937549802187846,
+            48.99802451170167,
+            69.01588976383269,
+            49.91426848739206
+          ],
+          "error_rate": [
+            0.04240943703775568,
+            0.015578520345864533,
+            0.023505120413481094,
+            0.015091524983251085,
+            0.013093119873821162,
+            0.02062483126451532,
+            0.017174284746508978,
+            0.022024915839864274,
+            -0.0010502786772416395,
+            0.040024676886096,
+            0.018330030912187212,
+            0.03742905506233993,
+            0.009928878738935217,
+            0.022925357047242686,
+            0.051649421014768854,
+            0.011302708168937107,
+            0.005047002268917345,
+            0.014534904646633595,
+            0.02472488427322606,
+            0.026933400400612963,
+            0.03290366688021426,
+            0.01742987601606685,
+            0.0039774924049969795,
+            0.015649701955249146,
+            0.03240222694801757,
+            0.024656626531712914,
+            0.0004306121462499639,
+            0.019649484883118438,
+            0.033981680913221304,
+            0.04126548136950435,
+            0.025616866387847777,
+            0.02309302312799502,
+            0.00759794332014271,
+            0.011567571260324948,
+            0.02046915857506166,
+            0.025031977408135293,
+            0.025801841911197648,
+            0.01521791444865864,
+            0.008480577715764846,
+            0.01222218158900087,
+            0.008430256057402387,
+            0.026434091827639932,
+            -0.003122811060456601,
+            0.016667219743905063,
+            0.024498783321012112,
+            0.0352201272466494,
+            0.020712996750509718,
+            0.0300128393951411,
+            0.01600995928218908,
+            0.012555960134679092,
+            0.013256069615625341,
+            0.035273357819018324,
+            0.02994221143897746,
+            0.024873979264626152,
+            0.05330268863561771,
+            0.019676586274738506,
+            0.026203496510288013,
+            0.023075915525585113,
+            0.0177811430987584,
+            0.04316171347771517,
+            0.03506604803037114,
+            0.006005203653794455,
+            0.016001536777147846,
+            0.02428336538368287,
+            0.027831832150420475,
+            0.006515529301866203,
+            -0.0025556158702180302,
+            0.0009363303123821783,
+            0.01928888536658781,
+            0.018967968209603225,
+            0.023452193761145143,
+            0.012303252221209416,
+            0.007757623240939376,
+            -0.00023045057579349632,
+            0.02329187358747437,
+            0.023700539584877767,
+            0.029929936703557113,
+            0.027907956879792327,
+            0.018092844190630578,
+            0.03349260962753485,
+            0.018636330884734507,
+            0.013391636136819277,
+            0.014794215566964319,
+            0.014151883552946064,
+            -0.0016573671950034126,
+            0.02156326052985767,
+            0.022498855917621657,
+            0.01637734189117902,
+            0.012861585299135853,
+            0.02371803824355276,
+            0.03716870587547691,
+            0.020382551525049815,
+            0.014923663927902935,
+            0.014085527975770694,
+            0.01930243561854838,
+            0.007352344289585578,
+            0.018747393118019203,
+            0.02061182264336781,
+            0.0384467868776619,
+            0.02943473764113375
+          ],
+          "resource_usage": [
+            0.803402923564988,
+            0.628705145890076,
+            0.7669921543236242,
+            0.5860617525450083,
+            0.7311960696690869,
+            0.7418737260418858,
+            0.6233590583937763,
+            0.8999379805161489,
+            0.7567373662750663,
+            0.5097271697105491,
+            0.7552859886595809,
+            0.6592588181109992,
+            0.7001376215816302,
+            0.7465764790914182,
+            0.7390532667311541,
+            0.4960848656965384,
+            0.5841680256386415,
+            0.7772624158574591,
+            0.830120424922929,
+            0.89031528866625,
+            0.8803168238653105,
+            0.494446339536952,
+            0.7769482120936451,
+            0.5083709798884896,
+            0.8613600728541995,
+            0.7253349402822048,
+            0.585883121202296,
+            0.900990094709114,
+            0.7643970870290872,
+            0.5108851111048527,
+            0.729346811746062,
+            0.6268860092334619,
+            0.7111295479970239,
+            0.6534805385444636,
+            0.8373493886268655,
+            0.5576713611816425,
+            0.7317405168261416,
+            0.8814188340599977,
+            0.6173039701029728,
+            0.7210648676058218,
+            0.7202001640950076,
+            0.6310297811121411,
+            0.7647893622765252,
+            0.7097050281809896,
+            0.6056232495216876,
+            0.8762016104898851,
+            0.7791614996589802,
+            0.6832893054977468,
+            0.6363325232556536,
+            0.6215637377789474,
+            0.8230940972560552,
+            0.685352176545945,
+            0.7459438203864756,
+            0.6815543299107064,
+            0.7616409469817358,
+            0.6884020869874116,
+            0.7763853872477069,
+            0.6816789090178471,
+            0.7829587297118521,
+            0.7672384109349637,
+            0.6883390199338819,
+            0.6140222759573413,
+            0.6059880009456193,
+            0.6259263179859229,
+            0.6015512356715189,
+            0.7865796421254051,
+            0.6953397687489596,
+            0.857010097757253,
+            0.927932982770514,
+            0.7024222471072236,
+            0.5451982797656627,
+            0.6618546468459718,
+            0.6924651583083556,
+            0.5511557654847199,
+            0.6749506722696947,
+            0.7286946309141884,
+            0.6540572153802624,
+            0.6231574077087143,
+            0.6241243240437191,
+            0.8786683730359413,
+            0.6840353919702309,
+            0.6170069885316435,
+            0.6627101609304874,
+            0.7954343708045369,
+            0.6315311955957442,
+            0.7481847309331828,
+            0.77278849488997,
+            0.7749117832200975,
+            0.839969467119665,
+            0.6449518020363592,
+            0.8132732862181997,
+            0.620714640018863,
+            0.6603460123000774,
+            0.8196087173060365,
+            0.7822375403111176,
+            0.7002097550598406,
+            0.5808586173970122,
+            0.7561659827093324,
+            0.6369627300516769,
+            0.6076115171790086
+          ]
+        },
+        "events": [
+          {
+            "tick": 0,
+            "type": "spawn",
+            "count": 4
+          },
+          {
+            "tick": 1,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 2,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 3,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 4,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 5,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 6,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 7,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 8,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 9,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 10,
+            "type": "spawn",
+            "count": 1
+          },
+          {
+            "tick": 11,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 12,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 13,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 14,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 15,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 16,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 17,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 18,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 19,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 20,
+            "type": "spawn",
+            "count": 5
+          },
+          {
+            "tick": 21,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 22,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 23,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 24,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 25,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 26,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 27,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 28,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 29,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 30,
+            "type": "spawn",
+            "count": 2
+          },
+          {
+            "tick": 31,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 32,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 33,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 34,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 35,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 36,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 37,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 38,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 39,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 40,
+            "type": "spawn",
+            "count": 2
+          },
+          {
+            "tick": 41,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 42,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 43,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 44,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 45,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 46,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 47,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 48,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 49,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 50,
+            "type": "spawn",
+            "count": 5
+          },
+          {
+            "tick": 51,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 52,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 53,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 54,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 55,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 56,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 57,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 58,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 59,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 60,
+            "type": "spawn",
+            "count": 3
+          },
+          {
+            "tick": 61,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 62,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 63,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 64,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 65,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 66,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 67,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 68,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 69,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 70,
+            "type": "spawn",
+            "count": 3
+          },
+          {
+            "tick": 71,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 72,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 73,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 74,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 75,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 76,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 77,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 78,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 79,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 80,
+            "type": "spawn",
+            "count": 1
+          },
+          {
+            "tick": 81,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 82,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 83,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 84,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 85,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 86,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 87,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 88,
+            "type": "process",
+            "count": 2
+          },
+          {
+            "tick": 89,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 90,
+            "type": "spawn",
+            "count": 4
+          },
+          {
+            "tick": 91,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 92,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 93,
+            "type": "process",
+            "count": 5
+          },
+          {
+            "tick": 94,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 95,
+            "type": "process",
+            "count": 4
+          },
+          {
+            "tick": 96,
+            "type": "process",
+            "count": 1
+          },
+          {
+            "tick": 97,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 98,
+            "type": "process",
+            "count": 3
+          },
+          {
+            "tick": 99,
+            "type": "process",
+            "count": 4
+          }
+        ]
+      },
+      "timestamp": 1788405817.824273,
+      "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -21852,7 +23712,7 @@
       "max": 0.5615306462039242,
       "min": 0.4511184702271502,
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -21884,7 +23744,7 @@
       "max": 0.48158445813285994,
       "min": 0.3648959317837833,
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -21916,7 +23776,7 @@
       "max": 0.48827620793494436,
       "min": 0.3777743589332794,
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -21948,7 +23808,7 @@
       "max": 0.4885136925266441,
       "min": 0.38232571599632287,
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     },
     {
@@ -21980,7 +23840,7 @@
       "max": 0.4885136925266441,
       "min": 0.370869899858136,
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938",
+      "_audit_checked_at": "2026-09-11T03:40:57.063936",
       "_stale": true
     }
   ],
@@ -21998,7 +23858,7 @@
       "timestamp": 1788670722.5027614,
       "ts": 1788670722.5027628,
       "_audit_age_days": 4,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "event_id": "401b73d9",
@@ -22022,7 +23882,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "event_id": "3a136f27",
@@ -22046,7 +23906,7 @@
       },
       "correlation_id": "c449901a",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "event_id": "5f612642",
@@ -22070,7 +23930,7 @@
       },
       "correlation_id": "44c348ea",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "event_id": "2ecd09b1",
@@ -22087,7 +23947,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "event_id": "cb21646f",
@@ -22104,7 +23964,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "event_id": "acd3f415",
@@ -22121,7 +23981,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "event_id": "8a3ba951",
@@ -22134,7 +23994,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "event_id": "c88c771c",
@@ -22147,7 +24007,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "event_id": "29abf303",
@@ -22164,7 +24024,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     }
   ],
   "no_timestamp_events_sample": [
@@ -22172,7 +24032,7 @@
       "last_count": 30,
       "earliest_next": 1787355972.2539115,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "tag": "2026-08-24",
@@ -22184,7 +24044,7 @@
       "seit": 0.0,
       "zuletzt_frei": 1787529861.1142402,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "version": 1,
@@ -22213,14 +24073,14 @@
       ],
       "first_boot": "2026-08-23T00:10:46",
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
-      "versatz": 11785102,
+      "versatz": 11913198,
       "finger": "b'[2026-08-25 14:04:55] daemon gestartet (pid 563)\\n[2026-08-25 14:04:55] === HERZSCHLAG BEGINN ===\\n[2026-08-25 14:04:55] p'",
-      "ts": 1789079353.8567653,
+      "ts": 1789097947.2348158,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "title": "Semantic-Knowledge-Graph als Organ einbauen",
@@ -22228,7 +24088,7 @@
       "signal": "gap",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "title": "Semantic-Knowledge-Graph als Organ einbauen (Code-Pflicht)",
@@ -22236,7 +24096,7 @@
       "signal": "failure",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "title": "MemoryStore-Vertragswächter bauen (Contract-Validator)",
@@ -22244,7 +24104,7 @@
       "signal": "gap",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "title": "Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)",
@@ -22255,7 +24115,7 @@
       "_geparkt": true,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
@@ -22266,7 +24126,7 @@
       "_geparkt": false,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     },
     {
       "title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)",
@@ -22277,8 +24137,8 @@
       "_geparkt": true,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-10T22:31:07.783938"
+      "_audit_checked_at": "2026-09-11T03:40:57.063936"
     }
   ],
-  "recommendation": "221 von 83120 Einträgen sind stale (älter als 7 Tage). Diese sollten erneuert werden."
+  "recommendation": "224 von 84528 Einträgen sind stale (älter als 7 Tage). Diese sollten erneuert werden."
 }
