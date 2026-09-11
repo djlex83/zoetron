@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 06:55:29",
+ "stand": "2026-09-11 07:06:42",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -171,6 +171,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-daten-durch-neue-fakten-ersetzen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -286,12 +292,6 @@
   },
   {
    "tool": "wissenswidersprüche-auflösen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

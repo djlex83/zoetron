@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11663 Fakten** · Stand 2026-09-11 06:57 UTC · aktualisiert bei jedem Herzschlag
+**11656 Fakten** · Stand 2026-09-11 07:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7525
-- **swarm_artifact:** 1757
+- **dream:** 7520
+- **swarm_artifact:** 1755
 - **last_swarm_critique:** 880
 - **last_swarm_goal:** 615
 - **anti_pattern:** 397
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911070542:5:897049`
+*11.09. 07:05 UTC · Quelle: dream*
+
+Metabolic stress at 1.0 should trigger conserve mode, but the system continues queuing non-critical tasks — backpressure mechanisms are missing under high-stress conditions.
+
+### `dream:20260911070542:4:1fdf6a`
+*11.09. 07:05 UTC · Quelle: dream*
+
+Reflex tool failures cascade into swarm failures because there is no retry/validator wrapper — single-point-of-failure in reflex execution breaks the entire goal pipeline.
+
+### `dream:20260911070542:3:96a546`
+*11.09. 07:05 UTC · Quelle: dream*
+
+Path resolution failures ('nichts gelesen') reveal that relative paths are never anchored to ZOETRON_DATA or sys.argv[1] before file operations — this is a root cause of silent data access failures.
+
+### `dream:20260911070542:2:90a26c`
+*11.09. 07:05 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution because they lack acceptance criteria and pipeline integration — every proposal must be executable or it decays into noise.
+
+### `dream:20260911070542:1:59079c`
+*11.09. 07:05 UTC · Quelle: dream*
+
+Unchecked model latency growth (44s→92s) without automatic fallback is a systemic failure mode — routing decisions must include latency circuit-breakers, not just error-code detection.
 
 ### `dream:20260911065416:5:d4a8c0`
 *11.09. 06:54 UTC · Quelle: dream*
@@ -43722,56 +43747,6 @@ score=9; issues=Zweites Artefakt im Prompt gekappt (Hinweis: nicht als Mangel we
 *28.08. 07:01 UTC · Quelle: system*
 
 Wiederkehrenden Organfehler endgültig klären
-
-### `dream:20260828070039:5:79d1c9`
-*28.08. 07:00 UTC · Quelle: dream*
-
-Simulation-driven revisions (5 applied) cannot compensate for missing organs and broken file reads; the environment must be validated before swarm launch.
-
-### `dream:20260828070039:4:1a0258`
-*28.08. 07:00 UTC · Quelle: dream*
-
-Hand actions consistently fail with exit=1 and gelesen=0, indicating path resolution or file access issues that block all downstream artifact operations.
-
-### `dream:20260828070039:3:eb08a1`
-*28.08. 07:00 UTC · Quelle: dream*
-
-Calibration predictions (predicted 4 vs actual 1) become meaningless when systemic toolchain failures dominate outcome variance.
-
-### `dream:20260828070039:2:351b8d`
-*28.08. 07:00 UTC · Quelle: dream*
-
-Evolution produces high-scoring variants (7-9) but swarm convergence fails when the execution layer has missing organs (swarm.py) and failing hand actions (gelesen:0).
-
-### `dream:20260828070039:1:a042c2`
-*28.08. 07:00 UTC · Quelle: dream*
-
-Rate-limited models (429 errors) must be automatically deprioritized via a health-aware router that tracks per-endpoint success rates and latency percentiles.
-
-### `dream:20260828065528:5:550062`
-*28.08. 06:55 UTC · Quelle: dream*
-
-Nemotron-3-ultra works but exhibits high latency variance (11-128s), creating unpredictable iteration costs under tight metabolism budgets.
-
-### `dream:20260828065528:4:f36fb9`
-*28.08. 06:55 UTC · Quelle: dream*
-
-Three consecutive hand_action failures with exit=1 and gelesen=0 indicate a persistent file-reading or path-resolution bug.
-
-### `dream:20260828065528:3:dc72d0`
-*28.08. 06:55 UTC · Quelle: dream*
-
-Calibration predicted score 4 but actual was 1 (error=3), revealing systematic overconfidence in swarm convergence estimates.
-
-### `dream:20260828065528:2:56b2d8`
-*28.08. 06:55 UTC · Quelle: dream*
-
-The critical swarm.py organ is missing from /workspace/zoetron/data/tools/, causing immediate artifact execution failure.
-
-### `dream:20260828065528:1:53c7b5`
-*28.08. 06:55 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently fails with 429 rate-limiting errors, making it unreliable for production swarm runs.
 
 ### `last_swarm_critique`
 *28.08. 06:19 UTC · Quelle: critic*

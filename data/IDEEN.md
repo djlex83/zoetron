@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 06:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 07:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolic stress at 1.0 should trigger conserve mode, but the system continues queuing non-critical tasks — backpressure mechanisms are missing under 
+- Reflex tool failures cascade into swarm failures because there is no retry/validator wrapper — single-point-of-failure in reflex execution breaks the 
+- Path resolution failures ('nichts gelesen') reveal that relative paths are never anchored to ZOETRON_DATA or sys.argv[1] before file operations — this
+- Skill proposals accumulate without execution because they lack acceptance criteria and pipeline integration — every proposal must be executable or it 
+- Unchecked model latency growth (44s→92s) without automatic fallback is a systemic failure mode — routing decisions must include latency circuit-breake
 - System lacks graceful degradation because no orchestrator activates fallback constraints when multiple models fail.
 - Error handling is ad-hoc because no unified taxonomy routes each error class to its specific recovery action.
 - Stale swarm knowledge persists because no scheduled refresh mechanism forces re-evaluation of archived votes.
@@ -51,11 +56,6 @@
 - Stale knowledge (>7 days) persists without automated archival, causing the system to replay outdated patterns during consolidation.
 - Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that may never be deployed.
 - Model failures cluster around rate limits (429) and upstream overloads (502), making proactive health probes and circuit breakers essential for reliab
-- The reflex tool 'träume-in-echte-fähigkeiten-umsetzen.py' returns ok=false, breaking the dream-to-skill pipeline despite swarm initiation.
-- Metabolism stress at 1.0 forces conserve mode (max_tasks=3, max_iterations=1), throttling all autonomous activity including dream consolidation.
-- Hand actions fail because relative paths are resolved against the working directory instead of ZOETRON_DATA, causing silent zero-byte reads.
-- The poolside/laguna-s-2.1:free model consistently succeeds where others fail, establishing it as the de facto backbone for inference.
-- Free-tier LLM endpoints (Gemma, Nemotron) fail systematically under rate limits (429) and upstream overload (502), making them unreliable as primary p
 
 ---
 
