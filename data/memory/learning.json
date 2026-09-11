@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 23:13:33",
+ "stand": "2026-09-11 23:24:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,13 +15,13 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
-   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
@@ -30,12 +30,6 @@
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 8,
    "erfolge": 8,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -48,6 +42,12 @@
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "träume-besser-nutzen-lernen.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {

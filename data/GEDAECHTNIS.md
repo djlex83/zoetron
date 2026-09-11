@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11530 Fakten** · Stand 2026-09-11 23:15 UTC · aktualisiert bei jedem Herzschlag
+**11530 Fakten** · Stand 2026-09-11 23:26 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7461
 - **swarm_artifact:** 1695
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911232347:5:631cf3`
+*11.09. 23:23 UTC · Quelle: dream*
+
+High metabolic stress (>0.8) still admits low-priority tasks, starving critical work and increasing error rates.
+
+### `dream:20260911232347:4:51674d`
+*11.09. 23:23 UTC · Quelle: dream*
+
+Relative file paths in hand actions cause silent failures when working directory shifts, breaking reproducibility.
+
+### `dream:20260911232347:3:06010e`
+*11.09. 23:23 UTC · Quelle: dream*
+
+Hardcoded graph limits and convergence thresholds prevent adaptive optimization, wasting cycles on plateaued searches.
+
+### `dream:20260911232347:2:b1d371`
+*11.09. 23:23 UTC · Quelle: dream*
+
+Stale swarm goals and dream insights accumulate undetected, degrading collaboration quality until manual refresh is triggered.
+
+### `dream:20260911232347:1:3bb7eb`
+*11.09. 23:23 UTC · Quelle: dream*
+
+Model provider failures (27 errors) cascade into system-wide unreliability because no circuit breaker or automatic failover exists.
 
 ### `dream:20260911231300:5:94fc88`
 *11.09. 23:13 UTC · Quelle: dream*
@@ -43247,31 +43272,6 @@ Skill proposals accumulate but are not automatically enacted, creating a proposa
 *28.08. 23:25 UTC · Quelle: dream*
 
 The system repeatedly fails over to a high-latency fallback model because the primary free model is persistently rate-limited, indicating a missing circuit-breaker and health-aware routing layer.
-
-### `dream:20260828232049:5:923035`
-*28.08. 23:20 UTC · Quelle: dream*
-
-Reflex mode completes routine goals (market update, skill discovery) reliably, but drive goals (reduce errors, use analyses, apply dreams) remain unactuated, indicating a gap between intent and execution.
-
-### `dream:20260828232049:4:9d65cb`
-*28.08. 23:20 UTC · Quelle: dream*
-
-Skill proposals accumulate (router, backoff, quota scheduler, gap analyzer, plateau detector) but none are implemented, showing a broken proposal-to-production pipeline.
-
-### `dream:20260828232049:3:b6e1d3`
-*28.08. 23:20 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while external model failures persist, revealing a blind spot where upstream API health is not treated as an internal organ.
-
-### `dream:20260828232049:2:7a52f6`
-*28.08. 23:20 UTC · Quelle: dream*
-
-Fallback to nvidia/nemotron-3-ultra succeeds but exhibits 9–15 s latency, violating any sub-10 s SLA for interactive tasks.
-
-### `dream:20260828232049:1:a20e0b`
-*28.08. 23:20 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, indicating a hard quota ceiling that makes it unreliable as a primary endpoint.
 
 ### `last_swarm_critique`
 *28.08. 23:02 UTC · Quelle: critic*

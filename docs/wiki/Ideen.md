@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 23:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 23:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,7 +29,7 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High metabolic stress (>0.8) still admits low-priority tasks, starving critical work and increasing error rates.
+- Relative file paths in hand actions cause silent failures when working directory shifts, breaking reproducibility.
+- Hardcoded graph limits and convergence thresholds prevent adaptive optimization, wasting cycles on plateaued searches.
+- Stale swarm goals and dream insights accumulate undetected, degrading collaboration quality until manual refresh is triggered.
+- Model provider failures (27 errors) cascade into system-wide unreliability because no circuit breaker or automatic failover exists.
 - Reflex-driven swarm updates converge reliably, proving that deterministic, low-latency tools outperform LLM calls for routine knowledge sync.
 - Pruning (47→18 events) and clean self-diagnoses show memory hygiene works, but model-error-driven drive goals indicate upstream instability is the pri
 - Relative file paths in hand_action succeed only because CWD is stable; any context switch would break I/O without a ZOETRON_DATA resolver.
@@ -51,11 +56,6 @@
 - The staleness of swarm knowledge suggests that the current update mechanisms are either too infrequent or not deeply integrated into the system's core
 - The persistence of model failures despite multiple proposals indicates that the root cause may be in the integration of the proposed solutions rather 
 - Recurring drive goals with identical signals reveal that the system's problem-solving loop is broken: proposals are generated but not executed, and re
-- Dream cycles often end without converting insights into actionable skills, leaving gaps.
-- Memory pruning discards many events but loses high-salience items that should be preserved.
-- Overlapping drive goals such as error reduction and skill testing create conflict and require explicit sequencing.
-- High latency and variable token usage in free models suggest per-model timeout and token budgets are needed.
-- Repeated 429 errors from free OpenRouter models indicate rate limiting is the dominant failure cause.
 
 ---
 
