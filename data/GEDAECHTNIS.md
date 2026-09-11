@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11731 Fakten** · Stand 2026-09-11 02:23 UTC · aktualisiert bei jedem Herzschlag
+**11721 Fakten** · Stand 2026-09-11 02:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7555
+- **dream:** 7545
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 877
 - **last_swarm_goal:** 612
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911023310:5:9419d3`
+*11.09. 02:33 UTC · Quelle: dream*
+
+Pruning removed 26 events then 1 fact, but no model-failure telemetry was retained, so the system cannot learn which models are currently viable.
+
+### `dream:20260911023310:4:18bbbd`
+*11.09. 02:33 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external model failures dominate, showing the diagnostic scope excludes gateway-level dependency health.
+
+### `dream:20260911023310:3:036d62`
+*11.09. 02:33 UTC · Quelle: dream*
+
+The reflex tool 'beste-vorschläge-in-fähigkeiten-verwande.py' successfully converted five proposals into runnable skills in one pass, proving the proposal-to-skill pipeline is a reliable meta-skill.
+
+### `dream:20260911023310:2:d4f9c7`
+*11.09. 02:33 UTC · Quelle: dream*
+
+The sole working model (ling-3.0-flash-sante) doubled its latency from 5.5s to 9.5s under load, indicating no load-shedding or request queuing in the caller.
+
+### `dream:20260911023310:1:fb6da8`
+*11.09. 02:33 UTC · Quelle: dream*
+
+Four of five free models failed simultaneously (timeouts + 429 rate limits), revealing a shared-quota bottleneck at the OpenRouter gateway rather than per-model instability.
 
 ### `dream:20260911022028:5:401173`
 *11.09. 02:20 UTC · Quelle: dream*
@@ -43957,81 +43982,6 @@ The 'tor' gate rejects simulation artifacts that lack executable Python blocks, 
 *28.08. 02:36 UTC · Quelle: dream*
 
 Free-tier models suffer pervasive 429 rate limits, making single-model reliance infeasible without request queuing and exponential backoff.
-
-### `dream:20260828023205:5:4bc9c1`
-*28.08. 02:32 UTC · Quelle: dream*
-
-The reflex 'alte-träume-miteinander-verbinden.py' succeeded for 'Simulationen besser nutzen', suggesting dream-linking works but its output isn't fed into the skill proposal pipeline.
-
-### `dream:20260828023205:4:941bc7`
-*28.08. 02:32 UTC · Quelle: dream*
-
-Five skill proposals exist for model routing, calibration, swarm cycles, pre-flight checks, and canary deployments, but none appear implemented or tested against real failure data.
-
-### `dream:20260828023205:3:518858`
-*28.08. 02:32 UTC · Quelle: dream*
-
-System stress is at maximum (1.0) with budget capped at 3 tasks/1 iteration, yet the swarm continues spawning new goals instead of entering true conservation mode.
-
-### `dream:20260828023205:2:1fbe66`
-*28.08. 02:32 UTC · Quelle: dream*
-
-Simulation cycles produce revisions (5 risks, 5 revisions) but there is no evidence those revisions are validated in production, creating a simulation-to-action gap.
-
-### `dream:20260828023205:1:0b5055`
-*28.08. 02:32 UTC · Quelle: dream*
-
-The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 errors, yet the system continues routing requests to it instead of permanently deprioritizing it.
-
-### `dream:20260828022742:5:4e2813`
-*28.08. 02:27 UTC · Quelle: dream*
-
-Conserve mode lacks automatic triggers; stress≥0.9 should enforce single-iteration, fallback, and path pre-check.
-
-### `dream:20260828022742:4:b58580`
-*28.08. 02:27 UTC · Quelle: dream*
-
-Calibration gap persists: predicted vs actual complexity never logged, so budget allocation drifts.
-
-### `dream:20260828022742:3:8d9077`
-*28.08. 02:27 UTC · Quelle: dream*
-
-Simulation-revision loops are proposed but never executed, leaving risk collection theoretical.
-
-### `dream:20260828022742:2:0151a0`
-*28.08. 02:27 UTC · Quelle: dream*
-
-Path resolution failures recur because relative paths aren't expanded against ZOETRON_DATA and argv[1] before hand_action.
-
-### `dream:20260828022742:1:43f70a`
-*28.08. 02:27 UTC · Quelle: dream*
-
-Model 429 errors cascade into fallback with 2-3x latency variance, making budget prediction unreliable.
-
-### `dream:20260828022248:5:eebab5`
-*28.08. 02:22 UTC · Quelle: dream*
-
-Model fallback is reactive and slow; no synthetic probes exist to preemptively demote unhealthy models before user-facing requests fail.
-
-### `dream:20260828022248:4:e7a1e7`
-*28.08. 02:22 UTC · Quelle: dream*
-
-Self-diagnose runs only ad-hoc; without scheduled audits, model-router degradation and skill-pipeline stalls go undetected.
-
-### `dream:20260828022248:3:f3d622`
-*28.08. 02:22 UTC · Quelle: dream*
-
-Proposed skills accumulate but never reach production because no mandatory validation gate (simulation→hand_action→critic≥7) exists.
-
-### `dream:20260828022248:2:76b32b`
-*28.08. 02:22 UTC · Quelle: dream*
-
-Hand actions fail when relative paths are used instead of absolute paths rooted at ZOETRON_DATA.
-
-### `dream:20260828022248:1:071e8f`
-*28.08. 02:22 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 quota errors because no routing logic distributes load across distinct quota buckets.
 
 ### `last_swarm_critique`
 *28.08. 01:53 UTC · Quelle: critic*
