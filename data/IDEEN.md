@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream cycles often end without converting insights into actionable skills, leaving gaps.
+- Memory pruning discards many events but loses high-salience items that should be preserved.
+- Overlapping drive goals such as error reduction and skill testing create conflict and require explicit sequencing.
+- High latency and variable token usage in free models suggest per-model timeout and token budgets are needed.
+- Repeated 429 errors from free OpenRouter models indicate rate limiting is the dominant failure cause.
 - System autonomously generates skill proposals from failures but lacks an activation pipeline to promote proposals into deployed capabilities.
 - Simulation revision loop executes 5 revisions yet still returns 'revise', revealing a missing convergence criterion or ineffective feedback applicatio
 - Fallback model (dots-studio) succeeds but at 27-35s latency, creating a reliability-latency tradeoff that blocks time-sensitive paths.
@@ -51,11 +56,6 @@
 - Model cascade failures (502 → 429 → 429) followed by successful dots-studio fallback proves the system lacks automatic provider failover with health-a
 - Hardcoded 100-node subgraph limit caused the evolution critic to penalize valid solutions, revealing that architectural constants must be configurable
 - Repeated simulation-revision cycles (5 revisions × 2 rounds) without convergence indicate the critic's risk threshold is miscalibrated for this task c
-- Metabolism stress=1.0 forces conserve mode (max_tasks=3, max_iterations=1), starving parallel work; task prioritization must respect metabolic budget.
-- Nemotron latency varies 5x (20s–113s) on same model—latency-aware routing must sample recent performance, not static rankings.
-- Simulation-driven revision loops converge: 5 revisions applied, TOR green, but calibration error of 2 (predicted 5 vs actual 7) indicates systematic u
-- Hand actions fail when using relative paths; the error 'nichts gelesen...kein Verzeichnis unter dem echten Datenpfad' shows ZOETRON_DATA must be resol
-- Model provider failures cascade: 502 upstream errors (Nemotron) and 429 rate limits (Gemma) require distinct handling—circuit breakers for 502, expone
 
 ---
 

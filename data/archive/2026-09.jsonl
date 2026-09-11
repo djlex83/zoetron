@@ -39928,3 +39928,14 @@
 {"ts": 1788561313.0010817, "kind": "act_done", "payload": {"goal_title": "Alte Wissenslücken schließen und prüfen", "score": 7, "converged": false}}
 {"ts": 1788561315.17239, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 1.53, "gelesen": 14}}
 {"ts": 1788561317.041665, "kind": "issue_synced", "payload": {"issue": 366, "state": "open"}}
+{"ts": 1787957205.1400394, "key": "dream:20260828224645:1:2bd382", "value": "Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.", "source": "dream"}
+{"ts": 1787957205.1401434, "key": "dream:20260828224645:2:f731b5", "value": "Local hand_actions (code execution) complete reliably in ~1.6s while remote LLM calls vary 4-147s and frequently fail.", "source": "dream"}
+{"ts": 1787957205.1402187, "key": "dream:20260828224645:3:23f5f7", "value": "nvidia/nemotron-3-ultra shows high latency variance (70-147s) and upstream 502 errors, indicating unstable capacity.", "source": "dream"}
+{"ts": 1787957205.1402843, "key": "dream:20260828224645:4:02681b", "value": "poolside/laguna-s-2.1:free delivers fast (4s) responses but exhausts quota after 1-2 calls.", "source": "dream"}
+{"ts": 1787957205.140349, "key": "dream:20260828224645:5:e2fa90", "value": "Goal completion succeeds despite model failures because the system falls back to executing local Python artifacts.", "source": "dream"}
+{"ts": 1787957497.1556425, "key": "dream:20260828225137:1:bd1237", "value": "Free-tier rate limits (429 errors across 4 models) are a systemic bottleneck requiring a modeled fallback chain with latency/quality tradeoffs.", "source": "dream"}
+{"ts": 1787957497.155724, "key": "dream:20260828225137:2:fd012f", "value": "Evolution improved variant scores (5→9) but swarm halted at 2 cycles without convergence — fixed cycle budgets prevent quality asymptotes.", "source": "dream"}
+{"ts": 1787957497.1557941, "key": "dream:20260828225137:3:b34795", "value": "Critic feedback was truncated (\"Die drei identifizierten Analyse-Sch\") making revision targeting unreliable; structured critic output is essential.", "source": "dream"}
+{"ts": 1787957497.1558573, "key": "dream:20260828225137:4:37536b", "value": "Simulation detected 3 risks and drove 3 revisions — risk-to-revision mapping is a working pattern worth codifying.", "source": "dream"}
+{"ts": 1787957497.155922, "key": "dream:20260828225137:5:a6e3a1", "value": "Swarm role specialization (1 planner, 3 builders, 1 critic) enabled evolution but lacked a convergence gate combining score plateau, critic satisfaction, and cycle minimum.", "source": "dream"}
+{"ts": 1788561806.644107, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

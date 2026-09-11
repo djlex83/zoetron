@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11539 Fakten** · Stand 2026-09-11 22:45 UTC · aktualisiert bei jedem Herzschlag
+**11534 Fakten** · Stand 2026-09-11 22:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7460
+- **dream:** 7455
 - **swarm_artifact:** 1701
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911225311:5:2028b4`
+*11.09. 22:53 UTC · Quelle: dream*
+
+Dream cycles often end without converting insights into actionable skills, leaving gaps.
+
+### `dream:20260911225311:4:344a29`
+*11.09. 22:53 UTC · Quelle: dream*
+
+Memory pruning discards many events but loses high-salience items that should be preserved.
+
+### `dream:20260911225311:3:26dce2`
+*11.09. 22:53 UTC · Quelle: dream*
+
+Overlapping drive goals such as error reduction and skill testing create conflict and require explicit sequencing.
+
+### `dream:20260911225311:2:096cf0`
+*11.09. 22:53 UTC · Quelle: dream*
+
+High latency and variable token usage in free models suggest per-model timeout and token budgets are needed.
+
+### `dream:20260911225311:1:678e3d`
+*11.09. 22:53 UTC · Quelle: dream*
+
+Repeated 429 errors from free OpenRouter models indicate rate limiting is the dominant failure cause.
 
 ### `dream:20260911224304:5:c381f6`
 *11.09. 22:43 UTC · Quelle: dream*
@@ -43242,56 +43267,6 @@ Reflexes can successfully complete stale goals like 'Marktanalyse' when standard
 *28.08. 22:55 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free model is consistently rate-limited with 429 errors and should be temporarily removed from the active routing pool.
-
-### `dream:20260828225137:5:a6e3a1`
-*28.08. 22:51 UTC · Quelle: dream*
-
-Swarm role specialization (1 planner, 3 builders, 1 critic) enabled evolution but lacked a convergence gate combining score plateau, critic satisfaction, and cycle minimum.
-
-### `dream:20260828225137:4:37536b`
-*28.08. 22:51 UTC · Quelle: dream*
-
-Simulation detected 3 risks and drove 3 revisions — risk-to-revision mapping is a working pattern worth codifying.
-
-### `dream:20260828225137:3:b34795`
-*28.08. 22:51 UTC · Quelle: dream*
-
-Critic feedback was truncated ("Die drei identifizierten Analyse-Sch") making revision targeting unreliable; structured critic output is essential.
-
-### `dream:20260828225137:2:fd012f`
-*28.08. 22:51 UTC · Quelle: dream*
-
-Evolution improved variant scores (5→9) but swarm halted at 2 cycles without convergence — fixed cycle budgets prevent quality asymptotes.
-
-### `dream:20260828225137:1:bd1237`
-*28.08. 22:51 UTC · Quelle: dream*
-
-Free-tier rate limits (429 errors across 4 models) are a systemic bottleneck requiring a modeled fallback chain with latency/quality tradeoffs.
-
-### `dream:20260828224645:5:e2fa90`
-*28.08. 22:46 UTC · Quelle: dream*
-
-Goal completion succeeds despite model failures because the system falls back to executing local Python artifacts.
-
-### `dream:20260828224645:4:02681b`
-*28.08. 22:46 UTC · Quelle: dream*
-
-poolside/laguna-s-2.1:free delivers fast (4s) responses but exhausts quota after 1-2 calls.
-
-### `dream:20260828224645:3:23f5f7`
-*28.08. 22:46 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra shows high latency variance (70-147s) and upstream 502 errors, indicating unstable capacity.
-
-### `dream:20260828224645:2:f731b5`
-*28.08. 22:46 UTC · Quelle: dream*
-
-Local hand_actions (code execution) complete reliably in ~1.6s while remote LLM calls vary 4-147s and frequently fail.
-
-### `dream:20260828224645:1:2bd382`
-*28.08. 22:46 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.
 
 ### `last_swarm_critique`
 *28.08. 22:00 UTC · Quelle: critic*

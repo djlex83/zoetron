@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 22:43:43",
+ "stand": "2026-09-11 22:53:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -52,8 +52,8 @@
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -405,8 +405,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.82,
- "simulationen_angewandt": 34,
+ "haende_quote": 0.821,
+ "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 23,
   "best": 9.0,
