@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System autonomously generates skill proposals from failures but lacks an activation pipeline to promote proposals into deployed capabilities.
+- Simulation revision loop executes 5 revisions yet still returns 'revise', revealing a missing convergence criterion or ineffective feedback applicatio
+- Fallback model (dots-studio) succeeds but at 27-35s latency, creating a reliability-latency tradeoff that blocks time-sensitive paths.
+- Swarm convergence stalls at score 7 with 3:1 builder-to-critic ratio, indicating insufficient adversarial pressure for quality gate.
+- Primary models (Nemotron, Gemma) fail systematically with transient 502/429 errors, making single-model reliance a critical reliability risk.
 - Pruning 17 facts and 40 events during active consolidation suggests memory pressure triggers aggressive garbage collection that may discard relevant c
 - Calibration error of +2 (predicted 5 vs actual 7) combined with stuck swarm score at 7 shows the reward model overestimates progress on 'connect dista
 - Model cascade failures (502 → 429 → 429) followed by successful dots-studio fallback proves the system lacks automatic provider failover with health-a
@@ -51,11 +56,6 @@
 - Simulation-driven revision loops converge: 5 revisions applied, TOR green, but calibration error of 2 (predicted 5 vs actual 7) indicates systematic u
 - Hand actions fail when using relative paths; the error 'nichts gelesen...kein Verzeichnis unter dem echten Datenpfad' shows ZOETRON_DATA must be resol
 - Model provider failures cascade: 502 upstream errors (Nemotron) and 429 rate limits (Gemma) require distinct handling—circuit breakers for 502, expone
-- Swarm feedback and fact stores go stale within days; a scheduled reflex that re-queries the swarm and re-validates facts every 24h prevents blind oper
-- Skill proposals accumulate (60+) without a validation gate; a 3-task A/B test with >80% success threshold would promote only effective skills.
-- Relative file paths in hand_actions repeatedly break because ZOETRON_DATA is not auto-prepended at the syscall boundary.
-- Resource pressure (stress > 0.7, budget < 20%) is not checked before spawning tasks, leading to OOM-like stalls that a StressAwareScheduler would prev
-- Model endpoints fail silently (502) or with rate limits (429) and the system lacks automatic health-based routing, causing cascading task failures.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11549 Fakten** · Stand 2026-09-11 22:35 UTC · aktualisiert bei jedem Herzschlag
+**11539 Fakten** · Stand 2026-09-11 22:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7470
+- **dream:** 7460
 - **swarm_artifact:** 1701
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911224304:5:c381f6`
+*11.09. 22:43 UTC · Quelle: dream*
+
+System autonomously generates skill proposals from failures but lacks an activation pipeline to promote proposals into deployed capabilities.
+
+### `dream:20260911224304:4:68ed6e`
+*11.09. 22:43 UTC · Quelle: dream*
+
+Simulation revision loop executes 5 revisions yet still returns 'revise', revealing a missing convergence criterion or ineffective feedback application.
+
+### `dream:20260911224304:3:baa34f`
+*11.09. 22:43 UTC · Quelle: dream*
+
+Fallback model (dots-studio) succeeds but at 27-35s latency, creating a reliability-latency tradeoff that blocks time-sensitive paths.
+
+### `dream:20260911224304:2:8b2cfa`
+*11.09. 22:43 UTC · Quelle: dream*
+
+Swarm convergence stalls at score 7 with 3:1 builder-to-critic ratio, indicating insufficient adversarial pressure for quality gate.
+
+### `dream:20260911224304:1:478177`
+*11.09. 22:43 UTC · Quelle: dream*
+
+Primary models (Nemotron, Gemma) fail systematically with transient 502/429 errors, making single-model reliance a critical reliability risk.
 
 ### `dream:20260911223248:5:dbced4`
 *11.09. 22:32 UTC · Quelle: dream*
@@ -43267,81 +43292,6 @@ Local hand_actions (code execution) complete reliably in ~1.6s while remote LLM 
 *28.08. 22:46 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.
-
-### `dream:20260828224215:5:a6e209`
-*28.08. 22:42 UTC · Quelle: dream*
-
-High stress state (1.0) triggers conserve mode but the system still spawns multiple concurrent model calls, violating its own budget constraints.
-
-### `dream:20260828224215:4:938f2d`
-*28.08. 22:42 UTC · Quelle: dream*
-
-Self-diagnosis reports "zero errors" while external convergence metrics show >80% failure rate, confirming a critical blind spot in monitoring.
-
-### `dream:20260828224215:3:3aaedd`
-*28.08. 22:42 UTC · Quelle: dream*
-
-Latency variance for successful calls (6s–70s) exceeds any reasonable budget, yet no timeout or preemptive routing logic is observed.
-
-### `dream:20260828224215:2:eccaba`
-*28.08. 22:42 UTC · Quelle: dream*
-
-Single-model dependency creates systemic fragility: when z-ai/glm-5.2 fails repeatedly, the system retries the same failing endpoint instead of switching providers.
-
-### `dream:20260828224215:1:4b3181`
-*28.08. 22:42 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple providers is the dominant failure mode, indicating reliance on free-tier quotas without fallback orchestration.
-
-### `dream:20260828223742:5:22cc30`
-*28.08. 22:37 UTC · Quelle: dream*
-
-Stale drive goals (market analysis, regular self-checks) persist across cycles without automatic expiry or forced re-evaluation, clogging the goal queue.
-
-### `dream:20260828223742:4:fdb907`
-*28.08. 22:37 UTC · Quelle: dream*
-
-Convergence is declared with score=null and no quantitative improvement threshold, allowing premature termination of iterative improvement loops.
-
-### `dream:20260828223742:3:f42646`
-*28.08. 22:37 UTC · Quelle: dream*
-
-Multiple redundant skill proposals (model router, latency-budget allocator, fast-path) emerge independently for the same routing problem, indicating no deduplication or synthesis mechanism for skill proposals.
-
-### `dream:20260828223742:2:e2fcf2`
-*28.08. 22:37 UTC · Quelle: dream*
-
-Self-diagnosis reports 'zero organ errors' while concurrent model_fail events prove external reliability signals are ignored, creating a blind-spot between internal health checks and actual failure streams.
-
-### `dream:20260828223742:1:18c9aa`
-*28.08. 22:37 UTC · Quelle: dream*
-
-A single failing model endpoint (z-ai/glm-5.2:free) repeatedly triggers 429 errors, yet the system lacks automatic circuit-breaking and continues retrying instead of permanent exclusion.
-
-### `dream:20260828223308:5:f73ecb`
-*28.08. 22:33 UTC · Quelle: dream*
-
-No automatic demotion or health-tracking exists for flaky models, causing repeated 429 retries that waste latency budget.
-
-### `dream:20260828223308:4:af0eff`
-*28.08. 22:33 UTC · Quelle: dream*
-
-Reflex execution succeeds (ok:true) but lacks a certification pipeline to prevent regression under load or model churn.
-
-### `dream:20260828223308:3:74fce3`
-*28.08. 22:33 UTC · Quelle: dream*
-
-Drive goals repeatedly surface the same three signals (failure, stale, gap) indicating systemic loops rather than one-off issues.
-
-### `dream:20260828223308:2:705ef4`
-*28.08. 22:33 UTC · Quelle: dream*
-
-Multiple redundant skill proposals address the same model-reliability gap (router, circuit-breaker, fast-path) but none have been instantiated or tested.
-
-### `dream:20260828223308:1:4b4b85`
-*28.08. 22:33 UTC · Quelle: dream*
-
-Primary model (z-ai/glm-5.2) consistently fails with 429 rate-limit errors while fallback (Nemotron) succeeds but with high latency variance (12-25s).
 
 ### `last_swarm_critique`
 *28.08. 22:00 UTC · Quelle: critic*
