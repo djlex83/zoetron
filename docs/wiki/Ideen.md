@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 20:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 20:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High stress (1.0) triggers conserve mode that severely limits throughput, yet metabolism checks are too infrequent to prevent overload.
+- Hand actions fail due to unresolved relative paths against the true data root (ZOETRON_DATA), requiring absolute path resolution before I/O.
+- Model blocking after 3 consecutive errors exists but lacks integration with health-based routing to prevent repeated attempts on degraded models.
+- The dots-studio model succeeds consistently but with high latency, making it a reliable fallback if prioritized first in the chain.
+- Rate limits (429) on Google models and timeouts on Nvidia model indicate that retry logic without exponential backoff and Retry-After parsing causes c
 - Dream cycles produce high-value patches (executor, scheduler) but lack a sandboxed verify-then-merge loop, so insights accumulate without deployment.
 - Swarm knowledge refresh succeeds via reflex but remains a one-off; no periodic staleness detector triggers autonomous re-sync.
 - Metabolic stress signals exist but no scheduler reads them to shed load before budget exhaustion, causing cascading failures under pressure.
@@ -51,11 +56,6 @@
 - Reflex tools for model repair and swarm refresh succeed consistently, proving that automated remediation works when triggered but lacks proactive heal
 - Nemotron-3-ultra exhibits extreme latency variance (20s to 98s) even on success, making it unreliable for time-bounded tasks without a timeout fallbac
 - Multiple free-tier models fail simultaneously with 429 rate limits, indicating shared quota exhaustion rather than individual model faults.
-- The single successful call (dots-studio) used a different provider and lower latency, proving provider diversity is a concrete reliability lever.
-- Self-diagnosis reports zero organ errors while model-layer failures persist, revealing a monitoring blind spot at the inference boundary.
-- Model failures cluster in time – multiple 429/502 errors within minutes – suggesting burst traffic triggers provider throttling.
-- Reflex tools execute reliably (exit 0) but proposed skills remain unused, indicating a missing adoption mechanism between proposal and deployment.
-- Provider-level rate limits (429) cascade across all models from the same provider, making provider-aware circuit breaking essential.
 
 ---
 

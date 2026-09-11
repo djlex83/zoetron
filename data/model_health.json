@@ -1,14 +1,14 @@
 {
- "stand": 1789157024.2516096,
+ "stand": 1789157618.2922277,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 5259,
+   "laeufe": 5261,
    "fehler": 1204,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 190342.91134142876,
+   "latenz_summe_s": 190373.3859088421,
    "letzter_fehler": "The read operation timed out",
    "letzte_sperre": 1789153371.8843198,
    "kontofehler": 6

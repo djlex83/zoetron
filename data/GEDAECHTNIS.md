@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11569 Fakten** · Stand 2026-09-11 20:05 UTC · aktualisiert bei jedem Herzschlag
+**11564 Fakten** · Stand 2026-09-11 20:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7480
+- **dream:** 7475
 - **swarm_artifact:** 1713
 - **last_swarm_critique:** 890
 - **last_swarm_goal:** 625
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911201324:5:de9eb4`
+*11.09. 20:13 UTC · Quelle: dream*
+
+High stress (1.0) triggers conserve mode that severely limits throughput, yet metabolism checks are too infrequent to prevent overload.
+
+### `dream:20260911201324:4:7d5b88`
+*11.09. 20:13 UTC · Quelle: dream*
+
+Hand actions fail due to unresolved relative paths against the true data root (ZOETRON_DATA), requiring absolute path resolution before I/O.
+
+### `dream:20260911201324:3:dd13e3`
+*11.09. 20:13 UTC · Quelle: dream*
+
+Model blocking after 3 consecutive errors exists but lacks integration with health-based routing to prevent repeated attempts on degraded models.
+
+### `dream:20260911201324:2:dabcb5`
+*11.09. 20:13 UTC · Quelle: dream*
+
+The dots-studio model succeeds consistently but with high latency, making it a reliable fallback if prioritized first in the chain.
+
+### `dream:20260911201324:1:cdfc13`
+*11.09. 20:13 UTC · Quelle: dream*
+
+Rate limits (429) on Google models and timeouts on Nvidia model indicate that retry logic without exponential backoff and Retry-After parsing causes cascading failures.
 
 ### `dream:20260911200311:5:747e5c`
 *11.09. 20:03 UTC · Quelle: dream*
@@ -43367,56 +43392,6 @@ Swarm simulations produce revisions that don't translate to convergence, indicat
 *28.08. 20:17 UTC · Quelle: dream*
 
 Free tier models consistently hit 429 rate limits requiring automatic failover with exponential backoff before switching.
-
-### `dream:20260828201219:5:0268da`
-*28.08. 20:12 UTC · Quelle: dream*
-
-Nvidia Nemotron works but at 16-57s latency; Poolside Laguna-S-2.1 delivers usable output at 4.4s, making it the preferred default for speed-critical paths.
-
-### `dream:20260828201219:4:84b3da`
-*28.08. 20:12 UTC · Quelle: dream*
-
-Calibration predicted 2 but actual was 1, showing the predictor overestimates success when artifact execution fails.
-
-### `dream:20260828201219:3:1e2a00`
-*28.08. 20:12 UTC · Quelle: dream*
-
-Evolutionary iteration dramatically improved scores from 1 to 9 in one generation, proving the critic-sandbox-evolution loop works when artifacts execute.
-
-### `dream:20260828201219:2:588a4a`
-*28.08. 20:12 UTC · Quelle: dream*
-
-Hand actions fail silently (exit=1, gelesen=0) without error details, indicating missing stdout/stderr capture in the sandbox executor.
-
-### `dream:20260828201219:1:e8a4e2`
-*28.08. 20:12 UTC · Quelle: dream*
-
-Rate limiting (429 errors) affects multiple free models simultaneously, requiring a tiered fallback strategy with latency-aware routing.
-
-### `dream:20260828200644:5:67b259`
-*28.08. 20:06 UTC · Quelle: dream*
-
-Swarm convergence stalls because simulation reports 'go' with 3 risks and 2 revisions but no automated validation loop exists to iterate until the critic score reaches 8+.
-
-### `dream:20260828200644:4:dd57b3`
-*28.08. 20:06 UTC · Quelle: dream*
-
-Metabolism shows maximum stress (1.0) forcing conserve mode with a 1-iteration budget, yet the system still attempts multiple model calls and hand actions instead of dropping to the single critical path.
-
-### `dream:20260828200644:3:11a054`
-*28.08. 20:06 UTC · Quelle: dream*
-
-Reflex tool execution fails silently (exit 1, no error output) suggesting the script either lacks execute permissions, misses dependencies, or cannot read stdin as expected.
-
-### `dream:20260828200644:2:b70c7b`
-*28.08. 20:06 UTC · Quelle: dream*
-
-Hand actions repeatedly fail because they ignore the mandatory data path sources (sys.argv[1] and ZOETRON_DATA env var), using relative paths that resolve to nothing under the real data directory.
-
-### `dream:20260828200644:1:6a1ef5`
-*28.08. 20:06 UTC · Quelle: dream*
-
-The primary model (glm-5.2) fails consistently with 429 rate limits while the fallback (nemotron) succeeds but with high latency variance (7-64s), indicating missing automatic fallback logic and health-aware routing.
 
 ### `last_swarm_critique`
 *28.08. 19:41 UTC · Quelle: critic*
