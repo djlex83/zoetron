@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11569 Fakten** · Stand 2026-09-11 17:16 UTC · aktualisiert bei jedem Herzschlag
+**11574 Fakten** · Stand 2026-09-11 17:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7460
+- **dream:** 7465
 - **swarm_artifact:** 1725
 - **last_swarm_critique:** 888
 - **last_swarm_goal:** 623
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911172339:5:d6dff9`
+*11.09. 17:23 UTC · Quelle: dream*
+
+Calibration predicted 6 skills but only 5 were usable, indicating a consistent overestimation bias in skill availability forecasting.
+
+### `dream:20260911172339:4:b494cf`
+*11.09. 17:23 UTC · Quelle: dream*
+
+Models that fail consecutively (e.g., nemotron-3-ultra) get auto-blocked for 1800s, showing a built-in circuit breaker mechanism.
+
+### `dream:20260911172339:3:be97d6`
+*11.09. 17:23 UTC · Quelle: dream*
+
+The 'forbidden pattern: shutdown' error in hand_action reveals a security or policy constraint blocking certain system-level operations.
+
+### `dream:20260911172339:2:beb7be`
+*11.09. 17:23 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple models indicate rate limiting issues, likely due to concurrent requests without proper throttling.
+
+### `dream:20260911172339:1:69d9da`
+*11.09. 17:23 UTC · Quelle: dream*
+
+Models with high token output (e.g., nemotron-3-ultra) are prone to read timeouts, suggesting a need for output length limits or streaming responses.
 
 ### `dream:20260911171336:5:166c69`
 *11.09. 17:13 UTC · Quelle: dream*

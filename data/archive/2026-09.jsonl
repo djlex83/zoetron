@@ -39030,3 +39030,15 @@
 {"ts": 1788541487.9196346, "kind": "act_done", "payload": {"goal_title": "Veraltetes Wissen erneuern", "score": 8, "converged": true}}
 {"ts": 1788541489.9961467, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.11, "gelesen": 1}}
 {"ts": 1788541492.5835998, "kind": "issue_synced", "payload": {"issue": 360, "state": "closed"}}
+{"ts": 1788541972.4488325, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788542541.132617, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788542542.7063916, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788542547.0628853, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788542547.0628822, "schalter_geoeffnet": false}}
+{"ts": 1788542590.7318883, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 43.7, "tokens_ein": 1693, "tokens_aus": 679}}
+{"ts": 1788542590.7324011, "kind": "skill_proposal", "payload": {"proposal": "Implement model fallback chain with rate-limit detection: try primary, on 429 switch to secondary with exponential backoff."}}
+{"ts": 1788542590.7324696, "kind": "skill_proposal", "payload": {"proposal": "Add calibration head that learns from (predicted, actual) pairs to shrink abs_error over time."}}
+{"ts": 1788542590.7325325, "kind": "skill_proposal", "payload": {"proposal": "Create 'human-approval' tool wrapper that serializes destructive ops to issue tracker for review before execution."}}
+{"ts": 1788542590.7325916, "kind": "skill_proposal", "payload": {"proposal": "Increase swarm max_cycles to 5 and add convergence metric (score delta < 1) to stop early when stable."}}
+{"ts": 1788542590.7326443, "kind": "skill_proposal", "payload": {"proposal": "Build latency-aware scheduler: route low-priority tasks to high-latency models, reserve fast models for interactive loops."}}
+{"ts": 1788542590.7326987, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788542593.3407032, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788542593.3407006, "schalter_geoeffnet": false}}
