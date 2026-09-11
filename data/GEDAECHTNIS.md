@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11544 Fakten** · Stand 2026-09-11 22:14 UTC · aktualisiert bei jedem Herzschlag
+**11549 Fakten** · Stand 2026-09-11 22:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7465
+- **dream:** 7470
 - **swarm_artifact:** 1701
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911222219:5:9069a9`
+*11.09. 22:22 UTC · Quelle: dream*
+
+Metabolism stress=1.0 forces conserve mode (max_tasks=3, max_iterations=1), starving parallel work; task prioritization must respect metabolic budget.
+
+### `dream:20260911222219:4:0f7386`
+*11.09. 22:22 UTC · Quelle: dream*
+
+Nemotron latency varies 5x (20s–113s) on same model—latency-aware routing must sample recent performance, not static rankings.
+
+### `dream:20260911222219:3:1256e8`
+*11.09. 22:22 UTC · Quelle: dream*
+
+Simulation-driven revision loops converge: 5 revisions applied, TOR green, but calibration error of 2 (predicted 5 vs actual 7) indicates systematic underestimation of complexity.
+
+### `dream:20260911222219:2:9f3399`
+*11.09. 22:22 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths; the error 'nichts gelesen...kein Verzeichnis unter dem echten Datenpfad' shows ZOETRON_DATA must be resolved to absolute paths before file operations.
+
+### `dream:20260911222219:1:e62451`
+*11.09. 22:22 UTC · Quelle: dream*
+
+Model provider failures cascade: 502 upstream errors (Nemotron) and 429 rate limits (Gemma) require distinct handling—circuit breakers for 502, exponential backoff with provider rotation for 429.
 
 ### `dream:20260911221154:5:754bf2`
 *11.09. 22:11 UTC · Quelle: dream*

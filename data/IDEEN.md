@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
@@ -33,14 +33,19 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism stress=1.0 forces conserve mode (max_tasks=3, max_iterations=1), starving parallel work; task prioritization must respect metabolic budget.
+- Nemotron latency varies 5x (20s–113s) on same model—latency-aware routing must sample recent performance, not static rankings.
+- Simulation-driven revision loops converge: 5 revisions applied, TOR green, but calibration error of 2 (predicted 5 vs actual 7) indicates systematic u
+- Hand actions fail when using relative paths; the error 'nichts gelesen...kein Verzeichnis unter dem echten Datenpfad' shows ZOETRON_DATA must be resol
+- Model provider failures cascade: 502 upstream errors (Nemotron) and 429 rate limits (Gemma) require distinct handling—circuit breakers for 502, expone
 - Swarm feedback and fact stores go stale within days; a scheduled reflex that re-queries the swarm and re-validates facts every 24h prevents blind oper
 - Skill proposals accumulate (60+) without a validation gate; a 3-task A/B test with >80% success threshold would promote only effective skills.
 - Relative file paths in hand_actions repeatedly break because ZOETRON_DATA is not auto-prepended at the syscall boundary.
@@ -51,11 +56,6 @@
 - Swarm knowledge refresh occurs only via reflex-triggered scripts, not as a scheduled habit, causing strategic drift between refreshes.
 - Identical skill proposals (stress scheduler, prompt cache) recur across cycles but never graduate to implemented capabilities, revealing a proposal-to
 - Model failure rate remains high despite repeated goals to reduce errors, indicating root causes (no health-based routing, no retry logic, no caching) 
-- Reflex-driven memory restoration succeeds where deliberate action fails, showing implicit memory pathways outperform explicit retrieval.
-- Pruning removes 67 events then 13 events in quick succession, indicating memory pressure triggers aggressive cleanup that may discard useful context.
-- Skill proposals accumulate without lifecycle tracking, creating a backlog of unvalidated capabilities.
-- Swarm iterations produce revisions but fail to converge, suggesting missing acceptance criteria or over-active critic role.
-- Model failures cluster around rate limits (429) and upstream overload (502), indicating static model selection fails under load variability.
 
 ---
 

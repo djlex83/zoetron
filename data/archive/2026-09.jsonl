@@ -39826,3 +39826,21 @@
 {"ts": 1788559689.7027385, "kind": "act_done", "payload": {"goal_title": "Alte Gruppenaufgaben wiederbeleben und prüfen", "score": 8, "converged": true}}
 {"ts": 1788559710.431605, "kind": "hand_action", "payload": {"ok": false, "exit": null, "error": "timeout after 20.0s", "duration_s": 20.1, "gelesen": 0}}
 {"ts": 1788559713.1347692, "kind": "issue_synced", "payload": {"issue": 365, "state": "closed"}}
+{"ts": 1788560202.6473935, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788560442.611438, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788560444.616458, "kind": "prune_run", "payload": {"facts_pruned": 6, "events_pruned": 19}}
+{"ts": 1788560448.8031468, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788560448.8031445, "schalter_geoeffnet": false}}
+{"ts": 1788560465.4478257, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 16.6, "tokens_ein": 1328, "tokens_aus": 666}}
+{"ts": 1788560465.4484239, "kind": "skill_proposal", "payload": {"proposal": "Implement a per-model reliability registry (success rate, median latency, error taxonomy) updated on every call and consulted before task assignment."}}
+{"ts": 1788560465.448488, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-flight health check: send a 1-token probe to each candidate model; only route traffic to endpoints returning 2xx within 2s."}}
+{"ts": 1788560465.4485497, "kind": "skill_proposal", "payload": {"proposal": "Define a standard 'evolution' skill: generate N variants → run critic with rubric → select winner → log trace; make it the default for all revision tasks."}}
+{"ts": 1788560465.4486167, "kind": "skill_proposal", "payload": {"proposal": "Apply a fixed calibration discount of -1.0 to self-predicted completion scores for knowledge-update workflows."}}
+{"ts": 1788560465.4486847, "kind": "skill_proposal", "payload": {"proposal": "Build a sensory filter organ that scores incoming events for information density (entropy, novelty, actionability) and only writes events above threshold."}}
+{"ts": 1788560465.4487472, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788560470.1708755, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 2.8, "tokens_ein": 473, "tokens_aus": 925}}
+{"ts": 1788560470.171131, "kind": "drive_goal", "payload": {"title": "Vorhersagefehler analysieren und reduzieren", "why": "Wir machen aktuell zu viele Fehler beim Einschätzen von Situationen. Wenn wir diese besser verstehen, können wir künftig sicherer und zuverlässiger handeln.", "signal": "failure"}}
+{"ts": 1788560470.1712444, "kind": "drive_goal", "payload": {"title": "Unvollständige Gruppenaufgaben aufräumen", "why": "Es liegen alte, ungenutzte Gruppenaufgaben herum, die Platz und Energie kosten. Wenn wir diese abschließen, wird das System wieder ordentlicher und schneller.", "signal": "stale"}}
+{"ts": 1788560470.171346, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten in der Praxis testen", "why": "Wir haben viele Ideen für neue Fähigkeiten gesammelt, aber noch nicht geprüft. Wir müssen diese ausprobieren, um nützliche von unnützen Ideen zu trennen.", "signal": "gap"}}
+{"ts": 1788560473.8483849, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.88, "gelesen": 140}}
+{"ts": 1788560473.8510163, "kind": "reflex_used", "payload": {"goal": "Offene Fronten und Schwarm-Artefakte abschließen", "tool": "marktanalyse-swarm-arbeit-abschließen.py", "ok": true}}
+{"ts": 1788560474.2794535, "kind": "act_done", "payload": {"goal_title": "Offene Fronten und Schwarm-Artefakte abschließen", "score": null, "converged": true, "mode": "reflex"}}
