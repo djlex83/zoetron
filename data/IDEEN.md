@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 08:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 08:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,11 +25,11 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals highlight reliability, swarm freshness, and dream-skill connection as top priorities for system evolution.
+- Skill proposals consistently target resilience patterns (circuit breakers, backoff, validators) but lack integration with the model router.
+- Timeouts on specific models reveal latency variance requires adaptive selection, not static fallback.
+- 429 rate-limit errors dominate failures, indicating the system exceeds free-tier quotas without backoff.
+- Consecutive model failures trigger automatic lockouts, amplifying instability instead of isolating it.
 - The recurring pattern of model unavailability validates the design of a DegradedMode orchestrator that reduces planner complexity and token budgets wh
 - A unified error taxonomy (UPSTREAM_502, RATE_LIMIT_429, TIMEOUT, MALFORMED) enables consistent, reusable recovery procedures across all model calls.
 - Concurrent failures across multiple providers reveal the fragility of static routing and the need for dynamic health-based failover.
@@ -51,11 +56,6 @@
 - High system stress (1.0) correlates with increased API failure rates and the necessity of 'conserve' mode.
 - Frequent 429 and 502 errors indicate that free-tier model endpoints are too volatile for reliable task execution.
 - Metabolic stress at 1.0 should trigger conserve mode, but the system continues queuing non-critical tasks — backpressure mechanisms are missing under 
-- Reflex tool failures cascade into swarm failures because there is no retry/validator wrapper — single-point-of-failure in reflex execution breaks the 
-- Path resolution failures ('nichts gelesen') reveal that relative paths are never anchored to ZOETRON_DATA or sys.argv[1] before file operations — this
-- Skill proposals accumulate without execution because they lack acceptance criteria and pipeline integration — every proposal must be executable or it 
-- Unchecked model latency growth (44s→92s) without automatic fallback is a systemic failure mode — routing decisions must include latency circuit-breake
-- System lacks graceful degradation because no orchestrator activates fallback constraints when multiple models fail.
 
 ---
 

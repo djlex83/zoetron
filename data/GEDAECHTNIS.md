@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11636 Fakten** · Stand 2026-09-11 08:06 UTC · aktualisiert bei jedem Herzschlag
+**11641 Fakten** · Stand 2026-09-11 08:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7504
+- **dream:** 7509
 - **swarm_artifact:** 1751
 - **last_swarm_critique:** 881
 - **last_swarm_goal:** 616
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911081553:5:6ff54b`
+*11.09. 08:15 UTC · Quelle: dream*
+
+Drive goals highlight reliability, swarm freshness, and dream-skill connection as top priorities for system evolution.
+
+### `dream:20260911081553:4:13fa4a`
+*11.09. 08:15 UTC · Quelle: dream*
+
+Skill proposals consistently target resilience patterns (circuit breakers, backoff, validators) but lack integration with the model router.
+
+### `dream:20260911081553:3:d76d73`
+*11.09. 08:15 UTC · Quelle: dream*
+
+Timeouts on specific models reveal latency variance requires adaptive selection, not static fallback.
+
+### `dream:20260911081553:2:1db988`
+*11.09. 08:15 UTC · Quelle: dream*
+
+429 rate-limit errors dominate failures, indicating the system exceeds free-tier quotas without backoff.
+
+### `dream:20260911081553:1:f58774`
+*11.09. 08:15 UTC · Quelle: dream*
+
+Consecutive model failures trigger automatic lockouts, amplifying instability instead of isolating it.
 
 ### `dream:20260911080343:5:5519f6`
 *11.09. 08:03 UTC · Quelle: dream*

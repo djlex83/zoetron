@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 08:05:02",
+ "stand": "2026-09-11 08:16:30",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,15 +33,21 @@
    "quote": 1.0
   },
   {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -70,12 +76,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
