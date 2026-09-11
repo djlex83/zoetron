@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11590 Fakten** · Stand 2026-09-11 12:20 UTC · aktualisiert bei jedem Herzschlag
+**11602 Fakten** · Stand 2026-09-11 12:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7474
-- **swarm_artifact:** 1735
-- **last_swarm_critique:** 884
-- **last_swarm_goal:** 619
-- **anti_pattern:** 393
-- **strategy:** 199
+- **dream:** 7479
+- **swarm_artifact:** 1737
+- **last_swarm_critique:** 885
+- **last_swarm_goal:** 620
+- **anti_pattern:** 395
+- **strategy:** 200
 - **tool:** 161
 - **hand_result:** 86
 - **aktuell_organfehler:** 39
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Traum-Erkenntnisse verbi:2`
+*11.09. 12:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Interactive Notebook-Driven Exploratory Analysis - Shift from a static script to a Jupyter notebook (or Quarto document) where each cell performs one atomic operation: load raw dream journals (CSV/JSON), clean with pandas, co
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Traum-Erkenntnisse verbi:0`
+*11.09. 12:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Semantic Graph Construction via SPARQL/OWL - Model dream insights as RDF triples in a triplestore (e.g., Apache Jena). Define an ontology for dream entities (symbols, emotions, narratives, timestamps). Use SPARQL CONSTRUCT qu
+
+### `last_swarm_critique`
+*11.09. 12:35 UTC · Quelle: critic*
+
+score=0; issues=Sandbox verdict: The artifact does not run (traceback at line 125). The provided Python block is not executable.; Because the script cannot be executed, the goal 'Traum-Erkenntnisse verbinden' is not achieved; no analysis or output is produced.
+
+### `last_swarm_goal`
+*11.09. 12:28 UTC · Quelle: system*
+
+Traum-Erkenntnisse verbinden
+
+### `dream:20260911122815:5:c80e65`
+*11.09. 12:28 UTC · Quelle: dream*
+
+Stress=1.0 with max_iterations=1 forces single-shot success; any model retry loop exhausts budget before completion.
+
+### `dream:20260911122815:4:6c62db`
+*11.09. 12:28 UTC · Quelle: dream*
+
+Tool execution can fail while swarm+simulation+hand_action succeeds, indicating the planner/actor split masks tool fragility.
+
+### `dream:20260911122815:3:ca7eef`
+*11.09. 12:28 UTC · Quelle: dream*
+
+High-latency fallbacks (40-90s) succeed where fast models fail, but consume iteration budget and risk timeout in conserve mode.
+
+### `dream:20260911122815:2:557514`
+*11.09. 12:28 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) are systemic failure modes, not transient glitches, requiring architectural circuit-breakers.
+
+### `dream:20260911122815:1:f4ad02`
+*11.09. 12:28 UTC · Quelle: dream*
+
+Model provider overload cascades across vendors simultaneously, making single-provider fallback chains unreliable under load.
 
 ### `dream:20260911121717:5:e8d121`
 *11.09. 12:17 UTC · Quelle: dream*
