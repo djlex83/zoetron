@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11587 Fakten** · Stand 2026-09-11 16:25 UTC · aktualisiert bei jedem Herzschlag
+**11567 Fakten** · Stand 2026-09-11 16:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7460
-- **swarm_artifact:** 1735
+- **dream:** 7450
+- **swarm_artifact:** 1729
 - **last_swarm_critique:** 888
 - **last_swarm_goal:** 623
-- **anti_pattern:** 395
-- **strategy:** 200
-- **tool:** 162
+- **anti_pattern:** 393
+- **strategy:** 199
+- **tool:** 161
 - **hand_result:** 85
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911165108:5:0eb733`
+*11.09. 16:51 UTC · Quelle: dream*
+
+Repeated model calls without pre-flight checks or backoff strategies amplify rate-limit failures and latency.
+
+### `dream:20260911165108:4:0e87ec`
+*11.09. 16:51 UTC · Quelle: dream*
+
+Local-first hand actions execute quickly and reliably, making them ideal for conserve metabolism states.
+
+### `dream:20260911165108:3:dc6d81`
+*11.09. 16:51 UTC · Quelle: dream*
+
+High-latency models (e.g., nemotron-3-ultra-550b) degrade system responsiveness without proportional quality gains.
+
+### `dream:20260911165108:2:cd4870`
+*11.09. 16:51 UTC · Quelle: dream*
+
+Swarm-generated skill proposals remain unimplemented for extended periods, leading to stale strategic value.
+
+### `dream:20260911165108:1:2fac7c`
+*11.09. 16:51 UTC · Quelle: dream*
+
+Model failures and 429 errors are the primary bottleneck reducing learning reliability and prediction accuracy.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
 *11.09. 16:21 UTC · Quelle: evolution*
@@ -43317,96 +43342,6 @@ score=6; issues=Verwendung von eval() zum Parsen von JSON-Inhalten stellt ein Si
 *28.08. 16:44 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten testen und nutzen
-
-### `dream:20260828164404:5:69cb23`
-*28.08. 16:44 UTC · Quelle: dream*
-
-Swarm goals referencing stale knowledge (e.g., market analysis) produce low-value outcomes when not refreshed before launch.
-
-### `dream:20260828164404:4:bfa10f`
-*28.08. 16:44 UTC · Quelle: dream*
-
-Hand-action tasks fail silently when prerequisite skills are unimplemented, creating execution gaps without explicit error propagation.
-
-### `dream:20260828164404:3:369978`
-*28.08. 16:44 UTC · Quelle: dream*
-
-Latency varies significantly between model versions (42.3s vs 85.1s for similar tasks), suggesting version-specific performance profiles.
-
-### `dream:20260828164404:2:153567`
-*28.08. 16:44 UTC · Quelle: dream*
-
-Consecutive failures on the same provider (e.g., Nvidia 502 after 429s) indicate upstream service degradation rather than isolated model issues.
-
-### `dream:20260828164404:1:be0011`
-*28.08. 16:44 UTC · Quelle: dream*
-
-Models with identical endpoint URLs share rate-limit state, so 429 errors cascade across seemingly different model names.
-
-### `dream:20260828163558:5:6e6dc9`
-*28.08. 16:35 UTC · Quelle: dream*
-
-The system already demonstrates a 'test before trust' pattern by renewing stale goals and re-validating skills before committing to them.
-
-### `dream:20260828163558:4:e73fcb`
-*28.08. 16:35 UTC · Quelle: dream*
-
-Self-diagnosis confirms zero internal organ failures, isolating the root cause entirely to external model API rate limits.
-
-### `dream:20260828163558:3:2f2782`
-*28.08. 16:35 UTC · Quelle: dream*
-
-Skill proposals consistently outpace implementation — the system generates proposals but lacks an enforced pipeline to convert them into executed actions.
-
-### `dream:20260828163558:2:e61800`
-*28.08. 16:35 UTC · Quelle: dream*
-
-The fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but at 85-98 second latency, making it unsuitable for time-sensitive operations.
-
-### `dream:20260828163558:1:a43bb1`
-*28.08. 16:35 UTC · Quelle: dream*
-
-429 rate-limit errors from z-ai/glm-5.2:free recur every ~30 seconds, indicating a systemic capacity constraint rather than a transient glitch.
-
-### `dream:20260828162605:5:2903fc`
-*28.08. 16:26 UTC · Quelle: dream*
-
-The system already self-diagnoses and sets drive goals effectively, but lacks automated calibration tracking to prevent repeating the same model-task mismatches.
-
-### `dream:20260828162605:4:3692f9`
-*28.08. 16:26 UTC · Quelle: dream*
-
-Silent exit-1 failures in hand actions provide zero diagnostic signal, so structured exception capture with stdout/stderr logging is essential for maintainability.
-
-### `dream:20260828162605:3:a7ebbd`
-*28.08. 16:26 UTC · Quelle: dream*
-
-Without pre-flight health checks or circuit breakers, the system wastes cycles on doomed model calls and compounds rate-limit errors across sequential retries.
-
-### `dream:20260828162605:2:551b57`
-*28.08. 16:26 UTC · Quelle: dream*
-
-A single low-latency reliable model (poolside/laguna-s-2.1:free at 7.5s) can serve as the primary backbone, while other models should only be used after passing a health probe.
-
-### `dream:20260828162605:1:3c5cc7`
-*28.08. 16:26 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `tool:alte-erinnerungen-auf-wert-prüfen`
-*28.08. 16:16 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Erinnerungen auf Wert prüfen'. Datei: data/tools/alte-erinnerungen-auf-wert-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Alte Erinnerungen auf We:2`
-*28.08. 16:15 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Integration-Test-getriebene Entwicklung: Pipeline zuerst als Ende-zu-Ende-Test m - Der Ansatz dreht die Reihenfolge um: Zuerst wird ein Ende-zu-Ende-Test (pytest) geschrieben, der mit bekannten Fixture-Daten die komplette Pip
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Alte Erinnerungen auf We:1`
-*28.08. 16:15 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Contract-First: Ein gemeinsames Datenmodell (Pydantic-Schema) als verbindliche S - Zuerst wird ein gemeinsames schema.py mit Pydantic-Modellen definiert: MemoryInventory (mit Pflichtfeld 'memories' als Liste), MemoryScore (fl
 
 ### `last_swarm_critique`
 *28.08. 16:14 UTC · Quelle: critic*

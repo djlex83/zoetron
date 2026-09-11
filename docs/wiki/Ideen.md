@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 16:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 16:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 2×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated model calls without pre-flight checks or backoff strategies amplify rate-limit failures and latency.
+- Local-first hand actions execute quickly and reliably, making them ideal for conserve metabolism states.
+- High-latency models (e.g., nemotron-3-ultra-550b) degrade system responsiveness without proportional quality gains.
+- Swarm-generated skill proposals remain unimplemented for extended periods, leading to stale strategic value.
+- Model failures and 429 errors are the primary bottleneck reducing learning reliability and prediction accuracy.
 - Skill proposals for circuit breaker, provider-health monitor, and deadline-aware executor were generated but not yet implemented, creating a bootstrap
 - Pruning (20 facts, 60 events) and self-diagnosis show healthy memory hygiene, but the system lacks automatic degradation policies when primary provide
 - dots-studio/dots-3-note-preview:free is the only consistently available model but exhibits high latency variance (22-39s), making it unsuitable for la
@@ -51,11 +56,6 @@
 - Hand actions (shell/Python execution) succeed reliably (exit 0, ~1.3s) and are not a bottleneck.
 - dots-studio/dots-3-note-preview:free is the only model with consistent success (4/4 calls) and acceptable latency (22-105s), establishing it as the de
 - Rate limiting (HTTP 429) is the dominant failure mode across all primary models (Gemma-31B, Gemma-26B, Laguna), making them unreliable for production 
-- Hand actions (local artifact operations) complete in ~1.3s with zero failures, outperforming all model calls by 20-80x.
-- Conserve metabolism mode severely restricts operational capacity (max 3 tasks, 1 iteration) forcing local-first execution strategies.
-- Simulation revision loops detect risks (3 found) but only apply a subset of fixes (1 of 2 revisions) leaving residual risk.
-- Free-tier models on OpenRouter consistently fail with 429 rate limits making them unreliable for production workloads.
-- Pruning removed 9 facts but zero events, suggesting fact-store bloat outpaces event-log growth and requires separate retention policies.
 
 ---
 
