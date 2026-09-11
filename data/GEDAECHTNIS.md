@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11576 Fakten** · Stand 2026-09-11 18:16 UTC · aktualisiert bei jedem Herzschlag
+**11577 Fakten** · Stand 2026-09-11 18:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7465
+- **dream:** 7470
 - **swarm_artifact:** 1725
 - **last_swarm_critique:** 889
 - **last_swarm_goal:** 624
-- **anti_pattern:** 391
-- **strategy:** 198
+- **anti_pattern:** 389
+- **strategy:** 197
 - **tool:** 160
-- **hand_result:** 85
+- **hand_result:** 84
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911182507:5:1cd229`
+*11.09. 18:25 UTC · Quelle: dream*
+
+Dynamic routing based on recent success rates can mitigate transient rate limits.
+
+### `dream:20260911182507:4:8e7fdf`
+*11.09. 18:25 UTC · Quelle: dream*
+
+Reflex actions can update stale knowledge but do not prevent rate-limit-induced outages.
+
+### `dream:20260911182507:3:be9ae0`
+*11.09. 18:25 UTC · Quelle: dream*
+
+Immediate retries after a 429 without backoff increase the chance of continued failure.
+
+### `dream:20260911182507:2:6dee3d`
+*11.09. 18:25 UTC · Quelle: dream*
+
+Models with lower latency and smaller token usage are more likely to succeed, suggesting that request size and timing affect availability.
+
+### `dream:20260911182507:1:cb14f0`
+*11.09. 18:25 UTC · Quelle: dream*
+
+The dominant failure cause is HTTP 429 rate limiting, indicating that request concurrency exceeds provider quotas.
 
 ### `dream:20260911181413:5:efb89c`
 *11.09. 18:14 UTC · Quelle: dream*
@@ -43382,16 +43407,6 @@ Evolutionary search improved solution quality from 6 to 8 by replacing eval()-ba
 *28.08. 18:31 UTC · Quelle: dream*
 
 Rate limiting (429 errors) affects 4/5 models tested, making inclusionai/ling-3.0-flash-fin:free the only reliable provider under current quota.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fertigkeiten durch Träum:2`
-*28.08. 18:13 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fertigkeiten durch Träum:1`
-*28.08. 18:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Multiprocessing with pool.imap_unordered and natural process exit - Use multiprocessing.Pool with imap_unordered for dream evaluation. Worker processes exit naturally when iterator exhausts. Pool uses context manager (with Po
 
 ### `last_swarm_critique`
 *28.08. 18:12 UTC · Quelle: critic*
