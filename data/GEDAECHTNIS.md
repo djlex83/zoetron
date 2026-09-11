@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11543 Fakten** · Stand 2026-09-11 22:04 UTC · aktualisiert bei jedem Herzschlag
+**11544 Fakten** · Stand 2026-09-11 22:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7460
+- **dream:** 7465
 - **swarm_artifact:** 1701
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
-- **anti_pattern:** 387
-- **strategy:** 196
-- **tool:** 160
+- **anti_pattern:** 385
+- **strategy:** 195
+- **tool:** 159
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911221154:5:754bf2`
+*11.09. 22:11 UTC · Quelle: dream*
+
+Swarm feedback and fact stores go stale within days; a scheduled reflex that re-queries the swarm and re-validates facts every 24h prevents blind operation.
+
+### `dream:20260911221154:4:c578e7`
+*11.09. 22:11 UTC · Quelle: dream*
+
+Skill proposals accumulate (60+) without a validation gate; a 3-task A/B test with >80% success threshold would promote only effective skills.
+
+### `dream:20260911221154:3:ecd32f`
+*11.09. 22:11 UTC · Quelle: dream*
+
+Relative file paths in hand_actions repeatedly break because ZOETRON_DATA is not auto-prepended at the syscall boundary.
+
+### `dream:20260911221154:2:46b022`
+*11.09. 22:11 UTC · Quelle: dream*
+
+Resource pressure (stress > 0.7, budget < 20%) is not checked before spawning tasks, leading to OOM-like stalls that a StressAwareScheduler would prevent.
+
+### `dream:20260911221154:1:f05325`
+*11.09. 22:11 UTC · Quelle: dream*
+
+Model endpoints fail silently (502) or with rate limits (429) and the system lacks automatic health-based routing, causing cascading task failures.
 
 ### `dream:20260911220114:5:c41307`
 *11.09. 22:01 UTC · Quelle: dream*
@@ -43292,21 +43317,6 @@ Calibration error of +5 cycles on a one-cycle task reveals the planner systemati
 *28.08. 22:28 UTC · Quelle: dream*
 
 The GLM endpoint fails deterministically under rate limits (429) while Nemotron succeeds with high latency variance (12–114 s), indicating routing must weight reliability over raw availability.
-
-### `tool:marktanalyse-endlich-abschließen`
-*28.08. 22:03 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse endlich abschließen'. Datei: data/tools/marktanalyse-endlich-abschließen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich abs:1`
-*28.08. 22:02 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Human-in-the-Loop Structured Workflow - Convert the three 'brachliegend' steps into a gated, role-based workflow in Notion/Linear/GitHub Issues: (1) Define Definition of Done per step: Competitive Analysis = 10 competitors pr
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich abs:0`
-*28.08. 22:02 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Data-Driven Automation Pipeline - Replace the diagnostic function with an executable ETL pipeline: (1) Connect live data sources (Crunchbase API, LinkedIn Sales Navigator, Statistica, Google Trends, SEMrush) via authenticated
 
 ### `last_swarm_critique`
 *28.08. 22:00 UTC · Quelle: critic*

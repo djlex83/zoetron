@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 22:02:08",
+ "stand": "2026-09-11 22:12:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -394,6 +394,12 @@
   },
   {
    "tool": "veraltete-marktanalyse-auffrischen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

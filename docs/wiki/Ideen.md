@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,7 +28,7 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm feedback and fact stores go stale within days; a scheduled reflex that re-queries the swarm and re-validates facts every 24h prevents blind oper
+- Skill proposals accumulate (60+) without a validation gate; a 3-task A/B test with >80% success threshold would promote only effective skills.
+- Relative file paths in hand_actions repeatedly break because ZOETRON_DATA is not auto-prepended at the syscall boundary.
+- Resource pressure (stress > 0.7, budget < 20%) is not checked before spawning tasks, leading to OOM-like stalls that a StressAwareScheduler would prev
+- Model endpoints fail silently (502) or with rate limits (429) and the system lacks automatic health-based routing, causing cascading task failures.
 - Pruning runs consistently remove facts/events but no metric tracks whether pruning discards decision-critical memories.
 - Model latency varies 2.5× (16–43 s) for similar token loads, suggesting queueing or cold-start effects that a health-aware router could mitigate.
 - Swarm knowledge refresh occurs only via reflex-triggered scripts, not as a scheduled habit, causing strategic drift between refreshes.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without lifecycle tracking, creating a backlog of unvalidated capabilities.
 - Swarm iterations produce revisions but fail to converge, suggesting missing acceptance criteria or over-active critic role.
 - Model failures cluster around rate limits (429) and upstream overload (502), indicating static model selection fails under load variability.
-- The evolution run produced a winner with score 8/10, confirming that multi-variant evaluation can effectively improve solution quality.
-- Calibration achieved zero error when the model was stable, demonstrating that accurate performance prediction is possible under consistent conditions.
-- Simulation consistently returns revise with three risks and three revisions, revealing that iterative refinement loops are essential for goal achievem
-- The nvidia model exhibits high latency (up to 96s) and large token consumption, suggesting it should be reserved for complex reasoning while lighter m
-- Repeated 502 and 429 errors from Nvidia and Google models show that API rate limits and overloads are a major failure cause, requiring robust fallback
 
 ---
 
