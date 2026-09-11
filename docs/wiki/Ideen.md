@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 19:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 19:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The single successful call (dots-studio) used a different provider and lower latency, proving provider diversity is a concrete reliability lever.
+- Self-diagnosis reports zero organ errors while model-layer failures persist, revealing a monitoring blind spot at the inference boundary.
+- Model failures cluster in time – multiple 429/502 errors within minutes – suggesting burst traffic triggers provider throttling.
+- Reflex tools execute reliably (exit 0) but proposed skills remain unused, indicating a missing adoption mechanism between proposal and deployment.
+- Provider-level rate limits (429) cascade across all models from the same provider, making provider-aware circuit breaking essential.
 - A simulation step completed with zero risks and no revisions, indicating the planning module performed correctly.
 - The system retries failing models immediately without backoff, which worsens the rate-limit storm.
 - The single successful call to poolside/laguna-s-2.1:free took 212 seconds and produced 10k tokens, showing it can work but is slow.
@@ -51,11 +56,6 @@
 - Metabolism stress at 1.0 triggers conserve mode but the scheduler still spawns swarms and retries failed models, ignoring the max_tasks=3 budget.
 - The dream-to-action pipeline fails because reflex tools execute without validating file-path resolution against ZOETRON_DATA, causing hand actions to 
 - Free-tier model APIs exhibit cascading 429 rate-limit failures under load, leaving only a single high-latency fallback model operational.
-- Self-diagnosis reported zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not treated as organ d
-- Event pruning removed 22 entries while fact count stayed flat, suggesting experiential data accumulates faster than distilled knowledge.
-- Automated reflex execution (veraltete-schwarmziele-aktualisieren.py) succeeded without human intervention, proving the reflex layer can maintain syste
-- The dots-studio/dots-3-note-preview model remains the only consistently available free-tier endpoint under current load.
-- Repeated 429 errors across multiple Google and Poolside models indicate provider-level rate limiting rather than model-specific failures.
 
 ---
 

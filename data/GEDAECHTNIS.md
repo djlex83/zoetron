@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11584 Fakten** · Stand 2026-09-11 19:11 UTC · aktualisiert bei jedem Herzschlag
+**11566 Fakten** · Stand 2026-09-11 19:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7475
-- **swarm_artifact:** 1725
+- **dream:** 7470
+- **swarm_artifact:** 1716
 - **last_swarm_critique:** 890
 - **last_swarm_goal:** 625
-- **anti_pattern:** 389
-- **strategy:** 197
+- **anti_pattern:** 387
+- **strategy:** 196
 - **tool:** 160
-- **hand_result:** 84
+- **hand_result:** 83
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911194149:5:b18a5b`
+*11.09. 19:41 UTC · Quelle: dream*
+
+The single successful call (dots-studio) used a different provider and lower latency, proving provider diversity is a concrete reliability lever.
+
+### `dream:20260911194149:4:18b6d4`
+*11.09. 19:41 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model-layer failures persist, revealing a monitoring blind spot at the inference boundary.
+
+### `dream:20260911194149:3:9ba4cb`
+*11.09. 19:41 UTC · Quelle: dream*
+
+Model failures cluster in time – multiple 429/502 errors within minutes – suggesting burst traffic triggers provider throttling.
+
+### `dream:20260911194149:2:e88597`
+*11.09. 19:41 UTC · Quelle: dream*
+
+Reflex tools execute reliably (exit 0) but proposed skills remain unused, indicating a missing adoption mechanism between proposal and deployment.
+
+### `dream:20260911194149:1:226911`
+*11.09. 19:41 UTC · Quelle: dream*
+
+Provider-level rate limits (429) cascade across all models from the same provider, making provider-aware circuit breaking essential.
 
 ### `tool:veraltete-swarm-ziele-erneuern`
 *11.09. 19:09 UTC · Quelle: hands*
@@ -43363,41 +43388,6 @@ score=1; issues=Sandbox-Urteil: LAEUFT NICHT - beide getestete Artefakte werfen 
 
 Prüfen, warum Modelle scheitern
 
-### `dream:20260828193429:5:f4bf41`
-*28.08. 19:34 UTC · Quelle: dream*
-
-Repeated failures in converting dreams to skills suggest that the current simulation/reflex loop is not effectively translating abstract goals into concrete actions.
-
-### `dream:20260828193429:4:56b884`
-*28.08. 19:34 UTC · Quelle: dream*
-
-The system is in a 'conserve' state with high stress (1.0), meaning only 1 iteration is allowed per task, which prevents complex multi-step problem solving.
-
-### `dream:20260828193429:3:467bc2`
-*28.08. 19:34 UTC · Quelle: dream*
-
-File path handling in Python scripts is failing because relative paths are not being resolved against the ZOETRON_DATA environment variable.
-
-### `dream:20260828193429:2:31a4c5`
-*28.08. 19:34 UTC · Quelle: dream*
-
-High latency (30-80s) on nvidia/nemotron-3-ultra-550b-a55b:free indicates that time-sensitive tasks should avoid this model or implement asynchronous waiting.
-
-### `dream:20260828193429:1:ddd307`
-*28.08. 19:34 UTC · Quelle: dream*
-
-Free models on OpenRouter (especially z-ai/glm-5.2 and google/gemma) are highly rate-limited (429) and require a robust, automated fallback chain.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*28.08. 19:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Minimal Viable Swarm - Single-File Stateful Loop - Collapse entire swarm into one 200-line Python file with zero dependencies beyond stdlib. One `while` loop: propose -> evaluate -> select -> mutate -> repeat. All agents are 
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:0`
-*28.08. 19:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Architectural Rewrite - Event-Driven Actor Model - Replace the current fragile class-based swarm with a pure event-driven actor system. Each agent is an independent process communicating only via typed message queues (multipr
-
 ### `last_swarm_critique`
 *28.08. 19:14 UTC · Quelle: critic*
 
@@ -43407,31 +43397,6 @@ score=1; issues=Sandbox-Urteil: LAEUFT NICHT - Artefakte laufen nicht (Traceback
 *28.08. 19:10 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260828190938:5:92ba8e`
-*28.08. 19:09 UTC · Quelle: dream*
-
-Calibration error of zero on a binary outcome suggests the predictor is overconfident or the metric is too coarse.
-
-### `dream:20260828190938:4:a6ea1f`
-*28.08. 19:09 UTC · Quelle: dream*
-
-Evolutionary search with critic feedback jumps task scores from 1 to 9 in one generation, proving iterative repair works.
-
-### `dream:20260828190938:3:158913`
-*28.08. 19:09 UTC · Quelle: dream*
-
-Hand actions reject code containing 'shutdown' pattern, indicating a static safety filter that blocks legitimate admin logic.
-
-### `dream:20260828190938:2:7128a8`
-*28.08. 19:09 UTC · Quelle: dream*
-
-Nvidia Nemotron-3-Ultra succeeds where others fail but exhibits high latency variance (26–110s), requiring timeout budgets.
-
-### `dream:20260828190938:1:0a6733`
-*28.08. 19:09 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *28.08. 18:43 UTC · Quelle: critic*
