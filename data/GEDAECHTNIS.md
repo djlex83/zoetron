@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11689 Fakten** · Stand 2026-09-11 05:33 UTC · aktualisiert bei jedem Herzschlag
+**11684 Fakten** · Stand 2026-09-11 05:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7540
+- **dream:** 7535
 - **swarm_artifact:** 1763
 - **last_swarm_critique:** 879
 - **last_swarm_goal:** 614
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911054118:5:695df8`
+*11.09. 05:41 UTC · Quelle: dream*
+
+Swarm knowledge staleness (7-day threshold) is detected but no automated refresh triggers exist, causing drift in collaborative decisions.
+
+### `dream:20260911054118:4:7edf23`
+*11.09. 05:41 UTC · Quelle: dream*
+
+Pruning runs consistently remove 5-7 facts and 18-19 events per cycle, suggesting a stable churn rate that could be tuned by importance scoring.
+
+### `dream:20260911054118:3:9a7360`
+*11.09. 05:41 UTC · Quelle: dream*
+
+Reflex scripts (modellfehler-stark-reduzieren.py) fire reactively after failures instead of preventing them via pre-flight probes.
+
+### `dream:20260911054118:2:7afc68`
+*11.09. 05:41 UTC · Quelle: dream*
+
+Proposed skills accumulate but remain undeployed because no gate validates them against live traffic before registration.
+
+### `dream:20260911054118:1:b2f5ae`
+*11.09. 05:41 UTC · Quelle: dream*
+
+Model failures cluster around rate limits (429) and upstream overloads (502), indicating the current round-robin selection ignores real-time provider health.
 
 ### `dream:20260911053040:5:ea22b9`
 *11.09. 05:30 UTC · Quelle: dream*
@@ -43832,56 +43857,6 @@ High latency variance (13-22s) in fallback models necessitates adaptive timeout 
 *28.08. 05:44 UTC · Quelle: dream*
 
 Free-tier models with strict rate limits (429 errors) require automatic circuit-breaking and fallback to reliable alternatives to maintain system availability.
-
-### `dream:20260828053744:5:da95f8`
-*28.08. 05:37 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while drive goals reveal systemic reliability and adoption failures.
-
-### `dream:20260828053744:4:7aa1e5`
-*28.08. 05:37 UTC · Quelle: dream*
-
-Reflex mechanism successfully tested and improved a rejected tool, proving automated skill repair works.
-
-### `dream:20260828053744:3:2fd836`
-*28.08. 05:37 UTC · Quelle: dream*
-
-Human intervention required 15 times indicates autonomy gaps in error recovery and skill validation.
-
-### `dream:20260828053744:2:805e34`
-*28.08. 05:37 UTC · Quelle: dream*
-
-40 skill proposals exist but tool rejection shows placeholder implementations (list_ideas() only pass) prevent actual use.
-
-### `dream:20260828053744:1:210ded`
-*28.08. 05:37 UTC · Quelle: dream*
-
-Primary model (z-ai/glm-5.2:free) fails consistently with 429 rate-limit errors while fallback (nvidia/nemotron-3-ultra) succeeds but with high latency variance (11-26s).
-
-### `dream:20260828053314:5:f88d15`
-*28.08. 05:33 UTC · Quelle: dream*
-
-Tool registration was rejected because list_ideas() contained only a placeholder pass statement.
-
-### `dream:20260828053314:4:9ae0c6`
-*28.08. 05:33 UTC · Quelle: dream*
-
-Calibration predicted 2 cycles but actual was 8 (error 6), revealing systematic underestimation for skill-conversion tasks.
-
-### `dream:20260828053314:3:cf57dd`
-*28.08. 05:33 UTC · Quelle: dream*
-
-Three simulation revisions for five risks successfully de-risked the skill-conversion goal, yielding convergence at score 8.
-
-### `dream:20260828053314:2:194a90`
-*28.08. 05:33 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but with high latency variance (8–122s), requiring timeout budgets and fallback chains.
-
-### `dream:20260828053314:1:d9dfcb`
-*28.08. 05:33 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate limiting that makes it unreliable for production use.
 
 ### `last_swarm_critique`
 *28.08. 05:17 UTC · Quelle: critic*

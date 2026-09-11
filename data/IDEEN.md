@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 05:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 05:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,14 +24,14 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge staleness (7-day threshold) is detected but no automated refresh triggers exist, causing drift in collaborative decisions.
+- Pruning runs consistently remove 5-7 facts and 18-19 events per cycle, suggesting a stable churn rate that could be tuned by importance scoring.
+- Reflex scripts (modellfehler-stark-reduzieren.py) fire reactively after failures instead of preventing them via pre-flight probes.
+- Proposed skills accumulate but remain undeployed because no gate validates them against live traffic before registration.
+- Model failures cluster around rate limits (429) and upstream overloads (502), indicating the current round-robin selection ignores real-time provider 
 - Self-diagnosis before action prevents wasted cycles — the selbstdiagnose step confirmed no organ errors before further processing, validating that a h
 - Reflex-driven convergence is reliable for well-scoped goals (both reflex actions converged), so the system should prefer reflex mode for repetitive, b
 - Stale knowledge accumulates silently — 9 facts were pruned in one cycle, revealing that without scheduled archival, the fact store grows unbounded wit
@@ -51,11 +56,6 @@
 - Repeated model failures during high-stakes tasks indicate lack of pre-flight validation before committing to a model.
 - Models with high latency (>40s) and upstream errors are indistinguishable from local failures without structured error classification.
 - Provider-level failures (429/502) cascade across multiple models from the same provider, causing simultaneous degradation.
-- Redundant proposals (PathResolver, circuit-breaker) appear repeatedly because there is no consolidation step that merges similar proposals into single
-- The absence of a pre-flight health probe means tasks are assigned to already-failing models, wasting tokens and latency before failure is detected.
-- Stale swarm knowledge (>7 days) causes the system to act on outdated facts, compounding failure rates when combined with unreliable model responses.
-- Skill proposals accumulate without simulator validation, creating a gap between proposed capabilities and proven functionality that wastes planning cy
-- Recurring 429/502 errors across multiple providers indicate systemic upstream instability, not isolated incidents, requiring architectural resilience 
 
 ---
 

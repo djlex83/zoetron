@@ -37247,3 +37247,13 @@
 {"ts": 1788499253.2701817, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 2}}
 {"ts": 1788499255.479087, "kind": "issue_synced", "payload": {"issue": 352, "state": "open"}}
 {"ts": 1788499699.8431513, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787895194.2067952, "key": "dream:20260828053314:1:d9dfcb", "value": "Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate limiting that makes it unreliable for production use.", "source": "dream"}
+{"ts": 1787895194.206882, "key": "dream:20260828053314:2:194a90", "value": "nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but with high latency variance (8–122s), requiring timeout budgets and fallback chains.", "source": "dream"}
+{"ts": 1787895194.2069557, "key": "dream:20260828053314:3:cf57dd", "value": "Three simulation revisions for five risks successfully de-risked the skill-conversion goal, yielding convergence at score 8.", "source": "dream"}
+{"ts": 1787895194.2070265, "key": "dream:20260828053314:4:9ae0c6", "value": "Calibration predicted 2 cycles but actual was 8 (error 6), revealing systematic underestimation for skill-conversion tasks.", "source": "dream"}
+{"ts": 1787895194.2070959, "key": "dream:20260828053314:5:f88d15", "value": "Tool registration was rejected because list_ideas() contained only a placeholder pass statement.", "source": "dream"}
+{"ts": 1787895464.2103915, "key": "dream:20260828053744:1:210ded", "value": "Primary model (z-ai/glm-5.2:free) fails consistently with 429 rate-limit errors while fallback (nvidia/nemotron-3-ultra) succeeds but with high latency variance (11-26s).", "source": "dream"}
+{"ts": 1787895464.2104917, "key": "dream:20260828053744:2:805e34", "value": "40 skill proposals exist but tool rejection shows placeholder implementations (list_ideas() only pass) prevent actual use.", "source": "dream"}
+{"ts": 1787895464.2105727, "key": "dream:20260828053744:3:2fd836", "value": "Human intervention required 15 times indicates autonomy gaps in error recovery and skill validation.", "source": "dream"}
+{"ts": 1787895464.210641, "key": "dream:20260828053744:4:7aa1e5", "value": "Reflex mechanism successfully tested and improved a rejected tool, proving automated skill repair works.", "source": "dream"}
+{"ts": 1787895464.2107372, "key": "dream:20260828053744:5:da95f8", "value": "Self-diagnosis reports zero organ errors while drive goals reveal systemic reliability and adoption failures.", "source": "dream"}
