@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 19:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 19:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning (15 facts, 29 events) runs regularly yet stale swarm data persists, showing that pruning alone cannot refresh external knowledge depend
+- Skill proposals accumulate (5 in last dream) but drive goals flag a utilization gap, revealing a missing activation gate between proposal and deployme
+- Reflex tools for model repair and swarm refresh succeed consistently, proving that automated remediation works when triggered but lacks proactive heal
+- Nemotron-3-ultra exhibits extreme latency variance (20s to 98s) even on success, making it unreliable for time-bounded tasks without a timeout fallbac
+- Multiple free-tier models fail simultaneously with 429 rate limits, indicating shared quota exhaustion rather than individual model faults.
 - The single successful call (dots-studio) used a different provider and lower latency, proving provider diversity is a concrete reliability lever.
 - Self-diagnosis reports zero organ errors while model-layer failures persist, revealing a monitoring blind spot at the inference boundary.
 - Model failures cluster in time – multiple 429/502 errors within minutes – suggesting burst traffic triggers provider throttling.
@@ -51,11 +56,6 @@
 - The single successful call to poolside/laguna-s-2.1:free took 212 seconds and produced 10k tokens, showing it can work but is slow.
 - dots-studio/dots-3-note-preview:free succeeded in every attempt, suggesting it has a separate or higher quota.
 - Multiple free models returned HTTP 429 Too Many Requests, indicating a shared OpenRouter free-tier rate limit.
-- Drive goals (reliability, freshness, combination) generate intent but lack a concrete executor that translates signals into verified code changes.
-- Proposed reliability skills (health dashboard, activation gate) remain unimplemented while the system repeatedly suffers the exact failures they would
-- Metabolism stress at 1.0 triggers conserve mode but the scheduler still spawns swarms and retries failed models, ignoring the max_tasks=3 budget.
-- The dream-to-action pipeline fails because reflex tools execute without validating file-path resolution against ZOETRON_DATA, causing hand actions to 
-- Free-tier model APIs exhibit cascading 429 rate-limit failures under load, leaving only a single high-latency fallback model operational.
 
 ---
 

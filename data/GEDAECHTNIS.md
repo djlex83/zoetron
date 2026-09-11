@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11566 Fakten** · Stand 2026-09-11 19:44 UTC · aktualisiert bei jedem Herzschlag
+**11564 Fakten** · Stand 2026-09-11 19:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7470
-- **swarm_artifact:** 1716
+- **dream:** 7475
+- **swarm_artifact:** 1713
 - **last_swarm_critique:** 890
 - **last_swarm_goal:** 625
-- **anti_pattern:** 387
-- **strategy:** 196
+- **anti_pattern:** 385
+- **strategy:** 195
 - **tool:** 160
-- **hand_result:** 83
+- **hand_result:** 82
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911195236:5:c2c122`
+*11.09. 19:52 UTC · Quelle: dream*
+
+Memory pruning (15 facts, 29 events) runs regularly yet stale swarm data persists, showing that pruning alone cannot refresh external knowledge dependencies.
+
+### `dream:20260911195236:4:8281cd`
+*11.09. 19:52 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in last dream) but drive goals flag a utilization gap, revealing a missing activation gate between proposal and deployment.
+
+### `dream:20260911195236:3:4e40bc`
+*11.09. 19:52 UTC · Quelle: dream*
+
+Reflex tools for model repair and swarm refresh succeed consistently, proving that automated remediation works when triggered but lacks proactive health gating.
+
+### `dream:20260911195236:2:fc00f2`
+*11.09. 19:52 UTC · Quelle: dream*
+
+Nemotron-3-ultra exhibits extreme latency variance (20s to 98s) even on success, making it unreliable for time-bounded tasks without a timeout fallback.
+
+### `dream:20260911195236:1:d52d51`
+*11.09. 19:52 UTC · Quelle: dream*
+
+Multiple free-tier models fail simultaneously with 429 rate limits, indicating shared quota exhaustion rather than individual model faults.
 
 ### `dream:20260911194149:5:b18a5b`
 *11.09. 19:41 UTC · Quelle: dream*
@@ -43367,16 +43392,6 @@ Hand actions repeatedly fail because they ignore the mandatory data path sources
 *28.08. 20:06 UTC · Quelle: dream*
 
 The primary model (glm-5.2) fails consistently with 429 rate limits while the fallback (nemotron) succeeds but with high latency variance (7-64s), indicating missing automatic fallback logic and health-aware routing.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Prüfen, warum Modelle sc:2`
-*28.08. 19:42 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Observability-Driven Failure Diagnosis Harness - Build a diagnostic harness that treats the failure analysis as a data pipeline with full observability: (1) Create a structured logging framework (structlog + OpenTelemetry) th
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Prüfen, warum Modelle sc:1`
-*28.08. 19:42 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
 
 ### `last_swarm_critique`
 *28.08. 19:41 UTC · Quelle: critic*

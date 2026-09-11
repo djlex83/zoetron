@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 19:42:31",
+ "stand": "2026-09-11 19:53:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -391,10 +391,16 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.808,
- "simulationen_angewandt": 36,
+ "simulationen_angewandt": 35,
  "swarm_scores": {
   "n": 24,
   "best": 9.0,
