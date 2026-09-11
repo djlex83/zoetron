@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 21:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 21:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Path resolution inconsistencies force repeated absolute-path fixes, indicating the ZOETRON_DATA convention is not yet enforced at ingestion.
+- Rate-limit (429) and timeout errors appear repeatedly yet no systematic backoff or quarantine logic is active in the current cycle.
+- Swarm knowledge refresh relies on a single reflex script that succeeds superficially but does not verify data freshness or relevance.
+- Numerous skill proposals accumulate but lack a validation loop to promote them from proposal to deployed capability.
+- Model endpoints frequently return empty choices causing cascading failures that halt task progress.
 - Stress/budget signals (metabolism.budget) are available but unused by the scheduler; coupling task admission to these signals prevents overload spiral
 - Relative file paths cause hand-action failures; resolving all paths against ZOETRON_DATA at task start eliminates a whole class of I/O errors.
 - Stale external knowledge (market data, swarm goals) repeatedly triggers reflex repairs; automated freshness checks would prevent recurring drift.
@@ -51,11 +56,6 @@
 - Stale swarm knowledge and drive goals persist for multiple cycles without automatic refresh or expiration, causing repeated 'stale' signals.
 - Model failure rate is acknowledged as a top drive goal yet no automated model-router or fallback logic has been instantiated despite repeated proposal
 - Skill proposals recur identically across cycles (stress scheduler, dream-to-code pipeline) but no deployment evidence appears, indicating a broken pro
-- Despite the artifact running (83 lines of Python) and the tor flag being green, the bahnen score only reached 3 with a negative delta of -0.5, suggest
-- Calibration predicted a score of 5 but the actual was 3 (absolute error 2), indicating the scoring model needs recalibration.
-- The evolution_run procedure improved the swarm-goal-renewal output from 3/10 to 8/10 by generating three variants and selecting the highest-scoring on
-- dots-studio/dots-3-note-preview:free is the only working model but exhibits high latency variance (5.5s to 42.9s) and large output token swings (1326 
-- The gemma-4 models (31b-it and 26b-a4b-it) consistently fail with HTTP 429 rate-limit errors, making them unreliable for production use.
 
 ---
 

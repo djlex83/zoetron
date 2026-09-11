@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11553 Fakten** · Stand 2026-09-11 21:12 UTC · aktualisiert bei jedem Herzschlag
+**11566 Fakten** · Stand 2026-09-11 21:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7465
-- **swarm_artifact:** 1707
-- **last_swarm_critique:** 891
-- **last_swarm_goal:** 626
+- **dream:** 7470
+- **swarm_artifact:** 1713
+- **last_swarm_critique:** 892
+- **last_swarm_goal:** 627
 - **anti_pattern:** 387
 - **strategy:** 196
 - **tool:** 161
@@ -13,6 +13,56 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:ferngedächtnisse-verbinden`
+*11.09. 21:30 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Ferngedächtnisse verbinden'. Datei: data/tools/ferngedächtnisse-verbinden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Ferngedächtnisse verbind:1`
+*11.09. 21:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 6, 9]): Capability-Negotiating Adapter Fabric - Introduce a runtime capability broker that probes the injected store for supported primitives (vector_search, graph_traversal, path_finding, persistence, reinforcement_hooks) an
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Ferngedächtnisse verbind:0`
+*11.09. 21:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): Streaming Graph Topology with Incremental Landmark Indexing - Replace subgraph extraction with a streaming graph processor that never materializes full neighborhoods. Build a dynamic landmark index (randomly sampled n
+
+### `last_swarm_critique`
+*11.09. 21:27 UTC · Quelle: critic*
+
+score=7; issues=Hardcoded 100-node subgraph limit for prototyping restricts production scalability; Assumes specific KnowledgeGraph/SemanticMemory API methods (subgraph, shortest_path_length, get_vector, similarity, add_edge, save, load) without runtime verifi
+
+### `last_swarm_goal`
+*11.09. 21:20 UTC · Quelle: system*
+
+Ferngedächtnisse verbinden
+
+### `dream:20260911211958:5:836183`
+*11.09. 21:19 UTC · Quelle: dream*
+
+Path resolution inconsistencies force repeated absolute-path fixes, indicating the ZOETRON_DATA convention is not yet enforced at ingestion.
+
+### `dream:20260911211958:4:bc02b4`
+*11.09. 21:19 UTC · Quelle: dream*
+
+Rate-limit (429) and timeout errors appear repeatedly yet no systematic backoff or quarantine logic is active in the current cycle.
+
+### `dream:20260911211958:3:5fefe5`
+*11.09. 21:19 UTC · Quelle: dream*
+
+Swarm knowledge refresh relies on a single reflex script that succeeds superficially but does not verify data freshness or relevance.
+
+### `dream:20260911211958:2:2fbee0`
+*11.09. 21:19 UTC · Quelle: dream*
+
+Numerous skill proposals accumulate but lack a validation loop to promote them from proposal to deployed capability.
+
+### `dream:20260911211958:1:6888c7`
+*11.09. 21:19 UTC · Quelle: dream*
+
+Model endpoints frequently return empty choices causing cascading failures that halt task progress.
 
 ### `dream:20260911210911:5:00ceb1`
 *11.09. 21:09 UTC · Quelle: dream*
@@ -43332,21 +43382,6 @@ Model failures are silent (status 200 with empty choices) or noisy (429), but bo
 *28.08. 21:24 UTC · Quelle: dream*
 
 Rate-limit errors (429) cascade across multiple free-tier providers simultaneously, indicating shared quota pools or correlated traffic spikes.
-
-### `tool:kritiken-und-ziele-regelmäßig-prüfen`
-*28.08. 21:13 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Kritiken und Ziele regelmäßig prüfen'. Datei: data/tools/kritiken-und-ziele-regelmäßig-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Kritiken und Ziele regel:1`
-*28.08. 21:09 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 7, 9]): Test-Driven Evolutionary Scaffold - Invert development order: define contract tests first across all three components using Pact/ContractTesting. Write failing unit tests for Review-Reflex and Metacog-Extension interf
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Kritiken und Ziele regel:0`
-*28.08. 21:09 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): Modular Pipeline Architecture - Replace monolithic components with a streaming pipeline using message queues (Redis/RabbitMQ). Each artifact becomes a microservice: Analyse-Skript publishes raw data to 'raw_metrics' q
 
 ### `last_swarm_critique`
 *28.08. 21:08 UTC · Quelle: critic*

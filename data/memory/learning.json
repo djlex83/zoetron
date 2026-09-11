@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 21:10:15",
+ "stand": "2026-09-11 21:30:08",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,15 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
   },
   {
-   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -151,6 +151,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "fernere-erinnerungen-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "modellfehler-systematisch-reduzieren.py",
@@ -351,12 +357,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fernere-erinnerungen-verbinden.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -393,17 +393,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.811,
- "simulationen_angewandt": 35,
+ "haende_quote": 0.808,
+ "simulationen_angewandt": 36,
  "swarm_scores": {
   "n": 24,
   "best": 9.0,
-  "schnitt": 3.62
+  "schnitt": 3.88
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 3.5
+   "n": 23,
+   "schnitt": 3.65
   },
   "bau": {
    "n": 1,
