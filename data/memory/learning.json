@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 04:01:57",
+ "stand": "2026-09-11 04:12:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -397,10 +397,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-produktion-überf.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.834,
- "simulationen_angewandt": 31,
+ "haende_quote": 0.843,
+ "simulationen_angewandt": 30,
  "swarm_scores": {
   "n": 23,
   "best": 9.0,

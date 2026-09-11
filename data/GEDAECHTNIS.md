@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11710 Fakten** · Stand 2026-09-11 04:03 UTC · aktualisiert bei jedem Herzschlag
+**11713 Fakten** · Stand 2026-09-11 04:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7545
+- **dream:** 7550
 - **swarm_artifact:** 1775
 - **last_swarm_critique:** 878
 - **last_swarm_goal:** 613
 - **anti_pattern:** 403
 - **strategy:** 203
 - **tool:** 164
-- **hand_result:** 89
-- **aktuell_organfehler:** 40
+- **hand_result:** 88
+- **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911041132:5:9824e8`
+*11.09. 04:11 UTC · Quelle: dream*
+
+Self-diagnosis found no organ errors and pruning removed 55 events, confirming that the system's internal hygiene mechanisms function correctly but do not address the external reliability and convergence gaps.
+
+### `dream:20260911041132:4:2d64a7`
+*11.09. 04:11 UTC · Quelle: dream*
+
+The calibration goal itself scored 4/10 despite multiple re-attempts, suggesting that accuracy-checking procedures are being performed but the underlying measurement or feedback loop lacks durability.
+
+### `dream:20260911041132:3:33e116`
+*11.09. 04:11 UTC · Quelle: dream*
+
+Evolution scores [9, 8, 6] diverged sharply from the final act score of 4, revealing evaluation instability where variant-level improvements are not reliably consolidated into the production outcome.
+
+### `dream:20260911041132:2:aeb23f`
+*11.09. 04:11 UTC · Quelle: dream*
+
+Swarm convergence was not achieved in only 2 cycles with a single critic, indicating that convergence gates must enforce minimum critic diversity and a dissent threshold before accepting a solution as stable.
+
+### `dream:20260911041132:1:e61858`
+*11.09. 04:11 UTC · Quelle: dream*
+
+Transient API failures (429 rate limits, 502 upstream overloads) are a recurring systemic risk that requires automatic retry-with-backoff and model fallback rather than treating them as terminal call failures.
 
 ### `dream:20260911040120:5:029b68`
 *11.09. 04:01 UTC · Quelle: dream*
@@ -43942,11 +43967,6 @@ The nvidia/nemotron-3-ultra model succeeds where others fail but exhibits 6x lat
 *28.08. 04:12 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) is the primary failure mode across all free-tier models, making them unreliable for production use without request throttling and fallback chains.
-
-### `aktuell_organfehler`
-*28.08. 04:02 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-28 03:55:42 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `last_swarm_critique`
 *28.08. 03:58 UTC · Quelle: critic*

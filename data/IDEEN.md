@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,15 +24,15 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis found no organ errors and pruning removed 55 events, confirming that the system's internal hygiene mechanisms function correctly but do
+- The calibration goal itself scored 4/10 despite multiple re-attempts, suggesting that accuracy-checking procedures are being performed but the underly
+- Evolution scores [9, 8, 6] diverged sharply from the final act score of 4, revealing evaluation instability where variant-level improvements are not r
+- Swarm convergence was not achieved in only 2 cycles with a single critic, indicating that convergence gates must enforce minimum critic diversity and 
+- Transient API failures (429 rate limits, 502 upstream overloads) are a recurring systemic risk that requires automatic retry-with-backoff and model fa
 - Calibration and simulation subsystems function correctly (accurate prediction, green verdict), but model selection logic does not incorporate historic
 - The system repeatedly retries failing models without circuit-breaking, wasting cycles on known-degraded endpoints instead of failing fast to healthy a
 - InclusionAI Ling 3.0 Flash Sante is the only model with 100% success rate and stable low latency (<6s) across varying token loads, marking it as the c
@@ -51,11 +56,6 @@
 - Model performance varies drastically under load, with latency increasing from 17.8s to 58.0s and frequent failures, suggesting dynamic resource alloca
 - The gap between proposed skills and their execution reveals a structural failure in translating abstract proposals into concrete, actionable tool call
 - Repeated 429/502 errors on primary models indicate systemic rate-limiting and upstream overload that cannot be resolved by simple retry logic alone.
-- Aggressive pruning (48 events in one run) risks discarding causal chains needed for later root-cause analysis.
-- Hand actions repeatedly fail due to unexpanded environment variables and relative paths in tool arguments.
-- Swarm knowledge becomes stale within days without a scheduled refresh mechanism that triggers new voting rounds.
-- Dream-generated skill proposals accumulate but lack an automated pipeline to validate, package, and register them as callable skills.
-- Model reliability degrades silently without pre-flight health probes and automated failover to known-good fallbacks.
 
 ---
 
