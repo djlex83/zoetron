@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11684 Fakten** · Stand 2026-09-11 05:44 UTC · aktualisiert bei jedem Herzschlag
+**11675 Fakten** · Stand 2026-09-11 05:54 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7535
-- **swarm_artifact:** 1763
+- **swarm_artifact:** 1757
 - **last_swarm_critique:** 879
 - **last_swarm_goal:** 614
-- **anti_pattern:** 401
-- **strategy:** 202
+- **anti_pattern:** 399
+- **strategy:** 201
 - **tool:** 163
 - **hand_result:** 88
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911055203:5:b497f1`
+*11.09. 05:52 UTC · Quelle: dream*
+
+Reflex-driven error reduction succeeds but only triggers post-failure; predictive health signals could prevent the failure entirely.
+
+### `dream:20260911055203:4:1957d9`
+*11.09. 05:52 UTC · Quelle: dream*
+
+Error handling is purely reactive; pre-flight probes and a live health registry would avoid sending high-stakes tasks to currently-degraded providers.
+
+### `dream:20260911055203:3:7d133a`
+*11.09. 05:52 UTC · Quelle: dream*
+
+Model selection discovers reliable models (Poolside) by chance rather than policy; a reliability-aware router would prevent known-failing models from being chosen.
+
+### `dream:20260911055203:2:0a2da9`
+*11.09. 05:52 UTC · Quelle: dream*
+
+Proposed skills accumulate unused because no automated pipeline converts approved proposals into deployed, tested code.
+
+### `dream:20260911055203:1:0e71f5`
+*11.09. 05:52 UTC · Quelle: dream*
+
+Provider-tier failures (Nvidia 502, Google 429) are systematic and require provider-level circuit breaking, not per-model retries.
 
 ### `dream:20260911054118:5:695df8`
 *11.09. 05:41 UTC · Quelle: dream*
@@ -43813,16 +43838,6 @@ Rate-limited models (429 errors) cascade into repeated failures unless automatic
 
 Ausfuehrbares Python-Werkzeug aus Ziel 'Mehr Experimente für neue Lösungen wagen'. Datei: data/tools/mehr-experimente-für-neue-lösungen-wagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
-### `anti_pattern:Previous attempt scored 7/10. Goal: Mehr Experimente für neu:1`
-*28.08. 05:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Self-Healing Component Mesh - Replace implicit imports with an explicit component registry: ExperimentTracker, SafeExperimentRunner, MetabolismAdapter each register themselves via entrypoints or a manifest.json. On boot, the 
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Mehr Experimente für neu:0`
-*28.08. 05:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Configuration-First Architecture - Externalize all stress thresholds (STRESS_CONSERVE, STRESS_BALANCED_MAX, etc.) into a typed config schema (YAML/JSON/TOML) with environment-variable overrides. Make Metabolism adapter a requ
-
 ### `last_swarm_critique`
 *28.08. 05:49 UTC · Quelle: critic*
 
@@ -43832,31 +43847,6 @@ score=7; issues=Hardcoded stress thresholds (STRESS_CONSERVE=1.0, STRESS_BALANCE
 *28.08. 05:44 UTC · Quelle: system*
 
 Mehr Experimente für neue Lösungen wagen
-
-### `dream:20260828054418:5:3154d3`
-*28.08. 05:44 UTC · Quelle: dream*
-
-Predictor accuracy drifts without continuous calibration from logged (predicted, actual) pairs per task type.
-
-### `dream:20260828054418:4:8996bd`
-*28.08. 05:44 UTC · Quelle: dream*
-
-Simulation gates that only check risk count without requiring minimum revisions and risk delta thresholds allow premature deployment.
-
-### `dream:20260828054418:3:66bad5`
-*28.08. 05:44 UTC · Quelle: dream*
-
-Accumulation of skill proposals without a validation-to-deployment pipeline creates a "proposal graveyard" that wastes generation effort.
-
-### `dream:20260828054418:2:c130fc`
-*28.08. 05:44 UTC · Quelle: dream*
-
-High latency variance (13-22s) in fallback models necessitates adaptive timeout mechanisms based on recent percentile performance.
-
-### `dream:20260828054418:1:4d9846`
-*28.08. 05:44 UTC · Quelle: dream*
-
-Free-tier models with strict rate limits (429 errors) require automatic circuit-breaking and fallback to reliable alternatives to maintain system availability.
 
 ### `last_swarm_critique`
 *28.08. 05:17 UTC · Quelle: critic*

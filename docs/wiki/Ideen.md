@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 05:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 05:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
@@ -31,8 +31,8 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven error reduction succeeds but only triggers post-failure; predictive health signals could prevent the failure entirely.
+- Error handling is purely reactive; pre-flight probes and a live health registry would avoid sending high-stakes tasks to currently-degraded providers.
+- Model selection discovers reliable models (Poolside) by chance rather than policy; a reliability-aware router would prevent known-failing models from 
+- Proposed skills accumulate unused because no automated pipeline converts approved proposals into deployed, tested code.
+- Provider-tier failures (Nvidia 502, Google 429) are systematic and require provider-level circuit breaking, not per-model retries.
 - Swarm knowledge staleness (7-day threshold) is detected but no automated refresh triggers exist, causing drift in collaborative decisions.
 - Pruning runs consistently remove 5-7 facts and 18-19 events per cycle, suggesting a stable churn rate that could be tuned by importance scoring.
 - Reflex scripts (modellfehler-stark-reduzieren.py) fire reactively after failures instead of preventing them via pre-flight probes.
@@ -51,11 +56,6 @@
 - Stale knowledge accumulates silently — 9 facts were pruned in one cycle, revealing that without scheduled archival, the fact store grows unbounded wit
 - The proposal-to-deployment gap is the system's largest productivity leak: five skills were proposed but none were auto-built, meaning the system gener
 - Rate-limit errors (429) from the model gateway are a systemic single point of failure — without a circuit breaker or failover, every dependent pipelin
-- Absence of a model health registry leads to repeated selection of degraded models, amplifying task failure rates.
-- Token budget overruns occur when fallback models are selected without considering their historical token efficiency.
-- Repeated model failures during high-stakes tasks indicate lack of pre-flight validation before committing to a model.
-- Models with high latency (>40s) and upstream errors are indistinguishable from local failures without structured error classification.
-- Provider-level failures (429/502) cascade across multiple models from the same provider, causing simultaneous degradation.
 
 ---
 

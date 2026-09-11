@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 05:42:05",
+ "stand": "2026-09-11 05:52:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,19 +45,13 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -118,6 +112,12 @@
   },
   {
    "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
