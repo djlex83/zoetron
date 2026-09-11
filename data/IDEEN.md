@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 14:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 14:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis consistently reports zero organ failures, confirming system stability despite external API issues.
+- Pruning runs effectively reduce memory load (2 facts, 19 events) without disrupting active processes, showing safe garbage collection.
+- Reflex-driven swarm data updates consistently succeed with low duration (0.61-2.85s), indicating reliable automation for routine tasks.
+- Successful model calls show latency variance (35-50s) suggesting token count and model load impact performance more than model choice.
+- Repeated 429 errors across multiple models indicate systemic rate-limiting that requires adaptive backoff rather than model switching.
 - Validating proposed skills against historical failure cases ensures only demonstrably effective skills are promoted.
 - Regular pruning of outdated facts and events is essential to maintain system efficiency and prevent knowledge clutter.
 - Integrating dream-derived insights with real actions creates a feedback loop that enhances overall decision-making intelligence.
@@ -51,11 +56,6 @@
 - Successful execution of the reflex tool demonstrates that specialized scripts can reliably update stale swarm goals.
 - Consecutive timeouts on a specific model suggest it is overloaded and should be temporarily blacklisted.
 - Repeated 429 errors from multiple providers indicate global rate limiting, requiring adaptive backoff and fallback.
-- Pruning old facts and events improves system efficiency and reduces noise.
-- High latency on some models suggests a health-aware router can improve response times.
-- Reflex actions successfully update swarm information, enabling convergence when explicit planning fails.
-- Swarm goals can become stale, leading to convergence failures; periodic audits are required.
-- Model endpoints frequently return 429 or 502 errors under load, indicating a need for rate limiting and backoff.
 
 ---
 

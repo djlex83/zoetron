@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11597 Fakten** · Stand 2026-09-11 14:22 UTC · aktualisiert bei jedem Herzschlag
+**11604 Fakten** · Stand 2026-09-11 14:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7490
-- **swarm_artifact:** 1729
-- **last_swarm_critique:** 885
-- **last_swarm_goal:** 620
-- **anti_pattern:** 391
-- **strategy:** 198
-- **tool:** 160
+- **dream:** 7485
+- **swarm_artifact:** 1735
+- **last_swarm_critique:** 886
+- **last_swarm_goal:** 621
+- **anti_pattern:** 393
+- **strategy:** 199
+- **tool:** 161
 - **hand_result:** 85
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-wirklich-umse`
+*11.09. 14:39 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich umsetzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-umse.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*11.09. 14:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Fine‑grained exception handling using a custom hierarchy - Define a set of specific exception classes (e.g., ValidationException, IOError, TimeoutError) and replace broad `except Exception` blocks with catches for these preci
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*11.09. 14:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Unified validation module with consistent naming - Create a single shared module (e.g., validators.py) that defines all validation functions with uniform names (such as pruefe and nachpruefen). Update every script to import t
+
+### `last_swarm_critique`
+*11.09. 14:37 UTC · Quelle: critic*
+
+score=5; issues=Die generierten Wrapper-Code-Blöcke werden nur ausgegeben, nicht aber ausgeführt oder gespeichert; eine 'wirkliche Umsetzung' der Fähigkeiten findet somit nicht statt.; Inkonsistente Validierung: Skript 2 verwendet 'pruefe'/'nachpruefen', Skrip
+
+### `last_swarm_goal`
+*11.09. 14:30 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich umsetzen
+
+### `dream:20260911143005:5:329c64`
+*11.09. 14:30 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero organ failures, confirming system stability despite external API issues.
+
+### `dream:20260911143005:4:22d0ae`
+*11.09. 14:30 UTC · Quelle: dream*
+
+Pruning runs effectively reduce memory load (2 facts, 19 events) without disrupting active processes, showing safe garbage collection.
+
+### `dream:20260911143005:3:8a9371`
+*11.09. 14:30 UTC · Quelle: dream*
+
+Reflex-driven swarm data updates consistently succeed with low duration (0.61-2.85s), indicating reliable automation for routine tasks.
+
+### `dream:20260911143005:2:ce3717`
+*11.09. 14:30 UTC · Quelle: dream*
+
+Successful model calls show latency variance (35-50s) suggesting token count and model load impact performance more than model choice.
+
+### `dream:20260911143005:1:127761`
+*11.09. 14:30 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple models indicate systemic rate-limiting that requires adaptive backoff rather than model switching.
 
 ### `dream:20260911141954:5:4718a5`
 *11.09. 14:19 UTC · Quelle: dream*
@@ -43467,56 +43517,6 @@ The system exhibits a persistent execution gap: proposals are generated but only
 *28.08. 14:37 UTC · Quelle: dream*
 
 API rate limiting (429) is the dominant systemic failure mode, affecting the majority of recent model calls across multiple providers simultaneously.
-
-### `dream:20260828142859:5:44d371`
-*28.08. 14:28 UTC · Quelle: dream*
-
-Hand actions failing with exit 1 without a specific error message suggests a need for better error capturing in execution environments.
-
-### `dream:20260828142859:4:6e5bd4`
-*28.08. 14:28 UTC · Quelle: dream*
-
-The gap between simulated learning and real-world action is a recurring systemic issue that needs to be bridged by actively testing reflex skills.
-
-### `dream:20260828142859:3:ecafa5`
-*28.08. 14:28 UTC · Quelle: dream*
-
-Swarm tasks that do not converge indicate a need for better pre-execution validation or goal alignment before launch.
-
-### `dream:20260828142859:2:2c84b0`
-*28.08. 14:28 UTC · Quelle: dream*
-
-High latency on successful model calls (e.g., 80.8s) indicates that response time must be factored into model selection.
-
-### `dream:20260828142859:1:9b7ecd`
-*28.08. 14:28 UTC · Quelle: dream*
-
-Free-tier LLM endpoints are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
-
-### `dream:20260828142028:5:5c92b7`
-*28.08. 14:20 UTC · Quelle: dream*
-
-Poor calibration (predicted 3 vs actual 1) indicates unreliable self-assessment of task difficulty before execution.
-
-### `dream:20260828142028:4:a69d3f`
-*28.08. 14:20 UTC · Quelle: dream*
-
-Model reliability varies significantly — nemotron-3-ultra succeeded where multiple others failed, suggesting model-specific resilience patterns worth tracking.
-
-### `dream:20260828142028:3:802dd3`
-*28.08. 14:20 UTC · Quelle: dream*
-
-Evolutionary refinement can improve scores from 1/10 to 9/10, demonstrating the power of iterative variant generation as a recovery mechanism.
-
-### `dream:20260828142028:2:18ff30`
-*28.08. 14:20 UTC · Quelle: dream*
-
-Code generation without pre-execution syntax validation produces unterminated strings that block entire execution pipelines.
-
-### `dream:20260828142028:1:b2b6b0`
-*28.08. 14:20 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overload (502), requiring fallback strategies.
 
 ### `last_swarm_critique`
 *28.08. 13:32 UTC · Quelle: critic*
