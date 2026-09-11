@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 05:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 06:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,32 +15,37 @@
 - Build drive-goal escalation loop that converts failure/stale/gap signals into scheduled reflex invocations wit *(hatte die Idee 5×)*
 - Add pruning audit trail logging retention criteria, discarded pattern signatures, and impact scores; preserve  *(hatte die Idee 5×)*
 - Add pre-flight 1-token health probe to selbstdiagnose for each candidate model before planner assigns tasks. *(hatte die Idee 5×)*
-- Deploy SwarmFreshnessScheduler + ConvergenceEvidenceLogger: timestamp every critique, log score trajectory per *(hatte die Idee 4×)*
 - Implement model router with health scoring, exponential backoff, automatic fallback to highest-reliability pro *(hatte die Idee 4×)*
 - Create shared HTTP wrapper with exponential backoff (base 2s, max 30s, 3 retries, jitter) for all OpenRouter c *(hatte die Idee 4×)*
 - Build DegradedMode skill: when >2 models disabled, restrict planner to inclusionai model only, halve token bud *(hatte die Idee 4×)*
 - Implement exponential-backoff retry with automatic model fallback on 429/502/timeout before marking a call fai *(hatte die Idee 4×)*
+- Build a path-resolver utility that absolutizes all relative paths against ZOETRON_DATA before any hand action. *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex tool 'träume-in-echte-fähigkeiten-umsetzen.py' returns ok=false, breaking the dream-to-skill pipeline despite swarm initiation.
+- Metabolism stress at 1.0 forces conserve mode (max_tasks=3, max_iterations=1), throttling all autonomous activity including dream consolidation.
+- Hand actions fail because relative paths are resolved against the working directory instead of ZOETRON_DATA, causing silent zero-byte reads.
+- The poolside/laguna-s-2.1:free model consistently succeeds where others fail, establishing it as the de facto backbone for inference.
+- Free-tier LLM endpoints (Gemma, Nemotron) fail systematically under rate limits (429) and upstream overload (502), making them unreliable as primary p
 - Reflex-driven error reduction succeeds but only triggers post-failure; predictive health signals could prevent the failure entirely.
 - Error handling is purely reactive; pre-flight probes and a live health registry would avoid sending high-stakes tasks to currently-degraded providers.
 - Model selection discovers reliable models (Poolside) by chance rather than policy; a reliability-aware router would prevent known-failing models from 
@@ -51,11 +56,6 @@
 - Reflex scripts (modellfehler-stark-reduzieren.py) fire reactively after failures instead of preventing them via pre-flight probes.
 - Proposed skills accumulate but remain undeployed because no gate validates them against live traffic before registration.
 - Model failures cluster around rate limits (429) and upstream overloads (502), indicating the current round-robin selection ignores real-time provider 
-- Self-diagnosis before action prevents wasted cycles — the selbstdiagnose step confirmed no organ errors before further processing, validating that a h
-- Reflex-driven convergence is reliable for well-scoped goals (both reflex actions converged), so the system should prefer reflex mode for repetitive, b
-- Stale knowledge accumulates silently — 9 facts were pruned in one cycle, revealing that without scheduled archival, the fact store grows unbounded wit
-- The proposal-to-deployment gap is the system's largest productivity leak: five skills were proposed but none were auto-built, meaning the system gener
-- Rate-limit errors (429) from the model gateway are a systemic single point of failure — without a circuit breaker or failover, every dependent pipelin
 
 ---
 

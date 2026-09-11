@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 05:52:58",
+ "stand": "2026-09-11 06:14:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -48,12 +48,6 @@
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -106,6 +100,12 @@
   },
   {
    "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -168,18 +168,6 @@
    "tool": "neue-fähigkeiten-erlernen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "automatische-fehler-reduktions-pipeline-.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -409,14 +397,20 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modell-fehler-verstehen-und-senken.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.836,
- "simulationen_angewandt": 29,
+ "haende_quote": 0.828,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
-  "n": 22,
+  "n": 23,
   "best": 9.0,
-  "schnitt": 3.77
+  "schnitt": 3.65
  },
  "score_nach_ziel_typ": {
   "bau": {
@@ -424,8 +418,8 @@
    "schnitt": 5.0
   },
   "analyse": {
-   "n": 20,
-   "schnitt": 3.65
+   "n": 21,
+   "schnitt": 3.52
   }
  }
 }

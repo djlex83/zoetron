@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11675 Fakten** · Stand 2026-09-11 05:54 UTC · aktualisiert bei jedem Herzschlag
+**11688 Fakten** · Stand 2026-09-11 06:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7535
-- **swarm_artifact:** 1757
-- **last_swarm_critique:** 879
-- **last_swarm_goal:** 614
+- **dream:** 7540
+- **swarm_artifact:** 1763
+- **last_swarm_critique:** 880
+- **last_swarm_goal:** 615
 - **anti_pattern:** 399
-- **strategy:** 201
-- **tool:** 163
+- **strategy:** 202
+- **tool:** 162
 - **hand_result:** 88
 - **aktuell_organfehler:** 39
 
 ---
+
+### `last_swarm_critique`
+*11.09. 06:10 UTC · Quelle: critic*
+
+score=1; issues=Kein ausführbarer Python-Block im Artefakt vorhanden – nur Shell-Erkundungsbefehle (<tool_call>shell-Tags); Die Sandbox-Bestätigung 'LAEUFT NICHT' greift: Es existiert kein Python-Code, der die Selbstdiagnose, Modell-Gesundheitsprüfung oder Wer
+
+### `last_swarm_goal`
+*11.09. 06:04 UTC · Quelle: system*
+
+Fehler analysieren und vermeiden
+
+### `dream:20260911060316:5:5fd121`
+*11.09. 06:03 UTC · Quelle: dream*
+
+The reflex tool 'träume-in-echte-fähigkeiten-umsetzen.py' returns ok=false, breaking the dream-to-skill pipeline despite swarm initiation.
+
+### `dream:20260911060316:4:a4ccc3`
+*11.09. 06:03 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode (max_tasks=3, max_iterations=1), throttling all autonomous activity including dream consolidation.
+
+### `dream:20260911060316:3:7d0330`
+*11.09. 06:03 UTC · Quelle: dream*
+
+Hand actions fail because relative paths are resolved against the working directory instead of ZOETRON_DATA, causing silent zero-byte reads.
+
+### `dream:20260911060316:2:614db2`
+*11.09. 06:03 UTC · Quelle: dream*
+
+The poolside/laguna-s-2.1:free model consistently succeeds where others fail, establishing it as the de facto backbone for inference.
+
+### `dream:20260911060316:1:a21e79`
+*11.09. 06:03 UTC · Quelle: dream*
+
+Free-tier LLM endpoints (Gemma, Nemotron) fail systematically under rate limits (429) and upstream overload (502), making them unreliable as primary providers.
 
 ### `dream:20260911055203:5:b497f1`
 *11.09. 05:52 UTC · Quelle: dream*
@@ -43832,11 +43867,6 @@ Fallback model latency variance (15–105s) demands per-model timeout budgets an
 *28.08. 06:10 UTC · Quelle: dream*
 
 Rate-limited models (429 errors) cascade into repeated failures unless automatically excluded after N consecutive occurrences.
-
-### `tool:mehr-experimente-für-neue-lösungen-wagen`
-*28.08. 05:53 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Mehr Experimente für neue Lösungen wagen'. Datei: data/tools/mehr-experimente-für-neue-lösungen-wagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *28.08. 05:49 UTC · Quelle: critic*
