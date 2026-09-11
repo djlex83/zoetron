@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 05:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
@@ -36,11 +36,16 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis before action prevents wasted cycles — the selbstdiagnose step confirmed no organ errors before further processing, validating that a h
+- Reflex-driven convergence is reliable for well-scoped goals (both reflex actions converged), so the system should prefer reflex mode for repetitive, b
+- Stale knowledge accumulates silently — 9 facts were pruned in one cycle, revealing that without scheduled archival, the fact store grows unbounded wit
+- The proposal-to-deployment gap is the system's largest productivity leak: five skills were proposed but none were auto-built, meaning the system gener
+- Rate-limit errors (429) from the model gateway are a systemic single point of failure — without a circuit breaker or failover, every dependent pipelin
 - Absence of a model health registry leads to repeated selection of degraded models, amplifying task failure rates.
 - Token budget overruns occur when fallback models are selected without considering their historical token efficiency.
 - Repeated model failures during high-stakes tasks indicate lack of pre-flight validation before committing to a model.
@@ -51,11 +56,6 @@
 - Stale swarm knowledge (>7 days) causes the system to act on outdated facts, compounding failure rates when combined with unreliable model responses.
 - Skill proposals accumulate without simulator validation, creating a gap between proposed capabilities and proven functionality that wastes planning cy
 - Recurring 429/502 errors across multiple providers indicate systemic upstream instability, not isolated incidents, requiring architectural resilience 
-- Effort estimates for swarm tasks are consistently 4-5x too low, requiring a calibrated multiplier.
-- Path-resolution failures recur because hand_actions lack a universal pre-flight validator for argv/env expansion.
-- Proposed skills accumulate unused because no mandatory simulation gate exists before deployment.
-- Swarm knowledge decays within days without scheduled re-validation, causing repeated planning errors.
-- Model reliability degrades silently without automated health monitoring and circuit-breaking failover.
 
 ---
 

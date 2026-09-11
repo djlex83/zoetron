@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11709 Fakten** · Stand 2026-09-11 04:55 UTC · aktualisiert bei jedem Herzschlag
+**11689 Fakten** · Stand 2026-09-11 05:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7550
-- **swarm_artifact:** 1769
+- **dream:** 7540
+- **swarm_artifact:** 1763
 - **last_swarm_critique:** 879
 - **last_swarm_goal:** 614
-- **anti_pattern:** 403
-- **strategy:** 203
+- **anti_pattern:** 401
+- **strategy:** 202
 - **tool:** 163
-- **hand_result:** 89
+- **hand_result:** 88
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911053040:5:ea22b9`
+*11.09. 05:30 UTC · Quelle: dream*
+
+Self-diagnosis before action prevents wasted cycles — the selbstdiagnose step confirmed no organ errors before further processing, validating that a health check gate improves efficiency.
+
+### `dream:20260911053040:4:6de704`
+*11.09. 05:30 UTC · Quelle: dream*
+
+Reflex-driven convergence is reliable for well-scoped goals (both reflex actions converged), so the system should prefer reflex mode for repetitive, bounded tasks over open-ended planning.
+
+### `dream:20260911053040:3:3c3b5c`
+*11.09. 05:30 UTC · Quelle: dream*
+
+Stale knowledge accumulates silently — 9 facts were pruned in one cycle, revealing that without scheduled archival, the fact store grows unbounded with outdated swarm goals.
+
+### `dream:20260911053040:2:a310e0`
+*11.09. 05:30 UTC · Quelle: dream*
+
+The proposal-to-deployment gap is the system's largest productivity leak: five skills were proposed but none were auto-built, meaning the system generates solutions faster than it ships them.
+
+### `dream:20260911053040:1:f3f04e`
+*11.09. 05:30 UTC · Quelle: dream*
+
+Rate-limit errors (429) from the model gateway are a systemic single point of failure — without a circuit breaker or failover, every dependent pipeline stalls on the same predictable condition.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Träume in echte Entwickl:1`
 *11.09. 04:53 UTC · Quelle: evolution*
@@ -43858,16 +43883,6 @@ nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but with high laten
 
 Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate limiting that makes it unreliable for production use.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Träume in echte Verbesse:2`
-*28.08. 05:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Micro-Step Evolution with Continuous Execution - Replace single-shot generation with an evolutionary loop where every commit must be a runnable superset of the previous one. Start from a 10-line `hello_world.py` that passes `
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Träume in echte Verbesse:0`
-*28.08. 05:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): AST-Safe Code Generation - Generate the entire deliverable by constructing Python AST nodes programmatically (using `ast` module), then compile to source via `ast.unparse()`. This guarantees syntactically valid Python—no f-st
-
 ### `last_swarm_critique`
 *28.08. 05:17 UTC · Quelle: critic*
 
@@ -43877,81 +43892,6 @@ score=1; issues=Sandbox verdict: LAEUFT NICHT - syntax error at line 493 with ma
 *28.08. 05:12 UTC · Quelle: system*
 
 Träume in echte Verbesserungen verwandeln
-
-### `dream:20260828051142:5:6a9e4f`
-*28.08. 05:11 UTC · Quelle: dream*
-
-Reflexes and hand actions succeed in isolation but fail to chain into completed workflows, indicating missing orchestration layer.
-
-### `dream:20260828051142:4:27984e`
-*28.08. 05:11 UTC · Quelle: dream*
-
-Variable latency on fallback model (9-36s) makes time-budgeted operations unpredictable, requiring latency-aware routing.
-
-### `dream:20260828051142:3:2abad8`
-*28.08. 05:11 UTC · Quelle: dream*
-
-Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that inflate perceived system competence.
-
-### `dream:20260828051142:2:5d742f`
-*28.08. 05:11 UTC · Quelle: dream*
-
-Evolution runs improve scores significantly (4→9) but swarm convergence fails, suggesting critic/planner ratio or stopping criteria need tuning.
-
-### `dream:20260828051142:1:5d11a9`
-*28.08. 05:11 UTC · Quelle: dream*
-
-Repeated 429 errors on specific models indicate unreliable endpoints require automatic fallback with exponential backoff.
-
-### `dream:20260828050715:5:805d94`
-*28.08. 05:07 UTC · Quelle: dream*
-
-Calibration underestimated actual score by 2 points (predicted 2 vs actual 4), indicating systematic pessimism in self-assessment.
-
-### `dream:20260828050715:4:8e0ee6`
-*28.08. 05:07 UTC · Quelle: dream*
-
-Simulation verdict shifted from 'revise' (3 risks) to 'go' (4 risks) only after 3 revisions, showing risk count alone is misleading without revision depth.
-
-### `dream:20260828050715:3:5af024`
-*28.08. 05:07 UTC · Quelle: dream*
-
-Evolution runs with 3 variants boosted artifact score from 4 to 9 (winner), proving iterative refinement outperforms single-pass generation.
-
-### `dream:20260828050715:2:f21d33`
-*28.08. 05:07 UTC · Quelle: dream*
-
-Nemotron-3-ultra succeeds 100% of the time but latency varies 12x (12s–150s), requiring timeout budgets not fixed limits.
-
-### `dream:20260828050715:1:3e21b4`
-*28.08. 05:07 UTC · Quelle: dream*
-
-Free-tier models (glm-5.2) consistently hit 429 rate limits under load, making them unreliable for production pipelines.
-
-### `dream:20260828050256:5:915087`
-*28.08. 05:02 UTC · Quelle: dream*
-
-429 errors follow burst patterns; exponential backoff with jitter and request spreading prevents thundering herd on fallback.
-
-### `dream:20260828050256:4:49e6e2`
-*28.08. 05:02 UTC · Quelle: dream*
-
-Token budgets enforced post-hoc allow overflow; streaming generation needs hard token counters with mid-stream truncation.
-
-### `dream:20260828050256:3:08f175`
-*28.08. 05:02 UTC · Quelle: dream*
-
-Skill proposals accumulate without execution; a micro-test harness must validate each proposal within 30 seconds of creation.
-
-### `dream:20260828050256:2:b88e0b`
-*28.08. 05:02 UTC · Quelle: dream*
-
-Relative path resolution fails under conserve mode; all file operations must anchor to ZOETRON_DATA absolute root.
-
-### `dream:20260828050256:1:41dc1c`
-*28.08. 05:02 UTC · Quelle: dream*
-
-Rate-limited primary models cause cascading latency when fallbacks are slow; routing must predict latency not just availability.
 
 ### `last_swarm_critique`
 *28.08. 04:52 UTC · Quelle: critic*
