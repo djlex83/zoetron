@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency varies wildly (7.7s to 57.7s), demanding deadline-aware execution to prevent cascade delays.
+- Stale swarm goals and outdated knowledge fragments persist despite periodic pruning, indicating need for proactive refresh.
+- Reflex tools like 'träume-besser-nutzen-lernen.py' successfully bridge learning and action when explicitly triggered.
+- Skill proposals accumulate without deployment, creating a gap between generation and practical application.
+- Model endpoints frequently fail with 502/429 errors, requiring automated routing and circuit breakers for resilience.
 - Memory pruning removes events but retains few facts, suggesting experience isn't being distilled into durable semantic knowledge that could inform fut
 - Reflex-based fixes (e.g., data replacement) address symptoms but not root causes because infrastructure skills (rate limiter, router, cache) remain un
 - Swarm feedback becomes stale within cycles because no periodic audit mechanism refreshes objectives or injects fresh perspectives to prevent strategic
@@ -51,11 +56,6 @@
 - High-latency fallbacks (40-90s) succeed where fast models fail, but consume iteration budget and risk timeout in conserve mode.
 - Rate limiting (429) and upstream overload (502) are systemic failure modes, not transient glitches, requiring architectural circuit-breakers.
 - Model provider overload cascades across vendors simultaneously, making single-provider fallback chains unreliable under load.
-- Hand action timeouts (20s) coincide with model latency spikes, revealing a missing deadline-aware cancellation layer.
-- Reflex tool execution fails silently under conserve-mode budget constraints, leaving proposed skills unimplemented despite swarm initiation.
-- The single working model (dots-studio) exhibits 20-27s latency, making it unsuitable for interactive loops without async queuing.
-- Timeout failures on nemotron correlate with upstream 502 overload errors, suggesting provider-side saturation not client-side latency.
-- Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota pools rather than per-model limits.
 
 ---
 

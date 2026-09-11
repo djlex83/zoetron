@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11596 Fakten** · Stand 2026-09-11 13:03 UTC · aktualisiert bei jedem Herzschlag
+**11597 Fakten** · Stand 2026-09-11 13:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7479
+- **dream:** 7484
 - **swarm_artifact:** 1731
 - **last_swarm_critique:** 885
 - **last_swarm_goal:** 620
-- **anti_pattern:** 395
-- **strategy:** 200
-- **tool:** 161
+- **anti_pattern:** 393
+- **strategy:** 199
+- **tool:** 160
 - **hand_result:** 86
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911131158:5:14758f`
+*11.09. 13:11 UTC · Quelle: dream*
+
+Model latency varies wildly (7.7s to 57.7s), demanding deadline-aware execution to prevent cascade delays.
+
+### `dream:20260911131158:4:bbbc79`
+*11.09. 13:11 UTC · Quelle: dream*
+
+Stale swarm goals and outdated knowledge fragments persist despite periodic pruning, indicating need for proactive refresh.
+
+### `dream:20260911131158:3:960766`
+*11.09. 13:11 UTC · Quelle: dream*
+
+Reflex tools like 'träume-besser-nutzen-lernen.py' successfully bridge learning and action when explicitly triggered.
+
+### `dream:20260911131158:2:f876ad`
+*11.09. 13:11 UTC · Quelle: dream*
+
+Skill proposals accumulate without deployment, creating a gap between generation and practical application.
+
+### `dream:20260911131158:1:66411b`
+*11.09. 13:11 UTC · Quelle: dream*
+
+Model endpoints frequently fail with 502/429 errors, requiring automated routing and circuit breakers for resilience.
 
 ### `dream:20260911130009:5:98aad6`
 *11.09. 13:00 UTC · Quelle: dream*
@@ -43484,21 +43509,6 @@ Three consecutive errors trigger a 1800-second model ban, turning transient rate
 *28.08. 13:18 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter exhibit correlated 429 rate-limit failures that cascade across providers simultaneously.
-
-### `tool:ersten-swarm-lauf-mit-score-8-konvergier`
-*28.08. 13:05 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Ersten Swarm-Lauf mit Score 8+ konvergieren lassen'. Datei: data/tools/ersten-swarm-lauf-mit-score-8-konvergier.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*28.08. 13:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Adversarial Swarm Co-Evolution with Critic Emulation - Create two competing swarms running in parallel: one generates solutions trying to achieve 8+/10, the other evolves critics that attempt to correctly score solutions with
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:1`
-*28.08. 13:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Swarm Memory Propagation with Cross-Pollination Repair - Replace individual agent revisions with a collective memory system where each failed convergence attempt writes its diff to a shared 'mutation log'. Subsequent swarm ag
 
 ### `last_swarm_critique`
 *28.08. 12:58 UTC · Quelle: critic*

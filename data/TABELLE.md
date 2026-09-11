@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8211 Neuronen · 876143 bewertete Synapsen
+Stand: 8210 Neuronen · 876398 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -21,9 +21,9 @@ Stand: 8211 Neuronen · 876143 bewertete Synapsen
 | 9 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 852 | 0.24 |
 | 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 865 | 0.23 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 873 | 0.23 |
-| 12 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 893 | 0.22 |
+| 12 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 894 | 0.22 |
 | 13 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 756 | 0.26 |
-| 14 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 860 | 0.23 |
+| 14 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 861 | 0.23 |
 | 15 | 💭 | The primary model (z-ai/glm-5.2) repeatedly fails with 429 error… | 787 | 0.25 |
 
 ## Die 15 stärksten Synapsen
