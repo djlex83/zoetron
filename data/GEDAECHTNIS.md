@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11639 Fakten** · Stand 2026-09-11 08:28 UTC · aktualisiert bei jedem Herzschlag
+**11636 Fakten** · Stand 2026-09-11 08:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7509
-- **swarm_artifact:** 1749
+- **dream:** 7514
+- **swarm_artifact:** 1745
 - **last_swarm_critique:** 881
 - **last_swarm_goal:** 616
-- **anti_pattern:** 397
-- **strategy:** 201
-- **tool:** 160
+- **anti_pattern:** 395
+- **strategy:** 200
+- **tool:** 159
 - **hand_result:** 87
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911083636:5:5d238d`
+*11.09. 08:36 UTC · Quelle: dream*
+
+Calibration predicted two errors but only one occurred, showing model self-assessment is unreliable.
+
+### `dream:20260911083636:4:2286fa`
+*11.09. 08:36 UTC · Quelle: dream*
+
+Prose-only artifacts failed to produce executable code, causing the simulation to not converge.
+
+### `dream:20260911083636:3:cdd474`
+*11.09. 08:36 UTC · Quelle: dream*
+
+Successful calls exhibited latencies up to 7.8 seconds, indicating variable network or model processing delays.
+
+### `dream:20260911083636:2:9011cd`
+*11.09. 08:36 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free succeeded consistently, suggesting it is least rate-limited.
+
+### `dream:20260911083636:1:41b0f3`
+*11.09. 08:36 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple free models indicate a shared rate limit on the OpenRouter free tier.
 
 ### `dream:20260911082620:5:b169fd`
 *11.09. 08:26 UTC · Quelle: dream*
@@ -43649,21 +43674,6 @@ Smaller fast models (ling-3.0-flash-fin ~8-19s) succeed more reliably than large
 *28.08. 09:07 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) is the dominant failure mode across all model providers, not an isolated model issue.
-
-### `tool:modellfehler-deutlich-reduzieren`
-*28.08. 08:28 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler deutlich reduzieren'. Datei: data/tools/modellfehler-deutlich-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler deutlich re:2`
-*28.08. 08:28 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Feedback-Driven Self-Verification - Design a closed-loop validation agent that autonomously detects when the sandbox flags any artifact as truncated or unverified, automatically re-invokes only that incomplete module, patches
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler deutlich re:1`
-*28.08. 08:28 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Error Attribution Pipeline - Construct a traceability layer that links every recorded prediction error back to its originating input feature set, routing decision path, and reflex recovery action. Aggregate these links into a
 
 ### `last_swarm_critique`
 *28.08. 08:27 UTC · Quelle: critic*
