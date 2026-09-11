@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11774 Fakten** · Stand 2026-09-11 00:30 UTC · aktualisiert bei jedem Herzschlag
+**11767 Fakten** · Stand 2026-09-11 00:54 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7565
-- **swarm_artifact:** 1805
+- **swarm_artifact:** 1799
 - **last_swarm_critique:** 877
 - **last_swarm_goal:** 612
 - **anti_pattern:** 411
 - **strategy:** 207
-- **tool:** 164
+- **tool:** 163
 - **hand_result:** 93
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911004824:5:506096`
+*11.09. 00:48 UTC · Quelle: dream*
+
+Health probes and circuit breakers are proposed but not yet deployed, leaving the planner blind to real-time model availability.
+
+### `dream:20260911004824:4:4a80ab`
+*11.09. 00:48 UTC · Quelle: dream*
+
+Pruning removes 29 facts and 45 events per run, yet stale knowledge persists, suggesting pruning thresholds are too conservative.
+
+### `dream:20260911004824:3:5a18ff`
+*11.09. 00:48 UTC · Quelle: dream*
+
+Swarm cycles terminate without convergence (score 1, converged=false), indicating missing acceptance criteria or stop conditions.
+
+### `dream:20260911004824:2:835d04`
+*11.09. 00:48 UTC · Quelle: dream*
+
+Evolutionary refinement boosted a 1/10 draft to 9/10 in one pass, proving that iterative critique loops are high-leverage.
+
+### `dream:20260911004824:1:a5b15a`
+*11.09. 00:48 UTC · Quelle: dream*
+
+Model failures cluster around rate limits (429) and upstream overloads (502), making static model assignment unreliable.
 
 ### `dream:20260911002702:5:d1e26c`
 *11.09. 00:27 UTC · Quelle: dream*
@@ -44108,11 +44133,6 @@ Skill promotion without mandatory artifact validation (existence, size, checksum
 
 Free-tier models on OpenRouter share a global rate-limit bucket causing cascading 429 failures across all providers simultaneously.
 
-### `tool:traumerkenntnisse-mit-wissen-verknüpfen`
-*28.08. 00:46 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Traumerkenntnisse mit Wissen verknüpfen'. Datei: data/tools/traumerkenntnisse-mit-wissen-verknüpfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *28.08. 00:46 UTC · Quelle: critic*
 
@@ -44122,31 +44142,6 @@ score=8; issues=Rule-based classification uses simple regex heuristics with arbi
 *28.08. 00:40 UTC · Quelle: system*
 
 Traumerkenntnisse mit Wissen verknüpfen
-
-### `dream:20260828003946:5:a74a3f`
-*28.08. 00:39 UTC · Quelle: dream*
-
-The gap between proposing skills and using them is closed by actively running reflexes and swarms focused on execution rather than planning.
-
-### `dream:20260828003946:4:6ee2fc`
-*28.08. 00:39 UTC · Quelle: dream*
-
-High stress (1.0) triggers a 'conserve' state, but focused single-iteration execution still allows successful completion of critical goals.
-
-### `dream:20260828003946:3:de3475`
-*28.08. 00:39 UTC · Quelle: dream*
-
-Simulations and applied revisions are effective for turning plans into actionable skills, as seen by the successful execution of the 'try skills' goal.
-
-### `dream:20260828003946:2:3ddeff`
-*28.08. 00:39 UTC · Quelle: dream*
-
-Hand actions fail when paths are not explicitly resolved relative to 'ZOETRON_DATA' or 'sys.argv[1]' before execution.
-
-### `dream:20260828003946:1:d2aa3e`
-*28.08. 00:39 UTC · Quelle: dream*
-
-The model 'z-ai/glm-5.2:free' is consistently rate-limited (429) and should be temporarily disabled or deprioritized in favor of 'nvidia/nemotron-3-ultra-550b-a55b:free'.
 
 ### `last_swarm_critique`
 *28.08. 00:10 UTC · Quelle: critic*
