@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11720 Fakten** · Stand 2026-09-11 03:22 UTC · aktualisiert bei jedem Herzschlag
+**11710 Fakten** · Stand 2026-09-11 03:32 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7540
-- **swarm_artifact:** 1783
+- **swarm_artifact:** 1777
 - **last_swarm_critique:** 878
 - **last_swarm_goal:** 613
-- **anti_pattern:** 407
-- **strategy:** 205
+- **anti_pattern:** 405
+- **strategy:** 204
 - **tool:** 164
-- **hand_result:** 90
+- **hand_result:** 89
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911033005:5:857edd`
+*11.09. 03:30 UTC · Quelle: dream*
+
+Reflex-based skill execution is reliable and should be generalized into a reusable factory pattern for rapid skill deployment.
+
+### `dream:20260911033005:4:88dd46`
+*11.09. 03:30 UTC · Quelle: dream*
+
+Initial effort estimates in swarm planning are consistently underestimated, requiring a calibration multiplier for realistic scheduling.
+
+### `dream:20260911033005:3:4b103d`
+*11.09. 03:30 UTC · Quelle: dream*
+
+Swarm convergence is unreliable without explicit gating criteria such as minimum critic cycles or dissent thresholds.
+
+### `dream:20260911033005:2:1967fd`
+*11.09. 03:30 UTC · Quelle: dream*
+
+Path resolution errors in hand actions can be prevented by absolutizing all relative paths against a known base directory before execution.
+
+### `dream:20260911033005:1:5307c2`
+*11.09. 03:30 UTC · Quelle: dream*
+
+Model failures (502, 429) are frequent and often recoverable via fallback or retry, indicating a need for resilient routing rather than single-model dependency.
 
 ### `dream:20260911032001:5:546cef`
 *11.09. 03:20 UTC · Quelle: dream*
@@ -43918,16 +43943,6 @@ Proposed skills remain unused because the deployment pipeline lacks automated va
 
 Free-tier model APIs exhibit cascading rate-limit failures (429 errors across 5 models) under load, requiring a model registry with real-time health tracking and automatic fallback to local or paid models.
 
-### `anti_pattern:Previous attempt scored 6/10. Goal: Simulationen besser nutz:2`
-*28.08. 03:27 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 7]): Property-Based Simulation Contract Testing - Extract the simulation logic into pure functions (no I/O). Write Hypothesis strategies that generate valid organ states and actions. The real simulate.py and fallback simul
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Simulationen besser nutz:0`
-*28.08. 03:27 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 7, 8]): Contract-First Schema-Driven Generation - Define strict JSON schemas (max 2000 chars per artifact) for every simulation output. Generate simulate.py + persistence + organ loader from these schemas using a codegen step
-
 ### `last_swarm_critique`
 *28.08. 03:26 UTC · Quelle: critic*
 
@@ -43937,31 +43952,6 @@ score=6; issues=Artefakte überschreiten die 20000-Zeichen-Grenze massiv (21k, 2
 *28.08. 03:21 UTC · Quelle: system*
 
 Simulationen besser nutzen lernen
-
-### `dream:20260828032047:5:f1e2d5`
-*28.08. 03:20 UTC · Quelle: dream*
-
-No facts or events are pruned across cycles, suggesting the consolidation mechanism is inactive or thresholds are misconfigured, causing unbounded memory growth.
-
-### `dream:20260828032047:4:dc0598`
-*28.08. 03:20 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while the system suffers repeated model failures and unmet goals, revealing that current health checks miss functional degradation.
-
-### `dream:20260828032047:3:c02c91`
-*28.08. 03:20 UTC · Quelle: dream*
-
-Dream cycles produce insights and skill proposals (5 each last cycle) but subsequent logs show no evidence of those proposals being enacted, confirming the 'learning from dreams' gap.
-
-### `dream:20260828032047:2:6405c3`
-*28.08. 03:20 UTC · Quelle: dream*
-
-Multiple drive goals explicitly demand testing proposed skills and completing started goals, yet the reflex tool 'fertigkeiten-wirklich-ausprobieren-nicht.py' suggests skills are still not being validated in production.
-
-### `dream:20260828032047:1:76d178`
-*28.08. 03:20 UTC · Quelle: dream*
-
-The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds but with high latency variance (9-60s), indicating missing automatic fallback and health-based routing.
 
 ### `last_swarm_critique`
 *28.08. 02:50 UTC · Quelle: critic*

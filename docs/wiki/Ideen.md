@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 03:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 03:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,7 +29,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based skill execution is reliable and should be generalized into a reusable factory pattern for rapid skill deployment.
+- Initial effort estimates in swarm planning are consistently underestimated, requiring a calibration multiplier for realistic scheduling.
+- Swarm convergence is unreliable without explicit gating criteria such as minimum critic cycles or dissent thresholds.
+- Path resolution errors in hand actions can be prevented by absolutizing all relative paths against a known base directory before execution.
+- Model failures (502, 429) are frequent and often recoverable via fallback or retry, indicating a need for resilient routing rather than single-model d
 - Relative path handling in hand actions fails silently without pre-flight validation against ZOETRON_DATA root.
 - Swarm convergence lacks objective gates (critic cycles, dissent thresholds), leading to premature convergence or infinite deliberation.
 - Pruning discards patterns without preserving low-frequency high-impact signatures, risking loss of rare but critical failure-recovery knowledge.
@@ -51,11 +56,6 @@
 - Swarm knowledge staleness recurs because no scheduled refresh drive exists; cron-driven goals prevent drift.
 - High latency variance (9.5s vs 55s) across free models makes fixed timeouts unreliable; adaptive timeouts needed.
 - Model 429 errors cascade into planner instability unless automatic failover with health probes exists.
-- Pruning removed 26 events then 1 fact, but no model-failure telemetry was retained, so the system cannot learn which models are currently viable.
-- Self-diagnosis reports zero organ errors while external model failures dominate, showing the diagnostic scope excludes gateway-level dependency health
-- The reflex tool 'beste-vorschläge-in-fähigkeiten-verwande.py' successfully converted five proposals into runnable skills in one pass, proving the prop
-- The sole working model (ling-3.0-flash-sante) doubled its latency from 5.5s to 9.5s under load, indicating no load-shedding or request queuing in the 
-- Four of five free models failed simultaneously (timeouts + 429 rate limits), revealing a shared-quota bottleneck at the OpenRouter gateway rather than
 
 ---
 
