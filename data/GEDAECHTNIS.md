@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11715 Fakten** · Stand 2026-09-11 03:43 UTC · aktualisiert bei jedem Herzschlag
+**11715 Fakten** · Stand 2026-09-11 03:53 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7545
 - **swarm_artifact:** 1777
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911035050:5:19f23a`
+*11.09. 03:50 UTC · Quelle: dream*
+
+Path resolution failures in hand_action calls (exit code 1, zero bytes read) point to unresolved environment or configuration issues blocking task execution.
+
+### `dream:20260911035050:4:f45917`
+*11.09. 03:50 UTC · Quelle: dream*
+
+Stale swarm results combined with low utilization of proposed skills indicate a decay in knowledge freshness and implementation fidelity over time.
+
+### `dream:20260911035050:3:f79517`
+*11.09. 03:50 UTC · Quelle: dream*
+
+Model performance varies drastically under load, with latency increasing from 17.8s to 58.0s and frequent failures, suggesting dynamic resource allocation issues.
+
+### `dream:20260911035050:2:911ee4`
+*11.09. 03:50 UTC · Quelle: dream*
+
+The gap between proposed skills and their execution reveals a structural failure in translating abstract proposals into concrete, actionable tool calls.
+
+### `dream:20260911035050:1:f35867`
+*11.09. 03:50 UTC · Quelle: dream*
+
+Repeated 429/502 errors on primary models indicate systemic rate-limiting and upstream overload that cannot be resolved by simple retry logic alone.
 
 ### `dream:20260911034038:5:daba8d`
 *11.09. 03:40 UTC · Quelle: dream*
@@ -43942,31 +43967,6 @@ Simulation artifact fails at runtime with fallback demo data and traceback, indi
 *28.08. 03:52 UTC · Quelle: dream*
 
 OpenRouter gateway rate-limits (429) cascade across all free models simultaneously, requiring request-level queuing rather than model-level fallback.
-
-### `dream:20260828034700:5:7aef05`
-*28.08. 03:47 UTC · Quelle: dream*
-
-Simulation-based revision (verdict: revise, 5 risks identified, 4 revisions generated, 2 applied) effectively catches errors before deployment; make simulation a mandatory gate for all skill deployments.
-
-### `dream:20260828034700:4:27f21b`
-*28.08. 03:47 UTC · Quelle: dream*
-
-The system enters conserve mode at stress 1.0, throttling capability to 3 tasks; workload must be shed or deferred proactively before stress hits critical thresholds.
-
-### `dream:20260828034700:3:f215dd`
-*28.08. 03:47 UTC · Quelle: dream*
-
-File system operations fail due to unresolved relative paths and missing environment variable expansion; all paths must be canonicalized against ZOETRON_DATA at task start before any hand action executes.
-
-### `dream:20260828034700:2:c9cc3d`
-*28.08. 03:47 UTC · Quelle: dream*
-
-Proposed skills remain unused because the deployment pipeline lacks automated validation, testing, and integration steps; a skill lifecycle manager is needed to bridge proposal to production.
-
-### `dream:20260828034700:1:aa9b92`
-*28.08. 03:47 UTC · Quelle: dream*
-
-Free-tier model APIs exhibit cascading rate-limit failures (429 errors across 5 models) under load, requiring a model registry with real-time health tracking and automatic fallback to local or paid models.
 
 ### `last_swarm_critique`
 *28.08. 03:26 UTC · Quelle: critic*
