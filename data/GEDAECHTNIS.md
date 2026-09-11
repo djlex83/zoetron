@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11639 Fakten** · Stand 2026-09-11 09:35 UTC · aktualisiert bei jedem Herzschlag
+**11651 Fakten** · Stand 2026-09-11 10:03 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7519
-- **swarm_artifact:** 1741
-- **last_swarm_critique:** 882
-- **last_swarm_goal:** 617
-- **anti_pattern:** 395
-- **strategy:** 200
-- **tool:** 159
+- **swarm_artifact:** 1747
+- **last_swarm_critique:** 883
+- **last_swarm_goal:** 618
+- **anti_pattern:** 397
+- **strategy:** 201
+- **tool:** 160
 - **hand_result:** 87
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-umsetzen`
+*11.09. 10:01 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten umsetzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*11.09. 10:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Template-basierte Kritikstruktur - Verwende vordefinierte Templates für jede Art von Kritik (z.B. 'Mangel an Details in Abschnitt X', 'Logischer Fehler in Argumentation Y'). Der Critic muss nur das passende Template auswählen
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*11.09. 10:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Zweistufige Feedback-Schleife - Trenne die Generierung von Vorschlägen und die Bewertung strikt in zwei Phasen. In Phase 1 erstellt das System alle Vorschläge ohne Kritik. In Phase 2 liest ein dedizierter Parser die Rohdaten 
+
+### `last_swarm_critique`
+*11.09. 09:59 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*11.09. 09:45 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten umsetzen
+
+### `dream:20260911094431:5:6426dc`
+*11.09. 09:44 UTC · Quelle: dream*
+
+The ability to execute external scripts for testing proposals exists but is not integrated into the main learning loop.
+
+### `dream:20260911094431:4:158718`
+*11.09. 09:44 UTC · Quelle: dream*
+
+Memory pruning removes events, which may cause loss of important failure data needed for future learning.
+
+### `dream:20260911094431:3:8740b7`
+*11.09. 09:44 UTC · Quelle: dream*
+
+The system generates skill proposals but does not automatically implement them, creating a gap between problem identification and resolution.
+
+### `dream:20260911094431:2:ce8e3a`
+*11.09. 09:44 UTC · Quelle: dream*
+
+Timeout errors on certain models suggest that per-request timeout handling and automatic fallback are necessary to avoid stalled operations.
+
+### `dream:20260911094431:1:093355`
+*11.09. 09:44 UTC · Quelle: dream*
+
+Repeated HTTP 429 errors across multiple models indicate that the system's request rate exceeds the API rate limits, requiring a global rate limiter.
 
 ### `dream:20260911093200:5:178401`
 *11.09. 09:32 UTC · Quelle: dream*
@@ -43674,31 +43724,6 @@ The nemotron model was automatically blocked after 3 consecutive failures, showi
 *28.08. 09:44 UTC · Quelle: dream*
 
 Rate limiting (429 errors) and upstream overload (502 errors) are the dominant failure modes across multiple models, indicating systemic API throttling rather than model-specific issues.
-
-### `dream:20260828093754:5:4e90d3`
-*28.08. 09:37 UTC · Quelle: dream*
-
-Simulation-driven revision cycles (3 revisions applied) successfully produced a running 211-line artifact, validating the self-improvement loop.
-
-### `dream:20260828093754:4:19b9a8`
-*28.08. 09:37 UTC · Quelle: dream*
-
-InclusionAI Ling-3.0-Flash-Fin delivers consistent low latency (~9s) and should be preferred for fast-path requests.
-
-### `dream:20260828093754:3:be3c2b`
-*28.08. 09:37 UTC · Quelle: dream*
-
-NVIDIA Nemotron-3-Ultra succeeds but exhibits extreme latency variance (75-190s), unsuitable for time-sensitive tasks.
-
-### `dream:20260828093754:2:3bdbe1`
-*28.08. 09:37 UTC · Quelle: dream*
-
-Google Gemma and Z.ai GLM model families consistently return 429 errors and should be deprioritized in routing.
-
-### `dream:20260828093754:1:29eb73`
-*28.08. 09:37 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer severe rate limiting (429 errors) making them unreliable for production workloads.
 
 ### `last_swarm_critique`
 *28.08. 09:24 UTC · Quelle: critic*

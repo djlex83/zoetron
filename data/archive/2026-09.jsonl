@@ -37885,3 +37885,27 @@
 {"ts": 1788514035.405455, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.72, "gelesen": 1376}}
 {"ts": 1788514035.408511, "kind": "reflex_used", "payload": {"goal": "Simulationen öfter einsetzen", "tool": "simulationen-gezielt-einsetzen.py", "ok": true}}
 {"ts": 1788514035.9136367, "kind": "act_done", "payload": {"goal_title": "Simulationen öfter einsetzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787909874.9768782, "key": "dream:20260828093754:1:29eb73", "value": "Free-tier models on OpenRouter suffer severe rate limiting (429 errors) making them unreliable for production workloads.", "source": "dream"}
+{"ts": 1787909874.9769611, "key": "dream:20260828093754:2:3bdbe1", "value": "Google Gemma and Z.ai GLM model families consistently return 429 errors and should be deprioritized in routing.", "source": "dream"}
+{"ts": 1787909874.977029, "key": "dream:20260828093754:3:be3c2b", "value": "NVIDIA Nemotron-3-Ultra succeeds but exhibits extreme latency variance (75-190s), unsuitable for time-sensitive tasks.", "source": "dream"}
+{"ts": 1787909874.9770935, "key": "dream:20260828093754:4:19b9a8", "value": "InclusionAI Ling-3.0-Flash-Fin delivers consistent low latency (~9s) and should be preferred for fast-path requests.", "source": "dream"}
+{"ts": 1787909874.9771655, "key": "dream:20260828093754:5:4e90d3", "value": "Simulation-driven revision cycles (3 revisions applied) successfully produced a running 211-line artifact, validating the self-improvement loop.", "source": "dream"}
+{"ts": 1788514499.821594, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788514568.9186332, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788514570.7516224, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 9}}
+{"ts": 1788514574.8936481, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788514574.893646, "schalter_geoeffnet": false}}
+{"ts": 1788514616.7414644, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 41.8, "tokens_ein": 1324, "tokens_aus": 908}}
+{"ts": 1788514616.7419746, "kind": "skill_proposal", "payload": {"proposal": "Implement a model-router with automatic fallback, rate-limit detection, exponential backoff, and per-model latency SLAs."}}
+{"ts": 1788514616.7420285, "kind": "skill_proposal", "payload": {"proposal": "Enforce mandatory score capture on all act_done events by blocking convergence when score is null or below threshold (e.g., 0.7)."}}
+{"ts": 1788514616.742077, "kind": "skill_proposal", "payload": {"proposal": "Deploy a proposal-execution tracker that logs every skill_proposal and escalates unimplemented proposals after 3 dream cycles into concrete action items with owners and deadlines."}}
+{"ts": 1788514616.742127, "kind": "skill_proposal", "payload": {"proposal": "Add a background-batch queue for high-latency or unreliable models to prevent them from blocking the main execution loop, with results fed back asynchronously."}}
+{"ts": 1788514616.7421756, "kind": "skill_proposal", "payload": {"proposal": "Build a skill-proposal validator that checks prerequisites (tests, docs, dependencies) before allowing swarm launch and records a verifiable checklist."}}
+{"ts": 1788514616.7422245, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788514619.452406, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788514619.452404, "schalter_geoeffnet": false}}
+{"ts": 1788514664.8418744, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 45.4, "tokens_ein": 512, "tokens_aus": 737}}
+{"ts": 1788514664.842032, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren und Zuverlässigkeit steigern", "why": "Das Modell scheitert oft. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788514664.8421056, "kind": "drive_goal", "payload": {"title": "Marktanalyse in konkrete Schritte umsetzen", "why": "Die Marktanalyse liegt seit langem ungenutzt. Wir brauchen echte Aktionen daraus.", "signal": "stale"}}
+{"ts": 1788514664.8421662, "kind": "drive_goal", "payload": {"title": "Kritik und Ziele regelmäßig erneuern", "why": "Letzte Kritik und Ziele sind veraltet. Frische Impulse halten das System wach.", "signal": "stale"}}
+{"ts": 1788514678.456402, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 11.19, "gelesen": 1883}}
+{"ts": 1788514678.4582906, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich bauen und testen", "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py", "ok": true}}
+{"ts": 1788514678.8686297, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten wirklich bauen und testen", "score": null, "converged": true, "mode": "reflex"}}

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 09:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 10:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The ability to execute external scripts for testing proposals exists but is not integrated into the main learning loop.
+- Memory pruning removes events, which may cause loss of important failure data needed for future learning.
+- The system generates skill proposals but does not automatically implement them, creating a gap between problem identification and resolution.
+- Timeout errors on certain models suggest that per-request timeout handling and automatic fallback are necessary to avoid stalled operations.
+- Repeated HTTP 429 errors across multiple models indicate that the system's request rate exceeds the API rate limits, requiring a global rate limiter.
 - Failure patterns are recurring and predictable, enabling automated categorization and adaptive budget reallocation during recovery.
 - Exponential backoff alone is insufficient; proactive health checks and input validation are needed to prevent cascading failures.
 - Stale swarm data and disconnected memories are driving poor decision-making, compounding the impact of model failures.
@@ -51,11 +56,6 @@
 - The evolutionary run raised scores from 1/10 to 8‑9/10 but still did not converge, suggesting that more iterations or a tighter evaluation loop are re
 - Successful calls came from models with low latency (e.g., inclusionai/ling‑3.0‑flash‑fin:free at 4.2 s), indicating that model choice heavily influenc
 - Repeated 429 errors show that the current model endpoints are rate‑limited and need backoff or fallback.
-- Calibration predicted two errors but only one occurred, showing model self-assessment is unreliable.
-- Prose-only artifacts failed to produce executable code, causing the simulation to not converge.
-- Successful calls exhibited latencies up to 7.8 seconds, indicating variable network or model processing delays.
-- Only inclusionai/ling-3.0-flash-fin:free succeeded consistently, suggesting it is least rate-limited.
-- Repeated 429 errors across multiple free models indicate a shared rate limit on the OpenRouter free tier.
 
 ---
 
