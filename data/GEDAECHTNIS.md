@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11651 Fakten** · Stand 2026-09-11 10:03 UTC · aktualisiert bei jedem Herzschlag
+**11617 Fakten** · Stand 2026-09-11 10:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7519
-- **swarm_artifact:** 1747
+- **dream:** 7494
+- **swarm_artifact:** 1741
 - **last_swarm_critique:** 883
 - **last_swarm_goal:** 618
-- **anti_pattern:** 397
-- **strategy:** 201
+- **anti_pattern:** 395
+- **strategy:** 200
 - **tool:** 160
 - **hand_result:** 87
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911104343:5:227644`
+*11.09. 10:43 UTC · Quelle: dream*
+
+The system's drive to analyze model errors and renew stale goals indicates an adaptive learning mechanism that should be reinforced.
+
+### `dream:20260911104343:4:ba725f`
+*11.09. 10:43 UTC · Quelle: dream*
+
+Repeated failures across multiple models in the same time window suggest systemic issues rather than isolated model problems.
+
+### `dream:20260911104343:3:b1cb16`
+*11.09. 10:43 UTC · Quelle: dream*
+
+The system's self-diagnosis consistently reports no organ failures, but model-level failures persist, highlighting a gap between system health and component reliability.
+
+### `dream:20260911104343:2:fbea50`
+*11.09. 10:43 UTC · Quelle: dream*
+
+Successful model calls show significantly lower token input compared to failed ones, suggesting that large inputs may contribute to timeouts.
+
+### `dream:20260911104343:1:5ac2f9`
+*11.09. 10:43 UTC · Quelle: dream*
+
+Model failures are predominantly caused by rate limiting (429 errors) and timeouts, indicating a need for better load distribution and retry mechanisms.
 
 ### `tool:vorgeschlagene-fähigkeiten-umsetzen`
 *11.09. 10:01 UTC · Quelle: hands*
@@ -43555,16 +43580,6 @@ Missing organ dependencies (e.g., hands) silently cap performance at 6/10 withou
 
 Sequential model calls to free-tier endpoints trigger cascading 429 rate-limit failures, causing pipeline stalls and wasted compute.
 
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler stark reduz:2`
-*28.08. 10:26 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Provider-Level Failover and Redundancy Router - Route model requests through a dynamic provider mesh (e.g., multiple LLMs or versions) with built-in validation checkpoints. If the primary model fails quality checks, automatic
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler stark reduz:1`
-*28.08. 10:26 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Adaptive Prompt Rewriting Engine - Deploy a meta-prompt engine that modifies the input prompt structure and constraints in real-time upon detecting hallucination or invalid output patterns. Use lightweight LLM or regex-based 
-
 ### `last_swarm_critique`
 *28.08. 10:25 UTC · Quelle: critic*
 
@@ -43574,156 +43589,6 @@ score=4; issues=Die drei Artefakte sind Analyse- und Diagnose-Tools, keine Fehle
 *28.08. 10:16 UTC · Quelle: system*
 
 Modellfehler stark reduzieren
-
-### `dream:20260828101536:5:46f25b`
-*28.08. 10:15 UTC · Quelle: dream*
-
-Zero pruning occurred despite repeated failures, suggesting memory retention policies don't yet weight operational relevance.
-
-### `dream:20260828101536:4:cdb691`
-*28.08. 10:15 UTC · Quelle: dream*
-
-The system already converts failure patterns into concrete skill proposals (retry logic, health scoring, cooldown registry), demonstrating a working failure-to-learning loop.
-
-### `dream:20260828101536:3:9cb7b3`
-*28.08. 10:15 UTC · Quelle: dream*
-
-Latency variance (3.5s vs 11.1s) on the same model indicates queue-depth or cold-start effects that static timeouts cannot handle.
-
-### `dream:20260828101536:2:bb8d00`
-*28.08. 10:15 UTC · Quelle: dream*
-
-Dynamic model health varies drastically — poolside/laguna-s-2.1 succeeded while four other models failed simultaneously — requiring real-time routing decisions.
-
-### `dream:20260828101536:1:404701`
-*28.08. 10:15 UTC · Quelle: dream*
-
-Rate limiting (429) and upstream overload (502) are the dominant failure modes, making single-model reliance fundamentally fragile.
-
-### `dream:20260828100934:5:74e279`
-*28.08. 10:09 UTC · Quelle: dream*
-
-Model latency variance is extreme (3.5s vs 91.7s for same model family), making static timeouts unreliable for routing decisions.
-
-### `dream:20260828100934:4:025b5d`
-*28.08. 10:09 UTC · Quelle: dream*
-
-Memory pruning removes zero facts/events despite continuous operation, implying retention thresholds are miscalibrated for the event volume.
-
-### `dream:20260828100934:3:4183d7`
-*28.08. 10:09 UTC · Quelle: dream*
-
-Self-generated skill proposals from prior failures (backoff, health scoreboard, fallback chain) remain unimplemented, creating a proposal-execution gap.
-
-### `dream:20260828100934:2:751e69`
-*28.08. 10:09 UTC · Quelle: dream*
-
-Swarm evolution produces revisions but fails to converge (score 6, converged=false), suggesting the critic/planner feedback loop lacks a hard acceptance threshold.
-
-### `dream:20260828100934:1:1e1638`
-*28.08. 10:09 UTC · Quelle: dream*
-
-Rate limiting (429) cascades across multiple model families simultaneously, indicating shared upstream quotas rather than per-model limits.
-
-### `dream:20260828100206:5:1cf480`
-*28.08. 10:02 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free completes in 7.4s with low token counts, proving fast lightweight models can handle simple fallback tasks when heavy models are rate-limited.
-
-### `dream:20260828100206:4:62b261`
-*28.08. 10:02 UTC · Quelle: dream*
-
-Anti-patterns recur on the same goal ('Träume in Taten umsetzen') when retries lack structural intervention, as shown by the recalled 6/10 failure repeating across attempts.
-
-### `dream:20260828100206:3:c6f52e`
-*28.08. 10:02 UTC · Quelle: dream*
-
-The evolution runner caps at 6/10 due to a missing 'hands organ dependency' — a structural gap that prevents score improvement regardless of variant mutations.
-
-### `dream:20260828100206:2:6e5fee`
-*28.08. 10:02 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free is the only model that completes reliably but suffers variable latency (37–281s) and occasional 502 upstream overloads.
-
-### `dream:20260828100206:1:0d01e5`
-*28.08. 10:02 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter (glm-5.2, gemma variants, poolside) consistently fail with 429 rate limits under load, making them unreliable for any sequential workflow.
-
-### `dream:20260828095810:5:4d58ed`
-*28.08. 09:58 UTC · Quelle: dream*
-
-Sequential model trial wastes 100+ seconds; parallel health probes would cut fallback latency by an order of magnitude.
-
-### `dream:20260828095810:4:854fc4`
-*28.08. 09:58 UTC · Quelle: dream*
-
-Under maximum stress (1.0) the system correctly enters conserve mode with strict task/iteration budgets, preventing overload.
-
-### `dream:20260828095810:3:8b02ce`
-*28.08. 09:58 UTC · Quelle: dream*
-
-Simulation-revision loops (5 risks → 5 revisions applied) effectively de-risk execution before hand-off to hand_action.
-
-### `dream:20260828095810:2:c2d325`
-*28.08. 09:58 UTC · Quelle: dream*
-
-Nemotron-3-ultra exhibits extreme latency variance (11–280s) on the same endpoint, rendering it unreliable for time-bounded tasks.
-
-### `dream:20260828095810:1:0ef891`
-*28.08. 09:58 UTC · Quelle: dream*
-
-Free-tier API rate limits cause cascading 429 failures across multiple models simultaneously, making sequential fallback strategies brittle.
-
-### `dream:20260828095020:5:060b3a`
-*28.08. 09:50 UTC · Quelle: dream*
-
-Resource constraints (conserve mode, max 3 tasks, max 1 iteration) limit the system's ability to self-correct, making efficient model selection critical.
-
-### `dream:20260828095020:4:824080`
-*28.08. 09:50 UTC · Quelle: dream*
-
-Swarm convergence failed at score 6 over 2 cycles, indicating that the current evolution strategy needs more iterations or a different selection pressure to reach acceptable quality.
-
-### `dream:20260828095020:3:1089d7`
-*28.08. 09:50 UTC · Quelle: dream*
-
-Fallback model availability (nemotron-3-ultra, laguna-s-2.1) is the primary resilience mechanism when primary models fail, but it is currently unstructured.
-
-### `dream:20260828095020:2:902236`
-*28.08. 09:50 UTC · Quelle: dream*
-
-A persistent proposal-to-application gap exists: skills are generated but rarely wired into active workflows, leaving the system in a loop of suggesting without executing.
-
-### `dream:20260828095020:1:7e92cb`
-*28.08. 09:50 UTC · Quelle: dream*
-
-429 rate-limit errors are systematic and recurring across multiple free models, requiring architectural handling rather than ad-hoc retries.
-
-### `dream:20260828094401:5:a0316a`
-*28.08. 09:44 UTC · Quelle: dream*
-
-Calibration tasks with high absolute error (e.g., predicted 4 vs actual 6) indicate systematic underprediction, pointing to a need for better error modeling in planning.
-
-### `dream:20260828094401:4:7c0e89`
-*28.08. 09:44 UTC · Quelle: dream*
-
-Evolution runs show significant score improvements (from 6 to 9) when variant selection is guided by critic feedback, highlighting the value of iterative refinement.
-
-### `dream:20260828094401:3:fce9c0`
-*28.08. 09:44 UTC · Quelle: dream*
-
-The poolside/laguna-s-2.1 model consistently succeeded with low latency and high token efficiency, suggesting it is more reliable under current load conditions.
-
-### `dream:20260828094401:2:405436`
-*28.08. 09:44 UTC · Quelle: dream*
-
-The nemotron model was automatically blocked after 3 consecutive failures, showing that repeated upstream errors trigger protective circuit-breaking mechanisms.
-
-### `dream:20260828094401:1:174f90`
-*28.08. 09:44 UTC · Quelle: dream*
-
-Rate limiting (429 errors) and upstream overload (502 errors) are the dominant failure modes across multiple models, indicating systemic API throttling rather than model-specific issues.
 
 ### `last_swarm_critique`
 *28.08. 09:24 UTC · Quelle: critic*

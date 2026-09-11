@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 10:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 10:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system's drive to analyze model errors and renew stale goals indicates an adaptive learning mechanism that should be reinforced.
+- Repeated failures across multiple models in the same time window suggest systemic issues rather than isolated model problems.
+- The system's self-diagnosis consistently reports no organ failures, but model-level failures persist, highlighting a gap between system health and com
+- Successful model calls show significantly lower token input compared to failed ones, suggesting that large inputs may contribute to timeouts.
+- Model failures are predominantly caused by rate limiting (429 errors) and timeouts, indicating a need for better load distribution and retry mechanism
 - The ability to execute external scripts for testing proposals exists but is not integrated into the main learning loop.
 - Memory pruning removes events, which may cause loss of important failure data needed for future learning.
 - The system generates skill proposals but does not automatically implement them, creating a gap between problem identification and resolution.
@@ -51,11 +56,6 @@
 - Stale swarm data and disconnected memories are driving poor decision-making, compounding the impact of model failures.
 - The model 'dots-studio/dots-3-note-preview:free' consistently succeeds while others fail, suggesting it should be prioritized in fallback chains.
 - Repeated 429 errors across multiple models indicate a systemic rate-limiting issue rather than isolated model failures.
-- The swarm finished with a score of 1 despite evolving, implying that the final integration step lacks a validation gate.
-- Simulation flagged 5 risks and required 5 revisions, revealing that the planning phase underestimates implementation pitfalls.
-- The evolutionary run raised scores from 1/10 to 8‑9/10 but still did not converge, suggesting that more iterations or a tighter evaluation loop are re
-- Successful calls came from models with low latency (e.g., inclusionai/ling‑3.0‑flash‑fin:free at 4.2 s), indicating that model choice heavily influenc
-- Repeated 429 errors show that the current model endpoints are rate‑limited and need backoff or fallback.
 
 ---
 

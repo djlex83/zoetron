@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 10:01:47",
+ "stand": "2026-09-11 10:44:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -159,15 +159,15 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
   },
   {
-   "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
-   "laeufe": 1,
-   "erfolge": 1,
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -301,12 +301,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeits-vorschläge-verbessern.py",
