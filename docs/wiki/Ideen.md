@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning old facts and events improves system efficiency and reduces noise.
+- High latency on some models suggests a health-aware router can improve response times.
+- Reflex actions successfully update swarm information, enabling convergence when explicit planning fails.
+- Swarm goals can become stale, leading to convergence failures; periodic audits are required.
+- Model endpoints frequently return 429 or 502 errors under load, indicating a need for rate limiting and backoff.
 - Calibration overestimates success by 2 points (predicted 2, actual 0), revealing systematic optimism bias.
 - poolside/laguna-s-2.1:free delivers low latency (7s) when not rate-limited, making it the only viable free option.
 - dots-studio/dots-3-note-preview:free succeeds but with 50-60s latency, unsuitable for interactive loops.
@@ -51,11 +56,6 @@
 - The hand_action failure with exit 1 and null error indicates that action scripts lack proper exception propagation and logging, hindering diagnosis.
 - The model blocking rule (3 consecutive errors → 1800s block) is too rigid for transient errors; differentiating between 429 and 502 would allow faster
 - Free model APIs are prone to rate limiting (429) and server overload (502); a robust fallback chain with jittered backoff is essential to avoid API sa
-- Skill proposals remain unvalidated because there is no closed-loop system that tests proposed skills against real failure scenarios and measures impro
-- Conserve-mode constraints (max_tasks=3, max_iterations=1) cause premature termination of multi-step goals like 'Traum-Erinnerungen verbinden' before c
-- Simulations are generated but rarely applied because the system lacks a fast-path mechanism to translate successful simulation patterns into immediate
-- Model failures (502 upstream overload, 429 rate limits) cascade into failed hand_actions and broken reflex chains when no fallback routing exists.
-- Stale swarm goals and unused criticism accumulate because there is no automated pipeline that converts collective feedback into updated drive goals.
 
 ---
 

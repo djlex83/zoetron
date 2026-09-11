@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11601 Fakten** · Stand 2026-09-11 13:47 UTC · aktualisiert bei jedem Herzschlag
+**11601 Fakten** · Stand 2026-09-11 13:59 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7494
 - **swarm_artifact:** 1729
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911135609:5:6023d5`
+*11.09. 13:56 UTC · Quelle: dream*
+
+Pruning old facts and events improves system efficiency and reduces noise.
+
+### `dream:20260911135609:4:666486`
+*11.09. 13:56 UTC · Quelle: dream*
+
+High latency on some models suggests a health-aware router can improve response times.
+
+### `dream:20260911135609:3:f7dbf6`
+*11.09. 13:56 UTC · Quelle: dream*
+
+Reflex actions successfully update swarm information, enabling convergence when explicit planning fails.
+
+### `dream:20260911135609:2:77775a`
+*11.09. 13:56 UTC · Quelle: dream*
+
+Swarm goals can become stale, leading to convergence failures; periodic audits are required.
+
+### `dream:20260911135609:1:3d61c9`
+*11.09. 13:56 UTC · Quelle: dream*
+
+Model endpoints frequently return 429 or 502 errors under load, indicating a need for rate limiting and backoff.
 
 ### `dream:20260911134436:5:940f11`
 *11.09. 13:44 UTC · Quelle: dream*
@@ -43512,31 +43537,6 @@ Upstream 502 overloads from Nvidia endpoints show that even successful models ar
 *28.08. 13:59 UTC · Quelle: dream*
 
 Rate-limit errors (429) are the dominant failure mode across all free-tier models, indicating systemic API throttling rather than model-specific issues.
-
-### `dream:20260828135316:5:ccd811`
-*28.08. 13:53 UTC · Quelle: dream*
-
-Calibration and simulation phases both returned 'go' verdicts, indicating consistent readiness assessment across planning and execution layers.
-
-### `dream:20260828135316:4:ae6114`
-*28.08. 13:53 UTC · Quelle: dream*
-
-Hand action execution was successful with minimal duration, confirming reliable low-level control integration within the swarm loop.
-
-### `dream:20260828135316:3:829915`
-*28.08. 13:53 UTC · Quelle: dream*
-
-Latency and token usage vary significantly across models, suggesting dynamic model selection based on input complexity and urgency could optimize performance.
-
-### `dream:20260828135316:2:37ac34`
-*28.08. 13:53 UTC · Quelle: dream*
-
-The swarm goal was successfully converged with a score of 8+, validating the integration of learning mechanisms and tooling under stress conditions.
-
-### `dream:20260828135316:1:81b1a6`
-*28.08. 13:53 UTC · Quelle: dream*
-
-Model failures cluster around rate limits (429) and upstream overload (502), indicating a need for robust fallback chains and retry logic with exponential backoff.
 
 ### `last_swarm_critique`
 *28.08. 13:32 UTC · Quelle: critic*
