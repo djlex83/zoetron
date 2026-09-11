@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 07:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 08:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 3×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The recurring pattern of model unavailability validates the design of a DegradedMode orchestrator that reduces planner complexity and token budgets wh
+- A unified error taxonomy (UPSTREAM_502, RATE_LIMIT_429, TIMEOUT, MALFORMED) enables consistent, reusable recovery procedures across all model calls.
+- Concurrent failures across multiple providers reveal the fragility of static routing and the need for dynamic health-based failover.
+- Timeouts on specific models (e.g., nemotron) indicate the necessity of strict latency thresholds and automatic circuit-breaking.
+- Rate limiting (429) on free-tier models is a systemic bottleneck requiring per-provider request throttling and exponential backoff.
 - Model availability is highly non-uniform, requiring a fallback strategy to maintain operational continuity.
 - Model outputs that provide only prose instead of executable code blocks cause terminal task failure.
 - High system stress (1.0) correlates with increased API failure rates and the necessity of 'conserve' mode.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without execution because they lack acceptance criteria and pipeline integration — every proposal must be executable or it 
 - Unchecked model latency growth (44s→92s) without automatic fallback is a systemic failure mode — routing decisions must include latency circuit-breake
 - System lacks graceful degradation because no orchestrator activates fallback constraints when multiple models fail.
-- Error handling is ad-hoc because no unified taxonomy routes each error class to its specific recovery action.
-- Stale swarm knowledge persists because no scheduled refresh mechanism forces re-evaluation of archived votes.
-- Skill proposals accumulate without implementation because no automated pipeline bridges proposal to deployed code.
-- Model failures recur because no pre-flight health probe validates model availability before task assignment.
-- Latency variance (4s vs 38s) on the same model indicates unreliable infrastructure that requires degraded-mode fallbacks.
 
 ---
 

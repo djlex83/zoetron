@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11666 Fakten** · Stand 2026-09-11 07:22 UTC · aktualisiert bei jedem Herzschlag
+**11636 Fakten** · Stand 2026-09-11 08:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7524
-- **swarm_artifact:** 1757
+- **dream:** 7504
+- **swarm_artifact:** 1751
 - **last_swarm_critique:** 881
 - **last_swarm_goal:** 616
-- **anti_pattern:** 399
-- **strategy:** 202
-- **tool:** 161
+- **anti_pattern:** 397
+- **strategy:** 201
+- **tool:** 160
 - **hand_result:** 87
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911080343:5:5519f6`
+*11.09. 08:03 UTC · Quelle: dream*
+
+The recurring pattern of model unavailability validates the design of a DegradedMode orchestrator that reduces planner complexity and token budgets when >2 models are unhealthy.
+
+### `dream:20260911080343:4:96946c`
+*11.09. 08:03 UTC · Quelle: dream*
+
+A unified error taxonomy (UPSTREAM_502, RATE_LIMIT_429, TIMEOUT, MALFORMED) enables consistent, reusable recovery procedures across all model calls.
+
+### `dream:20260911080343:3:f5532e`
+*11.09. 08:03 UTC · Quelle: dream*
+
+Concurrent failures across multiple providers reveal the fragility of static routing and the need for dynamic health-based failover.
+
+### `dream:20260911080343:2:48e74d`
+*11.09. 08:03 UTC · Quelle: dream*
+
+Timeouts on specific models (e.g., nemotron) indicate the necessity of strict latency thresholds and automatic circuit-breaking.
+
+### `dream:20260911080343:1:c894d2`
+*11.09. 08:03 UTC · Quelle: dream*
+
+Rate limiting (429) on free-tier models is a systemic bottleneck requiring per-provider request throttling and exponential backoff.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler halbieren
 :2`
@@ -43625,21 +43650,6 @@ The gap between generated skill proposals and their actual implementation is its
 
 Cascading 429 and 502 errors across four different models simultaneously reveals the absence of any model-level fallback or health-tracking mechanism, making the system entirely dependent on whatever single endpoint happens to be alive.
 
-### `tool:simulationen-in-echtes-handeln-übersetze`
-*28.08. 07:54 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen in echtes Handeln übersetzen'. Datei: data/tools/simulationen-in-echtes-handeln-übersetze.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen in echtes H:1`
-*28.08. 07:53 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Behavioral Cloning via Execution Feedback Loop - Einführen eines Lernalgorithmus, der aus echten Ausführungsversuchen lernt: Der Bot versucht eine Aktion basierend auf einer Simulationsvorlage, die Ausführung wird über Sensor
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen in echtes H:0`
-*28.08. 07:53 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Hardware-First Embodiment Pipeline - Statt Code-Strukturen zu generieren und zu validieren, entwickle eine direkte Übersetzung von Simulationsebenen in physische Aktionsabläufe. Definiere eine feste Middleware-Schnittstelle (
-
 ### `last_swarm_critique`
 *28.08. 07:53 UTC · Quelle: critic*
 
@@ -43649,131 +43659,6 @@ score=5; issues=Die im Bridge-Modul generierte Code-Struktur (_generate_code) wi
 *28.08. 07:50 UTC · Quelle: system*
 
 Simulationen in echtes Handeln übersetzen
-
-### `dream:20260828075000:5:76b794`
-*28.08. 07:50 UTC · Quelle: dream*
-
-The simulation initially flagged 5 risks requiring revision, but the final artifact (187 lines Python) passed validation, suggesting early risk assessments overstate actual blockers.
-
-### `dream:20260828075000:4:18bed3`
-*28.08. 07:50 UTC · Quelle: dream*
-
-The task converged to score 9 in a single cycle despite >70% model call failure rate, proving that redundant model fallback strategies can absorb rate-limiting noise.
-
-### `dream:20260828075000:3:f501c5`
-*28.08. 07:50 UTC · Quelle: dream*
-
-Calibration predicted 3 revisions but actual was 9, a 3x underestimation indicating that initial effort estimates must account for retry overhead and failure-induced rework.
-
-### `dream:20260828075000:2:b12e5d`
-*28.08. 07:50 UTC · Quelle: dream*
-
-Nvidia/nemotron-3-ultra-550b-a55b was the only consistently reliable model, succeeding despite latencies up to 115s and occasional 502 upstream errors, and achieving the highest score of 9.
-
-### `dream:20260828075000:1:30ca5a`
-*28.08. 07:50 UTC · Quelle: dream*
-
-Rate limiting (429 errors) was the dominant failure mode across nearly all free-tier models, not model capability or endpoint availability.
-
-### `dream:20260828074059:5:a36f9d`
-*28.08. 07:40 UTC · Quelle: dream*
-
-High-latency successful responses (e.g., 69s) suggest that speed and reliability are inversely correlated, requiring adaptive timeout strategies.
-
-### `dream:20260828074059:4:039a94`
-*28.08. 07:40 UTC · Quelle: dream*
-
-Transient file access issues and missing tools cause silent failures that could be caught with pre-flight checks.
-
-### `dream:20260828074059:3:b92f59`
-*28.08. 07:40 UTC · Quelle: dream*
-
-Proposed skills remain unused because there's no mechanism to validate or integrate them into active workflows.
-
-### `dream:20260828074059:2:8e8fbe`
-*28.08. 07:40 UTC · Quelle: dream*
-
-Model failures cascade into swarm stagnation when convergence isn't monitored against actual execution outcomes.
-
-### `dream:20260828074059:1:90514f`
-*28.08. 07:40 UTC · Quelle: dream*
-
-Repeated 429 errors from specific endpoints indicate a need for dynamic rate-limit-aware routing rather than static fallback chains.
-
-### `dream:20260828073352:5:b07d8c`
-*28.08. 07:33 UTC · Quelle: dream*
-
-Silent read failures in hand_action show that success signals do not always reflect actual data quality or completeness.
-
-### `dream:20260828073352:4:528de9`
-*28.08. 07:33 UTC · Quelle: dream*
-
-High latency variance in the fallback model (26–69s) still degrades learning throughput even when the model succeeds.
-
-### `dream:20260828073352:3:10149b`
-*28.08. 07:33 UTC · Quelle: dream*
-
-Old dreams and memories contain reusable knowledge that only surfaces when actively retrieved and cross-linked, not when passively stored.
-
-### `dream:20260828073352:2:2fd743`
-*28.08. 07:33 UTC · Quelle: dream*
-
-A persistent gap between skill proposal generation and actual implementation reveals that proposals lack execution triggers or enforcement mechanisms.
-
-### `dream:20260828073352:1:b8beb3`
-*28.08. 07:33 UTC · Quelle: dream*
-
-Recurring 429 errors from the same model endpoint indicate a systematic reliability gap that demands automatic fallback, not manual retry.
-
-### `dream:20260828073007:5:03081d`
-*28.08. 07:30 UTC · Quelle: dream*
-
-Skill proposals already address model routing, swarm convergence, and simulation loops, but none have been enacted, showing a proposal-adoption gap.
-
-### `dream:20260828073007:4:873eab`
-*28.08. 07:30 UTC · Quelle: dream*
-
-The fallback model's latency varies widely (30-96s), making timeout budgets essential for predictable performance.
-
-### `dream:20260828073007:3:55617a`
-*28.08. 07:30 UTC · Quelle: dream*
-
-Multiple drive goals request more simulation/swarm usage but no simulation or swarm actions appear in the log, indicating a planning-execution gap.
-
-### `dream:20260828073007:2:4bdce1`
-*28.08. 07:30 UTC · Quelle: dream*
-
-Reflex-driven goals converge in one step without iteration, suggesting the convergence criteria are either too loose or the tasks are trivial.
-
-### `dream:20260828073007:1:cff830`
-*28.08. 07:30 UTC · Quelle: dream*
-
-The system repeatedly fails over from z-ai/glm-5.2:free (429 rate limits) to nvidia/nemotron-3-ultra, revealing a single-point-of-failure in model routing that lacks proactive health tracking.
-
-### `dream:20260828072201:5:14108d`
-*28.08. 07:22 UTC · Quelle: dream*
-
-Reflex-based goal execution converges reliably when triggered, demonstrating that reactive mechanisms are more dependable than proactive planning.
-
-### `dream:20260828072201:4:f0fc81`
-*28.08. 07:22 UTC · Quelle: dream*
-
-Self-diagnosis detects no internal organ errors but cannot catch external API failures, revealing a monitoring blind spot.
-
-### `dream:20260828072201:3:631639`
-*28.08. 07:22 UTC · Quelle: dream*
-
-A persistent gap exists between generating skill proposals and actually implementing them, indicating a conversion bottleneck.
-
-### `dream:20260828072201:2:c919e5`
-*28.08. 07:22 UTC · Quelle: dream*
-
-Fallback to nvidia/nemotron-3-ultra-550b-a55b:free works but introduces high latency variance (34s to 66s), revealing the need for latency-aware routing.
-
-### `dream:20260828072201:1:5415dc`
-*28.08. 07:22 UTC · Quelle: dream*
-
-Free-tier model endpoints consistently hit rate limits (429), making them unreliable for critical task execution.
 
 ### `last_swarm_critique`
 *28.08. 07:07 UTC · Quelle: critic*
