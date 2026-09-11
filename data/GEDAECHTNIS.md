@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11601 Fakten** · Stand 2026-09-11 13:59 UTC · aktualisiert bei jedem Herzschlag
+**11601 Fakten** · Stand 2026-09-11 14:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7494
 - **swarm_artifact:** 1729
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911140756:5:0e1221`
+*11.09. 14:07 UTC · Quelle: dream*
+
+Regular pruning of facts and events helps keep the knowledge base relevant and manageable.
+
+### `dream:20260911140756:4:1f488f`
+*11.09. 14:07 UTC · Quelle: dream*
+
+The system's ability to switch to an alternative model after failures shows the importance of maintaining a diverse model pool.
+
+### `dream:20260911140756:3:35d6f1`
+*11.09. 14:07 UTC · Quelle: dream*
+
+Successful execution of the reflex tool demonstrates that specialized scripts can reliably update stale swarm goals.
+
+### `dream:20260911140756:2:04dc79`
+*11.09. 14:07 UTC · Quelle: dream*
+
+Consecutive timeouts on a specific model suggest it is overloaded and should be temporarily blacklisted.
+
+### `dream:20260911140756:1:abed74`
+*11.09. 14:07 UTC · Quelle: dream*
+
+Repeated 429 errors from multiple providers indicate global rate limiting, requiring adaptive backoff and fallback.
 
 ### `dream:20260911135609:5:6023d5`
 *11.09. 13:56 UTC · Quelle: dream*
@@ -43512,31 +43537,6 @@ Working models exhibit 77-106s latency, exceeding swarm iteration budgets and pr
 *28.08. 14:07 UTC · Quelle: dream*
 
 Rate limits (429) cascade across providers simultaneously, making sequential fallback ineffective without coordinated backoff.
-
-### `dream:20260828135928:5:19cb94`
-*28.08. 13:59 UTC · Quelle: dream*
-
-Latency ranges from 8s to 128s across free-tier models, making timeout thresholds unpredictable without per-model profiling.
-
-### `dream:20260828135928:4:deb76f`
-*28.08. 13:59 UTC · Quelle: dream*
-
-The evolution mechanism successfully produced a variant scoring 9/10 from a baseline of 4/10, proving iterative variant scoring is an effective convergence strategy.
-
-### `dream:20260828135928:3:b810fd`
-*28.08. 13:59 UTC · Quelle: dream*
-
-Calibration underestimated convergence iterations by 3x (predicted 1, actual 4), revealing a systematic optimism bias in iteration-count predictions.
-
-### `dream:20260828135928:2:144b0e`
-*28.08. 13:59 UTC · Quelle: dream*
-
-Upstream 502 overloads from Nvidia endpoints show that even successful models are unreliable under concurrent load on free tiers.
-
-### `dream:20260828135928:1:02dba6`
-*28.08. 13:59 UTC · Quelle: dream*
-
-Rate-limit errors (429) are the dominant failure mode across all free-tier models, indicating systemic API throttling rather than model-specific issues.
 
 ### `last_swarm_critique`
 *28.08. 13:32 UTC · Quelle: critic*

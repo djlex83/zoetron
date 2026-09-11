@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 14:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Regular pruning of facts and events helps keep the knowledge base relevant and manageable.
+- The system's ability to switch to an alternative model after failures shows the importance of maintaining a diverse model pool.
+- Successful execution of the reflex tool demonstrates that specialized scripts can reliably update stale swarm goals.
+- Consecutive timeouts on a specific model suggest it is overloaded and should be temporarily blacklisted.
+- Repeated 429 errors from multiple providers indicate global rate limiting, requiring adaptive backoff and fallback.
 - Pruning old facts and events improves system efficiency and reduces noise.
 - High latency on some models suggests a health-aware router can improve response times.
 - Reflex actions successfully update swarm information, enabling convergence when explicit planning fails.
@@ -51,11 +56,6 @@
 - dots-studio/dots-3-note-preview:free succeeds but with 50-60s latency, unsuitable for interactive loops.
 - Nvidia Nemotron endpoints return 502 upstream errors under load, indicating unstable upstream capacity.
 - Free-tier models on OpenRouter suffer pervasive 429 rate limits making them unreliable for production workflows.
-- The simulation requiring two revisions reveals that initial plan generation often misses risks; a pre-simulation validation step can reduce iteration 
-- The tor event failure due to a missing artifact underscores the necessity of a pre-execution checklist that verifies the runtime environment before st
-- The hand_action failure with exit 1 and null error indicates that action scripts lack proper exception propagation and logging, hindering diagnosis.
-- The model blocking rule (3 consecutive errors → 1800s block) is too rigid for transient errors; differentiating between 429 and 502 would allow faster
-- Free model APIs are prone to rate limiting (429) and server overload (502); a robust fallback chain with jittered backoff is essential to avoid API sa
 
 ---
 
