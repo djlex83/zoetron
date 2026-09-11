@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 23:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The pruning of facts and events without considering their relevance to current drive goals may be removing critical context, leading to repeated learn
+- The gap between skill proposals and actual skills points to a lack of a conversion mechanism, such as an automated pipeline from proposal to implement
+- The staleness of swarm knowledge suggests that the current update mechanisms are either too infrequent or not deeply integrated into the system's core
+- The persistence of model failures despite multiple proposals indicates that the root cause may be in the integration of the proposed solutions rather 
+- Recurring drive goals with identical signals reveal that the system's problem-solving loop is broken: proposals are generated but not executed, and re
 - Dream cycles often end without converting insights into actionable skills, leaving gaps.
 - Memory pruning discards many events but loses high-salience items that should be preserved.
 - Overlapping drive goals such as error reduction and skill testing create conflict and require explicit sequencing.
@@ -51,11 +56,6 @@
 - Fallback model (dots-studio) succeeds but at 27-35s latency, creating a reliability-latency tradeoff that blocks time-sensitive paths.
 - Swarm convergence stalls at score 7 with 3:1 builder-to-critic ratio, indicating insufficient adversarial pressure for quality gate.
 - Primary models (Nemotron, Gemma) fail systematically with transient 502/429 errors, making single-model reliance a critical reliability risk.
-- Pruning 17 facts and 40 events during active consolidation suggests memory pressure triggers aggressive garbage collection that may discard relevant c
-- Calibration error of +2 (predicted 5 vs actual 7) combined with stuck swarm score at 7 shows the reward model overestimates progress on 'connect dista
-- Model cascade failures (502 → 429 → 429) followed by successful dots-studio fallback proves the system lacks automatic provider failover with health-a
-- Hardcoded 100-node subgraph limit caused the evolution critic to penalize valid solutions, revealing that architectural constants must be configurable
-- Repeated simulation-revision cycles (5 revisions × 2 rounds) without convergence indicate the critic's risk threshold is miscalibrated for this task c
 
 ---
 

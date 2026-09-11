@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11534 Fakten** · Stand 2026-09-11 22:55 UTC · aktualisiert bei jedem Herzschlag
+**11532 Fakten** · Stand 2026-09-11 23:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7455
-- **swarm_artifact:** 1701
+- **dream:** 7456
+- **swarm_artifact:** 1698
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
 - **anti_pattern:** 385
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911230307:5:5ed80f`
+*11.09. 23:03 UTC · Quelle: dream*
+
+The pruning of facts and events without considering their relevance to current drive goals may be removing critical context, leading to repeated learning cycles.
+
+### `dream:20260911230307:4:a8a890`
+*11.09. 23:03 UTC · Quelle: dream*
+
+The gap between skill proposals and actual skills points to a lack of a conversion mechanism, such as an automated pipeline from proposal to implementation.
+
+### `dream:20260911230307:3:77e466`
+*11.09. 23:03 UTC · Quelle: dream*
+
+The staleness of swarm knowledge suggests that the current update mechanisms are either too infrequent or not deeply integrated into the system's core processes.
+
+### `dream:20260911230307:2:7cb916`
+*11.09. 23:03 UTC · Quelle: dream*
+
+The persistence of model failures despite multiple proposals indicates that the root cause may be in the integration of the proposed solutions rather than the solutions themselves.
+
+### `dream:20260911230307:1:f8bb92`
+*11.09. 23:03 UTC · Quelle: dream*
+
+Recurring drive goals with identical signals reveal that the system's problem-solving loop is broken: proposals are generated but not executed, and reflex actions are insufficient to close the loop.
 
 ### `dream:20260911225311:5:2028b4`
 *11.09. 22:53 UTC · Quelle: dream*
@@ -43247,26 +43272,6 @@ score=5; issues=Artifact 2 (pipeline) uses mock senses (WebSearchSense, RSSFeedS
 *28.08. 22:55 UTC · Quelle: system*
 
 Marktanalyse endlich umsetzen
-
-### `dream:20260828225534:4:f4bda5`
-*28.08. 22:55 UTC · Quelle: dream*
-
-Repeated skill proposals for circuit breakers and model health tracking highlight a systemic gap in current model failure handling.
-
-### `dream:20260828225534:3:9d7147`
-*28.08. 22:55 UTC · Quelle: dream*
-
-High latency on fallback models (e.g., 7-9 seconds for nvidia/nemotron) indicates a need for latency-aware routing.
-
-### `dream:20260828225534:2:f130b2`
-*28.08. 22:55 UTC · Quelle: dream*
-
-Reflexes can successfully complete stale goals like 'Marktanalyse' when standard action loops fail to converge.
-
-### `dream:20260828225534:1:693506`
-*28.08. 22:55 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model is consistently rate-limited with 429 errors and should be temporarily removed from the active routing pool.
 
 ### `last_swarm_critique`
 *28.08. 22:00 UTC · Quelle: critic*
