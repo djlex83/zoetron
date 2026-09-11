@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 03:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration and simulation subsystems function correctly (accurate prediction, green verdict), but model selection logic does not incorporate historic
+- The system repeatedly retries failing models without circuit-breaking, wasting cycles on known-degraded endpoints instead of failing fast to healthy a
+- InclusionAI Ling 3.0 Flash Sante is the only model with 100% success rate and stable low latency (<6s) across varying token loads, marking it as the c
+- Nvidia Nemotron 3 Ultra exhibits bimodal latency (10s vs 58s) and frequent 502 upstream overload errors, indicating unstable inference infrastructure 
+- Free-tier models from Google (Gemma) and Poolside consistently hit 429 rate limits, making them unreliable for production workloads without exponentia
 - Path resolution failures in hand_action calls (exit code 1, zero bytes read) point to unresolved environment or configuration issues blocking task exe
 - Stale swarm results combined with low utilization of proposed skills indicate a decay in knowledge freshness and implementation fidelity over time.
 - Model performance varies drastically under load, with latency increasing from 17.8s to 58.0s and frequent failures, suggesting dynamic resource alloca
@@ -51,11 +56,6 @@
 - Swarm knowledge becomes stale within days without a scheduled refresh mechanism that triggers new voting rounds.
 - Dream-generated skill proposals accumulate but lack an automated pipeline to validate, package, and register them as callable skills.
 - Model reliability degrades silently without pre-flight health probes and automated failover to known-good fallbacks.
-- Reflex-based skill execution is reliable and should be generalized into a reusable factory pattern for rapid skill deployment.
-- Initial effort estimates in swarm planning are consistently underestimated, requiring a calibration multiplier for realistic scheduling.
-- Swarm convergence is unreliable without explicit gating criteria such as minimum critic cycles or dissent thresholds.
-- Path resolution errors in hand actions can be prevented by absolutizing all relative paths against a known base directory before execution.
-- Model failures (502, 429) are frequent and often recoverable via fallback or retry, indicating a need for resilient routing rather than single-model d
 
 ---
 

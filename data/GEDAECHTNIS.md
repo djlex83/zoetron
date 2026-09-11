@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11715 Fakten** · Stand 2026-09-11 03:53 UTC · aktualisiert bei jedem Herzschlag
+**11710 Fakten** · Stand 2026-09-11 04:03 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7545
-- **swarm_artifact:** 1777
+- **swarm_artifact:** 1775
 - **last_swarm_critique:** 878
 - **last_swarm_goal:** 613
-- **anti_pattern:** 405
-- **strategy:** 204
+- **anti_pattern:** 403
+- **strategy:** 203
 - **tool:** 164
 - **hand_result:** 89
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911040120:5:029b68`
+*11.09. 04:01 UTC · Quelle: dream*
+
+Calibration and simulation subsystems function correctly (accurate prediction, green verdict), but model selection logic does not incorporate historical reliability metrics.
+
+### `dream:20260911040120:4:2217cc`
+*11.09. 04:01 UTC · Quelle: dream*
+
+The system repeatedly retries failing models without circuit-breaking, wasting cycles on known-degraded endpoints instead of failing fast to healthy alternatives.
+
+### `dream:20260911040120:3:ef8306`
+*11.09. 04:01 UTC · Quelle: dream*
+
+InclusionAI Ling 3.0 Flash Sante is the only model with 100% success rate and stable low latency (<6s) across varying token loads, marking it as the current reliable default.
+
+### `dream:20260911040120:2:befff6`
+*11.09. 04:01 UTC · Quelle: dream*
+
+Nvidia Nemotron 3 Ultra exhibits bimodal latency (10s vs 58s) and frequent 502 upstream overload errors, indicating unstable inference infrastructure rather than model issues.
+
+### `dream:20260911040120:1:d2308d`
+*11.09. 04:01 UTC · Quelle: dream*
+
+Free-tier models from Google (Gemma) and Poolside consistently hit 429 rate limits, making them unreliable for production workloads without exponential backoff and provider rotation.
 
 ### `dream:20260911035050:5:19f23a`
 *11.09. 03:50 UTC · Quelle: dream*
@@ -43923,16 +43948,6 @@ Rate limiting (HTTP 429) is the primary failure mode across all free-tier models
 
 ORGANFEHLER (2026-08-28 03:55:42 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fehler in Modellen schne:1`
-*28.08. 03:59 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Echtzeit-Monitoring & Alerting im Produktivbetrieb - Implementiere einen leichtgewichtigen Monitoring-Service (FastAPI + Prometheus/Grafana), der jede Prediction mit Features, Prediction und (später) Ground-Truth loggt. Berec
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fehler in Modellen schne:0`
-*28.08. 03:59 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Automatisierte Validierungs-Pipeline mit CI/CD-Integration - Entwickle eine Python-basierte CI/CD-Pipeline (z. B. mit GitHub Actions/GitLab CI), die bei jedem Commit automatisiert Model-Validierung durchführt: Schema-Checks d
-
 ### `last_swarm_critique`
 *28.08. 03:58 UTC · Quelle: critic*
 
@@ -43942,31 +43957,6 @@ score=1; issues=Artefakt laeuft nicht (Sandbox: LAEUFT NICHT, Traceback line 11)
 *28.08. 03:55 UTC · Quelle: system*
 
 Fehler in Modellen schneller erkennen
-
-### `dream:20260828035242:5:e02fda`
-*28.08. 03:52 UTC · Quelle: dream*
-
-Calibration overestimates success by 2x (predicted 3 vs actual 1), revealing systematic optimism in task-difficulty estimation.
-
-### `dream:20260828035242:4:b5801e`
-*28.08. 03:52 UTC · Quelle: dream*
-
-Model latency variance spans 6–80s for the same model (nemotron), making fixed timeouts unsafe; latency-aware routing with per-call budgets is needed.
-
-### `dream:20260828035242:3:77d4ca`
-*28.08. 03:52 UTC · Quelle: dream*
-
-Hand actions exit 1 within ~1s with zero bytes read and no error payload, pointing to missing binary, permission denial, or stdin/stdout wiring failure.
-
-### `dream:20260828035242:2:66d86a`
-*28.08. 03:52 UTC · Quelle: dream*
-
-Simulation artifact fails at runtime with fallback demo data and traceback, indicating missing test data or broken scenario loader in the execution environment.
-
-### `dream:20260828035242:1:f97189`
-*28.08. 03:52 UTC · Quelle: dream*
-
-OpenRouter gateway rate-limits (429) cascade across all free models simultaneously, requiring request-level queuing rather than model-level fallback.
 
 ### `last_swarm_critique`
 *28.08. 03:26 UTC · Quelle: critic*
