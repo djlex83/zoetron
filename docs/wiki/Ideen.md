@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 08:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 09:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Failure patterns are recurring and predictable, enabling automated categorization and adaptive budget reallocation during recovery.
+- Exponential backoff alone is insufficient; proactive health checks and input validation are needed to prevent cascading failures.
+- Stale swarm data and disconnected memories are driving poor decision-making, compounding the impact of model failures.
+- The model 'dots-studio/dots-3-note-preview:free' consistently succeeds while others fail, suggesting it should be prioritized in fallback chains.
+- Repeated 429 errors across multiple models indicate a systemic rate-limiting issue rather than isolated model failures.
 - The swarm finished with a score of 1 despite evolving, implying that the final integration step lacks a validation gate.
 - Simulation flagged 5 risks and required 5 revisions, revealing that the planning phase underestimates implementation pitfalls.
 - The evolutionary run raised scores from 1/10 to 8‑9/10 but still did not converge, suggesting that more iterations or a tighter evaluation loop are re
@@ -51,11 +56,6 @@
 - Successful calls exhibited latencies up to 7.8 seconds, indicating variable network or model processing delays.
 - Only inclusionai/ling-3.0-flash-fin:free succeeded consistently, suggesting it is least rate-limited.
 - Repeated 429 errors across multiple free models indicate a shared rate limit on the OpenRouter free tier.
-- The reflex intended to halve model errors did not succeed, suggesting that the underlying tool or approach is not fit for purpose.
-- A hand action failed because it could not find a file or directory at the expected path, pointing to a gap in input validation.
-- Certain free models, like inclusionai/ling-3.0-flash-fin:free, respond successfully and quickly, making them suitable for latency-sensitive tasks.
-- High system stress combined with a conservative budget (max 3 tasks, 1 iteration) limits the ability to recover from failures.
-- The system repeatedly encounters HTTP 429 errors when calling several free models, which blocks progress and requires a retry or fallback strategy.
 
 ---
 

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11649 Fakten** · Stand 2026-09-11 08:56 UTC · aktualisiert bei jedem Herzschlag
+**11639 Fakten** · Stand 2026-09-11 09:35 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7519
-- **swarm_artifact:** 1747
+- **swarm_artifact:** 1741
 - **last_swarm_critique:** 882
 - **last_swarm_goal:** 617
-- **anti_pattern:** 397
-- **strategy:** 201
-- **tool:** 160
+- **anti_pattern:** 395
+- **strategy:** 200
+- **tool:** 159
 - **hand_result:** 87
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911093200:5:178401`
+*11.09. 09:32 UTC · Quelle: dream*
+
+Failure patterns are recurring and predictable, enabling automated categorization and adaptive budget reallocation during recovery.
+
+### `dream:20260911093200:4:71c107`
+*11.09. 09:32 UTC · Quelle: dream*
+
+Exponential backoff alone is insufficient; proactive health checks and input validation are needed to prevent cascading failures.
+
+### `dream:20260911093200:3:c38161`
+*11.09. 09:32 UTC · Quelle: dream*
+
+Stale swarm data and disconnected memories are driving poor decision-making, compounding the impact of model failures.
+
+### `dream:20260911093200:2:20d024`
+*11.09. 09:32 UTC · Quelle: dream*
+
+The model 'dots-studio/dots-3-note-preview:free' consistently succeeds while others fail, suggesting it should be prioritized in fallback chains.
+
+### `dream:20260911093200:1:91cb98`
+*11.09. 09:32 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple models indicate a systemic rate-limiting issue rather than isolated model failures.
 
 ### `tool:fehler-in-modellen-finden-und-reparieren`
 *11.09. 08:54 UTC · Quelle: hands*
@@ -43675,21 +43700,6 @@ Google Gemma and Z.ai GLM model families consistently return 429 errors and shou
 
 Free-tier models on OpenRouter suffer severe rate limiting (429 errors) making them unreliable for production workloads.
 
-### `tool:träume-in-taten-umsetzen`
-*28.08. 09:26 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Träume in Taten umsetzen'. Datei: data/tools/träume-in-taten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Träume in Taten umsetzen:1`
-*28.08. 09:24 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Semantic-to-Experiment Compiler - Replace template-based benchmark generation with a compiler that translates hypothesis semantics directly into executable experiment specifications. Each hypothesis carries its own verificati
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Träume in Taten umsetzen:0`
-*28.08. 09:24 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Self-Contained Executor Architecture - Eliminate the 'hands' organ dependency entirely by embedding a sandboxed execution engine directly in the runner. The system becomes its own executor: hypotheses compile to WASM modules 
-
 ### `last_swarm_critique`
 *28.08. 09:24 UTC · Quelle: critic*
 
@@ -43699,31 +43709,6 @@ score=6; issues=Missing hands organ dependency - the runner assumes a 'hands' ex
 *28.08. 09:08 UTC · Quelle: system*
 
 Träume in Taten umsetzen
-
-### `dream:20260828090703:5:c87811`
-*28.08. 09:07 UTC · Quelle: dream*
-
-Hand actions (0.33s) and code execution succeed consistently while LLM calls are the primary bottleneck.
-
-### `dream:20260828090703:4:2586dc`
-*28.08. 09:07 UTC · Quelle: dream*
-
-Evolution with 3 variants reliably produces high-scoring candidates (8/10) even when base attempt scored only 5/10.
-
-### `dream:20260828090703:3:0ada4e`
-*28.08. 09:07 UTC · Quelle: dream*
-
-Calibration error of 2 points (predicted 3 vs actual 5) indicates systematic underestimation of task difficulty.
-
-### `dream:20260828090703:2:12dbeb`
-*28.08. 09:07 UTC · Quelle: dream*
-
-Smaller fast models (ling-3.0-flash-fin ~8-19s) succeed more reliably than larger models that hit rate limits repeatedly.
-
-### `dream:20260828090703:1:069b02`
-*28.08. 09:07 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the dominant failure mode across all model providers, not an isolated model issue.
 
 ### `last_swarm_critique`
 *28.08. 08:27 UTC · Quelle: critic*

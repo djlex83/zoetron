@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 08:54:45",
+ "stand": "2026-09-11 09:33:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -165,6 +165,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -315,12 +321,6 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "viele-skill-vorschläge-ordnen-und-zusamm.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -393,12 +393,12 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.845,
- "simulationen_angewandt": 32,
+ "haende_quote": 0.846,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
-  "n": 24,
+  "n": 23,
   "best": 9.0,
-  "schnitt": 3.75
+  "schnitt": 3.87
  },
  "score_nach_ziel_typ": {
   "analyse": {
