@@ -39716,3 +39716,32 @@
 {"ts": 1788557606.6539743, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.25, "gelesen": 8}}
 {"ts": 1788557606.6560671, "kind": "reflex_used", "payload": {"goal": "Veraltete Erinnerungen aufräumen und aktualisieren", "tool": "veraltete-marktinfos-aktualisieren.py", "ok": true}}
 {"ts": 1788557607.1084418, "kind": "act_done", "payload": {"goal_title": "Veraltete Erinnerungen aufräumen und aktualisieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787953505.9374769, "key": "dream:20260828214505:1:ec811e", "value": "The primary model (z-ai/glm-5.2:free) fails 100% of the time due to rate limiting, making fallback routing a hard requirement not an optimization.", "source": "dream"}
+{"ts": 1787953505.937568, "key": "dream:20260828214505:2:be2777", "value": "High system stress (1.0) triggers conserve mode that caps iterations to 1, causing incomplete executions like the hand action that touched no files.", "source": "dream"}
+{"ts": 1787953505.9376388, "key": "dream:20260828214505:3:aec638", "value": "Reflex tools (alte-erinnerungen-auf-wert-prüfen.py) fail silently without surfacing error context, breaking the trust loop for instant replay.", "source": "dream"}
+{"ts": 1787953505.9377062, "key": "dream:20260828214505:4:2ecc54", "value": "Simulation consistently surfaces 5+ risks per goal but revisions are applied without verifying they reduce actual failure rates.", "source": "dream"}
+{"ts": 1787953505.93777, "key": "dream:20260828214505:5:ffa9c2", "value": "Latency variance on the fallback model (14s–76s) makes timeout budgets unpredictable and causes cascading deadline misses.", "source": "dream"}
+{"ts": 1787953774.1653306, "key": "dream:20260828214934:1:9bf3f6", "value": "Free-tier models consistently hit 429 rate limits under load, making them unreliable for primary workflows.", "source": "dream"}
+{"ts": 1787953774.1654153, "key": "dream:20260828214934:2:9dd541", "value": "Nvidia Nemotron succeeds reliably but with high latency variance (40–185 s), requiring timeout budgets >200 s.", "source": "dream"}
+{"ts": 1787953774.1654868, "key": "dream:20260828214934:3:5eb1ea", "value": "Poolside Laguna-S-2.1 delivers low latency (12 s) when available, suggesting a fast fallback tier.", "source": "dream"}
+{"ts": 1787953774.1655521, "key": "dream:20260828214934:4:66246b", "value": "The revision loop (simulation → 5 revisions → evolution) lifted scores from 7 to 9, proving iterative critique works.", "source": "dream"}
+{"ts": 1787953774.1656184, "key": "dream:20260828214934:5:bf6127", "value": "Calibration error of 5 (predicted 2 vs actual 7) shows the predictor severely underestimates task difficulty.", "source": "dream"}
+{"ts": 1788558093.8845282, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788558162.4799035, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788558164.5172281, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 15}}
+{"ts": 1788558168.88633, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788558168.8863275, "schalter_geoeffnet": false}}
+{"ts": 1788558185.3923874, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 16.5, "tokens_ein": 1395, "tokens_aus": 873}}
+{"ts": 1788558185.392919, "kind": "skill_proposal", "payload": {"proposal": "Implement a circuit breaker with per-model failure counters, exponential backoff, and a prioritized fallback chain that excludes currently-degraded endpoints."}}
+{"ts": 1788558185.3929706, "kind": "skill_proposal", "payload": {"proposal": "Build a dynamic model router that scores endpoints on recent 429/502 rates, latency percentiles, and token throughput, then selects top-k healthy models per request class."}}
+{"ts": 1788558185.3930209, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-flight validator that estimates required iterations from task complexity and vetoes plans where max_iterations < estimated_revisions + 1."}}
+{"ts": 1788558185.3930707, "kind": "skill_proposal", "payload": {"proposal": "Wrap all reflex/tool invocations in a structured error logger that captures args, env, stack trace, and model state into an append-only replay buffer."}}
+{"ts": 1788558185.3931303, "kind": "skill_proposal", "payload": {"proposal": "Create a latency-aware scheduler that tags sub-tasks with deadline sensitivity and routes latency-critical work to sub-5s models only."}}
+{"ts": 1788558185.393183, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788558189.469072, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788558189.469069, "schalter_geoeffnet": false}}
+{"ts": 1788558221.0029068, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.5, "tokens_ein": 525, "tokens_aus": 802}}
+{"ts": 1788558221.0030465, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und verringern", "why": "Das Modell scheitert oft. Wir müssen herausfinden warum und es verbessern.", "signal": "failure"}}
+{"ts": 1788558221.0031188, "kind": "drive_goal", "payload": {"title": "Wissensbasis aufräumen und konsolidieren", "why": "Alte Fakten verstopfen das Gedächtnis. Wir sollten sie prüfen und zusammenfassen.", "signal": "stale"}}
+{"ts": 1788558221.0031812, "kind": "drive_goal", "payload": {"title": "Träume mit echtem Lernen verbinden", "why": "Träume enthalten Muster. Wir sollten sie nutzen, um Fähigkeiten zu verbessern.", "signal": "combination"}}
+{"ts": 1788558224.3095644, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 4}}
+{"ts": 1788558224.3122468, "kind": "reflex_used", "payload": {"goal": "Veraltete Wissensbestände auffrischen", "tool": "veraltete-wissenstände-auffrischen.py", "ok": true}}
+{"ts": 1788558224.7705426, "kind": "act_done", "payload": {"goal_title": "Veraltete Wissensbestände auffrischen", "score": null, "converged": true, "mode": "reflex"}}

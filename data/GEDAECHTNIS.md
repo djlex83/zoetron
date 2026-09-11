@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11554 Fakten** · Stand 2026-09-11 21:42 UTC · aktualisiert bei jedem Herzschlag
+**11549 Fakten** · Stand 2026-09-11 21:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7465
+- **dream:** 7460
 - **swarm_artifact:** 1707
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911215041:5:93d179`
+*11.09. 21:50 UTC · Quelle: dream*
+
+Reflex-driven memory restoration succeeds where deliberate action fails, showing implicit memory pathways outperform explicit retrieval.
+
+### `dream:20260911215041:4:7a5bc4`
+*11.09. 21:50 UTC · Quelle: dream*
+
+Pruning removes 67 events then 13 events in quick succession, indicating memory pressure triggers aggressive cleanup that may discard useful context.
+
+### `dream:20260911215041:3:619bb8`
+*11.09. 21:50 UTC · Quelle: dream*
+
+Skill proposals accumulate without lifecycle tracking, creating a backlog of unvalidated capabilities.
+
+### `dream:20260911215041:2:b92fb7`
+*11.09. 21:50 UTC · Quelle: dream*
+
+Swarm iterations produce revisions but fail to converge, suggesting missing acceptance criteria or over-active critic role.
+
+### `dream:20260911215041:1:a5d440`
+*11.09. 21:50 UTC · Quelle: dream*
+
+Model failures cluster around rate limits (429) and upstream overload (502), indicating static model selection fails under load variability.
 
 ### `dream:20260911214006:5:e1e506`
 *11.09. 21:40 UTC · Quelle: dream*
@@ -43292,56 +43317,6 @@ nvidia/nemotron-3-ultra-550b-a55b:free shows high latency variance (16–140s), 
 *28.08. 21:54 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free endpoint consistently returns 429 errors, indicating it should be deprioritized or wrapped with a circuit breaker.
-
-### `dream:20260828214934:5:bf6127`
-*28.08. 21:49 UTC · Quelle: dream*
-
-Calibration error of 5 (predicted 2 vs actual 7) shows the predictor severely underestimates task difficulty.
-
-### `dream:20260828214934:4:66246b`
-*28.08. 21:49 UTC · Quelle: dream*
-
-The revision loop (simulation → 5 revisions → evolution) lifted scores from 7 to 9, proving iterative critique works.
-
-### `dream:20260828214934:3:5eb1ea`
-*28.08. 21:49 UTC · Quelle: dream*
-
-Poolside Laguna-S-2.1 delivers low latency (12 s) when available, suggesting a fast fallback tier.
-
-### `dream:20260828214934:2:9dd541`
-*28.08. 21:49 UTC · Quelle: dream*
-
-Nvidia Nemotron succeeds reliably but with high latency variance (40–185 s), requiring timeout budgets >200 s.
-
-### `dream:20260828214934:1:9bf3f6`
-*28.08. 21:49 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits under load, making them unreliable for primary workflows.
-
-### `dream:20260828214505:5:ffa9c2`
-*28.08. 21:45 UTC · Quelle: dream*
-
-Latency variance on the fallback model (14s–76s) makes timeout budgets unpredictable and causes cascading deadline misses.
-
-### `dream:20260828214505:4:2ecc54`
-*28.08. 21:45 UTC · Quelle: dream*
-
-Simulation consistently surfaces 5+ risks per goal but revisions are applied without verifying they reduce actual failure rates.
-
-### `dream:20260828214505:3:aec638`
-*28.08. 21:45 UTC · Quelle: dream*
-
-Reflex tools (alte-erinnerungen-auf-wert-prüfen.py) fail silently without surfacing error context, breaking the trust loop for instant replay.
-
-### `dream:20260828214505:2:be2777`
-*28.08. 21:45 UTC · Quelle: dream*
-
-High system stress (1.0) triggers conserve mode that caps iterations to 1, causing incomplete executions like the hand action that touched no files.
-
-### `dream:20260828214505:1:ec811e`
-*28.08. 21:45 UTC · Quelle: dream*
-
-The primary model (z-ai/glm-5.2:free) fails 100% of the time due to rate limiting, making fallback routing a hard requirement not an optimization.
 
 ### `last_swarm_critique`
 *28.08. 21:37 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 21:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 21:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven memory restoration succeeds where deliberate action fails, showing implicit memory pathways outperform explicit retrieval.
+- Pruning removes 67 events then 13 events in quick succession, indicating memory pressure triggers aggressive cleanup that may discard useful context.
+- Skill proposals accumulate without lifecycle tracking, creating a backlog of unvalidated capabilities.
+- Swarm iterations produce revisions but fail to converge, suggesting missing acceptance criteria or over-active critic role.
+- Model failures cluster around rate limits (429) and upstream overload (502), indicating static model selection fails under load variability.
 - The evolution run produced a winner with score 8/10, confirming that multi-variant evaluation can effectively improve solution quality.
 - Calibration achieved zero error when the model was stable, demonstrating that accurate performance prediction is possible under consistent conditions.
 - Simulation consistently returns revise with three risks and three revisions, revealing that iterative refinement loops are essential for goal achievem
@@ -51,11 +56,6 @@
 - Swarm knowledge refresh relies on a single reflex script that succeeds superficially but does not verify data freshness or relevance.
 - Numerous skill proposals accumulate but lack a validation loop to promote them from proposal to deployed capability.
 - Model endpoints frequently return empty choices causing cascading failures that halt task progress.
-- Stress/budget signals (metabolism.budget) are available but unused by the scheduler; coupling task admission to these signals prevents overload spiral
-- Relative file paths cause hand-action failures; resolving all paths against ZOETRON_DATA at task start eliminates a whole class of I/O errors.
-- Stale external knowledge (market data, swarm goals) repeatedly triggers reflex repairs; automated freshness checks would prevent recurring drift.
-- Caching identical prompts (by hash) appears in multiple proposals and would cut both latency and rate-limit pressure simultaneously.
-- Model unreliability (timeouts, 429s) cascades into task failures and wastes token budget, making health-aware routing and retry logic essential.
 
 ---
 
