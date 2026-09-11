@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 16:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 17:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis consistently shows no organ failures, suggesting system stability is maintained despite external model issues.
+- Latency spikes above 60s and high token consumption indicate inefficient model selection that impacts throughput.
+- Proposed skills remain unused due to lack of verification, creating a gap between suggestion and operational capability.
+- Stale swarm goals and outdated knowledge degrade decision quality, requiring continuous refresh and pruning cycles.
+- Model failures (429s, timeouts) are the primary bottleneck reducing system reliability and must be addressed at the routing layer.
 - Repeated model calls without pre-flight checks or backoff strategies amplify rate-limit failures and latency.
 - Local-first hand actions execute quickly and reliably, making them ideal for conserve metabolism states.
 - High-latency models (e.g., nemotron-3-ultra-550b) degrade system responsiveness without proportional quality gains.
@@ -51,11 +56,6 @@
 - dots-studio/dots-3-note-preview:free is the only consistently available model but exhibits high latency variance (22-39s), making it unsuitable for la
 - The evolution/swarm loop stalls at 5/10 without convergence because unreliable model calls inject noise into critic scores and builder outputs.
 - Multiple models from the same provider (Google) fail simultaneously with 429 errors, indicating provider-level rate limits require provider-aware rout
-- Skill implementation succeeds when the artifact is executable code (104-line Python file runs), not just documentation.
-- Calibration is perfectly accurate (predicted=actual=5), indicating the evaluation loop correctly predicts implementation feasibility.
-- Hand actions (shell/Python execution) succeed reliably (exit 0, ~1.3s) and are not a bottleneck.
-- dots-studio/dots-3-note-preview:free is the only model with consistent success (4/4 calls) and acceptable latency (22-105s), establishing it as the de
-- Rate limiting (HTTP 429) is the dominant failure mode across all primary models (Gemma-31B, Gemma-26B, Laguna), making them unreliable for production 
 
 ---
 

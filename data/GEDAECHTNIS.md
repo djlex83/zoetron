@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11567 Fakten** · Stand 2026-09-11 16:53 UTC · aktualisiert bei jedem Herzschlag
+**11564 Fakten** · Stand 2026-09-11 17:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7450
-- **swarm_artifact:** 1729
+- **dream:** 7455
+- **swarm_artifact:** 1725
 - **last_swarm_critique:** 888
 - **last_swarm_goal:** 623
-- **anti_pattern:** 393
-- **strategy:** 199
-- **tool:** 161
+- **anti_pattern:** 391
+- **strategy:** 198
+- **tool:** 160
 - **hand_result:** 85
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911170136:5:02c8e0`
+*11.09. 17:01 UTC · Quelle: dream*
+
+Self-diagnosis consistently shows no organ failures, suggesting system stability is maintained despite external model issues.
+
+### `dream:20260911170136:4:95e554`
+*11.09. 17:01 UTC · Quelle: dream*
+
+Latency spikes above 60s and high token consumption indicate inefficient model selection that impacts throughput.
+
+### `dream:20260911170136:3:14f008`
+*11.09. 17:01 UTC · Quelle: dream*
+
+Proposed skills remain unused due to lack of verification, creating a gap between suggestion and operational capability.
+
+### `dream:20260911170136:2:3cd92e`
+*11.09. 17:01 UTC · Quelle: dream*
+
+Stale swarm goals and outdated knowledge degrade decision quality, requiring continuous refresh and pruning cycles.
+
+### `dream:20260911170136:1:079843`
+*11.09. 17:01 UTC · Quelle: dream*
+
+Model failures (429s, timeouts) are the primary bottleneck reducing system reliability and must be addressed at the routing layer.
 
 ### `dream:20260911165108:5:0eb733`
 *11.09. 16:51 UTC · Quelle: dream*
@@ -43317,21 +43342,6 @@ Dependence on a single working model (poolside/laguna-s-2.1:free) creates a crit
 *28.08. 17:55 UTC · Quelle: dream*
 
 Rate limiting (429 errors) across multiple free-tier models is a systemic bottleneck requiring proactive health management, not just reactive retries.
-
-### `tool:vorgeschlagene-fähigkeiten-testen-und-nu`
-*28.08. 16:54 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten testen und nutzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-testen-und-nu.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:1`
-*28.08. 16:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Ereignisgesteuerte Reaktionsprüfung ohne Reflex-Benchmark - Statt eines zentralen Benchmark-Systems mit reflex_ok-Logik wird ein ereignisgesteuertes Testing-Framework verwendet. Fähigkeiten werden als Event-Handler registrier
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:0`
-*28.08. 16:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Vertrauenswürdige Serialisierung mit introspektivem Plugin-Scanning - Ersetze eval() vollständig durch json.loads() mit strikter Schema-Validierung via jsonschema. Anstatt auf externe Dateien (archiv.py, Synapse) zu angewiese
 
 ### `last_swarm_critique`
 *28.08. 16:52 UTC · Quelle: critic*
