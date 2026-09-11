@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11599 Fakten** · Stand 2026-09-11 11:57 UTC · aktualisiert bei jedem Herzschlag
+**11594 Fakten** · Stand 2026-09-11 12:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7474
+- **dream:** 7469
 - **swarm_artifact:** 1741
 - **last_swarm_critique:** 884
 - **last_swarm_goal:** 619
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911120556:5:857903`
+*11.09. 12:05 UTC · Quelle: dream*
+
+Repeated model failures trigger new skill proposals (fallback, wrappers, queues) that duplicate earlier unimplemented ideas, indicating a failure to consolidate lessons into reusable infrastructure.
+
+### `dream:20260911120556:4:ae8dbb`
+*11.09. 12:05 UTC · Quelle: dream*
+
+Swarm critiques and objectives have gone stale without a periodic audit mechanism, causing perspective decay and strategic drift over time.
+
+### `dream:20260911120556:3:c282f5`
+*11.09. 12:05 UTC · Quelle: dream*
+
+Forty skill proposals accumulate while only twenty-four goals exist, exposing a broken promotion pipeline that never graduates validated proposals into durable, rollback-capable procedures.
+
+### `dream:20260911120556:2:fd7fc7`
+*11.09. 12:05 UTC · Quelle: dream*
+
+Timeouts and 429s persist because the system lacks a health-aware router that tracks real-time error rates, latency percentiles, and quota remaining to avoid degraded endpoints.
+
+### `dream:20260911120556:1:20599d`
+*11.09. 12:05 UTC · Quelle: dream*
+
+Coordinated 429 errors across multiple models reveal a missing shared rate-limiting layer that causes cascading failures when any single endpoint exhausts quota.
 
 ### `dream:20260911115452:5:1b7cf1`
 *11.09. 11:54 UTC · Quelle: dream*
@@ -43434,56 +43459,6 @@ score=7; issues=Drei separate Skripte statt eines integrierten Tools - Zugriffsh
 *28.08. 12:04 UTC · Quelle: system*
 
 Gebrauchswert alter Erinnerungen prüfen
-
-### `dream:20260828120214:5:da46a2`
-*28.08. 12:02 UTC · Quelle: dream*
-
-The nemotron-3-ultra model shows high latency variance (16.8s–42.2s) with no timeout or circuit-breaker, risking stalled pipelines.
-
-### `dream:20260828120214:4:ae5a94`
-*28.08. 12:02 UTC · Quelle: dream*
-
-Dream insights (5 this cycle) are not automatically converted into code changes or config updates within the next wake cycle, wasting consolidation effort.
-
-### `dream:20260828120214:3:6101f7`
-*28.08. 12:02 UTC · Quelle: dream*
-
-Skill proposals accumulate in dreams (5 this cycle) but lack a registry tracking proposal→implementation→test status, causing duplicate proposals and zero deployment.
-
-### `dream:20260828120214:2:c80d49`
-*28.08. 12:02 UTC · Quelle: dream*
-
-No automatic fallback occurs when a model returns 429; the system retries the same exhausted provider instead of switching to healthy alternatives like nemotron-3-ultra.
-
-### `dream:20260828120214:1:4aefdf`
-*28.08. 12:02 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model fails 100% of the time due to provider-level rate limiting (429 errors), making it unusable without per-provider quota management.
-
-### `dream:20260828115608:5:e1ee05`
-*28.08. 11:56 UTC · Quelle: dream*
-
-Self-diagnosis shows organ health but doesn't capture model-layer degradation, leaving a blind spot in system monitoring.
-
-### `dream:20260828115608:4:cf38cc`
-*28.08. 11:56 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack automatic implementation verification, creating a gap between ideation and capability.
-
-### `dream:20260828115608:3:471292`
-*28.08. 11:56 UTC · Quelle: dream*
-
-Reflex tools that convert proposals into skills and link dream insights to knowledge are functioning and should be standardized.
-
-### `dream:20260828115608:2:cc42f7`
-*28.08. 11:56 UTC · Quelle: dream*
-
-Model latency varies 3x between fastest and slowest working models, making latency-aware routing essential for responsiveness.
-
-### `dream:20260828115608:1:a7fbf9`
-*28.08. 11:56 UTC · Quelle: dream*
-
-Rate limiting (429) is the dominant failure mode across free-tier models, requiring systematic fallback and backoff strategies.
 
 ### `last_swarm_critique`
 *28.08. 11:32 UTC · Quelle: critic*

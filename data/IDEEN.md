@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 11:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 12:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,13 +26,13 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated model failures trigger new skill proposals (fallback, wrappers, queues) that duplicate earlier unimplemented ideas, indicating a failure to c
+- Swarm critiques and objectives have gone stale without a periodic audit mechanism, causing perspective decay and strategic drift over time.
+- Forty skill proposals accumulate while only twenty-four goals exist, exposing a broken promotion pipeline that never graduates validated proposals int
+- Timeouts and 429s persist because the system lacks a health-aware router that tracks real-time error rates, latency percentiles, and quota remaining t
+- Coordinated 429 errors across multiple models reveal a missing shared rate-limiting layer that causes cascading failures when any single endpoint exha
 - Repeated prompts to failing models waste quota and latency; no semantic cache or health-aware routing exists to deduplicate or redirect traffic.
 - Self-diagnosis and pruning operate correctly (0 organ errors, 39 events pruned) but cannot compensate for upstream model unreliability and skill-imple
 - Swarm feedback signals (critiques, goals) are stale, cutting off external corrective input that previously drove course corrections.
@@ -51,11 +56,6 @@
 - The swarm process consistently fails to converge (converged: false) despite multiple cycles, suggesting missing convergence criteria or insufficient c
 - Models that initially fail with 429 often succeed on retry after a delay, indicating transient capacity limits rather than permanent unavailability.
 - Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making naive single-model selection unreliable.
-- Swarm goals become outdated over time and require regular review to stay relevant.
-- With stress at 1.0 and a limited budget, tasks must be prioritized to stay within constraints.
-- The reflex tool "vorgeschlagene-fähigkeiten-umsetzen.py" returned an error, indicating missing preconditions.
-- Hand actions fail when the target file is missing, so input paths must be validated before execution.
-- Free-tier models frequently return HTTP 429, so the system should automatically switch to a healthy alternative.
 
 ---
 
