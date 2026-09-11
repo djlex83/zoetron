@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 23:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 23:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Ten skill proposals generated from dreams but drive goal 'Traum-Erkenntnisse besser nutzen' persists, exposing a broken proposal-to-implementation pip
+- Pruning intensity tripled (5→15 facts) between cycles while consolidation was active, suggesting memory pressure grows faster than pruning policy adap
+- Model latency variance (12s–41s) and repeated 502/429-focused skill proposals reveal unstable model infrastructure that reflexes cannot fix.
+- Reflex actions report converged=true but score=null, creating a false-completion signal that prevents learning whether interventions actually worked.
+- Identical drive goals (stale swarm, model failures, unused dreams) recur across cycles despite reflex convergence, indicating reflexes treat symptoms 
 - High metabolic stress (>0.8) still admits low-priority tasks, starving critical work and increasing error rates.
 - Relative file paths in hand actions cause silent failures when working directory shifts, breaking reproducibility.
 - Hardcoded graph limits and convergence thresholds prevent adaptive optimization, wasting cycles on plateaued searches.
@@ -51,11 +56,6 @@
 - Relative file paths in hand_action succeed only because CWD is stable; any context switch would break I/O without a ZOETRON_DATA resolver.
 - Fallback to dots-studio/dots-3-note-preview succeeds but only after serial failures, wasting 50+ seconds per request cycle.
 - Multiple free-tier models (Nemotron, Gemma variants) fail intermittently with 502/429 errors, making provider diversity without health-aware routing a
-- The pruning of facts and events without considering their relevance to current drive goals may be removing critical context, leading to repeated learn
-- The gap between skill proposals and actual skills points to a lack of a conversion mechanism, such as an automated pipeline from proposal to implement
-- The staleness of swarm knowledge suggests that the current update mechanisms are either too infrequent or not deeply integrated into the system's core
-- The persistence of model failures despite multiple proposals indicates that the root cause may be in the integration of the proposed solutions rather 
-- Recurring drive goals with identical signals reveal that the system's problem-solving loop is broken: proposals are generated but not executed, and re
 
 ---
 

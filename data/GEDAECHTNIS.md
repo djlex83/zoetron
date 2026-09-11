@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11530 Fakten** · Stand 2026-09-11 23:26 UTC · aktualisiert bei jedem Herzschlag
+**11525 Fakten** · Stand 2026-09-11 23:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7461
+- **dream:** 7456
 - **swarm_artifact:** 1695
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911233441:5:610151`
+*11.09. 23:34 UTC · Quelle: dream*
+
+Ten skill proposals generated from dreams but drive goal 'Traum-Erkenntnisse besser nutzen' persists, exposing a broken proposal-to-implementation pipeline.
+
+### `dream:20260911233441:4:6762ea`
+*11.09. 23:34 UTC · Quelle: dream*
+
+Pruning intensity tripled (5→15 facts) between cycles while consolidation was active, suggesting memory pressure grows faster than pruning policy adapts.
+
+### `dream:20260911233441:3:948bf9`
+*11.09. 23:34 UTC · Quelle: dream*
+
+Model latency variance (12s–41s) and repeated 502/429-focused skill proposals reveal unstable model infrastructure that reflexes cannot fix.
+
+### `dream:20260911233441:2:6cd26d`
+*11.09. 23:34 UTC · Quelle: dream*
+
+Reflex actions report converged=true but score=null, creating a false-completion signal that prevents learning whether interventions actually worked.
+
+### `dream:20260911233441:1:0953f1`
+*11.09. 23:34 UTC · Quelle: dream*
+
+Identical drive goals (stale swarm, model failures, unused dreams) recur across cycles despite reflex convergence, indicating reflexes treat symptoms not root causes.
 
 ### `dream:20260911232347:5:631cf3`
 *11.09. 23:23 UTC · Quelle: dream*
@@ -43222,56 +43247,6 @@ Hand actions fail when tools use relative paths that don't resolve against the a
 *28.08. 23:34 UTC · Quelle: dream*
 
 Repeated 429 errors on the primary model without a circuit breaker cause cascading fallback to a high-latency secondary model, wasting 30+ seconds per cycle.
-
-### `dream:20260828232947:5:fc8655`
-*28.08. 23:29 UTC · Quelle: dream*
-
-Convergence criteria (score ≥ 8, critic converged, cycles ≥ 3, plateau < 0.5) are defined but not enforced automatically, leaving completion to ad-hoc reflexes.
-
-### `dream:20260828232947:4:2b8830`
-*28.08. 23:29 UTC · Quelle: dream*
-
-Five skill proposals were generated in one cycle but none validated in production, creating a proposal–validation gap that inflates technical debt.
-
-### `dream:20260828232947:3:6fafe6`
-*28.08. 23:29 UTC · Quelle: dream*
-
-Self-diagnosis and pruning organs report zero findings despite known issues (rate limits, stale data), indicating detection thresholds are too high or scopes too narrow.
-
-### `dream:20260828232947:2:9afc57`
-*28.08. 23:29 UTC · Quelle: dream*
-
-Reflex-based tools reliably converge stale goals (market analyses) without planner involvement, suggesting reflexes are underused for maintenance tasks.
-
-### `dream:20260828232947:1:81e072`
-*28.08. 23:29 UTC · Quelle: dream*
-
-Primary model (z-ai/glm-5.2) repeatedly hits 429 rate limits, causing fallback to secondary model with highly variable latency (6–36 s).
-
-### `dream:20260828232544:5:bd92b5`
-*28.08. 23:25 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures persist, showing that health monitoring focuses on internal state but ignores external dependency reliability.
-
-### `dream:20260828232544:4:c59996`
-*28.08. 23:25 UTC · Quelle: dream*
-
-Model latency varies widely (6–36 s) even for the same fallback model, making latency-sensitive planning unreliable without percentile-based budgets.
-
-### `dream:20260828232544:3:590c02`
-*28.08. 23:25 UTC · Quelle: dream*
-
-Reflex-driven execution succeeds for well-scoped tasks but lacks a mechanism to promote successful reflexes into durable skills.
-
-### `dream:20260828232544:2:a1733c`
-*28.08. 23:25 UTC · Quelle: dream*
-
-Skill proposals accumulate but are not automatically enacted, creating a proposal-implementation gap that stalls capability growth.
-
-### `dream:20260828232544:1:c660e6`
-*28.08. 23:25 UTC · Quelle: dream*
-
-The system repeatedly fails over to a high-latency fallback model because the primary free model is persistently rate-limited, indicating a missing circuit-breaker and health-aware routing layer.
 
 ### `last_swarm_critique`
 *28.08. 23:02 UTC · Quelle: critic*
