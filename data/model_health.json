@@ -1,5 +1,5 @@
 {
- "stand": 1789110393.5621006,
+ "stand": 1789111207.3056543,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -31,17 +31,17 @@
    "latenz_summe_s": 503.63105940818787,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 1493
+   "kontofehler": 1500
   },
   "google/gemma-4-26b-a4b-it:free": {
-   "laeufe": 13,
+   "laeufe": 15,
    "fehler": 2,
-   "fehler_in_folge": 1,
+   "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 490.30709886550903,
+   "latenz_summe_s": 542.5488958358765,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 1471
+   "kontofehler": 1476
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -99,7 +99,7 @@
    "latenz_summe_s": 5094.880012989044,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
-   "kontofehler": 333
+   "kontofehler": 338
   },
   "nvidia/nemotron-3-nano-30b-a3b:free": {
    "laeufe": 3,
@@ -111,11 +111,11 @@
    "letzte_sperre": 0.0
   },
   "dots-studio/dots-3-note-preview:free": {
-   "laeufe": 30,
+   "laeufe": 33,
    "fehler": 3,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 2086.9415090084076,
+   "latenz_summe_s": 2221.9277551174164,
    "letzter_fehler": "Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web",
    "letzte_sperre": 0.0
   },
@@ -148,14 +148,14 @@
    "kontofehler": 3
   },
   "inclusionai/ling-3.0-flash-fin:free": {
-   "laeufe": 994,
+   "laeufe": 996,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 8569.881517410278,
+   "latenz_summe_s": 8577.386509180069,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
-   "kontofehler": 4
+   "kontofehler": 5
   },
   "~z-ai/glm-latest": {
    "laeufe": 5,

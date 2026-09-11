@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 07:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 07:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,28 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 3×)*
+- Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model availability is highly non-uniform, requiring a fallback strategy to maintain operational continuity.
+- Model outputs that provide only prose instead of executable code blocks cause terminal task failure.
+- High system stress (1.0) correlates with increased API failure rates and the necessity of 'conserve' mode.
+- Frequent 429 and 502 errors indicate that free-tier model endpoints are too volatile for reliable task execution.
 - Metabolic stress at 1.0 should trigger conserve mode, but the system continues queuing non-critical tasks — backpressure mechanisms are missing under 
 - Reflex tool failures cascade into swarm failures because there is no retry/validator wrapper — single-point-of-failure in reflex execution breaks the 
 - Path resolution failures ('nichts gelesen') reveal that relative paths are never anchored to ZOETRON_DATA or sys.argv[1] before file operations — this
@@ -52,10 +56,6 @@
 - Skill proposals accumulate without implementation because no automated pipeline bridges proposal to deployed code.
 - Model failures recur because no pre-flight health probe validates model availability before task assignment.
 - Latency variance (4s vs 38s) on the same model indicates unreliable infrastructure that requires degraded-mode fallbacks.
-- Reflex convergence goes unmonitored, missing opportunities to promote stable behaviors into default procedures.
-- Stale knowledge (>7 days) persists without automated archival, causing the system to replay outdated patterns during consolidation.
-- Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that may never be deployed.
-- Model failures cluster around rate limits (429) and upstream overloads (502), making proactive health probes and circuit breakers essential for reliab
 
 ---
 
