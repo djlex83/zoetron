@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,10 +25,10 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals remain unvalidated because there is no closed-loop system that tests proposed skills against real failure scenarios and measures impro
+- Conserve-mode constraints (max_tasks=3, max_iterations=1) cause premature termination of multi-step goals like 'Traum-Erinnerungen verbinden' before c
+- Simulations are generated but rarely applied because the system lacks a fast-path mechanism to translate successful simulation patterns into immediate
+- Model failures (502 upstream overload, 429 rate limits) cascade into failed hand_actions and broken reflex chains when no fallback routing exists.
+- Stale swarm goals and unused criticism accumulate because there is no automated pipeline that converts collective feedback into updated drive goals.
 - Model latency varies wildly (7.7s to 57.7s), demanding deadline-aware execution to prevent cascade delays.
 - Stale swarm goals and outdated knowledge fragments persist despite periodic pruning, indicating need for proactive refresh.
 - Reflex tools like 'träume-besser-nutzen-lernen.py' successfully bridge learning and action when explicitly triggered.
@@ -51,11 +56,6 @@
 - Swarm feedback becomes stale within cycles because no periodic audit mechanism refreshes objectives or injects fresh perspectives to prevent strategic
 - Model failures persist at nearly 2:1 ratio because coordinated 429 storms and static endpoint selection overwhelm the system despite repeated proposal
 - Skill proposals recur across dream cycles without adoption because no automated promotion pipeline exists to graduate validated proposals into permane
-- Stress=1.0 with max_iterations=1 forces single-shot success; any model retry loop exhausts budget before completion.
-- Tool execution can fail while swarm+simulation+hand_action succeeds, indicating the planner/actor split masks tool fragility.
-- High-latency fallbacks (40-90s) succeed where fast models fail, but consume iteration budget and risk timeout in conserve mode.
-- Rate limiting (429) and upstream overload (502) are systemic failure modes, not transient glitches, requiring architectural circuit-breakers.
-- Model provider overload cascades across vendors simultaneously, making single-provider fallback chains unreliable under load.
 
 ---
 

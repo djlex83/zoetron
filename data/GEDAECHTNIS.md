@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11597 Fakten** · Stand 2026-09-11 13:15 UTC · aktualisiert bei jedem Herzschlag
+**11597 Fakten** · Stand 2026-09-11 13:25 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7484
 - **swarm_artifact:** 1731
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911132249:5:ce089d`
+*11.09. 13:22 UTC · Quelle: dream*
+
+Skill proposals remain unvalidated because there is no closed-loop system that tests proposed skills against real failure scenarios and measures improvement.
+
+### `dream:20260911132249:4:d06bd3`
+*11.09. 13:22 UTC · Quelle: dream*
+
+Conserve-mode constraints (max_tasks=3, max_iterations=1) cause premature termination of multi-step goals like 'Traum-Erinnerungen verbinden' before convergence.
+
+### `dream:20260911132249:3:195603`
+*11.09. 13:22 UTC · Quelle: dream*
+
+Simulations are generated but rarely applied because the system lacks a fast-path mechanism to translate successful simulation patterns into immediate hand_action execution.
+
+### `dream:20260911132249:2:a2ab81`
+*11.09. 13:22 UTC · Quelle: dream*
+
+Model failures (502 upstream overload, 429 rate limits) cascade into failed hand_actions and broken reflex chains when no fallback routing exists.
+
+### `dream:20260911132249:1:2a905e`
+*11.09. 13:22 UTC · Quelle: dream*
+
+Stale swarm goals and unused criticism accumulate because there is no automated pipeline that converts collective feedback into updated drive goals.
 
 ### `dream:20260911131158:5:14758f`
 *11.09. 13:11 UTC · Quelle: dream*
@@ -43484,31 +43509,6 @@ score=1; issues=SyntaxError: unterminated string at line 115 - artifact does not
 *28.08. 13:19 UTC · Quelle: system*
 
 Traumlernen ausweiten
-
-### `dream:20260828131801:5:94ec00`
-*28.08. 13:18 UTC · Quelle: dream*
-
-Simulation-driven revision (5 risks → 3 applied) reduces memory-consolidation risk before irreversible commitment.
-
-### `dream:20260828131801:4:58c384`
-*28.08. 13:18 UTC · Quelle: dream*
-
-Successful call latency varies 3x (7–23 s) even for the same model, requiring adaptive timeouts rather than fixed thresholds.
-
-### `dream:20260828131801:3:2fed0c`
-*28.08. 13:18 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free remains available when all other free models are rate-limited, making it a critical backbone.
-
-### `dream:20260828131801:2:3cc362`
-*28.08. 13:18 UTC · Quelle: dream*
-
-Three consecutive errors trigger a 1800-second model ban, turning transient rate limits into extended outages.
-
-### `dream:20260828131801:1:258b00`
-*28.08. 13:18 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter exhibit correlated 429 rate-limit failures that cascade across providers simultaneously.
 
 ### `last_swarm_critique`
 *28.08. 12:58 UTC · Quelle: critic*
