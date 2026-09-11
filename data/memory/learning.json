@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 17:24:10",
+ "stand": "2026-09-11 17:45:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -51,12 +51,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -78,12 +72,6 @@
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -117,10 +105,22 @@
    "quote": 1.0
   },
   {
+   "tool": "träume-in-handlungen-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "neue-fähigkeiten-erlernen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "veraltete-marktinfos-aktualisieren.py",
@@ -187,12 +187,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "träume-in-handlungen-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "schwarm-wissen-auffrischen-und-prüfen.py",
@@ -280,6 +274,12 @@
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -387,12 +387,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.809,
+ "haende_quote": 0.806,
  "simulationen_angewandt": 36,
  "swarm_scores": {
   "n": 24,
   "best": 9.0,
-  "schnitt": 3.92
+  "schnitt": 3.58
  },
  "score_nach_ziel_typ": {
   "analyse": {

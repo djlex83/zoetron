@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 17:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 17:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
@@ -37,10 +37,15 @@
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
+- Neue Fähigkeiten sicher erproben *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation identifies risks but doesn't address root causes of skill utilization failure, suggesting the issue is in skill representation, not risk mi
+- Evolution generates high-variance variants (scores 4-9) but fails to converge because structural validation happens too late in the pipeline.
+- dots-studio/dots-3-note-preview:free is the only consistently available model and should be the default fallback for critical paths.
+- The 3-strike lockout policy creates cascading failures when a model is already degraded by timeouts or rate limits.
+- Free-tier OpenRouter models (Gemma, Poolside) hit 429 rate limits under load, making them unreliable for production routing.
 - Calibration predicted 6 skills but only 5 were usable, indicating a consistent overestimation bias in skill availability forecasting.
 - Models that fail consecutively (e.g., nemotron-3-ultra) get auto-blocked for 1800s, showing a built-in circuit breaker mechanism.
 - The 'forbidden pattern: shutdown' error in hand_action reveals a security or policy constraint blocking certain system-level operations.
@@ -51,11 +56,6 @@
 - The hand action failed because relative paths were used; absolute path resolution is essential for file operations.
 - Read timeouts caused model failures, showing that all model calls need a hard deadline with cancellation.
 - Multiple models returned 429 errors, indicating that rate limiting is per provider, not per model.
-- Self-diagnosis consistently shows no organ failures, suggesting system stability is maintained despite external model issues.
-- Latency spikes above 60s and high token consumption indicate inefficient model selection that impacts throughput.
-- Proposed skills remain unused due to lack of verification, creating a gap between suggestion and operational capability.
-- Stale swarm goals and outdated knowledge degrade decision quality, requiring continuous refresh and pruning cycles.
-- Model failures (429s, timeouts) are the primary bottleneck reducing system reliability and must be addressed at the routing layer.
 
 ---
 

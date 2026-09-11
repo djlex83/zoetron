@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11574 Fakten** · Stand 2026-09-11 17:26 UTC · aktualisiert bei jedem Herzschlag
+**11587 Fakten** · Stand 2026-09-11 17:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7465
-- **swarm_artifact:** 1725
-- **last_swarm_critique:** 888
-- **last_swarm_goal:** 623
+- **dream:** 7470
+- **swarm_artifact:** 1731
+- **last_swarm_critique:** 889
+- **last_swarm_goal:** 624
 - **anti_pattern:** 391
 - **strategy:** 198
 - **tool:** 160
@@ -13,6 +13,41 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `last_swarm_critique`
+*11.09. 17:41 UTC · Quelle: critic*
+
+score=0; issues=Kein ausführbarer Python-Block im Artefakt enthalten; Nur Prosa und Bash-Befehle, kein lauffähiger Code; Vertrag verletzt: Artefakt muss einen funktionierenden Python-Tool liefern; Das Ziel 'Träume für Handlungen nutzen' wird nicht erreicht, da
+
+### `last_swarm_goal`
+*11.09. 17:34 UTC · Quelle: system*
+
+Träume für Handlungen nutzen
+
+### `dream:20260911173340:5:85e871`
+*11.09. 17:33 UTC · Quelle: dream*
+
+Simulation identifies risks but doesn't address root causes of skill utilization failure, suggesting the issue is in skill representation, not risk mitigation.
+
+### `dream:20260911173340:4:0664f6`
+*11.09. 17:33 UTC · Quelle: dream*
+
+Evolution generates high-variance variants (scores 4-9) but fails to converge because structural validation happens too late in the pipeline.
+
+### `dream:20260911173340:3:300cc9`
+*11.09. 17:33 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently available model and should be the default fallback for critical paths.
+
+### `dream:20260911173340:2:e407b4`
+*11.09. 17:33 UTC · Quelle: dream*
+
+The 3-strike lockout policy creates cascading failures when a model is already degraded by timeouts or rate limits.
+
+### `dream:20260911173340:1:2e0693`
+*11.09. 17:33 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (Gemma, Poolside) hit 429 rate limits under load, making them unreliable for production routing.
 
 ### `dream:20260911172339:5:d6dff9`
 *11.09. 17:23 UTC · Quelle: dream*

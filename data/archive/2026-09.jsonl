@@ -39042,3 +39042,25 @@
 {"ts": 1788542590.7326443, "kind": "skill_proposal", "payload": {"proposal": "Build latency-aware scheduler: route low-priority tasks to high-latency models, reserve fast models for interactive loops."}}
 {"ts": 1788542590.7326987, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
 {"ts": 1788542593.3407032, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788542593.3407006, "schalter_geoeffnet": false}}
+{"ts": 1788542610.9666922, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 17.6, "tokens_ein": 492, "tokens_aus": 646}}
+{"ts": 1788542610.966843, "kind": "drive_goal", "payload": {"title": "Modell-Fehler systematisch reduzieren", "why": "Das Modell scheitert oft. Weniger Fehler bedeuten zuverlässigere Aktionen.", "signal": "failure"}}
+{"ts": 1788542610.9669192, "kind": "drive_goal", "payload": {"title": "Alte Frontiers und Schwarm-Artefakte aufräumen", "why": "Viele offene Punkte liegen seit langem brach. Aufräumen schafft Platz für Neues.", "signal": "stale"}}
+{"ts": 1788542610.9669843, "kind": "drive_goal", "payload": {"title": "Wissensgraph und semantisches Gedächtnis bauen", "why": "Ohne langfristiges Wissen vergisst das System wichtige Zusammenhänge immer wieder.", "signal": "gap"}}
+{"ts": 1788542613.5748842, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22, "gelesen": 141}}
+{"ts": 1788542613.5773323, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten im Simulation testen", "tool": "fähigkeiten-durch-simulation-prüfen.py", "ok": true}}
+{"ts": 1788542614.0264122, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten im Simulation testen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788543093.1668537, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788543162.2998579, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788543163.8494828, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788543170.725732, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 3.2, "tokens_ein": 1378, "tokens_aus": 767}}
+{"ts": 1788543170.7262845, "kind": "skill_proposal", "payload": {"proposal": "Implement a dynamic model router that automatically blacklists models with repeated 429 errors for a cooldown period."}}
+{"ts": 1788543170.7263436, "kind": "skill_proposal", "payload": {"proposal": "Create a feedback loop that requires simulation results to be explicitly referenced or applied before a related action is marked as complete."}}
+{"ts": 1788543170.7263994, "kind": "skill_proposal", "payload": {"proposal": "Develop a shared-quota tracker that monitors OpenRouter rate-limit headers across all models to prevent hitting 429 errors."}}
+{"ts": 1788543170.7264545, "kind": "skill_proposal", "payload": {"proposal": "Build an automatic fallback mechanism that switches to a high-latency but reliable model when low-latency models fail."}}
+{"ts": 1788543170.7265093, "kind": "skill_proposal", "payload": {"proposal": "Schedule a periodic pruning job that triggers based on event count thresholds rather than fixed intervals to optimize memory management."}}
+{"ts": 1788543170.7265804, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788543173.228267, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788543173.2282631, "schalter_geoeffnet": false}}
+{"ts": 1788543199.0265532, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 25.8, "tokens_ein": 517, "tokens_aus": 845}}
+{"ts": 1788543199.0267313, "kind": "drive_goal", "payload": {"title": "Modellfehler reduzieren und verstehen", "why": "Viele Aktionen scheitern, weil das interne Modell falsch vorhersagt. Wir müssen die Fehler analysieren und das Modell verbessern.", "signal": "failure"}}
+{"ts": 1788543199.0268536, "kind": "drive_goal", "payload": {"title": "Veraltete Grenzgebiete und Schwarm-Ergebnisse aktualisieren", "why": "Einige Wissensbereiche und Schwarm-Ergebnisse sind alt und könnten falsch sein. Wir sollten sie prüfen und erneuern.", "signal": "stale"}}
+{"ts": 1788543199.0269375, "kind": "drive_goal", "payload": {"title": "Traumerkenntnisse in neue Fähigkeiten umsetzen", "why": "Träume enthalten oft neue Ideen. Wir sollten die wichtigsten Traumergebnisse nehmen und daraus echte Fähigkeiten bauen.", "signal": "combination"}}
