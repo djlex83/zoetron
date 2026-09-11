@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 10:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 11:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 3×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm goals become outdated over time and require regular review to stay relevant.
+- With stress at 1.0 and a limited budget, tasks must be prioritized to stay within constraints.
+- The reflex tool "vorgeschlagene-fähigkeiten-umsetzen.py" returned an error, indicating missing preconditions.
+- Hand actions fail when the target file is missing, so input paths must be validated before execution.
+- Free-tier models frequently return HTTP 429, so the system should automatically switch to a healthy alternative.
 - Skill proposals emerge reactively from failure patterns but lack a validation-to-production pipeline, causing good ideas to stall as proposals.
 - Pruning (5 facts, 19 events) and self-diagnosis (zero organ errors) indicate memory hygiene functions correctly while inference layer fails.
 - The sole functioning model (dots-studio/dots-3-note-preview) exhibits high latency variance (28–68s), making it unreliable for time-sensitive operatio
@@ -51,11 +56,6 @@
 - The system's self-diagnosis consistently reports no organ failures, but model-level failures persist, highlighting a gap between system health and com
 - Successful model calls show significantly lower token input compared to failed ones, suggesting that large inputs may contribute to timeouts.
 - Model failures are predominantly caused by rate limiting (429 errors) and timeouts, indicating a need for better load distribution and retry mechanism
-- The ability to execute external scripts for testing proposals exists but is not integrated into the main learning loop.
-- Memory pruning removes events, which may cause loss of important failure data needed for future learning.
-- The system generates skill proposals but does not automatically implement them, creating a gap between problem identification and resolution.
-- Timeout errors on certain models suggest that per-request timeout handling and automatic fallback are necessary to avoid stalled operations.
-- Repeated HTTP 429 errors across multiple models indicate that the system's request rate exceeds the API rate limits, requiring a global rate limiter.
 
 ---
 

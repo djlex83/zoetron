@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11612 Fakten** · Stand 2026-09-11 10:57 UTC · aktualisiert bei jedem Herzschlag
+**11614 Fakten** · Stand 2026-09-11 11:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7489
-- **swarm_artifact:** 1741
-- **last_swarm_critique:** 883
-- **last_swarm_goal:** 618
-- **anti_pattern:** 395
-- **strategy:** 200
-- **tool:** 160
+- **dream:** 7479
+- **swarm_artifact:** 1747
+- **last_swarm_critique:** 884
+- **last_swarm_goal:** 619
+- **anti_pattern:** 397
+- **strategy:** 201
+- **tool:** 161
 - **hand_result:** 87
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
+*11.09. 11:20 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich nutzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-nutz.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*11.09. 11:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Out-of-Process Skill Execution via Standardized CLI/JSON Protocol - Treat each skill as an independent executable (script, binary, container) adhering to a strict JSON-over-stdin/stdout protocol: input JSON on stdin -> output
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*11.09. 11:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Code Generation Producing Callable Wrapper Classes - At registration time, parse skill definitions (JSON/YAML/Python stubs) and generate a concrete Python module `generated_skills.py` containing typed wrapper classes/function
+
+### `last_swarm_critique`
+*11.09. 11:16 UTC · Quelle: critic*
+
+score=5; issues=External dependencies (benchmark_organ, werkzeugpruefung) not provided - pipeline does nothing without them; Registration only writes JSON files to reflexsuche/werkzeugkiste, doesn't create executable tools or make skills callable; No actual sk
+
+### `last_swarm_goal`
+*11.09. 11:07 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich nutzen
+
+### `dream:20260911110604:5:53406b`
+*11.09. 11:06 UTC · Quelle: dream*
+
+Swarm goals become outdated over time and require regular review to stay relevant.
+
+### `dream:20260911110604:4:ebb9ec`
+*11.09. 11:06 UTC · Quelle: dream*
+
+With stress at 1.0 and a limited budget, tasks must be prioritized to stay within constraints.
+
+### `dream:20260911110604:3:101e5e`
+*11.09. 11:06 UTC · Quelle: dream*
+
+The reflex tool "vorgeschlagene-fähigkeiten-umsetzen.py" returned an error, indicating missing preconditions.
+
+### `dream:20260911110604:2:77b219`
+*11.09. 11:06 UTC · Quelle: dream*
+
+Hand actions fail when the target file is missing, so input paths must be validated before execution.
+
+### `dream:20260911110604:1:dc6a77`
+*11.09. 11:06 UTC · Quelle: dream*
+
+Free-tier models frequently return HTTP 429, so the system should automatically switch to a healthy alternative.
 
 ### `dream:20260911105451:5:b42dc5`
 *11.09. 10:54 UTC · Quelle: dream*
@@ -43479,81 +43529,6 @@ Evolution can generate high-scoring variants (9/10) but swarm convergence fails 
 *28.08. 11:09 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter suffer systemic 429 rate-limiting making them unreliable for sustained workloads.
-
-### `dream:20260828110242:5:6e02b4`
-*28.08. 11:02 UTC · Quelle: dream*
-
-Calibration predictions tend to overestimate actual performance, indicating the calibration model needs a downward adjustment.
-
-### `dream:20260828110242:4:09a331`
-*28.08. 11:02 UTC · Quelle: dream*
-
-Evolutionary runs effectively improve artifact quality, as evidenced by the score increasing from 4 to 9 by addressing specific critic issues.
-
-### `dream:20260828110242:3:a5d06c`
-*28.08. 11:02 UTC · Quelle: dream*
-
-The model 'poolside/laguna-s-2.1:free' offers significantly lower latency (6.7s) compared to 'nvidia/nemotron-3-ultra-550b-a55b:free' (47-187s) and is better for lightweight tasks.
-
-### `dream:20260828110242:2:dff77b`
-*28.08. 11:02 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overload (502), necessitating a robust multi-model fallback chain.
-
-### `dream:20260828110242:1:75b855`
-*28.08. 11:02 UTC · Quelle: dream*
-
-The model 'z-ai/glm-5.2:free' is chronically unreliable due to persistent 429 rate limits and should be temporarily blacklisted.
-
-### `dream:20260828105835:5:cf44a2`
-*28.08. 10:58 UTC · Quelle: dream*
-
-Simulation-based revision loops (verdict=revise, 2 revisions) add latency but catch risks before production promotion.
-
-### `dream:20260828105835:4:2d8edf`
-*28.08. 10:58 UTC · Quelle: dream*
-
-Metabolism conservation mode (stress=1.0) caps task budget, preventing simultaneous failure mitigation and skill deployment.
-
-### `dream:20260828105835:3:6cc274`
-*28.08. 10:58 UTC · Quelle: dream*
-
-Hand actions fail because relative paths ignore the ZOETRON_DATA environment variable, causing silent zero-byte reads.
-
-### `dream:20260828105835:2:ed2212`
-*28.08. 10:58 UTC · Quelle: dream*
-
-Previously proposed skills (scoreboard router, failure-to-skill pipeline, semantic cache) directly address the observed failure modes but remain unimplemented due to missing promotion gates.
-
-### `dream:20260828105835:1:1b8ed5`
-*28.08. 10:58 UTC · Quelle: dream*
-
-Rate limiting on the primary model (z-ai/glm-5.2) triggers cascading fallback to a slower, high-variance model (nvidia/nemotron), making latency unpredictable.
-
-### `dream:20260828105358:5:1f9d8b`
-*28.08. 10:53 UTC · Quelle: dream*
-
-Reflex successfully used a tool to understand rejected tools, proving meta-cognitive skills can unblock capability adoption.
-
-### `dream:20260828105358:4:b7d006`
-*28.08. 10:53 UTC · Quelle: dream*
-
-Pruning ran but removed zero facts/events, suggesting thresholds are miscalibrated or access-frequency tracking is broken.
-
-### `dream:20260828105358:3:5d68b7`
-*28.08. 10:53 UTC · Quelle: dream*
-
-Multiple skill proposals for model reliability exist but none are implemented, revealing a promotion gap between proposal and production.
-
-### `dream:20260828105358:2:d7ff14`
-*28.08. 10:53 UTC · Quelle: dream*
-
-High latency variance (34-73s) on nemotron-3-ultra shows static timeouts cause unnecessary failures or wasted waits.
-
-### `dream:20260828105358:1:d21706`
-*28.08. 10:53 UTC · Quelle: dream*
-
-Recurring 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and rate-limit handling for external model endpoints.
 
 ### `last_swarm_critique`
 *28.08. 10:25 UTC · Quelle: critic*
