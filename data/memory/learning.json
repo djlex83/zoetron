@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 15:59:57",
+ "stand": "2026-09-11 16:23:56",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -33,25 +33,19 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "träume-besser-nutzen-lernen.py",
+   "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -63,7 +57,19 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -81,12 +87,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -97,12 +97,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
@@ -255,6 +249,12 @@
    "quote": 1.0
   },
   {
+   "tool": "marktanalyse-endlich-nutzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "traumerkenntnisse-in-fähigkeiten-umsetze.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -387,17 +387,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.829,
- "simulationen_angewandt": 34,
+ "haende_quote": 0.81,
+ "simulationen_angewandt": 36,
  "swarm_scores": {
-  "n": 23,
+  "n": 24,
   "best": 9.0,
-  "schnitt": 3.87
+  "schnitt": 3.92
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 3.64
+   "n": 23,
+   "schnitt": 3.7
   },
   "bau": {
    "n": 1,

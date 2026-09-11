@@ -1,15 +1,15 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 16:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 16:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build a provider health scorecard tracking per-model error rates, latency percentiles, and rate-limit frequenc *(hatte die Idee 6×)*
-- Implement exponential backoff with jitter and automatic provider switching when 429 or timeout errors exceed a *(hatte die Idee 6×)*
-- Develop a dream-memory linkage protocol that cross-references self-diagnosis results with past dream patterns  *(hatte die Idee 6×)*
 - Create skill promotion gate requiring automated benchmark pass, soak period, and explicit convergence contract *(hatte die Idee 6×)*
+- Build a provider health scorecard tracking per-model error rates, latency percentiles, and rate-limit frequenc *(hatte die Idee 5×)*
+- Implement exponential backoff with jitter and automatic provider switching when 429 or timeout errors exceed a *(hatte die Idee 5×)*
 - Create a causal-preservation pruning rule that retains event chains leading to failures even when individual i *(hatte die Idee 5×)*
+- Develop a dream-memory linkage protocol that cross-references self-diagnosis results with past dream patterns  *(hatte die Idee 5×)*
 - Design a swarm-data freshness validator that automatically invalidates swarm decisions when the age of underly *(hatte die Idee 5×)*
 - Extend selbstdiagnose to publish operational health metrics (model success rate, convergence rate, latency per *(hatte die Idee 5×)*
 - Build drive-goal escalation loop that converts failure/stale/gap signals into scheduled reflex invocations wit *(hatte die Idee 5×)*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
@@ -37,10 +37,15 @@
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 3×)*
-- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 2×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals for circuit breaker, provider-health monitor, and deadline-aware executor were generated but not yet implemented, creating a bootstrap
+- Pruning (20 facts, 60 events) and self-diagnosis show healthy memory hygiene, but the system lacks automatic degradation policies when primary provide
+- dots-studio/dots-3-note-preview:free is the only consistently available model but exhibits high latency variance (22-39s), making it unsuitable for la
+- The evolution/swarm loop stalls at 5/10 without convergence because unreliable model calls inject noise into critic scores and builder outputs.
+- Multiple models from the same provider (Google) fail simultaneously with 429 errors, indicating provider-level rate limits require provider-aware rout
 - Skill implementation succeeds when the artifact is executable code (104-line Python file runs), not just documentation.
 - Calibration is perfectly accurate (predicted=actual=5), indicating the evaluation loop correctly predicts implementation feasibility.
 - Hand actions (shell/Python execution) succeed reliably (exit 0, ~1.3s) and are not a bottleneck.
@@ -49,13 +54,8 @@
 - Hand actions (local artifact operations) complete in ~1.3s with zero failures, outperforming all model calls by 20-80x.
 - Conserve metabolism mode severely restricts operational capacity (max 3 tasks, 1 iteration) forcing local-first execution strategies.
 - Simulation revision loops detect risks (3 found) but only apply a subset of fixes (1 of 2 revisions) leaving residual risk.
-- dots-studio/dots-3-note-preview:free is the only consistently available model but exhibits high latency variance (28-105s) requiring timeout budgets.
 - Free-tier models on OpenRouter consistently fail with 429 rate limits making them unreliable for production workloads.
 - Pruning removed 9 facts but zero events, suggesting fact-store bloat outpaces event-log growth and requires separate retention policies.
-- Reflex-driven goal renewal succeeded without model calls, demonstrating that critical maintenance tasks can bypass unreliable model endpoints entirely
-- Successful model latency of 23.2s exceeds typical cycle budgets, confirming need for deadline-aware execution with partial result returns.
-- Automatic lockout after three consecutive failures (1800s) exists but operates in isolation from traffic routing, leaving requests stranded on locked 
-- Provider-level 429 errors cascade across multiple models simultaneously, requiring provider-aware routing rather than model-level failover alone.
 
 ---
 

@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11572 Fakten** · Stand 2026-09-11 16:01 UTC · aktualisiert bei jedem Herzschlag
+**11587 Fakten** · Stand 2026-09-11 16:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7455
-- **swarm_artifact:** 1731
-- **last_swarm_critique:** 887
-- **last_swarm_goal:** 622
-- **anti_pattern:** 393
-- **strategy:** 199
+- **dream:** 7460
+- **swarm_artifact:** 1735
+- **last_swarm_critique:** 888
+- **last_swarm_goal:** 623
+- **anti_pattern:** 395
+- **strategy:** 200
 - **tool:** 162
-- **hand_result:** 84
+- **hand_result:** 85
 - **aktuell_organfehler:** 39
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*11.09. 16:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Human-in-the-Loop Mediation - Introduce a human annotation layer that interprets the critic's unparseable output and translates it into structured skill activation commands, creating a reliable feedback bridge. NICHT wiederho
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*11.09. 16:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Process Redesign - Replace the critic with a deterministic rule-based evaluator that provides explicit, actionable directives aligned with the proposed skills, eliminating unparseable natural language ambiguity. NICHT wiederh
+
+### `last_swarm_critique`
+*11.09. 16:19 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*11.09. 16:11 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten endlich nutzen
+
+### `dream:20260911161015:5:892a20`
+*11.09. 16:10 UTC · Quelle: dream*
+
+Skill proposals for circuit breaker, provider-health monitor, and deadline-aware executor were generated but not yet implemented, creating a bootstrap gap where resilience code cannot run because the models needed to write it are failing.
+
+### `dream:20260911161015:4:58d291`
+*11.09. 16:10 UTC · Quelle: dream*
+
+Pruning (20 facts, 60 events) and self-diagnosis show healthy memory hygiene, but the system lacks automatic degradation policies when primary providers are rate-limited.
+
+### `dream:20260911161015:3:9b2275`
+*11.09. 16:10 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently available model but exhibits high latency variance (22-39s), making it unsuitable for latency-sensitive steps without timeout guards.
+
+### `dream:20260911161015:2:d1bc40`
+*11.09. 16:10 UTC · Quelle: dream*
+
+The evolution/swarm loop stalls at 5/10 without convergence because unreliable model calls inject noise into critic scores and builder outputs.
+
+### `dream:20260911161015:1:2f2426`
+*11.09. 16:10 UTC · Quelle: dream*
+
+Multiple models from the same provider (Google) fail simultaneously with 429 errors, indicating provider-level rate limits require provider-aware routing not model-aware fallback.
 
 ### `dream:20260911155839:5:763a80`
 *11.09. 15:58 UTC · Quelle: dream*
