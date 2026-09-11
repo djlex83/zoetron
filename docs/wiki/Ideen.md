@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 15:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 16:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 3×)*
+- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill implementation succeeds when the artifact is executable code (104-line Python file runs), not just documentation.
+- Calibration is perfectly accurate (predicted=actual=5), indicating the evaluation loop correctly predicts implementation feasibility.
+- Hand actions (shell/Python execution) succeed reliably (exit 0, ~1.3s) and are not a bottleneck.
+- dots-studio/dots-3-note-preview:free is the only model with consistent success (4/4 calls) and acceptable latency (22-105s), establishing it as the de
+- Rate limiting (HTTP 429) is the dominant failure mode across all primary models (Gemma-31B, Gemma-26B, Laguna), making them unreliable for production 
 - Hand actions (local artifact operations) complete in ~1.3s with zero failures, outperforming all model calls by 20-80x.
 - Conserve metabolism mode severely restricts operational capacity (max 3 tasks, 1 iteration) forcing local-first execution strategies.
 - Simulation revision loops detect risks (3 found) but only apply a subset of fixes (1 of 2 revisions) leaving residual risk.
@@ -51,11 +56,6 @@
 - Successful model latency of 23.2s exceeds typical cycle budgets, confirming need for deadline-aware execution with partial result returns.
 - Automatic lockout after three consecutive failures (1800s) exists but operates in isolation from traffic routing, leaving requests stranded on locked 
 - Provider-level 429 errors cascade across multiple models simultaneously, requiring provider-aware routing rather than model-level failover alone.
-- Self-diagnosis consistently reports zero organ failures, confirming system stability despite external API issues.
-- Pruning runs effectively reduce memory load (2 facts, 19 events) without disrupting active processes, showing safe garbage collection.
-- Reflex-driven swarm data updates consistently succeed with low duration (0.61-2.85s), indicating reliable automation for routine tasks.
-- Successful model calls show latency variance (35-50s) suggesting token count and model load impact performance more than model choice.
-- Repeated 429 errors across multiple models indicate systemic rate-limiting that requires adaptive backoff rather than model switching.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11577 Fakten** · Stand 2026-09-11 15:50 UTC · aktualisiert bei jedem Herzschlag
+**11572 Fakten** · Stand 2026-09-11 16:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7460
+- **dream:** 7455
 - **swarm_artifact:** 1731
 - **last_swarm_critique:** 887
 - **last_swarm_goal:** 622
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911155839:5:763a80`
+*11.09. 15:58 UTC · Quelle: dream*
+
+Skill implementation succeeds when the artifact is executable code (104-line Python file runs), not just documentation.
+
+### `dream:20260911155839:4:3fdeb4`
+*11.09. 15:58 UTC · Quelle: dream*
+
+Calibration is perfectly accurate (predicted=actual=5), indicating the evaluation loop correctly predicts implementation feasibility.
+
+### `dream:20260911155839:3:302f9e`
+*11.09. 15:58 UTC · Quelle: dream*
+
+Hand actions (shell/Python execution) succeed reliably (exit 0, ~1.3s) and are not a bottleneck.
+
+### `dream:20260911155839:2:ad1751`
+*11.09. 15:58 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only model with consistent success (4/4 calls) and acceptable latency (22-105s), establishing it as the de facto primary provider.
+
+### `dream:20260911155839:1:58e8d4`
+*11.09. 15:58 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all primary models (Gemma-31B, Gemma-26B, Laguna), making them unreliable for production use.
 
 ### `dream:20260911154718:5:6818ba`
 *11.09. 15:47 UTC · Quelle: dream*
@@ -43347,56 +43372,6 @@ score=3; issues=Script 1 (Alters-Inventur) schreibt keine 'inventur_alt.json', d
 *28.08. 15:55 UTC · Quelle: system*
 
 Alte Erinnerungen auf Wert prüfen
-
-### `dream:20260828155416:5:1b6c83`
-*28.08. 15:54 UTC · Quelle: dream*
-
-Convergence criteria lack safety margins: calibration outputs systematically underestimate required iterations, and no 2× buffer exists, causing premature convergence declarations that mask incomplete learning.
-
-### `dream:20260828155416:4:671cf4`
-*28.08. 15:54 UTC · Quelle: dream*
-
-Latency variance is extreme and unmanaged: successful calls take 116s+ with no timeout budgets, fallback routing, or latency-aware dispatch, turning transient overloads into systemic stalls.
-
-### `dream:20260828155416:3:925b63`
-*28.08. 15:54 UTC · Quelle: dream*
-
-No pre-flight validation exists for model endpoints: swarm launches proceed without checking rate-limit headroom, endpoint health, or skill prerequisites, causing predictable 429/502 cascades that waste cycles.
-
-### `dream:20260828155416:2:7d77ab`
-*28.08. 15:54 UTC · Quelle: dream*
-
-Skill proposals accumulate but never execute: multiple dream cycles generate implementation-ready proposals (circuit-breaker, scorecard, dispatcher) yet zero hand-action tasks spawn from them, confirming a broken dream-to-action pipeline.
-
-### `dream:20260828155416:1:7caaec`
-*28.08. 15:54 UTC · Quelle: dream*
-
-Model reliability is the primary bottleneck: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra-550b-a55b:free succeeds but with 116s latency and occasional 502s, making single-model dependence untenable.
-
-### `dream:20260828154756:5:a9ff66`
-*28.08. 15:47 UTC · Quelle: dream*
-
-Hand actions are failing silently (exit 1, no error message), indicating a need for better error capture in the execution environment.
-
-### `dream:20260828154756:4:e3ec38`
-*28.08. 15:47 UTC · Quelle: dream*
-
-The system generates valuable skill proposals but lacks an automated mechanism to implement and utilize them effectively.
-
-### `dream:20260828154756:3:8ee628`
-*28.08. 15:47 UTC · Quelle: dream*
-
-Swarm tasks fail to converge when underlying model calls fail, resulting in low scores and wasted execution cycles.
-
-### `dream:20260828154756:2:2f42e8`
-*28.08. 15:47 UTC · Quelle: dream*
-
-High latency models (e.g., >100s) can successfully complete tasks but severely bottleneck the overall system throughput.
-
-### `dream:20260828154756:1:ff9fed`
-*28.08. 15:47 UTC · Quelle: dream*
-
-Free models on OpenRouter are highly susceptible to rate limits (429 errors), causing cascading failures in dependent tasks.
 
 ### `last_swarm_critique`
 *28.08. 14:58 UTC · Quelle: critic*

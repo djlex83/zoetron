@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 15:48:35",
+ "stand": "2026-09-11 15:59:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -156,12 +156,6 @@
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -382,6 +376,12 @@
   },
   {
    "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
