@@ -39186,3 +39186,28 @@
 {"ts": 1788545813.8270504, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.43, "gelesen": 70}}
 {"ts": 1788545813.830562, "kind": "reflex_used", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py", "ok": true}}
 {"ts": 1788545814.2831964, "kind": "act_done", "payload": {"goal_title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787941916.343718, "key": "dream:20260828183156:1:53763b", "value": "Rate limiting (429 errors) affects 4/5 models tested, making inclusionai/ling-3.0-flash-fin:free the only reliable provider under current quota.", "source": "dream"}
+{"ts": 1787941916.3438349, "key": "dream:20260828183156:2:08b832", "value": "Evolutionary search improved solution quality from 6 to 8 by replacing eval()-based code with safer alternatives.", "source": "dream"}
+{"ts": 1787941916.3439107, "key": "dream:20260828183156:3:989530", "value": "Calibration consistently underestimates actual effort (predicted 3 vs actual 6), indicating systematic optimism bias in difficulty estimation.", "source": "dream"}
+{"ts": 1787941916.3439777, "key": "dream:20260828183156:4:283f0e", "value": "Graph exploration (bahnen) shows zero topological progress (delta=0.0, kanten=0) despite 9 retrievals, suggesting retrieval without synthesis.", "source": "dream"}
+{"ts": 1787941916.344044, "key": "dream:20260828183156:5:aa4525", "value": "Poolside/laguna-s-2.1:free succeeds only intermittently (1/4 attempts), confirming quota exhaustion as primary failure mode.", "source": "dream"}
+{"ts": 1788546287.7485309, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788546356.3262618, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788546358.0514002, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 1}}
+{"ts": 1788546362.5599146, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788546362.559912, "schalter_geoeffnet": false}}
+{"ts": 1788546392.4755607, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 29.9, "tokens_ein": 1431, "tokens_aus": 1072}}
+{"ts": 1788546392.4760602, "kind": "skill_proposal", "payload": {"proposal": "Implement a shared-quota tracker that reads OpenRouter rate-limit headers (x-ratelimit-remaining, retry-after) and enforces per-model cooldowns before 429 occurs."}}
+{"ts": 1788546392.4761124, "kind": "skill_proposal", "payload": {"proposal": "Build a dynamic model router that scores models by (success_rate / latency) and auto-blacklists models on repeated 429s with exponential backoff."}}
+{"ts": 1788546392.476163, "kind": "skill_proposal", "payload": {"proposal": "Create a path resolver utility that always expands relative paths against ZOETRON_DATA, validates existence, and returns absolute paths for all file operations."}}
+{"ts": 1788546392.4762132, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-flight latency check that simulates the next model call and aborts or reroutes if predicted latency exceeds the current metabolism budget."}}
+{"ts": 1788546392.476262, "kind": "skill_proposal", "payload": {"proposal": "Schedule a skill-implementation sprint that converts the top 3 pending skill proposals (router, quota tracker, fallback) into working code before new proposals accumulate."}}
+{"ts": 1788546392.476334, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788546394.7087176, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788546394.7087145, "schalter_geoeffnet": false}}
+{"ts": 1788546431.1868713, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 36.5, "tokens_ein": 527, "tokens_aus": 470}}
+{"ts": 1788546431.1870413, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft (70 Fehler vs. 42 Erfolge). Weniger Fehler bedeuten zuverlässigeres Handeln.", "signal": "failure"}}
+{"ts": 1788546431.1872077, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Skills wirklich lernen", "why": "Es gibt 50 Skill-Vorschläge, aber unklar ob sie genutzt werden. Echte Skills erweitern die Fähigkeiten.", "signal": "gap"}}
+{"ts": 1788546431.187311, "kind": "drive_goal", "payload": {"title": "Alte Frontiers und Schwarm-Arbeiten aufräumen", "why": "Mehrere Frontiers und Schwarm-Artefakte sind veraltet. Aufräumen schafft Platz für Neues.", "signal": "stale"}}
+{"ts": 1788546434.5585065, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.14, "gelesen": 292}}
+{"ts": 1788546434.5605643, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten praktisch testen", "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py", "ok": true}}
+{"ts": 1788546434.9765244, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten praktisch testen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788546912.168029, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

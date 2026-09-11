@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11577 Fakten** · Stand 2026-09-11 18:28 UTC · aktualisiert bei jedem Herzschlag
+**11577 Fakten** · Stand 2026-09-11 18:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7470
 - **swarm_artifact:** 1725
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911183701:5:e6ce4a`
+*11.09. 18:37 UTC · Quelle: dream*
+
+Self-diagnosis reported zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not treated as organ dysfunction.
+
+### `dream:20260911183701:4:d33e5d`
+*11.09. 18:37 UTC · Quelle: dream*
+
+Event pruning removed 22 entries while fact count stayed flat, suggesting experiential data accumulates faster than distilled knowledge.
+
+### `dream:20260911183701:3:388285`
+*11.09. 18:37 UTC · Quelle: dream*
+
+Automated reflex execution (veraltete-schwarmziele-aktualisieren.py) succeeded without human intervention, proving the reflex layer can maintain system hygiene.
+
+### `dream:20260911183701:2:a81f0c`
+*11.09. 18:37 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview model remains the only consistently available free-tier endpoint under current load.
+
+### `dream:20260911183701:1:cbb69e`
+*11.09. 18:37 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple Google and Poolside models indicate provider-level rate limiting rather than model-specific failures.
 
 ### `dream:20260911182507:5:1cd229`
 *11.09. 18:25 UTC · Quelle: dream*
@@ -43382,31 +43407,6 @@ Successful calls (inclusionai/ling, nvidia/nemotron-3-ultra) share low latency a
 *28.08. 18:37 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for sustained swarm workloads.
-
-### `dream:20260828183156:5:aa4525`
-*28.08. 18:31 UTC · Quelle: dream*
-
-Poolside/laguna-s-2.1:free succeeds only intermittently (1/4 attempts), confirming quota exhaustion as primary failure mode.
-
-### `dream:20260828183156:4:283f0e`
-*28.08. 18:31 UTC · Quelle: dream*
-
-Graph exploration (bahnen) shows zero topological progress (delta=0.0, kanten=0) despite 9 retrievals, suggesting retrieval without synthesis.
-
-### `dream:20260828183156:3:989530`
-*28.08. 18:31 UTC · Quelle: dream*
-
-Calibration consistently underestimates actual effort (predicted 3 vs actual 6), indicating systematic optimism bias in difficulty estimation.
-
-### `dream:20260828183156:2:08b832`
-*28.08. 18:31 UTC · Quelle: dream*
-
-Evolutionary search improved solution quality from 6 to 8 by replacing eval()-based code with safer alternatives.
-
-### `dream:20260828183156:1:53763b`
-*28.08. 18:31 UTC · Quelle: dream*
-
-Rate limiting (429 errors) affects 4/5 models tested, making inclusionai/ling-3.0-flash-fin:free the only reliable provider under current quota.
 
 ### `last_swarm_critique`
 *28.08. 18:12 UTC · Quelle: critic*

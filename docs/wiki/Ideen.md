@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 18:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 18:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reported zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not treated as organ d
+- Event pruning removed 22 entries while fact count stayed flat, suggesting experiential data accumulates faster than distilled knowledge.
+- Automated reflex execution (veraltete-schwarmziele-aktualisieren.py) succeeded without human intervention, proving the reflex layer can maintain syste
+- The dots-studio/dots-3-note-preview model remains the only consistently available free-tier endpoint under current load.
+- Repeated 429 errors across multiple Google and Poolside models indicate provider-level rate limiting rather than model-specific failures.
 - Dynamic routing based on recent success rates can mitigate transient rate limits.
 - Reflex actions can update stale knowledge but do not prevent rate-limit-induced outages.
 - Immediate retries after a 429 without backoff increase the chance of continued failure.
@@ -51,11 +56,6 @@
 - Fallback model dots-studio/dots-3-note-preview:free succeeds but with 25–40 s latency, showing that reliability gains come at a significant performanc
 - A three-strike lockout rule successfully prevents cascading failures but leaves a 30-minute gap during which the blocked model cannot be retried even 
 - Model failures cluster around timeouts and HTTP 429 rate-limit errors, indicating the system is hitting external API constraints rather than experienc
-- Simulation identifies risks but doesn't address root causes of skill utilization failure, suggesting the issue is in skill representation, not risk mi
-- Evolution generates high-variance variants (scores 4-9) but fails to converge because structural validation happens too late in the pipeline.
-- dots-studio/dots-3-note-preview:free is the only consistently available model and should be the default fallback for critical paths.
-- The 3-strike lockout policy creates cascading failures when a model is already degraded by timeouts or rate limits.
-- Free-tier OpenRouter models (Gemma, Poolside) hit 429 rate limits under load, making them unreliable for production routing.
 
 ---
 

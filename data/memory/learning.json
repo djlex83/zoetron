@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 18:26:34",
+ "stand": "2026-09-11 18:38:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -150,12 +150,6 @@
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -388,6 +382,12 @@
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fehler-in-modellen-finden-und-reparieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
