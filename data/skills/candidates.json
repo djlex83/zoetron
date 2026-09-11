@@ -10,7 +10,7 @@
         "pattern-recognition",
         "dream-analysis"
       ],
-      "extracted_at": "2026-09-08T02:57:12.475170"
+      "extracted_at": "2026-09-11T04:52:03.164876"
     },
     {
       "name": "Konsolidat-zu-Skill-Pipeline",
@@ -22,7 +22,7 @@
         "pipeline",
         "skill-extraction"
       ],
-      "extracted_at": "2026-09-08T02:57:12.475184"
+      "extracted_at": "2026-09-11T04:52:03.164890"
     },
     {
       "name": "Metabolisches Dream-Gating",
@@ -34,12 +34,12 @@
         "metabolic",
         "gating"
       ],
-      "extracted_at": "2026-09-08T02:57:12.475189"
+      "extracted_at": "2026-09-11T04:52:03.164895"
     }
   ],
   "count": 3,
   "fallback_used": true,
   "dream_module_available": false,
   "pipeline_exists": false,
-  "extracted_at": "2026-09-08T02:57:12.475269"
+  "extracted_at": "2026-09-11T04:52:03.164988"
 }

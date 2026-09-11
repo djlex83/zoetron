@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11703 Fakten** · Stand 2026-09-11 04:44 UTC · aktualisiert bei jedem Herzschlag
+**11709 Fakten** · Stand 2026-09-11 04:55 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7550
 - **swarm_artifact:** 1769
-- **last_swarm_critique:** 878
-- **last_swarm_goal:** 613
-- **anti_pattern:** 401
-- **strategy:** 202
+- **last_swarm_critique:** 879
+- **last_swarm_goal:** 614
+- **anti_pattern:** 403
+- **strategy:** 203
 - **tool:** 163
-- **hand_result:** 88
+- **hand_result:** 89
 - **aktuell_organfehler:** 39
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Träume in echte Entwickl:1`
+*11.09. 04:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Bottom-up pattern matching - Verwende eine regelbasierte Maschine (z.B. mit `re` und Callback-Functions), die Muster in Traumtexten erkennt und direkt auf vordefinierte Entwicklungs-Kategorien abbildet. Jede Regel hat Tests. 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Träume in echte Entwickl:0`
+*11.09. 04:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Top-down domain modeling - Definiere zuerst ein striktes Datenmodell (z.B. Pydantic- oder Marshmallow-Schemas) für 'Entwicklung' und 'Traum', wobei Traum eine Liste von Themen aus 'Entwicklung' referenziert. Implementiere ein
+
+### `last_swarm_critique`
+*11.09. 04:53 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil bestätigt: LÄUFT NICHT - Traceback bei Ausführung, Code bricht vorzeitig ab; In extract_development_themes wird themes['metadata'] als separater Container missbraucht, obwohl themes ein defaultdict mit festem Schema ist - das erz
+
+### `last_swarm_goal`
+*11.09. 04:52 UTC · Quelle: system*
+
+Träume in echte Entwicklung umsetzen
+
+### `dream:20260911045147:5:31064f`
+*11.09. 04:51 UTC · Quelle: dream*
+
+Absence of a model health registry leads to repeated selection of degraded models, amplifying task failure rates.
+
+### `dream:20260911045147:4:d8481f`
+*11.09. 04:51 UTC · Quelle: dream*
+
+Token budget overruns occur when fallback models are selected without considering their historical token efficiency.
+
+### `dream:20260911045147:3:b5a4e4`
+*11.09. 04:51 UTC · Quelle: dream*
+
+Repeated model failures during high-stakes tasks indicate lack of pre-flight validation before committing to a model.
+
+### `dream:20260911045147:2:6e1e83`
+*11.09. 04:51 UTC · Quelle: dream*
+
+Models with high latency (>40s) and upstream errors are indistinguishable from local failures without structured error classification.
+
+### `dream:20260911045147:1:951d86`
+*11.09. 04:51 UTC · Quelle: dream*
+
+Provider-level failures (429/502) cascade across multiple models from the same provider, causing simultaneous degradation.
 
 ### `dream:20260911044150:5:213e81`
 *11.09. 04:41 UTC · Quelle: dream*
@@ -43917,31 +43962,6 @@ score=8; issues=Feasibility analysis uses simple keyword heuristics instead of s
 *28.08. 04:44 UTC · Quelle: system*
 
 Vorschläge in echte Fähigkeiten umwandeln
-
-### `dream:20260828044407:5:d13a30`
-*28.08. 04:44 UTC · Quelle: dream*
-
-Calibration error of 2.0 (predicted 3 vs actual 1) shows the planner overestimates success; a confidence penalty for untested artifacts is needed.
-
-### `dream:20260828044407:4:18f3a7`
-*28.08. 04:44 UTC · Quelle: dream*
-
-Evolutionary search raised artifact scores from 1 to 9 in one run, proving that multi-variant generation with critic feedback is a high-leverage pattern.
-
-### `dream:20260828044407:3:6c1b24`
-*28.08. 04:44 UTC · Quelle: dream*
-
-Hand actions repeatedly fail with exit code 1 and zero bytes read, indicating sandbox execution failures that need pre-flight validation.
-
-### `dream:20260828044407:2:166ab1`
-*28.08. 04:44 UTC · Quelle: dream*
-
-"nvidia/nemotron-3-ultra-550b-a55b:free" succeeds but exhibits high latency variance (12–86 s), requiring adaptive timeouts and fallback triggers.
-
-### `dream:20260828044407:1:42ba11`
-*28.08. 04:44 UTC · Quelle: dream*
-
-The model "z-ai/glm-5.2:free" consistently returns 429 rate-limit errors and should be excluded from the routing pool or wrapped with exponential backoff.
 
 ### `last_swarm_critique`
 *28.08. 04:26 UTC · Quelle: critic*
