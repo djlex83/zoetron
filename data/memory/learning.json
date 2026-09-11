@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 20:45:54",
+ "stand": "2026-09-11 20:59:30",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,13 +39,13 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
+   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -151,12 +151,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-in-taten-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "modellfehler-systematisch-reduzieren.py",
@@ -399,8 +393,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.805,
- "simulationen_angewandt": 36,
+ "haende_quote": 0.81,
+ "simulationen_angewandt": 35,
  "swarm_scores": {
   "n": 24,
   "best": 9.0,
@@ -408,8 +402,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 23,
-   "schnitt": 3.39
+   "n": 22,
+   "schnitt": 3.5
   },
   "bau": {
    "n": 1,

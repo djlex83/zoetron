@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11569 Fakten** · Stand 2026-09-11 20:47 UTC · aktualisiert bei jedem Herzschlag
+**11559 Fakten** · Stand 2026-09-11 21:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7475
+- **dream:** 7465
 - **swarm_artifact:** 1713
 - **last_swarm_critique:** 891
 - **last_swarm_goal:** 626
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911205902:5:b7a1b0`
+*11.09. 20:59 UTC · Quelle: dream*
+
+Metabolism stress and token budget signals exist but no scheduler consumes them to defer non-critical work, leaving the system vulnerable to overload.
+
+### `dream:20260911205902:4:f4cd60`
+*11.09. 20:59 UTC · Quelle: dream*
+
+Reflex tools (träume-in-echte-fähigkeiten-umwandeln.py, veraltete-marktinfos-aktualisieren.py) execute but produce no visible state change in subsequent cycles.
+
+### `dream:20260911205902:3:590377`
+*11.09. 20:59 UTC · Quelle: dream*
+
+Stale swarm knowledge and drive goals persist for multiple cycles without automatic refresh or expiration, causing repeated 'stale' signals.
+
+### `dream:20260911205902:2:8f942a`
+*11.09. 20:59 UTC · Quelle: dream*
+
+Model failure rate is acknowledged as a top drive goal yet no automated model-router or fallback logic has been instantiated despite repeated proposals.
+
+### `dream:20260911205902:1:bdaeb1`
+*11.09. 20:59 UTC · Quelle: dream*
+
+Skill proposals recur identically across cycles (stress scheduler, dream-to-code pipeline) but no deployment evidence appears, indicating a broken proposal-to-production loop.
 
 ### `tool:fähigkeits-vorschläge-umsetzen`
 *11.09. 20:45 UTC · Quelle: hands*
@@ -43332,81 +43357,6 @@ Fallback model latency varies 4× (9 s vs 33 s), revealing that health-aware rou
 *28.08. 20:58 UTC · Quelle: dream*
 
 Repeated 429 errors on the same model indicate that reactive fallback is insufficient without proactive quota tracking and predictive throttling.
-
-### `dream:20260828205338:5:d6d8a0`
-*28.08. 20:53 UTC · Quelle: dream*
-
-Zero pruning activity despite repeated cycles suggests memory accumulation without consolidation, risking context overflow.
-
-### `dream:20260828205338:4:481aba`
-*28.08. 20:53 UTC · Quelle: dream*
-
-Five skill proposals exist (failover, path resolution, budget executor, dream bridge, backoff handler) but the 'make skills usable' drive persists, revealing a deployment bottleneck.
-
-### `dream:20260828205338:3:10b214`
-*28.08. 20:53 UTC · Quelle: dream*
-
-Reflex-mode actions converge quickly but only address tactical symptoms; strategic drive goals remain in 'failure', 'stale', 'gap' states for multiple cycles.
-
-### `dream:20260828205338:2:863c87`
-*28.08. 20:53 UTC · Quelle: dream*
-
-Three strategic goals (model reliability, market analysis, skill implementation) recur across cycles without convergence, indicating a planning-execution gap.
-
-### `dream:20260828205338:1:033ddb`
-*28.08. 20:53 UTC · Quelle: dream*
-
-Primary model (z-ai/glm-5.2) consistently fails with 429 rate limits, forcing fallback to high-latency (32-45s) nemotron model that slows iteration cycles.
-
-### `dream:20260828204927:5:cebe9f`
-*28.08. 20:49 UTC · Quelle: dream*
-
-Reflex tools execute reliably but only trigger on explicit goals, missing autonomous error-pattern detection.
-
-### `dream:20260828204927:4:778f9f`
-*28.08. 20:49 UTC · Quelle: dream*
-
-Self-diagnosis reports healthy organs while model-layer failures continue, indicating monitoring blind spots at the inference layer.
-
-### `dream:20260828204927:3:a66865`
-*28.08. 20:49 UTC · Quelle: dream*
-
-Stale goals and insights persist across cycles without forced refresh, risking decisions on outdated assumptions.
-
-### `dream:20260828204927:2:0841a3`
-*28.08. 20:49 UTC · Quelle: dream*
-
-Proposed skills accumulate but remain unimplemented, creating a proposal-execution gap that stalls capability growth.
-
-### `dream:20260828204927:1:d23bd1`
-*28.08. 20:49 UTC · Quelle: dream*
-
-Rate-limited models (429 errors) persist without automatic quarantine, causing repeated failed attempts before fallback succeeds.
-
-### `dream:20260828204237:5:5c171b`
-*28.08. 20:42 UTC · Quelle: dream*
-
-Skill proposals generated under failure pressure tend to address immediate symptoms; durable procedures require cross-cutting abstraction patterns (e.g., circuit breaker) over task-specific fixes.
-
-### `dream:20260828204237:4:7579a3`
-*28.08. 20:42 UTC · Quelle: dream*
-
-Internal self-diagnostics (selbstdiagnose, reflex, prune) pass cleanly while external model dependencies fail — creating a blind spot where the system appears healthy but is functionally blocked.
-
-### `dream:20260828204237:3:e61b1b`
-*28.08. 20:42 UTC · Quelle: dream*
-
-The swarm's 2-cycle non-convergence at score=1 reveals that revision-based refinement loops lack sufficient signal to escape low-quality local optima without a stronger convergence threshold.
-
-### `dream:20260828204237:2:e96c72`
-*28.08. 20:42 UTC · Quelle: dream*
-
-Even 'successful' model calls exhibit severe latency variance (12.9s → 58.8s), meaning availability metrics alone are insufficient for reliability assessment; percentile latency tracking is required.
-
-### `dream:20260828204237:1:9b8014`
-*28.08. 20:42 UTC · Quelle: dream*
-
-API rate limiting (429) is a systemic, provider-side failure mode that simultaneously affects all models on the same endpoint — it is not a model-selection problem but an external dependency bottleneck.
 
 ### `last_swarm_critique`
 *28.08. 20:32 UTC · Quelle: critic*
