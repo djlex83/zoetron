@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 06:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 06:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System lacks graceful degradation because no orchestrator activates fallback constraints when multiple models fail.
+- Error handling is ad-hoc because no unified taxonomy routes each error class to its specific recovery action.
+- Stale swarm knowledge persists because no scheduled refresh mechanism forces re-evaluation of archived votes.
+- Skill proposals accumulate without implementation because no automated pipeline bridges proposal to deployed code.
+- Model failures recur because no pre-flight health probe validates model availability before task assignment.
 - Latency variance (4s vs 38s) on the same model indicates unreliable infrastructure that requires degraded-mode fallbacks.
 - Reflex convergence goes unmonitored, missing opportunities to promote stable behaviors into default procedures.
 - Stale knowledge (>7 days) persists without automated archival, causing the system to replay outdated patterns during consolidation.
@@ -51,11 +56,6 @@
 - Hand actions fail because relative paths are resolved against the working directory instead of ZOETRON_DATA, causing silent zero-byte reads.
 - The poolside/laguna-s-2.1:free model consistently succeeds where others fail, establishing it as the de facto backbone for inference.
 - Free-tier LLM endpoints (Gemma, Nemotron) fail systematically under rate limits (429) and upstream overload (502), making them unreliable as primary p
-- Reflex-driven error reduction succeeds but only triggers post-failure; predictive health signals could prevent the failure entirely.
-- Error handling is purely reactive; pre-flight probes and a live health registry would avoid sending high-stakes tasks to currently-degraded providers.
-- Model selection discovers reliable models (Poolside) by chance rather than policy; a reliability-aware router would prevent known-failing models from 
-- Proposed skills accumulate unused because no automated pipeline converts approved proposals into deployed, tested code.
-- Provider-tier failures (Nvidia 502, Google 429) are systematic and require provider-level circuit breaking, not per-model retries.
 
 ---
 

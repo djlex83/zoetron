@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 06:43:54",
+ "stand": "2026-09-11 06:55:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -28,8 +28,8 @@
   },
   {
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -58,6 +52,12 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0

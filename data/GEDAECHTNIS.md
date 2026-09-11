@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11668 Fakten** · Stand 2026-09-11 06:45 UTC · aktualisiert bei jedem Herzschlag
+**11663 Fakten** · Stand 2026-09-11 06:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7530
+- **dream:** 7525
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 880
 - **last_swarm_goal:** 615
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911065416:5:d4a8c0`
+*11.09. 06:54 UTC · Quelle: dream*
+
+System lacks graceful degradation because no orchestrator activates fallback constraints when multiple models fail.
+
+### `dream:20260911065416:4:a4d462`
+*11.09. 06:54 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260911065416:3:c882aa`
+*11.09. 06:54 UTC · Quelle: dream*
+
+Stale swarm knowledge persists because no scheduled refresh mechanism forces re-evaluation of archived votes.
+
+### `dream:20260911065416:2:0144f3`
+*11.09. 06:54 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation because no automated pipeline bridges proposal to deployed code.
+
+### `dream:20260911065416:1:c59a50`
+*11.09. 06:54 UTC · Quelle: dream*
+
+Model failures recur because no pre-flight health probe validates model availability before task assignment.
 
 ### `dream:20260911064308:5:f6e870`
 *11.09. 06:43 UTC · Quelle: dream*
@@ -43747,56 +43772,6 @@ The critical swarm.py organ is missing from /workspace/zoetron/data/tools/, caus
 *28.08. 06:55 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free model consistently fails with 429 rate-limiting errors, making it unreliable for production swarm runs.
-
-### `dream:20260828065115:5:17db9c`
-*28.08. 06:51 UTC · Quelle: dream*
-
-Swarm convergence requires predictable model availability; current architecture has no SLA-aware routing or health-based model selection.
-
-### `dream:20260828065115:4:a46f04`
-*28.08. 06:51 UTC · Quelle: dream*
-
-High metabolic stress (1.0) and conserve mode amplify the cost of each failed request, turning transient errors into mission-critical blockers.
-
-### `dream:20260828065115:3:3b4d03`
-*28.08. 06:51 UTC · Quelle: dream*
-
-Proposed reliability skills (health monitor, latency router, convergence criteria) remain unimplemented despite repeated model failures blocking progress.
-
-### `dream:20260828065115:2:1ff405`
-*28.08. 06:51 UTC · Quelle: dream*
-
-The system lacks a circuit-breaker mechanism: failing models are retried indefinitely instead of being temporarily excluded after consecutive failures.
-
-### `dream:20260828065115:1:9e05bd`
-*28.08. 06:51 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits across multiple providers, making them unreliable as primary endpoints without automatic fallback.
-
-### `dream:20260828064548:5:e76f89`
-*28.08. 06:45 UTC · Quelle: dream*
-
-Hardcoded stress thresholds surfaced as a critic issue, showing that embedded constants reduce adaptability across contexts.
-
-### `dream:20260828064548:4:09e5ed`
-*28.08. 06:45 UTC · Quelle: dream*
-
-Evolution and swarm loops stall at score 7 without convergence detection, burning cycles on plateaued performance.
-
-### `dream:20260828064548:3:cbc6fa`
-*28.08. 06:45 UTC · Quelle: dream*
-
-Calibration consistently underestimates experiment throughput (predicted 3 vs actual 7), revealing a systematic prediction bias for exploratory goals.
-
-### `dream:20260828064548:2:c898af`
-*28.08. 06:45 UTC · Quelle: dream*
-
-Nemotron-3-ultra latency varies 6x (15–95s), making fixed timeouts unreliable and requiring per-model p95 budgets with fallback.
-
-### `dream:20260828064548:1:050465`
-*28.08. 06:45 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate a persistent rate-limit bottleneck that wastes cycles without automatic circuit-breaking.
 
 ### `last_swarm_critique`
 *28.08. 06:19 UTC · Quelle: critic*
