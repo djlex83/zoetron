@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11564 Fakten** · Stand 2026-09-11 17:04 UTC · aktualisiert bei jedem Herzschlag
+**11569 Fakten** · Stand 2026-09-11 17:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7455
+- **dream:** 7460
 - **swarm_artifact:** 1725
 - **last_swarm_critique:** 888
 - **last_swarm_goal:** 623
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911171336:5:166c69`
+*11.09. 17:13 UTC · Quelle: dream*
+
+The simulation of skill proposals revealed risks, indicating that proposals should be validated in a sandbox before application.
+
+### `dream:20260911171336:4:027b90`
+*11.09. 17:13 UTC · Quelle: dream*
+
+The system entered a conserve state with stress 1.0, suggesting that high stress should trigger automatic task reduction.
+
+### `dream:20260911171336:3:1cd9e0`
+*11.09. 17:13 UTC · Quelle: dream*
+
+The hand action failed because relative paths were used; absolute path resolution is essential for file operations.
+
+### `dream:20260911171336:2:d2443f`
+*11.09. 17:13 UTC · Quelle: dream*
+
+Read timeouts caused model failures, showing that all model calls need a hard deadline with cancellation.
+
+### `dream:20260911171336:1:00e299`
+*11.09. 17:13 UTC · Quelle: dream*
+
+Multiple models returned 429 errors, indicating that rate limiting is per provider, not per model.
 
 ### `dream:20260911170136:5:02c8e0`
 *11.09. 17:01 UTC · Quelle: dream*
