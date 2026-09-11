@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 21:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 21:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The evolution run produced a winner with score 8/10, confirming that multi-variant evaluation can effectively improve solution quality.
+- Calibration achieved zero error when the model was stable, demonstrating that accurate performance prediction is possible under consistent conditions.
+- Simulation consistently returns revise with three risks and three revisions, revealing that iterative refinement loops are essential for goal achievem
+- The nvidia model exhibits high latency (up to 96s) and large token consumption, suggesting it should be reserved for complex reasoning while lighter m
+- Repeated 502 and 429 errors from Nvidia and Google models show that API rate limits and overloads are a major failure cause, requiring robust fallback
 - Path resolution inconsistencies force repeated absolute-path fixes, indicating the ZOETRON_DATA convention is not yet enforced at ingestion.
 - Rate-limit (429) and timeout errors appear repeatedly yet no systematic backoff or quarantine logic is active in the current cycle.
 - Swarm knowledge refresh relies on a single reflex script that succeeds superficially but does not verify data freshness or relevance.
@@ -51,11 +56,6 @@
 - Stale external knowledge (market data, swarm goals) repeatedly triggers reflex repairs; automated freshness checks would prevent recurring drift.
 - Caching identical prompts (by hash) appears in multiple proposals and would cut both latency and rate-limit pressure simultaneously.
 - Model unreliability (timeouts, 429s) cascades into task failures and wastes token budget, making health-aware routing and retry logic essential.
-- Metabolism stress and token budget signals exist but no scheduler consumes them to defer non-critical work, leaving the system vulnerable to overload.
-- Reflex tools (träume-in-echte-fähigkeiten-umwandeln.py, veraltete-marktinfos-aktualisieren.py) execute but produce no visible state change in subseque
-- Stale swarm knowledge and drive goals persist for multiple cycles without automatic refresh or expiration, causing repeated 'stale' signals.
-- Model failure rate is acknowledged as a top drive goal yet no automated model-router or fallback logic has been instantiated despite repeated proposal
-- Skill proposals recur identically across cycles (stress scheduler, dream-to-code pipeline) but no deployment evidence appears, indicating a broken pro
 
 ---
 

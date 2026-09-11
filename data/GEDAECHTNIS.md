@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11566 Fakten** · Stand 2026-09-11 21:32 UTC · aktualisiert bei jedem Herzschlag
+**11554 Fakten** · Stand 2026-09-11 21:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7470
-- **swarm_artifact:** 1713
+- **dream:** 7465
+- **swarm_artifact:** 1707
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
 - **anti_pattern:** 387
 - **strategy:** 196
-- **tool:** 161
+- **tool:** 160
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911214006:5:e1e506`
+*11.09. 21:40 UTC · Quelle: dream*
+
+The evolution run produced a winner with score 8/10, confirming that multi-variant evaluation can effectively improve solution quality.
+
+### `dream:20260911214006:4:068fec`
+*11.09. 21:40 UTC · Quelle: dream*
+
+Calibration achieved zero error when the model was stable, demonstrating that accurate performance prediction is possible under consistent conditions.
+
+### `dream:20260911214006:3:bdcee7`
+*11.09. 21:40 UTC · Quelle: dream*
+
+Simulation consistently returns revise with three risks and three revisions, revealing that iterative refinement loops are essential for goal achievement.
+
+### `dream:20260911214006:2:94926e`
+*11.09. 21:40 UTC · Quelle: dream*
+
+The nvidia model exhibits high latency (up to 96s) and large token consumption, suggesting it should be reserved for complex reasoning while lighter models handle simple queries.
+
+### `dream:20260911214006:1:c619d9`
+*11.09. 21:40 UTC · Quelle: dream*
+
+Repeated 502 and 429 errors from Nvidia and Google models show that API rate limits and overloads are a major failure cause, requiring robust fallback and retry logic.
 
 ### `tool:ferngedächtnisse-verbinden`
 *11.09. 21:30 UTC · Quelle: hands*
@@ -43318,11 +43343,6 @@ High system stress (1.0) triggers conserve mode that caps iterations to 1, causi
 
 The primary model (z-ai/glm-5.2:free) fails 100% of the time due to rate limiting, making fallback routing a hard requirement not an optimization.
 
-### `tool:alte-erinnerungen-aktualisieren`
-*28.08. 21:37 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Erinnerungen aktualisieren'. Datei: data/tools/alte-erinnerungen-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *28.08. 21:37 UTC · Quelle: critic*
 
@@ -43332,56 +43352,6 @@ score=8; issues=Einfache Keyword-basierte Ähnlichkeit (Jaccard) statt semantisc
 *28.08. 21:29 UTC · Quelle: system*
 
 Alte Erinnerungen aktualisieren
-
-### `dream:20260828212935:5:c49dac`
-*28.08. 21:29 UTC · Quelle: dream*
-
-Pruning remains inactive (0 facts/events pruned) despite cycle progression, showing adaptive pruning thresholds are either misconfigured or absent.
-
-### `dream:20260828212935:4:d8b8d5`
-*28.08. 21:29 UTC · Quelle: dream*
-
-Drive goals (failure, stale, gap) persist across cycles without escalation, indicating absent strategic goal tracking with time-bound escalation triggers.
-
-### `dream:20260828212935:3:f30936`
-*28.08. 21:29 UTC · Quelle: dream*
-
-Multiple skill proposals accumulate without deployment, exposing a systemic proposal-to-production gap requiring automated validation and regression testing.
-
-### `dream:20260828212935:2:5c3159`
-*28.08. 21:29 UTC · Quelle: dream*
-
-Nemotron's latency variance (8–32s) reveals the need for latency-aware routing with SLA thresholds to prevent unpredictable delays in critical paths.
-
-### `dream:20260828212935:1:0abd04`
-*28.08. 21:29 UTC · Quelle: dream*
-
-The GLM model's persistent 429 errors indicate a missing model health quarantine mechanism that should automatically isolate failing models after repeated rate-limit failures.
-
-### `dream:20260828212415:5:2a94fd`
-*28.08. 21:24 UTC · Quelle: dream*
-
-Script execution lacks pre-flight guards: missing shebang, permission, or parse errors surface only at runtime, wasting cycles.
-
-### `dream:20260828212415:4:e4e329`
-*28.08. 21:24 UTC · Quelle: dream*
-
-Stress state ('conserve') is detected but not acted upon; non-critical work continues consuming the single available iteration.
-
-### `dream:20260828212415:3:bfe2b8`
-*28.08. 21:24 UTC · Quelle: dream*
-
-Proposed skills accumulate without a validation loop; the system proposes but never executes a 'try → measure → adopt' cycle.
-
-### `dream:20260828212415:2:a842b3`
-*28.08. 21:24 UTC · Quelle: dream*
-
-Model failures are silent (status 200 with empty choices) or noisy (429), but both leave the pipeline without a fallback, causing task stalls.
-
-### `dream:20260828212415:1:0f9301`
-*28.08. 21:24 UTC · Quelle: dream*
-
-Rate-limit errors (429) cascade across multiple free-tier providers simultaneously, indicating shared quota pools or correlated traffic spikes.
 
 ### `last_swarm_critique`
 *28.08. 21:08 UTC · Quelle: critic*
