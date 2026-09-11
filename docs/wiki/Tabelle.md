@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8311 Neuronen · 904686 bewertete Synapsen
+Stand: 8303 Neuronen · 903290 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -17,13 +17,13 @@ Stand: 8311 Neuronen · 904686 bewertete Synapsen
 | 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 901 | 0.23 |
 | 6 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 825 | 0.25 |
 | 7 | 💭 | Repeated 429 errors across four different models indicate system… | 847 | 0.24 |
-| 8 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 877 | 0.23 |
+| 8 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 876 | 0.23 |
 | 9 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 854 | 0.24 |
 | 10 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 829 | 0.24 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 885 | 0.23 |
 | 12 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 777 | 0.26 |
 | 13 | 💭 | Free-tier providers (Nvidia Nemotron, Google Gemma) consistently… | 773 | 0.26 |
-| 14 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 788 | 0.25 |
+| 14 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 787 | 0.25 |
 | 15 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 895 | 0.22 |
 
 ## Die 15 stärksten Synapsen

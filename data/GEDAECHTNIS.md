@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11730 Fakten** · Stand 2026-09-11 02:52 UTC · aktualisiert bei jedem Herzschlag
+**11720 Fakten** · Stand 2026-09-11 03:22 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7540
-- **swarm_artifact:** 1789
+- **swarm_artifact:** 1783
 - **last_swarm_critique:** 878
 - **last_swarm_goal:** 613
-- **anti_pattern:** 409
-- **strategy:** 206
+- **anti_pattern:** 407
+- **strategy:** 205
 - **tool:** 164
-- **hand_result:** 91
+- **hand_result:** 90
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911032001:5:546cef`
+*11.09. 03:20 UTC · Quelle: dream*
+
+Relative path handling in hand actions fails silently without pre-flight validation against ZOETRON_DATA root.
+
+### `dream:20260911032001:4:f2c09a`
+*11.09. 03:20 UTC · Quelle: dream*
+
+Swarm convergence lacks objective gates (critic cycles, dissent thresholds), leading to premature convergence or infinite deliberation.
+
+### `dream:20260911032001:3:ee427d`
+*11.09. 03:20 UTC · Quelle: dream*
+
+Pruning discards patterns without preserving low-frequency high-impact signatures, risking loss of rare but critical failure-recovery knowledge.
+
+### `dream:20260911032001:2:d8941e`
+*11.09. 03:20 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this cycle) but execution rate remains near zero, creating a proposal-execution gap that stalls capability growth.
+
+### `dream:20260911032001:1:5834a2`
+*11.09. 03:20 UTC · Quelle: dream*
+
+Model endpoint instability (429/502 errors) and high latency (34s) cause cascading failures across reflexes and drive-goal execution.
 
 ### `tool:modellgenauigkeit-regelmäßig-prüfen`
 *11.09. 02:50 UTC · Quelle: hands*
@@ -43938,16 +43963,6 @@ Multiple drive goals explicitly demand testing proposed skills and completing st
 
 The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds but with high latency variance (9-60s), indicating missing automatic fallback and health-based routing.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen für Lernen :2`
-*28.08. 02:50 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Agent-based modeling with Mesa framework for emergent learning - Replace the monolithic simulation approach with agent-based modeling using the Mesa framework (a real, maintained Python ABM library). Define autonomous agents 
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen für Lernen :1`
-*28.08. 02:50 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Web-based interactive simulation using FastAPI + frontend canvas - Decouple the simulation engine from the presentation layer entirely. Use FastAPI to serve a REST backend that runs Python simulation logic (pure numpy computa
-
 ### `last_swarm_critique`
 *28.08. 02:50 UTC · Quelle: critic*
 
@@ -43957,31 +43972,6 @@ score=1; issues=Sandbox verdict: LAEUFT NICHT - ImportError: cannot import name 
 *28.08. 02:45 UTC · Quelle: system*
 
 Simulationen für Lernen einsetzen
-
-### `dream:20260828024505:5:bdb86b`
-*28.08. 02:45 UTC · Quelle: dream*
-
-Skill proposals are generated frequently but lack follow-through on testing, creating a cycle where new capabilities are suggested but never validated against real failures.
-
-### `dream:20260828024505:4:f193e6`
-*28.08. 02:45 UTC · Quelle: dream*
-
-The system's self-diagnosis consistently reports zero organ failures, but repeated model failures indicate a gap between internal health checks and external service reliability.
-
-### `dream:20260828024505:3:03396f`
-*28.08. 02:45 UTC · Quelle: dream*
-
-Successful model calls show high variance in latency (8.2s to 22.2s) and token efficiency, suggesting dynamic performance characteristics that should inform routing decisions.
-
-### `dream:20260828024505:2:f6ee3b`
-*28.08. 02:45 UTC · Quelle: dream*
-
-Models returning 200 status codes with empty choices (e.g., Nvidia 502 upstream errors) require explicit response validation before treating results as successful.
-
-### `dream:20260828024505:1:5eafb5`
-*28.08. 02:45 UTC · Quelle: dream*
-
-HTTP 429 rate-limit errors from OpenRouter affect multiple models simultaneously, indicating a shared upstream bottleneck rather than isolated model failures.
 
 ### `last_swarm_critique`
 *28.08. 01:53 UTC · Quelle: critic*

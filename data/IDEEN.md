@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 02:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 03:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen endlich nutzen *(wieder aufgegriffen: 3×)*
 - Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative path handling in hand actions fails silently without pre-flight validation against ZOETRON_DATA root.
+- Swarm convergence lacks objective gates (critic cycles, dissent thresholds), leading to premature convergence or infinite deliberation.
+- Pruning discards patterns without preserving low-frequency high-impact signatures, risking loss of rare but critical failure-recovery knowledge.
+- Skill proposals accumulate (10+ in this cycle) but execution rate remains near zero, creating a proposal-execution gap that stalls capability growth.
+- Model endpoint instability (429/502 errors) and high latency (34s) cause cascading failures across reflexes and drive-goal execution.
 - Path resolution failures (sys.argv[1], ZOETRON_DATA) repeat across hand_actions; a single PathResolver utility eliminates this class of bugs.
 - Skill proposals accumulate faster than they are merged; a consolidation reflex must run after every N proposals.
 - Swarm knowledge staleness recurs because no scheduled refresh drive exists; cron-driven goals prevent drift.
@@ -51,11 +56,6 @@
 - The reflex tool 'beste-vorschläge-in-fähigkeiten-verwande.py' successfully converted five proposals into runnable skills in one pass, proving the prop
 - The sole working model (ling-3.0-flash-sante) doubled its latency from 5.5s to 9.5s under load, indicating no load-shedding or request queuing in the 
 - Four of five free models failed simultaneously (timeouts + 429 rate limits), revealing a shared-quota bottleneck at the OpenRouter gateway rather than
-- Pruning removes 10-30 facts/events per cycle but self-diagnosis shows zero organ errors, indicating pruning may be too aggressive or diagnostics too c
-- Path-resolution failures recur because relative paths are not absolutized against ZOETRON_DATA before hand actions execute.
-- Swarm planning consistently underestimates effort; the proposed 4-5x calibration multiplier addresses a recurring estimation bias.
-- A single model (inclusionai/ling-3.0-flash-sante:free) consistently succeeds with low latency, suggesting provider diversity beats model size for avai
-- Free-tier models on OpenRouter exhibit systematic unreliability (429 rate limits, 502 upstream errors, timeouts) making them unsuitable as primary pro
 
 ---
 
