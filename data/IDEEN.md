@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 11:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 11:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated prompts to failing models waste quota and latency; no semantic cache or health-aware routing exists to deduplicate or redirect traffic.
+- Self-diagnosis and pruning operate correctly (0 organ errors, 39 events pruned) but cannot compensate for upstream model unreliability and skill-imple
+- Swarm feedback signals (critiques, goals) are stale, cutting off external corrective input that previously drove course corrections.
+- Over 40 skill proposals exist but only 24 drive goals, revealing a systemic bottleneck where proposals are generated but not validated, promoted, or i
+- Model endpoints frequently return 429 errors and high latency (up to 52s) without a shared rate-limiting layer, causing cascading failures across task
 - Aggressive pruning (39 facts, 127 events per run) may discard context needed for debugging recurring failures like model 429 patterns.
 - Skill proposals accumulate but are not automatically implemented, creating a gap between identified improvements and operational capabilities.
 - The swarm process consistently fails to converge (converged: false) despite multiple cycles, suggesting missing convergence criteria or insufficient c
@@ -51,11 +56,6 @@
 - The reflex tool "vorgeschlagene-fähigkeiten-umsetzen.py" returned an error, indicating missing preconditions.
 - Hand actions fail when the target file is missing, so input paths must be validated before execution.
 - Free-tier models frequently return HTTP 429, so the system should automatically switch to a healthy alternative.
-- Skill proposals emerge reactively from failure patterns but lack a validation-to-production pipeline, causing good ideas to stall as proposals.
-- Pruning (5 facts, 19 events) and self-diagnosis (zero organ errors) indicate memory hygiene functions correctly while inference layer fails.
-- The sole functioning model (dots-studio/dots-3-note-preview) exhibits high latency variance (28–68s), making it unreliable for time-sensitive operatio
-- Automatic model quarantine after three consecutive errors isolates failing endpoints but lacks graceful degradation, leaving the system without viable
-- Rate limits cascade across multiple models simultaneously when no coordinated throttling exists, turning transient quota exhaustion into systemic unav
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11594 Fakten** · Stand 2026-09-11 11:46 UTC · aktualisiert bei jedem Herzschlag
+**11599 Fakten** · Stand 2026-09-11 11:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7469
+- **dream:** 7474
 - **swarm_artifact:** 1741
 - **last_swarm_critique:** 884
 - **last_swarm_goal:** 619
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911115452:5:1b7cf1`
+*11.09. 11:54 UTC · Quelle: dream*
+
+Repeated prompts to failing models waste quota and latency; no semantic cache or health-aware routing exists to deduplicate or redirect traffic.
+
+### `dream:20260911115452:4:e439f2`
+*11.09. 11:54 UTC · Quelle: dream*
+
+Self-diagnosis and pruning operate correctly (0 organ errors, 39 events pruned) but cannot compensate for upstream model unreliability and skill-implementation gaps.
+
+### `dream:20260911115452:3:ca3d5b`
+*11.09. 11:54 UTC · Quelle: dream*
+
+Swarm feedback signals (critiques, goals) are stale, cutting off external corrective input that previously drove course corrections.
+
+### `dream:20260911115452:2:b1fb61`
+*11.09. 11:54 UTC · Quelle: dream*
+
+Over 40 skill proposals exist but only 24 drive goals, revealing a systemic bottleneck where proposals are generated but not validated, promoted, or integrated into the toolset.
+
+### `dream:20260911115452:1:dad4b3`
+*11.09. 11:54 UTC · Quelle: dream*
+
+Model endpoints frequently return 429 errors and high latency (up to 52s) without a shared rate-limiting layer, causing cascading failures across tasks.
 
 ### `dream:20260911114403:5:ceeed1`
 *11.09. 11:44 UTC · Quelle: dream*
