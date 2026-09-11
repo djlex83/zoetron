@@ -36673,3 +36673,26 @@
 {"ts": 1788486373.3383396, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 3.18, "gelesen": 506}}
 {"ts": 1788486375.4396014, "kind": "issue_synced", "payload": {"issue": 350, "state": "open"}}
 {"ts": 1788486809.9335952, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787883380.7467735, "key": "dream:20260828021620:1:7956df", "value": "Rate limiting (HTTP 429) on z-ai/glm-5.2:free causes repeated model failures and must be handled with exponential backoff or model fallback.", "source": "dream"}
+{"ts": 1787883380.7468636, "key": "dream:20260828021620:2:f8c496", "value": "Hand actions consistently fail with exit code 1 and no error message, indicating a silent failure in the action execution layer.", "source": "dream"}
+{"ts": 1787883380.746941, "key": "dream:20260828021620:3:740bd5", "value": "Calibration predictions are highly inaccurate (predicted 4, actual 1), suggesting poor confidence estimation in the planning module.", "source": "dream"}
+{"ts": 1787883380.747013, "key": "dream:20260828021620:4:179fcb", "value": "Swarm orchestration converges slowly (2 cycles, not converged) and produces low-quality artifacts (score 1/10), indicating weak variant selection or evaluation.", "source": "dream"}
+{"ts": 1787883380.7470798, "key": "dream:20260828021620:5:f65b0a", "value": "Forbidden patterns in generated code (e.g., shutdown commands) trigger early termination and must be filtered before execution.", "source": "dream"}
+{"ts": 1788488001.8965304, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788488003.740972, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 93}}
+{"ts": 1788488008.096728, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788488008.0967252, "schalter_geoeffnet": false}}
+{"ts": 1788488020.6927612, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 12.6, "tokens_ein": 1387, "tokens_aus": 771}}
+{"ts": 1788488020.6932833, "kind": "skill_proposal", "payload": {"proposal": "Deploy a model router that scores endpoints in real-time (success rate, latency p95, error type) and fails over to the highest-scoring healthy model within 5 seconds."}}
+{"ts": 1788488020.6933396, "kind": "skill_proposal", "payload": {"proposal": "Implement per-model circuit breakers that trip after 3 consecutive failures and enforce exponential backoff (10s, 30s, 60s) before retry."}}
+{"ts": 1788488020.6933913, "kind": "skill_proposal", "payload": {"proposal": "Build a proposal-execution tracker that logs every skill_proposal, auto-generates implementation tasks with deadlines, and escalates unimplemented items after 3 sleep cycles."}}
+{"ts": 1788488020.6934545, "kind": "skill_proposal", "payload": {"proposal": "Add a convergence detector to all self-improvement loops that aborts after 5 cycles without metric improvement and triggers goal reformulation."}}
+{"ts": 1788488020.6935098, "kind": "skill_proposal", "payload": {"proposal": "Instrument all hand actions with structured error capture (stdout, stderr, exit code, duration) and automatic retry with exponential backoff for transient failures."}}
+{"ts": 1788488020.6935623, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788488022.909272, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788488022.9092696, "schalter_geoeffnet": false}}
+{"ts": 1788488036.0546424, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 13.1, "tokens_ein": 510, "tokens_aus": 608}}
+{"ts": 1788488036.0548334, "kind": "drive_goal", "payload": {"title": "Modell-Zuverlässigkeit deutlich verbessern", "why": "Das Modell scheitert zu oft. Wir müssen es verlässlicher machen, damit Aufgaben gelingen.", "signal": "failure"}}
+{"ts": 1788488036.0549486, "kind": "drive_goal", "payload": {"title": "Marktanalyse-Arbeiten abschließen oder erneuern", "why": "Alte Analyse-Ergebnisse liegen ungenutzt herum. Wir brauchen eine aktuelle Übersicht vom Markt.", "signal": "stale"}}
+{"ts": 1788488036.0550337, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten testen und nutzen", "why": "Viele neue Fähigkeiten wurden vorgeschlagen. Wir sollten sie prüfen und für uns nutzbar machen.", "signal": "gap"}}
+{"ts": 1788488038.642313, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.27, "gelesen": 1}}
+{"ts": 1788488038.6447308, "kind": "reflex_used", "payload": {"goal": "Simulation mit echtem Handeln verbinden", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
+{"ts": 1788488039.15545, "kind": "act_done", "payload": {"goal_title": "Simulation mit echtem Handeln verbinden", "score": null, "converged": true, "mode": "reflex"}}

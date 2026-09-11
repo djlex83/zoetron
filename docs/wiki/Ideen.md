@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 02:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 02:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 10-30 facts/events per cycle but self-diagnosis shows zero organ errors, indicating pruning may be too aggressive or diagnostics too c
+- Path-resolution failures recur because relative paths are not absolutized against ZOETRON_DATA before hand actions execute.
+- Swarm planning consistently underestimates effort; the proposed 4-5x calibration multiplier addresses a recurring estimation bias.
+- A single model (inclusionai/ling-3.0-flash-sante:free) consistently succeeds with low latency, suggesting provider diversity beats model size for avai
+- Free-tier models on OpenRouter exhibit systematic unreliability (429 rate limits, 502 upstream errors, timeouts) making them unsuitable as primary pro
 - Reflex convergence succeeds when tools are deterministic scripts (alte-schwarm-ergebnisse-aufräumen.py) but fails for open-ended model-dependent skill
 - Aggressive pruning (39+30 events, 6+10 facts per cycle) risks discarding low-frequency high-impact patterns needed for rare failure diagnosis.
 - Selbstdiagnose reports zero organ errors while model failure rate exceeds 75%, indicating health monitoring blind spots for external dependencies.
@@ -51,11 +56,6 @@
 - Tool rejected for 'no return value, nothing written' reveals skills must produce verifiable artifacts (files, state changes, structured returns) not j
 - Calibration error of 800% (predicted 1 vs actual 9) proves the system cannot estimate its own capability, making all planning unreliable.
 - Model latency varies 17x (10.5s to 175.6s) for identical model calls, breaking planning assumptions and causing timeout cascades.
-- Swarm knowledge staleness drives redundant drive goals because no automated freshness check exists for collective memory.
-- Skill proposals accumulate in logs but never activate because the insight-to-skill pipeline lacks a verified execution step.
-- Calibration error of 800% (predicted 1 vs actual 9) reveals the planner's outcome model is decoupled from reality, causing repeated simulation revisio
-- Hand actions consistently fail due to unresolved path variables (sys.argv[1], ZOETRON_DATA) rather than code defects, blocking skill deployment.
-- Model reliability collapses under load without automated failover, as evidenced by 175s latency spikes and 429/502 errors triggering conserve mode.
 
 ---
 

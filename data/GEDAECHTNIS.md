@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11731 Fakten** · Stand 2026-09-11 02:11 UTC · aktualisiert bei jedem Herzschlag
+**11731 Fakten** · Stand 2026-09-11 02:23 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7555
 - **swarm_artifact:** 1781
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911022028:5:401173`
+*11.09. 02:20 UTC · Quelle: dream*
+
+Pruning removes 10-30 facts/events per cycle but self-diagnosis shows zero organ errors, indicating pruning may be too aggressive or diagnostics too coarse.
+
+### `dream:20260911022028:4:0f9bc6`
+*11.09. 02:20 UTC · Quelle: dream*
+
+Path-resolution failures recur because relative paths are not absolutized against ZOETRON_DATA before hand actions execute.
+
+### `dream:20260911022028:3:ca6512`
+*11.09. 02:20 UTC · Quelle: dream*
+
+Swarm planning consistently underestimates effort; the proposed 4-5x calibration multiplier addresses a recurring estimation bias.
+
+### `dream:20260911022028:2:848b8d`
+*11.09. 02:20 UTC · Quelle: dream*
+
+A single model (inclusionai/ling-3.0-flash-sante:free) consistently succeeds with low latency, suggesting provider diversity beats model size for availability.
+
+### `dream:20260911022028:1:489742`
+*11.09. 02:20 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit systematic unreliability (429 rate limits, 502 upstream errors, timeouts) making them unsuitable as primary providers without robust fallback.
 
 ### `dream:20260911020732:5:7430b6`
 *11.09. 02:07 UTC · Quelle: dream*
@@ -44007,31 +44032,6 @@ Hand actions fail when relative paths are used instead of absolute paths rooted 
 *28.08. 02:22 UTC · Quelle: dream*
 
 Free-tier models consistently hit 429 quota errors because no routing logic distributes load across distinct quota buckets.
-
-### `dream:20260828021620:5:f65b0a`
-*28.08. 02:16 UTC · Quelle: dream*
-
-Forbidden patterns in generated code (e.g., shutdown commands) trigger early termination and must be filtered before execution.
-
-### `dream:20260828021620:4:179fcb`
-*28.08. 02:16 UTC · Quelle: dream*
-
-Swarm orchestration converges slowly (2 cycles, not converged) and produces low-quality artifacts (score 1/10), indicating weak variant selection or evaluation.
-
-### `dream:20260828021620:3:740bd5`
-*28.08. 02:16 UTC · Quelle: dream*
-
-Calibration predictions are highly inaccurate (predicted 4, actual 1), suggesting poor confidence estimation in the planning module.
-
-### `dream:20260828021620:2:f8c496`
-*28.08. 02:16 UTC · Quelle: dream*
-
-Hand actions consistently fail with exit code 1 and no error message, indicating a silent failure in the action execution layer.
-
-### `dream:20260828021620:1:7956df`
-*28.08. 02:16 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) on z-ai/glm-5.2:free causes repeated model failures and must be handled with exponential backoff or model fallback.
 
 ### `last_swarm_critique`
 *28.08. 01:53 UTC · Quelle: critic*
