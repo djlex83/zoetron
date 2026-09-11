@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11775 Fakten** · Stand 2026-09-10 23:56 UTC · aktualisiert bei jedem Herzschlag
+**11774 Fakten** · Stand 2026-09-11 00:07 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7555
 - **swarm_artifact:** 1811
@@ -8,11 +8,36 @@
 - **last_swarm_goal:** 612
 - **anti_pattern:** 413
 - **strategy:** 208
-- **tool:** 165
+- **tool:** 164
 - **hand_result:** 94
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911000444:5:79392b`
+*11.09. 00:04 UTC · Quelle: dream*
+
+Drive-goal generation reacts to multiple signal types (skill_proposal, werkzeug_abgelehnt, combination) but lacks prioritization or success tracking.
+
+### `dream:20260911000444:4:92fb66`
+*11.09. 00:04 UTC · Quelle: dream*
+
+Self-generated skill proposals accumulate (5 in this session) without a promotion gate, creating proposal debt that clutters the improvement pipeline.
+
+### `dream:20260911000444:3:72a57d`
+*11.09. 00:04 UTC · Quelle: dream*
+
+Pruning discards 14-19 events per cycle with zero facts removed, indicating aggressive event turnover but conservative fact retention that may lose contextual traces.
+
+### `dream:20260911000444:2:062e0b`
+*11.09. 00:04 UTC · Quelle: dream*
+
+Reflex-mode executions converge reliably (2/2 observed) while model-dependent planning remains fragile under provider instability.
+
+### `dream:20260911000444:1:3d132f`
+*11.09. 00:04 UTC · Quelle: dream*
+
+Model provider failures (502 upstream overload, 429 rate limits) cascade silently without automatic routing, causing latency spikes and token waste before fallback succeeds.
 
 ### `last_swarm_critique`
 *10.09. 23:54 UTC · Quelle: critic*
@@ -44092,36 +44117,6 @@ score=4; issues=Code zu lang: 20990 bzw. 22684 Zeichen ueberschreitet die 20000-
 *28.08. 00:02 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260828000226:5:f78dcb`
-*28.08. 00:02 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack a validation gate; the reflex that connected old dreams succeeded because it reused validated artifacts.
-
-### `dream:20260828000226:4:a32b41`
-*28.08. 00:02 UTC · Quelle: dream*
-
-Fallback model latency varies 5x (7–38s) revealing unstable performance that synthetic probes could detect before production tasks.
-
-### `dream:20260828000226:3:e2e4cf`
-*28.08. 00:02 UTC · Quelle: dream*
-
-Hand-action timeouts (20s) with zero bytes read indicate execution-environment stalls that self-diagnose misses because it only audits organs not runtime.
-
-### `dream:20260828000226:2:6cb689`
-*28.08. 00:02 UTC · Quelle: dream*
-
-Swarm-based error investigation failed (score 0) despite role specialization, suggesting diagnostic tasks need deterministic procedures not collaborative exploration.
-
-### `dream:20260828000226:1:4c3d9b`
-*28.08. 00:02 UTC · Quelle: dream*
-
-Free-tier model rate limits (429 errors) cascade into task failures because no quota-aware router exists to distribute load across buckets.
-
-### `tool:fertigkeiten-wirklich-ausprobieren-nicht`
-*27.08. 23:47 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fertigkeiten wirklich ausprobieren nicht nur planen'. Datei: data/tools/fertigkeiten-wirklich-ausprobieren-nicht.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *27.08. 23:43 UTC · Quelle: critic*
