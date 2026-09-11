@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 20:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 21:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress/budget signals (metabolism.budget) are available but unused by the scheduler; coupling task admission to these signals prevents overload spiral
+- Relative file paths cause hand-action failures; resolving all paths against ZOETRON_DATA at task start eliminates a whole class of I/O errors.
+- Stale external knowledge (market data, swarm goals) repeatedly triggers reflex repairs; automated freshness checks would prevent recurring drift.
+- Caching identical prompts (by hash) appears in multiple proposals and would cut both latency and rate-limit pressure simultaneously.
+- Model unreliability (timeouts, 429s) cascades into task failures and wastes token budget, making health-aware routing and retry logic essential.
 - Metabolism stress and token budget signals exist but no scheduler consumes them to defer non-critical work, leaving the system vulnerable to overload.
 - Reflex tools (träume-in-echte-fähigkeiten-umwandeln.py, veraltete-marktinfos-aktualisieren.py) execute but produce no visible state change in subseque
 - Stale swarm knowledge and drive goals persist for multiple cycles without automatic refresh or expiration, causing repeated 'stale' signals.
@@ -51,11 +56,6 @@
 - The evolution_run procedure improved the swarm-goal-renewal output from 3/10 to 8/10 by generating three variants and selecting the highest-scoring on
 - dots-studio/dots-3-note-preview:free is the only working model but exhibits high latency variance (5.5s to 42.9s) and large output token swings (1326 
 - The gemma-4 models (31b-it and 26b-a4b-it) consistently fail with HTTP 429 rate-limit errors, making them unreliable for production use.
-- Simulation-driven goal revision successfully identified 3 risks and applied 3 corrections, proving the review loop works under tight budgets.
-- Operating in 'conserve' metabolism with max_tasks=3 and max_iterations=1 forces serial execution and eliminates retry headroom.
-- dots-studio/dots-3-note-preview:free is the only model delivering consistent successes, albeit with highly variable latency (5–77 s).
-- Nemotron-3-Ultra suffers read timeouts that trigger 30-minute lockouts after three consecutive failures, removing it from the available pool.
-- Google Gemma models consistently return 429 rate-limit errors under load, making them unreliable for high-throughput tasks.
 
 ---
 

@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11559 Fakten** · Stand 2026-09-11 21:01 UTC · aktualisiert bei jedem Herzschlag
+**11553 Fakten** · Stand 2026-09-11 21:12 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7465
-- **swarm_artifact:** 1713
+- **swarm_artifact:** 1707
 - **last_swarm_critique:** 891
 - **last_swarm_goal:** 626
 - **anti_pattern:** 387
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911210911:5:00ceb1`
+*11.09. 21:09 UTC · Quelle: dream*
+
+Stress/budget signals (metabolism.budget) are available but unused by the scheduler; coupling task admission to these signals prevents overload spirals.
+
+### `dream:20260911210911:4:dda16a`
+*11.09. 21:09 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260911210911:3:573169`
+*11.09. 21:09 UTC · Quelle: dream*
+
+Stale external knowledge (market data, swarm goals) repeatedly triggers reflex repairs; automated freshness checks would prevent recurring drift.
+
+### `dream:20260911210911:2:5d693f`
+*11.09. 21:09 UTC · Quelle: dream*
+
+Caching identical prompts (by hash) appears in multiple proposals and would cut both latency and rate-limit pressure simultaneously.
+
+### `dream:20260911210911:1:385d36`
+*11.09. 21:09 UTC · Quelle: dream*
+
+Model unreliability (timeouts, 429s) cascades into task failures and wastes token budget, making health-aware routing and retry logic essential.
 
 ### `dream:20260911205902:5:b7a1b0`
 *11.09. 20:59 UTC · Quelle: dream*
@@ -43332,31 +43357,6 @@ score=7; issues=Nur der erste Artefakt (Analyse-Skript, 176 Zeilen) durch Sandbo
 *28.08. 20:59 UTC · Quelle: system*
 
 Kritiken und Ziele regelmäßig prüfen
-
-### `dream:20260828205837:5:f49ef9`
-*28.08. 20:58 UTC · Quelle: dream*
-
-Reflexes successfully bypass deliberation for known-good actions (e.g., "Simulationen wirklich anwenden"), suggesting a catalog of verified patterns would accelerate convergence.
-
-### `dream:20260828205837:4:b18f57`
-*28.08. 20:58 UTC · Quelle: dream*
-
-Stress-driven budget cuts (max_iterations=1) starve low-urgency but high-value work like market analysis, causing chronic staleness.
-
-### `dream:20260828205837:3:e28a34`
-*28.08. 20:58 UTC · Quelle: dream*
-
-Skill proposals accumulate across cycles but lack an implementation pipeline, creating a persistent gap between idea and deployable capability.
-
-### `dream:20260828205837:2:60cf2f`
-*28.08. 20:58 UTC · Quelle: dream*
-
-Fallback model latency varies 4× (9 s vs 33 s), revealing that health-aware routing must monitor latency SLOs, not just availability.
-
-### `dream:20260828205837:1:53dec1`
-*28.08. 20:58 UTC · Quelle: dream*
-
-Repeated 429 errors on the same model indicate that reactive fallback is insufficient without proactive quota tracking and predictive throttling.
 
 ### `last_swarm_critique`
 *28.08. 20:32 UTC · Quelle: critic*
