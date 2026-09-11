@@ -1,0 +1,66 @@
+{
+  "status": "completed",
+  "model_path": "/workspace/zoetron/data/model.pkl",
+  "timestamp": "2026-09-11T08:54:38.648553",
+  "errors_detected": 1,
+  "errors": [
+    {
+      "error_type": "ErrorType.OVERFITTING",
+      "severity": "medium",
+      "description": "Suspiciously high score: 1.0000, possible overfitting",
+      "location": "model_performance",
+      "details": {
+        "score": 1.0
+      },
+      "timestamp": "2026-09-11T08:54:38.646423"
+    }
+  ],
+  "repairs_applied": 1,
+  "repair_results": [
+    {
+      "success": true,
+      "strategy_used": "RepairStrategy.PARAMETER_RESET",
+      "message": "Applied regularization adjustments to reduce overfitting",
+      "model_backup": null,
+      "metrics": {
+        "errors_addressed": 1
+      }
+    }
+  ],
+  "qa_results": {
+    "timestamp": "2026-09-11T08:54:38.646555",
+    "test_results": {
+      "basic_prediction": {
+        "passed": true,
+        "prediction_shape": [
+          1
+        ],
+        "details": "Basic prediction works"
+      },
+      "edge_cases": {
+        "passed": true,
+        "tests_passed": 3,
+        "total_tests": 3,
+        "details": "Passed 3/3 edge case tests"
+      },
+      "robustness": {
+        "passed": true,
+        "consistent": true,
+        "details": "Robustness test completed"
+      },
+      "performance": {
+        "passed": true,
+        "inference_time": 0.0002338886260986328,
+        "throughput": 427553.9245667686,
+        "details": "Performance test: 427553.92 predictions/sec"
+      }
+    },
+    "overall_passed": true,
+    "summary": {
+      "passed_tests": 4,
+      "total_tests": 4,
+      "success_rate": 1.0
+    }
+  },
+  "final_model": "Model type: LogisticRegression, has_predict: True"
+}

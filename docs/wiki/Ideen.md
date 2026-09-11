@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 08:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 08:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 3×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm finished with a score of 1 despite evolving, implying that the final integration step lacks a validation gate.
+- Simulation flagged 5 risks and required 5 revisions, revealing that the planning phase underestimates implementation pitfalls.
+- The evolutionary run raised scores from 1/10 to 8‑9/10 but still did not converge, suggesting that more iterations or a tighter evaluation loop are re
+- Successful calls came from models with low latency (e.g., inclusionai/ling‑3.0‑flash‑fin:free at 4.2 s), indicating that model choice heavily influenc
+- Repeated 429 errors show that the current model endpoints are rate‑limited and need backoff or fallback.
 - Calibration predicted two errors but only one occurred, showing model self-assessment is unreliable.
 - Prose-only artifacts failed to produce executable code, causing the simulation to not converge.
 - Successful calls exhibited latencies up to 7.8 seconds, indicating variable network or model processing delays.
@@ -51,11 +56,6 @@
 - Certain free models, like inclusionai/ling-3.0-flash-fin:free, respond successfully and quickly, making them suitable for latency-sensitive tasks.
 - High system stress combined with a conservative budget (max 3 tasks, 1 iteration) limits the ability to recover from failures.
 - The system repeatedly encounters HTTP 429 errors when calling several free models, which blocks progress and requires a retry or fallback strategy.
-- Drive goals highlight reliability, swarm freshness, and dream-skill connection as top priorities for system evolution.
-- Skill proposals consistently target resilience patterns (circuit breakers, backoff, validators) but lack integration with the model router.
-- Timeouts on specific models reveal latency variance requires adaptive selection, not static fallback.
-- 429 rate-limit errors dominate failures, indicating the system exceeds free-tier quotas without backoff.
-- Consecutive model failures trigger automatic lockouts, amplifying instability instead of isolating it.
 
 ---
 

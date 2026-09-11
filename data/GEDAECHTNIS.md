@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11636 Fakten** · Stand 2026-09-11 08:39 UTC · aktualisiert bei jedem Herzschlag
+**11649 Fakten** · Stand 2026-09-11 08:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7514
-- **swarm_artifact:** 1745
-- **last_swarm_critique:** 881
-- **last_swarm_goal:** 616
-- **anti_pattern:** 395
-- **strategy:** 200
-- **tool:** 159
+- **dream:** 7519
+- **swarm_artifact:** 1747
+- **last_swarm_critique:** 882
+- **last_swarm_goal:** 617
+- **anti_pattern:** 397
+- **strategy:** 201
+- **tool:** 160
 - **hand_result:** 87
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:fehler-in-modellen-finden-und-reparieren`
+*11.09. 08:54 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fehler in Modellen finden und reparieren'. Datei: data/tools/fehler-in-modellen-finden-und-reparieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fehler in Modellen finde:2`
+*11.09. 08:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Multi-Agent Collaborative Debugging - Deploy specialized agent teams: one for error detection (using diverse test cases), another for root cause analysis (via attribution maps), and a repair agent (using evolutionary search).
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fehler in Modellen finde:0`
+*11.09. 08:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Formal Verification & Constraint Solving - Translate model behavior into logical constraints and use SMT solvers (like Z3) to formally verify properties. When violations are found, the solver generates minimal repairs by adju
+
+### `last_swarm_critique`
+*11.09. 08:52 UTC · Quelle: critic*
+
+score=6; issues=The artifact runs as a complete Python file (702 lines) and implements a model error detection and repair system with validation, drift detection, and repair strategies.; The visible portion shows a well-structured implementation with ModelVali
+
+### `last_swarm_goal`
+*11.09. 08:48 UTC · Quelle: system*
+
+Fehler in Modellen finden und reparieren
+
+### `dream:20260911084725:5:230a93`
+*11.09. 08:47 UTC · Quelle: dream*
+
+The swarm finished with a score of 1 despite evolving, implying that the final integration step lacks a validation gate.
+
+### `dream:20260911084725:4:ff1f94`
+*11.09. 08:47 UTC · Quelle: dream*
+
+Simulation flagged 5 risks and required 5 revisions, revealing that the planning phase underestimates implementation pitfalls.
+
+### `dream:20260911084725:3:6e489f`
+*11.09. 08:47 UTC · Quelle: dream*
+
+The evolutionary run raised scores from 1/10 to 8‑9/10 but still did not converge, suggesting that more iterations or a tighter evaluation loop are required.
+
+### `dream:20260911084725:2:5871c7`
+*11.09. 08:47 UTC · Quelle: dream*
+
+Successful calls came from models with low latency (e.g., inclusionai/ling‑3.0‑flash‑fin:free at 4.2 s), indicating that model choice heavily influences error rate.
+
+### `dream:20260911084725:1:56e16a`
+*11.09. 08:47 UTC · Quelle: dream*
+
+Repeated 429 errors show that the current model endpoints are rate‑limited and need backoff or fallback.
 
 ### `dream:20260911083636:5:5d238d`
 *11.09. 08:36 UTC · Quelle: dream*
