@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 14:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 14:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,12 +28,12 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Validating proposed skills against historical failure cases ensures only demonstrably effective skills are promoted.
+- Regular pruning of outdated facts and events is essential to maintain system efficiency and prevent knowledge clutter.
+- Integrating dream-derived insights with real actions creates a feedback loop that enhances overall decision-making intelligence.
+- Stale swarm goals directly cause incorrect conclusions and must be updated via automated reflexes with freshness scoring.
+- Frequent 429 errors across multiple free models indicate quota exhaustion and require a dynamic model router that monitors health and switches proacti
 - Regular pruning of facts and events helps keep the knowledge base relevant and manageable.
 - The system's ability to switch to an alternative model after failures shows the importance of maintaining a diverse model pool.
 - Successful execution of the reflex tool demonstrates that specialized scripts can reliably update stale swarm goals.
@@ -51,11 +56,6 @@
 - Reflex actions successfully update swarm information, enabling convergence when explicit planning fails.
 - Swarm goals can become stale, leading to convergence failures; periodic audits are required.
 - Model endpoints frequently return 429 or 502 errors under load, indicating a need for rate limiting and backoff.
-- Calibration overestimates success by 2 points (predicted 2, actual 0), revealing systematic optimism bias.
-- poolside/laguna-s-2.1:free delivers low latency (7s) when not rate-limited, making it the only viable free option.
-- dots-studio/dots-3-note-preview:free succeeds but with 50-60s latency, unsuitable for interactive loops.
-- Nvidia Nemotron endpoints return 502 upstream errors under load, indicating unstable upstream capacity.
-- Free-tier models on OpenRouter suffer pervasive 429 rate limits making them unreliable for production workflows.
 
 ---
 

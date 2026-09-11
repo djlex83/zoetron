@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11601 Fakten** · Stand 2026-09-11 14:11 UTC · aktualisiert bei jedem Herzschlag
+**11597 Fakten** · Stand 2026-09-11 14:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7494
+- **dream:** 7490
 - **swarm_artifact:** 1729
 - **last_swarm_critique:** 885
 - **last_swarm_goal:** 620
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911141954:5:4718a5`
+*11.09. 14:19 UTC · Quelle: dream*
+
+Validating proposed skills against historical failure cases ensures only demonstrably effective skills are promoted.
+
+### `dream:20260911141954:4:43edca`
+*11.09. 14:19 UTC · Quelle: dream*
+
+Regular pruning of outdated facts and events is essential to maintain system efficiency and prevent knowledge clutter.
+
+### `dream:20260911141954:3:95a96f`
+*11.09. 14:19 UTC · Quelle: dream*
+
+Integrating dream-derived insights with real actions creates a feedback loop that enhances overall decision-making intelligence.
+
+### `dream:20260911141954:2:620ecf`
+*11.09. 14:19 UTC · Quelle: dream*
+
+Stale swarm goals directly cause incorrect conclusions and must be updated via automated reflexes with freshness scoring.
+
+### `dream:20260911141954:1:1d943f`
+*11.09. 14:19 UTC · Quelle: dream*
+
+Frequent 429 errors across multiple free models indicate quota exhaustion and require a dynamic model router that monitors health and switches proactively.
 
 ### `dream:20260911140756:5:0e1221`
 *11.09. 14:07 UTC · Quelle: dream*
@@ -43492,51 +43517,6 @@ Code generation without pre-execution syntax validation produces unterminated st
 *28.08. 14:20 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overload (502), requiring fallback strategies.
-
-### `dream:20260828141257:4:925f93`
-*28.08. 14:12 UTC · Quelle: dream*
-
-Latency for successful model calls varies wildly (7.4s to 234.1s), suggesting that timeout limits must be generous or dynamically adjusted based on model performance.
-
-### `dream:20260828141257:3:05c890`
-*28.08. 14:12 UTC · Quelle: dream*
-
-Generated Python code occasionally contains unterminated string literals, indicating a need for stricter syntax validation before execution.
-
-### `dream:20260828141257:2:8dc271`
-*28.08. 14:12 UTC · Quelle: dream*
-
-Models like `z-ai/glm-5.2:free` and `google/gemma-4-*` consistently hit 429 errors and should be deprioritized or removed from the active routing pool.
-
-### `dream:20260828141257:1:2a950e`
-*28.08. 14:12 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter are highly unreliable due to frequent 429 rate limits and 502 upstream overloads, requiring aggressive fallback and retry mechanisms.
-
-### `dream:20260828140742:5:eab9e3`
-*28.08. 14:07 UTC · Quelle: dream*
-
-Metabolism stress at 1.0 with max_tasks=3 forces conservation, yet retry loops burn budget on doomed requests.
-
-### `dream:20260828140742:4:f6bb54`
-*28.08. 14:07 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failure rate exceeds 80%, indicating monitoring blind spots for external dependencies.
-
-### `dream:20260828140742:3:ca2c8d`
-*28.08. 14:07 UTC · Quelle: dream*
-
-Skill proposals accumulate (5+ this cycle) but none execute, creating a proposal-execution gap that stalls capability growth.
-
-### `dream:20260828140742:2:31180d`
-*28.08. 14:07 UTC · Quelle: dream*
-
-Working models exhibit 77-106s latency, exceeding swarm iteration budgets and preventing convergence.
-
-### `dream:20260828140742:1:bcf7be`
-*28.08. 14:07 UTC · Quelle: dream*
-
-Rate limits (429) cascade across providers simultaneously, making sequential fallback ineffective without coordinated backoff.
 
 ### `last_swarm_critique`
 *28.08. 13:32 UTC · Quelle: critic*
