@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11769 Fakten** · Stand 2026-09-11 00:18 UTC · aktualisiert bei jedem Herzschlag
+**11774 Fakten** · Stand 2026-09-11 00:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7560
+- **dream:** 7565
 - **swarm_artifact:** 1805
 - **last_swarm_critique:** 877
 - **last_swarm_goal:** 612
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911002702:5:d1e26c`
+*11.09. 00:27 UTC · Quelle: dream*
+
+The skill-conversion reflex failed repeatedly — translating insights into executable skills needs a structured template, not free-form prose.
+
+### `dream:20260911002702:4:7f30f8`
+*11.09. 00:27 UTC · Quelle: dream*
+
+High stress (1.0) forces conserve mode with max 1 iteration, which prevents swarm goals from completing — stress management is a prerequisite for swarm execution.
+
+### `dream:20260911002702:3:831b33`
+*11.09. 00:27 UTC · Quelle: dream*
+
+Hand actions can exit 0 without touching any file — silent failures must be detected by verifying actual filesystem changes, not just exit codes.
+
+### `dream:20260911002702:2:404325`
+*11.09. 00:27 UTC · Quelle: dream*
+
+Artifacts containing only prose never converge — executable Python code blocks are a hard requirement for progress.
+
+### `dream:20260911002702:1:9636d1`
+*11.09. 00:27 UTC · Quelle: dream*
+
+Model failures are predictable by type (502 overload, 429 rate limit) — a fallback chain with circuit breakers would prevent cascading failures.
 
 ### `dream:20260911001543:5:1cb475`
 *11.09. 00:15 UTC · Quelle: dream*

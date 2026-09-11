@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 00:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 00:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The skill-conversion reflex failed repeatedly — translating insights into executable skills needs a structured template, not free-form prose.
+- High stress (1.0) forces conserve mode with max 1 iteration, which prevents swarm goals from completing — stress management is a prerequisite for swar
+- Hand actions can exit 0 without touching any file — silent failures must be detected by verifying actual filesystem changes, not just exit codes.
+- Artifacts containing only prose never converge — executable Python code blocks are a hard requirement for progress.
+- Model failures are predictable by type (502 overload, 429 rate limit) — a fallback chain with circuit breakers would prevent cascading failures.
 - Effort estimates for swarm tasks are systematically too low by 4-5x; calibration multiplier prevents schedule collapse.
 - Skill proposals accumulate without a conversion pipeline — proposals decay into noise without a 'proposal→skill' implementation step.
 - Swarm convergence marked true with null score indicates premature convergence — require minimum critic cycles or dissent threshold.
@@ -51,11 +56,6 @@
 - Pruning discards 14-19 events per cycle with zero facts removed, indicating aggressive event turnover but conservative fact retention that may lose co
 - Reflex-mode executions converge reliably (2/2 observed) while model-dependent planning remains fragile under provider instability.
 - Model provider failures (502 upstream overload, 429 rate limits) cascade silently without automatic routing, causing latency spikes and token waste be
-- Pruning removes 19 events per cycle but retains zero facts: episodic memory evaporates while semantic memory stays empty.
-- Self-diagnosis reports 'no organ errors' while model endpoints fail: health checks only inspect internal state, not external dependencies.
-- Swarm knowledge decays within hours: reflexes can refresh it, but no scheduler triggers periodic re-validation of collective decisions.
-- Proposed skills accumulate but never activate: the system generates routing/health-check skills yet continues using brittle single-model calls.
-- Model failures cascade silently: 429/502 errors on primary models force fallbacks that increase latency 3x without planner awareness.
 
 ---
 
