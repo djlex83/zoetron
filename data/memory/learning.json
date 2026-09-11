@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 10:44:37",
+ "stand": "2026-09-11 10:55:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,6 +57,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 3,
    "erfolge": 2,
@@ -91,12 +97,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "modelle-zuverlässiger-machen.py",
@@ -169,12 +169,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "simulationen-gezielt-einsetzen.py",
@@ -393,7 +387,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.838,
+ "haende_quote": 0.844,
  "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 23,
@@ -402,8 +396,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 3.59
+   "n": 21,
+   "schnitt": 3.43
   },
   "bau": {
    "n": 1,

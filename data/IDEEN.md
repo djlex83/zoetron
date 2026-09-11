@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 10:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 10:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals emerge reactively from failure patterns but lack a validation-to-production pipeline, causing good ideas to stall as proposals.
+- Pruning (5 facts, 19 events) and self-diagnosis (zero organ errors) indicate memory hygiene functions correctly while inference layer fails.
+- The sole functioning model (dots-studio/dots-3-note-preview) exhibits high latency variance (28–68s), making it unreliable for time-sensitive operatio
+- Automatic model quarantine after three consecutive errors isolates failing endpoints but lacks graceful degradation, leaving the system without viable
+- Rate limits cascade across multiple models simultaneously when no coordinated throttling exists, turning transient quota exhaustion into systemic unav
 - The system's drive to analyze model errors and renew stale goals indicates an adaptive learning mechanism that should be reinforced.
 - Repeated failures across multiple models in the same time window suggest systemic issues rather than isolated model problems.
 - The system's self-diagnosis consistently reports no organ failures, but model-level failures persist, highlighting a gap between system health and com
@@ -51,11 +56,6 @@
 - The system generates skill proposals but does not automatically implement them, creating a gap between problem identification and resolution.
 - Timeout errors on certain models suggest that per-request timeout handling and automatic fallback are necessary to avoid stalled operations.
 - Repeated HTTP 429 errors across multiple models indicate that the system's request rate exceeds the API rate limits, requiring a global rate limiter.
-- Failure patterns are recurring and predictable, enabling automated categorization and adaptive budget reallocation during recovery.
-- Exponential backoff alone is insufficient; proactive health checks and input validation are needed to prevent cascading failures.
-- Stale swarm data and disconnected memories are driving poor decision-making, compounding the impact of model failures.
-- The model 'dots-studio/dots-3-note-preview:free' consistently succeeds while others fail, suggesting it should be prioritized in fallback chains.
-- Repeated 429 errors across multiple models indicate a systemic rate-limiting issue rather than isolated model failures.
 
 ---
 

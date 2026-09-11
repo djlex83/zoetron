@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11617 Fakten** · Stand 2026-09-11 10:46 UTC · aktualisiert bei jedem Herzschlag
+**11612 Fakten** · Stand 2026-09-11 10:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7494
+- **dream:** 7489
 - **swarm_artifact:** 1741
 - **last_swarm_critique:** 883
 - **last_swarm_goal:** 618
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911105451:5:b42dc5`
+*11.09. 10:54 UTC · Quelle: dream*
+
+Skill proposals emerge reactively from failure patterns but lack a validation-to-production pipeline, causing good ideas to stall as proposals.
+
+### `dream:20260911105451:4:85b73e`
+*11.09. 10:54 UTC · Quelle: dream*
+
+Pruning (5 facts, 19 events) and self-diagnosis (zero organ errors) indicate memory hygiene functions correctly while inference layer fails.
+
+### `dream:20260911105451:3:06ebb4`
+*11.09. 10:54 UTC · Quelle: dream*
+
+The sole functioning model (dots-studio/dots-3-note-preview) exhibits high latency variance (28–68s), making it unreliable for time-sensitive operations despite availability.
+
+### `dream:20260911105451:2:86f77d`
+*11.09. 10:54 UTC · Quelle: dream*
+
+Automatic model quarantine after three consecutive errors isolates failing endpoints but lacks graceful degradation, leaving the system without viable alternatives.
+
+### `dream:20260911105451:1:123065`
+*11.09. 10:54 UTC · Quelle: dream*
+
+Rate limits cascade across multiple models simultaneously when no coordinated throttling exists, turning transient quota exhaustion into systemic unavailability.
 
 ### `dream:20260911104343:5:227644`
 *11.09. 10:43 UTC · Quelle: dream*
@@ -43529,56 +43554,6 @@ High latency variance (34-73s) on nemotron-3-ultra shows static timeouts cause u
 *28.08. 10:53 UTC · Quelle: dream*
 
 Recurring 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and rate-limit handling for external model endpoints.
-
-### `dream:20260828104939:5:582726`
-*28.08. 10:49 UTC · Quelle: dream*
-
-Pruning operates blindly without access-frequency telemetry, risking removal of latent knowledge that later drives reflex connections.
-
-### `dream:20260828104939:4:687644`
-*28.08. 10:49 UTC · Quelle: dream*
-
-Convergence decisions lack multi-party gates (critic + planner + score threshold), causing premature convergence on unreliable outputs.
-
-### `dream:20260828104939:3:03043e`
-*28.08. 10:49 UTC · Quelle: dream*
-
-Model fallback succeeds but incurs 23-83s latency spikes, indicating missing per-model p95 latency budgets and dynamic timeout calibration.
-
-### `dream:20260828104939:2:63e85e`
-*28.08. 10:49 UTC · Quelle: dream*
-
-Skill proposals accumulate (12+ in this log) but adoption remains near zero because no mechanism promotes proposals to implemented status after validation.
-
-### `dream:20260828104939:1:cd4e2a`
-*28.08. 10:49 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free reveal a provider-level quota exhaustion pattern that static fallbacks cannot resolve without shared-quota awareness.
-
-### `dream:20260828104306:5:5d4932`
-*28.08. 10:43 UTC · Quelle: dream*
-
-Model reliability varies significantly under load; some free models consistently fail while others remain stable, but no dynamic routing exists.
-
-### `dream:20260828104306:4:abd5bf`
-*28.08. 10:43 UTC · Quelle: dream*
-
-Upstream errors (502/429) are not handled gracefully, resulting in unproductive retries and missed fallback opportunities.
-
-### `dream:20260828104306:3:0f47d8`
-*28.08. 10:43 UTC · Quelle: dream*
-
-Repeated 6/10 scores on the same goal indicate structural stagnation, not parameter drift—requiring forced architectural changes.
-
-### `dream:20260828104306:2:bfec46`
-*28.08. 10:43 UTC · Quelle: dream*
-
-Missing organ dependencies (e.g., hands) silently cap performance at 6/10 without pre-validation, leading to repeated low-quality outcomes.
-
-### `dream:20260828104306:1:874a98`
-*28.08. 10:43 UTC · Quelle: dream*
-
-Sequential model calls to free-tier endpoints trigger cascading 429 rate-limit failures, causing pipeline stalls and wasted compute.
 
 ### `last_swarm_critique`
 *28.08. 10:25 UTC · Quelle: critic*
