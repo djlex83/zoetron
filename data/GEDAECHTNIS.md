@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11707 Fakten** · Stand 2026-09-11 04:24 UTC · aktualisiert bei jedem Herzschlag
+**11703 Fakten** · Stand 2026-09-11 04:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7545
-- **swarm_artifact:** 1774
+- **dream:** 7550
+- **swarm_artifact:** 1769
 - **last_swarm_critique:** 878
 - **last_swarm_goal:** 613
-- **anti_pattern:** 403
-- **strategy:** 203
-- **tool:** 164
+- **anti_pattern:** 401
+- **strategy:** 202
+- **tool:** 163
 - **hand_result:** 88
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911043155:5:5e3fcc`
+*11.09. 04:31 UTC · Quelle: dream*
+
+Effort estimates for swarm tasks are consistently 4-5x too low, requiring a calibrated multiplier.
+
+### `dream:20260911043155:4:fa1bda`
+*11.09. 04:31 UTC · Quelle: dream*
+
+Path-resolution failures recur because hand_actions lack a universal pre-flight validator for argv/env expansion.
+
+### `dream:20260911043155:3:dfe871`
+*11.09. 04:31 UTC · Quelle: dream*
+
+Proposed skills accumulate unused because no mandatory simulation gate exists before deployment.
+
+### `dream:20260911043155:2:2648f7`
+*11.09. 04:31 UTC · Quelle: dream*
+
+Swarm knowledge decays within days without scheduled re-validation, causing repeated planning errors.
+
+### `dream:20260911043155:1:ae3095`
+*11.09. 04:31 UTC · Quelle: dream*
+
+Model reliability degrades silently without automated health monitoring and circuit-breaking failover.
 
 ### `dream:20260911042133:5:01c2af`
 *11.09. 04:21 UTC · Quelle: dream*
@@ -43917,21 +43942,6 @@ Hand actions fail silently with exit codes but no error context, making debuggin
 *28.08. 04:39 UTC · Quelle: dream*
 
 Rate limiting (429) is the dominant failure mode across free-tier models, requiring proactive rate-limit awareness and fallback strategies.
-
-### `tool:vorgeschlagene-skills-wirklich-testen`
-*28.08. 04:29 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Skills wirklich testen'. Datei: data/tools/vorgeschlagene-skills-wirklich-testen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Skills wi:2`
-*28.08. 04:28 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Pytest-Driven Test Generation and Execution - Generate a pytest test file per skill that parametrizes the proposal's test cases. Each test case becomes a parametrized test function that calls the skill and asserts against exp
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Skills wi:0`
-*28.08. 04:28 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Sandboxed Subprocess Execution with Proposal-Defined Test Cases - For each skill proposal, write a temporary Python script that imports the skill code (written to a temp module) and executes the exact test cases defined in th
 
 ### `last_swarm_critique`
 *28.08. 04:26 UTC · Quelle: critic*

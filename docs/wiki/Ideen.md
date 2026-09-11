@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 04:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmwissen auf den neuesten Stand bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Effort estimates for swarm tasks are consistently 4-5x too low, requiring a calibrated multiplier.
+- Path-resolution failures recur because hand_actions lack a universal pre-flight validator for argv/env expansion.
+- Proposed skills accumulate unused because no mandatory simulation gate exists before deployment.
+- Swarm knowledge decays within days without scheduled re-validation, causing repeated planning errors.
+- Model reliability degrades silently without automated health monitoring and circuit-breaking failover.
 - The same five skill proposals regenerate identically across dream cycles, revealing a systemic failure to convert proposals into implemented, tested c
 - Skills are proposed far more frequently than they are tested in simulation, creating a dangerous gap between theoretical capability and proven, valida
 - Swarm decisions converge prematurely due to the absence of minimum critic cycles and dissent thresholds, causing unchallenged consensus and systematic
@@ -51,11 +56,6 @@
 - Evolution scores [9, 8, 6] diverged sharply from the final act score of 4, revealing evaluation instability where variant-level improvements are not r
 - Swarm convergence was not achieved in only 2 cycles with a single critic, indicating that convergence gates must enforce minimum critic diversity and 
 - Transient API failures (429 rate limits, 502 upstream overloads) are a recurring systemic risk that requires automatic retry-with-backoff and model fa
-- Calibration and simulation subsystems function correctly (accurate prediction, green verdict), but model selection logic does not incorporate historic
-- The system repeatedly retries failing models without circuit-breaking, wasting cycles on known-degraded endpoints instead of failing fast to healthy a
-- InclusionAI Ling 3.0 Flash Sante is the only model with 100% success rate and stable low latency (<6s) across varying token loads, marking it as the c
-- Nvidia Nemotron 3 Ultra exhibits bimodal latency (10s vs 58s) and frequent 502 upstream overload errors, indicating unstable inference infrastructure 
-- Free-tier models from Google (Gemma) and Poolside consistently hit 429 rate limits, making them unreliable for production workloads without exponentia
 
 ---
 
