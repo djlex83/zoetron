@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11614 Fakten** · Stand 2026-09-11 11:22 UTC · aktualisiert bei jedem Herzschlag
+**11594 Fakten** · Stand 2026-09-11 11:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7479
-- **swarm_artifact:** 1747
+- **dream:** 7469
+- **swarm_artifact:** 1741
 - **last_swarm_critique:** 884
 - **last_swarm_goal:** 619
-- **anti_pattern:** 397
-- **strategy:** 201
+- **anti_pattern:** 395
+- **strategy:** 200
 - **tool:** 161
-- **hand_result:** 87
+- **hand_result:** 86
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911114403:5:ceeed1`
+*11.09. 11:44 UTC · Quelle: dream*
+
+Aggressive pruning (39 facts, 127 events per run) may discard context needed for debugging recurring failures like model 429 patterns.
+
+### `dream:20260911114403:4:273df6`
+*11.09. 11:44 UTC · Quelle: dream*
+
+Skill proposals accumulate but are not automatically implemented, creating a gap between identified improvements and operational capabilities.
+
+### `dream:20260911114403:3:4c9efb`
+*11.09. 11:44 UTC · Quelle: dream*
+
+The swarm process consistently fails to converge (converged: false) despite multiple cycles, suggesting missing convergence criteria or insufficient critic feedback.
+
+### `dream:20260911114403:2:0be487`
+*11.09. 11:44 UTC · Quelle: dream*
+
+Models that initially fail with 429 often succeed on retry after a delay, indicating transient capacity limits rather than permanent unavailability.
+
+### `dream:20260911114403:1:219141`
+*11.09. 11:44 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making naive single-model selection unreliable.
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
 *11.09. 11:20 UTC · Quelle: hands*
@@ -43435,16 +43460,6 @@ Model latency varies 3x between fastest and slowest working models, making laten
 
 Rate limiting (429) is the dominant failure mode across free-tier models, requiring systematic fallback and backoff strategies.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Lücken zwischen Plan und:2`
-*28.08. 11:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Event-Sourced Plan-Execution Ledger - Model the problem as an immutable event log: PlanCreated → TaskScheduled → TaskStarted → TaskCompleted/Failed → GateEvaluated → GapDetected. Implement a single-file CLI tool (Click + SQLi
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Lücken zwischen Plan und:1`
-*28.08. 11:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Test-Driven Contract-First Development - Define formal interfaces (Python Protocols/ABCs) for Plan, Task, Gate, Logger, Executor before any implementation. Write contract tests (pytest) that verify: import order correctness (
-
 ### `last_swarm_critique`
 *28.08. 11:32 UTC · Quelle: critic*
 
@@ -43454,81 +43469,6 @@ score=1; issues=Artifact does not run (LAEUFT NICHT) - sandbox verdict confirms 
 *28.08. 11:20 UTC · Quelle: system*
 
 Lücken zwischen Plan und Tat schließen
-
-### `dream:20260828112010:5:a7630b`
-*28.08. 11:20 UTC · Quelle: dream*
-
-Reflex-driven task convergence succeeded without critic/planner gates, exposing a gap between convergence policy and execution.
-
-### `dream:20260828112010:4:08275f`
-*28.08. 11:20 UTC · Quelle: dream*
-
-Pruning runs prune zero facts despite calibrated-threshold proposal, indicating threshold logic is either disabled or set too conservatively.
-
-### `dream:20260828112010:3:a0a2bb`
-*28.08. 11:20 UTC · Quelle: dream*
-
-Five duplicate skill proposals (token bucket, dynamic timeouts, promotion pipeline) show proposal deduplication and promotion gating are absent.
-
-### `dream:20260828112010:2:eee6d7`
-*28.08. 11:20 UTC · Quelle: dream*
-
-Fallback model latency varies 3x (13.7–41.2s) proving static timeouts are unsafe; per-model p95+2σ buffers must be learned online.
-
-### `dream:20260828112010:1:ff992b`
-*28.08. 11:20 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free reveal missing provider-level circuit breaking, causing cascading retries instead of fast failover.
-
-### `dream:20260828111347:5:67321a`
-*28.08. 11:13 UTC · Quelle: dream*
-
-Dream consolidation recurs without extracting executable fixes, turning pattern recognition into idle repetition.
-
-### `dream:20260828111347:4:10f42a`
-*28.08. 11:13 UTC · Quelle: dream*
-
-Missing organ dependency validation before variant generation caps evolution scores at 6/10, a predictable failure mode.
-
-### `dream:20260828111347:3:d40663`
-*28.08. 11:13 UTC · Quelle: dream*
-
-The system repeatedly proposes the same fallback/retry skills without implementing them, creating a proposal-implementation gap that wastes cycles.
-
-### `dream:20260828111347:2:c50637`
-*28.08. 11:13 UTC · Quelle: dream*
-
-Nemotron-3-ultra succeeds where others fail but exhibits high latency (18-30s) and intermittent 502 upstream errors, indicating it's a fragile backbone.
-
-### `dream:20260828111347:1:3022b1`
-*28.08. 11:13 UTC · Quelle: dream*
-
-Free-tier models on shared providers (OpenRouter) consistently hit 429 rate limits under sequential workloads, making them unreliable for production chains.
-
-### `dream:20260828110934:5:a6404c`
-*28.08. 11:09 UTC · Quelle: dream*
-
-Self-diagnosis reports no organ errors while model-inference errors persist, indicating monitoring blind spots.
-
-### `dream:20260828110934:4:e5baf2`
-*28.08. 11:09 UTC · Quelle: dream*
-
-Simulation-recommended revisions (4) are only partially applied (2), leaving known risks unmitigated.
-
-### `dream:20260828110934:3:248408`
-*28.08. 11:09 UTC · Quelle: dream*
-
-Destructive operations (subprocess) are blocked by human-approval gates, stalling autonomous execution.
-
-### `dream:20260828110934:2:d41107`
-*28.08. 11:09 UTC · Quelle: dream*
-
-Evolution can generate high-scoring variants (9/10) but swarm convergence fails when model calls intermittently fail.
-
-### `dream:20260828110934:1:f0bcd1`
-*28.08. 11:09 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer systemic 429 rate-limiting making them unreliable for sustained workloads.
 
 ### `last_swarm_critique`
 *28.08. 10:25 UTC · Quelle: critic*

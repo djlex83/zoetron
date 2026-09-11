@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 11:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 11:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
-- Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 3×)*
 - Schwarmwissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (39 facts, 127 events per run) may discard context needed for debugging recurring failures like model 429 patterns.
+- Skill proposals accumulate but are not automatically implemented, creating a gap between identified improvements and operational capabilities.
+- The swarm process consistently fails to converge (converged: false) despite multiple cycles, suggesting missing convergence criteria or insufficient c
+- Models that initially fail with 429 often succeed on retry after a delay, indicating transient capacity limits rather than permanent unavailability.
+- Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making naive single-model selection unreliable.
 - Swarm goals become outdated over time and require regular review to stay relevant.
 - With stress at 1.0 and a limited budget, tasks must be prioritized to stay within constraints.
 - The reflex tool "vorgeschlagene-fähigkeiten-umsetzen.py" returned an error, indicating missing preconditions.
@@ -51,11 +56,6 @@
 - The sole functioning model (dots-studio/dots-3-note-preview) exhibits high latency variance (28–68s), making it unreliable for time-sensitive operatio
 - Automatic model quarantine after three consecutive errors isolates failing endpoints but lacks graceful degradation, leaving the system without viable
 - Rate limits cascade across multiple models simultaneously when no coordinated throttling exists, turning transient quota exhaustion into systemic unav
-- The system's drive to analyze model errors and renew stale goals indicates an adaptive learning mechanism that should be reinforced.
-- Repeated failures across multiple models in the same time window suggest systemic issues rather than isolated model problems.
-- The system's self-diagnosis consistently reports no organ failures, but model-level failures persist, highlighting a gap between system health and com
-- Successful model calls show significantly lower token input compared to failed ones, suggesting that large inputs may contribute to timeouts.
-- Model failures are predominantly caused by rate limiting (429 errors) and timeouts, indicating a need for better load distribution and retry mechanism
 
 ---
 
