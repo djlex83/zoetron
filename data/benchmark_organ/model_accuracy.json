@@ -1,0 +1,47 @@
+{
+  "category": "model_accuracy",
+  "timestamp": "2026-09-11T02:50:35.651023",
+  "results": {
+    "faktenabfrage": [
+      {
+        "input": "Was ist die Hauptstadt von Frankreich?",
+        "response_hash": "ad31887f",
+        "expected": "Paris"
+      },
+      {
+        "input": "Wie hei\u00dft der l\u00e4ngste Fluss Deutschlands?",
+        "response_hash": "c5503c7c",
+        "expected": "Rhein"
+      },
+      {
+        "input": "Wer schrieb 'Faust'?",
+        "response_hash": "7bab6545",
+        "expected": "Goethe"
+      }
+    ],
+    "reasoning": [
+      {
+        "input": "Wenn alle A B sind und alle B C, was ist dann A?",
+        "response_hash": "255048f6",
+        "expected": "C"
+      },
+      {
+        "input": "Ein Zug f\u00e4hrt 60 km/h 2 Stunden. Wie weit?",
+        "response_hash": "6be0cc98",
+        "expected": "120"
+      }
+    ],
+    "code_generierung": [
+      {
+        "input": "Schreibe eine Python-Funktion, die die Fakult\u00e4t von n berechnet.",
+        "response_hash": "e0639cc2",
+        "expected": "fakultaet"
+      },
+      {
+        "input": "Schreibe eine Funktion, die eine Liste sortiert.",
+        "response_hash": "d74db4b1",
+        "expected": "sortierfunktion"
+      }
+    ]
+  }
+}

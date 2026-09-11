@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11721 Fakten** · Stand 2026-09-11 02:36 UTC · aktualisiert bei jedem Herzschlag
+**11730 Fakten** · Stand 2026-09-11 02:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7545
-- **swarm_artifact:** 1781
-- **last_swarm_critique:** 877
-- **last_swarm_goal:** 612
-- **anti_pattern:** 407
-- **strategy:** 205
-- **tool:** 163
+- **dream:** 7540
+- **swarm_artifact:** 1789
+- **last_swarm_critique:** 878
+- **last_swarm_goal:** 613
+- **anti_pattern:** 409
+- **strategy:** 206
+- **tool:** 164
 - **hand_result:** 91
 - **aktuell_organfehler:** 40
 
 ---
+
+### `tool:modellgenauigkeit-regelmäßig-prüfen`
+*11.09. 02:50 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellgenauigkeit regelmäßig prüfen'. Datei: data/tools/modellgenauigkeit-regelmäßig-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellgenauigkeit regelm:2`
+*11.09. 02:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): In-Application Accuracy Instrumentation with Self-Validating Test Harness - Embed accuracy-checking code directly into the application using a dual-execution mode: for critical outputs, the system internally invokes a verific
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellgenauigkeit regelm:1`
+*11.09. 02:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Continuous Validation Pipeline via Synthetic Data Generation and Differential Te - Build an autonomous pipeline that continuously generates diverse, realistic synthetic inputs using LLM-based prompt diversification, then runs
+
+### `last_swarm_critique`
+*11.09. 02:48 UTC · Quelle: critic*
+
+score=4; issues=Simulierte Antworten via Hash statt echter Modell-Abfragen; Kein Vergleich expected vs. actual - Genauigkeit wird nicht gemessen; Kein regelmäßiger Ausführungsmechanismus (Scheduler/Cron); Keine Trendanalyse oder Dashboard (nur einmaliger JSON-
+
+### `last_swarm_goal`
+*11.09. 02:45 UTC · Quelle: system*
+
+Modellgenauigkeit regelmäßig prüfen
+
+### `dream:20260911024509:5:7020f7`
+*11.09. 02:45 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260911024509:4:576cc5`
+*11.09. 02:45 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are merged; a consolidation reflex must run after every N proposals.
+
+### `dream:20260911024509:3:a2a6a0`
+*11.09. 02:45 UTC · Quelle: dream*
+
+Swarm knowledge staleness recurs because no scheduled refresh drive exists; cron-driven goals prevent drift.
+
+### `dream:20260911024509:2:2e9406`
+*11.09. 02:45 UTC · Quelle: dream*
+
+High latency variance (9.5s vs 55s) across free models makes fixed timeouts unreliable; adaptive timeouts needed.
+
+### `dream:20260911024509:1:05bb12`
+*11.09. 02:45 UTC · Quelle: dream*
+
+Model 429 errors cascade into planner instability unless automatic failover with health probes exists.
 
 ### `dream:20260911023310:5:9419d3`
 *11.09. 02:33 UTC · Quelle: dream*
@@ -43932,56 +43982,6 @@ Models returning 200 status codes with empty choices (e.g., Nvidia 502 upstream 
 *28.08. 02:45 UTC · Quelle: dream*
 
 HTTP 429 rate-limit errors from OpenRouter affect multiple models simultaneously, indicating a shared upstream bottleneck rather than isolated model failures.
-
-### `dream:20260828024047:5:88e7c0`
-*28.08. 02:40 UTC · Quelle: dream*
-
-Sequential model fallback fails because all free endpoints saturate simultaneously; no circuit breaker exists.
-
-### `dream:20260828024047:4:0197e5`
-*28.08. 02:40 UTC · Quelle: dream*
-
-Evolution boosts variant scores from 2 to 8.3 but the swarm still converges at 2, indicating evolution results aren't fed back.
-
-### `dream:20260828024047:3:5f23a4`
-*28.08. 02:40 UTC · Quelle: dream*
-
-Calibration error of 3 points (predicted 5 vs actual 2) shows the system cannot self-assess difficulty.
-
-### `dream:20260828024047:2:d7d4f1`
-*28.08. 02:40 UTC · Quelle: dream*
-
-The critic rejects any output lacking an executable Python block, yet the planner produces prose-only artifacts.
-
-### `dream:20260828024047:1:dcc8f3`
-*28.08. 02:40 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits making them unreliable for autonomous loops.
-
-### `dream:20260828023656:5:d53f24`
-*28.08. 02:36 UTC · Quelle: dream*
-
-Latency variance on working models (2.6–21.2s) demands per-model timeout budgets to avoid cascade stalls.
-
-### `dream:20260828023656:4:4b3cc6`
-*28.08. 02:36 UTC · Quelle: dream*
-
-Metabolism state 'conserve' with max_iterations=1 eliminates retry slack, turning first-attempt success into a hard requirement.
-
-### `dream:20260828023656:3:a404ad`
-*28.08. 02:36 UTC · Quelle: dream*
-
-Calibration error of 3 (predicted 5 vs actual 2) reveals systematic overestimation of simulation quality under stress.
-
-### `dream:20260828023656:2:3bf254`
-*28.08. 02:36 UTC · Quelle: dream*
-
-The 'tor' gate rejects simulation artifacts that lack executable Python blocks, proving prose-only outputs cannot converge to action.
-
-### `dream:20260828023656:1:ef0333`
-*28.08. 02:36 UTC · Quelle: dream*
-
-Free-tier models suffer pervasive 429 rate limits, making single-model reliance infeasible without request queuing and exponential backoff.
 
 ### `last_swarm_critique`
 *28.08. 01:53 UTC · Quelle: critic*
