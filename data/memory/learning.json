@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-11 00:05:35",
+ "stand": "2026-09-11 00:16:49",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -187,12 +187,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "vergessene-schwarmprojekte-reaktivieren.py",
@@ -393,7 +387,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.793,
+ "haende_quote": 0.797,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 24,
@@ -402,8 +396,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 21,
-   "schnitt": 4.38
+   "n": 20,
+   "schnitt": 4.2
   },
   "bau": {
    "n": 3,

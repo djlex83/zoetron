@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 00:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 00:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,10 +27,10 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Effort estimates for swarm tasks are systematically too low by 4-5x; calibration multiplier prevents schedule collapse.
+- Skill proposals accumulate without a conversion pipeline — proposals decay into noise without a 'proposal→skill' implementation step.
+- Swarm convergence marked true with null score indicates premature convergence — require minimum critic cycles or dissent threshold.
+- Model calls fail ~50% from 429/502; exponential backoff with automatic fallback to slower but stable models is essential.
+- Relative path resolution is the dominant hand-action failure mode — always absolutize against ZOETRON_DATA before execution.
 - Drive-goal generation reacts to multiple signal types (skill_proposal, werkzeug_abgelehnt, combination) but lacks prioritization or success tracking.
 - Self-generated skill proposals accumulate (5 in this session) without a promotion gate, creating proposal debt that clutters the improvement pipeline.
 - Pruning discards 14-19 events per cycle with zero facts removed, indicating aggressive event turnover but conservative fact retention that may lose co
@@ -51,11 +56,6 @@
 - Swarm knowledge decays within hours: reflexes can refresh it, but no scheduler triggers periodic re-validation of collective decisions.
 - Proposed skills accumulate but never activate: the system generates routing/health-check skills yet continues using brittle single-model calls.
 - Model failures cascade silently: 429/502 errors on primary models force fallbacks that increase latency 3x without planner awareness.
-- Relative path resolution against ZOETRON_DATA is missing at hand-action entry, causing silent misalignment.
-- Swarm effort estimates are systematically optimistic; a 4-5x calibration multiplier is the minimum correction factor.
-- Skill proposals accumulate without implementation validation, turning into latent technical debt.
-- Swarm knowledge decays faster than refresh cycles trigger; stale-data goals fire too late to prevent bad decisions.
-- Model infrastructure errors (429/502) are the dominant failure mode, not model capability — retry + fallback must live in the router, not the caller.
 
 ---
 

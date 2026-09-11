@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11774 Fakten** · Stand 2026-09-11 00:07 UTC · aktualisiert bei jedem Herzschlag
+**11769 Fakten** · Stand 2026-09-11 00:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7555
-- **swarm_artifact:** 1811
+- **dream:** 7560
+- **swarm_artifact:** 1805
 - **last_swarm_critique:** 877
 - **last_swarm_goal:** 612
-- **anti_pattern:** 413
-- **strategy:** 208
+- **anti_pattern:** 411
+- **strategy:** 207
 - **tool:** 164
-- **hand_result:** 94
+- **hand_result:** 93
 - **aktuell_organfehler:** 40
 
 ---
+
+### `dream:20260911001543:5:1cb475`
+*11.09. 00:15 UTC · Quelle: dream*
+
+Effort estimates for swarm tasks are systematically too low by 4-5x; calibration multiplier prevents schedule collapse.
+
+### `dream:20260911001543:4:313696`
+*11.09. 00:15 UTC · Quelle: dream*
+
+Skill proposals accumulate without a conversion pipeline — proposals decay into noise without a 'proposal→skill' implementation step.
+
+### `dream:20260911001543:3:8e1d16`
+*11.09. 00:15 UTC · Quelle: dream*
+
+Swarm convergence marked true with null score indicates premature convergence — require minimum critic cycles or dissent threshold.
+
+### `dream:20260911001543:2:47624f`
+*11.09. 00:15 UTC · Quelle: dream*
+
+Model calls fail ~50% from 429/502; exponential backoff with automatic fallback to slower but stable models is essential.
+
+### `dream:20260911001543:1:f89312`
+*11.09. 00:15 UTC · Quelle: dream*
+
+Relative path resolution is the dominant hand-action failure mode — always absolutize against ZOETRON_DATA before execution.
 
 ### `dream:20260911000444:5:79392b`
 *11.09. 00:04 UTC · Quelle: dream*
@@ -44097,16 +44122,6 @@ Hand actions fail when paths are not explicitly resolved relative to 'ZOETRON_DA
 *28.08. 00:39 UTC · Quelle: dream*
 
 The model 'z-ai/glm-5.2:free' is consistently rate-limited (429) and should be temporarily disabled or deprioritized in favor of 'nvidia/nemotron-3-ultra-550b-a55b:free'.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*28.08. 00:10 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Runtime Code Generation (Metaprogramming) - Write a 200-line generator that emits the swarm loop as a single optimized function at startup. Uses string templates / ast to inline agent logic, unroll loops, eliminate abstractio
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:1`
-*28.08. 00:10 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Declarative Spec + Tiny Interpreter - Separate logic from control flow. Spec = compact JSON/YAML (~500 chars) defining agents, transitions, scoring. Interpreter = 150-line generic runner that loads spec, executes steps, track
 
 ### `last_swarm_critique`
 *28.08. 00:10 UTC · Quelle: critic*
