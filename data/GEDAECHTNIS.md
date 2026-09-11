@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11549 Fakten** · Stand 2026-09-11 21:53 UTC · aktualisiert bei jedem Herzschlag
+**11543 Fakten** · Stand 2026-09-11 22:04 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7460
-- **swarm_artifact:** 1707
+- **swarm_artifact:** 1701
 - **last_swarm_critique:** 892
 - **last_swarm_goal:** 627
 - **anti_pattern:** 387
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911220114:5:c41307`
+*11.09. 22:01 UTC · Quelle: dream*
+
+Pruning runs consistently remove facts/events but no metric tracks whether pruning discards decision-critical memories.
+
+### `dream:20260911220114:4:62ca59`
+*11.09. 22:01 UTC · Quelle: dream*
+
+Model latency varies 2.5× (16–43 s) for similar token loads, suggesting queueing or cold-start effects that a health-aware router could mitigate.
+
+### `dream:20260911220114:3:b8639f`
+*11.09. 22:01 UTC · Quelle: dream*
+
+Swarm knowledge refresh occurs only via reflex-triggered scripts, not as a scheduled habit, causing strategic drift between refreshes.
+
+### `dream:20260911220114:2:869fec`
+*11.09. 22:01 UTC · Quelle: dream*
+
+Identical skill proposals (stress scheduler, prompt cache) recur across cycles but never graduate to implemented capabilities, revealing a proposal-to-implementation gap.
+
+### `dream:20260911220114:1:915202`
+*11.09. 22:01 UTC · Quelle: dream*
+
+Model failure rate remains high despite repeated goals to reduce errors, indicating root causes (no health-based routing, no retry logic, no caching) are unaddressed.
 
 ### `dream:20260911215041:5:93d179`
 *11.09. 21:50 UTC · Quelle: dream*
@@ -43292,31 +43317,6 @@ score=5; issues=Die drei identifizierten Analyse-Schritte (Wettbewerbsanalyse, Z
 *28.08. 21:54 UTC · Quelle: system*
 
 Marktanalyse endlich abschließen
-
-### `dream:20260828215415:5:148af8`
-*28.08. 21:54 UTC · Quelle: dream*
-
-Self-diagnosis reporting zero organ errors while the system fails to converge indicates diagnostic blind spots in goal-alignment metrics.
-
-### `dream:20260828215415:4:441381`
-*28.08. 21:54 UTC · Quelle: dream*
-
-Swarm with 3 builders but only 1 critic may lack sufficient adversarial pressure for convergence.
-
-### `dream:20260828215415:3:849dbd`
-*28.08. 21:54 UTC · Quelle: dream*
-
-Evolutionary improvement (scores 7→9) without convergence suggests the fitness function or stopping criteria need tightening.
-
-### `dream:20260828215415:2:ea8748`
-*28.08. 21:54 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free shows high latency variance (16–140s), requiring latency-aware routing with fallback thresholds.
-
-### `dream:20260828215415:1:e55019`
-*28.08. 21:54 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free endpoint consistently returns 429 errors, indicating it should be deprioritized or wrapped with a circuit breaker.
 
 ### `last_swarm_critique`
 *28.08. 21:37 UTC · Quelle: critic*

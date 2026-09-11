@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 21:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 22:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs consistently remove facts/events but no metric tracks whether pruning discards decision-critical memories.
+- Model latency varies 2.5× (16–43 s) for similar token loads, suggesting queueing or cold-start effects that a health-aware router could mitigate.
+- Swarm knowledge refresh occurs only via reflex-triggered scripts, not as a scheduled habit, causing strategic drift between refreshes.
+- Identical skill proposals (stress scheduler, prompt cache) recur across cycles but never graduate to implemented capabilities, revealing a proposal-to
+- Model failure rate remains high despite repeated goals to reduce errors, indicating root causes (no health-based routing, no retry logic, no caching) 
 - Reflex-driven memory restoration succeeds where deliberate action fails, showing implicit memory pathways outperform explicit retrieval.
 - Pruning removes 67 events then 13 events in quick succession, indicating memory pressure triggers aggressive cleanup that may discard useful context.
 - Skill proposals accumulate without lifecycle tracking, creating a backlog of unvalidated capabilities.
@@ -51,11 +56,6 @@
 - Simulation consistently returns revise with three risks and three revisions, revealing that iterative refinement loops are essential for goal achievem
 - The nvidia model exhibits high latency (up to 96s) and large token consumption, suggesting it should be reserved for complex reasoning while lighter m
 - Repeated 502 and 429 errors from Nvidia and Google models show that API rate limits and overloads are a major failure cause, requiring robust fallback
-- Path resolution inconsistencies force repeated absolute-path fixes, indicating the ZOETRON_DATA convention is not yet enforced at ingestion.
-- Rate-limit (429) and timeout errors appear repeatedly yet no systematic backoff or quarantine logic is active in the current cycle.
-- Swarm knowledge refresh relies on a single reflex script that succeeds superficially but does not verify data freshness or relevance.
-- Numerous skill proposals accumulate but lack a validation loop to promote them from proposal to deployed capability.
-- Model endpoints frequently return empty choices causing cascading failures that halt task progress.
 
 ---
 
