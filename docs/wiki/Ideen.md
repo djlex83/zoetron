@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 18:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 19:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Add a pre-flight validator for hand actions: check path existence and data-path alignment before execution. *(hatte die Idee 4×)*
 - Create a swarm convergence gate requiring minimum 3 critic cycles or 30% dissent threshold before marking conv *(hatte die Idee 4×)*
 - Develop a calibration multiplier module that inflates initial effort estimates by 4-5x for swarm planning. *(hatte die Idee 4×)*
-- Build a provider health scorecard tracking per-model error rates, latency percentiles, and rate-limit frequenc *(hatte die Idee 3×)*
-- Implement exponential backoff with jitter and automatic provider switching when 429 or timeout errors exceed a *(hatte die Idee 3×)*
+- Modify the pruner to tag and preserve error logs, recovery traces, and validation receipts with extended TTL ( *(hatte die Idee 3×)*
+- Path-resolver utility that absolutizes all relative paths against ZOETRON_DATA before any hand action. *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -29,8 +29,8 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A simulation step completed with zero risks and no revisions, indicating the planning module performed correctly.
+- The system retries failing models immediately without backoff, which worsens the rate-limit storm.
+- The single successful call to poolside/laguna-s-2.1:free took 212 seconds and produced 10k tokens, showing it can work but is slow.
+- dots-studio/dots-3-note-preview:free succeeded in every attempt, suggesting it has a separate or higher quota.
+- Multiple free models returned HTTP 429 Too Many Requests, indicating a shared OpenRouter free-tier rate limit.
 - Drive goals (reliability, freshness, combination) generate intent but lack a concrete executor that translates signals into verified code changes.
 - Proposed reliability skills (health dashboard, activation gate) remain unimplemented while the system repeatedly suffers the exact failures they would
 - Metabolism stress at 1.0 triggers conserve mode but the scheduler still spawns swarms and retries failed models, ignoring the max_tasks=3 budget.
@@ -51,11 +56,6 @@
 - Automated reflex execution (veraltete-schwarmziele-aktualisieren.py) succeeded without human intervention, proving the reflex layer can maintain syste
 - The dots-studio/dots-3-note-preview model remains the only consistently available free-tier endpoint under current load.
 - Repeated 429 errors across multiple Google and Poolside models indicate provider-level rate limiting rather than model-specific failures.
-- Dynamic routing based on recent success rates can mitigate transient rate limits.
-- Reflex actions can update stale knowledge but do not prevent rate-limit-induced outages.
-- Immediate retries after a 429 without backoff increase the chance of continued failure.
-- Models with lower latency and smaller token usage are more likely to succeed, suggesting that request size and timing affect availability.
-- The dominant failure cause is HTTP 429 rate limiting, indicating that request concurrency exceeds provider quotas.
 
 ---
 
