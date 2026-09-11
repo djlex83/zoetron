@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 12:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-11 13:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning removes events but retains few facts, suggesting experience isn't being distilled into durable semantic knowledge that could inform fut
+- Reflex-based fixes (e.g., data replacement) address symptoms but not root causes because infrastructure skills (rate limiter, router, cache) remain un
+- Swarm feedback becomes stale within cycles because no periodic audit mechanism refreshes objectives or injects fresh perspectives to prevent strategic
+- Model failures persist at nearly 2:1 ratio because coordinated 429 storms and static endpoint selection overwhelm the system despite repeated proposal
+- Skill proposals recur across dream cycles without adoption because no automated promotion pipeline exists to graduate validated proposals into permane
 - Stress=1.0 with max_iterations=1 forces single-shot success; any model retry loop exhausts budget before completion.
 - Tool execution can fail while swarm+simulation+hand_action succeeds, indicating the planner/actor split masks tool fragility.
 - High-latency fallbacks (40-90s) succeed where fast models fail, but consume iteration budget and risk timeout in conserve mode.
@@ -51,11 +56,6 @@
 - The single working model (dots-studio) exhibits 20-27s latency, making it unsuitable for interactive loops without async queuing.
 - Timeout failures on nemotron correlate with upstream 502 overload errors, suggesting provider-side saturation not client-side latency.
 - Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota pools rather than per-model limits.
-- Repeated model failures trigger new skill proposals (fallback, wrappers, queues) that duplicate earlier unimplemented ideas, indicating a failure to c
-- Swarm critiques and objectives have gone stale without a periodic audit mechanism, causing perspective decay and strategic drift over time.
-- Forty skill proposals accumulate while only twenty-four goals exist, exposing a broken promotion pipeline that never graduates validated proposals int
-- Timeouts and 429s persist because the system lacks a health-aware router that tracks real-time error rates, latency percentiles, and quota remaining t
-- Coordinated 429 errors across multiple models reveal a missing shared rate-limiting layer that causes cascading failures when any single endpoint exha
 
 ---
 

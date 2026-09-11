@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-11 12:39:06",
+ "stand": "2026-09-11 13:01:34",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "tool": "veraltete-schwarmziele-aktualisieren.py",
+   "laeufe": 12,
+   "erfolge": 12,
    "quote": 1.0
   },
   {
-   "tool": "veraltete-schwarmziele-aktualisieren.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 11,
    "erfolge": 11,
    "quote": 1.0
@@ -156,12 +156,6 @@
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "simulationen-gezielt-einsetzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8215 Neuronen · 876771 bewertete Synapsen
+Stand: 8211 Neuronen · 876143 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,11 +10,11 @@ Stand: 8215 Neuronen · 876771 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1062 | 0.24 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1061 | 0.24 |
 | 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1064 | 0.23 |
 | 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 855 | 0.25 |
-| 4 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 812 | 0.26 |
-| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 883 | 0.23 |
+| 4 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 883 | 0.23 |
+| 5 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 811 | 0.26 |
 | 6 | 💭 | Repeated 429 errors across four different models indicate system… | 848 | 0.24 |
 | 7 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 811 | 0.25 |
 | 8 | 💭 | Rate limiting (429) and upstream overload (502) are recurring fa… | 837 | 0.24 |
@@ -22,7 +22,7 @@ Stand: 8215 Neuronen · 876771 bewertete Synapsen
 | 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 865 | 0.23 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 873 | 0.23 |
 | 12 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 893 | 0.22 |
-| 13 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 757 | 0.26 |
+| 13 | 💭 | Nemotron-3-ultra exhibits extreme latency variance (58–165 s) wh… | 756 | 0.26 |
 | 14 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 860 | 0.23 |
 | 15 | 💭 | The primary model (z-ai/glm-5.2) repeatedly fails with 429 error… | 787 | 0.25 |
 

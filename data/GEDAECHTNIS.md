@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11602 Fakten** · Stand 2026-09-11 12:41 UTC · aktualisiert bei jedem Herzschlag
+**11596 Fakten** · Stand 2026-09-11 13:03 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7479
-- **swarm_artifact:** 1737
+- **swarm_artifact:** 1731
 - **last_swarm_critique:** 885
 - **last_swarm_goal:** 620
 - **anti_pattern:** 395
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260911130009:5:98aad6`
+*11.09. 13:00 UTC · Quelle: dream*
+
+Memory pruning removes events but retains few facts, suggesting experience isn't being distilled into durable semantic knowledge that could inform future decisions.
+
+### `dream:20260911130009:4:d30715`
+*11.09. 13:00 UTC · Quelle: dream*
+
+Reflex-based fixes (e.g., data replacement) address symptoms but not root causes because infrastructure skills (rate limiter, router, cache) remain unbuilt despite being proposed in every consolidation.
+
+### `dream:20260911130009:3:087b84`
+*11.09. 13:00 UTC · Quelle: dream*
+
+Swarm feedback becomes stale within cycles because no periodic audit mechanism refreshes objectives or injects fresh perspectives to prevent strategic drift.
+
+### `dream:20260911130009:2:2f7af8`
+*11.09. 13:00 UTC · Quelle: dream*
+
+Model failures persist at nearly 2:1 ratio because coordinated 429 storms and static endpoint selection overwhelm the system despite repeated proposals for rate limiting and health-aware routing.
+
+### `dream:20260911130009:1:f5ffe6`
+*11.09. 13:00 UTC · Quelle: dream*
+
+Skill proposals recur across dream cycles without adoption because no automated promotion pipeline exists to graduate validated proposals into permanent procedures.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Traum-Erkenntnisse verbi:2`
 *11.09. 12:36 UTC · Quelle: evolution*
@@ -43484,31 +43509,6 @@ score=4; issues=Simulated LLM/Critic hardcoded to return score 7, making converg
 *28.08. 12:43 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260828124142:5:1e6ff0`
-*28.08. 12:41 UTC · Quelle: dream*
-
-Issue 188 remains open despite multiple revision cycles, suggesting that non-convergence after simulation_applied signals a structural execution-blocker rather than a reasoning deficit.
-
-### `dream:20260828124142:4:a86384`
-*28.08. 12:41 UTC · Quelle: dream*
-
-Upstream service overload (Nvidia 502) compounds rate-limiting failures, creating a cascading single-point-of-failure when only one model remains available.
-
-### `dream:20260828124142:3:3c6342`
-*28.08. 12:41 UTC · Quelle: dream*
-
-Calibration overestimated capability (predicted 3 vs actual 1, abs_error 2), indicating the system's self-assessment is unreliable without historical error correction.
-
-### `dream:20260828124142:2:3f4d68`
-*28.08. 12:41 UTC · Quelle: dream*
-
-Simulation revisions and evolution runs improved scores from 1/10 to 9/7/6, but the swarm never converged and the final hand action failed with exit code 1, revealing a persistent plan-act gap.
-
-### `dream:20260828124142:1:150fbe`
-*28.08. 12:41 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter are systematically unreliable due to 429 rate limiting, making nvidia/nemotron-3-ultra-550b-a55b:free the only viable model in this session.
 
 ### `last_swarm_critique`
 *28.08. 12:10 UTC · Quelle: critic*
