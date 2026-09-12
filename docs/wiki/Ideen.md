@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 09:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 09:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate duplicates (e.g., multiple model routing variants) because no deduplication mechanism exists across proposal cycles.
+- Prune runs discard events without auditing impact on subsequent selbstdiagnose coverage, risking blind spots in system health monitoring.
+- Simulation gates are absent before hand_actions, allowing untested operations to proceed despite available mental simulation capacity.
+- Reflex actions converge without quantified effectiveness metrics, creating false confidence in skill execution quality.
+- Model endpoint overloads (502 errors) repeatedly interrupt workflows, indicating missing fallback routing and health-aware model selection.
 - Swarm memory staleness is explicitly flagged as a drive signal ('stale') that blocks new ideas, confirming knowledge decay as a system-level bottlenec
 - Simulation-based revision loops work: verdict 'revise' with 5 risks triggered 5 revisions that were successfully applied.
 - The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' consistently fails to activate skill proposals, breaking the proposal-to-skill pipeline.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without validation or reuse tracking: three separate proposals for a validation harness, reuse tracker, and convergence mon
 - Swarm knowledge freshness directly impacts ideation: multiple stale signals and a reflex-driven refresh show that outdated collective goals block nove
 - Model inference reliability is a single point of failure: repeated proposals for hard-coded primary, exponential backoff, health probes, and automatic
-- Reflex actions are executed successfully but their impact on system performance is not measured, so their benefit cannot be determined.
-- Self-diagnosis only checks organ health, missing model inference degradation which is the primary failure mode.
-- Pruning events without audit trails leads to information loss that later manifests as diagnosis gaps.
-- The system generates redundant skill proposals across dream cycles, indicating a missing deduplication mechanism.
-- Model latency (22–50 s) and failures are the primary cause of system unreliability, and the current model rotation strategy is ineffective.
 
 ---
 

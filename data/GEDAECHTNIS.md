@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11481 Fakten** · Stand 2026-09-12 09:03 UTC · aktualisiert bei jedem Herzschlag
+**11486 Fakten** · Stand 2026-09-12 09:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7456
+- **dream:** 7461
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 902
 - **last_swarm_goal:** 637
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912091148:5:1d14ac`
+*12.09. 09:11 UTC · Quelle: dream*
+
+Skill proposals accumulate duplicates (e.g., multiple model routing variants) because no deduplication mechanism exists across proposal cycles.
+
+### `dream:20260912091148:4:443e51`
+*12.09. 09:11 UTC · Quelle: dream*
+
+Prune runs discard events without auditing impact on subsequent selbstdiagnose coverage, risking blind spots in system health monitoring.
+
+### `dream:20260912091148:3:71199e`
+*12.09. 09:11 UTC · Quelle: dream*
+
+Simulation gates are absent before hand_actions, allowing untested operations to proceed despite available mental simulation capacity.
+
+### `dream:20260912091148:2:d11cf4`
+*12.09. 09:11 UTC · Quelle: dream*
+
+Reflex actions converge without quantified effectiveness metrics, creating false confidence in skill execution quality.
+
+### `dream:20260912091148:1:809749`
+*12.09. 09:11 UTC · Quelle: dream*
+
+Model endpoint overloads (502 errors) repeatedly interrupt workflows, indicating missing fallback routing and health-aware model selection.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen in echte Ak:2`
 *12.09. 09:00 UTC · Quelle: evolution*

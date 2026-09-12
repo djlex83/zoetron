@@ -41548,3 +41548,21 @@
 {"ts": 1787993228.532096, "key": "strategy:simulationen_konsequent_in_handlungen_umsetzen", "value": "Modular Execution Pipeline - Modular Execution Pipeline offers the best balance of elegance, feasibility, and impact. It directly addresses the syntax error root cause by breaking code into isolated, testable ", "source": "evolution"}
 {"ts": 1787993258.9409034, "key": "hand_result:Simulationen konsequent in Handlungen umsetzen", "value": "{\"ok\": false, \"stderr\": \"[INFO] Using data directory: /workspace/zoetron/data\\n\"}", "source": "hands"}
 {"ts": 1788597777.3016505, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788598961.7997105, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788598963.7041402, "kind": "prune_run", "payload": {"facts_pruned": 6, "events_pruned": 105}}
+{"ts": 1788598968.0705976, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788598968.0705953, "schalter_geoeffnet": false}}
+{"ts": 1788599013.4429753, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 45.4, "tokens_ein": 1479, "tokens_aus": 1961}}
+{"ts": 1788599013.4435024, "kind": "skill_proposal", "payload": {"proposal": "Build a model router with per-model rate-limit counters, exponential backoff, latency tracking, and automatic fallback after 2 consecutive 429/502 errors."}}
+{"ts": 1788599013.443559, "kind": "skill_proposal", "payload": {"proposal": "Create a failure-signature cache (model, error_type, timestamp) enabling predictive avoidance via cooldown windows."}}
+{"ts": 1788599013.4436138, "kind": "skill_proposal", "payload": {"proposal": "Implement a calibration layer that multiplies cycle estimates by 2.0 and learns per-goal correction factors from historical actuals."}}
+{"ts": 1788599013.4436693, "kind": "skill_proposal", "payload": {"proposal": "Deploy a swarm-task watchdog that flags tasks stale >7 days, auto-generates revive sub-goals, and promotes critic-to-builder fallback."}}
+{"ts": 1788599013.4437232, "kind": "skill_proposal", "payload": {"proposal": "Add an artifact pre-flight validator running syntax check, import test, and sandbox permission verification before execution."}}
+{"ts": 1788599013.4438016, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788599016.316775, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788599016.3167708, "schalter_geoeffnet": false}}
+{"ts": 1788599029.9675238, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 13.6, "tokens_ein": 543, "tokens_aus": 723}}
+{"ts": 1788599029.9676492, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und reduzieren", "why": "Das System macht oft Fehler beim Lernen. Wenn wir die Ursachen finden, wird es zuverlässiger.", "signal": "failure"}}
+{"ts": 1788599029.9677184, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Pläne endlich umsetzen", "why": "Viele gute Ideen liegen seit langer Zeit brach. Wir sollten sie jetzt in die Tat umsetzen.", "signal": "stale"}}
+{"ts": 1788599029.9677842, "kind": "drive_goal", "payload": {"title": "Fähigkeiten vom Vorschlag zur Ausführung bringen", "why": "Es werden viele Fähigkeiten vorgeschlagen, aber selten wirklich genutzt. Die Lücke müssen wir schließen.", "signal": "gap"}}
+{"ts": 1788599040.4337478, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 8.18, "gelesen": 450}}
+{"ts": 1788599040.4362276, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten schneller in Tat umsetzen", "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py", "ok": true}}
+{"ts": 1788599040.7857218, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten schneller in Tat umsetzen", "score": null, "converged": true, "mode": "reflex"}}
