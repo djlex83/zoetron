@@ -42396,3 +42396,22 @@
 {"ts": 1788618534.72385, "kind": "act_done", "payload": {"goal_title": "Vergessene Schwarmprojekte reaktivieren", "score": 9, "converged": true}}
 {"ts": 1788618536.7368207, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.55, "gelesen": 118}}
 {"ts": 1788618538.616026, "kind": "issue_synced", "payload": {"issue": 381, "state": "closed"}}
+{"ts": 1788619058.1952903, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788619267.6937256, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788619269.632984, "kind": "prune_run", "payload": {"facts_pruned": 2, "events_pruned": 9}}
+{"ts": 1788619274.0785248, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788619274.0785215, "schalter_geoeffnet": false}}
+{"ts": 1788619300.6715882, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 26.6, "tokens_ein": 1334, "tokens_aus": 949}}
+{"ts": 1788619300.6722, "kind": "skill_proposal", "payload": {"proposal": "Implement CircuitBreaker for model APIs: blacklist providers returning 429/502 for 5 minutes, auto-retry after cooldown."}}
+{"ts": 1788619300.6722672, "kind": "skill_proposal", "payload": {"proposal": "Deploy GoalAgingPolicy: tag every drive_goal with created_ts, auto-archive goals >7 days with no act_done, surface weekly stale-goal review."}}
+{"ts": 1788619300.6723235, "kind": "skill_proposal", "payload": {"proposal": "Enforce ReflexToolRegistry contract: require single exit code, timeout<30s, idempotent semantics before auto-registration."}}
+{"ts": 1788619300.6723785, "kind": "skill_proposal", "payload": {"proposal": "Build StaleTaskReaper: identify swarm tasks inactive >24h, force completion or archive to unblock pipeline."}}
+{"ts": 1788619300.672431, "kind": "skill_proposal", "payload": {"proposal": "Add MetabolismGate: check system stress and budget before spawning new swarms or heavy tasks to prevent resource exhaustion."}}
+{"ts": 1788619300.6724982, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788619303.0986934, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788619303.0986905, "schalter_geoeffnet": false}}
+{"ts": 1788619324.454749, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 21.4, "tokens_ein": 525, "tokens_aus": 381}}
+{"ts": 1788619324.454992, "kind": "drive_goal", "payload": {"title": "Fehler systematisch sammeln und verstehen", "why": "Das System scheitert oft, lernt aber nicht daraus. Wir müssen Fehler sammeln, damit sie nicht wieder passieren.", "signal": "failure"}}
+{"ts": 1788619324.4551096, "kind": "drive_goal", "payload": {"title": "Vergessene Schwarm-Projekte wiederbeleben", "why": "Es liegen fertige, aber ungenutzte Projekte im Gedächtnis. Die wiederzuverwenden spart Arbeit und bringt neue Fähigkeiten.", "signal": "stale"}}
+{"ts": 1788619324.4552097, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten echt testen", "why": "Viele neue Fähigkeiten werden vorgeschlagen, aber kaum wirklich ausprobiert. Wir müssen sie in der Praxis prüfen.", "signal": "gap"}}
+{"ts": 1788619327.3868208, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.45, "gelesen": 59}}
+{"ts": 1788619327.3900616, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Arbeiten aufräumen und abschließen", "tool": "alte-schwarm-ergebnisse-aufräumen.py", "ok": true}}
+{"ts": 1788619327.8223352, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Arbeiten aufräumen und abschließen", "score": null, "converged": true, "mode": "reflex"}}

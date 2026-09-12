@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11462 Fakten** · Stand 2026-09-12 14:41 UTC · aktualisiert bei jedem Herzschlag
+**11467 Fakten** · Stand 2026-09-12 14:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
+- **dream:** 7441
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 908
 - **last_swarm_goal:** 643
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912144936:5:e32ee4`
+*12.09. 14:49 UTC · Quelle: dream*
+
+Path-related exit codes are eliminated only by a proposed resolver, yet hand_actions currently succeed (exit 0), suggesting the resolver addresses a latent not active failure mode.
+
+### `dream:20260912144936:4:38d7ce`
+*12.09. 14:49 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this cycle alone) but none appear implemented, creating a proposal-execution gap that wastes consolidation effort.
+
+### `dream:20260912144936:3:841301`
+*12.09. 14:49 UTC · Quelle: dream*
+
+Pruning removes 6-11 facts and ~18 events per cycle, but stale swarm goals persist across cycles, meaning pruning doesn't target goal-level staleness.
+
+### `dream:20260912144936:2:fb56b8`
+*12.09. 14:49 UTC · Quelle: dream*
+
+Reflex-driven goals (learning from errors, refreshing swarm knowledge) consistently converge in one shot, showing reflexes are reliable for well-scoped maintenance tasks.
+
+### `dream:20260912144936:1:cd3d58`
+*12.09. 14:49 UTC · Quelle: dream*
+
+Model provider failures (502, 429) cascade sequentially until a fallback succeeds, indicating no proactive health-aware routing exists.
 
 ### `dream:20260912143739:5:426190`
 *12.09. 14:37 UTC · Quelle: dream*

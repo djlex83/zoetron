@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 14:39:19",
+ "stand": "2026-09-12 14:50:36",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -418,6 +418,12 @@
   },
   {
    "tool": "ferngedächtnisse-verbinden.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
