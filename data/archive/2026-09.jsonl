@@ -41769,3 +41769,31 @@
 {"ts": 1788603449.0998151, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.81, "gelesen": 9}}
 {"ts": 1788603451.392328, "kind": "issue_synced", "payload": {"issue": 376, "state": "closed"}}
 {"ts": 1788603963.350211, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787999404.2018917, "key": "dream:20260829103004:1:3ccd47", "value": "Rate limiting (429) and upstream errors (502) are the dominant failure modes across all free-tier models, requiring systematic fallback and backoff strategies.", "source": "dream"}
+{"ts": 1787999404.2019784, "key": "dream:20260829103004:2:ffa7c7", "value": "Simulation scores do not predict execution success; hand_action verification must gate goal completion.", "source": "dream"}
+{"ts": 1787999404.2020488, "key": "dream:20260829103004:3:0c7c8b", "value": "Model confidence becomes miscalibrated when predicted outcomes diverge from actual results without automatic correction.", "source": "dream"}
+{"ts": 1787999404.2021265, "key": "dream:20260829103004:4:55d413", "value": "Fixed-cycle convergence criteria produce false positives; sustained improvement over multiple cycles is a more reliable signal.", "source": "dream"}
+{"ts": 1787999404.2022223, "key": "dream:20260829103004:5:19f54f", "value": "Without per-model health tracking, the system repeatedly routes to degraded endpoints, compounding latency and failure rates.", "source": "dream"}
+{"ts": 1787999740.9971435, "key": "dream:20260829103540:1:3879f1", "value": "Model failures are dominated by rate-limiting (429) and upstream overload (502), indicating systemic availability issues rather than isolated errors.", "source": "dream"}
+{"ts": 1787999740.9972575, "key": "dream:20260829103540:2:54fd8f", "value": "Execution verification via hand_action ok=true is critical for reliable goal completion, as simulation scores alone do not guarantee real-world success.", "source": "dream"}
+{"ts": 1787999740.9973347, "key": "dream:20260829103540:3:cc7d20", "value": "Swarm convergence should be measured by sustained score improvement across cycles, not arbitrary iteration counts, to avoid premature termination.", "source": "dream"}
+{"ts": 1787999740.9974008, "key": "dream:20260829103540:4:b86802", "value": "Revision effectiveness tracking is needed to distinguish impactful simulation changes from noise that degrades performance.", "source": "dream"}
+{"ts": 1787999740.9974654, "key": "dream:20260829103540:5:b5e394", "value": "Analysis-to-action gaps exist where market analysis data remains stale and unexecuted, indicating a breakdown in translating insights into goals.", "source": "dream"}
+{"ts": 1788604500.7105205, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788604502.622982, "kind": "prune_run", "payload": {"facts_pruned": 1, "events_pruned": 66}}
+{"ts": 1788604507.351464, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788604507.3514616, "schalter_geoeffnet": false}}
+{"ts": 1788604527.502375, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 20.1, "tokens_ein": 1448, "tokens_aus": 987}}
+{"ts": 1788604527.5031295, "kind": "skill_proposal", "payload": {"proposal": "Implement a provider-level rate limit tracker that accounts shared quotas across all models from the same provider (OpenRouter)."}}
+{"ts": 1788604527.5032213, "kind": "skill_proposal", "payload": {"proposal": "Add exponential backoff with jitter keyed to provider identity, not model name, with minimum 60s cooldown after 429."}}
+{"ts": 1788604527.5033088, "kind": "skill_proposal", "payload": {"proposal": "Deploy a latency SLO guard that rejects any model exceeding p95 > 30s latency for the current session."}}
+{"ts": 1788604527.503398, "kind": "skill_proposal", "payload": {"proposal": "Create a conservative-mode policy that allows only the highest-reliability primary model when stress > 0.8."}}
+{"ts": 1788604527.5034833, "kind": "skill_proposal", "payload": {"proposal": "Build a swarm task verifier that checks completion artifacts, retries failed steps up to 3x, and escalates persistent failures to builder tasks."}}
+{"ts": 1788604527.5035555, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788604530.822378, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788604530.8223748, "schalter_geoeffnet": false}}
+{"ts": 1788604553.709404, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.9, "tokens_ein": 518, "tokens_aus": 631}}
+{"ts": 1788604553.7095377, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und reduzieren", "why": "Das Modell scheitert oft. Wir müssen herausfinden, warum, damit es verlässlicher wird.", "signal": "failure"}}
+{"ts": 1788604553.7096107, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Arbeiten aufräumen und abschließen", "why": "Fünf Schwarm-Projekte liegen brach. Wir sollten prüfen, ob sie noch wichtig sind.", "signal": "stale"}}
+{"ts": 1788604553.7096722, "kind": "drive_goal", "payload": {"title": "Traum-Erinnerungen für neue Ideen nutzen", "why": "Zwei alte Traumerinnerungen liegen bereit. Wir können sie verbinden, um Neues zu lernen.", "signal": "combination"}}
+{"ts": 1788604557.902688, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.29, "gelesen": 22}}
+{"ts": 1788604557.9050088, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten umsetzen", "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py", "ok": true}}
+{"ts": 1788604558.3388033, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten umsetzen", "score": null, "converged": true, "mode": "reflex"}}

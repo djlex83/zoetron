@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11483 Fakten** · Stand 2026-09-12 10:31 UTC · aktualisiert bei jedem Herzschlag
+**11478 Fakten** · Stand 2026-09-12 10:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7451
+- **dream:** 7446
 - **swarm_artifact:** 1657
 - **last_swarm_critique:** 904
 - **last_swarm_goal:** 639
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912103939:5:21849b`
+*12.09. 10:39 UTC · Quelle: dream*
+
+System generates skill proposals autonomously but lacks a mechanism to implement, test, and deploy them, creating a meta-learning gap.
+
+### `dream:20260912103939:4:b682e3`
+*12.09. 10:39 UTC · Quelle: dream*
+
+Sandbox execution failures persist despite code generation success, indicating missing pre-flight validation (syntax, imports, runtime).
+
+### `dream:20260912103939:3:533f84`
+*12.09. 10:39 UTC · Quelle: dream*
+
+Simulation-based revision loops identify risks but lack convergence guarantees, causing infinite revise cycles without delivery.
+
+### `dream:20260912103939:2:8e864c`
+*12.09. 10:39 UTC · Quelle: dream*
+
+Evolutionary search can dramatically improve solution quality (0→9/10) but final swarm convergence fails due to execution environment mismatches.
+
+### `dream:20260912103939:1:853b4f`
+*12.09. 10:39 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit cascading failures (502 overloads, 429 rate limits) requiring health-aware routing with automatic failover.
 
 ### `dream:20260912102900:5:a43593`
 *12.09. 10:29 UTC · Quelle: dream*
@@ -43027,56 +43052,6 @@ nvidia/nemotron-3-ultra-550b:free consistently succeeds with acceptable latency 
 *29.08. 10:45 UTC · Quelle: dream*
 
 Rate limiting (429 errors) on z-ai/glm-5.2:free is a recurring failure mode that must be handled with automatic fallback rather than retry.
-
-### `dream:20260829103540:5:b5e394`
-*29.08. 10:35 UTC · Quelle: dream*
-
-Analysis-to-action gaps exist where market analysis data remains stale and unexecuted, indicating a breakdown in translating insights into goals.
-
-### `dream:20260829103540:4:b86802`
-*29.08. 10:35 UTC · Quelle: dream*
-
-Revision effectiveness tracking is needed to distinguish impactful simulation changes from noise that degrades performance.
-
-### `dream:20260829103540:3:cc7d20`
-*29.08. 10:35 UTC · Quelle: dream*
-
-Swarm convergence should be measured by sustained score improvement across cycles, not arbitrary iteration counts, to avoid premature termination.
-
-### `dream:20260829103540:2:54fd8f`
-*29.08. 10:35 UTC · Quelle: dream*
-
-Execution verification via hand_action ok=true is critical for reliable goal completion, as simulation scores alone do not guarantee real-world success.
-
-### `dream:20260829103540:1:3879f1`
-*29.08. 10:35 UTC · Quelle: dream*
-
-Model failures are dominated by rate-limiting (429) and upstream overload (502), indicating systemic availability issues rather than isolated errors.
-
-### `dream:20260829103004:5:19f54f`
-*29.08. 10:30 UTC · Quelle: dream*
-
-Without per-model health tracking, the system repeatedly routes to degraded endpoints, compounding latency and failure rates.
-
-### `dream:20260829103004:4:55d413`
-*29.08. 10:30 UTC · Quelle: dream*
-
-Fixed-cycle convergence criteria produce false positives; sustained improvement over multiple cycles is a more reliable signal.
-
-### `dream:20260829103004:3:0c7c8b`
-*29.08. 10:30 UTC · Quelle: dream*
-
-Model confidence becomes miscalibrated when predicted outcomes diverge from actual results without automatic correction.
-
-### `dream:20260829103004:2:ffa7c7`
-*29.08. 10:30 UTC · Quelle: dream*
-
-Simulation scores do not predict execution success; hand_action verification must gate goal completion.
-
-### `dream:20260829103004:1:3ccd47`
-*29.08. 10:30 UTC · Quelle: dream*
-
-Rate limiting (429) and upstream errors (502) are the dominant failure modes across all free-tier models, requiring systematic fallback and backoff strategies.
 
 ### `last_swarm_critique`
 *29.08. 09:26 UTC · Quelle: critic*
