@@ -41688,3 +41688,9 @@
 {"ts": 1788601195.923008, "kind": "swarm_finished", "payload": {"goal": "Alte Schwarm-Aufgaben endlich erledigen", "score": 1, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
 {"ts": 1788601195.9235115, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Aufgaben endlich erledigen", "score": 1, "converged": false}}
 {"ts": 1788601198.0294676, "kind": "issue_synced", "payload": {"issue": 375, "state": "open"}}
+{"ts": 1787997156.0469613, "key": "dream:20260829095236:1:2c8867", "value": "Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.", "source": "dream"}
+{"ts": 1787997156.0470662, "key": "dream:20260829095236:2:6a9b00", "value": "The nvidia/nemotron-3-ultra-550b-a55b:free model consistently succeeds while z-ai/glm-5.2:free fails repeatedly, suggesting model selection directly impacts reliability.", "source": "dream"}
+{"ts": 1787997156.0471582, "key": "dream:20260829095236:3:44fad0", "value": "Hand actions fail with exit code 1 and zero gelesen values, indicating a systematic execution or environment configuration problem.", "source": "dream"}
+{"ts": 1787997156.0472295, "key": "dream:20260829095236:4:324f46", "value": "Calibration predictions show large absolute errors (predicted 4, actual 1), revealing unreliable confidence estimation in task planning.", "source": "dream"}
+{"ts": 1787997156.0472927, "key": "dream:20260829095236:5:1b2052", "value": "JSON parsing errors (Expecting value at line 373) occur alongside rate limits, suggesting malformed responses under load.", "source": "dream"}
+{"ts": 1788601708.8899298, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

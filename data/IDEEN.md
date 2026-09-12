@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 09:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 10:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 15×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolutionary variant generation improved the score from 1 to 10, fixing syntax errors.
+- Calibration predictions were off by 7 points, showing overconfidence.
+- The simulation gate repeatedly required revisions, preventing action execution.
+- Hand actions exited with code 1 and no output, revealing missing or broken scripts.
+- The free Google model returned HTTP 429, indicating rate limiting that requires caching or fallback.
 - Hand actions fail when relative paths are used instead of absolute ZOETRON_DATA paths; all file ops must resolve against the canonical data root.
 - High stress (1.0) with conserve metabolism reduces max_tasks to 3 and max_iterations to 1, causing premature termination of multi-step plans.
 - Simulation calibration error of 700% (predicted 8 vs actual 1) indicates the simulator does not model real filesystem/path constraints.
@@ -51,11 +56,6 @@
 - Pruned events often precede gaps in later self-diagnoses, implying that critical data loss is not always visible at prune time.
 - The only consistently available model exhibits high latency, suggesting a trade-off between reliability and speed.
 - Repeated 429 and 502 errors from free model endpoints indicate that load-based rate limiting is the dominant failure mode.
-- Skill proposals accumulate duplicates (e.g., multiple model routing variants) because no deduplication mechanism exists across proposal cycles.
-- Prune runs discard events without auditing impact on subsequent selbstdiagnose coverage, risking blind spots in system health monitoring.
-- Simulation gates are absent before hand_actions, allowing untested operations to proceed despite available mental simulation capacity.
-- Reflex actions converge without quantified effectiveness metrics, creating false confidence in skill execution quality.
-- Model endpoint overloads (502 errors) repeatedly interrupt workflows, indicating missing fallback routing and health-aware model selection.
 
 ---
 

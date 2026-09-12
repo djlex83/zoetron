@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 09:49:16",
+ "stand": "2026-09-12 10:07:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -183,8 +183,8 @@
    "quote": 0.0
   },
   {
-   "tool": "kritiken-und-ziele-regelmäßig-prüfen.py",
-   "laeufe": 1,
+   "tool": "simulationen-konsequent-anwenden.py",
+   "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -423,29 +423,23 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-konsequent-anwenden.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
   }
  ],
- "haende_quote": 0.78,
- "simulationen_angewandt": 35,
+ "haende_quote": 0.767,
+ "simulationen_angewandt": 34,
  "swarm_scores": {
   "n": 29,
   "best": 9.0,
-  "schnitt": 4.79
+  "schnitt": 4.76
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 28,
-   "schnitt": 4.64
+   "schnitt": 4.61
   },
   "bau": {
    "n": 1,

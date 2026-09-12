@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11489 Fakten** · Stand 2026-09-12 09:51 UTC · aktualisiert bei jedem Herzschlag
+**11498 Fakten** · Stand 2026-09-12 10:09 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7466
-- **swarm_artifact:** 1651
-- **last_swarm_critique:** 903
-- **last_swarm_goal:** 638
+- **swarm_artifact:** 1657
+- **last_swarm_critique:** 904
+- **last_swarm_goal:** 639
 - **anti_pattern:** 371
 - **strategy:** 188
 - **tool:** 155
-- **hand_result:** 78
+- **hand_result:** 79
 - **aktuell_organfehler:** 39
 
 ---
+
+### `last_swarm_critique`
+*12.09. 10:07 UTC · Quelle: critic*
+
+score=8; issues=Analysis artifact is diagnostic only - doesn't directly increase simulation frequency; Scheduler uses threading.Timer/Event loop which may conflict with async drive cycles; Forge loop integration modifies source files directly (string injection
+
+### `last_swarm_goal`
+*12.09. 09:59 UTC · Quelle: system*
+
+Simulationen öfter anwenden
+
+### `dream:20260912095906:5:b361e8`
+*12.09. 09:59 UTC · Quelle: dream*
+
+Evolutionary variant generation improved the score from 1 to 10, fixing syntax errors.
+
+### `dream:20260912095906:4:87e57b`
+*12.09. 09:59 UTC · Quelle: dream*
+
+Calibration predictions were off by 7 points, showing overconfidence.
+
+### `dream:20260912095906:3:0a2acc`
+*12.09. 09:59 UTC · Quelle: dream*
+
+The simulation gate repeatedly required revisions, preventing action execution.
+
+### `dream:20260912095906:2:4c7b3f`
+*12.09. 09:59 UTC · Quelle: dream*
+
+Hand actions exited with code 1 and no output, revealing missing or broken scripts.
+
+### `dream:20260912095906:1:4f5d74`
+*12.09. 09:59 UTC · Quelle: dream*
+
+The free Google model returned HTTP 429, indicating rate limiting that requires caching or fallback.
 
 ### `dream:20260912094827:5:1ffafc`
 *12.09. 09:48 UTC · Quelle: dream*
@@ -43117,31 +43152,6 @@ Calibration error of 3 points (predicted 4 vs actual 1) reveals systematic overc
 *29.08. 09:58 UTC · Quelle: dream*
 
 Free-tier models exhibit cascading failures (429/502) under load, making single-model reliance fatal for production tasks.
-
-### `dream:20260829095236:5:1b2052`
-*29.08. 09:52 UTC · Quelle: dream*
-
-JSON parsing errors (Expecting value at line 373) occur alongside rate limits, suggesting malformed responses under load.
-
-### `dream:20260829095236:4:324f46`
-*29.08. 09:52 UTC · Quelle: dream*
-
-Calibration predictions show large absolute errors (predicted 4, actual 1), revealing unreliable confidence estimation in task planning.
-
-### `dream:20260829095236:3:44fad0`
-*29.08. 09:52 UTC · Quelle: dream*
-
-Hand actions fail with exit code 1 and zero gelesen values, indicating a systematic execution or environment configuration problem.
-
-### `dream:20260829095236:2:6a9b00`
-*29.08. 09:52 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra-550b-a55b:free model consistently succeeds while z-ai/glm-5.2:free fails repeatedly, suggesting model selection directly impacts reliability.
-
-### `dream:20260829095236:1:2c8867`
-*29.08. 09:52 UTC · Quelle: dream*
-
-Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
 
 ### `last_swarm_critique`
 *29.08. 09:26 UTC · Quelle: critic*
