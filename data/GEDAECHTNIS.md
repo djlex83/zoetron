@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11474 Fakten** · Stand 2026-09-12 06:47 UTC · aktualisiert bei jedem Herzschlag
+**11469 Fakten** · Stand 2026-09-12 06:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
+- **dream:** 7436
 - **swarm_artifact:** 1659
 - **last_swarm_critique:** 899
 - **last_swarm_goal:** 634
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912065527:5:890100`
+*12.09. 06:55 UTC · Quelle: dream*
+
+Static pruning thresholds ignore fact/event growth dynamics, causing either memory bloat or premature knowledge loss.
+
+### `dream:20260912065527:4:9e2b4f`
+*12.09. 06:55 UTC · Quelle: dream*
+
+Reflex convergence succeeds without measured effectiveness metrics, risking false-positive skill validation.
+
+### `dream:20260912065527:3:957524`
+*12.09. 06:55 UTC · Quelle: dream*
+
+High-value skill proposals (model router, caching, reflex metrics, nightly pipeline, PID pruning, path hardening) accumulate but remain undeployed, revealing a proposal-to-production gap.
+
+### `dream:20260912065527:2:26b7e5`
+*12.09. 06:55 UTC · Quelle: dream*
+
+Identical drive goals (reduce model failure rate, refresh swarm knowledge) reappear across cycles, indicating goal-tracking lacks deduplication and completion signaling.
+
+### `dream:20260912065527:1:070bc3`
+*12.09. 06:55 UTC · Quelle: dream*
+
+Model endpoint failures (502, 429, upstream overload) cascade across multiple providers, making single-model reliance a systemic reliability bottleneck.
 
 ### `dream:20260912064425:5:fb229a`
 *12.09. 06:44 UTC · Quelle: dream*
@@ -43017,56 +43042,6 @@ score=4; issues=Artefakte sind rein diagnostisch (Status prüfen, Verzeichnisse 
 *29.08. 06:53 UTC · Quelle: system*
 
 Marktanalyse-Swarm-Arbeit abschließen
-
-### `dream:20260829065255:5:67d5b2`
-*29.08. 06:52 UTC · Quelle: dream*
-
-Simulation repeatedly flags high critical risks (5 risks, 3 revisions) suggesting pre-execution risk gates are absent.
-
-### `dream:20260829065255:4:8320b9`
-*29.08. 06:52 UTC · Quelle: dream*
-
-Skill proposals accumulate (5 proposed, 0 implemented) creating a capability gap that blocks systemic improvement.
-
-### `dream:20260829065255:3:5b0d44`
-*29.08. 06:52 UTC · Quelle: dream*
-
-Swarm executions consistently stall at low convergence (score 1, converged=false) despite evolution cycles, indicating missing convergence criteria.
-
-### `dream:20260829065255:2:7ebcde`
-*29.08. 06:52 UTC · Quelle: dream*
-
-Latency variance of 8x (8.7s vs 68.1s) for the same model breaks interactive SLAs and requires budget-aware routing.
-
-### `dream:20260829065255:1:32e5b8`
-*29.08. 06:52 UTC · Quelle: dream*
-
-Model provider rate limits (429 errors) and upstream failures cause cascading reliability degradation without automated failover.
-
-### `dream:20260829064810:5:fdaefe`
-*29.08. 06:48 UTC · Quelle: dream*
-
-Simulation detected 5 risks and proposed 3 revisions but only 2 were applied, leaving known gaps.
-
-### `dream:20260829064810:4:e8bad5`
-*29.08. 06:48 UTC · Quelle: dream*
-
-Evolutionary variant selection improved score from 1 to 8, but swarm failed to converge in 2 cycles.
-
-### `dream:20260829064810:3:451e0a`
-*29.08. 06:48 UTC · Quelle: dream*
-
-Calibration is severely misaligned (predicted 8 vs actual 1), indicating optimism bias in success estimation.
-
-### `dream:20260829064810:2:b424c8`
-*29.08. 06:48 UTC · Quelle: dream*
-
-Nvidia Nemotron shows mixed reliability: successes at 6-20s latency but suffers 502 upstream overload errors.
-
-### `dream:20260829064810:1:9eb5a0`
-*29.08. 06:48 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 rate-limit errors under load, making them unreliable as primary workers.
 
 ### `last_swarm_critique`
 *29.08. 06:29 UTC · Quelle: critic*

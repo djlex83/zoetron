@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 06:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 06:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Static pruning thresholds ignore fact/event growth dynamics, causing either memory bloat or premature knowledge loss.
+- Reflex convergence succeeds without measured effectiveness metrics, risking false-positive skill validation.
+- High-value skill proposals (model router, caching, reflex metrics, nightly pipeline, PID pruning, path hardening) accumulate but remain undeployed, re
+- Identical drive goals (reduce model failure rate, refresh swarm knowledge) reappear across cycles, indicating goal-tracking lacks deduplication and co
+- Model endpoint failures (502, 429, upstream overload) cascade across multiple providers, making single-model reliance a systemic reliability bottlenec
 - Pruning removes facts/events but no mechanism exists to preserve validated skills or successful model responses across sleep cycles.
 - Repeated prompts to slow/unreliable models waste latency and tokens without caching or deduplication.
 - Reflex-driven local code execution (hand_action, python tools) succeeds with zero errors while external LLM calls fail, proving local-first execution 
@@ -51,11 +56,6 @@
 - Calibration overestimates task difficulty by ~2 points (predicted 7, actual 5), suggesting a systematic bias toward higher estimates.
 - Model failures are transient (502 upstream overload, 429 rate limit) and should trigger automatic fallback rather than manual retry.
 - dots-studio/dots-3-note-preview:free is the only consistently available model; nvidia and gemma free endpoints frequently return 502/429 errors.
-- Swarm artifact produced runnable code (222 lines, TOR green) but bahnen delta 0.0 indicates no knowledge graph integration occurred.
-- Simulation approved execution with 5 risks and 3 revisions, but calibration error of 2 (predicted 7 vs actual 5) shows risk estimates are optimistic.
-- Metabolism stress at 1.0 forces conserve mode with 3-task/1-iteration budgets, making any multi-step plan fragile without explicit checkpointing.
-- Hand actions fail when ignoring sys.argv[1] and ZOETRON_DATA environment variables, causing zero-file reads despite clean exit codes.
-- Primary models (Nemotron, Gemma) fail under load with 502/429 errors while fallback model (dots-studio) succeeds at 50-80s latency, making latency-awa
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 06:45:41",
+ "stand": "2026-09-12 06:56:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -427,9 +427,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.797,
+ "haende_quote": 0.798,
  "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 27,
