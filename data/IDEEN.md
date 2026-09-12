@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 10:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 11:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,22 +10,22 @@
 - Enforce swarm refresh quality gate: require ≥2 critics, minimum score 8, critic sign-off, and TTL-based stalen *(hatte die Idee 4×)*
 - Harden hand_action entrypoint: resolve input path via ZOETRON_DATA then sys.argv[1], reject relative paths, an *(hatte die Idee 4×)*
 - Extend reflex schema: require effectiveness_metric (float, unit, deadline_ts) at registration; block converged *(hatte die Idee 4×)*
-- Build a model fallback chain that, upon a 429 error, waits with exponential backoff and then tries the next mo *(hatte die Idee 3×)*
-- Implement a model health check that pings each candidate model with a minimal request before assigning a task, *(hatte die Idee 3×)*
-- Create an input validation step that checks for the existence and readability of all file paths provided in ar *(hatte die Idee 3×)*
-- Develop a dynamic budget allocator that increases the max task and iteration limits when the system detects it *(hatte die Idee 3×)*
-- Set up a failure analysis pipeline that automatically logs and categorizes errors, then uses the findings to u *(hatte die Idee 3×)*
 - Build a health-aware model router that tracks real-time error rates, latency percentiles, and quota remaining  *(hatte die Idee 3×)*
 - Create a sandboxed execution environment that automatically tests proposed skills against replayed failure sce *(hatte die Idee 3×)*
 - Establish an automated promotion pipeline that graduates validated skill proposals into permanent procedures w *(hatte die Idee 3×)*
 - Build a skill activation gate that verifies reflex tool success before marking proposals as deployed, with aut *(hatte die Idee 3×)*
 - Build SkillConversionPipeline: auto-promote approved proposals to implemented skills with CI tests, versioning *(hatte die Idee 3×)*
+- Add GoalAwarePruningFilter: score every fact/event against active drive goals before deletion; protect items t *(hatte die Idee 3×)*
+- Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
+- Build a model fallback chain that, upon a 429 error, waits with exponential backoff and then tries the next mo *(hatte die Idee 2×)*
+- Implement a model health check that pings each candidate model with a minimal request before assigning a task, *(hatte die Idee 2×)*
+- Create an input validation step that checks for the existence and readability of all file paths provided in ar *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 15×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (88 events first cycle) may erase failure context needed for root-cause analysis.
+- Identical skill proposals recur across dream cycles (model router, simulation gate, deduplicator) but never graduate to implementation.
+- Hand actions fail silently on path issues (first read 0 bytes in 0.02s) before succeeding on retry, indicating missing pre-flight validation.
+- Selbstdiagnose reports zero organ errors while external API failures persist, revealing a blind spot in health monitoring.
+- Free-tier model endpoints fail unpredictably (502 upstream, 429 rate limits) with no automatic failover, causing cascading task failures.
 - System generates skill proposals autonomously but lacks a mechanism to implement, test, and deploy them, creating a meta-learning gap.
 - Sandbox execution failures persist despite code generation success, indicating missing pre-flight validation (syntax, imports, runtime).
 - Simulation-based revision loops identify risks but lack convergence guarantees, causing infinite revise cycles without delivery.
@@ -51,11 +56,6 @@
 - Evolutionary repair (variants + scoring) rescued a 0/10 attempt to 9/10, proving that generate-validate-iterate beats single-shot generation.
 - The system consistently overestimates success (calibration predicted 4, actual 0), revealing a severe optimism bias in self-assessment.
 - Free-tier models (Nemotron, Gemma) fail unpredictably with 502/429 errors, requiring a hardened fallback chain with health checks before each call.
-- Metabolic stress at 1.0 triggers conserve mode that caps tasks at 3 and iterations at 1, starving background consolidation like swarm sync.
-- Skill proposals accumulate without expiration or evaluation criteria, creating noise that obscures high-value capabilities needing integration.
-- File operations fail when code uses relative paths instead of the ZOETRON_DATA environment variable, causing silent zero-byte reads in hand actions.
-- Latency on working models varies 6x (14s vs 88s) for similar workloads, making latency-aware routing with hard thresholds essential for predictable pe
-- Free-tier model endpoints fail unpredictably with 502 overloads and 429 rate limits, requiring automatic fallback chains rather than static model sele
 
 ---
 

@@ -41797,3 +41797,27 @@
 {"ts": 1788604557.902688, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.29, "gelesen": 22}}
 {"ts": 1788604557.9050088, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten umsetzen", "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py", "ok": true}}
 {"ts": 1788604558.3388033, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten umsetzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788000342.8763015, "key": "dream:20260829104542:1:6be3ca", "value": "Rate limiting (429 errors) on z-ai/glm-5.2:free is a recurring failure mode that must be handled with automatic fallback rather than retry.", "source": "dream"}
+{"ts": 1788000342.8763871, "key": "dream:20260829104542:2:728e6a", "value": "nvidia/nemotron-3-ultra-550b:free consistently succeeds with acceptable latency (8-25s), making it the reliable default model.", "source": "dream"}
+{"ts": 1788000342.876455, "key": "dream:20260829104542:3:64113b", "value": "Stale market analyses and unused skill proposals indicate a systemic gap between completion and operationalization of artifacts.", "source": "dream"}
+{"ts": 1788000342.876519, "key": "dream:20260829104542:4:907df6", "value": "The system's failure rate is nearly double its success rate, driven primarily by model reliability issues rather than task complexity.", "source": "dream"}
+{"ts": 1788000342.876592, "key": "dream:20260829104542:5:8ea22c", "value": "Simulation-revision loops and artifact validation pipelines are critical for converting theoretical proposals into verified, reusable skills.", "source": "dream"}
+{"ts": 1788605068.9118075, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788605137.5405514, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788605139.301694, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 30}}
+{"ts": 1788605143.4325836, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788605143.4325798, "schalter_geoeffnet": false}}
+{"ts": 1788605162.8244493, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 19.4, "tokens_ein": 1613, "tokens_aus": 837}}
+{"ts": 1788605162.8251398, "kind": "skill_proposal", "payload": {"proposal": "Add a model-router policy that prefers inclusionai/ling-3.0-flash-fin:free for fast-path tasks and quarantines 429-prone models."}}
+{"ts": 1788605162.825193, "kind": "skill_proposal", "payload": {"proposal": "Implement exponential-backoff retry with provider-aware circuit breakers before hitting metabolism budget limits."}}
+{"ts": 1788605162.8252375, "kind": "skill_proposal", "payload": {"proposal": "Insert a mandatory code-block extractor/validator step after planning; reject artifacts without executable Python."}}
+{"ts": 1788605162.825282, "kind": "skill_proposal", "payload": {"proposal": "Track per-model success/latency histograms in working memory to dynamically re-rank fallbacks at runtime."}}
+{"ts": 1788605162.825327, "kind": "skill_proposal", "payload": {"proposal": "Add a 'degraded-mode' planner that produces smaller, self-contained code steps when metabolism.budget.max_iterations <= 1."}}
+{"ts": 1788605162.8253725, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788605165.0612254, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788605165.0612226, "schalter_geoeffnet": false}}
+{"ts": 1788605184.3043518, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 19.2, "tokens_ein": 519, "tokens_aus": 385}}
+{"ts": 1788605184.3044834, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell scheitert fast doppelt so oft wie es gelingt. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788605184.304561, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Aufgaben abschließen oder löschen", "why": "Fünf geplante Schwarm-Arbeiten liegen seit langem brach. Sie blockieren Platz und lenken ab.", "signal": "stale"}}
+{"ts": 1788605184.304648, "kind": "drive_goal", "payload": {"title": "Mehr Fähigkeits-Vorschläge zu Ende bringen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber kaum abgeschlossene. Wir müssen sie testen und nutzbar machen.", "signal": "gap"}}
+{"ts": 1788605187.2250333, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.44, "gelesen": 59}}
+{"ts": 1788605187.2282631, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Aufgaben abschließen oder entfernen", "tool": "alte-schwarm-ergebnisse-aufräumen.py", "ok": true}}
+{"ts": 1788605187.8509367, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Aufgaben abschließen oder entfernen", "score": null, "converged": true, "mode": "reflex"}}

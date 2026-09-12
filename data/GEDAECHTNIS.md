@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11478 Fakten** · Stand 2026-09-12 10:42 UTC · aktualisiert bei jedem Herzschlag
+**11490 Fakten** · Stand 2026-09-12 11:06 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7446
-- **swarm_artifact:** 1657
-- **last_swarm_critique:** 904
-- **last_swarm_goal:** 639
-- **anti_pattern:** 371
-- **strategy:** 188
-- **tool:** 155
+- **swarm_artifact:** 1663
+- **last_swarm_critique:** 905
+- **last_swarm_goal:** 640
+- **anti_pattern:** 373
+- **strategy:** 189
+- **tool:** 156
 - **hand_result:** 79
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:modell-fehler-stark-reduzieren`
+*12.09. 11:04 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler stark reduzieren'. Datei: data/tools/modell-fehler-stark-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modell-Fehler stark redu:1`
+*12.09. 11:02 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Sourced Reactive Architecture with Full Observability - Model each artifact as an independent event processor communicating via immutable event log (Kafka/Redis Streams). Analysis emits ErrorAnalysisEvent with full erro
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modell-Fehler stark redu:0`
+*12.09. 11:02 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Unified Pipeline Orchestration with Typed Data Contracts - Replace three isolated artifacts with a single typed pipeline: AnalysisStage -> ConfigStage -> ValidationStage. Each stage emits a strongly-typed Pydantic model (Anal
+
+### `last_swarm_critique`
+*12.09. 11:00 UTC · Quelle: critic*
+
+score=6; issues=Keine Integration zwischen den drei Artefakten: Analyse (1), Retry/Fallback (2) und Gate (3) laufen isoliert, kein Datenschluss von Analyse -> Konfiguration -> Validierung; Artefakt 2 im Anzeige-Ausschnitt abgebrochen (mittendrin im String), ob
+
+### `last_swarm_goal`
+*12.09. 10:51 UTC · Quelle: system*
+
+Modell-Fehler stark reduzieren
+
+### `dream:20260912105016:5:95fa39`
+*12.09. 10:50 UTC · Quelle: dream*
+
+Aggressive pruning (88 events first cycle) may erase failure context needed for root-cause analysis.
+
+### `dream:20260912105016:4:2882e2`
+*12.09. 10:50 UTC · Quelle: dream*
+
+Identical skill proposals recur across dream cycles (model router, simulation gate, deduplicator) but never graduate to implementation.
+
+### `dream:20260912105016:3:e0ec7b`
+*12.09. 10:50 UTC · Quelle: dream*
+
+Hand actions fail silently on path issues (first read 0 bytes in 0.02s) before succeeding on retry, indicating missing pre-flight validation.
+
+### `dream:20260912105016:2:5866d8`
+*12.09. 10:50 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors while external API failures persist, revealing a blind spot in health monitoring.
+
+### `dream:20260912105016:1:e3b572`
+*12.09. 10:50 UTC · Quelle: dream*
+
+Free-tier model endpoints fail unpredictably (502 upstream, 429 rate limits) with no automatic failover, causing cascading task failures.
 
 ### `dream:20260912103939:5:21849b`
 *12.09. 10:39 UTC · Quelle: dream*
@@ -43027,31 +43077,6 @@ The model poolside/laguna-s-2.1:free consistently succeeds where others fail, su
 *29.08. 10:54 UTC · Quelle: dream*
 
 Rate limiting (429) and upstream overload (502) are recurring failure modes across multiple model endpoints, indicating systemic API reliability issues rather than isolated incidents.
-
-### `dream:20260829104542:5:8ea22c`
-*29.08. 10:45 UTC · Quelle: dream*
-
-Simulation-revision loops and artifact validation pipelines are critical for converting theoretical proposals into verified, reusable skills.
-
-### `dream:20260829104542:4:907df6`
-*29.08. 10:45 UTC · Quelle: dream*
-
-The system's failure rate is nearly double its success rate, driven primarily by model reliability issues rather than task complexity.
-
-### `dream:20260829104542:3:64113b`
-*29.08. 10:45 UTC · Quelle: dream*
-
-Stale market analyses and unused skill proposals indicate a systemic gap between completion and operationalization of artifacts.
-
-### `dream:20260829104542:2:728e6a`
-*29.08. 10:45 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b:free consistently succeeds with acceptable latency (8-25s), making it the reliable default model.
-
-### `dream:20260829104542:1:6be3ca`
-*29.08. 10:45 UTC · Quelle: dream*
-
-Rate limiting (429 errors) on z-ai/glm-5.2:free is a recurring failure mode that must be handled with automatic fallback rather than retry.
 
 ### `last_swarm_critique`
 *29.08. 09:26 UTC · Quelle: critic*
