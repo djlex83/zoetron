@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 00:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 01:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (13+ logged) but none appear implemented; the 'combination' drive goal confirms the proposal-to-skill pipeline is broken.
+- Aggressive pruning (10→15 facts, 38→83 events) correlates with drive signals 'stale' and 'failure', implying the pruner discards context needed for re
+- Model latency variance (8–60 s) and repeated ModelHealthTracker proposals indicate upstream instability is the primary systemic risk, not logic errors
+- Reflex execution succeeded (converged=true) where the full swarm failed, suggesting lightweight targeted tools outperform heavy multi-role cycles for 
+- Evolutionary variant generation rescued the swarm fact update (4→9) where the base planner/builder/critic loop stalled at two cycles.
 - Previous dream's skill proposals directly address current failure modes (model router, freshness SLA, revision controller, retain tags).
 - Pruning discards low-frequency high-value facts; metadata tagging can extend retention 10x for critical knowledge.
 - High metabolic stress (0.9) throttles system to 3 tasks/1 iteration, making reliability mechanisms essential not optional.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across dream cycles but lack automated validation-to-deployment pipeline.
 - Model endpoint reliability varies drastically (502, 429, latency 7-79s), requiring health-aware routing.
 - Reflex actions consistently converge without measurable effectiveness scores, creating false completion signals.
-- Fixed prune thresholds cannot adapt to memory pressure, causing either premature eviction or OOM risk.
-- Reflex actions report converged=true without measurable outcome metrics, making success indistinguishable from silent failure.
-- Skill proposals accumulate but lack ownership, deadlines, and verification, so they never become operational capabilities.
-- Swarm knowledge decays within cycles, requiring repeated revival reflexes instead of persistent retention.
-- Model latency varies wildly (16–79 s) indicating unreliable provider performance that breaks downstream timing assumptions.
 
 ---
 

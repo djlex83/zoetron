@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-12 00:50:48",
+ "stand": "2026-09-12 01:09:34",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -415,19 +415,25 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.815,
+ "haende_quote": 0.805,
  "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 24,
+  "n": 25,
   "best": 9.0,
-  "schnitt": 4.04
+  "schnitt": 4.24
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 23,
-   "schnitt": 3.83
+   "n": 24,
+   "schnitt": 4.04
   },
   "bau": {
    "n": 1,

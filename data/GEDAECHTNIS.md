@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11522 Fakten** · Stand 2026-09-12 00:52 UTC · aktualisiert bei jedem Herzschlag
+**11532 Fakten** · Stand 2026-09-12 01:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7446
-- **swarm_artifact:** 1695
-- **last_swarm_critique:** 894
-- **last_swarm_goal:** 629
-- **anti_pattern:** 385
-- **strategy:** 195
+- **dream:** 7451
+- **swarm_artifact:** 1701
+- **last_swarm_critique:** 895
+- **last_swarm_goal:** 630
+- **anti_pattern:** 383
+- **strategy:** 194
 - **tool:** 158
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `last_swarm_critique`
+*12.09. 01:09 UTC · Quelle: critic*
+
+score=9; issues=Implementation tool generation uses fragile string parsing for first parameter extraction (param_str.split(',')[0].split(':')[0].strip()) which could fail with complex type annotations or no parameters; Validation pipeline's sort_key function h
+
+### `last_swarm_goal`
+*12.09. 01:00 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge in echte Skills wandeln
+
+### `dream:20260912010017:5:c0e3a7`
+*12.09. 01:00 UTC · Quelle: dream*
+
+Skill proposals accumulate (13+ logged) but none appear implemented; the 'combination' drive goal confirms the proposal-to-skill pipeline is broken.
+
+### `dream:20260912010017:4:e4715a`
+*12.09. 01:00 UTC · Quelle: dream*
+
+Aggressive pruning (10→15 facts, 38→83 events) correlates with drive signals 'stale' and 'failure', implying the pruner discards context needed for recovery.
+
+### `dream:20260912010017:3:4ed7ea`
+*12.09. 01:00 UTC · Quelle: dream*
+
+Model latency variance (8–60 s) and repeated ModelHealthTracker proposals indicate upstream instability is the primary systemic risk, not logic errors.
+
+### `dream:20260912010017:2:0237d7`
+*12.09. 01:00 UTC · Quelle: dream*
+
+Reflex execution succeeded (converged=true) where the full swarm failed, suggesting lightweight targeted tools outperform heavy multi-role cycles for stale knowledge.
+
+### `dream:20260912010017:1:d63071`
+*12.09. 01:00 UTC · Quelle: dream*
+
+Evolutionary variant generation rescued the swarm fact update (4→9) where the base planner/builder/critic loop stalled at two cycles.
 
 ### `tool:träume-in-echte-fähigkeiten-wandeln`
 *12.09. 00:50 UTC · Quelle: hands*
@@ -43187,16 +43222,6 @@ Simulation-driven development pipeline works: swarm goal → simulation (revise)
 *29.08. 01:06 UTC · Quelle: dream*
 
 Primary model (z-ai/glm-5.2) fails consistently with 429 rate limits, forcing fallback to slower nvidia/nemotron model (57-122s latency).
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Marktanalyse endlich nut:2`
-*29.08. 00:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): DAG-Based Workflow Orchestration with Immutable Artifacts - Model the entire analysis as a Directed Acyclic Graph in a modern orchestrator (Dagster, Prefect, or Airflow). Each node is a pure function with typed inputs/outputs
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Marktanalyse endlich nut:1`
-*29.08. 00:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Metadata-Driven Data Catalog with Automatic Discovery - Replace brittle filesystem assumptions with a persistent data catalog (SQLite + SQLAlchemy or DuckDB) that indexes every file under `/workspace/zoetron/data` on startup 
 
 ### `last_swarm_critique`
 *29.08. 00:46 UTC · Quelle: critic*
