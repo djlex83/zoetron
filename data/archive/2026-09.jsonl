@@ -41566,3 +41566,28 @@
 {"ts": 1788599040.4337478, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 8.18, "gelesen": 450}}
 {"ts": 1788599040.4362276, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten schneller in Tat umsetzen", "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py", "ok": true}}
 {"ts": 1788599040.7857218, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten schneller in Tat umsetzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787994911.5026276, "key": "dream:20260829091511:1:2c30b5", "value": "Free-tier models on OpenRouter exhibit systematic rate-limiting (429) and upstream instability (502), making naive round-robin selection ineffective.", "source": "dream"}
+{"ts": 1787994911.5027173, "key": "dream:20260829091511:2:bbbe0a", "value": "Model latency varies by 5x+ for the same model (nemotron: 86s vs 15s), indicating queue-depth dependence that single health checks cannot capture.", "source": "dream"}
+{"ts": 1787994911.5027888, "key": "dream:20260829091511:3:45524d", "value": "The swarm cleaned up old results but did not converge (score 3, converged=false), suggesting cleanup tasks need explicit acceptance criteria, not just iteration counts.", "source": "dream"}
+{"ts": 1787994911.5028543, "key": "dream:20260829091511:4:caee1d", "value": "Five skill proposals were generated in one burst but none validated; proposal generation without smoke-testing creates technical debt.", "source": "dream"}
+{"ts": 1787994911.5029175, "key": "dream:20260829091511:5:ca51f3", "value": "Drive goals are created from failure signals (model errors, unused analyses) but lack automatic decomposition into executable steps with verification.", "source": "dream"}
+{"ts": 1787995238.0549839, "key": "swarm_artifact:Analyse des aktuellen Wissensgraph-Zustands", "value": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyse des aktuellen Wissensgraph-Zustands.\nLädt den KnowledgeGraph und prüft: Anzahl Knoten, Kanten, isolierte Knoten, Knoten mit geringem Gewicht.\nErzeugt einen", "source": "builder"}
+{"ts": 1788599552.0558295, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788599621.354453, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788599622.9458866, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788599627.4318287, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788599627.4318264, "schalter_geoeffnet": false}}
+{"ts": 1788599649.99926, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.6, "tokens_ein": 1324, "tokens_aus": 1074}}
+{"ts": 1788599649.999809, "kind": "skill_proposal", "payload": {"proposal": "Deploy model health monitor with sliding-window 429/502 rates and get_healthy_model() router integration."}}
+{"ts": 1788599649.9998915, "kind": "skill_proposal", "payload": {"proposal": "Implement error-classification reflexes mapping 429/502/timeout to pre-validated recovery sequences (backoff, fallback, circuit-break)."}}
+{"ts": 1788599649.9999685, "kind": "skill_proposal", "payload": {"proposal": "Build predictive cooldown scheduler using failure-signature cache to preemptively skip models during historical high-error windows."}}
+{"ts": 1788599650.0000265, "kind": "skill_proposal", "payload": {"proposal": "Create swarm-task watchdog flagging tasks stale >7 days, auto-generating revive sub-goals with critic-to-builder promotion."}}
+{"ts": 1788599650.0001178, "kind": "skill_proposal", "payload": {"proposal": "Add artifact pre-flight validator running syntax check, import test, and sandbox permission verification before execution."}}
+{"ts": 1788599650.000184, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788599652.2488408, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788599652.248838, "schalter_geoeffnet": false}}
+{"ts": 1788599696.498274, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 44.2, "tokens_ein": 523, "tokens_aus": 951}}
+{"ts": 1788599696.4984355, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Viele Modelle schlagen fehl. Wenn sie besser funktionieren, kann das System mehr Aufgaben lösen.", "signal": "failure"}}
+{"ts": 1788599696.4985533, "kind": "drive_goal", "payload": {"title": "Vorschläge in echte Fähigkeiten umsetzen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber sie werden nicht in ausführbare Skills umgewandelt.", "signal": "stale"}}
+{"ts": 1788599696.498625, "kind": "drive_goal", "payload": {"title": "Prüfung für neue Skills einbauen", "why": "Bevor neue Skills ausgeführt werden, sollten sie automatisch geprüft werden, damit sie sicher funktionieren.", "signal": "stale"}}
+{"ts": 1788599699.1115713, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.27, "gelesen": 1}}
+{"ts": 1788599699.1138246, "kind": "reflex_used", "payload": {"goal": "Traum-Erkenntnisse mit Wissen verbinden", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
+{"ts": 1788599699.5960164, "kind": "act_done", "payload": {"goal_title": "Traum-Erkenntnisse mit Wissen verbinden", "score": null, "converged": true, "mode": "reflex"}}

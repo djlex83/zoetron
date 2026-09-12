@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11486 Fakten** · Stand 2026-09-12 09:14 UTC · aktualisiert bei jedem Herzschlag
+**11493 Fakten** · Stand 2026-09-12 09:36 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7461
-- **swarm_artifact:** 1655
-- **last_swarm_critique:** 902
-- **last_swarm_goal:** 637
-- **anti_pattern:** 371
-- **strategy:** 188
+- **swarm_artifact:** 1656
+- **last_swarm_critique:** 903
+- **last_swarm_goal:** 638
+- **anti_pattern:** 373
+- **strategy:** 189
 - **tool:** 156
-- **hand_result:** 77
+- **hand_result:** 78
 - **aktuell_organfehler:** 39
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Simulationen konsequent :2`
+*12.09. 09:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Policy-as-Code Enforcement with Simulation Observability - Define simulation policies as code (e.g., using OPA/Rego) that specify required simulation types, frequency, and success criteria. Integrate policy checks into the sw
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Simulationen konsequent :1`
+*12.09. 09:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Simulation-Driven Contract Testing & Digital Twins - Adopt simulation-driven development where each service defines simulation contracts (input/output specifications, latency, error rates). Implement digital twins of downstre
+
+### `last_swarm_critique`
+*12.09. 09:30 UTC · Quelle: critic*
+
+score=0; issues=Script fails to run: sandbox reports error at line 51; likely due to unescaped curly braces in f-string (mermaid diagram) causing SyntaxError.; No output produced; goal 'Simulationen konsequent nutzen' not addressed.; Deliverable is a static do
+
+### `last_swarm_goal`
+*12.09. 09:23 UTC · Quelle: system*
+
+Simulationen konsequent nutzen
+
+### `dream:20260912092239:5:20f1de`
+*12.09. 09:22 UTC · Quelle: dream*
+
+Stale swarm knowledge persists because there is no automatic trigger to refresh it when group goals change.
+
+### `dream:20260912092239:4:a656cb`
+*12.09. 09:22 UTC · Quelle: dream*
+
+Skill proposals that are never evaluated become dead weight, reducing the system's adaptive capacity.
+
+### `dream:20260912092239:3:ad8377`
+*12.09. 09:22 UTC · Quelle: dream*
+
+Pruned events often precede gaps in later self-diagnoses, implying that critical data loss is not always visible at prune time.
+
+### `dream:20260912092239:2:3c69af`
+*12.09. 09:22 UTC · Quelle: dream*
+
+The only consistently available model exhibits high latency, suggesting a trade-off between reliability and speed.
+
+### `dream:20260912092239:1:1b4af5`
+*12.09. 09:22 UTC · Quelle: dream*
+
+Repeated 429 and 502 errors from free model endpoints indicate that load-based rate limiting is the dominant failure mode.
 
 ### `dream:20260912091148:5:1d14ac`
 *12.09. 09:11 UTC · Quelle: dream*
@@ -43097,31 +43142,6 @@ score=6; issues=Die `nachbarn`-Mock-Implementierung hat einen BFS-Bug: `visited.
 *29.08. 09:16 UTC · Quelle: system*
 
 Wissensgraph-Verknüpfungen reparieren
-
-### `dream:20260829091511:5:ca51f3`
-*29.08. 09:15 UTC · Quelle: dream*
-
-Drive goals are created from failure signals (model errors, unused analyses) but lack automatic decomposition into executable steps with verification.
-
-### `dream:20260829091511:4:caee1d`
-*29.08. 09:15 UTC · Quelle: dream*
-
-Five skill proposals were generated in one burst but none validated; proposal generation without smoke-testing creates technical debt.
-
-### `dream:20260829091511:3:45524d`
-*29.08. 09:15 UTC · Quelle: dream*
-
-The swarm cleaned up old results but did not converge (score 3, converged=false), suggesting cleanup tasks need explicit acceptance criteria, not just iteration counts.
-
-### `dream:20260829091511:2:bbbe0a`
-*29.08. 09:15 UTC · Quelle: dream*
-
-Model latency varies by 5x+ for the same model (nemotron: 86s vs 15s), indicating queue-depth dependence that single health checks cannot capture.
-
-### `dream:20260829091511:1:2c30b5`
-*29.08. 09:15 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter exhibit systematic rate-limiting (429) and upstream instability (502), making naive round-robin selection ineffective.
 
 ### `last_swarm_critique`
 *29.08. 08:46 UTC · Quelle: critic*

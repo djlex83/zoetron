@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 09:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 09:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,11 +29,11 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale swarm knowledge persists because there is no automatic trigger to refresh it when group goals change.
+- Skill proposals that are never evaluated become dead weight, reducing the system's adaptive capacity.
+- Pruned events often precede gaps in later self-diagnoses, implying that critical data loss is not always visible at prune time.
+- The only consistently available model exhibits high latency, suggesting a trade-off between reliability and speed.
+- Repeated 429 and 502 errors from free model endpoints indicate that load-based rate limiting is the dominant failure mode.
 - Skill proposals accumulate duplicates (e.g., multiple model routing variants) because no deduplication mechanism exists across proposal cycles.
 - Prune runs discard events without auditing impact on subsequent selbstdiagnose coverage, risking blind spots in system health monitoring.
 - Simulation gates are absent before hand_actions, allowing untested operations to proceed despite available mental simulation capacity.
@@ -51,11 +56,6 @@
 - The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' consistently fails to activate skill proposals, breaking the proposal-to-skill pipeline.
 - Local tool execution (hand_action) fails when relative paths are used instead of the absolute ZOETRON_DATA environment variable, causing zero-file rea
 - External LLM providers (Nvidia, Google) frequently return 502 overload or 429 rate-limit errors, requiring a multi-model fallback chain to maintain th
-- Simulation-to-action conversion remains low: the explicit drive goal to turn simulations into real actions and the convergence tracker proposal confir
-- Local-first execution and prompt caching are underutilized levers for latency reduction: a 49 s Nemotron call and a 40 % estimated cache hit-rate sugg
-- Skill proposals accumulate without validation or reuse tracking: three separate proposals for a validation harness, reuse tracker, and convergence mon
-- Swarm knowledge freshness directly impacts ideation: multiple stale signals and a reflex-driven refresh show that outdated collective goals block nove
-- Model inference reliability is a single point of failure: repeated proposals for hard-coded primary, exponential backoff, health probes, and automatic
 
 ---
 
