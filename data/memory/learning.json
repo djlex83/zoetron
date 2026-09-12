@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 04:58:34",
+ "stand": "2026-09-12 05:09:14",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -124,6 +124,12 @@
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -268,12 +274,6 @@
   },
   {
    "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

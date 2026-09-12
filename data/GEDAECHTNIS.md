@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11481 Fakten** · Stand 2026-09-12 05:00 UTC · aktualisiert bei jedem Herzschlag
+**11476 Fakten** · Stand 2026-09-12 05:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
+- **dream:** 7431
 - **swarm_artifact:** 1671
 - **last_swarm_critique:** 898
 - **last_swarm_goal:** 633
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912050827:5:54fb84`
+*12.09. 05:08 UTC · Quelle: dream*
+
+Five skill proposals from the previous dream cycle remain unimplemented, confirming a missing dream-to-skill validation and auto-merge pipeline.
+
+### `dream:20260912050827:4:b91fda`
+*12.09. 05:08 UTC · Quelle: dream*
+
+Metabolism stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1), starving the system of retries needed to recover from transient model errors.
+
+### `dream:20260912050827:3:0fbfcf`
+*12.09. 05:08 UTC · Quelle: dream*
+
+Reflex "modellfehler-stark-verringern.py" executed but returned ok=false, revealing that convergence is declared before a numeric, time-bounded effectiveness metric is recorded.
+
+### `dream:20260912050827:2:9f24ce`
+*12.09. 05:08 UTC · Quelle: dream*
+
+Hand actions silently fail when sys.argv[1] and ZOETRON_DATA environment variable are ignored, causing relative-path reads to miss the real data directory.
+
+### `dream:20260912050827:1:c9e117`
+*12.09. 05:08 UTC · Quelle: dream*
+
+Model endpoint failures (502 upstream, 429 rate-limit) cascade into task failure because no multi-endpoint router with health-aware failover exists despite prior proposal.
 
 ### `dream:20260912045754:5:b1ea6d`
 *12.09. 04:57 UTC · Quelle: dream*
@@ -43007,56 +43032,6 @@ Nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency varian
 *29.08. 05:09 UTC · Quelle: dream*
 
 Free-tier model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
-
-### `dream:20260829050433:5:fe666d`
-*29.08. 05:04 UTC · Quelle: dream*
-
-Metabolism stress at maximum with conservative budget indicates systemic overload; task admission control must reject new work before saturation.
-
-### `dream:20260829050433:4:aa412d`
-*29.08. 05:04 UTC · Quelle: dream*
-
-Stale swarm artifacts accumulate because no automated ingestion pipeline validates and merges them into active memory.
-
-### `dream:20260829050433:3:9c6d9e`
-*29.08. 05:04 UTC · Quelle: dream*
-
-Simulation revisions without application loops waste compute; every simulation must gate a concrete action or be discarded.
-
-### `dream:20260829050433:2:a847dc`
-*29.08. 05:04 UTC · Quelle: dream*
-
-High latency variance in fallback models degrades system predictability; latency SLAs should trigger model switching.
-
-### `dream:20260829050433:1:05eddc`
-*29.08. 05:04 UTC · Quelle: dream*
-
-Rate-limited models should be automatically deprioritized after N consecutive 429s, not retried indefinitely.
-
-### `dream:20260829045956:5:0d94d7`
-*29.08. 04:59 UTC · Quelle: dream*
-
-Zero pruning across cycles indicates memory growth unbounded; retention policies must be enforced.
-
-### `dream:20260829045956:4:223c49`
-*29.08. 04:59 UTC · Quelle: dream*
-
-Fallback model latency varies 5x (9-47s) making timeout budgets unreliable without adaptive scaling.
-
-### `dream:20260829045956:3:55fc1e`
-*29.08. 04:59 UTC · Quelle: dream*
-
-Completed market analyses remain unused because no reflex triggers conversion of stale insights into executable tasks.
-
-### `dream:20260829045956:2:2274a3`
-*29.08. 04:59 UTC · Quelle: dream*
-
-Skill proposals accumulate without implementation because no automated pipeline converts drive_goal "gap" signals into deployed code.
-
-### `dream:20260829045956:1:9c8181`
-*29.08. 04:59 UTC · Quelle: dream*
-
-Persistent 429 errors on z-ai/glm-5.2:free require automatic failover with exponential backoff rather than repeated retries.
 
 ### `last_swarm_critique`
 *29.08. 04:50 UTC · Quelle: critic*
