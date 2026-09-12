@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11502 Fakten** · Stand 2026-09-12 02:33 UTC · aktualisiert bei jedem Herzschlag
+**11511 Fakten** · Stand 2026-09-12 02:49 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7441
-- **swarm_artifact:** 1689
-- **last_swarm_critique:** 895
-- **last_swarm_goal:** 630
+- **swarm_artifact:** 1695
+- **last_swarm_critique:** 896
+- **last_swarm_goal:** 631
 - **anti_pattern:** 379
 - **strategy:** 192
 - **tool:** 157
-- **hand_result:** 80
+- **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `last_swarm_critique`
+*12.09. 02:47 UTC · Quelle: critic*
+
+score=8; issues=Keyword-based skill discovery may yield false positives/negatives - no semantic validation of proposals; Test harness assumes callables accept no args or empty dict; many skills require specific signatures/context; Promotion depends on external
+
+### `last_swarm_goal`
+*12.09. 02:42 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich ausprobieren
+
+### `dream:20260912024058:5:8e57a5`
+*12.09. 02:40 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, indicating health checks don’t monitor external API reliability.
+
+### `dream:20260912024058:4:81e028`
+*12.09. 02:40 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in prior dream, 5 new) but execution gap persists – no auto-promotion mechanism converts proposals to callable tools.
+
+### `dream:20260912024058:3:38714e`
+*12.09. 02:40 UTC · Quelle: dream*
+
+Prune runs discard 3-4x more events than facts, suggesting event retention policy is too aggressive for diagnostic value.
+
+### `dream:20260912024058:2:5af5fe`
+*12.09. 02:40 UTC · Quelle: dream*
+
+Reflex tools achieve 100% success on concrete goals (error reduction, dream utilization) but only when triggered by explicit drive signals.
+
+### `dream:20260912024058:1:6fcb3a`
+*12.09. 02:40 UTC · Quelle: dream*
+
+Free-tier models (gemma) consistently hit 429 rate limits under load while nemotron-3-ultra remains stable across variable latencies (22-61s).
 
 ### `dream:20260912023019:5:6897a1`
 *12.09. 02:30 UTC · Quelle: dream*
@@ -43102,31 +43137,6 @@ Latency variance for identical models (5-17s) indicates unstable infrastructure 
 *29.08. 02:43 UTC · Quelle: dream*
 
 Free-tier model endpoints exhibit systemic rate-limiting (429) and upstream overload (502) making single-model reliance unreliable.
-
-### `dream:20260829023918:5:4c93bc`
-*29.08. 02:39 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite repeated model failures, revealing a blind spot in external dependency monitoring.
-
-### `dream:20260829023918:4:553436`
-*29.08. 02:39 UTC · Quelle: dream*
-
-Reflex-driven dream connection successfully converges goals, suggesting associative memory consolidation works for knowledge integration.
-
-### `dream:20260829023918:3:52af31`
-*29.08. 02:39 UTC · Quelle: dream*
-
-Skill proposals accumulate without implementation, indicating a gap between proposal generation and skill acquisition.
-
-### `dream:20260829023918:2:003e36`
-*29.08. 02:39 UTC · Quelle: dream*
-
-Nemotron-3-Ultra serves as a viable fallback but exhibits high latency variance (5–17s), requiring timeout budgets and latency-aware routing.
-
-### `dream:20260829023918:1:cb0729`
-*29.08. 02:39 UTC · Quelle: dream*
-
-Free-tier models like GLM-5.2 consistently fail under load with 429 errors, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *29.08. 02:17 UTC · Quelle: critic*

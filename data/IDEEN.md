@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 02:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 02:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,15 +24,15 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Ziele aufräumen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite repeated model failures, indicating health checks don’t monitor external API reliability.
+- Skill proposals accumulate (5 in prior dream, 5 new) but execution gap persists – no auto-promotion mechanism converts proposals to callable tools.
+- Prune runs discard 3-4x more events than facts, suggesting event retention policy is too aggressive for diagnostic value.
+- Reflex tools achieve 100% success on concrete goals (error reduction, dream utilization) but only when triggered by explicit drive signals.
+- Free-tier models (gemma) consistently hit 429 rate limits under load while nemotron-3-ultra remains stable across variable latencies (22-61s).
 - Skill proposals accumulate in dream output but never enter a regression-gated promotion pipeline, so validated capabilities never become callable tool
 - Swarm-goal staleness recurs because refresh triggers lack critic quorum, score thresholds, and TTL-based automation, relying on manual drive signals.
 - Pruning aggressively discards events (22 then 1) while preserving facts, yet no retention policy tags critical diagnostic events for longer survival.
@@ -51,11 +56,6 @@
 - Reflexes execute without measurable effectiveness metrics, making it impossible to distinguish useful automation from cargo-cult tooling; every reflex
 - Swarm convergence with only one critic and no minimum-score gate produces false confidence; a quality gate requiring ≥2 critics, score ≥8, and explici
 - Model endpoints fail silently (502 upstream, 429 rate-limits) and latency varies 6× (8 s vs 48 s), so every call needs a router with health probes, su
-- Hand-action hard timeout (20s) aborts valid long-running operations; timeout must be adaptive to task complexity.
-- Calibration error of 50% (predicted 6 vs actual 9 cycles) indicates estimation models lack grounding in observed swarm dynamics.
-- dots-studio/dots-3-note-preview succeeded at 30s latency when primary and fallbacks failed, proving heterogeneous model routing is essential.
-- Free-tier fallback models (gemma-4 variants) immediately hit 429 rate limits, eliminating them as viable backups under load.
-- Primary model (nemotron-3-ultra) exhibits high latency variance (18-102s) and 502 upstream overload errors, making it unreliable as sole provider.
 
 ---
 
