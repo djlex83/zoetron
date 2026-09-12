@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11475 Fakten** · Stand 2026-09-12 05:45 UTC · aktualisiert bei jedem Herzschlag
+**11471 Fakten** · Stand 2026-09-12 05:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7426
-- **swarm_artifact:** 1670
+- **dream:** 7431
+- **swarm_artifact:** 1665
 - **last_swarm_critique:** 899
 - **last_swarm_goal:** 634
-- **anti_pattern:** 379
-- **strategy:** 192
+- **anti_pattern:** 377
+- **strategy:** 191
 - **tool:** 157
-- **hand_result:** 79
+- **hand_result:** 78
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912055330:5:cd8117`
+*12.09. 05:53 UTC · Quelle: dream*
+
+Hand actions resolve input paths via fragile env/argv fallbacks without rejecting relative paths or logging the absolute path used, risking silent misreads.
+
+### `dream:20260912055330:4:7a20f1`
+*12.09. 05:53 UTC · Quelle: dream*
+
+Static prune thresholds (facts/events) ignore growth-rate signals, causing either memory bloat or over-pruning; a PID controller on growth metrics would adapt dynamically.
+
+### `dream:20260912055330:3:38ed54`
+*12.09. 05:53 UTC · Quelle: dream*
+
+Skill proposals accumulate in logs but lack an automated nightly pipeline that tests them against a regression suite and merges successful ones as versioned tools.
+
+### `dream:20260912055330:2:7c7fd5`
+*12.09. 05:53 UTC · Quelle: dream*
+
+Reflexes mark "converged: true" without persisting a numeric effectiveness metric, making convergence unverifiable and regression undetectable.
+
+### `dream:20260912055330:1:0bee0e`
+*12.09. 05:53 UTC · Quelle: dream*
+
+Model endpoint failures (502/429) cascade into task delays because no router performs health probes, success-rate tracking, or 429-aware exponential backoff with jitter.
 
 ### `dream:20260912054337:5:d050c8`
 *12.09. 05:43 UTC · Quelle: dream*
@@ -43002,16 +43027,6 @@ Nemotron-3-Ultra succeeds consistently but with high latency variance (35–124 
 *29.08. 06:16 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) across multiple free-tier models is the dominant failure mode, making provider diversity essential for reliability.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler reduzieren:2`
-*29.08. 05:46 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Property-Based Contract Testing with Hypothesis - Shift from imperative error-fixing to declarative contracts. Define formal specifications for each module's input/output behavior using Hypothesis strategies. Generate thousan
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler reduzieren:1`
-*29.08. 05:46 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Isolated Micro-Sandbox per Component - Decompose the monolithic script into independent micro-tasks each running in its own subprocess with strict resource limits (time, memory, syscalls). Each component (health check, router
 
 ### `last_swarm_critique`
 *29.08. 05:46 UTC · Quelle: critic*

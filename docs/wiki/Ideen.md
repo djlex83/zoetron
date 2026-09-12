@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 05:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 05:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,12 +24,12 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 5×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions resolve input paths via fragile env/argv fallbacks without rejecting relative paths or logging the absolute path used, risking silent mis
+- Static prune thresholds (facts/events) ignore growth-rate signals, causing either memory bloat or over-pruning; a PID controller on growth metrics wou
+- Skill proposals accumulate in logs but lack an automated nightly pipeline that tests them against a regression suite and merges successful ones as ver
+- Reflexes mark "converged: true" without persisting a numeric effectiveness metric, making convergence unverifiable and regression undetectable.
+- Model endpoint failures (502/429) cascade into task delays because no router performs health probes, success-rate tracking, or 429-aware exponential b
 - Reflex actions converge quickly but depend on external LLM calls, so a local-first execution policy would improve robustness.
 - Aggressive pruning of facts and events reduces memory but may discard useful context, requiring a tiered retention strategy.
 - The surge of unvalidated skill proposals highlights the need for a sandboxed testing harness before integration.
@@ -51,11 +56,6 @@
 - Nvidia Nemotron latency varies 12x (11s to 134s) on success, indicating queue-depth-dependent performance that cannot be predicted from historical ave
 - dots-studio/dots-3-note-preview:free shows 100% success rate across 4 calls with latency 22-107s, establishing it as the only dependable free model in
 - Free-tier models exhibit systematic provider-side failures: Nvidia returns 502 overload errors while Google returns 429 rate limits, making them unrel
-- Five skill proposals from the previous dream cycle remain unimplemented, confirming a missing dream-to-skill validation and auto-merge pipeline.
-- Metabolism stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1), starving the system of retries needed to recover from transient model er
-- Reflex "modellfehler-stark-verringern.py" executed but returned ok=false, revealing that convergence is declared before a numeric, time-bounded effect
-- Hand actions silently fail when sys.argv[1] and ZOETRON_DATA environment variable are ignored, causing relative-path reads to miss the real data direc
-- Model endpoint failures (502 upstream, 429 rate-limit) cascade into task failure because no multi-endpoint router with health-aware failover exists de
 
 ---
 
