@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11471 Fakten** · Stand 2026-09-12 13:36 UTC · aktualisiert bei jedem Herzschlag
+**11470 Fakten** · Stand 2026-09-12 13:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7431
-- **swarm_artifact:** 1656
+- **dream:** 7436
+- **swarm_artifact:** 1651
 - **last_swarm_critique:** 907
 - **last_swarm_goal:** 642
 - **anti_pattern:** 373
 - **strategy:** 189
-- **tool:** 153
+- **tool:** 152
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912134430:5:2cd5fe`
+*12.09. 13:44 UTC · Quelle: dream*
+
+Skill pipeline is clogged: 55 proposals exist but only 6 tested and 2 applied, revealing a missing validation-to-promotion gate.
+
+### `dream:20260912134430:4:934f4f`
+*12.09. 13:44 UTC · Quelle: dream*
+
+Reflex fallback succeeded where the main pipeline failed, proving that single-tool reflexes are more robust than multi-role swarms for this task class.
+
+### `dream:20260912134430:3:c60a41`
+*12.09. 13:44 UTC · Quelle: dream*
+
+Evolutionary search (3 variants) produced a 9/10 winner while swarm consensus stalled at 4/10 after 2 cycles, indicating swarm coordination logic is broken.
+
+### `dream:20260912134430:2:c70914`
+*12.09. 13:44 UTC · Quelle: dream*
+
+Model provider nemotron-3-ultra shows 43% error rate (39/91) and high latency variance (42-78s), making it unreliable for time-critical paths.
+
+### `dream:20260912134430:1:167323`
+*12.09. 13:44 UTC · Quelle: dream*
+
+Calibration consistently overestimates outcomes by ~40% (predicted 7 vs actual 4), requiring systematic correction factors per goal type.
 
 ### `dream:20260912133344:5:da5395`
 *12.09. 13:33 UTC · Quelle: dream*
@@ -42962,11 +42987,6 @@ The nvidia/nemotron-3-ultra-550b-a55b:free model serves as a functional but high
 *29.08. 13:44 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free model consistently fails with 429 rate limits, making it unreliable as a primary model.
-
-### `tool:ersten-swarm-lauf-mit-score-8-konvergier`
-*29.08. 13:38 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Ersten Swarm-Lauf mit Score 8+ konvergieren lassen'. Datei: data/tools/ersten-swarm-lauf-mit-score-8-konvergier.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *29.08. 13:38 UTC · Quelle: critic*

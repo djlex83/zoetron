@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 13:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 13:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Ferne Träume verbinden *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill pipeline is clogged: 55 proposals exist but only 6 tested and 2 applied, revealing a missing validation-to-promotion gate.
+- Reflex fallback succeeded where the main pipeline failed, proving that single-tool reflexes are more robust than multi-role swarms for this task class
+- Evolutionary search (3 variants) produced a 9/10 winner while swarm consensus stalled at 4/10 after 2 cycles, indicating swarm coordination logic is b
+- Model provider nemotron-3-ultra shows 43% error rate (39/91) and high latency variance (42-78s), making it unreliable for time-critical paths.
+- Calibration consistently overestimates outcomes by ~40% (predicted 7 vs actual 4), requiring systematic correction factors per goal type.
 - Calibration predicted 7 but actual was 4, revealing a systematic overconfidence that should be corrected in future predictions.
 - A hand_action failed with exit code 1 and null error, suggesting an unhandled exception; capturing stderr would aid diagnosis.
 - dots-studio/dots-3-note-preview:free is the only consistently successful model, though its latency can reach 90 seconds, necessitating async handling.
@@ -51,11 +56,6 @@
 - The same reflex tool ('fernere-erinnerungen-verbinden.py') consistently fails, indicating a need for diagnostic checks or a replacement implementation
 - Hand actions fail silently when input paths are missing or invalid, necessitating explicit input validation and error reporting before execution.
 - Model endpoints frequently return transient errors (502/429) requiring automatic retry with exponential backoff and circuit-breaking to avoid cascadin
-- Hand actions lack retry logic; wrapping them with idempotency keys and exponential backoff improves resilience to transient failures.
-- Simulations are created but rarely used; integrating them into reflex loops with usage tracking closes the execution gap.
-- Swarm goals and critiques become stale; a freshness daemon with TTL and automatic re-query prevents knowledge decay.
-- Pruning events without auditing against organ-health flags can discard critical diagnostic data, requiring a hook that blocks pruning on unresolved wa
-- Free model endpoints frequently return 502 (overload) or 429 (rate limit), so a per-endpoint circuit breaker with automatic failover is essential.
 
 ---
 

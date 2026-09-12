@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8126 Neuronen · 847101 bewertete Synapsen
+Stand: 8127 Neuronen · 847337 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,7 +10,7 @@ Stand: 8126 Neuronen · 847101 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1044 | 0.24 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1045 | 0.24 |
 | 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1059 | 0.23 |
 | 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 821 | 0.25 |
 | 4 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 854 | 0.23 |
@@ -20,9 +20,9 @@ Stand: 8126 Neuronen · 847101 bewertete Synapsen
 | 8 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 787 | 0.25 |
 | 9 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 850 | 0.23 |
 | 10 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 864 | 0.23 |
-| 11 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 886 | 0.22 |
-| 12 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 767 | 0.25 |
-| 13 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 847 | 0.23 |
+| 11 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 768 | 0.25 |
+| 12 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 886 | 0.22 |
+| 13 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 848 | 0.23 |
 | 14 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 739 | 0.26 |
 | 15 | 💭 | Free-tier model endpoints exhibit correlated failure modes (429 … | 820 | 0.23 |
 
