@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 07:38:49",
+ "stand": "2026-09-12 07:59:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -175,6 +175,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
@@ -369,12 +375,6 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -435,17 +435,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.804,
+ "haende_quote": 0.81,
  "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 27,
   "best": 9.0,
-  "schnitt": 4.81
+  "schnitt": 5.11
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 25,
-   "schnitt": 4.8
+   "n": 26,
+   "schnitt": 4.96
   },
   "bau": {
    "n": 1,

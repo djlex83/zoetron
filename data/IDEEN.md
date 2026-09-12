@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 07:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 07:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning (32-34 events/cycle) discards context needed to correlate skill proposals with actual outcomes, breaking the learning loop.
+- Swarm knowledge decays faster than refresh cycles: drive goals for 'Schwarm-Wissen aktualisieren' recur every cycle despite reflex-driven refreshes.
+- Skill proposals accumulate without adoption tracking: model_router.py, prompt-hash caching, and local-first policy were proposed twice each but never 
+- Reflex tools successfully handle acute symptoms (stale swarm knowledge, model errors) but root causes persist because no validation pipeline integrate
+- External model dependency causes cascading failures: high latency (20-66s), error rates near 50%, and no systematic failover despite repeated skill pr
 - Model latency varies 2x-3x (17s vs 44s) on the same endpoint (Nemotron) across cycles, making timeout budgets unreliable.
 - Pruning removes 5-7 facts and 19-32 events per cycle, but drive goals for 'apply simulations' and 'apply learned skills' persist unchanged, signaling 
 - Self-diagnosis reports zero organ errors despite repeated model failures, indicating the health check does not capture inference-layer degradation.
@@ -51,11 +56,6 @@
 - Duplicate skill proposals (model_router appears twice) indicate the planner re-generates known solutions instead of checking existing proposals.
 - Reflex-driven swarm knowledge refresh converges consistently (2/2 successes) while proactive simulation testing remains at zero executions.
 - Model routing is the single point of failure: primary model returns 502, free fallbacks return 429, only dots-studio succeeds reliably.
-- Fixed 20 s hand_action timeout is too short for large token payloads and external deps, causing spurious kills.
-- Skill proposals accumulate but never graduate to versioned tools because no nightly validation-merge pipeline exists.
-- Reflexes converge without proof of effectiveness because the schema lacks a required metric, unit, and deadline for verification.
-- hand_action repeatedly fails on relative paths because the entrypoint does not canonicalize inputs via ZOETRON_DATA before falling back to argv[1].
-- Model provider failures (502 overload, 429 rate-limit) cascade into task failures because no automatic failover or health-aware routing exists.
 
 ---
 

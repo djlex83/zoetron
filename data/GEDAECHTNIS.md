@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11470 Fakten** · Stand 2026-09-12 07:40 UTC · aktualisiert bei jedem Herzschlag
+**11488 Fakten** · Stand 2026-09-12 08:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7446
-- **swarm_artifact:** 1655
-- **last_swarm_critique:** 900
-- **last_swarm_goal:** 635
+- **dream:** 7451
+- **swarm_artifact:** 1665
+- **last_swarm_critique:** 901
+- **last_swarm_goal:** 636
 - **anti_pattern:** 373
 - **strategy:** 189
-- **tool:** 156
+- **tool:** 157
 - **hand_result:** 77
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:fähigkeitsvorschläge-aktivieren`
+*12.09. 07:58 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeitsvorschläge aktivieren'. Datei: data/tools/fähigkeitsvorschläge-aktivieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*12.09. 07:58 UTC · Quelle: critic*
+
+score=9; issues=Minor typo in validation artifact (code_conten vs code_content) in truncated section, though sandbox confirms full artifact runs; Generated skill template is minimal (returns static success) - intentional for evolution but limits immediate util
+
+### `last_swarm_goal`
+*12.09. 07:48 UTC · Quelle: system*
+
+Fähigkeitsvorschläge aktivieren
+
+### `dream:20260912074817:5:b572fe`
+*12.09. 07:48 UTC · Quelle: dream*
+
+Pruning (32-34 events/cycle) discards context needed to correlate skill proposals with actual outcomes, breaking the learning loop.
+
+### `dream:20260912074817:4:978b3b`
+*12.09. 07:48 UTC · Quelle: dream*
+
+Swarm knowledge decays faster than refresh cycles: drive goals for 'Schwarm-Wissen aktualisieren' recur every cycle despite reflex-driven refreshes.
+
+### `dream:20260912074817:3:b9aefe`
+*12.09. 07:48 UTC · Quelle: dream*
+
+Skill proposals accumulate without adoption tracking: model_router.py, prompt-hash caching, and local-first policy were proposed twice each but never validated or deployed.
+
+### `dream:20260912074817:2:9a3ae9`
+*12.09. 07:48 UTC · Quelle: dream*
+
+Reflex tools successfully handle acute symptoms (stale swarm knowledge, model errors) but root causes persist because no validation pipeline integrates proposed skills into production.
+
+### `dream:20260912074817:1:ee41c3`
+*12.09. 07:48 UTC · Quelle: dream*
+
+External model dependency causes cascading failures: high latency (20-66s), error rates near 50%, and no systematic failover despite repeated skill proposals for model_router.py.
 
 ### `dream:20260912073747:5:b88faf`
 *12.09. 07:37 UTC · Quelle: dream*
