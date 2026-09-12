@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11498 Fakten** · Stand 2026-09-12 10:09 UTC · aktualisiert bei jedem Herzschlag
+**11483 Fakten** · Stand 2026-09-12 10:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7466
+- **dream:** 7451
 - **swarm_artifact:** 1657
 - **last_swarm_critique:** 904
 - **last_swarm_goal:** 639
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912101735:5:def2ea`
+*12.09. 10:17 UTC · Quelle: dream*
+
+Metabolic stress at 1.0 triggers conserve mode that caps tasks at 3 and iterations at 1, starving background consolidation like swarm sync.
+
+### `dream:20260912101735:4:588b0c`
+*12.09. 10:17 UTC · Quelle: dream*
+
+Skill proposals accumulate without expiration or evaluation criteria, creating noise that obscures high-value capabilities needing integration.
+
+### `dream:20260912101735:3:c4c464`
+*12.09. 10:17 UTC · Quelle: dream*
+
+File operations fail when code uses relative paths instead of the ZOETRON_DATA environment variable, causing silent zero-byte reads in hand actions.
+
+### `dream:20260912101735:2:d6742d`
+*12.09. 10:17 UTC · Quelle: dream*
+
+Latency on working models varies 6x (14s vs 88s) for similar workloads, making latency-aware routing with hard thresholds essential for predictable performance.
+
+### `dream:20260912101735:1:5c047a`
+*12.09. 10:17 UTC · Quelle: dream*
+
+Free-tier model endpoints fail unpredictably with 502 overloads and 429 rate limits, requiring automatic fallback chains rather than static model selection.
 
 ### `last_swarm_critique`
 *12.09. 10:07 UTC · Quelle: critic*
@@ -43052,106 +43077,6 @@ Model latency varies by 10x for the same model (nemotron: 75.7s vs 7.0s), indica
 *29.08. 10:24 UTC · Quelle: dream*
 
 Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, causing cascading fallback latency spikes.
-
-### `dream:20260829101448:5:6760d3`
-*29.08. 10:14 UTC · Quelle: dream*
-
-Fast, low-token models (laguna-s-2.1: 9.4s, 259 input tokens) can handle simple tasks effectively when complex reasoning isn't required.
-
-### `dream:20260829101448:4:ff251d`
-*29.08. 10:14 UTC · Quelle: dream*
-
-Knowledge graph repair tasks benefit from iterative refinement: evolution runs improved scores from 6/10 to 8/10 through variant testing.
-
-### `dream:20260829101448:3:4a5e95`
-*29.08. 10:14 UTC · Quelle: dream*
-
-Calibration consistently underestimates actual work required (predicted 3 vs actual 6), suggesting systematic optimism in task complexity assessment.
-
-### `dream:20260829101448:2:77b565`
-*29.08. 10:14 UTC · Quelle: dream*
-
-Model performance varies significantly under load: nemotron-3-ultra succeeds with high latency (136-159s) but fails with 502 errors during peak demand periods.
-
-### `dream:20260829101448:1:2c8867`
-*29.08. 10:14 UTC · Quelle: dream*
-
-Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
-
-### `dream:20260829101017:5:d1a89c`
-*29.08. 10:10 UTC · Quelle: dream*
-
-A single fast success from inclusionai/ling-3.0-flash-fin (9.7 s) suggests smaller optimized models may offer better reliability/latency trade-offs.
-
-### `dream:20260829101017:4:f258b1`
-*29.08. 10:10 UTC · Quelle: dream*
-
-Under maximum stress (conserve mode, 1 iteration budget) the system still completed a complex graph-repair task successfully.
-
-### `dream:20260829101017:3:350f38`
-*29.08. 10:10 UTC · Quelle: dream*
-
-Simulation-driven revision (3 cycles) before execution produced a working 289-line Python artifact on first real run.
-
-### `dream:20260829101017:2:0f9482`
-*29.08. 10:10 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra succeeds but with extreme latency variance (40–160 s), requiring adaptive timeouts and circuit-breakers.
-
-### `dream:20260829101017:1:a34060`
-*29.08. 10:10 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable as primary providers.
-
-### `dream:20260829100601:5:024333`
-*29.08. 10:06 UTC · Quelle: dream*
-
-Drive goals reveal a systemic gap: analyses and simulations accumulate but rarely convert to measurable action items with assigned ownership.
-
-### `dream:20260829100601:4:3aeb14`
-*29.08. 10:06 UTC · Quelle: dream*
-
-Five skill proposals exist but lack automated validation, risking deployment of untested or dependency-broken capabilities.
-
-### `dream:20260829100601:3:efde1d`
-*29.08. 10:06 UTC · Quelle: dream*
-
-System stress at 1.0 triggers conservation mode that caps parallelism to 3 tasks and 1 iteration, severely throttling throughput during high load.
-
-### `dream:20260829100601:2:289905`
-*29.08. 10:06 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra succeeds but adds 40-60s latency per call, creating unacceptable delays for interactive workflows.
-
-### `dream:20260829100601:1:012cc6`
-*29.08. 10:06 UTC · Quelle: dream*
-
-Primary model z-ai/glm-5.2:free fails persistently with 429 rate limits, making it unreliable for production without automated fallback.
-
-### `dream:20260829095823:5:f67767`
-*29.08. 09:58 UTC · Quelle: dream*
-
-Swarm terminated after only 2 cycles with score 1 and converged=false, suggesting convergence criteria are decoupled from actual task success.
-
-### `dream:20260829095823:4:a0723a`
-*29.08. 09:58 UTC · Quelle: dream*
-
-Five simulation revisions were applied yet hand_action still failed with exit code 1, showing revisions addressed wrong failure modes.
-
-### `dream:20260829095823:3:99c82e`
-*29.08. 09:58 UTC · Quelle: dream*
-
-Evolution produced high-scoring variants (6-8) but final swarm score remained 1, indicating a disconnect between offline optimization and online execution.
-
-### `dream:20260829095823:2:9b4bf7`
-*29.08. 09:58 UTC · Quelle: dream*
-
-Calibration error of 3 points (predicted 4 vs actual 1) reveals systematic overconfidence in simulation-to-execution translation.
-
-### `dream:20260829095823:1:c11638`
-*29.08. 09:58 UTC · Quelle: dream*
-
-Free-tier models exhibit cascading failures (429/502) under load, making single-model reliance fatal for production tasks.
 
 ### `last_swarm_critique`
 *29.08. 09:26 UTC · Quelle: critic*
