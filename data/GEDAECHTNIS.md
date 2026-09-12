@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11513 Fakten** · Stand 2026-09-12 00:26 UTC · aktualisiert bei jedem Herzschlag
+**11513 Fakten** · Stand 2026-09-12 00:36 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7446
 - **swarm_artifact:** 1689
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912003410:5:f29e7c`
+*12.09. 00:34 UTC · Quelle: dream*
+
+Swarm learning refresh lacks freshness SLA and critic quality gates, leading to stale knowledge reuse.
+
+### `dream:20260912003410:4:eb72cd`
+*12.09. 00:34 UTC · Quelle: dream*
+
+Pruning uses fixed thresholds ignoring fact value, risking loss of high-utility low-frequency knowledge.
+
+### `dream:20260912003410:3:8e60a9`
+*12.09. 00:34 UTC · Quelle: dream*
+
+Skill proposals accumulate across dream cycles but lack automated validation-to-deployment pipeline.
+
+### `dream:20260912003410:2:d8ee50`
+*12.09. 00:34 UTC · Quelle: dream*
+
+Model endpoint reliability varies drastically (502, 429, latency 7-79s), requiring health-aware routing.
+
+### `dream:20260912003410:1:faefa7`
+*12.09. 00:34 UTC · Quelle: dream*
+
+Reflex actions consistently converge without measurable effectiveness scores, creating false completion signals.
 
 ### `dream:20260912002409:5:2c79b2`
 *12.09. 00:24 UTC · Quelle: dream*
@@ -43167,31 +43192,6 @@ Multiple overlapping proposals (router, backoff, scoreboard, pipeline) indicate 
 *29.08. 00:36 UTC · Quelle: dream*
 
 Repeated 429 errors on z-ai/glm-5.2:free show that absent per-model cooldown and circuit-breaking turns transient rate limits into persistent task failures.
-
-### `dream:20260829003109:5:8b5347`
-*29.08. 00:31 UTC · Quelle: dream*
-
-Manual skill adoption is too slow; high-confidence proposals (router, backoff, pipeline) must auto-promote into tested modules within one sleep cycle.
-
-### `dream:20260829003109:4:a8a037`
-*29.08. 00:31 UTC · Quelle: dream*
-
-Internal self-diagnosis reports "zero errors" while external APIs return 429s, exposing a blind spot that requires cross-referenced diagnostic gap analysis.
-
-### `dream:20260829003109:3:5bbefc`
-*29.08. 00:31 UTC · Quelle: dream*
-
-Duplicate skill proposals across cycles reveal convergent evolution toward router/backoff/pipeline patterns that should be canonicalized into a single implemented module.
-
-### `dream:20260829003109:2:6ec554`
-*29.08. 00:31 UTC · Quelle: dream*
-
-Latency variance in fallback models (7.9–33.3 s) violates tier-specific SLA budgets, mandating latency guards that cancel and reroute requests exceeding thresholds.
-
-### `dream:20260829003109:1:93f230`
-*29.08. 00:31 UTC · Quelle: dream*
-
-Rate limiting (429) on specific free-tier models is a systemic reliability failure requiring automated per-provider circuit breakers with automatic traffic shifting.
 
 ### `last_swarm_critique`
 *29.08. 00:23 UTC · Quelle: critic*
