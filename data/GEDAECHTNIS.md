@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11476 Fakten** · Stand 2026-09-12 05:11 UTC · aktualisiert bei jedem Herzschlag
+**11482 Fakten** · Stand 2026-09-12 05:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7431
-- **swarm_artifact:** 1671
-- **last_swarm_critique:** 898
-- **last_swarm_goal:** 633
-- **anti_pattern:** 377
-- **strategy:** 191
-- **tool:** 156
+- **dream:** 7426
+- **swarm_artifact:** 1676
+- **last_swarm_critique:** 899
+- **last_swarm_goal:** 634
+- **anti_pattern:** 379
+- **strategy:** 192
+- **tool:** 157
 - **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-ausführen`
+*12.09. 05:26 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten ausführen'. Datei: data/tools/vorgeschlagene-fähigkeiten-ausführen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*12.09. 05:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-driven microservice pipeline - Decompose into independent services that emit and subscribe to events. A request publishes a 'skill-needed' event; subscribed tools compete to handle it, ensuring only relevant tools are e
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*12.09. 05:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Reinforcement learning policy - Model tool selection as a contextual bandit. Maintain Q-values for each tool‑context pair, update after each execution based on reward, and use the learned policy to choose the most appropriate
+
+### `last_swarm_critique`
+*12.09. 05:24 UTC · Quelle: critic*
+
+score=5; issues=Drei separate Skripte sind nicht integriert; nur das dritte führt Tools aus, die ersten beiden sind redundant und werden nicht genutzt.; Entdeckung von vorgeschlagenen Fähigkeiten ist rudimentär; bei Nichtauffinden werden alle Tools im tools/-V
+
+### `last_swarm_goal`
+*12.09. 05:19 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten ausführen
+
+### `dream:20260912051846:5:2c1dc9`
+*12.09. 05:18 UTC · Quelle: dream*
+
+Bahnen retrieval returned 4 edges with delta 0.0 and score 5, showing the knowledge graph connects relevant artifacts but provides no novelty gradient for exploration.
+
+### `dream:20260912051846:4:e72674`
+*12.09. 05:18 UTC · Quelle: dream*
+
+The simulation-revision loop (3 revisions applied) successfully reduced predicted errors from 7 to actual 5, but calibration error of 2 suggests the error model needs richer features.
+
+### `dream:20260912051846:3:7c9617`
+*12.09. 05:18 UTC · Quelle: dream*
+
+Nvidia Nemotron latency varies 12x (11s to 134s) on success, indicating queue-depth-dependent performance that cannot be predicted from historical averages.
+
+### `dream:20260912051846:2:b57c56`
+*12.09. 05:18 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free shows 100% success rate across 4 calls with latency 22-107s, establishing it as the only dependable free model in this cohort.
+
+### `dream:20260912051846:1:fab277`
+*12.09. 05:18 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic provider-side failures: Nvidia returns 502 overload errors while Google returns 429 rate limits, making them unreliable for production paths.
 
 ### `dream:20260912050827:5:54fb84`
 *12.09. 05:08 UTC · Quelle: dream*
@@ -42982,56 +43032,6 @@ score=9; issues=
 *29.08. 05:14 UTC · Quelle: system*
 
 Simulationsergebnisse konsequent anwenden
-
-### `dream:20260829051341:5:b5011c`
-*29.08. 05:13 UTC · Quelle: dream*
-
-Self-diagnosis and pruning report zero anomalies despite repeated model failures, exposing a monitoring blind spot for external dependency health.
-
-### `dream:20260829051341:4:e80067`
-*29.08. 05:13 UTC · Quelle: dream*
-
-Simulation gates allow execution with 5 risks and 'revise' verdict, revealing risk thresholds are misaligned with production safety.
-
-### `dream:20260829051341:3:d61e87`
-*29.08. 05:13 UTC · Quelle: dream*
-
-Swarm evolution stalls at score 7 with high revision counts (5) and non-convergence, indicating critic feedback lacks actionable specificity.
-
-### `dream:20260829051341:2:99068f`
-*29.08. 05:13 UTC · Quelle: dream*
-
-Fallback model (nemotron) latency varies 5x (7-37s), requiring per-task timeout calibration to prevent cascade delays.
-
-### `dream:20260829051341:1:284d72`
-*29.08. 05:13 UTC · Quelle: dream*
-
-The primary model (glm-5.2) fails consistently with 429 rate-limiting, making automatic fallback a reliability requirement.
-
-### `dream:20260829050910:5:346c5f`
-*29.08. 05:09 UTC · Quelle: dream*
-
-Calibration prediction matched actual outcome exactly (7/7), indicating reliable self-assessment for this task class.
-
-### `dream:20260829050910:4:8b1a97`
-*29.08. 05:09 UTC · Quelle: dream*
-
-Evolutionary refinement (3 variants) improved artifact score from 7 to 8/9/9 by addressing critic-flagged use of Unix-specific signal.SIGALRM.
-
-### `dream:20260829050910:3:89cb70`
-*29.08. 05:09 UTC · Quelle: dream*
-
-Simulation-based pre-execution review detected 3 risks and mandated 3 revisions, which were successfully applied before artifact execution.
-
-### `dream:20260829050910:2:8f9515`
-*29.08. 05:09 UTC · Quelle: dream*
-
-Nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (15.5–89.3s), requiring timeout-aware orchestration.
-
-### `dream:20260829050910:1:0db02d`
-*29.08. 05:09 UTC · Quelle: dream*
-
-Free-tier model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
 
 ### `last_swarm_critique`
 *29.08. 04:50 UTC · Quelle: critic*
