@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11489 Fakten** · Stand 2026-09-12 11:40 UTC · aktualisiert bei jedem Herzschlag
+**11497 Fakten** · Stand 2026-09-12 12:04 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7451
-- **swarm_artifact:** 1661
-- **last_swarm_critique:** 905
-- **last_swarm_goal:** 640
-- **anti_pattern:** 371
-- **strategy:** 188
+- **swarm_artifact:** 1663
+- **last_swarm_critique:** 906
+- **last_swarm_goal:** 641
+- **anti_pattern:** 373
+- **strategy:** 189
 - **tool:** 155
-- **hand_result:** 79
+- **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:2`
+*12.09. 11:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Declarative JSON with Stdlib-only Validation - Switch to JSON (stdlib json module) for configuration. Define a JSON Schema (Draft 7) embedded as a constant string. Validate using jsonschema (optional dependency) or a lightwei
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:0`
+*12.09. 11:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Defensive YAML Loading with Dependency Handling - Implement a robust YAML loader that gracefully handles missing PyYAML via try/except import, provides actionable installation instructions, and uses a validated dataclass with
+
+### `last_swarm_critique`
+*12.09. 11:57 UTC · Quelle: critic*
+
+score=1; issues=Sandbox verdict: LAEUFT NICHT - artifact fails at line 10 (likely missing PyYAML dependency); No try/except for yaml import - will crash if PyYAML not installed; Mutable default argument pattern for validation_errors (mitigated by __post_init__
+
+### `last_swarm_goal`
+*12.09. 11:51 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten prüfen und einbauen
+
+### `dream:20260912114952:5:810569`
+*12.09. 11:49 UTC · Quelle: dream*
+
+No per-endpoint failure-rate telemetry exists, so the system cannot trigger alerts or reroute traffic when error rates exceed 30% over 10 calls.
+
+### `dream:20260912114952:4:d3f196`
+*12.09. 11:49 UTC · Quelle: dream*
+
+Hand actions execute without mandatory pre-commit gates (path validation, simulation verdict, syntax check), causing preventable rollbacks.
+
+### `dream:20260912114952:3:d7c222`
+*12.09. 11:49 UTC · Quelle: dream*
+
+Swarm-generated insights decay unread because no automated refresh pipeline promotes stale facts into active memory or skill updates.
+
+### `dream:20260912114952:2:f4719e`
+*12.09. 11:49 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are validated, creating a proposal-to-practice gap that a lifecycle manager (implement → test → promote) must close.
+
+### `dream:20260912114952:1:bad8a9`
+*12.09. 11:49 UTC · Quelle: dream*
+
+Free-tier model endpoints fail catastrophically under load (429/502), making hardcoded priority routing with 5-minute error caching and automatic failover a survival requirement.
 
 ### `dream:20260912113731:5:9361b7`
 *12.09. 11:37 UTC · Quelle: dream*
@@ -43052,31 +43097,6 @@ The only successful task completion used a deterministic Python script (marktana
 *29.08. 11:50 UTC · Quelle: dream*
 
 All free models fail simultaneously via OpenRouter 429 errors, revealing the API gateway as a single point of failure rather than model-specific issues.
-
-### `dream:20260829114532:5:545ac5`
-*29.08. 11:45 UTC · Quelle: dream*
-
-Self-diagnosis and pruning cycles maintain zero organ errors, but only when model failures don't cascade into diagnostic blind spots.
-
-### `dream:20260829114532:4:25b518`
-*29.08. 11:45 UTC · Quelle: dream*
-
-Artifact validation pipelines (dry-run → TOR green-light → knowledge graph promotion) prevent corrupted promotions from unverified actions.
-
-### `dream:20260829114532:3:2a2956`
-*29.08. 11:45 UTC · Quelle: dream*
-
-Working models exhibit 7-10s latency, requiring conserve-mode protocols that skip simulation when budgets drop below 5s.
-
-### `dream:20260829114532:2:6c196e`
-*29.08. 11:45 UTC · Quelle: dream*
-
-Model reliability is bimodal: inclusionai/ling-3.0-flash-fin:free and poolside/laguna-s-2.1:free succeed consistently while others fail systematically.
-
-### `dream:20260829114532:1:f1f89b`
-*29.08. 11:45 UTC · Quelle: dream*
-
-Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making fallback chains essential for reliability.
 
 ### `last_swarm_critique`
 *29.08. 11:03 UTC · Quelle: critic*

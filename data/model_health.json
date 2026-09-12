@@ -1,14 +1,14 @@
 {
- "stand": 1789213135.8202772,
+ "stand": 1789214533.2775493,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 5490,
-   "fehler": 1256,
+   "laeufe": 5497,
+   "fehler": 1259,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 197368.83640265465,
+   "latenz_summe_s": 197639.5098965168,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502, 'metadata': {'error_type': 'pr",
    "letzte_sperre": 1789183597.8371744,
    "kontofehler": 6
@@ -31,7 +31,7 @@
    "latenz_summe_s": 503.63105940818787,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 1639
+   "kontofehler": 1642
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 16,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 617.455549955368,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 1614
+   "kontofehler": 1617
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -111,11 +111,11 @@
    "letzte_sperre": 0.0
   },
   "dots-studio/dots-3-note-preview:free": {
-   "laeufe": 152,
+   "laeufe": 155,
    "fehler": 3,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 5868.937799215317,
+   "latenz_summe_s": 6077.160399675369,
    "letzter_fehler": "Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web",
    "letzte_sperre": 0.0
   },

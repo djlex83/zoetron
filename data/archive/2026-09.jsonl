@@ -41929,3 +41929,27 @@
 {"ts": 1788608000.2870462, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.35, "gelesen": 1145}}
 {"ts": 1788608000.289394, "kind": "reflex_used", "payload": {"goal": "GitHub-Synchronisation reparieren und Speicher aufräumen", "tool": "wissensgraph-verknüpfungen-reparieren.py", "ok": true}}
 {"ts": 1788608000.7172687, "kind": "act_done", "payload": {"goal_title": "GitHub-Synchronisation reparieren und Speicher aufräumen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788003932.288569, "key": "dream:20260829114532:1:f1f89b", "value": "Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making fallback chains essential for reliability.", "source": "dream"}
+{"ts": 1788003932.288647, "key": "dream:20260829114532:2:6c196e", "value": "Model reliability is bimodal: inclusionai/ling-3.0-flash-fin:free and poolside/laguna-s-2.1:free succeed consistently while others fail systematically.", "source": "dream"}
+{"ts": 1788003932.288704, "key": "dream:20260829114532:3:2a2956", "value": "Working models exhibit 7-10s latency, requiring conserve-mode protocols that skip simulation when budgets drop below 5s.", "source": "dream"}
+{"ts": 1788003932.2887561, "key": "dream:20260829114532:4:25b518", "value": "Artifact validation pipelines (dry-run → TOR green-light → knowledge graph promotion) prevent corrupted promotions from unverified actions.", "source": "dream"}
+{"ts": 1788003932.2888827, "key": "dream:20260829114532:5:545ac5", "value": "Self-diagnosis and pruning cycles maintain zero organ errors, but only when model failures don't cascade into diagnostic blind spots.", "source": "dream"}
+{"ts": 1788608514.2100346, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788608582.8177028, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788608584.345691, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788608588.4521375, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788608588.452135, "schalter_geoeffnet": false}}
+{"ts": 1788608606.9905922, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.5, "tokens_ein": 1400, "tokens_aus": 733}}
+{"ts": 1788608606.9911244, "kind": "skill_proposal", "payload": {"proposal": "Add a ModelHealthTracker that records consecutive 429/5xx errors per model and auto-quarantines after N failures."}}
+{"ts": 1788608606.9911811, "kind": "skill_proposal", "payload": {"proposal": "Implement provider-aware circuit breakers with exponential backoff before metabolism budget is exhausted."}}
+{"ts": 1788608606.9912338, "kind": "skill_proposal", "payload": {"proposal": "Require a code-block extractor/validator step after every planning phase; reject artifacts without executable Python."}}
+{"ts": 1788608606.9912856, "kind": "skill_proposal", "payload": {"proposal": "Create a TTL-based janitor reflex that archives or deletes drive_goals older than 7 days with no progress."}}
+{"ts": 1788608606.9913359, "kind": "skill_proposal", "payload": {"proposal": "Build a degraded-mode planner that emits smaller, self-contained steps when metabolism.budget.max_iterations <= 1."}}
+{"ts": 1788608606.9914007, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788608609.5101511, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788608609.510149, "schalter_geoeffnet": false}}
+{"ts": 1788608634.9670753, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 25.5, "tokens_ein": 539, "tokens_aus": 387}}
+{"ts": 1788608634.967277, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788608634.9673889, "kind": "drive_goal", "payload": {"title": "Traum-Erinnerungen nutzbar machen", "why": "Vier Teilaufgaben für das Traum-Gedächtnis liegen seit langem brach. Fertigstellung verbindet Wissen.", "signal": "stale"}}
+{"ts": 1788608634.9674866, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "why": "Viele neue Fähigkeiten wurden vorgeschlagen, aber nicht getestet. Die besten sollen aktiv werden.", "signal": "combination"}}
+{"ts": 1788608638.0668936, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.66, "gelesen": 26}}
+{"ts": 1788608638.0693457, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene neue Fähigkeiten ordnen", "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py", "ok": true}}
+{"ts": 1788608638.5451396, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene neue Fähigkeiten ordnen", "score": null, "converged": true, "mode": "reflex"}}
