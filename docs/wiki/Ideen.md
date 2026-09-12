@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 19:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning (20 facts, 62 events) and self-diagnosis (zero organ errors) operate correctly, showing maintenance loops are healthy while goal-directed loop
+- Hand actions fail silently (exit 1, no error) after planning succeeds, exposing a missing validation gate between plan approval and execution commit.
+- Rate limiting (429) cascades across multiple OpenRouter models simultaneously, proving that per-model backoff is insufficient without global request t
+- Swarm convergence fails at score 4/10 despite evolved variants scoring 8/9/7, revealing a gap between variant generation and integration into executab
+- The fallback model (dots-studio/dots-3-note-preview) consistently succeeds where primary models (Nemotron, Gemma) fail with timeouts and 429 errors, i
 - The repeated failure of the 'Traum-Erkenntnisse in Fähigkeiten umsetzen' goal indicates a need for robust error handling and retries.
 - Tracking predicted versus actual scores per goal_type enables calibration of simulation forecasts.
 - The skill promotion pipeline must include syntax, import, sandbox, and benchmark gates to ensure only validated skills are promoted.
@@ -51,11 +56,6 @@
 - Pruning removes routine events but must keep recent failure sequences to retain learnings.
 - Drive goals about model failure and stale knowledge recur, indicating they are core concerns.
 - The system repeatedly proposes health‑tracking and retry mechanisms, revealing a persistent reliability gap.
-- Reflexes for swarm cleanup and model health audit improve system resilience and reduce downtime.
-- Model latency varies widely across providers, making health tracking essential for selection.
-- Drive goals become stale quickly, triggering reflexes that refresh swarm information automatically.
-- Aggressive event pruning can discard critical failure sequences, so pruning should preserve recent failure data.
-- Model failures due to rate limiting and upstream overload are frequent and require error-type-specific backoff strategies.
 
 ---
 

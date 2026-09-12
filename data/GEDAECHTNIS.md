@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11400 Fakten** · Stand 2026-09-12 19:57 UTC · aktualisiert bei jedem Herzschlag
+**11389 Fakten** · Stand 2026-09-12 20:09 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7356
-- **swarm_artifact:** 1649
+- **swarm_artifact:** 1643
 - **last_swarm_critique:** 914
 - **last_swarm_goal:** 649
-- **anti_pattern:** 371
-- **strategy:** 188
-- **tool:** 153
+- **anti_pattern:** 369
+- **strategy:** 187
+- **tool:** 152
 - **hand_result:** 81
-- **aktuell_organfehler:** 39
+- **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912200552:5:196460`
+*12.09. 20:05 UTC · Quelle: dream*
+
+Pruning (20 facts, 62 events) and self-diagnosis (zero organ errors) operate correctly, showing maintenance loops are healthy while goal-directed loops stall.
+
+### `dream:20260912200552:4:12c5e1`
+*12.09. 20:05 UTC · Quelle: dream*
+
+Hand actions fail silently (exit 1, no error) after planning succeeds, exposing a missing validation gate between plan approval and execution commit.
+
+### `dream:20260912200552:3:4ff46f`
+*12.09. 20:05 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across multiple OpenRouter models simultaneously, proving that per-model backoff is insufficient without global request throttling.
+
+### `dream:20260912200552:2:d6725e`
+*12.09. 20:05 UTC · Quelle: dream*
+
+Swarm convergence fails at score 4/10 despite evolved variants scoring 8/9/7, revealing a gap between variant generation and integration into executable solutions.
+
+### `dream:20260912200552:1:957635`
+*12.09. 20:05 UTC · Quelle: dream*
+
+The fallback model (dots-studio/dots-3-note-preview) consistently succeeds where primary models (Nemotron, Gemma) fail with timeouts and 429 errors, indicating provider reliability should drive model priority over nominal capability.
 
 ### `last_swarm_critique`
 *12.09. 19:55 UTC · Quelle: critic*
@@ -42518,21 +42543,6 @@ External model unreliability (429 rate limits, 502 overloads) is a structural co
 
 Completion-without-deployment is the system's dominant failure mode: analyses finish, simulations run, and skills are proposed — but none get applied, creating a growing gap between knowledge and action.
 
-### `tool:offene-marktanalyse-arbeiten-endlich-abs`
-*29.08. 19:59 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Offene Marktanalyse-Arbeiten endlich abschließen'. Datei: data/tools/offene-marktanalyse-arbeiten-endlich-abs.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Offene Marktanalyse-Arbe:2`
-*29.08. 19:58 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Event-Sourced Pipeline with Idempotent Steps - Redesign the workflow as an event-sourced pipeline: each analysis step emits an event (FactFetched, TasksListed, GraphQueried) stored in an append-only log. A single orchestrator
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Offene Marktanalyse-Arbe:1`
-*29.08. 19:58 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Configuration-Driven Adapter Layer - Define a YAML/JSON schema mapping generic operations (e.g., 'fetch_facts', 'get_tasks', 'run_query') to concrete API calls per backend. Build an AdapterFactory that reads config at startup
-
 ### `last_swarm_critique`
 *29.08. 19:57 UTC · Quelle: critic*
 
@@ -42542,36 +42552,6 @@ score=6; issues=Drei separate Skripte mit inkonsistenten API-Annahmen (memory.se
 *29.08. 19:54 UTC · Quelle: system*
 
 Offene Marktanalyse-Arbeiten endlich abschließen
-
-### `dream:20260829195411:5:1044b6`
-*29.08. 19:54 UTC · Quelle: dream*
-
-Simulation approved 'go' despite 3 risks and 3 revisions, showing risk tolerance favors forward progress over reliability under pressure.
-
-### `dream:20260829195411:4:83109b`
-*29.08. 19:54 UTC · Quelle: dream*
-
-Reflex tools fail silently (ok:false) without diagnostic context, undermining autonomous recovery; health-check endpoints and structured error payloads are missing.
-
-### `dream:20260829195411:3:553490`
-*29.08. 19:54 UTC · Quelle: dream*
-
-Hand-action timeouts (20s, 0 bytes read) reveal unbounded external dependencies that need circuit-breaker wrappers to prevent stall propagation.
-
-### `dream:20260829195411:2:41cb17`
-*29.08. 19:54 UTC · Quelle: dream*
-
-System-wide stress level 1.0 correlates with simultaneous failures across model inference, tool execution, and I/O operations, indicating cascading resource exhaustion.
-
-### `dream:20260829195411:1:982b0a`
-*29.08. 19:54 UTC · Quelle: dream*
-
-Free-tier model endpoints fail predominantly due to rate limiting (429) and upstream overload (502), requiring explicit fallback chains with rate-limit awareness.
-
-### `aktuell_organfehler`
-*29.08. 19:52 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-29 19:49:50 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `last_swarm_critique`
 *29.08. 19:22 UTC · Quelle: critic*
