@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11511 Fakten** · Stand 2026-09-12 02:49 UTC · aktualisiert bei jedem Herzschlag
+**11499 Fakten** · Stand 2026-09-12 02:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
-- **swarm_artifact:** 1695
+- **dream:** 7436
+- **swarm_artifact:** 1689
 - **last_swarm_critique:** 896
 - **last_swarm_goal:** 631
 - **anti_pattern:** 379
 - **strategy:** 192
-- **tool:** 157
+- **tool:** 156
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912025648:5:3144a6`
+*12.09. 02:56 UTC · Quelle: dream*
+
+Skill proposals accumulate (6+ this cycle) but no automated pipeline promotes them to deployed, tested skills visible to the planner.
+
+### `dream:20260912025648:4:0cbeea`
+*12.09. 02:56 UTC · Quelle: dream*
+
+Swarm goals become stale and activities gap because no durable persistence restores collaboration state across sleep cycles.
+
+### `dream:20260912025648:3:b83399`
+*12.09. 02:56 UTC · Quelle: dream*
+
+Pruning removes 10-21 items per cycle without goal-awareness, risking deletion of facts tagged with active 'stale' or 'failure' signals.
+
+### `dream:20260912025648:2:b75f10`
+*12.09. 02:56 UTC · Quelle: dream*
+
+Reflex tools for model error reduction consistently converge but lack quantitative effectiveness metrics to compare strategies.
+
+### `dream:20260912025648:1:386b91`
+*12.09. 02:56 UTC · Quelle: dream*
+
+Multiple model providers fail simultaneously with 502 upstream errors and 429 rate limits, indicating systemic provider instability rather than isolated incidents.
 
 ### `last_swarm_critique`
 *12.09. 02:47 UTC · Quelle: critic*
@@ -43073,11 +43098,6 @@ nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency varian
 
 The z-ai/glm-5.2:free model is consistently unavailable due to rate limiting (429 errors), making it unreliable as a primary or fallback provider.
 
-### `tool:modellfehler-verstehen-und-verringern`
-*29.08. 02:51 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler verstehen und verringern'. Datei: data/tools/modellfehler-verstehen-und-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *29.08. 02:51 UTC · Quelle: critic*
 
@@ -43087,56 +43107,6 @@ score=8; issues=Drittes Artefakt in der Anzeige abgeschnitten (aber Sandbox best
 *29.08. 02:48 UTC · Quelle: system*
 
 Modellfehler verstehen und verringern
-
-### `dream:20260829024813:5:719fba`
-*29.08. 02:48 UTC · Quelle: dream*
-
-Reflex-mode actions complete quickly (0.19s, exit 0) and reliably compared to model-driven actions, suggesting known-good reflexes should be preferred for routine maintenance tasks over expensive model calls.
-
-### `dream:20260829024813:4:ef5ab2`
-*29.08. 02:48 UTC · Quelle: dream*
-
-Stale tasks like the unused market analysis persist across dream cycles without being archived or acted on, so pruning (facts_pruned: 0, events_pruned: 0) is too conservative to clear dead weight.
-
-### `dream:20260829024813:3:766ece`
-*29.08. 02:48 UTC · Quelle: dream*
-
-Skill proposals accumulate without being learned (drive_goal 'gap' signal), indicating the system generates more proposals than it can absorb - proposals should be prioritized and capped rather than continuously generated.
-
-### `dream:20260829024813:2:d08bfa`
-*29.08. 02:48 UTC · Quelle: dream*
-
-A single successful model call (poolside/laguna-s-2.1:free, 6.7s) after multiple failures shows that fallback rotation works, but it must be automatic rather than reactive to be effective.
-
-### `dream:20260829024813:1:0ad806`
-*29.08. 02:48 UTC · Quelle: dream*
-
-Free-tier models on Openrouter fail frequently with 429 rate limits, and z-ai/glm-5.2:free is the most persistent offender - repeated retries against the same failing model waste time instead of switching providers.
-
-### `dream:20260829024347:5:4fa8c9`
-*29.08. 02:43 UTC · Quelle: dream*
-
-Simulation results and market analysis gaps persist because insights aren't automatically fed into model selection and task planning.
-
-### `dream:20260829024347:4:bd654c`
-*29.08. 02:43 UTC · Quelle: dream*
-
-Reflex-based error handling succeeds locally but lacks cross-episode learning to prevent recurring model failures.
-
-### `dream:20260829024347:3:f695ce`
-*29.08. 02:43 UTC · Quelle: dream*
-
-Accumulated skill proposals (fallback, smoke tests, calibration) remain unimplemented while drive goals repeat same failure signals.
-
-### `dream:20260829024347:2:357d10`
-*29.08. 02:43 UTC · Quelle: dream*
-
-Latency variance for identical models (5-17s) indicates unstable infrastructure requiring health-aware routing.
-
-### `dream:20260829024347:1:a76ac8`
-*29.08. 02:43 UTC · Quelle: dream*
-
-Free-tier model endpoints exhibit systemic rate-limiting (429) and upstream overload (502) making single-model reliance unreliable.
 
 ### `last_swarm_critique`
 *29.08. 02:17 UTC · Quelle: critic*

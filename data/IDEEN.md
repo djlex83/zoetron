@@ -1,13 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 02:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 02:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 6×)*
 - Add pre-flight 1-token health probe to selbstdiagnose for each candidate model before planner assigns tasks. *(hatte die Idee 5×)*
-- Create skill promotion gate requiring automated benchmark pass, soak period, and explicit convergence contract *(hatte die Idee 4×)*
 - Create shared HTTP wrapper with exponential backoff (base 2s, max 30s, 3 retries, jitter) for all OpenRouter c *(hatte die Idee 4×)*
 - Build DegradedMode skill: when >2 models disabled, restrict planner to inclusionai model only, halve token bud *(hatte die Idee 4×)*
 - Implement exponential-backoff retry with automatic model fallback on 429/502/timeout before marking a call fai *(hatte die Idee 4×)*
@@ -17,6 +16,7 @@
 - Develop a calibration multiplier module that inflates initial effort estimates by 4-5x for swarm planning. *(hatte die Idee 4×)*
 - Enforce swarm refresh quality gate: require ≥2 critics, minimum score 8, critic sign-off, and TTL-based stalen *(hatte die Idee 4×)*
 - Implement model router with health scoring, exponential backoff, automatic fallback to highest-reliability pro *(hatte die Idee 3×)*
+- Create skill promotion gate requiring automated benchmark pass, soak period, and explicit convergence contract *(hatte die Idee 3×)*
 - Extend selbstdiagnose to publish operational health metrics (model success rate, convergence rate, latency per *(hatte die Idee 3×)*
 - Add pruning audit trail logging retention criteria, discarded pattern signatures, and impact scores; preserve  *(hatte die Idee 3×)*
 - Build drive-goal escalation loop that converts failure/stale/gap signals into scheduled reflex invocations wit *(hatte die Idee 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (6+ this cycle) but no automated pipeline promotes them to deployed, tested skills visible to the planner.
+- Swarm goals become stale and activities gap because no durable persistence restores collaboration state across sleep cycles.
+- Pruning removes 10-21 items per cycle without goal-awareness, risking deletion of facts tagged with active 'stale' or 'failure' signals.
+- Reflex tools for model error reduction consistently converge but lack quantitative effectiveness metrics to compare strategies.
+- Multiple model providers fail simultaneously with 502 upstream errors and 429 rate limits, indicating systemic provider instability rather than isolat
 - Self-diagnosis reports zero organ errors despite repeated model failures, indicating health checks don’t monitor external API reliability.
 - Skill proposals accumulate (5 in prior dream, 5 new) but execution gap persists – no auto-promotion mechanism converts proposals to callable tools.
 - Prune runs discard 3-4x more events than facts, suggesting event retention policy is too aggressive for diagnostic value.
@@ -51,11 +56,6 @@
 - Pruning aggressively discards events (22 then 1) while preserving facts, yet no retention policy tags critical diagnostic events for longer survival.
 - Reflex tools succeed syntactically (exit 0) but lack measurable outcome gates, allowing stale swarm goals and unvalidated error reductions to pass as 
 - Model endpoint failures (502 upstream, 429 rate limits) cascade silently because reflexes report converged=true without validating actual output quali
-- Hand actions hang indefinitely (20 s timeout, 0 bytes read), blocking the loop; all external calls need hard deadlines, streaming reads, and circuit-b
-- Fixed prune thresholds discard or retain facts arbitrarily; a PID controller targeting 70 % RAM while preserving 'retain'-tagged facts 10× longer adap
-- Reflexes execute without measurable effectiveness metrics, making it impossible to distinguish useful automation from cargo-cult tooling; every reflex
-- Swarm convergence with only one critic and no minimum-score gate produces false confidence; a quality gate requiring ≥2 critics, score ≥8, and explici
-- Model endpoints fail silently (502 upstream, 429 rate-limits) and latency varies 6× (8 s vs 48 s), so every call needs a router with health probes, su
 
 ---
 
