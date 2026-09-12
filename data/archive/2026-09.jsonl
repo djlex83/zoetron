@@ -43308,3 +43308,10 @@
 {"ts": 1788639364.496766, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Arbeiten fertigstellen", "why": "Es liegen fünf Entwürfe bereit, die noch nicht umgesetzt wurden. Wenn wir sie fertig machen, gewinnen wir neue Fähigkeiten.", "signal": "stale"}}
 {"ts": 1788639364.496844, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und reduzieren", "why": "Das Modell scheitert oft. Wenn wir die Gründe finden, wird das System zuverlässiger.", "signal": "failure"}}
 {"ts": 1788639364.4969065, "kind": "drive_goal", "payload": {"title": "Träume mit echten Aktionen verbinden", "why": "Träume liefern Ideen, aber sie werden selten in Taten umgesetzt. Diese Lücke zu schließen macht uns handlungsfähiger.", "signal": "combination"}}
+{"ts": 1788639367.3625133, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.31, "gelesen": 2}}
+{"ts": 1788639367.3650334, "kind": "reflex_used", "payload": {"goal": "Kritik-Schleife erneuern", "tool": "selbstprüfung-regelmäßig-erneuern.py", "ok": true}}
+{"ts": 1788639367.7534533, "kind": "act_done", "payload": {"goal_title": "Kritik-Schleife erneuern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788639890.3384233, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788639958.8542922, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788639960.3588388, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788639964.3682706, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788639964.3682683, "schalter_geoeffnet": false}}

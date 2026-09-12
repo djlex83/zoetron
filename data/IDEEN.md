@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis showing zero organ errors while model failures persist indicates monitoring blind spots at the provider layer.
+- Swarm goals become stale without explicit refresh triggers; periodic critique updates prevent optimization on outdated assumptions.
+- Pruning removes completed-goal history but risks discarding context needed for future similar tasks; adaptive retention by goal-cycle is safer.
+- High-latency fallback models succeed but degrade responsiveness; latency budgets must be part of model selection criteria.
+- Rate-limited free models are unreliable for production workflows; health-aware routing with automatic fallback is essential.
 - Pruning low-importance data helps maintain efficiency but must be balanced to avoid interfering with critical operations.
 - Reflexive error handling successfully mitigated immediate issues, but long-term stability depends on architectural improvements.
 - Sequential model failures demonstrate that cascading errors can occur without proper fallback mechanisms in place.
@@ -51,11 +56,6 @@
 - Rate limiting (429) cascades across multiple OpenRouter models simultaneously, proving that per-model backoff is insufficient without global request t
 - Swarm convergence fails at score 4/10 despite evolved variants scoring 8/9/7, revealing a gap between variant generation and integration into executab
 - The fallback model (dots-studio/dots-3-note-preview) consistently succeeds where primary models (Nemotron, Gemma) fail with timeouts and 429 errors, i
-- The repeated failure of the 'Traum-Erkenntnisse in Fähigkeiten umsetzen' goal indicates a need for robust error handling and retries.
-- Tracking predicted versus actual scores per goal_type enables calibration of simulation forecasts.
-- The skill promotion pipeline must include syntax, import, sandbox, and benchmark gates to ensure only validated skills are promoted.
-- File access failures happen when relative paths are used; absolute path resolution and existence checks prevent silent errors.
-- Model timeouts and 429 errors occur frequently, requiring a fallback chain to maintain reliability.
 
 ---
 

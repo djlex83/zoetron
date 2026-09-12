@@ -1,14 +1,14 @@
 {
-  "total": 609,
+  "total": 615,
   "content_length_stats": {
     "min": 0,
     "max": 122,
-    "avg": 4.681444991789819
+    "avg": 4.635772357723577
   },
   "unique_tags": [],
   "time_range": {
     "earliest": "2026-08-26T06:09:15.112365",
-    "latest": "2026-09-12T11:38:59.107906"
+    "latest": "2026-09-12T20:07:05.590070"
   },
   "dreams": [
     {
@@ -427,7 +427,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-11T18:38:10.130685",
+      "timestamp": "2026-09-12T19:19:36.461872",
       "content_length": 0,
       "tags": []
     },
@@ -446,6 +446,12 @@
     {
       "id": "unknown",
       "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": "2026-09-12T15:13:19.290707",
       "content_length": 0,
       "tags": []
     },
@@ -1129,7 +1135,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-11T23:03:19.913643+00:00",
+      "timestamp": "2026-09-12T13:34:13.360073+00:00",
       "content_length": 0,
       "tags": []
     },
@@ -1369,6 +1375,24 @@
     },
     {
       "id": "unknown",
+      "timestamp": "2026-09-12T19:02:14.253843",
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
       "timestamp": null,
       "content_length": 0,
       "tags": []
@@ -1477,7 +1501,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-11T21:51:26.663315",
+      "timestamp": "2026-09-12T20:07:05.590070",
       "content_length": 0,
       "tags": []
     },
@@ -1531,7 +1555,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-12T00:04:07.083079",
+      "timestamp": "2026-09-12T19:39:29.964420",
       "content_length": 0,
       "tags": []
     },
@@ -2323,7 +2347,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-11T02:50:35.651023",
+      "timestamp": "2026-09-12T15:01:39.365722",
       "content_length": 0,
       "tags": []
     },
@@ -2773,6 +2797,12 @@
     },
     {
       "id": "unknown",
+      "timestamp": "2026-09-12T19:29:38.114581+00:00",
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
       "timestamp": null,
       "content_length": 0,
       "tags": []
@@ -2900,6 +2930,12 @@
     {
       "id": "unknown",
       "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "collect_calibration_20260912_195455",
+      "timestamp": "2026-09-12T19:54:55.026616",
       "content_length": 0,
       "tags": []
     },

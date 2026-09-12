@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 20:17:42",
+ "stand": "2026-09-12 20:28:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -87,10 +87,10 @@
    "quote": 1.0
   },
   {
-   "tool": "modell-fehler-systematisch-reduzieren-un.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
+   "tool": "träume-analysieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
@@ -190,12 +190,6 @@
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-analysieren.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -393,13 +387,19 @@
    "quote": 0.0
   },
   {
+   "tool": "modell-fehler-systematisch-reduzieren-un.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
   }
  ],
- "haende_quote": 0.722,
+ "haende_quote": 0.726,
  "simulationen_angewandt": 35,
  "swarm_scores": {
   "n": 33,
@@ -408,8 +408,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 33,
-   "schnitt": 4.94
+   "n": 32,
+   "schnitt": 4.91
   }
  }
 }
