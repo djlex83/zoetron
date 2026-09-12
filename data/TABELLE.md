@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8137 Neuronen · 850385 bewertete Synapsen
+Stand: 8134 Neuronen · 850679 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,16 +10,16 @@ Stand: 8137 Neuronen · 850385 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1051 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1064 | 0.23 |
-| 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 829 | 0.25 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1052 | 0.24 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1065 | 0.23 |
+| 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 830 | 0.25 |
 | 4 | 💭 | Rate limiting (429) and upstream overload (502) are recurring fa… | 842 | 0.24 |
-| 5 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 838 | 0.24 |
-| 6 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 862 | 0.23 |
+| 5 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 839 | 0.24 |
+| 6 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 864 | 0.23 |
 | 7 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 797 | 0.25 |
 | 8 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 844 | 0.24 |
-| 9 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 853 | 0.23 |
-| 10 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 774 | 0.25 |
+| 9 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 854 | 0.23 |
+| 10 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 775 | 0.25 |
 | 11 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 866 | 0.23 |
 | 12 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 888 | 0.22 |
 | 13 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 855 | 0.23 |

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11475 Fakten** · Stand 2026-09-12 07:29 UTC · aktualisiert bei jedem Herzschlag
+**11470 Fakten** · Stand 2026-09-12 07:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
-- **swarm_artifact:** 1661
+- **dream:** 7446
+- **swarm_artifact:** 1655
 - **last_swarm_critique:** 900
 - **last_swarm_goal:** 635
-- **anti_pattern:** 375
-- **strategy:** 190
-- **tool:** 157
+- **anti_pattern:** 373
+- **strategy:** 189
+- **tool:** 156
 - **hand_result:** 77
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912073747:5:b88faf`
+*12.09. 07:37 UTC · Quelle: dream*
+
+Model latency varies 2x-3x (17s vs 44s) on the same endpoint (Nemotron) across cycles, making timeout budgets unreliable.
+
+### `dream:20260912073747:4:2f5d3b`
+*12.09. 07:37 UTC · Quelle: dream*
+
+Pruning removes 5-7 facts and 19-32 events per cycle, but drive goals for 'apply simulations' and 'apply learned skills' persist unchanged, signaling an execution gap not a memory gap.
+
+### `dream:20260912073747:3:cba0d7`
+*12.09. 07:37 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, indicating the health check does not capture inference-layer degradation.
+
+### `dream:20260912073747:2:2d2e41`
+*12.09. 07:37 UTC · Quelle: dream*
+
+Reflex tools for swarm knowledge refresh (schwarmlernen-wiederbeleben, veraltete-wissenstände-auffrischen) converge reliably in one shot when triggered.
+
+### `dream:20260912073747:1:071281`
+*12.09. 07:37 UTC · Quelle: dream*
+
+Free model endpoints (Nemotron, Gemma) fail systematically with 502/429 errors while dots-studio/dots-3-note-preview:free succeeds consistently.
 
 ### `dream:20260912072653:5:b3563d`
 *12.09. 07:26 UTC · Quelle: dream*
@@ -43032,21 +43057,6 @@ Path resolution failures occur when sys.argv or ZOETRON_DATA are not properly va
 *29.08. 07:59 UTC · Quelle: dream*
 
 Rate limiting (429 errors) from OpenRouter consistently blocks model access, requiring fallback strategies or local model prioritization.
-
-### `tool:ersten-swarm-lauf-mit-score-8-konvergier`
-*29.08. 07:31 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Ersten Swarm-Lauf mit Score 8+ konvergieren lassen'. Datei: data/tools/ersten-swarm-lauf-mit-score-8-konvergier.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*29.08. 07:30 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5.7): Populationsbasierte evolutionäre Schwarm-Optimierung - Verwende einen genetischen Algorithmus-Ansatz statt einer einzelnen Iterationsschleife: Erzeuge eine Population von P=5 kandidaten Swarm-Konfigurationen, die jeweils un
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Ersten Swarm-Lauf mit Sc:1`
-*29.08. 07:30 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.3): Akzeptanzkriterien-rückwärts gerichtete Verifizierungs-Pipeline - Drehe die Entwicklungsrichtung um: Definiere zuerst die Prüfungen für AC-01 bis AC-06 als automatisierte Verifizierungsfunktionen (verify_ac01() bis verify_a
 
 ### `last_swarm_critique`
 *29.08. 07:30 UTC · Quelle: critic*

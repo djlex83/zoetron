@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 07:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 07:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency varies 2x-3x (17s vs 44s) on the same endpoint (Nemotron) across cycles, making timeout budgets unreliable.
+- Pruning removes 5-7 facts and 19-32 events per cycle, but drive goals for 'apply simulations' and 'apply learned skills' persist unchanged, signaling 
+- Self-diagnosis reports zero organ errors despite repeated model failures, indicating the health check does not capture inference-layer degradation.
+- Reflex tools for swarm knowledge refresh (schwarmlernen-wiederbeleben, veraltete-wissenstände-auffrischen) converge reliably in one shot when triggere
+- Free model endpoints (Nemotron, Gemma) fail systematically with 502/429 errors while dots-studio/dots-3-note-preview:free succeeds consistently.
 - Selbstdiagnose reports zero organ errors despite repeated model failures, suggesting health checks don't cover inference pipeline degradation.
 - Aggressive pruning (19 events per cycle) may discard diagnostic context needed to correlate model failures with upstream load patterns.
 - Duplicate skill proposals (model_router appears twice) indicate the planner re-generates known solutions instead of checking existing proposals.
@@ -51,11 +56,6 @@
 - Reflexes converge without proof of effectiveness because the schema lacks a required metric, unit, and deadline for verification.
 - hand_action repeatedly fails on relative paths because the entrypoint does not canonicalize inputs via ZOETRON_DATA before falling back to argv[1].
 - Model provider failures (502 overload, 429 rate-limit) cascade into task failures because no automatic failover or health-aware routing exists.
-- Static pruning thresholds ignore fact/event growth dynamics, causing either memory bloat or premature knowledge loss.
-- Reflex convergence succeeds without measured effectiveness metrics, risking false-positive skill validation.
-- High-value skill proposals (model router, caching, reflex metrics, nightly pipeline, PID pruning, path hardening) accumulate but remain undeployed, re
-- Identical drive goals (reduce model failure rate, refresh swarm knowledge) reappear across cycles, indicating goal-tracking lacks deduplication and co
-- Model endpoint failures (502, 429, upstream overload) cascade across multiple providers, making single-model reliance a systemic reliability bottlenec
 
 ---
 
