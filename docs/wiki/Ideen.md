@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 14:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 14:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,21 +10,21 @@
 - Enforce swarm refresh quality gate: require ≥2 critics, minimum score 8, critic sign-off, and TTL-based stalen *(hatte die Idee 4×)*
 - Harden hand_action entrypoint: resolve input path via ZOETRON_DATA then sys.argv[1], reject relative paths, an *(hatte die Idee 4×)*
 - Extend reflex schema: require effectiveness_metric (float, unit, deadline_ts) at registration; block converged *(hatte die Idee 4×)*
-- Build a skill activation gate that verifies reflex tool success before marking proposals as deployed, with aut *(hatte die Idee 3×)*
 - Build SkillConversionPipeline: auto-promote approved proposals to implemented skills with CI tests, versioning *(hatte die Idee 3×)*
 - Add GoalAwarePruningFilter: score every fact/event against active drive goals before deletion; protect items t *(hatte die Idee 3×)*
 - Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
-- Schedule a periodic swarm goal audit that refreshes stale objectives and injects fresh perspectives to prevent *(hatte die Idee 2×)*
-- Implement a model router that tracks per-provider 429/502 rates and automatically shifts traffic to healthy en *(hatte die Idee 2×)*
-- Add a circuit breaker wrapper around all model calls that trips after 3 consecutive failures and falls back to *(hatte die Idee 2×)*
-- Create a deadline-aware hand action executor that cancels I/O exceeding 15s and returns partial results with e *(hatte die Idee 2×)*
-- Design a latency budget allocator that reserves 30% of cycle time for model calls and degrades gracefully via  *(hatte die Idee 2×)*
+- Build a skill activation gate that verifies reflex tool success before marking proposals as deployed, with aut *(hatte die Idee 2×)*
 - Implement a dynamic model router that selects models based on recent error rates and applies jittered exponent *(hatte die Idee 2×)*
+- Adapt the model block duration based on error type: 60-second cooldown for 429 (rate limit) and 900-second for *(hatte die Idee 2×)*
+- Add structured error handling to all hand actions, capturing exit codes, stdout, stderr, and raising descripti *(hatte die Idee 2×)*
+- Create a pre-task service readiness check that validates the availability of required artifacts and dependenci *(hatte die Idee 2×)*
+- Introduce a simulation pre-mortem phase that stress-tests the plan with edge cases and incorporates feedback f *(hatte die Idee 2×)*
+- Implement a provider-health monitor that tracks 429/error rates per provider (not per model) and shifts traffi *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
@@ -33,14 +33,19 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Ferne Träume verbinden *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions converge without explicit scoring, indicating effective self-correction.
+- Regular pruning of facts and events prevents stale knowledge from influencing decisions.
+- Hand actions succeed but capturing both stdout and stderr is critical for diagnosing failures.
+- dots-studio/dots-3-note-preview:free has proven reliable and should be the default fallback model.
+- Repeated HTTP 429 errors from google/gemma-4 models reveal rate limiting that requires exponential backoff.
 - Model calls continue during 'conserve' metabolism state, wasting budget; a scheduler should pause and queue them for 'explore'.
 - Predicted outcomes frequently diverge from actual results, so a calibration tracker per goal type is needed.
 - Inconsistent path resolution leads to hand action failures; expanding relative paths against ZOETRON_DATA before execution prevents errors.
@@ -51,11 +56,6 @@
 - Evolutionary search (3 variants) produced a 9/10 winner while swarm consensus stalled at 4/10 after 2 cycles, indicating swarm coordination logic is b
 - Model provider nemotron-3-ultra shows 43% error rate (39/91) and high latency variance (42-78s), making it unreliable for time-critical paths.
 - Calibration consistently overestimates outcomes by ~40% (predicted 7 vs actual 4), requiring systematic correction factors per goal type.
-- Calibration predicted 7 but actual was 4, revealing a systematic overconfidence that should be corrected in future predictions.
-- A hand_action failed with exit code 1 and null error, suggesting an unhandled exception; capturing stderr would aid diagnosis.
-- dots-studio/dots-3-note-preview:free is the only consistently successful model, though its latency can reach 90 seconds, necessitating async handling.
-- The circuit breaker locks a model after three consecutive failures, preventing cascading errors but requiring manual reset after 1800 seconds.
-- Repeated 429 errors from Google Gemma models indicate rate limiting; falling back to dots-studio/dots-3-note-preview:free preserves task continuity.
 
 ---
 

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11476 Fakten** · Stand 2026-09-12 14:09 UTC · aktualisiert bei jedem Herzschlag
+**11462 Fakten** · Stand 2026-09-12 14:41 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7436
-- **swarm_artifact:** 1651
+- **swarm_artifact:** 1645
 - **last_swarm_critique:** 908
 - **last_swarm_goal:** 643
-- **anti_pattern:** 375
-- **strategy:** 190
-- **tool:** 152
-- **hand_result:** 82
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 151
+- **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912143739:5:426190`
+*12.09. 14:37 UTC · Quelle: dream*
+
+Reflex actions converge without explicit scoring, indicating effective self-correction.
+
+### `dream:20260912143739:4:5d396f`
+*12.09. 14:37 UTC · Quelle: dream*
+
+Regular pruning of facts and events prevents stale knowledge from influencing decisions.
+
+### `dream:20260912143739:3:5600e4`
+*12.09. 14:37 UTC · Quelle: dream*
+
+Hand actions succeed but capturing both stdout and stderr is critical for diagnosing failures.
+
+### `dream:20260912143739:2:ac52eb`
+*12.09. 14:37 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free has proven reliable and should be the default fallback model.
+
+### `dream:20260912143739:1:808944`
+*12.09. 14:37 UTC · Quelle: dream*
+
+Repeated HTTP 429 errors from google/gemma-4 models reveal rate limiting that requires exponential backoff.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Verbessere Modellzuverlä:2`
 *12.09. 14:05 UTC · Quelle: evolution*
@@ -42938,16 +42963,6 @@ The system lacks automatic fallback routing when primary models hit rate limits,
 
 Rate limiting (HTTP 429) from OpenRouter is the primary failure mode across multiple model providers, indicating a systemic dependency bottleneck rather than model-specific issues.
 
-### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Marktanalyse a:2`
-*29.08. 14:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Event-sourced CQRS projection - Separate write model (commands: RefreshMarketData, ApproveSegment) from read model (projections: OutdatedSegmentsView, ConsistencyDashboard). Events are immutable facts (MarketDataRefreshed, Se
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Marktanalyse a:0`
-*29.08. 14:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Delta-tracking validation - Replace full-dataset comparison with a change-tracking ledger. Each entry gets a version hash; validate_consistency() only inspects entries whose hash differs from the last committed snapshot. upda
-
 ### `last_swarm_critique`
 *29.08. 14:15 UTC · Quelle: critic*
 
@@ -42957,46 +42972,6 @@ score=6; issues=Die Funktion validate_consistency() vergleicht ALLE Einträge zw
 *29.08. 14:13 UTC · Quelle: system*
 
 Veraltete Marktanalyse abschließen
-
-### `dream:20260829141328:5:8b3873`
-*29.08. 14:13 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures and unimplemented skills accumulate, suggesting monitoring blind spots in external dependency health and skill lifecycle.
-
-### `dream:20260829141328:4:2b47c8`
-*29.08. 14:13 UTC · Quelle: dream*
-
-Drive goals for model reliability, market analysis execution, and skill activation persist across cycles without convergence, indicating missing feedback loops between diagnosis and action.
-
-### `dream:20260829141328:3:5065e0`
-*29.08. 14:13 UTC · Quelle: dream*
-
-Successful 200-status responses from fallback models (Nemotron) occasionally contain upstream error payloads (502-in-200) that propagate as valid output without schema validation.
-
-### `dream:20260829141328:2:198a7d`
-*29.08. 14:13 UTC · Quelle: dream*
-
-Multiple skill proposals address identical failure modes (model routing, stress scheduling, response validation) but remain unimplemented, revealing an activation gap between proposal and deployment.
-
-### `dream:20260829141328:1:38903b`
-*29.08. 14:13 UTC · Quelle: dream*
-
-Free-tier model endpoints (z-ai/glm-5.2) consistently fail with 429 rate limits, causing cascading retries and latency spikes up to 38s on fallback models.
-
-### `tool:modellbewertung-ausbauen`
-*29.08. 13:57 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Modellbewertung ausbauen'. Datei: data/tools/modellbewertung-ausbauen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Modellbewertung ausbauen:2`
-*29.08. 13:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 6, 8]): Functional Pipeline with Immutable State - Model evaluation as a pure function pipeline: EvaluationResult = pipeline(config, model, data). No classes, no mutable state, no inheritance. Boilerplate becomes reusable hig
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Modellbewertung ausbauen:1`
-*29.08. 13:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 5, 9]): Plugin-Based Extension Architecture - Redesign as a plugin system where each evaluation artifact is an independent plugin implementing a standardized EvaluationPlugin protocol. A PluginManager discovers plugins via en
 
 ### `last_swarm_critique`
 *29.08. 13:53 UTC · Quelle: critic*
