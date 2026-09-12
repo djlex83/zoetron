@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 06:56:10",
+ "stand": "2026-09-12 07:17:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -165,16 +165,16 @@
    "quote": 0.0
   },
   {
+   "tool": "träume-in-handlungen-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py",
@@ -327,12 +327,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-in-handlungen-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -435,17 +429,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.798,
+ "haende_quote": 0.799,
  "simulationen_angewandt": 31,
  "swarm_scores": {
-  "n": 27,
+  "n": 28,
   "best": 9.0,
-  "schnitt": 4.78
+  "schnitt": 4.93
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 26,
-   "schnitt": 4.62
+   "schnitt": 4.65
   },
   "bau": {
    "n": 1,

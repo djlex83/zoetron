@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11469 Fakten** · Stand 2026-09-12 06:58 UTC · aktualisiert bei jedem Herzschlag
+**11475 Fakten** · Stand 2026-09-12 07:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
-- **swarm_artifact:** 1659
-- **last_swarm_critique:** 899
-- **last_swarm_goal:** 634
-- **anti_pattern:** 377
-- **strategy:** 191
+- **dream:** 7441
+- **swarm_artifact:** 1661
+- **last_swarm_critique:** 900
+- **last_swarm_goal:** 635
+- **anti_pattern:** 375
+- **strategy:** 190
 - **tool:** 157
 - **hand_result:** 77
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:träume-analysieren`
+*12.09. 07:17 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume analysieren'. Datei: data/tools/träume-analysieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*12.09. 07:17 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*12.09. 07:07 UTC · Quelle: system*
+
+Träume analysieren
+
+### `dream:20260912070548:5:2fe974`
+*12.09. 07:05 UTC · Quelle: dream*
+
+Fixed 20 s hand_action timeout is too short for large token payloads and external deps, causing spurious kills.
+
+### `dream:20260912070548:4:554036`
+*12.09. 07:05 UTC · Quelle: dream*
+
+Skill proposals accumulate but never graduate to versioned tools because no nightly validation-merge pipeline exists.
+
+### `dream:20260912070548:3:5ee379`
+*12.09. 07:05 UTC · Quelle: dream*
+
+Reflexes converge without proof of effectiveness because the schema lacks a required metric, unit, and deadline for verification.
+
+### `dream:20260912070548:2:19eb06`
+*12.09. 07:05 UTC · Quelle: dream*
+
+hand_action repeatedly fails on relative paths because the entrypoint does not canonicalize inputs via ZOETRON_DATA before falling back to argv[1].
+
+### `dream:20260912070548:1:922d3a`
+*12.09. 07:05 UTC · Quelle: dream*
+
+Model provider failures (502 overload, 429 rate-limit) cascade into task failures because no automatic failover or health-aware routing exists.
 
 ### `dream:20260912065527:5:890100`
 *12.09. 06:55 UTC · Quelle: dream*
@@ -43017,21 +43057,6 @@ The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds reliably across widely
 *29.08. 07:25 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors across multiple consecutive calls, making it effectively unusable without automated backoff or failover.
-
-### `tool:marktanalyse-swarm-arbeit-abschließen`
-*29.08. 06:58 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse-Swarm-Arbeit abschließen'. Datei: data/tools/marktanalyse-swarm-arbeit-abschließen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Marktanalyse-Swarm-Arbei:2`
-*29.08. 06:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 26): Artifact-Driven Completion Engine - Treat the filesystem as the source of truth: (1) Define expected artifact schema (manifest.yaml listing required files: marktvolumen.csv, wettbewerber.json, trends.md, chancen_risiken.md),
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Marktanalyse-Swarm-Arbei:1`
-*29.08. 06:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 21): Swarm Orchestration & Graceful Termination Protocol - Implement a control-plane that speaks the swarm's native protocol: (1) Broadcasts 'FINALIZE' signal via message bus (Redis pub/sub, NATS, or file-based mailbox) to all ac
 
 ### `last_swarm_critique`
 *29.08. 06:56 UTC · Quelle: critic*
