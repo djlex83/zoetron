@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11482 Fakten** · Stand 2026-09-12 05:28 UTC · aktualisiert bei jedem Herzschlag
+**11475 Fakten** · Stand 2026-09-12 05:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7426
-- **swarm_artifact:** 1676
+- **swarm_artifact:** 1670
 - **last_swarm_critique:** 899
 - **last_swarm_goal:** 634
 - **anti_pattern:** 379
 - **strategy:** 192
 - **tool:** 157
-- **hand_result:** 80
+- **hand_result:** 79
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912054337:5:d050c8`
+*12.09. 05:43 UTC · Quelle: dream*
+
+Reflex actions converge quickly but depend on external LLM calls, so a local-first execution policy would improve robustness.
+
+### `dream:20260912054337:4:9f5ac6`
+*12.09. 05:43 UTC · Quelle: dream*
+
+Aggressive pruning of facts and events reduces memory but may discard useful context, requiring a tiered retention strategy.
+
+### `dream:20260912054337:3:e44061`
+*12.09. 05:43 UTC · Quelle: dream*
+
+The surge of unvalidated skill proposals highlights the need for a sandboxed testing harness before integration.
+
+### `dream:20260912054337:2:222759`
+*12.09. 05:43 UTC · Quelle: dream*
+
+Latency exceeding 20 seconds on certain models suggests enforcing a latency SLA with automatic failover to faster endpoints.
+
+### `dream:20260912054337:1:29e35b`
+*12.09. 05:43 UTC · Quelle: dream*
+
+Repeated 429 and 502 errors from free-tier endpoints indicate that a model router with blacklisting and fallback is essential for reliability.
 
 ### `tool:vorgeschlagene-fähigkeiten-ausführen`
 *12.09. 05:26 UTC · Quelle: hands*
@@ -42997,31 +43022,6 @@ score=1; issues=Sandbox-Urteil: LAEUFT NICHT - zwei Tracebacks belegen Laufzeitf
 *29.08. 05:34 UTC · Quelle: system*
 
 Modell-Fehler reduzieren und Zuverlässigkeit steigern
-
-### `dream:20260829053254:5:e3c5e8`
-*29.08. 05:32 UTC · Quelle: dream*
-
-Five skill proposals (router, factory, activator, governor, pruner) remain unimplemented, exposing a deployment gap between proposal and production.
-
-### `dream:20260829053254:4:a06ced`
-*29.08. 05:32 UTC · Quelle: dream*
-
-Cycle prediction error of ±1 (predicted 7, actual 8) shows decent calibration but ignores model latency variance, suggesting latency-aware planning.
-
-### `dream:20260829053254:3:a02378`
-*29.08. 05:32 UTC · Quelle: dream*
-
-Swarm converges in one cycle with specialized roles (planner, builder×3, critic) for well-scoped analysis goals, validating the role allocation strategy.
-
-### `dream:20260829053254:2:296d1f`
-*29.08. 05:32 UTC · Quelle: dream*
-
-Human approval requirement for subprocess calls blocks autonomous completion of market analysis tasks, indicating need for a pre-approval policy for read-only operations.
-
-### `dream:20260829053254:1:688e55`
-*29.08. 05:32 UTC · Quelle: dream*
-
-Free-tier model z-ai/glm-5.2:free consistently fails with 429 rate limits, while nvidia/nemotron-3-ultra-550b-a55b:free succeeds with 11–22s latency, making automated failover essential.
 
 ### `last_swarm_critique`
 *29.08. 05:21 UTC · Quelle: critic*

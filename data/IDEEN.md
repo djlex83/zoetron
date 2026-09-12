@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 05:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 05:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions converge quickly but depend on external LLM calls, so a local-first execution policy would improve robustness.
+- Aggressive pruning of facts and events reduces memory but may discard useful context, requiring a tiered retention strategy.
+- The surge of unvalidated skill proposals highlights the need for a sandboxed testing harness before integration.
+- Latency exceeding 20 seconds on certain models suggests enforcing a latency SLA with automatic failover to faster endpoints.
+- Repeated 429 and 502 errors from free-tier endpoints indicate that a model router with blacklisting and fallback is essential for reliability.
 - Bahnen retrieval returned 4 edges with delta 0.0 and score 5, showing the knowledge graph connects relevant artifacts but provides no novelty gradient
 - The simulation-revision loop (3 revisions applied) successfully reduced predicted errors from 7 to actual 5, but calibration error of 2 suggests the e
 - Nvidia Nemotron latency varies 12x (11s to 134s) on success, indicating queue-depth-dependent performance that cannot be predicted from historical ave
@@ -51,11 +56,6 @@
 - Reflex "modellfehler-stark-verringern.py" executed but returned ok=false, revealing that convergence is declared before a numeric, time-bounded effect
 - Hand actions silently fail when sys.argv[1] and ZOETRON_DATA environment variable are ignored, causing relative-path reads to miss the real data direc
 - Model endpoint failures (502 upstream, 429 rate-limit) cascade into task failure because no multi-endpoint router with health-aware failover exists de
-- Hand actions completed with zero bytes read, highlighting the importance of verifying actual data ingestion.
-- Large numbers of facts and events were pruned, showing that ongoing maintenance is required to keep the knowledge base lean.
-- Applying simulation revisions improved the outcome, validating iterative risk‑driven refinement.
-- Evolutionary search found a variant scoring 9.0 but still failed to converge, indicating a need for more iterations or stricter evaluation.
-- Repeated 429 Too Many Requests from free Google models reveal a systemic rate limit that must be handled with backoff and fallback.
 
 ---
 
