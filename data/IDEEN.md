@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 07:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 07:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Selbstdiagnose reports zero organ errors despite repeated model failures, suggesting health checks don't cover inference pipeline degradation.
+- Aggressive pruning (19 events per cycle) may discard diagnostic context needed to correlate model failures with upstream load patterns.
+- Duplicate skill proposals (model_router appears twice) indicate the planner re-generates known solutions instead of checking existing proposals.
+- Reflex-driven swarm knowledge refresh converges consistently (2/2 successes) while proactive simulation testing remains at zero executions.
+- Model routing is the single point of failure: primary model returns 502, free fallbacks return 429, only dots-studio succeeds reliably.
 - Fixed 20 s hand_action timeout is too short for large token payloads and external deps, causing spurious kills.
 - Skill proposals accumulate but never graduate to versioned tools because no nightly validation-merge pipeline exists.
 - Reflexes converge without proof of effectiveness because the schema lacks a required metric, unit, and deadline for verification.
@@ -51,11 +56,6 @@
 - High-value skill proposals (model router, caching, reflex metrics, nightly pipeline, PID pruning, path hardening) accumulate but remain undeployed, re
 - Identical drive goals (reduce model failure rate, refresh swarm knowledge) reappear across cycles, indicating goal-tracking lacks deduplication and co
 - Model endpoint failures (502, 429, upstream overload) cascade across multiple providers, making single-model reliance a systemic reliability bottlenec
-- Pruning removes facts/events but no mechanism exists to preserve validated skills or successful model responses across sleep cycles.
-- Repeated prompts to slow/unreliable models waste latency and tokens without caching or deduplication.
-- Reflex-driven local code execution (hand_action, python tools) succeeds with zero errors while external LLM calls fail, proving local-first execution 
-- Swarm simulations produce high scores but fail to converge, indicating evaluation metrics don't reflect actual task completion.
-- Free-tier LLM endpoints (nemotron, gemma) fail consistently with 429/502 errors while dots-studio/dots-3-note-preview:free succeeds, making single-mod
 
 ---
 

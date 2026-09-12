@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11475 Fakten** · Stand 2026-09-12 07:19 UTC · aktualisiert bei jedem Herzschlag
+**11475 Fakten** · Stand 2026-09-12 07:29 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7441
 - **swarm_artifact:** 1661
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912072653:5:b3563d`
+*12.09. 07:26 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors despite repeated model failures, suggesting health checks don't cover inference pipeline degradation.
+
+### `dream:20260912072653:4:5f88b3`
+*12.09. 07:26 UTC · Quelle: dream*
+
+Aggressive pruning (19 events per cycle) may discard diagnostic context needed to correlate model failures with upstream load patterns.
+
+### `dream:20260912072653:3:8bd252`
+*12.09. 07:26 UTC · Quelle: dream*
+
+Duplicate skill proposals (model_router appears twice) indicate the planner re-generates known solutions instead of checking existing proposals.
+
+### `dream:20260912072653:2:27d4d2`
+*12.09. 07:26 UTC · Quelle: dream*
+
+Reflex-driven swarm knowledge refresh converges consistently (2/2 successes) while proactive simulation testing remains at zero executions.
+
+### `dream:20260912072653:1:df61a6`
+*12.09. 07:26 UTC · Quelle: dream*
+
+Model routing is the single point of failure: primary model returns 502, free fallbacks return 429, only dots-studio succeeds reliably.
 
 ### `tool:träume-analysieren`
 *12.09. 07:17 UTC · Quelle: hands*
@@ -43032,31 +43057,6 @@ score=6; issues=Swarm-Orchestrierung implementiert keine echten verteilten Rolle
 *29.08. 07:25 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260829072524:5:543104`
-*29.08. 07:25 UTC · Quelle: dream*
-
-The swarm converged in a single cycle producing a working 512-line artifact with distributed roles, proving the multi-role architecture is effective when upstream model selection does not block it.
-
-### `dream:20260829072524:4:d2b135`
-*29.08. 07:25 UTC · Quelle: dream*
-
-Calibration underestimated the actual swarm score by 3 points (predicted 5 vs actual 8), indicating the system's self-assessment of output quality is unreliable.
-
-### `dream:20260829072524:3:57e1a3`
-*29.08. 07:25 UTC · Quelle: dream*
-
-Hand action failures are silent — null error field, 0.04s duration, exit code 1 — revealing a missing structured error-capture layer in the execution pipeline.
-
-### `dream:20260829072524:2:aaeb45`
-*29.08. 07:25 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds reliably across widely varying latencies (13s–146s), but no automated mechanism exists to select it when glm fails.
-
-### `dream:20260829072524:1:717bb3`
-*29.08. 07:25 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors across multiple consecutive calls, making it effectively unusable without automated backoff or failover.
 
 ### `last_swarm_critique`
 *29.08. 06:56 UTC · Quelle: critic*
