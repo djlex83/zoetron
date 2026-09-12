@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 20:28:18",
+ "stand": "2026-09-12 20:39:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -201,6 +201,12 @@
    "quote": 0.0
   },
   {
+   "tool": "ferngedächtnisse-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-umsetzen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -357,12 +363,6 @@
    "quote": 1.0
   },
   {
-   "tool": "ferngedächtnisse-verbinden.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -400,7 +400,7 @@
   }
  ],
  "haende_quote": 0.726,
- "simulationen_angewandt": 35,
+ "simulationen_angewandt": 34,
  "swarm_scores": {
   "n": 33,
   "best": 9.0,

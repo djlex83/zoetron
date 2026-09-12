@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11399 Fakten** · Stand 2026-09-12 20:30 UTC · aktualisiert bei jedem Herzschlag
+**11399 Fakten** · Stand 2026-09-12 20:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7366
 - **swarm_artifact:** 1643
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912203830:5:96e95e`
+*12.09. 20:38 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite model-layer failures, confirming architectural isolation between cognitive organs and model providers.
+
+### `dream:20260912203830:4:1c9522`
+*12.09. 20:38 UTC · Quelle: dream*
+
+The system autonomously generates skill proposals targeting observed failures (fallback, backoff, monitoring), showing meta-cognitive self-improvement loops.
+
+### `dream:20260912203830:3:5a77eb`
+*12.09. 20:38 UTC · Quelle: dream*
+
+Regular pruning of facts and events (10–19 per cycle) indicates active memory management but lacks visibility into what is discarded versus retained.
+
+### `dream:20260912203830:2:69ad20`
+*12.09. 20:38 UTC · Quelle: dream*
+
+The successful reflex-driven refresh of stale swarm goals demonstrates that dedicated maintenance tools can resolve goal staleness without planner involvement.
+
+### `dream:20260912203830:1:728a2d`
+*12.09. 20:38 UTC · Quelle: dream*
+
+Repeated 429 errors on Gemma models reveal that provider rate limits are a systemic failure mode requiring automated health-based routing.
 
 ### `dream:20260912202720:5:a90723`
 *12.09. 20:27 UTC · Quelle: dream*
@@ -42567,31 +42592,6 @@ A single working model (ling-3.0-flash-fin) sufficed to complete the task despit
 *29.08. 20:38 UTC · Quelle: dream*
 
 429 rate-limit errors are the dominant failure mode across providers, indicating free-tier API quotas — not model capability — are the binding constraint.
-
-### `dream:20260829203218:5:239c81`
-*29.08. 20:32 UTC · Quelle: dream*
-
-Proposal quantity without acceptance criteria and usability validation creates decision paralysis rather than skill growth.
-
-### `dream:20260829203218:4:bfca4a`
-*29.08. 20:32 UTC · Quelle: dream*
-
-The reflex loop successfully updates goals but lacks a parallel mechanism to convert skill proposals into executed capabilities — the same knowledge-action gap that affects analysis and simulation deployment.
-
-### `dream:20260829203218:3:f6d6c7`
-*29.08. 20:32 UTC · Quelle: dream*
-
-Without latency budgets, slow responses silently degrade perceived reliability, masking degradation as acceptable performance.
-
-### `dream:20260829203218:2:fbc642`
-*29.08. 20:32 UTC · Quelle: dream*
-
-External model unreliability (429 rate limits, 502 overloads) is a structural condition requiring automated circuit breaking and ranked failover, not simple retry logic.
-
-### `dream:20260829203218:1:fa9a50`
-*29.08. 20:32 UTC · Quelle: dream*
-
-Completion-without-deployment is the system's dominant failure mode: analyses finish, simulations run, and skills are proposed — but none get applied, creating a growing gap between knowledge and action.
 
 ### `last_swarm_critique`
 *29.08. 19:57 UTC · Quelle: critic*

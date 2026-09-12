@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
@@ -36,11 +36,16 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite model-layer failures, confirming architectural isolation between cognitive organs and model providers
+- The system autonomously generates skill proposals targeting observed failures (fallback, backoff, monitoring), showing meta-cognitive self-improvement
+- Regular pruning of facts and events (10–19 per cycle) indicates active memory management but lacks visibility into what is discarded versus retained.
+- The successful reflex-driven refresh of stale swarm goals demonstrates that dedicated maintenance tools can resolve goal staleness without planner inv
+- Repeated 429 errors on Gemma models reveal that provider rate limits are a systemic failure mode requiring automated health-based routing.
 - Self-diagnosis showing zero organ errors while model failures persist indicates monitoring blind spots at the provider layer.
 - Swarm goals become stale without explicit refresh triggers; periodic critique updates prevent optimization on outdated assumptions.
 - Pruning removes completed-goal history but risks discarding context needed for future similar tasks; adaptive retention by goal-cycle is safer.
@@ -51,11 +56,6 @@
 - Sequential model failures demonstrate that cascading errors can occur without proper fallback mechanisms in place.
 - The consistent success of the dots-studio model under varying loads highlights the value of model diversity for reliability.
 - Recurring 429 errors across multiple models indicate that API rate limiting is a systemic issue requiring proactive load management.
-- Pruning (20 facts, 62 events) and self-diagnosis (zero organ errors) operate correctly, showing maintenance loops are healthy while goal-directed loop
-- Hand actions fail silently (exit 1, no error) after planning succeeds, exposing a missing validation gate between plan approval and execution commit.
-- Rate limiting (429) cascades across multiple OpenRouter models simultaneously, proving that per-model backoff is insufficient without global request t
-- Swarm convergence fails at score 4/10 despite evolved variants scoring 8/9/7, revealing a gap between variant generation and integration into executab
-- The fallback model (dots-studio/dots-3-note-preview) consistently succeeds where primary models (Nemotron, Gemma) fail with timeouts and 429 errors, i
 
 ---
 
