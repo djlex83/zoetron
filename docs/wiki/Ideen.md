@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 21:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
@@ -34,13 +34,18 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs show asymmetric cleanup (facts vs events), indicating that event retention policies are misaligned with actual memory pressure.
+- Reflex-driven stale-data refresh succeeded and converged in one cycle, demonstrating that targeted, single-purpose reflexes outperform open-ended swar
+- Skill proposals accumulate (10+ in this session) but none are instantiated, revealing a systemic 'proposal-to-production' gap where ideas never reach 
+- Absence of a global request queue causes simultaneous 429 errors across multiple models, proving that per-model rate limiting is insufficient when sha
+- Nemotron and Gemma models consistently fail under load (502/429) while dots-studio/dots-3-note-preview delivers 3x lower latency with zero errors, mak
 - Pruning removes 10 facts/19 events per cycle yet stale swarm goals persist for months.
 - Simulation-driven revision (5 risks → 5 revisions) converges but consumes 3+ model calls per goal.
 - Hand actions fail with exit codes 1/2 but emit no error payload, making diagnosis impossible.
@@ -51,11 +56,6 @@
 - Regular pruning of facts and events (10–19 per cycle) indicates active memory management but lacks visibility into what is discarded versus retained.
 - The successful reflex-driven refresh of stale swarm goals demonstrates that dedicated maintenance tools can resolve goal staleness without planner inv
 - Repeated 429 errors on Gemma models reveal that provider rate limits are a systemic failure mode requiring automated health-based routing.
-- Self-diagnosis showing zero organ errors while model failures persist indicates monitoring blind spots at the provider layer.
-- Swarm goals become stale without explicit refresh triggers; periodic critique updates prevent optimization on outdated assumptions.
-- Pruning removes completed-goal history but risks discarding context needed for future similar tasks; adaptive retention by goal-cycle is safer.
-- High-latency fallback models succeed but degrade responsiveness; latency budgets must be part of model selection criteria.
-- Rate-limited free models are unreliable for production workflows; health-aware routing with automatic fallback is essential.
 
 ---
 

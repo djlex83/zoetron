@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11403 Fakten** · Stand 2026-09-12 20:56 UTC · aktualisiert bei jedem Herzschlag
+**11396 Fakten** · Stand 2026-09-12 21:09 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7361
-- **swarm_artifact:** 1649
+- **swarm_artifact:** 1643
 - **last_swarm_critique:** 915
 - **last_swarm_goal:** 650
 - **anti_pattern:** 369
 - **strategy:** 187
-- **tool:** 153
+- **tool:** 152
 - **hand_result:** 81
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912210641:5:d46959`
+*12.09. 21:06 UTC · Quelle: dream*
+
+Pruning runs show asymmetric cleanup (facts vs events), indicating that event retention policies are misaligned with actual memory pressure.
+
+### `dream:20260912210641:4:a6fb5d`
+*12.09. 21:06 UTC · Quelle: dream*
+
+Reflex-driven stale-data refresh succeeded and converged in one cycle, demonstrating that targeted, single-purpose reflexes outperform open-ended swarm loops for maintenance tasks.
+
+### `dream:20260912210641:3:918478`
+*12.09. 21:06 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this session) but none are instantiated, revealing a systemic 'proposal-to-production' gap where ideas never reach validation.
+
+### `dream:20260912210641:2:87da9f`
+*12.09. 21:06 UTC · Quelle: dream*
+
+Absence of a global request queue causes simultaneous 429 errors across multiple models, proving that per-model rate limiting is insufficient when shared OpenRouter quotas are exhausted.
+
+### `dream:20260912210641:1:56956d`
+*12.09. 21:06 UTC · Quelle: dream*
+
+Nemotron and Gemma models consistently fail under load (502/429) while dots-studio/dots-3-note-preview delivers 3x lower latency with zero errors, making it the only reliable primary candidate.
 
 ### `tool:veraltete-fakten-aktualisieren`
 *12.09. 20:54 UTC · Quelle: hands*
@@ -42543,11 +42568,6 @@ The swarm execution for market analysis did not converge after two cycles with a
 
 Four of five models failed consecutively with 429/502 errors, leaving only inclusionai/ling-3.0-flash-fin:free as a single point of success and creating systemic fragility.
 
-### `tool:vorgeschlagene-fähigkeiten-prüfen-und-ba`
-*29.08. 20:56 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten prüfen und bauen'. Datei: data/tools/vorgeschlagene-fähigkeiten-prüfen-und-ba.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *29.08. 20:56 UTC · Quelle: critic*
 
@@ -42557,31 +42577,6 @@ score=8; issues=Artifact 1: Schema-Validierung nur minimal (name, description) -
 *29.08. 20:52 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten prüfen und bauen
-
-### `dream:20260829205137:5:97a174`
-*29.08. 20:51 UTC · Quelle: dream*
-
-Error-type discrimination (429 vs 502 vs 200-empty) is essential because each demands a distinct retry/backoff/fallback policy.
-
-### `dream:20260829205137:4:f20ea5`
-*29.08. 20:51 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free demonstrates consistent low-latency success, making it the only viable default for free-tier routing.
-
-### `dream:20260829205137:3:a66f76`
-*29.08. 20:51 UTC · Quelle: dream*
-
-Nvidia-hosted models exhibit upstream 502 overload errors after initial success, indicating provider-side capacity saturation.
-
-### `dream:20260829205137:2:784a04`
-*29.08. 20:51 UTC · Quelle: dream*
-
-Consecutive failures trigger aggressive 30-minute model lockouts, turning transient errors into extended outages.
-
-### `dream:20260829205137:1:04ab72`
-*29.08. 20:51 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive 429 rate-limiting that makes them unreliable as primary workers.
 
 ### `last_swarm_critique`
 *29.08. 19:57 UTC · Quelle: critic*
