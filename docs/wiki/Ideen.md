@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 08:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 08:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-to-action conversion remains low: the explicit drive goal to turn simulations into real actions and the convergence tracker proposal confir
+- Local-first execution and prompt caching are underutilized levers for latency reduction: a 49 s Nemotron call and a 40 % estimated cache hit-rate sugg
+- Skill proposals accumulate without validation or reuse tracking: three separate proposals for a validation harness, reuse tracker, and convergence mon
+- Swarm knowledge freshness directly impacts ideation: multiple stale signals and a reflex-driven refresh show that outdated collective goals block nove
+- Model inference reliability is a single point of failure: repeated proposals for hard-coded primary, exponential backoff, health probes, and automatic
 - Reflex actions are executed successfully but their impact on system performance is not measured, so their benefit cannot be determined.
 - Self-diagnosis only checks organ health, missing model inference degradation which is the primary failure mode.
 - Pruning events without audit trails leads to information loss that later manifests as diagnosis gaps.
@@ -51,11 +56,6 @@
 - Calibration error of 1 (predicted 8 vs actual 9) shows reliable self-estimation when the simulation gate passes, but degrades without it.
 - The simulation-gate pattern (simulate → revise → apply) with 4 revisions eliminated risks and enabled a builder-heavy swarm (4:1) to converge on a wor
 - Free-tier model endpoints consistently return 429 errors under load, necessitating a hardcoded priority router with per-model 5-minute error caching.
-- A massive gap exists between the volume of generated skill proposals (70) and actualized evolution runs (2), preventing successful capability integrat
-- Significant latency spikes (up to 82s) correlate with large input token payloads, indicating that fixed timeouts are inadequate for heavy context load
-- Pre-execution simulations that identify and apply multiple revisions act as an effective risk-reduction filter before actual tool usage.
-- Hand action failures are often caused by fragile path resolution where relative paths or mismatched ZOETRON_DATA variables prevent file access.
-- Frequent model failures (502 upstream errors and 429 rate limits) on primary endpoints necessitate automated, health-probe-driven failover to stable a
 
 ---
 
