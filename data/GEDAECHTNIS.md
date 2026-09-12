@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11482 Fakten** · Stand 2026-09-12 04:40 UTC · aktualisiert bei jedem Herzschlag
+**11481 Fakten** · Stand 2026-09-12 04:50 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7431
-- **swarm_artifact:** 1677
+- **swarm_artifact:** 1676
 - **last_swarm_critique:** 898
 - **last_swarm_goal:** 633
 - **anti_pattern:** 377
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912044742:5:a42a6f`
+*12.09. 04:47 UTC · Quelle: dream*
+
+The system repeatedly retries failed Google models instead of falling back to the working model, wasting cycles on known-failing endpoints.
+
+### `dream:20260912044742:4:d5d5ad`
+*12.09. 04:47 UTC · Quelle: dream*
+
+Hand actions (local Python execution) complete in ~1s with zero failures, confirming local compute is the most reliable execution path.
+
+### `dream:20260912044742:3:d97cc5`
+*12.09. 04:47 UTC · Quelle: dream*
+
+The dream-processing task plateaus at score 7/10 across multiple cycles despite perfect calibration (predicted=actual), suggesting the evaluation metric or search space is saturated.
+
+### `dream:20260912044742:2:4054fe`
+*12.09. 04:47 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free succeeds 100% of the time but exhibits high latency variance (21–98s), indicating unpredictable queue times.
+
+### `dream:20260912044742:1:0353d9`
+*12.09. 04:47 UTC · Quelle: dream*
+
+Google Gemma models on OpenRouter free tier consistently return 429 rate-limit errors, making them unreliable for production use.
 
 ### `dream:20260912043740:5:f47f8f`
 *12.09. 04:37 UTC · Quelle: dream*
@@ -43017,31 +43042,6 @@ score=8; issues=Kein gemeinsamer Orchestrator/Entry-Point sichtbar, der alle dre
 *29.08. 04:44 UTC · Quelle: system*
 
 Liegende Marktanalyse abschließen
-
-### `dream:20260829044340:5:8228f0`
-*29.08. 04:43 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra works but exhibits high latency variance (7s–60s), causing unpredictable task durations.
-
-### `dream:20260829044340:4:e1d21a`
-*29.08. 04:43 UTC · Quelle: dream*
-
-Reflex tool 'kritiken-und-ziele-regelmäßig-prüfen.py' failed initially but succeeded after swarm simulation and iterative revision (risks=5, revisions=2).
-
-### `dream:20260829044340:3:dde670`
-*29.08. 04:43 UTC · Quelle: dream*
-
-High stress (1.0) triggers conserve mode that severely limits parallelism (max_tasks=3, max_iterations=1), slowing recovery.
-
-### `dream:20260829044340:2:ba76da`
-*29.08. 04:43 UTC · Quelle: dream*
-
-File operations fail when using relative paths instead of resolving via ZOETRON_DATA and sys.argv[1] environment inputs.
-
-### `dream:20260829044340:1:f9ff60`
-*29.08. 04:43 UTC · Quelle: dream*
-
-Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
 
 ### `last_swarm_critique`
 *29.08. 04:26 UTC · Quelle: critic*

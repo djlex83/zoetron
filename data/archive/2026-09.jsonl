@@ -40899,3 +40899,10 @@
 {"ts": 1788582957.0699842, "kind": "act_done", "payload": {"goal_title": "Traum-Gedächtnis-System fertigstellen", "score": 8, "converged": true}}
 {"ts": 1788582957.7151387, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.39, "gelesen": 216}}
 {"ts": 1788582960.1576934, "kind": "issue_synced", "payload": {"issue": 371, "state": "closed"}}
+{"ts": 1787978620.58396, "key": "dream:20260829044340:1:f9ff60", "value": "Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.", "source": "dream"}
+{"ts": 1787978620.5840461, "key": "dream:20260829044340:2:ba76da", "value": "File operations fail when using relative paths instead of resolving via ZOETRON_DATA and sys.argv[1] environment inputs.", "source": "dream"}
+{"ts": 1787978620.584124, "key": "dream:20260829044340:3:dde670", "value": "High stress (1.0) triggers conserve mode that severely limits parallelism (max_tasks=3, max_iterations=1), slowing recovery.", "source": "dream"}
+{"ts": 1787978620.5842073, "key": "dream:20260829044340:4:e1d21a", "value": "Reflex tool 'kritiken-und-ziele-regelmäßig-prüfen.py' failed initially but succeeded after swarm simulation and iterative revision (risks=5, revisions=2).", "source": "dream"}
+{"ts": 1787978620.5842779, "key": "dream:20260829044340:5:8228f0", "value": "Fallback model nvidia/nemotron-3-ultra works but exhibits high latency variance (7s–60s), causing unpredictable task durations.", "source": "dream"}
+{"ts": 1787978791.7200332, "key": "swarm_artifact:Bestehendes Marktanalyse-Werkzeug laden und prüfen", "value": "```python\n#!/usr/bin/env python3\n\"\"\"\nLädt und prüft das bestehende Marktanalyse-Werkzeug.\nLiest die Datei aus dem echten Datenverzeichnis (sys.argv[1] oder ZOETRON_DATA),\nprüft Dependencies, testet Im", "source": "builder"}
+{"ts": 1788583457.5822594, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
