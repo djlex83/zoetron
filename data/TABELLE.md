@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8057 Neuronen · 836572 bewertete Synapsen
+Stand: 8057 Neuronen · 837850 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -14,17 +14,17 @@ Stand: 8057 Neuronen · 836572 bewertete Synapsen
 | 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1044 | 0.23 |
 | 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 816 | 0.25 |
 | 4 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 852 | 0.23 |
-| 5 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 826 | 0.24 |
+| 5 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 825 | 0.24 |
 | 6 | 💭 | Rate limiting (429 errors) is the dominant and most persistent f… | 823 | 0.24 |
 | 7 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 830 | 0.24 |
-| 8 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 866 | 0.23 |
+| 8 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 867 | 0.23 |
 | 9 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 774 | 0.25 |
 | 10 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 886 | 0.22 |
-| 11 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 836 | 0.23 |
-| 12 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 842 | 0.23 |
+| 11 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 837 | 0.23 |
+| 12 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 843 | 0.23 |
 | 13 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 750 | 0.25 |
-| 14 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 725 | 0.26 |
-| 15 | 💭 | Free-tier model endpoints exhibit correlated failure modes (429 … | 809 | 0.23 |
+| 14 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 724 | 0.26 |
+| 15 | 💭 | Free-tier model endpoints exhibit correlated failure modes (429 … | 810 | 0.23 |
 
 ## Die 15 stärksten Synapsen
 

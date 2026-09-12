@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 21:07:17",
+ "stand": "2026-09-12 21:30:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -135,6 +135,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltete-infos-auffrischen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -207,12 +213,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -235,12 +235,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "veraltete-infos-auffrischen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
@@ -405,17 +399,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.724,
+ "haende_quote": 0.726,
  "simulationen_angewandt": 33,
  "swarm_scores": {
-  "n": 33,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 5.0
+  "schnitt": 5.03
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 33,
-   "schnitt": 5.0
+   "schnitt": 5.03
   }
  }
 }

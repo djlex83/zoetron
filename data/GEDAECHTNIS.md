@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11396 Fakten** · Stand 2026-09-12 21:09 UTC · aktualisiert bei jedem Herzschlag
+**11403 Fakten** · Stand 2026-09-12 21:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7361
-- **swarm_artifact:** 1643
-- **last_swarm_critique:** 915
-- **last_swarm_goal:** 650
-- **anti_pattern:** 369
-- **strategy:** 187
-- **tool:** 152
+- **dream:** 7356
+- **swarm_artifact:** 1649
+- **last_swarm_critique:** 916
+- **last_swarm_goal:** 651
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 153
 - **hand_result:** 81
 - **aktuell_organfehler:** 38
 
 ---
+
+### `tool:veraltete-swarm-ziele-auffrischen`
+*12.09. 21:30 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Swarm-Ziele auffrischen'. Datei: data/tools/veraltete-swarm-ziele-auffrischen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Swarm-Ziele au:1`
+*12.09. 21:27 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Signal Augmentation with Validation and Fallback - Keep the signal mechanism but augment it: when a stale signal arrives, validate it by cross-referencing with a lightweight query of all currently stale goals. If the signal's
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Swarm-Ziele au:0`
+*12.09. 21:27 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Centralized Stale Goal Registry with Periodic Full Scan - Replace signal-based detection with a centralized registry that tracks all goals and their stale status. Implement a periodic full scan (e.g., every 5 minutes) that qu
+
+### `last_swarm_critique`
+*12.09. 21:24 UTC · Quelle: critic*
+
+score=6; issues=Inconsistent refresh logic: If a stale signal is found but does not list all stale goals, only the listed goals are refreshed; goals with `stale=True` but not in the signal are left untouched.; `extract_stale_ids` may return a list containing `
+
+### `last_swarm_goal`
+*12.09. 21:17 UTC · Quelle: system*
+
+Veraltete Swarm-Ziele auffrischen
+
+### `dream:20260912211645:5:06cc86`
+*12.09. 21:16 UTC · Quelle: dream*
+
+Aggressive event pruning (23 events, 0 facts) discards failure context needed for pattern learning.
+
+### `dream:20260912211645:4:cb109b`
+*12.09. 21:16 UTC · Quelle: dream*
+
+Swarm knowledge decays without scheduled refresh; the 'stale' drive signal reveals missing automation.
+
+### `dream:20260912211645:3:369dc3`
+*12.09. 21:16 UTC · Quelle: dream*
+
+Skill proposals accumulate without an execution mechanism—proposal does not equal deployed capability.
+
+### `dream:20260912211645:2:e71f2a`
+*12.09. 21:16 UTC · Quelle: dream*
+
+Reactive fallback succeeds eventually but wastes cycles; proactive health-based routing would prevent failed attempts.
+
+### `dream:20260912211645:1:7e69d1`
+*12.09. 21:16 UTC · Quelle: dream*
+
+Provider-side rate limits (429) and upstream outages (502) are the dominant failure mode, not model capability.
 
 ### `dream:20260912210641:5:d46959`
 *12.09. 21:06 UTC · Quelle: dream*
@@ -42517,56 +42567,6 @@ Model endpoints exhibit inconsistent availability (404, 429) requiring pre-fligh
 *29.08. 21:16 UTC · Quelle: dream*
 
 Rate limiting (429 errors) across multiple models indicates systemic lack of rate-limit awareness and automatic failover.
-
-### `dream:20260829211211:5:534364`
-*29.08. 21:12 UTC · Quelle: dream*
-
-The successful reflex (cortex-upgrade-reflex-neue-modelle-autom.py) proves automated model remediation works but remains isolated from the main inference pipeline.
-
-### `dream:20260829211211:4:d35fc5`
-*29.08. 21:12 UTC · Quelle: dream*
-
-Drive deadlines expire prematurely because external API errors aren't distinguished from internal logic errors, preventing adaptive deadline extension.
-
-### `dream:20260829211211:3:20211c`
-*29.08. 21:12 UTC · Quelle: dream*
-
-Skill proposals accumulate (5 in this cycle) but lack a mandatory conversion gate (implementation step, validation, owner), causing a proposal-to-production gap.
-
-### `dream:20260829211211:2:9a301b`
-*29.08. 21:12 UTC · Quelle: dream*
-
-The system repeatedly retries failed models without backoff or rotation, turning transient API quotas into persistent task failures.
-
-### `dream:20260829211211:1:55c994`
-*29.08. 21:12 UTC · Quelle: dream*
-
-Free-tier model failures are dominated by rate-limiting (429) and upstream overload (502) errors, not inference quality, making reliability a routing problem.
-
-### `dream:20260829210724:5:d2205b`
-*29.08. 21:07 UTC · Quelle: dream*
-
-Drive goals explicitly target reducing model errors and finishing skills, yet the system lacks automatic mechanisms to translate these goals into deployed capabilities.
-
-### `dream:20260829210724:4:e561ca`
-*29.08. 21:07 UTC · Quelle: dream*
-
-Model latency varied wildly (8s to 16.2s) with no budget enforcement, allowing high-latency responses to degrade performance silently.
-
-### `dream:20260829210724:3:3a0e49`
-*29.08. 21:07 UTC · Quelle: dream*
-
-Five skill proposals were generated reactively to model failures but none were implemented, revealing a gap between proposal generation and execution closure.
-
-### `dream:20260829210724:2:7b66f4`
-*29.08. 21:07 UTC · Quelle: dream*
-
-The swarm execution for market analysis did not converge after two cycles with a score of 6, indicating insufficient critic feedback or planner-builder alignment.
-
-### `dream:20260829210724:1:64b370`
-*29.08. 21:07 UTC · Quelle: dream*
-
-Four of five models failed consecutively with 429/502 errors, leaving only inclusionai/ling-3.0-flash-fin:free as a single point of success and creating systemic fragility.
 
 ### `last_swarm_critique`
 *29.08. 20:56 UTC · Quelle: critic*
