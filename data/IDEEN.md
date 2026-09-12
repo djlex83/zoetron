@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 12:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 12:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,14 +17,14 @@
 - Build SkillConversionPipeline: auto-promote approved proposals to implemented skills with CI tests, versioning *(hatte die Idee 3×)*
 - Add GoalAwarePruningFilter: score every fact/event against active drive goals before deletion; protect items t *(hatte die Idee 3×)*
 - Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
-- Build a model fallback chain that, upon a 429 error, waits with exponential backoff and then tries the next mo *(hatte die Idee 2×)*
-- Implement a model health check that pings each candidate model with a minimal request before assigning a task, *(hatte die Idee 2×)*
-- Create an input validation step that checks for the existence and readability of all file paths provided in ar *(hatte die Idee 2×)*
+- Implement a shared token-bucket rate limiter with exponential backoff and jitter across all model endpoints to *(hatte die Idee 2×)*
+- Schedule a periodic swarm goal audit that refreshes stale objectives and injects fresh perspectives to prevent *(hatte die Idee 2×)*
+- Implement a model router that tracks per-provider 429/502 rates and automatically shifts traffic to healthy en *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions are fast but still need idempotent retry logic to handle transient CLI failures.
+- Pruning many events without auditing against organ-health flags risks silent data loss.
+- Evolutionary search can raise scores from 6 to 9 but fails to converge without additional cycles or stricter criteria.
+- Swarm performance suffers when roles lack integration, as evidenced by low score despite multiple builders.
+- Free-tier models frequently return 429/502 errors, requiring automatic fallback and exponential backoff.
 - No per-endpoint failure-rate telemetry exists, so the system cannot trigger alerts or reroute traffic when error rates exceed 30% over 10 calls.
 - Hand actions execute without mandatory pre-commit gates (path validation, simulation verdict, syntax check), causing preventable rollbacks.
 - Swarm-generated insights decay unread because no automated refresh pipeline promotes stale facts into active memory or skill updates.
@@ -51,11 +56,6 @@
 - Swarm knowledge refresh succeeds only when triggered reflexively; no proactive schedule or freshness monitor exists, causing repeated 'stale' drive si
 - Skill proposals accumulate but never graduate to implemented capabilities — the system lacks an automated promote/validate/deploy pipeline for its own
 - Model reliability is the primary bottleneck: nemotron-3-ultra shows 30-43s latency variance and ~50% failure rate, making all downstream tasks unrelia
-- Swarm-goal staleness recurs as a drive signal, yet no automated freshness check or pull mechanism is in place.
-- Stress-aware scheduling is repeatedly proposed (metabolism-aware, latency-aware) but no stress metric or scheduler hook exists yet.
-- Skill proposals accumulate faster than they are implemented; the reflex tool "vorgeschlagene-fähigkeiten-echt-umsetzen.py" closed one loop but lacks a
-- Successful model calls exhibit high and variable latency (36–46 s), indicating saturated endpoints that degrade time-sensitive tasks.
-- Model failures cascade when primary and fallback endpoints both degrade (502 upstream errors followed by 429 rate limits), leaving no healthy route.
 
 ---
 

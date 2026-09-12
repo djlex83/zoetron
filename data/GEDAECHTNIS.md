@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11497 Fakten** · Stand 2026-09-12 12:04 UTC · aktualisiert bei jedem Herzschlag
+**11486 Fakten** · Stand 2026-09-12 12:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7451
-- **swarm_artifact:** 1663
+- **dream:** 7446
+- **swarm_artifact:** 1657
 - **last_swarm_critique:** 906
 - **last_swarm_goal:** 641
 - **anti_pattern:** 373
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912121241:5:e72693`
+*12.09. 12:12 UTC · Quelle: dream*
+
+Hand actions are fast but still need idempotent retry logic to handle transient CLI failures.
+
+### `dream:20260912121241:4:04fa00`
+*12.09. 12:12 UTC · Quelle: dream*
+
+Pruning many events without auditing against organ-health flags risks silent data loss.
+
+### `dream:20260912121241:3:5f7887`
+*12.09. 12:12 UTC · Quelle: dream*
+
+Evolutionary search can raise scores from 6 to 9 but fails to converge without additional cycles or stricter criteria.
+
+### `dream:20260912121241:2:2613fb`
+*12.09. 12:12 UTC · Quelle: dream*
+
+Swarm performance suffers when roles lack integration, as evidenced by low score despite multiple builders.
+
+### `dream:20260912121241:1:96f321`
+*12.09. 12:12 UTC · Quelle: dream*
+
+Free-tier models frequently return 429/502 errors, requiring automatic fallback and exponential backoff.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:2`
 *12.09. 11:59 UTC · Quelle: evolution*
@@ -43047,56 +43072,6 @@ score=4; issues=Pipeline gebrochen: Skript 1 schreibt nach `ideen/skill_candidat
 *29.08. 11:57 UTC · Quelle: system*
 
 Beste Vorschläge in Fähigkeiten verwandeln
-
-### `dream:20260829115634:5:f19187`
-*29.08. 11:56 UTC · Quelle: dream*
-
-Multiple concurrent drive goals (failure analysis, stale insight refresh, dream combination) indicate the system generates more intent than it can execute, causing work fragmentation.
-
-### `dream:20260829115634:4:82ebef`
-*29.08. 11:56 UTC · Quelle: dream*
-
-Hand actions fail due to path resolution errors (sys.argv vs real data path), revealing a systemic environment/configuration mismatch.
-
-### `dream:20260829115634:3:91fc4f`
-*29.08. 11:56 UTC · Quelle: dream*
-
-Pruning thresholds are miscalibrated: zero facts/events pruned suggests retention criteria are too aggressive or access tracking is broken.
-
-### `dream:20260829115634:2:be4c03`
-*29.08. 11:56 UTC · Quelle: dream*
-
-The single working model (ling-3.0-flash-fin) exhibits high latency (7-9s), indicating fallback success trades off against response time.
-
-### `dream:20260829115634:1:39bd26`
-*29.08. 11:56 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without robust fallback.
-
-### `dream:20260829115057:5:9318d1`
-*29.08. 11:50 UTC · Quelle: dream*
-
-Pruning removed zero facts/events despite repeated failures, suggesting the consolidation trigger threshold is too high for acute error patterns.
-
-### `dream:20260829115057:4:899efd`
-*29.08. 11:50 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while the system experiences total LLM unavailability, showing health checks miss external dependency failures.
-
-### `dream:20260829115057:3:864112`
-*29.08. 11:50 UTC · Quelle: dream*
-
-Rate limit errors cascade across all model tiers within minutes, indicating shared quota pools that invalidate fallback chains relying on multiple free models.
-
-### `dream:20260829115057:2:09e569`
-*29.08. 11:50 UTC · Quelle: dream*
-
-The only successful task completion used a deterministic Python script (marktanalyse-endlich-abschließen.py) instead of LLM calls, proving tool-based reflexes bypass rate limits entirely.
-
-### `dream:20260829115057:1:c431a7`
-*29.08. 11:50 UTC · Quelle: dream*
-
-All free models fail simultaneously via OpenRouter 429 errors, revealing the API gateway as a single point of failure rather than model-specific issues.
 
 ### `last_swarm_critique`
 *29.08. 11:03 UTC · Quelle: critic*
