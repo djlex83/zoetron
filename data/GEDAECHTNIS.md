@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11403 Fakten** · Stand 2026-09-12 19:21 UTC · aktualisiert bei jedem Herzschlag
+**11401 Fakten** · Stand 2026-09-12 19:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7361
-- **swarm_artifact:** 1649
+- **dream:** 7366
+- **swarm_artifact:** 1643
 - **last_swarm_critique:** 913
 - **last_swarm_goal:** 648
 - **anti_pattern:** 371
 - **strategy:** 188
-- **tool:** 154
+- **tool:** 153
 - **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912192902:5:691907`
+*12.09. 19:29 UTC · Quelle: dream*
+
+Reflexes for swarm cleanup and model health audit improve system resilience and reduce downtime.
+
+### `dream:20260912192902:4:813675`
+*12.09. 19:29 UTC · Quelle: dream*
+
+Model latency varies widely across providers, making health tracking essential for selection.
+
+### `dream:20260912192902:3:4b221d`
+*12.09. 19:29 UTC · Quelle: dream*
+
+Drive goals become stale quickly, triggering reflexes that refresh swarm information automatically.
+
+### `dream:20260912192902:2:98501c`
+*12.09. 19:29 UTC · Quelle: dream*
+
+Aggressive event pruning can discard critical failure sequences, so pruning should preserve recent failure data.
+
+### `dream:20260912192902:1:a96646`
+*12.09. 19:29 UTC · Quelle: dream*
+
+Model failures due to rate limiting and upstream overload are frequent and require error-type-specific backoff strategies.
 
 ### `dream:20260912191909:5:d03579`
 *12.09. 19:19 UTC · Quelle: dream*
@@ -42587,11 +42612,6 @@ Skill proposals accumulate but rarely reach deployment; a gated lifecycle (propo
 *29.08. 19:30 UTC · Quelle: dream*
 
 Model API reliability is the primary systemic bottleneck: 429 rate limits and 502/503 upstream errors affect every provider, requiring automatic fallback chains with health scoring.
-
-### `tool:marktlücke-endgültig-identifizieren`
-*29.08. 19:22 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Marktlücke endgültig identifizieren'. Datei: data/tools/marktlücke-endgültig-identifizieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *29.08. 19:22 UTC · Quelle: critic*

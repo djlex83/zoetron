@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 19:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 19:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflexes for swarm cleanup and model health audit improve system resilience and reduce downtime.
+- Model latency varies widely across providers, making health tracking essential for selection.
+- Drive goals become stale quickly, triggering reflexes that refresh swarm information automatically.
+- Aggressive event pruning can discard critical failure sequences, so pruning should preserve recent failure data.
+- Model failures due to rate limiting and upstream overload are frequent and require error-type-specific backoff strategies.
 - Pruning 25 facts and 87 events demonstrates that regular memory cleanup is necessary to avoid context overflow.
 - The task 'Veraltete Gruppen-Informationen aktualisieren' produced delta 0.0 and kanten 0, meaning no knowledge graph edges were created.
 - The dots-studio model exhibited latencies up to 41 seconds, which can stall the pipeline if used as the primary model.
@@ -51,11 +56,6 @@
 - Drive goals for 'model stability' and 'swarm goal freshness' recur every cycle, indicating the underlying fixes are not sticking or not being executed
 - Reflex tools show inconsistent success (one ok, one exit=1) with no visible retry or fallback logic, causing goal stalls when tools fail.
 - External model providers (Nvidia, Google) fail frequently with 502/429 errors while only dots-studio/dots-3-note-preview remains reliable, creating a 
-- Aggressive pruning (79 events removed) risks discarding failure-pattern context needed for model router training.
-- Reflex-driven maintenance (swarm goal refresh) succeeds when manually invoked but lacks scheduled execution for continuous hygiene.
-- Goal staleness triggers reactive drive_goal creation but no proactive detector exists to refresh goals before they degrade performance.
-- Free-tier model reliability is too low for production use without automatic health-aware routing and circuit breaking.
-- Model failures cluster by provider: NVIDIA models timeout while Google models hit 429 rate limits, requiring provider-specific retry policies.
 
 ---
 
