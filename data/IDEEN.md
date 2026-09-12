@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 22:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 23:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale swarm knowledge persists because there is no verification step before marking knowledge current.
+- Pruning only completed-goal history discards valuable failure events, hindering pattern recognition.
+- Simulations are generated but never applied, revealing a missing pipeline to convert them into executable artifacts.
+- Missing input files cause hand_action failures, indicating a need for pre-execution resource validation.
+- Provider errors (502/429) recur because the system does not check health before invocation.
 - Reflex-driven error reduction pipelines execute reliably when triggered but lack proactive health-based invocation.
 - The dots-studio fallback model succeeds consistently but at 2-3x latency, making it viable only for non-critical async paths.
 - Skill proposals accumulate unused without an automated incubator that shadow-tests and promotes after proven success runs.
@@ -51,11 +56,6 @@
 - No stress-aware load shedding exists despite repeated proposals: high model latency and concurrent failures indicate unbounded concurrency under load.
 - Skill proposals accumulate but remain unimplemented: 10+ proposals across two dream cycles yet a drive goal explicitly signals 'Vorgeschlagene Fähigke
 - Model API reliability is the primary system bottleneck: 3/4 providers failed with 502 upstream errors and 429 rate limits, while latency varied 3x (19
-- A calibration abs_error of 1 on a 5–6 count suggests low-count predictions need wider intervals to reduce systematic underestimation.
-- Pruning 62 events in a single cycle risks severing causal chains that future consolidation passes need to reconstruct.
-- Three simulation revisions with 3 unresolved risks indicates the simulation→act loop lacks a hard closure gate that blocks act_done on open risks.
-- Evolution raised the score from 6 to 9 but still failed to converge, proving that score improvement alone is an insufficient convergence signal.
-- Google Gemma endpoints trigger 429 rate limits more aggressively than other providers, requiring per-provider throttle budgets rather than uniform ret
 
 ---
 

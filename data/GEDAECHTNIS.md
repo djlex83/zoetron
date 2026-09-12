@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11396 Fakten** · Stand 2026-09-12 23:00 UTC · aktualisiert bei jedem Herzschlag
+**11386 Fakten** · Stand 2026-09-12 23:10 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7341
-- **swarm_artifact:** 1655
+- **swarm_artifact:** 1649
 - **last_swarm_critique:** 918
 - **last_swarm_goal:** 653
-- **anti_pattern:** 369
-- **strategy:** 187
-- **tool:** 154
+- **anti_pattern:** 367
+- **strategy:** 186
+- **tool:** 153
 - **hand_result:** 81
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912230756:5:d0a088`
+*12.09. 23:07 UTC · Quelle: dream*
+
+Stale swarm knowledge persists because there is no verification step before marking knowledge current.
+
+### `dream:20260912230756:4:06c159`
+*12.09. 23:07 UTC · Quelle: dream*
+
+Pruning only completed-goal history discards valuable failure events, hindering pattern recognition.
+
+### `dream:20260912230756:3:68c932`
+*12.09. 23:07 UTC · Quelle: dream*
+
+Simulations are generated but never applied, revealing a missing pipeline to convert them into executable artifacts.
+
+### `dream:20260912230756:2:98b7db`
+*12.09. 23:07 UTC · Quelle: dream*
+
+Missing input files cause hand_action failures, indicating a need for pre-execution resource validation.
+
+### `dream:20260912230756:1:7eb436`
+*12.09. 23:07 UTC · Quelle: dream*
+
+Provider errors (502/429) recur because the system does not check health before invocation.
 
 ### `last_swarm_critique`
 *12.09. 22:58 UTC · Quelle: critic*
@@ -42448,21 +42473,6 @@ Fallback model nvidia/nemotron-3-ultra succeeds but exhibits 6x latency variance
 
 The model z-ai/glm-5.2:free fails deterministically with HTTP 429 on every call, indicating a hard quota exhaustion that requires permanent quarantine or header-based rate-limit parsing.
 
-### `tool:fertigkeiten-wirklich-zu-ende-bringen`
-*29.08. 22:56 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fertigkeiten wirklich zu Ende bringen'. Datei: data/tools/fertigkeiten-wirklich-zu-ende-bringen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fertigkeiten wirklich zu:2`
-*29.08. 22:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [5, 4, 6]): Event-Sourced Stage Pipeline with Persistent State Machine - Jede Stage ist ein eigenständiger Prozess/Service, der Events konsumiert und emittet (z. B. über Redis Streams, Kafka oder lokale Datei-Queue). Zentraler St
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fertigkeiten wirklich zu:1`
-*29.08. 22:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): Declarative Pipeline Definition with Runtime Interpreter - Pipeline-Struktur wird rein deklarativ in YAML/JSON definiert (Stages, Dependencies, Inputs/Outputs, Contracts). Ein generischer Interpreter (pipeline_engine.
-
 ### `last_swarm_critique`
 *29.08. 22:55 UTC · Quelle: critic*
 
@@ -42472,31 +42482,6 @@ score=6; issues=Drei separate Skripte ohne Orchestrierung - kein einzelner Entry
 *29.08. 22:52 UTC · Quelle: system*
 
 Fertigkeiten wirklich zu Ende bringen
-
-### `dream:20260829225201:5:43a598`
-*29.08. 22:52 UTC · Quelle: dream*
-
-Duplicate work avoidance recurs as a goal but lacks a persistent registry of completed work across sessions.
-
-### `dream:20260829225201:4:500f3a`
-*29.08. 22:52 UTC · Quelle: dream*
-
-High stress (1.0) triggers conserve mode that severely limits throughput (max_tasks: 3, max_iterations: 1), creating a bottleneck.
-
-### `dream:20260829225201:3:71ee4d`
-*29.08. 22:52 UTC · Quelle: dream*
-
-Simulation pre-checks (verdict: go, risks: 3) effectively gate risky actions but are not yet integrated with model selection logic.
-
-### `dream:20260829225201:2:a54a05`
-*29.08. 22:52 UTC · Quelle: dream*
-
-Relative path resolution fails in containerized environments; all file operations must use absolute paths expanded from ZOETRON_DATA.
-
-### `dream:20260829225201:1:c01fba`
-*29.08. 22:52 UTC · Quelle: dream*
-
-Free tier models exhibit high failure rates (429 rate limits, 502 upstream overload) requiring robust fallback chains and rate-limit handling.
 
 ### `last_swarm_critique`
 *29.08. 22:06 UTC · Quelle: critic*
