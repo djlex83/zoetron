@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11486 Fakten** · Stand 2026-09-12 12:15 UTC · aktualisiert bei jedem Herzschlag
+**11499 Fakten** · Stand 2026-09-12 12:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7446
-- **swarm_artifact:** 1657
-- **last_swarm_critique:** 906
-- **last_swarm_goal:** 641
+- **dream:** 7451
+- **swarm_artifact:** 1663
+- **last_swarm_critique:** 907
+- **last_swarm_goal:** 642
 - **anti_pattern:** 373
 - **strategy:** 189
-- **tool:** 155
-- **hand_result:** 80
+- **tool:** 154
+- **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Ferne Träume und Erinner:2`
+*12.09. 12:37 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Offline Batch + Incremental Delta Strategy - Decouple ingestion from linking: Stage 1 (offline, idempotent) reads raw entries, normalizes to Parquet with strict schema (pyarrow), stores in object storage. Stage 2 (incremental
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Ferne Träume und Erinner:1`
+*12.09. 12:37 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Graph Database Native Approach - Model dreams and memories as nodes in a persistent property graph (Neo4j Community or Kuzu embedded). Ingest once: parse raw entries with robust schema validation (pydantic), write nodes with 
+
+### `last_swarm_critique`
+*12.09. 12:35 UTC · Quelle: critic*
+
+score=4; issues=First script outputs to stdout, not to a file, breaking the pipeline for the second script.; Second script requires external zoetron modules and expects an analysis file that is not produced.; Second script does not persist edges, so third scri
+
+### `last_swarm_goal`
+*12.09. 12:24 UTC · Quelle: system*
+
+Ferne Träume und Erinnerungen verbinden
+
+### `dream:20260912122359:5:a7e61f`
+*12.09. 12:23 UTC · Quelle: dream*
+
+Pruning runs remove events without cross-referencing organ-health flags, risking silent data loss when diagnostics are deferred.
+
+### `dream:20260912122359:4:c85a27`
+*12.09. 12:23 UTC · Quelle: dream*
+
+Transient CLI failures lack idempotent retry wrappers, causing unnecessary manual re-intervention despite known exponential-backoff patterns.
+
+### `dream:20260912122359:3:d0f7df`
+*12.09. 12:23 UTC · Quelle: dream*
+
+Swarm knowledge staleness triggers repeated refresh goals, but no automated freshness daemon exists to prevent recurrent staleness.
+
+### `dream:20260912122359:2:445edc`
+*12.09. 12:23 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than implementation, creating a proposal-execution gap that stalls capability growth.
+
+### `dream:20260912122359:1:8e36a8`
+*12.09. 12:23 UTC · Quelle: dream*
+
+Model error rates persistently drive failure signals across cycles, indicating current models lack reliability for autonomous operation without circuit-breakers.
 
 ### `dream:20260912121241:5:e72693`
 *12.09. 12:12 UTC · Quelle: dream*
@@ -43047,21 +43092,6 @@ Simulations generate revision plans (5 revisions) but zero are applied, revealin
 *29.08. 12:32 UTC · Quelle: dream*
 
 Rate limiting (429 errors) is the systemic bottleneck across all free-tier models, not an isolated model failure.
-
-### `tool:beste-vorschläge-in-fähigkeiten-verwande`
-*29.08. 12:17 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Beste Vorschläge in Fähigkeiten verwandeln'. Datei: data/tools/beste-vorschläge-in-fähigkeiten-verwande.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Beste Vorschläge in Fähi:1`
-*29.08. 12:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Unified Data Contract & Shared Library - Define a single canonical JSON schema (e.g., `SkillCandidateSchema`) and a shared Python module (`skill_io.py`) that both scripts import. Script 1 uses `skill_io.write_candidates(path,
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Beste Vorschläge in Fähi:0`
-*29.08. 12:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Adapter/Transformer Pipeline - Introduce a lightweight transformer script (or inline function) that runs automatically between Script 1 and Script 2. It reads `ideen/skill_candidates.json`, extracts the `candidates` list, wra
 
 ### `last_swarm_critique`
 *29.08. 12:10 UTC · Quelle: critic*
