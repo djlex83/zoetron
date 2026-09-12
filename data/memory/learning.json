@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-12 02:57:40",
+ "stand": "2026-09-12 03:07:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {

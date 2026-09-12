@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11499 Fakten** · Stand 2026-09-12 02:59 UTC · aktualisiert bei jedem Herzschlag
+**11499 Fakten** · Stand 2026-09-12 03:09 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7436
 - **swarm_artifact:** 1689
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912030656:5:4e1be2`
+*12.09. 03:06 UTC · Quelle: dream*
+
+Swarm knowledge refresh lacks quality gates (critic count, score floor, TTL), so stale or low-quality critiques can pollute the knowledge base.
+
+### `dream:20260912030656:4:161713`
+*12.09. 03:06 UTC · Quelle: dream*
+
+Fixed pruning thresholds and hand-action timeouts ignore workload variability, causing either premature eviction or OOM pressure.
+
+### `dream:20260912030656:3:24a62b`
+*12.09. 03:06 UTC · Quelle: dream*
+
+Skill proposals recur across dream cycles (model router, metric gating, dream-to-skill pipeline) but never graduate to deployed tools, indicating a broken proposal-to-production loop.
+
+### `dream:20260912030656:2:3d0445`
+*12.09. 03:06 UTC · Quelle: dream*
+
+Reflexes converge without measurable effectiveness metrics, making it impossible to distinguish genuine improvement from false convergence.
+
+### `dream:20260912030656:1:c5106b`
+*12.09. 03:06 UTC · Quelle: dream*
+
+Model endpoint reliability is the primary failure mode: repeated 502 errors from a single provider halt progress without fallback routing.
 
 ### `dream:20260912025648:5:3144a6`
 *12.09. 02:56 UTC · Quelle: dream*
@@ -43072,31 +43097,6 @@ score=9; issues=
 *29.08. 03:06 UTC · Quelle: system*
 
 Alte Marktforschungsergebnisse aktualisieren
-
-### `dream:20260829030633:5:b76ebd`
-*29.08. 03:06 UTC · Quelle: dream*
-
-Evolutionary optimization lifted the capability score from 6 to 9 by replacing fallback-dummy modules with functional implementations in the winning variant.
-
-### `dream:20260829030633:4:810f86`
-*29.08. 03:06 UTC · Quelle: dream*
-
-Calibration error of 3 (predicted 3 vs actual 6) indicates the effort estimator systematically underestimates integration complexity for new capabilities.
-
-### `dream:20260829030633:3:e2ad6f`
-*29.08. 03:06 UTC · Quelle: dream*
-
-Simulation-driven revision (5 risks → 5 revisions) successfully hardened the artifact before execution, evidenced by TOR green on first run.
-
-### `dream:20260829030633:2:d8b705`
-*29.08. 03:06 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (6.8–79.4s), requiring timeout and retry policies tuned to the 95th percentile.
-
-### `dream:20260829030633:1:b0428e`
-*29.08. 03:06 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model is consistently unavailable due to rate limiting (429 errors), making it unreliable as a primary or fallback provider.
 
 ### `last_swarm_critique`
 *29.08. 02:51 UTC · Quelle: critic*

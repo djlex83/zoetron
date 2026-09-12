@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 02:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 03:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 6×)*
+- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 7×)*
 - Add pre-flight 1-token health probe to selbstdiagnose for each candidate model before planner assigns tasks. *(hatte die Idee 5×)*
 - Create shared HTTP wrapper with exponential backoff (base 2s, max 30s, 3 retries, jitter) for all OpenRouter c *(hatte die Idee 4×)*
 - Build DegradedMode skill: when >2 models disabled, restrict planner to inclusionai model only, halve token bud *(hatte die Idee 4×)*
@@ -15,11 +15,11 @@
 - Create a swarm convergence gate requiring minimum 3 critic cycles or 30% dissent threshold before marking conv *(hatte die Idee 4×)*
 - Develop a calibration multiplier module that inflates initial effort estimates by 4-5x for swarm planning. *(hatte die Idee 4×)*
 - Enforce swarm refresh quality gate: require ≥2 critics, minimum score 8, critic sign-off, and TTL-based stalen *(hatte die Idee 4×)*
-- Implement model router with health scoring, exponential backoff, automatic fallback to highest-reliability pro *(hatte die Idee 3×)*
-- Create skill promotion gate requiring automated benchmark pass, soak period, and explicit convergence contract *(hatte die Idee 3×)*
 - Extend selbstdiagnose to publish operational health metrics (model success rate, convergence rate, latency per *(hatte die Idee 3×)*
 - Add pruning audit trail logging retention criteria, discarded pattern signatures, and impact scores; preserve  *(hatte die Idee 3×)*
 - Build drive-goal escalation loop that converts failure/stale/gap signals into scheduled reflex invocations wit *(hatte die Idee 3×)*
+- Deploy ModelRouter with 5-min sliding-window 429/502 tracking, auto-disable at >30% failure rate, 10s timeout, *(hatte die Idee 3×)*
+- Implement PathResolver utility that expands sys.argv[1] and ZOETRON_DATA into absolute paths before every hand *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -32,8 +32,8 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Ziele aufräumen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge refresh lacks quality gates (critic count, score floor, TTL), so stale or low-quality critiques can pollute the knowledge base.
+- Fixed pruning thresholds and hand-action timeouts ignore workload variability, causing either premature eviction or OOM pressure.
+- Skill proposals recur across dream cycles (model router, metric gating, dream-to-skill pipeline) but never graduate to deployed tools, indicating a br
+- Reflexes converge without measurable effectiveness metrics, making it impossible to distinguish genuine improvement from false convergence.
+- Model endpoint reliability is the primary failure mode: repeated 502 errors from a single provider halt progress without fallback routing.
 - Skill proposals accumulate (6+ this cycle) but no automated pipeline promotes them to deployed, tested skills visible to the planner.
 - Swarm goals become stale and activities gap because no durable persistence restores collaboration state across sleep cycles.
 - Pruning removes 10-21 items per cycle without goal-awareness, risking deletion of facts tagged with active 'stale' or 'failure' signals.
@@ -51,11 +56,6 @@
 - Prune runs discard 3-4x more events than facts, suggesting event retention policy is too aggressive for diagnostic value.
 - Reflex tools achieve 100% success on concrete goals (error reduction, dream utilization) but only when triggered by explicit drive signals.
 - Free-tier models (gemma) consistently hit 429 rate limits under load while nemotron-3-ultra remains stable across variable latencies (22-61s).
-- Skill proposals accumulate in dream output but never enter a regression-gated promotion pipeline, so validated capabilities never become callable tool
-- Swarm-goal staleness recurs because refresh triggers lack critic quorum, score thresholds, and TTL-based automation, relying on manual drive signals.
-- Pruning aggressively discards events (22 then 1) while preserving facts, yet no retention policy tags critical diagnostic events for longer survival.
-- Reflex tools succeed syntactically (exit 0) but lack measurable outcome gates, allowing stale swarm goals and unvalidated error reductions to pass as 
-- Model endpoint failures (502 upstream, 429 rate limits) cascade silently because reflexes report converged=true without validating actual output quali
 
 ---
 
