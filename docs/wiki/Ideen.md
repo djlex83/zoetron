@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 23:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 23:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,13 +26,13 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation closure achieved with score 8 despite 6-point calibration error, indicating success metrics decoupled from prediction accuracy.
+- Event pruning removes 18 events per cycle while preserving zero facts, potentially severing causal chains needed for root-cause analysis.
+- Single-cycle swarm convergence with 3:1 builder-to-critic ratio risks premature commitment without sufficient critical evaluation.
+- Low-count calibration systematically underestimates actuals (predicted 2 vs actual 8) demanding statistical correction factors for sparse data.
+- Model provider failures cascade across endpoints (502 upstream, 429 rate limits) requiring per-provider adaptive retry logic with learned throttle win
 - Stale swarm knowledge persists because there is no verification step before marking knowledge current.
 - Pruning only completed-goal history discards valuable failure events, hindering pattern recognition.
 - Simulations are generated but never applied, revealing a missing pipeline to convert them into executable artifacts.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate unused without an automated incubator that shadow-tests and promotes after proven success runs.
 - Provider health scoring must weight 429 frequency and 502 overload signals equally with latency to avoid routing to degraded models.
 - Free-tier model APIs require a centralized singleton token-bucket rate limiter to prevent 429 cascades across independent callers.
-- Structured error handling for external actions is absent: hand_action returns only exit code, losing stdout/stderr context needed for automated recove
-- Swarm goal staleness is actively managed via reflex but lacks systematic TTL enforcement: one-off cleanup succeeded but no daemon archives >30-day goa
-- No stress-aware load shedding exists despite repeated proposals: high model latency and concurrent failures indicate unbounded concurrency under load.
-- Skill proposals accumulate but remain unimplemented: 10+ proposals across two dream cycles yet a drive goal explicitly signals 'Vorgeschlagene Fähigke
-- Model API reliability is the primary system bottleneck: 3/4 providers failed with 502 upstream errors and 429 rate limits, while latency varied 3x (19
 
 ---
 

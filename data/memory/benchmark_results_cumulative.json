@@ -1,0 +1,1221 @@
+[
+  {
+    "capability_path": "tools_abgelehnt/20260826_113422_vorgeschlagene-fähigkeiten-wirklich-ausp.py.grund.txt",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549052",
+    "assessment": {
+      "capability_path": "tools_abgelehnt/20260826_113422_vorgeschlagene-fähigkeiten-wirklich-ausp.py.grund.txt",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549026"
+    }
+  },
+  {
+    "capability_path": "artefakte/s01_1788781874_audit-existing-proposed-capabilities-from-ideen-and-werkzeug.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549075",
+    "assessment": {
+      "capability_path": "artefakte/s01_1788781874_audit-existing-proposed-capabilities-from-ideen-and-werkzeug.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549063"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1788821767_discover-proposed-capabilities-via-semantic-search.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549094",
+    "assessment": {
+      "capability_path": "artefakte/s05_1788821767_discover-proposed-capabilities-via-semantic-search.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549083"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1788821853_verify-each-proposed-capability-with-werkzeugpruefung.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549110",
+    "assessment": {
+      "capability_path": "artefakte/s05_1788821853_verify-each-proposed-capability-with-werkzeugpruefung.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549100"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1788861723_convert-dream-patterns-into-skill-proposals-via-semantic-mem.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549126",
+    "assessment": {
+      "capability_path": "artefakte/s05_1788861723_convert-dream-patterns-into-skill-proposals-via-semantic-mem.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549116"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1788861838_verify-skill-proposals-through-benchmark-organ.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549144",
+    "assessment": {
+      "capability_path": "artefakte/s05_1788861838_verify-skill-proposals-through-benchmark-organ.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions convergence - prioritize messe_konvergenz"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549133"
+    }
+  },
+  {
+    "capability_path": "artefakte/s07_1788909829_discover-and-catalog-proposed-capabilities-from-idea-collect.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549159",
+    "assessment": {
+      "capability_path": "artefakte/s07_1788909829_discover-and-catalog-proposed-capabilities-from-idea-collect.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549150"
+    }
+  },
+  {
+    "capability_path": "artefakte/s03_1788924915_extend-werkzeugpruefung-with-skill-proposal-ingestion-pipeli.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549173",
+    "assessment": {
+      "capability_path": "artefakte/s03_1788924915_extend-werkzeugpruefung-with-skill-proposal-ingestion-pipeli.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549165"
+    }
+  },
+  {
+    "capability_path": "artefakte/s08_1788965869_audit-existing-capability-proposals-and-filter-viable-candid.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549188",
+    "assessment": {
+      "capability_path": "artefakte/s08_1788965869_audit-existing-capability-proposals-and-filter-viable-candid.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549180"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1789125235_fehlgeschlagenes-werkzeug-analysieren-und-reparieren.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549208",
+    "assessment": {
+      "capability_path": "artefakte/s05_1789125235_fehlgeschlagenes-werkzeug-analysieren-und-reparieren.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549195"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1789143405_audit-existing-resilience-organs-and-locate-unimplemented-sk.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549224",
+    "assessment": {
+      "capability_path": "artefakte/s05_1789143405_audit-existing-resilience-organs-and-locate-unimplemented-sk.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549216"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1789159162_scan-existing-skill-proposals-from-dreams-and-ideas-memory.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549240",
+    "assessment": {
+      "capability_path": "artefakte/s05_1789159162_scan-existing-skill-proposals-from-dreams-and-ideas-memory.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549231"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1789159296_run-new-skills-through-benchmark-organ-and-convergence-gate.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549255",
+    "assessment": {
+      "capability_path": "artefakte/s05_1789159296_run-new-skills-through-benchmark-organ-and-convergence-gate.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549246"
+    }
+  },
+  {
+    "capability_path": "artefakte/s09_1789175038_discover-and-catalog-all-existing-skill-proposals.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549270",
+    "assessment": {
+      "capability_path": "artefakte/s09_1789175038_discover-and-catalog-all-existing-skill-proposals.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549261"
+    }
+  },
+  {
+    "capability_path": "artefakte/s09_1789175204_register-new-skills-in-tool-registry-and-test-execution.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549284",
+    "assessment": {
+      "capability_path": "artefakte/s09_1789175204_register-new-skills-in-tool-registry-and-test-execution.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549276"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1789190441_discover-proposed-capabilities-from-memory-and-knowledge-gra.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549301",
+    "assessment": {
+      "capability_path": "artefakte/s05_1789190441_discover-proposed-capabilities-from-memory-and-knowledge-gra.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549290"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1789190528_find-executable-tools-for-proposed-capabilities-via-reflexsu.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549316",
+    "assessment": {
+      "capability_path": "artefakte/s05_1789190528_find-executable-tools-for-proposed-capabilities-via-reflexsu.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549307"
+    }
+  },
+  {
+    "capability_path": "artefakte/s05_1789190614_execute-and-validate-each-proposed-capability-with-hands-and.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549331",
+    "assessment": {
+      "capability_path": "artefakte/s05_1789190614_execute-and-validate-each-proposed-capability-with-hands-and.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549322"
+    }
+  },
+  {
+    "capability_path": "artefakte/s09_1789197193_verkn-pfe-traummuster-mit-bestehenden-f-higkeits-vorschl-gen.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549347",
+    "assessment": {
+      "capability_path": "artefakte/s09_1789197193_verkn-pfe-traummuster-mit-bestehenden-f-higkeits-vorschl-gen.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549337"
+    }
+  },
+  {
+    "capability_path": "artefakte/s09_1789197405_erzeuge-validierbare-aktionspl-ne-aus-den-st-rksten-traum-sk.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549364",
+    "assessment": {
+      "capability_path": "artefakte/s09_1789197405_erzeuge-validierbare-aktionspl-ne-aus-den-st-rksten-traum-sk.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549354"
+    }
+  },
+  {
+    "capability_path": "artefakte/s09_1789199550_discover-existing-skill-proposals-from-memory-and-idea-colle.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549379",
+    "assessment": {
+      "capability_path": "artefakte/s09_1789199550_discover-existing-skill-proposals-from-memory-and-idea-colle.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549370"
+    }
+  },
+  {
+    "capability_path": "artefakte/s09_1789199625_validate-skill-proposals-against-tool-admission-criteria.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549393",
+    "assessment": {
+      "capability_path": "artefakte/s09_1789199625_validate-skill-proposals-against-tool-admission-criteria.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549385"
+    }
+  },
+  {
+    "capability_path": "artefakte/s09_1789199826_register-new-skills-in-the-capability-benchmark-and-reflex-s.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549408",
+    "assessment": {
+      "capability_path": "artefakte/s09_1789199826_register-new-skills-in-the-capability-benchmark-and-reflex-s.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549399"
+    }
+  },
+  {
+    "capability_path": "artefakte/s04_1789239496_extract-dream-insights-and-convert-to-skill-proposals.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549423",
+    "assessment": {
+      "capability_path": "artefakte/s04_1789239496_extract-dream-insights-and-convert-to-skill-proposals.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549414"
+    }
+  },
+  {
+    "capability_path": "artefakte/s04_1789239627_validate-skill-proposals-through-benchmark-organ.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549438",
+    "assessment": {
+      "capability_path": "artefakte/s04_1789239627_validate-skill-proposals-through-benchmark-organ.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549430"
+    }
+  },
+  {
+    "capability_path": "artefakte/1789255244_discover-and-catalog-all-proposed-capabilities-awaiting-vali.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549459",
+    "assessment": {
+      "capability_path": "artefakte/1789255244_discover-and-catalog-all-proposed-capabilities-awaiting-vali.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549447"
+    }
+  },
+  {
+    "capability_path": "artefakte/1789255302_execute-benchmark-suite-on-each-untested-proposed-capability.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549478",
+    "assessment": {
+      "capability_path": "artefakte/1789255302_execute-benchmark-suite-on-each-untested-proposed-capability.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge",
+        "Capability mentions convergence - prioritize messe_konvergenz"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549467"
+    }
+  },
+  {
+    "capability_path": "artefakte/1789255379_validate-proposed-capabilities-through-convergence-gate-befo.md",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549493",
+    "assessment": {
+      "capability_path": "artefakte/1789255379_validate-proposed-capabilities-through-convergence-gate-befo.md",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions convergence - prioritize messe_konvergenz"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549484"
+    }
+  },
+  {
+    "capability_path": "artefakte/faehigkeits_inventar.json",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549509",
+    "assessment": {
+      "capability_path": "artefakte/faehigkeits_inventar.json",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549499"
+    }
+  },
+  {
+    "capability_path": "artefakte/capability_inventory_20260909_015616.json",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549523",
+    "assessment": {
+      "capability_path": "artefakte/capability_inventory_20260909_015616.json",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549515"
+    }
+  },
+  {
+    "capability_path": "artefakte/capability_inventory_20260909_020020.json",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549537",
+    "assessment": {
+      "capability_path": "artefakte/capability_inventory_20260909_020020.json",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549529"
+    }
+  },
+  {
+    "capability_path": "artefakte/marktanalyse/geladene_daten.json",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549552",
+    "assessment": {
+      "capability_path": "artefakte/marktanalyse/geladene_daten.json",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549544"
+    }
+  },
+  {
+    "capability_path": "artefakte/inventories/skill_proposals_inventory_20260912_010848.json",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549566",
+    "assessment": {
+      "capability_path": "artefakte/inventories/skill_proposals_inventory_20260912_010848.json",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549558"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549586",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549574"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-testen-und-nu.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549602",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-testen-und-nu.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549593"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549619",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549609"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-tatsächlich-u.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549637",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-tatsächlich-u.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549626"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549654",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549643"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-wirklich-fert.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549670",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-wirklich-fert.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549660"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-besser-prüfen.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549687",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-besser-prüfen.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549677"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-testen-und-be.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549703",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-testen-und-be.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549694"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-in-echte-skil.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549721",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-in-echte-skil.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549710"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-prüfen-und-sp.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549737",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-prüfen-und-sp.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549728"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-praktisch-erp.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549752",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-praktisch-erp.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549743"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-prüfen-und-be.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549770",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-prüfen-und-be.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ",
+        "Capability mentions tools - prioritize messe_werkzeuge"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549759"
+    }
+  },
+  {
+    "capability_path": "tools/fähigkeits-vorschläge-wirklich-umsetzen.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549786",
+    "assessment": {
+      "capability_path": "tools/fähigkeits-vorschläge-wirklich-umsetzen.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549776"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-umsetzen.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549801",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-umsetzen.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549793"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-wirklich-umse.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549817",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-wirklich-umse.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549808"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-endlich-umset.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549831",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-endlich-umset.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549823"
+    }
+  },
+  {
+    "capability_path": "tools/fähigkeits-vorschläge-umsetzen.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549847",
+    "assessment": {
+      "capability_path": "tools/fähigkeits-vorschläge-umsetzen.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549838"
+    }
+  },
+  {
+    "capability_path": "tools/vorgeschlagene-fähigkeiten-ausführen.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549865",
+    "assessment": {
+      "capability_path": "tools/vorgeschlagene-fähigkeiten-ausführen.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549854"
+    }
+  },
+  {
+    "capability_path": "tools/fähigkeitsvorschläge-aktivieren.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549881",
+    "assessment": {
+      "capability_path": "tools/fähigkeitsvorschläge-aktivieren.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549872"
+    }
+  },
+  {
+    "capability_path": "hands_workspace/action_1787721208601.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549900",
+    "assessment": {
+      "capability_path": "hands_workspace/action_1787721208601.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549887"
+    }
+  },
+  {
+    "capability_path": "tools_abgelehnt/vorgeschlagene-fähigkeiten-tatsächlich-a.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549918",
+    "assessment": {
+      "capability_path": "tools_abgelehnt/vorgeschlagene-fähigkeiten-tatsächlich-a.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549907"
+    }
+  },
+  {
+    "capability_path": "tools_abgelehnt/20260826_113422_vorgeschlagene-fähigkeiten-wirklich-ausp.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549933",
+    "assessment": {
+      "capability_path": "tools_abgelehnt/20260826_113422_vorgeschlagene-fähigkeiten-wirklich-ausp.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549925"
+    }
+  },
+  {
+    "capability_path": "tools_abgelehnt/vorgeschlagene-fähigkeiten-wirklich-umse.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549949",
+    "assessment": {
+      "capability_path": "tools_abgelehnt/vorgeschlagene-fähigkeiten-wirklich-umse.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549940"
+    }
+  },
+  {
+    "capability_path": "tools_abgelehnt/vorgeschlagene-fähigkeiten-prüfen-und-nu.py",
+    "measurements": {},
+    "errors": [],
+    "run_at": "2026-09-12T23:23:32.549975",
+    "assessment": {
+      "capability_path": "tools_abgelehnt/vorgeschlagene-fähigkeiten-prüfen-und-nu.py",
+      "suitable_measurements": [],
+      "unsuitable_measurements": [
+        "messe_werkzeuge",
+        "messe_reflex",
+        "messe_konvergenz"
+      ],
+      "adaptations_needed": [
+        "Measurement messe_werkzeuge not found in benchmark_organ",
+        "Measurement messe_reflex not found in benchmark_organ",
+        "Measurement messe_konvergenz not found in benchmark_organ"
+      ],
+      "assessed_at": "2026-09-12T23:23:32.549963"
+    }
+  }
+]

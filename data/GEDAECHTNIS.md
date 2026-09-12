@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11386 Fakten** · Stand 2026-09-12 23:10 UTC · aktualisiert bei jedem Herzschlag
+**11398 Fakten** · Stand 2026-09-12 23:27 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7341
-- **swarm_artifact:** 1649
-- **last_swarm_critique:** 918
-- **last_swarm_goal:** 653
-- **anti_pattern:** 367
-- **strategy:** 186
+- **swarm_artifact:** 1655
+- **last_swarm_critique:** 919
+- **last_swarm_goal:** 654
+- **anti_pattern:** 369
+- **strategy:** 187
 - **tool:** 153
-- **hand_result:** 81
+- **hand_result:** 82
 - **aktuell_organfehler:** 38
 
 ---
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:2`
+*12.09. 23:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Multi-Agent Adversarial Peer Review and Testing - Simulate a rigorous peer review process using a committee of diverse, specialized LLM agents (or automated reasoning agents). Each agent is assigned a distinct role: Security 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:1`
+*12.09. 23:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Formal Contract-Based Verification with Static Analysis - Adopt a specification-driven approach: require each capability to declare a formal contract (preconditions, postconditions, invariants) in a machine-readable format (e
+
+### `last_swarm_critique`
+*12.09. 23:23 UTC · Quelle: critic*
+
+score=6; issues=Peer review validation is only regex pattern matching, not actual peer review or deep static analysis; Relies entirely on external konvergenztor.pruefe module whose implementation is unknown - validation depth depends on that external component
+
+### `last_swarm_goal`
+*12.09. 23:18 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich testen
+
+### `dream:20260912231749:5:adca41`
+*12.09. 23:17 UTC · Quelle: dream*
+
+Simulation closure achieved with score 8 despite 6-point calibration error, indicating success metrics decoupled from prediction accuracy.
+
+### `dream:20260912231749:4:ab99d3`
+*12.09. 23:17 UTC · Quelle: dream*
+
+Event pruning removes 18 events per cycle while preserving zero facts, potentially severing causal chains needed for root-cause analysis.
+
+### `dream:20260912231749:3:278ea0`
+*12.09. 23:17 UTC · Quelle: dream*
+
+Single-cycle swarm convergence with 3:1 builder-to-critic ratio risks premature commitment without sufficient critical evaluation.
+
+### `dream:20260912231749:2:5542b5`
+*12.09. 23:17 UTC · Quelle: dream*
+
+Low-count calibration systematically underestimates actuals (predicted 2 vs actual 8) demanding statistical correction factors for sparse data.
+
+### `dream:20260912231749:1:e2b051`
+*12.09. 23:17 UTC · Quelle: dream*
+
+Model provider failures cascade across endpoints (502 upstream, 429 rate limits) requiring per-provider adaptive retry logic with learned throttle windows.
 
 ### `dream:20260912230756:5:d0a088`
 *12.09. 23:07 UTC · Quelle: dream*
@@ -42447,31 +42492,6 @@ Fallback model latency varies 4x (9.5–41.1s) with no p50/p95 tracking, so dead
 *29.08. 23:20 UTC · Quelle: dream*
 
 Repeated 429 errors on z-ai/glm-5.2:free reveal absent rate-limit header parsing and token-bucket enforcement, causing reactive fallbacks instead of proactive quota management.
-
-### `dream:20260829231534:5:3b93da`
-*29.08. 23:15 UTC · Quelle: dream*
-
-Five skill proposals accumulated without validation gates, creating a backlog of untested ideas; a proposal-to-skill gate with measurable acceptance tests is now a bottleneck.
-
-### `dream:20260829231534:4:72e741`
-*29.08. 23:15 UTC · Quelle: dream*
-
-Reflex execution of "Simulationen konsequent anwenden" converged in one shot, proving that compiled simulation-to-action scripts outperform open-ended swarm cycles for known patterns.
-
-### `dream:20260829231534:3:1672c3`
-*29.08. 23:15 UTC · Quelle: dream*
-
-Swarm task "Doppelte Arbeit vermeiden" scored 7/10 yet failed to converge in 2 cycles despite role evolution, revealing that critic count (1) is insufficient to halt duplicate-work loops.
-
-### `dream:20260829231534:2:c6f37d`
-*29.08. 23:15 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra succeeds but exhibits 6x latency variance (6.5–41 s), causing drive timeouts that the adaptive deadline extender must absorb.
-
-### `dream:20260829231534:1:ffe9e6`
-*29.08. 23:15 UTC · Quelle: dream*
-
-The model z-ai/glm-5.2:free fails deterministically with HTTP 429 on every call, indicating a hard quota exhaustion that requires permanent quarantine or header-based rate-limit parsing.
 
 ### `last_swarm_critique`
 *29.08. 22:55 UTC · Quelle: critic*
