@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11467 Fakten** · Stand 2026-09-12 14:52 UTC · aktualisiert bei jedem Herzschlag
+**11470 Fakten** · Stand 2026-09-12 15:15 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7441
 - **swarm_artifact:** 1645
-- **last_swarm_critique:** 908
-- **last_swarm_goal:** 643
+- **last_swarm_critique:** 909
+- **last_swarm_goal:** 644
 - **anti_pattern:** 371
 - **strategy:** 188
-- **tool:** 151
+- **tool:** 152
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:verbessere-die-modell-genauigkeit`
+*12.09. 15:13 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Verbessere die Modell-Genauigkeit'. Datei: data/tools/verbessere-die-modell-genauigkeit.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*12.09. 15:11 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*12.09. 15:01 UTC · Quelle: system*
+
+Verbessere die Modell-Genauigkeit
+
+### `dream:20260912150029:5:7e0133`
+*12.09. 15:00 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this cycle) but lack a validation-to-promotion pipeline, creating a backlog of unimplemented improvements.
+
+### `dream:20260912150029:4:9c1d89`
+*12.09. 15:00 UTC · Quelle: dream*
+
+Automatic pruning (11 facts, 18 events) runs without error, confirming the memory hygiene loop is functional and non-disruptive.
+
+### `dream:20260912150029:3:5c6cfd`
+*12.09. 15:00 UTC · Quelle: dream*
+
+Reflex-based execution (schwarmwissen-wieder-auffrischen.py) converges reliably in <1s, demonstrating that codified routines outperform LLM calls for known tasks.
+
+### `dream:20260912150029:2:4ce8bc`
+*12.09. 15:00 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview model succeeds but exhibits extreme latency variance (15s to 36s), rendering it unsuitable for time-sensitive reflexes.
+
+### `dream:20260912150029:1:3cc518`
+*12.09. 15:00 UTC · Quelle: dream*
+
+Free model endpoints (Nvidia Nemotron, Google Gemma) fail consistently with 502 overloads, 429 rate limits, and timeouts, making them unreliable for production use.
 
 ### `dream:20260912144936:5:e32ee4`
 *12.09. 14:49 UTC · Quelle: dream*
@@ -42962,31 +43002,6 @@ score=3; issues=Pipeline integration broken: file paths and formats don't match 
 *29.08. 14:51 UTC · Quelle: system*
 
 Veraltete Marktanalysen aktualisieren
-
-### `dream:20260829145048:5:63e30a`
-*29.08. 14:50 UTC · Quelle: dream*
-
-Skill proposals accumulate without implementation because the system lacks a "skill promotion" pipeline that validates, wraps, and registers new capabilities autonomously.
-
-### `dream:20260829145048:4:e70371`
-*29.08. 14:50 UTC · Quelle: dream*
-
-Swarm orchestration remains incomplete despite being a stated goal, creating a capability gap where distributed evaluation cannot offload work from the overloaded primary loop.
-
-### `dream:20260829145048:3:175d74`
-*29.08. 14:50 UTC · Quelle: dream*
-
-High latency variance (8s vs 187s) among working models makes latency-aware routing essential for meeting iteration budgets under stress.
-
-### `dream:20260829145048:2:8d2db9`
-*29.08. 14:50 UTC · Quelle: dream*
-
-The system lacks automatic fallback routing when primary models hit rate limits, causing cascading failures instead of graceful degradation.
-
-### `dream:20260829145048:1:0eea45`
-*29.08. 14:50 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) from OpenRouter is the primary failure mode across multiple model providers, indicating a systemic dependency bottleneck rather than model-specific issues.
 
 ### `last_swarm_critique`
 *29.08. 14:15 UTC · Quelle: critic*

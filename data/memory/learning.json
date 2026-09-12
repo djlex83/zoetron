@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 14:50:36",
+ "stand": "2026-09-12 15:13:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -97,12 +97,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-stark-reduzieren.py",
@@ -189,12 +183,6 @@
    "quote": 0.0
   },
   {
-   "tool": "regelmäßige-selbstprüfung-etablieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeiten-bündeln-und-ziele-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -268,6 +256,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -427,19 +421,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellgenauigkeit-regelmäßig-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.735,
- "simulationen_angewandt": 33,
+ "haende_quote": 0.729,
+ "simulationen_angewandt": 35,
  "swarm_scores": {
   "n": 31,
   "best": 9.0,
-  "schnitt": 4.48
+  "schnitt": 4.52
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 30,
-   "schnitt": 4.5
+   "n": 31,
+   "schnitt": 4.52
   }
  }
 }
