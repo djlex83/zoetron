@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 21:41:08",
+ "stand": "2026-09-12 21:51:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -207,6 +207,12 @@
    "quote": 0.0
   },
   {
+   "tool": "automatische-fehler-reduktions-pipeline-.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "ferngedächtnisse-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -339,12 +345,6 @@
    "quote": 1.0
   },
   {
-   "tool": "automatische-fehler-reduktions-pipeline-.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarm-ergebnisse-in-handlungen-umsetze.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -400,9 +400,9 @@
   }
  ],
  "haende_quote": 0.727,
- "simulationen_angewandt": 33,
+ "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 34,
+  "n": 33,
   "best": 9.0,
   "schnitt": 5.03
  },

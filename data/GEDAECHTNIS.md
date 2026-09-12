@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11388 Fakten** · Stand 2026-09-12 21:42 UTC · aktualisiert bei jedem Herzschlag
+**11388 Fakten** · Stand 2026-09-12 21:53 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7341
 - **swarm_artifact:** 1649
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912215040:5:9e1ed4`
+*12.09. 21:50 UTC · Quelle: dream*
+
+Calibration error of 2 units between predicted and actual outcomes points to the need for feedback-driven plan adjustment.
+
+### `dream:20260912215040:4:5a9300`
+*12.09. 21:50 UTC · Quelle: dream*
+
+The successful hand action after model failures demonstrates that decoupling model calls from action execution improves resilience.
+
+### `dream:20260912215040:3:a47c23`
+*12.09. 21:50 UTC · Quelle: dream*
+
+High stress (0.865) combined with a tight budget (max 3 tasks) correlated with a failed reflex, suggesting resource limits should adapt to stress.
+
+### `dream:20260912215040:2:184a34`
+*12.09. 21:50 UTC · Quelle: dream*
+
+Repeated 502 and 429 errors from model providers show that single-provider reliance leads to outages and requires rotation.
+
+### `dream:20260912215040:1:0f1bb4`
+*12.09. 21:50 UTC · Quelle: dream*
+
+A 20-second timeout in a hand action caused failure, indicating that external commands need explicit timeout handling and fallback.
 
 ### `dream:20260912214019:5:8ce28a`
 *12.09. 21:40 UTC · Quelle: dream*
@@ -42467,31 +42492,6 @@ The system's internal health (selbstdiagnose) remains clean while external depen
 *29.08. 21:53 UTC · Quelle: dream*
 
 External API failures (429 rate limits, 502 upstream overloads) are systemic across all free-tier models, not isolated incidents, requiring architectural resilience rather than model-specific workarounds.
-
-### `dream:20260829214551:5:0e5164`
-*29.08. 21:45 UTC · Quelle: dream*
-
-Having at least one reliable alternative model that completes tasks when the primary fails demonstrates that redundancy is essential for task resilience.
-
-### `dream:20260829214551:4:0bfe26`
-*29.08. 21:45 UTC · Quelle: dream*
-
-Unfinished analytical work decays into waste when there is no mechanism to convert it into concrete next steps.
-
-### `dream:20260829214551:3:1d00f1`
-*29.08. 21:45 UTC · Quelle: dream*
-
-Reflex-driven consolidation successfully converts experience into action, proving that autonomous replay mechanisms work for skill internalization.
-
-### `dream:20260829214551:2:e07c67`
-*29.08. 21:45 UTC · Quelle: dream*
-
-Proposed skills accumulate as dead weight without a conversion gate that requires implementation steps, validation criteria, and ownership.
-
-### `dream:20260829214551:1:daca94`
-*29.08. 21:45 UTC · Quelle: dream*
-
-External API rate limits (429) are a recurring failure mode that blocks the task pipeline when no fallback model is available.
 
 ### `last_swarm_critique`
 *29.08. 20:56 UTC · Quelle: critic*

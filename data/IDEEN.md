@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 21:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 21:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 2 units between predicted and actual outcomes points to the need for feedback-driven plan adjustment.
+- The successful hand action after model failures demonstrates that decoupling model calls from action execution improves resilience.
+- High stress (0.865) combined with a tight budget (max 3 tasks) correlated with a failed reflex, suggesting resource limits should adapt to stress.
+- Repeated 502 and 429 errors from model providers show that single-provider reliance leads to outages and requires rotation.
+- A 20-second timeout in a hand action caused failure, indicating that external commands need explicit timeout handling and fallback.
 - Swarm goals and facts decay without automated freshness enforcement, requiring manual drive goals to refresh.
 - Simulations produce risks/revisions (5 each) but no evidence they gate execution, creating a simulation-to-action gap.
 - System stress (0.865) triggers conserve mode that caps retries exactly when model fallback chains need more attempts.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without an execution mechanism—proposal does not equal deployed capability.
 - Reactive fallback succeeds eventually but wastes cycles; proactive health-based routing would prevent failed attempts.
 - Provider-side rate limits (429) and upstream outages (502) are the dominant failure mode, not model capability.
-- Pruning runs show asymmetric cleanup (facts vs events), indicating that event retention policies are misaligned with actual memory pressure.
-- Reflex-driven stale-data refresh succeeded and converged in one cycle, demonstrating that targeted, single-purpose reflexes outperform open-ended swar
-- Skill proposals accumulate (10+ in this session) but none are instantiated, revealing a systemic 'proposal-to-production' gap where ideas never reach 
-- Absence of a global request queue causes simultaneous 429 errors across multiple models, proving that per-model rate limiting is insufficient when sha
-- Nemotron and Gemma models consistently fail under load (502/429) while dots-studio/dots-3-note-preview delivers 3x lower latency with zero errors, mak
 
 ---
 
