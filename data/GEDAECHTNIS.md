@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11411 Fakten** · Stand 2026-09-12 18:44 UTC · aktualisiert bei jedem Herzschlag
+**11418 Fakten** · Stand 2026-09-12 19:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7381
-- **swarm_artifact:** 1643
-- **last_swarm_critique:** 912
-- **last_swarm_goal:** 647
-- **anti_pattern:** 369
-- **strategy:** 187
+- **dream:** 7376
+- **swarm_artifact:** 1649
+- **last_swarm_critique:** 913
+- **last_swarm_goal:** 648
+- **anti_pattern:** 371
+- **strategy:** 188
 - **tool:** 154
-- **hand_result:** 79
+- **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erkenntnisse in Fä:2`
+*12.09. 19:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 7]): Introduce a lightweight file synchronization layer that automatically creates or - Implement a watcher process or a post-save hook within the BenchmarkOrgan that, after writing a new timestamped result, atomically upd
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erkenntnisse in Fä:1`
+*12.09. 19:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 7, 7]): Make the ConvergenceGate intelligent by enabling it to dynamically locate the mo - Update the ConvergenceGate's file-loading routine to scan the results directory for files matching the pattern 'benchmark_results_*.js
+
+### `last_swarm_critique`
+*12.09. 19:03 UTC · Quelle: critic*
+
+score=4; issues=BenchmarkOrgan speichert Ergebnisse mit Zeitstempel (z. B. 'benchmark_results_20260912_123456.json'), aber der KonvergenzTor lädt nur die fest definierte Datei 'benchmark_results.json'. Diese Datei wird nie erzeugt,因此 die KonvergenzTor keine Be
+
+### `last_swarm_goal`
+*12.09. 18:53 UTC · Quelle: system*
+
+Traum-Erkenntnisse in Fähigkeiten umsetzen
+
+### `dream:20260912185208:5:7b12fa`
+*12.09. 18:52 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 generated) but no promotion/execution pipeline is observed, creating a proposal-execution gap.
+
+### `dream:20260912185208:4:3ba812`
+*12.09. 18:52 UTC · Quelle: dream*
+
+Prune_run removes facts/events but stale drive_goals persist, suggesting pruning scope is too narrow to clear strategic debt.
+
+### `dream:20260912185208:3:74e523`
+*12.09. 18:52 UTC · Quelle: dream*
+
+Drive goals for 'model stability' and 'swarm goal freshness' recur every cycle, indicating the underlying fixes are not sticking or not being executed.
+
+### `dream:20260912185208:2:652b7d`
+*12.09. 18:52 UTC · Quelle: dream*
+
+Reflex tools show inconsistent success (one ok, one exit=1) with no visible retry or fallback logic, causing goal stalls when tools fail.
+
+### `dream:20260912185208:1:dca7e8`
+*12.09. 18:52 UTC · Quelle: dream*
+
+External model providers (Nvidia, Google) fail frequently with 502/429 errors while only dots-studio/dots-3-note-preview remains reliable, creating a single point of failure.
 
 ### `dream:20260912184123:5:2fbea5`
 *12.09. 18:41 UTC · Quelle: dream*
@@ -42632,56 +42677,6 @@ The system generates high-value architectural skill proposals (router, pipeline,
 *29.08. 18:55 UTC · Quelle: dream*
 
 Free-tier models across providers (z-ai, Google, Nvidia) consistently hit 429 rate limits and 502 upstream errors, making single-model reliance unreliable for production workloads.
-
-### `dream:20260829184947:5:8ca8bb`
-*29.08. 18:49 UTC · Quelle: dream*
-
-Reflex execution of skill-testing works, but proposals lack a promotion pipeline from sandbox to production.
-
-### `dream:20260829184947:4:78117d`
-*29.08. 18:49 UTC · Quelle: dream*
-
-Drive goals reveal stale analyses and repeated model failures, yet no automated retry/fallback loop exists.
-
-### `dream:20260829184947:3:addc3e`
-*29.08. 18:49 UTC · Quelle: dream*
-
-Three independent skill proposals converge on circuit-breaker + exponential-backoff routing, signaling a systemic gap.
-
-### `dream:20260829184947:2:fac610`
-*29.08. 18:49 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra shows high latency variance (19–45 s), requiring latency-aware selection under load.
-
-### `dream:20260829184947:1:279055`
-*29.08. 18:49 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently returns 429 errors, making it unreliable without rate-limit-aware routing.
-
-### `dream:20260829184446:5:ab970b`
-*29.08. 18:44 UTC · Quelle: dream*
-
-Calibration systematically overestimates task feasibility (predicted 3 vs actual 2), revealing a persistent optimism bias in the planner.
-
-### `dream:20260829184446:4:75063c`
-*29.08. 18:44 UTC · Quelle: dream*
-
-Swarm execution fails to converge (converged=false) after only 2 cycles, suggesting critic feedback loops are broken or insufficient.
-
-### `dream:20260829184446:3:f1256e`
-*29.08. 18:44 UTC · Quelle: dream*
-
-The market-analysis task repeatedly scores 2/10 despite evolution cycles, indicating a fundamental planning or decomposition failure rather than model quality.
-
-### `dream:20260829184446:2:e72548`
-*29.08. 18:44 UTC · Quelle: dream*
-
-Nemotron-3-Ultra is the only model returning successful completions but exhibits high latency variance (7.7–40.7s) and occasional 502 upstream overloads.
-
-### `dream:20260829184446:1:c5f751`
-*29.08. 18:44 UTC · Quelle: dream*
-
-Multiple free-tier models (GLM, Gemma) consistently fail with 429 rate-limit errors, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *29.08. 17:57 UTC · Quelle: critic*
