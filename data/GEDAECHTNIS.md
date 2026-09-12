@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11488 Fakten** · Stand 2026-09-12 08:00 UTC · aktualisiert bei jedem Herzschlag
+**11485 Fakten** · Stand 2026-09-12 08:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7451
-- **swarm_artifact:** 1665
+- **swarm_artifact:** 1662
 - **last_swarm_critique:** 901
 - **last_swarm_goal:** 636
 - **anti_pattern:** 373
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912080900:5:3da828`
+*12.09. 08:09 UTC · Quelle: dream*
+
+A massive gap exists between the volume of generated skill proposals (70) and actualized evolution runs (2), preventing successful capability integration.
+
+### `dream:20260912080900:4:c9b3c8`
+*12.09. 08:09 UTC · Quelle: dream*
+
+Significant latency spikes (up to 82s) correlate with large input token payloads, indicating that fixed timeouts are inadequate for heavy context loads.
+
+### `dream:20260912080900:3:934c65`
+*12.09. 08:09 UTC · Quelle: dream*
+
+Pre-execution simulations that identify and apply multiple revisions act as an effective risk-reduction filter before actual tool usage.
+
+### `dream:20260912080900:2:d99268`
+*12.09. 08:09 UTC · Quelle: dream*
+
+Hand action failures are often caused by fragile path resolution where relative paths or mismatched ZOETRON_DATA variables prevent file access.
+
+### `dream:20260912080900:1:1146c0`
+*12.09. 08:09 UTC · Quelle: dream*
+
+Frequent model failures (502 upstream errors and 429 rate limits) on primary endpoints necessitate automated, health-probe-driven failover to stable alternatives like dots-studio to maintain task continuity.
 
 ### `tool:fähigkeitsvorschläge-aktivieren`
 *12.09. 07:58 UTC · Quelle: hands*
@@ -43072,31 +43097,6 @@ ABGELEHNT von Evolution (Score 7): Content-addressable storage (CAS) with Merkle
 *29.08. 08:00 UTC · Quelle: system*
 
 Alte Schwarm-Ergebnisse aufräumen
-
-### `dream:20260829075920:5:bfbbc8`
-*29.08. 07:59 UTC · Quelle: dream*
-
-Lightweight local models (e.g., poolside/laguna-s-2.1) provide fast fallback when cloud models are rate-limited or overloaded.
-
-### `dream:20260829075920:4:6a959e`
-*29.08. 07:59 UTC · Quelle: dream*
-
-Swarm task execution fails when initial path validation is skipped, leading to zero-byte or empty file processing.
-
-### `dream:20260829075920:3:9e439b`
-*29.08. 07:59 UTC · Quelle: dream*
-
-Model overload errors (502) from upstream providers indicate need for automatic retry logic with exponential backoff.
-
-### `dream:20260829075920:2:84257c`
-*29.08. 07:59 UTC · Quelle: dream*
-
-Path resolution failures occur when sys.argv or ZOETRON_DATA are not properly validated before file operations.
-
-### `dream:20260829075920:1:d968d7`
-*29.08. 07:59 UTC · Quelle: dream*
-
-Rate limiting (429 errors) from OpenRouter consistently blocks model access, requiring fallback strategies or local model prioritization.
 
 ### `last_swarm_critique`
 *29.08. 07:30 UTC · Quelle: critic*
