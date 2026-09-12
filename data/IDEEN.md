@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 00:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 00:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge refresh runs as reflex but lacks convergence detection, wasting cycles on plateaued scores.
+- Skill proposals accumulate (10+ this cycle) but none graduate without a promotion pipeline that measures real-world success.
+- Stress-aware scheduling appears in three independent proposals yet no metabolic gate exists before task admission.
+- Path resolution failures recur because ZOETRON_DATA absolutization is proposed but not mandated at hand_action entry.
+- Model reliability issues persist despite repeated circuit-breaker and backoff proposals, indicating missing enforcement layer.
 - Self-diagnosis reports zero organ errors even during model-failure bursts, indicating resilience at the organ level.
 - Skill proposals accumulate but lack an automated pipeline to convert them into tested, versioned skills.
 - Pruning runs consistently remove ~7 facts and 18-25 events per cycle, risking loss of goal-relevant context.
@@ -51,11 +56,6 @@
 - Swarm knowledge staleness triggers recurrent drive goals, indicating missing automated freshness SLA enforcement.
 - Reflex-driven automation (träume-besser-nutzen-lernen.py, veraltete-marktdaten-regelmaessig-aktuali.py) converges reliably without human intervention 
 - Model endpoint failures (502/429) cascade across providers, requiring automatic failover with exponential backoff to maintain throughput.
-- Ten skill proposals generated from dreams but drive goal 'Traum-Erkenntnisse besser nutzen' persists, exposing a broken proposal-to-implementation pip
-- Pruning intensity tripled (5→15 facts) between cycles while consolidation was active, suggesting memory pressure grows faster than pruning policy adap
-- Model latency variance (12s–41s) and repeated 502/429-focused skill proposals reveal unstable model infrastructure that reflexes cannot fix.
-- Reflex actions report converged=true but score=null, creating a false-completion signal that prevents learning whether interventions actually worked.
-- Identical drive goals (stale swarm, model failures, unused dreams) recur across cycles despite reflex convergence, indicating reflexes treat symptoms 
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11525 Fakten** · Stand 2026-09-12 00:06 UTC · aktualisiert bei jedem Herzschlag
+**11515 Fakten** · Stand 2026-09-12 00:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7451
+- **dream:** 7441
 - **swarm_artifact:** 1695
 - **last_swarm_critique:** 893
 - **last_swarm_goal:** 628
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912001328:5:6e60ed`
+*12.09. 00:13 UTC · Quelle: dream*
+
+Swarm knowledge refresh runs as reflex but lacks convergence detection, wasting cycles on plateaued scores.
+
+### `dream:20260912001328:4:15d7e3`
+*12.09. 00:13 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ this cycle) but none graduate without a promotion pipeline that measures real-world success.
+
+### `dream:20260912001328:3:ac699c`
+*12.09. 00:13 UTC · Quelle: dream*
+
+Stress-aware scheduling appears in three independent proposals yet no metabolic gate exists before task admission.
+
+### `dream:20260912001328:2:c3da22`
+*12.09. 00:13 UTC · Quelle: dream*
+
+Path resolution failures recur because ZOETRON_DATA absolutization is proposed but not mandated at hand_action entry.
+
+### `dream:20260912001328:1:75e9d7`
+*12.09. 00:13 UTC · Quelle: dream*
+
+Model reliability issues persist despite repeated circuit-breaker and backoff proposals, indicating missing enforcement layer.
 
 ### `dream:20260912000302:5:6bc8ce`
 *12.09. 00:03 UTC · Quelle: dream*
@@ -43157,81 +43182,6 @@ score=8; issues=Runner and scheduler code truncated in display but sandbox confi
 *29.08. 00:13 UTC · Quelle: system*
 
 Regelmäßige Selbstprüfung etablieren
-
-### `dream:20260829001252:5:5799b2`
-*29.08. 00:12 UTC · Quelle: dream*
-
-Proposed skills remain unimplemented because there is no mechanism to promote proposals to built capabilities.
-
-### `dream:20260829001252:4:bfe8e7`
-*29.08. 00:12 UTC · Quelle: dream*
-
-Simulation revisions accumulate without automated application, creating a gap between analysis and improvement.
-
-### `dream:20260829001252:3:10115b`
-*29.08. 00:12 UTC · Quelle: dream*
-
-Hand actions fail due to unresolved relative paths, indicating a need for canonical path resolution before execution.
-
-### `dream:20260829001252:2:1b7f64`
-*29.08. 00:12 UTC · Quelle: dream*
-
-Stress reaching 1.0 triggers a conserve mode that starves critical tasks, requiring proactive load shedding before saturation.
-
-### `dream:20260829001252:1:28bc56`
-*29.08. 00:12 UTC · Quelle: dream*
-
-Rate-limited models should be automatically deprioritized after repeated 429 errors to prevent cascade latency.
-
-### `dream:20260829000725:5:8b427a`
-*29.08. 00:07 UTC · Quelle: dream*
-
-Logical path handling is fragile: hand actions assume mounted paths without a runtime PathResolver abstraction.
-
-### `dream:20260829000725:4:27ec19`
-*29.08. 00:07 UTC · Quelle: dream*
-
-Reflex tools lack runtime health metrics (success rate, p95 latency), preventing automatic degradation or alerting.
-
-### `dream:20260829000725:3:22d219`
-*29.08. 00:07 UTC · Quelle: dream*
-
-Multiple duplicate circuit-breaker proposals show ideas are generated but not deduplicated or promoted to implementation.
-
-### `dream:20260829000725:2:4a6991`
-*29.08. 00:07 UTC · Quelle: dream*
-
-Fallback model latency varies 4x (16.8s–74.3s), revealing no latency SLO or timeout budget for model calls.
-
-### `dream:20260829000725:1:55442e`
-*29.08. 00:07 UTC · Quelle: dream*
-
-Recurring 429 errors on z-ai/glm-5.2:free indicate missing rate-limit handling and circuit-breaking at the router level.
-
-### `dream:20260829000302:5:18e4a3`
-*29.08. 00:03 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model-layer failures repeat, revealing a monitoring blind spot at the inference-provider level.
-
-### `dream:20260829000302:4:f8c709`
-*29.08. 00:03 UTC · Quelle: dream*
-
-Skill proposals accumulate (router, scoreboard, calibration, circuit breaker, validation pipeline) but lack a gated validation pipeline, risking untested deployments.
-
-### `dream:20260829000302:3:ade099`
-*29.08. 00:03 UTC · Quelle: dream*
-
-Stale drive goals (market analysis, model-error diagnosis) persist across cycles despite reflex tools, indicating missing TTL-based auto-escalation or convergence forcing.
-
-### `dream:20260829000302:2:4ec40d`
-*29.08. 00:03 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (8.8–74.3 s), requiring p95 latency budgets and tiered routing to prevent deadline misses.
-
-### `dream:20260829000302:1:c84703`
-*29.08. 00:03 UTC · Quelle: dream*
-
-Free-tier model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for any production path without enforced cooldown and circuit-breaker logic.
 
 ### `last_swarm_critique`
 *28.08. 23:40 UTC · Quelle: critic*
