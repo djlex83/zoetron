@@ -1,0 +1,219 @@
+{
+  "timestamp": 1789253886.998833,
+  "patterns": [
+    {
+      "pattern_id": "12d6eecf33db",
+      "category": "timeout",
+      "signature": "Request timeout after 30s at <PATH>",
+      "frequency": 2,
+      "first_seen": 1789167484.8939233,
+      "last_seen": 1789171084.8939233,
+      "affected_tools": [
+        "tool_a"
+      ],
+      "affected_models": [
+        "model_1"
+      ],
+      "lesson": "Tools ['tool_a'] frequently timeout. Add timeout guards or async fallback.",
+      "confidence": 0.30000000000000004,
+      "is_anomaly": false
+    },
+    {
+      "pattern_id": "c0870dfa70f4",
+      "category": "memory",
+      "signature": "OOM error: cannot allocate <INT>.5GB",
+      "frequency": 2,
+      "first_seen": 1789174684.8939233,
+      "last_seen": 1789178284.8939233,
+      "affected_tools": [
+        "tool_b"
+      ],
+      "affected_models": [
+        "model_2"
+      ],
+      "lesson": "Memory errors in ['tool_b']. Implement streaming or chunking.",
+      "confidence": 0.30000000000000004,
+      "is_anomaly": false
+    },
+    {
+      "pattern_id": "31a4a0cc6415",
+      "category": "validation",
+      "signature": "Schema validation failed: missing required field 'prompt'",
+      "frequency": 2,
+      "first_seen": 1789181884.8939233,
+      "last_seen": 1789185484.8939233,
+      "affected_tools": [
+        "tool_c"
+      ],
+      "affected_models": [
+        "model_1",
+        "model_3"
+      ],
+      "lesson": "Validation failures for Schema validation failed: missing required field 'prompt'. Strengthen input schemas.",
+      "confidence": 0.30000000000000004,
+      "is_anomaly": false
+    },
+    {
+      "pattern_id": "5b1ca332a1ed",
+      "category": "connection",
+      "signature": "Connection refused to model_4:<INT>",
+      "frequency": 2,
+      "first_seen": 1789189084.8939233,
+      "last_seen": 1789192684.8939233,
+      "affected_tools": [
+        "tool_d"
+      ],
+      "affected_models": [
+        "model_4"
+      ],
+      "lesson": "Connection errors with ['model_4']. Add retry with backoff.",
+      "confidence": 0.30000000000000004,
+      "is_anomaly": false
+    },
+    {
+      "pattern_id": "64bc902f480b",
+      "category": "rate_limit",
+      "signature": "Rate limit exceeded: <INT> req<PATH>",
+      "frequency": 5,
+      "first_seen": 1789250284.8939233,
+      "last_seen": 1789250684.8939233,
+      "affected_tools": [
+        "tool_i"
+      ],
+      "affected_models": [
+        "model_6"
+      ],
+      "lesson": "Recurring rate_limit: Rate limit exceeded: <INT> req<PATH>. Affected tools: ['tool_i']. Models: ['model_6']. Add specific handling.",
+      "confidence": 0.75,
+      "is_anomaly": false
+    }
+  ],
+  "exploration_candidates": [
+    {
+      "model_id": "",
+      "tool_id": "tool_a",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "",
+      "tool_id": "tool_g",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "",
+      "tool_id": "tool_i",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "",
+      "tool_id": "tool_h",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "",
+      "tool_id": "tool_d",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "",
+      "tool_id": "tool_c",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "",
+      "tool_id": "tool_b",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "",
+      "tool_id": "tool_f",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "",
+      "tool_id": "tool_e",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "model_1",
+      "tool_id": "",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Model failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "model_5",
+      "tool_id": "",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Model failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "model_3",
+      "tool_id": "",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Model failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "model_2",
+      "tool_id": "",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Model failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "model_4",
+      "tool_id": "",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Model failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    },
+    {
+      "model_id": "model_6",
+      "tool_id": "",
+      "avoidance_score": 1.0,
+      "last_tested": null,
+      "test_count": 0,
+      "reason": "Model failure rate 100.0% with 0 successes. Scheduled for re-evaluation."
+    }
+  ],
+  "stats": {
+    "total_failures": 17,
+    "patterns_learned": 5,
+    "anomalies_detected": 0,
+    "exploration_scheduled": 15
+  }
+}

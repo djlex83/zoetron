@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 22:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 22:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven error reduction pipelines execute reliably when triggered but lack proactive health-based invocation.
+- The dots-studio fallback model succeeds consistently but at 2-3x latency, making it viable only for non-critical async paths.
+- Skill proposals accumulate unused without an automated incubator that shadow-tests and promotes after proven success runs.
+- Provider health scoring must weight 429 frequency and 502 overload signals equally with latency to avoid routing to degraded models.
+- Free-tier model APIs require a centralized singleton token-bucket rate limiter to prevent 429 cascades across independent callers.
 - Structured error handling for external actions is absent: hand_action returns only exit code, losing stdout/stderr context needed for automated recove
 - Swarm goal staleness is actively managed via reflex but lacks systematic TTL enforcement: one-off cleanup succeeded but no daemon archives >30-day goa
 - No stress-aware load shedding exists despite repeated proposals: high model latency and concurrent failures indicate unbounded concurrency under load.
@@ -51,11 +56,6 @@
 - Three simulation revisions with 3 unresolved risks indicates the simulation→act loop lacks a hard closure gate that blocks act_done on open risks.
 - Evolution raised the score from 6 to 9 but still failed to converge, proving that score improvement alone is an insufficient convergence signal.
 - Google Gemma endpoints trigger 429 rate limits more aggressively than other providers, requiring per-provider throttle budgets rather than uniform ret
-- Pruning removes 19 events including potential failure context while retaining only 10 facts, risking loss of diagnostic signal.
-- Metabolism stress at 1.0 forces conserve mode (max 1 iteration), preventing multi-step recovery from transient failures.
-- Swarm knowledge refresh is a recurring drive but repeatedly fails at the hand_action layer, indicating a systemic execution gap.
-- Tool execution fails due to path resolution issues (relative paths vs ZOETRON_DATA env var) despite correct reflex selection.
-- Model provider instability (502/overload errors) causes cascading failures across planning, simulation, and execution layers.
 
 ---
 

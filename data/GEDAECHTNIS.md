@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11392 Fakten** · Stand 2026-09-12 22:43 UTC · aktualisiert bei jedem Herzschlag
+**11396 Fakten** · Stand 2026-09-12 23:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7346
-- **swarm_artifact:** 1649
-- **last_swarm_critique:** 917
-- **last_swarm_goal:** 652
+- **dream:** 7341
+- **swarm_artifact:** 1655
+- **last_swarm_critique:** 918
+- **last_swarm_goal:** 653
 - **anti_pattern:** 369
 - **strategy:** 187
 - **tool:** 154
-- **hand_result:** 80
+- **hand_result:** 81
 - **aktuell_organfehler:** 38
 
 ---
+
+### `last_swarm_critique`
+*12.09. 22:58 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*12.09. 22:51 UTC · Quelle: system*
+
+Modelle zuverlässiger machen
+
+### `dream:20260912225108:5:042a2c`
+*12.09. 22:51 UTC · Quelle: dream*
+
+Reflex-driven error reduction pipelines execute reliably when triggered but lack proactive health-based invocation.
+
+### `dream:20260912225108:4:10747c`
+*12.09. 22:51 UTC · Quelle: dream*
+
+The dots-studio fallback model succeeds consistently but at 2-3x latency, making it viable only for non-critical async paths.
+
+### `dream:20260912225108:3:14487b`
+*12.09. 22:51 UTC · Quelle: dream*
+
+Skill proposals accumulate unused without an automated incubator that shadow-tests and promotes after proven success runs.
+
+### `dream:20260912225108:2:14087b`
+*12.09. 22:51 UTC · Quelle: dream*
+
+Provider health scoring must weight 429 frequency and 502 overload signals equally with latency to avoid routing to degraded models.
+
+### `dream:20260912225108:1:6311cb`
+*12.09. 22:51 UTC · Quelle: dream*
+
+Free-tier model APIs require a centralized singleton token-bucket rate limiter to prevent 429 cascades across independent callers.
 
 ### `dream:20260912224056:5:14c7da`
 *12.09. 22:40 UTC · Quelle: dream*
@@ -42462,56 +42497,6 @@ Relative path resolution fails in containerized environments; all file operation
 *29.08. 22:52 UTC · Quelle: dream*
 
 Free tier models exhibit high failure rates (429 rate limits, 502 upstream overload) requiring robust fallback chains and rate-limit handling.
-
-### `dream:20260829224716:5:fdbc39`
-*29.08. 22:47 UTC · Quelle: dream*
-
-Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) succeed reliably, proving that deterministic tool use outperforms model-dependent operations for maintenance tasks.
-
-### `dream:20260829224716:4:606d0d`
-*29.08. 22:47 UTC · Quelle: dream*
-
-The system generates robust architectural proposals (circuit breakers, health scores, warm pools) but lacks an execution loop to promote proposals into deployed skills.
-
-### `dream:20260829224716:3:594fd3`
-*29.08. 22:47 UTC · Quelle: dream*
-
-Upstream 502 errors (e.g., Nvidia Nemotron) reveal provider-side capacity failures that retry logic alone cannot resolve without model diversity.
-
-### `dream:20260829224716:2:e3e9df`
-*29.08. 22:47 UTC · Quelle: dream*
-
-The inclusionai/ling-3.0-flash-fin model demonstrates consistent 200 OK responses with sub-30s latency, identifying it as a high-reliability anchor for fallback chains.
-
-### `dream:20260829224716:1:da0e88`
-*29.08. 22:47 UTC · Quelle: dream*
-
-Free-tier API models fail predominantly via 429 rate-limit errors under sustained autonomous workloads, rendering single-model reliance non-viable.
-
-### `dream:20260829224252:5:8c68bd`
-*29.08. 22:42 UTC · Quelle: dream*
-
-Repeated 429 errors on identical models across cycles indicate no persistent quota tracking or cooldown memory between episodes.
-
-### `dream:20260829224252:4:e80eec`
-*29.08. 22:42 UTC · Quelle: dream*
-
-Fallback model latency varies 2.6x (9.7s vs 25.7s), making latency-aware routing essential for predictable performance.
-
-### `dream:20260829224252:3:81b721`
-*29.08. 22:42 UTC · Quelle: dream*
-
-Skill proposals accumulate but never graduate to tested, reusable capabilities without a formal promotion pipeline.
-
-### `dream:20260829224252:2:f17989`
-*29.08. 22:42 UTC · Quelle: dream*
-
-Self-diagnosis blind spots: internal organ checks pass while external API dependencies silently fail with quota exhaustion.
-
-### `dream:20260829224252:1:8cfe51`
-*29.08. 22:42 UTC · Quelle: dream*
-
-Rate limit errors cascade because the system lacks header-aware backoff and automatic failover before 429 occurs.
 
 ### `last_swarm_critique`
 *29.08. 22:06 UTC · Quelle: critic*
