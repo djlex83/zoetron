@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 08:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 08:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,12 +28,12 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence with evolved=false suggests the current role distribution (planner:1, builder:4, critic:1) is a stable, reusable template for code-g
+- Aggressive pruning (37 events, 5 facts) left zero organ errors in selbstdiagnose, indicating either safe pruning or a blind spot requiring prune_audit
+- Calibration error of 1 (predicted 8 vs actual 9) shows reliable self-estimation when the simulation gate passes, but degrades without it.
+- The simulation-gate pattern (simulate → revise → apply) with 4 revisions eliminated risks and enabled a builder-heavy swarm (4:1) to converge on a wor
+- Free-tier model endpoints consistently return 429 errors under load, necessitating a hardcoded priority router with per-model 5-minute error caching.
 - A massive gap exists between the volume of generated skill proposals (70) and actualized evolution runs (2), preventing successful capability integrat
 - Significant latency spikes (up to 82s) correlate with large input token payloads, indicating that fixed timeouts are inadequate for heavy context load
 - Pre-execution simulations that identify and apply multiple revisions act as an effective risk-reduction filter before actual tool usage.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without adoption tracking: model_router.py, prompt-hash caching, and local-first policy were proposed twice each but never 
 - Reflex tools successfully handle acute symptoms (stale swarm knowledge, model errors) but root causes persist because no validation pipeline integrate
 - External model dependency causes cascading failures: high latency (20-66s), error rates near 50%, and no systematic failover despite repeated skill pr
-- Model latency varies 2x-3x (17s vs 44s) on the same endpoint (Nemotron) across cycles, making timeout budgets unreliable.
-- Pruning removes 5-7 facts and 19-32 events per cycle, but drive goals for 'apply simulations' and 'apply learned skills' persist unchanged, signaling 
-- Self-diagnosis reports zero organ errors despite repeated model failures, indicating the health check does not capture inference-layer degradation.
-- Reflex tools for swarm knowledge refresh (schwarmlernen-wiederbeleben, veraltete-wissenstände-auffrischen) converge reliably in one shot when triggere
-- Free model endpoints (Nemotron, Gemma) fail systematically with 502/429 errors while dots-studio/dots-3-note-preview:free succeeds consistently.
 
 ---
 

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11485 Fakten** · Stand 2026-09-12 08:11 UTC · aktualisiert bei jedem Herzschlag
+**11483 Fakten** · Stand 2026-09-12 08:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7451
-- **swarm_artifact:** 1662
+- **dream:** 7456
+- **swarm_artifact:** 1659
 - **last_swarm_critique:** 901
 - **last_swarm_goal:** 636
-- **anti_pattern:** 373
-- **strategy:** 189
-- **tool:** 157
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 156
 - **hand_result:** 77
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912081955:5:fd8bfc`
+*12.09. 08:19 UTC · Quelle: dream*
+
+Swarm convergence with evolved=false suggests the current role distribution (planner:1, builder:4, critic:1) is a stable, reusable template for code-generation tasks.
+
+### `dream:20260912081955:4:b0f7c8`
+*12.09. 08:19 UTC · Quelle: dream*
+
+Aggressive pruning (37 events, 5 facts) left zero organ errors in selbstdiagnose, indicating either safe pruning or a blind spot requiring prune_audit correlation.
+
+### `dream:20260912081955:3:bddcb9`
+*12.09. 08:19 UTC · Quelle: dream*
+
+Calibration error of 1 (predicted 8 vs actual 9) shows reliable self-estimation when the simulation gate passes, but degrades without it.
+
+### `dream:20260912081955:2:a0225c`
+*12.09. 08:19 UTC · Quelle: dream*
+
+The simulation-gate pattern (simulate → revise → apply) with 4 revisions eliminated risks and enabled a builder-heavy swarm (4:1) to converge on a working 225-line artifact in one cycle.
+
+### `dream:20260912081955:1:62f693`
+*12.09. 08:19 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently return 429 errors under load, necessitating a hardcoded priority router with per-model 5-minute error caching.
 
 ### `dream:20260912080900:5:3da828`
 *12.09. 08:09 UTC · Quelle: dream*
@@ -43072,21 +43097,6 @@ Backup model nvidia/nemotron-3-ultra succeeds but with extreme latency variance 
 *29.08. 08:33 UTC · Quelle: dream*
 
 Primary model z-ai/glm-5.2:free fails 100% of the time with 429 rate limits, making it unusable as a default.
-
-### `tool:alte-schwarm-ergebnisse-aufräumen`
-*29.08. 08:12 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Schwarm-Ergebnisse aufräumen'. Datei: data/tools/alte-schwarm-ergebnisse-aufräumen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Alte Schwarm-Ergebnisse :2`
-*29.08. 08:09 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Redis Streams consumer-group pipeline with TTL-based eviction - Treat swarm runs as event streams. Producer writes raw results to Redis Stream 'swarm:raw' with MAXLEN ~ 10000. Three consumer groups: (1) 'deduper' - computes m
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Alte Schwarm-Ergebnisse :1`
-*29.08. 08:09 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Content-addressable storage (CAS) with Merkle DAG semantics - Model swarm results as immutable objects in a CAS (like Git/IPFS but local). Each result gets a SHA-256 content address. Build a Merkle DAG where leaf nodes are ra
 
 ### `last_swarm_critique`
 *29.08. 08:08 UTC · Quelle: critic*
