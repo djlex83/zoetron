@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11451 Fakten** · Stand 2026-09-12 15:39 UTC · aktualisiert bei jedem Herzschlag
+**11442 Fakten** · Stand 2026-09-12 15:50 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7426
-- **swarm_artifact:** 1645
+- **swarm_artifact:** 1639
 - **last_swarm_critique:** 909
 - **last_swarm_goal:** 644
-- **anti_pattern:** 369
-- **strategy:** 187
+- **anti_pattern:** 367
+- **strategy:** 186
 - **tool:** 152
 - **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912154729:5:54645b`
+*12.09. 15:47 UTC · Quelle: dream*
+
+Model latency varies widely, so predictive latency tracking can improve routing decisions.
+
+### `dream:20260912154729:4:eec5fc`
+*12.09. 15:47 UTC · Quelle: dream*
+
+Simulation usage is low despite its benefits, so scheduled simulation runs should be introduced.
+
+### `dream:20260912154729:3:ca5fca`
+*12.09. 15:47 UTC · Quelle: dream*
+
+Skill proposals are generated but rarely executed, creating a gap between idea and implementation.
+
+### `dream:20260912154729:2:550b06`
+*12.09. 15:47 UTC · Quelle: dream*
+
+Stale swarm goals persist across cycles and block progress, requiring automatic staleness detection and refresh.
+
+### `dream:20260912154729:1:e36fb9`
+*12.09. 15:47 UTC · Quelle: dream*
+
+Free-tier model providers frequently time out or return 429 errors, making them unreliable without a health-aware router.
 
 ### `dream:20260912153645:5:3d9ef3`
 *12.09. 15:36 UTC · Quelle: dream*
@@ -42863,16 +42888,6 @@ Fallback to nemotron-3-ultra succeeds but adds 50-66s latency, creating a reliab
 
 Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary providers without circuit-breaker logic.
 
-### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Schwarm-Arbeiten ab:2`
-*29.08. 15:42 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 6, 7]): Event-getriebenes Abschluss-Pipeline mit Validierungskreis - Eine Python-Pipeline, die alte Schwarm-Aufgaben als Event-Stream behandelt: Jede Aufgabe wird als Event-Objekt mit Trigger-, Aktions- und Verifikationsphase
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Schwarm-Arbeiten ab:1`
-*29.08. 15:42 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 9, 8]): Datengetriebene Batch-Verarbeitung mit State-Tracking und Verifikation - Ein Python-Skript, das als Batch-Processor fungiert: Es liest alle ausstehenden Schwarm-Aufgaben aus einem strukturierten Datenformat (JSON/CSV)
-
 ### `last_swarm_critique`
 *29.08. 15:41 UTC · Quelle: critic*
 
@@ -42882,31 +42897,6 @@ score=2; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Bash-Kommandoe
 *29.08. 15:39 UTC · Quelle: system*
 
 Alte Schwarm-Arbeiten abschließen
-
-### `dream:20260829153840:5:2599ee`
-*29.08. 15:38 UTC · Quelle: dream*
-
-Successful artifact execution (164-line Python script) correlates with `hat_code: true` and positive TOR verdict, making code presence a leading indicator of goal achievability.
-
-### `dream:20260829153840:4:94e69a`
-*29.08. 15:38 UTC · Quelle: dream*
-
-Evolutionary refinement (3 variants, winner score 9 vs prior 3) reliably repairs pipeline integration failures when critic feedback is specific.
-
-### `dream:20260829153840:3:9b5fe2`
-*29.08. 15:38 UTC · Quelle: dream*
-
-Effort estimation consistently overshoots actual work (predicted 6 vs actual 3 cycles), indicating a need for calibration against historical deltas.
-
-### `dream:20260829153840:2:db7d04`
-*29.08. 15:38 UTC · Quelle: dream*
-
-`nvidia/nemotron-3-ultra-550b-a55b:free` exhibits high latency variance (6–122 s) requiring timeout budgets and fallback triggers rather than fixed deadlines.
-
-### `dream:20260829153840:1:f76d92`
-*29.08. 15:38 UTC · Quelle: dream*
-
-The free tier model `z-ai/glm-5.2:free` is unreliable due to persistent 429 rate-limit errors and should be deprioritized or wrapped with aggressive backoff.
 
 ### `last_swarm_critique`
 *29.08. 14:59 UTC · Quelle: critic*

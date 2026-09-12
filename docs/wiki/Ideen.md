@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 15:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 15:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency varies widely, so predictive latency tracking can improve routing decisions.
+- Simulation usage is low despite its benefits, so scheduled simulation runs should be introduced.
+- Skill proposals are generated but rarely executed, creating a gap between idea and implementation.
+- Stale swarm goals persist across cycles and block progress, requiring automatic staleness detection and refresh.
+- Free-tier model providers frequently time out or return 429 errors, making them unreliable without a health-aware router.
 - hand_action exited with code 1 but no error message, highlighting the need to capture stderr.
 - Swarm optimization failed to converge despite evolution, suggesting better scoring or more iterations.
 - dots-studio/dots-3-note-preview:free consistently succeeded, making it a reliable default model.
@@ -51,11 +56,6 @@
 - Reflex-based execution (schwarmwissen-wieder-auffrischen.py) converges reliably in <1s, demonstrating that codified routines outperform LLM calls for 
 - The dots-studio/dots-3-note-preview model succeeds but exhibits extreme latency variance (15s to 36s), rendering it unsuitable for time-sensitive refl
 - Free model endpoints (Nvidia Nemotron, Google Gemma) fail consistently with 502 overloads, 429 rate limits, and timeouts, making them unreliable for p
-- Path-related exit codes are eliminated only by a proposed resolver, yet hand_actions currently succeed (exit 0), suggesting the resolver addresses a l
-- Skill proposals accumulate (5 in this cycle alone) but none appear implemented, creating a proposal-execution gap that wastes consolidation effort.
-- Pruning removes 6-11 facts and ~18 events per cycle, but stale swarm goals persist across cycles, meaning pruning doesn't target goal-level staleness.
-- Reflex-driven goals (learning from errors, refreshing swarm knowledge) consistently converge in one shot, showing reflexes are reliable for well-scope
-- Model provider failures (502, 429) cascade sequentially until a fallback succeeds, indicating no proactive health-aware routing exists.
 
 ---
 
