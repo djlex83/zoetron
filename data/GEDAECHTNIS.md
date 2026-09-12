@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11436 Fakten** · Stand 2026-09-12 18:02 UTC · aktualisiert bei jedem Herzschlag
+**11416 Fakten** · Stand 2026-09-12 18:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7401
-- **swarm_artifact:** 1645
+- **dream:** 7386
+- **swarm_artifact:** 1643
 - **last_swarm_critique:** 912
 - **last_swarm_goal:** 647
-- **anti_pattern:** 371
-- **strategy:** 188
+- **anti_pattern:** 369
+- **strategy:** 187
 - **tool:** 154
 - **hand_result:** 79
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912183018:5:1466d6`
+*12.09. 18:30 UTC · Quelle: dream*
+
+Simulation approval (verdict: go) with 3 risks but 0 revisions indicates risk assessment may be under-calibrated.
+
+### `dream:20260912183018:4:357e10`
+*12.09. 18:30 UTC · Quelle: dream*
+
+Aggressive pruning (79 events/23 facts per run) risks discarding context needed for multi-cycle convergence.
+
+### `dream:20260912183018:3:8011a5`
+*12.09. 18:30 UTC · Quelle: dream*
+
+Evolutionary search dramatically improves artifact quality (2→10) but swarm convergence requires more than 2 cycles.
+
+### `dream:20260912183018:2:548a6e`
+*12.09. 18:30 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently available model but exhibits high latency variance (24-77s).
+
+### `dream:20260912183018:1:f259e3`
+*12.09. 18:30 UTC · Quelle: dream*
+
+Free-tier models (gemma-4 variants) consistently hit 429 rate limits making them unreliable for production workflows.
 
 ### `tool:veraltete-gruppen-informationen-aktualis`
 *12.09. 18:00 UTC · Quelle: hands*
@@ -42683,91 +42708,6 @@ The inclusionai/ling-3.0-flash-fin model is the only consistently available free
 
 Free-tier models on OpenRouter suffer chronic 429 rate limits making them unreliable as primary workers.
 
-### `dream:20260829182856:5:67ef35`
-*29.08. 18:28 UTC · Quelle: dream*
-
-Hand action execution showed intermittent failures (2 of 3 attempts returned exit 1 with zero gelesen), suggesting a timing or state-read issue in action dispatch.
-
-### `dream:20260829182856:4:2fc35a`
-*29.08. 18:28 UTC · Quelle: dream*
-
-Calibration significantly underestimated actual output (predicted 5 vs actual 9), indicating the scoring model needs recalibration for this task type.
-
-### `dream:20260829182856:3:c9be20`
-*29.08. 18:28 UTC · Quelle: dream*
-
-The system's self-diagnosis, reflex, and skill-proposal mechanisms functioned correctly, closing issue 227 and generating actionable proposals from failures.
-
-### `dream:20260829182856:2:c071bc`
-*29.08. 18:28 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra-550b-a55b:free model served as the most reliable fallback, succeeding after glm-5.2 failures despite its own intermittent 502 upstream error.
-
-### `dream:20260829182856:1:c84299`
-*29.08. 18:28 UTC · Quelle: dream*
-
-429 rate-limiting failures are systemic across all free-tier models on OpenRouter, not isolated to a single provider, making fallback chains essential.
-
-### `dream:20260829182434:5:40d593`
-*29.08. 18:24 UTC · Quelle: dream*
-
-Proposed skills accumulate but never deploy because the reflex/tool chain breaks at file access, not at logic — the gap is operational, not conceptual.
-
-### `dream:20260829182434:4:d9cf20`
-*29.08. 18:24 UTC · Quelle: dream*
-
-Simulation-based revision loops work (3 risks → 3 revisions applied) but only activate after execution failures, not as a preventive gate.
-
-### `dream:20260829182434:3:341385`
-*29.08. 18:24 UTC · Quelle: dream*
-
-High system stress (1.0) triggers conserve mode, capping tasks at 3 and iterations at 1, which starves long-running goals like market analyses and skill implementation.
-
-### `dream:20260829182434:2:47c652`
-*29.08. 18:24 UTC · Quelle: dream*
-
-Hand actions fail due to incorrect path resolution — inputs arrive via sys.argv[1] and ZOETRON_DATA but code uses relative paths that don't map to the real data directory.
-
-### `dream:20260829182434:1:e6392b`
-*29.08. 18:24 UTC · Quelle: dream*
-
-Free-tier model endpoints consistently fail under load with 429 rate limits and 502 errors, making them unreliable for production workflows.
-
-### `dream:20260829181934:5:0f7a69`
-*29.08. 18:19 UTC · Quelle: dream*
-
-Metabolism stress signals exist but are not yet wired to throttle parallelism, switch models, or extend timeouts automatically.
-
-### `dream:20260829181934:4:d4c1d8`
-*29.08. 18:19 UTC · Quelle: dream*
-
-Skill proposals accumulate (5+ in this log) but no lifecycle promotes them to production; the gap between proposal and deployment is structural.
-
-### `dream:20260829181934:3:8e042a`
-*29.08. 18:19 UTC · Quelle: dream*
-
-Hand actions fail due to relative-path assumptions (sys.argv[1], ZOETRON_DATA) instead of absolute, validated paths, making reflexes brittle.
-
-### `dream:20260829181934:2:1aa00a`
-*29.08. 18:19 UTC · Quelle: dream*
-
-Persistent drive goals (reduce model errors, finish market analyses, deploy skills) recur across cycles but lack forced-completion mechanisms, causing stagnation.
-
-### `dream:20260829181934:1:0f3c91`
-*29.08. 18:19 UTC · Quelle: dream*
-
-Rate-limited models (z-ai/glm-5.2) repeatedly cause 429 errors without automatic fallback, wasting cycles and blocking progress.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Marktanalyse auf de:1`
-*29.08. 17:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 4, 7]): Qualitative Primärforschung & Experten-Delphi-Methode - Statt Sekundärdaten zu aggregieren, wird ein strukturierter Primärforschungsprozess aufgesetzt: (1) Identifikation von 30-50 Key-Informants (Entscheider bei Kund
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Marktanalyse auf de:0`
-*29.08. 17:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 6, 8]): Automatisierte KI-gestützte Datenerhebung & Echtzeit-Analyse - Einsatz von KI-Tools (z. B. GPT-Researcher, Perplexity, spezialisierte Market-Intelligence-Plattformen wie CB Insights, Crunchbase, SimilarWeb) für automa
-
 ### `last_swarm_critique`
 *29.08. 17:57 UTC · Quelle: critic*
 
@@ -42777,31 +42717,6 @@ score=5; issues=Critic output unparseable.
 *29.08. 17:51 UTC · Quelle: system*
 
 Alte Marktanalyse auf den neuesten Stand bringen
-
-### `dream:20260829175054:5:90e8e0`
-*29.08. 17:50 UTC · Quelle: dream*
-
-The planner/builder/critic role distribution (1/3/1) converged the swarm-orchestration task in a single cycle with score 9, demonstrating an effective minimal role topology for code-generation swarms.
-
-### `dream:20260829175054:4:cd387a`
-*29.08. 17:50 UTC · Quelle: dream*
-
-Calibration was severely off (predicted 3 vs actual 9, error of 6), revealing that initial effort/complexity estimates for swarm-orchestration tasks are unreliable.
-
-### `dream:20260829175054:3:d9cf1b`
-*29.08. 17:50 UTC · Quelle: dream*
-
-The nemotron-3-ultra-550b model is slow (88-173s latency) but produces high-quality results (score 9), making it a reliable but expensive fallback.
-
-### `dream:20260829175054:2:26784d`
-*29.08. 17:50 UTC · Quelle: dream*
-
-Only two models (inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra-550b-a55b) succeeded reliably; all others (glm-5.2, gemma-4 variants) consistently hit rate limits.
-
-### `dream:20260829175054:1:4fbdb4`
-*29.08. 17:50 UTC · Quelle: dream*
-
-429 rate-limiting from OpenRouter is the dominant systemic failure mode, affecting nearly all models simultaneously and indicating an API-level bottleneck rather than model-specific issues.
 
 ### `last_swarm_critique`
 *29.08. 17:37 UTC · Quelle: critic*
