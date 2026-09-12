@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 23:25:40",
+ "stand": "2026-09-12 23:40:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -141,6 +141,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -256,12 +262,6 @@
   },
   {
    "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -399,12 +399,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.71,
- "simulationen_angewandt": 33,
+ "haende_quote": 0.715,
+ "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 35,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 5.26
+  "schnitt": 5.41
  },
  "score_nach_ziel_typ": {
   "analyse": {

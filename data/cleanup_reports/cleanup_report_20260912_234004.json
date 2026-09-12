@@ -1,0 +1,181 @@
+{
+  "scan_time": "2026-09-12T23:40:04.198758",
+  "total_files": 878,
+  "total_size_bytes": 300676164,
+  "total_size_mb": 286.75,
+  "by_action": {
+    "keep": 513,
+    "delete": 4,
+    "review": 224,
+    "archive": 137
+  },
+  "by_category": {
+    "memory": 98,
+    "temp": 3,
+    "unknown": 224,
+    "result": 72,
+    "backup": 1,
+    "artifact": 479,
+    "log": 1
+  },
+  "archive_size_mb": 112.5,
+  "delete_size_mb": 0.01,
+  "top_delete_candidates": [
+    {
+      "path": "/workspace/zoetron/data/artefakte/ci_repair_report_20260905_212432.tmp",
+      "rel_path": "artefakte/ci_repair_report_20260905_212432.tmp",
+      "size_bytes": 3249,
+      "modified": 1788643472.1301146,
+      "modified_iso": "2026-09-05T21:24:32.130115",
+      "age_days": 7.1,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    },
+    {
+      "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "rel_path": "tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "size_bytes": 2681,
+      "modified": 1787812317.2147682,
+      "modified_iso": "2026-08-27T06:31:57.214768",
+      "age_days": 16.7,
+      "category": "backup",
+      "action": "delete",
+      "reason": "Old backup - superseded"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/ci_repair_report_20260905_212636.tmp",
+      "rel_path": "artefakte/ci_repair_report_20260905_212636.tmp",
+      "size_bytes": 808,
+      "modified": 1788643596.1985645,
+      "modified_iso": "2026-09-05T21:26:36.198565",
+      "age_days": 7.1,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    },
+    {
+      "path": "/workspace/zoetron/data/memory/convergence_gate_state.json.tmp",
+      "rel_path": "memory/convergence_gate_state.json.tmp",
+      "size_bytes": 550,
+      "modified": 1787746836.8862145,
+      "modified_iso": "2026-08-26T12:20:36.886214",
+      "age_days": 17.5,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    }
+  ],
+  "top_archive_candidates": [
+    {
+      "path": "/workspace/zoetron/data/artefakte/swarm_projects_20260905_184156.json",
+      "rel_path": "artefakte/swarm_projects_20260905_184156.json",
+      "size_bytes": 33011388,
+      "modified": 1788633716.8308048,
+      "modified_iso": "2026-09-05T18:41:56.830805",
+      "age_days": 7.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/swarm_projects_20260905_142856.json",
+      "rel_path": "artefakte/swarm_projects_20260905_142856.json",
+      "size_bytes": 27579741,
+      "modified": 1788618536.619492,
+      "modified_iso": "2026-09-05T14:28:56.619492",
+      "age_days": 7.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/swarm_projects_20260905_142817.json",
+      "rel_path": "artefakte/swarm_projects_20260905_142817.json",
+      "size_bytes": 27579740,
+      "modified": 1788618497.2473614,
+      "modified_iso": "2026-09-05T14:28:17.247361",
+      "age_days": 7.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/analysen/analyse_traum-ideen-zu-faehigkeiten-machen_20260905_192917.json",
+      "rel_path": "artefakte/analysen/analyse_traum-ideen-zu-faehigkeiten-machen_20260905_192917.json",
+      "size_bytes": 10418925,
+      "modified": 1788636557.6190424,
+      "modified_iso": "2026-09-05T19:29:17.619042",
+      "age_days": 7.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/analysen/analyse_traum-ideen-zu-faehigkeiten-machen_20260905_192853.json",
+      "rel_path": "artefakte/analysen/analyse_traum-ideen-zu-faehigkeiten-machen_20260905_192853.json",
+      "size_bytes": 10415852,
+      "modified": 1788636533.29296,
+      "modified_iso": "2026-09-05T19:28:53.292960",
+      "age_days": 7.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/slow_facts_index.json",
+      "rel_path": "artefakte/slow_facts_index.json",
+      "size_bytes": 3836084,
+      "modified": 1788506279.0892098,
+      "modified_iso": "2026-09-04T07:17:59.089210",
+      "age_days": 8.7,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/vorschlagspruefung_ergebnis.json",
+      "rel_path": "artefakte/vorschlagspruefung_ergebnis.json",
+      "size_bytes": 706235,
+      "modified": 1788267101.9604259,
+      "modified_iso": "2026-09-01T12:51:41.960426",
+      "age_days": 11.5,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/gruppenaufgaben-locator-report.json",
+      "rel_path": "artefakte/gruppenaufgaben-locator-report.json",
+      "size_bytes": 606383,
+      "modified": 1788559673.965726,
+      "modified_iso": "2026-09-04T22:07:53.965726",
+      "age_days": 8.1,
+      "category": "result",
+      "action": "archive",
+      "reason": "Result/output file - preserve for history"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/marktanalyse_inventar.json",
+      "rel_path": "artefakte/marktanalyse_inventar.json",
+      "size_bytes": 478037,
+      "modified": 1788469694.6664977,
+      "modified_iso": "2026-09-03T21:08:14.666498",
+      "age_days": 9.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/selbstdiagnose_bericht.json",
+      "rel_path": "artefakte/selbstdiagnose_bericht.json",
+      "size_bytes": 218216,
+      "modified": 1787900849.1866405,
+      "modified_iso": "2026-08-28T07:07:29.186641",
+      "age_days": 15.7,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    }
+  ]
+}

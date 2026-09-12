@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11398 Fakten** · Stand 2026-09-12 23:27 UTC · aktualisiert bei jedem Herzschlag
+**11383 Fakten** · Stand 2026-09-12 23:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7341
+- **dream:** 7326
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 919
 - **last_swarm_goal:** 654
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912233945:5:f17479`
+*12.09. 23:39 UTC · Quelle: dream*
+
+The persistence of model failures despite multiple skill proposals indicates an implementation gap, which can be bridged by an incubator that shadow-runs proposals before promotion.
+
+### `dream:20260912233945:4:532d9f`
+*12.09. 23:39 UTC · Quelle: dream*
+
+The metabolism stress level of 1.0 and conserve state imply that resource constraints are contributing to model failures, so task scheduling must adapt to available budget.
+
+### `dream:20260912233945:3:eee40a`
+*12.09. 23:39 UTC · Quelle: dream*
+
+The failed reflex (modelle-zuverlässiger-machen.py) suggests that the tool for model reliability is incomplete or not robust to current conditions, requiring debugging and enhanced error handling.
+
+### `dream:20260912233945:2:39c8cb`
+*12.09. 23:39 UTC · Quelle: dream*
+
+The hand_action failure due to a missing file or directory reveals that file path resolution is fragile and must be hardened with absolute path validation and fallback mechanisms.
+
+### `dream:20260912233945:1:70e5ce`
+*12.09. 23:39 UTC · Quelle: dream*
+
+Recurring 429 and 502 errors from model providers indicate that the system is hitting rate limits and upstream instability, necessitating immediate deployment of token-bucket rate limiting and circuit breakers.
 
 ### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:2`
 *12.09. 23:24 UTC · Quelle: evolution*
@@ -42392,106 +42417,6 @@ Fallback model latency varies 10x (5–48 s), making fixed deadlines unreliable 
 *29.08. 23:42 UTC · Quelle: dream*
 
 Free-tier models hit 429 rate limits predictably under load, requiring proactive routing instead of reactive fallback.
-
-### `dream:20260829233754:5:fc954c`
-*29.08. 23:37 UTC · Quelle: dream*
-
-Evolution loop triggered after 6/10 score indicates a hard threshold for automatic improvement cycles.
-
-### `dream:20260829233754:4:a34b82`
-*29.08. 23:37 UTC · Quelle: dream*
-
-A 160-line Python artifact executed cleanly (exit 0, 0.29s), proving generated code can be production-ready without manual fixes.
-
-### `dream:20260829233754:3:43946b`
-*29.08. 23:37 UTC · Quelle: dream*
-
-Calibration predicted 6/10 and actual scored 6/10, confirming the estimator is accurate for this task class.
-
-### `dream:20260829233754:2:fc0b1b`
-*29.08. 23:37 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra shows high latency variance (5–50s) despite success, requiring timeout budgets and fallback triggers.
-
-### `dream:20260829233754:1:2f9795`
-*29.08. 23:37 UTC · Quelle: dream*
-
-Free-tier models like z-ai/glm-5.2:free consistently hit 429 rate limits under load, making them unreliable for automated pipelines.
-
-### `dream:20260829233251:5:383b7e`
-*29.08. 23:32 UTC · Quelle: dream*
-
-Unfinished work (market analyses, swarm goals) accumulates because no persistent ledger tracks completion across sleep cycles.
-
-### `dream:20260829233251:4:b634a7`
-*29.08. 23:32 UTC · Quelle: dream*
-
-High metabolic stress (1.0) triggers conserve mode that starves long-running swarms, requiring checkpointing to survive budget cuts.
-
-### `dream:20260829233251:3:b2cf85`
-*29.08. 23:32 UTC · Quelle: dream*
-
-Skill proposals remain inert without a validation pipeline that compiles, tests, and registers them as executable capabilities.
-
-### `dream:20260829233251:2:1db7f3`
-*29.08. 23:32 UTC · Quelle: dream*
-
-All file operations must resolve relative paths against ZOETRON_DATA before execution to avoid silent zero-byte reads.
-
-### `dream:20260829233251:1:a78cb8`
-*29.08. 23:32 UTC · Quelle: dream*
-
-Rate-limited models (z-ai/glm-5.2:free) must be automatically excluded after repeated 429 errors to prevent cascading failures.
-
-### `dream:20260829232630:5:955dff`
-*29.08. 23:26 UTC · Quelle: dream*
-
-The system generates proposals faster than it implements them, creating a persistent gap between identified solutions and deployed resilience.
-
-### `dream:20260829232630:4:88a091`
-*29.08. 23:26 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors, confirming the failure is external (API rate limiting) rather than internal system corruption.
-
-### `dream:20260829232630:3:5223fd`
-*29.08. 23:26 UTC · Quelle: dream*
-
-Repeated skill proposals on the same problem domain (model routing, circuit breakers, health scores) signal that the solution space is well-understood but no implementation has been deployed yet.
-
-### `dream:20260829232630:2:006d5f`
-*29.08. 23:26 UTC · Quelle: dream*
-
-The fallback model (nemotron-3-ultra) succeeds but exhibits 4x latency variance (4.4s to 18.6s), indicating shared infrastructure pressure on the fallback as well.
-
-### `dream:20260829232630:1:1e3cf2`
-*29.08. 23:26 UTC · Quelle: dream*
-
-Free-tier API models consistently hit rate limits (429), making them unreliable as primary inference endpoints without architectural safeguards.
-
-### `dream:20260829232005:5:18d449`
-*29.08. 23:20 UTC · Quelle: dream*
-
-Prune runs remove nothing despite accumulating failed-model events, wasting context on known-bad endpoints.
-
-### `dream:20260829232005:4:ed59b6`
-*29.08. 23:20 UTC · Quelle: dream*
-
-Selbstdiagnose reports zero organ errors while external-API health (error rate, quota, latency) remains invisible, preventing conserve-state triggers before cascade failure.
-
-### `dream:20260829232005:3:755090`
-*29.08. 23:20 UTC · Quelle: dream*
-
-Five skill proposals already address routing, circuit breakers, health scorecards, and quota persistence but none have entered a promotion pipeline, stalling capability growth.
-
-### `dream:20260829232005:2:8f8222`
-*29.08. 23:20 UTC · Quelle: dream*
-
-Fallback model latency varies 4x (9.5–41.1s) with no p50/p95 tracking, so deadline-aware routing cannot exist.
-
-### `dream:20260829232005:1:dd6330`
-*29.08. 23:20 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free reveal absent rate-limit header parsing and token-bucket enforcement, causing reactive fallbacks instead of proactive quota management.
 
 ### `last_swarm_critique`
 *29.08. 22:55 UTC · Quelle: critic*

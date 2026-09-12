@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 23:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 23:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The persistence of model failures despite multiple skill proposals indicates an implementation gap, which can be bridged by an incubator that shadow-r
+- The metabolism stress level of 1.0 and conserve state imply that resource constraints are contributing to model failures, so task scheduling must adap
+- The failed reflex (modelle-zuverlässiger-machen.py) suggests that the tool for model reliability is incomplete or not robust to current conditions, re
+- The hand_action failure due to a missing file or directory reveals that file path resolution is fragile and must be hardened with absolute path valida
+- Recurring 429 and 502 errors from model providers indicate that the system is hitting rate limits and upstream instability, necessitating immediate de
 - Simulation closure achieved with score 8 despite 6-point calibration error, indicating success metrics decoupled from prediction accuracy.
 - Event pruning removes 18 events per cycle while preserving zero facts, potentially severing causal chains needed for root-cause analysis.
 - Single-cycle swarm convergence with 3:1 builder-to-critic ratio risks premature commitment without sufficient critical evaluation.
@@ -51,11 +56,6 @@
 - Simulations are generated but never applied, revealing a missing pipeline to convert them into executable artifacts.
 - Missing input files cause hand_action failures, indicating a need for pre-execution resource validation.
 - Provider errors (502/429) recur because the system does not check health before invocation.
-- Reflex-driven error reduction pipelines execute reliably when triggered but lack proactive health-based invocation.
-- The dots-studio fallback model succeeds consistently but at 2-3x latency, making it viable only for non-critical async paths.
-- Skill proposals accumulate unused without an automated incubator that shadow-tests and promotes after proven success runs.
-- Provider health scoring must weight 429 frequency and 502 overload signals equally with latency to avoid routing to degraded models.
-- Free-tier model APIs require a centralized singleton token-bucket rate limiter to prevent 429 cascades across independent callers.
 
 ---
 
