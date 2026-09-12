@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 04:17:15",
+ "stand": "2026-09-12 04:38:17",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,13 +33,13 @@
    "quote": 1.0
   },
   {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "veraltetes-wissen-erneuern.py",
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -121,6 +121,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-beheben.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
@@ -226,12 +232,6 @@
   },
   {
    "tool": "viele-skill-vorschläge-ordnen-und-zusamm.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

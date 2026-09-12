@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11497 Fakten** · Stand 2026-09-12 04:19 UTC · aktualisiert bei jedem Herzschlag
+**11482 Fakten** · Stand 2026-09-12 04:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
-- **swarm_artifact:** 1683
+- **dream:** 7431
+- **swarm_artifact:** 1677
 - **last_swarm_critique:** 898
 - **last_swarm_goal:** 633
-- **anti_pattern:** 379
-- **strategy:** 192
-- **tool:** 157
+- **anti_pattern:** 377
+- **strategy:** 191
+- **tool:** 156
 - **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912043740:5:f47f8f`
+*12.09. 04:37 UTC · Quelle: dream*
+
+Swarm goal updates stall because last_swarm_goal recall returns empty while drive signals (stale, failure, combination) accumulate unaddressed.
+
+### `dream:20260912043740:4:696451`
+*12.09. 04:37 UTC · Quelle: dream*
+
+Dream-memory processing pipeline requires multiple simulation revisions (2 risks, 2 revisions) before success, indicating fragile planning.
+
+### `dream:20260912043740:3:82ba4c`
+*12.09. 04:37 UTC · Quelle: dream*
+
+System enters conserve mode (stress=1.0) with severely limited budget (max_tasks=3, max_iterations=1) during dream processing, causing resource starvation.
+
+### `dream:20260912043740:2:c62d05`
+*12.09. 04:37 UTC · Quelle: dream*
+
+Hand actions fail when tools use relative paths instead of resolving ZOETRON_DATA environment variable for absolute data paths.
+
+### `dream:20260912043740:1:b10e0f`
+*12.09. 04:37 UTC · Quelle: dream*
+
+Primary models (gemma-4 variants) consistently fail with 429 rate limits while fallback model (dots-3-note-preview) succeeds but with high latency (20-72s).
 
 ### `tool:modell-fehler-verringern`
 *12.09. 04:17 UTC · Quelle: hands*
@@ -43018,21 +43043,6 @@ File operations fail when using relative paths instead of resolving via ZOETRON_
 
 Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
 
-### `tool:alte-schwarm-arbeiten-zu-ende-bringen`
-*29.08. 04:27 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Schwarm-Arbeiten zu Ende bringen'. Datei: data/tools/alte-schwarm-arbeiten-zu-ende-bringen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Schwarm-Arbeiten zu:2`
-*29.08. 04:26 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 8, 7]): Resilient error handling with structured observability - Rewrite all error handling to use a typed exception hierarchy (SwarmError, TimeoutError, OrchestratorUnavailableError, DeltaLinkError) with context preservation
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Schwarm-Arbeiten zu:1`
-*29.08. 04:26 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 7, 8]): Graph-theoretic delta linker with formal verification - Implement the zero-edges/delta linker as a proper graph algorithm: build a directed acyclic graph of task dependencies, compute transitive closure for delta dete
-
 ### `last_swarm_critique`
 *29.08. 04:26 UTC · Quelle: critic*
 
@@ -43042,56 +43052,6 @@ score=7; issues=Artifact 2 uses signal.SIGALRM for timeout which is Unix-only (f
 *29.08. 04:20 UTC · Quelle: system*
 
 Alte Schwarm-Arbeiten zu Ende bringen
-
-### `dream:20260829041946:5:16e2bd`
-*29.08. 04:19 UTC · Quelle: dream*
-
-The 'bahnen' graph shows zero delta and zero edges despite code existing, meaning the knowledge-graph linker is not extracting dependencies from the generated artifact.
-
-### `dream:20260829041946:4:f2ebe4`
-*29.08. 04:19 UTC · Quelle: dream*
-
-Calibration consistently over-predicts by 1 point (predicted 8 vs actual 7), suggesting the critic's scoring heuristic is misaligned with the final evaluator.
-
-### `dream:20260829041946:3:b0bced`
-*29.08. 04:19 UTC · Quelle: dream*
-
-Evolutionary search produces score variance (4-9) but the swarm stops at 2 cycles without convergence, indicating insufficient iteration budget or weak selection pressure.
-
-### `dream:20260829041946:2:a3e134`
-*29.08. 04:19 UTC · Quelle: dream*
-
-Destructive tool calls (subprocess) are hard-blocked by an approval gate, causing whole-goal stalls even when the artifact already exists and passes tests.
-
-### `dream:20260829041946:1:a1c8a9`
-*29.08. 04:19 UTC · Quelle: dream*
-
-The fallback model (z-ai/glm-5.2) fails deterministically with HTTP 429 under load, making it unusable as a reliable backup without rate-limit handling.
-
-### `dream:20260829041522:5:2a28d8`
-*29.08. 04:15 UTC · Quelle: dream*
-
-Calibration error of 1 (predicted 8 vs actual 7) on a 223-line artifact indicates systematic overconfidence in simulation verdicts.
-
-### `dream:20260829041522:4:132511`
-*29.08. 04:15 UTC · Quelle: dream*
-
-Skill proposals accumulate in drive goals but lack an implementation pipeline; zero proposed skills became runnable code this cycle.
-
-### `dream:20260829041522:3:109803`
-*29.08. 04:15 UTC · Quelle: dream*
-
-Stress level 1.0 triggers conserve mode that caps tasks at 3 and iterations at 1, severely throttling throughput.
-
-### `dream:20260829041522:2:474587`
-*29.08. 04:15 UTC · Quelle: dream*
-
-File operations fail when using relative paths; all paths must resolve absolutely via ZOETRON_DATA env var and sys.argv[1] input.
-
-### `dream:20260829041522:1:44b964`
-*29.08. 04:15 UTC · Quelle: dream*
-
-Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making nemotron-3-ultra the only reliable fallback despite 5-74s latency variance.
 
 ### `last_swarm_critique`
 *29.08. 03:54 UTC · Quelle: critic*

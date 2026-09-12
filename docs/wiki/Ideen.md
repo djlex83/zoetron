@@ -1,30 +1,30 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 04:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 04:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 8×)*
-- Add pre-flight 1-token health probe to selbstdiagnose for each candidate model before planner assigns tasks. *(hatte die Idee 4×)*
 - Implement exponential-backoff retry with automatic model fallback on 429/502/timeout before marking a call fai *(hatte die Idee 4×)*
 - Build a path-resolver utility that absolutizes all relative paths against ZOETRON_DATA before any hand action. *(hatte die Idee 4×)*
 - Add a pre-flight validator for hand actions: check path existence and data-path alignment before execution. *(hatte die Idee 4×)*
 - Create a swarm convergence gate requiring minimum 3 critic cycles or 30% dissent threshold before marking conv *(hatte die Idee 4×)*
 - Develop a calibration multiplier module that inflates initial effort estimates by 4-5x for swarm planning. *(hatte die Idee 4×)*
 - Enforce swarm refresh quality gate: require ≥2 critics, minimum score 8, critic sign-off, and TTL-based stalen *(hatte die Idee 4×)*
-- Deploy ModelRouter with 5-min sliding-window 429/502 tracking, auto-disable at >30% failure rate, 10s timeout, *(hatte die Idee 3×)*
 - Create shared HTTP wrapper with exponential backoff (base 2s, max 30s, 3 retries, jitter) for all OpenRouter c *(hatte die Idee 3×)*
 - Build DegradedMode skill: when >2 models disabled, restrict planner to inclusionai model only, halve token bud *(hatte die Idee 3×)*
 - Implement PathResolver utility that expands sys.argv[1] and ZOETRON_DATA into absolute paths before every hand *(hatte die Idee 3×)*
+- Add pre-flight 1-token health probe to selbstdiagnose for each candidate model before planner assigns tasks. *(hatte die Idee 3×)*
 - model-gateway-health-monitor: rolling-window tracker of per-model success/latency/rate-limit exposing a viable *(hatte die Idee 3×)*
 - circuit-breaker-router: wraps every model call with 429/timeout tripping, failover to next viable model, and a *(hatte die Idee 3×)*
 - Build a model fallback chain that, upon a 429 error, waits with exponential backoff and then tries the next mo *(hatte die Idee 3×)*
+- Implement a model health check that pings each candidate model with a minimal request before assigning a task, *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm goal updates stall because last_swarm_goal recall returns empty while drive signals (stale, failure, combination) accumulate unaddressed.
+- Dream-memory processing pipeline requires multiple simulation revisions (2 risks, 2 revisions) before success, indicating fragile planning.
+- System enters conserve mode (stress=1.0) with severely limited budget (max_tasks=3, max_iterations=1) during dream processing, causing resource starva
+- Hand actions fail when tools use relative paths instead of resolving ZOETRON_DATA environment variable for absolute data paths.
+- Primary models (gemma-4 variants) consistently fail with 429 rate limits while fallback model (dots-3-note-preview) succeeds but with high latency (20
 - Pruning uses static thresholds instead of targeting resource pressure, discarding potentially valuable facts while retaining noise.
 - Skill proposals accumulate in dreams but lack a validation-to-deployment pipeline, leaving proven improvements untested.
 - Fixed 20s hand-action timeouts ignore token volume and external dependencies, causing premature termination or wasted wait time.
@@ -51,11 +56,6 @@
 - Fixed pruning thresholds risk losing critical but infrequently accessed facts, requiring dynamic memory management with tagged retention.
 - The gap between skill proposals and implemented skills is large, indicating a need for an automated validation and merge pipeline.
 - Model endpoints exhibit transient failures (502, 429) and variable latency, making a router with circuit breaker and failover essential for reliabilit
-- Cross‑dream synthesis can generate novel capabilities; schedule regular combination of distant dream elements.
-- Stale swarm goals lead to stagnation; TTL‑based auto‑refresh keeps them active.
-- Reflex convergence without a numeric effectiveness metric yields false positives; enforce metric recording before marking converged.
-- Event logs grow without fact pruning, causing memory bloat; event compaction is needed.
-- Model endpoints frequently return 429 or 502 errors, so a router with per‑endpoint success rates and exponential backoff is essential.
 
 ---
 
