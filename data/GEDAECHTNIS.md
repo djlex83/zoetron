@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11399 Fakten** · Stand 2026-09-12 20:40 UTC · aktualisiert bei jedem Herzschlag
+**11403 Fakten** · Stand 2026-09-12 20:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7366
-- **swarm_artifact:** 1643
-- **last_swarm_critique:** 914
-- **last_swarm_goal:** 649
+- **dream:** 7361
+- **swarm_artifact:** 1649
+- **last_swarm_critique:** 915
+- **last_swarm_goal:** 650
 - **anti_pattern:** 369
 - **strategy:** 187
-- **tool:** 152
+- **tool:** 153
 - **hand_result:** 81
 - **aktuell_organfehler:** 38
 
 ---
+
+### `tool:veraltete-fakten-aktualisieren`
+*12.09. 20:54 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Fakten aktualisieren'. Datei: data/tools/veraltete-fakten-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*12.09. 20:54 UTC · Quelle: critic*
+
+score=8; issues=Contradiction detection in StaleFactDetector is simplistic keyword-based and tied to a hardcoded goal string; Staleness scoring parameters (max_age_days=90, decay 365) are hardcoded and not configurable via arguments or config; Prune organ inte
+
+### `last_swarm_goal`
+*12.09. 20:49 UTC · Quelle: system*
+
+Veraltete Fakten aktualisieren
+
+### `dream:20260912204820:5:f34d24`
+*12.09. 20:48 UTC · Quelle: dream*
+
+Pruning removes 10 facts/19 events per cycle yet stale swarm goals persist for months.
+
+### `dream:20260912204820:4:293ad7`
+*12.09. 20:48 UTC · Quelle: dream*
+
+Simulation-driven revision (5 risks → 5 revisions) converges but consumes 3+ model calls per goal.
+
+### `dream:20260912204820:3:8f3c97`
+*12.09. 20:48 UTC · Quelle: dream*
+
+Hand actions fail with exit codes 1/2 but emit no error payload, making diagnosis impossible.
+
+### `dream:20260912204820:2:e98764`
+*12.09. 20:48 UTC · Quelle: dream*
+
+Rate-limited models (gemma) are tried repeatedly before fallback, wasting cycles.
+
+### `dream:20260912204820:1:b9edb7`
+*12.09. 20:48 UTC · Quelle: dream*
+
+Model fallback succeeds but introduces 20-70s latency spikes that stall the action loop.
 
 ### `dream:20260912203830:5:96e95e`
 *12.09. 20:38 UTC · Quelle: dream*
@@ -42542,56 +42582,6 @@ Consecutive failures trigger aggressive 30-minute model lockouts, turning transi
 *29.08. 20:51 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter suffer pervasive 429 rate-limiting that makes them unreliable as primary workers.
-
-### `dream:20260829204458:5:bb2f4f`
-*29.08. 20:44 UTC · Quelle: dream*
-
-Path resolution for hand actions is brittle — relative paths and missing data directories cause silent failures with no fallback.
-
-### `dream:20260829204458:4:b20ef3`
-*29.08. 20:44 UTC · Quelle: dream*
-
-Skill proposals accumulate without implementation tracking, creating a persistent gap between identified solutions and deployed fixes.
-
-### `dream:20260829204458:3:b102e5`
-*29.08. 20:44 UTC · Quelle: dream*
-
-The system enters conserve mode only after stress reaches 1.0, meaning load reduction is reactive rather than proactive.
-
-### `dream:20260829204458:2:fa69c0`
-*29.08. 20:44 UTC · Quelle: dream*
-
-External I/O operations (API calls, file access, drive reads) lack circuit-breaking, so individual failures propagate instead of degrading gracefully.
-
-### `dream:20260829204458:1:1bc016`
-*29.08. 20:44 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free endpoint is a persistent single point of failure — repeated 429 errors without automatic failover cascade into task delays and stalled workflows.
-
-### `dream:20260829203843:5:a38b46`
-*29.08. 20:38 UTC · Quelle: dream*
-
-Reflex-mode execution converges reliably even when the model-selection layer fails repeatedly, demonstrating that the reflex-to-action pipeline is fundamentally more robust than model-dependent reasoning.
-
-### `dream:20260829203843:4:e3a2d0`
-*29.08. 20:38 UTC · Quelle: dream*
-
-The system correctly diagnoses root causes and generates targeted skill proposals, but the persistent gap between proposal and implementation is the largest unclosed loop in the workflow.
-
-### `dream:20260829203843:3:eed398`
-*29.08. 20:38 UTC · Quelle: dream*
-
-Drive timeouts of 180s coincide with external API failures, meaning internal deadlines must adapt to external dependency reliability rather than running on fixed timers.
-
-### `dream:20260829203843:2:251724`
-*29.08. 20:38 UTC · Quelle: dream*
-
-A single working model (ling-3.0-flash-fin) sufficed to complete the task despite four consecutive failures, proving that a fallback chain prevents total pipeline blockage.
-
-### `dream:20260829203843:1:ecae35`
-*29.08. 20:38 UTC · Quelle: dream*
-
-429 rate-limit errors are the dominant failure mode across providers, indicating free-tier API quotas — not model capability — are the binding constraint.
 
 ### `last_swarm_critique`
 *29.08. 19:57 UTC · Quelle: critic*

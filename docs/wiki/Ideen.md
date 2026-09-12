@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
@@ -37,10 +37,15 @@
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 10 facts/19 events per cycle yet stale swarm goals persist for months.
+- Simulation-driven revision (5 risks → 5 revisions) converges but consumes 3+ model calls per goal.
+- Hand actions fail with exit codes 1/2 but emit no error payload, making diagnosis impossible.
+- Rate-limited models (gemma) are tried repeatedly before fallback, wasting cycles.
+- Model fallback succeeds but introduces 20-70s latency spikes that stall the action loop.
 - Self-diagnosis reports zero organ errors despite model-layer failures, confirming architectural isolation between cognitive organs and model providers
 - The system autonomously generates skill proposals targeting observed failures (fallback, backoff, monitoring), showing meta-cognitive self-improvement
 - Regular pruning of facts and events (10–19 per cycle) indicates active memory management but lacks visibility into what is discarded versus retained.
@@ -51,11 +56,6 @@
 - Pruning removes completed-goal history but risks discarding context needed for future similar tasks; adaptive retention by goal-cycle is safer.
 - High-latency fallback models succeed but degrade responsiveness; latency budgets must be part of model selection criteria.
 - Rate-limited free models are unreliable for production workflows; health-aware routing with automatic fallback is essential.
-- Pruning low-importance data helps maintain efficiency but must be balanced to avoid interfering with critical operations.
-- Reflexive error handling successfully mitigated immediate issues, but long-term stability depends on architectural improvements.
-- Sequential model failures demonstrate that cascading errors can occur without proper fallback mechanisms in place.
-- The consistent success of the dots-studio model under varying loads highlights the value of model diversity for reliability.
-- Recurring 429 errors across multiple models indicate that API rate limiting is a systemic issue requiring proactive load management.
 
 ---
 
