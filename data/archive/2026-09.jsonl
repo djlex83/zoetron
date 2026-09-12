@@ -41912,3 +41912,20 @@
 {"ts": 1788606831.1285756, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten-Vorschläge prüfen und nutzbare umsetzen", "score": 1, "converged": false}}
 {"ts": 1788606833.7916808, "kind": "issue_synced", "payload": {"issue": 377, "state": "open"}}
 {"ts": 1788607346.4304917, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788607963.645434, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788607965.4911125, "kind": "prune_run", "payload": {"facts_pruned": 21, "events_pruned": 1}}
+{"ts": 1788607971.798488, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 2.7, "tokens_ein": 1408, "tokens_aus": 768}}
+{"ts": 1788607971.7990072, "kind": "skill_proposal", "payload": {"proposal": "Implement a temporary blacklist mechanism that automatically disables models experiencing repeated 429 errors for a configurable cooldown period."}}
+{"ts": 1788607971.7990592, "kind": "skill_proposal", "payload": {"proposal": "Add a latency-aware model router that switches to a faster model if the current model's latency exceeds a threshold (e.g., 15s)."}}
+{"ts": 1788607971.7991085, "kind": "skill_proposal", "payload": {"proposal": "Create a periodic stale swarm project reviewer that checks for inactive projects and prompts for closure or continuation."}}
+{"ts": 1788607971.799157, "kind": "skill_proposal", "payload": {"proposal": "Build a dream memory combinator that actively seeks connections between old dream memories to generate new drive goals."}}
+{"ts": 1788607971.7992046, "kind": "skill_proposal", "payload": {"proposal": "Develop a reflex action that automatically applies and tests newly proposed skills without manual intervention."}}
+{"ts": 1788607971.7992525, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788607974.151657, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788607974.1516542, "schalter_geoeffnet": false}}
+{"ts": 1788607997.4433935, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 23.3, "tokens_ein": 528, "tokens_aus": 635}}
+{"ts": 1788607997.4435234, "kind": "drive_goal", "payload": {"title": "Traum-Erinnerungen verknüpfen und nutzbar machen", "why": "Das System hat viele Traum-Daten, aber sie sind nicht miteinander verbunden. Wenn Träume verknüpft sind, kann das System daraus besser lernen.", "signal": "stale"}}
+{"ts": 1788607997.4435935, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft (67 Fehler vs. 48 Erfolge). Weniger Fehler bedeuten, dass das System verlässlicher arbeitet.", "signal": "failure"}}
+{"ts": 1788607997.4436517, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich umsetzen", "why": "Es gibt 50 Vorschläge für neue Fähigkeiten, aber unklar, wie viele wirklich funktionieren. Umsetzen statt nur planen bringt echten Fortschritt.", "signal": "gap"}}
+{"ts": 1788608000.2870462, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.35, "gelesen": 1145}}
+{"ts": 1788608000.289394, "kind": "reflex_used", "payload": {"goal": "GitHub-Synchronisation reparieren und Speicher aufräumen", "tool": "wissensgraph-verknüpfungen-reparieren.py", "ok": true}}
+{"ts": 1788608000.7172687, "kind": "act_done", "payload": {"goal_title": "GitHub-Synchronisation reparieren und Speicher aufräumen", "score": null, "converged": true, "mode": "reflex"}}

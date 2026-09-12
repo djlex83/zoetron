@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11484 Fakten** · Stand 2026-09-12 11:29 UTC · aktualisiert bei jedem Herzschlag
+**11489 Fakten** · Stand 2026-09-12 11:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7446
+- **dream:** 7451
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 905
 - **last_swarm_goal:** 640
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912113731:5:9361b7`
+*12.09. 11:37 UTC · Quelle: dream*
+
+Reflex tools work reliably when invoked but are purely reactive; the planner never schedules preventive maintenance (calibration, swarm sync, skill audit) autonomously.
+
+### `dream:20260912113731:4:665059`
+*12.09. 11:37 UTC · Quelle: dream*
+
+Calibration and pre-execution validation are repeatedly proposed (4+ times) but never instantiated, indicating a meta-failure to close the proposal→implementation loop.
+
+### `dream:20260912113731:3:9104c8`
+*12.09. 11:37 UTC · Quelle: dream*
+
+Swarm knowledge refresh succeeds only when triggered reflexively; no proactive schedule or freshness monitor exists, causing repeated 'stale' drive signals.
+
+### `dream:20260912113731:2:4631b8`
+*12.09. 11:37 UTC · Quelle: dream*
+
+Skill proposals accumulate but never graduate to implemented capabilities — the system lacks an automated promote/validate/deploy pipeline for its own proposals.
+
+### `dream:20260912113731:1:928dcf`
+*12.09. 11:37 UTC · Quelle: dream*
+
+Model reliability is the primary bottleneck: nemotron-3-ultra shows 30-43s latency variance and ~50% failure rate, making all downstream tasks unreliable.
 
 ### `dream:20260912112636:5:914bf3`
 *12.09. 11:26 UTC · Quelle: dream*
