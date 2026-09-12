@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 20:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und verringern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning low-importance data helps maintain efficiency but must be balanced to avoid interfering with critical operations.
+- Reflexive error handling successfully mitigated immediate issues, but long-term stability depends on architectural improvements.
+- Sequential model failures demonstrate that cascading errors can occur without proper fallback mechanisms in place.
+- The consistent success of the dots-studio model under varying loads highlights the value of model diversity for reliability.
+- Recurring 429 errors across multiple models indicate that API rate limiting is a systemic issue requiring proactive load management.
 - Pruning (20 facts, 62 events) and self-diagnosis (zero organ errors) operate correctly, showing maintenance loops are healthy while goal-directed loop
 - Hand actions fail silently (exit 1, no error) after planning succeeds, exposing a missing validation gate between plan approval and execution commit.
 - Rate limiting (429) cascades across multiple OpenRouter models simultaneously, proving that per-model backoff is insufficient without global request t
@@ -51,11 +56,6 @@
 - The skill promotion pipeline must include syntax, import, sandbox, and benchmark gates to ensure only validated skills are promoted.
 - File access failures happen when relative paths are used; absolute path resolution and existence checks prevent silent errors.
 - Model timeouts and 429 errors occur frequently, requiring a fallback chain to maintain reliability.
-- Simulation forecasts are consistently biased, requiring calibration.
-- Hand‑action failures stem from missing files, so existence checks should be added.
-- Pruning removes routine events but must keep recent failure sequences to retain learnings.
-- Drive goals about model failure and stale knowledge recur, indicating they are core concerns.
-- The system repeatedly proposes health‑tracking and retry mechanisms, revealing a persistent reliability gap.
 
 ---
 

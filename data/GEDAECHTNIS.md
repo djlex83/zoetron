@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11389 Fakten** · Stand 2026-09-12 20:09 UTC · aktualisiert bei jedem Herzschlag
+**11394 Fakten** · Stand 2026-09-12 20:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7356
+- **dream:** 7361
 - **swarm_artifact:** 1643
 - **last_swarm_critique:** 914
 - **last_swarm_goal:** 649
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912201657:5:01e08a`
+*12.09. 20:16 UTC · Quelle: dream*
+
+Pruning low-importance data helps maintain efficiency but must be balanced to avoid interfering with critical operations.
+
+### `dream:20260912201657:4:7b24f6`
+*12.09. 20:16 UTC · Quelle: dream*
+
+Reflexive error handling successfully mitigated immediate issues, but long-term stability depends on architectural improvements.
+
+### `dream:20260912201657:3:c34a27`
+*12.09. 20:16 UTC · Quelle: dream*
+
+Sequential model failures demonstrate that cascading errors can occur without proper fallback mechanisms in place.
+
+### `dream:20260912201657:2:ef9f25`
+*12.09. 20:16 UTC · Quelle: dream*
+
+The consistent success of the dots-studio model under varying loads highlights the value of model diversity for reliability.
+
+### `dream:20260912201657:1:49e8b1`
+*12.09. 20:16 UTC · Quelle: dream*
+
+Recurring 429 errors across multiple models indicate that API rate limiting is a systemic issue requiring proactive load management.
 
 ### `dream:20260912200552:5:196460`
 *12.09. 20:05 UTC · Quelle: dream*
