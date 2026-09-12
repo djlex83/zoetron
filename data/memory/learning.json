@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 12:39:36",
+ "stand": "2026-09-12 12:50:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -424,6 +424,12 @@
   },
   {
    "tool": "simulationen-gezielt-einsetzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "ferngedächtnisse-verbinden.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

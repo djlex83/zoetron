@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11499 Fakten** · Stand 2026-09-12 12:41 UTC · aktualisiert bei jedem Herzschlag
+**11489 Fakten** · Stand 2026-09-12 12:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7451
+- **dream:** 7441
 - **swarm_artifact:** 1663
 - **last_swarm_critique:** 907
 - **last_swarm_goal:** 642
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912124943:5:ac841a`
+*12.09. 12:49 UTC · Quelle: dream*
+
+System operates at stress 1.0 in 'conserve' mode with max_tasks=3, yet continues spawning model calls that hit rate limits, wasting the tiny budget.
+
+### `dream:20260912124943:4:430ec9`
+*12.09. 12:49 UTC · Quelle: dream*
+
+Skill installation pipeline is broken end-to-end: reflex tool crashes, simulation flags 5 risks, TOR rejects artifact with traceback, and bahnen score stays at 1.
+
+### `dream:20260912124943:3:31822d`
+*12.09. 12:49 UTC · Quelle: dream*
+
+Calibration error of 6 (predicted 7 vs actual 1) reveals planning estimates are ungrounded; predictions must be anchored to recent empirical throughput.
+
+### `dream:20260912124943:2:960e2a`
+*12.09. 12:49 UTC · Quelle: dream*
+
+Hand actions fail because scripts use relative paths instead of the absolute ZOETRON_DATA environment variable, causing zero files to be read or written.
+
+### `dream:20260912124943:1:4a49df`
+*12.09. 12:49 UTC · Quelle: dream*
+
+Free-tier models (gemma, nemotron) frequently return 429 rate limits and 502 upstream overloads, making them unreliable as primary providers without automatic fallback chains.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Ferne Träume und Erinner:2`
 *12.09. 12:37 UTC · Quelle: evolution*
@@ -43017,81 +43042,6 @@ Hand actions fail silently when given relative paths instead of absolute paths r
 *29.08. 12:49 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) affects all free-tier models simultaneously, making model diversity ineffective without request pacing or paid fallbacks.
-
-### `dream:20260829124248:5:b644a7`
-*29.08. 12:42 UTC · Quelle: dream*
-
-Iterative simulation loops without explicit convergence thresholds waste compute cycles on divergent trajectories.
-
-### `dream:20260829124248:4:6f9478`
-*29.08. 12:42 UTC · Quelle: dream*
-
-Pruning policies that ignore access frequency and recency retain stale facts while discarding active knowledge.
-
-### `dream:20260829124248:3:61626e`
-*29.08. 12:42 UTC · Quelle: dream*
-
-Hand-action scripts fail silently when sys.argv paths diverge from actual data locations, requiring pre-execution validation.
-
-### `dream:20260829124248:2:8434f1`
-*29.08. 12:42 UTC · Quelle: dream*
-
-Absence of automatic retry-with-backoff for transient HTTP 429 errors wastes available quota and causes unnecessary fallbacks.
-
-### `dream:20260829124248:1:1366f9`
-*29.08. 12:42 UTC · Quelle: dream*
-
-Free-tier LLM endpoints exhibit high failure rates (429/502) making single-model reliance unsafe for production workflows.
-
-### `dream:20260829123702:5:88a9cd`
-*29.08. 12:37 UTC · Quelle: dream*
-
-Skill proposals accumulate (5 in this cycle alone) but completion rate stays low, revealing a proposal-to-execution gap in the capability pipeline.
-
-### `dream:20260829123702:4:ca9b7d`
-*29.08. 12:37 UTC · Quelle: dream*
-
-Reflex tools for learning from errors are invoked but have not yet prevented recurring 429 failures, showing learning without structural change.
-
-### `dream:20260829123702:3:dcb4aa`
-*29.08. 12:37 UTC · Quelle: dream*
-
-Three completed market analyses remain unused (stale drive goals), indicating a broken handoff from analysis production to decision consumption.
-
-### `dream:20260829123702:2:026f00`
-*29.08. 12:37 UTC · Quelle: dream*
-
-The fallback model nvidia/nemotron-3-ultra succeeds but introduces 43-56s latency, making it unsuitable for interactive loops without caching or scheduling.
-
-### `dream:20260829123702:1:15050c`
-*29.08. 12:37 UTC · Quelle: dream*
-
-Rate limiting (429 errors) on the primary model z-ai/glm-5.2:free is the dominant systemic failure mode, occurring repeatedly across cycles without automated mitigation.
-
-### `dream:20260829123233:5:d495a5`
-*29.08. 12:32 UTC · Quelle: dream*
-
-Reflex-driven tool introspection succeeds where proactive planning fails, showing reactive repair > proactive design.
-
-### `dream:20260829123233:4:db0638`
-*29.08. 12:32 UTC · Quelle: dream*
-
-Token consumption varies 6x (223-1307 input) for similar tasks, indicating no complexity-aware routing exists.
-
-### `dream:20260829123233:3:3ca083`
-*29.08. 12:32 UTC · Quelle: dream*
-
-Swarm processes evolve but fail to converge, suggesting missing convergence criteria or premature termination.
-
-### `dream:20260829123233:2:01d943`
-*29.08. 12:32 UTC · Quelle: dream*
-
-Simulations generate revision plans (5 revisions) but zero are applied, revealing a planning-execution gap.
-
-### `dream:20260829123233:1:c90922`
-*29.08. 12:32 UTC · Quelle: dream*
-
-Rate limiting (429 errors) is the systemic bottleneck across all free-tier models, not an isolated model failure.
 
 ### `last_swarm_critique`
 *29.08. 12:10 UTC · Quelle: critic*

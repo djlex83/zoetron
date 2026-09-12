@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 12:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 12:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System operates at stress 1.0 in 'conserve' mode with max_tasks=3, yet continues spawning model calls that hit rate limits, wasting the tiny budget.
+- Skill installation pipeline is broken end-to-end: reflex tool crashes, simulation flags 5 risks, TOR rejects artifact with traceback, and bahnen score
+- Calibration error of 6 (predicted 7 vs actual 1) reveals planning estimates are ungrounded; predictions must be anchored to recent empirical throughpu
+- Hand actions fail because scripts use relative paths instead of the absolute ZOETRON_DATA environment variable, causing zero files to be read or writt
+- Free-tier models (gemma, nemotron) frequently return 429 rate limits and 502 upstream overloads, making them unreliable as primary providers without a
 - Pruning runs remove events without cross-referencing organ-health flags, risking silent data loss when diagnostics are deferred.
 - Transient CLI failures lack idempotent retry wrappers, causing unnecessary manual re-intervention despite known exponential-backoff patterns.
 - Swarm knowledge staleness triggers repeated refresh goals, but no automated freshness daemon exists to prevent recurrent staleness.
@@ -51,11 +56,6 @@
 - Evolutionary search can raise scores from 6 to 9 but fails to converge without additional cycles or stricter criteria.
 - Swarm performance suffers when roles lack integration, as evidenced by low score despite multiple builders.
 - Free-tier models frequently return 429/502 errors, requiring automatic fallback and exponential backoff.
-- No per-endpoint failure-rate telemetry exists, so the system cannot trigger alerts or reroute traffic when error rates exceed 30% over 10 calls.
-- Hand actions execute without mandatory pre-commit gates (path validation, simulation verdict, syntax check), causing preventable rollbacks.
-- Swarm-generated insights decay unread because no automated refresh pipeline promotes stale facts into active memory or skill updates.
-- Skill proposals accumulate faster than they are validated, creating a proposal-to-practice gap that a lifecycle manager (implement → test → promote) m
-- Free-tier model endpoints fail catastrophically under load (429/502), making hardcoded priority routing with 5-minute error caching and automatic fail
 
 ---
 
