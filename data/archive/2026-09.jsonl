@@ -41438,3 +41438,21 @@
 {"ts": 1788595775.9983683, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Skills wirklich ausführen", "tool": "vorgeschlagene-skills-nutzbar-machen.py", "ok": true}}
 {"ts": 1788595776.3944585, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Skills wirklich ausführen", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1788596313.9087765, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788596383.5343318, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788596385.3842297, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 24}}
+{"ts": 1788596389.4484508, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788596389.4484482, "schalter_geoeffnet": false}}
+{"ts": 1788596412.098593, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.6, "tokens_ein": 1396, "tokens_aus": 1234}}
+{"ts": 1788596412.099135, "kind": "skill_proposal", "payload": {"proposal": "Build a model health monitor tracking per-model 429/502 rates in sliding windows and exposing get_healthy_model() for the router."}}
+{"ts": 1788596412.0991895, "kind": "skill_proposal", "payload": {"proposal": "Implement error-classification reflexes mapping common signatures (429, 502, timeout) to pre-validated recovery sequences (backoff, fallback, circuit-break)."}}
+{"ts": 1788596412.099242, "kind": "skill_proposal", "payload": {"proposal": "Create differential memory pruning: aggressive event summarization (keep last 100 raw, then hourly aggregates) vs. conservative fact retention."}}
+{"ts": 1788596412.0992935, "kind": "skill_proposal", "payload": {"proposal": "Add a drive-goal introspection tool that periodically clusters active goals by signal type (failure, stale) and proposes consolidation actions."}}
+{"ts": 1788596412.0993452, "kind": "skill_proposal", "payload": {"proposal": "Deploy a predictive cooldown scheduler using the failure-signature cache to preemptively skip models during their historical high-error windows."}}
+{"ts": 1788596412.0993972, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788596414.4113708, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788596414.4113674, "schalter_geoeffnet": false}}
+{"ts": 1788596450.7782242, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 36.4, "tokens_ein": 520, "tokens_aus": 770}}
+{"ts": 1788596450.7783704, "kind": "drive_goal", "payload": {"title": "Modellfehler deutlich reduzieren", "why": "Zu viele Fehler bremsen das System aus. Weniger Fehler bedeuten zuverlässigeres Handeln.", "signal": "failure"}}
+{"ts": 1788596450.7784462, "kind": "drive_goal", "payload": {"title": "Fähigkeiten schneller nutzbar machen", "why": "Viele Vorschläge landen nicht in der Praxis. Eine klare Pipeline bringt sie schneller ins Laufen.", "signal": "gap"}}
+{"ts": 1788596450.7785103, "kind": "drive_goal", "payload": {"title": "Offene Baustellen konsequent abschließen", "why": "Fünf wichtige Vorhaben liegen seit langem brach. Fertigstellen schafft Platz für Neues.", "signal": "stale"}}
+{"ts": 1788596468.085136, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 14.94, "gelesen": 1972}}
+{"ts": 1788596468.088102, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich ausführen", "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py", "ok": true}}
+{"ts": 1788596468.7352722, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten wirklich ausführen", "score": null, "converged": true, "mode": "reflex"}}

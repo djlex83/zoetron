@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 08:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 08:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions are executed successfully but their impact on system performance is not measured, so their benefit cannot be determined.
+- Self-diagnosis only checks organ health, missing model inference degradation which is the primary failure mode.
+- Pruning events without audit trails leads to information loss that later manifests as diagnosis gaps.
+- The system generates redundant skill proposals across dream cycles, indicating a missing deduplication mechanism.
+- Model latency (22–50 s) and failures are the primary cause of system unreliability, and the current model rotation strategy is ineffective.
 - Swarm convergence with evolved=false suggests the current role distribution (planner:1, builder:4, critic:1) is a stable, reusable template for code-g
 - Aggressive pruning (37 events, 5 facts) left zero organ errors in selbstdiagnose, indicating either safe pruning or a blind spot requiring prune_audit
 - Calibration error of 1 (predicted 8 vs actual 9) shows reliable self-estimation when the simulation gate passes, but degrades without it.
@@ -51,11 +56,6 @@
 - Pre-execution simulations that identify and apply multiple revisions act as an effective risk-reduction filter before actual tool usage.
 - Hand action failures are often caused by fragile path resolution where relative paths or mismatched ZOETRON_DATA variables prevent file access.
 - Frequent model failures (502 upstream errors and 429 rate limits) on primary endpoints necessitate automated, health-probe-driven failover to stable a
-- Pruning (32-34 events/cycle) discards context needed to correlate skill proposals with actual outcomes, breaking the learning loop.
-- Swarm knowledge decays faster than refresh cycles: drive goals for 'Schwarm-Wissen aktualisieren' recur every cycle despite reflex-driven refreshes.
-- Skill proposals accumulate without adoption tracking: model_router.py, prompt-hash caching, and local-first policy were proposed twice each but never 
-- Reflex tools successfully handle acute symptoms (stale swarm knowledge, model errors) but root causes persist because no validation pipeline integrate
-- External model dependency causes cascading failures: high latency (20-66s), error rates near 50%, and no systematic failover despite repeated skill pr
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11483 Fakten** · Stand 2026-09-12 08:22 UTC · aktualisiert bei jedem Herzschlag
+**11488 Fakten** · Stand 2026-09-12 08:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7456
+- **dream:** 7461
 - **swarm_artifact:** 1659
 - **last_swarm_critique:** 901
 - **last_swarm_goal:** 636
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912083000:5:c1e582`
+*12.09. 08:30 UTC · Quelle: dream*
+
+Reflex actions are executed successfully but their impact on system performance is not measured, so their benefit cannot be determined.
+
+### `dream:20260912083000:4:50b67c`
+*12.09. 08:30 UTC · Quelle: dream*
+
+Self-diagnosis only checks organ health, missing model inference degradation which is the primary failure mode.
+
+### `dream:20260912083000:3:070637`
+*12.09. 08:30 UTC · Quelle: dream*
+
+Pruning events without audit trails leads to information loss that later manifests as diagnosis gaps.
+
+### `dream:20260912083000:2:072458`
+*12.09. 08:30 UTC · Quelle: dream*
+
+The system generates redundant skill proposals across dream cycles, indicating a missing deduplication mechanism.
+
+### `dream:20260912083000:1:95b2cc`
+*12.09. 08:30 UTC · Quelle: dream*
+
+Model latency (22–50 s) and failures are the primary cause of system unreliability, and the current model rotation strategy is ineffective.
 
 ### `dream:20260912081955:5:fd8bfc`
 *12.09. 08:19 UTC · Quelle: dream*
