@@ -40448,3 +40448,34 @@
 {"ts": 1788573039.3347664, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.16, "gelesen": 467}}
 {"ts": 1788573041.4628124, "kind": "issue_synced", "payload": {"issue": 369, "state": "closed"}}
 {"ts": 1788573533.0240047, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787968912.077871, "key": "dream:20260829020152:1:1db846", "value": "Rate limiting (429 errors) across multiple models indicates missing proactive model health monitoring and fallback routing.", "source": "dream"}
+{"ts": 1787968912.07798, "key": "dream:20260829020152:2:46b8a3", "value": "Evolution produced a 9.3-scoring variant but swarm execution still scored 1, revealing a deployment-validation gap between evolution and runtime.", "source": "dream"}
+{"ts": 1787968912.078072, "key": "dream:20260829020152:3:13f6f6", "value": "Calibration predicted 2 but actual was 1, showing systematic overconfidence in capability estimation.", "source": "dream"}
+{"ts": 1787968912.0781624, "key": "dream:20260829020152:4:ef973f", "value": "Swarm role distribution (1 planner, 3 builders, 1 critic) is static and may not match task demands, evidenced by non-convergence after 2 cycles.", "source": "dream"}
+{"ts": 1787968912.078234, "key": "dream:20260829020152:5:454043", "value": "Hand actions fail with exit code 1 and no error detail, indicating opaque execution environment failures that evade self-diagnosis.", "source": "dream"}
+{"ts": 1787969176.9954967, "key": "dream:20260829020616:1:393b99", "value": "Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting that requires automatic model fallback to prevent task failure.", "source": "dream"}
+{"ts": 1787969176.9956367, "key": "dream:20260829020616:2:dcc1e4", "value": "Persistent stale swarm tasks accumulate due to lack of completion enforcement, leading to resource waste and goal drift.", "source": "dream"}
+{"ts": 1787969176.995744, "key": "dream:20260829020616:3:d1ef89", "value": "Skill proposals remain unused because there is no systematic integration pipeline from proposal to deployment.", "source": "dream"}
+{"ts": 1787969176.9958453, "key": "dream:20260829020616:4:8e8dca", "value": "Model failures from upstream overload (e.g., nvidia/nemotron-3-ultra-550b-a55b:free returning 502) require retry logic with exponential backoff.", "source": "dream"}
+{"ts": 1787969176.9959476, "key": "dream:20260829020616:5:ffa117", "value": "Self-diagnosis consistently reports zero findings, suggesting a need for deeper internal state inspection beyond surface checks.", "source": "dream"}
+{"ts": 1788573614.7649963, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788573616.5251286, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 56}}
+{"ts": 1788573624.5286658, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 4.3, "tokens_ein": 1210, "tokens_aus": 796}}
+{"ts": 1788573624.5294952, "kind": "skill_proposal", "payload": {"proposal": "Implement a provider-level circuit breaker that temporarily blocks all models from a provider when multiple 429 errors occur within a short window."}}
+{"ts": 1788573624.529612, "kind": "skill_proposal", "payload": {"proposal": "Develop a dynamic model scoring system that tracks recent success rates and automatically promotes reliable models to the top of the fallback chain."}}
+{"ts": 1788573624.5296957, "kind": "skill_proposal", "payload": {"proposal": "Create a proactive request queue that spaces out API calls based on historical 429 cooldown periods per provider to avoid hitting rate limits."}}
+{"ts": 1788573624.529785, "kind": "skill_proposal", "payload": {"proposal": "Add a fallback mechanism that automatically retries 502 upstream errors on alternative models after a brief exponential backoff delay."}}
+{"ts": 1788573624.5298674, "kind": "skill_proposal", "payload": {"proposal": "Establish a periodic memory consolidation routine that prunes outdated events and links distant dream memories to improve cross-cutting pattern recognition."}}
+{"ts": 1788573624.529952, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788573626.7772737, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788573626.777271, "schalter_geoeffnet": false}}
+{"ts": 1788573645.5452302, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.8, "tokens_ein": 544, "tokens_aus": 993}}
+{"ts": 1788573645.5453742, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren für zuverlässige Aktionen", "why": "Das Modell scheitert oft, was Aktionen blockiert. Weniger Fehler machen das System handlungsfähiger.", "signal": "failure"}}
+{"ts": 1788573645.5454469, "kind": "drive_goal", "payload": {"title": "Offene Schwarm-Aufgaben endlich umsetzen", "why": "Fünf wichtige Schwarm-Verbesserungen warten seit langem. Ihre Umsetzung stärkt das kollektive Lernen.", "signal": "stale"}}
+{"ts": 1788573645.545508, "kind": "drive_goal", "payload": {"title": "Wissensbasis aufräumen und Träume nutzen", "why": "Alte Einträge verstopfen das Gedächtnis. Geträumte Erfahrungen sollen für neue Fähigkeiten nutzbar gemacht werden.", "signal": "combination"}}
+{"ts": 1788573649.2224805, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.2, "gelesen": 467}}
+{"ts": 1788573649.2258801, "kind": "reflex_used", "payload": {"goal": "Altes Wissen aufräumen und aktualisieren", "tool": "wissenbasis-aufräumen-und-prüfen.py", "ok": true}}
+{"ts": 1788573649.6720903, "kind": "act_done", "payload": {"goal_title": "Altes Wissen aufräumen und aktualisieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788574140.9239612, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788574209.4588058, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788574211.2260532, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 41}}
+{"ts": 1788574215.46178, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788574215.4617758, "schalter_geoeffnet": false}}

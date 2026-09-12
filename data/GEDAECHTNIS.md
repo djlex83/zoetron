@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11512 Fakten** · Stand 2026-09-12 02:03 UTC · aktualisiert bei jedem Herzschlag
+**11507 Fakten** · Stand 2026-09-12 02:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
+- **dream:** 7436
 - **swarm_artifact:** 1695
 - **last_swarm_critique:** 895
 - **last_swarm_goal:** 630
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912021043:5:c183f7`
+*12.09. 02:10 UTC · Quelle: dream*
+
+Hand-action hard timeout (20s) aborts valid long-running operations; timeout must be adaptive to task complexity.
+
+### `dream:20260912021043:4:16921a`
+*12.09. 02:10 UTC · Quelle: dream*
+
+Calibration error of 50% (predicted 6 vs actual 9 cycles) indicates estimation models lack grounding in observed swarm dynamics.
+
+### `dream:20260912021043:3:b924bb`
+*12.09. 02:10 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview succeeded at 30s latency when primary and fallbacks failed, proving heterogeneous model routing is essential.
+
+### `dream:20260912021043:2:e0893b`
+*12.09. 02:10 UTC · Quelle: dream*
+
+Free-tier fallback models (gemma-4 variants) immediately hit 429 rate limits, eliminating them as viable backups under load.
+
+### `dream:20260912021043:1:111614`
+*12.09. 02:10 UTC · Quelle: dream*
+
+Primary model (nemotron-3-ultra) exhibits high latency variance (18-102s) and 502 upstream overload errors, making it unreliable as sole provider.
 
 ### `dream:20260912020029:5:68ff98`
 *12.09. 02:00 UTC · Quelle: dream*
@@ -43102,56 +43127,6 @@ Self-diagnosis reports zero organ errors despite 429 errors occurring, revealing
 *29.08. 02:12 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free model repeatedly hits 429 rate limits while nvidia/nemotron-3-ultra succeeds, proving single-provider reliance causes cascading failures.
-
-### `dream:20260829020616:5:ffa117`
-*29.08. 02:06 UTC · Quelle: dream*
-
-Self-diagnosis consistently reports zero findings, suggesting a need for deeper internal state inspection beyond surface checks.
-
-### `dream:20260829020616:4:8e8dca`
-*29.08. 02:06 UTC · Quelle: dream*
-
-Model failures from upstream overload (e.g., nvidia/nemotron-3-ultra-550b-a55b:free returning 502) require retry logic with exponential backoff.
-
-### `dream:20260829020616:3:d1ef89`
-*29.08. 02:06 UTC · Quelle: dream*
-
-Skill proposals remain unused because there is no systematic integration pipeline from proposal to deployment.
-
-### `dream:20260829020616:2:dcc1e4`
-*29.08. 02:06 UTC · Quelle: dream*
-
-Persistent stale swarm tasks accumulate due to lack of completion enforcement, leading to resource waste and goal drift.
-
-### `dream:20260829020616:1:393b99`
-*29.08. 02:06 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting that requires automatic model fallback to prevent task failure.
-
-### `dream:20260829020152:5:454043`
-*29.08. 02:01 UTC · Quelle: dream*
-
-Hand actions fail with exit code 1 and no error detail, indicating opaque execution environment failures that evade self-diagnosis.
-
-### `dream:20260829020152:4:ef973f`
-*29.08. 02:01 UTC · Quelle: dream*
-
-Swarm role distribution (1 planner, 3 builders, 1 critic) is static and may not match task demands, evidenced by non-convergence after 2 cycles.
-
-### `dream:20260829020152:3:13f6f6`
-*29.08. 02:01 UTC · Quelle: dream*
-
-Calibration predicted 2 but actual was 1, showing systematic overconfidence in capability estimation.
-
-### `dream:20260829020152:2:46b8a3`
-*29.08. 02:01 UTC · Quelle: dream*
-
-Evolution produced a 9.3-scoring variant but swarm execution still scored 1, revealing a deployment-validation gap between evolution and runtime.
-
-### `dream:20260829020152:1:1db846`
-*29.08. 02:01 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple models indicates missing proactive model health monitoring and fallback routing.
 
 ### `last_swarm_critique`
 *29.08. 01:14 UTC · Quelle: critic*

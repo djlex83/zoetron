@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 02:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 02:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Add a pre-flight validator for hand actions: check path existence and data-path alignment before execution. *(hatte die Idee 4×)*
 - Create a swarm convergence gate requiring minimum 3 critic cycles or 30% dissent threshold before marking conv *(hatte die Idee 4×)*
 - Develop a calibration multiplier module that inflates initial effort estimates by 4-5x for swarm planning. *(hatte die Idee 4×)*
+- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 4×)*
 - Path-resolver utility that absolutizes all relative paths against ZOETRON_DATA before any hand action. *(hatte die Idee 3×)*
-- Calibration multiplier module: inflate initial effort estimates by 4-5x for swarm planning. *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,13 +27,13 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Ziele aufräumen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand-action hard timeout (20s) aborts valid long-running operations; timeout must be adaptive to task complexity.
+- Calibration error of 50% (predicted 6 vs actual 9 cycles) indicates estimation models lack grounding in observed swarm dynamics.
+- dots-studio/dots-3-note-preview succeeded at 30s latency when primary and fallbacks failed, proving heterogeneous model routing is essential.
+- Free-tier fallback models (gemma-4 variants) immediately hit 429 rate limits, eliminating them as viable backups under load.
+- Primary model (nemotron-3-ultra) exhibits high latency variance (18-102s) and 502 upstream overload errors, making it unreliable as sole provider.
 - Swarm collaboration degrades because last_swarm_goal recall shows no persistent context sharing across sleep cycles, making multi-agent work unreliabl
 - Pruning removes 30 items per run without scoring against active drive goals (stale swarm, model failures, skill conversion), risking deletion of failu
 - Skill proposals accumulate but the conversion reflex (fähigkeitsvorschläge-in-echte-skills-wan.py) fails execution, leaving approved capabilities stuc
@@ -51,11 +56,6 @@
 - Swarm converges in 1 cycle without evolution, indicating critic role is insufficiently empowered to force architectural changes.
 - Calibration error of 3 points (predicted 5 vs actual 8) reveals systematic over-pessimism in self-assessment that distorts planning budgets.
 - Model latency varies 7x (15-113s) on identical provider, requiring circuit-breaker fallback before swarm invocation.
-- Dream-to-skill pipeline succeeded on cycle 1 (TOR green) but only after initial hand_action failure, indicating bootstrap fragility.
-- Pruning removes 7 facts but 0 events, creating asymmetric retention that may lose causal context for remaining facts.
-- Calibration error of 3 (predicted 5 vs actual 8) shows estimation models drift without continuous recalibration loops.
-- Tool execution fails when scripts use relative paths instead of ZOETRON_DATA absolute paths, wasting swarm cycles on path errors.
-- Model latency varies 7x (15-113s) on same endpoint, making fixed timeouts unreliable and causing cascade delays.
 
 ---
 
