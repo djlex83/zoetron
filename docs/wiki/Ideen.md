@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 21:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 22:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The dots model achieves the same score (8) as nemotron but at 3.3× the latency (90s vs 26.9s), making it a poor default despite equal quality — latenc
+- Aggressive pruning (12 facts, 36 events in a single cycle) coincides with a stale-knowledge drive goal, forming a negative feedback loop where context
+- The proposal-to-skill pipeline is bottlenecked: 5 concrete skill proposals were generated in one cycle but zero were validated or deployed, creating a
+- Swarm calibration has a systematic optimistic bias of ~2 points (predicted 6 vs actual 8), meaning the swarm consistently overestimates its own conver
+- Model reliability is the dominant failure driver — the drive goal 'Modelle verlässlicher machen' with signal 'failure' and the observed ~50% model att
 - Calibration error of 2 units between predicted and actual outcomes points to the need for feedback-driven plan adjustment.
 - The successful hand action after model failures demonstrates that decoupling model calls from action execution improves resilience.
 - High stress (0.865) combined with a tight budget (max 3 tasks) correlated with a failed reflex, suggesting resource limits should adapt to stress.
@@ -51,11 +56,6 @@
 - System stress (0.865) triggers conserve mode that caps retries exactly when model fallback chains need more attempts.
 - Hand_action timeouts return exit=null with no stderr/stdout, making root-cause diagnosis impossible for 20s+ hangs.
 - Model API instability (502/429 errors, 11-47s latency variance) is the single largest failure source, cascading into reflex failures and drive-goal ge
-- Aggressive event pruning (23 events, 0 facts) discards failure context needed for pattern learning.
-- Swarm knowledge decays without scheduled refresh; the 'stale' drive signal reveals missing automation.
-- Skill proposals accumulate without an execution mechanism—proposal does not equal deployed capability.
-- Reactive fallback succeeds eventually but wastes cycles; proactive health-based routing would prevent failed attempts.
-- Provider-side rate limits (429) and upstream outages (502) are the dominant failure mode, not model capability.
 
 ---
 

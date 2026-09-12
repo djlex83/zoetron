@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11388 Fakten** · Stand 2026-09-12 21:53 UTC · aktualisiert bei jedem Herzschlag
+**11388 Fakten** · Stand 2026-09-12 22:04 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7341
 - **swarm_artifact:** 1649
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912220120:5:c02d58`
+*12.09. 22:01 UTC · Quelle: dream*
+
+The dots model achieves the same score (8) as nemotron but at 3.3× the latency (90s vs 26.9s), making it a poor default despite equal quality — latency is the hidden cost multiplier in multi-model swarms.
+
+### `dream:20260912220120:4:254316`
+*12.09. 22:01 UTC · Quelle: dream*
+
+Aggressive pruning (12 facts, 36 events in a single cycle) coincides with a stale-knowledge drive goal, forming a negative feedback loop where context destruction accelerates knowledge decay rather than consolidating it.
+
+### `dream:20260912220120:3:03317b`
+*12.09. 22:01 UTC · Quelle: dream*
+
+The proposal-to-skill pipeline is bottlenecked: 5 concrete skill proposals were generated in one cycle but zero were validated or deployed, creating an accumulating idea-action gap that the drive goal 'Vorschläge in echte Fähigkeiten wandeln' correctly identif
+
+### `dream:20260912220120:2:6dd071`
+*12.09. 22:01 UTC · Quelle: dream*
+
+Swarm calibration has a systematic optimistic bias of ~2 points (predicted 6 vs actual 8), meaning the swarm consistently overestimates its own convergence quality by a meaningful margin.
+
+### `dream:20260912220120:1:99bdf9`
+*12.09. 22:01 UTC · Quelle: dream*
+
+Model reliability is the dominant failure driver — the drive goal 'Modelle verlässlicher machen' with signal 'failure' and the observed ~50% model attempt failure rate indicate a systemic instability that undermines every downstream action.
 
 ### `dream:20260912215040:5:9e1ed4`
 *12.09. 21:50 UTC · Quelle: dream*
@@ -42467,31 +42492,6 @@ A single reliable model (ling-3.0-flash-fin) becomes a bottleneck and single poi
 *29.08. 22:01 UTC · Quelle: dream*
 
 Free-tier models fail predominantly due to rate limits (429) and upstream overload (502), not model quality.
-
-### `dream:20260829215309:5:093d6a`
-*29.08. 21:53 UTC · Quelle: dream*
-
-Rate-limit errors cluster in time across multiple models simultaneously, suggesting concurrent requests exhaust shared quotas, demanding request scheduling and throttling.
-
-### `dream:20260829215309:4:2d222d`
-*29.08. 21:53 UTC · Quelle: dream*
-
-Reflex mode successfully completes tasks when execution is possible, proving the agent's decision-making is sound but its external I/O pipeline is the bottleneck.
-
-### `dream:20260829215309:3:c45e8f`
-*29.08. 21:53 UTC · Quelle: dream*
-
-Intermittent model availability means no single model can be trusted as a primary — a routing and fallback strategy is essential for continuous operation.
-
-### `dream:20260829215309:2:e892ca`
-*29.08. 21:53 UTC · Quelle: dream*
-
-The system's internal health (selbstdiagnose) remains clean while external dependencies fail, meaning reliability engineering must focus on I/O boundary protection, not internal process correction.
-
-### `dream:20260829215309:1:cd8391`
-*29.08. 21:53 UTC · Quelle: dream*
-
-External API failures (429 rate limits, 502 upstream overloads) are systemic across all free-tier models, not isolated incidents, requiring architectural resilience rather than model-specific workarounds.
 
 ### `last_swarm_critique`
 *29.08. 20:56 UTC · Quelle: critic*
