@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11489 Fakten** · Stand 2026-09-12 12:52 UTC · aktualisiert bei jedem Herzschlag
+**11479 Fakten** · Stand 2026-09-12 13:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
+- **dream:** 7431
 - **swarm_artifact:** 1663
 - **last_swarm_critique:** 907
 - **last_swarm_goal:** 642
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912130101:5:792864`
+*12.09. 13:01 UTC · Quelle: dream*
+
+Memory pruning removes many facts/events, which may help performance but risks losing important context if over-aggressive.
+
+### `dream:20260912130101:4:00d9ff`
+*12.09. 13:01 UTC · Quelle: dream*
+
+Evolutionary runs can produce high-scoring variants (score 9/10) but the swarm still fails to converge, suggesting integration gaps.
+
+### `dream:20260912130101:3:5b1ad2`
+*12.09. 13:01 UTC · Quelle: dream*
+
+Calibration predictions are significantly off (predicted 7, actual 1), so model confidence should not be trusted without adjustment.
+
+### `dream:20260912130101:2:349f08`
+*12.09. 13:01 UTC · Quelle: dream*
+
+Hand actions fail with exit code 1 due to runtime errors in the generated artifact, indicating a need for pre-execution validation.
+
+### `dream:20260912130101:1:2f3a2c`
+*12.09. 13:01 UTC · Quelle: dream*
+
+Model endpoints frequently return 502/429 errors, causing task interruptions; a retry mechanism with fallback models is essential.
 
 ### `dream:20260912124943:5:ac841a`
 *12.09. 12:49 UTC · Quelle: dream*
@@ -42967,81 +42992,6 @@ score=9; issues=
 *29.08. 12:59 UTC · Quelle: system*
 
 Fehlerquellen systematisch beheben
-
-### `dream:20260829125858:5:66665f`
-*29.08. 12:58 UTC · Quelle: dream*
-
-Calibration error of 1 on small sample (pred 5 vs actual 4) signals need for rolling error tracking per model tier.
-
-### `dream:20260829125858:4:ffc159`
-*29.08. 12:58 UTC · Quelle: dream*
-
-Simulation gate allowed completion despite 3 risks and 3 revisions, showing verification threshold is too permissive.
-
-### `dream:20260829125858:3:ab4307`
-*29.08. 12:58 UTC · Quelle: dream*
-
-Swarm cycles stall at score 4 with converged=false, revealing undefined convergence criteria and no auto-termination on plateau.
-
-### `dream:20260829125858:2:9a8119`
-*29.08. 12:58 UTC · Quelle: dream*
-
-Nemotron-3-ultra latency varies 22–169s for similar token loads, suggesting queueing or cold-start effects that degrade throughput predictability.
-
-### `dream:20260829125858:1:d802cb`
-*29.08. 12:58 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and fallback logic causing cascading failures.
-
-### `dream:20260829125359:5:38500c`
-*29.08. 12:53 UTC · Quelle: dream*
-
-Calibration error of 1 on a 5-point scale suggests the predictor overestimates quality by ~20%.
-
-### `dream:20260829125359:4:abca53`
-*29.08. 12:53 UTC · Quelle: dream*
-
-Simulation gate approved a risky artifact (3 risks) with zero revisions, indicating risk tolerance may be miscalibrated.
-
-### `dream:20260829125359:3:dfb925`
-*29.08. 12:53 UTC · Quelle: dream*
-
-Poolside Laguna succeeds consistently but with 2-3 minute latency, suitable only for batch/async workloads.
-
-### `dream:20260829125359:2:70a95c`
-*29.08. 12:53 UTC · Quelle: dream*
-
-Nvidia Nemotron exhibits intermittent 502 upstream overload errors despite returning HTTP 200, requiring response-body validation.
-
-### `dream:20260829125359:1:233d81`
-*29.08. 12:53 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer systematic rate-limiting (429) making them unreliable for production pipelines.
-
-### `dream:20260829124922:5:b0911d`
-*29.08. 12:49 UTC · Quelle: dream*
-
-Simulation approved a swarm despite 3 known risks and zero revisions, indicating risk thresholds are decoupled from actual failure rates.
-
-### `dream:20260829124922:4:a1f31c`
-*29.08. 12:49 UTC · Quelle: dream*
-
-Metabolism stress at 1.0 forces conserve mode (max 1 iteration), which prevents retries that would recover from transient 429/502 errors.
-
-### `dream:20260829124922:3:f51926`
-*29.08. 12:49 UTC · Quelle: dream*
-
-Reflex tools crash before validation when the underlying script has import errors or missing dependencies, bypassing the 'unbestechlicher Prüfer'.
-
-### `dream:20260829124922:2:716ae8`
-*29.08. 12:49 UTC · Quelle: dream*
-
-Hand actions fail silently when given relative paths instead of absolute paths rooted in ZOETRON_DATA, causing zero-byte reads.
-
-### `dream:20260829124922:1:0a06c2`
-*29.08. 12:49 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) affects all free-tier models simultaneously, making model diversity ineffective without request pacing or paid fallbacks.
 
 ### `last_swarm_critique`
 *29.08. 12:10 UTC · Quelle: critic*

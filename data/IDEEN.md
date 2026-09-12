@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 12:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 13:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning removes many facts/events, which may help performance but risks losing important context if over-aggressive.
+- Evolutionary runs can produce high-scoring variants (score 9/10) but the swarm still fails to converge, suggesting integration gaps.
+- Calibration predictions are significantly off (predicted 7, actual 1), so model confidence should not be trusted without adjustment.
+- Hand actions fail with exit code 1 due to runtime errors in the generated artifact, indicating a need for pre-execution validation.
+- Model endpoints frequently return 502/429 errors, causing task interruptions; a retry mechanism with fallback models is essential.
 - System operates at stress 1.0 in 'conserve' mode with max_tasks=3, yet continues spawning model calls that hit rate limits, wasting the tiny budget.
 - Skill installation pipeline is broken end-to-end: reflex tool crashes, simulation flags 5 risks, TOR rejects artifact with traceback, and bahnen score
 - Calibration error of 6 (predicted 7 vs actual 1) reveals planning estimates are ungrounded; predictions must be anchored to recent empirical throughpu
@@ -51,11 +56,6 @@
 - Swarm knowledge staleness triggers repeated refresh goals, but no automated freshness daemon exists to prevent recurrent staleness.
 - Skill proposals accumulate faster than implementation, creating a proposal-execution gap that stalls capability growth.
 - Model error rates persistently drive failure signals across cycles, indicating current models lack reliability for autonomous operation without circui
-- Hand actions are fast but still need idempotent retry logic to handle transient CLI failures.
-- Pruning many events without auditing against organ-health flags risks silent data loss.
-- Evolutionary search can raise scores from 6 to 9 but fails to converge without additional cycles or stricter criteria.
-- Swarm performance suffers when roles lack integration, as evidenced by low score despite multiple builders.
-- Free-tier models frequently return 429/502 errors, requiring automatic fallback and exponential backoff.
 
 ---
 
