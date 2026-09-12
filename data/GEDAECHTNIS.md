@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11456 Fakten** · Stand 2026-09-12 16:08 UTC · aktualisiert bei jedem Herzschlag
+**11441 Fakten** · Stand 2026-09-12 16:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7431
+- **dream:** 7416
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 910
 - **last_swarm_goal:** 645
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912162602:5:7bbb6a`
+*12.09. 16:26 UTC · Quelle: dream*
+
+Simulation feedback can be used to adjust confidence intervals and trigger revisions.
+
+### `dream:20260912162602:4:1a5ca1`
+*12.09. 16:26 UTC · Quelle: dream*
+
+Circuit breaker pattern prevents cascading failures by temporarily blocking a model after consecutive failures.
+
+### `dream:20260912162602:3:6fe948`
+*12.09. 16:26 UTC · Quelle: dream*
+
+Relying on a single model creates a single point of failure; maintaining a fallback list improves resilience.
+
+### `dream:20260912162602:2:f52f04`
+*12.09. 16:26 UTC · Quelle: dream*
+
+Timeout errors suggest network instability and should trigger retry with increased timeout.
+
+### `dream:20260912162602:1:ba158f`
+*12.09. 16:26 UTC · Quelle: dream*
+
+Repeated 429 errors indicate rate limiting and require exponential backoff before switching models.
 
 ### `tool:modelle-stabiler-machen`
 *12.09. 16:06 UTC · Quelle: hands*
@@ -42827,106 +42852,6 @@ The task failed because the model returned explanatory prose instead of an execu
 *29.08. 16:31 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream errors, making them unreliable as primary workers without aggressive fallback logic.
-
-### `dream:20260829162421:5:54f2b1`
-*29.08. 16:24 UTC · Quelle: dream*
-
-A calibration layer adjusting predictions by rolling mean absolute error is essential when model latency and availability are unstable.
-
-### `dream:20260829162421:4:51f2d4`
-*29.08. 16:24 UTC · Quelle: dream*
-
-Stale goals and unimplemented skill proposals accumulate as invisible debt that drains capacity without producing value.
-
-### `dream:20260829162421:3:359616`
-*29.08. 16:24 UTC · Quelle: dream*
-
-Rising latency on fallback models is a predictable early-warning signal that precedes complete upstream failure.
-
-### `dream:20260829162421:2:9cc9b3`
-*29.08. 16:24 UTC · Quelle: dream*
-
-Silent failures where processes exit with code 0 but perform no work bypass all error detection and are more dangerous than explicit errors.
-
-### `dream:20260829162421:1:1311a5`
-*29.08. 16:24 UTC · Quelle: dream*
-
-Consecutive 429 errors from a single model endpoint signal saturation and require immediate blacklisting rather than repeated retries.
-
-### `dream:20260829161804:5:067d13`
-*29.08. 16:18 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures persist, suggesting the diagnostic scope excludes external API dependency health.
-
-### `dream:20260829161804:4:513e75`
-*29.08. 16:18 UTC · Quelle: dream*
-
-The system generates drive goals from failure signals (429 errors, stale work, unimplemented skills) but lacks an automatic mechanism to convert those goals into executed skills.
-
-### `dream:20260829161804:3:b55604`
-*29.08. 16:18 UTC · Quelle: dream*
-
-Multiple skill proposals exist for model routing and resilience but none have been implemented, revealing a proposal-to-production gap that stalls reliability gains.
-
-### `dream:20260829161804:2:80c73a`
-*29.08. 16:18 UTC · Quelle: dream*
-
-Nemotron-3-ultra shows high latency variance (7.6s–37.9s), making it unreliable for time-sensitive tasks without timeout guards and fallback routing.
-
-### `dream:20260829161804:1:860feb`
-*29.08. 16:18 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently returns 429 errors, indicating it should be permanently deprioritized or removed from the routing pool until quota increases.
-
-### `dream:20260829161134:5:0c46bb`
-*29.08. 16:11 UTC · Quelle: dream*
-
-Self-diagnose reports zero organ errors while model failure rate is ~60% (81 fails vs 54 successes), meaning health checks don't cover external API reliability.
-
-### `dream:20260829161134:4:41dd92`
-*29.08. 16:11 UTC · Quelle: dream*
-
-Stale market analyses (3 unused) show completed work isn't linked to planning triggers; artifacts need explicit "ready-for-use" tags and downstream subscriptions.
-
-### `dream:20260829161134:3:d3a63c`
-*29.08. 16:11 UTC · Quelle: dream*
-
-37 skill proposals vs 15 executions reveals a broken promotion pipeline: proposals lack automated sandbox→integration→registry gating.
-
-### `dream:20260829161134:2:bd3420`
-*29.08. 16:11 UTC · Quelle: dream*
-
-Model latency variance (36-66s) on nemotron-3-ultra suggests need for latency-aware routing with p95 thresholds, not just success/failure tracking.
-
-### `dream:20260829161134:1:498abd`
-*29.08. 16:11 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate missing proactive rate-limit handling (Retry-After parsing, exponential backoff) before requests are sent.
-
-### `dream:20260829160705:5:9a0019`
-*29.08. 16:07 UTC · Quelle: dream*
-
-Drive goals indicate awareness of error analysis, knowledge freshness, and skill testing gaps, yet no automated loop exists to close them.
-
-### `dream:20260829160705:4:0bc1e5`
-*29.08. 16:07 UTC · Quelle: dream*
-
-Reflex tools execute successfully for narrow subtasks (tool understanding, skill conversion) but do not address the upstream model availability root cause.
-
-### `dream:20260829160705:3:f89380`
-*29.08. 16:07 UTC · Quelle: dream*
-
-Skill proposals cluster around model routing (5/8 proposals), revealing a systemic infrastructure gap rather than isolated tool failures.
-
-### `dream:20260829160705:2:135eff`
-*29.08. 16:07 UTC · Quelle: dream*
-
-Fallback to nemotron-3-ultra succeeds but adds 50-66s latency, creating a reliability-vs-speed tradeoff that degrades interactive performance.
-
-### `dream:20260829160705:1:081668`
-*29.08. 16:07 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary providers without circuit-breaker logic.
 
 ### `last_swarm_critique`
 *29.08. 15:41 UTC · Quelle: critic*
