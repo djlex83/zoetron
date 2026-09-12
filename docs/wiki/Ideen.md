@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 01:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 01:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Ziele aufräumen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge refresh relies on manual drive_goals instead of TTL-based automated staleness detection.
+- Prune runs aggressively remove facts (5-7 per run) while preserving zero events, suggesting fixed thresholds discard critical context.
+- Identical skill proposals recur across dream cycles (model-router, dream-to-skill, retain-tags, swarm-gates, revision-loop) but never graduate to impl
+- Model latency spikes to 68s indicate unreliable endpoint health requiring automated failover and circuit-breaking.
+- Reflex actions consistently mark converged=true without measurable outcome metrics, creating false completion signals.
 - Pruning removes facts/events each cycle but uses fixed thresholds despite varying memory pressure, risking premature loss of high-value memories.
 - Drive goals repeatedly target stale knowledge (group info, swarm notes, dreams) showing no systematic freshness enforcement.
 - Model latency varies 2.6x (10.5–27.3 s) on identical model, indicating unstable upstream performance that degrades time-sensitive reflexes.
@@ -51,11 +56,6 @@
 - Model latency variance (8–60 s) and repeated ModelHealthTracker proposals indicate upstream instability is the primary systemic risk, not logic errors
 - Reflex execution succeeded (converged=true) where the full swarm failed, suggesting lightweight targeted tools outperform heavy multi-role cycles for 
 - Evolutionary variant generation rescued the swarm fact update (4→9) where the base planner/builder/critic loop stalled at two cycles.
-- Previous dream's skill proposals directly address current failure modes (model router, freshness SLA, revision controller, retain tags).
-- Pruning discards low-frequency high-value facts; metadata tagging can extend retention 10x for critical knowledge.
-- High metabolic stress (0.9) throttles system to 3 tasks/1 iteration, making reliability mechanisms essential not optional.
-- Swarm fact updates fail due to synchronous 20s timeout on unreliable tool; need async refresh with staleness-driven triggers.
-- Free-tier model endpoints exhibit cascading failures (502, 429, latency spikes) requiring health-aware routing with automatic demotion.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11517 Fakten** · Stand 2026-09-12 01:21 UTC · aktualisiert bei jedem Herzschlag
+**11522 Fakten** · Stand 2026-09-12 01:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7446
+- **dream:** 7451
 - **swarm_artifact:** 1695
 - **last_swarm_critique:** 895
 - **last_swarm_goal:** 630
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912012933:5:da5764`
+*12.09. 01:29 UTC · Quelle: dream*
+
+Swarm knowledge refresh relies on manual drive_goals instead of TTL-based automated staleness detection.
+
+### `dream:20260912012933:4:dc417b`
+*12.09. 01:29 UTC · Quelle: dream*
+
+Prune runs aggressively remove facts (5-7 per run) while preserving zero events, suggesting fixed thresholds discard critical context.
+
+### `dream:20260912012933:3:1132a9`
+*12.09. 01:29 UTC · Quelle: dream*
+
+Identical skill proposals recur across dream cycles (model-router, dream-to-skill, retain-tags, swarm-gates, revision-loop) but never graduate to implemented tools.
+
+### `dream:20260912012933:2:f43d5c`
+*12.09. 01:29 UTC · Quelle: dream*
+
+Model latency spikes to 68s indicate unreliable endpoint health requiring automated failover and circuit-breaking.
+
+### `dream:20260912012933:1:3dc66b`
+*12.09. 01:29 UTC · Quelle: dream*
+
+Reflex actions consistently mark converged=true without measurable outcome metrics, creating false completion signals.
 
 ### `dream:20260912011902:5:b79a38`
 *12.09. 01:19 UTC · Quelle: dream*
