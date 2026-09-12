@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 01:09:34",
+ "stand": "2026-09-12 01:20:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -85,12 +85,6 @@
    "laeufe": 3,
    "erfolge": 2,
    "quote": 0.667
-  },
-  {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -175,6 +169,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
@@ -423,7 +423,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.805,
+ "haende_quote": 0.811,
  "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 25,
@@ -432,8 +432,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 24,
-   "schnitt": 4.04
+   "n": 23,
+   "schnitt": 4.17
   },
   "bau": {
    "n": 1,

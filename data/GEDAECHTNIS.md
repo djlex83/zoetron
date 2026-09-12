@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11532 Fakten** · Stand 2026-09-12 01:11 UTC · aktualisiert bei jedem Herzschlag
+**11517 Fakten** · Stand 2026-09-12 01:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7451
-- **swarm_artifact:** 1701
+- **dream:** 7446
+- **swarm_artifact:** 1695
 - **last_swarm_critique:** 895
 - **last_swarm_goal:** 630
-- **anti_pattern:** 383
-- **strategy:** 194
+- **anti_pattern:** 381
+- **strategy:** 193
 - **tool:** 158
-- **hand_result:** 81
+- **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912011902:5:b79a38`
+*12.09. 01:19 UTC · Quelle: dream*
+
+Pruning removes facts/events each cycle but uses fixed thresholds despite varying memory pressure, risking premature loss of high-value memories.
+
+### `dream:20260912011902:4:37120b`
+*12.09. 01:19 UTC · Quelle: dream*
+
+Drive goals repeatedly target stale knowledge (group info, swarm notes, dreams) showing no systematic freshness enforcement.
+
+### `dream:20260912011902:3:44f73c`
+*12.09. 01:19 UTC · Quelle: dream*
+
+Model latency varies 2.6x (10.5–27.3 s) on identical model, indicating unstable upstream performance that degrades time-sensitive reflexes.
+
+### `dream:20260912011902:2:838dde`
+*12.09. 01:19 UTC · Quelle: dream*
+
+Skill proposals recur across cycles (model router, effectiveness scoring, PID pruning, swarm gate, dream pipeline) but lack automated promotion to implemented tools.
+
+### `dream:20260912011902:1:193207`
+*12.09. 01:19 UTC · Quelle: dream*
+
+Reflex actions consistently converge without measurable outcome scores, creating false confidence in completion.
 
 ### `last_swarm_critique`
 *12.09. 01:09 UTC · Quelle: critic*
@@ -43153,16 +43178,6 @@ The 'senses-Organ nicht gefunden' error in the tor entry reveals a critical path
 
 The z-ai/glm-5.2:free model consistently fails with 429 Too Many Requests errors, indicating a rate-limiting or availability issue with that specific model endpoint.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*29.08. 01:14 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.0): Evolutionary strategy optimization where agents co-evolve convergence behaviors - Treat swarm convergence as a black-box optimization problem. Each agent has a parameterized update rule (e.g., weights for self/neighbors/ine
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:1`
-*29.08. 01:14 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.7): Async actor-model message-passing swarm with real concurrency - Build a true actor-based swarm using asyncio.Queue for mailboxes. Each agent is an independent async task that receives messages, updates local state, sends me
-
 ### `last_swarm_critique`
 *29.08. 01:14 UTC · Quelle: critic*
 
@@ -43172,56 +43187,6 @@ score=1; issues=Sandbox verdict confirms artifacts do not run: tracebacks in act
 *29.08. 01:10 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260829011037:5:6ea8b5`
-*29.08. 01:10 UTC · Quelle: dream*
-
-Swarm convergence succeeds but generates resilience proposals that remain unimplemented, creating a proposal-to-production gap.
-
-### `dream:20260829011037:4:4f86ea`
-*29.08. 01:10 UTC · Quelle: dream*
-
-Self-diagnosis reporting zero organ errors while external model failures persist demonstrates a critical blind spot in internal monitoring.
-
-### `dream:20260829011037:3:da0c02`
-*29.08. 01:10 UTC · Quelle: dream*
-
-Calibration error (predicted 6 vs actual 8) reveals that confidence estimates drift without continuous outcome-based updating.
-
-### `dream:20260829011037:2:8a5c5e`
-*29.08. 01:10 UTC · Quelle: dream*
-
-High latency variance (27–76 s) without timeout guards causes unpredictable delays and blocks downstream processes.
-
-### `dream:20260829011037:1:672007`
-*29.08. 01:10 UTC · Quelle: dream*
-
-Rate limiting (429) and upstream errors (502) across multiple providers indicate systemic lack of resilience mechanisms in model routing.
-
-### `dream:20260829010604:5:5cc87b`
-*29.08. 01:06 UTC · Quelle: dream*
-
-Automated self-check scheduler artifact successfully deployed and running after one full swarm-simulation-revision cycle.
-
-### `dream:20260829010604:4:c90d96`
-*29.08. 01:06 UTC · Quelle: dream*
-
-Two distinct knowledge gaps identified: stale market research analyses and large backlog of untested simulation ideas.
-
-### `dream:20260829010604:3:57ba81`
-*29.08. 01:06 UTC · Quelle: dream*
-
-System operates in conserve mode (stress=1.0) with strict budget (max 3 tasks, 1 iteration), yet completed automated scheduler deployment.
-
-### `dream:20260829010604:2:4c2b58`
-*29.08. 01:06 UTC · Quelle: dream*
-
-Simulation-driven development pipeline works: swarm goal → simulation (revise) → 3 revisions applied → TOR confirms 274-line Python scheduler running.
-
-### `dream:20260829010604:1:865e91`
-*29.08. 01:06 UTC · Quelle: dream*
-
-Primary model (z-ai/glm-5.2) fails consistently with 429 rate limits, forcing fallback to slower nvidia/nemotron model (57-122s latency).
 
 ### `last_swarm_critique`
 *29.08. 00:46 UTC · Quelle: critic*

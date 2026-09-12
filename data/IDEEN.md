@@ -1,16 +1,16 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 01:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 01:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Create skill promotion gate requiring automated benchmark pass, soak period, and explicit convergence contract *(hatte die Idee 6×)*
-- Extend selbstdiagnose to publish operational health metrics (model success rate, convergence rate, latency per *(hatte die Idee 5×)*
-- Build drive-goal escalation loop that converts failure/stale/gap signals into scheduled reflex invocations wit *(hatte die Idee 5×)*
-- Add pruning audit trail logging retention criteria, discarded pattern signatures, and impact scores; preserve  *(hatte die Idee 5×)*
+- Create skill promotion gate requiring automated benchmark pass, soak period, and explicit convergence contract *(hatte die Idee 5×)*
 - Add pre-flight 1-token health probe to selbstdiagnose for each candidate model before planner assigns tasks. *(hatte die Idee 5×)*
 - Implement model router with health scoring, exponential backoff, automatic fallback to highest-reliability pro *(hatte die Idee 4×)*
+- Build drive-goal escalation loop that converts failure/stale/gap signals into scheduled reflex invocations wit *(hatte die Idee 4×)*
+- Add pruning audit trail logging retention criteria, discarded pattern signatures, and impact scores; preserve  *(hatte die Idee 4×)*
+- Extend selbstdiagnose to publish operational health metrics (model success rate, convergence rate, latency per *(hatte die Idee 4×)*
 - Create shared HTTP wrapper with exponential backoff (base 2s, max 30s, 3 retries, jitter) for all OpenRouter c *(hatte die Idee 4×)*
 - Build DegradedMode skill: when >2 models disabled, restrict planner to inclusionai model only, halve token bud *(hatte die Idee 4×)*
 - Implement exponential-backoff retry with automatic model fallback on 429/502/timeout before marking a call fai *(hatte die Idee 4×)*
@@ -27,7 +27,7 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts/events each cycle but uses fixed thresholds despite varying memory pressure, risking premature loss of high-value memories.
+- Drive goals repeatedly target stale knowledge (group info, swarm notes, dreams) showing no systematic freshness enforcement.
+- Model latency varies 2.6x (10.5–27.3 s) on identical model, indicating unstable upstream performance that degrades time-sensitive reflexes.
+- Skill proposals recur across cycles (model router, effectiveness scoring, PID pruning, swarm gate, dream pipeline) but lack automated promotion to imp
+- Reflex actions consistently converge without measurable outcome scores, creating false confidence in completion.
 - Skill proposals accumulate (13+ logged) but none appear implemented; the 'combination' drive goal confirms the proposal-to-skill pipeline is broken.
 - Aggressive pruning (10→15 facts, 38→83 events) correlates with drive signals 'stale' and 'failure', implying the pruner discards context needed for re
 - Model latency variance (8–60 s) and repeated ModelHealthTracker proposals indicate upstream instability is the primary systemic risk, not logic errors
@@ -51,11 +56,6 @@
 - High metabolic stress (0.9) throttles system to 3 tasks/1 iteration, making reliability mechanisms essential not optional.
 - Swarm fact updates fail due to synchronous 20s timeout on unreliable tool; need async refresh with staleness-driven triggers.
 - Free-tier model endpoints exhibit cascading failures (502, 429, latency spikes) requiring health-aware routing with automatic demotion.
-- Swarm learning refresh lacks freshness SLA and critic quality gates, leading to stale knowledge reuse.
-- Pruning uses fixed thresholds ignoring fact value, risking loss of high-utility low-frequency knowledge.
-- Skill proposals accumulate across dream cycles but lack automated validation-to-deployment pipeline.
-- Model endpoint reliability varies drastically (502, 429, latency 7-79s), requiring health-aware routing.
-- Reflex actions consistently converge without measurable effectiveness scores, creating false completion signals.
 
 ---
 
