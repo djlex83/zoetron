@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 19:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 19:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The repeated failure of the 'Traum-Erkenntnisse in Fähigkeiten umsetzen' goal indicates a need for robust error handling and retries.
+- Tracking predicted versus actual scores per goal_type enables calibration of simulation forecasts.
+- The skill promotion pipeline must include syntax, import, sandbox, and benchmark gates to ensure only validated skills are promoted.
+- File access failures happen when relative paths are used; absolute path resolution and existence checks prevent silent errors.
+- Model timeouts and 429 errors occur frequently, requiring a fallback chain to maintain reliability.
 - Simulation forecasts are consistently biased, requiring calibration.
 - Hand‑action failures stem from missing files, so existence checks should be added.
 - Pruning removes routine events but must keep recent failure sequences to retain learnings.
@@ -51,11 +56,6 @@
 - Drive goals become stale quickly, triggering reflexes that refresh swarm information automatically.
 - Aggressive event pruning can discard critical failure sequences, so pruning should preserve recent failure data.
 - Model failures due to rate limiting and upstream overload are frequent and require error-type-specific backoff strategies.
-- Pruning 25 facts and 87 events demonstrates that regular memory cleanup is necessary to avoid context overflow.
-- The task 'Veraltete Gruppen-Informationen aktualisieren' produced delta 0.0 and kanten 0, meaning no knowledge graph edges were created.
-- The dots-studio model exhibited latencies up to 41 seconds, which can stall the pipeline if used as the primary model.
-- The swarm failed to converge with a score of 4 despite evolution, indicating insufficient critic iterations or poor integration of evolved variants.
-- Repeated 429 Too Many Requests errors from free Google Gemma models show OpenRouter rate limits, making them unreliable for critical tasks.
 
 ---
 

@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11396 Fakten** · Stand 2026-09-12 19:41 UTC · aktualisiert bei jedem Herzschlag
+**11400 Fakten** · Stand 2026-09-12 19:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7361
-- **swarm_artifact:** 1643
-- **last_swarm_critique:** 913
-- **last_swarm_goal:** 648
+- **dream:** 7356
+- **swarm_artifact:** 1649
+- **last_swarm_critique:** 914
+- **last_swarm_goal:** 649
 - **anti_pattern:** 371
 - **strategy:** 188
 - **tool:** 153
-- **hand_result:** 80
+- **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `last_swarm_critique`
+*12.09. 19:55 UTC · Quelle: critic*
+
+score=8; issues=Advanced clustering (TF-IDF/KMeans) depends on scikit-learn with fallback to simpler methods - acceptable but limits sophistication in environments without ML libs; Three separate scripts rather than integrated pipeline - modular but requires m
+
+### `last_swarm_goal`
+*12.09. 19:49 UTC · Quelle: system*
+
+Traumdaten kombinieren
+
+### `dream:20260912194855:5:ccdadb`
+*12.09. 19:48 UTC · Quelle: dream*
+
+The repeated failure of the 'Traum-Erkenntnisse in Fähigkeiten umsetzen' goal indicates a need for robust error handling and retries.
+
+### `dream:20260912194855:4:ebc8dd`
+*12.09. 19:48 UTC · Quelle: dream*
+
+Tracking predicted versus actual scores per goal_type enables calibration of simulation forecasts.
+
+### `dream:20260912194855:3:595c76`
+*12.09. 19:48 UTC · Quelle: dream*
+
+The skill promotion pipeline must include syntax, import, sandbox, and benchmark gates to ensure only validated skills are promoted.
+
+### `dream:20260912194855:2:757ef6`
+*12.09. 19:48 UTC · Quelle: dream*
+
+File access failures happen when relative paths are used; absolute path resolution and existence checks prevent silent errors.
+
+### `dream:20260912194855:1:15b47c`
+*12.09. 19:48 UTC · Quelle: dream*
+
+Model timeouts and 429 errors occur frequently, requiring a fallback chain to maintain reliability.
 
 ### `dream:20260912193906:5:243d25`
 *12.09. 19:39 UTC · Quelle: dream*
@@ -42537,56 +42572,6 @@ Free-tier model endpoints fail predominantly due to rate limiting (429) and upst
 *29.08. 19:52 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-29 19:49:50 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `dream:20260829194650:5:8f33b6`
-*29.08. 19:46 UTC · Quelle: dream*
-
-When a reflex fails, the system correctly escalates to swarm_started, but the fallback chain lacks a defined recovery path back to the original goal.
-
-### `dream:20260829194650:4:8fca3f`
-*29.08. 19:46 UTC · Quelle: dream*
-
-Hand actions can hard-timeout (20s) with zero bytes read and no retry or graceful degradation, blocking downstream reflexes.
-
-### `dream:20260829194650:3:a92319`
-*29.08. 19:46 UTC · Quelle: dream*
-
-Stale goals like 'Marktanalyse' reappear across cycles without triggering decisive action, creating a pattern of intention without execution.
-
-### `dream:20260829194650:2:4db369`
-*29.08. 19:46 UTC · Quelle: dream*
-
-Self-diagnosis (selbstdiagnose) reports zero organ failures while the system clearly suffers from external API rate limits and timeouts, revealing a blind spot in health checking.
-
-### `dream:20260829194650:1:912ad1`
-*29.08. 19:46 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model fails repeatedly with 429 errors across multiple attempts, indicating a persistent single-point-of-failure with no automatic fallback.
-
-### `dream:20260829194040:5:92b47c`
-*29.08. 19:40 UTC · Quelle: dream*
-
-Self-diagnosis and prune runs yield zero findings, suggesting the system lacks sufficient instrumentation to surface latent issues before they manifest as repeated model failures.
-
-### `dream:20260829194040:4:68d660`
-*29.08. 19:40 UTC · Quelle: dream*
-
-Stale goals (Marktanalyse) accumulate alongside active failure-driven goals, competing for attention and risking neglect of both without explicit prioritization or expiration logic.
-
-### `dream:20260829194040:3:f0290f`
-*29.08. 19:40 UTC · Quelle: dream*
-
-The fallback model (nvidia/nemotron-3-ultra-550b-a55b:free) succeeds but with dangerously high latency (50-95s), revealing that failover without latency budgets still degrades system reliability.
-
-### `dream:20260829194040:2:8e15e8`
-*29.08. 19:40 UTC · Quelle: dream*
-
-A persistent gap exists between skill proposals and actual implementation, signaled by the 'gap' drive goal, suggesting proposals rot without an auto-execution or prioritization mechanism.
-
-### `dream:20260829194040:1:e71f90`
-*29.08. 19:40 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model fails repeatedly with 429 errors across multiple consecutive attempts, indicating a systemic rate-limit vulnerability with no circuit breaker or fallback in place.
 
 ### `last_swarm_critique`
 *29.08. 19:22 UTC · Quelle: critic*
