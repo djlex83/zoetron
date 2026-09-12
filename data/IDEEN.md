@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 03:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 04:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 7×)*
+- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 8×)*
 - Add pre-flight 1-token health probe to selbstdiagnose for each candidate model before planner assigns tasks. *(hatte die Idee 4×)*
 - Implement exponential-backoff retry with automatic model fallback on 429/502/timeout before marking a call fai *(hatte die Idee 4×)*
 - Build a path-resolver utility that absolutizes all relative paths against ZOETRON_DATA before any hand action. *(hatte die Idee 4×)*
@@ -28,19 +28,24 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Alte Schwarm-Ziele aufräumen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning uses static thresholds instead of targeting resource pressure, discarding potentially valuable facts while retaining noise.
+- Skill proposals accumulate in dreams but lack a validation-to-deployment pipeline, leaving proven improvements untested.
+- Fixed 20s hand-action timeouts ignore token volume and external dependencies, causing premature termination or wasted wait time.
+- Reflex actions report converged=true without recording numeric effectiveness metrics, creating false confidence in skill execution.
+- Model inference failures cascade through multiple providers (502 upstream, 429 rate limits) with no automated failover, forcing fallback to high-laten
 - Reflex actions lack outcome validation, leading to false convergence; a numeric score and critic sign-off gate would ensure reliability.
 - Swarm knowledge becomes stale without a quality gate, degrading team collaboration and requiring enforced freshness criteria.
 - Fixed pruning thresholds risk losing critical but infrequently accessed facts, requiring dynamic memory management with tagged retention.
@@ -51,11 +56,6 @@
 - Reflex convergence without a numeric effectiveness metric yields false positives; enforce metric recording before marking converged.
 - Event logs grow without fact pruning, causing memory bloat; event compaction is needed.
 - Model endpoints frequently return 429 or 502 errors, so a router with per‑endpoint success rates and exponential backoff is essential.
-- Swarm knowledge refresh lacks quality gates (critic count, score floor, TTL), so stale or low-quality critiques can pollute the knowledge base.
-- Fixed pruning thresholds and hand-action timeouts ignore workload variability, causing either premature eviction or OOM pressure.
-- Skill proposals recur across dream cycles (model router, metric gating, dream-to-skill pipeline) but never graduate to deployed tools, indicating a br
-- Reflexes converge without measurable effectiveness metrics, making it impossible to distinguish genuine improvement from false convergence.
-- Model endpoint reliability is the primary failure mode: repeated 502 errors from a single provider halt progress without fallback routing.
 
 ---
 

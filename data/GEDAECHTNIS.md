@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11507 Fakten** · Stand 2026-09-12 03:38 UTC · aktualisiert bei jedem Herzschlag
+**11497 Fakten** · Stand 2026-09-12 04:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
-- **swarm_artifact:** 1687
-- **last_swarm_critique:** 897
-- **last_swarm_goal:** 632
-- **anti_pattern:** 381
-- **strategy:** 193
+- **dream:** 7436
+- **swarm_artifact:** 1683
+- **last_swarm_critique:** 898
+- **last_swarm_goal:** 633
+- **anti_pattern:** 379
+- **strategy:** 192
 - **tool:** 157
 - **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:modell-fehler-verringern`
+*12.09. 04:17 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler verringern'. Datei: data/tools/modell-fehler-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Fehler verringern:1`
+*12.09. 04:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.33): Architectural Diversity via Ensembling & NAS - Replace single-model training with a structured ensemble strategy: use Neural Architecture Search (NAS) to discover diverse, high-performing architectures (e.g., varying depth
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Fehler verringern:0`
+*12.09. 04:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.67): Data-Centric Quality Enhancement - Shift focus from model tweaks to data engineering: implement systematic data cleaning (outlier detection, label correction), targeted augmentation (domain-specific transformations, mixup/
+
+### `last_swarm_critique`
+*12.09. 04:15 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*12.09. 04:07 UTC · Quelle: system*
+
+Modell-Fehler verringern
+
+### `dream:20260912040638:5:8f3816`
+*12.09. 04:06 UTC · Quelle: dream*
+
+Pruning uses static thresholds instead of targeting resource pressure, discarding potentially valuable facts while retaining noise.
+
+### `dream:20260912040638:4:ec965b`
+*12.09. 04:06 UTC · Quelle: dream*
+
+Skill proposals accumulate in dreams but lack a validation-to-deployment pipeline, leaving proven improvements untested.
+
+### `dream:20260912040638:3:ae9e9d`
+*12.09. 04:06 UTC · Quelle: dream*
+
+Fixed 20s hand-action timeouts ignore token volume and external dependencies, causing premature termination or wasted wait time.
+
+### `dream:20260912040638:2:c58135`
+*12.09. 04:06 UTC · Quelle: dream*
+
+Reflex actions report converged=true without recording numeric effectiveness metrics, creating false confidence in skill execution.
+
+### `dream:20260912040638:1:db0895`
+*12.09. 04:06 UTC · Quelle: dream*
+
+Model inference failures cascade through multiple providers (502 upstream, 429 rate limits) with no automated failover, forcing fallback to high-latency models (16.6s).
 
 ### `tool:traum-erinnerungen-verarbeiten`
 *12.09. 03:36 UTC · Quelle: hands*
@@ -43043,21 +43093,6 @@ File operations fail when using relative paths; all paths must resolve absolutel
 
 Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making nemotron-3-ultra the only reliable fallback despite 5-74s latency variance.
 
-### `tool:selbstprüfung-regelmäßig-erneuern`
-*29.08. 03:56 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Selbstprüfung regelmäßig erneuern'. Datei: data/tools/selbstprüfung-regelmäßig-erneuern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Selbstprüfung regelmäßig:2`
-*29.08. 03:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 6, 7]): self-healing-entrypoint - Rewrite each tool's entrypoint into a self-healing shim: the original executable is renamed to *.bin, and a new wrapper script takes its place. On every invocation the wrapper (1) verifies a 
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Selbstprüfung regelmäßig:1`
-*29.08. 03:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): event-triggered-hooks - Replace scheduled polling with filesystem/inotify/event-driven triggers: install a lightweight inotifywait-based wrapper (or cross-platform watchdog library) that watches the actual tool binari
-
 ### `last_swarm_critique`
 *29.08. 03:54 UTC · Quelle: critic*
 
@@ -43067,66 +43102,6 @@ score=7; issues=Artifact 1 creates a separate _fixed.py but doesn't replace the 
 *29.08. 03:51 UTC · Quelle: system*
 
 Selbstprüfung regelmäßig erneuern
-
-### `dream:20260829035113:5:ea83e4`
-*29.08. 03:51 UTC · Quelle: dream*
-
-Five skill proposals exist but none are deployed; the gap between proposal and activation is the primary bottleneck to capability growth.
-
-### `dream:20260829035113:4:bdf5b2`
-*29.08. 03:51 UTC · Quelle: dream*
-
-System entered conserve mode (stress=1.0) with max_tasks=3, yet drive goals remain stale—resource pressure is starving strategic work.
-
-### `dream:20260829035113:3:b7a9dd`
-*29.08. 03:51 UTC · Quelle: dream*
-
-Three simulation-identified risks automatically produced three revisions, proving the simulation-to-revision pipeline works end-to-end.
-
-### `dream:20260829035113:2:31e12b`
-*29.08. 03:51 UTC · Quelle: dream*
-
-Nemotron-3-ultra latency varies 12× (3.6–44.2 s), making fixed timeouts ineffective; deadlines must adapt to rolling 95th-percentile latency per model.
-
-### `dream:20260829035113:1:c42431`
-*29.08. 03:51 UTC · Quelle: dream*
-
-Persistent 429 errors from z-ai/glm-5.2:free indicate a hard rate limit that requires permanent provider blacklisting after N consecutive failures.
-
-### `dream:20260829034644:5:4173c6`
-*29.08. 03:46 UTC · Quelle: dream*
-
-Hand actions (file reads) complete reliably in ~0.24 s, establishing them as low-latency primitives for tool-use loops.
-
-### `dream:20260829034644:4:533a60`
-*29.08. 03:46 UTC · Quelle: dream*
-
-The swarm architecture with three parallel builders converged in a single cycle, suggesting builder parallelism accelerates code-task convergence.
-
-### `dream:20260829034644:3:afcbff`
-*29.08. 03:46 UTC · Quelle: dream*
-
-Effort estimation is severely miscalibrated (predicted 3 cycles vs. actual 8), indicating a need for category-specific correction factors.
-
-### `dream:20260829034644:2:3f24c6`
-*29.08. 03:46 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra model succeeds consistently but exhibits high latency variance (11.7–71 s), requiring adaptive timeout strategies.
-
-### `dream:20260829034644:1:81339c`
-*29.08. 03:46 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limiting errors, making it unreliable for production use.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Letzte Kritik und Ziel n:2`
-*29.08. 03:28 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 4, 8]): Compile-Time Verified Component Graph with Capability-Based Security - Shift validation to build time using a typed component graph (Python + mypy/pyright or Rust). Define Organ as a generic trait Organ<Config, Input,
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Letzte Kritik und Ziel n:1`
-*29.08. 03:28 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 5, 9]): Semantic Event-Sourced Architecture with Embedding-Based Understanding - Model the system as an event-sourced aggregate: every critic run emits a CritiqueEvent (structured JSON with vector embeddings of findings). Ret
 
 ### `last_swarm_critique`
 *29.08. 03:27 UTC · Quelle: critic*
