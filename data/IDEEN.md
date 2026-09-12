@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 22:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 22:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Structured error handling for external actions is absent: hand_action returns only exit code, losing stdout/stderr context needed for automated recove
+- Swarm goal staleness is actively managed via reflex but lacks systematic TTL enforcement: one-off cleanup succeeded but no daemon archives >30-day goa
+- No stress-aware load shedding exists despite repeated proposals: high model latency and concurrent failures indicate unbounded concurrency under load.
+- Skill proposals accumulate but remain unimplemented: 10+ proposals across two dream cycles yet a drive goal explicitly signals 'Vorgeschlagene Fähigke
+- Model API reliability is the primary system bottleneck: 3/4 providers failed with 502 upstream errors and 429 rate limits, while latency varied 3x (19
 - A calibration abs_error of 1 on a 5–6 count suggests low-count predictions need wider intervals to reduce systematic underestimation.
 - Pruning 62 events in a single cycle risks severing causal chains that future consolidation passes need to reconstruct.
 - Three simulation revisions with 3 unresolved risks indicates the simulation→act loop lacks a hard closure gate that blocks act_done on open risks.
@@ -51,11 +56,6 @@
 - Swarm knowledge refresh is a recurring drive but repeatedly fails at the hand_action layer, indicating a systemic execution gap.
 - Tool execution fails due to path resolution issues (relative paths vs ZOETRON_DATA env var) despite correct reflex selection.
 - Model provider instability (502/overload errors) causes cascading failures across planning, simulation, and execution layers.
-- The dots model achieves the same score (8) as nemotron but at 3.3× the latency (90s vs 26.9s), making it a poor default despite equal quality — latenc
-- Aggressive pruning (12 facts, 36 events in a single cycle) coincides with a stale-knowledge drive goal, forming a negative feedback loop where context
-- The proposal-to-skill pipeline is bottlenecked: 5 concrete skill proposals were generated in one cycle but zero were validated or deployed, creating a
-- Swarm calibration has a systematic optimistic bias of ~2 points (predicted 6 vs actual 8), meaning the swarm consistently overestimates its own conver
-- Model reliability is the dominant failure driver — the drive goal 'Modelle verlässlicher machen' with signal 'failure' and the observed ~50% model att
 
 ---
 
