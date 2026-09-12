@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11490 Fakten** · Stand 2026-09-12 11:06 UTC · aktualisiert bei jedem Herzschlag
+**11479 Fakten** · Stand 2026-09-12 11:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7446
-- **swarm_artifact:** 1663
+- **dream:** 7441
+- **swarm_artifact:** 1661
 - **last_swarm_critique:** 905
 - **last_swarm_goal:** 640
-- **anti_pattern:** 373
-- **strategy:** 189
-- **tool:** 156
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 155
 - **hand_result:** 79
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912111509:5:1e55fe`
+*12.09. 11:15 UTC · Quelle: dream*
+
+Pruning removed 37 events but 0 organ errors, showing cleanup is decoupled from health monitoring.
+
+### `dream:20260912111509:4:21377b`
+*12.09. 11:15 UTC · Quelle: dream*
+
+Hand-action retry succeeded after initial failure, indicating transient environment issues rather than code defects.
+
+### `dream:20260912111509:3:4edd8f`
+*12.09. 11:15 UTC · Quelle: dream*
+
+Swarm convergence in 1 cycle with 5 roles suggests over-specified role allocation for simple goals.
+
+### `dream:20260912111509:2:b25830`
+*12.09. 11:15 UTC · Quelle: dream*
+
+Calibration error of 5 points (predicted 3 vs actual 8) reveals systematic underestimation of simulation-driven task complexity.
+
+### `dream:20260912111509:1:d6a773`
+*12.09. 11:15 UTC · Quelle: dream*
+
+Model endpoints exhibit cascading failures (502 then 429) requiring automatic fallback with circuit-breaker logic.
 
 ### `tool:modell-fehler-stark-reduzieren`
 *12.09. 11:04 UTC · Quelle: hands*
@@ -43003,21 +43028,6 @@ Model reliability is bimodal: inclusionai/ling-3.0-flash-fin:free and poolside/l
 
 Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making fallback chains essential for reliability.
 
-### `tool:modell-fehler-deutlich-reduzieren`
-*29.08. 11:05 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler deutlich reduzieren'. Datei: data/tools/modell-fehler-deutlich-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler deutlich r:1`
-*29.08. 11:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Semantic-Context-Aware Error Classification - Ersetze die keyword-basierte Kategorisierung durch ein kontextsensitives Klassifizierungssystem, das AST-Parsing (Abstract Syntax Tree) und Code-Embeddings nutzt, um Fehler korrek
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler deutlich r:0`
-*29.08. 11:04 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Quantitative-Metric-Automated Execution - Definiere einen exakten Baseline-Wert der aktuellen Modellfehler-Rate (z.B. 12,3 % auf dem Validierungsdatensatz) und setze ein konkrete, messbares Reduktionsziel (z.B. 'Reduktion auf
-
 ### `last_swarm_critique`
 *29.08. 11:03 UTC · Quelle: critic*
 
@@ -43027,56 +43037,6 @@ score=7; issues='expected_error_reduction' ist vage ('Signifikant') statt mit ko
 *29.08. 11:01 UTC · Quelle: system*
 
 Modell-Fehler deutlich reduzieren
-
-### `dream:20260829110130:5:d23262`
-*29.08. 11:01 UTC · Quelle: dream*
-
-Pruning runs produce zero deletions, indicating thresholds are misaligned with the actual data lifecycle and access patterns.
-
-### `dream:20260829110130:4:826403`
-*29.08. 11:01 UTC · Quelle: dream*
-
-The fallback model (nvidia/nemotron-3-ultra-550b-a55b:free) succeeds reliably but at ~50s latency, which compounds delays under sustained load.
-
-### `dream:20260829110130:3:de5c55`
-*29.08. 11:01 UTC · Quelle: dream*
-
-Stale tasks (e.g., Marktanalyse) accumulate when no convergence gate or time-based escalation forces completion.
-
-### `dream:20260829110130:2:754ab5`
-*29.08. 11:01 UTC · Quelle: dream*
-
-Skill proposals are generated in large numbers (50+) but almost never executed, revealing a systemic proposal-to-implementation gap.
-
-### `dream:20260829110130:1:e02587`
-*29.08. 11:01 UTC · Quelle: dream*
-
-429 rate-limit errors on a single model (z-ai/glm-5.2:free) are the dominant recurring failure, causing cascading task interruptions every few seconds.
-
-### `dream:20260829105415:5:ef4ac5`
-*29.08. 10:54 UTC · Quelle: dream*
-
-Token efficiency varies significantly between models, with successful runs using fewer input tokens, suggesting lightweight models may be underutilized for simpler tasks.
-
-### `dream:20260829105415:4:3b18c8`
-*29.08. 10:54 UTC · Quelle: dream*
-
-Systematic error reduction requires not just identifying failures but implementing resilient routing and recovery mechanisms.
-
-### `dream:20260829105415:3:b5e9fe`
-*29.08. 10:54 UTC · Quelle: dream*
-
-Repeated model failures without successful fallback attempts indicate a gap in automated retry and model-switching logic.
-
-### `dream:20260829105415:2:4bb992`
-*29.08. 10:54 UTC · Quelle: dream*
-
-The model poolside/laguna-s-2.1:free consistently succeeds where others fail, suggesting certain lightweight models are more resilient under load.
-
-### `dream:20260829105415:1:b39ba5`
-*29.08. 10:54 UTC · Quelle: dream*
-
-Rate limiting (429) and upstream overload (502) are recurring failure modes across multiple model endpoints, indicating systemic API reliability issues rather than isolated incidents.
 
 ### `last_swarm_critique`
 *29.08. 09:26 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 11:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 11:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,14 +26,14 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 15×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 37 events but 0 organ errors, showing cleanup is decoupled from health monitoring.
+- Hand-action retry succeeded after initial failure, indicating transient environment issues rather than code defects.
+- Swarm convergence in 1 cycle with 5 roles suggests over-specified role allocation for simple goals.
+- Calibration error of 5 points (predicted 3 vs actual 8) reveals systematic underestimation of simulation-driven task complexity.
+- Model endpoints exhibit cascading failures (502 then 429) requiring automatic fallback with circuit-breaker logic.
 - Aggressive pruning (88 events first cycle) may erase failure context needed for root-cause analysis.
 - Identical skill proposals recur across dream cycles (model router, simulation gate, deduplicator) but never graduate to implementation.
 - Hand actions fail silently on path issues (first read 0 bytes in 0.02s) before succeeding on retry, indicating missing pre-flight validation.
@@ -51,11 +56,6 @@
 - Simulation-based revision loops identify risks but lack convergence guarantees, causing infinite revise cycles without delivery.
 - Evolutionary search can dramatically improve solution quality (0→9/10) but final swarm convergence fails due to execution environment mismatches.
 - Free-tier model endpoints exhibit cascading failures (502 overloads, 429 rate limits) requiring health-aware routing with automatic failover.
-- High latency variance (19–197s on Nemotron, 71–88s on Dots) makes timeout-aware routing essential for reliable throughput.
-- Hand actions fail due to syntax errors in generated code (unterminated f-string), so static validation must gate execution.
-- Evolutionary repair (variants + scoring) rescued a 0/10 attempt to 9/10, proving that generate-validate-iterate beats single-shot generation.
-- The system consistently overestimates success (calibration predicted 4, actual 0), revealing a severe optimism bias in self-assessment.
-- Free-tier models (Nemotron, Gemma) fail unpredictably with 502/429 errors, requiring a hardened fallback chain with health checks before each call.
 
 ---
 
