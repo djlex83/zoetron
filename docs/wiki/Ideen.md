@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 00:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 00:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,12 +25,11 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
@@ -38,9 +37,15 @@
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fixed prune thresholds cannot adapt to memory pressure, causing either premature eviction or OOM risk.
+- Reflex actions report converged=true without measurable outcome metrics, making success indistinguishable from silent failure.
+- Skill proposals accumulate but lack ownership, deadlines, and verification, so they never become operational capabilities.
+- Swarm knowledge decays within cycles, requiring repeated revival reflexes instead of persistent retention.
+- Model latency varies wildly (16–79 s) indicating unreliable provider performance that breaks downstream timing assumptions.
 - Swarm knowledge refresh runs as reflex but lacks convergence detection, wasting cycles on plateaued scores.
 - Skill proposals accumulate (10+ this cycle) but none graduate without a promotion pipeline that measures real-world success.
 - Stress-aware scheduling appears in three independent proposals yet no metabolic gate exists before task admission.
@@ -51,11 +56,6 @@
 - Pruning runs consistently remove ~7 facts and 18-25 events per cycle, risking loss of goal-relevant context.
 - Reflex actions successfully converge on stale-knowledge and error-reduction goals without organ errors.
 - Model failures are dominated by rate limits (429) and upstream overloads (502), not model capability gaps.
-- Pruning aggressiveness (15-28 facts/events per run) risks discarding low-frequency but high-value patterns unless tagged for retention.
-- Dream insights accumulate but lack a promotion gate; only 5/5 proposals from prior dream were instantiated as callable skills.
-- Swarm knowledge staleness triggers recurrent drive goals, indicating missing automated freshness SLA enforcement.
-- Reflex-driven automation (träume-besser-nutzen-lernen.py, veraltete-marktdaten-regelmaessig-aktuali.py) converges reliably without human intervention 
-- Model endpoint failures (502/429) cascade across providers, requiring automatic failover with exponential backoff to maintain throughput.
 
 ---
 

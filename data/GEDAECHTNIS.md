@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11515 Fakten** · Stand 2026-09-12 00:16 UTC · aktualisiert bei jedem Herzschlag
+**11513 Fakten** · Stand 2026-09-12 00:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
-- **swarm_artifact:** 1695
+- **dream:** 7446
+- **swarm_artifact:** 1689
 - **last_swarm_critique:** 893
 - **last_swarm_goal:** 628
 - **anti_pattern:** 385
 - **strategy:** 195
-- **tool:** 158
+- **tool:** 157
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912002409:5:2c79b2`
+*12.09. 00:24 UTC · Quelle: dream*
+
+Fixed prune thresholds cannot adapt to memory pressure, causing either premature eviction or OOM risk.
+
+### `dream:20260912002409:4:89547c`
+*12.09. 00:24 UTC · Quelle: dream*
+
+Reflex actions report converged=true without measurable outcome metrics, making success indistinguishable from silent failure.
+
+### `dream:20260912002409:3:da8e31`
+*12.09. 00:24 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack ownership, deadlines, and verification, so they never become operational capabilities.
+
+### `dream:20260912002409:2:a2c2fb`
+*12.09. 00:24 UTC · Quelle: dream*
+
+Swarm knowledge decays within cycles, requiring repeated revival reflexes instead of persistent retention.
+
+### `dream:20260912002409:1:52bdba`
+*12.09. 00:24 UTC · Quelle: dream*
+
+Model latency varies wildly (16–79 s) indicating unreliable provider performance that breaks downstream timing assumptions.
 
 ### `dream:20260912001328:5:6e60ed`
 *12.09. 00:13 UTC · Quelle: dream*
@@ -43167,11 +43192,6 @@ Latency variance in fallback models (7.9–33.3 s) violates tier-specific SLA bu
 *29.08. 00:31 UTC · Quelle: dream*
 
 Rate limiting (429) on specific free-tier models is a systemic reliability failure requiring automated per-provider circuit breakers with automatic traffic shifting.
-
-### `tool:regelmäßige-selbstprüfung-etablieren`
-*29.08. 00:23 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Regelmäßige Selbstprüfung etablieren'. Datei: data/tools/regelmäßige-selbstprüfung-etablieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *29.08. 00:23 UTC · Quelle: critic*
