@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 02:21:04",
+ "stand": "2026-09-12 02:31:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -34,8 +34,8 @@
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
