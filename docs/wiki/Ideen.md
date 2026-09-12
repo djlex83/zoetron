@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 06:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 06:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts/events but no mechanism exists to preserve validated skills or successful model responses across sleep cycles.
+- Repeated prompts to slow/unreliable models waste latency and tokens without caching or deduplication.
+- Reflex-driven local code execution (hand_action, python tools) succeeds with zero errors while external LLM calls fail, proving local-first execution 
+- Swarm simulations produce high scores but fail to converge, indicating evaluation metrics don't reflect actual task completion.
+- Free-tier LLM endpoints (nemotron, gemma) fail consistently with 429/502 errors while dots-studio/dots-3-note-preview:free succeeds, making single-mod
 - The swarm converged=false after 2 cycles with 3 builders, indicating that more iterations or a different role distribution may be needed for convergen
 - Evolutionary runs can raise scores from 5/10 to 9/10 in a single generation, but only when the critic identifies concrete issues like 'three separate 
 - Calibration overestimates task difficulty by ~2 points (predicted 7, actual 5), suggesting a systematic bias toward higher estimates.
@@ -51,11 +56,6 @@
 - Metabolism stress at 1.0 forces conserve mode with 3-task/1-iteration budgets, making any multi-step plan fragile without explicit checkpointing.
 - Hand actions fail when ignoring sys.argv[1] and ZOETRON_DATA environment variables, causing zero-file reads despite clean exit codes.
 - Primary models (Nemotron, Gemma) fail under load with 502/429 errors while fallback model (dots-studio) succeeds at 50-80s latency, making latency-awa
-- Swarm knowledge staleness directly correlates with decision quality degradation and requires TTL-based refresh.
-- Stress level 1.0 triggers conserve mode that caps parallelism to 3 tasks/1 iteration, starving background consolidation.
-- Skill execution pipeline needs pre-flight validation (file existence, permissions, dependencies) before reflex invocation.
-- All file operations must resolve absolute paths via ZOETRON_DATA environment variable to prevent silent zero-byte reads.
-- Model reliability requires tiered routing with circuit breakers and provider-specific fallbacks, not single-model dependence.
 
 ---
 

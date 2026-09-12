@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11474 Fakten** · Stand 2026-09-12 06:36 UTC · aktualisiert bei jedem Herzschlag
+**11474 Fakten** · Stand 2026-09-12 06:47 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7441
 - **swarm_artifact:** 1659
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912064425:5:fb229a`
+*12.09. 06:44 UTC · Quelle: dream*
+
+Pruning removes facts/events but no mechanism exists to preserve validated skills or successful model responses across sleep cycles.
+
+### `dream:20260912064425:4:cb57bc`
+*12.09. 06:44 UTC · Quelle: dream*
+
+Repeated prompts to slow/unreliable models waste latency and tokens without caching or deduplication.
+
+### `dream:20260912064425:3:549bec`
+*12.09. 06:44 UTC · Quelle: dream*
+
+Reflex-driven local code execution (hand_action, python tools) succeeds with zero errors while external LLM calls fail, proving local-first execution is more reliable.
+
+### `dream:20260912064425:2:53381b`
+*12.09. 06:44 UTC · Quelle: dream*
+
+Swarm simulations produce high scores but fail to converge, indicating evaluation metrics don't reflect actual task completion.
+
+### `dream:20260912064425:1:2f383b`
+*12.09. 06:44 UTC · Quelle: dream*
+
+Free-tier LLM endpoints (nemotron, gemma) fail consistently with 429/502 errors while dots-studio/dots-3-note-preview:free succeeds, making single-model dependence a critical reliability risk.
 
 ### `dream:20260912063402:5:86e21e`
 *12.09. 06:34 UTC · Quelle: dream*
@@ -43042,31 +43067,6 @@ Nvidia Nemotron shows mixed reliability: successes at 6-20s latency but suffers 
 *29.08. 06:48 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429 rate-limit errors under load, making them unreliable as primary workers.
-
-### `dream:20260829064312:5:fb1121`
-*29.08. 06:43 UTC · Quelle: dream*
-
-The consolidation goal itself fails because the artifact crashes with a traceback, revealing that meta-level tooling is also fragile.
-
-### `dream:20260829064312:4:fdd0e2`
-*29.08. 06:43 UTC · Quelle: dream*
-
-Hand actions fail repeatedly with exit code 1 and zero bytes read, pointing to a systemic execution environment or permission issue.
-
-### `dream:20260829064312:3:de3223`
-*29.08. 06:43 UTC · Quelle: dream*
-
-Nvidia Nemotron shows intermittent success with highly variable latency (18-103s), suggesting unstable upstream capacity rather than hard quota exhaustion.
-
-### `dream:20260829064312:2:c16de0`
-*29.08. 06:43 UTC · Quelle: dream*
-
-Only poolside/laguna-s-2.1:free consistently succeeds but with extreme latency (176-190s), indicating capacity saturation on that endpoint.
-
-### `dream:20260829064312:1:d4b751`
-*29.08. 06:43 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive rate limiting (429) and upstream overload (502), making them unreliable for production workloads.
 
 ### `last_swarm_critique`
 *29.08. 06:29 UTC · Quelle: critic*
