@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11401 Fakten** · Stand 2026-09-12 19:31 UTC · aktualisiert bei jedem Herzschlag
+**11396 Fakten** · Stand 2026-09-12 19:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7366
+- **dream:** 7361
 - **swarm_artifact:** 1643
 - **last_swarm_critique:** 913
 - **last_swarm_goal:** 648
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912193906:5:243d25`
+*12.09. 19:39 UTC · Quelle: dream*
+
+Simulation forecasts are consistently biased, requiring calibration.
+
+### `dream:20260912193906:4:30913e`
+*12.09. 19:39 UTC · Quelle: dream*
+
+Hand‑action failures stem from missing files, so existence checks should be added.
+
+### `dream:20260912193906:3:0ae18a`
+*12.09. 19:39 UTC · Quelle: dream*
+
+Pruning removes routine events but must keep recent failure sequences to retain learnings.
+
+### `dream:20260912193906:2:8a69af`
+*12.09. 19:39 UTC · Quelle: dream*
+
+Drive goals about model failure and stale knowledge recur, indicating they are core concerns.
+
+### `dream:20260912193906:1:4f238b`
+*12.09. 19:39 UTC · Quelle: dream*
+
+The system repeatedly proposes health‑tracking and retry mechanisms, revealing a persistent reliability gap.
 
 ### `dream:20260912192902:5:691907`
 *12.09. 19:29 UTC · Quelle: dream*
@@ -42562,56 +42587,6 @@ A persistent gap exists between skill proposals and actual implementation, signa
 *29.08. 19:40 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free model fails repeatedly with 429 errors across multiple consecutive attempts, indicating a systemic rate-limit vulnerability with no circuit breaker or fallback in place.
-
-### `dream:20260829193558:5:8f1eb3`
-*29.08. 19:35 UTC · Quelle: dream*
-
-Successful reflex execution (fertigkeiten-wirklich-ausprobieren-nicht.py) proves skill deployment works when file access is validated, but this pattern isn't codified into a reusable pre-flight check.
-
-### `dream:20260829193558:4:125f2e`
-*29.08. 19:35 UTC · Quelle: dream*
-
-Stress-aware scheduling is proposed but not implemented: conserve mode triggers (>0.7) and hysteresis resume (<0.5) remain theoretical without a scheduler that actually queues low-priority goals.
-
-### `dream:20260829193558:3:5b3d6d`
-*29.08. 19:35 UTC · Quelle: dream*
-
-Path-related failures persist despite resolver proposals because sys.argv[1] and ZOETRON_DATA normalization is not enforced at the hand-action entry point.
-
-### `dream:20260829193558:2:4dacbd`
-*29.08. 19:35 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack a validation gate: multiple pipeline/path/scheduler proposals exist yet no evidence of pre-deployment testing or staged promotion.
-
-### `dream:20260829193558:1:5eb21a`
-*29.08. 19:35 UTC · Quelle: dream*
-
-Repeated 429 errors from primary model (z-ai/glm-5.2:free) cause cascading latency spikes (40-50s) when falling back to secondary model without automated retry/cooldown logic.
-
-### `dream:20260829193050:5:fe6199`
-*29.08. 19:30 UTC · Quelle: dream*
-
-Pre-execution simulation gates with dry-run mode for destructive operations catch path, permission, and dependency errors before they hit production.
-
-### `dream:20260829193050:4:f796bb`
-*29.08. 19:30 UTC · Quelle: dream*
-
-Stress-aware scheduling with hysteresis (conserve >0.7, resume <0.5) prevents cascade failures during high-load periods when model APIs are most likely to return 429/502.
-
-### `dream:20260829193050:3:172a7c`
-*29.08. 19:30 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260829193050:2:8d247f`
-*29.08. 19:30 UTC · Quelle: dream*
-
-Skill proposals accumulate but rarely reach deployment; a gated lifecycle (proposal → sandbox simulation → shadow integration → registry) with auto-promotion on pass metrics would close the proposal-execution gap.
-
-### `dream:20260829193050:1:2f3685`
-*29.08. 19:30 UTC · Quelle: dream*
-
-Model API reliability is the primary systemic bottleneck: 429 rate limits and 502/503 upstream errors affect every provider, requiring automatic fallback chains with health scoring.
 
 ### `last_swarm_critique`
 *29.08. 19:22 UTC · Quelle: critic*

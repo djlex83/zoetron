@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 19:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 19:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation forecasts are consistently biased, requiring calibration.
+- Hand‑action failures stem from missing files, so existence checks should be added.
+- Pruning removes routine events but must keep recent failure sequences to retain learnings.
+- Drive goals about model failure and stale knowledge recur, indicating they are core concerns.
+- The system repeatedly proposes health‑tracking and retry mechanisms, revealing a persistent reliability gap.
 - Reflexes for swarm cleanup and model health audit improve system resilience and reduce downtime.
 - Model latency varies widely across providers, making health tracking essential for selection.
 - Drive goals become stale quickly, triggering reflexes that refresh swarm information automatically.
@@ -51,11 +56,6 @@
 - The dots-studio model exhibited latencies up to 41 seconds, which can stall the pipeline if used as the primary model.
 - The swarm failed to converge with a score of 4 despite evolution, indicating insufficient critic iterations or poor integration of evolved variants.
 - Repeated 429 Too Many Requests errors from free Google Gemma models show OpenRouter rate limits, making them unreliable for critical tasks.
-- Skill proposals accumulate (5 generated) but no promotion/execution pipeline is observed, creating a proposal-execution gap.
-- Prune_run removes facts/events but stale drive_goals persist, suggesting pruning scope is too narrow to clear strategic debt.
-- Drive goals for 'model stability' and 'swarm goal freshness' recur every cycle, indicating the underlying fixes are not sticking or not being executed
-- Reflex tools show inconsistent success (one ok, one exit=1) with no visible retry or fallback logic, causing goal stalls when tools fail.
-- External model providers (Nvidia, Google) fail frequently with 502/429 errors while only dots-studio/dots-3-note-preview remains reliable, creating a 
 
 ---
 
