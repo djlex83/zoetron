@@ -40385,3 +40385,47 @@
 {"ts": 1788572266.5151353, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.41, "gelesen": 57}}
 {"ts": 1788572266.5173812, "kind": "reflex_used", "payload": {"goal": "Wissensbasis aufräumen und konsolidieren", "tool": "alte-schwarm-ergebnisse-aufräumen.py", "ok": true}}
 {"ts": 1788572266.9187272, "kind": "act_done", "payload": {"goal_title": "Wissensbasis aufräumen und konsolidieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787967822.8799336, "key": "dream:20260829014342:1:61d6bf", "value": "Free-tier model endpoints exhibit correlated rate-limit failures; a single health-aware router with exponential backoff and fallback priority prevents cascade outages.", "source": "dream"}
+{"ts": 1787967822.8800144, "key": "dream:20260829014342:2:79ba01", "value": "Swarm evolution improves variant quality (2→8) but fails to converge because the critic role lacks authority to halt cycles; convergence criteria must be explicit and enforced.", "source": "dream"}
+{"ts": 1787967822.880082, "key": "dream:20260829014342:3:543563", "value": "Simulation-revision loops generate revisions without verifying that each revision reduces the highest-risk item; risk-weighted revision acceptance is needed.", "source": "dream"}
+{"ts": 1787967822.8801568, "key": "dream:20260829014342:4:3b6187", "value": "Hand actions failing with exit code 1 and zero bytes read indicate missing pre-flight checks (file existence, permissions) that should be automated.", "source": "dream"}
+{"ts": 1787967822.8802178, "key": "dream:20260829014342:5:c26417", "value": "Self-diagnosis reporting zero organ errors while the system scores 2/10 reveals that organ health metrics do not capture task-level failure modes; diagnostics must include outcome-based checks.", "source": "dream"}
+{"ts": 1787968075.6075008, "key": "dream:20260829014755:1:437084", "value": "Free-tier models like z-ai/glm-5.2:free are highly prone to rate-limiting (429 errors), causing cascading failures in the pipeline.", "source": "dream"}
+{"ts": 1787968075.6075835, "key": "dream:20260829014755:2:064bd7", "value": "High variance in latency for working models (9s to 19s) necessitates strict latency budgets to prevent stalling.", "source": "dream"}
+{"ts": 1787968075.607651, "key": "dream:20260829014755:3:e95b9e", "value": "Stale tasks accumulate when internal drive goals are not actively executed, indicating a need for automated stale-task detection and prioritization.", "source": "dream"}
+{"ts": 1787968075.6077154, "key": "dream:20260829014755:4:9089d9", "value": "Internal self-diagnoses reporting zero errors may mask underlying systemic issues if not cross-referenced with external success-rate metrics.", "source": "dream"}
+{"ts": 1787968075.6077776, "key": "dream:20260829014755:5:144b22", "value": "Reflexive execution successfully completes specific tasks like market analysis, proving that pre-defined action scripts are effective for routine operations.", "source": "dream"}
+{"ts": 1788572757.6423757, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788572825.962416, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788572827.8780923, "kind": "prune_run", "payload": {"facts_pruned": 3, "events_pruned": 27}}
+{"ts": 1788572832.2188592, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788572832.218857, "schalter_geoeffnet": false}}
+{"ts": 1788572866.3738363, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 34.2, "tokens_ein": 1450, "tokens_aus": 710}}
+{"ts": 1788572866.3746893, "kind": "skill_proposal", "payload": {"proposal": "model_router: maintain a priority-ordered model pool with per-model rate-limit counters, exponential backoff, and automatic failover on 429/5xx errors."}}
+{"ts": 1788572866.3748066, "kind": "skill_proposal", "payload": {"proposal": "simulation_gate: require simulation verdict=proceed AND risks=0 before any live resource commit; auto-revise on any non-zero risk."}}
+{"ts": 1788572866.3748972, "kind": "skill_proposal", "payload": {"proposal": "reflex_audit: run synthetic-input self-tests on every reflex tool every 100 cycles; disable the tool and emit a rewrite proposal on any failure."}}
+{"ts": 1788572866.3749866, "kind": "skill_proposal", "payload": {"proposal": "task_decomposer: split any incoming goal into ≤3 atomic steps each executable in one iteration under conserve budget; emit a step graph for simulation."}}
+{"ts": 1788572866.375078, "kind": "skill_proposal", "payload": {"proposal": "failure_context_preserver: tag pruned events with failure-type labels and retain the last 50 tagged events per type for post-mortem queries."}}
+{"ts": 1788572866.3751976, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788572870.7649295, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 2.3, "tokens_ein": 481, "tokens_aus": 1289}}
+{"ts": 1788572870.765102, "kind": "drive_goal", "payload": {"title": "Häufige Modellfehler systematisch beheben", "why": "Es gab extrem viele Fehler bei den internen Modellen. Wenn wir diese Fehler beheben, wird das System viel zuverlässiger arbeiten.", "signal": "failure"}}
+{"ts": 1788572870.7651772, "kind": "drive_goal", "payload": {"title": "Alte Traumerinnerungen ordnen und nutzen", "why": "Es gibt noch alte, unsortierte Erinnerungen an Träume. Wenn wir diese aufräumen, können wir daraus wertvolle Ideen für die Zukunft lernen.", "signal": "stale"}}
+{"ts": 1788572870.7652416, "kind": "drive_goal", "payload": {"title": "Zusammenarbeit im Team besser aufteilen", "why": "Alte Pläne zur besseren Aufteilung der Arbeit wurden vergessen. Wenn wir diese umsetzen, klappt die Zusammenarbeit viel reibungsloser.", "signal": "stale"}}
+{"ts": 1788572873.749768, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.51, "gelesen": 7}}
+{"ts": 1788572873.7514925, "kind": "reflex_used", "payload": {"goal": "Wissenbasis aufräumen und prüfen", "tool": "veraltetes-wissen-auffrischen-und-prüfen.py", "ok": false}}
+{"ts": 1788572876.0073473, "kind": "swarm_started", "payload": {"goal": "Wissenbasis aufräumen und prüfen"}}
+{"ts": 1788572877.0900192, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1788572880.5934215, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1788572888.9357934, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 7.3, "tokens_ein": 3373, "tokens_aus": 3917}}
+{"ts": 1788572890.2826095, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788572890.2826076, "schalter_geoeffnet": false}}
+{"ts": 1788572940.9669917, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 50.7, "tokens_ein": 457, "tokens_aus": 3032}}
+{"ts": 1788572944.239598, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 2.6, "tokens_ein": 395, "tokens_aus": 1249}}
+{"ts": 1788572944.2397978, "kind": "simulation", "payload": {"goal": "Wissenbasis aufräumen und prüfen", "verdict": "revise", "risks": 4, "revisions": 3}}
+{"ts": 1788572944.2399058, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1788572945.5583014, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788572945.5582993, "schalter_geoeffnet": false}}
+{"ts": 1788572967.8185644, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.3, "tokens_ein": 2098, "tokens_aus": 2154}}
+{"ts": 1788572968.561488, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788572968.5614855, "schalter_geoeffnet": false}}
+{"ts": 1788573003.680365, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 35.1, "tokens_ein": 2475, "tokens_aus": 1694}}
+{"ts": 1788573011.036265, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 7.0, "tokens_ein": 2801, "tokens_aus": 4360}}
+{"ts": 1788573012.9619796, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.17, "gelesen": 467}}
+{"ts": 1788573012.962175, "kind": "tor", "payload": {"goal": "Wissenbasis aufräumen und prüfen", "gruen": true, "grund": "Artefakt laeuft (212 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788573013.9685857, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788573013.9685833, "schalter_geoeffnet": false}}

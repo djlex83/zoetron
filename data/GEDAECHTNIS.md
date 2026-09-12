@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11522 Fakten** · Stand 2026-09-12 01:43 UTC · aktualisiert bei jedem Herzschlag
+**11517 Fakten** · Stand 2026-09-12 01:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7451
+- **dream:** 7446
 - **swarm_artifact:** 1695
 - **last_swarm_critique:** 895
 - **last_swarm_goal:** 630
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912015044:5:872c63`
+*12.09. 01:50 UTC · Quelle: dream*
+
+Relative paths in hand_action (gelesen: 358/364) bypass audit trail, creating reproducibility gaps in artifact retrieval.
+
+### `dream:20260912015044:4:f9ad07`
+*12.09. 01:50 UTC · Quelle: dream*
+
+Pruning removed 22 events but lacks goal-awareness, risking deletion of failure-pattern evidence needed for future diagnosis.
+
+### `dream:20260912015044:3:c57c68`
+*12.09. 01:50 UTC · Quelle: dream*
+
+Swarm converges in 1 cycle without evolution, indicating critic role is insufficiently empowered to force architectural changes.
+
+### `dream:20260912015044:2:1fc381`
+*12.09. 01:50 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 5 vs actual 8) reveals systematic over-pessimism in self-assessment that distorts planning budgets.
+
+### `dream:20260912015044:1:cddf3d`
+*12.09. 01:50 UTC · Quelle: dream*
+
+Model latency varies 7x (15-113s) on identical provider, requiring circuit-breaker fallback before swarm invocation.
 
 ### `dream:20260912014005:5:9f5af9`
 *12.09. 01:40 UTC · Quelle: dream*
@@ -43152,56 +43177,6 @@ Nemotron latency varies 10x (6s–76s), so fixed timeouts will either kill healt
 *29.08. 01:52 UTC · Quelle: dream*
 
 The z-ai/glm-5.2 model fails 100% of the time with 429 errors, making it effectively unusable without circuit-breaking.
-
-### `dream:20260829014755:5:144b22`
-*29.08. 01:47 UTC · Quelle: dream*
-
-Reflexive execution successfully completes specific tasks like market analysis, proving that pre-defined action scripts are effective for routine operations.
-
-### `dream:20260829014755:4:9089d9`
-*29.08. 01:47 UTC · Quelle: dream*
-
-Internal self-diagnoses reporting zero errors may mask underlying systemic issues if not cross-referenced with external success-rate metrics.
-
-### `dream:20260829014755:3:e95b9e`
-*29.08. 01:47 UTC · Quelle: dream*
-
-Stale tasks accumulate when internal drive goals are not actively executed, indicating a need for automated stale-task detection and prioritization.
-
-### `dream:20260829014755:2:064bd7`
-*29.08. 01:47 UTC · Quelle: dream*
-
-High variance in latency for working models (9s to 19s) necessitates strict latency budgets to prevent stalling.
-
-### `dream:20260829014755:1:437084`
-*29.08. 01:47 UTC · Quelle: dream*
-
-Free-tier models like z-ai/glm-5.2:free are highly prone to rate-limiting (429 errors), causing cascading failures in the pipeline.
-
-### `dream:20260829014342:5:c26417`
-*29.08. 01:43 UTC · Quelle: dream*
-
-Self-diagnosis reporting zero organ errors while the system scores 2/10 reveals that organ health metrics do not capture task-level failure modes; diagnostics must include outcome-based checks.
-
-### `dream:20260829014342:4:3b6187`
-*29.08. 01:43 UTC · Quelle: dream*
-
-Hand actions failing with exit code 1 and zero bytes read indicate missing pre-flight checks (file existence, permissions) that should be automated.
-
-### `dream:20260829014342:3:543563`
-*29.08. 01:43 UTC · Quelle: dream*
-
-Simulation-revision loops generate revisions without verifying that each revision reduces the highest-risk item; risk-weighted revision acceptance is needed.
-
-### `dream:20260829014342:2:79ba01`
-*29.08. 01:43 UTC · Quelle: dream*
-
-Swarm evolution improves variant quality (2→8) but fails to converge because the critic role lacks authority to halt cycles; convergence criteria must be explicit and enforced.
-
-### `dream:20260829014342:1:61d6bf`
-*29.08. 01:43 UTC · Quelle: dream*
-
-Free-tier model endpoints exhibit correlated rate-limit failures; a single health-aware router with exponential backoff and fallback priority prevents cascade outages.
 
 ### `last_swarm_critique`
 *29.08. 01:14 UTC · Quelle: critic*
