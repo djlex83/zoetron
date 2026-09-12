@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 13:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 13:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Ferne Träume verbinden *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predicted 7 but actual was 4, revealing a systematic overconfidence that should be corrected in future predictions.
+- A hand_action failed with exit code 1 and null error, suggesting an unhandled exception; capturing stderr would aid diagnosis.
+- dots-studio/dots-3-note-preview:free is the only consistently successful model, though its latency can reach 90 seconds, necessitating async handling.
+- The circuit breaker locks a model after three consecutive failures, preventing cascading errors but requiring manual reset after 1800 seconds.
+- Repeated 429 errors from Google Gemma models indicate rate limiting; falling back to dots-studio/dots-3-note-preview:free preserves task continuity.
 - Simulation verdicts with risks and revisions highlight the need for iterative refinement and risk mitigation strategies before execution.
 - System stress levels trigger resource conservation, which may limit parallel tasks and require prioritization of critical operations.
 - The same reflex tool ('fernere-erinnerungen-verbinden.py') consistently fails, indicating a need for diagnostic checks or a replacement implementation
@@ -51,11 +56,6 @@
 - Swarm goals and critiques become stale; a freshness daemon with TTL and automatic re-query prevents knowledge decay.
 - Pruning events without auditing against organ-health flags can discard critical diagnostic data, requiring a hook that blocks pruning on unresolved wa
 - Free model endpoints frequently return 502 (overload) or 429 (rate limit), so a per-endpoint circuit breaker with automatic failover is essential.
-- Memory pruning removes many facts/events, which may help performance but risks losing important context if over-aggressive.
-- Evolutionary runs can produce high-scoring variants (score 9/10) but the swarm still fails to converge, suggesting integration gaps.
-- Calibration predictions are significantly off (predicted 7, actual 1), so model confidence should not be trusted without adjustment.
-- Hand actions fail with exit code 1 due to runtime errors in the generated artifact, indicating a need for pre-execution validation.
-- Model endpoints frequently return 502/429 errors, causing task interruptions; a retry mechanism with fallback models is essential.
 
 ---
 

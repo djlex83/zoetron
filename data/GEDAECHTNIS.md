@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11472 Fakten** · Stand 2026-09-12 13:25 UTC · aktualisiert bei jedem Herzschlag
+**11471 Fakten** · Stand 2026-09-12 13:36 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7431
-- **swarm_artifact:** 1657
+- **swarm_artifact:** 1656
 - **last_swarm_critique:** 907
 - **last_swarm_goal:** 642
 - **anti_pattern:** 373
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912133344:5:da5395`
+*12.09. 13:33 UTC · Quelle: dream*
+
+Calibration predicted 7 but actual was 4, revealing a systematic overconfidence that should be corrected in future predictions.
+
+### `dream:20260912133344:4:564619`
+*12.09. 13:33 UTC · Quelle: dream*
+
+A hand_action failed with exit code 1 and null error, suggesting an unhandled exception; capturing stderr would aid diagnosis.
+
+### `dream:20260912133344:3:c980f0`
+*12.09. 13:33 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently successful model, though its latency can reach 90 seconds, necessitating async handling.
+
+### `dream:20260912133344:2:4529b1`
+*12.09. 13:33 UTC · Quelle: dream*
+
+The circuit breaker locks a model after three consecutive failures, preventing cascading errors but requiring manual reset after 1800 seconds.
+
+### `dream:20260912133344:1:d43b05`
+*12.09. 13:33 UTC · Quelle: dream*
+
+Repeated 429 errors from Google Gemma models indicate rate limiting; falling back to dots-studio/dots-3-note-preview:free preserves task continuity.
 
 ### `dream:20260912132322:5:f1be16`
 *12.09. 13:23 UTC · Quelle: dream*
@@ -42952,31 +42977,6 @@ score=9; issues=Fallback konvergenztor_pruefe only checks score threshold withou
 *29.08. 13:27 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:20260829132648:5:0e57d1`
-*29.08. 13:26 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260829132648:4:dd7db3`
-*29.08. 13:26 UTC · Quelle: dream*
-
-Simulation risk thresholds drift from actual outcomes; an online calibration loop that logs predicted vs. actual scores per model/task and adjusts confidence intervals daily prevents silent degradation.
-
-### `dream:20260829132648:3:f64ec0`
-*29.08. 13:26 UTC · Quelle: dream*
-
-Proposed skills accumulate but rarely get implemented; a gated promotion pipeline (proposal → sandbox dry-run → stress-test → swarm commit) would close the proposal-to-production gap.
-
-### `dream:20260829132648:2:ac68e0`
-*29.08. 13:26 UTC · Quelle: dream*
-
-High latency (20-30s) on fallback models creates cascading timeouts; async batch queues with timeout budgets and progress callbacks are needed for non-critical paths.
-
-### `dream:20260829132648:1:6bcfc0`
-*29.08. 13:26 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary endpoints without token-bucket throttling and automatic paid-model failover.
 
 ### `last_swarm_critique`
 *29.08. 13:03 UTC · Quelle: critic*
