@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-12 02:11:11",
+ "stand": "2026-09-12 02:21:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -424,6 +424,12 @@
   },
   {
    "tool": "modellfehler-verstehen-und-verringern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorschläge-in-echte-fähigkeiten-wandeln.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
