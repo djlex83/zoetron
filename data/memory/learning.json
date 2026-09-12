@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 06:24:28",
+ "stand": "2026-09-12 06:34:32",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -169,12 +169,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
@@ -427,9 +421,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "veraltete-wissenstände-auffrischen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.791,
+ "haende_quote": 0.796,
  "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 27,

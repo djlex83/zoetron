@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11476 Fakten** · Stand 2026-09-12 06:26 UTC · aktualisiert bei jedem Herzschlag
+**11474 Fakten** · Stand 2026-09-12 06:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
-- **swarm_artifact:** 1665
+- **dream:** 7441
+- **swarm_artifact:** 1659
 - **last_swarm_critique:** 899
 - **last_swarm_goal:** 634
 - **anti_pattern:** 377
 - **strategy:** 191
 - **tool:** 157
-- **hand_result:** 78
+- **hand_result:** 77
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912063402:5:86e21e`
+*12.09. 06:34 UTC · Quelle: dream*
+
+The swarm converged=false after 2 cycles with 3 builders, indicating that more iterations or a different role distribution may be needed for convergence.
+
+### `dream:20260912063402:4:cfaa60`
+*12.09. 06:34 UTC · Quelle: dream*
+
+Evolutionary runs can raise scores from 5/10 to 9/10 in a single generation, but only when the critic identifies concrete issues like 'three separate scripts'.
+
+### `dream:20260912063402:3:53003b`
+*12.09. 06:34 UTC · Quelle: dream*
+
+Calibration overestimates task difficulty by ~2 points (predicted 7, actual 5), suggesting a systematic bias toward higher estimates.
+
+### `dream:20260912063402:2:786b67`
+*12.09. 06:34 UTC · Quelle: dream*
+
+Model failures are transient (502 upstream overload, 429 rate limit) and should trigger automatic fallback rather than manual retry.
+
+### `dream:20260912063402:1:03828b`
+*12.09. 06:34 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently available model; nvidia and gemma free endpoints frequently return 502/429 errors.
 
 ### `dream:20260912062402:5:d738c8`
 *12.09. 06:24 UTC · Quelle: dream*
