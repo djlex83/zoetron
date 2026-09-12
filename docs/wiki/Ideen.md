@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 23:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 23:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Specialized-role swarm (1 planner, 3 builders, 1 critic) achieved convergence in 1 cycle with score 9, demonstrating role diversity accelerates qualit
+- Calibration significantly underestimated outcome (predicted 5 vs actual 9, error 4), revealing systematic optimism bias in difficulty estimation.
+- Hand actions fail on first attempt (exit 1, 0-5 lines read) but succeed on retry with full context (300 lines, 4.86s), indicating mandatory retry logi
+- The simulation-revision loop (verdict: revise, 3 risks, 3 revisions) converged in a single cycle, proving pre-execution simulation effectively catches
+- Free-tier models exhibit systematic failure modes: gemma models consistently return 429 rate limits while nemotron intermittently returns 502 upstream
 - The persistence of model failures despite multiple skill proposals indicates an implementation gap, which can be bridged by an incubator that shadow-r
 - The metabolism stress level of 1.0 and conserve state imply that resource constraints are contributing to model failures, so task scheduling must adap
 - The failed reflex (modelle-zuverlässiger-machen.py) suggests that the tool for model reliability is incomplete or not robust to current conditions, re
@@ -51,11 +56,6 @@
 - Single-cycle swarm convergence with 3:1 builder-to-critic ratio risks premature commitment without sufficient critical evaluation.
 - Low-count calibration systematically underestimates actuals (predicted 2 vs actual 8) demanding statistical correction factors for sparse data.
 - Model provider failures cascade across endpoints (502 upstream, 429 rate limits) requiring per-provider adaptive retry logic with learned throttle win
-- Stale swarm knowledge persists because there is no verification step before marking knowledge current.
-- Pruning only completed-goal history discards valuable failure events, hindering pattern recognition.
-- Simulations are generated but never applied, revealing a missing pipeline to convert them into executable artifacts.
-- Missing input files cause hand_action failures, indicating a need for pre-execution resource validation.
-- Provider errors (502/429) recur because the system does not check health before invocation.
 
 ---
 

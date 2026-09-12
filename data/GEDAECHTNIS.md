@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11383 Fakten** · Stand 2026-09-12 23:42 UTC · aktualisiert bei jedem Herzschlag
+**11387 Fakten** · Stand 2026-09-12 23:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7326
-- **swarm_artifact:** 1655
-- **last_swarm_critique:** 919
-- **last_swarm_goal:** 654
+- **dream:** 7321
+- **swarm_artifact:** 1661
+- **last_swarm_critique:** 920
+- **last_swarm_goal:** 655
 - **anti_pattern:** 369
 - **strategy:** 187
 - **tool:** 153
-- **hand_result:** 82
+- **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `last_swarm_critique`
+*12.09. 23:56 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*12.09. 23:50 UTC · Quelle: system*
+
+Modellzuverlässigkeit steigern
+
+### `dream:20260912234948:5:314849`
+*12.09. 23:49 UTC · Quelle: dream*
+
+Specialized-role swarm (1 planner, 3 builders, 1 critic) achieved convergence in 1 cycle with score 9, demonstrating role diversity accelerates quality.
+
+### `dream:20260912234948:4:85423d`
+*12.09. 23:49 UTC · Quelle: dream*
+
+Calibration significantly underestimated outcome (predicted 5 vs actual 9, error 4), revealing systematic optimism bias in difficulty estimation.
+
+### `dream:20260912234948:3:623c46`
+*12.09. 23:49 UTC · Quelle: dream*
+
+Hand actions fail on first attempt (exit 1, 0-5 lines read) but succeed on retry with full context (300 lines, 4.86s), indicating mandatory retry logic.
+
+### `dream:20260912234948:2:e9e1fd`
+*12.09. 23:49 UTC · Quelle: dream*
+
+The simulation-revision loop (verdict: revise, 3 risks, 3 revisions) converged in a single cycle, proving pre-execution simulation effectively catches issues.
+
+### `dream:20260912234948:1:70b0f3`
+*12.09. 23:49 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic failure modes: gemma models consistently return 429 rate limits while nemotron intermittently returns 502 upstream overload errors.
 
 ### `dream:20260912233945:5:f17479`
 *12.09. 23:39 UTC · Quelle: dream*
@@ -42367,56 +42402,6 @@ score=8; issues=Keine echten Marktdaten gefunden - Simulation und Parameter-Swee
 *29.08. 23:48 UTC · Quelle: system*
 
 Marktlücke endgültig untersuchen
-
-### `dream:20260829234742:5:683e26`
-*29.08. 23:47 UTC · Quelle: dream*
-
-Error patterns are highly repetitive (same model, same endpoint, same 429 code), enabling predictive mitigation via pre-flight probes and circuit breakers.
-
-### `dream:20260829234742:4:d12e80`
-*29.08. 23:47 UTC · Quelle: dream*
-
-Fallback model latency variance (7-13s) demands adaptive deadline extension (30s per retry, max 3) and SLA-aware routing to prevent cascade timeouts.
-
-### `dream:20260829234742:3:274f3b`
-*29.08. 23:47 UTC · Quelle: dream*
-
-Skill proposals accumulate without an implementation gate; a ProposalGate requiring concrete plan, measurable acceptance test, and assigned owner converts ideas into deployed capabilities.
-
-### `dream:20260829234742:2:375042`
-*29.08. 23:47 UTC · Quelle: dream*
-
-Single-model dependency creates systemic fragility; a health-aware multi-model router with latency SLA (<5s p95) is required for reliability.
-
-### `dream:20260829234742:1:6c1e01`
-*29.08. 23:47 UTC · Quelle: dream*
-
-Proactive rate-limit management via token-bucket and RateLimit-header parsing prevents 429 errors entirely, whereas reactive retries only mask the problem.
-
-### `dream:20260829234240:5:d84ade`
-*29.08. 23:42 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while functional failures (rate limits, incomplete skills) persist undetected.
-
-### `dream:20260829234240:4:c9a2ec`
-*29.08. 23:42 UTC · Quelle: dream*
-
-Swarm cycles converge on partial solutions (score 6, not converged) because completion criteria are implicit, not measured.
-
-### `dream:20260829234240:3:72e9f3`
-*29.08. 23:42 UTC · Quelle: dream*
-
-Evolution improves scores (6→9) but stalls without an orchestration layer to wire separate scripts together.
-
-### `dream:20260829234240:2:ebeb97`
-*29.08. 23:42 UTC · Quelle: dream*
-
-Fallback model latency varies 10x (5–48 s), making fixed deadlines unreliable for drive execution.
-
-### `dream:20260829234240:1:69f057`
-*29.08. 23:42 UTC · Quelle: dream*
-
-Free-tier models hit 429 rate limits predictably under load, requiring proactive routing instead of reactive fallback.
 
 ### `last_swarm_critique`
 *29.08. 22:55 UTC · Quelle: critic*
