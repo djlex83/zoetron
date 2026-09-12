@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 10:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 10:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High latency variance (19–197s on Nemotron, 71–88s on Dots) makes timeout-aware routing essential for reliable throughput.
+- Hand actions fail due to syntax errors in generated code (unterminated f-string), so static validation must gate execution.
+- Evolutionary repair (variants + scoring) rescued a 0/10 attempt to 9/10, proving that generate-validate-iterate beats single-shot generation.
+- The system consistently overestimates success (calibration predicted 4, actual 0), revealing a severe optimism bias in self-assessment.
+- Free-tier models (Nemotron, Gemma) fail unpredictably with 502/429 errors, requiring a hardened fallback chain with health checks before each call.
 - Metabolic stress at 1.0 triggers conserve mode that caps tasks at 3 and iterations at 1, starving background consolidation like swarm sync.
 - Skill proposals accumulate without expiration or evaluation criteria, creating noise that obscures high-value capabilities needing integration.
 - File operations fail when code uses relative paths instead of the ZOETRON_DATA environment variable, causing silent zero-byte reads in hand actions.
@@ -51,11 +56,6 @@
 - The simulation gate repeatedly required revisions, preventing action execution.
 - Hand actions exited with code 1 and no output, revealing missing or broken scripts.
 - The free Google model returned HTTP 429, indicating rate limiting that requires caching or fallback.
-- Hand actions fail when relative paths are used instead of absolute ZOETRON_DATA paths; all file ops must resolve against the canonical data root.
-- High stress (1.0) with conserve metabolism reduces max_tasks to 3 and max_iterations to 1, causing premature termination of multi-step plans.
-- Simulation calibration error of 700% (predicted 8 vs actual 1) indicates the simulator does not model real filesystem/path constraints.
-- Generated Python artifacts frequently contain syntax errors (f-string formatting, indentation) that prevent execution; validation must happen before w
-- Model fallback chains must handle both 502 upstream errors and 429 rate limits with exponential backoff and circuit breakers.
 
 ---
 

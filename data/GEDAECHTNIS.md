@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11483 Fakten** · Stand 2026-09-12 10:21 UTC · aktualisiert bei jedem Herzschlag
+**11483 Fakten** · Stand 2026-09-12 10:31 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7451
 - **swarm_artifact:** 1657
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912102900:5:a43593`
+*12.09. 10:29 UTC · Quelle: dream*
+
+High latency variance (19–197s on Nemotron, 71–88s on Dots) makes timeout-aware routing essential for reliable throughput.
+
+### `dream:20260912102900:4:74a4cd`
+*12.09. 10:29 UTC · Quelle: dream*
+
+Hand actions fail due to syntax errors in generated code (unterminated f-string), so static validation must gate execution.
+
+### `dream:20260912102900:3:ca1b0e`
+*12.09. 10:29 UTC · Quelle: dream*
+
+Evolutionary repair (variants + scoring) rescued a 0/10 attempt to 9/10, proving that generate-validate-iterate beats single-shot generation.
+
+### `dream:20260912102900:2:9ffefc`
+*12.09. 10:29 UTC · Quelle: dream*
+
+The system consistently overestimates success (calibration predicted 4, actual 0), revealing a severe optimism bias in self-assessment.
+
+### `dream:20260912102900:1:1c7ccf`
+*12.09. 10:29 UTC · Quelle: dream*
+
+Free-tier models (Nemotron, Gemma) fail unpredictably with 502/429 errors, requiring a hardened fallback chain with health checks before each call.
 
 ### `dream:20260912101735:5:def2ea`
 *12.09. 10:17 UTC · Quelle: dream*
@@ -43052,31 +43077,6 @@ Simulation scores do not predict execution success; hand_action verification mus
 *29.08. 10:30 UTC · Quelle: dream*
 
 Rate limiting (429) and upstream errors (502) are the dominant failure modes across all free-tier models, requiring systematic fallback and backoff strategies.
-
-### `dream:20260829102436:5:615f0c`
-*29.08. 10:24 UTC · Quelle: dream*
-
-Pruning runs remove zero facts/events despite ongoing knowledge graph repairs, suggesting pruning thresholds are misaligned with actual churn.
-
-### `dream:20260829102436:4:3d2226`
-*29.08. 10:24 UTC · Quelle: dream*
-
-System self-diagnosis reports zero organ errors while external API failure rate exceeds 50%, revealing a critical observability blind spot.
-
-### `dream:20260829102436:3:f7c99f`
-*29.08. 10:24 UTC · Quelle: dream*
-
-Simulation-revision-swarm loops improve solutions (evolved=true) but consistently fail to converge within default cycle limits (score 6, converged=false).
-
-### `dream:20260829102436:2:2582e3`
-*29.08. 10:24 UTC · Quelle: dream*
-
-Model latency varies by 10x for the same model (nemotron: 75.7s vs 7.0s), indicating cold-start or load variability that breaks latency budgets.
-
-### `dream:20260829102436:1:5ef75d`
-*29.08. 10:24 UTC · Quelle: dream*
-
-Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, causing cascading fallback latency spikes.
 
 ### `last_swarm_critique`
 *29.08. 09:26 UTC · Quelle: critic*
