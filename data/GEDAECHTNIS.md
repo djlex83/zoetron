@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11483 Fakten** · Stand 2026-09-12 08:43 UTC · aktualisiert bei jedem Herzschlag
+**11481 Fakten** · Stand 2026-09-12 09:03 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7456
-- **swarm_artifact:** 1659
-- **last_swarm_critique:** 901
-- **last_swarm_goal:** 636
+- **swarm_artifact:** 1655
+- **last_swarm_critique:** 902
+- **last_swarm_goal:** 637
 - **anti_pattern:** 371
 - **strategy:** 188
 - **tool:** 156
@@ -13,6 +13,51 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen in echte Ak:2`
+*12.09. 09:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): AST-Based Code Construction (libcst / ast) - Build the output script as an Abstract Syntax Tree instead of text. Use `libcst` (or stdlib `ast`) to programmatically create Module → FunctionDef → Return nodes. The tree is seria
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen in echte Ak:0`
+*12.09. 09:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Template-Engine Delegation (Jinja2) - Eliminate all f-string complexity by delegating code generation to Jinja2 templates. Store templates as separate .j2 files (or embedded triple-quoted strings with different delimiters). T
+
+### `last_swarm_critique`
+*12.09. 08:58 UTC · Quelle: critic*
+
+score=1; issues=Artefakt laeuft nicht: Syntaxfehler in Zeile 113 - verschachtelte Triple-Quotes im f-String (f"""...""") brechen den String ab. Python erlaubt keine ungeescapten gleichartigen Anführungszeichen in f-Strings. Das Sandbox-Urteil bestätigt: LAEUFT
+
+### `last_swarm_goal`
+*12.09. 08:52 UTC · Quelle: system*
+
+Simulationen in echte Aktionen umsetzen
+
+### `dream:20260912085125:5:17df8a`
+*12.09. 08:51 UTC · Quelle: dream*
+
+Swarm memory staleness is explicitly flagged as a drive signal ('stale') that blocks new ideas, confirming knowledge decay as a system-level bottleneck.
+
+### `dream:20260912085125:4:7372bb`
+*12.09. 08:51 UTC · Quelle: dream*
+
+Simulation-based revision loops work: verdict 'revise' with 5 risks triggered 5 revisions that were successfully applied.
+
+### `dream:20260912085125:3:2909f0`
+*12.09. 08:51 UTC · Quelle: dream*
+
+The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' consistently fails to activate skill proposals, breaking the proposal-to-skill pipeline.
+
+### `dream:20260912085125:2:608377`
+*12.09. 08:51 UTC · Quelle: dream*
+
+Local tool execution (hand_action) fails when relative paths are used instead of the absolute ZOETRON_DATA environment variable, causing zero-file reads.
+
+### `dream:20260912085125:1:31efc4`
+*12.09. 08:51 UTC · Quelle: dream*
+
+External LLM providers (Nvidia, Google) frequently return 502 overload or 429 rate-limit errors, requiring a multi-model fallback chain to maintain throughput.
 
 ### `dream:20260912084032:5:7b37fb`
 *12.09. 08:40 UTC · Quelle: dream*
@@ -43053,16 +43098,6 @@ Model latency varies by 5x+ for the same model (nemotron: 86s vs 15s), indicatin
 
 Free-tier models on OpenRouter exhibit systematic rate-limiting (429) and upstream instability (502), making naive round-robin selection ineffective.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen konsequent :2`
-*29.08. 08:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Simulation-to-Action DSL - Create a minimal domain-specific language (DSL) where simulations are written in a simple format (e.g., YAML/JSON), parsed by a small interpreter, and converted into action objects. This separates s
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen konsequent :1`
-*29.08. 08:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Template-Based Action Generation - Use string templates or dictionaries to define how each simulation maps to concrete actions. This avoids complex logic chains and reduces risk of syntax errors. Simulations are matched to pr
-
 ### `last_swarm_critique`
 *29.08. 08:46 UTC · Quelle: critic*
 
@@ -43072,31 +43107,6 @@ score=1; issues=Sandbox verdict: LAEUFT NICHT - artifact fails with syntax error
 *29.08. 08:43 UTC · Quelle: system*
 
 Simulationen konsequent in Handlungen umsetzen
-
-### `dream:20260829084247:5:2cacfa`
-*29.08. 08:42 UTC · Quelle: dream*
-
-Self-diagnosis and pruning reported zero issues while swarm failed, indicating monitoring blind spots in task-level outcome tracking.
-
-### `dream:20260829084247:4:69da34`
-*29.08. 08:42 UTC · Quelle: dream*
-
-Fast local model (poolside/laguna-s-2.1: 4.5s) outperformed cloud models on latency and reliability, validating local-first fallback strategy.
-
-### `dream:20260829084247:3:f9c7e4`
-*29.08. 08:42 UTC · Quelle: dream*
-
-Swarm role imbalance (3 builders, 1 critic) likely caused insufficient critique pressure to drive convergence past score 6.
-
-### `dream:20260829084247:2:f52681`
-*29.08. 08:42 UTC · Quelle: dream*
-
-Evolution produced a high-scoring variant (8.7) but swarm execution failed to converge, revealing a gap between static evaluation and dynamic orchestration.
-
-### `dream:20260829084247:1:5dce5c`
-*29.08. 08:42 UTC · Quelle: dream*
-
-Rate limiting (429) across multiple cloud models indicates systemic dependency on unreliable free-tier endpoints rather than isolated failures.
 
 ### `last_swarm_critique`
 *29.08. 08:08 UTC · Quelle: critic*

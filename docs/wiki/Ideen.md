@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 08:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 09:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und verringern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm memory staleness is explicitly flagged as a drive signal ('stale') that blocks new ideas, confirming knowledge decay as a system-level bottlenec
+- Simulation-based revision loops work: verdict 'revise' with 5 risks triggered 5 revisions that were successfully applied.
+- The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' consistently fails to activate skill proposals, breaking the proposal-to-skill pipeline.
+- Local tool execution (hand_action) fails when relative paths are used instead of the absolute ZOETRON_DATA environment variable, causing zero-file rea
+- External LLM providers (Nvidia, Google) frequently return 502 overload or 429 rate-limit errors, requiring a multi-model fallback chain to maintain th
 - Simulation-to-action conversion remains low: the explicit drive goal to turn simulations into real actions and the convergence tracker proposal confir
 - Local-first execution and prompt caching are underutilized levers for latency reduction: a 49 s Nemotron call and a 40 % estimated cache hit-rate sugg
 - Skill proposals accumulate without validation or reuse tracking: three separate proposals for a validation harness, reuse tracker, and convergence mon
@@ -51,11 +56,6 @@
 - Pruning events without audit trails leads to information loss that later manifests as diagnosis gaps.
 - The system generates redundant skill proposals across dream cycles, indicating a missing deduplication mechanism.
 - Model latency (22–50 s) and failures are the primary cause of system unreliability, and the current model rotation strategy is ineffective.
-- Swarm convergence with evolved=false suggests the current role distribution (planner:1, builder:4, critic:1) is a stable, reusable template for code-g
-- Aggressive pruning (37 events, 5 facts) left zero organ errors in selbstdiagnose, indicating either safe pruning or a blind spot requiring prune_audit
-- Calibration error of 1 (predicted 8 vs actual 9) shows reliable self-estimation when the simulation gate passes, but degrades without it.
-- The simulation-gate pattern (simulate → revise → apply) with 4 revisions eliminated risks and enabled a builder-heavy swarm (4:1) to converge on a wor
-- Free-tier model endpoints consistently return 429 errors under load, necessitating a hardcoded priority router with per-model 5-minute error caching.
 
 ---
 
