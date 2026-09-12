@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11477 Fakten** · Stand 2026-09-12 13:15 UTC · aktualisiert bei jedem Herzschlag
+**11472 Fakten** · Stand 2026-09-12 13:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
+- **dream:** 7431
 - **swarm_artifact:** 1657
 - **last_swarm_critique:** 907
 - **last_swarm_goal:** 642
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912132322:5:f1be16`
+*12.09. 13:23 UTC · Quelle: dream*
+
+Simulation verdicts with risks and revisions highlight the need for iterative refinement and risk mitigation strategies before execution.
+
+### `dream:20260912132322:4:d467da`
+*12.09. 13:23 UTC · Quelle: dream*
+
+System stress levels trigger resource conservation, which may limit parallel tasks and require prioritization of critical operations.
+
+### `dream:20260912132322:3:1197be`
+*12.09. 13:23 UTC · Quelle: dream*
+
+The same reflex tool ('fernere-erinnerungen-verbinden.py') consistently fails, indicating a need for diagnostic checks or a replacement implementation.
+
+### `dream:20260912132322:2:dc3a61`
+*12.09. 13:23 UTC · Quelle: dream*
+
+Hand actions fail silently when input paths are missing or invalid, necessitating explicit input validation and error reporting before execution.
+
+### `dream:20260912132322:1:74722d`
+*12.09. 13:23 UTC · Quelle: dream*
+
+Model endpoints frequently return transient errors (502/429) requiring automatic retry with exponential backoff and circuit-breaking to avoid cascading failures.
 
 ### `dream:20260912131301:5:adec65`
 *12.09. 13:13 UTC · Quelle: dream*
@@ -42952,56 +42977,6 @@ High latency (20-30s) on fallback models creates cascading timeouts; async batch
 *29.08. 13:26 UTC · Quelle: dream*
 
 Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary endpoints without token-bucket throttling and automatic paid-model failover.
-
-### `dream:20260829132215:5:f4169c`
-*29.08. 13:22 UTC · Quelle: dream*
-
-Simulation-swarm loops lack convergence criteria, causing unbounded cycles that waste tokens on divergent trajectories.
-
-### `dream:20260829132215:4:2f37af`
-*29.08. 13:22 UTC · Quelle: dream*
-
-Multiple concurrent drive goals (reliability, market analysis, memory recombination) compete for limited model throughput without priority arbitration.
-
-### `dream:20260829132215:3:e3ed54`
-*29.08. 13:22 UTC · Quelle: dream*
-
-Reflex scripts execute successfully but lack pre-deployment validation, creating silent failure risk when dependencies shift.
-
-### `dream:20260829132215:2:9ddab4`
-*29.08. 13:22 UTC · Quelle: dream*
-
-Pruning thresholds remain static despite zero pruning events, indicating half-life calibration must be data-driven not heuristic.
-
-### `dream:20260829132215:1:bb75a3`
-*29.08. 13:22 UTC · Quelle: dream*
-
-Free-tier model endpoints consistently fail under load with 429/502 errors, making automatic failover and rate limiting essential for reliability.
-
-### `dream:20260829131747:5:7564cd`
-*29.08. 13:17 UTC · Quelle: dream*
-
-Skill proposals accumulate (rate-limit scheduler, failure taxonomy, model router, backoff retry, input validation, pruning calibration, convergence gates) but none are implemented yet.
-
-### `dream:20260829131747:4:7ddc83`
-*29.08. 13:17 UTC · Quelle: dream*
-
-The system already has working reflexes for error reduction (modell-fehler-deutlich-reduzieren.py converged) and self-diagnosis, but lacks proactive model management.
-
-### `dream:20260829131747:3:6b1e8e`
-*29.08. 13:17 UTC · Quelle: dream*
-
-No model health scoring, routing, or retry logic exists - each call naively targets a single model without fallback or backoff.
-
-### `dream:20260829131747:2:69f02f`
-*29.08. 13:17 UTC · Quelle: dream*
-
-The nvidia/nemotron model succeeds but exhibits extreme latency variance (37-82s) and eventually fails with 502 upstream errors, indicating unstable capacity.
-
-### `dream:20260829131747:1:3e72b0`
-*29.08. 13:17 UTC · Quelle: dream*
-
-Free-tier model endpoints systematically fail with 429 quota errors across multiple providers (z-ai, google), making them unreliable as primary dependencies.
 
 ### `last_swarm_critique`
 *29.08. 13:03 UTC · Quelle: critic*
