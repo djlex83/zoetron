@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11493 Fakten** · Stand 2026-09-12 09:36 UTC · aktualisiert bei jedem Herzschlag
+**11489 Fakten** · Stand 2026-09-12 09:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7461
-- **swarm_artifact:** 1656
+- **dream:** 7466
+- **swarm_artifact:** 1651
 - **last_swarm_critique:** 903
 - **last_swarm_goal:** 638
-- **anti_pattern:** 373
-- **strategy:** 189
-- **tool:** 156
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 155
 - **hand_result:** 78
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912094827:5:1ffafc`
+*12.09. 09:48 UTC · Quelle: dream*
+
+Hand actions fail when relative paths are used instead of absolute ZOETRON_DATA paths; all file ops must resolve against the canonical data root.
+
+### `dream:20260912094827:4:060207`
+*12.09. 09:48 UTC · Quelle: dream*
+
+High stress (1.0) with conserve metabolism reduces max_tasks to 3 and max_iterations to 1, causing premature termination of multi-step plans.
+
+### `dream:20260912094827:3:6db4ab`
+*12.09. 09:48 UTC · Quelle: dream*
+
+Simulation calibration error of 700% (predicted 8 vs actual 1) indicates the simulator does not model real filesystem/path constraints.
+
+### `dream:20260912094827:2:2cdf59`
+*12.09. 09:48 UTC · Quelle: dream*
+
+Generated Python artifacts frequently contain syntax errors (f-string formatting, indentation) that prevent execution; validation must happen before write.
+
+### `dream:20260912094827:1:6eaf1c`
+*12.09. 09:48 UTC · Quelle: dream*
+
+Model fallback chains must handle both 502 upstream errors and 429 rate limits with exponential backoff and circuit breakers.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Simulationen konsequent :2`
 *12.09. 09:32 UTC · Quelle: evolution*
@@ -43117,21 +43142,6 @@ The nvidia/nemotron-3-ultra-550b-a55b:free model consistently succeeds while z-a
 *29.08. 09:52 UTC · Quelle: dream*
 
 Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
-
-### `tool:wissensgraph-verknüpfungen-reparieren`
-*29.08. 09:31 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Wissensgraph-Verknüpfungen reparieren'. Datei: data/tools/wissensgraph-verknüpfungen-reparieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Wissensgraph-Verknüpfung:2`
-*29.08. 09:29 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Temporal consistency verification - Model the knowledge graph evolution as a time-series of topological invariants. Instead of validating single edges, validate entire edit sequences by checking that graph spectra (eigenvalue
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Wissensgraph-Verknüpfung:1`
-*29.08. 09:29 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Probabilistic constraint propagation - Replace the binary plausibility threshold with a soft Bayesian update model. Use belief propagation over the graph edges to compute posterior plausibility scores, then validate_new_edges
 
 ### `last_swarm_critique`
 *29.08. 09:26 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 09:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 09:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und verringern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions fail when relative paths are used instead of absolute ZOETRON_DATA paths; all file ops must resolve against the canonical data root.
+- High stress (1.0) with conserve metabolism reduces max_tasks to 3 and max_iterations to 1, causing premature termination of multi-step plans.
+- Simulation calibration error of 700% (predicted 8 vs actual 1) indicates the simulator does not model real filesystem/path constraints.
+- Generated Python artifacts frequently contain syntax errors (f-string formatting, indentation) that prevent execution; validation must happen before w
+- Model fallback chains must handle both 502 upstream errors and 429 rate limits with exponential backoff and circuit breakers.
 - Stale swarm knowledge persists because there is no automatic trigger to refresh it when group goals change.
 - Skill proposals that are never evaluated become dead weight, reducing the system's adaptive capacity.
 - Pruned events often precede gaps in later self-diagnoses, implying that critical data loss is not always visible at prune time.
@@ -51,11 +56,6 @@
 - Simulation gates are absent before hand_actions, allowing untested operations to proceed despite available mental simulation capacity.
 - Reflex actions converge without quantified effectiveness metrics, creating false confidence in skill execution quality.
 - Model endpoint overloads (502 errors) repeatedly interrupt workflows, indicating missing fallback routing and health-aware model selection.
-- Swarm memory staleness is explicitly flagged as a drive signal ('stale') that blocks new ideas, confirming knowledge decay as a system-level bottlenec
-- Simulation-based revision loops work: verdict 'revise' with 5 risks triggered 5 revisions that were successfully applied.
-- The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' consistently fails to activate skill proposals, breaking the proposal-to-skill pipeline.
-- Local tool execution (hand_action) fails when relative paths are used instead of the absolute ZOETRON_DATA environment variable, causing zero-file rea
-- External LLM providers (Nvidia, Google) frequently return 502 overload or 429 rate-limit errors, requiring a multi-model fallback chain to maintain th
 
 ---
 

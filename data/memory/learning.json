@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 09:34:48",
+ "stand": "2026-09-12 09:49:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -181,12 +181,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-be.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "kritiken-und-ziele-regelmäßig-prüfen.py",
@@ -433,6 +427,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.78,
