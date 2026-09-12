@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 16:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 16:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,15 +17,15 @@
 - Add a configurable circuit breaker that temporarily blocks a model after N consecutive failures. *(hatte die Idee 3×)*
 - Prefer dots-studio/dots-3-note-preview:free as the default model when others are unavailable. *(hatte die Idee 3×)*
 - For hand_action calls, capture both stdout and stderr and retry with modified parameters on non-zero exit. *(hatte die Idee 3×)*
-- Implement a provider-health monitor that tracks 429/error rates per provider (not per model) and shifts traffi *(hatte die Idee 2×)*
-- Wrap all model calls in a circuit breaker that trips after 3 failures, serves cached/stub responses, and integ *(hatte die Idee 2×)*
-- Implement a model router that tries dots-studio/dots-3-note-preview:free first, falls back to others only afte *(hatte die Idee 2×)*
+- Implement a model router that tracks per-provider health (error rate, latency p95, 429/502 frequency) and pree *(hatte die Idee 3×)*
+- Add a goal-staleness detector to prune_run that flags drive_goals unchanged for >N cycles and either archives  *(hatte die Idee 3×)*
+- Create a skill promotion pipeline: syntax check → import test → sandbox dry-run → benchmark against baseline;  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarmziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und verringern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals are generated from signals (failure, stale, combination) but lack quantified targets, leading to diffuse improvement efforts.
+- Skill proposals accumulate without execution, creating a backlog that prevents the system from turning ideas into working capabilities.
+- Automatic model blocking after three consecutive failures isolates a provider for 30 minutes, but without health checks it may block a model that is a
+- The only consistently available model (dots‑studio) shows latency varying from 17 s to 43 s, so routing decisions must incorporate real‑time latency, 
+- Google and Nvidia providers repeatedly return 429 and 502 errors, indicating per‑provider rate limits and upstream overload that must be detected and 
 - The dream replay combined with a swarm optimization goal produced a novel connection, showing that cross-module memory reuse can generate new strategi
 - A single prune_run removed 14 facts and 58 events, confirming that periodic cleanup prevents stale data accumulation.
 - The nvidia/nemotron-3-ultra-550b-a55b:free model timed out, suggesting shorter timeouts and smaller payloads are needed.
@@ -51,11 +56,6 @@
 - Relying on a single model creates a single point of failure; maintaining a fallback list improves resilience.
 - Timeout errors suggest network instability and should trigger retry with increased timeout.
 - Repeated 429 errors indicate rate limiting and require exponential backoff before switching models.
-- Stale swarm goals lead to inefficient collaboration, highlighting the need for periodic automated synchronization of collective objectives.
-- The failed hand action due to relative path issues suggests a need for a standardized absolute path resolver when accessing ZOETRON_DATA.
-- High model latencies (20s-47s) are a primary failure vector for time-critical goals, requiring a strict latency budget guard to trigger fallbacks.
-- The gap between generating skill proposals and actually applying them indicates a missing automated validation and deployment pipeline for skills.
-- The consistent timeouts and 429 errors from specific free models (nemotron, gemma) necessitate an automated router with health checks and fallback to 
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11441 Fakten** · Stand 2026-09-12 16:40 UTC · aktualisiert bei jedem Herzschlag
+**11436 Fakten** · Stand 2026-09-12 16:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7416
+- **dream:** 7411
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 910
 - **last_swarm_goal:** 645
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912164852:5:5b4ae7`
+*12.09. 16:48 UTC · Quelle: dream*
+
+Drive goals are generated from signals (failure, stale, combination) but lack quantified targets, leading to diffuse improvement efforts.
+
+### `dream:20260912164852:4:8a934d`
+*12.09. 16:48 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution, creating a backlog that prevents the system from turning ideas into working capabilities.
+
+### `dream:20260912164852:3:555bce`
+*12.09. 16:48 UTC · Quelle: dream*
+
+Automatic model blocking after three consecutive failures isolates a provider for 30 minutes, but without health checks it may block a model that is already recovering.
+
+### `dream:20260912164852:2:b48273`
+*12.09. 16:48 UTC · Quelle: dream*
+
+The only consistently available model (dots‑studio) shows latency varying from 17 s to 43 s, so routing decisions must incorporate real‑time latency, not just availability.
+
+### `dream:20260912164852:1:81ced5`
+*12.09. 16:48 UTC · Quelle: dream*
+
+Google and Nvidia providers repeatedly return 429 and 502 errors, indicating per‑provider rate limits and upstream overload that must be detected and routed around.
 
 ### `dream:20260912163710:5:2f7936`
 *12.09. 16:37 UTC · Quelle: dream*
@@ -42802,56 +42827,6 @@ Model reliability is highly variable across providers; a rotating pool with per-
 *29.08. 16:48 UTC · Quelle: dream*
 
 429 rate-limit errors from external APIs are the dominant failure mode, requiring proactive circuit-breaking rather than blind retries.
-
-### `dream:20260829164317:5:b40c17`
-*29.08. 16:43 UTC · Quelle: dream*
-
-Structured error capture is essential for diagnosing transient infrastructure issues versus persistent logic errors.
-
-### `dream:20260829164317:4:98c902`
-*29.08. 16:43 UTC · Quelle: dream*
-
-Stale tasks indicate a need for better prioritization or automated resumption of long-dormant goals.
-
-### `dream:20260829164317:3:4b55cc`
-*29.08. 16:43 UTC · Quelle: dream*
-
-Skill proposals are accumulating but lack a structured lifecycle process to transition from idea to tested, available skill.
-
-### `dream:20260829164317:2:79a95e`
-*29.08. 16:43 UTC · Quelle: dream*
-
-Relying on a small unmanaged pool of free models leads to cascading failures and stalled execution.
-
-### `dream:20260829164317:1:083ecc`
-*29.08. 16:43 UTC · Quelle: dream*
-
-Free models are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
-
-### `dream:20260829163707:5:761072`
-*29.08. 16:37 UTC · Quelle: dream*
-
-Five skill proposals were generated but remain unimplemented, revealing a persistent gap between problem identification and solution execution.
-
-### `dream:20260829163707:4:4339aa`
-*29.08. 16:37 UTC · Quelle: dream*
-
-Self-diagnosis found zero internal organ errors, confirming that failures originate from external model dependencies rather than internal system faults.
-
-### `dream:20260829163707:3:dda8cc`
-*29.08. 16:37 UTC · Quelle: dream*
-
-Swarm execution scored 2/10 without convergence, with critic feedback citing missing executable Python blocks, pointing to quality control gaps in builder roles.
-
-### `dream:20260829163707:2:25052e`
-*29.08. 16:37 UTC · Quelle: dream*
-
-The nemotron-3-ultra-550b model succeeds consistently but with high and variable latency (12-49s), revealing a speed-reliability tradeoff in model selection.
-
-### `dream:20260829163707:1:d61506`
-*29.08. 16:37 UTC · Quelle: dream*
-
-Repeated 429 rate-limit errors on z-ai/glm-5.2 indicate a systemic dependency on an unreliable model that cascades into failed swarm convergence.
 
 ### `last_swarm_critique`
 *29.08. 15:41 UTC · Quelle: critic*
