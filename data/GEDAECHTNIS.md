@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11497 Fakten** · Stand 2026-09-12 03:19 UTC · aktualisiert bei jedem Herzschlag
+**11507 Fakten** · Stand 2026-09-12 03:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7441
-- **swarm_artifact:** 1683
-- **last_swarm_critique:** 896
-- **last_swarm_goal:** 631
-- **anti_pattern:** 379
-- **strategy:** 192
-- **tool:** 156
+- **swarm_artifact:** 1687
+- **last_swarm_critique:** 897
+- **last_swarm_goal:** 632
+- **anti_pattern:** 381
+- **strategy:** 193
+- **tool:** 157
 - **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:traum-erinnerungen-verarbeiten`
+*12.09. 03:36 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Traum-Erinnerungen verarbeiten'. Datei: data/tools/traum-erinnerungen-verarbeiten.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Traum-Erinnerungen verar:1`
+*12.09. 03:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.33): Hybrid symbolic-connectionist architecture with fallback transparency - Combine a knowledge graph with neural memory networks. Primary path uses graph traversal; if graph fails, activate a vector similarity search over mem
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Traum-Erinnerungen verar:0`
+*12.09. 03:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.0): Event-driven pipeline with idempotent processing and comprehensive error handlin - Implement a pub-sub architecture where memory ingestion, processing, and storage are decoupled events. Each stage writes intermediate result
+
+### `last_swarm_critique`
+*12.09. 03:34 UTC · Quelle: critic*
+
+score=7; issues=Third script description claims results are saved to artefakte directory, but code only prints, no file write.; Second script's knowledge graph fallback prints a note but continues; if both graph and tools directory fail, tools list is empty wi
+
+### `last_swarm_goal`
+*12.09. 03:27 UTC · Quelle: system*
+
+Traum-Erinnerungen verarbeiten
+
+### `dream:20260912032701:5:a46566`
+*12.09. 03:27 UTC · Quelle: dream*
+
+Reflex actions lack outcome validation, leading to false convergence; a numeric score and critic sign-off gate would ensure reliability.
+
+### `dream:20260912032701:4:cb945d`
+*12.09. 03:27 UTC · Quelle: dream*
+
+Swarm knowledge becomes stale without a quality gate, degrading team collaboration and requiring enforced freshness criteria.
+
+### `dream:20260912032701:3:36d76f`
+*12.09. 03:27 UTC · Quelle: dream*
+
+Fixed pruning thresholds risk losing critical but infrequently accessed facts, requiring dynamic memory management with tagged retention.
+
+### `dream:20260912032701:2:e6840c`
+*12.09. 03:27 UTC · Quelle: dream*
+
+The gap between skill proposals and implemented skills is large, indicating a need for an automated validation and merge pipeline.
+
+### `dream:20260912032701:1:892d11`
+*12.09. 03:27 UTC · Quelle: dream*
+
+Model endpoints exhibit transient failures (502, 429) and variable latency, making a router with circuit breaker and failover essential for reliability.
 
 ### `dream:20260912031650:5:da04da`
 *12.09. 03:16 UTC · Quelle: dream*
@@ -43087,31 +43137,6 @@ score=7; issues=Retro-Modul-Laden ist fragil: nimmt erste .py-Datei ohne Validie
 *29.08. 03:24 UTC · Quelle: system*
 
 Letzte Kritik und Ziel neu bewerten
-
-### `dream:20260829032319:5:f024f8`
-*29.08. 03:23 UTC · Quelle: dream*
-
-Model health scoring must be real-time and per-provider; static model selection fails under load variability.
-
-### `dream:20260829032319:4:a3afac`
-*29.08. 03:23 UTC · Quelle: dream*
-
-Stale work (market analysis) blocks downstream decisions even when reflexes can complete sub-tasks.
-
-### `dream:20260829032319:3:b98091`
-*29.08. 03:23 UTC · Quelle: dream*
-
-Skill proposals accumulate without a deployment pipeline; ideas don't become capabilities without validation gates.
-
-### `dream:20260829032319:2:60e01e`
-*29.08. 03:23 UTC · Quelle: dream*
-
-Reflex-driven execution converges faster than deliberative planning for well-defined operational goals like model-error reduction.
-
-### `dream:20260829032319:1:7978d3`
-*29.08. 03:23 UTC · Quelle: dream*
-
-Provider-specific rate limits (429 errors on z-ai/glm-5.2:free) require automatic fallback mechanisms, not just retry logic.
 
 ### `last_swarm_critique`
 *29.08. 03:12 UTC · Quelle: critic*
