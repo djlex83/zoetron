@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 00:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 00:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,13 +18,13 @@
 - Add a pre-flight validator for hand actions: check path existence and data-path alignment before execution. *(hatte die Idee 4×)*
 - Create a swarm convergence gate requiring minimum 3 critic cycles or 30% dissent threshold before marking conv *(hatte die Idee 4×)*
 - Develop a calibration multiplier module that inflates initial effort estimates by 4-5x for swarm planning. *(hatte die Idee 4×)*
-- Modify the pruner to tag and preserve error logs, recovery traces, and validation receipts with extended TTL ( *(hatte die Idee 3×)*
 - Path-resolver utility that absolutizes all relative paths against ZOETRON_DATA before any hand action. *(hatte die Idee 3×)*
+- Calibration multiplier module: inflate initial effort estimates by 4-5x for swarm planning. *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
@@ -33,14 +33,19 @@
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Alte Schwarm-Ziele aufräumen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Previous dream's skill proposals directly address current failure modes (model router, freshness SLA, revision controller, retain tags).
+- Pruning discards low-frequency high-value facts; metadata tagging can extend retention 10x for critical knowledge.
+- High metabolic stress (0.9) throttles system to 3 tasks/1 iteration, making reliability mechanisms essential not optional.
+- Swarm fact updates fail due to synchronous 20s timeout on unreliable tool; need async refresh with staleness-driven triggers.
+- Free-tier model endpoints exhibit cascading failures (502, 429, latency spikes) requiring health-aware routing with automatic demotion.
 - Swarm learning refresh lacks freshness SLA and critic quality gates, leading to stale knowledge reuse.
 - Pruning uses fixed thresholds ignoring fact value, risking loss of high-utility low-frequency knowledge.
 - Skill proposals accumulate across dream cycles but lack automated validation-to-deployment pipeline.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but lack ownership, deadlines, and verification, so they never become operational capabilities.
 - Swarm knowledge decays within cycles, requiring repeated revival reflexes instead of persistent retention.
 - Model latency varies wildly (16–79 s) indicating unreliable provider performance that breaks downstream timing assumptions.
-- Swarm knowledge refresh runs as reflex but lacks convergence detection, wasting cycles on plateaued scores.
-- Skill proposals accumulate (10+ this cycle) but none graduate without a promotion pipeline that measures real-world success.
-- Stress-aware scheduling appears in three independent proposals yet no metabolic gate exists before task admission.
-- Path resolution failures recur because ZOETRON_DATA absolutization is proposed but not mandated at hand_action entry.
-- Model reliability issues persist despite repeated circuit-breaker and backoff proposals, indicating missing enforcement layer.
 
 ---
 

@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-12 00:34:34",
+ "stand": "2026-09-12 00:50:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 17,
-   "erfolge": 17,
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
@@ -21,15 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -409,19 +409,25 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.82,
+ "haende_quote": 0.815,
  "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 23,
+  "n": 24,
   "best": 9.0,
-  "schnitt": 3.87
+  "schnitt": 4.04
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 3.64
+   "n": 23,
+   "schnitt": 3.83
   },
   "bau": {
    "n": 1,

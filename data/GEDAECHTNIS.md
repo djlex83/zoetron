@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11513 Fakten** · Stand 2026-09-12 00:36 UTC · aktualisiert bei jedem Herzschlag
+**11522 Fakten** · Stand 2026-09-12 00:52 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7446
-- **swarm_artifact:** 1689
-- **last_swarm_critique:** 893
-- **last_swarm_goal:** 628
+- **swarm_artifact:** 1695
+- **last_swarm_critique:** 894
+- **last_swarm_goal:** 629
 - **anti_pattern:** 385
 - **strategy:** 195
-- **tool:** 157
+- **tool:** 158
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `tool:träume-in-echte-fähigkeiten-wandeln`
+*12.09. 00:50 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume in echte Fähigkeiten wandeln'. Datei: data/tools/träume-in-echte-fähigkeiten-wandeln.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*12.09. 00:50 UTC · Quelle: critic*
+
+score=8; issues=Deduplizierung nutzt einfache Wort-Overlap-Heuristik (>=2 Woerter, >50%), die False Positives/Negatives erzeugen kann; Spezialisierte Implementierungen in Artefakt 3 sind abgeschnitten - Vollstaendigkeit nicht prüfbar; Datei-Findung via Glob-Pa
+
+### `last_swarm_goal`
+*12.09. 00:45 UTC · Quelle: system*
+
+Träume in echte Fähigkeiten wandeln
+
+### `dream:20260912004452:5:d01e5e`
+*12.09. 00:44 UTC · Quelle: dream*
+
+Previous dream's skill proposals directly address current failure modes (model router, freshness SLA, revision controller, retain tags).
+
+### `dream:20260912004452:4:c98d64`
+*12.09. 00:44 UTC · Quelle: dream*
+
+Pruning discards low-frequency high-value facts; metadata tagging can extend retention 10x for critical knowledge.
+
+### `dream:20260912004452:3:4bdd92`
+*12.09. 00:44 UTC · Quelle: dream*
+
+High metabolic stress (0.9) throttles system to 3 tasks/1 iteration, making reliability mechanisms essential not optional.
+
+### `dream:20260912004452:2:ce7a8e`
+*12.09. 00:44 UTC · Quelle: dream*
+
+Swarm fact updates fail due to synchronous 20s timeout on unreliable tool; need async refresh with staleness-driven triggers.
+
+### `dream:20260912004452:1:54caaa`
+*12.09. 00:44 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit cascading failures (502, 429, latency spikes) requiring health-aware routing with automatic demotion.
 
 ### `dream:20260912003410:5:f29e7c`
 *12.09. 00:34 UTC · Quelle: dream*
@@ -43167,31 +43207,6 @@ score=2; issues=Sandbox-Urteil: LAEUFT NICHT - senses-Organ nicht gefunden im Pf
 *29.08. 00:37 UTC · Quelle: system*
 
 Marktanalyse endlich nutzen
-
-### `dream:20260829003633:5:24387d`
-*29.08. 00:36 UTC · Quelle: dream*
-
-Zero pruning activity despite accumulating proposals suggests the system lacks a garbage-collection policy for superseded or low-confidence skill candidates.
-
-### `dream:20260829003633:4:c342a4`
-*29.08. 00:36 UTC · Quelle: dream*
-
-Reflex-driven stale-goal sweep succeeded without human intervention, demonstrating that automated convergence checks can close abandoned work loops.
-
-### `dream:20260829003633:3:3812a4`
-*29.08. 00:36 UTC · Quelle: dream*
-
-Successful fallback to nvidia/nemotron-3-ultra at ~32 s latency proves a tiered router with latency budgets would automatically prefer reliable models for time-bounded tasks.
-
-### `dream:20260829003633:2:5daa5e`
-*29.08. 00:36 UTC · Quelle: dream*
-
-Multiple overlapping proposals (router, backoff, scoreboard, pipeline) indicate a missing consolidation mechanism that promotes high-confidence designs into tested code within one sleep cycle.
-
-### `dream:20260829003633:1:1576ec`
-*29.08. 00:36 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free show that absent per-model cooldown and circuit-breaking turns transient rate limits into persistent task failures.
 
 ### `last_swarm_critique`
 *29.08. 00:23 UTC · Quelle: critic*
