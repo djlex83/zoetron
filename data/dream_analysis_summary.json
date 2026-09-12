@@ -1,14 +1,14 @@
 {
-  "total": 605,
+  "total": 609,
   "content_length_stats": {
     "min": 0,
     "max": 122,
-    "avg": 4.712396694214876
+    "avg": 4.681444991789819
   },
   "unique_tags": [],
   "time_range": {
     "earliest": "2026-08-26T06:09:15.112365",
-    "latest": "2026-09-12T08:52:02.996291"
+    "latest": "2026-09-12T11:38:59.107906"
   },
   "dreams": [
     {
@@ -1435,6 +1435,12 @@
     },
     {
       "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
       "timestamp": "2026-08-27T00:10:20.365546+00:00",
       "content_length": 0,
       "tags": []
@@ -1639,6 +1645,12 @@
     },
     {
       "id": "p2",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
       "timestamp": null,
       "content_length": 0,
       "tags": []
@@ -2521,6 +2533,12 @@
     },
     {
       "id": "unknown",
+      "timestamp": "2026-09-12T11:38:59.107906",
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
       "timestamp": null,
       "content_length": 0,
       "tags": []
@@ -2744,6 +2762,12 @@
     {
       "id": "unknown",
       "timestamp": "2026-09-12T08:20:21.485385+00:00",
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": "2026-09-12T10:29:42.385048+00:00",
       "content_length": 0,
       "tags": []
     },

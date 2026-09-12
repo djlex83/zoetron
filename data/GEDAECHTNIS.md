@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11479 Fakten** · Stand 2026-09-12 13:04 UTC · aktualisiert bei jedem Herzschlag
+**11477 Fakten** · Stand 2026-09-12 13:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7431
-- **swarm_artifact:** 1663
+- **dream:** 7436
+- **swarm_artifact:** 1657
 - **last_swarm_critique:** 907
 - **last_swarm_goal:** 642
 - **anti_pattern:** 373
 - **strategy:** 189
-- **tool:** 154
+- **tool:** 153
 - **hand_result:** 81
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912131301:5:adec65`
+*12.09. 13:13 UTC · Quelle: dream*
+
+Hand actions lack retry logic; wrapping them with idempotency keys and exponential backoff improves resilience to transient failures.
+
+### `dream:20260912131301:4:b17d35`
+*12.09. 13:13 UTC · Quelle: dream*
+
+Simulations are created but rarely used; integrating them into reflex loops with usage tracking closes the execution gap.
+
+### `dream:20260912131301:3:14fb83`
+*12.09. 13:13 UTC · Quelle: dream*
+
+Swarm goals and critiques become stale; a freshness daemon with TTL and automatic re-query prevents knowledge decay.
+
+### `dream:20260912131301:2:21155f`
+*12.09. 13:13 UTC · Quelle: dream*
+
+Pruning events without auditing against organ-health flags can discard critical diagnostic data, requiring a hook that blocks pruning on unresolved warnings.
+
+### `dream:20260912131301:1:3a9d5b`
+*12.09. 13:13 UTC · Quelle: dream*
+
+Free model endpoints frequently return 502 (overload) or 429 (rate limit), so a per-endpoint circuit breaker with automatic failover is essential.
 
 ### `dream:20260912130101:5:792864`
 *12.09. 13:01 UTC · Quelle: dream*
@@ -42977,11 +43002,6 @@ The nvidia/nemotron model succeeds but exhibits extreme latency variance (37-82s
 *29.08. 13:17 UTC · Quelle: dream*
 
 Free-tier model endpoints systematically fail with 429 quota errors across multiple providers (z-ai, google), making them unreliable as primary dependencies.
-
-### `tool:fehlerquellen-systematisch-beheben`
-*29.08. 13:03 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fehlerquellen systematisch beheben'. Datei: data/tools/fehlerquellen-systematisch-beheben.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *29.08. 13:03 UTC · Quelle: critic*
