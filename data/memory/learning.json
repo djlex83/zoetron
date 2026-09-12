@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 15:13:26",
+ "stand": "2026-09-12 15:37:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -181,12 +181,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fähigkeiten-bündeln-und-ziele-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-produktion-überf.py",
@@ -427,6 +421,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fähigkeits-vorschläge-verbessern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.729,

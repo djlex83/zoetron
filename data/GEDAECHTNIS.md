@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11470 Fakten** · Stand 2026-09-12 15:15 UTC · aktualisiert bei jedem Herzschlag
+**11451 Fakten** · Stand 2026-09-12 15:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
+- **dream:** 7426
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 909
 - **last_swarm_goal:** 644
-- **anti_pattern:** 371
-- **strategy:** 188
+- **anti_pattern:** 369
+- **strategy:** 187
 - **tool:** 152
-- **hand_result:** 81
+- **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912153645:5:3d9ef3`
+*12.09. 15:36 UTC · Quelle: dream*
+
+hand_action exited with code 1 but no error message, highlighting the need to capture stderr.
+
+### `dream:20260912153645:4:6da689`
+*12.09. 15:36 UTC · Quelle: dream*
+
+Swarm optimization failed to converge despite evolution, suggesting better scoring or more iterations.
+
+### `dream:20260912153645:3:cc0a0c`
+*12.09. 15:36 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free consistently succeeded, making it a reliable default model.
+
+### `dream:20260912153645:2:ffb890`
+*12.09. 15:36 UTC · Quelle: dream*
+
+NVIDIA model timed out, showing the need for explicit timeout handling and faster fallback.
+
+### `dream:20260912153645:1:33ae28`
+*12.09. 15:36 UTC · Quelle: dream*
+
+Google Gemma models repeatedly returned HTTP 429, indicating rate limiting that requires backoff before fallback.
 
 ### `tool:verbessere-die-modell-genauigkeit`
 *12.09. 15:13 UTC · Quelle: hands*
@@ -42882,116 +42907,6 @@ Effort estimation consistently overshoots actual work (predicted 6 vs actual 3 c
 *29.08. 15:38 UTC · Quelle: dream*
 
 The free tier model `z-ai/glm-5.2:free` is unreliable due to persistent 429 rate-limit errors and should be deprioritized or wrapped with aggressive backoff.
-
-### `dream:20260829153401:5:c1daed`
-*29.08. 15:34 UTC · Quelle: dream*
-
-Simulation approved the market-analysis update with 3 risks and 3 revisions, suggesting the validation loop catches issues but adds latency; automated risk mitigation could accelerate approval.
-
-### `dream:20260829153401:4:6c54a0`
-*29.08. 15:34 UTC · Quelle: dream*
-
-Multiple skill proposals (router, rate-limit handling, stress scheduler) already exist but remain unimplemented, creating a proposal-to-execution gap that blocks resilience improvements.
-
-### `dream:20260829153401:3:d8e8ef`
-*29.08. 15:34 UTC · Quelle: dream*
-
-Metabolism stress at 1.0 (conserve mode) coincides with continued model failures, showing the stress-aware scheduler is not yet reducing load or switching models effectively.
-
-### `dream:20260829153401:2:2c33a2`
-*29.08. 15:34 UTC · Quelle: dream*
-
-Nemotron-3-ultra latency varies 10x (6.5s to 80.6s) despite similar token counts, indicating unpredictable queueing or cold-start effects that require timeout budgets per call.
-
-### `dream:20260829153401:1:5db529`
-*29.08. 15:34 UTC · Quelle: dream*
-
-Rate limiting on z-ai/glm-5.2:free is persistent and predictable (429 errors every ~4-8 seconds), making it unreliable for production workloads without proactive quota management.
-
-### `dream:20260829152856:5:5f1024`
-*29.08. 15:28 UTC · Quelle: dream*
-
-Hand action exits with code 1 but zero error details, making debugging impossible; all external calls must emit structured error payloads.
-
-### `dream:20260829152856:4:214a48`
-*29.08. 15:28 UTC · Quelle: dream*
-
-Calibration error of +1 (predicted 5 vs actual 6) suggests consistent underestimation; prediction models need bias correction.
-
-### `dream:20260829152856:3:9266e1`
-*29.08. 15:28 UTC · Quelle: dream*
-
-Evolution/swarm cycles improve scores (6→8–9) but stall at non-convergence, revealing missing termination criteria for 'good enough' results.
-
-### `dream:20260829152856:2:d85215`
-*29.08. 15:28 UTC · Quelle: dream*
-
-Latency variance of 12–200s on nvidia/nemotron-3-ultra shows that single-model reliance risks unpredictable delays; a latency-aware router is required.
-
-### `dream:20260829152856:1:df8fd0`
-*29.08. 15:28 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate that models without automatic rate-limit backoff cause systemic failures and must be circuit-broken.
-
-### `dream:20260829152359:5:6cdeff`
-*29.08. 15:23 UTC · Quelle: dream*
-
-Calibration error of ±1 cycle (predicted 5 vs actual 6) shows the planner's effort estimator is well-calibrated for this task class.
-
-### `dream:20260829152359:4:df755a`
-*29.08. 15:23 UTC · Quelle: dream*
-
-Task completion with a working 103-line Python artifact validates the generate-then-verify loop for market-analysis goals.
-
-### `dream:20260829152359:3:2f11c1`
-*29.08. 15:23 UTC · Quelle: dream*
-
-Hand-action failures are transient; immediate retry succeeds in <0.2s, pointing to resource contention rather than logic errors.
-
-### `dream:20260829152359:2:7ef371`
-*29.08. 15:23 UTC · Quelle: dream*
-
-The inclusionai/ling-3.0-flash-fin:free model succeeds consistently but shows high latency variance (6.5–10.6s), indicating queue-dependent performance.
-
-### `dream:20260829152359:1:f69e71`
-*29.08. 15:23 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter (z-ai/glm-5.2, google/gemma variants) consistently hit 429 rate limits, making them unreliable for production workloads.
-
-### `dream:20260829151720:5:1a6f15`
-*29.08. 15:17 UTC · Quelle: dream*
-
-Skill proposals accumulate without implementation; a dedicated proposal-to-skill pipeline with acceptance criteria is needed.
-
-### `dream:20260829151720:4:4e0023`
-*29.08. 15:17 UTC · Quelle: dream*
-
-Simulation recommends revisions but zero are applied, indicating a broken apply loop; every simulation verdict must trigger an automatic patch-apply-verify cycle.
-
-### `dream:20260829151720:3:cb71e7`
-*29.08. 15:17 UTC · Quelle: dream*
-
-Under high stress (1.0) with conserve metabolism, the system cannot execute multi-step plans; skills must be atomic and idempotent.
-
-### `dream:20260829151720:2:083f67`
-*29.08. 15:17 UTC · Quelle: dream*
-
-Free OpenRouter models exhibit high failure rates (429/404); maintain a health score per model and auto-fallback to working models like inclusionai/ling-3.0-flash-fin.
-
-### `dream:20260829151720:1:a2b0d5`
-*29.08. 15:17 UTC · Quelle: dream*
-
-File operations must use absolute paths from sys.argv[1] and ZOETRON_DATA environment variable, not relative paths.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Veraltete Marktanalysen :2`
-*29.08. 15:00 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Database-backed pipeline with transactional guarantees - Use an embedded SQLite database as the central data store. Create tables for each stage: 'outdated_analyses', 'flagged_analyses', 'fresh_market_data', 'updated_analyses
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Veraltete Marktanalysen :1`
-*29.08. 15:00 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Standardized file-based pipeline with schema contracts - Adopt a strict contract-driven approach: define a shared schema (JSON Schema) for each intermediate artifact. Use a single root directory (e.g., 'data/pipeline/') with 
 
 ### `last_swarm_critique`
 *29.08. 14:59 UTC · Quelle: critic*

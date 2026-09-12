@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 15:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 15:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,7 +13,7 @@
 - Build SkillConversionPipeline: auto-promote approved proposals to implemented skills with CI tests, versioning *(hatte die Idee 3×)*
 - Add GoalAwarePruningFilter: score every fact/event against active drive goals before deletion; protect items t *(hatte die Idee 3×)*
 - Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
-- Build a skill activation gate that verifies reflex tool success before marking proposals as deployed, with aut *(hatte die Idee 2×)*
+- Implement exponential backoff with jitter for HTTP 429 and 502 responses before switching models. *(hatte die Idee 3×)*
 - Implement a dynamic model router that selects models based on recent error rates and applies jittered exponent *(hatte die Idee 2×)*
 - Adapt the model block duration based on error type: 60-second cooldown for 429 (rate limit) and 900-second for *(hatte die Idee 2×)*
 - Add structured error handling to all hand actions, capturing exit codes, stdout, stderr, and raising descripti *(hatte die Idee 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- hand_action exited with code 1 but no error message, highlighting the need to capture stderr.
+- Swarm optimization failed to converge despite evolution, suggesting better scoring or more iterations.
+- dots-studio/dots-3-note-preview:free consistently succeeded, making it a reliable default model.
+- NVIDIA model timed out, showing the need for explicit timeout handling and faster fallback.
+- Google Gemma models repeatedly returned HTTP 429, indicating rate limiting that requires backoff before fallback.
 - Skill proposals accumulate (5 in this cycle) but lack a validation-to-promotion pipeline, creating a backlog of unimplemented improvements.
 - Automatic pruning (11 facts, 18 events) runs without error, confirming the memory hygiene loop is functional and non-disruptive.
 - Reflex-based execution (schwarmwissen-wieder-auffrischen.py) converges reliably in <1s, demonstrating that codified routines outperform LLM calls for 
@@ -51,11 +56,6 @@
 - Pruning removes 6-11 facts and ~18 events per cycle, but stale swarm goals persist across cycles, meaning pruning doesn't target goal-level staleness.
 - Reflex-driven goals (learning from errors, refreshing swarm knowledge) consistently converge in one shot, showing reflexes are reliable for well-scope
 - Model provider failures (502, 429) cascade sequentially until a fallback succeeds, indicating no proactive health-aware routing exists.
-- Reflex actions converge without explicit scoring, indicating effective self-correction.
-- Regular pruning of facts and events prevents stale knowledge from influencing decisions.
-- Hand actions succeed but capturing both stdout and stderr is critical for diagnosing failures.
-- dots-studio/dots-3-note-preview:free has proven reliable and should be the default fallback model.
-- Repeated HTTP 429 errors from google/gemma-4 models reveal rate limiting that requires exponential backoff.
 
 ---
 
