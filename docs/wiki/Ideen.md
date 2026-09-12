@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 19:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 19:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 25 facts and 87 events demonstrates that regular memory cleanup is necessary to avoid context overflow.
+- The task 'Veraltete Gruppen-Informationen aktualisieren' produced delta 0.0 and kanten 0, meaning no knowledge graph edges were created.
+- The dots-studio model exhibited latencies up to 41 seconds, which can stall the pipeline if used as the primary model.
+- The swarm failed to converge with a score of 4 despite evolution, indicating insufficient critic iterations or poor integration of evolved variants.
+- Repeated 429 Too Many Requests errors from free Google Gemma models show OpenRouter rate limits, making them unreliable for critical tasks.
 - Skill proposals accumulate (5 generated) but no promotion/execution pipeline is observed, creating a proposal-execution gap.
 - Prune_run removes facts/events but stale drive_goals persist, suggesting pruning scope is too narrow to clear strategic debt.
 - Drive goals for 'model stability' and 'swarm goal freshness' recur every cycle, indicating the underlying fixes are not sticking or not being executed
@@ -51,11 +56,6 @@
 - Goal staleness triggers reactive drive_goal creation but no proactive detector exists to refresh goals before they degrade performance.
 - Free-tier model reliability is too low for production use without automatic health-aware routing and circuit breaking.
 - Model failures cluster by provider: NVIDIA models timeout while Google models hit 429 rate limits, requiring provider-specific retry policies.
-- Simulation approval (verdict: go) with 3 risks but 0 revisions indicates risk assessment may be under-calibrated.
-- Aggressive pruning (79 events/23 facts per run) risks discarding context needed for multi-cycle convergence.
-- Evolutionary search dramatically improves artifact quality (2→10) but swarm convergence requires more than 2 cycles.
-- dots-studio/dots-3-note-preview:free is the only consistently available model but exhibits high latency variance (24-77s).
-- Free-tier models (gemma-4 variants) consistently hit 429 rate limits making them unreliable for production workflows.
 
 ---
 

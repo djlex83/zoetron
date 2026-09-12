@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11418 Fakten** · Stand 2026-09-12 19:10 UTC · aktualisiert bei jedem Herzschlag
+**11403 Fakten** · Stand 2026-09-12 19:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7376
+- **dream:** 7361
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 913
 - **last_swarm_goal:** 648
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912191909:5:d03579`
+*12.09. 19:19 UTC · Quelle: dream*
+
+Pruning 25 facts and 87 events demonstrates that regular memory cleanup is necessary to avoid context overflow.
+
+### `dream:20260912191909:4:f3a42c`
+*12.09. 19:19 UTC · Quelle: dream*
+
+The task 'Veraltete Gruppen-Informationen aktualisieren' produced delta 0.0 and kanten 0, meaning no knowledge graph edges were created.
+
+### `dream:20260912191909:3:7ae772`
+*12.09. 19:19 UTC · Quelle: dream*
+
+The dots-studio model exhibited latencies up to 41 seconds, which can stall the pipeline if used as the primary model.
+
+### `dream:20260912191909:2:6efca3`
+*12.09. 19:19 UTC · Quelle: dream*
+
+The swarm failed to converge with a score of 4 despite evolution, indicating insufficient critic iterations or poor integration of evolved variants.
+
+### `dream:20260912191909:1:637748`
+*12.09. 19:19 UTC · Quelle: dream*
+
+Repeated 429 Too Many Requests errors from free Google Gemma models show OpenRouter rate limits, making them unreliable for critical tasks.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erkenntnisse in Fä:2`
 *12.09. 19:05 UTC · Quelle: evolution*
@@ -42577,106 +42602,6 @@ score=8; issues=Keyword-based phase assignment is heuristic and may produce fals
 *29.08. 19:14 UTC · Quelle: system*
 
 Marktlücke endgültig identifizieren
-
-### `dream:20260829191251:5:c863dd`
-*29.08. 19:12 UTC · Quelle: dream*
-
-Goals for reducing model errors and utilizing proposed skills are driven by failure/stale signals but lack concrete acceptance criteria or ownership.
-
-### `dream:20260829191251:4:68f082`
-*29.08. 19:12 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite repeated model failures, showing the health check does not monitor external API reliability.
-
-### `dream:20260829191251:3:325300`
-*29.08. 19:12 UTC · Quelle: dream*
-
-Multiple skill proposals address the same root cause (rate limiting, model routing) but remain unimplemented, revealing an execution gap between proposal and deployment.
-
-### `dream:20260829191251:2:92dad3`
-*29.08. 19:12 UTC · Quelle: dream*
-
-Fallback to nvidia/nemotron-3-ultra succeeds but with high latency variance (14-28s), suggesting no latency-aware routing exists.
-
-### `dream:20260829191251:1:a4cb05`
-*29.08. 19:12 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently returns 429 errors, indicating a hard rate limit that makes it unreliable as a primary model.
-
-### `dream:20260829190657:5:117207`
-*29.08. 19:06 UTC · Quelle: dream*
-
-Drive goals signaling strategic priorities (model reliability, stale work, skill consolidation) should auto-spawn corresponding skill development.
-
-### `dream:20260829190657:4:730452`
-*29.08. 19:06 UTC · Quelle: dream*
-
-Reflex tools reliably convert proposals into registered skills when triggered by drive goals.
-
-### `dream:20260829190657:3:752197`
-*29.08. 19:06 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than manual implementation; an automated proposal-to-skill pipeline is essential.
-
-### `dream:20260829190657:2:842392`
-*29.08. 19:06 UTC · Quelle: dream*
-
-High-latency fallback models (13-28s) degrade responsiveness and need latency budgets with enforced timeouts.
-
-### `dream:20260829190657:1:486268`
-*29.08. 19:06 UTC · Quelle: dream*
-
-Rate-limited models (429 errors) require automatic circuit-breaking and fallback routing to maintain system availability.
-
-### `dream:20260829190036:5:4c53d2`
-*29.08. 19:00 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures cascade, revealing that health checks monitor structure not external dependency reliability.
-
-### `dream:20260829190036:4:7f1002`
-*29.08. 19:00 UTC · Quelle: dream*
-
-The reliability ledger concept recurs across proposals but remains unimplemented, indicating a missing persistent telemetry substrate.
-
-### `dream:20260829190036:3:6fed24`
-*29.08. 19:00 UTC · Quelle: dream*
-
-Hand-action retries succeed only when they re-read target state first, proving that stale context causes most non-zero exits.
-
-### `dream:20260829190036:2:e2bbef`
-*29.08. 19:00 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than implementation because the system lacks a 'proposal-to-production' pipeline with automated validation gates.
-
-### `dream:20260829190036:1:493ec3`
-*29.08. 19:00 UTC · Quelle: dream*
-
-Free-tier models exhibit correlated failure bursts (429/502) that overwhelm naive round-robin fallback, requiring predictive cooldown tracking.
-
-### `dream:20260829185541:5:553e89`
-*29.08. 18:55 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failure rate exceeds 80%, indicating monitoring blind spots for external dependency degradation.
-
-### `dream:20260829185541:4:16084f`
-*29.08. 18:55 UTC · Quelle: dream*
-
-Reflex execution succeeds when triggered (fähigkeits-messlatte-bauen-capability-be.py), but the reflex library doesn't yet contain the proposed resilience skills, creating a capability gap.
-
-### `dream:20260829185541:3:6d60bc`
-*29.08. 18:55 UTC · Quelle: dream*
-
-Successful model calls (inclusionai/ling-3.0-flash-fin:free at 6.4s) show latency an order of magnitude lower than failing nemotron calls (45s), suggesting latency correlates with upstream health.
-
-### `dream:20260829185541:2:215689`
-*29.08. 18:55 UTC · Quelle: dream*
-
-The system generates high-value architectural skill proposals (router, pipeline, scheduler) but lacks an automated deployment mechanism to promote them from proposal to active reflex.
-
-### `dream:20260829185541:1:6087ab`
-*29.08. 18:55 UTC · Quelle: dream*
-
-Free-tier models across providers (z-ai, Google, Nvidia) consistently hit 429 rate limits and 502 upstream errors, making single-model reliance unreliable for production workloads.
 
 ### `last_swarm_critique`
 *29.08. 17:57 UTC · Quelle: critic*
