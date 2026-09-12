@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11470 Fakten** · Stand 2026-09-12 13:47 UTC · aktualisiert bei jedem Herzschlag
+**11476 Fakten** · Stand 2026-09-12 14:09 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7436
 - **swarm_artifact:** 1651
-- **last_swarm_critique:** 907
-- **last_swarm_goal:** 642
-- **anti_pattern:** 373
-- **strategy:** 189
+- **last_swarm_critique:** 908
+- **last_swarm_goal:** 643
+- **anti_pattern:** 375
+- **strategy:** 190
 - **tool:** 152
-- **hand_result:** 81
+- **hand_result:** 82
 - **aktuell_organfehler:** 39
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Verbessere Modellzuverlä:2`
+*12.09. 14:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Event-driven microservice decomposition - Decompose the monolithic scheduler into independent microservices. Create separate lightweight services for 'metabolism' and 'llm' functionality, each with its own dependency manageme
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Verbessere Modellzuverlä:1`
+*12.09. 14:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Dependency-isolated execution environment - Package the solution as a Docker container with explicit dependency declarations. Include a pre-installation script that verifies and installs required modules ('metabolism', 'llm')
+
+### `last_swarm_critique`
+*12.09. 14:04 UTC · Quelle: critic*
+
+score=0; issues=Artefakt läuft nicht: Importfehler für Module 'metabolism' und 'llm'. Der Scheduler bricht mit 'Scheduler cannot run without metabolism and llm modules.' ab.; Da das gesamte Artefakt nicht ausführbar ist, kann es die Modellzuverlässigkeit nicht
+
+### `last_swarm_goal`
+*12.09. 13:57 UTC · Quelle: system*
+
+Verbessere Modellzuverlässigkeit
+
+### `dream:20260912135546:5:15bf23`
+*12.09. 13:55 UTC · Quelle: dream*
+
+Model calls continue during 'conserve' metabolism state, wasting budget; a scheduler should pause and queue them for 'explore'.
+
+### `dream:20260912135546:4:080f65`
+*12.09. 13:55 UTC · Quelle: dream*
+
+Predicted outcomes frequently diverge from actual results, so a calibration tracker per goal type is needed.
+
+### `dream:20260912135546:3:85a457`
+*12.09. 13:55 UTC · Quelle: dream*
+
+Inconsistent path resolution leads to hand action failures; expanding relative paths against ZOETRON_DATA before execution prevents errors.
+
+### `dream:20260912135546:2:0a3096`
+*12.09. 13:55 UTC · Quelle: dream*
+
+The large number of untested skill proposals creates a gap between idea generation and actual application.
+
+### `dream:20260912135546:1:dfbd3f`
+*12.09. 13:55 UTC · Quelle: dream*
+
+Repeated model timeouts and 429 errors show that a retry-with-backoff and fallback mechanism is essential.
 
 ### `dream:20260912134430:5:2cd5fe`
 *12.09. 13:44 UTC · Quelle: dream*
@@ -42962,31 +43007,6 @@ score=7; issues=Duplicate boilerplate across all three artifacts (directory setu
 *29.08. 13:44 UTC · Quelle: system*
 
 Modellbewertung ausbauen
-
-### `dream:20260829134408:5:1883a2`
-*29.08. 13:44 UTC · Quelle: dream*
-
-Stale goals (market analysis, dream-to-skill conversion) persist despite active error-fixing swarms, indicating a prioritization gap between maintenance and strategic work.
-
-### `dream:20260829134408:4:59de94`
-*29.08. 13:44 UTC · Quelle: dream*
-
-The swarm→simulation→hand_action→TOR pipeline successfully produced a running 216-line Python artifact in one cycle under conserve mode.
-
-### `dream:20260829134408:3:be3c5c`
-*29.08. 13:44 UTC · Quelle: dream*
-
-The inclusionai/ling-3.0-flash-fin:free model succeeded with low latency (3.4s), suggesting a viable fast-path alternative.
-
-### `dream:20260829134408:2:627e79`
-*29.08. 13:44 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra-550b-a55b:free model serves as a functional but high-latency fallback (19-96s), creating a throughput bottleneck.
-
-### `dream:20260829134408:1:22783d`
-*29.08. 13:44 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently fails with 429 rate limits, making it unreliable as a primary model.
 
 ### `last_swarm_critique`
 *29.08. 13:38 UTC · Quelle: critic*

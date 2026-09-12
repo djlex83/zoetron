@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 13:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 14:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - Build SkillConversionPipeline: auto-promote approved proposals to implemented skills with CI tests, versioning *(hatte die Idee 3×)*
 - Add GoalAwarePruningFilter: score every fact/event against active drive goals before deletion; protect items t *(hatte die Idee 3×)*
 - Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
-- Build a health-aware model router that tracks real-time error rates, latency percentiles, and quota remaining  *(hatte die Idee 2×)*
-- Create a sandboxed execution environment that automatically tests proposed skills against replayed failure sce *(hatte die Idee 2×)*
-- Establish an automated promotion pipeline that graduates validated skill proposals into permanent procedures w *(hatte die Idee 2×)*
 - Schedule a periodic swarm goal audit that refreshes stale objectives and injects fresh perspectives to prevent *(hatte die Idee 2×)*
 - Implement a model router that tracks per-provider 429/502 rates and automatically shifts traffic to healthy en *(hatte die Idee 2×)*
 - Add a circuit breaker wrapper around all model calls that trips after 3 consecutive failures and falls back to *(hatte die Idee 2×)*
+- Create a deadline-aware hand action executor that cancels I/O exceeding 15s and returns partial results with e *(hatte die Idee 2×)*
+- Design a latency budget allocator that reserves 30% of cycle time for model calls and degrades gracefully via  *(hatte die Idee 2×)*
+- Implement a dynamic model router that selects models based on recent error rates and applies jittered exponent *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -30,10 +30,10 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model calls continue during 'conserve' metabolism state, wasting budget; a scheduler should pause and queue them for 'explore'.
+- Predicted outcomes frequently diverge from actual results, so a calibration tracker per goal type is needed.
+- Inconsistent path resolution leads to hand action failures; expanding relative paths against ZOETRON_DATA before execution prevents errors.
+- The large number of untested skill proposals creates a gap between idea generation and actual application.
+- Repeated model timeouts and 429 errors show that a retry-with-backoff and fallback mechanism is essential.
 - Skill pipeline is clogged: 55 proposals exist but only 6 tested and 2 applied, revealing a missing validation-to-promotion gate.
 - Reflex fallback succeeded where the main pipeline failed, proving that single-tool reflexes are more robust than multi-role swarms for this task class
 - Evolutionary search (3 variants) produced a 9/10 winner while swarm consensus stalled at 4/10 after 2 cycles, indicating swarm coordination logic is b
@@ -51,11 +56,6 @@
 - dots-studio/dots-3-note-preview:free is the only consistently successful model, though its latency can reach 90 seconds, necessitating async handling.
 - The circuit breaker locks a model after three consecutive failures, preventing cascading errors but requiring manual reset after 1800 seconds.
 - Repeated 429 errors from Google Gemma models indicate rate limiting; falling back to dots-studio/dots-3-note-preview:free preserves task continuity.
-- Simulation verdicts with risks and revisions highlight the need for iterative refinement and risk mitigation strategies before execution.
-- System stress levels trigger resource conservation, which may limit parallel tasks and require prioritization of critical operations.
-- The same reflex tool ('fernere-erinnerungen-verbinden.py') consistently fails, indicating a need for diagnostic checks or a replacement implementation
-- Hand actions fail silently when input paths are missing or invalid, necessitating explicit input validation and error reporting before execution.
-- Model endpoints frequently return transient errors (502/429) requiring automatic retry with exponential backoff and circuit-breaking to avoid cascadin
 
 ---
 
