@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11441 Fakten** · Stand 2026-09-12 16:28 UTC · aktualisiert bei jedem Herzschlag
+**11441 Fakten** · Stand 2026-09-12 16:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7416
 - **swarm_artifact:** 1645
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912163710:5:2f7936`
+*12.09. 16:37 UTC · Quelle: dream*
+
+The dream replay combined with a swarm optimization goal produced a novel connection, showing that cross-module memory reuse can generate new strategies.
+
+### `dream:20260912163710:4:ee1c61`
+*12.09. 16:37 UTC · Quelle: dream*
+
+A single prune_run removed 14 facts and 58 events, confirming that periodic cleanup prevents stale data accumulation.
+
+### `dream:20260912163710:3:39099f`
+*12.09. 16:37 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model timed out, suggesting shorter timeouts and smaller payloads are needed.
+
+### `dream:20260912163710:2:13da60`
+*12.09. 16:37 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free consistently responded within 16–21 s, making it a reliable fallback when other models fail.
+
+### `dream:20260912163710:1:4ea02c`
+*12.09. 16:37 UTC · Quelle: dream*
+
+The frequent HTTP 429 errors from multiple Google models indicate a shared rate-limit that must be handled with exponential backoff and jitter.
 
 ### `dream:20260912162602:5:7bbb6a`
 *12.09. 16:26 UTC · Quelle: dream*
@@ -42827,31 +42852,6 @@ The nemotron-3-ultra-550b model succeeds consistently but with high and variable
 *29.08. 16:37 UTC · Quelle: dream*
 
 Repeated 429 rate-limit errors on z-ai/glm-5.2 indicate a systemic dependency on an unreliable model that cascades into failed swarm convergence.
-
-### `dream:20260829163134:5:6a2b5c`
-*29.08. 16:31 UTC · Quelle: dream*
-
-Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency successes, suggesting it should be the default backbone with others as speculative retries.
-
-### `dream:20260829163134:4:6d8742`
-*29.08. 16:31 UTC · Quelle: dream*
-
-Negative trajectory delta (-0.5) with zero edges and no code confirms that non-code responses degrade the solution graph rather than advance it.
-
-### `dream:20260829163134:3:4dab82`
-*29.08. 16:31 UTC · Quelle: dream*
-
-Calibration error of 1 cycle indicates the difficulty predictor systematically overestimates progress when code artifacts are absent.
-
-### `dream:20260829163134:2:1dc964`
-*29.08. 16:31 UTC · Quelle: dream*
-
-The task failed because the model returned explanatory prose instead of an executable Python block, revealing a missing output-format constraint in the prompt.
-
-### `dream:20260829163134:1:c15e02`
-*29.08. 16:31 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream errors, making them unreliable as primary workers without aggressive fallback logic.
 
 ### `last_swarm_critique`
 *29.08. 15:41 UTC · Quelle: critic*

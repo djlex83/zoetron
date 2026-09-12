@@ -42688,3 +42688,26 @@
 {"ts": 1788625508.1341267, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.66, "gelesen": 1}}
 {"ts": 1788625508.1342938, "kind": "tor", "payload": {"goal": "Fähigkeits-Vorschläge verbessern", "gruen": true, "grund": "Artefakt laeuft (229 Zeilen Python)", "zyklus": 1}}
 {"ts": 1788625509.024913, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788625509.0249107, "schalter_geoeffnet": false}}
+{"ts": 1788021094.3791547, "key": "dream:20260829163134:1:c15e02", "value": "Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream errors, making them unreliable as primary workers without aggressive fallback logic.", "source": "dream"}
+{"ts": 1788021094.3792508, "key": "dream:20260829163134:2:1dc964", "value": "The task failed because the model returned explanatory prose instead of an executable Python block, revealing a missing output-format constraint in the prompt.", "source": "dream"}
+{"ts": 1788021094.3793204, "key": "dream:20260829163134:3:4dab82", "value": "Calibration error of 1 cycle indicates the difficulty predictor systematically overestimates progress when code artifacts are absent.", "source": "dream"}
+{"ts": 1788021094.379385, "key": "dream:20260829163134:4:6d8742", "value": "Negative trajectory delta (-0.5) with zero edges and no code confirms that non-code responses degrade the solution graph rather than advance it.", "source": "dream"}
+{"ts": 1788021094.3794494, "key": "dream:20260829163134:5:6a2b5c", "value": "Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency successes, suggesting it should be the default backbone with others as speculative retries.", "source": "dream"}
+{"ts": 1788625539.172023, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 30.1, "tokens_ein": 8234, "tokens_aus": 1377}}
+{"ts": 1788625539.173167, "kind": "calibration", "payload": {"goal": "Fähigkeits-Vorschläge verbessern", "predicted": 3, "actual": 5, "abs_error": 2}}
+{"ts": 1788625539.1732695, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 5}}
+{"ts": 1788625539.1736693, "kind": "bahnen", "payload": {"goal": "Fähigkeits-Vorschläge verbessern", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 4, "ids": ["e:8880c2144590", "e:f7bd0ea96bc0", "e:7811724bf29c", "e:eafe5068c490"], "ziel_id": "g:e7cf586b4a07"}}
+{"ts": 1788625539.6473002, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788625539.6472976, "schalter_geoeffnet": false}}
+{"ts": 1788625633.038398, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 93.4, "tokens_ein": 196, "tokens_aus": 774}}
+{"ts": 1788625633.5582416, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788625633.5582395, "schalter_geoeffnet": false}}
+{"ts": 1788625726.3262048, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 92.8, "tokens_ein": 644, "tokens_aus": 2648}}
+{"ts": 1788625726.326531, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Fähigkeits-Vorschläge verbessern\nCritic issues: Goal mismatch: artifacts only audit/", "variants": 3, "winner_index": 0, "scores": [9, 7, 9, 8, 6, 8, 7, 6, 7]}}
+{"ts": 1788625731.6460948, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788625731.646093, "schalter_geoeffnet": false}}
+{"ts": 1788625830.6373606, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 99.0, "tokens_ein": 423, "tokens_aus": 2804}}
+{"ts": 1788625833.2494686, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 1.6, "tokens_ein": 506, "tokens_aus": 666}}
+{"ts": 1788625833.2496452, "kind": "simulation", "payload": {"goal": "Fähigkeits-Vorschläge verbessern", "verdict": "revise", "risks": 3, "revisions": 3}}
+{"ts": 1788625833.2497458, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1788625833.2498572, "kind": "swarm_finished", "payload": {"goal": "Fähigkeits-Vorschläge verbessern", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1788625833.2502873, "kind": "act_done", "payload": {"goal_title": "Fähigkeits-Vorschläge verbessern", "score": 5, "converged": false}}
+{"ts": 1788625834.2357745, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.59, "gelesen": 1}}
+{"ts": 1788625836.074028, "kind": "issue_synced", "payload": {"issue": 382, "state": "open"}}

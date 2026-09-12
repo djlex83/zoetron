@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 16:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 16:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
-- Ferne Träume verbinden *(wieder aufgegriffen: 3×)*
 - Schwarmziele aktualisieren *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The dream replay combined with a swarm optimization goal produced a novel connection, showing that cross-module memory reuse can generate new strategi
+- A single prune_run removed 14 facts and 58 events, confirming that periodic cleanup prevents stale data accumulation.
+- The nvidia/nemotron-3-ultra-550b-a55b:free model timed out, suggesting shorter timeouts and smaller payloads are needed.
+- dots-studio/dots-3-note-preview:free consistently responded within 16–21 s, making it a reliable fallback when other models fail.
+- The frequent HTTP 429 errors from multiple Google models indicate a shared rate-limit that must be handled with exponential backoff and jitter.
 - Simulation feedback can be used to adjust confidence intervals and trigger revisions.
 - Circuit breaker pattern prevents cascading failures by temporarily blocking a model after consecutive failures.
 - Relying on a single model creates a single point of failure; maintaining a fallback list improves resilience.
@@ -51,11 +56,6 @@
 - High model latencies (20s-47s) are a primary failure vector for time-critical goals, requiring a strict latency budget guard to trigger fallbacks.
 - The gap between generating skill proposals and actually applying them indicates a missing automated validation and deployment pipeline for skills.
 - The consistent timeouts and 429 errors from specific free models (nemotron, gemma) necessitate an automated router with health checks and fallback to 
-- Model latency varies widely, so predictive latency tracking can improve routing decisions.
-- Simulation usage is low despite its benefits, so scheduled simulation runs should be introduced.
-- Skill proposals are generated but rarely executed, creating a gap between idea and implementation.
-- Stale swarm goals persist across cycles and block progress, requiring automatic staleness detection and refresh.
-- Free-tier model providers frequently time out or return 429 errors, making them unreliable without a health-aware router.
 
 ---
 
