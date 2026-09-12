@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11481 Fakten** · Stand 2026-09-12 06:16 UTC · aktualisiert bei jedem Herzschlag
+**11476 Fakten** · Stand 2026-09-12 06:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7441
+- **dream:** 7436
 - **swarm_artifact:** 1665
 - **last_swarm_critique:** 899
 - **last_swarm_goal:** 634
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912062402:5:d738c8`
+*12.09. 06:24 UTC · Quelle: dream*
+
+Swarm artifact produced runnable code (222 lines, TOR green) but bahnen delta 0.0 indicates no knowledge graph integration occurred.
+
+### `dream:20260912062402:4:3c432e`
+*12.09. 06:24 UTC · Quelle: dream*
+
+Simulation approved execution with 5 risks and 3 revisions, but calibration error of 2 (predicted 7 vs actual 5) shows risk estimates are optimistic.
+
+### `dream:20260912062402:3:265fcc`
+*12.09. 06:24 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode with 3-task/1-iteration budgets, making any multi-step plan fragile without explicit checkpointing.
+
+### `dream:20260912062402:2:21ad25`
+*12.09. 06:24 UTC · Quelle: dream*
+
+Hand actions fail when ignoring sys.argv[1] and ZOETRON_DATA environment variables, causing zero-file reads despite clean exit codes.
+
+### `dream:20260912062402:1:4572d7`
+*12.09. 06:24 UTC · Quelle: dream*
+
+Primary models (Nemotron, Gemma) fail under load with 502/429 errors while fallback model (dots-studio) succeeds at 50-80s latency, making latency-aware fallback routing essential.
 
 ### `dream:20260912061357:5:f46dec`
 *12.09. 06:13 UTC · Quelle: dream*
@@ -43027,56 +43052,6 @@ score=8; issues=Artefakte im Prompt abgeschnitten (kein vollständiger main()-Fl
 *29.08. 06:20 UTC · Quelle: system*
 
 Marktwissen aktualisieren und nutzen
-
-### `dream:20260829062021:5:a21db8`
-*29.08. 06:20 UTC · Quelle: dream*
-
-Calibration predictions undershoot actual scores by approximately 2 units, indicating a systematic bias that requires a safety margin in goal-scoring thresholds.
-
-### `dream:20260829062021:4:a12739`
-*29.08. 06:20 UTC · Quelle: dream*
-
-Hand actions exhibit a ~75% failure rate but carry negligible downstream impact, suggesting they are non-critical operations that tolerate repeated attempts.
-
-### `dream:20260829062021:3:7a4e62`
-*29.08. 06:20 UTC · Quelle: dream*
-
-The swarm architecture (planner/builder/critic roles) reliably converges to a score-9 solution in a single cycle for well-defined simulation goals.
-
-### `dream:20260829062021:2:332132`
-*29.08. 06:20 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free is the stable workhorse model, with latency scaling predictably from ~25s to ~124s as token volume increases.
-
-### `dream:20260829062021:1:0e5466`
-*29.08. 06:20 UTC · Quelle: dream*
-
-The z-ai/glm-5.2 model is persistently rate-limited (429 errors) and cannot be relied upon as a primary inference source without backoff and failover mechanisms.
-
-### `dream:20260829061634:5:cd05d7`
-*29.08. 06:16 UTC · Quelle: dream*
-
-Unfinished analysis steps and 40+ untested skill proposals indicate a chronic 'idea-to-execution' gap that stalls capability growth.
-
-### `dream:20260829061634:4:c50810`
-*29.08. 06:16 UTC · Quelle: dream*
-
-System stress at 1.0 with conserve-mode budget (max 3 tasks, 1 iteration) forces prioritization: only high-leverage, low-risk actions survive.
-
-### `dream:20260829061634:3:acfbfd`
-*29.08. 06:16 UTC · Quelle: dream*
-
-The simulation-revision loop (5 risks → 5 revisions → applied) demonstrates that structured critique cycles convert vague goals into executable changes.
-
-### `dream:20260829061634:2:c8c123`
-*29.08. 06:16 UTC · Quelle: dream*
-
-Nemotron-3-Ultra succeeds consistently but with high latency variance (35–124 s), so time-budgeted tasks must assume worst-case latency.
-
-### `dream:20260829061634:1:17fc85`
-*29.08. 06:16 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) across multiple free-tier models is the dominant failure mode, making provider diversity essential for reliability.
 
 ### `last_swarm_critique`
 *29.08. 05:46 UTC · Quelle: critic*
