@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 01:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 01:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Ziele aufräumen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream-to-skill pipeline succeeded on cycle 1 (TOR green) but only after initial hand_action failure, indicating bootstrap fragility.
+- Pruning removes 7 facts but 0 events, creating asymmetric retention that may lose causal context for remaining facts.
+- Calibration error of 3 (predicted 5 vs actual 8) shows estimation models drift without continuous recalibration loops.
+- Tool execution fails when scripts use relative paths instead of ZOETRON_DATA absolute paths, wasting swarm cycles on path errors.
+- Model latency varies 7x (15-113s) on same endpoint, making fixed timeouts unreliable and causing cascade delays.
 - Swarm knowledge refresh relies on manual drive_goals instead of TTL-based automated staleness detection.
 - Prune runs aggressively remove facts (5-7 per run) while preserving zero events, suggesting fixed thresholds discard critical context.
 - Identical skill proposals recur across dream cycles (model-router, dream-to-skill, retain-tags, swarm-gates, revision-loop) but never graduate to impl
@@ -51,11 +56,6 @@
 - Model latency varies 2.6x (10.5–27.3 s) on identical model, indicating unstable upstream performance that degrades time-sensitive reflexes.
 - Skill proposals recur across cycles (model router, effectiveness scoring, PID pruning, swarm gate, dream pipeline) but lack automated promotion to imp
 - Reflex actions consistently converge without measurable outcome scores, creating false confidence in completion.
-- Skill proposals accumulate (13+ logged) but none appear implemented; the 'combination' drive goal confirms the proposal-to-skill pipeline is broken.
-- Aggressive pruning (10→15 facts, 38→83 events) correlates with drive signals 'stale' and 'failure', implying the pruner discards context needed for re
-- Model latency variance (8–60 s) and repeated ModelHealthTracker proposals indicate upstream instability is the primary systemic risk, not logic errors
-- Reflex execution succeeded (converged=true) where the full swarm failed, suggesting lightweight targeted tools outperform heavy multi-role cycles for 
-- Evolutionary variant generation rescued the swarm fact update (4→9) where the base planner/builder/critic loop stalled at two cycles.
 
 ---
 
