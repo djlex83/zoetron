@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 22:02:24",
+ "stand": "2026-09-12 22:21:56",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -85,12 +85,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "alte-daten-durch-neue-fakten-ersetzen.py",
@@ -201,6 +195,12 @@
    "quote": 1.0
   },
   {
+   "tool": "simulationen-in-die-praxis-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "simulationen-konsequent-anwenden.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -285,6 +285,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -331,12 +337,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
@@ -399,17 +399,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.726,
+ "haende_quote": 0.728,
  "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 33,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 5.03
+  "schnitt": 5.12
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 33,
-   "schnitt": 5.03
+   "schnitt": 5.12
   }
  }
 }

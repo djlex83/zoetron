@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11388 Fakten** · Stand 2026-09-12 22:04 UTC · aktualisiert bei jedem Herzschlag
+**11387 Fakten** · Stand 2026-09-12 22:23 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7341
 - **swarm_artifact:** 1649
-- **last_swarm_critique:** 916
-- **last_swarm_goal:** 651
-- **anti_pattern:** 371
-- **strategy:** 188
-- **tool:** 153
-- **hand_result:** 81
+- **last_swarm_critique:** 917
+- **last_swarm_goal:** 652
+- **anti_pattern:** 369
+- **strategy:** 187
+- **tool:** 154
+- **hand_result:** 80
 - **aktuell_organfehler:** 38
 
 ---
+
+### `tool:simulationen-besser-in-praxis-nutzen`
+*12.09. 22:21 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen besser in Praxis nutzen'. Datei: data/tools/simulationen-besser-in-praxis-nutzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*12.09. 22:21 UTC · Quelle: critic*
+
+score=8; issues=Analyse-Skript (Artefakt 1) läuft nur im Fallback-Modus ohne echte Daten - diagnostisch, nicht operativ; Pipeline erzeugt Werkzeug-Dateien via String-Templates statt AST/Code-Generierung - begrenzte Robustheit bei komplexen Tools; Benchmark-Def
+
+### `last_swarm_goal`
+*12.09. 22:12 UTC · Quelle: system*
+
+Simulationen besser in Praxis nutzen
+
+### `dream:20260912221225:5:5ee6ff`
+*12.09. 22:12 UTC · Quelle: dream*
+
+Pruning removes 19 events including potential failure context while retaining only 10 facts, risking loss of diagnostic signal.
+
+### `dream:20260912221225:4:1a83f9`
+*12.09. 22:12 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode (max 1 iteration), preventing multi-step recovery from transient failures.
+
+### `dream:20260912221225:3:6d31b7`
+*12.09. 22:12 UTC · Quelle: dream*
+
+Swarm knowledge refresh is a recurring drive but repeatedly fails at the hand_action layer, indicating a systemic execution gap.
+
+### `dream:20260912221225:2:d86f36`
+*12.09. 22:12 UTC · Quelle: dream*
+
+Tool execution fails due to path resolution issues (relative paths vs ZOETRON_DATA env var) despite correct reflex selection.
+
+### `dream:20260912221225:1:79e8be`
+*12.09. 22:12 UTC · Quelle: dream*
+
+Model provider instability (502/overload errors) causes cascading failures across planning, simulation, and execution layers.
 
 ### `dream:20260912220120:5:c02d58`
 *12.09. 22:01 UTC · Quelle: dream*
@@ -42448,16 +42488,6 @@ A single model (inclusionai/ling-3.0-flash-fin:free) succeeded repeatedly while 
 
 Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary workers without a fallback strategy.
 
-### `anti_pattern:Previous attempt scored 7/10. Goal: Doppelte Arbeit vermeide:1`
-*29.08. 22:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 4, 9]): Architektonischer Ersatz durch Vektor-Embedding-basiertes Deduplizieren - Ersetze die gesamte semantic_similarity()-Funktion und den bestehenden Dedup-Mechanismus durch eine auf Vektor-Embeddings basierende Architektu
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Doppelte Arbeit vermeide:0`
-*29.08. 22:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 10, 6]): Direkte Bugbehebung + API-Migration (Inkrementelle Korrektur) - Behebe die identifizierten Bugs direkt im bestehenden Code, ohne die Architektur zu verändern. In dedup_check.py: (1) Korrigiere den SequenceMatcher-Auf
-
 ### `last_swarm_critique`
 *29.08. 22:06 UTC · Quelle: critic*
 
@@ -42467,31 +42497,6 @@ score=7; issues=semantic_similarity() in dedup_check.py hat einen Bug: SequenceM
 *29.08. 22:02 UTC · Quelle: system*
 
 Doppelte Arbeit vermeiden
-
-### `dream:20260829220149:5:752a5b`
-*29.08. 22:01 UTC · Quelle: dream*
-
-Prompt volume directly correlates with 429 exposure; compression or batching reduces failure rate.
-
-### `dream:20260829220149:4:63d10e`
-*29.08. 22:01 UTC · Quelle: dream*
-
-No proactive load shedding or model rotation occurs before rate limits are hit.
-
-### `dream:20260829220149:3:d6158c`
-*29.08. 22:01 UTC · Quelle: dream*
-
-Error handling lacks classification: 429, 5xx, and empty-success responses receive identical retry logic.
-
-### `dream:20260829220149:2:7a22c3`
-*29.08. 22:01 UTC · Quelle: dream*
-
-A single reliable model (ling-3.0-flash-fin) becomes a bottleneck and single point of failure under load.
-
-### `dream:20260829220149:1:a05438`
-*29.08. 22:01 UTC · Quelle: dream*
-
-Free-tier models fail predominantly due to rate limits (429) and upstream overload (502), not model quality.
 
 ### `last_swarm_critique`
 *29.08. 20:56 UTC · Quelle: critic*

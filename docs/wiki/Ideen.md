@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 22:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 22:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 19 events including potential failure context while retaining only 10 facts, risking loss of diagnostic signal.
+- Metabolism stress at 1.0 forces conserve mode (max 1 iteration), preventing multi-step recovery from transient failures.
+- Swarm knowledge refresh is a recurring drive but repeatedly fails at the hand_action layer, indicating a systemic execution gap.
+- Tool execution fails due to path resolution issues (relative paths vs ZOETRON_DATA env var) despite correct reflex selection.
+- Model provider instability (502/overload errors) causes cascading failures across planning, simulation, and execution layers.
 - The dots model achieves the same score (8) as nemotron but at 3.3× the latency (90s vs 26.9s), making it a poor default despite equal quality — latenc
 - Aggressive pruning (12 facts, 36 events in a single cycle) coincides with a stale-knowledge drive goal, forming a negative feedback loop where context
 - The proposal-to-skill pipeline is bottlenecked: 5 concrete skill proposals were generated in one cycle but zero were validated or deployed, creating a
@@ -51,11 +56,6 @@
 - High stress (0.865) combined with a tight budget (max 3 tasks) correlated with a failed reflex, suggesting resource limits should adapt to stress.
 - Repeated 502 and 429 errors from model providers show that single-provider reliance leads to outages and requires rotation.
 - A 20-second timeout in a hand action caused failure, indicating that external commands need explicit timeout handling and fallback.
-- Swarm goals and facts decay without automated freshness enforcement, requiring manual drive goals to refresh.
-- Simulations produce risks/revisions (5 each) but no evidence they gate execution, creating a simulation-to-action gap.
-- System stress (0.865) triggers conserve mode that caps retries exactly when model fallback chains need more attempts.
-- Hand_action timeouts return exit=null with no stderr/stdout, making root-cause diagnosis impossible for 20s+ hangs.
-- Model API instability (502/429 errors, 11-47s latency variance) is the single largest failure source, cascading into reflex failures and drive-goal ge
 
 ---
 
