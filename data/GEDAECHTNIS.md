@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11499 Fakten** · Stand 2026-09-12 03:09 UTC · aktualisiert bei jedem Herzschlag
+**11497 Fakten** · Stand 2026-09-12 03:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
-- **swarm_artifact:** 1689
+- **dream:** 7441
+- **swarm_artifact:** 1683
 - **last_swarm_critique:** 896
 - **last_swarm_goal:** 631
 - **anti_pattern:** 379
 - **strategy:** 192
 - **tool:** 156
-- **hand_result:** 81
+- **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912031650:5:da04da`
+*12.09. 03:16 UTC · Quelle: dream*
+
+Cross‑dream synthesis can generate novel capabilities; schedule regular combination of distant dream elements.
+
+### `dream:20260912031650:4:dbb47b`
+*12.09. 03:16 UTC · Quelle: dream*
+
+Stale swarm goals lead to stagnation; TTL‑based auto‑refresh keeps them active.
+
+### `dream:20260912031650:3:386f89`
+*12.09. 03:16 UTC · Quelle: dream*
+
+Reflex convergence without a numeric effectiveness metric yields false positives; enforce metric recording before marking converged.
+
+### `dream:20260912031650:2:bfc147`
+*12.09. 03:16 UTC · Quelle: dream*
+
+Event logs grow without fact pruning, causing memory bloat; event compaction is needed.
+
+### `dream:20260912031650:1:ca88a2`
+*12.09. 03:16 UTC · Quelle: dream*
+
+Model endpoints frequently return 429 or 502 errors, so a router with per‑endpoint success rates and exponential backoff is essential.
 
 ### `dream:20260912030656:5:4e1be2`
 *12.09. 03:06 UTC · Quelle: dream*
