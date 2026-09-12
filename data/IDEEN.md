@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 16:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 17:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,13 +26,13 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System stress is at maximum (1.0) with 'conserve' metabolism, limiting corrective action capacity.
+- The model-reliability reflex failed because it depended on the same broken models it was trying to fix.
+- Skill proposals are generated during dreams but never promoted to active skills, creating an insight-to-capability gap.
+- dots-studio/dots-3-note-preview:free is the only available free model but latency varies wildly from 28s to 82s.
+- Google Gemma free models on OpenRouter return consistent 429 rate-limit errors, making them unusable for reliable operation.
 - Drive goals are generated from signals (failure, stale, combination) but lack quantified targets, leading to diffuse improvement efforts.
 - Skill proposals accumulate without execution, creating a backlog that prevents the system from turning ideas into working capabilities.
 - Automatic model blocking after three consecutive failures isolates a provider for 30 minutes, but without health checks it may block a model that is a
@@ -51,11 +56,6 @@
 - The nvidia/nemotron-3-ultra-550b-a55b:free model timed out, suggesting shorter timeouts and smaller payloads are needed.
 - dots-studio/dots-3-note-preview:free consistently responded within 16–21 s, making it a reliable fallback when other models fail.
 - The frequent HTTP 429 errors from multiple Google models indicate a shared rate-limit that must be handled with exponential backoff and jitter.
-- Simulation feedback can be used to adjust confidence intervals and trigger revisions.
-- Circuit breaker pattern prevents cascading failures by temporarily blocking a model after consecutive failures.
-- Relying on a single model creates a single point of failure; maintaining a fallback list improves resilience.
-- Timeout errors suggest network instability and should trigger retry with increased timeout.
-- Repeated 429 errors indicate rate limiting and require exponential backoff before switching models.
 
 ---
 
