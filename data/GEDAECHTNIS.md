@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11517 Fakten** · Stand 2026-09-12 01:52 UTC · aktualisiert bei jedem Herzschlag
+**11512 Fakten** · Stand 2026-09-12 02:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7446
+- **dream:** 7441
 - **swarm_artifact:** 1695
 - **last_swarm_critique:** 895
 - **last_swarm_goal:** 630
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912020029:5:68ff98`
+*12.09. 02:00 UTC · Quelle: dream*
+
+Swarm collaboration degrades because last_swarm_goal recall shows no persistent context sharing across sleep cycles, making multi-agent work unreliable.
+
+### `dream:20260912020029:4:46e774`
+*12.09. 02:00 UTC · Quelle: dream*
+
+Pruning removes 30 items per run without scoring against active drive goals (stale swarm, model failures, skill conversion), risking deletion of failure-pattern evidence needed for diagnosis.
+
+### `dream:20260912020029:3:ab858f`
+*12.09. 02:00 UTC · Quelle: dream*
+
+Skill proposals accumulate but the conversion reflex (fähigkeitsvorschläge-in-echte-skills-wan.py) fails execution, leaving approved capabilities stuck in proposal state.
+
+### `dream:20260912020029:2:743c2d`
+*12.09. 02:00 UTC · Quelle: dream*
+
+Model provider failures cascade silently: Nvidia returns 502 upstream errors while Google returns 429 rate limits, yet the system continues routing requests without circuit breaking or fallback.
+
+### `dream:20260912020029:1:edab6d`
+*12.09. 02:00 UTC · Quelle: dream*
+
+Relative path handling in hand_action fails because ZOETRON_DATA environment variable is not resolved before file access, causing zero-byte reads despite valid sys.argv[1] input.
 
 ### `dream:20260912015044:5:872c63`
 *12.09. 01:50 UTC · Quelle: dream*
@@ -43127,56 +43152,6 @@ Evolution produced a 9.3-scoring variant but swarm execution still scored 1, rev
 *29.08. 02:01 UTC · Quelle: dream*
 
 Rate limiting (429 errors) across multiple models indicates missing proactive model health monitoring and fallback routing.
-
-### `dream:20260829015709:5:b5abf5`
-*29.08. 01:57 UTC · Quelle: dream*
-
-Calibration overestimates outcomes by 100% (predicted 2 vs actual 1), suggesting the estimator ignores execution failures.
-
-### `dream:20260829015709:4:08d4e6`
-*29.08. 01:57 UTC · Quelle: dream*
-
-Swarm convergence stalls at score 1 with negative delta (-0.5) despite simulation approval, revealing a sim-to-real gap in the scoring heuristic.
-
-### `dream:20260829015709:3:c2ead0`
-*29.08. 01:57 UTC · Quelle: dream*
-
-Hand actions repeatedly exit with code 1 in <1 s, indicating a systemic environment or permission issue rather than task-specific bugs.
-
-### `dream:20260829015709:2:916b8a`
-*29.08. 01:57 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (6–77 s), requiring adaptive timeouts and speculative parallel calls.
-
-### `dream:20260829015709:1:fbae1c`
-*29.08. 01:57 UTC · Quelle: dream*
-
-The model z-ai/glm-5.2:free is consistently unavailable due to 429 rate limits and should be removed from the primary routing pool.
-
-### `dream:20260829015237:5:11a745`
-*29.08. 01:52 UTC · Quelle: dream*
-
-System stress is maxed (1.0) and metabolism forces conserve mode, yet the swarm goal demands a high-score run that needs more resources.
-
-### `dream:20260829015237:4:af20d8`
-*29.08. 01:52 UTC · Quelle: dream*
-
-File-path handling breaks on every hand action: scripts assume relative paths while the runtime requires ZOETRON_DATA absolute paths.
-
-### `dream:20260829015237:3:327912`
-*29.08. 01:52 UTC · Quelle: dream*
-
-Skill proposals accumulate but none graduate to tested code because the proposal-to-skill pipeline does not exist.
-
-### `dream:20260829015237:2:020e26`
-*29.08. 01:52 UTC · Quelle: dream*
-
-Nemotron latency varies 10x (6s–76s), so fixed timeouts will either kill healthy requests or stall the pipeline.
-
-### `dream:20260829015237:1:f2a860`
-*29.08. 01:52 UTC · Quelle: dream*
-
-The z-ai/glm-5.2 model fails 100% of the time with 429 errors, making it effectively unusable without circuit-breaking.
 
 ### `last_swarm_critique`
 *29.08. 01:14 UTC · Quelle: critic*

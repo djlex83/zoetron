@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 01:51:02",
+ "stand": "2026-09-12 02:01:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -424,6 +424,12 @@
   },
   {
    "tool": "alte-marktanalysen-verwerten.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-verringern.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

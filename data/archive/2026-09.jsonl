@@ -40429,3 +40429,22 @@
 {"ts": 1788573012.9619796, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.17, "gelesen": 467}}
 {"ts": 1788573012.962175, "kind": "tor", "payload": {"goal": "Wissenbasis aufräumen und prüfen", "gruen": true, "grund": "Artefakt laeuft (212 Zeilen Python)", "zyklus": 1}}
 {"ts": 1788573013.9685857, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788573013.9685833, "schalter_geoeffnet": false}}
+{"ts": 1787968357.37444, "key": "dream:20260829015237:1:f2a860", "value": "The z-ai/glm-5.2 model fails 100% of the time with 429 errors, making it effectively unusable without circuit-breaking.", "source": "dream"}
+{"ts": 1787968357.3745873, "key": "dream:20260829015237:2:020e26", "value": "Nemotron latency varies 10x (6s–76s), so fixed timeouts will either kill healthy requests or stall the pipeline.", "source": "dream"}
+{"ts": 1787968357.3747025, "key": "dream:20260829015237:3:327912", "value": "Skill proposals accumulate but none graduate to tested code because the proposal-to-skill pipeline does not exist.", "source": "dream"}
+{"ts": 1787968357.3748078, "key": "dream:20260829015237:4:af20d8", "value": "File-path handling breaks on every hand action: scripts assume relative paths while the runtime requires ZOETRON_DATA absolute paths.", "source": "dream"}
+{"ts": 1787968357.3749073, "key": "dream:20260829015237:5:11a745", "value": "System stress is maxed (1.0) and metabolism forces conserve mode, yet the swarm goal demands a high-score run that needs more resources.", "source": "dream"}
+{"ts": 1787968629.1582565, "key": "dream:20260829015709:1:fbae1c", "value": "The model z-ai/glm-5.2:free is consistently unavailable due to 429 rate limits and should be removed from the primary routing pool.", "source": "dream"}
+{"ts": 1787968629.1583579, "key": "dream:20260829015709:2:916b8a", "value": "nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (6–77 s), requiring adaptive timeouts and speculative parallel calls.", "source": "dream"}
+{"ts": 1787968629.1584451, "key": "dream:20260829015709:3:c2ead0", "value": "Hand actions repeatedly exit with code 1 in <1 s, indicating a systemic environment or permission issue rather than task-specific bugs.", "source": "dream"}
+{"ts": 1787968629.1585336, "key": "dream:20260829015709:4:08d4e6", "value": "Swarm convergence stalls at score 1 with negative delta (-0.5) despite simulation approval, revealing a sim-to-real gap in the scoring heuristic.", "source": "dream"}
+{"ts": 1787968629.1586142, "key": "dream:20260829015709:5:b5abf5", "value": "Calibration overestimates outcomes by 100% (predicted 2 vs actual 1), suggesting the estimator ignores execution failures.", "source": "dream"}
+{"ts": 1788573035.869162, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 21.9, "tokens_ein": 7211, "tokens_aus": 902}}
+{"ts": 1788573035.870468, "kind": "calibration", "payload": {"goal": "Wissenbasis aufräumen und prüfen", "predicted": 7, "actual": 8, "abs_error": 1}}
+{"ts": 1788573035.8705728, "kind": "model_score", "payload": {"model": "z-ai/glm-5.2:free", "score": 8}}
+{"ts": 1788573036.3249016, "kind": "bahnen", "payload": {"goal": "Wissenbasis aufräumen und prüfen", "delta": 1.0, "kanten": 10, "hat_code": true, "score": 8, "abgerufen": 4, "ids": ["e:fd8f076c00d5", "e:ad100bcc5609", "e:72cdff6f0893", "e:56eda9043e1d"], "ziel_id": "g:20a68dab7611"}}
+{"ts": 1788573036.3251002, "kind": "swarm_finished", "payload": {"goal": "Wissenbasis aufräumen und prüfen", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1788573036.3252997, "kind": "act_done", "payload": {"goal_title": "Wissenbasis aufräumen und prüfen", "score": 8, "converged": true}}
+{"ts": 1788573039.3347664, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.16, "gelesen": 467}}
+{"ts": 1788573041.4628124, "kind": "issue_synced", "payload": {"issue": 369, "state": "closed"}}
+{"ts": 1788573533.0240047, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

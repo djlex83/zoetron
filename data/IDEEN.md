@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 01:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 02:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -33,14 +33,19 @@
 - Neue Fähigkeiten lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Ziele aufräumen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm collaboration degrades because last_swarm_goal recall shows no persistent context sharing across sleep cycles, making multi-agent work unreliabl
+- Pruning removes 30 items per run without scoring against active drive goals (stale swarm, model failures, skill conversion), risking deletion of failu
+- Skill proposals accumulate but the conversion reflex (fähigkeitsvorschläge-in-echte-skills-wan.py) fails execution, leaving approved capabilities stuc
+- Model provider failures cascade silently: Nvidia returns 502 upstream errors while Google returns 429 rate limits, yet the system continues routing re
+- Relative path handling in hand_action fails because ZOETRON_DATA environment variable is not resolved before file access, causing zero-byte reads desp
 - Relative paths in hand_action (gelesen: 358/364) bypass audit trail, creating reproducibility gaps in artifact retrieval.
 - Pruning removed 22 events but lacks goal-awareness, risking deletion of failure-pattern evidence needed for future diagnosis.
 - Swarm converges in 1 cycle without evolution, indicating critic role is insufficiently empowered to force architectural changes.
@@ -51,11 +56,6 @@
 - Calibration error of 3 (predicted 5 vs actual 8) shows estimation models drift without continuous recalibration loops.
 - Tool execution fails when scripts use relative paths instead of ZOETRON_DATA absolute paths, wasting swarm cycles on path errors.
 - Model latency varies 7x (15-113s) on same endpoint, making fixed timeouts unreliable and causing cascade delays.
-- Swarm knowledge refresh relies on manual drive_goals instead of TTL-based automated staleness detection.
-- Prune runs aggressively remove facts (5-7 per run) while preserving zero events, suggesting fixed thresholds discard critical context.
-- Identical skill proposals recur across dream cycles (model-router, dream-to-skill, retain-tags, swarm-gates, revision-loop) but never graduate to impl
-- Model latency spikes to 68s indicate unreliable endpoint health requiring automated failover and circuit-breaking.
-- Reflex actions consistently mark converged=true without measurable outcome metrics, creating false completion signals.
 
 ---
 
