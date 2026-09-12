@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 11:16:33",
+ "stand": "2026-09-12 11:27:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,13 +15,13 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -418,6 +418,12 @@
   },
   {
    "tool": "automatische-fehler-reduktions-pipeline-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarm-ergebnisse-in-handlungen-umsetze.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

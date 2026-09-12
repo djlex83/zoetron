@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 11:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 11:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,16 +24,16 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm-goal staleness recurs as a drive signal, yet no automated freshness check or pull mechanism is in place.
+- Stress-aware scheduling is repeatedly proposed (metabolism-aware, latency-aware) but no stress metric or scheduler hook exists yet.
+- Skill proposals accumulate faster than they are implemented; the reflex tool "vorgeschlagene-fähigkeiten-echt-umsetzen.py" closed one loop but lacks a
+- Successful model calls exhibit high and variable latency (36–46 s), indicating saturated endpoints that degrade time-sensitive tasks.
+- Model failures cascade when primary and fallback endpoints both degrade (502 upstream errors followed by 429 rate limits), leaving no healthy route.
 - Pruning removed 37 events but 0 organ errors, showing cleanup is decoupled from health monitoring.
 - Hand-action retry succeeded after initial failure, indicating transient environment issues rather than code defects.
 - Swarm convergence in 1 cycle with 5 roles suggests over-specified role allocation for simple goals.
@@ -51,11 +56,6 @@
 - Hand actions fail silently on path issues (first read 0 bytes in 0.02s) before succeeding on retry, indicating missing pre-flight validation.
 - Selbstdiagnose reports zero organ errors while external API failures persist, revealing a blind spot in health monitoring.
 - Free-tier model endpoints fail unpredictably (502 upstream, 429 rate limits) with no automatic failover, causing cascading task failures.
-- System generates skill proposals autonomously but lacks a mechanism to implement, test, and deploy them, creating a meta-learning gap.
-- Sandbox execution failures persist despite code generation success, indicating missing pre-flight validation (syntax, imports, runtime).
-- Simulation-based revision loops identify risks but lack convergence guarantees, causing infinite revise cycles without delivery.
-- Evolutionary search can dramatically improve solution quality (0→9/10) but final swarm convergence fails due to execution environment mismatches.
-- Free-tier model endpoints exhibit cascading failures (502 overloads, 429 rate limits) requiring health-aware routing with automatic failover.
 
 ---
 
