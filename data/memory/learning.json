@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 18:31:22",
+ "stand": "2026-09-12 18:42:24",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -30,6 +30,12 @@
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -70,12 +76,6 @@
   },
   {
    "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -405,7 +405,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.735,
+ "haende_quote": 0.737,
  "simulationen_angewandt": 34,
  "swarm_scores": {
   "n": 32,

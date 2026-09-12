@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11416 Fakten** · Stand 2026-09-12 18:33 UTC · aktualisiert bei jedem Herzschlag
+**11411 Fakten** · Stand 2026-09-12 18:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7386
+- **dream:** 7381
 - **swarm_artifact:** 1643
 - **last_swarm_critique:** 912
 - **last_swarm_goal:** 647
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912184123:5:2fbea5`
+*12.09. 18:41 UTC · Quelle: dream*
+
+Aggressive pruning (79 events removed) risks discarding failure-pattern context needed for model router training.
+
+### `dream:20260912184123:4:070490`
+*12.09. 18:41 UTC · Quelle: dream*
+
+Reflex-driven maintenance (swarm goal refresh) succeeds when manually invoked but lacks scheduled execution for continuous hygiene.
+
+### `dream:20260912184123:3:16f127`
+*12.09. 18:41 UTC · Quelle: dream*
+
+Goal staleness triggers reactive drive_goal creation but no proactive detector exists to refresh goals before they degrade performance.
+
+### `dream:20260912184123:2:32fee7`
+*12.09. 18:41 UTC · Quelle: dream*
+
+Free-tier model reliability is too low for production use without automatic health-aware routing and circuit breaking.
+
+### `dream:20260912184123:1:2f9732`
+*12.09. 18:41 UTC · Quelle: dream*
+
+Model failures cluster by provider: NVIDIA models timeout while Google models hit 429 rate limits, requiring provider-specific retry policies.
 
 ### `dream:20260912183018:5:1466d6`
 *12.09. 18:30 UTC · Quelle: dream*
@@ -42657,56 +42682,6 @@ Nemotron-3-Ultra is the only model returning successful completions but exhibits
 *29.08. 18:44 UTC · Quelle: dream*
 
 Multiple free-tier models (GLM, Gemma) consistently fail with 429 rate-limit errors, making them unreliable for production workflows.
-
-### `dream:20260829184013:5:04dc36`
-*29.08. 18:40 UTC · Quelle: dream*
-
-Under high stress (1.0) and conserve mode, the system must prioritize models with proven reliability over latency.
-
-### `dream:20260829184013:4:ef65b3`
-*29.08. 18:40 UTC · Quelle: dream*
-
-Score capping mechanism penalizes missing code artifacts heavily (5→2), making code generation a hard requirement.
-
-### `dream:20260829184013:3:2e5626`
-*29.08. 18:40 UTC · Quelle: dream*
-
-High latency variance (8-222s) in working models demands timeout and retry policies calibrated to observed distributions.
-
-### `dream:20260829184013:2:4f7c18`
-*29.08. 18:40 UTC · Quelle: dream*
-
-Task success requires executable code artifacts, not just prose, as the Tor gate enforces executable convergence.
-
-### `dream:20260829184013:1:c25dcd`
-*29.08. 18:40 UTC · Quelle: dream*
-
-Free tier models exhibit unreliable availability due to rate limiting (429) and upstream errors (502), requiring robust fallback chains.
-
-### `dream:20260829183534:5:95b13c`
-*29.08. 18:35 UTC · Quelle: dream*
-
-Market analysis work remains incomplete across multiple cycles because reflex tools fail on path resolution errors.
-
-### `dream:20260829183534:4:d6aafa`
-*29.08. 18:35 UTC · Quelle: dream*
-
-Skill proposals accumulate (55) but conversion to executable skills stalls due to missing implementation pipeline.
-
-### `dream:20260829183534:3:78a6f8`
-*29.08. 18:35 UTC · Quelle: dream*
-
-System stress hits maximum (1.0) triggering conserve mode that caps tasks at 3 and iterations at 1, starving recovery work.
-
-### `dream:20260829183534:2:1ca710`
-*29.08. 18:35 UTC · Quelle: dream*
-
-The inclusionai/ling-3.0-flash-fin model is the only consistently available free model with acceptable latency (~11s).
-
-### `dream:20260829183534:1:9155d8`
-*29.08. 18:35 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer chronic 429 rate limits making them unreliable as primary workers.
 
 ### `last_swarm_critique`
 *29.08. 17:57 UTC · Quelle: critic*

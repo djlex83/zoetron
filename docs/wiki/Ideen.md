@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 18:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 18:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und verringern *(wieder aufgegriffen: 3×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (79 events removed) risks discarding failure-pattern context needed for model router training.
+- Reflex-driven maintenance (swarm goal refresh) succeeds when manually invoked but lacks scheduled execution for continuous hygiene.
+- Goal staleness triggers reactive drive_goal creation but no proactive detector exists to refresh goals before they degrade performance.
+- Free-tier model reliability is too low for production use without automatic health-aware routing and circuit breaking.
+- Model failures cluster by provider: NVIDIA models timeout while Google models hit 429 rate limits, requiring provider-specific retry policies.
 - Simulation approval (verdict: go) with 3 risks but 0 revisions indicates risk assessment may be under-calibrated.
 - Aggressive pruning (79 events/23 facts per run) risks discarding context needed for multi-cycle convergence.
 - Evolutionary search dramatically improves artifact quality (2→10) but swarm convergence requires more than 2 cycles.
@@ -51,11 +56,6 @@
 - Pruning removes facts and events aggressively without checking whether drive_goals referencing them have become stale or unachievable.
 - Reflex-mode execution converges reliably for well-scoped goals but bypasses the simulation layer that catches prediction errors.
 - Model provider health degrades silently until cascading failures block the entire pipeline, requiring proactive health-aware routing instead of reacti
-- Capturing both stdout and stderr in hand_action calls enables better diagnostics and retry logic on non-zero exits.
-- Drive goals that remain unchanged for many cycles become stale and should be automatically refreshed or deprecated.
-- Repeated model failures without a circuit breaker lead to cascading errors and wasted cycles.
-- Nvidia provider timeouts reveal upstream slowness, necessitating a per-request timeout and fallback to alternative models.
-- Multiple model providers return HTTP 429 errors, indicating rate limiting that requires exponential backoff with jitter.
 
 ---
 

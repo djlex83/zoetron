@@ -43015,3 +43015,13 @@
 {"ts": 1788632161.9470866, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.2, "gelesen": 1}}
 {"ts": 1788632165.5051582, "kind": "issue_synced", "payload": {"issue": 384, "state": "open"}}
 {"ts": 1788632684.5547495, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788028534.3762302, "key": "dream:20260829183534:1:9155d8", "value": "Free-tier models on OpenRouter suffer chronic 429 rate limits making them unreliable as primary workers.", "source": "dream"}
+{"ts": 1788028534.3763309, "key": "dream:20260829183534:2:1ca710", "value": "The inclusionai/ling-3.0-flash-fin model is the only consistently available free model with acceptable latency (~11s).", "source": "dream"}
+{"ts": 1788028534.3764007, "key": "dream:20260829183534:3:78a6f8", "value": "System stress hits maximum (1.0) triggering conserve mode that caps tasks at 3 and iterations at 1, starving recovery work.", "source": "dream"}
+{"ts": 1788028534.3764682, "key": "dream:20260829183534:4:d6aafa", "value": "Skill proposals accumulate (55) but conversion to executable skills stalls due to missing implementation pipeline.", "source": "dream"}
+{"ts": 1788028534.3765395, "key": "dream:20260829183534:5:95b13c", "value": "Market analysis work remains incomplete across multiple cycles because reflex tools fail on path resolution errors.", "source": "dream"}
+{"ts": 1788028813.7852354, "key": "dream:20260829184013:1:c25dcd", "value": "Free tier models exhibit unreliable availability due to rate limiting (429) and upstream errors (502), requiring robust fallback chains.", "source": "dream"}
+{"ts": 1788028813.7853193, "key": "dream:20260829184013:2:4f7c18", "value": "Task success requires executable code artifacts, not just prose, as the Tor gate enforces executable convergence.", "source": "dream"}
+{"ts": 1788028813.7853868, "key": "dream:20260829184013:3:2e5626", "value": "High latency variance (8-222s) in working models demands timeout and retry policies calibrated to observed distributions.", "source": "dream"}
+{"ts": 1788028813.7854497, "key": "dream:20260829184013:4:ef65b3", "value": "Score capping mechanism penalizes missing code artifacts heavily (5→2), making code generation a hard requirement.", "source": "dream"}
+{"ts": 1788028813.7855172, "key": "dream:20260829184013:5:04dc36", "value": "Under high stress (1.0) and conserve mode, the system must prioritize models with proven reliability over latency.", "source": "dream"}
