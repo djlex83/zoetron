@@ -1,10 +1,10 @@
 {
-  "audit_timestamp": "2026-09-12T13:02:26.506843",
+  "audit_timestamp": "2026-09-12T17:39:44.229437",
   "threshold_days": 7,
-  "total_events_audited": 90951,
-  "stale_count": 276,
-  "fresh_count": 145,
-  "no_timestamp_count": 90530,
+  "total_events_audited": 91597,
+  "stale_count": 277,
+  "fresh_count": 146,
+  "no_timestamp_count": 91174,
   "stale_events": [
     {
       "mode": "normal",
@@ -18,8 +18,8 @@
       "window_size": 10,
       "timestamp": 1787837425.6170628,
       "ts": 1787837425.6170652,
-      "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 16,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -34,8 +34,8 @@
       "window_size": 10,
       "timestamp": 1787837497.8504727,
       "ts": 1787837497.8504748,
-      "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 16,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -51,7 +51,7 @@
       "timestamp": 1787900765.9753509,
       "ts": 1787900765.9753523,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -67,7 +67,7 @@
       "timestamp": 1787900845.5511236,
       "ts": 1787900845.5511253,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -83,7 +83,7 @@
       "timestamp": 1788030824.0855668,
       "ts": 1788030824.0855682,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -99,7 +99,7 @@
       "timestamp": 1788030834.0460286,
       "ts": 1788030834.0460298,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -115,7 +115,7 @@
       "timestamp": 1788334726.3261428,
       "ts": 1788334726.326146,
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -126,8 +126,8 @@
       "error": "",
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
-      "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 16,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -138,8 +138,8 @@
       "error": "ZeroDivisionError: division by zero",
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
-      "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 16,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -150,8 +150,8 @@
       "error": "ImportError: __import__ not found",
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
-      "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 16,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -162,8 +162,8 @@
       "error": "ImportError: __import__ not found",
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
-      "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 16,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -599,7 +599,7 @@
       "timestamp": "2026-08-27T18:07:37.437362",
       "fell_back": false,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -623,8 +623,8 @@
         "completed_at": null
       },
       "correlation_id": "a17f8ad0",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -648,8 +648,8 @@
         "completed_at": null
       },
       "correlation_id": "6d4edf6f",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -673,8 +673,8 @@
         "completed_at": null
       },
       "correlation_id": "c61c7d0e",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -691,8 +691,8 @@
         ]
       },
       "correlation_id": "agent-001",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -709,8 +709,8 @@
         ]
       },
       "correlation_id": "agent-002",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -727,8 +727,8 @@
         ]
       },
       "correlation_id": "agent-003",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -741,8 +741,8 @@
         "task_name": "Research Requirements"
       },
       "correlation_id": "a17f8ad0",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -755,8 +755,8 @@
         "task_name": "Research Requirements"
       },
       "correlation_id": "a17f8ad0",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -773,8 +773,8 @@
         }
       },
       "correlation_id": "a17f8ad0",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -787,8 +787,8 @@
         "task_name": "Implement Core"
       },
       "correlation_id": "6d4edf6f",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -801,8 +801,8 @@
         "task_name": "Implement Core"
       },
       "correlation_id": "6d4edf6f",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -819,8 +819,8 @@
         }
       },
       "correlation_id": "6d4edf6f",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -833,8 +833,8 @@
         "task_name": "Code Review"
       },
       "correlation_id": "c61c7d0e",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -847,8 +847,8 @@
         "task_name": "Code Review"
       },
       "correlation_id": "c61c7d0e",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -865,8 +865,8 @@
         }
       },
       "correlation_id": "c61c7d0e",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -883,8 +883,8 @@
         ]
       },
       "correlation_id": "agent-001",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -901,8 +901,8 @@
         ]
       },
       "correlation_id": "agent-002",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -919,8 +919,8 @@
         ]
       },
       "correlation_id": "agent-003",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -937,8 +937,8 @@
         ]
       },
       "correlation_id": "agent-003",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -962,8 +962,8 @@
         "completed_at": null
       },
       "correlation_id": "f106ea40",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -987,8 +987,8 @@
         "completed_at": null
       },
       "correlation_id": "8800d148",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1012,8 +1012,8 @@
         "completed_at": null
       },
       "correlation_id": "b62ea726",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1030,8 +1030,8 @@
         ]
       },
       "correlation_id": "agent-001",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1048,8 +1048,8 @@
         ]
       },
       "correlation_id": "agent-002",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1066,8 +1066,8 @@
         ]
       },
       "correlation_id": "agent-003",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1080,8 +1080,8 @@
         "task_name": "Research Requirements"
       },
       "correlation_id": "f106ea40",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1094,8 +1094,8 @@
         "task_name": "Research Requirements"
       },
       "correlation_id": "f106ea40",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1112,8 +1112,8 @@
         }
       },
       "correlation_id": "f106ea40",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1126,8 +1126,8 @@
         "task_name": "Implement Core"
       },
       "correlation_id": "8800d148",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1140,8 +1140,8 @@
         "task_name": "Implement Core"
       },
       "correlation_id": "8800d148",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1158,8 +1158,8 @@
         }
       },
       "correlation_id": "8800d148",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1172,8 +1172,8 @@
         "task_name": "Code Review"
       },
       "correlation_id": "b62ea726",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1186,8 +1186,8 @@
         "task_name": "Code Review"
       },
       "correlation_id": "b62ea726",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1204,8 +1204,8 @@
         }
       },
       "correlation_id": "b62ea726",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1222,8 +1222,8 @@
         ]
       },
       "correlation_id": "agent-001",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1240,8 +1240,8 @@
         ]
       },
       "correlation_id": "agent-002",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1258,8 +1258,8 @@
         ]
       },
       "correlation_id": "agent-003",
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1284,7 +1284,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1309,7 +1309,7 @@
       },
       "correlation_id": "c449901a",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1334,7 +1334,7 @@
       },
       "correlation_id": "44c348ea",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1352,7 +1352,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1370,7 +1370,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1388,7 +1388,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1402,7 +1402,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1416,7 +1416,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1434,7 +1434,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1448,7 +1448,7 @@
       },
       "correlation_id": "c449901a",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1462,7 +1462,7 @@
       },
       "correlation_id": "c449901a",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1480,7 +1480,7 @@
       },
       "correlation_id": "c449901a",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1494,7 +1494,7 @@
       },
       "correlation_id": "44c348ea",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1508,7 +1508,7 @@
       },
       "correlation_id": "44c348ea",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1526,7 +1526,7 @@
       },
       "correlation_id": "44c348ea",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1544,7 +1544,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1562,7 +1562,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1580,7 +1580,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1628,8 +1628,8 @@
         "Add error handling and retry logic for each gate transition",
         "Create integration tests for full pipeline flow"
       ],
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -1646,8 +1646,8 @@
         "circuit_breaker_tripped": false,
         "details": []
       },
-      "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 14,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2043,7 +2043,7 @@
         ]
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2056,7 +2056,7 @@
       "timestamp": 1787746767.7634919,
       "status": "open",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2069,7 +2069,7 @@
       },
       "timestamp": "2026-08-27T05:46:53.478426",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2082,7 +2082,7 @@
       },
       "timestamp": "2026-08-27T05:47:59.764993",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2138,7 +2138,7 @@
         }
       ],
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2160,7 +2160,7 @@
       },
       "fallback_used": false,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2182,7 +2182,7 @@
       },
       "fallback_used": false,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2215,7 +2215,7 @@
       ],
       "results": [],
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2268,7 +2268,7 @@
       },
       "used_fallback_data": false,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2320,7 +2320,7 @@
       },
       "used_fallback_data": false,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2492,7 +2492,7 @@
         }
       ],
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2549,7 +2549,7 @@
       "bottleneck": "reflex",
       "total_avg_latency": 0.019044745205610527,
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2606,7 +2606,7 @@
       "bottleneck": "reflex",
       "total_avg_latency": 0.013112438601092435,
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -2624,7 +2624,7 @@
         "total_flagged": 0
       },
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -7158,7 +7158,7 @@
         "note": "Nur was im Graph steht, kann in Handeln umgesetzt werden."
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -7182,7 +7182,7 @@
       "anzahl_fehlerquellen": 0,
       "anzahl_empfehlungen": 0,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -7436,7 +7436,7 @@
         }
       },
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -7690,7 +7690,7 @@
         }
       },
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -15562,7 +15562,7 @@
         "with_errors": 167
       },
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -16501,7 +16501,7 @@
       ],
       "fallback_mode": false,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -16755,7 +16755,7 @@
         }
       },
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17009,7 +17009,7 @@
         }
       },
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17066,7 +17066,7 @@
       "bottleneck": "reflex",
       "total_avg_latency": 0.009785288613056765,
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17096,7 +17096,7 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.29,
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17126,7 +17126,7 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.27,
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17156,7 +17156,7 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.29,
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17175,7 +17175,7 @@
       "created_at": "2026-09-03T07:34:10.843598",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17194,7 +17194,7 @@
       "created_at": "2026-09-03T07:34:10.843622",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17213,7 +17213,7 @@
       "created_at": "2026-09-03T07:34:10.843634",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17232,7 +17232,7 @@
       "created_at": "2026-09-03T07:34:10.843644",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17251,7 +17251,7 @@
       "created_at": "2026-09-03T07:34:10.843654",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17270,7 +17270,7 @@
       "created_at": "2026-09-03T07:34:10.843663",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17289,7 +17289,7 @@
       "created_at": "2026-09-03T07:34:10.843672",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -17308,7 +17308,7 @@
       "created_at": "2026-09-03T07:34:10.843679",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -21064,7 +21064,7 @@
       "modus": "ECHTE DATEN - Dateien analysiert",
       "root_cause": "Root Causes aus Datei-Analyse: Zerstörende Operationen (subprocess/os.system) führen zur Ablehnung",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -24868,7 +24868,7 @@
       "modus": "ECHTE DATEN - Dateien analysiert",
       "root_cause": "Root Causes aus Datei-Analyse: Zerstörende Operationen (subprocess/os.system) führen zur Ablehnung",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25122,7 +25122,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25376,7 +25376,7 @@
         }
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25406,7 +25406,778 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.34,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-04T16:20:40.786768",
+      "tool_analysis": {
+        "tool_info": {
+          "found": true,
+          "path": "/workspace/zoetron/data/tools/kritiken-und-ziele-regelmäßig-prüfen.py",
+          "content": "#!/usr/bin/env python3\n\"\"\"\nUntersucht die review()-Funktionen in will.py und retro.py.\nDokumentiert Interface: Input/Output/Seiteneffekte.\n\"\"\"\n\nimport sys\nimport os\nimport ast\nimport json\nfrom pathlib import Path\nfrom typing import Dict, Any, List, Optional\n\ndef find_data_dir() -> Path:\n    \"\"\"Findet das echte Datenverzeichnis.\"\"\"\n    # 1. sys.argv[1]\n    if len(sys.argv) > 1:\n        p = Path(sys.argv[1])\n        if p.exists():\n            return p\n    # 2. ZOETRON_DATA env\n    env = os.environ.get('ZOETRON_DATA')\n    if env:\n        p = Path(env)\n        if p.exists():\n            return p\n    # 3. Fallback: relatives data/ (wird leer sein, aber wir warnen)\n    fallback = Path('data')\n    print(f\"WARNUNG: Kein echtes Datenverzeichnis gefunden. Fallback auf '{fallback}' (wird wahrscheinlich leer sein).\", file=sys.stderr)\n    return fallback\n\ndef parse_review_function(filepath: Path, func_name: str = 'review') -> Dict[str, Any]:\n    \"\"\"Parst eine Python-Datei und extrahiert die review()-Funktion.\"\"\"\n    result = {\n        'file': str(filepath),\n        'function': func_name,\n        'found': False,\n        'signature': None,\n        'docstring': None,\n        'body_lines': [],\n        'calls': [],\n        'reads_files': [],\n        'writes_files': [],\n        'returns': None,\n        'side_effects': []\n    }\n    \n    if not filepath.exists():\n        result['error'] = f\"Datei nicht gefunden: {filepath}\"\n        return result\n    \n    try:\n        source = filepath.read_text(encoding='utf-8')\n        tree = ast.parse(source)\n    except Exception as e:\n        result['error'] = f\"Parse-Fehler: {e}\"\n        return result\n    \n    for node in ast.walk(tree):\n        if isinstance(node, ast.FunctionDef) and node.name == func_name:\n            result['found'] = True\n            # Signatur\n            args = [arg.arg for arg in node.args.args]\n            defaults = [ast.unparse(d) for d in node.args.defaults] if hasattr(ast, 'unparse') else []\n            result['signature'] = f\"{func_name}({', '.join(args)})\"\n            \n            # Docstring\n            if (node.body and isinstance(node.body[0], ast.Expr) \n                and isinstance(node.body[0].value, ast.Constant)\n                and isinstance(node.body[0].value.value, str)):\n                result['docstring'] = node.body[0].value.value\n            \n            # Body analysieren\n            for stmt in node.body:\n                result['body_lines'].append(ast.unparse(stmt) if hasattr(ast, 'unparse') else str(stmt))\n                \n                # Function calls finden\n                for call in ast.walk(stmt):\n                    if isinstance(call, ast.Call):\n                        if isinstance(call.func, ast.Name):\n                            result['calls'].append(call.func.id)\n                        elif isinstance(call.func, ast.Attribute):\n                            result['calls'].append(call.func.attr)\n                \n                # File I/O erkennen\n                for call in ast.walk(stmt):\n                    if isinstance(call, ast.Call):\n                        if isinstance(call.func, ast.Name) and call.func.id in ('open', 'read', 'write'):\n                            pass\n                        elif isinstance(call.func, ast.Attribute):\n                            if call.func.attr in ('read', 'write', 'read_text', 'write_text', 'open'):\n                                # Versuche Pfad zu extrahieren\n                                if call.args:\n                                    try:\n                                        path_expr = ast.unparse(call.args[0]) if hasattr(ast, 'unparse') else str(call.args[0])\n                                        if 'read' in call.func.attr or 'read_text' in call.func.attr:\n                                            result['reads_files'].append(path_expr)\n                                        else:\n                                            result['writes_files'].append(path_expr)\n                                    except:\n                                        pass\n                \n                # Return statements\n                if isinstance(stmt, ast.Return):\n                    result['returns'] = ast.unparse(stmt.value) if hasattr(ast, 'unparse') and stmt.value else 'None'\n            \n            # Side effects ableiten\n            if result['writes_files']:\n                result['side_effects'].append(f\"Schreibt Dateien: {result['writes_files']}\")\n            if result['reads_files']:\n                result['side_effects'].append(f\"Liest Dateien: {result['reads_files']}\")\n            if any(c in str(result['calls']) for c in ['print', 'logging', 'log']):\n                result['side_effects'].append(\"Logging/Print-Ausgabe\")\n            if any(c in str(result['calls']) for c in ['sleep', 'time.sleep']):\n                result['side_effects'].append(\"Zeitverzögerung\")\n            \n            break\n    \n    return result\n\ndef main():\n    data_dir = find_data_dir()\n    \n    # Suche will.py und retro.py\n    candidates = [\n        data_dir / 'tools' / 'will.py',\n        data_dir / 'tools' / 'retro.py',\n        data_dir / 'will.py',\n        data_dir / 'retro.py',\n        Path('tools') / 'will.py',\n        Path('tools') / 'retro.py',\n    ]\n    \n    results = {}\n    for name, path in [('will', None), ('retro', None)]:\n        for c in candidates:\n            if name in str(c) and c.exists():\n                path = c\n                break\n        if path:\n            results[name] = parse_review_function(path)\n        else:\n            results[name] = {'file': 'NOT FOUND', 'found': False, 'error': f'{name}.py nicht gefunden in {data_dir}'}\n    \n    # Ausgabe als JSON für weitere Verarbeitung\n    output = {\n        'data_dir_used': str(data_dir),\n        'will_review': results.get('will', {}),\n        'retro_review': results.get('retro', {}),\n        'gaps_identified': []\n    }\n    \n    # Lücken analysieren\n    for organ, data in [('will', results.get('will', {})), ('retro', results.get('retro', {}))]:\n        if not data.get('found'):\n            output['gaps_identified'].append(f\"{organ}: review()-Funktion nicht gefunden\")\n        else:\n            if not data.get('returns') or data.get('returns') == 'None':\n                output['gaps_identified'].append(f\"{organ}: review() gibt nichts zurück (kein strukturiertes Ergebnis)\")\n            if not data.get('side_effects'):\n                output['gaps_identified'].append(f\"{organ}: Keine erkennbaren Seiteneffekte (kein Persistieren, kein Logging)\")\n            if 'automatic' not in str(data.get('docstring', '')).lower() and 'regular' not in str(data.get('docstring', '')).lower():\n                output['gaps_identified'].append(f\"{organ}: Keine Dokumentation für regelmäßige/automatische Ausführung\")\n    \n    # Speichern\n    out_path = data_dir / 'artefakte' / 'review_interface_analysis.json'\n    out_path.parent.mkdir(parents=True, exist_ok=True)\n    out_path.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding='utf-8')\n    \n    # Auch auf stdout für direkte Sichtbarkeit\n    print(json.dumps(output, indent=2, ensure_ascii=False))\n    \n    return 0\n\nif __name__ == '__main__':\n    sys.exit(main())\n",
+          "size": 7230,
+          "error": null
+        },
+        "failure_analysis": {
+          "has_content": true,
+          "size": 7230,
+          "potential_issues": [],
+          "code_lines": 136
+        }
+      },
+      "memory_findings": {
+        "will": {
+          "count": 0,
+          "note": "Directory not found"
+        },
+        "drive": {
+          "count": 0,
+          "note": "Directory not found"
+        },
+        "semantic": {
+          "count": 0
+        },
+        "graph": {
+          "count": 0,
+          "note": "Directory not found"
+        },
+        "events": {
+          "total": 23828,
+          "relevant_count": 6078
+        }
+      },
+      "extracted_goals": [
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787933513.8398056, \"kind\": \"tor\", \"payload\": {\"goal\": \"Alte Erinnerungen auf Wert prüfen\", \"gruen\": true, \"grund\": \"Artefakt laeuft (268 Zeilen Python)\", \"zyklus\": 1}}",
+          "event": {
+            "ts": 1787933513.8398056,
+            "kind": "tor",
+            "payload": {
+              "goal": "Alte Erinnerungen auf Wert prüfen",
+              "gruen": true,
+              "grund": "Artefakt laeuft (268 Zeilen Python)",
+              "zyklus": 1
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787933696.9474916, \"kind\": \"calibration\", \"payload\": {\"goal\": \"Alte Erinnerungen auf Wert prüfen\", \"predicted\": 7, \"actual\": 3, \"abs_error\": 4}}",
+          "event": {
+            "ts": 1787933696.9474916,
+            "kind": "calibration",
+            "payload": {
+              "goal": "Alte Erinnerungen auf Wert prüfen",
+              "predicted": 7,
+              "actual": 3,
+              "abs_error": 4
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787933720.3914778, \"kind\": \"bahnen\", \"payload\": {\"goal\": \"Alte Erinnerungen auf Wert prüfen\", \"delta\": -0.5, \"kanten\": 0, \"hat_code\": true, \"score\": 3, \"abgerufen\": 6, \"ids\": [\"e:efe2a15055e0\", \"f:147b90f09956\", \"e:acad7e9eb090\", \"e:9d14c454fca0\", \"e:02253d022e4b\", \"e:dd1f9f724259\"], \"ziel_id\": \"g:0541c723ec90\"}}",
+          "event": {
+            "ts": 1787933720.3914778,
+            "kind": "bahnen",
+            "payload": {
+              "goal": "Alte Erinnerungen auf Wert prüfen",
+              "delta": -0.5,
+              "kanten": 0,
+              "hat_code": true,
+              "score": 3,
+              "abgerufen": 6,
+              "ids": [
+                "e:efe2a15055e0",
+                "f:147b90f09956",
+                "e:acad7e9eb090",
+                "e:9d14c454fca0",
+                "e:02253d022e4b",
+                "e:dd1f9f724259"
+              ],
+              "ziel_id": "g:0541c723ec90"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787933796.9687774, \"kind\": \"simulation\", \"payload\": {\"goal\": \"Alte Erinnerungen auf Wert prüfen\", \"verdict\": \"revise\", \"risks\": 5, \"revisions\": 5}}",
+          "event": {
+            "ts": 1787933796.9687774,
+            "kind": "simulation",
+            "payload": {
+              "goal": "Alte Erinnerungen auf Wert prüfen",
+              "verdict": "revise",
+              "risks": 5,
+              "revisions": 5
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787933796.9699128, \"kind\": \"act_done\", \"payload\": {\"goal_title\": \"Alte Erinnerungen auf Wert prüfen\", \"score\": 3, \"converged\": false}}",
+          "event": {
+            "ts": 1787933796.9699128,
+            "kind": "act_done",
+            "payload": {
+              "goal_title": "Alte Erinnerungen auf Wert prüfen",
+              "score": 3,
+              "converged": false
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934377.720414, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Modelle zuverlässiger machen\", \"why\": \"Viele Modelle liefern falsche Ergebnisse. Wenn die Modelle besser werden, macht das System weniger Fehler und kann vertrauensvoller arbeiten.\", \"signal\": \"gap\"}}",
+          "event": {
+            "ts": 1787934377.720414,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Modelle zuverlässiger machen",
+              "why": "Viele Modelle liefern falsche Ergebnisse. Wenn die Modelle besser werden, macht das System weniger Fehler und kann vertrauensvoller arbeiten.",
+              "signal": "gap"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934377.720558, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Gelerntes Wissen aktuell halten\", \"why\": \"Es liegen viele alte Erinnerungen und Fakten vor, die möglicherweise nicht mehr stimmen. Aktuelles Wissen sorgt für bessere Entscheidungen in der Zukunft.\", \"signal\": \"stale\"}}",
+          "event": {
+            "ts": 1787934377.720558,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Gelerntes Wissen aktuell halten",
+              "why": "Es liegen viele alte Erinnerungen und Fakten vor, die möglicherweise nicht mehr stimmen. Aktuelles Wissen sorgt für bessere Entscheidungen in der Zukunft.",
+              "signal": "stale"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934381.3853698, \"kind\": \"reflex_used\", \"payload\": {\"goal\": \"Simulationen öfter echt anwenden\", \"tool\": \"simulationen-in-echtes-handeln-übersetze.py\", \"ok\": true}}",
+          "event": {
+            "ts": 1787934381.3853698,
+            "kind": "reflex_used",
+            "payload": {
+              "goal": "Simulationen öfter echt anwenden",
+              "tool": "simulationen-in-echtes-handeln-übersetze.py",
+              "ok": true
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934381.7347705, \"kind\": \"act_done\", \"payload\": {\"goal_title\": \"Simulationen öfter echt anwenden\", \"score\": null, \"converged\": true, \"mode\": \"reflex\"}}",
+          "event": {
+            "ts": 1787934381.7347705,
+            "kind": "act_done",
+            "payload": {
+              "goal_title": "Simulationen öfter echt anwenden",
+              "score": null,
+              "converged": true,
+              "mode": "reflex"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934958.1131003, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Implement a circuit-breaker that excludes models after 3 consecutive 429/502 errors within a 60-second sliding window and auto-re-evaluates after a 5-minute cooldown.\"}}",
+          "event": {
+            "ts": 1787934958.1131003,
+            "kind": "skill_proposal",
+            "payload": {
+              "proposal": "Implement a circuit-breaker that excludes models after 3 consecutive 429/502 errors within a 60-second sliding window and auto-re-evaluates after a 5-minute cooldown."
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934971.5128398, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Modell-Fehlerhäufigkeit reduzieren\", \"why\": \"Das System macht oft Fehler bei Vorhersagen. Wenn es diese Fehler weniger macht, wird es insgesamt besser und kann zuverlässiger helfen.\", \"signal\": \"failure\"}}",
+          "event": {
+            "ts": 1787934971.5128398,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Modell-Fehlerhäufigkeit reduzieren",
+              "why": "Das System macht oft Fehler bei Vorhersagen. Wenn es diese Fehler weniger macht, wird es insgesamt besser und kann zuverlässiger helfen.",
+              "signal": "failure"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934971.5129175, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Neue Fähigkeiten aktiv vorschlagen\", \"why\": \"Das System schlägt nur selten neue Fähigkeiten vor. Wenn es kreativer wird, kann es sich weiterentwickeln und neue Aufgaben lösen.\", \"signal\": \"stale\"}}",
+          "event": {
+            "ts": 1787934971.5129175,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Neue Fähigkeiten aktiv vorschlagen",
+              "why": "Das System schlägt nur selten neue Fähigkeiten vor. Wenn es kreativer wird, kann es sich weiterentwickeln und neue Aufgaben lösen.",
+              "signal": "stale"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934971.5129864, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Ziele konsequent umsetzen und lernen\", \"why\": \"Das System hat viele alte Ziele, die nie fertig wurden. Wenn es diese abschließt, wird es klüger und behält den Überblick.\", \"signal\": \"stale\"}}",
+          "event": {
+            "ts": 1787934971.5129864,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Ziele konsequent umsetzen und lernen",
+              "why": "Das System hat viele alte Ziele, die nie fertig wurden. Wenn es diese abschließt, wird es klüger und behält den Überblick.",
+              "signal": "stale"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934974.7824497, \"kind\": \"reflex_used\", \"payload\": {\"goal\": \"Traumlernen mit Handeln verbinden\", \"tool\": \"simulationen-in-echtes-handeln-übersetze.py\", \"ok\": true}}",
+          "event": {
+            "ts": 1787934974.7824497,
+            "kind": "reflex_used",
+            "payload": {
+              "goal": "Traumlernen mit Handeln verbinden",
+              "tool": "simulationen-in-echtes-handeln-übersetze.py",
+              "ok": true
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934975.2989264, \"kind\": \"act_done\", \"payload\": {\"goal_title\": \"Traumlernen mit Handeln verbinden\", \"score\": null, \"converged\": true, \"mode\": \"reflex\"}}",
+          "event": {
+            "ts": 1787934975.2989264,
+            "kind": "act_done",
+            "payload": {
+              "goal_title": "Traumlernen mit Handeln verbinden",
+              "score": null,
+              "converged": true,
+              "mode": "reflex"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935444.2556376, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Implement a circuit-breaker that excludes models after 3 consecutive 429/502 errors within a 60s sliding window and auto-re-evaluates after 5min cooldown.\"}}",
+          "event": {
+            "ts": 1787935444.2556376,
+            "kind": "skill_proposal",
+            "payload": {
+              "proposal": "Implement a circuit-breaker that excludes models after 3 consecutive 429/502 errors within a 60s sliding window and auto-re-evaluates after 5min cooldown."
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935456.203871, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Bessere Modelle durch Simulation\", \"why\": \"Viele Modelle schlagen fehl. Indem ich mehr Simulationen laufe, lerne ich, wie Dinge wirklich funktionieren, und verbessere meine Entscheidungen.\", \"signal\": \"failure\"}}",
+          "event": {
+            "ts": 1787935456.203871,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Bessere Modelle durch Simulation",
+              "why": "Viele Modelle schlagen fehl. Indem ich mehr Simulationen laufe, lerne ich, wie Dinge wirklich funktionieren, und verbessere meine Entscheidungen.",
+              "signal": "failure"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935456.2039444, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Alte Erinnerungen aktualisieren\", \"why\": \"Einige Erinnerungen sind veraltet und bringen mich irre. Ich muss sie pruefen und neu sortieren, damit ich klarer denke.\", \"signal\": \"stale\"}}",
+          "event": {
+            "ts": 1787935456.2039444,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Alte Erinnerungen aktualisieren",
+              "why": "Einige Erinnerungen sind veraltet und bringen mich irre. Ich muss sie pruefen und neu sortieren, damit ich klarer denke.",
+              "signal": "stale"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935456.2040064, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Neue Faehigkeiten mit anderen kombinieren\", \"why\": \"Ich habe viele Vorschläge für neue Faehigkeiten, aber sie alleine helfen wenig. Wenn ich sie mit anderen verbinde, entstehen maechtige neue Strategien.\", \"signal\": \"combination\"}}",
+          "event": {
+            "ts": 1787935456.2040064,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Neue Faehigkeiten mit anderen kombinieren",
+              "why": "Ich habe viele Vorschläge für neue Faehigkeiten, aber sie alleine helfen wenig. Wenn ich sie mit anderen verbinde, entstehen maechtige neue Strategien.",
+              "signal": "combination"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935458.45638, \"kind\": \"reflex_used\", \"payload\": {\"goal\": \"Vorgeschlagene Fähigkeiten testen und nutzen\", \"tool\": \"alte-erinnerungen-auf-wert-prüfen.py\", \"ok\": false}}",
+          "event": {
+            "ts": 1787935458.45638,
+            "kind": "reflex_used",
+            "payload": {
+              "goal": "Vorgeschlagene Fähigkeiten testen und nutzen",
+              "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+              "ok": false
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935459.961118, \"kind\": \"swarm_started\", \"payload\": {\"goal\": \"Vorgeschlagene Fähigkeiten testen und nutzen\"}}",
+          "event": {
+            "ts": 1787935459.961118,
+            "kind": "swarm_started",
+            "payload": {
+              "goal": "Vorgeschlagene Fähigkeiten testen und nutzen"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935482.7070186, \"kind\": \"recall\", \"payload\": {\"keys\": [\"last_swarm_goal\"]}}",
+          "event": {
+            "ts": 1787935482.7070186,
+            "kind": "recall",
+            "payload": {
+              "keys": [
+                "last_swarm_goal"
+              ]
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935524.4698384, \"kind\": \"simulation\", \"payload\": {\"goal\": \"Vorgeschlagene Fähigkeiten testen und nutzen\", \"verdict\": \"go\", \"risks\": 3, \"revisions\": 2}}",
+          "event": {
+            "ts": 1787935524.4698384,
+            "kind": "simulation",
+            "payload": {
+              "goal": "Vorgeschlagene Fähigkeiten testen und nutzen",
+              "verdict": "go",
+              "risks": 3,
+              "revisions": 2
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935948.1323447, \"kind\": \"tor\", \"payload\": {\"goal\": \"Vorgeschlagene Fähigkeiten testen und nutzen\", \"gruen\": true, \"grund\": \"Artefakt laeuft (236 Zeilen Python)\", \"zyklus\": 1}}",
+          "event": {
+            "ts": 1787935948.1323447,
+            "kind": "tor",
+            "payload": {
+              "goal": "Vorgeschlagene Fähigkeiten testen und nutzen",
+              "gruen": true,
+              "grund": "Artefakt laeuft (236 Zeilen Python)",
+              "zyklus": 1
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935961.8607666, \"kind\": \"calibration\", \"payload\": {\"goal\": \"Vorgeschlagene Fähigkeiten testen und nutzen\", \"predicted\": 3, \"actual\": 6, \"abs_error\": 3}}",
+          "event": {
+            "ts": 1787935961.8607666,
+            "kind": "calibration",
+            "payload": {
+              "goal": "Vorgeschlagene Fähigkeiten testen und nutzen",
+              "predicted": 3,
+              "actual": 6,
+              "abs_error": 3
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935961.861353, \"kind\": \"bahnen\", \"payload\": {\"goal\": \"Vorgeschlagene Fähigkeiten testen und nutzen\", \"delta\": 0.0, \"kanten\": 0, \"hat_code\": true, \"score\": 6, \"abgerufen\": 9, \"ids\": [\"e:88513c916cfe\", \"e:7bb2963a4cb9\", \"e:42b336df33a5\", \"e:3fa8a0498090\", \"f:eaecb29f836e\", \"f:1de710f3e1fc\", \"f:da5e9c82d7e4\", \"f:ff4a3de53666\", \"f:660d242deba8\"], \"ziel_id\": \"g:817ff3b1634a\"}}",
+          "event": {
+            "ts": 1787935961.861353,
+            "kind": "bahnen",
+            "payload": {
+              "goal": "Vorgeschlagene Fähigkeiten testen und nutzen",
+              "delta": 0.0,
+              "kanten": 0,
+              "hat_code": true,
+              "score": 6,
+              "abgerufen": 9,
+              "ids": [
+                "e:88513c916cfe",
+                "e:7bb2963a4cb9",
+                "e:42b336df33a5",
+                "e:3fa8a0498090",
+                "f:eaecb29f836e",
+                "f:1de710f3e1fc",
+                "f:da5e9c82d7e4",
+                "f:ff4a3de53666",
+                "f:660d242deba8"
+              ],
+              "ziel_id": "g:817ff3b1634a"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787936041.349703, \"kind\": \"simulation\", \"payload\": {\"goal\": \"Vorgeschlagene Fähigkeiten testen und nutzen\", \"verdict\": \"revise\", \"risks\": 5, \"revisions\": 5}}",
+          "event": {
+            "ts": 1787936041.349703,
+            "kind": "simulation",
+            "payload": {
+              "goal": "Vorgeschlagene Fähigkeiten testen und nutzen",
+              "verdict": "revise",
+              "risks": 5,
+              "revisions": 5
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787936041.3501647, \"kind\": \"act_done\", \"payload\": {\"goal_title\": \"Vorgeschlagene Fähigkeiten testen und nutzen\", \"score\": 6, \"converged\": false}}",
+          "event": {
+            "ts": 1787936041.3501647,
+            "kind": "act_done",
+            "payload": {
+              "goal_title": "Vorgeschlagene Fähigkeiten testen und nutzen",
+              "score": 6,
+              "converged": false
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787939723.7963514, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Implement a model health monitor with circuit-breaker pattern: exclude models after 3 consecutive 429/502 errors in 60s, auto-re-evaluate after 5min cooldown.\"}}",
+          "event": {
+            "ts": 1787939723.7963514,
+            "kind": "skill_proposal",
+            "payload": {
+              "proposal": "Implement a model health monitor with circuit-breaker pattern: exclude models after 3 consecutive 429/502 errors in 60s, auto-re-evaluate after 5min cooldown."
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787939738.9272568, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Fehleranalyse und Modellverbesserung\", \"why\": \"Viele Modelle schlagen fehl. Ich muss verstehen, warum, und sie korrigieren, damit ich besser denke und handle.\", \"signal\": \"failure\"}}",
+          "event": {
+            "ts": 1787939738.9272568,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Fehleranalyse und Modellverbesserung",
+              "why": "Viele Modelle schlagen fehl. Ich muss verstehen, warum, und sie korrigieren, damit ich besser denke und handle.",
+              "signal": "failure"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787939738.9273634, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Neue Fähigkeiten aktiv entwickeln\", \"why\": \"Es gibt Vorschläge für nützliche Fähigkeiten, die ich noch nicht habe. Ich sollte sie testen und nutzen, um meine Fähigkeiten zu erweitern.\", \"signal\": \"combination\"}}",
+          "event": {
+            "ts": 1787939738.9273634,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Neue Fähigkeiten aktiv entwickeln",
+              "why": "Es gibt Vorschläge für nützliche Fähigkeiten, die ich noch nicht habe. Ich sollte sie testen und nutzen, um meine Fähigkeiten zu erweitern.",
+              "signal": "combination"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787939738.9274642, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Ziele neu ausrichten und speichern\", \"why\": \"Meine letzten Ziele sind veraltet. Ich muss neue, passende Ziele setzen, damit ich weiterkomme.\", \"signal\": \"stale\"}}",
+          "event": {
+            "ts": 1787939738.9274642,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Ziele neu ausrichten und speichern",
+              "why": "Meine letzten Ziele sind veraltet. Ich muss neue, passende Ziele setzen, damit ich weiterkomme.",
+              "signal": "stale"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787939741.651406, \"kind\": \"reflex_used\", \"payload\": {\"goal\": \"Vorgeschlagene Fertigkeiten verfeinern und anwenden\", \"tool\": \"fertigkeiten-wirklich-ausprobieren-nicht.py\", \"ok\": true}}",
+          "event": {
+            "ts": 1787939741.651406,
+            "kind": "reflex_used",
+            "payload": {
+              "goal": "Vorgeschlagene Fertigkeiten verfeinern und anwenden",
+              "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+              "ok": true
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787939742.4165952, \"kind\": \"act_done\", \"payload\": {\"goal_title\": \"Vorgeschlagene Fertigkeiten verfeinern und anwenden\", \"score\": null, \"converged\": true, \"mode\": \"reflex\"}}",
+          "event": {
+            "ts": 1787939742.4165952,
+            "kind": "act_done",
+            "payload": {
+              "goal_title": "Vorgeschlagene Fertigkeiten verfeinern und anwenden",
+              "score": null,
+              "converged": true,
+              "mode": "reflex"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940205.80731, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Modell-Fehler reduzieren und Zuverlässigkeit steigern\", \"why\": \"Das Modell macht zu viele Fehler. Wir müssen es stabiler machen, damit es verlässlich arbeitet.\", \"signal\": \"failure\"}}",
+          "event": {
+            "ts": 1787940205.80731,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Modell-Fehler reduzieren und Zuverlässigkeit steigern",
+              "why": "Das Modell macht zu viele Fehler. Wir müssen es stabiler machen, damit es verlässlich arbeitet.",
+              "signal": "failure"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940205.8075047, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Neue klare Ziele für das System setzen\", \"why\": \"Es gibt keine offenen Ziele mehr. Das System braucht neue Aufgaben, um weiterzulernen.\", \"signal\": \"gap\"}}",
+          "event": {
+            "ts": 1787940205.8075047,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Neue klare Ziele für das System setzen",
+              "why": "Es gibt keine offenen Ziele mehr. Das System braucht neue Aufgaben, um weiterzulernen.",
+              "signal": "gap"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940208.1190805, \"kind\": \"reflex_used\", \"payload\": {\"goal\": \"Fertigkeiten durch Träume prüfen und festigen\", \"tool\": \"alte-erinnerungen-auf-wert-prüfen.py\", \"ok\": false}}",
+          "event": {
+            "ts": 1787940208.1190805,
+            "kind": "reflex_used",
+            "payload": {
+              "goal": "Fertigkeiten durch Träume prüfen und festigen",
+              "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+              "ok": false
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940209.676658, \"kind\": \"swarm_started\", \"payload\": {\"goal\": \"Fertigkeiten durch Träume prüfen und festigen\"}}",
+          "event": {
+            "ts": 1787940209.676658,
+            "kind": "swarm_started",
+            "payload": {
+              "goal": "Fertigkeiten durch Träume prüfen und festigen"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940233.1506443, \"kind\": \"recall\", \"payload\": {\"keys\": [\"last_swarm_goal\"]}}",
+          "event": {
+            "ts": 1787940233.1506443,
+            "kind": "recall",
+            "payload": {
+              "keys": [
+                "last_swarm_goal"
+              ]
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940458.170615, \"kind\": \"simulation\", \"payload\": {\"goal\": \"Fertigkeiten durch Träume prüfen und festigen\", \"verdict\": \"revise\", \"risks\": 3, \"revisions\": 3}}",
+          "event": {
+            "ts": 1787940458.170615,
+            "kind": "simulation",
+            "payload": {
+              "goal": "Fertigkeiten durch Träume prüfen und festigen",
+              "verdict": "revise",
+              "risks": 3,
+              "revisions": 3
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940691.0311902, \"kind\": \"tor\", \"payload\": {\"goal\": \"Fertigkeiten durch Träume prüfen und festigen\", \"gruen\": false, \"grund\": \"Artefakt laeuft nicht: forbidden pattern: shutdown | Traceback (most recent call last):\\n  File \\\"/workspace/zoetron/data/hands_workspace/action_1787940689376.py\\\", line 23, in\", \"zyklus\": 1}}",
+          "event": {
+            "ts": 1787940691.0311902,
+            "kind": "tor",
+            "payload": {
+              "goal": "Fertigkeiten durch Träume prüfen und festigen",
+              "gruen": false,
+              "grund": "Artefakt laeuft nicht: forbidden pattern: shutdown | Traceback (most recent call last):\n  File \"/workspace/zoetron/data/hands_workspace/action_1787940689376.py\", line 23, in",
+              "zyklus": 1
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940743.5190616, \"kind\": \"calibration\", \"payload\": {\"goal\": \"Fertigkeiten durch Träume prüfen und festigen\", \"predicted\": 1, \"actual\": 1, \"abs_error\": 0}}",
+          "event": {
+            "ts": 1787940743.5190616,
+            "kind": "calibration",
+            "payload": {
+              "goal": "Fertigkeiten durch Träume prüfen und festigen",
+              "predicted": 1,
+              "actual": 1,
+              "abs_error": 0
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940766.6384494, \"kind\": \"bahnen\", \"payload\": {\"goal\": \"Fertigkeiten durch Träume prüfen und festigen\", \"delta\": -0.5, \"kanten\": 0, \"hat_code\": true, \"score\": 1, \"abgerufen\": 9, \"ids\": [\"e:fd241f04b7f8\", \"e:0541c723ec90\", \"e:9d14c454fca0\", \"e:86c34dccdb1a\", \"e:acad7e9eb090\", \"e:332fd4ab49a3\", \"e:6aaf20552d2e\", \"e:05a3afe3f1d4\", \"e:f24695866b89\"], \"ziel_id\": \"g:0ca9dfbd0b1f\"}}",
+          "event": {
+            "ts": 1787940766.6384494,
+            "kind": "bahnen",
+            "payload": {
+              "goal": "Fertigkeiten durch Träume prüfen und festigen",
+              "delta": -0.5,
+              "kanten": 0,
+              "hat_code": true,
+              "score": 1,
+              "abgerufen": 9,
+              "ids": [
+                "e:fd241f04b7f8",
+                "e:0541c723ec90",
+                "e:9d14c454fca0",
+                "e:86c34dccdb1a",
+                "e:acad7e9eb090",
+                "e:332fd4ab49a3",
+                "e:6aaf20552d2e",
+                "e:05a3afe3f1d4",
+                "e:f24695866b89"
+              ],
+              "ziel_id": "g:0ca9dfbd0b1f"
+            }
+          }
+        }
+      ],
+      "extracted_criticisms": [
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787933754.5892308, \"kind\": \"evolution_run\", \"payload\": {\"problem\": \"Previous attempt scored 3/10. Goal: Alte Erinnerungen auf Wert prüfen\\nCritic issues: Script 1 (Alters-Inventur) schreibt\", \"variants\": 3, \"winner_index\": 0, \"scores\": [9, 7, 6]}}",
+          "event": {
+            "ts": 1787933754.5892308,
+            "kind": "evolution_run",
+            "payload": {
+              "problem": "Previous attempt scored 3/10. Goal: Alte Erinnerungen auf Wert prüfen\nCritic issues: Script 1 (Alters-Inventur) schreibt",
+              "variants": 3,
+              "winner_index": 0,
+              "scores": [
+                9,
+                7,
+                6
+              ]
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787933796.969295, \"kind\": \"swarm_finished\", \"payload\": {\"goal\": \"Alte Erinnerungen auf Wert prüfen\", \"score\": 3, \"converged\": false, \"cycles\": 2, \"roles\": {\"planner\": 1, \"builder\": 3, \"critic\": 1}, \"evolved\": true}}",
+          "event": {
+            "ts": 1787933796.969295,
+            "kind": "swarm_finished",
+            "payload": {
+              "goal": "Alte Erinnerungen auf Wert prüfen",
+              "score": 3,
+              "converged": false,
+              "cycles": 2,
+              "roles": {
+                "planner": 1,
+                "builder": 3,
+                "critic": 1
+              },
+              "evolved": true
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787934377.7204938, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Kritiken und Ziele regelmäßig prüfen\", \"why\": \"Die letzte Kritik und die letzten Ziele sind veraltet. Ohne regelmäßige Überprüfung verliert das System den Bezug zu dem, was wirklich wichtig ist.\", \"signal\": \"stale\"}}",
+          "event": {
+            "ts": 1787934377.7204938,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Kritiken und Ziele regelmäßig prüfen",
+              "why": "Die letzte Kritik und die letzten Ziele sind veraltet. Ohne regelmäßige Überprüfung verliert das System den Bezug zu dem, was wirklich wichtig ist.",
+              "signal": "stale"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787935979.308314, \"kind\": \"evolution_run\", \"payload\": {\"problem\": \"Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeiten testen und nutzen\\nCritic issues: Verwendung von eval() zu\", \"variants\": 3, \"winner_index\": 2, \"scores\": [7, 7, 8]}}",
+          "event": {
+            "ts": 1787935979.308314,
+            "kind": "evolution_run",
+            "payload": {
+              "problem": "Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeiten testen und nutzen\nCritic issues: Verwendung von eval() zu",
+              "variants": 3,
+              "winner_index": 2,
+              "scores": [
+                7,
+                7,
+                8
+              ]
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787936041.3499298, \"kind\": \"swarm_finished\", \"payload\": {\"goal\": \"Vorgeschlagene Fähigkeiten testen und nutzen\", \"score\": 6, \"converged\": false, \"cycles\": 2, \"roles\": {\"planner\": 1, \"builder\": 6, \"critic\": 1}, \"evolved\": true}}",
+          "event": {
+            "ts": 1787936041.3499298,
+            "kind": "swarm_finished",
+            "payload": {
+              "goal": "Vorgeschlagene Fähigkeiten testen und nutzen",
+              "score": 6,
+              "converged": false,
+              "cycles": 2,
+              "roles": {
+                "planner": 1,
+                "builder": 6,
+                "critic": 1
+              },
+              "evolved": true
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940205.8074148, \"kind\": \"drive_goal\", \"payload\": {\"title\": \"Veraltete Wissen und Schwarm-Ergebnisse aktualisieren\", \"why\": \"Wichtige Analysen und Kritik sind veraltet. Wir brauchen frische Infos für gute Entscheidungen.\", \"signal\": \"stale\"}}",
+          "event": {
+            "ts": 1787940205.8074148,
+            "kind": "drive_goal",
+            "payload": {
+              "title": "Veraltete Wissen und Schwarm-Ergebnisse aktualisieren",
+              "why": "Wichtige Analysen und Kritik sind veraltet. Wir brauchen frische Infos für gute Entscheidungen.",
+              "signal": "stale"
+            }
+          }
+        },
+        {
+          "source": "events",
+          "content": "{\"ts\": 1787940824.653145, \"kind\": \"evolution_run\", \"payload\": {\"problem\": \"Previous attempt scored 1/10. Goal: Fertigkeiten durch Träume prüfen und festigen\\nCritic issues: Sandbox-Urteil: LAEUFT \", \"variants\": 3, \"winner_index\": 0, \"scores\": [9, 6, 8]}}",
+          "event": {
+            "ts": 1787940824.653145,
+            "kind": "evolution_run",
+            "payload": {
+              "problem": "Previous attempt scored 1/10. Goal: Fertigkeiten durch Träume prüfen und festigen\nCritic issues: Sandbox-Urteil: LAEUFT ",
+              "variants": 3,
+              "winner_index": 0,
+              "scores": [
+                9,
+                6,
+                8
+              ]
+            }
+          }
+        }
+      ],
+      "recommendation": "Re-evaluate stored goals against current criticisms. Prioritize goals with unresolved criticism. Archive obsolete goals.",
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25418,7 +26189,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25430,7 +26201,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25442,7 +26213,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25454,7 +26225,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25466,7 +26237,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25478,7 +26249,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -25490,7 +26261,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -26419,7 +27190,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -27348,7 +28119,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -28285,7 +29056,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -29230,7 +30001,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30199,7 +30970,7 @@
         }
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30209,7 +30980,7 @@
       "population_size": 8,
       "timestamp": "2026-09-03T21:20:43.331352",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30219,7 +30990,7 @@
       "population_size": 8,
       "timestamp": "2026-09-03T21:20:44.714158",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30229,7 +31000,7 @@
       "population_size": 8,
       "timestamp": "2026-09-03T21:22:19.203431",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30242,7 +31013,7 @@
       "artifact_path": "/workspace/zoetron/data",
       "timestamp": 1787746767.440911,
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30255,7 +31026,7 @@
       ],
       "timestamp": 1787746767.7634919,
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30374,7 +31145,7 @@
         "ziel_erreicht": true
       },
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30388,7 +31159,7 @@
       "window_hours": 1,
       "timestamp": "2026-08-30T05:22:33.728735",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30402,7 +31173,7 @@
       "window_hours": 1,
       "timestamp": "2026-08-30T06:52:02.116119",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30416,7 +31187,7 @@
       "window_hours": 1,
       "timestamp": "2026-09-01T17:57:02.315006",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30430,7 +31201,7 @@
       "window_hours": 1,
       "timestamp": "2026-09-02T05:46:15.816414",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30444,7 +31215,7 @@
       "window_hours": 1,
       "timestamp": "2026-09-04T03:40:23.966279",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -30506,7 +31277,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596373Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -31481,8 +32252,8 @@
           "type": "other"
         }
       ],
-      "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 12,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -32457,8 +33228,8 @@
           "type": "other"
         }
       ],
-      "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 12,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -33654,7 +34425,7 @@
         }
       ],
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35081,7 +35852,7 @@
         }
       ],
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35095,7 +35866,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35109,7 +35880,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35123,7 +35894,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35137,7 +35908,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35151,7 +35922,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35165,7 +35936,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35179,7 +35950,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35193,7 +35964,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35207,7 +35978,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35221,7 +35992,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35235,7 +36006,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35249,7 +36020,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35263,7 +36034,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35277,7 +36048,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35291,7 +36062,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35305,7 +36076,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35447,7 +36218,7 @@
         "avg_health_score": 75.8422423103684
       },
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35457,7 +36228,7 @@
       "created_at": "2026-09-03T01:34:06.313460+00:00",
       "cycle_id": "cycle_20260903_013405_1765d6d5",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35485,7 +36256,7 @@
       "created_at": "2026-08-27T11:17:07.536828",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35513,7 +36284,7 @@
       "created_at": "2026-08-27T11:17:07.537230",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35541,7 +36312,7 @@
       "created_at": "2026-08-27T11:17:07.537456",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35569,7 +36340,7 @@
       "created_at": "2026-08-27T11:22:04.954121",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35597,7 +36368,7 @@
       "created_at": "2026-08-27T11:22:04.954482",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35625,7 +36396,7 @@
       "created_at": "2026-08-27T11:22:04.954850",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35653,7 +36424,7 @@
       "created_at": "2026-08-27T18:46:00.179702",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35681,7 +36452,7 @@
       "created_at": "2026-08-27T18:46:00.180070",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35709,7 +36480,7 @@
       "created_at": "2026-08-27T18:46:00.180451",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35737,7 +36508,7 @@
       "created_at": "2026-08-27T18:50:36.394747",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35765,7 +36536,7 @@
       "created_at": "2026-08-27T18:50:36.395312",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35793,7 +36564,7 @@
       "created_at": "2026-08-27T18:50:36.395865",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35821,7 +36592,7 @@
       "created_at": "2026-08-27T21:24:59.148889",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35849,7 +36620,7 @@
       "created_at": "2026-08-27T21:24:59.149328",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35877,7 +36648,7 @@
       "created_at": "2026-08-27T21:24:59.149770",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35905,7 +36676,7 @@
       "created_at": "2026-08-28T05:33:34.588913",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35933,7 +36704,7 @@
       "created_at": "2026-08-28T05:33:34.589330",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35961,7 +36732,7 @@
       "created_at": "2026-08-28T05:33:34.589691",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -35989,7 +36760,7 @@
       "created_at": "2026-08-28T07:06:07.022204",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36017,7 +36788,7 @@
       "created_at": "2026-08-28T07:06:07.022543",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36045,7 +36816,7 @@
       "created_at": "2026-08-28T07:06:07.022734",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36073,7 +36844,7 @@
       "created_at": "2026-08-28T07:07:26.733472",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36101,7 +36872,7 @@
       "created_at": "2026-08-28T07:07:26.733813",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36129,7 +36900,7 @@
       "created_at": "2026-08-28T07:07:26.734034",
       "status": "pending",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36157,7 +36928,7 @@
       "created_at": "2026-08-29T18:29:18.107553",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36185,7 +36956,7 @@
       "created_at": "2026-08-29T18:29:18.107924",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36213,7 +36984,7 @@
       "created_at": "2026-08-29T18:29:18.108282",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36241,7 +37012,7 @@
       "created_at": "2026-08-29T19:13:51.086683",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36269,7 +37040,7 @@
       "created_at": "2026-08-29T19:13:51.087029",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36297,7 +37068,7 @@
       "created_at": "2026-08-29T19:13:51.087242",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36325,7 +37096,7 @@
       "created_at": "2026-08-29T19:14:00.307302",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36353,7 +37124,7 @@
       "created_at": "2026-08-29T19:14:00.307632",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36381,7 +37152,7 @@
       "created_at": "2026-08-29T19:14:00.307835",
       "status": "pending",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36408,8 +37179,8 @@
       "priority": 66,
       "created_at": "2026-08-31T14:46:21.064596",
       "status": "pending",
-      "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 12,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36436,8 +37207,8 @@
       "priority": 49,
       "created_at": "2026-08-31T14:46:21.065002",
       "status": "pending",
-      "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 12,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36464,8 +37235,8 @@
       "priority": 43,
       "created_at": "2026-08-31T14:46:21.065368",
       "status": "pending",
-      "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 12,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36493,7 +37264,7 @@
       "created_at": "2026-09-01T19:16:51.944353",
       "status": "pending",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36521,7 +37292,7 @@
       "created_at": "2026-09-01T19:16:51.944748",
       "status": "pending",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36549,7 +37320,7 @@
       "created_at": "2026-09-01T19:16:51.945162",
       "status": "pending",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36592,7 +37363,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596599Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36604,7 +37375,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596775Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36616,7 +37387,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596999Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36628,7 +37399,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597128Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36640,7 +37411,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597250Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36652,7 +37423,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597363Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36665,7 +37436,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597481Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36678,7 +37449,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597597Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36691,7 +37462,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597710Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36701,7 +37472,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.596867Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36711,7 +37482,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597063Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36721,7 +37492,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597188Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36731,7 +37502,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597305Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36741,7 +37512,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597420Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36751,7 +37522,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597537Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36761,7 +37532,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597652Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36771,7 +37542,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597777Z",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36865,7 +37636,7 @@
         "silent_failure"
       ],
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36959,7 +37730,7 @@
         "silent_failure"
       ],
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36970,7 +37741,7 @@
       "status": "success",
       "timestamp": "2026-08-26T06:09:15.112365",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -36989,7 +37760,7 @@
       },
       "decision": "keep",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37008,7 +37779,7 @@
       },
       "decision": "keep",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37022,8 +37793,8 @@
       "recall": 5,
       "baseline": true,
       "datenquelle": "sys.argv[1]",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37037,8 +37808,8 @@
       "recall": 5,
       "baseline": false,
       "datenquelle": "sys.argv[1]",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37052,8 +37823,8 @@
       "recall": 5,
       "baseline": false,
       "datenquelle": "sys.argv[1]",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37067,8 +37838,8 @@
       "recall": 5,
       "baseline": false,
       "datenquelle": "sys.argv[1]",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37083,7 +37854,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37098,7 +37869,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37112,8 +37883,8 @@
       "recall": 5,
       "baseline": false,
       "datenquelle": "sys.argv[1]",
-      "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 16,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37128,7 +37899,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37143,7 +37914,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37158,7 +37929,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37174,7 +37945,7 @@
         "missing_fields": 15
       },
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37184,7 +37955,7 @@
       "proficiency": 0.6,
       "timestamp": "2026-08-27T20:19:32.101261",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37194,7 +37965,7 @@
       "proficiency": 0.4,
       "timestamp": "2026-08-27T20:19:32.101771",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37204,7 +37975,7 @@
       "proficiency": 0.8,
       "timestamp": "2026-08-27T20:19:32.102146",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37214,7 +37985,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.398396",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37224,7 +37995,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.398916",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37234,7 +38005,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.399398",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37244,7 +38015,7 @@
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.703127",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37254,7 +38025,7 @@
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.703789",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37264,7 +38035,7 @@
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.705225",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37274,7 +38045,7 @@
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.031694",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37284,7 +38055,7 @@
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.032388",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37294,7 +38065,7 @@
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.032791",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37304,7 +38075,7 @@
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.742748",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37314,7 +38085,7 @@
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.743221",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37324,7 +38095,7 @@
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.743623",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37334,7 +38105,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.595259",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37344,7 +38115,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.595807",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37354,7 +38125,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.596302",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37364,7 +38135,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.096694",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37374,7 +38145,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.097190",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37384,7 +38155,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.097561",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37394,7 +38165,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.315389",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37404,7 +38175,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.315931",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37414,7 +38185,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.316504",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37426,7 +38197,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.172699",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37438,7 +38209,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.173200",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37450,7 +38221,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.173576",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37462,7 +38233,7 @@
       "usage_count": 9,
       "timestamp": "2026-09-02T07:06:57.480246",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37474,7 +38245,7 @@
       "usage_count": 9,
       "timestamp": "2026-09-02T07:06:57.480709",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37486,7 +38257,7 @@
       "usage_count": 9,
       "timestamp": "2026-09-02T07:06:57.481106",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37498,7 +38269,7 @@
       "usage_count": 10,
       "timestamp": "2026-09-03T05:32:38.402788",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37510,7 +38281,7 @@
       "usage_count": 10,
       "timestamp": "2026-09-03T05:32:38.403325",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37522,7 +38293,7 @@
       "usage_count": 10,
       "timestamp": "2026-09-03T05:32:38.403713",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37545,7 +38316,7 @@
         "Marktanalyse: Marktanalyse nicht geladen: senses-Organ nicht gefunden"
       ],
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -37651,7 +38422,7 @@
       },
       "timestamp": "2026-08-29T05:20:50.881797",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -38575,8 +39346,8 @@
       },
       "timestamp": 1788106503.6919951,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -39500,8 +40271,8 @@
       },
       "timestamp": 1788106874.6082578,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
-      "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 13,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -40426,7 +41197,7 @@
       "timestamp": 1788204007.2886496,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -41351,7 +42122,7 @@
       "timestamp": 1788260189.2448132,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -42276,7 +43047,7 @@
       "timestamp": 1788398981.2022645,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -43201,7 +43972,7 @@
       "timestamp": 1788405817.824273,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -44126,7 +44897,7 @@
       "timestamp": 1788427054.7820063,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -45051,7 +45822,7 @@
       "timestamp": 1788427627.301946,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -45976,7 +46747,7 @@
       "timestamp": 1788427692.2765813,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -46901,7 +47672,7 @@
       "timestamp": 1788476322.69081,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -46932,8 +47703,8 @@
       "mean": 0.4985106804280543,
       "max": 0.5615306462039242,
       "min": 0.4511184702271502,
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -46964,8 +47735,8 @@
       "mean": 0.4325543124184104,
       "max": 0.48158445813285994,
       "min": 0.3648959317837833,
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -46996,8 +47767,8 @@
       "mean": 0.44048169942085286,
       "max": 0.48827620793494436,
       "min": 0.3777743589332794,
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -47028,8 +47799,8 @@
       "mean": 0.45198754517183015,
       "max": 0.4885136925266441,
       "min": 0.38232571599632287,
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     },
     {
@@ -47060,8 +47831,8 @@
       "mean": 0.44301435830908475,
       "max": 0.4885136925266441,
       "min": 0.370869899858136,
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437",
       "_stale": true
     }
   ],
@@ -47079,7 +47850,7 @@
       "timestamp": 1788670722.5027614,
       "ts": 1788670722.5027628,
       "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "timestamp": "2026-09-07T08:56:56.196572",
@@ -47196,7 +47967,7 @@
         ]
       },
       "_audit_age_days": 5,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "timestamp": "2026-09-12T03:27:24.261687",
@@ -47320,7 +48091,7 @@
         }
       ],
       "_audit_age_days": 0,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "timestamp": "2026-09-05T22:44:03.290600",
@@ -47399,7 +48170,7 @@
         "tools_abgelehnt/20260826_113422_alte-traumideen-mit-strategien-verbinden.py.grund.txt"
       ],
       "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "id": 1,
@@ -47409,8 +48180,8 @@
       "is_active": 1,
       "created_at": "2026-09-05T15:44:04.341100",
       "updated_at": "2026-09-05T15:44:04.341100",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "id": 2,
@@ -47420,8 +48191,8 @@
       "is_active": 1,
       "created_at": "2026-09-05T15:44:04.341100",
       "updated_at": "2026-09-05T15:44:04.341100",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "id": 3,
@@ -47431,8 +48202,8 @@
       "is_active": 1,
       "created_at": "2026-09-05T15:44:04.341100",
       "updated_at": "2026-09-05T15:44:04.341100",
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_age_days": 7,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "timestamp": "2026-09-08T12:30:21.003940",
@@ -47445,7 +48216,7 @@
       "error_rate_per_100_events": 0.0,
       "registry_path": "/workspace/zoetron/data/model_errors_registry.json",
       "_audit_age_days": 4,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "status": "completed",
@@ -47513,80 +48284,18 @@
       },
       "final_model": "Model type: LogisticRegression, has_predict: True",
       "_audit_age_days": 0,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
-      "timestamp": "2026-09-05T17:36:51.749340",
-      "data_root": "/workspace/zoetron/data",
-      "used_fallback": false,
-      "memory_store": {
-        "total_events": 50,
-        "total_facts": 50,
-        "market_related_count": 2241
-      },
-      "knowledge_graph": {
-        "total_entities": 0,
-        "total_relations": 0,
-        "market_entities": 0,
-        "market_relations": 0
-      },
-      "semantic_memory": {
-        "total_documents": 0,
-        "total_clusters": 0,
-        "market_documents": 0
-      },
-      "dormant_analysis_steps": [
-        {
-          "id": "step_1",
-          "name": "Wettbewerbsanalyse (Competitor Analysis)",
-          "description": "Systematische Erfassung und Bewertung relevanter Wettbewerber, deren Positionierung, Preismodelle und Alleinstellungsmerkmale.",
-          "status": "brachliegend",
-          "evidence": {
-            "kg_entities": 0,
-            "semantic_docs": 0,
-            "memory_facts": 42
-          },
-          "missing": [
-            "Detaillierte Wettbewerberprofile",
-            "Preisvergleichsmatrix",
-            "SWOT je Wettbewerber"
-          ]
-        },
-        {
-          "id": "step_2",
-          "name": "Zielgruppen-Validierung (Target Audience Validation)",
-          "description": "Validierung der angenommenen Zielgruppen durch Marktdaten, Interview-Ergebnisse und Nutzungsmetriken.",
-          "status": "brachliegend",
-          "evidence": {
-            "kg_entities": 0,
-            "semantic_docs": 0,
-            "memory_facts": 18
-          },
-          "missing": [
-            "Validierte Personas mit Daten",
-            "TAM/SAM/SOM Berechnung",
-            "Entscheidungskriterien je Persona"
-          ]
-        },
-        {
-          "id": "step_3",
-          "name": "Marktgrößen- & Eintrittsbarrieren-Analyse (Market Sizing & Entry Barriers)",
-          "description": "Quantifizierung des adressierbaren Marktes (TAM/SAM/SOM) und Identifikation regulatorischer, technischer und kapitalintensiver Eintrittsbarrieren.",
-          "status": "brachliegend",
-          "evidence": {
-            "kg_entities": 0,
-            "semantic_docs": 0,
-            "memory_facts": 63
-          },
-          "missing": [
-            "TAM/SAM/SOM Zahlen mit Quellen",
-            "Barrieren-Katalog mit Bewertung",
-            "Go/No-Go Kriterien"
-          ]
-        }
-      ],
-      "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "timestamp": "2026-09-12T15:13:19.290707",
+      "version": "f5d55830",
+      "accuracy": 0.0,
+      "model": "/workspace/zoetron/data/model.pkl",
+      "dataset": "/workspace/zoetron/data/validation_result.json",
+      "fallback": false,
+      "num_samples": 1,
+      "_audit_age_days": 0,
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     }
   ],
   "no_timestamp_events_sample": [
@@ -47594,7 +48303,7 @@
       "last_count": 30,
       "earliest_next": 1787355972.2539115,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "tag": "2026-08-24",
@@ -47606,7 +48315,7 @@
       "seit": 0.0,
       "zuletzt_frei": 1787529861.1142402,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "version": 1,
@@ -47635,14 +48344,14 @@
       ],
       "first_boot": "2026-08-23T00:10:46",
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
-      "versatz": 12810082,
+      "versatz": 12916474,
       "finger": "b'[2026-08-25 14:04:55] daemon gestartet (pid 563)\\n[2026-08-25 14:04:55] === HERZSCHLAG BEGINN ===\\n[2026-08-25 14:04:55] p'",
-      "ts": 1789217923.2934802,
+      "ts": 1789233448.8920543,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "title": "Semantic-Knowledge-Graph als Organ einbauen",
@@ -47650,7 +48359,7 @@
       "signal": "gap",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "title": "Semantic-Knowledge-Graph als Organ einbauen (Code-Pflicht)",
@@ -47658,7 +48367,7 @@
       "signal": "failure",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "title": "MemoryStore-Vertragswächter bauen (Contract-Validator)",
@@ -47666,7 +48375,7 @@
       "signal": "gap",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "title": "Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)",
@@ -47677,7 +48386,7 @@
       "_geparkt": true,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
@@ -47688,7 +48397,7 @@
       "_geparkt": false,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     },
     {
       "title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)",
@@ -47699,8 +48408,8 @@
       "_geparkt": true,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-12T13:02:26.506843"
+      "_audit_checked_at": "2026-09-12T17:39:44.229437"
     }
   ],
-  "recommendation": "276 von 90951 Einträgen sind stale (älter als 7 Tage). Diese sollten erneuert werden."
+  "recommendation": "277 von 91597 Einträgen sind stale (älter als 7 Tage). Diese sollten erneuert werden."
 }

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11443 Fakten** · Stand 2026-09-12 17:11 UTC · aktualisiert bei jedem Herzschlag
+**11425 Fakten** · Stand 2026-09-12 17:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7406
-- **swarm_artifact:** 1651
+- **dream:** 7396
+- **swarm_artifact:** 1644
 - **last_swarm_critique:** 911
 - **last_swarm_goal:** 646
 - **anti_pattern:** 369
 - **strategy:** 187
-- **tool:** 154
+- **tool:** 153
 - **hand_result:** 80
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912173836:5:46173b`
+*12.09. 17:38 UTC · Quelle: dream*
+
+Capturing both stdout and stderr in hand_action calls enables better diagnostics and retry logic on non-zero exits.
+
+### `dream:20260912173836:4:8cba2f`
+*12.09. 17:38 UTC · Quelle: dream*
+
+Drive goals that remain unchanged for many cycles become stale and should be automatically refreshed or deprecated.
+
+### `dream:20260912173836:3:7b830f`
+*12.09. 17:38 UTC · Quelle: dream*
+
+Repeated model failures without a circuit breaker lead to cascading errors and wasted cycles.
+
+### `dream:20260912173836:2:cac2a1`
+*12.09. 17:38 UTC · Quelle: dream*
+
+Nvidia provider timeouts reveal upstream slowness, necessitating a per-request timeout and fallback to alternative models.
+
+### `dream:20260912173836:1:8519e7`
+*12.09. 17:38 UTC · Quelle: dream*
+
+Multiple model providers return HTTP 429 errors, indicating rate limiting that requires exponential backoff with jitter.
 
 ### `tool:fehler-im-system-korrigieren`
 *12.09. 17:09 UTC · Quelle: hands*
@@ -42737,86 +42762,6 @@ score=9; issues=Minor: Some contract tests in artifact 1 may fail if organs don'
 *29.08. 17:33 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten öfter umsetzen
-
-### `dream:20260829173256:5:26668d`
-*29.08. 17:32 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack a gated lifecycle (sandbox → shadow → registry), risking half-baked integrations that increase surface area for failures.
-
-### `dream:20260829173256:4:85b0db`
-*29.08. 17:32 UTC · Quelle: dream*
-
-System metabolism stress correlates with cascade failures; halving parallelism and doubling timeouts when stress > 0.8 prevents thundering-herd retries that worsen provider overload.
-
-### `dream:20260829173256:3:f14322`
-*29.08. 17:32 UTC · Quelle: dream*
-
-Upstream 502 errors (Nvidia) and 429 errors (Google, Z.ai) share the same root cause: provider-side capacity exhaustion, which is predictable and can be mitigated with circuit breakers.
-
-### `dream:20260829173256:2:d8ef8d`
-*29.08. 17:32 UTC · Quelle: dream*
-
-A single reliable model (inclusionai/ling-3.0-flash-fin) sustained throughput while all others failed, proving that a primary/fallback hierarchy outperforms naive round-robin.
-
-### `dream:20260829173256:1:16b5ff`
-*29.08. 17:32 UTC · Quelle: dream*
-
-Free-tier models consistently fail under load with 429 rate limits, making them unreliable without a robust routing layer that tracks per-model error rates and respects Retry-After headers.
-
-### `dream:20260829172801:5:582be3`
-*29.08. 17:28 UTC · Quelle: dream*
-
-Structured error logging captures status codes and latency but lacks correlation IDs to trace failures across model hops.
-
-### `dream:20260829172801:4:9f4207`
-*29.08. 17:28 UTC · Quelle: dream*
-
-Drive goals (error reduction, market analysis, skill testing) remain stale because no scheduler converts them into executable work items.
-
-### `dream:20260829172801:3:d09c53`
-*29.08. 17:28 UTC · Quelle: dream*
-
-Model routing succeeds only when a fallback pool exists and retry logic respects Retry-After headers, as shown by the single successful inclusionai call.
-
-### `dream:20260829172801:2:40c392`
-*29.08. 17:28 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack a deployment pipeline; the same circuit-breaker and backoff ideas repeat without implementation.
-
-### `dream:20260829172801:1:3b9ed3`
-*29.08. 17:28 UTC · Quelle: dream*
-
-Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
-
-### `dream:20260829171858:5:056439`
-*29.08. 17:18 UTC · Quelle: dream*
-
-Circuit-breaker patterns with cooldown tracking prevent wasted calls to known-failing endpoints and reduce cascading failure costs.
-
-### `dream:20260829171858:4:44974f`
-*29.08. 17:18 UTC · Quelle: dream*
-
-The reflex mechanism successfully converts proposals into executed actions, validating that the autonomous skill-implementation loop functions end-to-end.
-
-### `dream:20260829171858:3:60fd63`
-*29.08. 17:18 UTC · Quelle: dream*
-
-A persistent gap exists between skill proposal generation and actual implementation, indicating the proposal-to-deployment pipeline is broken.
-
-### `dream:20260829171858:2:048037`
-*29.08. 17:18 UTC · Quelle: dream*
-
-No single model endpoint is reliable enough to complete a task uninterrupted; a multi-model fallback chain is essential for task resilience.
-
-### `dream:20260829171858:1:090af8`
-*29.08. 17:18 UTC · Quelle: dream*
-
-Rate-limit errors (429) are the dominant failure mode across all providers, requiring proactive throttling instead of reactive retry loops.
-
-### `tool:schwarm-orchestrierung-vollständig-aufba`
-*29.08. 17:09 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Schwarm-Orchestrierung vollständig aufbauen'. Datei: data/tools/schwarm-orchestrierung-vollständig-aufba.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *29.08. 17:09 UTC · Quelle: critic*

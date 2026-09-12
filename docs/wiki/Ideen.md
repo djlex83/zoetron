@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 17:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 17:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,8 +28,8 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Capturing both stdout and stderr in hand_action calls enables better diagnostics and retry logic on non-zero exits.
+- Drive goals that remain unchanged for many cycles become stale and should be automatically refreshed or deprecated.
+- Repeated model failures without a circuit breaker lead to cascading errors and wasted cycles.
+- Nvidia provider timeouts reveal upstream slowness, necessitating a per-request timeout and fallback to alternative models.
+- Multiple model providers return HTTP 429 errors, indicating rate limiting that requires exponential backoff with jitter.
 - System stress is at maximum (1.0) with 'conserve' metabolism, limiting corrective action capacity.
 - The model-reliability reflex failed because it depended on the same broken models it was trying to fix.
 - Skill proposals are generated during dreams but never promoted to active skills, creating an insight-to-capability gap.
@@ -51,11 +56,6 @@
 - Automatic model blocking after three consecutive failures isolates a provider for 30 minutes, but without health checks it may block a model that is a
 - The only consistently available model (dots‑studio) shows latency varying from 17 s to 43 s, so routing decisions must incorporate real‑time latency, 
 - Google and Nvidia providers repeatedly return 429 and 502 errors, indicating per‑provider rate limits and upstream overload that must be detected and 
-- The dream replay combined with a swarm optimization goal produced a novel connection, showing that cross-module memory reuse can generate new strategi
-- A single prune_run removed 14 facts and 58 events, confirming that periodic cleanup prevents stale data accumulation.
-- The nvidia/nemotron-3-ultra-550b-a55b:free model timed out, suggesting shorter timeouts and smaller payloads are needed.
-- dots-studio/dots-3-note-preview:free consistently responded within 16–21 s, making it a reliable fallback when other models fail.
-- The frequent HTTP 429 errors from multiple Google models indicate a shared rate-limit that must be handled with exponential backoff and jitter.
 
 ---
 
