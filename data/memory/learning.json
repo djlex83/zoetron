@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-12 22:21:56",
+ "stand": "2026-09-12 22:31:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -76,6 +76,12 @@
   },
   {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -187,12 +193,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "simulationen-in-die-praxis-umsetzen.py",

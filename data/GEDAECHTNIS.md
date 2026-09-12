@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11387 Fakten** · Stand 2026-09-12 22:23 UTC · aktualisiert bei jedem Herzschlag
+**11392 Fakten** · Stand 2026-09-12 22:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7341
+- **dream:** 7346
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 917
 - **last_swarm_goal:** 652
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912223109:5:da2ddc`
+*12.09. 22:31 UTC · Quelle: dream*
+
+A calibration abs_error of 1 on a 5–6 count suggests low-count predictions need wider intervals to reduce systematic underestimation.
+
+### `dream:20260912223109:4:97a7c8`
+*12.09. 22:31 UTC · Quelle: dream*
+
+Pruning 62 events in a single cycle risks severing causal chains that future consolidation passes need to reconstruct.
+
+### `dream:20260912223109:3:f75a14`
+*12.09. 22:31 UTC · Quelle: dream*
+
+Three simulation revisions with 3 unresolved risks indicates the simulation→act loop lacks a hard closure gate that blocks act_done on open risks.
+
+### `dream:20260912223109:2:c03b47`
+*12.09. 22:31 UTC · Quelle: dream*
+
+Evolution raised the score from 6 to 9 but still failed to converge, proving that score improvement alone is an insufficient convergence signal.
+
+### `dream:20260912223109:1:c21214`
+*12.09. 22:31 UTC · Quelle: dream*
+
+Google Gemma endpoints trigger 429 rate limits more aggressively than other providers, requiring per-provider throttle budgets rather than uniform retry logic.
 
 ### `tool:simulationen-besser-in-praxis-nutzen`
 *12.09. 22:21 UTC · Quelle: hands*

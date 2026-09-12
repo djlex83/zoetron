@@ -43626,3 +43626,21 @@
 {"ts": 1788041279.5037878, "key": "strategy:doppelte_arbeit_vermeiden", "value": "Set-basierte Kanonisierung statt Similaritätsvergleich - Variante 2 (Set-basierte Kanonisierung + MinHash) bietet den besten Kompromiss: Sie löst das fundamentale Problem (brüchiger String-Vergleich) durch einen algorithmisch robusten, s", "source": "evolution"}
 {"ts": 1788041329.1274557, "key": "hand_result:Doppelte Arbeit vermeiden", "value": "{\"ok\": false, \"stderr\": \"\"}", "source": "hands"}
 {"ts": 1788645773.3687394, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788646886.8018916, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788646888.6731873, "kind": "prune_run", "payload": {"facts_pruned": 4, "events_pruned": 94}}
+{"ts": 1788646893.2784562, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788646893.2784534, "schalter_geoeffnet": false}}
+{"ts": 1788646931.036896, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 37.8, "tokens_ein": 1661, "tokens_aus": 1706}}
+{"ts": 1788646931.0374117, "kind": "skill_proposal", "payload": {"proposal": "Implement model router with circuit breaker: on 429/5xx, switch to fallback model, cache successful responses, log latency."}}
+{"ts": 1788646931.0374682, "kind": "skill_proposal", "payload": {"proposal": "Create path resolver skill: normalize all file references to absolute paths using ZOETRON_DATA and sys.argv[1]; verify existence before I/O."}}
+{"ts": 1788646931.0375204, "kind": "skill_proposal", "payload": {"proposal": "Add pre-simulation gate: run ast.parse + pyflakes on generated code; reject artifacts with SyntaxWarning/error before simulation."}}
+{"ts": 1788646931.0375724, "kind": "skill_proposal", "payload": {"proposal": "Build calibration tracker: record (task_type, predicted_effort, actual_effort) tuples; fit simple regression per task_type for future estimates."}}
+{"ts": 1788646931.0376253, "kind": "skill_proposal", "payload": {"proposal": "Encapsulate evolutionary improvement: when artifact score < 5, spawn N=3 variants via prompt mutation, evaluate in parallel, promote winner."}}
+{"ts": 1788646931.0376954, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788646933.5205543, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788646933.5205517, "schalter_geoeffnet": false}}
+{"ts": 1788646947.0688803, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 13.5, "tokens_ein": 502, "tokens_aus": 422}}
+{"ts": 1788646947.0690098, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft (55 Mal). Weniger Fehler bedeuten, dass das System verlässlicher arbeitet.", "signal": "failure"}}
+{"ts": 1788646947.0690784, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Erkenntnisse nutzen", "why": "Es liegen alte Kritiken und Ziele vom Schwarm herum, die noch nie umgesetzt wurden.", "signal": "stale"}}
+{"ts": 1788646947.0691364, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich bauen", "why": "Es gibt 60 Vorschläge für neue Fähigkeiten, aber unklar, ob davon welche wirklich gelernt wurden.", "signal": "gap"}}
+{"ts": 1788646949.6559222, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 9}}
+{"ts": 1788646949.6579013, "kind": "reflex_used", "payload": {"goal": "Veraltete Tests endlich fertigstellen", "tool": "veraltete-marktinfos-aktualisieren.py", "ok": true}}
+{"ts": 1788646950.1010485, "kind": "act_done", "payload": {"goal_title": "Veraltete Tests endlich fertigstellen", "score": null, "converged": true, "mode": "reflex"}}
