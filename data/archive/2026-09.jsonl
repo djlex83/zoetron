@@ -41085,3 +41085,22 @@
 {"ts": 1788587321.994799, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.66, "gelesen": 2}}
 {"ts": 1788587321.9970536, "kind": "reflex_used", "payload": {"goal": "Offene Schwarm-Aufgaben endlich abschließen", "tool": "marktanalyse-endlich-abschließen.py", "ok": true}}
 {"ts": 1788587322.3827705, "kind": "act_done", "payload": {"goal_title": "Offene Schwarm-Aufgaben endlich abschließen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788587822.598658, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788587890.9788268, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788587892.8417625, "kind": "prune_run", "payload": {"facts_pruned": 4, "events_pruned": 1}}
+{"ts": 1788587897.2472022, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788587897.247199, "schalter_geoeffnet": false}}
+{"ts": 1788587928.981994, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.7, "tokens_ein": 1439, "tokens_aus": 972}}
+{"ts": 1788587928.982727, "kind": "skill_proposal", "payload": {"proposal": "Implement token-bucket rate limiters per provider endpoint with proactive backoff before 429 errors."}}
+{"ts": 1788587928.9828074, "kind": "skill_proposal", "payload": {"proposal": "Build a model router with real-time health scoring (success rate, latency p95, error categorization) and automatic failover."}}
+{"ts": 1788587928.9828992, "kind": "skill_proposal", "payload": {"proposal": "Create an automated skill proposal evaluator that scores by impact/effort/risk and auto-implements top proposals via PR generation."}}
+{"ts": 1788587928.9829648, "kind": "skill_proposal", "payload": {"proposal": "Standardize all file operations to resolve paths against ZOETRON_DATA environment variable before access."}}
+{"ts": 1788587928.983046, "kind": "skill_proposal", "payload": {"proposal": "Deploy request hedging: dispatch identical prompts to top-2 models simultaneously and return first successful response within timeout."}}
+{"ts": 1788587928.9831364, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788587931.137884, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788587931.1378813, "schalter_geoeffnet": false}}
+{"ts": 1788587963.5011914, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 32.4, "tokens_ein": 528, "tokens_aus": 944}}
+{"ts": 1788587963.5013397, "kind": "drive_goal", "payload": {"title": "Modell-Fehlerrate deutlich reduzieren", "why": "Das Modell macht fast halb so viele Fehler wie Erfolge. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788587963.5014167, "kind": "drive_goal", "payload": {"title": "Offene Schwarm-Aufgaben zu Ende bringen", "why": "Fünf wichtige Infrastruktur-Aufgaben sind seit langer Zeit unfertig. Sie blockieren neue Fähigkeiten.", "signal": "stale"}}
+{"ts": 1788587963.5014803, "kind": "drive_goal", "payload": {"title": "Lernen aus Fehlern systematisch verbessern", "why": "Viele Lernversuche führen trotzdem zu Fehlern. Das System muss besser aus Fehlern lernen.", "signal": "gap"}}
+{"ts": 1788587966.258004, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.4, "gelesen": 44}}
+{"ts": 1788587966.260238, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Aufgaben endlich abschließen", "tool": "alte-schwarm-arbeiten-abschließen.py", "ok": true}}
+{"ts": 1788587966.6836972, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Aufgaben endlich abschließen", "score": null, "converged": true, "mode": "reflex"}}

@@ -1,13 +1,13 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 05:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 06:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 9×)*
+- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 10×)*
+- Replace fixed 20s hand-action timeout with adaptive deadline: base 20s + 2s per 1000 tokens_in + 5s per extern *(hatte die Idee 5×)*
 - Enforce swarm refresh quality gate: require ≥2 critics, minimum score 8, critic sign-off, and TTL-based stalen *(hatte die Idee 4×)*
-- Replace fixed 20s hand-action timeout with adaptive deadline: base 20s + 2s per 1000 tokens_in + 5s per extern *(hatte die Idee 4×)*
 - Implement exponential-backoff retry with automatic model fallback on 429/502/timeout before marking a call fai *(hatte die Idee 3×)*
 - Build a path-resolver utility that absolutizes all relative paths against ZOETRON_DATA before any hand action. *(hatte die Idee 3×)*
 - Add a pre-flight validator for hand actions: check path existence and data-path alignment before execution. *(hatte die Idee 3×)*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency varies 2x-3x (21s vs 46s) even for same model, requiring EWMA-based selection rather than static preference.
+- Skill proposals accumulate in logs but lack automated validation, versioning, and ownership, leaving improvements unimplemented.
+- Reflexes report converged=true without persisted effectiveness metrics, making convergence unverifiable and potentially premature.
+- Hand_action's fixed 20s timeout and relative-path handling cause flakiness under variable token loads and working-directory changes.
+- Primary model endpoints (Nemotron, Gemma) fail silently with 502/429 while dots-studio fallback consistently succeeds, indicating need for tiered rout
 - Hand actions resolve input paths via fragile env/argv fallbacks without rejecting relative paths or logging the absolute path used, risking silent mis
 - Static prune thresholds (facts/events) ignore growth-rate signals, causing either memory bloat or over-pruning; a PID controller on growth metrics wou
 - Skill proposals accumulate in logs but lack an automated nightly pipeline that tests them against a regression suite and merges successful ones as ver
@@ -51,11 +56,6 @@
 - The surge of unvalidated skill proposals highlights the need for a sandboxed testing harness before integration.
 - Latency exceeding 20 seconds on certain models suggests enforcing a latency SLA with automatic failover to faster endpoints.
 - Repeated 429 and 502 errors from free-tier endpoints indicate that a model router with blacklisting and fallback is essential for reliability.
-- Bahnen retrieval returned 4 edges with delta 0.0 and score 5, showing the knowledge graph connects relevant artifacts but provides no novelty gradient
-- The simulation-revision loop (3 revisions applied) successfully reduced predicted errors from 7 to actual 5, but calibration error of 2 suggests the e
-- Nvidia Nemotron latency varies 12x (11s to 134s) on success, indicating queue-depth-dependent performance that cannot be predicted from historical ave
-- dots-studio/dots-3-note-preview:free shows 100% success rate across 4 calls with latency 22-107s, establishing it as the only dependable free model in
-- Free-tier models exhibit systematic provider-side failures: Nvidia returns 502 overload errors while Google returns 429 rate limits, making them unrel
 
 ---
 
