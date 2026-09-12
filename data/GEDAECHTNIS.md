@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11530 Fakten** · Stand 2026-09-11 23:55 UTC · aktualisiert bei jedem Herzschlag
+**11525 Fakten** · Stand 2026-09-12 00:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7456
+- **dream:** 7451
 - **swarm_artifact:** 1695
 - **last_swarm_critique:** 893
 - **last_swarm_goal:** 628
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912000302:5:6bc8ce`
+*12.09. 00:03 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors even during model-failure bursts, indicating resilience at the organ level.
+
+### `dream:20260912000302:4:85d4d1`
+*12.09. 00:03 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an automated pipeline to convert them into tested, versioned skills.
+
+### `dream:20260912000302:3:0eceb5`
+*12.09. 00:03 UTC · Quelle: dream*
+
+Pruning runs consistently remove ~7 facts and 18-25 events per cycle, risking loss of goal-relevant context.
+
+### `dream:20260912000302:2:e815ab`
+*12.09. 00:03 UTC · Quelle: dream*
+
+Reflex actions successfully converge on stale-knowledge and error-reduction goals without organ errors.
+
+### `dream:20260912000302:1:386def`
+*12.09. 00:03 UTC · Quelle: dream*
+
+Model failures are dominated by rate limits (429) and upstream overloads (502), not model capability gaps.
 
 ### `tool:aktualisiere-swarm-fakten`
 *11.09. 23:53 UTC · Quelle: hands*
@@ -43207,56 +43232,6 @@ Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high
 *29.08. 00:03 UTC · Quelle: dream*
 
 Free-tier model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for any production path without enforced cooldown and circuit-breaker logic.
-
-### `dream:20260828235811:5:6a0c39`
-*28.08. 23:58 UTC · Quelle: dream*
-
-Stale analysis artifacts persist because cleanup is not triggered by age or quality thresholds.
-
-### `dream:20260828235811:4:51f4a7`
-*28.08. 23:58 UTC · Quelle: dream*
-
-Latency variance (8.8–34.6 s) for the same model indicates missing request-level timeouts and tier-based routing.
-
-### `dream:20260828235811:3:2f3f0d`
-*28.08. 23:58 UTC · Quelle: dream*
-
-Fifty-four skill proposals accumulate without validation; the proposal-to-skill pipeline lacks automated testing and promotion gates.
-
-### `dream:20260828235811:2:ba0e32`
-*28.08. 23:58 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite repeated external model failures, revealing a blind spot between internal health checks and actual service reliability.
-
-### `dream:20260828235811:1:9aa4dc`
-*28.08. 23:58 UTC · Quelle: dream*
-
-Free-tier models (z-ai/glm-5.2) consistently fail with 429 rate-limit errors while paid-tier fallback (nvidia/nemotron) succeeds but exceeds 30 s synthesis SLA.
-
-### `dream:20260828235342:5:077776`
-*28.08. 23:53 UTC · Quelle: dream*
-
-Fifty-four skill proposals accumulate without a validation pipeline, leaving high-value proposals (router, backoff, gap analyzer) unimplemented and unverified.
-
-### `dream:20260828235342:4:633a3e`
-*28.08. 23:53 UTC · Quelle: dream*
-
-Latency on fallback model nvidia/nemotron-3-ultra varies 11.9–44.5 s, violating implicit SLAs and risking timeout cascades without latency-budget guards.
-
-### `dream:20260828235342:3:b7b89d`
-*28.08. 23:53 UTC · Quelle: dream*
-
-Evolutionary swarm cycles (2 cycles, score 5/10) and simulation revisions (5 revisions) fail to converge because convergence criteria are absent and mock senses remain in pipeline artifacts.
-
-### `dream:20260828235342:2:58f229`
-*28.08. 23:53 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while external metrics show 57% model failure rate, exposing a blind spot where internal health checks don't validate external dependency reliability.
-
-### `dream:20260828235342:1:d50283`
-*28.08. 23:53 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free reveal missing per-provider circuit breakers, causing 60 failures versus 45 successes and forcing fallback to higher-latency models.
 
 ### `last_swarm_critique`
 *28.08. 23:40 UTC · Quelle: critic*
