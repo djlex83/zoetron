@@ -41104,3 +41104,22 @@
 {"ts": 1788587966.258004, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.4, "gelesen": 44}}
 {"ts": 1788587966.260238, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Aufgaben endlich abschließen", "tool": "alte-schwarm-arbeiten-abschließen.py", "ok": true}}
 {"ts": 1788587966.6836972, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Aufgaben endlich abschließen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788588468.710049, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788588537.6489396, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788588539.274216, "kind": "prune_run", "payload": {"facts_pruned": 1, "events_pruned": 0}}
+{"ts": 1788588543.3626635, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788588543.3626611, "schalter_geoeffnet": false}}
+{"ts": 1788588560.9771993, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 17.6, "tokens_ein": 1718, "tokens_aus": 1132}}
+{"ts": 1788588560.9777057, "kind": "skill_proposal", "payload": {"proposal": "Build model router with health checks that auto-switches on 429 errors and logs latency tradeoffs."}}
+{"ts": 1788588560.977773, "kind": "skill_proposal", "payload": {"proposal": "Create path_resolver utility that expands all relative paths against ZOETRON_DATA and argv[1] before I/O."}}
+{"ts": 1788588560.977835, "kind": "skill_proposal", "payload": {"proposal": "Add artifact pre-flight validator that runs syntax check and import test before execution."}}
+{"ts": 1788588560.9778886, "kind": "skill_proposal", "payload": {"proposal": "Recalibrate effort estimator using rolling window of actual vs predicted metrics per task type."}}
+{"ts": 1788588560.9779408, "kind": "skill_proposal", "payload": {"proposal": "Implement conserve-mode scheduler that ranks tasks by criticality and defers low-priority work."}}
+{"ts": 1788588560.977995, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788588563.0890174, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788588563.0890143, "schalter_geoeffnet": false}}
+{"ts": 1788588581.814794, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.7, "tokens_ein": 536, "tokens_aus": 364}}
+{"ts": 1788588581.8149376, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht fast mehr Fehler als Erfolge. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788588581.8150125, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten umsetzen", "why": "Es liegen 60 Skill-Vorschläge vor. Die besten davon in echte Fähigkeiten zu verwandeln, erweitert das Können.", "signal": "gap"}}
+{"ts": 1788588581.8150759, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Aufgaben abschließen", "why": "Fünf technische Vorhaben sind seit langem offen. Ihr Abschluss schafft stabile Grundlagen für Neues.", "signal": "stale"}}
+{"ts": 1788588586.0633295, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.85, "gelesen": 2}}
+{"ts": 1788588586.06597, "kind": "reflex_used", "payload": {"goal": "Skill-Prüfung endlich fertigstellen", "tool": "marktanalyse-endlich-abschließen.py", "ok": true}}
+{"ts": 1788588586.4539227, "kind": "act_done", "payload": {"goal_title": "Skill-Prüfung endlich fertigstellen", "score": null, "converged": true, "mode": "reflex"}}

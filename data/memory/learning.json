@@ -1,21 +1,21 @@
 {
- "stand": "2026-09-12 06:04:31",
+ "stand": "2026-09-12 06:14:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "laeufe": 7,
+   "erfolge": 7,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0

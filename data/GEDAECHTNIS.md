@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11476 Fakten** · Stand 2026-09-12 06:06 UTC · aktualisiert bei jedem Herzschlag
+**11481 Fakten** · Stand 2026-09-12 06:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7436
+- **dream:** 7441
 - **swarm_artifact:** 1665
 - **last_swarm_critique:** 899
 - **last_swarm_goal:** 634
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 39
 
 ---
+
+### `dream:20260912061357:5:f46dec`
+*12.09. 06:13 UTC · Quelle: dream*
+
+Swarm knowledge staleness directly correlates with decision quality degradation and requires TTL-based refresh.
+
+### `dream:20260912061357:4:cba79a`
+*12.09. 06:13 UTC · Quelle: dream*
+
+Stress level 1.0 triggers conserve mode that caps parallelism to 3 tasks/1 iteration, starving background consolidation.
+
+### `dream:20260912061357:3:964f2e`
+*12.09. 06:13 UTC · Quelle: dream*
+
+Skill execution pipeline needs pre-flight validation (file existence, permissions, dependencies) before reflex invocation.
+
+### `dream:20260912061357:2:d2e6a7`
+*12.09. 06:13 UTC · Quelle: dream*
+
+All file operations must resolve absolute paths via ZOETRON_DATA environment variable to prevent silent zero-byte reads.
+
+### `dream:20260912061357:1:1531ee`
+*12.09. 06:13 UTC · Quelle: dream*
+
+Model reliability requires tiered routing with circuit breakers and provider-specific fallbacks, not single-model dependence.
 
 ### `dream:20260912060351:5:c324ac`
 *12.09. 06:03 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 06:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 06:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -8,11 +8,6 @@
 - Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 10×)*
 - Replace fixed 20s hand-action timeout with adaptive deadline: base 20s + 2s per 1000 tokens_in + 5s per extern *(hatte die Idee 5×)*
 - Enforce swarm refresh quality gate: require ≥2 critics, minimum score 8, critic sign-off, and TTL-based stalen *(hatte die Idee 4×)*
-- Implement exponential-backoff retry with automatic model fallback on 429/502/timeout before marking a call fai *(hatte die Idee 3×)*
-- Build a path-resolver utility that absolutizes all relative paths against ZOETRON_DATA before any hand action. *(hatte die Idee 3×)*
-- Add a pre-flight validator for hand actions: check path existence and data-path alignment before execution. *(hatte die Idee 3×)*
-- Create a swarm convergence gate requiring minimum 3 critic cycles or 30% dissent threshold before marking conv *(hatte die Idee 3×)*
-- Develop a calibration multiplier module that inflates initial effort estimates by 4-5x for swarm planning. *(hatte die Idee 3×)*
 - model-gateway-health-monitor: rolling-window tracker of per-model success/latency/rate-limit exposing a viable *(hatte die Idee 3×)*
 - circuit-breaker-router: wraps every model call with 429/timeout tripping, failover to next viable model, and a *(hatte die Idee 3×)*
 - Build a model fallback chain that, upon a 429 error, waits with exponential backoff and then tries the next mo *(hatte die Idee 3×)*
@@ -20,6 +15,11 @@
 - Create an input validation step that checks for the existence and readability of all file paths provided in ar *(hatte die Idee 3×)*
 - Develop a dynamic budget allocator that increases the max task and iteration limits when the system detects it *(hatte die Idee 3×)*
 - Set up a failure analysis pipeline that automatically logs and categorizes errors, then uses the findings to u *(hatte die Idee 3×)*
+- Build a health-aware model router that tracks real-time error rates, latency percentiles, and quota remaining  *(hatte die Idee 3×)*
+- Create a sandboxed execution environment that automatically tests proposed skills against replayed failure sce *(hatte die Idee 3×)*
+- Establish an automated promotion pipeline that graduates validated skill proposals into permanent procedures w *(hatte die Idee 3×)*
+- Build a skill activation gate that verifies reflex tool success before marking proposals as deployed, with aut *(hatte die Idee 3×)*
+- Build SkillConversionPipeline: auto-promote approved proposals to implemented skills with CI tests, versioning *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge staleness directly correlates with decision quality degradation and requires TTL-based refresh.
+- Stress level 1.0 triggers conserve mode that caps parallelism to 3 tasks/1 iteration, starving background consolidation.
+- Skill execution pipeline needs pre-flight validation (file existence, permissions, dependencies) before reflex invocation.
+- All file operations must resolve absolute paths via ZOETRON_DATA environment variable to prevent silent zero-byte reads.
+- Model reliability requires tiered routing with circuit breakers and provider-specific fallbacks, not single-model dependence.
 - Model latency varies 2x-3x (21s vs 46s) even for same model, requiring EWMA-based selection rather than static preference.
 - Skill proposals accumulate in logs but lack automated validation, versioning, and ownership, leaving improvements unimplemented.
 - Reflexes report converged=true without persisted effectiveness metrics, making convergence unverifiable and potentially premature.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate in logs but lack an automated nightly pipeline that tests them against a regression suite and merges successful ones as ver
 - Reflexes mark "converged: true" without persisting a numeric effectiveness metric, making convergence unverifiable and regression undetectable.
 - Model endpoint failures (502/429) cascade into task delays because no router performs health probes, success-rate tracking, or 429-aware exponential b
-- Reflex actions converge quickly but depend on external LLM calls, so a local-first execution policy would improve robustness.
-- Aggressive pruning of facts and events reduces memory but may discard useful context, requiring a tiered retention strategy.
-- The surge of unvalidated skill proposals highlights the need for a sandboxed testing harness before integration.
-- Latency exceeding 20 seconds on certain models suggests enforcing a latency SLA with automatic failover to faster endpoints.
-- Repeated 429 and 502 errors from free-tier endpoints indicate that a model router with blacklisting and fallback is essential for reliability.
 
 ---
 
