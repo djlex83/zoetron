@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11403 Fakten** · Stand 2026-09-12 21:32 UTC · aktualisiert bei jedem Herzschlag
+**11388 Fakten** · Stand 2026-09-12 21:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7356
+- **dream:** 7341
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 916
 - **last_swarm_goal:** 651
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260912214019:5:8ce28a`
+*12.09. 21:40 UTC · Quelle: dream*
+
+Swarm goals and facts decay without automated freshness enforcement, requiring manual drive goals to refresh.
+
+### `dream:20260912214019:4:e2d90d`
+*12.09. 21:40 UTC · Quelle: dream*
+
+Simulations produce risks/revisions (5 each) but no evidence they gate execution, creating a simulation-to-action gap.
+
+### `dream:20260912214019:3:90c719`
+*12.09. 21:40 UTC · Quelle: dream*
+
+System stress (0.865) triggers conserve mode that caps retries exactly when model fallback chains need more attempts.
+
+### `dream:20260912214019:2:76e3d3`
+*12.09. 21:40 UTC · Quelle: dream*
+
+Hand_action timeouts return exit=null with no stderr/stdout, making root-cause diagnosis impossible for 20s+ hangs.
+
+### `dream:20260912214019:1:78e571`
+*12.09. 21:40 UTC · Quelle: dream*
+
+Model API instability (502/429 errors, 11-47s latency variance) is the single largest failure source, cascading into reflex failures and drive-goal generation.
 
 ### `tool:veraltete-swarm-ziele-auffrischen`
 *12.09. 21:30 UTC · Quelle: hands*
@@ -42467,106 +42492,6 @@ Proposed skills accumulate as dead weight without a conversion gate that require
 *29.08. 21:45 UTC · Quelle: dream*
 
 External API rate limits (429) are a recurring failure mode that blocks the task pipeline when no fallback model is available.
-
-### `dream:20260829213835:5:93717d`
-*29.08. 21:38 UTC · Quelle: dream*
-
-Calibration predicted 7 vs actual 8 (abs_error 1), showing the scoring model is well-calibrated but could tighten bounds to reduce systematic under-estimation.
-
-### `dream:20260829213835:4:1a3d70`
-*29.08. 21:38 UTC · Quelle: dream*
-
-A persistent proposal-to-implementation gap exists: five concrete skill proposals were generated but none were auto-promoted to staging, indicating no compiler bridges goals to deployed skills.
-
-### `dream:20260829213835:3:dde318`
-*29.08. 21:38 UTC · Quelle: dream*
-
-Fallback model latency reached 41.7s — nearly triple a reasonable budget — because no per-model latency SLO or p95 enforcement exists on fallback paths.
-
-### `dream:20260829213835:2:0d8b80`
-*29.08. 21:38 UTC · Quelle: dream*
-
-The swarm architecture (planner/builder/critic) converged reliably in a single cycle and produced a high-quality artifact (score 8) when the model layer was healthy.
-
-### `dream:20260829213835:1:f37e3e`
-*29.08. 21:38 UTC · Quelle: dream*
-
-Repeated 429 rate-limit errors from z-ai/glm-5.2:free without any circuit breaker caused cascading disruptions, revealing that the system lacks automatic quarantine and failover for unhealthy models.
-
-### `dream:20260829213025:5:8e237c`
-*29.08. 21:30 UTC · Quelle: dream*
-
-There is a persistent gap between abstract skill proposals and concrete actionable goals, requiring an explicit translation step.
-
-### `dream:20260829213025:4:211098`
-*29.08. 21:30 UTC · Quelle: dream*
-
-Under high stress (stress=1.0), the system correctly enters conserve mode with severely limited budget, preventing cascading failures.
-
-### `dream:20260829213025:3:e7f94a`
-*29.08. 21:30 UTC · Quelle: dream*
-
-Tool scripts depending on sys.argv[1] or ZOETRON_DATA fail silently when relative paths are not resolved against the actual data root directory.
-
-### `dream:20260829213025:2:98facc`
-*29.08. 21:30 UTC · Quelle: dream*
-
-The simulation-revision loop (detect risks → revise → re-validate) is a proven procedure that consistently converts failing artifacts into working ones.
-
-### `dream:20260829213025:1:57c3b4`
-*29.08. 21:30 UTC · Quelle: dream*
-
-The free model z-ai/glm-5.2:free is completely unreliable due to persistent 429 rate-limit errors and must be excluded from any critical execution path.
-
-### `dream:20260829212124:5:863887`
-*29.08. 21:21 UTC · Quelle: dream*
-
-The absence of demonstrated automatic failover means a single model's rate-limit error blocks the entire workflow without any recovery mechanism.
-
-### `dream:20260829212124:4:b21e6e`
-*29.08. 21:21 UTC · Quelle: dream*
-
-Working models show latency doubling (11.8s to 26.7s) over successive calls, suggesting resource contention that degrades performance before outright failure.
-
-### `dream:20260829212124:3:77d9e6`
-*29.08. 21:21 UTC · Quelle: dream*
-
-Fifty-five skill proposals have accumulated without any being implemented, exposing a broken ideation-to-execution pipeline where generation consistently outpaces action.
-
-### `dream:20260829212124:2:c0de0b`
-*29.08. 21:21 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while the system experiences repeated model failures and latency degradation, revealing a diagnostic blind spot where API-level failures are not mapped to organ health.
-
-### `dream:20260829212124:1:8025bd`
-*29.08. 21:21 UTC · Quelle: dream*
-
-The z-ai/glm-5.2 model fails repeatedly with 429 errors across consecutive calls, indicating a structural rate-limit ceiling on free tiers rather than transient spikes.
-
-### `dream:20260829211644:5:21ee05`
-*29.08. 21:16 UTC · Quelle: dream*
-
-Self-diagnosis ignores external API health metrics, leaving the system blind to upstream degradation.
-
-### `dream:20260829211644:4:e49a9a`
-*29.08. 21:16 UTC · Quelle: dream*
-
-Reactive error handling dominates; no proactive circuit-breaking or exponential backoff protects external I/O.
-
-### `dream:20260829211644:3:92757f`
-*29.08. 21:16 UTC · Quelle: dream*
-
-Numerous skill proposals exist but remain unimplemented, revealing a gap between diagnosis and execution.
-
-### `dream:20260829211644:2:318545`
-*29.08. 21:16 UTC · Quelle: dream*
-
-Model endpoints exhibit inconsistent availability (404, 429) requiring pre-flight health checks before dispatch.
-
-### `dream:20260829211644:1:3f547c`
-*29.08. 21:16 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple models indicates systemic lack of rate-limit awareness and automatic failover.
 
 ### `last_swarm_critique`
 *29.08. 20:56 UTC · Quelle: critic*

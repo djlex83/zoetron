@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 21:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 21:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,10 +27,10 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 17×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm goals and facts decay without automated freshness enforcement, requiring manual drive goals to refresh.
+- Simulations produce risks/revisions (5 each) but no evidence they gate execution, creating a simulation-to-action gap.
+- System stress (0.865) triggers conserve mode that caps retries exactly when model fallback chains need more attempts.
+- Hand_action timeouts return exit=null with no stderr/stdout, making root-cause diagnosis impossible for 20s+ hangs.
+- Model API instability (502/429 errors, 11-47s latency variance) is the single largest failure source, cascading into reflex failures and drive-goal ge
 - Aggressive event pruning (23 events, 0 facts) discards failure context needed for pattern learning.
 - Swarm knowledge decays without scheduled refresh; the 'stale' drive signal reveals missing automation.
 - Skill proposals accumulate without an execution mechanism—proposal does not equal deployed capability.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (10+ in this session) but none are instantiated, revealing a systemic 'proposal-to-production' gap where ideas never reach 
 - Absence of a global request queue causes simultaneous 429 errors across multiple models, proving that per-model rate limiting is insufficient when sha
 - Nemotron and Gemma models consistently fail under load (502/429) while dots-studio/dots-3-note-preview delivers 3x lower latency with zero errors, mak
-- Pruning removes 10 facts/19 events per cycle yet stale swarm goals persist for months.
-- Simulation-driven revision (5 risks → 5 revisions) converges but consumes 3+ model calls per goal.
-- Hand actions fail with exit codes 1/2 but emit no error payload, making diagnosis impossible.
-- Rate-limited models (gemma) are tried repeatedly before fallback, wasting cycles.
-- Model fallback succeeds but introduces 20-70s latency spikes that stall the action loop.
 
 ---
 
