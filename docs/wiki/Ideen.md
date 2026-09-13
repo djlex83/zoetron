@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance across providers (9.7s vs 25.4s for same model) exceeds acceptable bounds for real-time control loops.
+- Swarm knowledge decays silently; without scheduled re-evaluation, insights older than 30 days become liability rather than asset.
+- Pruning events without preserving causal chains (decision→action→outcome) destroys the evidence needed for future credit assignment.
+- Skill proposals accumulate without execution (65 proposed, 1 tested), creating an illusion of progress while actual capability remains static.
+- Free-tier model providers fail catastrophically under load (502/429 errors), making single-provider reliance a reliability anti-pattern.
 - The evolution run's best variant scoring 9/10 demonstrates that generating multiple candidates and selecting the highest scorer can markedly improve o
 - The swarm's failure to converge despite a 4/10 score points to insufficient critic iterations or weak feedback integration.
 - The calibration over‑prediction by 3 points suggests that confidence scores should be scaled down or recalibrated after each run.
@@ -51,11 +56,6 @@
 - Hand actions fail when using relative paths; all file operations must resolve inputs via ZOETRON_DATA and sys.argv[1] to absolute paths first.
 - Fallback models gemma-4-31b and gemma-4-26b hit 429 rate limits within a single session, requiring rate-limit-aware routing.
 - Primary model nemotron-3-ultra fails frequently with 502 upstream errors, making it unreliable as a default choice.
-- System stress goes unmanaged because no controller throttles task spawns or switches inference modes based on metabolism.
-- Pruning destroys debuggability when causal chains (goal→action→outcome) aren't preserved before leaf removal.
-- Swarm knowledge decays within days without a scheduled critic/analyst refresh cycle tied to prediction error thresholds.
-- Skill proposals accumulate without execution because no automated pipeline validates, deploys, and registers them.
-- Model failures cascade into planning failures because high latency and error rates make simulation unreliable for decision-making.
 
 ---
 

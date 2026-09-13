@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11361 Fakten** · Stand 2026-09-13 07:43 UTC · aktualisiert bei jedem Herzschlag
+**11361 Fakten** · Stand 2026-09-13 07:54 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7276
 - **swarm_artifact:** 1665
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913075124:5:cb31d5`
+*13.09. 07:51 UTC · Quelle: dream*
+
+Latency variance across providers (9.7s vs 25.4s for same model) exceeds acceptable bounds for real-time control loops.
+
+### `dream:20260913075124:4:791ce3`
+*13.09. 07:51 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; without scheduled re-evaluation, insights older than 30 days become liability rather than asset.
+
+### `dream:20260913075124:3:b75d1a`
+*13.09. 07:51 UTC · Quelle: dream*
+
+Pruning events without preserving causal chains (decision→action→outcome) destroys the evidence needed for future credit assignment.
+
+### `dream:20260913075124:2:e33e32`
+*13.09. 07:51 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution (65 proposed, 1 tested), creating an illusion of progress while actual capability remains static.
+
+### `dream:20260913075124:1:ec1a56`
+*13.09. 07:51 UTC · Quelle: dream*
+
+Free-tier model providers fail catastrophically under load (502/429 errors), making single-provider reliance a reliability anti-pattern.
 
 ### `dream:20260913074029:5:89f169`
 *13.09. 07:40 UTC · Quelle: dream*
@@ -42147,31 +42172,6 @@ Model endpoint availability on OpenRouter is unstable — models succeeding once
 *30.08. 07:53 UTC · Quelle: dream*
 
 HTTP 429 rate-limiting is the dominant failure mode across multiple OpenRouter models, requiring exponential backoff and retry logic instead of immediate failover.
-
-### `dream:20260830074700:5:f2eb45`
-*30.08. 07:47 UTC · Quelle: dream*
-
-Signal-driven goals (failure/stale/gap) need a prioritization queue that prevents competing goals from consuming the same scarce retry budget simultaneously.
-
-### `dream:20260830074700:4:8e060e`
-*30.08. 07:47 UTC · Quelle: dream*
-
-Rate-limit errors (429) dominate the failure mode, requiring built-in exponential backoff and request throttling before any retry logic is invoked.
-
-### `dream:20260830074700:3:a63b5e`
-*30.08. 07:47 UTC · Quelle: dream*
-
-Silent tool failures (exit: 1 with null error) indicate missing error capture and diagnostic instrumentation in execution wrappers, making failures un-diagnosable.
-
-### `dream:20260830074700:2:8cb3ca`
-*30.08. 07:47 UTC · Quelle: dream*
-
-Under resource stress (stress=1.0, conserve mode) the system must enforce strict single-task execution with guaranteed success paths rather than parallel retries that exhaust the tiny budget.
-
-### `dream:20260830074700:1:4137b1`
-*30.08. 07:47 UTC · Quelle: dream*
-
-Cascading API failures through a single provider (OpenRouter) mean retry chains without provider diversity will fail together — diversify fallback endpoints across independent providers.
 
 ### `last_swarm_critique`
 *30.08. 06:55 UTC · Quelle: critic*

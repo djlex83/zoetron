@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 07:41:22",
+ "stand": "2026-09-13 07:53:00",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,15 +51,15 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-besser-in-praxis-nutzen.py",
+   "tool": "träume-analysieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktanalyse-auffrischen.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "tool": "simulationen-besser-in-praxis-nutzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -109,12 +109,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "träume-analysieren.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
   },
   {
    "tool": "simulationen-konsequent-anwenden.py",
@@ -223,6 +217,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltete-marktanalyse-auffrischen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
