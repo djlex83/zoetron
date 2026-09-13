@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 16:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 16:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
+- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
@@ -32,15 +32,20 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Ferne Träume kombinieren *(wieder aufgegriffen: 5×)*
-- Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Träume mit Fähigkeiten verbinden *(wieder aufgegriffen: 3×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Regular pruning of facts and events is essential for maintaining system efficiency by removing outdated information that could hinder performance.
+- Reflexes such as 'ferngedächtnisse-verbinden.py' successfully achieve dream combination goals, demonstrating the value of automated tools for knowledg
+- Recurring drive goals for model fixes and data updates suggest that temporary solutions are insufficient without addressing root causes like API limit
+- The dots-studio model has proven to be a stable alternative with acceptable latency and no errors in multiple trials.
+- Google Gemma models on OpenRouter consistently fail with 429 errors due to rate limiting, indicating they are unreliable for critical tasks without fa
 - Exponential backoff with jitter is a proven pattern to mitigate transient rate‑limiting failures.
 - Combining memories from different domains (e.g., old dreams) produces actionable skill proposals.
 - Stale swarm information correlates with decision errors, so periodic refresh is essential.
@@ -51,11 +56,6 @@
 - Successful execution of the group‑goal update reflex demonstrates that automating stale‑goal refresh improves swarm coordination.
 - Timeout errors on the 550b model caused cascading failures, showing the need for per‑request timeouts and graceful degradation.
 - Frequent HTTP 429 errors from multiple models indicate a systemic rate‑limit vulnerability that requires automatic backoff and fallback routing.
-- Hand action timeout with zero bytes read highlights that external commands require explicit timeout and retry logic.
-- The swarm evolved despite not converging, showing that partial progress can still generate useful skill updates.
-- Pruning 77 events without compaction leads to loss of context; converting clusters into durable facts during pruning would preserve memory.
-- The only reliable model exhibits high latency (18-36 s), which may bottleneck the system; load balancing could improve responsiveness.
-- Multiple models fail with timeouts or 429 errors, indicating the need for automatic fallback and rate-limit handling.
 
 ---
 

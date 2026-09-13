@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-13 16:48 UTC · aktualisiert bei jedem Herzschlag
+**11354 Fakten** · Stand 2026-09-13 16:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7298
+- **dream:** 7293
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 934
 - **last_swarm_goal:** 669
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913165530:5:b11002`
+*13.09. 16:55 UTC · Quelle: dream*
+
+Regular pruning of facts and events is essential for maintaining system efficiency by removing outdated information that could hinder performance.
+
+### `dream:20260913165530:4:093175`
+*13.09. 16:55 UTC · Quelle: dream*
+
+Reflexes such as 'ferngedächtnisse-verbinden.py' successfully achieve dream combination goals, demonstrating the value of automated tools for knowledge integration.
+
+### `dream:20260913165530:3:fa6c75`
+*13.09. 16:55 UTC · Quelle: dream*
+
+Recurring drive goals for model fixes and data updates suggest that temporary solutions are insufficient without addressing root causes like API limitations and data staleness.
+
+### `dream:20260913165530:2:58ae35`
+*13.09. 16:55 UTC · Quelle: dream*
+
+The dots-studio model has proven to be a stable alternative with acceptable latency and no errors in multiple trials.
+
+### `dream:20260913165530:1:82ca95`
+*13.09. 16:55 UTC · Quelle: dream*
+
+Google Gemma models on OpenRouter consistently fail with 429 errors due to rate limiting, indicating they are unreliable for critical tasks without fallback mechanisms.
 
 ### `dream:20260913164521:5:68a838`
 *13.09. 16:45 UTC · Quelle: dream*
@@ -42127,56 +42152,6 @@ Primary model (z-ai/glm-5.2) is permanently rate-limited (429), making it unusab
 *30.08. 17:00 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-30 16:57:31 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `dream:20260830165431:5:e2691b`
-*30.08. 16:54 UTC · Quelle: dream*
-
-Skill proposals generated during consolidation (circuit-breaker, token validation, path retry) address real failure modes observed in the same cycle, confirming that self-generated proposals are grounded in actual experience.
-
-### `dream:20260830165431:4:72ae89`
-*30.08. 16:54 UTC · Quelle: dream*
-
-The fallback nvidia/nemotron-3-ultra-550b-a55b:free model succeeds consistently but with high latency (76-125s), suggesting it is a reliable but slow backup that should be used only when primary models are degraded.
-
-### `dream:20260830165431:3:964c8b`
-*30.08. 16:54 UTC · Quelle: dream*
-
-The system enters conserve mode (stress=1.0, max_iterations=1) under load, which caps execution capacity and can stall swarm convergence when multiple goals compete.
-
-### `dream:20260830165431:2:250e93`
-*30.08. 16:54 UTC · Quelle: dream*
-
-Hand-action failures occur when relative file paths are not resolved against sys.argv[1] and ZOETRON_DATA, causing silent zero-byte reads that exit cleanly but produce no data.
-
-### `dream:20260830165431:1:6971aa`
-*30.08. 16:54 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model repeatedly hits 429 rate limits across multiple consecutive calls, indicating a persistent degradation pattern that requires automatic failover rather than retry.
-
-### `dream:20260830164649:5:38bc2e`
-*30.08. 16:46 UTC · Quelle: dream*
-
-Drive goals persist (market analysis, model reliability) without measurable progress signals, indicating missing success criteria and checkpointing.
-
-### `dream:20260830164649:4:7e233f`
-*30.08. 16:46 UTC · Quelle: dream*
-
-Zero pruned facts/events across cycles suggests the retention policy is too conservative, bloating context without improving recall.
-
-### `dream:20260830164649:3:01bd83`
-*30.08. 16:46 UTC · Quelle: dream*
-
-Reflex-mode convergence on skill-implementation goals shows the system can execute procedural knowledge but lacks a mechanism to promote successful reflexes into permanent skills.
-
-### `dream:20260830164649:2:74c86c`
-*30.08. 16:46 UTC · Quelle: dream*
-
-Fallback model latency (46-81s) exceeds acceptable thresholds for interactive loops, making async queuing or cached responses necessary.
-
-### `dream:20260830164649:1:91c949`
-*30.08. 16:46 UTC · Quelle: dream*
-
-Recurring 429 errors from a single provider indicate rate-limit saturation, not transient faults, requiring architectural routing changes rather than retries.
 
 ### `last_swarm_critique`
 *30.08. 16:16 UTC · Quelle: critic*
