@@ -47138,3 +47138,23 @@
 {"ts": 1788732642.8954859, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.17, "gelesen": 313}}
 {"ts": 1788732642.8990202, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten tatsächlich umsetzen und testen", "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py", "ok": true}}
 {"ts": 1788732643.3691308, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten tatsächlich umsetzen und testen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788127984.1025054, "key": "dream:20260830221304:1:d6a802", "value": "Free-tier model APIs exhibit correlated 429/502 failures that cascade into task abandonment unless a router tracks per-model health and auto-demotes flaky endpoints.", "source": "dream"}
+{"ts": 1788127984.102592, "key": "dream:20260830221304:2:6c2415", "value": "Filesystem actions silently fail when inputs aren't normalized against ZOETRON_DATA and sys.argv[1], turning relative paths into zero-byte reads.", "source": "dream"}
+{"ts": 1788127984.1026607, "key": "dream:20260830221304:3:727ddd", "value": "Swarm executions evolve but stall at sub-threshold scores (6/10) because convergence criteria lack a minimum-quality gate, leaving goals perpetually 'in progress'.", "source": "dream"}
+{"ts": 1788127984.102725, "key": "dream:20260830221304:4:8c8c7f", "value": "Thirty-five skill proposals accumulate unimplemented because no metabolic pressure forces promotion from idea to tested tool; the system dreams but doesn't build.", "source": "dream"}
+{"ts": 1788127984.1028135, "key": "dream:20260830221304:5:4a7b3a", "value": "No goal-stack checkpointing exists, so any hard crash during a multi-cycle swarm loses all intermediate progress and requires full restart.", "source": "dream"}
+{"ts": 1788128387.7532136, "key": "dream:20260830221947:1:8328cf", "value": "Rate limiting on primary model (z-ai/glm-5.2:free) causes repeated 429 errors; need automatic fallback with exponential backoff.", "source": "dream"}
+{"ts": 1788128387.7532997, "key": "dream:20260830221947:2:00cecc", "value": "Relative path usage ignores ZOETRON_DATA and sys.argv[1], causing hand actions to read zero files; all file operations must resolve absolute data paths.", "source": "dream"}
+{"ts": 1788128387.753389, "key": "dream:20260830221947:3:9d6c99", "value": "High stress (1.0) triggers conserve mode limiting to 3 tasks and 1 iteration, starving parallel work; task scheduler must adapt concurrency to stress level.", "source": "dream"}
+{"ts": 1788128387.7534597, "key": "dream:20260830221947:4:93aeee", "value": "35 skill proposals remain unimplemented due to missing triage-to-execution pipeline; need a staged funnel: propose → evaluate → prototype → integrate.", "source": "dream"}
+{"ts": 1788128387.7535298, "key": "dream:20260830221947:5:dc4a71", "value": "Stale goals (market analysis) persist without automatic resurfacing; implement a staleness detector that re-prioritizes dormant work.", "source": "dream"}
+{"ts": 1788733141.9104924, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788733210.062436, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788733211.8842688, "kind": "prune_run", "payload": {"facts_pruned": 27, "events_pruned": 41}}
+{"ts": 1788733235.5062902, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 20.0, "tokens_ein": 1254, "tokens_aus": 678}}
+{"ts": 1788733235.5068636, "kind": "skill_proposal", "payload": {"proposal": "ModelRouter with per-provider latency budgets, exponential backoff on 429/502, and automatic fallback chains."}}
+{"ts": 1788733235.5069222, "kind": "skill_proposal", "payload": {"proposal": "SimulationGate requiring mandatory 'go' verdict with ≤2 risks before any skill/artifact deployment."}}
+{"ts": 1788733235.5069847, "kind": "skill_proposal", "payload": {"proposal": "CalibrationTuner running online isotonic regression per critic dimension, retraining every 10 scored artifacts."}}
+{"ts": 1788733235.5070531, "kind": "skill_proposal", "payload": {"proposal": "SwarmKnowledgeRefresher that auto-updates stored goals/critiques after each convergence cycle using fresh simulation feedback."}}
+{"ts": 1788733235.5071077, "kind": "skill_proposal", "payload": {"proposal": "FailurePatternMiner correlating model_fail timestamps with active goals/tools to emit root-cause skill proposals every 5 failures."}}
+{"ts": 1788733235.5071568, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}

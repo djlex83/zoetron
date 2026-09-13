@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11347 Fakten** · Stand 2026-09-13 22:13 UTC · aktualisiert bei jedem Herzschlag
+**11342 Fakten** · Stand 2026-09-13 22:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
+- **dream:** 7283
 - **swarm_artifact:** 1635
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913222125:5:2dc97a`
+*13.09. 22:21 UTC · Quelle: dream*
+
+File-path resolution failures recur across hand_actions, indicating missing canonicalization against ZOETRON_DATA before execution.
+
+### `dream:20260913222125:4:9b079f`
+*13.09. 22:21 UTC · Quelle: dream*
+
+Memory pruning rates fluctuate wildly (9/17 vs 1/53 facts/events) with no observability dashboard to trigger consolidation or capacity upgrades.
+
+### `dream:20260913222125:3:44b4b7`
+*13.09. 22:21 UTC · Quelle: dream*
+
+Reflex tools succeed individually but operate without circuit-breakers or performance auditing, risking silent degradation when dependencies shift.
+
+### `dream:20260913222125:2:084680`
+*13.09. 22:21 UTC · Quelle: dream*
+
+Swarm knowledge and dream outputs accumulate but lack automated refresh/compilation pipelines, causing 60 proposals to stagnate without becoming executable skills.
+
+### `dream:20260913222125:1:d72de2`
+*13.09. 22:21 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit high latency variance (22-43s) and 56/96 failure rate, making predictive routing essential for reliability.
 
 ### `dream:20260913221128:5:a60f6a`
 *13.09. 22:11 UTC · Quelle: dream*
@@ -42062,56 +42087,6 @@ Tools that only produce stdout without return values or filesystem effects are r
 *30.08. 22:25 UTC · Quelle: dream*
 
 Free-tier models exhibit cascading failure modes (429 rate limits → 502 upstream errors) making single-model reliance unreliable.
-
-### `dream:20260830221947:5:dc4a71`
-*30.08. 22:19 UTC · Quelle: dream*
-
-Stale goals (market analysis) persist without automatic resurfacing; implement a staleness detector that re-prioritizes dormant work.
-
-### `dream:20260830221947:4:93aeee`
-*30.08. 22:19 UTC · Quelle: dream*
-
-35 skill proposals remain unimplemented due to missing triage-to-execution pipeline; need a staged funnel: propose → evaluate → prototype → integrate.
-
-### `dream:20260830221947:3:9d6c99`
-*30.08. 22:19 UTC · Quelle: dream*
-
-High stress (1.0) triggers conserve mode limiting to 3 tasks and 1 iteration, starving parallel work; task scheduler must adapt concurrency to stress level.
-
-### `dream:20260830221947:2:00cecc`
-*30.08. 22:19 UTC · Quelle: dream*
-
-Relative path usage ignores ZOETRON_DATA and sys.argv[1], causing hand actions to read zero files; all file operations must resolve absolute data paths.
-
-### `dream:20260830221947:1:8328cf`
-*30.08. 22:19 UTC · Quelle: dream*
-
-Rate limiting on primary model (z-ai/glm-5.2:free) causes repeated 429 errors; need automatic fallback with exponential backoff.
-
-### `dream:20260830221304:5:4a7b3a`
-*30.08. 22:13 UTC · Quelle: dream*
-
-No goal-stack checkpointing exists, so any hard crash during a multi-cycle swarm loses all intermediate progress and requires full restart.
-
-### `dream:20260830221304:4:8c8c7f`
-*30.08. 22:13 UTC · Quelle: dream*
-
-Thirty-five skill proposals accumulate unimplemented because no metabolic pressure forces promotion from idea to tested tool; the system dreams but doesn't build.
-
-### `dream:20260830221304:3:727ddd`
-*30.08. 22:13 UTC · Quelle: dream*
-
-Swarm executions evolve but stall at sub-threshold scores (6/10) because convergence criteria lack a minimum-quality gate, leaving goals perpetually 'in progress'.
-
-### `dream:20260830221304:2:6c2415`
-*30.08. 22:13 UTC · Quelle: dream*
-
-Filesystem actions silently fail when inputs aren't normalized against ZOETRON_DATA and sys.argv[1], turning relative paths into zero-byte reads.
-
-### `dream:20260830221304:1:d6a802`
-*30.08. 22:13 UTC · Quelle: dream*
-
-Free-tier model APIs exhibit correlated 429/502 failures that cascade into task abandonment unless a router tracks per-model health and auto-demotes flaky endpoints.
 
 ### `last_swarm_critique`
 *30.08. 21:41 UTC · Quelle: critic*
