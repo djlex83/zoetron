@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11356 Fakten** · Stand 2026-09-13 06:11 UTC · aktualisiert bei jedem Herzschlag
+**11356 Fakten** · Stand 2026-09-13 06:21 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7286
 - **swarm_artifact:** 1655
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913061856:5:0cf3ed`
+*13.09. 06:18 UTC · Quelle: dream*
+
+Pruning discards causal chains (goal→action→outcome), making post-hoc debugging of failed episodes impossible.
+
+### `dream:20260913061856:4:56be0c`
+*13.09. 06:18 UTC · Quelle: dream*
+
+Swarm goals and critiques go stale without a time- or error-triggered refresh cadence.
+
+### `dream:20260913061856:3:8eac46`
+*13.09. 06:18 UTC · Quelle: dream*
+
+High metabolic stress (0.73) triggers conserve mode that caps tasks/iterations, stalling error-recovery loops.
+
+### `dream:20260913061856:2:06982d`
+*13.09. 06:18 UTC · Quelle: dream*
+
+Hand actions fail when relative paths are used instead of absolute data paths from environment variables.
+
+### `dream:20260913061856:1:8c2eb7`
+*13.09. 06:18 UTC · Quelle: dream*
+
+Rate limiting (429 errors) on free-tier models is the dominant failure mode, requiring provider-aware routing with circuit breakers.
 
 ### `dream:20260913060855:5:58a276`
 *13.09. 06:08 UTC · Quelle: dream*
@@ -42187,31 +42212,6 @@ High latency variance (23–120s) on fallback models makes timeout budgets unrel
 *30.08. 06:20 UTC · Quelle: dream*
 
 Rate-limited models (429 errors) silently stall pipelines unless explicit fallback chains with exponential backoff are enforced.
-
-### `dream:20260830061429:5:9bf9a5`
-*30.08. 06:14 UTC · Quelle: dream*
-
-Evolutionary iteration (3 variants, selection) lifted scores from 1/10 to 8/6/8, proving that generate-critique-revise loops outperform single-shot generation.
-
-### `dream:20260830061429:4:5e2bc7`
-*30.08. 06:14 UTC · Quelle: dream*
-
-Calibration is severely misaligned (predicted 6 vs actual 1), revealing that internal confidence estimates do not reflect true success probability.
-
-### `dream:20260830061429:3:f5ae5f`
-*30.08. 06:14 UTC · Quelle: dream*
-
-Sandbox execution failures are predominantly syntax errors (asyncio.run misuse, pipe operators) rather than logic flaws, indicating a need for pre-execution validation.
-
-### `dream:20260830061429:2:e483c8`
-*30.08. 06:14 UTC · Quelle: dream*
-
-Nemotron-3-ultra succeeds consistently but exhibits extreme latency variance (7–179s), requiring adaptive timeout strategies.
-
-### `dream:20260830061429:1:b9a74e`
-*30.08. 06:14 UTC · Quelle: dream*
-
-Free-tier models (glm-5.2:free) systematically fail with 429 rate-limit errors, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *30.08. 05:31 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 06:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 06:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Deploy provider_aware_router: wraps all model calls, enforces rate limits, fans out concurrent requests to top *(hatte die Idee 4×)*
 - Create causal_chain_pruner: before pruning, extracts decision→action→outcome triples into immutable causal_log *(hatte die Idee 4×)*
 - Schedule swarm_refresh_cycle: weekly cron that re-runs critic/analyst roles on recent experience, merges new i *(hatte die Idee 4×)*
-- Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
 - Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 3×)*
+- Add a configurable circuit breaker that temporarily blocks a model after N consecutive failures. *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -29,18 +29,23 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning discards causal chains (goal→action→outcome), making post-hoc debugging of failed episodes impossible.
+- Swarm goals and critiques go stale without a time- or error-triggered refresh cadence.
+- High metabolic stress (0.73) triggers conserve mode that caps tasks/iterations, stalling error-recovery loops.
+- Hand actions fail when relative paths are used instead of absolute data paths from environment variables.
+- Rate limiting (429 errors) on free-tier models is the dominant failure mode, requiring provider-aware routing with circuit breakers.
 - High system stress correlates with model overload and latency spikes, implying a stress-aware controller that throttles tasks and prioritizes local in
 - Repeated drive goals to update swarm strategy reveal that swarm knowledge becomes stale, requiring periodic refresh cycles.
 - Pruning events without preserving causal links results in loss of decision context, so a causal-chain-aware pruner should be introduced.
@@ -51,11 +56,6 @@
 - Swarm knowledge becomes stale without scheduled refresh cycles, reducing decision accuracy.
 - Model errors persist because there is no automated regression test suite to validate output consistency.
 - The repeated generation of skill proposals without implementation creates a growing backlog of unused capabilities.
-- The system generates numerous skill proposals but struggles with implementation, requiring automated testing and deployment pipelines.
-- Memory pruning without detailed audit trails risks irreversible data loss and complicates recovery.
-- Path-related failures can be eliminated by standardizing path resolution against a base data directory.
-- Recurring issues with token limits and timeouts cause latency spikes, indicating a need for enforced per-call budgets.
-- Model endpoints frequently fail due to overload or rate limiting, necessitating automatic fallback mechanisms to maintain reliability.
 
 ---
 
