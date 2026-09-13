@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-13 02:26:24",
+ "stand": "2026-09-13 02:36:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -37,12 +37,6 @@
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
@@ -213,6 +207,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "automatische-fehler-reduktions-pipeline-.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -229,12 +229,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
@@ -417,7 +411,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.714,
+ "haende_quote": 0.719,
  "simulationen_angewandt": 30,
  "swarm_scores": {
   "n": 36,
@@ -426,8 +420,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 35,
-   "schnitt": 5.57
+   "n": 34,
+   "schnitt": 5.59
   },
   "bau": {
    "n": 1,

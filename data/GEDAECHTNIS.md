@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11397 Fakten** · Stand 2026-09-13 02:28 UTC · aktualisiert bei jedem Herzschlag
+**11392 Fakten** · Stand 2026-09-13 02:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7326
+- **dream:** 7321
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 923
 - **last_swarm_goal:** 658
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913023624:5:3001c3`
+*13.09. 02:36 UTC · Quelle: dream*
+
+Event pruning is effective, but fact pruning was not triggered, which may indicate that facts are either well-managed or that the pruning criteria are too strict.
+
+### `dream:20260913023624:4:a010bf`
+*13.09. 02:36 UTC · Quelle: dream*
+
+Hand actions are generally reliable but may not always capture all intended outputs, suggesting that success criteria should be more comprehensive.
+
+### `dream:20260913023624:3:ae3c67`
+*13.09. 02:36 UTC · Quelle: dream*
+
+The swarm algorithm converges quickly but does not evolve, indicating that the current design may not support long-term learning without external intervention.
+
+### `dream:20260913023624:2:918c7f`
+*13.09. 02:36 UTC · Quelle: dream*
+
+Calibration models exhibit systematic underestimation, which can be corrected by learning and applying per-goal-type biases.
+
+### `dream:20260913023624:1:35e0a7`
+*13.09. 02:36 UTC · Quelle: dream*
+
+Transient model provider failures (502, 429) are common in multi-provider setups and require intelligent routing and retry mechanisms to ensure availability.
 
 ### `dream:20260913022524:5:617341`
 *13.09. 02:25 UTC · Quelle: dream*
@@ -42377,56 +42402,6 @@ Five skill proposals exist (ModelRouter, CircuitBreaker, PreFlightProbe, Proposa
 *30.08. 02:36 UTC · Quelle: dream*
 
 Model z-ai/glm-5.2:free fails 100% of the time with 429 errors while nvidia/nemotron-3-ultra succeeds but with 20-44s latency variance, proving single-model dependency is a critical failure mode.
-
-### `dream:20260830023147:5:03e465`
-*30.08. 02:31 UTC · Quelle: dream*
-
-Swarm convergence occurred without a measurable score, making it impossible to verify if the 8+ quality threshold was actually met.
-
-### `dream:20260830023147:4:fe2c0a`
-*30.08. 02:31 UTC · Quelle: dream*
-
-Five concrete skill proposals exist but remain unimplemented, creating a gap between diagnosed problems and deployed solutions.
-
-### `dream:20260830023147:3:ee5076`
-*30.08. 02:31 UTC · Quelle: dream*
-
-Only one model (inclusionai/ling-3.0-flash-fin) succeeded but with high latency (9.7s), suggesting capacity constraints on working models.
-
-### `dream:20260830023147:2:b95221`
-*30.08. 02:31 UTC · Quelle: dream*
-
-Upstream provider overload (502 from Nvidia) reveals dependency on external service stability beyond local control.
-
-### `dream:20260830023147:1:fad228`
-*30.08. 02:31 UTC · Quelle: dream*
-
-Rate limiting (429) affects multiple free-tier models simultaneously, indicating shared quota exhaustion rather than isolated failures.
-
-### `dream:20260830022711:5:1e3d0e`
-*30.08. 02:27 UTC · Quelle: dream*
-
-Evolution runs improved a 5/10 score to 9/10 in one generation, but the swarm still failed to converge after two cycles, indicating that fitness thresholds or stopping criteria need tightening.
-
-### `dream:20260830022711:4:10a184`
-*30.08. 02:27 UTC · Quelle: dream*
-
-The skill 'vorgeschlagene-fähigkeiten-prüfen-und-nu' was rejected because it produced only stdout with no return value or persisted artifacts, revealing that tools must emit structured results or write files to be accepted.
-
-### `dream:20260830022711:3:635fb0`
-*30.08. 02:27 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free succeeded on every call with 9–11s latency, identifying it as the current stable default for free-tier routing.
-
-### `dream:20260830022711:2:99d920`
-*30.08. 02:27 UTC · Quelle: dream*
-
-A single model (nemotron) accumulated three consecutive errors and was blocked for 30 minutes, showing that error streaks trigger hard bans.
-
-### `dream:20260830022711:1:8208b0`
-*30.08. 02:27 UTC · Quelle: dream*
-
-Free-tier models frequently hit 429 rate limits under load, making them unreliable for production workflows without fallback chains.
 
 ### `last_swarm_critique`
 *30.08. 01:11 UTC · Quelle: critic*
