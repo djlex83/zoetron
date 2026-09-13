@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 10:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 10:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System is at stress 1.0 in conserve mode with only 3 max tasks and 1 max iteration, so task prioritization and failure caching are essential to avoid 
+- The simulation→reflex→apply loop shows revisions are needed (3 revisions, 3 risks) before application succeeds, indicating simulation validation needs
+- The hand action failed because relative paths do not resolve correctly; absolute paths or environment-variable-based paths (ZOETRON_DATA) must be used
+- High latency (26–56 s) and high token output (up to 5153 tokens) from the working model suggest token budget management is critical under conserve mod
+- The google/gemma models consistently fail with HTTP 429 (rate limit) while dots-studio/dots-3-note-preview:free succeeds, indicating a reliable fallba
 - Variable latency and token usage across model calls point to the value of dynamic task chunking based on real-time performance metrics.
 - Frequent stale knowledge and outdated swarm goals suggest a scheduled knowledge audit cycle should be embedded in the system's meta-cognitive loop.
 - The persistent gap between skill proposal generation and execution indicates that an automated pipeline with progress tracking is required to close th
@@ -51,11 +56,6 @@
 - Swarm convergence failed at score 1 despite evolution, showing that goal criteria have become stale and need periodic reassessment.
 - Hand actions exiting with code 1 and no error message indicate missing dependency checks before execution.
 - The recurring 429 errors from google/gemma models reveal rate-limit exhaustion and demand a circuit-breaker fallback chain.
-- Three consecutive model failures trigger a lockout, showing a circuit‑breaker pattern that should trigger earlier fallback.
-- Calibration overestimates performance (predicted 6 vs actual 1), so predicted scores need recalibration.
-- dots-studio/dots-3-note-preview:free consistently succeeds with moderate latency and can serve as a safe default.
-- Nvidia nemotron models frequently return 502 upstream errors and timeouts, making them unreliable under load.
-- Repeated HTTP 429 errors from google/gemma models indicate rate limiting and should be avoided or handled with backoff.
 
 ---
 

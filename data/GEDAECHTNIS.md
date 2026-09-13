@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11368 Fakten** · Stand 2026-09-13 10:20 UTC · aktualisiert bei jedem Herzschlag
+**11380 Fakten** · Stand 2026-09-13 10:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7281
-- **swarm_artifact:** 1663
-- **last_swarm_critique:** 931
-- **last_swarm_goal:** 666
-- **anti_pattern:** 367
-- **strategy:** 186
-- **tool:** 154
+- **dream:** 7286
+- **swarm_artifact:** 1665
+- **last_swarm_critique:** 932
+- **last_swarm_goal:** 667
+- **anti_pattern:** 369
+- **strategy:** 187
+- **tool:** 155
 - **hand_result:** 83
-- **aktuell_organfehler:** 37
+- **aktuell_organfehler:** 36
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
+*13.09. 10:36 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich nutzbar machen'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-nutz.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:2`
+*13.09. 10:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Scenario-Based Outcome Testing - Implement 'Golden Scenarios'—a set of concrete user goals that must be solvable using the proposed skills. The system attempts to 'simulate' the execution of a scenario; if the skills are too 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:1`
+*13.09. 10:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Integration-Centric API Mapping - Treat usability as 'Integratability'. Instead of describing skills, the system must define a 'Contract' for each skill (Required Inputs, Expected Outputs, and Error States). Usability is meas
+
+### `last_swarm_critique`
+*13.09. 10:34 UTC · Quelle: critic*
+
+score=6; issues=Assessment criteria are superficial (only checks field presence and length) and do not reflect real usability factors like functionality, user-friendliness, or integration.; Input handling is fragile: assumes JSON is a list or has a 'skills' ke
+
+### `last_swarm_goal`
+*13.09. 10:28 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich nutzbar machen
+
+### `dream:20260913102807:5:69a5ee`
+*13.09. 10:28 UTC · Quelle: dream*
+
+System is at stress 1.0 in conserve mode with only 3 max tasks and 1 max iteration, so task prioritization and failure caching are essential to avoid wasted cycles.
+
+### `dream:20260913102807:4:04babe`
+*13.09. 10:28 UTC · Quelle: dream*
+
+The simulation→reflex→apply loop shows revisions are needed (3 revisions, 3 risks) before application succeeds, indicating simulation validation needs tighter guardrails.
+
+### `dream:20260913102807:3:124181`
+*13.09. 10:28 UTC · Quelle: dream*
+
+The hand action failed because relative paths do not resolve correctly; absolute paths or environment-variable-based paths (ZOETRON_DATA) must be used.
+
+### `dream:20260913102807:2:195678`
+*13.09. 10:28 UTC · Quelle: dream*
+
+High latency (26–56 s) and high token output (up to 5153 tokens) from the working model suggest token budget management is critical under conserve mode.
+
+### `dream:20260913102807:1:e4e33f`
+*13.09. 10:28 UTC · Quelle: dream*
+
+The google/gemma models consistently fail with HTTP 429 (rate limit) while dots-studio/dots-3-note-preview:free succeeds, indicating a reliable fallback model should be configured.
 
 ### `dream:20260913101809:5:68103f`
 *13.09. 10:18 UTC · Quelle: dream*
@@ -42177,11 +42227,6 @@ The z-ai/glm-5.2:free model fails with 429 on every call (~8s intervals), creati
 *30.08. 10:29 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-30 10:23:35-10:26:35 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `aktuell_organfehler`
-*30.08. 10:19 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-30 10:13:17-10:16:17 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `last_swarm_critique`
 *30.08. 09:29 UTC · Quelle: critic*
