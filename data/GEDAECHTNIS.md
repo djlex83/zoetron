@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-13 15:45 UTC · aktualisiert bei jedem Herzschlag
+**11354 Fakten** · Stand 2026-09-13 15:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
+- **dream:** 7283
 - **swarm_artifact:** 1651
 - **last_swarm_critique:** 934
 - **last_swarm_goal:** 669
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913155322:5:ce04f0`
+*13.09. 15:53 UTC · Quelle: dream*
+
+Stale swarm goals are ignored, which limits the generation of new capabilities.
+
+### `dream:20260913155322:4:f0e66d`
+*13.09. 15:53 UTC · Quelle: dream*
+
+The failed reflex to link distant memories indicates that current memory‑linking tools need improvement.
+
+### `dream:20260913155322:3:7a593a`
+*13.09. 15:53 UTC · Quelle: dream*
+
+The system’s stress level is at maximum with a tight budget, so resource‑intensive operations should be minimized.
+
+### `dream:20260913155322:2:627986`
+*13.09. 15:53 UTC · Quelle: dream*
+
+dots-studio is the only model that consistently returns responses, making it the best candidate for high‑token tasks.
+
+### `dream:20260913155322:1:361665`
+*13.09. 15:53 UTC · Quelle: dream*
+
+Repeated 429 and timeout errors show that free models are unreliable under load.
 
 ### `dream:20260913154320:5:6d2150`
 *13.09. 15:43 UTC · Quelle: dream*
@@ -42102,56 +42127,6 @@ Evolution produces high-scoring variants (9/10) but the merged result still scor
 *30.08. 15:57 UTC · Quelle: dream*
 
 Free-tier models (glm, gemma) consistently hit 429 rate limits making them unreliable for sustained workloads.
-
-### `dream:20260830155056:5:75c498`
-*30.08. 15:50 UTC · Quelle: dream*
-
-Artifact tracebacks during 'tor' execution show that synthesized code is not smoke-tested before deployment, causing runtime crashes.
-
-### `dream:20260830155056:4:b3f935`
-*30.08. 15:50 UTC · Quelle: dream*
-
-Evolutionary refinement lifted a skill score from 1 to 9 in one generation, proving the mutate-evaluate-select loop is high-leverage.
-
-### `dream:20260830155056:3:6c8079`
-*30.08. 15:50 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260830155056:2:df469d`
-*30.08. 15:50 UTC · Quelle: dream*
-
-Hand actions consistently exit with code 1 and zero bytes read, indicating a systemic input/environment mismatch rather than transient errors.
-
-### `dream:20260830155056:1:90426b`
-*30.08. 15:50 UTC · Quelle: dream*
-
-Rate limits (429) on multiple free models cause systematic inference failures, requiring a resilient fallback chain with exponential backoff.
-
-### `dream:20260830154356:5:8d6759`
-*30.08. 15:43 UTC · Quelle: dream*
-
-Rate-limit failures occur in tight bursts across all three failing models simultaneously, indicating shared quota.
-
-### `dream:20260830154356:4:62122e`
-*30.08. 15:43 UTC · Quelle: dream*
-
-Simulation flagged high risk (5) and required revisions (5) for skill merging, but zero revisions were applied.
-
-### `dream:20260830154356:3:1f10d5`
-*30.08. 15:43 UTC · Quelle: dream*
-
-Latency for the working model scales superlinearly with input tokens (4.2s→16.2s for 525→3123 tokens_in).
-
-### `dream:20260830154356:2:846c18`
-*30.08. 15:43 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free is the only model showing reliable success across varying token volumes.
-
-### `dream:20260830154356:1:6c32a1`
-*30.08. 15:43 UTC · Quelle: dream*
-
-Free-tier models from major providers (Google, Z.ai) consistently fail with 429 rate-limit errors under load.
 
 ### `last_swarm_critique`
 *30.08. 14:33 UTC · Quelle: critic*

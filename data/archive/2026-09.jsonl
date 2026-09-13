@@ -46251,3 +46251,21 @@
 {"ts": 1788709216.332178, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 9.2, "tokens_ein": 599, "tokens_aus": 3358}}
 {"ts": 1788709216.3324966, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 7/10. Goal: Schwarmwissen regelmäßig aktualisieren\nCritic issues: Artifact 1 (Update-Scheduler) ", "variants": 3, "winner_index": 1, "scores": [7, 9, 8]}}
 {"ts": 1788709327.749294, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 106.6, "tokens_ein": 445, "tokens_aus": 458}}
+{"ts": 1788104636.0201676, "key": "dream:20260830154356:1:6c32a1", "value": "Free-tier models from major providers (Google, Z.ai) consistently fail with 429 rate-limit errors under load.", "source": "dream"}
+{"ts": 1788104636.0202532, "key": "dream:20260830154356:2:846c18", "value": "inclusionai/ling-3.0-flash-fin:free is the only model showing reliable success across varying token volumes.", "source": "dream"}
+{"ts": 1788104636.0203233, "key": "dream:20260830154356:3:1f10d5", "value": "Latency for the working model scales superlinearly with input tokens (4.2s→16.2s for 525→3123 tokens_in).", "source": "dream"}
+{"ts": 1788104636.0203936, "key": "dream:20260830154356:4:62122e", "value": "Simulation flagged high risk (5) and required revisions (5) for skill merging, but zero revisions were applied.", "source": "dream"}
+{"ts": 1788104636.0204601, "key": "dream:20260830154356:5:8d6759", "value": "Rate-limit failures occur in tight bursts across all three failing models simultaneously, indicating shared quota.", "source": "dream"}
+{"ts": 1788105056.7672417, "key": "dream:20260830155056:1:90426b", "value": "Rate limits (429) on multiple free models cause systematic inference failures, requiring a resilient fallback chain with exponential backoff.", "source": "dream"}
+{"ts": 1788105056.7673247, "key": "dream:20260830155056:2:df469d", "value": "Hand actions consistently exit with code 1 and zero bytes read, indicating a systemic input/environment mismatch rather than transient errors.", "source": "dream"}
+{"ts": 1788105056.7673905, "key": "dream:20260830155056:3:6c8079", "value": "Calibration error of 4 (predicted 5 vs actual 1) reveals the predictor is uncalibrated for this task class and needs retraining.", "source": "dream"}
+{"ts": 1788105056.7674553, "key": "dream:20260830155056:4:b3f935", "value": "Evolutionary refinement lifted a skill score from 1 to 9 in one generation, proving the mutate-evaluate-select loop is high-leverage.", "source": "dream"}
+{"ts": 1788105056.7675161, "key": "dream:20260830155056:5:75c498", "value": "Artifact tracebacks during 'tor' execution show that synthesized code is not smoke-tested before deployment, causing runtime crashes.", "source": "dream"}
+{"ts": 1788709390.65091, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 62.2, "tokens_ein": 348, "tokens_aus": 1196}}
+{"ts": 1788709390.6510963, "kind": "simulation", "payload": {"goal": "Schwarmwissen regelmäßig aktualisieren", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1788709390.6512072, "kind": "simulation_applied", "payload": {"revisions": 5}}
+{"ts": 1788709390.6513016, "kind": "swarm_finished", "payload": {"goal": "Schwarmwissen regelmäßig aktualisieren", "score": 7, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1788709390.6517308, "kind": "act_done", "payload": {"goal_title": "Schwarmwissen regelmäßig aktualisieren", "score": 7, "converged": false}}
+{"ts": 1788709391.4932008, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.49, "gelesen": 2}}
+{"ts": 1788709393.315568, "kind": "issue_synced", "payload": {"issue": 399, "state": "open"}}
+{"ts": 1788709917.7668889, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
