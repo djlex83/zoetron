@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11373 Fakten** · Stand 2026-09-13 12:05 UTC · aktualisiert bei jedem Herzschlag
+**11372 Fakten** · Stand 2026-09-13 12:15 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7288
-- **swarm_artifact:** 1663
+- **swarm_artifact:** 1662
 - **last_swarm_critique:** 932
 - **last_swarm_goal:** 667
 - **anti_pattern:** 367
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913121319:5:c189c2`
+*13.09. 12:13 UTC · Quelle: dream*
+
+Selecting models based on recent latency and error rates yields more stable task execution.
+
+### `dream:20260913121319:4:0621ee`
+*13.09. 12:13 UTC · Quelle: dream*
+
+A generic fallback model (openrouter/free) can sustain operations when specialized models are unavailable.
+
+### `dream:20260913121319:3:41d80e`
+*13.09. 12:13 UTC · Quelle: dream*
+
+Malformed request payloads cause 400 errors; schema validation before dispatch prevents wasted calls.
+
+### `dream:20260913121319:2:0704f8`
+*13.09. 12:13 UTC · Quelle: dream*
+
+HTTP 429 rate limits and read timeouts dominate failures; exponential backoff and request queuing improve reliability.
+
+### `dream:20260913121319:1:15645e`
+*13.09. 12:13 UTC · Quelle: dream*
+
+When three consecutive model errors occur, the system blocks the model for 1800s, so a circuit‑breaker with fallback models is essential.
 
 ### `dream:20260913120236:5:bf2a07`
 *13.09. 12:02 UTC · Quelle: dream*
@@ -42172,31 +42197,6 @@ score=6; issues=Keine Integration zwischen den drei Komponenten (Drift-Check, Ga
 *30.08. 12:07 UTC · Quelle: system*
 
 Marktkenntnisse auf aktuellem Stand halten
-
-### `dream:20260830120620:5:fdd5d4`
-*30.08. 12:06 UTC · Quelle: dream*
-
-Swarm convergence failure after only 2 cycles with a low score (3) suggests role coordination and evaluation criteria need refinement for skill-implementation tasks.
-
-### `dream:20260830120620:4:b208f8`
-*30.08. 12:06 UTC · Quelle: dream*
-
-Hand actions that only print output without returning values or writing files are rejected as non-functional — every action must produce a durable side effect to be considered valid.
-
-### `dream:20260830120620:3:cce462`
-*30.08. 12:06 UTC · Quelle: dream*
-
-Prune runs consistently returning zero results indicate the current strategy cannot identify time-decayed or duplicate facts, making retention unbounded and cleanup ineffective.
-
-### `dream:20260830120620:2:5cc5d7`
-*30.08. 12:06 UTC · Quelle: dream*
-
-The 180-second dream timeout hard limit causes pipeline blockage when consolidation exceeds the threshold, requiring either chunked processing or a reduced timeout to prevent downstream stalls.
-
-### `dream:20260830120620:1:ea3f5f`
-*30.08. 12:06 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) from multiple providers simultaneously indicates a systemic API quota bottleneck, not isolated failures — a single reliable model (ling-3.0-flash-fin) exists but lacks automatic failover routing.
 
 ### `last_swarm_critique`
 *30.08. 11:12 UTC · Quelle: critic*

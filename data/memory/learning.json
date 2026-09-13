@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-13 12:04:07",
+ "stand": "2026-09-13 12:13:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "laeufe": 12,
+   "erfolge": 12,
    "quote": 1.0
   },
   {
@@ -30,12 +30,6 @@
    "tool": "simulationen-besser-in-praxis-nutzen.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -109,6 +103,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
@@ -198,12 +198,6 @@
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorschläge-in-echte-fähigkeiten-wandeln.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -405,7 +399,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.693,
+ "haende_quote": 0.692,
  "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 37,

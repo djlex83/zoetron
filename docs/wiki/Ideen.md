@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 12:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 12:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Selecting models based on recent latency and error rates yields more stable task execution.
+- A generic fallback model (openrouter/free) can sustain operations when specialized models are unavailable.
+- Malformed request payloads cause 400 errors; schema validation before dispatch prevents wasted calls.
+- HTTP 429 rate limits and read timeouts dominate failures; exponential backoff and request queuing improve reliability.
+- When three consecutive model errors occur, the system blocks the model for 1800s, so a circuit‑breaker with fallback models is essential.
 - Adaptive timeout scaling based on recent latency and stress level aligns resource limits with current load.
 - Pre‑execution health checks that verify API connectivity and quota can avert wasted calls.
 - Exponential backoff with jitter reduces retry collisions and improves eventual success.
@@ -51,11 +56,6 @@
 - Observed latencies of 32–44 s imply that timeout thresholds must be set using rolling percentiles rather than fixed values.
 - Relying on a single model family creates a single point of failure; diversifying providers improves resilience.
 - Repeated 429 errors from free-tier models indicate quota exhaustion and require a fallback chain with exponential backoff.
-- Verifying the generated artifact's execution (TOR check) immediately after generation ensures that proposed skills are not just theoretically sound bu
-- Transient model failures (like 429 errors) can be successfully resolved through automatic retries, as evidenced by a successful call to `google/gemma-
-- An iterative simulation-revision cycle (5 revisions) successfully mitigated risks and aligned the system's calibration score perfectly (predicted 6, a
-- The 'dots-studio/dots-3-note-preview:free' model served as a highly reliable fallback, maintaining consistent success and low latency even when other 
-- The free Google Gemma models on OpenRouter are highly susceptible to '429 Too Many Requests' rate-limiting errors, making them unreliable for high-fre
 
 ---
 

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7998 Neuronen · 829294 bewertete Synapsen
+Stand: 7997 Neuronen · 829370 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,10 +12,10 @@ Stand: 7998 Neuronen · 829294 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1012 | 0.24 |
 | 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1025 | 0.23 |
-| 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 891 | 0.23 |
+| 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 890 | 0.23 |
 | 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 894 | 0.22 |
-| 5 | 💭 | Rate limiting (429 errors) is the dominant and most persistent f… | 817 | 0.24 |
-| 6 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 814 | 0.24 |
+| 5 | 💭 | Rate limiting (429 errors) is the dominant and most persistent f… | 816 | 0.24 |
+| 6 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 813 | 0.24 |
 | 7 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 789 | 0.25 |
 | 8 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 816 | 0.24 |
 | 9 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 823 | 0.23 |
