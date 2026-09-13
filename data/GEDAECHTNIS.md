@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11347 Fakten** · Stand 2026-09-13 14:40 UTC · aktualisiert bei jedem Herzschlag
+**11364 Fakten** · Stand 2026-09-13 15:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
-- **swarm_artifact:** 1645
-- **last_swarm_critique:** 933
-- **last_swarm_goal:** 668
-- **anti_pattern:** 363
-- **strategy:** 184
+- **dream:** 7293
+- **swarm_artifact:** 1651
+- **last_swarm_critique:** 934
+- **last_swarm_goal:** 669
+- **anti_pattern:** 365
+- **strategy:** 185
 - **tool:** 152
-- **hand_result:** 82
+- **hand_result:** 83
 - **aktuell_organfehler:** 32
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Entfernte Erinnerungen v:1`
+*13.09. 15:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Temporal sequence alignment - Order the memories chronologically. Form a similarity matrix between each pair of memories. Apply a sequence alignment algorithm such as dynamic time warping (DTW) to the ordered list, treating e
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Entfernte Erinnerungen v:0`
+*13.09. 15:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Minimum spanning tree - Construct a complete graph with memories as nodes and pairwise distances as edge weights. Compute the minimum spanning tree (MST) of this graph. The MST connects all memories with minimal total distan 
+
+### `last_swarm_critique`
+*13.09. 14:57 UTC · Quelle: critic*
+
+score=7; issues=The threshold parameter in select_distant_pairs is interpreted as a similarity threshold (distance > 1 - threshold) rather than a direct distance threshold, which is counterintuitive and may cause misuse.; The pilot test only examines the first
+
+### `last_swarm_goal`
+*13.09. 14:48 UTC · Quelle: system*
+
+Entfernte Erinnerungen verbinden
+
+### `dream:20260913144745:5:a1efd8`
+*13.09. 14:47 UTC · Quelle: dream*
+
+Merging two distant dream memories generated novel skill proposals, indicating that a regular consolidation step would enhance innovation.
+
+### `dream:20260913144745:4:5348d8`
+*13.09. 14:47 UTC · Quelle: dream*
+
+Each pruning cycle removes about 7 facts and 8 events, which controls memory growth but risks discarding cross‑cutting patterns.
+
+### `dream:20260913144745:3:68a637`
+*13.09. 14:47 UTC · Quelle: dream*
+
+The reflex to update swarm information succeeded but should be scheduled periodically to avoid redundant calls when the data is already fresh.
+
+### `dream:20260913144745:2:84c613`
+*13.09. 14:47 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview consistently responds with latencies around 18–22 s, making it a reliable default for long‑context tasks.
+
+### `dream:20260913144745:1:2e0519`
+*13.09. 14:47 UTC · Quelle: dream*
+
+The repeated HTTP 429 errors from google/gemma-4-26b-a4b-it:free and google/gemma-4-31b-it:free indicate aggressive rate limiting that requires exponential backoff and fallback to an alternate model.
 
 ### `dream:20260913143804:5:bfb5ab`
 *13.09. 14:38 UTC · Quelle: dream*
