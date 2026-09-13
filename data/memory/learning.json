@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 22:41:25",
+ "stand": "2026-09-13 22:50:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,13 +33,13 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-analysieren.py",
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "tool": "veraltete-gruppen-informationen-aktualis.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -51,7 +51,7 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-gruppen-informationen-aktualis.py",
+   "tool": "träume-analysieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0

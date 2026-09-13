@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11336 Fakten** · Stand 2026-09-13 22:43 UTC · aktualisiert bei jedem Herzschlag
+**11337 Fakten** · Stand 2026-09-13 22:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7283
+- **dream:** 7288
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
-- **anti_pattern:** 363
-- **strategy:** 184
+- **anti_pattern:** 361
+- **strategy:** 183
 - **tool:** 151
-- **hand_result:** 84
+- **hand_result:** 83
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913225018:5:c69877`
+*13.09. 22:50 UTC · Quelle: dream*
+
+No automatic fallback activates during model failures — the system logs errors but continues requesting the same degraded providers.
+
+### `dream:20260913225018:4:ea5681`
+*13.09. 22:50 UTC · Quelle: dream*
+
+Periodic pruning removes fixed counts (4 facts, 16 events) regardless of actual accumulation rate, wasting cycles when quiet and falling behind when busy.
+
+### `dream:20260913225018:3:c39d42`
+*13.09. 22:50 UTC · Quelle: dream*
+
+Reflex tools (träume-analysieren.py) converge cleanly when invoked, proving the reflex layer works but is only triggered manually, not automatically on failure.
+
+### `dream:20260913225018:2:8d262b`
+*13.09. 22:50 UTC · Quelle: dream*
+
+Over 70 skill proposals exist but near-zero implementation rate shows the planner proposes faster than the executor can absorb, creating a proposal graveyard.
+
+### `dream:20260913225018:1:d51847`
+*13.09. 22:50 UTC · Quelle: dream*
+
+Provider failures (429/502) cluster on free-tier Google/Nvidia models while dots-studio succeeds, revealing a reliability tier that must drive routing policy.
 
 ### `dream:20260913224056:5:914641`
 *13.09. 22:40 UTC · Quelle: dream*
@@ -42067,16 +42092,6 @@ The skill proposal reflex converges reliably but its own resilience proposals (c
 *30.08. 23:24 UTC · Quelle: dream*
 
 Free-tier model providers simultaneously exhaust rate limits (429 errors across 4+ models within seconds), making naive round-robin selection ineffective without persistent health tracking.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten entwick:1`
-*30.08. 22:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Embodied skill emergence through environmental constraint manipulation - Abandon direct instruction entirely and instead engineer physical environments with specific constraint fields that force the emergence of target abilit
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten entwick:0`
-*30.08. 22:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Cognitive scaffolding through interleaved skill layers - Structure learning as overlapping cognitive layers where each layer is a distinct neurocognitive skill (working memory, inhibitory control, attention shifting). Rather 
 
 ### `last_swarm_critique`
 *30.08. 22:40 UTC · Quelle: critic*

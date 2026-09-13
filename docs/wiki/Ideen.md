@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,10 +26,10 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No automatic fallback activates during model failures — the system logs errors but continues requesting the same degraded providers.
+- Periodic pruning removes fixed counts (4 facts, 16 events) regardless of actual accumulation rate, wasting cycles when quiet and falling behind when b
+- Reflex tools (träume-analysieren.py) converge cleanly when invoked, proving the reflex layer works but is only triggered manually, not automatically o
+- Over 70 skill proposals exist but near-zero implementation rate shows the planner proposes faster than the executor can absorb, creating a proposal gr
+- Provider failures (429/502) cluster on free-tier Google/Nvidia models while dots-studio succeeds, revealing a reliability tier that must drive routing
 - Pruning removes stale artifacts but does not prevent regeneration of outdated facts from unreliable model outputs.
 - Drive goals for reliability persist across cycles without automated enforcement, indicating a gap between intent and operational guardrails.
 - Repeated 429 errors reveal missing client-side rate limiting and exponential backoff, causing self-inflicted denial of service.
@@ -51,11 +56,6 @@
 - Aggressive pruning (53 events/cycle) discards contextual threads needed for cross-episode pattern detection before consolidation can harvest them.
 - Reflex tools for knowledge connection (dreams↔dreams, goals↔memories) converge reliably but their outputs never auto-promote to executable skills.
 - Model failures cascade across providers (429/502 errors) because the system lacks proactive rate-limit tracking and latency-weighted fallback routing.
-- File-path resolution failures recur across hand_actions, indicating missing canonicalization against ZOETRON_DATA before execution.
-- Memory pruning rates fluctuate wildly (9/17 vs 1/53 facts/events) with no observability dashboard to trigger consolidation or capacity upgrades.
-- Reflex tools succeed individually but operate without circuit-breakers or performance auditing, risking silent degradation when dependencies shift.
-- Swarm knowledge and dream outputs accumulate but lack automated refresh/compilation pipelines, causing 60 proposals to stagnate without becoming execu
-- Free-tier model endpoints exhibit high latency variance (22-43s) and 56/96 failure rate, making predictive routing essential for reliability.
 
 ---
 
