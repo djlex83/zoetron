@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals (reduce model errors, refresh swarm knowledge, connect dreams) remain abstract without measurable acceptance criteria or automated verific
+- Self-diagnosis reports zero organ errors despite repeated model failures, revealing monitoring blind spots for external dependency health.
+- Periodic pruning wastes cycles (37 events pruned first run, only 17 second) while write-coupled delta triggers would prune only when necessary.
+- Swarm tasks converge via reflex tools (exit=0, converged=true) but not via planner/builder/critic cycles, indicating reflexes encode hardened procedur
+- Model provider failures cascade (502 overload → 429 rate limits) requiring automatic fallback to healthy providers like dots-studio within 2s SLA.
 - Provider rate limits (429 on Gemma) and outages (502 on Nemotron) demand a circuit-breaker with sub-2s failover.
 - Calibration error of 1 point (predicted 5 vs actual 4) suggests reward model overestimates artifact quality.
 - Simulation-revision loops (3-5 revisions per cycle) consume excessive tokens without guaranteeing convergence.
@@ -51,11 +56,6 @@
 - Simulation verdict 'revise' with 5 risks and 3 applied revisions prevented runtime failure on the swarm refresh task.
 - Hand actions fail when relative paths diverge from ZOETRON_DATA root, indicating environment drift between components.
 - Free-tier models (Gemma variants) consistently hit 429 rate limits under load while Nemotron-3-ultra remains available but slow (36-73s).
-- Multiple overlapping skill proposals (fallback router, dynamic router, predictive heuristic) signal a missing meta-process to deduplicate and prioriti
-- Pruning events and facts regularly (27 items this cycle) indicates memory pressure that could degrade retrieval precision if unmonitored.
-- Successful reflex execution for memory combination demonstrates that deterministic tools outperform LLM calls for structured retrieval tasks.
-- Drive goals accumulate staleness signals without automated lifecycle transitions, causing objective drift and wasted planning effort.
-- Recurring 429 errors on primary models reveal that reactive fallback-only routing wastes cycles and latency before switching to healthy endpoints.
 
 ---
 

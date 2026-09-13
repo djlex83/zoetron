@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11351 Fakten** · Stand 2026-09-13 21:43 UTC · aktualisiert bei jedem Herzschlag
+**11352 Fakten** · Stand 2026-09-13 21:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
-- **swarm_artifact:** 1639
+- **dream:** 7293
+- **swarm_artifact:** 1635
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
 - **anti_pattern:** 363
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913215113:5:07bcb4`
+*13.09. 21:51 UTC · Quelle: dream*
+
+Drive goals (reduce model errors, refresh swarm knowledge, connect dreams) remain abstract without measurable acceptance criteria or automated verification loops.
+
+### `dream:20260913215113:4:476a4c`
+*13.09. 21:51 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, revealing monitoring blind spots for external dependency health.
+
+### `dream:20260913215113:3:ba5a05`
+*13.09. 21:51 UTC · Quelle: dream*
+
+Periodic pruning wastes cycles (37 events pruned first run, only 17 second) while write-coupled delta triggers would prune only when necessary.
+
+### `dream:20260913215113:2:e68822`
+*13.09. 21:51 UTC · Quelle: dream*
+
+Swarm tasks converge via reflex tools (exit=0, converged=true) but not via planner/builder/critic cycles, indicating reflexes encode hardened procedures swarms rediscover slowly.
+
+### `dream:20260913215113:1:1b007c`
+*13.09. 21:51 UTC · Quelle: dream*
+
+Model provider failures cascade (502 overload → 429 rate limits) requiring automatic fallback to healthy providers like dots-studio within 2s SLA.
 
 ### `dream:20260913214109:5:ec488b`
 *13.09. 21:41 UTC · Quelle: dream*
