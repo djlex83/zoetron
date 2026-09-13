@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 12:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Adaptive timeout scaling based on recent latency and stress level aligns resource limits with current load.
+- Pre‑execution health checks that verify API connectivity and quota can avert wasted calls.
+- Exponential backoff with jitter reduces retry collisions and improves eventual success.
+- A circuit breaker that trips after two consecutive failures prevents cascading load on overloaded APIs.
+- Repeated timeouts and 429 errors show that the current model selection lacks fallback routing and rate‑limit awareness.
 - Aggressive pruning of 7 facts and 69 events can discard context needed for future planning.
 - Swarm convergence stalled at score 6 because the critic did not adjust criteria after repeated model failures.
 - Observed latencies of 32–44 s imply that timeout thresholds must be set using rolling percentiles rather than fixed values.
@@ -51,11 +56,6 @@
 - An iterative simulation-revision cycle (5 revisions) successfully mitigated risks and aligned the system's calibration score perfectly (predicted 6, a
 - The 'dots-studio/dots-3-note-preview:free' model served as a highly reliable fallback, maintaining consistent success and low latency even when other 
 - The free Google Gemma models on OpenRouter are highly susceptible to '429 Too Many Requests' rate-limiting errors, making them unreliable for high-fre
-- In conserve mode with stress 1.0 and a 3-task budget, the system must prioritize pre-validated, low-risk actions to avoid exhausting the budget on rep
-- Recurring model failures across multiple cycles show that failure knowledge is not persisted between sessions, causing the same 429 errors to repeat i
-- The reflex 'vorgeschlagene-fähigkeiten-wirklich-nutz.py' failed (ok: false), revealing that skill proposals alone create no working capabilities witho
-- The hand_action failure ('nichts gelesen') stems from relative path resolution; all file operations must resolve absolute paths from ZOETRON_DATA or s
-- Google's gemma models on OpenRouter are persistently rate-limited (429) while dots-studio models succeed reliably, making a hardcoded preference for d
 
 ---
 

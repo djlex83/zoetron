@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11378 Fakten** · Stand 2026-09-13 11:54 UTC · aktualisiert bei jedem Herzschlag
+**11373 Fakten** · Stand 2026-09-13 12:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7288
 - **swarm_artifact:** 1663
 - **last_swarm_critique:** 932
 - **last_swarm_goal:** 667
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913120236:5:bf2a07`
+*13.09. 12:02 UTC · Quelle: dream*
+
+Adaptive timeout scaling based on recent latency and stress level aligns resource limits with current load.
+
+### `dream:20260913120236:4:5599c5`
+*13.09. 12:02 UTC · Quelle: dream*
+
+Pre‑execution health checks that verify API connectivity and quota can avert wasted calls.
+
+### `dream:20260913120236:3:8059a4`
+*13.09. 12:02 UTC · Quelle: dream*
+
+Exponential backoff with jitter reduces retry collisions and improves eventual success.
+
+### `dream:20260913120236:2:08a101`
+*13.09. 12:02 UTC · Quelle: dream*
+
+A circuit breaker that trips after two consecutive failures prevents cascading load on overloaded APIs.
+
+### `dream:20260913120236:1:9ccf6b`
+*13.09. 12:02 UTC · Quelle: dream*
+
+Repeated timeouts and 429 errors show that the current model selection lacks fallback routing and rate‑limit awareness.
 
 ### `dream:20260913115124:5:5ab0dc`
 *13.09. 11:51 UTC · Quelle: dream*
@@ -42172,56 +42197,6 @@ The 180-second dream timeout hard limit causes pipeline blockage when consolidat
 *30.08. 12:06 UTC · Quelle: dream*
 
 Rate limiting (HTTP 429) from multiple providers simultaneously indicates a systemic API quota bottleneck, not isolated failures — a single reliable model (ling-3.0-flash-fin) exists but lacks automatic failover routing.
-
-### `dream:20260830115939:5:579f59`
-*30.08. 11:59 UTC · Quelle: dream*
-
-The core artifact (33-line Python) runs but the critic flags incomplete implementation, indicating that 'running code' does not equal 'complete implementation'.
-
-### `dream:20260830115939:4:b1361f`
-*30.08. 11:59 UTC · Quelle: dream*
-
-Evolution search produced a dramatic jump from 3/10 to 8/10 across 3 variants, proving variant mutation is the highest-leverage improvement mechanism.
-
-### `dream:20260830115939:3:67e3a9`
-*30.08. 11:59 UTC · Quelle: dream*
-
-Calibration predicted 5 but actual was 3, revealing a systematic overconfidence in task feasibility that must be corrected.
-
-### `dream:20260830115939:2:ce5afd`
-*30.08. 11:59 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin is the only model that succeeds every call, though latency degrades from 5.5s to 10.5s as load increases.
-
-### `dream:20260830115939:1:352639`
-*30.08. 11:59 UTC · Quelle: dream*
-
-Free-tier OpenRouter models (glm-5.2, gemma-4-31b, gemma-4-26b) consistently hit 429 rate limits, making them unreliable under any concurrent load.
-
-### `dream:20260830115314:5:61783b`
-*30.08. 11:53 UTC · Quelle: dream*
-
-Models failing three times consecutively are auto-banned for 1800s, making proactive health checks more efficient than reactive retries.
-
-### `dream:20260830115314:4:c73953`
-*30.08. 11:53 UTC · Quelle: dream*
-
-The simulation-revision loop (verdict: revise → apply revisions → re-test) successfully converted a failing skill implementation into a working 33-line Python artifact.
-
-### `dream:20260830115314:3:cac2e6`
-*30.08. 11:53 UTC · Quelle: dream*
-
-High stress (1.0) triggers conservation mode that caps tasks at 3 and iterations at 1, forcing minimal viable progress per cycle.
-
-### `dream:20260830115314:2:2bfb7c`
-*30.08. 11:53 UTC · Quelle: dream*
-
-Relative path references fail in hand actions; all file operations must resolve absolute paths via ZOETRON_DATA and sys.argv[1] before execution.
-
-### `dream:20260830115314:1:acbf48`
-*30.08. 11:53 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits, requiring a pre-validated fallback chain with health tracking to maintain throughput.
 
 ### `last_swarm_critique`
 *30.08. 11:12 UTC · Quelle: critic*
