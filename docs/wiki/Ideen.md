@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 02:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 02:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,9 +17,9 @@
 - Build a calibration tracker that logs predicted vs actual scores per goal_type and applies learned correction  *(hatte die Idee 4×)*
 - Deploy a tournament-bracket swarm consensus: run parallel evolution tournaments, promote only winners that pas *(hatte die Idee 4×)*
 - Instrument every model call with structured telemetry (provider, latency_ms, error_class, tokens) for continuo *(hatte die Idee 4×)*
-- Build SkillConversionPipeline: auto-promote approved proposals to implemented skills with CI tests, versioning *(hatte die Idee 3×)*
-- Add GoalAwarePruningFilter: score every fact/event against active drive goals before deletion; protect items t *(hatte die Idee 3×)*
 - Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
+- Add a configurable circuit breaker that temporarily blocks a model after N consecutive failures. *(hatte die Idee 3×)*
+- Prefer dots-studio/dots-3-note-preview:free as the default model when others are unavailable. *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predictor error of 2 (predicted 7 vs actual 9) indicates need for online recalibration after each swarm cycle.
+- Metabolism stress at 0.66 triggers conserve mode with max_tasks=3 and max_iterations=1; scale down swarm size and skip non-critical calibrations under
+- Simulation gate caught 5 risks and triggered 5 revisions before deployment; make simulation a mandatory pre-commit step for all artifact changes.
+- Free-tier models (Nemotron, Gemma) frequently return 502/429 errors; implement a fallback chain with health checks and exponential backoff.
+- Relative paths fail in hand actions; always resolve inputs via sys.argv[1] and ZOETRON_DATA environment variable before file operations.
 - Hand actions fail when expected files are missing, so path validation should occur before execution.
 - Skill proposals are generated but rarely tested, so a promotion pipeline with sandbox testing is needed.
 - Simulation is underutilized, indicating that tasks should incorporate simulation steps for better preparation.
@@ -51,11 +56,6 @@
 - Swarm knowledge staleness requires explicit reflex intervention ('veraltetes-wissen-erneuern'), indicating no automatic freshness enforcement.
 - Skill proposals accumulate (10+ in this log) yet the 'implement proposed skills' drive goal persists, revealing a proposal-to-deployment gap.
 - Model failures trigger repeated drive goals but no systematic routing or fallback exists despite variable latency (11.8–28.9s) and single-provider dep
-- Repeated drive goals emphasize reducing model errors and updating stale swarm knowledge.
-- Hand action durations vary from 0.28s to 0.98s, indicating need for retry with backoff.
-- Reflex simulations converge but produce no score, requiring explicit evaluation metrics.
-- Pruning events without preserving causal chains leads to loss of critical sequences.
-- Model latency often exceeds 15 seconds, demanding provider-aware timeout and fallback.
 
 ---
 

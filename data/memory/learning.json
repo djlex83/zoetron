@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 02:15:33",
+ "stand": "2026-09-13 02:26:24",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -406,6 +406,12 @@
   },
   {
    "tool": "simulationen-besser-in-praxis-nutzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11402 Fakten** · Stand 2026-09-13 02:17 UTC · aktualisiert bei jedem Herzschlag
+**11397 Fakten** · Stand 2026-09-13 02:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7331
+- **dream:** 7326
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 923
 - **last_swarm_goal:** 658
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913022524:5:617341`
+*13.09. 02:25 UTC · Quelle: dream*
+
+Calibration predictor error of 2 (predicted 7 vs actual 9) indicates need for online recalibration after each swarm cycle.
+
+### `dream:20260913022524:4:11f180`
+*13.09. 02:25 UTC · Quelle: dream*
+
+Metabolism stress at 0.66 triggers conserve mode with max_tasks=3 and max_iterations=1; scale down swarm size and skip non-critical calibrations under stress.
+
+### `dream:20260913022524:3:c44720`
+*13.09. 02:25 UTC · Quelle: dream*
+
+Simulation gate caught 5 risks and triggered 5 revisions before deployment; make simulation a mandatory pre-commit step for all artifact changes.
+
+### `dream:20260913022524:2:41f8b6`
+*13.09. 02:25 UTC · Quelle: dream*
+
+Free-tier models (Nemotron, Gemma) frequently return 502/429 errors; implement a fallback chain with health checks and exponential backoff.
+
+### `dream:20260913022524:1:95beaa`
+*13.09. 02:25 UTC · Quelle: dream*
+
+Relative paths fail in hand actions; always resolve inputs via sys.argv[1] and ZOETRON_DATA environment variable before file operations.
 
 ### `dream:20260913021514:5:718d7e`
 *13.09. 02:15 UTC · Quelle: dream*
@@ -42402,56 +42427,6 @@ A single model (nemotron) accumulated three consecutive errors and was blocked f
 *30.08. 02:27 UTC · Quelle: dream*
 
 Free-tier models frequently hit 429 rate limits under load, making them unreliable for production workflows without fallback chains.
-
-### `dream:20260830022146:5:7a2daf`
-*30.08. 02:21 UTC · Quelle: dream*
-
-Hand actions (local code execution) complete in ~0.2s with zero failures, making them preferable for deterministic tasks over unreliable model calls.
-
-### `dream:20260830022146:4:5fcc55`
-*30.08. 02:21 UTC · Quelle: dream*
-
-The automatic 1800-second block after 3 consecutive errors effectively prevents cascade failures but may be too aggressive for transient 429 errors.
-
-### `dream:20260830022146:3:a8d7ee`
-*30.08. 02:21 UTC · Quelle: dream*
-
-Models returning 404 (not found) should be immediately deprecated rather than retried, as seen with nvidia/nemotron-3-ultra-550b-a55b:free.
-
-### `dream:20260830022146:2:8f10ed`
-*30.08. 02:21 UTC · Quelle: dream*
-
-The model inclusionai/ling-3.0-flash-fin:free shows consistent availability but highly variable latency (4–33s), suggesting it should be the primary fallback with timeout handling.
-
-### `dream:20260830022146:1:395bd7`
-*30.08. 02:21 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the primary failure mode across multiple free-tier models, indicating the need for request throttling or fallback chains.
-
-### `dream:20260830021700:5:f9bc6f`
-*30.08. 02:17 UTC · Quelle: dream*
-
-The system retries failing models immediately without backoff, amplifying rate-limit collisions and accelerating circuit-breaker trips.
-
-### `dream:20260830021700:4:693894`
-*30.08. 02:17 UTC · Quelle: dream*
-
-404 errors on nvidia/nemotron-3-ultra-550b-a55b:free indicate model endpoint removal, not rate limiting, requiring different handling.
-
-### `dream:20260830021700:3:c15aa1`
-*30.08. 02:17 UTC · Quelle: dream*
-
-Three consecutive failures trigger a 30-minute hard block (model_gesperrt), turning transient rate limits into prolonged outages.
-
-### `dream:20260830021700:2:90ca04`
-*30.08. 02:17 UTC · Quelle: dream*
-
-A single model (inclusionai/ling-3.0-flash-fin:free) absorbed all successful traffic while 4 other models failed repeatedly, revealing extreme reliability skew.
-
-### `dream:20260830021700:1:482d0c`
-*30.08. 02:17 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits within seconds of each other, making them unreliable for sustained workloads.
 
 ### `last_swarm_critique`
 *30.08. 01:11 UTC · Quelle: critic*
