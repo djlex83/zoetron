@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 13:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 13:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation goals requiring complete skill acquisition depend on stable model availability, making healthy-model pinning a critical operational safegua
+- The model 'dots-studio/dots-3-note-preview:free' was the only consistently successful endpoint, highlighting the risk of relying on a single fragile f
+- During high system stress (1.0) and 'conserve' state, restricting the task budget to 3 tasks and 1 iteration prevents resource exhaustion.
+- The Nemotron model entered a hard lockout ('sperre') after three consecutive timeouts, showing that retry logic must include backoff to avoid system-l
+- Free-tier models like Google Gemma are highly prone to 429 rate-limiting under concurrent load, necessitating request serialization.
 - The metabolism check at stress 1.0 with a limited task budget implies the system must prioritize and reduce parallelism under high load.
 - The drive goals reveal that stale swarm information and uncombined distant memories impede learning, necessitating periodic updates and cross‑associat
 - The event pruning removed 19 events but zero facts, suggesting memory consolidation should also compress factual knowledge, not only events.
@@ -51,11 +56,6 @@
 - Combining distant memories produces novel solution candidates that isolated recall cannot generate.
 - Automatic fallback to a stable model upon failure preserves task continuity.
 - Repeated 429 errors from multiple free models reveal a shared rate‑limit bottleneck that must be mitigated with exponential backoff.
-- The system's drive mechanism successfully translates failure signals into actionable reliability goals.
-- Automated pruning and self-diagnosis processes are operating stably without introducing errors.
-- Reflex-based execution is highly effective for routine maintenance tasks like swarm data synchronization.
-- Model diversity prevents total system failure by allowing fallback to alternative providers when primary models are throttled.
-- Rate-limiting (429 errors) is a recurring failure point for specific high-capacity model families.
 
 ---
 

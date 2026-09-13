@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11364 Fakten** · Stand 2026-09-13 13:39 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-13 13:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
+- **dream:** 7283
 - **swarm_artifact:** 1657
 - **last_swarm_critique:** 933
 - **last_swarm_goal:** 668
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913134632:5:5e58ee`
+*13.09. 13:46 UTC · Quelle: dream*
+
+Simulation goals requiring complete skill acquisition depend on stable model availability, making healthy-model pinning a critical operational safeguard.
+
+### `dream:20260913134632:4:e11cbc`
+*13.09. 13:46 UTC · Quelle: dream*
+
+The model 'dots-studio/dots-3-note-preview:free' was the only consistently successful endpoint, highlighting the risk of relying on a single fragile fallback chain.
+
+### `dream:20260913134632:3:11ce60`
+*13.09. 13:46 UTC · Quelle: dream*
+
+During high system stress (1.0) and 'conserve' state, restricting the task budget to 3 tasks and 1 iteration prevents resource exhaustion.
+
+### `dream:20260913134632:2:9811c2`
+*13.09. 13:46 UTC · Quelle: dream*
+
+The Nemotron model entered a hard lockout ('sperre') after three consecutive timeouts, showing that retry logic must include backoff to avoid system-level blocks.
+
+### `dream:20260913134632:1:71fba4`
+*13.09. 13:46 UTC · Quelle: dream*
+
+Free-tier models like Google Gemma are highly prone to 429 rate-limiting under concurrent load, necessitating request serialization.
 
 ### `dream:20260913133637:5:5dd1b7`
 *13.09. 13:36 UTC · Quelle: dream*
@@ -42117,56 +42142,6 @@ score=9; issues=Sandbox-Verdict nur für erstes Skript (142 Zeilen), die beiden 
 *30.08. 13:46 UTC · Quelle: system*
 
 Erkenntnisse aus Schwarm-Arbeit ziehen
-
-### `dream:20260830134514:5:9fee4e`
-*30.08. 13:45 UTC · Quelle: dream*
-
-Calibration error of 2 points (predicted 4 vs actual 6) indicates systematic underestimation of task complexity.
-
-### `dream:20260830134514:4:12fbb8`
-*30.08. 13:45 UTC · Quelle: dream*
-
-Evolutionary refinement (3 variants) boosted solution score from 6 to 9, but swarm convergence still failed after 2 cycles.
-
-### `dream:20260830134514:3:708180`
-*30.08. 13:45 UTC · Quelle: dream*
-
-InclusionAI Ling 3.0 Flash Fin shows consistent success with low latency (~12-16s) and no rate-limit failures in this window.
-
-### `dream:20260830134514:2:83837c`
-*30.08. 13:45 UTC · Quelle: dream*
-
-NVIDIA Nemotron exhibits bimodal reliability: successful completions but also 502 upstream overload errors under load.
-
-### `dream:20260830134514:1:249b77`
-*30.08. 13:45 UTC · Quelle: dream*
-
-Rate limiting (429) affects all free-tier models indiscriminately, making them unreliable for time-critical paths.
-
-### `dream:20260830133859:5:f19f6f`
-*30.08. 13:38 UTC · Quelle: dream*
-
-Hand-action tooling completes in <1 s with clean exit codes, confirming local execution reliability.
-
-### `dream:20260830133859:4:8906fb`
-*30.08. 13:38 UTC · Quelle: dream*
-
-Simulation-gated exploration ("Blinden Fleck #2") passed risk/revision checks and TOR confirmed artifact execution (257-line Python script).
-
-### `dream:20260830133859:3:29976c`
-*30.08. 13:38 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free is the only model with 100% success rate and consistent sub-30 s latency in this sample.
-
-### `dream:20260830133859:2:b4fce6`
-*30.08. 13:38 UTC · Quelle: dream*
-
-Nvidia Nemotron-3-Ultra exhibits intermittent 502 upstream overloads yet succeeds ~70% of calls with highly variable latency (43–101 s).
-
-### `dream:20260830133859:1:1ad982`
-*30.08. 13:38 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive 429 rate-limiting (z-ai/glm-5.2:free failed 6×, Gemma models 4×), making them unsuitable for latency-critical paths.
 
 ### `last_swarm_critique`
 *30.08. 12:45 UTC · Quelle: critic*
