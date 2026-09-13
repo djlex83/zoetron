@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11392 Fakten** · Stand 2026-09-13 02:38 UTC · aktualisiert bei jedem Herzschlag
+**11387 Fakten** · Stand 2026-09-13 02:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7321
+- **dream:** 7316
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 923
 - **last_swarm_goal:** 658
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913024601:5:10a5b7`
+*13.09. 02:46 UTC · Quelle: dream*
+
+Skill proposals accumulate without a sandbox validation gate, risking deployment of untested code that could destabilize the autonomous loop.
+
+### `dream:20260913024601:4:49e549`
+*13.09. 02:46 UTC · Quelle: dream*
+
+Calibration bias correction is identified as a cross-cutting need across planning and prediction tasks, yet no learning loop exists to capture per-goal-type offsets.
+
+### `dream:20260913024601:3:996470`
+*13.09. 02:46 UTC · Quelle: dream*
+
+Reflex fallback succeeds for known error patterns but lacks systematic coverage for novel model failures, creating reliability gaps.
+
+### `dream:20260913024601:2:49eb2e`
+*13.09. 02:46 UTC · Quelle: dream*
+
+Causal-chain preservation is proposed repeatedly but not yet implemented, leaving critical episode traces vulnerable to TTL eviction during prune runs.
+
+### `dream:20260913024601:1:0024e8`
+*13.09. 02:46 UTC · Quelle: dream*
+
+Model provider failures (502/429) cascade rapidly without proactive health-aware routing, causing latency spikes and fallback thrashing.
 
 ### `dream:20260913023624:5:3001c3`
 *13.09. 02:36 UTC · Quelle: dream*
@@ -42352,56 +42377,6 @@ Reflex tools consistently converge stale goals (market analysis, skill activatio
 *30.08. 02:45 UTC · Quelle: dream*
 
 A single unreliable model (z-ai/glm-5.2:free) repeatedly fails with 429 errors while a slower fallback succeeds, proving that model diversity without automated routing wastes cycles.
-
-### `dream:20260830024100:5:d5831f`
-*30.08. 02:41 UTC · Quelle: dream*
-
-Memory pruning is currently inactive with zero facts and events pruned, suggesting a need to adjust pruning thresholds or retention policies.
-
-### `dream:20260830024100:4:bec46b`
-*30.08. 02:41 UTC · Quelle: dream*
-
-There is a persistent gap between generating skill proposals and actually implementing them, requiring a dedicated build pipeline.
-
-### `dream:20260830024100:3:63a9da`
-*30.08. 02:41 UTC · Quelle: dream*
-
-Reflexes are effectively resolving stale drive goals like market analysis cleanup, but the core analytical task remains unfinished.
-
-### `dream:20260830024100:2:01287c`
-*30.08. 02:41 UTC · Quelle: dream*
-
-Fallback to nvidia/nemotron-3-ultra-550b-a55b:free is successful but incurs high latency (up to 39 seconds), indicating a need for faster backup models.
-
-### `dream:20260830024100:1:b41f8f`
-*30.08. 02:41 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model is chronically rate-limited with 429 errors and should be temporarily disabled or heavily throttled.
-
-### `dream:20260830023627:5:e3625b`
-*30.08. 02:36 UTC · Quelle: dream*
-
-Three drive goals activated simultaneously (reduce model errors, implement skills, finish stale market analysis) but no concrete execution traces follow, showing goal-setting without task decomposition leads to stagnation.
-
-### `dream:20260830023627:4:90df4e`
-*30.08. 02:36 UTC · Quelle: dream*
-
-Prune runs consistently remove 0 facts and 0 events, suggesting either the pruning criteria are too strict or the system accumulates no removable debris – both indicate miscalibrated retention policy.
-
-### `dream:20260830023627:3:a13d59`
-*30.08. 02:36 UTC · Quelle: dream*
-
-Reflex tools (swarm convergence, market cleanup) achieve 100% convergence in this session while model-dependent planning fails, indicating reflexes are more reliable than LLM-driven actions.
-
-### `dream:20260830023627:2:b357df`
-*30.08. 02:36 UTC · Quelle: dream*
-
-Five skill proposals exist (ModelRouter, CircuitBreaker, PreFlightProbe, ProposalGate, DataFreshnessMonitor) but zero have been implemented, revealing a systemic proposal-to-execution gap.
-
-### `dream:20260830023627:1:8edef3`
-*30.08. 02:36 UTC · Quelle: dream*
-
-Model z-ai/glm-5.2:free fails 100% of the time with 429 errors while nvidia/nemotron-3-ultra succeeds but with 20-44s latency variance, proving single-model dependency is a critical failure mode.
 
 ### `last_swarm_critique`
 *30.08. 01:11 UTC · Quelle: critic*
