@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Verifying the generated artifact's execution (TOR check) immediately after generation ensures that proposed skills are not just theoretically sound bu
+- Transient model failures (like 429 errors) can be successfully resolved through automatic retries, as evidenced by a successful call to `google/gemma-
+- An iterative simulation-revision cycle (5 revisions) successfully mitigated risks and aligned the system's calibration score perfectly (predicted 6, a
+- The 'dots-studio/dots-3-note-preview:free' model served as a highly reliable fallback, maintaining consistent success and low latency even when other 
+- The free Google Gemma models on OpenRouter are highly susceptible to '429 Too Many Requests' rate-limiting errors, making them unreliable for high-fre
 - In conserve mode with stress 1.0 and a 3-task budget, the system must prioritize pre-validated, low-risk actions to avoid exhausting the budget on rep
 - Recurring model failures across multiple cycles show that failure knowledge is not persisted between sessions, causing the same 429 errors to repeat i
 - The reflex 'vorgeschlagene-fähigkeiten-wirklich-nutz.py' failed (ok: false), revealing that skill proposals alone create no working capabilities witho
@@ -51,11 +56,6 @@
 - Successful calls complete in roughly 30 s, implying that timeout thresholds should be set above that baseline.
 - Three consecutive errors cause the model to be blocked, demonstrating the need for a circuit‑breaker pattern.
 - Timeout errors suggest network latency spikes, so fixed timeout values are insufficient.
-- The dominant failure mode is HTTP 429 rate‑limiting, indicating that request volume exceeds the provider's quota.
-- High latency on fallback models (20-30s) demands token budgets and metabolism-aware scheduling to preserve responsiveness.
-- Stale swarm goals degrade system relevance; lightweight periodic refresh via reflexes maintains alignment.
-- Pre-execution health checks prevent wasted cycles on doomed actions (artifact not running, API unhealthy).
-- Fixed timeout values cause cascading failures under load; timeouts must adapt to system stress and model latency history.
 
 ---
 

@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11382 Fakten** · Stand 2026-09-13 11:34 UTC · aktualisiert bei jedem Herzschlag
+**11382 Fakten** · Stand 2026-09-13 11:44 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7297
 - **swarm_artifact:** 1663
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913114134:5:bc7a14`
+*13.09. 11:41 UTC · Quelle: dream*
+
+Verifying the generated artifact's execution (TOR check) immediately after generation ensures that proposed skills are not just theoretically sound but functionally runnable (145 lines of Python).
+
+### `dream:20260913114134:4:c378d8`
+*13.09. 11:41 UTC · Quelle: dream*
+
+Transient model failures (like 429 errors) can be successfully resolved through automatic retries, as evidenced by a successful call to `google/gemma-4-31b-it:free` following multiple failures.
+
+### `dream:20260913114134:3:ec8e23`
+*13.09. 11:41 UTC · Quelle: dream*
+
+An iterative simulation-revision cycle (5 revisions) successfully mitigated risks and aligned the system's calibration score perfectly (predicted 6, actual 6).
+
+### `dream:20260913114134:2:adc593`
+*13.09. 11:41 UTC · Quelle: dream*
+
+The 'dots-studio/dots-3-note-preview:free' model served as a highly reliable fallback, maintaining consistent success and low latency even when other models were failing.
+
+### `dream:20260913114134:1:33b1e6`
+*13.09. 11:41 UTC · Quelle: dream*
+
+The free Google Gemma models on OpenRouter are highly susceptible to '429 Too Many Requests' rate-limiting errors, making them unreliable for high-frequency or concurrent tasks without robust retry logic.
 
 ### `dream:20260913113129:5:dfe971`
 *13.09. 11:31 UTC · Quelle: dream*
@@ -42217,31 +42242,6 @@ The occurrence of 404 errors demonstrates that model endpoint availability is vo
 *30.08. 11:42 UTC · Quelle: dream*
 
 Frequent 429 errors across multiple providers indicate that free-tier rate limits are a systemic bottleneck rather than isolated failures.
-
-### `dream:20260830113438:5:d32fe1`
-*30.08. 11:34 UTC · Quelle: dream*
-
-Prune runs consistently yield zero pruned facts or events, suggesting stale data accumulation without effective cleanup.
-
-### `dream:20260830113438:4:32b79d`
-*30.08. 11:34 UTC · Quelle: dream*
-
-The system generates high-quality skill proposals from failures but has not yet closed the loop by implementing them as permanent capabilities.
-
-### `dream:20260830113438:3:d0621e`
-*30.08. 11:34 UTC · Quelle: dream*
-
-Reflex-based recovery mechanisms effectively converge on solutions but are purely reactive, lacking preventive guards to avoid failures in the first place.
-
-### `dream:20260830113438:2:469c36`
-*30.08. 11:34 UTC · Quelle: dream*
-
-Model provider failures (429 rate limits and 404s) are systemic rather than isolated, with multiple providers failing simultaneously and only one fallback model succeeding.
-
-### `dream:20260830113438:1:4b5eb2`
-*30.08. 11:34 UTC · Quelle: dream*
-
-Dream module consistently times out at exactly 180 seconds across three consecutive cycles, indicating a structural bottleneck that blocks the entire consolidation pipeline.
 
 ### `last_swarm_critique`
 *30.08. 11:12 UTC · Quelle: critic*
