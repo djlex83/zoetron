@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,13 +26,13 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 5×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation→revise→apply loop functioned correctly (1 revision applied) but the persistent 429 pattern across models suggests the failure is extern
+- Metabolism is at maximum stress (1.0) with a "conserve" state and only 3 tasks / 1 iteration budget, meaning every action must be maximally efficient.
+- The reflex `fernere-erinnerungen-verbinden.py` returned ok:false, blocking the "Fähigkeiten mit Erinnerungen verbinden" goal that the swarm was starte
+- The hand_action failure "nichts gelesen" occurred because the data path had no files/directory under the real path, and a subsequent call with a valid
+- `google/gemma-4-31b-it:free` and `google/gemma-4-26b-a4b-it:free` both consistently fail with HTTP 429 rate-limit errors, while `dots-studio/dots-3-no
 - The integration of dreams into swarm strategies can be systematized by extracting concrete actions from abstract dream content.
 - Model blocking after three consecutive failures is a protective measure that can cause cascading failures without a healthy fallback pool.
 - Stale drive goals, such as outdated swarm targets, hinder progress and must be periodically refreshed based on recent interactions.
@@ -51,11 +56,6 @@
 - Swarm tasks that evolve but do not converge indicate insufficient iterations or suboptimal role distribution.
 - Pinning the primary model to a consistently successful endpoint (dots-studio/dots-3-note-preview:free) reduces latency and failure rates.
 - Free-tier models frequently trigger 429 rate limits and read timeouts, necessitating exponential backoff and fallback logic.
-- The high variance in latency (5.8s to 61.0s) and output tokens (444 to 5788) in successful runs indicates that execution environments must use adaptiv
-- Targeted artifact critiques (e.g., identifying redundant script execution) successfully guided evolutionary variants to improve scores from 4/10 to pe
-- A calibration gap of 3 points (predicting 7, scoring 4) on swarm information tasks suggests the system systematically overestimates its capability and
-- The automatic 1800-second lockout of the Nemotron model after three consecutive timeouts indicates that aggressive retry logic without backoff trigger
-- Free-tier models like Google Gemma and Nvidia Nemotron are highly prone to rate-limiting (429) and read timeouts, making the 'dots-studio/dots-3-note-
 
 ---
 

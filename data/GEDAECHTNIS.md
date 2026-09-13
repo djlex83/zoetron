@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11343 Fakten** · Stand 2026-09-13 19:29 UTC · aktualisiert bei jedem Herzschlag
+**11343 Fakten** · Stand 2026-09-13 19:39 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7263
 - **swarm_artifact:** 1653
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913193656:5:d9f4a8`
+*13.09. 19:36 UTC · Quelle: dream*
+
+The simulation→revise→apply loop functioned correctly (1 revision applied) but the persistent 429 pattern across models suggests the failure is external (rate limiting), not internal.
+
+### `dream:20260913193656:4:7bab01`
+*13.09. 19:36 UTC · Quelle: dream*
+
+Metabolism is at maximum stress (1.0) with a "conserve" state and only 3 tasks / 1 iteration budget, meaning every action must be maximally efficient.
+
+### `dream:20260913193656:3:e19787`
+*13.09. 19:36 UTC · Quelle: dream*
+
+The reflex `fernere-erinnerungen-verbinden.py` returned ok:false, blocking the "Fähigkeiten mit Erinnerungen verbinden" goal that the swarm was started to achieve.
+
+### `dream:20260913193656:2:d2910b`
+*13.09. 19:36 UTC · Quelle: dream*
+
+The hand_action failure "nichts gelesen" occurred because the data path had no files/directory under the real path, and a subsequent call with a valid path succeeded — path validation before execution is the missing step.
+
+### `dream:20260913193656:1:e11007`
+*13.09. 19:36 UTC · Quelle: dream*
+
+`google/gemma-4-31b-it:free` and `google/gemma-4-26b-a4b-it:free` both consistently fail with HTTP 429 rate-limit errors, while `dots-studio/dots-3-note-preview:free` succeeded in all 4 attempts during this session.
 
 ### `dream:20260913192641:5:e56c5b`
 *13.09. 19:26 UTC · Quelle: dream*
@@ -42012,31 +42037,6 @@ Latency variance between successful calls (7.9s vs 12.2s) exceeds 50%, indicatin
 *30.08. 19:40 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for production workloads without a routing layer.
-
-### `dream:20260830193321:5:30c093`
-*30.08. 19:33 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite repeated 429 failures, revealing a blind spot in health monitoring for external API degradation.
-
-### `dream:20260830193321:4:ea6ab1`
-*30.08. 19:33 UTC · Quelle: dream*
-
-Pruning runs remove zero facts/events, indicating either stale-data detection is too conservative or consolidation isn't producing prunable artifacts.
-
-### `dream:20260830193321:3:34824b`
-*30.08. 19:33 UTC · Quelle: dream*
-
-Simulation-to-practice effort estimates are systematically underestimated by ~2x, causing repeated timeline overruns.
-
-### `dream:20260830193321:2:5bdff1`
-*30.08. 19:33 UTC · Quelle: dream*
-
-Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) consistently converge goals without LLM calls, proving local heuristics can replace fragile API dependencies.
-
-### `dream:20260830193321:1:0491f3`
-*30.08. 19:33 UTC · Quelle: dream*
-
-429 rate-limit errors cascade across all non-Poolside models, making single-model reliance a systemic fragility.
 
 ### `last_swarm_critique`
 *30.08. 18:41 UTC · Quelle: critic*
