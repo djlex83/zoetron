@@ -46840,3 +46840,25 @@
 {"ts": 1788724902.1027966, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.44, "gelesen": 75}}
 {"ts": 1788724902.104903, "kind": "reflex_used", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py", "ok": true}}
 {"ts": 1788724902.5951664, "kind": "act_done", "payload": {"goal_title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788121031.8885972, "key": "dream:20260830201711:1:2c8867", "value": "Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.", "source": "dream"}
+{"ts": 1788121031.8887265, "key": "dream:20260830201711:2:5bfefb", "value": "The inclusionai/ling-3.0-flash-fin:free model consistently succeeds while others fail, suggesting it has better rate-limit tolerance or priority access.", "source": "dream"}
+{"ts": 1788121031.8888826, "key": "dream:20260830201711:3:adf9d3", "value": "Task completion improved from 0/10 to 7/10 after evolution, showing that iterative refinement with critic feedback is effective for overcoming initial failures.", "source": "dream"}
+{"ts": 1788121031.8889852, "key": "dream:20260830201711:4:9e0d54", "value": "The critic's specific feedback about missing executable Python code directly correlates with the score improvement, highlighting the importance of concrete, actionable critique.", "source": "dream"}
+{"ts": 1788121031.8890846, "key": "dream:20260830201711:5:dfb3f7", "value": "Models that fail with 429 errors create cascading failures in dependent tasks, amplifying the impact of rate limiting beyond individual requests.", "source": "dream"}
+{"ts": 1788725417.7733781, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788725486.10442, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788725487.771135, "kind": "prune_run", "payload": {"facts_pruned": 10, "events_pruned": 0}}
+{"ts": 1788725522.7426836, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.6, "tokens_ein": 1462, "tokens_aus": 1537}}
+{"ts": 1788725522.743269, "kind": "skill_proposal", "payload": {"proposal": "Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backoff cooldowns to prevent repeated calls to failing endpoints."}}
+{"ts": 1788725522.7433302, "kind": "skill_proposal", "payload": {"proposal": "Implement PreFlightCheck that queries ModelHealthRegistry before every generation call, skipping providers exceeding 10% error rate or active cooldown."}}
+{"ts": 1788725522.7433913, "kind": "skill_proposal", "payload": {"proposal": "Build AutomaticFallbackChain (primary→secondary→tertiary→hand_action) with explicit latency and error budgets per tier, routing to first provider passing PreFlightCheck."}}
+{"ts": 1788725522.743453, "kind": "skill_proposal", "payload": {"proposal": "Create SkillValidationPipeline requiring every proposed skill to execute and score within one cycle, auto-pruning proposals that fail validation to close the proposal-to-deployment gap."}}
+{"ts": 1788725522.7435296, "kind": "skill_proposal", "payload": {"proposal": "Fix HandAction path resolution by mandating absolute paths via ZOETRON_DATA/env expansion before execution, with pre-flight validation that target exists."}}
+{"ts": 1788725522.7436118, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788725551.5978174, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 27.0, "tokens_ein": 487, "tokens_aus": 653}}
+{"ts": 1788725551.5979912, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und verringern", "why": "Das Modell macht noch zu viele Fehler. Wenn wir die Ursachen finden, werden zukünftige Entscheidungen verlässlicher.", "signal": "failure"}}
+{"ts": 1788725551.5980794, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Die gespeicherten Schwarm-Ziele und Kritiken sind veraltet. Frische Infos verhindern, dass wir auf alten Annahmen aufbauen.", "signal": "stale"}}
+{"ts": 1788725551.5981445, "kind": "drive_goal", "payload": {"title": "Fertigkeiten besser prüfen vor Nutzung", "why": "Es werden viele neue Fertigkeiten vorgeschlagen, aber wenige im Traum getestet. Mehr Prüfung spart später Zeit und Fehler.", "signal": "gap"}}
+{"ts": 1788725554.0714252, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 3}}
+{"ts": 1788725554.0739539, "kind": "reflex_used", "payload": {"goal": "Traum-Erkenntnisse in echte Fähigkeiten verwandeln", "tool": "beste-vorschläge-in-fähigkeiten-verwande.py", "ok": true}}
+{"ts": 1788725554.4388285, "kind": "act_done", "payload": {"goal_title": "Traum-Erkenntnisse in echte Fähigkeiten verwandeln", "score": null, "converged": true, "mode": "reflex"}}

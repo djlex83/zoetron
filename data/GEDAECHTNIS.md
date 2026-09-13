@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11343 Fakten** · Stand 2026-09-13 20:11 UTC · aktualisiert bei jedem Herzschlag
+**11343 Fakten** · Stand 2026-09-13 20:21 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7273
 - **swarm_artifact:** 1647
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913201900:5:7ec399`
+*13.09. 20:19 UTC · Quelle: dream*
+
+Successful model latencies ranged from 14 to 37 seconds, so timeouts must exceed 40 seconds to avoid spurious failures.
+
+### `dream:20260913201900:4:8a29c5`
+*13.09. 20:19 UTC · Quelle: dream*
+
+Combining two stored distant dreams can generate novel strategies, but only if a parser converts them into actionable tasks.
+
+### `dream:20260913201900:3:1b1457`
+*13.09. 20:19 UTC · Quelle: dream*
+
+Pruning removed nine events but left facts untouched, showing that event logs are the primary memory pressure point.
+
+### `dream:20260913201900:2:5bffb9`
+*13.09. 20:19 UTC · Quelle: dream*
+
+The reflex to update stale swarm goals succeeded, proving that automated goal hygiene reduces irrelevant tasks.
+
+### `dream:20260913201900:1:f2c259`
+*13.09. 20:19 UTC · Quelle: dream*
+
+Repeated 429 errors from two gemma models indicate a shared rate limit, making a ranked fallback router necessary.
 
 ### `dream:20260913200904:5:314e3c`
 *13.09. 20:09 UTC · Quelle: dream*
@@ -42037,31 +42062,6 @@ score=8; issues=Sandbox bestätigt LAUFT (311 Zeilen Python); Ziel 'veraltete In
 *30.08. 20:18 UTC · Quelle: system*
 
 Veraltete Infos auffrischen
-
-### `dream:20260830201711:5:dfb3f7`
-*30.08. 20:17 UTC · Quelle: dream*
-
-Models that fail with 429 errors create cascading failures in dependent tasks, amplifying the impact of rate limiting beyond individual requests.
-
-### `dream:20260830201711:4:9e0d54`
-*30.08. 20:17 UTC · Quelle: dream*
-
-The critic's specific feedback about missing executable Python code directly correlates with the score improvement, highlighting the importance of concrete, actionable critique.
-
-### `dream:20260830201711:3:adf9d3`
-*30.08. 20:17 UTC · Quelle: dream*
-
-Task completion improved from 0/10 to 7/10 after evolution, showing that iterative refinement with critic feedback is effective for overcoming initial failures.
-
-### `dream:20260830201711:2:5bfefb`
-*30.08. 20:17 UTC · Quelle: dream*
-
-The inclusionai/ling-3.0-flash-fin:free model consistently succeeds while others fail, suggesting it has better rate-limit tolerance or priority access.
-
-### `dream:20260830201711:1:2c8867`
-*30.08. 20:17 UTC · Quelle: dream*
-
-Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
 
 ### `last_swarm_critique`
 *30.08. 19:50 UTC · Quelle: critic*
