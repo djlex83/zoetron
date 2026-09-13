@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11343 Fakten** · Stand 2026-09-13 20:21 UTC · aktualisiert bei jedem Herzschlag
+**11353 Fakten** · Stand 2026-09-13 20:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7273
+- **dream:** 7278
 - **swarm_artifact:** 1647
-- **last_swarm_critique:** 937
-- **last_swarm_goal:** 672
-- **anti_pattern:** 363
-- **strategy:** 184
+- **last_swarm_critique:** 938
+- **last_swarm_goal:** 673
+- **anti_pattern:** 365
+- **strategy:** 185
 - **tool:** 152
 - **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `tool:veraltete-swarm-informationen-aktualisie`
+*13.09. 20:39 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Swarm-Informationen aktualisieren'. Datei: data/tools/veraltete-swarm-informationen-aktualisie.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Swarm-Informat:2`
+*13.09. 20:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): Event-Driven Pub/Sub with Idempotent Handlers - Deploy a durable message broker (Kafka, NATS JetStream, or Redis Streams) as the swarm event bus. Every state-changing operation (node join/leave, service scale, config 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Swarm-Informat:1`
+*13.09. 20:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 6, 9]): Decentralized Gossip Anti-Entropy - Equip every swarm node with a gossip protocol (e.g., SWIM or HyParView) that propagates versioned state digests (Merkle trees or version vectors). Nodes periodically exchange digest
+
+### `last_swarm_critique`
+*13.09. 20:36 UTC · Quelle: critic*
+
+score=4; issues=Artifact is explicitly a 'Read-only probe' (per docstring) but goal requires 'aktualisieren' (update/refresh) of outdated swarm information - no update logic implemented; Only detects/staleness reports; does not modify, refresh, or synchronize 
+
+### `last_swarm_goal`
+*13.09. 20:29 UTC · Quelle: system*
+
+Veraltete Swarm-Informationen aktualisieren
+
+### `dream:20260913202859:5:00cfbe`
+*13.09. 20:28 UTC · Quelle: dream*
+
+The absence of organ-level errors in self-diagnosis confirms infrastructure stability, allowing the system to safely allocate resources to complex tasks like dream combination and model repair.
+
+### `dream:20260913202859:4:2a30f9`
+*13.09. 20:28 UTC · Quelle: dream*
+
+The drive to improve faulty predictions and renew stale swarm goals indicates that the system's cognitive focus is shifting from basic maintenance to higher-order optimization.
+
+### `dream:20260913202859:3:092348`
+*13.09. 20:28 UTC · Quelle: dream*
+
+Proactive pruning of stale facts and events is essential to maintain context clarity and prevent outdated information from blocking active goal progress.
+
+### `dream:20260913202859:2:662871`
+*13.09. 20:28 UTC · Quelle: dream*
+
+Autonomous reflex actions can successfully resolve model failures, but they require a pre-verified fallback model to route traffic to when primary options throttle.
+
+### `dream:20260913202859:1:8d41c3`
+*13.09. 20:28 UTC · Quelle: dream*
+
+Free-tier models like Google's Gemma variants are highly susceptible to HTTP 429 rate limits, making the `dots-studio/dots-3-note-preview:free` model the most reliable choice for critical path operations.
 
 ### `dream:20260913201900:5:7ec399`
 *13.09. 20:19 UTC · Quelle: dream*
@@ -42047,11 +42097,6 @@ Fallback models (nvidia/nemotron-3-ultra, poolside/laguna) succeed but exhibit e
 *30.08. 20:52 UTC · Quelle: dream*
 
 Primary model z-ai/glm-5.2:free consistently fails with 429 rate limits, making it unreliable as a default choice.
-
-### `tool:veraltete-infos-auffrischen`
-*30.08. 20:25 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Infos auffrischen'. Datei: data/tools/veraltete-infos-auffrischen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *30.08. 20:25 UTC · Quelle: critic*

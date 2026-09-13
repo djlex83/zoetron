@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 20:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 20:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The absence of organ-level errors in self-diagnosis confirms infrastructure stability, allowing the system to safely allocate resources to complex tas
+- The drive to improve faulty predictions and renew stale swarm goals indicates that the system's cognitive focus is shifting from basic maintenance to 
+- Proactive pruning of stale facts and events is essential to maintain context clarity and prevent outdated information from blocking active goal progre
+- Autonomous reflex actions can successfully resolve model failures, but they require a pre-verified fallback model to route traffic to when primary opt
+- Free-tier models like Google's Gemma variants are highly susceptible to HTTP 429 rate limits, making the `dots-studio/dots-3-note-preview:free` model 
 - Successful model latencies ranged from 14 to 37 seconds, so timeouts must exceed 40 seconds to avoid spurious failures.
 - Combining two stored distant dreams can generate novel strategies, but only if a parser converts them into actionable tasks.
 - Pruning removed nine events but left facts untouched, showing that event logs are the primary memory pressure point.
@@ -51,11 +56,6 @@
 - Timeout errors on large models like nemotron-3-ultra-550b indicate they exceed time budgets and should be avoided.
 - The dots-studio/dots-3-note-preview:free model consistently succeeds with acceptable latency, making it the most dependable free option.
 - Frequent 429 errors from free Gemma models reveal strict rate limits that undermine their reliability.
-- Extracting specific critic artifact issues into targeted code variants improves the evolutionary loop's convergence.
-- Writing to the memory graph when the computed state delta is zero wastes resources and should be skipped.
-- Predicted task scores are consistently higher than actual outcomes, suggesting a systematic overestimation that can be corrected with a calibration fa
-- Using a fixed low timeout threshold leads to false failures; dynamic timeout based on 90th percentile latency is more robust.
-- Repeated 429 and timeout errors from gemma and nemotron models indicate they are unreliable under load and should be bypassed.
 
 ---
 

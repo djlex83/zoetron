@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 20:19:37",
+ "stand": "2026-09-13 20:39:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,12 +81,6 @@
    "quote": 0.0
   },
   {
-   "tool": "modellfehler-stark-verringern.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "automatische-fehler-reduktions-pipeline-.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -148,6 +142,12 @@
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "veraltete-infos-auffrischen.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -261,12 +261,6 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltete-infos-auffrischen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -319,6 +313,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
@@ -388,16 +388,16 @@
   }
  ],
  "haende_quote": 0.72,
- "simulationen_angewandt": 25,
+ "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 33,
   "best": 9.0,
-  "schnitt": 5.52
+  "schnitt": 5.45
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 31,
-   "schnitt": 5.45
+   "schnitt": 5.39
   },
   "bau": {
    "n": 2,
