@@ -44541,3 +44541,32 @@
 {"ts": 1788667540.1066184, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.08, "gelesen": 58}}
 {"ts": 1788667540.1122768, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Aufgaben und Kritiken aktualisieren", "tool": "alte-erinnerungen-aktualisieren.py", "ok": true}}
 {"ts": 1788667540.627676, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Aufgaben und Kritiken aktualisieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788063139.8032665, "key": "dream:20260830041219:1:dc9c9f", "value": "The z-ai/glm-5.2:free model repeatedly hits 429 rate limits without any automatic recovery, making it an unreliable primary choice.", "source": "dream"}
+{"ts": 1788063139.8033805, "key": "dream:20260830041219:2:97d67a", "value": "The fallback model nvidia/nemotron-3-ultra-550b-a55b:free works but exhibits extreme latency variance (14s to 48s), indicating no latency budget enforcement.", "source": "dream"}
+{"ts": 1788063139.803471, "key": "dream:20260830041219:3:d0e913", "value": "Skill proposals accumulate across cycles but are never verified as implemented, creating a persistent gap between suggestion and capability.", "source": "dream"}
+{"ts": 1788063139.8035562, "key": "dream:20260830041219:4:9bd745", "value": "Self-diagnosis consistently reports zero findings, suggesting the diagnostic depth is insufficient to catch real systemic issues.", "source": "dream"}
+{"ts": 1788063139.8036394, "key": "dream:20260830041219:5:91d9be", "value": "No calibration data exists per (task_type, model, context_size), so model selection remains naive and unreproducible.", "source": "dream"}
+{"ts": 1788063539.019041, "key": "dream:20260830041859:1:b30ea3", "value": "Persistent 429 errors on z-ai/glm-5.2:free indicate missing rate-limit awareness and automatic failover.", "source": "dream"}
+{"ts": 1788063539.0191276, "key": "dream:20260830041859:2:fbb404", "value": "Latency variance (7–31 s) on the fallback model shows no latency budget or timeout enforcement.", "source": "dream"}
+{"ts": 1788063539.0191913, "key": "dream:20260830041859:3:470634", "value": "Skill proposals accumulate but rarely graduate to implemented capabilities, creating a proposal–implementation gap.", "source": "dream"}
+{"ts": 1788063539.0192497, "key": "dream:20260830041859:4:4af95e", "value": "Stale work items (market analyses) persist for days without automatic reaping or escalation.", "source": "dream"}
+{"ts": 1788063539.019303, "key": "dream:20260830041859:5:d559bc", "value": "No systematic validation of hand_action outputs allows empty or schema-violating results to pass silently.", "source": "dream"}
+{"ts": 1788668069.183277, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788668137.6648507, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788668139.4059436, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 41}}
+{"ts": 1788668143.4096532, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788668143.4096503, "schalter_geoeffnet": false}}
+{"ts": 1788668161.075407, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 17.7, "tokens_ein": 1357, "tokens_aus": 1454}}
+{"ts": 1788668161.0758424, "kind": "skill_proposal", "payload": {"proposal": "Implement a unified model resilience layer with circuit-breaker state, exponential backoff with jitter for 429/502 errors, and per-endpoint health scoring."}}
+{"ts": 1788668161.0758886, "kind": "skill_proposal", "payload": {"proposal": "Build a latency-weighted router that uses real-time success-rate percentiles to preemptively route away from models entering rate-limit zones."}}
+{"ts": 1788668161.075931, "kind": "skill_proposal", "payload": {"proposal": "Create an automated skill incubator that converts dream skill_proposals into registered, prioritized, and sandbox-tested code stubs."}}
+{"ts": 1788668161.0759726, "kind": "skill_proposal", "payload": {"proposal": "Establish a proactive swarm knowledge refresh scheduler that updates stale data based on age thresholds rather than waiting for failure signals."}}
+{"ts": 1788668161.076016, "kind": "skill_proposal", "payload": {"proposal": "Develop a calibration feedback loop recording predicted vs actual cycle counts per goal type, adjusting future estimates via rolling exponential moving average."}}
+{"ts": 1788668161.0760589, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788668163.3525352, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788668163.3525314, "schalter_geoeffnet": false}}
+{"ts": 1788668171.640853, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 8.3, "tokens_ein": 405, "tokens_aus": 438}}
+{"ts": 1788668171.6410608, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und verringern", "why": "Das System macht oft Fehler beim Vorhersagen. Wenn wir die Ursachen finden, wird es zuverlässiger.", "signal": "failure"}}
+{"ts": 1788668171.6412034, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Die Infos über Schwarm-Ziele und Kritiken sind veraltet. Frische Daten helfen bei besseren Entscheidungen.", "signal": "stale"}}
+{"ts": 1788668171.6412995, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich lernen", "why": "Viele neue Fähigkeiten wurden vorgeschlagen, aber wenige umgesetzt. Wir wollen die besten davon trainieren.", "signal": "gap"}}
+{"ts": 1788668178.581159, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.53, "gelesen": 1234}}
+{"ts": 1788668178.6198204, "kind": "reflex_used", "payload": {"goal": "Schwarm-Wissen auffrischen", "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py", "ok": true}}
+{"ts": 1788668179.0146132, "kind": "act_done", "payload": {"goal_title": "Schwarm-Wissen auffrischen", "score": null, "converged": true, "mode": "reflex"}}

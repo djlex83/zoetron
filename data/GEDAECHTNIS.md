@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11374 Fakten** · Stand 2026-09-13 04:13 UTC · aktualisiert bei jedem Herzschlag
+**11369 Fakten** · Stand 2026-09-13 04:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7296
+- **dream:** 7291
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 925
 - **last_swarm_goal:** 660
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913042041:5:e4fdbb`
+*13.09. 04:20 UTC · Quelle: dream*
+
+Swarm insights expire silently — 30-day TTL without reinforcement tracking causes knowledge rot.
+
+### `dream:20260913042041:4:2b1c9e`
+*13.09. 04:20 UTC · Quelle: dream*
+
+Causal chains are severed during pruning — decision rationale lost without immutable decision→action→outcome logging.
+
+### `dream:20260913042041:3:95041b`
+*13.09. 04:20 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution pipeline — ideas decay into technical debt without automated implementation.
+
+### `dream:20260913042041:2:2d572e`
+*13.09. 04:20 UTC · Quelle: dream*
+
+High metabolic stress (1.0) correlates with increased model failures and timeouts, requiring automatic conservative mode activation.
+
+### `dream:20260913042041:1:4883db`
+*13.09. 04:20 UTC · Quelle: dream*
+
+Model provider failures cascade rapidly under load — single-provider dependency causes systemic unreliability.
 
 ### `dream:20260913041046:5:e00ead`
 *13.09. 04:10 UTC · Quelle: dream*
@@ -42237,56 +42262,6 @@ Upstream 502 errors from Nvidia show provider instability beyond rate limiting, 
 *30.08. 04:24 UTC · Quelle: dream*
 
 429 rate limits affect every free model simultaneously, indicating shared OpenRouter quota rather than per-model limits.
-
-### `dream:20260830041859:5:d559bc`
-*30.08. 04:18 UTC · Quelle: dream*
-
-No systematic validation of hand_action outputs allows empty or schema-violating results to pass silently.
-
-### `dream:20260830041859:4:4af95e`
-*30.08. 04:18 UTC · Quelle: dream*
-
-Stale work items (market analyses) persist for days without automatic reaping or escalation.
-
-### `dream:20260830041859:3:470634`
-*30.08. 04:18 UTC · Quelle: dream*
-
-Skill proposals accumulate but rarely graduate to implemented capabilities, creating a proposal–implementation gap.
-
-### `dream:20260830041859:2:fbb404`
-*30.08. 04:18 UTC · Quelle: dream*
-
-Latency variance (7–31 s) on the fallback model shows no latency budget or timeout enforcement.
-
-### `dream:20260830041859:1:b30ea3`
-*30.08. 04:18 UTC · Quelle: dream*
-
-Persistent 429 errors on z-ai/glm-5.2:free indicate missing rate-limit awareness and automatic failover.
-
-### `dream:20260830041219:5:91d9be`
-*30.08. 04:12 UTC · Quelle: dream*
-
-No calibration data exists per (task_type, model, context_size), so model selection remains naive and unreproducible.
-
-### `dream:20260830041219:4:9bd745`
-*30.08. 04:12 UTC · Quelle: dream*
-
-Self-diagnosis consistently reports zero findings, suggesting the diagnostic depth is insufficient to catch real systemic issues.
-
-### `dream:20260830041219:3:d0e913`
-*30.08. 04:12 UTC · Quelle: dream*
-
-Skill proposals accumulate across cycles but are never verified as implemented, creating a persistent gap between suggestion and capability.
-
-### `dream:20260830041219:2:97d67a`
-*30.08. 04:12 UTC · Quelle: dream*
-
-The fallback model nvidia/nemotron-3-ultra-550b-a55b:free works but exhibits extreme latency variance (14s to 48s), indicating no latency budget enforcement.
-
-### `dream:20260830041219:1:dc9c9f`
-*30.08. 04:12 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model repeatedly hits 429 rate limits without any automatic recovery, making it an unreliable primary choice.
 
 ### `last_swarm_critique`
 *30.08. 03:21 UTC · Quelle: critic*

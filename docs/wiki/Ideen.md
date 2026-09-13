@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 04:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 04:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm insights expire silently — 30-day TTL without reinforcement tracking causes knowledge rot.
+- Causal chains are severed during pruning — decision rationale lost without immutable decision→action→outcome logging.
+- Skill proposals accumulate without execution pipeline — ideas decay into technical debt without automated implementation.
+- High metabolic stress (1.0) correlates with increased model failures and timeouts, requiring automatic conservative mode activation.
+- Model provider failures cascade rapidly under load — single-provider dependency causes systemic unreliability.
 - Stress-adaptive role dropping (critic disabled under 'conserve') demonstrates that metabolism-aware control flow prevents resource exhaustion during d
 - Swarm knowledge staleness triggers explicit drive goals, but no automated refresh exists; the weekly swarm_refresh_cycle proposal directly closes this
 - Pruning 19 events and 7 facts without causal-chain preservation risks severing decision→action→outcome links needed for future credit assignment.
@@ -51,11 +56,6 @@
 - Reflex-mode goals converge reliably while skill proposals accumulate untested, revealing a validation gap between proposal and deployment.
 - Latency variance across models (13s–57s) correlates with provider load, not model size, making static model selection unreliable under stress.
 - Model provider instability (502/429 errors) forces fallback chains but current routing lacks circuit-breakers and exponential backoff, causing cascadi
-- Drive goals highlight the need to update stale objectives and learn from failures.
-- Self-diagnosis consistently reports no organ failures, confirming hardware stability.
-- Reflex actions succeed only when data root paths are correctly resolved.
-- Pruning events without preserving causal sequences can break context for future planning.
-- Free model endpoints frequently return 429 or 502 errors, indicating rate limiting and overload that require automatic fallback.
 
 ---
 
