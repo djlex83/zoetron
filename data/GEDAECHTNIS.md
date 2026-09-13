@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11338 Fakten** · Stand 2026-09-13 19:19 UTC · aktualisiert bei jedem Herzschlag
+**11343 Fakten** · Stand 2026-09-13 19:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7258
+- **dream:** 7263
 - **swarm_artifact:** 1653
 - **last_swarm_critique:** 937
 - **last_swarm_goal:** 672
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913192641:5:e56c5b`
+*13.09. 19:26 UTC · Quelle: dream*
+
+The integration of dreams into swarm strategies can be systematized by extracting concrete actions from abstract dream content.
+
+### `dream:20260913192641:4:852990`
+*13.09. 19:26 UTC · Quelle: dream*
+
+Model blocking after three consecutive failures is a protective measure that can cause cascading failures without a healthy fallback pool.
+
+### `dream:20260913192641:3:cf11fb`
+*13.09. 19:26 UTC · Quelle: dream*
+
+Stale drive goals, such as outdated swarm targets, hinder progress and must be periodically refreshed based on recent interactions.
+
+### `dream:20260913192641:2:7bdb75`
+*13.09. 19:26 UTC · Quelle: dream*
+
+Hand action failures with empty reads indicate a lack of output validation, requiring retry logic and timeout enforcement.
+
+### `dream:20260913192641:1:47c22b`
+*13.09. 19:26 UTC · Quelle: dream*
+
+Recurrent HTTP 429 errors and timeouts across multiple free models necessitate a centralized rate-limit handler with exponential backoff and ranked fallback.
 
 ### `dream:20260913191647:5:668dc7`
 *13.09. 19:16 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The integration of dreams into swarm strategies can be systematized by extracting concrete actions from abstract dream content.
+- Model blocking after three consecutive failures is a protective measure that can cause cascading failures without a healthy fallback pool.
+- Stale drive goals, such as outdated swarm targets, hinder progress and must be periodically refreshed based on recent interactions.
+- Hand action failures with empty reads indicate a lack of output validation, requiring retry logic and timeout enforcement.
+- Recurrent HTTP 429 errors and timeouts across multiple free models necessitate a centralized rate-limit handler with exponential backoff and ranked fa
 - Self-diagnoses show no organ-level errors, so model-level failures are the dominant reliability bottleneck.
 - Aggressive pruning of facts and events improves performance but may discard context needed for later reasoning.
 - Swarm tasks that evolve but do not converge indicate insufficient iterations or suboptimal role distribution.
@@ -51,11 +56,6 @@
 - A calibration gap of 3 points (predicting 7, scoring 4) on swarm information tasks suggests the system systematically overestimates its capability and
 - The automatic 1800-second lockout of the Nemotron model after three consecutive timeouts indicates that aggressive retry logic without backoff trigger
 - Free-tier models like Google Gemma and Nvidia Nemotron are highly prone to rate-limiting (429) and read timeouts, making the 'dots-studio/dots-3-note-
-- Pruning 20 facts and 44 events demonstrates that memory cleanup effectively reduces context bloat.
-- The swarm converged in a single cycle with a score of 8, showing that simple goals can be solved efficiently.
-- Hand action failures are transient and resolve on retry, so retry logic improves overall reliability.
-- The dots‑studio model succeeds with high latency but no errors, making it a reliable fallback when other models fail.
-- Free Google Gemma models frequently return HTTP 429 errors, indicating they are rate‑limited and should be avoided for critical tasks.
 
 ---
 

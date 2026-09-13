@@ -1,7 +1,7 @@
 {
   "status": "completed",
   "model_path": "/workspace/zoetron/data/model.pkl",
-  "timestamp": "2026-09-12T19:19:36.461872",
+  "timestamp": "2026-09-13T19:27:32.195717",
   "errors_detected": 1,
   "errors": [
     {
@@ -12,7 +12,7 @@
       "details": {
         "score": 1.0
       },
-      "timestamp": "2026-09-12T19:19:36.458896"
+      "timestamp": "2026-09-13T19:27:32.193280"
     }
   ],
   "repairs_applied": 1,
@@ -28,7 +28,7 @@
     }
   ],
   "qa_results": {
-    "timestamp": "2026-09-12T19:19:36.459083",
+    "timestamp": "2026-09-13T19:27:32.193423",
     "test_results": {
       "basic_prediction": {
         "passed": true,
@@ -45,14 +45,14 @@
       },
       "robustness": {
         "passed": true,
-        "consistent": false,
+        "consistent": true,
         "details": "Robustness test completed"
       },
       "performance": {
         "passed": true,
-        "inference_time": 0.0003211498260498047,
-        "throughput": 311381.143281366,
-        "details": "Performance test: 311381.14 predictions/sec"
+        "inference_time": 0.00025773048400878906,
+        "throughput": 388002.2201665125,
+        "details": "Performance test: 388002.22 predictions/sec"
       }
     },
     "overall_passed": true,

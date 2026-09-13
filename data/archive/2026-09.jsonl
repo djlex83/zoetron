@@ -46736,3 +46736,12 @@
 {"ts": 1788722073.2886431, "kind": "model_score", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "score": 6}}
 {"ts": 1788722073.289081, "kind": "bahnen", "payload": {"goal": "Träume besser nutzen lernen", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 6, "abgerufen": 4, "ids": ["f:a92c0e22490b", "e:f61203758d0f", "e:f08663a0d512", "e:c45d45d239fa"], "ziel_id": "g:a6dc80360e81"}}
 {"ts": 1788722131.9476418, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 58.7, "tokens_ein": 205, "tokens_aus": 1236}}
+{"ts": 1788722192.6371233, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 60.7, "tokens_ein": 648, "tokens_aus": 939}}
+{"ts": 1788722192.6375585, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 6/10. Goal: Träume besser nutzen lernen\nCritic issues: All three artifacts duplicate boilerplate", "variants": 3, "winner_index": 0, "scores": [[9, 9, 8], [7, 5, 8], [6, 3, 7]]}}
+{"ts": 1788722256.883251, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 59.2, "tokens_ein": 434, "tokens_aus": 1657}}
+{"ts": 1788722294.4651015, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 36.9, "tokens_ein": 317, "tokens_aus": 412}}
+{"ts": 1788722294.4652433, "kind": "simulation", "payload": {"goal": "Träume besser nutzen lernen", "verdict": "go", "risks": 2, "revisions": 2}}
+{"ts": 1788722294.4653456, "kind": "swarm_finished", "payload": {"goal": "Träume besser nutzen lernen", "score": 6, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1788722294.4655428, "kind": "act_done", "payload": {"goal_title": "Träume besser nutzen lernen", "score": 6, "converged": false}}
+{"ts": 1788722296.267926, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.1, "gelesen": 1048}}
+{"ts": 1788722297.991554, "kind": "issue_synced", "payload": {"issue": 401, "state": "open"}}
