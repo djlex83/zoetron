@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11375 Fakten** · Stand 2026-09-13 03:08 UTC · aktualisiert bei jedem Herzschlag
+**11375 Fakten** · Stand 2026-09-13 03:19 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7311
 - **swarm_artifact:** 1655
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913031626:5:4cb6ed`
+*13.09. 03:16 UTC · Quelle: dream*
+
+Swarm feedback staleness correlates with undetected model degradation; fresh critic signals would have caught the 429/502 pattern earlier.
+
+### `dream:20260913031626:4:05d170`
+*13.09. 03:16 UTC · Quelle: dream*
+
+Pruning aggressively removes facts/events (15/38, 10/22) without preserving decision context, risking loss of failure-pattern memory.
+
+### `dream:20260913031626:3:fa2ad6`
+*13.09. 03:16 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ in this cycle) but lack automated validation, creating a proposal-execution gap that degrades reliability.
+
+### `dream:20260913031626:2:d3e52b`
+*13.09. 03:16 UTC · Quelle: dream*
+
+Reflex-driven simulation (simulationen-besser-in-praxis-nutzen.py) achieved convergence where standard planning failed, proving pre-execution simulation prevents downstream errors.
+
+### `dream:20260913031626:1:064090`
+*13.09. 03:16 UTC · Quelle: dream*
+
+Model failures cascade when primary providers (Nemotron, Gemma) hit 429/502 errors without automatic fallback, causing task stalls.
 
 ### `dream:20260913030643:5:4b1df3`
 *13.09. 03:06 UTC · Quelle: dream*
@@ -42312,31 +42337,6 @@ score=8; issues=
 *30.08. 03:15 UTC · Quelle: system*
 
 Modellfehler stark reduzieren
-
-### `dream:20260830031449:5:cdb5b1`
-*30.08. 03:14 UTC · Quelle: dream*
-
-Zero facts/events pruned suggests retention policies are misconfigured or pruning criteria are never met.
-
-### `dream:20260830031449:4:29c066`
-*30.08. 03:14 UTC · Quelle: dream*
-
-Stale market analyses persist because no automated freshness monitor triggers refresh pipelines based on age and access patterns.
-
-### `dream:20260830031449:3:375a30`
-*30.08. 03:14 UTC · Quelle: dream*
-
-Skill proposals accumulate without a validation gate requiring concrete milestones and measurable acceptance tests.
-
-### `dream:20260830031449:2:9e0495`
-*30.08. 03:14 UTC · Quelle: dream*
-
-High latency (6.9-7.9s) on nvidia/nemotron-3-ultra makes it unsuitable for time-sensitive tasks without latency-aware routing.
-
-### `dream:20260830031449:1:8be3e3`
-*30.08. 03:14 UTC · Quelle: dream*
-
-Recurring 429 errors on z-ai/glm-5.2:free indicate missing pre-flight health checks and circuit-breaker logic for rate-limited models.
 
 ### `last_swarm_critique`
 *30.08. 03:00 UTC · Quelle: critic*

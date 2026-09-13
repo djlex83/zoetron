@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 03:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 03:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
+- Ferne Träume verbinden *(wieder aufgegriffen: 3×)*
 - Swarm-Ziele erneuern *(wieder aufgegriffen: 3×)*
-- Simulationen öfter anwenden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm feedback staleness correlates with undetected model degradation; fresh critic signals would have caught the 429/502 pattern earlier.
+- Pruning aggressively removes facts/events (15/38, 10/22) without preserving decision context, risking loss of failure-pattern memory.
+- Skill proposals accumulate (5+ in this cycle) but lack automated validation, creating a proposal-execution gap that degrades reliability.
+- Reflex-driven simulation (simulationen-besser-in-praxis-nutzen.py) achieved convergence where standard planning failed, proving pre-execution simulati
+- Model failures cascade when primary providers (Nemotron, Gemma) hit 429/502 errors without automatic fallback, causing task stalls.
 - Pruning removed 15 facts and 38 events, which may discard important context; auditing pruning criteria can help preserve valuable information.
 - Evolution produced a variant scoring 7.7, but the swarm still scored 6 and did not converge after 2 cycles, implying more cycles or better critic heur
 - Calibration predicted 8 but actual was 6, an absolute error of 2, revealing a systematic overprediction that can be corrected by a bias adjustment.
@@ -51,11 +56,6 @@
 - Skill-to-artifact pipeline produces runnable code despite intermediate reflex/swarm failures, showing partial fault tolerance.
 - Hand actions fail on path resolution when environment variables (ZOETRON_DATA) and sys.argv[1] disagree on data root.
 - Model provider failures cascade into system-wide stress, triggering conserve mode that starves recovery capacity.
-- Skill proposals accumulate without a sandbox validation gate, risking deployment of untested code that could destabilize the autonomous loop.
-- Calibration bias correction is identified as a cross-cutting need across planning and prediction tasks, yet no learning loop exists to capture per-goa
-- Reflex fallback succeeds for known error patterns but lacks systematic coverage for novel model failures, creating reliability gaps.
-- Causal-chain preservation is proposed repeatedly but not yet implemented, leaving critical episode traces vulnerable to TTL eviction during prune runs
-- Model provider failures (502/429) cascade rapidly without proactive health-aware routing, causing latency spikes and fallback thrashing.
 
 ---
 

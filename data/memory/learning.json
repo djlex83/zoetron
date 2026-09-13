@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 03:07:01",
+ "stand": "2026-09-13 03:17:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -213,6 +213,12 @@
    "quote": 0.0
   },
   {
+   "tool": "modellfehler-stark-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -234,12 +240,6 @@
    "tool": "simulationen-besser-in-praxis-nutzen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -289,12 +289,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-stark-reduzieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
