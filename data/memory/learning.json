@@ -1,15 +1,15 @@
 {
- "stand": "2026-09-13 03:45:37",
+ "stand": "2026-09-13 04:00:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "tool": "veraltete-schwarmziele-aktualisieren.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
@@ -99,12 +99,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-in-handlungen-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -172,6 +166,12 @@
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -267,12 +267,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -313,6 +307,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "träume-in-handlungen-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -411,17 +411,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.726,
- "simulationen_angewandt": 28,
+ "haende_quote": 0.728,
+ "simulationen_angewandt": 29,
  "swarm_scores": {
-  "n": 36,
+  "n": 37,
   "best": 9.0,
-  "schnitt": 5.75
+  "schnitt": 5.73
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 35,
-   "schnitt": 5.66
+   "schnitt": 5.8
   },
   "bau": {
    "n": 1,

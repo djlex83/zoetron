@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11377 Fakten** · Stand 2026-09-13 03:47 UTC · aktualisiert bei jedem Herzschlag
+**11379 Fakten** · Stand 2026-09-13 04:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7311
-- **swarm_artifact:** 1655
-- **last_swarm_critique:** 924
-- **last_swarm_goal:** 659
-- **anti_pattern:** 367
-- **strategy:** 186
-- **tool:** 154
+- **dream:** 7301
+- **swarm_artifact:** 1661
+- **last_swarm_critique:** 925
+- **last_swarm_goal:** 660
+- **anti_pattern:** 369
+- **strategy:** 187
+- **tool:** 155
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `tool:fähigkeits-vorschläge-in-echte-skills-ve`
+*13.09. 04:00 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Vorschläge in echte Skills verwandeln'. Datei: data/tools/fähigkeits-vorschläge-in-echte-skills-ve.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeits-Vorschläge in:1`
+*13.09. 03:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Change the conversion tool to consume validation output via stdin/stdout pipe an - Refactor the conversion tool to read from stdin (piped from validation tool's stdout) instead of reading from a JSON file. Update it to parse 
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeits-Vorschläge in:0`
+*13.09. 03:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Fix the pipeline by making validation tool write the expected JSON file and adju - Modify the validation pipeline to write validated proposals directly to memory/validated_skill_proposals.json in the exact format the conversi
+
+### `last_swarm_critique`
+*13.09. 03:58 UTC · Quelle: critic*
+
+score=5; issues=Pipeline disconnect: validation pipeline outputs to stdout but conversion tool reads from memory/validated_skill_proposals.json which is never written; Data format mismatch: validation output wraps proposals in {'valid': true, 'proposal': {...}
+
+### `last_swarm_goal`
+*13.09. 03:55 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge in echte Skills verwandeln
+
+### `dream:20260913035440:5:986ea2`
+*13.09. 03:54 UTC · Quelle: dream*
+
+Swarm knowledge refresh succeeds via reflex but convergence monitoring is absent, risking undetected plateaus in collective problem-solving.
+
+### `dream:20260913035440:4:148e53`
+*13.09. 03:54 UTC · Quelle: dream*
+
+Pruning discards 10–19 items per cycle without audit trail, preventing recovery of erroneously removed facts or lineage tracing.
+
+### `dream:20260913035440:3:52a9c1`
+*13.09. 03:54 UTC · Quelle: dream*
+
+Reflex-mode goals converge reliably while skill proposals accumulate untested, revealing a validation gap between proposal and deployment.
+
+### `dream:20260913035440:2:ee3fe4`
+*13.09. 03:54 UTC · Quelle: dream*
+
+Latency variance across models (13s–57s) correlates with provider load, not model size, making static model selection unreliable under stress.
+
+### `dream:20260913035440:1:625b06`
+*13.09. 03:54 UTC · Quelle: dream*
+
+Model provider instability (502/429 errors) forces fallback chains but current routing lacks circuit-breakers and exponential backoff, causing cascading failures.
 
 ### `dream:20260913034405:5:e86c18`
 *13.09. 03:44 UTC · Quelle: dream*
@@ -42262,81 +42312,6 @@ High latency variance (9-150s) in working models requires adaptive timeouts rath
 *30.08. 04:01 UTC · Quelle: dream*
 
 Rate-limited models (429 errors) must be quarantined immediately to prevent cascade failures across dependent tasks.
-
-### `dream:20260830035422:5:d84eaf`
-*30.08. 03:54 UTC · Quelle: dream*
-
-The system enters 'conserve' mode under stress with severely limited parallelism, so resource-aware task scheduling is critical for reliability.
-
-### `dream:20260830035422:4:fcc54f`
-*30.08. 03:54 UTC · Quelle: dream*
-
-Scripts can execute without actually operating on real data (path validation failures), so effect verification is mandatory after any tool run.
-
-### `dream:20260830035422:3:6acf1e`
-*30.08. 03:54 UTC · Quelle: dream*
-
-Knowledge base contradictions lead to incorrect conclusions and must be actively detected and resolved before they propagate.
-
-### `dream:20260830035422:2:87c7b9`
-*30.08. 03:54 UTC · Quelle: dream*
-
-Stale swarm work items accumulate and block new insights — regular cleanup cycles are required to prevent knowledge debt.
-
-### `dream:20260830035422:1:30c6ae`
-*30.08. 03:54 UTC · Quelle: dream*
-
-API rate limiting (429) is the dominant systemic failure mode across nearly all models, making a ranked fallback chain with rate-aware scheduling essential.
-
-### `dream:20260830034944:5:395c17`
-*30.08. 03:49 UTC · Quelle: dream*
-
-Hand actions can fail silently (exit 0 but 'nothing read'), requiring output validation beyond exit codes.
-
-### `dream:20260830034944:4:b17325`
-*30.08. 03:49 UTC · Quelle: dream*
-
-Knowledge contradictions persist in the store without a dedicated resolution process, causing downstream reasoning errors.
-
-### `dream:20260830034944:3:ff371c`
-*30.08. 03:49 UTC · Quelle: dream*
-
-Stale swarm works accumulate and block new insights; the system lacks an automatic stale-work reaper or escalation path.
-
-### `dream:20260830034944:2:a121d0`
-*30.08. 03:49 UTC · Quelle: dream*
-
-Calibration error of 5 points (predicted 4 vs actual 9) indicates estimation models drift significantly and need periodic recalibration against ground truth.
-
-### `dream:20260830034944:1:afc081`
-*30.08. 03:49 UTC · Quelle: dream*
-
-Model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for production dispatch without circuit-breaking.
-
-### `dream:20260830034449:5:768410`
-*30.08. 03:44 UTC · Quelle: dream*
-
-Knowledge-refresh tasks needed 3 revision cycles and carried 5 risks, proving that iterative validation loops are mandatory for data-curation work.
-
-### `dream:20260830034449:4:7d7bb6`
-*30.08. 03:44 UTC · Quelle: dream*
-
-Task duration calibration error of 125% (predicted 4 vs actual 9) reveals broken estimation, requiring empirical baseline tracking.
-
-### `dream:20260830034449:3:79204e`
-*30.08. 03:44 UTC · Quelle: dream*
-
-High stress (1.0) and conserve-mode budgets correlate with cascading model failures, indicating need for load-shedding before saturation.
-
-### `dream:20260830034449:2:6434f1`
-*30.08. 03:44 UTC · Quelle: dream*
-
-The sole reliable model (nvidia/nemotron-3-ultra) exhibits extreme latency variance (3–121s), demanding adaptive timeouts and circuit breakers.
-
-### `dream:20260830034449:1:32af32`
-*30.08. 03:44 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 rate limits under load, requiring request spacing and fallback chains.
 
 ### `last_swarm_critique`
 *30.08. 03:21 UTC · Quelle: critic*
