@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 01:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 01:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated drive goals emphasize reducing model errors and updating stale swarm knowledge.
+- Hand action durations vary from 0.28s to 0.98s, indicating need for retry with backoff.
+- Reflex simulations converge but produce no score, requiring explicit evaluation metrics.
+- Pruning events without preserving causal chains leads to loss of critical sequences.
+- Model latency often exceeds 15 seconds, demanding provider-aware timeout and fallback.
 - Evolution, swarm refresh, and benchmarks stall because no scheduler enforces minimum run cadence.
 - System stress hits maximum (1.0) and enters conserve mode whenever model latency spikes above 15 s, starving other organs.
 - Tool and reflex failures stem from hard-coded relative paths that ignore ZOETRON_DATA, making execution environment-dependent.
@@ -51,11 +56,6 @@
 - Proposed skills accumulate but aren't deployed; a promotion pipeline from proposal to production is missing.
 - Latency variance across models (19–112 s) demands per-model SLO tracking and automatic fallback.
 - Model endpoint failures (502/429) are the primary reliability bottleneck, not hand actions or internal logic.
-- Regular pruning (facts + events) combined with high benchmark scores (23/25) indicates healthy memory homeostasis.
-- Reflex-based distant-memory combination converges reliably and should be the default for cross-context synthesis.
-- Effort estimates consistently underestimate actual cost; a 3.5× calibration multiplier aligns predictions with reality.
-- Reserving minimum recovery capacity (1 task slot) even in conserve mode prevents cascade failures during model outages.
-- Model instability (429 rate limits, 502 overloads) is systemic and requires health-aware routing with automatic fallback to maintain throughput.
 
 ---
 

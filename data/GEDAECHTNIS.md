@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11390 Fakten** · Stand 2026-09-13 01:38 UTC · aktualisiert bei jedem Herzschlag
+**11395 Fakten** · Stand 2026-09-13 01:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7331
+- **dream:** 7336
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 922
 - **last_swarm_goal:** 657
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913014602:5:7b5607`
+*13.09. 01:46 UTC · Quelle: dream*
+
+Repeated drive goals emphasize reducing model errors and updating stale swarm knowledge.
+
+### `dream:20260913014602:4:5aa3ae`
+*13.09. 01:46 UTC · Quelle: dream*
+
+Hand action durations vary from 0.28s to 0.98s, indicating need for retry with backoff.
+
+### `dream:20260913014602:3:9c4d3f`
+*13.09. 01:46 UTC · Quelle: dream*
+
+Reflex simulations converge but produce no score, requiring explicit evaluation metrics.
+
+### `dream:20260913014602:2:a04cd0`
+*13.09. 01:46 UTC · Quelle: dream*
+
+Pruning events without preserving causal chains leads to loss of critical sequences.
+
+### `dream:20260913014602:1:3cd30e`
+*13.09. 01:46 UTC · Quelle: dream*
+
+Model latency often exceeds 15 seconds, demanding provider-aware timeout and fallback.
 
 ### `tool:simulationen-öfter-in-die-praxis-umsetze`
 *13.09. 01:36 UTC · Quelle: hands*
