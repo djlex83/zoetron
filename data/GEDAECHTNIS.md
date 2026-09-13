@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11343 Fakten** · Stand 2026-09-13 19:39 UTC · aktualisiert bei jedem Herzschlag
+**11341 Fakten** · Stand 2026-09-13 19:50 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7263
-- **swarm_artifact:** 1653
+- **swarm_artifact:** 1651
 - **last_swarm_critique:** 937
 - **last_swarm_goal:** 672
 - **anti_pattern:** 365
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913194642:5:b943b8`
+*13.09. 19:46 UTC · Quelle: dream*
+
+The persistent task of linking skills with memories has a working Python artifact but remains sub-optimal (score 6/10), indicating that the core logic needs refinement rather than complete restructuring.
+
+### `dream:20260913194642:4:ff04a3`
+*13.09. 19:46 UTC · Quelle: dream*
+
+Calibration predictions of task outcomes are close but slightly optimistic (predicted 7, actual 6), suggesting a need for conservative adjustment in self-assessment.
+
+### `dream:20260913194642:3:b7818a`
+*13.09. 19:46 UTC · Quelle: dream*
+
+Evolutionary variant selection successfully elevated task scores from 6/10 to 9/10, proving that parallel candidate evaluation is an effective optimization strategy.
+
+### `dream:20260913194642:2:499978`
+*13.09. 19:46 UTC · Quelle: dream*
+
+The model 'dots-studio/dots-3-note-preview:free' is currently the most stable performer but introduces significant latency (up to 39.3s), requiring timeout adjustments in the execution environment.
+
+### `dream:20260913194642:1:9fb19c`
+*13.09. 19:46 UTC · Quelle: dream*
+
+Google Gemma free-tier models on OpenRouter are highly susceptible to 429 rate-limit errors under load, making them unreliable as primary or concurrent fallback options.
 
 ### `dream:20260913193656:5:d9f4a8`
 *13.09. 19:36 UTC · Quelle: dream*
@@ -42012,31 +42037,6 @@ score=4; issues=Erstes Artefakt lädt nur Daten (Filter nach Keywords), führt k
 *30.08. 19:40 UTC · Quelle: system*
 
 Marktanalyse in Handlung umsetzen
-
-### `dream:20260830194017:5:17765f`
-*30.08. 19:40 UTC · Quelle: dream*
-
-Pruning removed zero facts/events, suggesting the current retention window is too short to capture cross-session patterns like recurring 429 spikes.
-
-### `dream:20260830194017:4:65bd0b`
-*30.08. 19:40 UTC · Quelle: dream*
-
-No organ errors appeared in self-diagnosis despite repeated model failures, showing the failure boundary is correctly isolated to the model-calling organ.
-
-### `dream:20260830194017:3:d5f79b`
-*30.08. 19:40 UTC · Quelle: dream*
-
-The reflex that converts converged goals into skill artifacts worked twice in one cycle, proving the promotion pipeline concept is already viable.
-
-### `dream:20260830194017:2:e85f52`
-*30.08. 19:40 UTC · Quelle: dream*
-
-Latency variance between successful calls (7.9s vs 12.2s) exceeds 50%, indicating queue-depth differences that a health-check probe can detect before routing.
-
-### `dream:20260830194017:1:0c78ce`
-*30.08. 19:40 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for production workloads without a routing layer.
 
 ### `last_swarm_critique`
 *30.08. 18:41 UTC · Quelle: critic*

@@ -46770,3 +46770,27 @@
 {"ts": 1788722940.6835434, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.18, "gelesen": 2858}}
 {"ts": 1788722940.6860962, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten in echte Tests überführen", "tool": "vorgeschlagene-fähigkeiten-in-echte-skil.py", "ok": true}}
 {"ts": 1788722941.0245264, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten in echte Tests überführen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788118817.2833033, "key": "dream:20260830194017:1:0c78ce", "value": "Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for production workloads without a routing layer.", "source": "dream"}
+{"ts": 1788118817.2834477, "key": "dream:20260830194017:2:e85f52", "value": "Latency variance between successful calls (7.9s vs 12.2s) exceeds 50%, indicating queue-depth differences that a health-check probe can detect before routing.", "source": "dream"}
+{"ts": 1788118817.2835577, "key": "dream:20260830194017:3:d5f79b", "value": "The reflex that converts converged goals into skill artifacts worked twice in one cycle, proving the promotion pipeline concept is already viable.", "source": "dream"}
+{"ts": 1788118817.283663, "key": "dream:20260830194017:4:65bd0b", "value": "No organ errors appeared in self-diagnosis despite repeated model failures, showing the failure boundary is correctly isolated to the model-calling organ.", "source": "dream"}
+{"ts": 1788118817.2837899, "key": "dream:20260830194017:5:17765f", "value": "Pruning removed zero facts/events, suggesting the current retention window is too short to capture cross-session patterns like recurring 429 spikes.", "source": "dream"}
+{"ts": 1788119062.0031042, "key": "swarm_artifact:Marktanalyse-Daten aus Gedächtnis und Graph laden", "value": "```python\n#!/usr/bin/env python3\n\"\"\"\nLädt Marktanalyse-Daten aus semantischem Gedächtnis und Wissensgraph.\nNutzt existierende Organe (Dateisystem-Zugriff) statt neue zu bauen.\n\"\"\"\nimport sys\nimport os", "source": "builder"}
+{"ts": 1788119167.9847786, "key": "swarm_artifact:Analyse-Erkenntnisse in Fähigkeits-Vorschläge überführen", "value": "Looking at the task, I need to build a script that reads market analysis data from real memory/graph locations, uses benchmark and evolution organs to identify capability gaps, and produces concrete s", "source": "builder"}
+{"ts": 1788723455.9595027, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788723524.6315978, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788723526.473389, "kind": "prune_run", "payload": {"facts_pruned": 11, "events_pruned": 22}}
+{"ts": 1788723577.0757184, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 47.0, "tokens_ein": 1394, "tokens_aus": 539}}
+{"ts": 1788723577.0762572, "kind": "skill_proposal", "payload": {"proposal": "ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff."}}
+{"ts": 1788723577.0763113, "kind": "skill_proposal", "payload": {"proposal": "DriveScheduler: topologically sort active goals by prerequisite dependency (model reliability → swarm update → skill conversion) and execute one at a time to prevent resource contention."}}
+{"ts": 1788723577.0763652, "kind": "skill_proposal", "payload": {"proposal": "ConvergenceGate: require score ≥ 8, no critical simulation risks, and critic sign-off before marking any swarm goal converged."}}
+{"ts": 1788723577.0764182, "kind": "skill_proposal", "payload": {"proposal": "PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem access."}}
+{"ts": 1788723577.0764766, "kind": "skill_proposal", "payload": {"proposal": "SimulationGate: run simulation verdict; if revise, apply revisions and re-verify before committing artifact."}}
+{"ts": 1788723577.0765283, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788723616.954069, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 38.0, "tokens_ein": 467, "tokens_aus": 836}}
+{"ts": 1788723616.9542694, "kind": "drive_goal", "payload": {"title": "Modellfehler stark reduzieren", "why": "Das System macht noch zu viele Fehler beim Denken. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788723616.9543443, "kind": "drive_goal", "payload": {"title": "Träume besser zum Lernen nutzen", "why": "Es gibt eine Strategie dazu, aber Träume werden noch zu wenig ausgewertet. Mehr Lernen aus Träumen stärkt das Wissen.", "signal": "combination"}}
+{"ts": 1788723616.9544075, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren und nutzen", "why": "Die Infos über Schwarm-Ziele und Kritik sind veraltet. Frisches Schwarm-Wissen verbessert die Zusammenarbeit.", "signal": "stale"}}
+{"ts": 1788723620.709256, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.52, "gelesen": 191}}
+{"ts": 1788723620.7134619, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten tatsächlich ausführen", "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py", "ok": true}}
+{"ts": 1788723621.1599681, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten tatsächlich ausführen", "score": null, "converged": true, "mode": "reflex"}}
