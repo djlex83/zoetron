@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11364 Fakten** · Stand 2026-09-13 15:04 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-13 15:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7288
 - **swarm_artifact:** 1651
 - **last_swarm_critique:** 934
 - **last_swarm_goal:** 669
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913153205:5:83c1e6`
+*13.09. 15:32 UTC · Quelle: dream*
+
+Compacting event clusters into durable facts during pruning preserves knowledge across sessions.
+
+### `dream:20260913153205:4:53c219`
+*13.09. 15:32 UTC · Quelle: dream*
+
+A dynamic model router that selects the least‑loaded model and auto‑switches on 429 improves reliability.
+
+### `dream:20260913153205:3:7a70a5`
+*13.09. 15:32 UTC · Quelle: dream*
+
+Exponential backoff with jitter reduces the chance of repeated 429 failures.
+
+### `dream:20260913153205:2:02cfae`
+*13.09. 15:32 UTC · Quelle: dream*
+
+Switching to the dots‑studio model avoided 429 errors and completed the tasks.
+
+### `dream:20260913153205:1:b98f2b`
+*13.09. 15:32 UTC · Quelle: dream*
+
+Repeated HTTP 429 errors from the free Google Gemma models indicate they are rate‑limited.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Entfernte Erinnerungen v:1`
 *13.09. 15:00 UTC · Quelle: evolution*
@@ -42127,56 +42152,6 @@ The skill-consolidation tool fails due to path resolution issues (relative paths
 *30.08. 15:36 UTC · Quelle: dream*
 
 Free-tier models simultaneously hit rate limits (429 errors), creating a single-point-of-failure where 75% of the model pool becomes unavailable at once.
-
-### `dream:20260830152846:5:15e31b`
-*30.08. 15:28 UTC · Quelle: dream*
-
-All proposed skills react to observed failures rather than preventing them, showing a missing proactive resilience layer.
-
-### `dream:20260830152846:4:3dffc9`
-*30.08. 15:28 UTC · Quelle: dream*
-
-Token-in/token-out ratios diverge wildly (526→1577 vs 1458→1130), indicating inconsistent truncation or padding behavior across calls.
-
-### `dream:20260830152846:3:b4f5ca`
-*30.08. 15:28 UTC · Quelle: dream*
-
-Only inclusionai/ling-3.0-flash-fin:free remained available under load, exposing provider capacity as a hidden system dependency.
-
-### `dream:20260830152846:2:09c767`
-*30.08. 15:28 UTC · Quelle: dream*
-
-Swarm convergence reported success with a null score, revealing that convergence criteria lack mandatory score validation.
-
-### `dream:20260830152846:1:d4a25a`
-*30.08. 15:28 UTC · Quelle: dream*
-
-Rate limiting (429 errors) cascades across multiple free-tier models simultaneously, making single-model reliance unreliable.
-
-### `dream:20260830152113:5:24f926`
-*30.08. 15:21 UTC · Quelle: dream*
-
-Hand-action latency (0.2s) is healthy but unmonitored; no p95 threshold exists to detect environment degradation early.
-
-### `dream:20260830152113:4:7aa0a2`
-*30.08. 15:21 UTC · Quelle: dream*
-
-Reflex-driven execution ("abgelehnte-werkzeuge-verstehen-und-verbe.py") achieved goal convergence without planner involvement, proving reflexes can handle known patterns autonomously.
-
-### `dream:20260830152113:3:51a8ca`
-*30.08. 15:21 UTC · Quelle: dream*
-
-Only inclusionai/ling-3.0-flash-fin:free delivered a successful response, creating a single-point-of-failure for the entire model pool.
-
-### `dream:20260830152113:2:76069e`
-*30.08. 15:21 UTC · Quelle: dream*
-
-The circuit breaker (3 strikes → 1800s block) prevents cascade failures but reacts too late to save the current goal attempt.
-
-### `dream:20260830152113:1:1f8d11`
-*30.08. 15:21 UTC · Quelle: dream*
-
-Free-tier models (glm, nemotron, gemma) consistently fail under load with 429/502 errors, making them unreliable as primary workers.
 
 ### `last_swarm_critique`
 *30.08. 14:33 UTC · Quelle: critic*
