@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,13 +25,13 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning stale events reduces noise but must preserve goal‑relevant facts to maintain context.
+- Successful calls complete in roughly 30 s, implying that timeout thresholds should be set above that baseline.
+- Three consecutive errors cause the model to be blocked, demonstrating the need for a circuit‑breaker pattern.
+- Timeout errors suggest network latency spikes, so fixed timeout values are insufficient.
+- The dominant failure mode is HTTP 429 rate‑limiting, indicating that request volume exceeds the provider's quota.
 - High latency on fallback models (20-30s) demands token budgets and metabolism-aware scheduling to preserve responsiveness.
 - Stale swarm goals degrade system relevance; lightweight periodic refresh via reflexes maintains alignment.
 - Pre-execution health checks prevent wasted cycles on doomed actions (artifact not running, API unhealthy).
@@ -51,11 +56,6 @@
 - The hand action failed because relative paths do not resolve correctly; absolute paths or environment-variable-based paths (ZOETRON_DATA) must be used
 - High latency (26–56 s) and high token output (up to 5153 tokens) from the working model suggest token budget management is critical under conserve mod
 - The google/gemma models consistently fail with HTTP 429 (rate limit) while dots-studio/dots-3-note-preview:free succeeds, indicating a reliable fallba
-- Variable latency and token usage across model calls point to the value of dynamic task chunking based on real-time performance metrics.
-- Frequent stale knowledge and outdated swarm goals suggest a scheduled knowledge audit cycle should be embedded in the system's meta-cognitive loop.
-- The persistent gap between skill proposal generation and execution indicates that an automated pipeline with progress tracking is required to close th
-- Hand actions that complete with exit code 0 but no output underscore the importance of validating expected artifacts before marking the action as succ
-- The repeated 429 errors from Google's Gemma models reveal a need for automatic model fallback with exponential backoff to avoid service interruptions.
 
 ---
 

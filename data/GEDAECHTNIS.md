@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11378 Fakten** · Stand 2026-09-13 11:01 UTC · aktualisiert bei jedem Herzschlag
+**11382 Fakten** · Stand 2026-09-13 11:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7286
+- **dream:** 7291
 - **swarm_artifact:** 1665
 - **last_swarm_critique:** 932
 - **last_swarm_goal:** 667
@@ -10,9 +10,34 @@
 - **strategy:** 187
 - **tool:** 155
 - **hand_result:** 83
-- **aktuell_organfehler:** 34
+- **aktuell_organfehler:** 33
 
 ---
+
+### `dream:20260913111012:5:8c2978`
+*13.09. 11:10 UTC · Quelle: dream*
+
+Pruning stale events reduces noise but must preserve goal‑relevant facts to maintain context.
+
+### `dream:20260913111012:4:4e8e72`
+*13.09. 11:10 UTC · Quelle: dream*
+
+Successful calls complete in roughly 30 s, implying that timeout thresholds should be set above that baseline.
+
+### `dream:20260913111012:3:de752b`
+*13.09. 11:10 UTC · Quelle: dream*
+
+Three consecutive errors cause the model to be blocked, demonstrating the need for a circuit‑breaker pattern.
+
+### `dream:20260913111012:2:8173bd`
+*13.09. 11:10 UTC · Quelle: dream*
+
+Timeout errors suggest network latency spikes, so fixed timeout values are insufficient.
+
+### `dream:20260913111012:1:d70fff`
+*13.09. 11:10 UTC · Quelle: dream*
+
+The dominant failure mode is HTTP 429 rate‑limiting, indicating that request volume exceeds the provider's quota.
 
 ### `dream:20260913105920:5:9c2d0c`
 *13.09. 10:59 UTC · Quelle: dream*
@@ -42212,11 +42237,6 @@ score=3; issues=Das Skript implementiert keine einzigen Skill-Ideen konkret, son
 *30.08. 11:06 UTC · Quelle: system*
 
 Viele Skill-Ideen konkret umsetzen
-
-### `aktuell_organfehler`
-*30.08. 10:59 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-30 10:53:31-10:56:31 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `last_swarm_critique`
 *30.08. 09:29 UTC · Quelle: critic*
