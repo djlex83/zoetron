@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 20:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful reflex actions using custom tools demonstrate that goal completion can occur without language model calls, reducing dependency.
+- The system's lockout after three consecutive failures shows that reactive blocking is insufficient; proactive circuit breaking is needed.
+- Timeout errors on large models like nemotron-3-ultra-550b indicate they exceed time budgets and should be avoided.
+- The dots-studio/dots-3-note-preview:free model consistently succeeds with acceptable latency, making it the most dependable free option.
+- Frequent 429 errors from free Gemma models reveal strict rate limits that undermine their reliability.
 - Extracting specific critic artifact issues into targeted code variants improves the evolutionary loop's convergence.
 - Writing to the memory graph when the computed state delta is zero wastes resources and should be skipped.
 - Predicted task scores are consistently higher than actual outcomes, suggesting a systematic overestimation that can be corrected with a calibration fa
@@ -51,11 +56,6 @@
 - Evolutionary variant selection successfully elevated task scores from 6/10 to 9/10, proving that parallel candidate evaluation is an effective optimiz
 - The model 'dots-studio/dots-3-note-preview:free' is currently the most stable performer but introduces significant latency (up to 39.3s), requiring ti
 - Google Gemma free-tier models on OpenRouter are highly susceptible to 429 rate-limit errors under load, making them unreliable as primary or concurren
-- The simulation→revise→apply loop functioned correctly (1 revision applied) but the persistent 429 pattern across models suggests the failure is extern
-- Metabolism is at maximum stress (1.0) with a "conserve" state and only 3 tasks / 1 iteration budget, meaning every action must be maximally efficient.
-- The reflex `fernere-erinnerungen-verbinden.py` returned ok:false, blocking the "Fähigkeiten mit Erinnerungen verbinden" goal that the swarm was starte
-- The hand_action failure "nichts gelesen" occurred because the data path had no files/directory under the real path, and a subsequent call with a valid
-- `google/gemma-4-31b-it:free` and `google/gemma-4-26b-a4b-it:free` both consistently fail with HTTP 429 rate-limit errors, while `dots-studio/dots-3-no
 
 ---
 

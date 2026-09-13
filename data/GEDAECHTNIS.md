@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11338 Fakten** · Stand 2026-09-13 20:01 UTC · aktualisiert bei jedem Herzschlag
+**11343 Fakten** · Stand 2026-09-13 20:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7268
+- **dream:** 7273
 - **swarm_artifact:** 1647
 - **last_swarm_critique:** 937
 - **last_swarm_goal:** 672
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913200904:5:314e3c`
+*13.09. 20:09 UTC · Quelle: dream*
+
+Successful reflex actions using custom tools demonstrate that goal completion can occur without language model calls, reducing dependency.
+
+### `dream:20260913200904:4:6d1721`
+*13.09. 20:09 UTC · Quelle: dream*
+
+The system's lockout after three consecutive failures shows that reactive blocking is insufficient; proactive circuit breaking is needed.
+
+### `dream:20260913200904:3:c29e62`
+*13.09. 20:09 UTC · Quelle: dream*
+
+Timeout errors on large models like nemotron-3-ultra-550b indicate they exceed time budgets and should be avoided.
+
+### `dream:20260913200904:2:81c581`
+*13.09. 20:09 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model consistently succeeds with acceptable latency, making it the most dependable free option.
+
+### `dream:20260913200904:1:e14ff2`
+*13.09. 20:09 UTC · Quelle: dream*
+
+Frequent 429 errors from free Gemma models reveal strict rate limits that undermine their reliability.
 
 ### `dream:20260913195806:5:efde4a`
 *13.09. 19:58 UTC · Quelle: dream*
