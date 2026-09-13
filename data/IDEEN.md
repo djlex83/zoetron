@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 04:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 04:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress-adaptive role dropping (critic disabled under 'conserve') demonstrates that metabolism-aware control flow prevents resource exhaustion during d
+- Swarm knowledge staleness triggers explicit drive goals, but no automated refresh exists; the weekly swarm_refresh_cycle proposal directly closes this
+- Pruning 19 events and 7 facts without causal-chain preservation risks severing decision→action→outcome links needed for future credit assignment.
+- The reflex 'modellfehler-stark-reduzieren.py' converged in one shot, proving that targeted, pre-packaged remediation scripts can resolve whole classes
+- Model provider failures cascade silently (502/429 errors) until a working provider (dots-studio) is tried, revealing that single-provider reliance is 
 - Swarm knowledge refresh succeeds via reflex but convergence monitoring is absent, risking undetected plateaus in collective problem-solving.
 - Pruning discards 10–19 items per cycle without audit trail, preventing recovery of erroneously removed facts or lineage tracing.
 - Reflex-mode goals converge reliably while skill proposals accumulate untested, revealing a validation gap between proposal and deployment.
@@ -51,11 +56,6 @@
 - Reflex actions succeed only when data root paths are correctly resolved.
 - Pruning events without preserving causal sequences can break context for future planning.
 - Free model endpoints frequently return 429 or 502 errors, indicating rate limiting and overload that require automatic fallback.
-- Swarm knowledge decays without scheduled refresh: drive_goal signals 'stale' collective intelligence, yet no automated re-synthesis mechanism exists.
-- Pruning discards causal chains: 10 facts + 22 events removed per cycle without preserving why decisions were made, eroding long-term learning.
-- Reflex mode converges goals quickly but only for well-defined, single-step tasks; multi-step skill building stalls without explicit orchestration.
-- Skill proposals accumulate but never become executable code: 7 proposals logged, 0 implemented, creating an illusion of progress without capability ga
-- Model reliability is the primary bottleneck: 3 consecutive failures (502, 429, 429) before fallback succeeded, wasting ~150s and tokens.
 
 ---
 

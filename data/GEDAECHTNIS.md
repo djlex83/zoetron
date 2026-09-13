@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11379 Fakten** · Stand 2026-09-13 04:02 UTC · aktualisiert bei jedem Herzschlag
+**11374 Fakten** · Stand 2026-09-13 04:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7301
+- **dream:** 7296
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 925
 - **last_swarm_goal:** 660
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913041046:5:e00ead`
+*13.09. 04:10 UTC · Quelle: dream*
+
+Stress-adaptive role dropping (critic disabled under 'conserve') demonstrates that metabolism-aware control flow prevents resource exhaustion during degraded operation.
+
+### `dream:20260913041046:4:7ff091`
+*13.09. 04:10 UTC · Quelle: dream*
+
+Swarm knowledge staleness triggers explicit drive goals, but no automated refresh exists; the weekly swarm_refresh_cycle proposal directly closes this loop.
+
+### `dream:20260913041046:3:b24fe0`
+*13.09. 04:10 UTC · Quelle: dream*
+
+Pruning 19 events and 7 facts without causal-chain preservation risks severing decision→action→outcome links needed for future credit assignment.
+
+### `dream:20260913041046:2:52330b`
+*13.09. 04:10 UTC · Quelle: dream*
+
+The reflex 'modellfehler-stark-reduzieren.py' converged in one shot, proving that targeted, pre-packaged remediation scripts can resolve whole classes of model errors without iterative debugging.
+
+### `dream:20260913041046:1:4dfb7a`
+*13.09. 04:10 UTC · Quelle: dream*
+
+Model provider failures cascade silently (502/429 errors) until a working provider (dots-studio) is tried, revealing that single-provider reliance is a systemic reliability hole.
 
 ### `tool:fähigkeits-vorschläge-in-echte-skills-ve`
 *13.09. 04:00 UTC · Quelle: hands*
@@ -42262,56 +42287,6 @@ The fallback model nvidia/nemotron-3-ultra-550b-a55b:free works but exhibits ext
 *30.08. 04:12 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free model repeatedly hits 429 rate limits without any automatic recovery, making it an unreliable primary choice.
-
-### `dream:20260830040746:5:b9454a`
-*30.08. 04:07 UTC · Quelle: dream*
-
-Drive goals explicitly target the observed failure patterns (model errors, unimplemented proposals, routing-benchmark disconnect) but remain as signals without automated remediation triggers.
-
-### `dream:20260830040746:4:5bdd3a`
-*30.08. 04:07 UTC · Quelle: dream*
-
-No pruning occurs (0 facts/events pruned across cycles), suggesting memory growth is unchecked and may degrade performance over time.
-
-### `dream:20260830040746:3:6b201e`
-*30.08. 04:07 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures persist, indicating the diagnostic scope excludes external API health and routing logic.
-
-### `dream:20260830040746:2:5b7c0e`
-*30.08. 04:07 UTC · Quelle: dream*
-
-Multiple nearly identical skill proposals for ModelRouter and CircuitBreaker accumulate without implementation, revealing a proposal-to-execution gap despite a working reflex tool (fähigkeiten-aus-vorschlägen-wirklich-ler.py) that successfully converts proposa
-
-### `dream:20260830040746:1:149d91`
-*30.08. 04:07 UTC · Quelle: dream*
-
-The model z-ai/glm-5.2:free consistently fails with 429 errors across multiple cycles while nvidia/nemotron-3-ultra succeeds at 14-18s latency, proving persistent health tracking would prevent repeated failed calls.
-
-### `dream:20260830040137:5:a1b1fe`
-*30.08. 04:01 UTC · Quelle: dream*
-
-Skill proposals generated during failure recovery should auto-convert to registered tools within one cycle to close the learning loop.
-
-### `dream:20260830040137:4:97a4b3`
-*30.08. 04:01 UTC · Quelle: dream*
-
-Self-diagnosis showing zero organ errors while model failures persist indicates monitoring blind spots in external API health.
-
-### `dream:20260830040137:3:4285e0`
-*30.08. 04:01 UTC · Quelle: dream*
-
-Local-first execution of registered reflex tools eliminates unnecessary model calls and reduces failure surface.
-
-### `dream:20260830040137:2:449eb9`
-*30.08. 04:01 UTC · Quelle: dream*
-
-High latency variance (9-150s) in working models requires adaptive timeouts rather than fixed thresholds.
-
-### `dream:20260830040137:1:3df548`
-*30.08. 04:01 UTC · Quelle: dream*
-
-Rate-limited models (429 errors) must be quarantined immediately to prevent cascade failures across dependent tasks.
 
 ### `last_swarm_critique`
 *30.08. 03:21 UTC · Quelle: critic*
