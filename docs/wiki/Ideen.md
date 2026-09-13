@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Simulationen öfter anwenden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
-- Swarm-Ziele erneuern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Provider failures are mitigated only when a priority-ordered fallback chain with circuit breakers is in place.
+- Memory pruning that discards low-utility facts can remove context needed for long-term goals.
+- Swarm knowledge becomes stale without scheduled refresh cycles, reducing decision accuracy.
+- Model errors persist because there is no automated regression test suite to validate output consistency.
+- The repeated generation of skill proposals without implementation creates a growing backlog of unused capabilities.
 - The system generates numerous skill proposals but struggles with implementation, requiring automated testing and deployment pipelines.
 - Memory pruning without detailed audit trails risks irreversible data loss and complicates recovery.
 - Path-related failures can be eliminated by standardizing path resolution against a base data directory.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays without scheduled refresh — stale critiques and goals degrade collective intelligence unless explicitly renewed.
 - Proposed skills accumulate but remain untested — the gap between proposal and sandbox validation lets broken or redundant skills persist.
 - Model provider failures cascade silently — 502s and 429s from multiple providers indicate no automatic fallback or health-aware routing exists.
-- System stress (metabolism) is monitored but never triggers automatic throttling or local-inference fallback.
-- Pruning discards causal decision→action→outcome chains, making post-hoc failure analysis impossible.
-- Swarm knowledge (goals, critiques) decays within days and has no scheduled refresh mechanism.
-- Model failures recur across providers without systematic fallback, latency tracking, or cost-aware routing.
-- Skill proposals accumulate but lack an automated pipeline to turn them into tested, registered capabilities.
 
 ---
 

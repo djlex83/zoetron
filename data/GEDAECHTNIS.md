@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11366 Fakten** · Stand 2026-09-13 05:51 UTC · aktualisiert bei jedem Herzschlag
+**11361 Fakten** · Stand 2026-09-13 06:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7296
+- **dream:** 7291
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 926
 - **last_swarm_goal:** 661
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913055855:5:7c7e4d`
+*13.09. 05:58 UTC · Quelle: dream*
+
+Provider failures are mitigated only when a priority-ordered fallback chain with circuit breakers is in place.
+
+### `dream:20260913055855:4:3e5d9d`
+*13.09. 05:58 UTC · Quelle: dream*
+
+Memory pruning that discards low-utility facts can remove context needed for long-term goals.
+
+### `dream:20260913055855:3:0b035f`
+*13.09. 05:58 UTC · Quelle: dream*
+
+Swarm knowledge becomes stale without scheduled refresh cycles, reducing decision accuracy.
+
+### `dream:20260913055855:2:d89a56`
+*13.09. 05:58 UTC · Quelle: dream*
+
+Model errors persist because there is no automated regression test suite to validate output consistency.
+
+### `dream:20260913055855:1:f7199d`
+*13.09. 05:58 UTC · Quelle: dream*
+
+The repeated generation of skill proposals without implementation creates a growing backlog of unused capabilities.
 
 ### `dream:20260913054910:5:613eea`
 *13.09. 05:49 UTC · Quelle: dream*
@@ -42212,56 +42237,6 @@ Latency variance of 16x (6.4s vs 105.6s) on the same model (nemotron-3-ultra) in
 *30.08. 06:02 UTC · Quelle: dream*
 
 Free-tier models exhibit systematic 429 rate-limiting and 502 upstream failures making them unreliable for production workflows.
-
-### `dream:20260830055549:5:b6dc73`
-*30.08. 05:55 UTC · Quelle: dream*
-
-Artifact generation (98-line Python) + TOR validation (grün=true) + calibration (error=1) forms a working verify-execute loop.
-
-### `dream:20260830055549:4:a6197b`
-*30.08. 05:55 UTC · Quelle: dream*
-
-Contradiction detection and contradiction resolution are distinct capabilities; the system initially lacked the former.
-
-### `dream:20260830055549:3:43be42`
-*30.08. 05:55 UTC · Quelle: dream*
-
-Evolutionary refinement boosted contradiction-resolution score from 4/10 to 9/9/8 once critic identified missing contradiction-detection capability.
-
-### `dream:20260830055549:2:8b9ced`
-*30.08. 05:55 UTC · Quelle: dream*
-
-Nemotron-3-ultra succeeds consistently but with high latency variance (14-81s), requiring timeout-aware orchestration.
-
-### `dream:20260830055549:1:aacd59`
-*30.08. 05:55 UTC · Quelle: dream*
-
-Free-tier models (glm-5.2) consistently hit 429 rate limits making them unreliable for automated pipelines.
-
-### `dream:20260830054928:5:5ca463`
-*30.08. 05:49 UTC · Quelle: dream*
-
-Score estimation has no feedback loop; predicted vs actual scores never compared, so estimator drift goes undetected.
-
-### `dream:20260830054928:4:4750ef`
-*30.08. 05:49 UTC · Quelle: dream*
-
-Model outputs lack validation: hand_action results can be empty, schema-invalid, or missing fields, causing silent downstream failures.
-
-### `dream:20260830054928:3:2ec8e3`
-*30.08. 05:49 UTC · Quelle: dream*
-
-Stale work and stale market data persist without automated detection, wasting context and compute on obsolete artifacts.
-
-### `dream:20260830054928:2:563e14`
-*30.08. 05:49 UTC · Quelle: dream*
-
-Skill proposals accumulate but remain unimplemented due to high system stress (stress=1.0, conserve mode) and zero execution budget, creating a proposal-execution gap.
-
-### `dream:20260830054928:1:2f23d1`
-*30.08. 05:49 UTC · Quelle: dream*
-
-Model reliability is critically degraded: 4/5 models fail consistently with 429 rate limits or 502 upstream errors, making fallback chains essential for any production task.
 
 ### `last_swarm_critique`
 *30.08. 05:31 UTC · Quelle: critic*

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8000 Neuronen · 829298 bewertete Synapsen
+Stand: 7996 Neuronen · 828565 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 8000 Neuronen · 829298 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1019 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1033 | 0.23 |
-| 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 884 | 0.23 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1016 | 0.24 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1031 | 0.23 |
+| 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 885 | 0.23 |
 | 4 | 💭 | Rate limiting (429 errors) is the dominant and most persistent f… | 820 | 0.24 |
-| 5 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 794 | 0.25 |
-| 6 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 816 | 0.24 |
-| 7 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 893 | 0.22 |
-| 8 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 818 | 0.24 |
-| 9 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 826 | 0.23 |
-| 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 828 | 0.23 |
-| 11 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 755 | 0.25 |
-| 12 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 836 | 0.23 |
-| 13 | 💭 | Free-tier model endpoints exhibit correlated failure modes (429 … | 809 | 0.23 |
-| 14 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 826 | 0.22 |
-| 15 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 728 | 0.25 |
+| 5 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 816 | 0.24 |
+| 6 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 892 | 0.22 |
+| 7 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 791 | 0.25 |
+| 8 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 817 | 0.24 |
+| 9 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 825 | 0.23 |
+| 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 827 | 0.23 |
+| 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 834 | 0.23 |
+| 12 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 754 | 0.25 |
+| 13 | 💭 | Free-tier model endpoints exhibit correlated failure modes (429 … | 808 | 0.23 |
+| 14 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 825 | 0.22 |
+| 15 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 714 | 0.26 |
 
 ## Die 15 stärksten Synapsen
 
