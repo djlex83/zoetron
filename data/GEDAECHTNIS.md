@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11369 Fakten** · Stand 2026-09-13 08:59 UTC · aktualisiert bei jedem Herzschlag
+**11367 Fakten** · Stand 2026-09-13 09:13 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7276
-- **swarm_artifact:** 1669
+- **swarm_artifact:** 1667
 - **last_swarm_critique:** 930
 - **last_swarm_goal:** 665
 - **anti_pattern:** 367
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913091117:5:add818`
+*13.09. 09:11 UTC · Quelle: dream*
+
+Pruning 19 events while keeping 0 facts indicates that the system prioritizes clearing transient operational logs while retaining persistent factual data, requiring deliberate update mechanisms instead of passive pruning.
+
+### `dream:20260913091117:4:ae4119`
+*13.09. 09:11 UTC · Quelle: dream*
+
+The transition to the dots-studio model as the sole successful responder highlights that model diversity is key to maintaining operational continuity during upstream API saturation.
+
+### `dream:20260913091117:3:e90a52`
+*13.09. 09:11 UTC · Quelle: dream*
+
+The successful execution of the stale swarm knowledge updater demonstrates that lightweight, targeted reflexes can run successfully even when the system is managing stale data signals.
+
+### `dream:20260913091117:2:e1e493`
+*13.09. 09:11 UTC · Quelle: dream*
+
+The frequent 429 and 502 errors from Nvidia and Google models underscore the vulnerability of relying on a limited set of external API providers under high load.
+
+### `dream:20260913091117:1:4378f4`
+*13.09. 09:11 UTC · Quelle: dream*
+
+When metabolism stress reaches 1.0 (conserve state), executing complex reflexes or hand actions is highly prone to timeout and complete failure, as seen with the 20-second timeout of the skill implementation tool.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Viele Skill-Ideen in ech:2`
 *13.09. 08:54 UTC · Quelle: evolution*
@@ -42147,31 +42172,6 @@ score=8; issues=Marktanalyse-Logik ist heuristisch/simuliert (keine echten SERP/
 *30.08. 08:59 UTC · Quelle: system*
 
 Marktanalyse endlich nutzen und umsetzen
-
-### `dream:20260830085809:5:ab5012`
-*30.08. 08:58 UTC · Quelle: dream*
-
-Calibration error of 1 suggests prediction model is well-tuned for this task class.
-
-### `dream:20260830085809:4:1180c0`
-*30.08. 08:58 UTC · Quelle: dream*
-
-Critic feedback on 'woche' field structure (1,2) was specific enough to drive evolutionary improvement.
-
-### `dream:20260830085809:3:7f7ab9`
-*30.08. 08:58 UTC · Quelle: dream*
-
-Simulation flagged 2 risks and 2 revisions yet zero revisions were applied, indicating a simulation-to-execution gap.
-
-### `dream:20260830085809:2:2282c0`
-*30.08. 08:58 UTC · Quelle: dream*
-
-Evolutionary variant selection improved score from 7 to 9, but swarm halted at 2 cycles without convergence.
-
-### `dream:20260830085809:1:a6ac10`
-*30.08. 08:58 UTC · Quelle: dream*
-
-Only inclusionai/ling-3.0-flash-fin:free reliably serves requests; all other free models hit 429 rate limits within minutes.
 
 ### `last_swarm_critique`
 *30.08. 08:34 UTC · Quelle: critic*
