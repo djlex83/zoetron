@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Extracting specific critic artifact issues into targeted code variants improves the evolutionary loop's convergence.
+- Writing to the memory graph when the computed state delta is zero wastes resources and should be skipped.
+- Predicted task scores are consistently higher than actual outcomes, suggesting a systematic overestimation that can be corrected with a calibration fa
+- Using a fixed low timeout threshold leads to false failures; dynamic timeout based on 90th percentile latency is more robust.
+- Repeated 429 and timeout errors from gemma and nemotron models indicate they are unreliable under load and should be bypassed.
 - The persistent task of linking skills with memories has a working Python artifact but remains sub-optimal (score 6/10), indicating that the core logic
 - Calibration predictions of task outcomes are close but slightly optimistic (predicted 7, actual 6), suggesting a need for conservative adjustment in s
 - Evolutionary variant selection successfully elevated task scores from 6/10 to 9/10, proving that parallel candidate evaluation is an effective optimiz
@@ -51,11 +56,6 @@
 - The reflex `fernere-erinnerungen-verbinden.py` returned ok:false, blocking the "Fähigkeiten mit Erinnerungen verbinden" goal that the swarm was starte
 - The hand_action failure "nichts gelesen" occurred because the data path had no files/directory under the real path, and a subsequent call with a valid
 - `google/gemma-4-31b-it:free` and `google/gemma-4-26b-a4b-it:free` both consistently fail with HTTP 429 rate-limit errors, while `dots-studio/dots-3-no
-- The integration of dreams into swarm strategies can be systematized by extracting concrete actions from abstract dream content.
-- Model blocking after three consecutive failures is a protective measure that can cause cascading failures without a healthy fallback pool.
-- Stale drive goals, such as outdated swarm targets, hinder progress and must be periodically refreshed based on recent interactions.
-- Hand action failures with empty reads indicate a lack of output validation, requiring retry logic and timeout enforcement.
-- Recurrent HTTP 429 errors and timeouts across multiple free models necessitate a centralized rate-limit handler with exponential backoff and ranked fa
 
 ---
 

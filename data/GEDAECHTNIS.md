@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11341 Fakten** · Stand 2026-09-13 19:50 UTC · aktualisiert bei jedem Herzschlag
+**11338 Fakten** · Stand 2026-09-13 20:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7263
-- **swarm_artifact:** 1651
+- **dream:** 7268
+- **swarm_artifact:** 1647
 - **last_swarm_critique:** 937
 - **last_swarm_goal:** 672
-- **anti_pattern:** 365
-- **strategy:** 185
-- **tool:** 153
+- **anti_pattern:** 363
+- **strategy:** 184
+- **tool:** 152
 - **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913195806:5:efde4a`
+*13.09. 19:58 UTC · Quelle: dream*
+
+Extracting specific critic artifact issues into targeted code variants improves the evolutionary loop's convergence.
+
+### `dream:20260913195806:4:8f4fee`
+*13.09. 19:58 UTC · Quelle: dream*
+
+Writing to the memory graph when the computed state delta is zero wastes resources and should be skipped.
+
+### `dream:20260913195806:3:9558f1`
+*13.09. 19:58 UTC · Quelle: dream*
+
+Predicted task scores are consistently higher than actual outcomes, suggesting a systematic overestimation that can be corrected with a calibration factor.
+
+### `dream:20260913195806:2:c7fbbd`
+*13.09. 19:58 UTC · Quelle: dream*
+
+Using a fixed low timeout threshold leads to false failures; dynamic timeout based on 90th percentile latency is more robust.
+
+### `dream:20260913195806:1:66418a`
+*13.09. 19:58 UTC · Quelle: dream*
+
+Repeated 429 and timeout errors from gemma and nemotron models indicate they are unreliable under load and should be bypassed.
 
 ### `dream:20260913194642:5:b943b8`
 *13.09. 19:46 UTC · Quelle: dream*
@@ -42012,21 +42037,6 @@ The inclusionai/ling-3.0-flash-fin:free model consistently succeeds while others
 *30.08. 20:17 UTC · Quelle: dream*
 
 Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
-
-### `tool:marktanalyse-in-handlung-umsetzen`
-*30.08. 19:51 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse in Handlung umsetzen'. Datei: data/tools/marktanalyse-in-handlung-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Marktanalyse in Handlung:1`
-*30.08. 19:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Dynamic Capability Canvas - Erstelle ein interaktives 'Capability Canvas' - ein visuelles Raster dass Markettreife, Wettbewerbsvorteile und noetige Organisations-Faehigkeiten in Echtzeit kreuzt. Nutze dies als zentrale Entsch
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Marktanalyse in Handlung:0`
-*30.08. 19:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Reverse-Engineering aus Kundenbedarf - Statt von Datenanalyse loszulegen, identifiziere zunaechst konkrete Kundenanforderungen und Pain Points durch Stakeholder-Interviews. Entwickle dann eine Top-down-Analyse-Pipeline, die r
 
 ### `last_swarm_critique`
 *30.08. 19:50 UTC · Quelle: critic*

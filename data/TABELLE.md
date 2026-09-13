@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7967 Neuronen · 826169 bewertete Synapsen
+Stand: 7965 Neuronen · 825724 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -14,9 +14,9 @@ Stand: 7967 Neuronen · 826169 bewertete Synapsen
 | 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1020 | 0.23 |
 | 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 891 | 0.23 |
 | 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 894 | 0.22 |
-| 5 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 811 | 0.24 |
+| 5 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 812 | 0.24 |
 | 6 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 785 | 0.25 |
-| 7 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 826 | 0.23 |
+| 7 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 827 | 0.23 |
 | 8 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 812 | 0.24 |
 | 9 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 802 | 0.24 |
 | 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 814 | 0.23 |
