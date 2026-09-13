@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 10:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High latency on fallback models (20-30s) demands token budgets and metabolism-aware scheduling to preserve responsiveness.
+- Stale swarm goals degrade system relevance; lightweight periodic refresh via reflexes maintains alignment.
+- Pre-execution health checks prevent wasted cycles on doomed actions (artifact not running, API unhealthy).
+- Fixed timeout values cause cascading failures under load; timeouts must adapt to system stress and model latency history.
+- Model endpoints frequently fail with 502/429 errors requiring automated fallback chains with circuit breakers.
 - System is at stress 1.0 in conserve mode with only 3 max tasks and 1 max iteration, so task prioritization and failure caching are essential to avoid 
 - The simulation→reflex→apply loop shows revisions are needed (3 revisions, 3 risks) before application succeeds, indicating simulation validation needs
 - The hand action failed because relative paths do not resolve correctly; absolute paths or environment-variable-based paths (ZOETRON_DATA) must be used
@@ -51,11 +56,6 @@
 - The persistent gap between skill proposal generation and execution indicates that an automated pipeline with progress tracking is required to close th
 - Hand actions that complete with exit code 0 but no output underscore the importance of validating expected artifacts before marking the action as succ
 - The repeated 429 errors from Google's Gemma models reveal a need for automatic model fallback with exponential backoff to avoid service interruptions.
-- Drive goals explicitly prioritize error reduction and skill-transfer repair, signaling high-value targets for the next consolidation cycle.
-- Five skill proposals were generated but none were applied, exposing a bottleneck between idea generation and implementation.
-- Swarm convergence failed at score 1 despite evolution, showing that goal criteria have become stale and need periodic reassessment.
-- Hand actions exiting with code 1 and no error message indicate missing dependency checks before execution.
-- The recurring 429 errors from google/gemma models reveal rate-limit exhaustion and demand a circuit-breaker fallback chain.
 
 ---
 

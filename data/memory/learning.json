@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 10:36:09",
+ "stand": "2026-09-13 11:00:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,6 +63,12 @@
    "quote": 1.0
   },
   {
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "simulationen-besser-in-praxis-nutzen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -109,12 +115,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-verstehen-und-verringern.py",
@@ -414,9 +414,9 @@
  "haende_quote": 0.69,
  "simulationen_angewandt": 28,
  "swarm_scores": {
-  "n": 38,
+  "n": 37,
   "best": 9.0,
-  "schnitt": 5.63
+  "schnitt": 5.54
  },
  "score_nach_ziel_typ": {
   "analyse": {

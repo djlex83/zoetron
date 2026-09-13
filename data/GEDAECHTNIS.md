@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11380 Fakten** · Stand 2026-09-13 10:38 UTC · aktualisiert bei jedem Herzschlag
+**11378 Fakten** · Stand 2026-09-13 11:01 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7286
 - **swarm_artifact:** 1665
@@ -10,9 +10,34 @@
 - **strategy:** 187
 - **tool:** 155
 - **hand_result:** 83
-- **aktuell_organfehler:** 36
+- **aktuell_organfehler:** 34
 
 ---
+
+### `dream:20260913105920:5:9c2d0c`
+*13.09. 10:59 UTC · Quelle: dream*
+
+High latency on fallback models (20-30s) demands token budgets and metabolism-aware scheduling to preserve responsiveness.
+
+### `dream:20260913105920:4:a16e2b`
+*13.09. 10:59 UTC · Quelle: dream*
+
+Stale swarm goals degrade system relevance; lightweight periodic refresh via reflexes maintains alignment.
+
+### `dream:20260913105920:3:205ab3`
+*13.09. 10:59 UTC · Quelle: dream*
+
+Pre-execution health checks prevent wasted cycles on doomed actions (artifact not running, API unhealthy).
+
+### `dream:20260913105920:2:123e81`
+*13.09. 10:59 UTC · Quelle: dream*
+
+Fixed timeout values cause cascading failures under load; timeouts must adapt to system stress and model latency history.
+
+### `dream:20260913105920:1:73a646`
+*13.09. 10:59 UTC · Quelle: dream*
+
+Model endpoints frequently fail with 502/429 errors requiring automated fallback chains with circuit breakers.
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
 *13.09. 10:36 UTC · Quelle: hands*
@@ -42192,41 +42217,6 @@ Viele Skill-Ideen konkret umsetzen
 *30.08. 10:59 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-30 10:53:31-10:56:31 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `aktuell_organfehler`
-*30.08. 10:49 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-30 10:43:13-10:46:13 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `dream:20260830103106:5:28b1f3`
-*30.08. 10:31 UTC · Quelle: dream*
-
-The adaptive rate limiter and unified model executor proposed earlier remain unimplemented, and their absence is the root cause of the ongoing 429 spiral and unstructured error handling.
-
-### `dream:20260830103106:4:9c4d69`
-*30.08. 10:31 UTC · Quelle: dream*
-
-A failure cascade is active: repeated 429s cause swarm tools to fail, which raises stress to 1.0, which triggers conserve mode, which blocks retries and lets goals go stale.
-
-### `dream:20260830103106:3:2b9553`
-*30.08. 10:31 UTC · Quelle: dream*
-
-Conserve mode with max_iterations=1 creates a bottleneck where each failed model call consumes the entire iteration budget, preventing any recovery or retry within the same cycle.
-
-### `dream:20260830103106:2:14e382`
-*30.08. 10:31 UTC · Quelle: dream*
-
-Silent path-resolution failures (exit 0, no file touched) mask real errors when relative paths aren't resolved against ZOETRON_DATA, causing hand actions to appear successful while producing no output.
-
-### `dream:20260830103106:1:1b4710`
-*30.08. 10:31 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model fails with 429 on every call (~8s intervals), creating a persistent failure source that should be deprioritized or placed on cooldown rather than retried blindly.
-
-### `aktuell_organfehler`
-*30.08. 10:29 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-30 10:23:35-10:26:35 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `last_swarm_critique`
 *30.08. 09:29 UTC · Quelle: critic*
