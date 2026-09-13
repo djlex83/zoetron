@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
@@ -37,10 +37,15 @@
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Träume mit Fähigkeiten verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning of 7 facts and 69 events can discard context needed for future planning.
+- Swarm convergence stalled at score 6 because the critic did not adjust criteria after repeated model failures.
+- Observed latencies of 32–44 s imply that timeout thresholds must be set using rolling percentiles rather than fixed values.
+- Relying on a single model family creates a single point of failure; diversifying providers improves resilience.
+- Repeated 429 errors from free-tier models indicate quota exhaustion and require a fallback chain with exponential backoff.
 - Verifying the generated artifact's execution (TOR check) immediately after generation ensures that proposed skills are not just theoretically sound bu
 - Transient model failures (like 429 errors) can be successfully resolved through automatic retries, as evidenced by a successful call to `google/gemma-
 - An iterative simulation-revision cycle (5 revisions) successfully mitigated risks and aligned the system's calibration score perfectly (predicted 6, a
@@ -51,11 +56,6 @@
 - The reflex 'vorgeschlagene-fähigkeiten-wirklich-nutz.py' failed (ok: false), revealing that skill proposals alone create no working capabilities witho
 - The hand_action failure ('nichts gelesen') stems from relative path resolution; all file operations must resolve absolute paths from ZOETRON_DATA or s
 - Google's gemma models on OpenRouter are persistently rate-limited (429) while dots-studio models succeed reliably, making a hardcoded preference for d
-- Dream could not parse its own output - check prompt size.
-- Pruning stale events reduces noise but must preserve goal‑relevant facts to maintain context.
-- Successful calls complete in roughly 30 s, implying that timeout thresholds should be set above that baseline.
-- Three consecutive errors cause the model to be blocked, demonstrating the need for a circuit‑breaker pattern.
-- Timeout errors suggest network latency spikes, so fixed timeout values are insufficient.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11382 Fakten** · Stand 2026-09-13 11:44 UTC · aktualisiert bei jedem Herzschlag
+**11378 Fakten** · Stand 2026-09-13 11:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7297
+- **dream:** 7293
 - **swarm_artifact:** 1663
 - **last_swarm_critique:** 932
 - **last_swarm_goal:** 667
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913115124:5:5ab0dc`
+*13.09. 11:51 UTC · Quelle: dream*
+
+Aggressive pruning of 7 facts and 69 events can discard context needed for future planning.
+
+### `dream:20260913115124:4:e4c8ca`
+*13.09. 11:51 UTC · Quelle: dream*
+
+Swarm convergence stalled at score 6 because the critic did not adjust criteria after repeated model failures.
+
+### `dream:20260913115124:3:5cb75c`
+*13.09. 11:51 UTC · Quelle: dream*
+
+Observed latencies of 32–44 s imply that timeout thresholds must be set using rolling percentiles rather than fixed values.
+
+### `dream:20260913115124:2:dd0d1f`
+*13.09. 11:51 UTC · Quelle: dream*
+
+Relying on a single model family creates a single point of failure; diversifying providers improves resilience.
+
+### `dream:20260913115124:1:e7a04e`
+*13.09. 11:51 UTC · Quelle: dream*
+
+Repeated 429 errors from free-tier models indicate quota exhaustion and require a fallback chain with exponential backoff.
 
 ### `dream:20260913114134:5:bc7a14`
 *13.09. 11:41 UTC · Quelle: dream*
@@ -42197,51 +42222,6 @@ Relative path references fail in hand actions; all file operations must resolve 
 *30.08. 11:53 UTC · Quelle: dream*
 
 Free-tier models consistently hit 429 rate limits, requiring a pre-validated fallback chain with health tracking to maintain throughput.
-
-### `dream:20260830114804:5:325743`
-*30.08. 11:48 UTC · Quelle: dream*
-
-Prune runs remove zero facts/events, meaning retention policy is ineffective or data is already minimal.
-
-### `dream:20260830114804:4:b5b008`
-*30.08. 11:48 UTC · Quelle: dream*
-
-Metabolism stress=1.0 triggers conserve mode (max_tasks=3), starving the swarm started for skill implementation.
-
-### `dream:20260830114804:3:9481a0`
-*30.08. 11:48 UTC · Quelle: dream*
-
-Hand actions fail when relative paths don't resolve under ZOETRON_DATA, revealing a path-resolution contract violation.
-
-### `dream:20260830114804:2:01494a`
-*30.08. 11:48 UTC · Quelle: dream*
-
-Dream and drive modules consistently hit 180s timeouts, suggesting their work exceeds allocated windows or they deadlock.
-
-### `dream:20260830114804:1:c54603`
-*30.08. 11:48 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate hard rate limits that cascade into model blocks when fallbacks also time out.
-
-### `dream:20260830114237:4:bead9a`
-*30.08. 11:42 UTC · Quelle: dream*
-
-Reflexive error-handling tools are effective for diagnosis but cannot mitigate external API exhaustion.
-
-### `dream:20260830114237:3:892f6d`
-*30.08. 11:42 UTC · Quelle: dream*
-
-System resilience is directly tied to the ability to pivot immediately to a known-stable provider when others fail.
-
-### `dream:20260830114237:2:a97b7a`
-*30.08. 11:42 UTC · Quelle: dream*
-
-The occurrence of 404 errors demonstrates that model endpoint availability is volatile and requires proactive validation.
-
-### `dream:20260830114237:1:5a1212`
-*30.08. 11:42 UTC · Quelle: dream*
-
-Frequent 429 errors across multiple providers indicate that free-tier rate limits are a systemic bottleneck rather than isolated failures.
 
 ### `last_swarm_critique`
 *30.08. 11:12 UTC · Quelle: critic*
