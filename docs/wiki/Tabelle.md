@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7982 Neuronen · 828016 bewertete Synapsen
+Stand: 7987 Neuronen · 828691 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -16,7 +16,7 @@ Stand: 7982 Neuronen · 828016 bewertete Synapsen
 | 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 894 | 0.22 |
 | 5 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 817 | 0.24 |
 | 6 | 💭 | Rate limiting (429 errors) is the dominant and most persistent f… | 812 | 0.24 |
-| 7 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 783 | 0.25 |
+| 7 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 784 | 0.25 |
 | 8 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 826 | 0.23 |
 | 9 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 812 | 0.24 |
 | 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 817 | 0.23 |

@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11354 Fakten** · Stand 2026-09-13 16:05 UTC · aktualisiert bei jedem Herzschlag
+**11357 Fakten** · Stand 2026-09-13 16:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7283
-- **swarm_artifact:** 1651
+- **dream:** 7288
+- **swarm_artifact:** 1649
 - **last_swarm_critique:** 934
 - **last_swarm_goal:** 669
 - **anti_pattern:** 365
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913161317:5:28b1de`
+*13.09. 16:13 UTC · Quelle: dream*
+
+Calibration error of 2 (predicted 5, actual 7) suggests the model's confidence estimates need recalibration.
+
+### `dream:20260913161317:4:69807a`
+*13.09. 16:13 UTC · Quelle: dream*
+
+Evolution runs improved the score from 7 to 9 by adjusting the threshold parameter, confirming the value of parameter tuning.
+
+### `dream:20260913161317:3:7bd9e3`
+*13.09. 16:13 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free proved reliable with low latency and high scores across multiple calls.
+
+### `dream:20260913161317:2:55f0f1`
+*13.09. 16:13 UTC · Quelle: dream*
+
+The NVIDIA model timed out and was locked after three consecutive failures, showing the need for a circuit breaker.
+
+### `dream:20260913161317:1:846101`
+*13.09. 16:13 UTC · Quelle: dream*
+
+Google Gemma models consistently return 429 Too Many Requests, indicating rate limits that require backoff or avoidance.
 
 ### `dream:20260913160306:5:858064`
 *13.09. 16:03 UTC · Quelle: dream*

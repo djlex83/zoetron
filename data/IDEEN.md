@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 16:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 16:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 2 (predicted 5, actual 7) suggests the model's confidence estimates need recalibration.
+- Evolution runs improved the score from 7 to 9 by adjusting the threshold parameter, confirming the value of parameter tuning.
+- dots-studio/dots-3-note-preview:free proved reliable with low latency and high scores across multiple calls.
+- The NVIDIA model timed out and was locked after three consecutive failures, showing the need for a circuit breaker.
+- Google Gemma models consistently return 429 Too Many Requests, indicating rate limits that require backoff or avoidance.
 - A hand action timed out at 30s with 0 bytes read, suggesting network stalls rather than computational delays as the failure mode.
 - The "Entfernte Erinnerungen verbinden" simulation required 5 revisions to pass, indicating that initial outputs often carry unaddressed risks.
 - dots-studio/dots-3-note-preview:free is the only consistently available model, but its latency swings from 27s to 98s depending on load.
@@ -51,11 +56,6 @@
 - The system’s stress level is at maximum with a tight budget, so resource‑intensive operations should be minimized.
 - dots-studio is the only model that consistently returns responses, making it the best candidate for high‑token tasks.
 - Repeated 429 and timeout errors show that free models are unreliable under load.
-- Successful reflexes like combining distant memories produce actionable outcomes but are not yet persisted as reusable procedures between sessions.
-- Swarm goals become stale without periodic refresh, as evidenced by the drive_goal signal flagging outdated objectives.
-- The system generates redundant skill proposals about the same rate-limiting problem across multiple dream cycles without converging on an implemented 
-- dots-studio/dots-3-note-preview:free consistently succeeds where Gemma models fail, establishing it as the de facto reliable fallback for rate-limited
-- HTTP 429 rate-limiting is the dominant failure mode across multiple models, indicating a shared upstream quota bottleneck rather than a model-specific
 
 ---
 
