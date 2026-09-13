@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11372 Fakten** · Stand 2026-09-13 08:35 UTC · aktualisiert bei jedem Herzschlag
+**11369 Fakten** · Stand 2026-09-13 08:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7281
+- **dream:** 7276
 - **swarm_artifact:** 1669
-- **last_swarm_critique:** 929
-- **last_swarm_goal:** 664
+- **last_swarm_critique:** 930
+- **last_swarm_goal:** 665
 - **anti_pattern:** 367
 - **strategy:** 186
 - **tool:** 154
@@ -13,6 +13,51 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Viele Skill-Ideen in ech:2`
+*13.09. 08:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Graph-Based Skill Composition Engine - Model skills as composable nodes in a directed acyclic graph (DAG). Primitive nodes are atomic actions (e.g., API call, calculation, user input). A skill idea is decomposed into a graph 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Viele Skill-Ideen in ech:0`
+*13.09. 08:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Modular Plugin Architecture - Implement a core skill registry that defines a strict interface (e.g., initialize, execute, validate). Each skill idea is developed as an independent plugin (Python package) adhering to this inte
+
+### `last_swarm_critique`
+*13.09. 08:52 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: Artefakt laeuft nicht (Fehler | Fehler) - harter Laufzeitfehler; Kein lauffaehiger Python-Block gemessen, Vertrag verletzt
+
+### `last_swarm_goal`
+*13.09. 08:44 UTC · Quelle: system*
+
+Viele Skill-Ideen in echte Fähigkeiten verwandeln
+
+### `dream:20260913084351:5:d7025a`
+*13.09. 08:43 UTC · Quelle: dream*
+
+Latency variance (19s vs 68s) on the same model indicates queue-depth dependence, making static timeouts unreliable.
+
+### `dream:20260913084351:4:fba228`
+*13.09. 08:43 UTC · Quelle: dream*
+
+Pruning removes noise but also discards failure-pattern evidence needed for adaptive routing decisions.
+
+### `dream:20260913084351:3:a595b9`
+*13.09. 08:43 UTC · Quelle: dream*
+
+Swarm knowledge staleness and unused dream insights share a root cause: no automated pipeline promotes validated findings into live skills.
+
+### `dream:20260913084351:2:b738a4`
+*13.09. 08:43 UTC · Quelle: dream*
+
+Reflex actions converge quickly but cannot compensate for upstream inference failures that occur after skill selection.
+
+### `dream:20260913084351:1:b9e0b6`
+*13.09. 08:43 UTC · Quelle: dream*
+
+Model provider failures (502 overload, 429 rate limits) are the dominant reliability bottleneck, not model quality.
 
 ### `tool:vorgeschlagene-fähigkeiten-echt-umsetzen`
 *13.09. 08:33 UTC · Quelle: hands*
@@ -42128,16 +42173,6 @@ Evolutionary variant selection improved score from 7 to 9, but swarm halted at 2
 
 Only inclusionai/ling-3.0-flash-fin:free reliably serves requests; all other free models hit 429 rate limits within minutes.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Faehigkeiten schneller e:1`
-*30.08. 08:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Systemarchitektur-Ansatz (Architecture Blueprint) - Entwickle einen abstrakten Systemarchitektur-Entwurf, der die Komponenten und Datenflüsse für schnelles Fähigkeits-Deployment beschreibt, ohne Implementierungscode. Die Arch
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Faehigkeiten schneller e:0`
-*30.08. 08:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Prozessrahmenwerk-Ansatz (Process Framework) - Statt Code zu schreiben, entwerfe ein strukturiertes Prozessrahmenwerk namens 'Rapid-Skill-Deploy-Framework'. Dieses definiert vier Phasen: (1) Skill-Komprimierung – Identifikati
-
 ### `last_swarm_critique`
 *30.08. 08:34 UTC · Quelle: critic*
 
@@ -42147,56 +42182,6 @@ score=1; issues=First artifact (Fast-Track Validierungspipeline) has a syntax er
 *30.08. 08:23 UTC · Quelle: system*
 
 Faehigkeiten schneller einsetzen
-
-### `dream:20260830082236:5:ea87f8`
-*30.08. 08:22 UTC · Quelle: dream*
-
-Structured error capture is absent from model_fail events (only raw HTTP text), preventing automated classification and retry logic.
-
-### `dream:20260830082236:4:7a5e69`
-*30.08. 08:22 UTC · Quelle: dream*
-
-Competing drive_goals (failure reduction, stale analysis, skill stabilization) run in parallel without serialization, diluting progress on any single front.
-
-### `dream:20260830082236:3:d00934`
-*30.08. 08:22 UTC · Quelle: dream*
-
-Existing skill proposals for fallback, throttling, and health-checks remain unimplemented while the same 429 errors recur.
-
-### `dream:20260830082236:2:691d86`
-*30.08. 08:22 UTC · Quelle: dream*
-
-Successful calls only occur on less-popular free models (e.g., inclusionai/ling-3.0-flash-fin), indicating capacity scarcity drives reliability.
-
-### `dream:20260830082236:1:b20b49`
-*30.08. 08:22 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) across multiple free-tier providers is the dominant failure mode, making single-provider reliance untenable.
-
-### `dream:20260830081606:5:8a7ce9`
-*30.08. 08:16 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ failures despite external API degradation, indicating that internal system health remains stable under external stress.
-
-### `dream:20260830081606:4:1dc009`
-*30.08. 08:16 UTC · Quelle: dream*
-
-Reflex-based execution successfully handles routine maintenance tasks like goal updates without consuming full deliberation cycles, confirming the reflex architecture's efficiency.
-
-### `dream:20260830081606:3:996b9d`
-*30.08. 08:16 UTC · Quelle: dream*
-
-Memory gaps ('Blinden Fleck') are actively flagged when insufficient domain experience exists, signaling where targeted exploration drives should be spawned.
-
-### `dream:20260830081606:2:e67475`
-*30.08. 08:16 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin serves as a reliable anchor model with consistent ~10.8s latency, making it the natural fallback target in any resilient call chain.
-
-### `dream:20260830081606:1:d17ee6`
-*30.08. 08:16 UTC · Quelle: dream*
-
-429 rate limiting is a systemic failure mode hitting multiple free-tier models simultaneously, requiring architectural resilience rather than model-specific workarounds.
 
 ### `last_swarm_critique`
 *30.08. 07:55 UTC · Quelle: critic*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 08:34:02",
+ "stand": "2026-09-13 08:58:00",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,12 +63,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -76,6 +70,12 @@
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
@@ -135,12 +135,6 @@
    "quote": 1.0
   },
   {
-   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -148,12 +142,6 @@
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -213,15 +201,15 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltete-marktanalyse-auffrischen.py",
+   "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
-   "laeufe": 1,
-   "erfolge": 1,
+   "tool": "veraltete-marktanalyse-auffrischen.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -301,6 +289,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "marktanalyse-endlich-nutzen.py",
@@ -405,17 +399,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.707,
- "simulationen_angewandt": 25,
+ "haende_quote": 0.691,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
-  "n": 37,
+  "n": 38,
   "best": 9.0,
-  "schnitt": 5.78
+  "schnitt": 5.66
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 35,
-   "schnitt": 5.74
+   "n": 36,
+   "schnitt": 5.61
   },
   "bau": {
    "n": 2,

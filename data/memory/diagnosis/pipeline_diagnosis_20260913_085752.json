@@ -1,0 +1,23 @@
+{
+  "timestamp": "20260913_085752",
+  "data_directory": "/workspace/zoetron/data",
+  "used_fallback": false,
+  "tools_tested": {
+    "fähigkeitsvorschläge-in-echte-skills-ums.py": {
+      "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+      "ok": false,
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-ums.py\", line 143, in <module>\n    main()\n  File \"/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-ums.py\", line 130, in main\n    skills = load_skill_vorschläge()\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-ums.py\", line 20, in load_skill_vorschläge\n    for path in [sys.argv[1], INPUT_PATH]:\n                 ~~~~~~~~^^^\nIndexError: list index out of range\n",
+      "tool_path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-ums.py"
+    },
+    "fähigkeitsvorschläge-in-echte-skills-wan.py": {
+      "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "Identifizierte ungelöste Fähigkeitsvorschläge (nahe=2, kennung='skill-proposal'): 0\nErgebnis gespeichert: /workspace/zoetron/data/artefakte/skill-vorschlaege-identifiziert.json\n",
+      "stderr": "",
+      "tool_path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-wan.py"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 08:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 08:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance (19s vs 68s) on the same model indicates queue-depth dependence, making static timeouts unreliable.
+- Pruning removes noise but also discards failure-pattern evidence needed for adaptive routing decisions.
+- Swarm knowledge staleness and unused dream insights share a root cause: no automated pipeline promotes validated findings into live skills.
+- Reflex actions converge quickly but cannot compensate for upstream inference failures that occur after skill selection.
+- Model provider failures (502 overload, 429 rate limits) are the dominant reliability bottleneck, not model quality.
 - The 'conserve' state is triggered too late to prevent the cascade of model and action failures.
 - Model diversity provides some redundancy, but systemic rate limits can still paralyze the entire swarm.
 - Proposed skill implementations are failing to transition from proposal to execution during high-stress states.
@@ -51,11 +56,6 @@
 - Recurring drive goals around model errors and stale swarm knowledge identify these as primary reliability risks.
 - Duplicate skill proposals across cycles reveal a missing deduplication mechanism in the proposal pipeline.
 - Model latency consistently exceeds 25 seconds, indicating a need for caching or fallback to faster providers.
-- Latency variance across providers (9.7s vs 25.4s for same model) exceeds acceptable bounds for real-time control loops.
-- Swarm knowledge decays silently; without scheduled re-evaluation, insights older than 30 days become liability rather than asset.
-- Pruning events without preserving causal chains (decision→action→outcome) destroys the evidence needed for future credit assignment.
-- Skill proposals accumulate without execution (65 proposed, 1 tested), creating an illusion of progress while actual capability remains static.
-- Free-tier model providers fail catastrophically under load (502/429 errors), making single-provider reliance a reliability anti-pattern.
 
 ---
 
