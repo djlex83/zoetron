@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11333 Fakten** · Stand 2026-09-13 19:08 UTC · aktualisiert bei jedem Herzschlag
+**11338 Fakten** · Stand 2026-09-13 19:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7253
+- **dream:** 7258
 - **swarm_artifact:** 1653
 - **last_swarm_critique:** 937
 - **last_swarm_goal:** 672
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913191647:5:668dc7`
+*13.09. 19:16 UTC · Quelle: dream*
+
+Self-diagnoses show no organ-level errors, so model-level failures are the dominant reliability bottleneck.
+
+### `dream:20260913191647:4:781028`
+*13.09. 19:16 UTC · Quelle: dream*
+
+Aggressive pruning of facts and events improves performance but may discard context needed for later reasoning.
+
+### `dream:20260913191647:3:8fc7a2`
+*13.09. 19:16 UTC · Quelle: dream*
+
+Swarm tasks that evolve but do not converge indicate insufficient iterations or suboptimal role distribution.
+
+### `dream:20260913191647:2:68e8f4`
+*13.09. 19:16 UTC · Quelle: dream*
+
+Pinning the primary model to a consistently successful endpoint (dots-studio/dots-3-note-preview:free) reduces latency and failure rates.
+
+### `dream:20260913191647:1:3461fd`
+*13.09. 19:16 UTC · Quelle: dream*
+
+Free-tier models frequently trigger 429 rate limits and read timeouts, necessitating exponential backoff and fallback logic.
 
 ### `dream:20260913190532:5:539662`
 *13.09. 19:05 UTC · Quelle: dream*

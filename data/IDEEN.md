@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,15 +25,15 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Ferne Träume kombinieren *(wieder aufgegriffen: 6×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnoses show no organ-level errors, so model-level failures are the dominant reliability bottleneck.
+- Aggressive pruning of facts and events improves performance but may discard context needed for later reasoning.
+- Swarm tasks that evolve but do not converge indicate insufficient iterations or suboptimal role distribution.
+- Pinning the primary model to a consistently successful endpoint (dots-studio/dots-3-note-preview:free) reduces latency and failure rates.
+- Free-tier models frequently trigger 429 rate limits and read timeouts, necessitating exponential backoff and fallback logic.
 - The high variance in latency (5.8s to 61.0s) and output tokens (444 to 5788) in successful runs indicates that execution environments must use adaptiv
 - Targeted artifact critiques (e.g., identifying redundant script execution) successfully guided evolutionary variants to improve scores from 4/10 to pe
 - A calibration gap of 3 points (predicting 7, scoring 4) on swarm information tasks suggests the system systematically overestimates its capability and
@@ -51,11 +56,6 @@
 - Hand action failures are transient and resolve on retry, so retry logic improves overall reliability.
 - The dots‑studio model succeeds with high latency but no errors, making it a reliable fallback when other models fail.
 - Free Google Gemma models frequently return HTTP 429 errors, indicating they are rate‑limited and should be avoided for critical tasks.
-- The simulation returned "revise" with five risks, signaling that the current goal is too complex for the remaining budget.
-- The reflex to update swarm goals failed because it depends on external model calls that are rate‑limited.
-- The hand_action failure occurred while the system was in a high‑stress conserve state, indicating reduced action reliability under budget constraints.
-- The only consistently available model is dots-studio/dots-3-note-preview:free, suggesting it should be the default.
-- The cascade of 429 errors shows that parallel model requests exceed provider limits.
 
 ---
 

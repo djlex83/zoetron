@@ -46698,3 +46698,41 @@
 {"ts": 1788720932.9685051, "kind": "reflex_used", "payload": {"goal": "Alte Traumverbindungen erforschen", "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py", "ok": true}}
 {"ts": 1788720933.4289114, "kind": "act_done", "payload": {"goal_title": "Alte Traumverbindungen erforschen", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1788721451.1732037, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788721519.7028825, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788721521.3000138, "kind": "prune_run", "payload": {"facts_pruned": 22, "events_pruned": 0}}
+{"ts": 1788721547.048108, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788721547.048104, "schalter_geoeffnet": false}}
+{"ts": 1788721547.279234, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788721547.2791765, "schalter_geoeffnet": false}}
+{"ts": 1788721547.406932, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788721547.4069297, "schalter_geoeffnet": false}}
+{"ts": 1788721550.7071097, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 3.3, "tokens_ein": 1357, "tokens_aus": 847}}
+{"ts": 1788721550.7076452, "kind": "skill_proposal", "payload": {"proposal": "Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backoff cooldowns to prevent repeated calls to failing endpoints."}}
+{"ts": 1788721550.7077098, "kind": "skill_proposal", "payload": {"proposal": "Implement PreFlightCheck that queries the ModelHealthRegistry before every generation call, skipping providers exceeding a 10% error rate or active cooldown."}}
+{"ts": 1788721550.7077963, "kind": "skill_proposal", "payload": {"proposal": "Build AutomaticFallbackChain (primary→secondary→tertiary→hand_action) with explicit latency and error budgets per tier, routing to the first provider passing PreFlightCheck."}}
+{"ts": 1788721550.7078629, "kind": "skill_proposal", "payload": {"proposal": "Create SkillValidationPipeline requiring every proposed skill to execute and score within one cycle, auto-pruning proposals that fail validation to close the proposal-to-deployment gap."}}
+{"ts": 1788721550.7079191, "kind": "skill_proposal", "payload": {"proposal": "Develop ConvergenceDetector monitoring score delta across evolution cycles, triggering structural re-architecture when improvement falls below threshold for N consecutive cycles."}}
+{"ts": 1788721550.7079768, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788721584.2564244, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.7, "tokens_ein": 490, "tokens_aus": 730}}
+{"ts": 1788721584.256609, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und reduzieren", "why": "Das System macht oft Fehler beim Vorhersagen. Wir müssen herausfinden warum und es besser machen.", "signal": "failure"}}
+{"ts": 1788721584.2566872, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren und nutzen", "why": "Alte Infos aus dem Schwarm sind veraltet. Wir brauchen frische Bewertungen und Ziele vom Team.", "signal": "stale"}}
+{"ts": 1788721584.2567496, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten echt machen", "why": "Viele neue Fähigkeiten wurden vorgeschlagen. Jetzt müssen wir die besten wirklich lernen und testen.", "signal": "combination"}}
+{"ts": 1788721586.9591153, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.26, "gelesen": 0}}
+{"ts": 1788721586.9619598, "kind": "reflex_used", "payload": {"goal": "Träume besser nutzen lernen", "tool": "träume-besser-zum-lernen-nutzen.py", "ok": false}}
+{"ts": 1788721588.8333724, "kind": "swarm_started", "payload": {"goal": "Träume besser nutzen lernen"}}
+{"ts": 1788721589.8828046, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1788721593.564148, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1788721672.3806293, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 77.8, "tokens_ein": 3173, "tokens_aus": 2937}}
+{"ts": 1788721748.7719615, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 75.3, "tokens_ein": 435, "tokens_aus": 1038}}
+{"ts": 1788721795.5160158, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 46.1, "tokens_ein": 317, "tokens_aus": 692}}
+{"ts": 1788721795.5162005, "kind": "simulation", "payload": {"goal": "Träume besser nutzen lernen", "verdict": "go", "risks": 5, "revisions": 3}}
+{"ts": 1788721903.579382, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 107.4, "tokens_ein": 1702, "tokens_aus": 3224}}
+{"ts": 1788721985.1445365, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 81.2, "tokens_ein": 2073, "tokens_aus": 4206}}
+{"ts": 1788722006.0709798, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788722006.0709763, "schalter_geoeffnet": false}}
+{"ts": 1788722006.2347052, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788722006.234703, "schalter_geoeffnet": false}}
+{"ts": 1788722006.4018047, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788722006.4018018, "schalter_geoeffnet": false}}
+{"ts": 1788722015.0989218, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 8.7, "tokens_ein": 2536, "tokens_aus": 3654}}
+{"ts": 1788722016.5744042, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.09, "gelesen": 1048}}
+{"ts": 1788722016.5746434, "kind": "tor", "payload": {"goal": "Träume besser nutzen lernen", "gruen": true, "grund": "Artefakt laeuft (278 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788722073.2876592, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 55.7, "tokens_ein": 9520, "tokens_aus": 2018}}
+{"ts": 1788722073.2885697, "kind": "calibration", "payload": {"goal": "Träume besser nutzen lernen", "predicted": 3, "actual": 6, "abs_error": 3}}
+{"ts": 1788722073.2886431, "kind": "model_score", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "score": 6}}
+{"ts": 1788722073.289081, "kind": "bahnen", "payload": {"goal": "Träume besser nutzen lernen", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 6, "abgerufen": 4, "ids": ["f:a92c0e22490b", "e:f61203758d0f", "e:f08663a0d512", "e:c45d45d239fa"], "ziel_id": "g:a6dc80360e81"}}
+{"ts": 1788722131.9476418, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 58.7, "tokens_ein": 205, "tokens_aus": 1236}}
