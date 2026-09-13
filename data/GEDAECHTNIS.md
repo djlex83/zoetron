@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11352 Fakten** · Stand 2026-09-13 21:53 UTC · aktualisiert bei jedem Herzschlag
+**11347 Fakten** · Stand 2026-09-13 22:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7288
 - **swarm_artifact:** 1635
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913220108:5:372321`
+*13.09. 22:01 UTC · Quelle: dream*
+
+Drive goals duplicate (model errors, stale swarm) across cycles, revealing that root-cause fixes (registry, scheduler) are proposed but not yet deployed.
+
+### `dream:20260913220108:4:16abbf`
+*13.09. 22:01 UTC · Quelle: dream*
+
+Pruning removes 17–23 events per cycle while facts drop only 5–10, suggesting event-store bloat outpaces semantic decay and needs separate TTL policies.
+
+### `dream:20260913220108:3:3e7745`
+*13.09. 22:01 UTC · Quelle: dream*
+
+Reflex tools for stale-knowledge refresh converge in one shot, proving the pattern generalizes across domains when validation criteria are explicit.
+
+### `dream:20260913220108:2:2a9ef6`
+*13.09. 22:01 UTC · Quelle: dream*
+
+Nemotron-3-Ultra succeeds where Gemma fails but exhibits high latency variance (28–62 s), indicating cold-start or queueing effects that a warm-pool would mitigate.
+
+### `dream:20260913220108:1:4a6b31`
+*13.09. 22:01 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for production loops without a scheduler that honors Retry-After headers.
 
 ### `dream:20260913215113:5:07bcb4`
 *13.09. 21:51 UTC · Quelle: dream*
@@ -42087,56 +42112,6 @@ Evolutionary repair jumps scores from 6 to 9 when the critic pinpoints "no measu
 *30.08. 22:06 UTC · Quelle: dream*
 
 Free-tier models (GLM, Gemma, Nemotron) fail predominantly via 429 rate limits and 502 upstream overloads, making them unreliable as primary workers.
-
-### `dream:20260830215933:5:3edb9a`
-*30.08. 21:59 UTC · Quelle: dream*
-
-Token output spikes (e.g., 4337 tokens) on successful nemotron calls suggest the model is compensating for upstream failures by generating more verbose responses
-
-### `dream:20260830215933:4:13b444`
-*30.08. 21:59 UTC · Quelle: dream*
-
-Model failures correlate with high stress state (stress=1.0, conserve mode), indicating that system resource constraints directly impact model reliability
-
-### `dream:20260830215933:3:300797`
-*30.08. 21:59 UTC · Quelle: dream*
-
-The swarm goal 'Alte Marktanalysen verwerten' succeeded with a 248-line Python artifact, demonstrating that focused, bounded tasks yield reliable results
-
-### `dream:20260830215933:2:371889`
-*30.08. 21:59 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free shows increasing latency (53s to 171s) under sustained load, suggesting resource exhaustion without proper throttling
-
-### `dream:20260830215933:1:c067ee`
-*30.08. 21:59 UTC · Quelle: dream*
-
-Repeated 429 errors from z-ai/glm-5.2:free indicate rate-limiting issues that cause cascading failures and should trigger automatic model fallback
-
-### `dream:20260830215254:5:075004`
-*30.08. 21:52 UTC · Quelle: dream*
-
-Circuit-breaker logic with health tracking can prevent cascading failures from degraded models.
-
-### `dream:20260830215254:4:510bc1`
-*30.08. 21:52 UTC · Quelle: dream*
-
-Critical-path tasks require reserved capacity to avoid blocking on rate-limited or failing models.
-
-### `dream:20260830215254:3:5ccc77`
-*30.08. 21:52 UTC · Quelle: dream*
-
-Token efficiency varies significantly across models, justifying dynamic model selection based on input/output cost patterns.
-
-### `dream:20260830215254:2:c6920d`
-*30.08. 21:52 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free consistently succeeds with acceptable latency, making it a reliable fallback.
-
-### `dream:20260830215254:1:a495d9`
-*30.08. 21:52 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting as a systemic failure point requiring proactive routing.
 
 ### `last_swarm_critique`
 *30.08. 21:41 UTC · Quelle: critic*

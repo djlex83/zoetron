@@ -47089,3 +47089,30 @@
 {"ts": 1788731388.2715042, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.56, "gelesen": 1274}}
 {"ts": 1788731388.3139827, "kind": "reflex_used", "payload": {"goal": "Schwarm-Wissen nutzen", "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py", "ok": true}}
 {"ts": 1788731388.9581192, "kind": "act_done", "payload": {"goal_title": "Schwarm-Wissen nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788126774.6898444, "key": "dream:20260830215254:1:a495d9", "value": "Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting as a systemic failure point requiring proactive routing.", "source": "dream"}
+{"ts": 1788126774.6899283, "key": "dream:20260830215254:2:c6920d", "value": "nvidia/nemotron-3-ultra-550b-a55b:free consistently succeeds with acceptable latency, making it a reliable fallback.", "source": "dream"}
+{"ts": 1788126774.689992, "key": "dream:20260830215254:3:5ccc77", "value": "Token efficiency varies significantly across models, justifying dynamic model selection based on input/output cost patterns.", "source": "dream"}
+{"ts": 1788126774.690052, "key": "dream:20260830215254:4:510bc1", "value": "Critical-path tasks require reserved capacity to avoid blocking on rate-limited or failing models.", "source": "dream"}
+{"ts": 1788126774.6901126, "key": "dream:20260830215254:5:075004", "value": "Circuit-breaker logic with health tracking can prevent cascading failures from degraded models.", "source": "dream"}
+{"ts": 1788127173.1647666, "key": "dream:20260830215933:1:c067ee", "value": "Repeated 429 errors from z-ai/glm-5.2:free indicate rate-limiting issues that cause cascading failures and should trigger automatic model fallback", "source": "dream"}
+{"ts": 1788127173.1648612, "key": "dream:20260830215933:2:371889", "value": "nvidia/nemotron-3-ultra-550b-a55b:free shows increasing latency (53s to 171s) under sustained load, suggesting resource exhaustion without proper throttling", "source": "dream"}
+{"ts": 1788127173.164931, "key": "dream:20260830215933:3:300797", "value": "The swarm goal 'Alte Marktanalysen verwerten' succeeded with a 248-line Python artifact, demonstrating that focused, bounded tasks yield reliable results", "source": "dream"}
+{"ts": 1788127173.1649961, "key": "dream:20260830215933:4:13b444", "value": "Model failures correlate with high stress state (stress=1.0, conserve mode), indicating that system resource constraints directly impact model reliability", "source": "dream"}
+{"ts": 1788127173.1650755, "key": "dream:20260830215933:5:3edb9a", "value": "Token output spikes (e.g., 4337 tokens) on successful nemotron calls suggest the model is compensating for upstream failures by generating more verbose responses", "source": "dream"}
+{"ts": 1788731895.8023667, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788731964.072116, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788731965.9274378, "kind": "prune_run", "payload": {"facts_pruned": 18, "events_pruned": 28}}
+{"ts": 1788731982.6945698, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 13.2, "tokens_ein": 1389, "tokens_aus": 700}}
+{"ts": 1788731982.6952872, "kind": "skill_proposal", "payload": {"proposal": "Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backoff cooldowns to prevent repeated calls to failing endpoints."}}
+{"ts": 1788731982.6953442, "kind": "skill_proposal", "payload": {"proposal": "Implement PreFlightCheck that queries ModelHealthRegistry before every generation call, skipping providers exceeding 10% error rate or active cooldown."}}
+{"ts": 1788731982.695398, "kind": "skill_proposal", "payload": {"proposal": "Build AutomaticFallbackChain (primary→secondary→tertiary→hand_action) with exponential backoff, prioritizing proven models like inclusionai/ling-3.0-flash-fin and quarantining failing providers."}}
+{"ts": 1788731982.695455, "kind": "skill_proposal", "payload": {"proposal": "Add mandatory skill validation gate requiring every proposed skill to be executed and scored within one cycle, preventing untested proposals from accumulating."}}
+{"ts": 1788731982.6955073, "kind": "skill_proposal", "payload": {"proposal": "Build convergence gate requiring score >= 8 AND no critical risks from simulation AND critic sign-off before marking any swarm converged."}}
+{"ts": 1788731982.6955595, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788732001.6871467, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 17.0, "tokens_ein": 481, "tokens_aus": 764}}
+{"ts": 1788732001.6873844, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht noch zu viele Fehler. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788732001.687471, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen regelmäßig aktualisieren", "why": "Die Schwarm-Ergebnisse sind veraltet. Frische Impulse verhindern Stillstand.", "signal": "stale"}}
+{"ts": 1788732001.6875463, "kind": "drive_goal", "payload": {"title": "Aus schlechten Träumen lernen", "why": "Frühere Versuche schnitten sehr schlecht ab. Wir müssen verstehen warum, um es besser zu machen.", "signal": "combination"}}
+{"ts": 1788732007.5923748, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.72, "gelesen": 1498}}
+{"ts": 1788732007.5999432, "kind": "reflex_used", "payload": {"goal": "Simulationen öfter anwenden", "tool": "simulationen-gezielt-einsetzen.py", "ok": true}}
+{"ts": 1788732008.078693, "kind": "act_done", "payload": {"goal_title": "Simulationen öfter anwenden", "score": null, "converged": true, "mode": "reflex"}}

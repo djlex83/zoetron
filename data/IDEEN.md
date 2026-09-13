@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals duplicate (model errors, stale swarm) across cycles, revealing that root-cause fixes (registry, scheduler) are proposed but not yet deploy
+- Pruning removes 17–23 events per cycle while facts drop only 5–10, suggesting event-store bloat outpaces semantic decay and needs separate TTL policie
+- Reflex tools for stale-knowledge refresh converge in one shot, proving the pattern generalizes across domains when validation criteria are explicit.
+- Nemotron-3-Ultra succeeds where Gemma fails but exhibits high latency variance (28–62 s), indicating cold-start or queueing effects that a warm-pool w
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production loops without a scheduler that honors Retry-After 
 - Drive goals (reduce model errors, refresh swarm knowledge, connect dreams) remain abstract without measurable acceptance criteria or automated verific
 - Self-diagnosis reports zero organ errors despite repeated model failures, revealing monitoring blind spots for external dependency health.
 - Periodic pruning wastes cycles (37 events pruned first run, only 17 second) while write-coupled delta triggers would prune only when necessary.
@@ -51,11 +56,6 @@
 - Simulation-revision loops (3-5 revisions per cycle) consume excessive tokens without guaranteeing convergence.
 - Swarm convergence stalls at score 4/10 despite evolution cycles, indicating critic feedback isn't translating into builder fixes.
 - Nemotron-3-ultra exhibits 502 upstream errors under load, requiring automatic fallback to faster models like dots-studio (16s vs 50s+).
-- Stale swarm goals persist without TTL or auto-archive, causing reflex tools to act on obsolete objectives.
-- Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), starving parallel exploration needed for model routing.
-- Simulation verdict 'revise' with 5 risks and 3 applied revisions prevented runtime failure on the swarm refresh task.
-- Hand actions fail when relative paths diverge from ZOETRON_DATA root, indicating environment drift between components.
-- Free-tier models (Gemma variants) consistently hit 429 rate limits under load while Nemotron-3-ultra remains available but slow (36-73s).
 
 ---
 
