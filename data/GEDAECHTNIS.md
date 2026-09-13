@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11382 Fakten** · Stand 2026-09-13 02:58 UTC · aktualisiert bei jedem Herzschlag
+**11375 Fakten** · Stand 2026-09-13 03:08 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7311
-- **swarm_artifact:** 1661
+- **swarm_artifact:** 1655
 - **last_swarm_critique:** 923
 - **last_swarm_goal:** 658
 - **anti_pattern:** 367
 - **strategy:** 186
-- **tool:** 155
+- **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913030643:5:4b1df3`
+*13.09. 03:06 UTC · Quelle: dream*
+
+Pruning removed 15 facts and 38 events, which may discard important context; auditing pruning criteria can help preserve valuable information.
+
+### `dream:20260913030643:4:9714d2`
+*13.09. 03:06 UTC · Quelle: dream*
+
+Evolution produced a variant scoring 7.7, but the swarm still scored 6 and did not converge after 2 cycles, implying more cycles or better critic heuristics are needed.
+
+### `dream:20260913030643:3:67d779`
+*13.09. 03:06 UTC · Quelle: dream*
+
+Calibration predicted 8 but actual was 6, an absolute error of 2, revealing a systematic overprediction that can be corrected by a bias adjustment.
+
+### `dream:20260913030643:2:71cca0`
+*13.09. 03:06 UTC · Quelle: dream*
+
+Latency for Nvidia model ranged from 22.6s to 115.7s, with input tokens up to 8262, suggesting token limits and timeouts are required to avoid excessive delays.
+
+### `dream:20260913030643:1:4bde2c`
+*13.09. 03:06 UTC · Quelle: dream*
+
+Model endpoints returned 502 (Nvidia overload) and 429 (Google rate limit), indicating the need for retry with backoff and fallback models.
 
 ### `dream:20260913025640:5:2de308`
 *13.09. 02:56 UTC · Quelle: dream*
@@ -42313,11 +42338,6 @@ High latency (6.9-7.9s) on nvidia/nemotron-3-ultra makes it unsuitable for time-
 
 Recurring 429 errors on z-ai/glm-5.2:free indicate missing pre-flight health checks and circuit-breaker logic for rate-limited models.
 
-### `tool:veraltetes-wissen-auffrischen-und-prüfen`
-*30.08. 03:00 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltetes Wissen auffrischen und prüfen'. Datei: data/tools/veraltetes-wissen-auffrischen-und-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *30.08. 03:00 UTC · Quelle: critic*
 
@@ -42327,31 +42347,6 @@ score=9; issues=Artifact 1 docstring claims to use zoetron.memory/zoetron.graph 
 *30.08. 02:56 UTC · Quelle: system*
 
 Veraltetes Wissen auffrischen und prüfen
-
-### `dream:20260830025549:5:655760`
-*30.08. 02:55 UTC · Quelle: dream*
-
-Circuit-breaker logic is missing: after 3 consecutive 429s the model should be quarantined for a cooldown period instead of immediate retry.
-
-### `dream:20260830025549:4:aa0a4f`
-*30.08. 02:55 UTC · Quelle: dream*
-
-Model health state (latency, error rates, ban status) evaporates each session because no persistent store survives restarts.
-
-### `dream:20260830025549:3:0d6ec3`
-*30.08. 02:55 UTC · Quelle: dream*
-
-Convergence detection works in reflex mode (act_done.converged=true) but is absent from swarm loops, burning compute on plateaued optimization.
-
-### `dream:20260830025549:2:55135b`
-*30.08. 02:55 UTC · Quelle: dream*
-
-Skill proposals accumulate but never graduate to registered, executable capabilities because registration lacks enforcement of verifiable outputs.
-
-### `dream:20260830025549:1:095927`
-*30.08. 02:55 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free show that reactive fallback wastes 60+ seconds per failure before switching models.
 
 ### `last_swarm_critique`
 *30.08. 01:11 UTC · Quelle: critic*

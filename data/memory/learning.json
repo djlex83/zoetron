@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 02:57:04",
+ "stand": "2026-09-13 03:07:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -91,6 +91,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "ferngedächtnisse-verbinden.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "träume-in-handlungen-umsetzen.py",
@@ -214,12 +220,6 @@
   },
   {
    "tool": "automatische-fehler-reduktions-pipeline-.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "ferngedächtnisse-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -411,12 +411,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.724,
- "simulationen_angewandt": 29,
+ "haende_quote": 0.728,
+ "simulationen_angewandt": 28,
  "swarm_scores": {
-  "n": 36,
+  "n": 35,
   "best": 9.0,
-  "schnitt": 5.67
+  "schnitt": 5.69
  },
  "score_nach_ziel_typ": {
   "analyse": {

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8013 Neuronen · 829609 bewertete Synapsen
+Stand: 8010 Neuronen · 829360 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -15,16 +15,16 @@ Stand: 8013 Neuronen · 829609 bewertete Synapsen
 | 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 874 | 0.23 |
 | 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 799 | 0.25 |
 | 5 | 💭 | Rate limiting (429 errors) is the dominant and most persistent f… | 820 | 0.24 |
-| 6 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 816 | 0.24 |
-| 7 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 836 | 0.23 |
+| 6 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 815 | 0.24 |
+| 7 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 835 | 0.23 |
 | 8 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 887 | 0.22 |
-| 9 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 818 | 0.24 |
+| 9 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 817 | 0.24 |
 | 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 829 | 0.23 |
 | 11 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 760 | 0.25 |
 | 12 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 837 | 0.23 |
-| 13 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 734 | 0.25 |
-| 14 | 💭 | Free-tier model endpoints exhibit correlated failure modes (429 … | 809 | 0.23 |
-| 15 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 716 | 0.26 |
+| 13 | 💭 | Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 … | 735 | 0.25 |
+| 14 | 💭 | Free-tier model endpoints exhibit correlated failure modes (429 … | 808 | 0.23 |
+| 15 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 715 | 0.26 |
 
 ## Die 15 stärksten Synapsen
 
