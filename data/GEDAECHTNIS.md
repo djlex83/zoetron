@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11382 Fakten** · Stand 2026-09-13 03:36 UTC · aktualisiert bei jedem Herzschlag
+**11377 Fakten** · Stand 2026-09-13 03:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7316
+- **dream:** 7311
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 924
 - **last_swarm_goal:** 659
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913034405:5:e86c18`
+*13.09. 03:44 UTC · Quelle: dream*
+
+Drive goals highlight the need to update stale objectives and learn from failures.
+
+### `dream:20260913034405:4:1ca532`
+*13.09. 03:44 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports no organ failures, confirming hardware stability.
+
+### `dream:20260913034405:3:62780f`
+*13.09. 03:44 UTC · Quelle: dream*
+
+Reflex actions succeed only when data root paths are correctly resolved.
+
+### `dream:20260913034405:2:9f7b70`
+*13.09. 03:44 UTC · Quelle: dream*
+
+Pruning events without preserving causal sequences can break context for future planning.
+
+### `dream:20260913034405:1:850863`
+*13.09. 03:44 UTC · Quelle: dream*
+
+Free model endpoints frequently return 429 or 502 errors, indicating rate limiting and overload that require automatic fallback.
 
 ### `tool:vorgeschlagene-fähigkeiten-schneller-nut`
 *13.09. 03:34 UTC · Quelle: hands*
@@ -42312,56 +42337,6 @@ The sole reliable model (nvidia/nemotron-3-ultra) exhibits extreme latency varia
 *30.08. 03:44 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429 rate limits under load, requiring request spacing and fallback chains.
-
-### `dream:20260830033918:5:8b590e`
-*30.08. 03:39 UTC · Quelle: dream*
-
-Reflex tools (e.g., alte-erinnerungen-auf-wert-prüfen.py) fail silently without structured error artifacts, blocking automated repair.
-
-### `dream:20260830033918:4:7e2f4e`
-*30.08. 03:39 UTC · Quelle: dream*
-
-System stress hits maximum (1.0) triggering conserve mode that caps tasks to 3 and iterations to 1, starving recovery work.
-
-### `dream:20260830033918:3:a81860`
-*30.08. 03:39 UTC · Quelle: dream*
-
-Proposed skills accumulate but lack verification gates; no mechanism confirms a skill was actually learned and registered.
-
-### `dream:20260830033918:2:7f65db`
-*30.08. 03:39 UTC · Quelle: dream*
-
-Relative path resolution breaks hand actions when ZOETRON_DATA and sys.argv[1] diverge; absolute canonical paths are required.
-
-### `dream:20260830033918:1:3b9ed3`
-*30.08. 03:39 UTC · Quelle: dream*
-
-Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
-
-### `dream:20260830033433:5:e57ede`
-*30.08. 03:34 UTC · Quelle: dream*
-
-No circuit breaker or model health tracking exists, causing repeated hammering of a rate-limited endpoint instead of graceful degradation.
-
-### `dream:20260830033433:4:7c5744`
-*30.08. 03:34 UTC · Quelle: dream*
-
-Skill proposals accumulate (7+ in this session) but only one reflex tool was actually invoked, revealing a proposal-to-implementation gap that stalls capability growth.
-
-### `dream:20260830033433:3:028dec`
-*30.08. 03:34 UTC · Quelle: dream*
-
-Local-first reflex execution (hand_action) completes in 0.25s with zero errors, proving deterministic tools outperform probabilistic model calls for known operations.
-
-### `dream:20260830033433:2:fc8f8e`
-*30.08. 03:34 UTC · Quelle: dream*
-
-Fallback to nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (15-45s), making it unreliable for time-sensitive operations without timeout guards.
-
-### `dream:20260830033433:1:0429ff`
-*30.08. 03:34 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently returns 429 errors (rate limiting) across multiple attempts, indicating it should be permanently deprioritized or removed from the free model pool.
 
 ### `last_swarm_critique`
 *30.08. 03:21 UTC · Quelle: critic*
