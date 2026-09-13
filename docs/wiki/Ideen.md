@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 14:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 14:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning of facts and events (10 facts, 17 events) may have removed context that could have informed future decision-making.
+- Reflex-driven updates of swarm knowledge successfully kept the system's shared context current without requiring explicit goal-driven planning.
+- The dots-studio/dots-3-note-preview:free model consistently succeeded with latencies under 30s, making it the most reliable currently available free m
+- The automatic lockout after three consecutive failures prevents repeated wasted calls but can permanently disable a model that might recover after a s
+- Free-tier models frequently fail with HTTP 429 (rate limit) or read timeouts, indicating that quota exhaustion and network latency are the primary rel
 - The swarm's evolution despite non-convergence demonstrates that iterative critic feedback improves output quality.
 - The existing skill proposals directly address the observed failure patterns, confirming the architectural direction.
 - The dots-studio model consistently succeeds with low latency, making it a reliable fallback.
@@ -51,11 +56,6 @@
 - The dots-studio/dots-3-note-preview:free model is reliable but exhibits high latency.
 - Timeout errors on large models trigger consecutive failures and automatic lockouts.
 - Free-tier models repeatedly return HTTP 429, causing cascading request failures.
-- Simulation goals requiring complete skill acquisition depend on stable model availability, making healthy-model pinning a critical operational safegua
-- The model 'dots-studio/dots-3-note-preview:free' was the only consistently successful endpoint, highlighting the risk of relying on a single fragile f
-- During high system stress (1.0) and 'conserve' state, restricting the task budget to 3 tasks and 1 iteration prevents resource exhaustion.
-- The Nemotron model entered a hard lockout ('sperre') after three consecutive timeouts, showing that retry logic must include backoff to avoid system-l
-- Free-tier models like Google Gemma are highly prone to 429 rate-limiting under concurrent load, necessitating request serialization.
 
 ---
 

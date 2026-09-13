@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11362 Fakten** · Stand 2026-09-13 14:10 UTC · aktualisiert bei jedem Herzschlag
+**11357 Fakten** · Stand 2026-09-13 14:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7288
 - **swarm_artifact:** 1651
 - **last_swarm_critique:** 933
 - **last_swarm_goal:** 668
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913141820:5:48ee76`
+*13.09. 14:18 UTC · Quelle: dream*
+
+Aggressive pruning of facts and events (10 facts, 17 events) may have removed context that could have informed future decision-making.
+
+### `dream:20260913141820:4:230816`
+*13.09. 14:18 UTC · Quelle: dream*
+
+Reflex-driven updates of swarm knowledge successfully kept the system's shared context current without requiring explicit goal-driven planning.
+
+### `dream:20260913141820:3:4d55e2`
+*13.09. 14:18 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model consistently succeeded with latencies under 30s, making it the most reliable currently available free model.
+
+### `dream:20260913141820:2:4d8518`
+*13.09. 14:18 UTC · Quelle: dream*
+
+The automatic lockout after three consecutive failures prevents repeated wasted calls but can permanently disable a model that might recover after a short cooldown.
+
+### `dream:20260913141820:1:f937f8`
+*13.09. 14:18 UTC · Quelle: dream*
+
+Free-tier models frequently fail with HTTP 429 (rate limit) or read timeouts, indicating that quota exhaustion and network latency are the primary reliability bottlenecks.
 
 ### `dream:20260913140657:5:b51fe5`
 *13.09. 14:06 UTC · Quelle: dream*
@@ -42127,56 +42152,6 @@ The nemotron fallback model succeeds but with high latency variance (41–66 s),
 *30.08. 14:23 UTC · Quelle: dream*
 
 Free-tier models (glm-5.2) repeatedly hit 429 rate limits, making them unsuitable for critical paths without a priority-based router and automatic failover.
-
-### `dream:20260830141422:5:bbb381`
-*30.08. 14:14 UTC · Quelle: dream*
-
-The nemotron model succeeds where glm fails, but its ~55s latency means model selection must balance availability against speed, not just uptime.
-
-### `dream:20260830141422:4:b5a8d1`
-*30.08. 14:14 UTC · Quelle: dream*
-
-Self-diagnosis consistently reports no organ errors, indicating structural health but masking the real problem: missing procedural bridges between dreaming and doing.
-
-### `dream:20260830141422:3:5a8a29`
-*30.08. 14:14 UTC · Quelle: dream*
-
-Stale market analyses lose their decision value over time, proving that reflex-driven completion outperforms perfectionist waiting for ideal conditions.
-
-### `dream:20260830141422:2:f78f0c`
-*30.08. 14:14 UTC · Quelle: dream*
-
-The gap between dream proposals and implemented skills is the system's largest waste vector — ideas die without auto-wiring into reflex triggers and the skill index.
-
-### `dream:20260830141422:1:4fd47c`
-*30.08. 14:14 UTC · Quelle: dream*
-
-Repeated 429 rate-limit errors from a single free model reveal that dependency without an automatic fallback turns transient limits into systemic prediction failures.
-
-### `dream:20260830140749:5:95449e`
-*30.08. 14:07 UTC · Quelle: dream*
-
-Skill proposal generation without a concurrent deployment mechanism creates a growing debt between designed and actual capabilities.
-
-### `dream:20260830140749:4:e79ad0`
-*30.08. 14:07 UTC · Quelle: dream*
-
-Self-diagnosis that excludes external API dependencies will repeatedly miss the root cause of cascading failures.
-
-### `dream:20260830140749:3:80a1d6`
-*30.08. 14:07 UTC · Quelle: dream*
-
-Reflex actions succeed consistently where deliberate planning fails, suggesting the system should default to reflex-driven recovery for stale or blocked goals.
-
-### `dream:20260830140749:2:d533f2`
-*30.08. 14:07 UTC · Quelle: dream*
-
-Analysis-to-execution conversion is the system's weakest link: market analysis goals cycle through 'abschließen,' 'nutzen,' and 'fertigstellen' without ever reaching implementation.
-
-### `dream:20260830140749:1:5b2c6f`
-*30.08. 14:07 UTC · Quelle: dream*
-
-Repeated 429 rate-limit failures on a single model indicate the absence of a pre-flight health check, making model availability the system's primary single point of failure.
 
 ### `last_swarm_critique`
 *30.08. 13:54 UTC · Quelle: critic*
