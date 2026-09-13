@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 00:22:59",
+ "stand": "2026-09-13 00:40:32",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,12 +15,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
    "laeufe": 6,
    "erfolge": 6,
@@ -28,6 +22,12 @@
   },
   {
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -79,6 +79,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "simulationen-konsequent-anwenden.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
@@ -201,12 +207,6 @@
    "quote": 0.0
   },
   {
-   "tool": "simulationen-konsequent-anwenden.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "automatische-fehler-reduktions-pipeline-.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -223,12 +223,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
@@ -405,17 +399,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.714,
+ "haende_quote": 0.711,
  "simulationen_angewandt": 33,
  "swarm_scores": {
-  "n": 35,
+  "n": 36,
   "best": 9.0,
-  "schnitt": 5.51
+  "schnitt": 5.58
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 34,
-   "schnitt": 5.41
+   "n": 35,
+   "schnitt": 5.49
   },
   "bau": {
    "n": 1,

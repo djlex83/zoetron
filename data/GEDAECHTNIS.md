@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11381 Fakten** · Stand 2026-09-13 00:24 UTC · aktualisiert bei jedem Herzschlag
+**11385 Fakten** · Stand 2026-09-13 00:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7321
-- **swarm_artifact:** 1655
-- **last_swarm_critique:** 920
-- **last_swarm_goal:** 655
+- **dream:** 7316
+- **swarm_artifact:** 1661
+- **last_swarm_critique:** 921
+- **last_swarm_goal:** 656
 - **anti_pattern:** 369
 - **strategy:** 187
-- **tool:** 153
+- **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `tool:simulationen-konsequent-anwenden`
+*13.09. 00:40 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen konsequent anwenden'. Datei: data/tools/simulationen-konsequent-anwenden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*13.09. 00:40 UTC · Quelle: critic*
+
+score=8; issues=Visible interface mismatch: SimulationReflex calls runner.run_simulation(config, deadline_seconds=20) but SimulationRunner only shows run(primary, fallback, ...) method in truncated view; Constructor mismatch: SimulationReflex instantiates Simu
+
+### `last_swarm_goal`
+*13.09. 00:33 UTC · Quelle: system*
+
+Simulationen konsequent anwenden
+
+### `dream:20260913003225:5:84a373`
+*13.09. 00:32 UTC · Quelle: dream*
+
+Lack of structured telemetry prevents spotting provider degradation; logging provider, latency, error class, and tokens enables proactive health scoring.
+
+### `dream:20260913003225:4:a43966`
+*13.09. 00:32 UTC · Quelle: dream*
+
+Hand‑action timeouts after 20 s indicate missing cancellation; each external call should enforce a deadline and switch to a backup on expiry.
+
+### `dream:20260913003225:3:443d06`
+*13.09. 00:32 UTC · Quelle: dream*
+
+The evolution run stalled at 6/10 because variant scores were not used to prune low performers; a scoring-driven selection loop is needed.
+
+### `dream:20260913003225:2:d9325f`
+*13.09. 00:32 UTC · Quelle: dream*
+
+A free model taking 40 s to respond causes downstream timeouts, so routing must prefer models with p95 latency below a threshold and fall back to faster alternatives.
+
+### `dream:20260913003225:1:23f870`
+*13.09. 00:32 UTC · Quelle: dream*
+
+Concurrent 429 and 502 errors from multiple free providers show that uncoordinated requests overwhelm upstream rate limits, requiring a shared token-bucket limiter.
 
 ### `dream:20260913002201:5:364902`
 *13.09. 00:22 UTC · Quelle: dream*
@@ -42342,56 +42382,6 @@ score=6; issues=Script 2: _score_breakdown recalculates compute_source_score red
 *30.08. 00:28 UTC · Quelle: system*
 
 Veraltete Marktkenntnisse aktualisieren
-
-### `dream:20260830002824:5:a7f3f0`
-*30.08. 00:28 UTC · Quelle: dream*
-
-Simulation verdicts returning 'revise' with multiple risks signal that pre-execution validation must precede full resource commitment.
-
-### `dream:20260830002824:4:c29695`
-*30.08. 00:28 UTC · Quelle: dream*
-
-Silent failures (e.g., file operations resolving relative paths to nothing) propagate undetected unless explicit side-effect validation gates are enforced.
-
-### `dream:20260830002824:3:b81059`
-*30.08. 00:28 UTC · Quelle: dream*
-
-Analysis results and dream-derived insights decay into wasted knowledge when no concrete action bridge connects them to execution steps.
-
-### `dream:20260830002824:2:f6a487`
-*30.08. 00:28 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra-550b-a55b:free fallback succeeds but exhibits extreme latency variance (6.8s–82.4s), requiring p95-aware routing instead of binary success/fail decisions.
-
-### `dream:20260830002824:1:e15f6b`
-*30.08. 00:28 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model fails repeatedly with 429 errors, indicating a systemic capacity limit that demands automatic quarantine rather than retry.
-
-### `dream:20260830002136:5:a7fd85`
-*30.08. 00:21 UTC · Quelle: dream*
-
-The successful reflex (cortex-upgrade-reflex-neue-modelle-autom.py) demonstrates that automated, goal-driven self-correction outperforms manual skill proposal accumulation for reducing model errors.
-
-### `dream:20260830002136:4:2d5c0e`
-*30.08. 00:21 UTC · Quelle: dream*
-
-Reactive error handling fails because the system calls a rate-limited model repeatedly before detecting the pattern; proactive rate-limit header parsing and pre-dispatch probing are necessary.
-
-### `dream:20260830002136:3:ede633`
-*30.08. 00:21 UTC · Quelle: dream*
-
-Even the working nvidia/nemotron-3-ultra-550b-a55b:free model exhibits extreme latency variance (5s to 45.6s), so single-point latency thresholds are insufficient for routing decisions.
-
-### `dream:20260830002136:2:2fe651`
-*30.08. 00:21 UTC · Quelle: dream*
-
-The persistent gap between skill proposals and actual implementation indicates that proposals lacking a measurable acceptance test and an implementation plan are systematically abandoned.
-
-### `dream:20260830002136:1:b6058a`
-*30.08. 00:21 UTC · Quelle: dream*
-
-429 rate-limit errors from z-ai/glm-5.2:free recur across every call window, making it an unreliable default model that must never be dispatched without prior health verification.
 
 ### `last_swarm_critique`
 *29.08. 23:54 UTC · Quelle: critic*
