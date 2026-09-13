@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 10:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 10:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,7 +30,7 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Variable latency and token usage across model calls point to the value of dynamic task chunking based on real-time performance metrics.
+- Frequent stale knowledge and outdated swarm goals suggest a scheduled knowledge audit cycle should be embedded in the system's meta-cognitive loop.
+- The persistent gap between skill proposal generation and execution indicates that an automated pipeline with progress tracking is required to close th
+- Hand actions that complete with exit code 0 but no output underscore the importance of validating expected artifacts before marking the action as succ
+- The repeated 429 errors from Google's Gemma models reveal a need for automatic model fallback with exponential backoff to avoid service interruptions.
 - Drive goals explicitly prioritize error reduction and skill-transfer repair, signaling high-value targets for the next consolidation cycle.
 - Five skill proposals were generated but none were applied, exposing a bottleneck between idea generation and implementation.
 - Swarm convergence failed at score 1 despite evolution, showing that goal criteria have become stale and need periodic reassessment.
@@ -51,11 +56,6 @@
 - dots-studio/dots-3-note-preview:free consistently succeeds with moderate latency and can serve as a safe default.
 - Nvidia nemotron models frequently return 502 upstream errors and timeouts, making them unreliable under load.
 - Repeated HTTP 429 errors from google/gemma models indicate rate limiting and should be avoided or handled with backoff.
-- The iterative process from simulation revisions to eventual tor success demonstrates that cycles of simulation, revision, and execution can converge t
-- The metabolism check with stress and limited budget highlights the importance of resource-aware task scheduling to avoid overextension.
-- The reflex failure suggests that generated tools or scripts must be validated and tested before being used in critical paths.
-- The hand action timeout shows that long-running operations need explicit timeout handling and possibly chunking to prevent failures.
-- Multiple model failures due to upstream overload and rate limiting indicate that a robust model fallback strategy is essential to avoid task interrupt
 
 ---
 
