@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 22:21:58",
+ "stand": "2026-09-13 22:31:36",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,25 +9,25 @@
    "quote": 1.0
   },
   {
-   "tool": "ferngedächtnisse-verbinden.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
   },
   {
-   "tool": "träume-analysieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "tool": "ferngedächtnisse-verbinden.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "träume-analysieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0

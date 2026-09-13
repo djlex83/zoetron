@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-09-13T13:56:36.891784",
+  "timestamp": "2026-09-13T22:31:30.473536",
   "data_dir": "/workspace/zoetron/data",
   "counts": {
-    "events": 2121,
-    "facts": 4186,
+    "events": 2117,
+    "facts": 4208,
     "graph_nodes": 0,
     "graph_edges": 0,
     "semantic_vectors": 0,
     "drive_goals": 0,
     "reflexes": 0,
-    "total": 6307
+    "total": 6325
   },
   "freshness": {
     "newest_date": null,

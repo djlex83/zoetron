@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11342 Fakten** · Stand 2026-09-13 22:23 UTC · aktualisiert bei jedem Herzschlag
+**11342 Fakten** · Stand 2026-09-13 22:33 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7283
 - **swarm_artifact:** 1635
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913223107:5:73a010`
+*13.09. 22:31 UTC · Quelle: dream*
+
+Stress signals (model latency spikes, error rates) correlate with multi-threaded execution but the scheduler has no feedback loop to contract concurrency.
+
+### `dream:20260913223107:4:91eda2`
+*13.09. 22:31 UTC · Quelle: dream*
+
+Swarm knowledge ingestion is a recurring drive goal but no scheduler or TTL mechanism exists to pull and validate external insights periodically.
+
+### `dream:20260913223107:3:966d6a`
+*13.09. 22:31 UTC · Quelle: dream*
+
+Aggressive pruning (53 events/cycle) discards contextual threads needed for cross-episode pattern detection before consolidation can harvest them.
+
+### `dream:20260913223107:2:a5efb8`
+*13.09. 22:31 UTC · Quelle: dream*
+
+Reflex tools for knowledge connection (dreams↔dreams, goals↔memories) converge reliably but their outputs never auto-promote to executable skills.
+
+### `dream:20260913223107:1:9b37fd`
+*13.09. 22:31 UTC · Quelle: dream*
+
+Model failures cascade across providers (429/502 errors) because the system lacks proactive rate-limit tracking and latency-weighted fallback routing.
 
 ### `dream:20260913222125:5:2dc97a`
 *13.09. 22:21 UTC · Quelle: dream*
@@ -42062,31 +42087,6 @@ Exponential backoff with jitter and automatic fallback to healthy models signifi
 *30.08. 22:31 UTC · Quelle: dream*
 
 Rate limiting (429) and upstream overload (502) are the dominant failure modes across multiple model providers, indicating systemic capacity constraints rather than isolated errors.
-
-### `dream:20260830222524:5:163d39`
-*30.08. 22:25 UTC · Quelle: dream*
-
-Latency variance (6.6s to 91.7s) across models makes fixed timeouts dangerous for critical-path operations.
-
-### `dream:20260830222524:4:a95640`
-*30.08. 22:25 UTC · Quelle: dream*
-
-Swarm convergence in one cycle with only one critic for three builders suggests insufficient adversarial review before commit.
-
-### `dream:20260830222524:3:50f5e0`
-*30.08. 22:25 UTC · Quelle: dream*
-
-Calibration error of 3 points on an 8-point scale indicates systematic overconfidence in task difficulty estimation.
-
-### `dream:20260830222524:2:8aa5b4`
-*30.08. 22:25 UTC · Quelle: dream*
-
-Tools that only produce stdout without return values or filesystem effects are rejected as non-functional by the validator.
-
-### `dream:20260830222524:1:dabe48`
-*30.08. 22:25 UTC · Quelle: dream*
-
-Free-tier models exhibit cascading failure modes (429 rate limits → 502 upstream errors) making single-model reliance unreliable.
 
 ### `last_swarm_critique`
 *30.08. 21:41 UTC · Quelle: critic*

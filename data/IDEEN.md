@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,12 +26,12 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress signals (model latency spikes, error rates) correlate with multi-threaded execution but the scheduler has no feedback loop to contract concurre
+- Swarm knowledge ingestion is a recurring drive goal but no scheduler or TTL mechanism exists to pull and validate external insights periodically.
+- Aggressive pruning (53 events/cycle) discards contextual threads needed for cross-episode pattern detection before consolidation can harvest them.
+- Reflex tools for knowledge connection (dreams↔dreams, goals↔memories) converge reliably but their outputs never auto-promote to executable skills.
+- Model failures cascade across providers (429/502 errors) because the system lacks proactive rate-limit tracking and latency-weighted fallback routing.
 - File-path resolution failures recur across hand_actions, indicating missing canonicalization against ZOETRON_DATA before execution.
 - Memory pruning rates fluctuate wildly (9/17 vs 1/53 facts/events) with no observability dashboard to trigger consolidation or capacity upgrades.
 - Reflex tools succeed individually but operate without circuit-breakers or performance auditing, risking silent degradation when dependencies shift.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays within days without a scheduled refresh reflex, leaving drive goals stale.
 - Skill proposals accumulate (60+) but rarely become executable because no pipeline validates, prioritizes, or deploys them.
 - Model 429 errors cascade into repeated failures because no automated routing or backoff exists across free-tier endpoints.
-- Drive goals duplicate (model errors, stale swarm) across cycles, revealing that root-cause fixes (registry, scheduler) are proposed but not yet deploy
-- Pruning removes 17–23 events per cycle while facts drop only 5–10, suggesting event-store bloat outpaces semantic decay and needs separate TTL policie
-- Reflex tools for stale-knowledge refresh converge in one shot, proving the pattern generalizes across domains when validation criteria are explicit.
-- Nemotron-3-Ultra succeeds where Gemma fails but exhibits high latency variance (28–62 s), indicating cold-start or queueing effects that a warm-pool w
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production loops without a scheduler that honors Retry-After 
 
 ---
 

@@ -47158,3 +47158,16 @@
 {"ts": 1788733235.5070531, "kind": "skill_proposal", "payload": {"proposal": "SwarmKnowledgeRefresher that auto-updates stored goals/critiques after each convergence cycle using fresh simulation feedback."}}
 {"ts": 1788733235.5071077, "kind": "skill_proposal", "payload": {"proposal": "FailurePatternMiner correlating model_fail timestamps with active goals/tools to emit root-cause skill proposals every 5 failures."}}
 {"ts": 1788733235.5071568, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788128724.9595, "key": "dream:20260830222524:1:dabe48", "value": "Free-tier models exhibit cascading failure modes (429 rate limits → 502 upstream errors) making single-model reliance unreliable.", "source": "dream"}
+{"ts": 1788128724.9596164, "key": "dream:20260830222524:2:8aa5b4", "value": "Tools that only produce stdout without return values or filesystem effects are rejected as non-functional by the validator.", "source": "dream"}
+{"ts": 1788128724.959697, "key": "dream:20260830222524:3:50f5e0", "value": "Calibration error of 3 points on an 8-point scale indicates systematic overconfidence in task difficulty estimation.", "source": "dream"}
+{"ts": 1788128724.959786, "key": "dream:20260830222524:4:a95640", "value": "Swarm convergence in one cycle with only one critic for three builders suggests insufficient adversarial review before commit.", "source": "dream"}
+{"ts": 1788128724.959862, "key": "dream:20260830222524:5:163d39", "value": "Latency variance (6.6s to 91.7s) across models makes fixed timeouts dangerous for critical-path operations.", "source": "dream"}
+{"ts": 1788733309.6073756, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 72.2, "tokens_ein": 487, "tokens_aus": 651}}
+{"ts": 1788733309.6075702, "kind": "drive_goal", "payload": {"title": "Modellfehler beheben und vermeiden", "why": "Das Modell macht noch zu viele Fehler. Weniger Fehler bedeuten zuverlässigeres Handeln.", "signal": "failure"}}
+{"ts": 1788733309.6076455, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Die Infos über Schwarm-Ziele und Kritik sind veraltet. Frisches Wissen hilft bei Zusammenarbeit.", "signal": "stale"}}
+{"ts": 1788733309.6077092, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten umsetzen", "why": "Es gibt viele Fähigkeits-Vorschläge, aber keine aktiven Ziele. Umsetzung bringt echte neue Möglichkeiten.", "signal": "gap"}}
+{"ts": 1788733325.1538727, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 13.08, "gelesen": 499}}
+{"ts": 1788733325.1560283, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten echt machen", "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py", "ok": true}}
+{"ts": 1788733325.6220229, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten echt machen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788733824.316383, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
