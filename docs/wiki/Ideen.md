@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 13:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 14:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -33,14 +33,19 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Ferne Träume verbinden *(wieder aufgegriffen: 3×)*
+- Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Träume mit Fähigkeiten verbinden *(wieder aufgegriffen: 3×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm's evolution despite non-convergence demonstrates that iterative critic feedback improves output quality.
+- The existing skill proposals directly address the observed failure patterns, confirming the architectural direction.
+- The dots-studio model consistently succeeds with low latency, making it a reliable fallback.
+- Timeouts on large models suggest that model size correlates with latency and failure risk.
+- The dominant error is HTTP 429 across multiple free models, indicating shared rate limits that must be managed per model.
 - Evolution runs with three variants raised the score from 4 to 9, demonstrating effective iterative improvement.
 - Calibration predictions overestimate progress by about two points, indicating systematic bias.
 - The dots-studio/dots-3-note-preview:free model is reliable but exhibits high latency.
@@ -51,11 +56,6 @@
 - During high system stress (1.0) and 'conserve' state, restricting the task budget to 3 tasks and 1 iteration prevents resource exhaustion.
 - The Nemotron model entered a hard lockout ('sperre') after three consecutive timeouts, showing that retry logic must include backoff to avoid system-l
 - Free-tier models like Google Gemma are highly prone to 429 rate-limiting under concurrent load, necessitating request serialization.
-- The metabolism check at stress 1.0 with a limited task budget implies the system must prioritize and reduce parallelism under high load.
-- The drive goals reveal that stale swarm information and uncombined distant memories impede learning, necessitating periodic updates and cross‑associat
-- The event pruning removed 19 events but zero facts, suggesting memory consolidation should also compress factual knowledge, not only events.
-- Both model API calls and hand actions time out, showing that external operations need configurable timeouts and retry with backoff.
-- Repeated HTTP 429 errors from multiple free models indicate rate limiting, requiring request throttling and automatic fallback to alternative models.
 
 ---
 

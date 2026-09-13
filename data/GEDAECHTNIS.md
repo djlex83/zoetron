@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11357 Fakten** · Stand 2026-09-13 13:58 UTC · aktualisiert bei jedem Herzschlag
+**11362 Fakten** · Stand 2026-09-13 14:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
+- **dream:** 7293
 - **swarm_artifact:** 1651
 - **last_swarm_critique:** 933
 - **last_swarm_goal:** 668
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913140657:5:b51fe5`
+*13.09. 14:06 UTC · Quelle: dream*
+
+The swarm's evolution despite non-convergence demonstrates that iterative critic feedback improves output quality.
+
+### `dream:20260913140657:4:b96f51`
+*13.09. 14:06 UTC · Quelle: dream*
+
+The existing skill proposals directly address the observed failure patterns, confirming the architectural direction.
+
+### `dream:20260913140657:3:92362d`
+*13.09. 14:06 UTC · Quelle: dream*
+
+The dots-studio model consistently succeeds with low latency, making it a reliable fallback.
+
+### `dream:20260913140657:2:321545`
+*13.09. 14:06 UTC · Quelle: dream*
+
+Timeouts on large models suggest that model size correlates with latency and failure risk.
+
+### `dream:20260913140657:1:b3af7d`
+*13.09. 14:06 UTC · Quelle: dream*
+
+The dominant error is HTTP 429 across multiple free models, indicating shared rate limits that must be managed per model.
 
 ### `dream:20260913135613:5:12086c`
 *13.09. 13:56 UTC · Quelle: dream*
