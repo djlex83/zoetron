@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system generates numerous skill proposals but struggles with implementation, requiring automated testing and deployment pipelines.
+- Memory pruning without detailed audit trails risks irreversible data loss and complicates recovery.
+- Path-related failures can be eliminated by standardizing path resolution against a base data directory.
+- Recurring issues with token limits and timeouts cause latency spikes, indicating a need for enforced per-call budgets.
+- Model endpoints frequently fail due to overload or rate limiting, necessitating automatic fallback mechanisms to maintain reliability.
 - Pruning discards causal chains by default — 10 facts and 19–22 events pruned per run without tagging sequences needed for post-hoc debugging.
 - Reflex-driven actions converge reliably when triggered — the two completed reflexes (simulation boost, swarm refresh) both succeeded without manual in
 - Swarm knowledge decays without scheduled refresh — stale critiques and goals degrade collective intelligence unless explicitly renewed.
@@ -51,11 +56,6 @@
 - Swarm knowledge (goals, critiques) decays within days and has no scheduled refresh mechanism.
 - Model failures recur across providers without systematic fallback, latency tracking, or cost-aware routing.
 - Skill proposals accumulate but lack an automated pipeline to turn them into tested, registered capabilities.
-- Reflex-driven goal updates (veraltete-schwarmziele-aktualisieren.py) succeed where swarm-driven ones stall, indicating reflexes handle maintenance bet
-- Pruning removes leaf events but preserves causal chains only if explicitly extracted beforehand, risking loss of decision→action→outcome traceability.
-- Skill proposals accumulate without automatic implementation, creating a proposal-execution gap that a dedicated pipeline must close.
-- Swarm cycles improve proposals (evolved: true) but fail to converge (converged: false), suggesting convergence criteria need tightening or max-cycle e
-- Gemma models consistently hit 429 rate limits while Nemotron and dots-studio succeed, indicating provider-specific quota exhaustion requires hard fall
 
 ---
 

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11368 Fakten** · Stand 2026-09-13 05:41 UTC · aktualisiert bei jedem Herzschlag
+**11366 Fakten** · Stand 2026-09-13 05:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7291
-- **swarm_artifact:** 1658
+- **dream:** 7296
+- **swarm_artifact:** 1655
 - **last_swarm_critique:** 926
 - **last_swarm_goal:** 661
-- **anti_pattern:** 369
-- **strategy:** 187
+- **anti_pattern:** 367
+- **strategy:** 186
 - **tool:** 154
-- **hand_result:** 84
+- **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913054910:5:613eea`
+*13.09. 05:49 UTC · Quelle: dream*
+
+The system generates numerous skill proposals but struggles with implementation, requiring automated testing and deployment pipelines.
+
+### `dream:20260913054910:4:9031e3`
+*13.09. 05:49 UTC · Quelle: dream*
+
+Memory pruning without detailed audit trails risks irreversible data loss and complicates recovery.
+
+### `dream:20260913054910:3:9af65c`
+*13.09. 05:49 UTC · Quelle: dream*
+
+Path-related failures can be eliminated by standardizing path resolution against a base data directory.
+
+### `dream:20260913054910:2:9ed850`
+*13.09. 05:49 UTC · Quelle: dream*
+
+Recurring issues with token limits and timeouts cause latency spikes, indicating a need for enforced per-call budgets.
+
+### `dream:20260913054910:1:b8cb45`
+*13.09. 05:49 UTC · Quelle: dream*
+
+Model endpoints frequently fail due to overload or rate limiting, necessitating automatic fallback mechanisms to maintain reliability.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Modellfehler analysieren:2`
 *13.09. 05:38 UTC · Quelle: evolution*
@@ -42237,16 +42262,6 @@ Skill proposals accumulate but remain unimplemented due to high system stress (s
 *30.08. 05:49 UTC · Quelle: dream*
 
 Model reliability is critically degraded: 4/5 models fail consistently with 429 rate limits or 502 upstream errors, making fallback chains essential for any production task.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Modellfehler stark verri:2`
-*30.08. 05:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 5, 6]): Training-Centric Curriculum Learning with Dynamic Regularization - import torch import torch.nn as nn import torch.optim as optim from torch.utils.data import DataLoader, TensorDataset import numpy as np import loggin
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Modellfehler stark verri:0`
-*30.08. 05:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 8, 7]): Data-Centric Quality Pipeline with Automated Validation - import pandas as pd import numpy as np from sklearn.model_selection import train_test_split from sklearn.ensemble import RandomForestRegressor from sklearn.met
 
 ### `last_swarm_critique`
 *30.08. 05:31 UTC · Quelle: critic*
