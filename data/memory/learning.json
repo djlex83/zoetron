@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 16:36:04",
+ "stand": "2026-09-13 16:46:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -195,12 +195,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-in-handlungen-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "träume-in-echte-fähigkeiten-wandeln.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -385,10 +379,16 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.698,
- "simulationen_angewandt": 28,
+ "haende_quote": 0.703,
+ "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 35,
   "best": 9.0,
@@ -396,8 +396,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 33,
-   "schnitt": 5.39
+   "n": 32,
+   "schnitt": 5.28
   },
   "bau": {
    "n": 2,

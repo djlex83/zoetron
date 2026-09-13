@@ -46379,3 +46379,11 @@
 {"ts": 1788712476.844398, "kind": "act_done", "payload": {"goal_title": "Träume und Simulationen in Skills umsetzen", "score": 7, "converged": false}}
 {"ts": 1788712477.4448779, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.37, "gelesen": 4}}
 {"ts": 1788712479.8621566, "kind": "issue_synced", "payload": {"issue": 400, "state": "open"}}
+{"ts": 1788108015.6494873, "key": "dream:20260830164015:1:19bf9f", "value": "Repeated 429 errors across multiple providers indicate systemic rate-limit exhaustion rather than isolated model failures.", "source": "dream"}
+{"ts": 1788108015.6495826, "key": "dream:20260830164015:2:d3556e", "value": "Upstream 502 errors from Nvidia reveal provider-side capacity saturation that cannot be resolved by client-side retries alone.", "source": "dream"}
+{"ts": 1788108015.6496537, "key": "dream:20260830164015:3:cd832d", "value": "Latency variance from 7s to 123s for similar token loads shows unpredictable queueing delays in free-tier endpoints.", "source": "dream"}
+{"ts": 1788108015.649739, "key": "dream:20260830164015:4:1756e9", "value": "Proposed resilience skills (fallback chain, backoff, scorecard) remain unimplemented despite recurring model_fail events.", "source": "dream"}
+{"ts": 1788108015.6498318, "key": "dream:20260830164015:5:9a680e", "value": "Self-diagnosis and pruning report zero issues while model failures persist, indicating monitoring blind spots in the inference layer.", "source": "dream"}
+{"ts": 1788712997.6376488, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788713066.1464295, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788713068.0312681, "kind": "prune_run", "payload": {"facts_pruned": 8, "events_pruned": 43}}
