@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11337 Fakten** · Stand 2026-09-13 22:52 UTC · aktualisiert bei jedem Herzschlag
+**11342 Fakten** · Stand 2026-09-13 23:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
+- **dream:** 7293
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913230004:5:191d97`
+*13.09. 23:00 UTC · Quelle: dream*
+
+Prediction calibration is absent; plans use raw scores without learned correction, so error >20% goes unnoticed.
+
+### `dream:20260913230004:4:ad3bf7`
+*13.09. 23:00 UTC · Quelle: dream*
+
+Pruning runs periodically instead of write-coupled, wasting cycles on cold data and missing hot bloat.
+
+### `dream:20260913230004:3:805a8e`
+*13.09. 23:00 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; refresh only happens on manual reflex trigger, not on staleness detection.
+
+### `dream:20260913230004:2:b5cb79`
+*13.09. 23:00 UTC · Quelle: dream*
+
+Model latency varies 3x (12–39 s) with no health-aware routing, making reliability unpredictable.
+
+### `dream:20260913230004:1:29eca1`
+*13.09. 23:00 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a promotion pipeline, causing a 70+:0 proposal-to-production ratio.
 
 ### `dream:20260913225018:5:c69877`
 *13.09. 22:50 UTC · Quelle: dream*

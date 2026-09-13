@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 23:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
-- Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prediction calibration is absent; plans use raw scores without learned correction, so error >20% goes unnoticed.
+- Pruning runs periodically instead of write-coupled, wasting cycles on cold data and missing hot bloat.
+- Swarm knowledge decays silently; refresh only happens on manual reflex trigger, not on staleness detection.
+- Model latency varies 3x (12–39 s) with no health-aware routing, making reliability unpredictable.
+- Skill proposals accumulate but lack a promotion pipeline, causing a 70+:0 proposal-to-production ratio.
 - No automatic fallback activates during model failures — the system logs errors but continues requesting the same degraded providers.
 - Periodic pruning removes fixed counts (4 facts, 16 events) regardless of actual accumulation rate, wasting cycles when quiet and falling behind when b
 - Reflex tools (träume-analysieren.py) converge cleanly when invoked, proving the reflex layer works but is only triggered manually, not automatically o
@@ -51,11 +56,6 @@
 - Repeated 429 errors reveal missing client-side rate limiting and exponential backoff, causing self-inflicted denial of service.
 - The only consistently available model (dots-studio) exceeds 20s latency, creating a throughput bottleneck that stalls autonomous cycles.
 - Free-tier models on OpenRouter exhibit correlated 429/502 failures under load, making single-provider reliance a systemic fragility.
-- Stress signals (model latency spikes, error rates) correlate with multi-threaded execution but the scheduler has no feedback loop to contract concurre
-- Swarm knowledge ingestion is a recurring drive goal but no scheduler or TTL mechanism exists to pull and validate external insights periodically.
-- Aggressive pruning (53 events/cycle) discards contextual threads needed for cross-episode pattern detection before consolidation can harvest them.
-- Reflex tools for knowledge connection (dreams↔dreams, goals↔memories) converge reliably but their outputs never auto-promote to executable skills.
-- Model failures cascade across providers (429/502 errors) because the system lacks proactive rate-limit tracking and latency-weighted fallback routing.
 
 ---
 

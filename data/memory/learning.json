@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 22:50:46",
+ "stand": "2026-09-13 23:00:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,13 +33,13 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "veraltete-gruppen-informationen-aktualis.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "veraltete-gruppen-informationen-aktualis.py",
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -387,7 +387,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.746,
+ "haende_quote": 0.747,
  "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 31,
