@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11385 Fakten** · Stand 2026-09-13 01:11 UTC · aktualisiert bei jedem Herzschlag
+**11376 Fakten** · Stand 2026-09-13 01:22 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7326
-- **swarm_artifact:** 1655
+- **swarm_artifact:** 1649
 - **last_swarm_critique:** 921
 - **last_swarm_goal:** 656
-- **anti_pattern:** 367
-- **strategy:** 186
+- **anti_pattern:** 365
+- **strategy:** 185
 - **tool:** 153
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913011947:5:245585`
+*13.09. 01:19 UTC · Quelle: dream*
+
+Swarm-knowledge revival via reflex works but requires explicit trigger; automate stale-detection and re-indexing.
+
+### `dream:20260913011947:4:8f059c`
+*13.09. 01:19 UTC · Quelle: dream*
+
+A singleton OpenRouter token-bucket (20 req/min, burst 5) prevents cascade 429s across all callers.
+
+### `dream:20260913011947:3:e252d3`
+*13.09. 01:19 UTC · Quelle: dream*
+
+Proposed skills accumulate but aren't deployed; a promotion pipeline from proposal to production is missing.
+
+### `dream:20260913011947:2:67695b`
+*13.09. 01:19 UTC · Quelle: dream*
+
+Latency variance across models (19–112 s) demands per-model SLO tracking and automatic fallback.
+
+### `dream:20260913011947:1:d28680`
+*13.09. 01:19 UTC · Quelle: dream*
+
+Model endpoint failures (502/429) are the primary reliability bottleneck, not hand actions or internal logic.
 
 ### `dream:20260913010923:5:457679`
 *13.09. 01:09 UTC · Quelle: dream*
@@ -42363,16 +42388,6 @@ The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but exhibits high l
 
 The z-ai/glm-5.2:free model is persistently rate-limited (repeated 429 errors) and must be quarantined from routing until its API quota resets.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
-*30.08. 01:12 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Capability Dependency Graph with Topological Validation and Pipeline Transformat - Model capabilities as nodes in a directed acyclic graph (DAG) where edges represent dependency/output-feeding relationships. Each node carries
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
-*30.08. 01:12 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Runtime Capability Probing with Dynamic Benchmarking - Treat each proposed capability as a testable probe: dynamically import or simulate a tool adapter, execute a micro-benchmark (measure latency and throughput on a syntheti
-
 ### `last_swarm_critique`
 *30.08. 01:11 UTC · Quelle: critic*
 
@@ -42382,31 +42397,6 @@ score=5; issues=Alle drei Code-Blöcke sind im Wesentlichen identisch – es feh
 *30.08. 01:10 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten prüfen und nutzen
-
-### `dream:20260830010959:5:5ddf4c`
-*30.08. 01:09 UTC · Quelle: dream*
-
-Reactive proposal generation after each failure incident creates technical debt; proactive reliability patterns must be codified as reusable skills.
-
-### `dream:20260830010959:4:177c2d`
-*30.08. 01:09 UTC · Quelle: dream*
-
-Stale analytical assets (market analyses) lose decision value rapidly; automated freshness monitoring with refresh triggers is essential.
-
-### `dream:20260830010959:3:a5aef5`
-*30.08. 01:09 UTC · Quelle: dream*
-
-Skill proposals accumulate reactively after failures but lack implementation plans, creating a proposal-execution gap that delays reliability gains.
-
-### `dream:20260830010959:2:55aea8`
-*30.08. 01:09 UTC · Quelle: dream*
-
-Simultaneous multi-model failures (429/502) cascade into total service unavailability unless circuit-breaking and health-based routing exist.
-
-### `dream:20260830010959:1:55a9d6`
-*30.08. 01:09 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 rate limits under load, making them unsuitable for production without systematic quota management.
 
 ### `last_swarm_critique`
 *30.08. 00:36 UTC · Quelle: critic*

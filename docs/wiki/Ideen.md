@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 01:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 01:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verringern *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm-knowledge revival via reflex works but requires explicit trigger; automate stale-detection and re-indexing.
+- A singleton OpenRouter token-bucket (20 req/min, burst 5) prevents cascade 429s across all callers.
+- Proposed skills accumulate but aren't deployed; a promotion pipeline from proposal to production is missing.
+- Latency variance across models (19–112 s) demands per-model SLO tracking and automatic fallback.
+- Model endpoint failures (502/429) are the primary reliability bottleneck, not hand actions or internal logic.
 - Regular pruning (facts + events) combined with high benchmark scores (23/25) indicates healthy memory homeostasis.
 - Reflex-based distant-memory combination converges reliably and should be the default for cross-context synthesis.
 - Effort estimates consistently underestimate actual cost; a 3.5× calibration multiplier aligns predictions with reality.
@@ -51,11 +56,6 @@
 - Swarm convergence achieves high scores (9) in single cycles when model calls succeed, but provider instability makes this unreliable.
 - Calibration systematically underestimates actual swarm scores (predicted 6 vs actual 9), indicating optimistic bias in difficulty estimation.
 - Provider-side rate limits (429) and overloads (502) cause cascading model failures that sequential fallback resolves but at high latency cost.
-- Pruning removed 33 events during conserve mode, risking loss of causal chains needed to debug the hand_action failure.
-- Swarm converged in 1 cycle without evolution, indicating convergence criteria are too weak to ensure genuine solution quality.
-- Self-calibration error of 50% (predicted 6 vs actual 9) reveals systematic overconfidence that corrupts planning under stress.
-- Hand actions fail silently (exit 1, error null) leaving no diagnostic trace, so wrapper instrumentation is mandatory for observability.
-- Model latency varies 10x (12s to 120s) for identical model calls, making fixed timeouts unreliable and requiring adaptive fallback logic.
 
 ---
 
