@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-13 17:49 UTC · aktualisiert bei jedem Herzschlag
+**11339 Fakten** · Stand 2026-09-13 18:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7278
+- **dream:** 7258
 - **swarm_artifact:** 1657
 - **last_swarm_critique:** 936
 - **last_swarm_goal:** 671
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913182029:5:dfb1d0`
+*13.09. 18:20 UTC · Quelle: dream*
+
+The simulation returned "revise" with five risks, signaling that the current goal is too complex for the remaining budget.
+
+### `dream:20260913182029:4:02646c`
+*13.09. 18:20 UTC · Quelle: dream*
+
+The reflex to update swarm goals failed because it depends on external model calls that are rate‑limited.
+
+### `dream:20260913182029:3:f41015`
+*13.09. 18:20 UTC · Quelle: dream*
+
+The hand_action failure occurred while the system was in a high‑stress conserve state, indicating reduced action reliability under budget constraints.
+
+### `dream:20260913182029:2:637009`
+*13.09. 18:20 UTC · Quelle: dream*
+
+The only consistently available model is dots-studio/dots-3-note-preview:free, suggesting it should be the default.
+
+### `dream:20260913182029:1:84b4a5`
+*13.09. 18:20 UTC · Quelle: dream*
+
+The cascade of 429 errors shows that parallel model requests exceed provider limits.
 
 ### `tool:swarm-informationen-aktualisieren`
 *13.09. 17:47 UTC · Quelle: hands*
@@ -41982,131 +42007,6 @@ Models that fail consecutively should be temporarily blacklisted with exponentia
 *30.08. 18:22 UTC · Quelle: dream*
 
 Repeated 429 and 502 errors across multiple models indicate systemic rate-limiting and upstream overload, not isolated model failures.
-
-### `dream:20260830181657:5:fdb598`
-*30.08. 18:16 UTC · Quelle: dream*
-
-Context pruning ran but removed zero facts, suggesting the minimum threshold is set too high or scoring weights are miscalibrated.
-
-### `dream:20260830181657:4:d942a9`
-*30.08. 18:16 UTC · Quelle: dream*
-
-Multiple skill proposals for routing, latency budgets, and promotion pipelines exist but remain unimplemented due to missing execution trigger.
-
-### `dream:20260830181657:3:8c5d05`
-*30.08. 18:16 UTC · Quelle: dream*
-
-Successful model latencies (7.8-9.1s) exceed typical interactive thresholds, necessitating async fallback for time-sensitive tasks.
-
-### `dream:20260830181657:2:e65c23`
-*30.08. 18:16 UTC · Quelle: dream*
-
-Upstream service errors (HTTP 502 from NVIDIA) reveal dependency on provider infrastructure health beyond rate limits.
-
-### `dream:20260830181657:1:d474ba`
-*30.08. 18:16 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models on OpenRouter, indicating systemic quota exhaustion rather than isolated provider issues.
-
-### `dream:20260830180925:5:60d1f0`
-*30.08. 18:09 UTC · Quelle: dream*
-
-Latency increases correlate with token count, but successful models maintain <35s even at higher token volumes.
-
-### `dream:20260830180925:4:df5d70`
-*30.08. 18:09 UTC · Quelle: dream*
-
-Repeated failures on the same model within 30s indicate a need for immediate blacklisting, not just retry.
-
-### `dream:20260830180925:3:bd003c`
-*30.08. 18:09 UTC · Quelle: dream*
-
-Models with lower token output (e.g., 492) still succeed under load, implying input-heavy tasks are more resilient.
-
-### `dream:20260830180925:2:e7eb65`
-*30.08. 18:09 UTC · Quelle: dream*
-
-502 upstream errors from Nvidia occur independently of 429s, suggesting provider-side overload requiring fallback.
-
-### `dream:20260830180925:1:eb4fa2`
-*30.08. 18:09 UTC · Quelle: dream*
-
-429 errors cluster at peak load timestamps, indicating rate-limit exhaustion rather than model failure.
-
-### `dream:20260830180053:5:edd8fd`
-*30.08. 18:00 UTC · Quelle: dream*
-
-System self-diagnosis reports no organ failures, confirming internal stability despite external model errors.
-
-### `dream:20260830180053:4:18769b`
-*30.08. 18:00 UTC · Quelle: dream*
-
-Market analysis outputs are stale and unused, pointing to a failure in downstream integration or value extraction.
-
-### `dream:20260830180053:3:f96c9c`
-*30.08. 18:00 UTC · Quelle: dream*
-
-Skill proposals remain unimplemented despite repeated collection, suggesting a gap between idea generation and actionable deployment.
-
-### `dream:20260830180053:2:905e90`
-*30.08. 18:00 UTC · Quelle: dream*
-
-Reflex-based goal completion (e.g., Träume in echte Fähigkeiten verwandeln) consistently converges when tools execute successfully, indicating reliable self-improvement loops.
-
-### `dream:20260830180053:1:b64e15`
-*30.08. 18:00 UTC · Quelle: dream*
-
-Model failures (429/502) on z-ai/glm-5.2:free are recurring and degrade system performance, requiring automatic fallback to healthy models.
-
-### `dream:20260830175229:5:3708ab`
-*30.08. 17:52 UTC · Quelle: dream*
-
-Reflex-driven skill extraction from dreams and ideas works reliably and should be the default path for converting raw insights into reusable abilities.
-
-### `dream:20260830175229:4:9c31eb`
-*30.08. 17:52 UTC · Quelle: dream*
-
-Model latency varies enormously (10s vs 167s), so naive round-robin routing wastes time and increases failure risk on slow or overloaded endpoints.
-
-### `dream:20260830175229:3:8c4853`
-*30.08. 17:52 UTC · Quelle: dream*
-
-Stale artifacts (old market analyses, unused results) accumulate silently because no mechanism flags or refreshes them, leaving valuable knowledge dormant.
-
-### `dream:20260830175229:2:78f1a4`
-*30.08. 17:52 UTC · Quelle: dream*
-
-Simulation-to-practice goals exhibit a consistent ~3x effort underestimation bias, meaning planned work must be scaled up by at least 100% to match reality.
-
-### `dream:20260830175229:1:3865ee`
-*30.08. 17:52 UTC · Quelle: dream*
-
-Repeated 429 rate-limit errors from z-ai/glm-5.2 reveal that API calls lack any backoff or circuit-breaker, causing cascading failures when a single model is overwhelmed.
-
-### `dream:20260830174215:5:1fe763`
-*30.08. 17:42 UTC · Quelle: dream*
-
-Missing pre-flight validation of paths, inputs, and skill composition allows broken operations to propagate, making boundary checks essential at every integration point.
-
-### `dream:20260830174215:4:29077d`
-*30.08. 17:42 UTC · Quelle: dream*
-
-System stress exceeding 0.8 causes wasted cycles and cascading failures, mandating automatic load shedding and conserve-mode activation before exhaustion.
-
-### `dream:20260830174215:3:a025ea`
-*30.08. 17:42 UTC · Quelle: dream*
-
-Truncated or invalid model outputs silently corrupt downstream processing, so output-token validation against input-token ratios is a necessary guardrail.
-
-### `dream:20260830174215:2:4d9b5a`
-*30.08. 17:42 UTC · Quelle: dream*
-
-Rate-limit and service-overload errors recur across multiple providers simultaneously, indicating that no single free model can be trusted as a primary source without redundancy.
-
-### `dream:20260830174215:1:710da0`
-*30.08. 17:42 UTC · Quelle: dream*
-
-Free-tier API models are systematically unreliable due to rate limits (429) and upstream overload (502), requiring defensive per-model circuit-breaking and automatic failover.
 
 ### `last_swarm_critique`
 *30.08. 16:16 UTC · Quelle: critic*
