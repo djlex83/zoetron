@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-12 23:56:59",
+ "stand": "2026-09-13 00:08:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -397,9 +397,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "ferne-traumverbindungen-neu-erkunden.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.707,
+ "haende_quote": 0.709,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 35,

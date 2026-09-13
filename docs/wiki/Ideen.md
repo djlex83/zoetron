@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-12 23:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 00:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System entered conserve mode (stress=1.0) with max_tasks=3 during active failures, starving recovery capacity when most needed.
+- Pruning removed 22 events and 5 facts while skill-testing chain was incomplete, risking loss of causal context for failed operations.
+- Reflex-driven swarm goal update succeeded (converged=true) while deliberate skill-testing action failed, showing reflexes outperform planned actions f
+- Hand actions timeout at 20s when testing skills, but no timeout handling or retry logic exists in the execution path.
+- Model failures cascade silently: 502 upstream errors and 429 rate limits from multiple providers halt progress without automatic fallback or backoff.
 - Specialized-role swarm (1 planner, 3 builders, 1 critic) achieved convergence in 1 cycle with score 9, demonstrating role diversity accelerates qualit
 - Calibration significantly underestimated outcome (predicted 5 vs actual 9, error 4), revealing systematic optimism bias in difficulty estimation.
 - Hand actions fail on first attempt (exit 1, 0-5 lines read) but succeed on retry with full context (300 lines, 4.86s), indicating mandatory retry logi
@@ -51,11 +56,6 @@
 - The failed reflex (modelle-zuverlässiger-machen.py) suggests that the tool for model reliability is incomplete or not robust to current conditions, re
 - The hand_action failure due to a missing file or directory reveals that file path resolution is fragile and must be hardened with absolute path valida
 - Recurring 429 and 502 errors from model providers indicate that the system is hitting rate limits and upstream instability, necessitating immediate de
-- Simulation closure achieved with score 8 despite 6-point calibration error, indicating success metrics decoupled from prediction accuracy.
-- Event pruning removes 18 events per cycle while preserving zero facts, potentially severing causal chains needed for root-cause analysis.
-- Single-cycle swarm convergence with 3:1 builder-to-critic ratio risks premature commitment without sufficient critical evaluation.
-- Low-count calibration systematically underestimates actuals (predicted 2 vs actual 8) demanding statistical correction factors for sparse data.
-- Model provider failures cascade across endpoints (502 upstream, 429 rate limits) requiring per-provider adaptive retry logic with learned throttle win
 
 ---
 
