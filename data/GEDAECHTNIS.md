@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-13 13:48 UTC · aktualisiert bei jedem Herzschlag
+**11357 Fakten** · Stand 2026-09-13 13:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7283
-- **swarm_artifact:** 1657
+- **dream:** 7288
+- **swarm_artifact:** 1651
 - **last_swarm_critique:** 933
 - **last_swarm_goal:** 668
 - **anti_pattern:** 365
 - **strategy:** 185
-- **tool:** 153
+- **tool:** 152
 - **hand_result:** 83
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913135613:5:12086c`
+*13.09. 13:56 UTC · Quelle: dream*
+
+Evolution runs with three variants raised the score from 4 to 9, demonstrating effective iterative improvement.
+
+### `dream:20260913135613:4:76ab24`
+*13.09. 13:56 UTC · Quelle: dream*
+
+Calibration predictions overestimate progress by about two points, indicating systematic bias.
+
+### `dream:20260913135613:3:ce0691`
+*13.09. 13:56 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model is reliable but exhibits high latency.
+
+### `dream:20260913135613:2:9a4939`
+*13.09. 13:56 UTC · Quelle: dream*
+
+Timeout errors on large models trigger consecutive failures and automatic lockouts.
+
+### `dream:20260913135613:1:18fac0`
+*13.09. 13:56 UTC · Quelle: dream*
+
+Free-tier models repeatedly return HTTP 429, causing cascading request failures.
 
 ### `dream:20260913134632:5:5e58ee`
 *13.09. 13:46 UTC · Quelle: dream*
@@ -42127,11 +42152,6 @@ Analysis-to-execution conversion is the system's weakest link: market analysis g
 *30.08. 14:07 UTC · Quelle: dream*
 
 Repeated 429 rate-limit failures on a single model indicate the absence of a pre-flight health check, making model availability the system's primary single point of failure.
-
-### `tool:erkenntnisse-aus-schwarm-arbeit-ziehen`
-*30.08. 13:54 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Erkenntnisse aus Schwarm-Arbeit ziehen'. Datei: data/tools/erkenntnisse-aus-schwarm-arbeit-ziehen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *30.08. 13:54 UTC · Quelle: critic*
