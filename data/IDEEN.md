@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 14:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 14:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Ferne Träume verbinden *(wieder aufgegriffen: 3×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Träume mit Fähigkeiten verbinden *(wieder aufgegriffen: 3×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Connecting distant memory episodes can reveal hidden patterns, justifying a cross‑episode linking mechanism.
+- Stale swarm goals lead to inefficient collaboration, so a detector that refreshes outdated objectives is necessary.
+- Pruning of facts and events highlights the need for memory compaction to retain durable knowledge.
+- The dots‑studio model consistently completes requests with acceptable latency, indicating it can serve as a reliable primary model.
+- Repeated 429 errors from google/gemma models show that rate‑limiting is a persistent failure mode requiring automatic fallback.
 - Aggressive pruning of facts and events (10 facts, 17 events) may have removed context that could have informed future decision-making.
 - Reflex-driven updates of swarm knowledge successfully kept the system's shared context current without requiring explicit goal-driven planning.
 - The dots-studio/dots-3-note-preview:free model consistently succeeded with latencies under 30s, making it the most reliable currently available free m
@@ -51,11 +56,6 @@
 - The dots-studio model consistently succeeds with low latency, making it a reliable fallback.
 - Timeouts on large models suggest that model size correlates with latency and failure risk.
 - The dominant error is HTTP 429 across multiple free models, indicating shared rate limits that must be managed per model.
-- Evolution runs with three variants raised the score from 4 to 9, demonstrating effective iterative improvement.
-- Calibration predictions overestimate progress by about two points, indicating systematic bias.
-- The dots-studio/dots-3-note-preview:free model is reliable but exhibits high latency.
-- Timeout errors on large models trigger consecutive failures and automatic lockouts.
-- Free-tier models repeatedly return HTTP 429, causing cascading request failures.
 
 ---
 

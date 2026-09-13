@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11357 Fakten** · Stand 2026-09-13 14:20 UTC · aktualisiert bei jedem Herzschlag
+**11357 Fakten** · Stand 2026-09-13 14:30 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7288
 - **swarm_artifact:** 1651
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913142812:5:9bee36`
+*13.09. 14:28 UTC · Quelle: dream*
+
+Connecting distant memory episodes can reveal hidden patterns, justifying a cross‑episode linking mechanism.
+
+### `dream:20260913142812:4:af5723`
+*13.09. 14:28 UTC · Quelle: dream*
+
+Stale swarm goals lead to inefficient collaboration, so a detector that refreshes outdated objectives is necessary.
+
+### `dream:20260913142812:3:fd7127`
+*13.09. 14:28 UTC · Quelle: dream*
+
+Pruning of facts and events highlights the need for memory compaction to retain durable knowledge.
+
+### `dream:20260913142812:2:6d21d9`
+*13.09. 14:28 UTC · Quelle: dream*
+
+The dots‑studio model consistently completes requests with acceptable latency, indicating it can serve as a reliable primary model.
+
+### `dream:20260913142812:1:5459fd`
+*13.09. 14:28 UTC · Quelle: dream*
+
+Repeated 429 errors from google/gemma models show that rate‑limiting is a persistent failure mode requiring automatic fallback.
 
 ### `dream:20260913141820:5:48ee76`
 *13.09. 14:18 UTC · Quelle: dream*
@@ -42127,31 +42152,6 @@ The system proposes calibration corrections and quality gates but cannot execute
 *30.08. 14:31 UTC · Quelle: dream*
 
 429 rate-limit and 502 upstream-overload errors are the dominant failure mode across four different model providers, indicating a systemic request-throttling problem rather than any single model's inadequacy.
-
-### `dream:20260830142336:5:3503ef`
-*30.08. 14:23 UTC · Quelle: dream*
-
-Reflex-based execution converges reliably when the model layer is available, confirming that the execution engine itself is sound and the bottleneck is upstream model availability.
-
-### `dream:20260830142336:4:ebcbfa`
-*30.08. 14:23 UTC · Quelle: dream*
-
-Self-diagnosis consistently reports zero organ errors despite repeated model failures, suggesting the diagnostic scope may not cover infrastructure/API-layer degradation.
-
-### `dream:20260830142336:3:0eee38`
-*30.08. 14:23 UTC · Quelle: dream*
-
-Effort estimation is systematically off by ~33%, necessitating a calibration correction factor (1.5x) applied to predicted effort across all planning cycles.
-
-### `dream:20260830142336:2:ab52ed`
-*30.08. 14:23 UTC · Quelle: dream*
-
-The nemotron fallback model succeeds but with high latency variance (41–66 s), requiring caching of successful responses and latency monitoring to amortize risk.
-
-### `dream:20260830142336:1:2fec8e`
-*30.08. 14:23 UTC · Quelle: dream*
-
-Free-tier models (glm-5.2) repeatedly hit 429 rate limits, making them unsuitable for critical paths without a priority-based router and automatic failover.
 
 ### `last_swarm_critique`
 *30.08. 13:54 UTC · Quelle: critic*
