@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 05:59:15",
+ "stand": "2026-09-13 06:09:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,21 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -43,6 +37,12 @@
    "laeufe": 4,
    "erfolge": 3,
    "quote": 0.75
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
@@ -54,6 +54,12 @@
    "tool": "simulationen-besser-in-praxis-nutzen.py",
    "laeufe": 4,
    "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktanalyse-auffrischen.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -133,12 +139,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "veraltete-marktanalyse-auffrischen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "träume-besser-nutzen-lernen.py",

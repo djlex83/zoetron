@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11361 Fakten** · Stand 2026-09-13 06:01 UTC · aktualisiert bei jedem Herzschlag
+**11356 Fakten** · Stand 2026-09-13 06:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7291
+- **dream:** 7286
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 926
 - **last_swarm_goal:** 661
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913060855:5:58a276`
+*13.09. 06:08 UTC · Quelle: dream*
+
+High system stress correlates with model overload and latency spikes, implying a stress-aware controller that throttles tasks and prioritizes local inference is needed.
+
+### `dream:20260913060855:4:0011f5`
+*13.09. 06:08 UTC · Quelle: dream*
+
+Repeated drive goals to update swarm strategy reveal that swarm knowledge becomes stale, requiring periodic refresh cycles.
+
+### `dream:20260913060855:3:9ef8b6`
+*13.09. 06:08 UTC · Quelle: dream*
+
+Pruning events without preserving causal links results in loss of decision context, so a causal-chain-aware pruner should be introduced.
+
+### `dream:20260913060855:2:6c6f7b`
+*13.09. 06:08 UTC · Quelle: dream*
+
+A growing backlog of unimplemented skill proposals suggests the need for an automated pipeline to convert proposals into registered, tested modules.
+
+### `dream:20260913060855:1:971799`
+*13.09. 06:08 UTC · Quelle: dream*
+
+Frequent 429 and 502 errors indicate rate limits and upstream instability, necessitating a provider-aware router with retry and fallback.
 
 ### `dream:20260913055855:5:7c7e4d`
 *13.09. 05:58 UTC · Quelle: dream*
@@ -42187,56 +42212,6 @@ Nemotron-3-ultra succeeds consistently but exhibits extreme latency variance (7�
 *30.08. 06:14 UTC · Quelle: dream*
 
 Free-tier models (glm-5.2:free) systematically fail with 429 rate-limit errors, making them unreliable for production workflows.
-
-### `dream:20260830060753:5:cbcda4`
-*30.08. 06:07 UTC · Quelle: dream*
-
-Circuit breaking must operate at the gateway level (detecting global 429 saturation) rather than per-model, since all models share the same rate-limit ceiling.
-
-### `dream:20260830060753:4:9c7da2`
-*30.08. 06:07 UTC · Quelle: dream*
-
-65 skill proposals accumulate but few execute because the proposal-to-reflex-tool pipeline produces tools that fail silently without health feedback.
-
-### `dream:20260830060753:3:3a4e8a`
-*30.08. 06:07 UTC · Quelle: dream*
-
-The system entered conserve mode (stress=1.0) yet continued making expensive model calls, creating a self-reinforcing failure loop of rate-limit exhaustion.
-
-### `dream:20260830060753:2:452191`
-*30.08. 06:07 UTC · Quelle: dream*
-
-The reflex tool for 'Modellfehler stark verringern' failed with exit code 1 and no error output, meaning the local-first fallback chain is broken at the execution layer.
-
-### `dream:20260830060753:1:7f9d46`
-*30.08. 06:07 UTC · Quelle: dream*
-
-429 errors hit every model simultaneously, proving the bottleneck is the OpenRouter gateway — rotating models alone cannot solve systemic rate limiting.
-
-### `dream:20260830060210:5:4ed22f`
-*30.08. 06:02 UTC · Quelle: dream*
-
-Skill proposals accumulated during execution but lacked automatic deduplication and promotion pipeline, causing redundant proposals across sleep cycles.
-
-### `dream:20260830060210:4:60f809`
-*30.08. 06:02 UTC · Quelle: dream*
-
-Self-diagnosis reported zero organ errors while model subsystem generated 7 failures in 15 minutes, revealing monitoring blind spots for external API dependencies.
-
-### `dream:20260830060210:3:87c83d`
-*30.08. 06:02 UTC · Quelle: dream*
-
-Swarm convergence failed despite 5 revisions because critic/planner ratio (1:1) was insufficient to overcome builder majority (3) without explicit convergence criteria.
-
-### `dream:20260830060210:2:0f1107`
-*30.08. 06:02 UTC · Quelle: dream*
-
-Latency variance of 16x (6.4s vs 105.6s) on the same model (nemotron-3-ultra) indicates unstable upstream capacity, not model quality.
-
-### `dream:20260830060210:1:d58645`
-*30.08. 06:02 UTC · Quelle: dream*
-
-Free-tier models exhibit systematic 429 rate-limiting and 502 upstream failures making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *30.08. 05:31 UTC · Quelle: critic*
