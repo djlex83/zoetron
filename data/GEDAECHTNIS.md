@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11366 Fakten** · Stand 2026-09-13 23:32 UTC · aktualisiert bei jedem Herzschlag
+**11360 Fakten** · Stand 2026-09-13 23:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7303
-- **swarm_artifact:** 1637
+- **swarm_artifact:** 1631
 - **last_swarm_critique:** 939
 - **last_swarm_goal:** 674
 - **anti_pattern:** 363
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913234249:5:dd60cb`
+*13.09. 23:42 UTC · Quelle: dream*
+
+Proactive health monitoring and circuit breaking isolate failures before they degrade the system.
+
+### `dream:20260913234249:4:072c8b`
+*13.09. 23:42 UTC · Quelle: dream*
+
+Provider reliability fluctuates; continuous calibration and downweighting improve routing decisions.
+
+### `dream:20260913234249:3:57f345`
+*13.09. 23:42 UTC · Quelle: dream*
+
+Low swarm confidence after 2+ revisions signals a need for deterministic fallback or human escalation.
+
+### `dream:20260913234249:2:9d4d03`
+*13.09. 23:42 UTC · Quelle: dream*
+
+Free-tier endpoints demand rate limiting with backoff to avoid 429 errors and ensure stability.
+
+### `dream:20260913234249:1:25f9d5`
+*13.09. 23:42 UTC · Quelle: dream*
+
+Model latency is highly variable (6–17s) and requires adaptive timeouts to prevent cascading failures.
 
 ### `tool:traumerkenntnisse-in-fähigkeiten-umsetze`
 *13.09. 23:30 UTC · Quelle: hands*
@@ -42167,31 +42192,6 @@ score=8; issues=Only the first artifact (analyzer, 153 lines) was verified by sa
 *30.08. 23:24 UTC · Quelle: system*
 
 Alte Marktdaten auffrischen
-
-### `dream:20260830232426:5:d696c1`
-*30.08. 23:24 UTC · Quelle: dream*
-
-Drive goals repeatedly target old/new knowledge synthesis but the system lacks a mechanism to retrieve prior dream insights and cross-reference them against current failure patterns.
-
-### `dream:20260830232426:4:8a8c12`
-*30.08. 23:24 UTC · Quelle: dream*
-
-Pruning removes zero facts/events despite active consolidation drives, suggesting either insufficient memory accumulation or overly conservative retention thresholds.
-
-### `dream:20260830232426:3:97844b`
-*30.08. 23:24 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures cascade, revealing that diagnostic scope excludes external dependency health.
-
-### `dream:20260830232426:2:491a93`
-*30.08. 23:24 UTC · Quelle: dream*
-
-The skill proposal reflex converges reliably but its own resilience proposals (circuit breaker, exponential backoff, fallback) remain unimplemented after multiple cycles, creating a meta-learning/operations gap.
-
-### `dream:20260830232426:1:2c10fe`
-*30.08. 23:24 UTC · Quelle: dream*
-
-Free-tier model providers simultaneously exhaust rate limits (429 errors across 4+ models within seconds), making naive round-robin selection ineffective without persistent health tracking.
 
 ### `last_swarm_critique`
 *30.08. 22:40 UTC · Quelle: critic*
