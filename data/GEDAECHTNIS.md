@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11354 Fakten** · Stand 2026-09-13 16:28 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-13 16:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7298
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 934
 - **last_swarm_goal:** 669
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913163532:5:8b28d3`
+*13.09. 16:35 UTC · Quelle: dream*
+
+Merging distant memories with dream content produces novel capabilities, revealing a reusable cross‑context learning pattern.
+
+### `dream:20260913163532:4:9aff01`
+*13.09. 16:35 UTC · Quelle: dream*
+
+Regular pruning of facts and events keeps the knowledge base relevant and prevents performance degradation.
+
+### `dream:20260913163532:3:74ba59`
+*13.09. 16:35 UTC · Quelle: dream*
+
+Successful execution of the group‑goal update reflex demonstrates that automating stale‑goal refresh improves swarm coordination.
+
+### `dream:20260913163532:2:3183da`
+*13.09. 16:35 UTC · Quelle: dream*
+
+Timeout errors on the 550b model caused cascading failures, showing the need for per‑request timeouts and graceful degradation.
+
+### `dream:20260913163532:1:347169`
+*13.09. 16:35 UTC · Quelle: dream*
+
+Frequent HTTP 429 errors from multiple models indicate a systemic rate‑limit vulnerability that requires automatic backoff and fallback routing.
 
 ### `dream:20260913162504:5:1a5eaf`
 *13.09. 16:25 UTC · Quelle: dream*
