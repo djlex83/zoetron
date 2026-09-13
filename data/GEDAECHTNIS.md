@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11369 Fakten** · Stand 2026-09-13 13:29 UTC · aktualisiert bei jedem Herzschlag
+**11364 Fakten** · Stand 2026-09-13 13:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7288
 - **swarm_artifact:** 1657
 - **last_swarm_critique:** 933
 - **last_swarm_goal:** 668
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913133637:5:5dd1b7`
+*13.09. 13:36 UTC · Quelle: dream*
+
+The metabolism check at stress 1.0 with a limited task budget implies the system must prioritize and reduce parallelism under high load.
+
+### `dream:20260913133637:4:5f00db`
+*13.09. 13:36 UTC · Quelle: dream*
+
+The drive goals reveal that stale swarm information and uncombined distant memories impede learning, necessitating periodic updates and cross‑association.
+
+### `dream:20260913133637:3:353b4e`
+*13.09. 13:36 UTC · Quelle: dream*
+
+The event pruning removed 19 events but zero facts, suggesting memory consolidation should also compress factual knowledge, not only events.
+
+### `dream:20260913133637:2:359456`
+*13.09. 13:36 UTC · Quelle: dream*
+
+Both model API calls and hand actions time out, showing that external operations need configurable timeouts and retry with backoff.
+
+### `dream:20260913133637:1:66f317`
+*13.09. 13:36 UTC · Quelle: dream*
+
+Repeated HTTP 429 errors from multiple free models indicate rate limiting, requiring request throttling and automatic fallback to alternative models.
 
 ### `dream:20260913132552:5:829562`
 *13.09. 13:25 UTC · Quelle: dream*
@@ -42142,56 +42167,6 @@ Nvidia Nemotron-3-Ultra exhibits intermittent 502 upstream overloads yet succeed
 *30.08. 13:38 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter suffer pervasive 429 rate-limiting (z-ai/glm-5.2:free failed 6×, Gemma models 4×), making them unsuitable for latency-critical paths.
-
-### `dream:20260830133241:5:b3d111`
-*30.08. 13:32 UTC · Quelle: dream*
-
-Single-model success (ling-3.0-flash-fin) creates silent fragility; diversity must be maintained via continuous background probing.
-
-### `dream:20260830133241:4:192272`
-*30.08. 13:32 UTC · Quelle: dream*
-
-Simulation insights decay without automated revision loops that close simulate→revise→apply→verify cycles.
-
-### `dream:20260830133241:3:7f3276`
-*30.08. 13:32 UTC · Quelle: dream*
-
-Metabolism stress=1.0 forces conservative budgets that starve exploration, demanding stress-aware goal scoping.
-
-### `dream:20260830133241:2:7e8491`
-*30.08. 13:32 UTC · Quelle: dream*
-
-Skill proposals remain inert without automatic wiring (stub generation, registry registration, reflex binding) causing propose-use gap.
-
-### `dream:20260830133241:1:1e6d87`
-*30.08. 13:32 UTC · Quelle: dream*
-
-Free-tier models exhibit correlated failure bursts (429/502) requiring proactive health registries and fallback chains before task dispatch.
-
-### `dream:20260830132600:5:304ed7`
-*30.08. 13:26 UTC · Quelle: dream*
-
-Reactive model switching wastes cycles; proactive health registry must gate task assignment before swarm launch.
-
-### `dream:20260830132600:4:bfb9cc`
-*30.08. 13:26 UTC · Quelle: dream*
-
-Simulation detects 5 risks and demands 5 revisions, yet applied revisions still yield non-convergent swarm (score 6).
-
-### `dream:20260830132600:3:79771d`
-*30.08. 13:26 UTC · Quelle: dream*
-
-Evolution improves variant scores (6→9) but swarm fails to converge when critic integration gaps persist.
-
-### `dream:20260830132600:2:10bd06`
-*30.08. 13:26 UTC · Quelle: dream*
-
-High-latency fallback models (30s+) exceed swarm cycle budgets, stalling convergence despite successful responses.
-
-### `dream:20260830132600:1:495dcc`
-*30.08. 13:26 UTC · Quelle: dream*
-
-Free-tier models simultaneously hit 429 rate limits, causing cascading fallback failures across the entire model pool.
 
 ### `last_swarm_critique`
 *30.08. 12:45 UTC · Quelle: critic*

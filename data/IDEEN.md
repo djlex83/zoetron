@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 13:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 13:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,11 +26,11 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The metabolism check at stress 1.0 with a limited task budget implies the system must prioritize and reduce parallelism under high load.
+- The drive goals reveal that stale swarm information and uncombined distant memories impede learning, necessitating periodic updates and cross‑associat
+- The event pruning removed 19 events but zero facts, suggesting memory consolidation should also compress factual knowledge, not only events.
+- Both model API calls and hand actions time out, showing that external operations need configurable timeouts and retry with backoff.
+- Repeated HTTP 429 errors from multiple free models indicate rate limiting, requiring request throttling and automatic fallback to alternative models.
 - Reflex‑driven actions can achieve convergence without explicit planning, offering a shortcut for routine goals.
 - Regular pruning of stale facts and events keeps the knowledge base relevant and reduces noise.
 - Combining distant memories produces novel solution candidates that isolated recall cannot generate.
@@ -51,11 +56,6 @@
 - Reflex-based execution is highly effective for routine maintenance tasks like swarm data synchronization.
 - Model diversity prevents total system failure by allowing fallback to alternative providers when primary models are throttled.
 - Rate-limiting (429 errors) is a recurring failure point for specific high-capacity model families.
-- Automated skill proposals already include model routing and retry logic, indicating a self-healing approach to API failures.
-- The successful model dots-studio/dots-3-note-preview:free has higher latency but consistent output, suggesting a reliability-over-speed trade-off.
-- Pruning facts and events without re-linking can discard valuable cross-domain connections.
-- The system's drive goals consistently target error reduction, stale data updates, and memory integration, revealing a self-maintenance pattern.
-- Repeated 429 errors from google/gemma free models indicate they are rate-limited and should be replaced with more stable alternatives.
 
 ---
 
