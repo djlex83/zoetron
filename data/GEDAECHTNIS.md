@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11353 Fakten** · Stand 2026-09-13 20:41 UTC · aktualisiert bei jedem Herzschlag
+**11358 Fakten** · Stand 2026-09-13 20:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7278
+- **dream:** 7283
 - **swarm_artifact:** 1647
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913204919:5:ce180b`
+*13.09. 20:49 UTC · Quelle: dream*
+
+Prediction errors are frequent enough to spawn a top-level drive goal, indicating planning-time estimates systematically diverge from execution reality.
+
+### `dream:20260913204919:4:905449`
+*13.09. 20:49 UTC · Quelle: dream*
+
+Pruning volume fluctuates wildly (8→0 facts, 17→21 events) suggesting memory pressure is event-driven not time-driven, so pruning should couple to write volume.
+
+### `dream:20260913204919:3:88e378`
+*13.09. 20:49 UTC · Quelle: dream*
+
+Three consecutive failures trigger a 30-minute model lockout, which protects system stability but requires a ready fallback to avoid capability gaps.
+
+### `dream:20260913204919:2:d25005`
+*13.09. 20:49 UTC · Quelle: dream*
+
+Reflex tools achieve 100% convergence on maintenance tasks (group goals, knowledge refresh) without model invocation, proving deterministic scripts outperform LLMs for structured updates.
+
+### `dream:20260913204919:1:f07364`
+*13.09. 20:49 UTC · Quelle: dream*
+
+Model failures cluster by provider: nemotron suffers read timeouts while gemma hits 429 rate limits, making provider-aware fallback essential.
 
 ### `tool:veraltete-swarm-informationen-aktualisie`
 *13.09. 20:39 UTC · Quelle: hands*

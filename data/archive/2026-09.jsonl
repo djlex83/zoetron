@@ -46889,3 +46889,40 @@
 {"ts": 1788726187.800734, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.5, "gelesen": 1553}}
 {"ts": 1788726187.8033617, "kind": "reflex_used", "payload": {"goal": "Schwarm-Arbeit wiederbeleben und nutzen", "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py", "ok": true}}
 {"ts": 1788726188.2069788, "kind": "act_done", "payload": {"goal_title": "Schwarm-Arbeit wiederbeleben und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788726701.6236365, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788726769.756236, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788726771.5148618, "kind": "prune_run", "payload": {"facts_pruned": 20, "events_pruned": 20}}
+{"ts": 1788726786.7044327, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788726786.70443, "schalter_geoeffnet": false}}
+{"ts": 1788726786.854259, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788726786.8542552, "schalter_geoeffnet": false}}
+{"ts": 1788726786.9760323, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788726786.9760299, "schalter_geoeffnet": false}}
+{"ts": 1788726790.5883474, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 3.6, "tokens_ein": 1466, "tokens_aus": 987}}
+{"ts": 1788726790.5888994, "kind": "skill_proposal", "payload": {"proposal": "ModelRouter: proactive health-checked model selection with latency budgets, rate-limit backoff, and automatic fallback chains to eliminate 429/502 cascades."}}
+{"ts": 1788726790.5889568, "kind": "skill_proposal", "payload": {"proposal": "SimulationGate: mandatory simulation verdict on any artifact; revision indicated → apply → re-verify before production commit."}}
+{"ts": 1788726790.5890214, "kind": "skill_proposal", "payload": {"proposal": "CalibrationGuard: reject execution plans where predicted score deviates beyond calibrated threshold from historical baseline performance."}}
+{"ts": 1788726790.58909, "kind": "skill_proposal", "payload": {"proposal": "DriveScheduler: topologically sort active goals by prerequisite dependency (model reliability → swarm update → skill conversion) and execute sequentially to prevent contention."}}
+{"ts": 1788726790.5891502, "kind": "skill_proposal", "payload": {"proposal": "ConsolidationAudit: cross-reference pruned events against active skill proposals each cycle; retire proposals whose assumptions were pruned away."}}
+{"ts": 1788726790.589207, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788726810.8878508, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.5, "tokens_ein": 486, "tokens_aus": 565}}
+{"ts": 1788726810.8880925, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell scheitert noch oft, was zu falschen Entscheidungen führt. Weniger Fehler machen das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1788726810.888183, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Die Infos über Schwarm-Ziele und Kritiken sind veraltet. Aktuelles Wissen hilft bei besserer Zusammenarbeit.", "signal": "stale"}}
+{"ts": 1788726810.888251, "kind": "drive_goal", "payload": {"title": "Träume in echte Fähigkeiten wandeln", "why": "Viele Träume und Vorschläge entstehen, aber wenige werden nutzbare Skills. Mehr Umsetzung erhöht die Kompetenz.", "signal": "gap"}}
+{"ts": 1788726813.513584, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.28, "gelesen": 14}}
+{"ts": 1788726813.516039, "kind": "reflex_used", "payload": {"goal": "Veraltete Schwarm-Daten aufräumen oder erneuern", "tool": "veraltete-schwarm-artefakte-aufräumen-un.py", "ok": true}}
+{"ts": 1788726813.926692, "kind": "act_done", "payload": {"goal_title": "Veraltete Schwarm-Daten aufräumen oder erneuern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788727328.2607589, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788727396.5530362, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788727398.1318886, "kind": "prune_run", "payload": {"facts_pruned": 15, "events_pruned": 0}}
+{"ts": 1788727445.529606, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 43.8, "tokens_ein": 1330, "tokens_aus": 820}}
+{"ts": 1788727445.5302222, "kind": "skill_proposal", "payload": {"proposal": "ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff."}}
+{"ts": 1788727445.530285, "kind": "skill_proposal", "payload": {"proposal": "ConvergenceGate: require score ≥ 8, zero critical simulation risks, and explicit critic sign-off before any goal converges."}}
+{"ts": 1788727445.530342, "kind": "skill_proposal", "payload": {"proposal": "PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem access."}}
+{"ts": 1788727445.5303957, "kind": "skill_proposal", "payload": {"proposal": "SkillValidationGate: mandate every proposed skill be executed, simulated, and scored ≥ 7 within the same cycle before acceptance."}}
+{"ts": 1788727445.5304503, "kind": "skill_proposal", "payload": {"proposal": "DriveScheduler: topologically sort active goals by prerequisite dependency (model reliability → swarm update → skill conversion) and execute one at a time to prevent resource contention."}}
+{"ts": 1788727445.5305097, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788727471.9332912, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 24.3, "tokens_ein": 489, "tokens_aus": 899}}
+{"ts": 1788727471.933466, "kind": "drive_goal", "payload": {"title": "Modellfehler stark reduzieren", "why": "Zu viele Aktionen schlagen fehl, weil das Weltmodell Fehler hat. Weniger Fehler bedeuten zuverlässigeres Handeln.", "signal": "failure"}}
+{"ts": 1788727471.9335532, "kind": "drive_goal", "payload": {"title": "Schwarmwissen auffrischen und nutzen", "why": "Wichtiges Wissen aus der Schwarmarbeit ist veraltet. Frischer Austausch bringt neue Ideen und Korrekturen.", "signal": "stale"}}
+{"ts": 1788727471.9336236, "kind": "drive_goal", "payload": {"title": "Vorschläge in echte Fähigkeiten wandeln", "why": "Es gibt viele Fähigkeitsvorschläge, aber wenige werden wirklich nutzbar. Umsetzung schließt die Lücke.", "signal": "gap"}}
+{"ts": 1788727475.0257733, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.47, "gelesen": 2}}
+{"ts": 1788727475.0281796, "kind": "reflex_used", "payload": {"goal": "Schwarm-Erkenntnisse nutzen und aktualisieren", "tool": "schwarmwissen-regelmäßig-aktualisieren.py", "ok": true}}
+{"ts": 1788727475.562532, "kind": "act_done", "payload": {"goal_title": "Schwarm-Erkenntnisse nutzen und aktualisieren", "score": null, "converged": true, "mode": "reflex"}}

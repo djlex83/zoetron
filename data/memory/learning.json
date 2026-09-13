@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 20:39:39",
+ "stand": "2026-09-13 20:50:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -75,16 +75,16 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltete-marktanalyse-auffrischen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "automatische-fehler-reduktions-pipeline-.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "simulationen-gezielt-einsetzen.py",
@@ -124,12 +124,6 @@
   },
   {
    "tool": "fehler-in-modellen-finden-und-reparieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktanalyse-auffrischen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -259,6 +253,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "automatische-fehler-reduktions-pipeline-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
