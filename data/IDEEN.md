@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 00:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 00:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und verringern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence stalls at 2 cycles with fixed role ratios; dynamic role allocation based on failure type accelerates convergence.
+- Evolutionary variant generation (3+ variants) reliably lifts scores from 6→9, but requires critic role to filter hallucinations.
+- Calibration consistently underestimates actual effort by 3–4× (predicted 2 vs actual 6), so multiply initial estimates by 3.5.
+- Latency variance for identical models spans 8x (9.5s–77.3s), mandating timeout budgets per call rather than global constants.
+- Free-tier LLM endpoints exhibit high failure rates (502/429) requiring automatic fallback chains with exponential backoff.
 - System entered conserve mode (stress=1.0) with max_tasks=3 during active failures, starving recovery capacity when most needed.
 - Pruning removed 22 events and 5 facts while skill-testing chain was incomplete, risking loss of causal context for failed operations.
 - Reflex-driven swarm goal update succeeded (converged=true) while deliberate skill-testing action failed, showing reflexes outperform planned actions f
@@ -51,11 +56,6 @@
 - Hand actions fail on first attempt (exit 1, 0-5 lines read) but succeed on retry with full context (300 lines, 4.86s), indicating mandatory retry logi
 - The simulation-revision loop (verdict: revise, 3 risks, 3 revisions) converged in a single cycle, proving pre-execution simulation effectively catches
 - Free-tier models exhibit systematic failure modes: gemma models consistently return 429 rate limits while nemotron intermittently returns 502 upstream
-- The persistence of model failures despite multiple skill proposals indicates an implementation gap, which can be bridged by an incubator that shadow-r
-- The metabolism stress level of 1.0 and conserve state imply that resource constraints are contributing to model failures, so task scheduling must adap
-- The failed reflex (modelle-zuverlässiger-machen.py) suggests that the tool for model reliability is incomplete or not robust to current conditions, re
-- The hand_action failure due to a missing file or directory reveals that file path resolution is fragile and must be hardened with absolute path valida
-- Recurring 429 and 502 errors from model providers indicate that the system is hitting rate limits and upstream instability, necessitating immediate de
 
 ---
 

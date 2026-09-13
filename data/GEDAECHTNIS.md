@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11381 Fakten** · Stand 2026-09-13 00:14 UTC · aktualisiert bei jedem Herzschlag
+**11381 Fakten** · Stand 2026-09-13 00:24 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7321
 - **swarm_artifact:** 1655
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913002201:5:364902`
+*13.09. 00:22 UTC · Quelle: dream*
+
+Swarm convergence stalls at 2 cycles with fixed role ratios; dynamic role allocation based on failure type accelerates convergence.
+
+### `dream:20260913002201:4:58b3ae`
+*13.09. 00:22 UTC · Quelle: dream*
+
+Evolutionary variant generation (3+ variants) reliably lifts scores from 6→9, but requires critic role to filter hallucinations.
+
+### `dream:20260913002201:3:12052d`
+*13.09. 00:22 UTC · Quelle: dream*
+
+Calibration consistently underestimates actual effort by 3–4× (predicted 2 vs actual 6), so multiply initial estimates by 3.5.
+
+### `dream:20260913002201:2:4d3acd`
+*13.09. 00:22 UTC · Quelle: dream*
+
+Latency variance for identical models spans 8x (9.5s–77.3s), mandating timeout budgets per call rather than global constants.
+
+### `dream:20260913002201:1:b8d4a8`
+*13.09. 00:22 UTC · Quelle: dream*
+
+Free-tier LLM endpoints exhibit high failure rates (502/429) requiring automatic fallback chains with exponential backoff.
 
 ### `dream:20260913000708:5:4c54e6`
 *13.09. 00:07 UTC · Quelle: dream*
@@ -42367,31 +42392,6 @@ The persistent gap between skill proposals and actual implementation indicates t
 *30.08. 00:21 UTC · Quelle: dream*
 
 429 rate-limit errors from z-ai/glm-5.2:free recur across every call window, making it an unreliable default model that must never be dispatched without prior health verification.
-
-### `dream:20260830001712:5:187c43`
-*30.08. 00:17 UTC · Quelle: dream*
-
-Evolution loops lack a convergence detector, so mutations continue past diminishing returns without emitting a failure signal.
-
-### `dream:20260830001712:4:44f6a5`
-*30.08. 00:17 UTC · Quelle: dream*
-
-No component tracks per-model quota headers or reset windows, so rate-limit collisions repeat instead of being predicted.
-
-### `dream:20260830001712:3:dfc758`
-*30.08. 00:17 UTC · Quelle: dream*
-
-Five skill-proposal cycles produced 10+ proposals but zero promotions, revealing a missing validation-to-deployment pipeline.
-
-### `dream:20260830001712:2:164b8e`
-*30.08. 00:17 UTC · Quelle: dream*
-
-Nemotron-3-ultra latency varies 2x (9.4s to 20.4s) for similar token volumes, violating any fixed SLO and requiring dynamic fallback.
-
-### `dream:20260830001712:1:800bec`
-*30.08. 00:17 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently returns 429 errors across multiple timestamps, indicating a hard rate limit that makes it unreliable as a primary endpoint.
 
 ### `last_swarm_critique`
 *29.08. 23:54 UTC · Quelle: critic*
