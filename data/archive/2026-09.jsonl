@@ -45900,3 +45900,30 @@
 {"ts": 1788700109.8444357, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten wirklich einsetzen", "score": 7, "converged": false}}
 {"ts": 1788700110.7004755, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.25, "gelesen": 9}}
 {"ts": 1788700113.2522078, "kind": "issue_synced", "payload": {"issue": 398, "state": "open"}}
+{"ts": 1788095644.7354066, "key": "dream:20260830131404:1:baac59", "value": "Rate limiting (429) across multiple free-tier models indicates systemic provider throttling, not isolated model failures.", "source": "dream"}
+{"ts": 1788095644.7355044, "key": "dream:20260830131404:2:0b5adc", "value": "nvidia/nemotron-3-ultra-550b-a55b:free shows highest reliability but latency variance (25-107s) makes it unsuitable for time-critical paths.", "source": "dream"}
+{"ts": 1788095644.735584, "key": "dream:20260830131404:3:fb240f", "value": "High stress (1.0) with conserve metabolism state creates a death spiral: failures increase stress, stress reduces budget, reduced budget prevents recovery actions.", "source": "dream"}
+{"ts": 1788095644.7357202, "key": "dream:20260830131404:4:e93bb7", "value": "Market knowledge update fails at every layer: reflex tool fails, hand action fails, simulation demands 5 revisions, yet swarm persists without success criteria.", "source": "dream"}
+{"ts": 1788095644.7358232, "key": "dream:20260830131404:5:5db51d", "value": "Free-tier model portfolio lacks a fast, reliable fallback; all successes come from a single model with unpredictable latency.", "source": "dream"}
+{"ts": 1788095959.965806, "key": "dream:20260830131919:1:3d2e42", "value": "Free models on OpenRouter frequently hit 429 rate limits, necessitating robust fallback mechanisms.", "source": "dream"}
+{"ts": 1788095959.965902, "key": "dream:20260830131919:2:c869c3", "value": "The nvidia/nemotron-3-ultra-550b-a55b:free model suffers from high latency and occasional 502 upstream overload errors.", "source": "dream"}
+{"ts": 1788095959.9659712, "key": "dream:20260830131919:3:40dffa", "value": "Evolution runs effectively improve artifact quality, successfully elevating a baseline score of 6 to a winning score of 9.", "source": "dream"}
+{"ts": 1788095959.9660678, "key": "dream:20260830131919:4:18b6ef", "value": "Smaller or less popular free models like inclusionai/ling-3.0-flash-fin:free provide faster and more reliable responses than heavily loaded alternatives.", "source": "dream"}
+{"ts": 1788095959.9661345, "key": "dream:20260830131919:5:566cf1", "value": "Calibration predictions can be highly accurate, as demonstrated by the exact match between predicted and actual scores.", "source": "dream"}
+{"ts": 1788700652.7685077, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788700722.128457, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788700724.2306237, "kind": "prune_run", "payload": {"facts_pruned": 29, "events_pruned": 19}}
+{"ts": 1788700840.4287412, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 112.4, "tokens_ein": 1261, "tokens_aus": 642}}
+{"ts": 1788700840.4292195, "kind": "skill_proposal", "payload": {"proposal": "Implement a shared-quota-aware router that treats 429 on any free-tier model as a global signal to pause all free-tier requests and switch to paid/fallback models."}}
+{"ts": 1788700840.4292717, "kind": "skill_proposal", "payload": {"proposal": "Add a model-failover chain to the reflex executor: on 429, immediately retry with next-healthiest model from registry instead of bubbling error upward."}}
+{"ts": 1788700840.4293146, "kind": "skill_proposal", "payload": {"proposal": "Create a 'local-first' reflex mode that prefers filesystem/DB tools over model calls for data-refresh and maintenance goals."}}
+{"ts": 1788700840.4293547, "kind": "skill_proposal", "payload": {"proposal": "Build a quota-health dashboard that tracks 429 frequency per provider and auto-throttles request rate before hitting limits."}}
+{"ts": 1788700840.4293947, "kind": "skill_proposal", "payload": {"proposal": "Add a dream-to-implementation trigger: when >3 skill proposals share a theme (e.g., resilience), auto-scaffold a unified resilience library with tests."}}
+{"ts": 1788700840.4294374, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788700886.672767, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 44.1, "tokens_ein": 490, "tokens_aus": 1038}}
+{"ts": 1788700886.6729379, "kind": "drive_goal", "payload": {"title": "Modelle stabiler machen", "why": "Zu viele Modelle scheitern, wir brauchen verlässlichere Vorhersagen.", "signal": "failure"}}
+{"ts": 1788700886.67301, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen erneuern", "why": "Alte Schwarm-Ziele und Kritiken blockieren neue Ideen.", "signal": "stale"}}
+{"ts": 1788700886.6730714, "kind": "drive_goal", "payload": {"title": "Mehr simulieren vor Handeln", "why": "Wir testen zu wenig im Kopf, bevor wir handeln.", "signal": "gap"}}
+{"ts": 1788700889.372075, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.25, "gelesen": 9}}
+{"ts": 1788700889.3750505, "kind": "reflex_used", "payload": {"goal": "Veraltete Schwarminformationen aktualisieren", "tool": "veraltete-marktinfos-aktualisieren.py", "ok": true}}
+{"ts": 1788700889.8298867, "kind": "act_done", "payload": {"goal_title": "Veraltete Schwarminformationen aktualisieren", "score": null, "converged": true, "mode": "reflex"}}

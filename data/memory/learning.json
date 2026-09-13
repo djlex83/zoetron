@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 13:15:45",
+ "stand": "2026-09-13 13:27:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -101,12 +101,6 @@
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
-   "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -375,6 +369,12 @@
    "quote": 1.0
   },
   {
+   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "modellfehler-verstehen-und-vermeiden.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -397,10 +397,16 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.701,
- "simulationen_angewandt": 29,
+ "haende_quote": 0.705,
+ "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 37,
   "best": 9.0,
@@ -408,8 +414,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 35,
-   "schnitt": 5.37
+   "n": 34,
+   "schnitt": 5.32
   },
   "bau": {
    "n": 2,

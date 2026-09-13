@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11374 Fakten** · Stand 2026-09-13 13:17 UTC · aktualisiert bei jedem Herzschlag
+**11369 Fakten** · Stand 2026-09-13 13:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7298
+- **dream:** 7293
 - **swarm_artifact:** 1657
 - **last_swarm_critique:** 933
 - **last_swarm_goal:** 668
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913132552:5:829562`
+*13.09. 13:25 UTC · Quelle: dream*
+
+Reflex‑driven actions can achieve convergence without explicit planning, offering a shortcut for routine goals.
+
+### `dream:20260913132552:4:b2962c`
+*13.09. 13:25 UTC · Quelle: dream*
+
+Regular pruning of stale facts and events keeps the knowledge base relevant and reduces noise.
+
+### `dream:20260913132552:3:36cf48`
+*13.09. 13:25 UTC · Quelle: dream*
+
+Combining distant memories produces novel solution candidates that isolated recall cannot generate.
+
+### `dream:20260913132552:2:0efc31`
+*13.09. 13:25 UTC · Quelle: dream*
+
+Automatic fallback to a stable model upon failure preserves task continuity.
+
+### `dream:20260913132552:1:7d984a`
+*13.09. 13:25 UTC · Quelle: dream*
+
+Repeated 429 errors from multiple free models reveal a shared rate‑limit bottleneck that must be mitigated with exponential backoff.
 
 ### `dream:20260913131427:5:78dc3b`
 *13.09. 13:14 UTC · Quelle: dream*
@@ -42167,56 +42192,6 @@ High-latency fallback models (30s+) exceed swarm cycle budgets, stalling converg
 *30.08. 13:26 UTC · Quelle: dream*
 
 Free-tier models simultaneously hit 429 rate limits, causing cascading fallback failures across the entire model pool.
-
-### `dream:20260830131919:5:566cf1`
-*30.08. 13:19 UTC · Quelle: dream*
-
-Calibration predictions can be highly accurate, as demonstrated by the exact match between predicted and actual scores.
-
-### `dream:20260830131919:4:18b6ef`
-*30.08. 13:19 UTC · Quelle: dream*
-
-Smaller or less popular free models like inclusionai/ling-3.0-flash-fin:free provide faster and more reliable responses than heavily loaded alternatives.
-
-### `dream:20260830131919:3:40dffa`
-*30.08. 13:19 UTC · Quelle: dream*
-
-Evolution runs effectively improve artifact quality, successfully elevating a baseline score of 6 to a winning score of 9.
-
-### `dream:20260830131919:2:c869c3`
-*30.08. 13:19 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra-550b-a55b:free model suffers from high latency and occasional 502 upstream overload errors.
-
-### `dream:20260830131919:1:3d2e42`
-*30.08. 13:19 UTC · Quelle: dream*
-
-Free models on OpenRouter frequently hit 429 rate limits, necessitating robust fallback mechanisms.
-
-### `dream:20260830131404:5:5db51d`
-*30.08. 13:14 UTC · Quelle: dream*
-
-Free-tier model portfolio lacks a fast, reliable fallback; all successes come from a single model with unpredictable latency.
-
-### `dream:20260830131404:4:e93bb7`
-*30.08. 13:14 UTC · Quelle: dream*
-
-Market knowledge update fails at every layer: reflex tool fails, hand action fails, simulation demands 5 revisions, yet swarm persists without success criteria.
-
-### `dream:20260830131404:3:fb240f`
-*30.08. 13:14 UTC · Quelle: dream*
-
-High stress (1.0) with conserve metabolism state creates a death spiral: failures increase stress, stress reduces budget, reduced budget prevents recovery actions.
-
-### `dream:20260830131404:2:0b5adc`
-*30.08. 13:14 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free shows highest reliability but latency variance (25-107s) makes it unsuitable for time-critical paths.
-
-### `dream:20260830131404:1:baac59`
-*30.08. 13:14 UTC · Quelle: dream*
-
-Rate limiting (429) across multiple free-tier models indicates systemic provider throttling, not isolated model failures.
 
 ### `last_swarm_critique`
 *30.08. 12:45 UTC · Quelle: critic*
