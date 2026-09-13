@@ -45788,3 +45788,22 @@
 {"ts": 1788697009.1587956, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.85, "gelesen": 1535}}
 {"ts": 1788697009.1612048, "kind": "reflex_used", "payload": {"goal": "Schwarm-Daten aktualisieren und neue Interaktionen starten", "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py", "ok": true}}
 {"ts": 1788697009.5972538, "kind": "act_done", "payload": {"goal_title": "Schwarm-Daten aktualisieren und neue Interaktionen starten", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788697537.988501, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788697607.576638, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788697610.302215, "kind": "prune_run", "payload": {"facts_pruned": 8, "events_pruned": 26}}
+{"ts": 1788697623.1237712, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788697623.123765, "schalter_geoeffnet": false}}
+{"ts": 1788697662.5307903, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 39.4, "tokens_ein": 1397, "tokens_aus": 739}}
+{"ts": 1788697662.5316443, "kind": "skill_proposal", "payload": {"proposal": "Implement a ModelQuotaTracker that persists X-RateLimit-Remaining headers per provider/model and automatically deprioritizes models with <5% quota headroom."}}
+{"ts": 1788697662.531732, "kind": "skill_proposal", "payload": {"proposal": "Add a SkillAdoptionGate that blocks new skill proposals until at least one pending proposal is instantiated, tested, and registered in the DeterministicSkillRegistry."}}
+{"ts": 1788697662.531919, "kind": "skill_proposal", "payload": {"proposal": "Create a SwarmFreshnessDecay metric that timestamps each swarm knowledge artifact and triggers refresh only when median age exceeds a configurable threshold (e.g., 24h)."}}
+{"ts": 1788697662.5320053, "kind": "skill_proposal", "payload": {"proposal": "Build a PrunePolicyController that enforces a fixed fact:event prune ratio (e.g., 1:3) and logs deviations for audit."}}
+{"ts": 1788697662.5321164, "kind": "skill_proposal", "payload": {"proposal": "Deploy a ReflexSuccessRateMonitor that tracks reflex script exit codes and auto-promotes scripts with >95% success over 20 runs to first-class skills."}}
+{"ts": 1788697662.5321968, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788697666.2597113, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788697666.259708, "schalter_geoeffnet": false}}
+{"ts": 1788697735.814154, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 69.4, "tokens_ein": 499, "tokens_aus": 784}}
+{"ts": 1788697735.8148122, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren und Zuverlässigkeit steigern", "why": "Das Modell scheitert oft. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788697735.8159606, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten konkret umsetzen und testen", "why": "Viele Fähigkeiten wurden vorgeschlagen, aber nicht umgesetzt. Wir brauchen echte Skills.", "signal": "gap"}}
+{"ts": 1788697735.8166008, "kind": "drive_goal", "payload": {"title": "Schwarm-Zusammenarbeit wiederbeleben und aktuell halten", "why": "Die Schwarm-Daten sind veraltet. Frischer Austausch bringt neue Ideen.", "signal": "stale"}}
+{"ts": 1788697741.9762683, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.71, "gelesen": 1}}
+{"ts": 1788697742.425912, "kind": "reflex_used", "payload": {"goal": "Veraltetes Schwarmwissen erneuern", "tool": "veraltetes-wissen-erneuern.py", "ok": true}}
+{"ts": 1788697745.1247761, "kind": "act_done", "payload": {"goal_title": "Veraltetes Schwarmwissen erneuern", "score": null, "converged": true, "mode": "reflex"}}

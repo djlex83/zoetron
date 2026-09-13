@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 12:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 12:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Träume mit Fähigkeiten verbinden *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Automated skill proposals already include model routing and retry logic, indicating a self-healing approach to API failures.
+- The successful model dots-studio/dots-3-note-preview:free has higher latency but consistent output, suggesting a reliability-over-speed trade-off.
+- Pruning facts and events without re-linking can discard valuable cross-domain connections.
+- The system's drive goals consistently target error reduction, stale data updates, and memory integration, revealing a self-maintenance pattern.
+- Repeated 429 errors from google/gemma free models indicate they are rate-limited and should be replaced with more stable alternatives.
 - The system automatically generates reliability-focused drive goals in response to recurring API failures.
 - Repeated 429 errors indicate that simple retries are insufficient and dynamic routing is required.
 - Reflex-based execution of simulations provides a reliable alternative for task completion during model instability.
@@ -51,11 +56,6 @@
 - Malformed request payloads cause 400 errors; schema validation before dispatch prevents wasted calls.
 - HTTP 429 rate limits and read timeouts dominate failures; exponential backoff and request queuing improve reliability.
 - When three consecutive model errors occur, the system blocks the model for 1800s, so a circuit‑breaker with fallback models is essential.
-- Adaptive timeout scaling based on recent latency and stress level aligns resource limits with current load.
-- Pre‑execution health checks that verify API connectivity and quota can avert wasted calls.
-- Exponential backoff with jitter reduces retry collisions and improves eventual success.
-- A circuit breaker that trips after two consecutive failures prevents cascading load on overloaded APIs.
-- Repeated timeouts and 429 errors show that the current model selection lacks fallback routing and rate‑limit awareness.
 
 ---
 

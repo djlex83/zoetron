@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11368 Fakten** · Stand 2026-09-13 12:26 UTC · aktualisiert bei jedem Herzschlag
+**11384 Fakten** · Stand 2026-09-13 12:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
-- **swarm_artifact:** 1657
-- **last_swarm_critique:** 932
-- **last_swarm_goal:** 667
-- **anti_pattern:** 365
-- **strategy:** 185
+- **dream:** 7298
+- **swarm_artifact:** 1663
+- **last_swarm_critique:** 933
+- **last_swarm_goal:** 668
+- **anti_pattern:** 367
+- **strategy:** 186
 - **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 32
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Mehr Fähigkeiten wirklic:2`
+*13.09. 12:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Adversarial Red-Teaming for Skill Robustness - Deploy a dual-agent system: a 'Coder' and a 'Breaker'. The Coder implements the skill, while the Breaker's sole goal is to generate input vectors that expose the implementation a
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Mehr Fähigkeiten wirklic:1`
+*13.09. 12:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Symbolic Analysis & Data-Flow Dependency - Implement a static analysis layer using Abstract Syntax Trees (AST) to detect 'stub-like' behavior. Specifically, calculate the dependency between function inputs and return values; 
+
+### `last_swarm_critique`
+*13.09. 12:43 UTC · Quelle: critic*
+
+score=4; issues=The auto-completion generates only generic stub functions that return a static dict, not actual working skill implementations.; The sandbox test input generation is heuristic and may not exercise functions in a meaningful way.; The convergence 
+
+### `last_swarm_goal`
+*13.09. 12:35 UTC · Quelle: system*
+
+Mehr Fähigkeiten wirklich fertig lernen
+
+### `dream:20260913123357:5:ecc6da`
+*13.09. 12:33 UTC · Quelle: dream*
+
+Automated skill proposals already include model routing and retry logic, indicating a self-healing approach to API failures.
+
+### `dream:20260913123357:4:a6022c`
+*13.09. 12:33 UTC · Quelle: dream*
+
+The successful model dots-studio/dots-3-note-preview:free has higher latency but consistent output, suggesting a reliability-over-speed trade-off.
+
+### `dream:20260913123357:3:fc5a4d`
+*13.09. 12:33 UTC · Quelle: dream*
+
+Pruning facts and events without re-linking can discard valuable cross-domain connections.
+
+### `dream:20260913123357:2:af0272`
+*13.09. 12:33 UTC · Quelle: dream*
+
+The system's drive goals consistently target error reduction, stale data updates, and memory integration, revealing a self-maintenance pattern.
+
+### `dream:20260913123357:1:f73ab9`
+*13.09. 12:33 UTC · Quelle: dream*
+
+Repeated 429 errors from google/gemma free models indicate they are rate-limited and should be replaced with more stable alternatives.
 
 ### `dream:20260913122330:5:8d64b3`
 *13.09. 12:23 UTC · Quelle: dream*

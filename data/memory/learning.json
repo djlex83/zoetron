@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-13 12:24:26",
+ "stand": "2026-09-13 12:46:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -69,12 +69,6 @@
    "quote": 1.0
   },
   {
-   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-stark-verringern.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -105,6 +99,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -133,6 +133,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
@@ -175,12 +181,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
@@ -399,17 +399,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.696,
- "simulationen_angewandt": 28,
+ "haende_quote": 0.701,
+ "simulationen_angewandt": 29,
  "swarm_scores": {
   "n": 37,
   "best": 9.0,
-  "schnitt": 5.54
+  "schnitt": 5.43
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 34,
-   "schnitt": 5.41
+   "n": 35,
+   "schnitt": 5.37
   },
   "bau": {
    "n": 2,
