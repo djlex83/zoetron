@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11356 Fakten** · Stand 2026-09-13 06:21 UTC · aktualisiert bei jedem Herzschlag
+**11363 Fakten** · Stand 2026-09-13 06:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7286
-- **swarm_artifact:** 1655
-- **last_swarm_critique:** 926
-- **last_swarm_goal:** 661
-- **anti_pattern:** 367
-- **strategy:** 186
-- **tool:** 154
+- **dream:** 7281
+- **swarm_artifact:** 1661
+- **last_swarm_critique:** 927
+- **last_swarm_goal:** 662
+- **anti_pattern:** 369
+- **strategy:** 187
+- **tool:** 155
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `tool:traum-erfahrungen-anwenden`
+*13.09. 06:36 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Traum-Erfahrungen anwenden'. Datei: data/tools/traum-erfahrungen-anwenden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erfahrungen anwend:2`
+*13.09. 06:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Declarative Workflow Engine - Encode the entire pipeline in a YAML/JSON configuration file that lists steps, their inputs, transformation functions, and output locations. A generic engine reads this definition, resolves depen
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erfahrungen anwend:1`
+*13.09. 06:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Decoupled Event‑Driven Architecture - Introduce a lightweight message broker (e.g., MQTT or Kafka). Each processing stage becomes an independent service that subscribes to specific topics: Service A publishes 'dream_clusters'
+
+### `last_swarm_critique`
+*13.09. 06:34 UTC · Quelle: critic*
+
+score=4; issues=Second artifact is incomplete - only contains a comment about exploring data directory, no actual prototype generation from dream clusters; Pipeline disconnect: first artifact outputs to 'artefakte/dream_skills/' with skill_candidates, but thir
+
+### `last_swarm_goal`
+*13.09. 06:29 UTC · Quelle: system*
+
+Traum-Erfahrungen anwenden
+
+### `dream:20260913062848:5:01a230`
+*13.09. 06:28 UTC · Quelle: dream*
+
+Self-correction scripts and automated reflex tools often fail silently or crash with tracebacks, showing that autonomous maintenance loops require better error isolation and diagnostic reporting.
+
+### `dream:20260913062848:4:4872b7`
+*13.09. 06:28 UTC · Quelle: dream*
+
+Excessive response latencies (up to 191s) and token lengths (over 6700 tokens) cause system stalls, indicating a critical need for hard timeouts and output token limits.
+
+### `dream:20260913062848:3:96bc0d`
+*13.09. 06:28 UTC · Quelle: dream*
+
+Large discrepancies between predicted and actual outcomes (e.g., predicting 5 successes but observing 0) show that raw model confidence is highly biased and requires real-time correction.
+
+### `dream:20260913062848:2:84756b`
+*13.09. 06:28 UTC · Quelle: dream*
+
+Tool execution and hand actions frequently fail due to file path resolution errors, timeouts, or runtime tracebacks, highlighting the need for strict pre-flight environment validation.
+
+### `dream:20260913062848:1:f0f9cd`
+*13.09. 06:28 UTC · Quelle: dream*
+
+Model API rate limiting (429) and server overloads (502) are primary drivers of task failure, requiring robust retry logic with backoff and fallback routing.
 
 ### `dream:20260913061856:5:0cf3ed`
 *13.09. 06:18 UTC · Quelle: dream*
@@ -42162,56 +42212,6 @@ Reflex tools (local Python scripts) execute reliably with zero model dependency,
 *30.08. 06:34 UTC · Quelle: dream*
 
 External model APIs consistently fail with 429/502 errors under load, making them unreliable as primary reasoning engines.
-
-### `dream:20260830062505:5:5bd568`
-*30.08. 06:25 UTC · Quelle: dream*
-
-When a reflex is actually deployed (fähigkeitsvorschläge-in-echte-skills-umw.py), it converges successfully — proving execution, not generation, is the bottleneck.
-
-### `dream:20260830062505:4:10b57a`
-*30.08. 06:25 UTC · Quelle: dream*
-
-Stale work accumulates silently across multiple analysis steps without auto-detection or remediation, eroding decision quality over time.
-
-### `dream:20260830062505:3:0ab841`
-*30.08. 06:25 UTC · Quelle: dream*
-
-Fallback model latency is unpredictable (22s to 95s), meaning even successful failovers can violate downstream SLAs without explicit latency guards.
-
-### `dream:20260830062505:2:eeea9c`
-*30.08. 06:25 UTC · Quelle: dream*
-
-The system generates skill proposals far faster than it executes them — 55 proposals exist with no confirmed deployment, indicating a proposal-to-execution gap is the dominant failure mode.
-
-### `dream:20260830062505:1:5d2366`
-*30.08. 06:25 UTC · Quelle: dream*
-
-Free-tier models (z-ai/glm-5.2) fail systematically under load with 429 errors, making them unreliable as primary callers without enforced fallback.
-
-### `dream:20260830062026:5:83a2c6`
-*30.08. 06:20 UTC · Quelle: dream*
-
-Hand action failures with exit code 1 but no error output indicate silent execution failures needing structured validation.
-
-### `dream:20260830062026:4:434d66`
-*30.08. 06:20 UTC · Quelle: dream*
-
-Swarm convergence failure at score 1 suggests critic/planner feedback loop isn't driving measurable improvement.
-
-### `dream:20260830062026:3:ba8a32`
-*30.08. 06:20 UTC · Quelle: dream*
-
-Evolution cycles producing syntax errors indicate generator lacks pre-sandbox syntax validation.
-
-### `dream:20260830062026:2:ac28ca`
-*30.08. 06:20 UTC · Quelle: dream*
-
-High latency variance (23–120s) on fallback models makes timeout budgets unreliable for planning.
-
-### `dream:20260830062026:1:e685f1`
-*30.08. 06:20 UTC · Quelle: dream*
-
-Rate-limited models (429 errors) silently stall pipelines unless explicit fallback chains with exponential backoff are enforced.
 
 ### `last_swarm_critique`
 *30.08. 05:31 UTC · Quelle: critic*
