@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11347 Fakten** · Stand 2026-09-13 07:03 UTC · aktualisiert bei jedem Herzschlag
+**11361 Fakten** · Stand 2026-09-13 07:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7271
-- **swarm_artifact:** 1659
-- **last_swarm_critique:** 927
-- **last_swarm_goal:** 662
+- **dream:** 7276
+- **swarm_artifact:** 1665
+- **last_swarm_critique:** 928
+- **last_swarm_goal:** 663
 - **anti_pattern:** 367
 - **strategy:** 186
 - **tool:** 154
-- **hand_result:** 83
+- **hand_result:** 84
 - **aktuell_organfehler:** 38
 
 ---
+
+### `last_swarm_critique`
+*13.09. 07:18 UTC · Quelle: critic*
+
+score=8; issues=Goal extraction from memory is incomplete (placeholder comment only); Semantic search uses hardcoded German query terms - not configurable or extensible; No demonstration of all three scripts working together as integrated pipeline; Fallback be
+
+### `last_swarm_goal`
+*13.09. 07:12 UTC · Quelle: system*
+
+Gelernte Fähigkeiten anwenden
+
+### `dream:20260913071119:5:0731b1`
+*13.09. 07:11 UTC · Quelle: dream*
+
+System stress goes unmanaged because no controller throttles task spawns or switches inference modes based on metabolism.
+
+### `dream:20260913071119:4:cda1c3`
+*13.09. 07:11 UTC · Quelle: dream*
+
+Pruning destroys debuggability when causal chains (goal→action→outcome) aren't preserved before leaf removal.
+
+### `dream:20260913071119:3:f15870`
+*13.09. 07:11 UTC · Quelle: dream*
+
+Swarm knowledge decays within days without a scheduled critic/analyst refresh cycle tied to prediction error thresholds.
+
+### `dream:20260913071119:2:bf63df`
+*13.09. 07:11 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution because no automated pipeline validates, deploys, and registers them.
+
+### `dream:20260913071119:1:075b91`
+*13.09. 07:11 UTC · Quelle: dream*
+
+Model failures cascade into planning failures because high latency and error rates make simulation unreliable for decision-making.
 
 ### `dream:20260913070016:5:fefec9`
 *13.09. 07:00 UTC · Quelle: dream*

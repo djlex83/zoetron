@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,21 +16,21 @@
 - Deploy provider_aware_router: wraps all model calls, enforces rate limits, fans out concurrent requests to top *(hatte die Idee 4×)*
 - Create causal_chain_pruner: before pruning, extracts decision→action→outcome triples into immutable causal_log *(hatte die Idee 4×)*
 - Schedule swarm_refresh_cycle: weekly cron that re-runs critic/analyst roles on recent experience, merges new i *(hatte die Idee 4×)*
-- Extend reflex schema: require effectiveness_metric (float, unit, deadline_ts) at registration; block converged *(hatte die Idee 3×)*
-- Harden hand_action entrypoint: resolve input path via ZOETRON_DATA then sys.argv[1], reject relative paths, an *(hatte die Idee 3×)*
 - Add a configurable circuit breaker that temporarily blocks a model after N consecutive failures. *(hatte die Idee 3×)*
 - Prefer dots-studio/dots-3-note-preview:free as the default model when others are unavailable. *(hatte die Idee 3×)*
+- For hand_action calls, capture both stdout and stderr and retry with modified parameters on non-zero exit. *(hatte die Idee 3×)*
+- Deploy a singleton OpenRouter token-bucket (20 req/min, burst 5) that all model callers must acquire before di *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System stress goes unmanaged because no controller throttles task spawns or switches inference modes based on metabolism.
+- Pruning destroys debuggability when causal chains (goal→action→outcome) aren't preserved before leaf removal.
+- Swarm knowledge decays within days without a scheduled critic/analyst refresh cycle tied to prediction error thresholds.
+- Skill proposals accumulate without execution because no automated pipeline validates, deploys, and registers them.
+- Model failures cascade into planning failures because high latency and error rates make simulation unreliable for decision-making.
 - Stress signals (metabolism_check) trigger only reactive throttling; no proactive load-shedding or local-fallback policy exists.
 - Pruning discards causal chains (decision→action→outcome) while keeping leaf events, breaking post-hoc failure analysis.
 - Swarm insights expire silently after ~30 days without a reinforcement mechanism, causing repeated blind-spot rediscovery.
@@ -51,11 +56,6 @@
 - Swarm knowledge becomes stale without regular critic and analyst reviews, reducing its usefulness.
 - The accumulation of untested skill proposals indicates a need for automated validation before implementation.
 - Frequent model failures caused by upstream overload and rate limits show that adaptive request routing is essential.
-- Self-correction scripts and automated reflex tools often fail silently or crash with tracebacks, showing that autonomous maintenance loops require bet
-- Excessive response latencies (up to 191s) and token lengths (over 6700 tokens) cause system stalls, indicating a critical need for hard timeouts and o
-- Large discrepancies between predicted and actual outcomes (e.g., predicting 5 successes but observing 0) show that raw model confidence is highly bias
-- Tool execution and hand actions frequently fail due to file path resolution errors, timeouts, or runtime tracebacks, highlighting the need for strict 
-- Model API rate limiting (429) and server overloads (502) are primary drivers of task failure, requiring robust retry logic with backoff and fallback r
 
 ---
 
