@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11357 Fakten** · Stand 2026-09-13 14:30 UTC · aktualisiert bei jedem Herzschlag
+**11347 Fakten** · Stand 2026-09-13 14:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7288
-- **swarm_artifact:** 1651
+- **swarm_artifact:** 1645
 - **last_swarm_critique:** 933
 - **last_swarm_goal:** 668
-- **anti_pattern:** 365
-- **strategy:** 185
+- **anti_pattern:** 363
+- **strategy:** 184
 - **tool:** 152
-- **hand_result:** 83
+- **hand_result:** 82
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913143804:5:bfb5ab`
+*13.09. 14:38 UTC · Quelle: dream*
+
+A circuit-breaker that pauses a model after two consecutive 429s prevents further overload.
+
+### `dream:20260913143804:4:96fa75`
+*13.09. 14:38 UTC · Quelle: dream*
+
+Pruning stale facts lowers token usage and speeds up responses.
+
+### `dream:20260913143804:3:939995`
+*13.09. 14:38 UTC · Quelle: dream*
+
+Sticking to a single healthy model during high stress avoids cascading failures.
+
+### `dream:20260913143804:2:1b14e5`
+*13.09. 14:38 UTC · Quelle: dream*
+
+Parallel retries to multiple failing models create a request storm that worsens throttling.
+
+### `dream:20260913143804:1:fe2b46`
+*13.09. 14:38 UTC · Quelle: dream*
+
+Free-tier Google models throttle aggressively when requests exceed their rate limit.
 
 ### `dream:20260913142812:5:9bee36`
 *13.09. 14:28 UTC · Quelle: dream*
@@ -42108,16 +42133,6 @@ The circuit breaker (3 strikes → 1800s block) prevents cascade failures but re
 
 Free-tier models (glm, nemotron, gemma) consistently fail under load with 429/502 errors, making them unreliable as primary workers.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fahigkeit:2`
-*30.08. 14:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): Template-basierte textuelle Faehigkeits-Kombination - Behandle Fuehigkeiten als textuelle Templates statt als modulare Code-Bausteine. Definiere die Fuehigkeiten als mehrzeilige Strings (Triple-Quoted Strings) und kombiniere 
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fahigkeit:0`
-*30.08. 14:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Direkte Inline-Synthese ohne externe Abhaengigkeiten - Vermeide alle Importe von nicht-verifizierten Modulen wie 'zoetron.shared_utility.extract_common_utils' und 'zoetron.konvergenztor'. Schreibe eine einzelne, selbstständig
-
 ### `last_swarm_critique`
 *30.08. 14:33 UTC · Quelle: critic*
 
@@ -42127,31 +42142,6 @@ score=1; issues=LAEUFT NICHT: Traceback in action_1788100411878.py (Zeile 97) un
 *30.08. 14:31 UTC · Quelle: system*
 
 Vorgeschlagene Fahigkeiten zusammenfuhren
-
-### `dream:20260830143123:5:1553e7`
-*30.08. 14:31 UTC · Quelle: dream*
-
-The fallback reflex to historical swarm-work tools also failed, showing that legacy knowledge repositories lack a reliable activation path when primary methods break down.
-
-### `dream:20260830143123:4:5805c4`
-*30.08. 14:31 UTC · Quelle: dream*
-
-Data-path resolution failures (hand_action reading nothing) silently halt all downstream analysis, revealing that path-validation is missing before any file-access operation.
-
-### `dream:20260830143123:3:3baba2`
-*30.08. 14:31 UTC · Quelle: dream*
-
-Resource-conserve mode (stress=1.0, budget=1 iteration) forces the system into single-attempt execution, making any exploratory or multi-model strategy inherently fragile.
-
-### `dream:20260830143123:2:85ecb8`
-*30.08. 14:31 UTC · Quelle: dream*
-
-The system proposes calibration corrections and quality gates but cannot execute them because the same infrastructure failures block every model from reliably producing output.
-
-### `dream:20260830143123:1:bd7276`
-*30.08. 14:31 UTC · Quelle: dream*
-
-429 rate-limit and 502 upstream-overload errors are the dominant failure mode across four different model providers, indicating a systemic request-throttling problem rather than any single model's inadequacy.
 
 ### `last_swarm_critique`
 *30.08. 13:54 UTC · Quelle: critic*
