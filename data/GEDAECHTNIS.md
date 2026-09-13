@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11347 Fakten** · Stand 2026-09-13 22:03 UTC · aktualisiert bei jedem Herzschlag
+**11347 Fakten** · Stand 2026-09-13 22:13 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7288
 - **swarm_artifact:** 1635
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913221128:5:a60f6a`
+*13.09. 22:11 UTC · Quelle: dream*
+
+Pruning removes noise but also discards failed-model signatures needed for predictive routing.
+
+### `dream:20260913221128:4:ee59b1`
+*13.09. 22:11 UTC · Quelle: dream*
+
+Reflex tools (connect-dreams, refresh-swarm) succeed when scoped to single concrete actions but lack composition.
+
+### `dream:20260913221128:3:1a0c4e`
+*13.09. 22:11 UTC · Quelle: dream*
+
+Swarm knowledge decays within days without a scheduled refresh reflex, leaving drive goals stale.
+
+### `dream:20260913221128:2:6fa929`
+*13.09. 22:11 UTC · Quelle: dream*
+
+Skill proposals accumulate (60+) but rarely become executable because no pipeline validates, prioritizes, or deploys them.
+
+### `dream:20260913221128:1:2e5f0b`
+*13.09. 22:11 UTC · Quelle: dream*
+
+Model 429 errors cascade into repeated failures because no automated routing or backoff exists across free-tier endpoints.
 
 ### `dream:20260913220108:5:372321`
 *13.09. 22:01 UTC · Quelle: dream*
@@ -42087,31 +42112,6 @@ Filesystem actions silently fail when inputs aren't normalized against ZOETRON_D
 *30.08. 22:13 UTC · Quelle: dream*
 
 Free-tier model APIs exhibit correlated 429/502 failures that cascade into task abandonment unless a router tracks per-model health and auto-demotes flaky endpoints.
-
-### `dream:20260830220637:5:5c56dc`
-*30.08. 22:06 UTC · Quelle: dream*
-
-poolside/laguna-s-2.1:free succeeds repeatedly at ~8s latency and high token throughput, marking it as the only stable free model.
-
-### `dream:20260830220637:4:9717b2`
-*30.08. 22:06 UTC · Quelle: dream*
-
-Swarm execution stalls at 2 cycles with fixed 1-planner/3-builder/1-critic ratio and no convergence, suggesting insufficient iteration depth.
-
-### `dream:20260830220637:3:4a82d2`
-*30.08. 22:06 UTC · Quelle: dream*
-
-Calibration consistently underestimates effort by ~33% (predicted 4 vs actual 6), indicating a systematic planning bias.
-
-### `dream:20260830220637:2:fd14a2`
-*30.08. 22:06 UTC · Quelle: dream*
-
-Evolutionary repair jumps scores from 6 to 9 when the critic pinpoints "no measurable output" – concrete validation gates enable large gains.
-
-### `dream:20260830220637:1:c90b5c`
-*30.08. 22:06 UTC · Quelle: dream*
-
-Free-tier models (GLM, Gemma, Nemotron) fail predominantly via 429 rate limits and 502 upstream overloads, making them unreliable as primary workers.
 
 ### `last_swarm_critique`
 *30.08. 21:41 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,11 +27,11 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes noise but also discards failed-model signatures needed for predictive routing.
+- Reflex tools (connect-dreams, refresh-swarm) succeed when scoped to single concrete actions but lack composition.
+- Swarm knowledge decays within days without a scheduled refresh reflex, leaving drive goals stale.
+- Skill proposals accumulate (60+) but rarely become executable because no pipeline validates, prioritizes, or deploys them.
+- Model 429 errors cascade into repeated failures because no automated routing or backoff exists across free-tier endpoints.
 - Drive goals duplicate (model errors, stale swarm) across cycles, revealing that root-cause fixes (registry, scheduler) are proposed but not yet deploy
 - Pruning removes 17–23 events per cycle while facts drop only 5–10, suggesting event-store bloat outpaces semantic decay and needs separate TTL policie
 - Reflex tools for stale-knowledge refresh converge in one shot, proving the pattern generalizes across domains when validation criteria are explicit.
@@ -51,11 +56,6 @@
 - Periodic pruning wastes cycles (37 events pruned first run, only 17 second) while write-coupled delta triggers would prune only when necessary.
 - Swarm tasks converge via reflex tools (exit=0, converged=true) but not via planner/builder/critic cycles, indicating reflexes encode hardened procedur
 - Model provider failures cascade (502 overload → 429 rate limits) requiring automatic fallback to healthy providers like dots-studio within 2s SLA.
-- Provider rate limits (429 on Gemma) and outages (502 on Nemotron) demand a circuit-breaker with sub-2s failover.
-- Calibration error of 1 point (predicted 5 vs actual 4) suggests reward model overestimates artifact quality.
-- Simulation-revision loops (3-5 revisions per cycle) consume excessive tokens without guaranteeing convergence.
-- Swarm convergence stalls at score 4/10 despite evolution cycles, indicating critic feedback isn't translating into builder fixes.
-- Nemotron-3-ultra exhibits 502 upstream errors under load, requiring automatic fallback to faster models like dots-studio (16s vs 50s+).
 
 ---
 

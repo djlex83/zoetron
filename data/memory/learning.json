@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 22:01:59",
+ "stand": "2026-09-13 22:12:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -90,6 +90,12 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 3,
    "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -190,12 +196,6 @@
   },
   {
    "tool": "modellfehler-verstehen-und-verringern.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -381,7 +381,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.738,
+ "haende_quote": 0.741,
  "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 32,
