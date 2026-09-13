@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11395 Fakten** · Stand 2026-09-13 01:48 UTC · aktualisiert bei jedem Herzschlag
+**11412 Fakten** · Stand 2026-09-13 02:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7336
-- **swarm_artifact:** 1655
-- **last_swarm_critique:** 922
-- **last_swarm_goal:** 657
-- **anti_pattern:** 365
-- **strategy:** 185
-- **tool:** 154
+- **dream:** 7341
+- **swarm_artifact:** 1661
+- **last_swarm_critique:** 923
+- **last_swarm_goal:** 658
+- **anti_pattern:** 367
+- **strategy:** 186
+- **tool:** 155
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-in-echte-skil`
+*13.09. 02:05 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten in echte Skills umwandeln'. Datei: data/tools/vorgeschlagene-fähigkeiten-in-echte-skil.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:2`
+*13.09. 02:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.7): Multi-agent collaborative skill construction - Deploy a team of specialized agents (analyzer, coder, tester) that iteratively propose, critique and refine skill implementations, using a shared memory of past attempts and a 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:1`
+*13.09. 02:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.7): Formal specification and synthesis - Define each capability as a formal contract with preconditions, postconditions and invariants in a language like Z or TLA+, then employ a program synthesizer such as Sketch or Rosette to
+
+### `last_swarm_critique`
+*13.09. 02:03 UTC · Quelle: critic*
+
+score=6; issues=Heuristische Bewertung in evaluate_capability_quality ist schwach (nur 5 Keyword-Checks a 0.2 Punkte), kein echtes Benchmarking; Registrierung generiert nur Stub-Wrapper mit 'TODO: Implement actual skill logic' - keine echte Umsetzung der Fähig
+
+### `last_swarm_goal`
+*13.09. 01:56 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten in echte Skills umwandeln
+
+### `dream:20260913015621:5:f69539`
+*13.09. 01:56 UTC · Quelle: dream*
+
+Effort estimation lacks calibration; a proposal suggests 3.5× multiplier, confirming systematic underestimation of task duration.
+
+### `dream:20260913015621:4:c297a6`
+*13.09. 01:56 UTC · Quelle: dream*
+
+Pruning removes events aggressively (29 then 17) while a concurrent proposal warns causal chains from swarm_started to dream_finished are being lost.
+
+### `dream:20260913015621:3:fcaa4e`
+*13.09. 01:56 UTC · Quelle: dream*
+
+Swarm knowledge staleness requires explicit reflex intervention ('veraltetes-wissen-erneuern'), indicating no automatic freshness enforcement.
+
+### `dream:20260913015621:2:8f691d`
+*13.09. 01:56 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this log) yet the 'implement proposed skills' drive goal persists, revealing a proposal-to-deployment gap.
+
+### `dream:20260913015621:1:cef6e5`
+*13.09. 01:56 UTC · Quelle: dream*
+
+Model failures trigger repeated drive goals but no systematic routing or fallback exists despite variable latency (11.8–28.9s) and single-provider dependency.
 
 ### `dream:20260913014602:5:7b5607`
 *13.09. 01:46 UTC · Quelle: dream*

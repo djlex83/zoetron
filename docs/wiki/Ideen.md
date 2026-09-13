@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 01:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 02:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 11×)*
+- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 10×)*
 - Replace fixed 20s hand-action timeout with adaptive deadline: base 20s + 2s per 1000 tokens_in + 5s per extern *(hatte die Idee 5×)*
 - Create a skill promotion pipeline: syntax check → import test → sandbox dry-run → benchmark against baseline;  *(hatte die Idee 5×)*
 - Enforce swarm refresh quality gate: require ≥2 critics, minimum score 8, critic sign-off, and TTL-based stalen *(hatte die Idee 4×)*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verringern *(wieder aufgegriffen: 3×)*
+- Schwarm-Daten aktualisieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Swarm-Ziele erneuern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Effort estimation lacks calibration; a proposal suggests 3.5× multiplier, confirming systematic underestimation of task duration.
+- Pruning removes events aggressively (29 then 17) while a concurrent proposal warns causal chains from swarm_started to dream_finished are being lost.
+- Swarm knowledge staleness requires explicit reflex intervention ('veraltetes-wissen-erneuern'), indicating no automatic freshness enforcement.
+- Skill proposals accumulate (10+ in this log) yet the 'implement proposed skills' drive goal persists, revealing a proposal-to-deployment gap.
+- Model failures trigger repeated drive goals but no systematic routing or fallback exists despite variable latency (11.8–28.9s) and single-provider dep
 - Repeated drive goals emphasize reducing model errors and updating stale swarm knowledge.
 - Hand action durations vary from 0.28s to 0.98s, indicating need for retry with backoff.
 - Reflex simulations converge but produce no score, requiring explicit evaluation metrics.
@@ -51,11 +56,6 @@
 - Tool and reflex failures stem from hard-coded relative paths that ignore ZOETRON_DATA, making execution environment-dependent.
 - Proposed skills accumulate but never activate because no automated promotion pipeline validates and deploys them.
 - Model reliability collapses without a token-bucket rate limiter and health-aware fallback routing, as evidenced by repeated 429/502 errors across thre
-- Swarm-knowledge revival via reflex works but requires explicit trigger; automate stale-detection and re-indexing.
-- A singleton OpenRouter token-bucket (20 req/min, burst 5) prevents cascade 429s across all callers.
-- Proposed skills accumulate but aren't deployed; a promotion pipeline from proposal to production is missing.
-- Latency variance across models (19–112 s) demands per-model SLO tracking and automatic fallback.
-- Model endpoint failures (502/429) are the primary reliability bottleneck, not hand actions or internal logic.
 
 ---
 
