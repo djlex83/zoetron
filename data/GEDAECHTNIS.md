@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11353 Fakten** · Stand 2026-09-13 06:52 UTC · aktualisiert bei jedem Herzschlag
+**11347 Fakten** · Stand 2026-09-13 07:03 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7271
-- **swarm_artifact:** 1661
+- **swarm_artifact:** 1659
 - **last_swarm_critique:** 927
 - **last_swarm_goal:** 662
-- **anti_pattern:** 369
-- **strategy:** 187
-- **tool:** 155
+- **anti_pattern:** 367
+- **strategy:** 186
+- **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913070016:5:fefec9`
+*13.09. 07:00 UTC · Quelle: dream*
+
+Stress signals (metabolism_check) trigger only reactive throttling; no proactive load-shedding or local-fallback policy exists.
+
+### `dream:20260913070016:4:da84c4`
+*13.09. 07:00 UTC · Quelle: dream*
+
+Pruning discards causal chains (decision→action→outcome) while keeping leaf events, breaking post-hoc failure analysis.
+
+### `dream:20260913070016:3:b6a288`
+*13.09. 07:00 UTC · Quelle: dream*
+
+Swarm insights expire silently after ~30 days without a reinforcement mechanism, causing repeated blind-spot rediscovery.
+
+### `dream:20260913070016:2:2c8d4b`
+*13.09. 07:00 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an automated implementation→test→register pipeline, leaving >80% unvalidated.
+
+### `dream:20260913070016:1:6057c4`
+*13.09. 07:00 UTC · Quelle: dream*
+
+Model provider failures (502/429) cascade across all free tiers simultaneously, making single-provider routing a systemic risk.
 
 ### `dream:20260913065033:5:611cc9`
 *13.09. 06:50 UTC · Quelle: dream*
@@ -42113,21 +42138,6 @@ Reflex-based tool execution consistently converges and outperforms model-depende
 
 External model APIs fail predictably with 429 rate limits, and working fallback models exist but lack automated circuit-breaking to prevent cascading failures.
 
-### `tool:modellfehler-reduzieren-fuer-zuverlaessi`
-*30.08. 06:56 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler reduzieren fuer Zuverlaessigkeit'. Datei: data/tools/modellfehler-reduzieren-fuer-zuverlaessi.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler reduzieren :2`
-*30.08. 06:56 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 4, 7]): Event-Driven Monitoring mit Entkoppelten Datenqualitaets-Gates - Zerlege das monolithische Validierungs- und Drift-System in entkoppelte Microservice-artige Gates: (1) Ein DataQualityGate-Service prüft每 Feld einzeln v
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler reduzieren :0`
-*30.08. 06:56 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 9, 8]): Schema-First Validierung mit Feld-Level-Mustern - Ersetze die globale required_fields-Prüfung durch eine feldspezifische Schema-Validierung pro Zeile: Für jedes Feld eines separaten Feld-Schemas prüfe einzeln, ob der 
-
 ### `last_swarm_critique`
 *30.08. 06:55 UTC · Quelle: critic*
 
@@ -42137,31 +42147,6 @@ score=6; issues=Datenqualitaetsprüfung prüft nur, ob ALLE required_fields fehl
 *30.08. 06:52 UTC · Quelle: system*
 
 Modellfehler reduzieren fuer Zuverlaessigkeit
-
-### `dream:20260830065119:5:e3d77e`
-*30.08. 06:51 UTC · Quelle: dream*
-
-Proposal-to-skill conversion is stalled: 10+ proposals exist but none have been promoted to executable, tested skills.
-
-### `dream:20260830065119:4:4d1a8f`
-*30.08. 06:51 UTC · Quelle: dream*
-
-Self-diagnosis shows zero organ errors, yet model failures persist – indicating the monitoring layer misses external API degradation.
-
-### `dream:20260830065119:3:1bed76`
-*30.08. 06:51 UTC · Quelle: dream*
-
-Stale drive goals (market analysis) block new decisions until explicitly closed or completed via reflex actions.
-
-### `dream:20260830065119:2:61b91e`
-*30.08. 06:51 UTC · Quelle: dream*
-
-Multiple independent proposals converge on model routing, output validation, and pre-execution checks as critical missing infrastructure.
-
-### `dream:20260830065119:1:a78318`
-*30.08. 06:51 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without automated fallback.
 
 ### `last_swarm_critique`
 *30.08. 05:31 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 06:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress signals (metabolism_check) trigger only reactive throttling; no proactive load-shedding or local-fallback policy exists.
+- Pruning discards causal chains (decision→action→outcome) while keeping leaf events, breaking post-hoc failure analysis.
+- Swarm insights expire silently after ~30 days without a reinforcement mechanism, causing repeated blind-spot rediscovery.
+- Skill proposals accumulate but lack an automated implementation→test→register pipeline, leaving >80% unvalidated.
+- Model provider failures (502/429) cascade across all free tiers simultaneously, making single-provider routing a systemic risk.
 - Combining multiple model providers with real-time latency and cost metrics improves overall reliability.
 - Pruning facts without assessing downstream dependency can discard critical information.
 - Swarm knowledge becomes stale without regular critic and analyst reviews, reducing its usefulness.
@@ -51,11 +56,6 @@
 - Large discrepancies between predicted and actual outcomes (e.g., predicting 5 successes but observing 0) show that raw model confidence is highly bias
 - Tool execution and hand actions frequently fail due to file path resolution errors, timeouts, or runtime tracebacks, highlighting the need for strict 
 - Model API rate limiting (429) and server overloads (502) are primary drivers of task failure, requiring robust retry logic with backoff and fallback r
-- Pruning discards causal chains (goal→action→outcome), making post-hoc debugging of failed episodes impossible.
-- Swarm goals and critiques go stale without a time- or error-triggered refresh cadence.
-- High metabolic stress (0.73) triggers conserve mode that caps tasks/iterations, stalling error-recovery loops.
-- Hand actions fail when relative paths are used instead of absolute data paths from environment variables.
-- Rate limiting (429 errors) on free-tier models is the dominant failure mode, requiring provider-aware routing with circuit breakers.
 
 ---
 
