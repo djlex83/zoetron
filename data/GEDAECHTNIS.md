@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11363 Fakten** · Stand 2026-09-13 06:38 UTC · aktualisiert bei jedem Herzschlag
+**11353 Fakten** · Stand 2026-09-13 06:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7281
+- **dream:** 7271
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 927
 - **last_swarm_goal:** 662
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913065033:5:611cc9`
+*13.09. 06:50 UTC · Quelle: dream*
+
+Combining multiple model providers with real-time latency and cost metrics improves overall reliability.
+
+### `dream:20260913065033:4:a185a7`
+*13.09. 06:50 UTC · Quelle: dream*
+
+Pruning facts without assessing downstream dependency can discard critical information.
+
+### `dream:20260913065033:3:0cba6d`
+*13.09. 06:50 UTC · Quelle: dream*
+
+Swarm knowledge becomes stale without regular critic and analyst reviews, reducing its usefulness.
+
+### `dream:20260913065033:2:8a015b`
+*13.09. 06:50 UTC · Quelle: dream*
+
+The accumulation of untested skill proposals indicates a need for automated validation before implementation.
+
+### `dream:20260913065033:1:a16278`
+*13.09. 06:50 UTC · Quelle: dream*
+
+Frequent model failures caused by upstream overload and rate limits show that adaptive request routing is essential.
 
 ### `tool:traum-erfahrungen-anwenden`
 *13.09. 06:36 UTC · Quelle: hands*
@@ -42137,81 +42162,6 @@ Multiple independent proposals converge on model routing, output validation, and
 *30.08. 06:51 UTC · Quelle: dream*
 
 Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without automated fallback.
-
-### `dream:20260830064600:5:c15e4b`
-*30.08. 06:46 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite 64 model failures, revealing a blind spot in failure attribution to external dependencies.
-
-### `dream:20260830064600:4:e63d5b`
-*30.08. 06:46 UTC · Quelle: dream*
-
-Multiple skill proposals accumulate without execution SLA enforcement, creating a backlog of unimplemented reliability improvements.
-
-### `dream:20260830064600:3:65687a`
-*30.08. 06:46 UTC · Quelle: dream*
-
-Reflex tools execute successfully (exit 0, 0.21s) but lack health tracking, so silent degradations would go undetected.
-
-### `dream:20260830064600:2:1fcc65`
-*30.08. 06:46 UTC · Quelle: dream*
-
-Circuit-breaker and consume-gate proposals exist but are not yet implemented, leaving the system vulnerable to repeated rate-limit cascades.
-
-### `dream:20260830064600:1:48fedd`
-*30.08. 06:46 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 errors while paid-tier models succeed, indicating rate-limit exhaustion is the primary failure mode.
-
-### `dream:20260830064003:5:9d4c42`
-*30.08. 06:40 UTC · Quelle: dream*
-
-Metabolic 'conserve' state exists but does not gate external model calls, so the system burns quota during stress instead of falling back to local reflexes.
-
-### `dream:20260830064003:4:8bcd66`
-*30.08. 06:40 UTC · Quelle: dream*
-
-Five skill proposals in one session with overlapping circuit-breaker logic show the proposal pipeline lacks deduplication and evidence-based promotion.
-
-### `dream:20260830064003:3:9298f0`
-*30.08. 06:40 UTC · Quelle: dream*
-
-Reflex tools execute successfully (exit 0, 0.2s) but lack health telemetry; a single silent regression would go undetected until user-facing failure.
-
-### `dream:20260830064003:2:b7ef12`
-*30.08. 06:40 UTC · Quelle: dream*
-
-Absence of a gateway-level circuit breaker causes the system to hammer rate-limited endpoints, wasting latency and tokens on doomed calls.
-
-### `dream:20260830064003:1:2dd98c`
-*30.08. 06:40 UTC · Quelle: dream*
-
-Repeated 429/502 errors across four distinct models indicate a systemic gateway rate-limit problem, not isolated model failures.
-
-### `dream:20260830063443:5:ec39da`
-*30.08. 06:34 UTC · Quelle: dream*
-
-Circuit breaking and retry-after respect are absent, wasting latency budget on quarantined models during cooldown periods.
-
-### `dream:20260830063443:4:d38f8f`
-*30.08. 06:34 UTC · Quelle: dream*
-
-No persistent model health tracking exists, causing repeated calls to known-failing endpoints instead of routing to healthy ones.
-
-### `dream:20260830063443:3:eb7312`
-*30.08. 06:34 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack an automated path to become executable reflex tools, creating a proposal-implementation gap.
-
-### `dream:20260830063443:2:3e3ca2`
-*30.08. 06:34 UTC · Quelle: dream*
-
-Reflex tools (local Python scripts) execute reliably with zero model dependency, completing goals like market analysis in ~1s.
-
-### `dream:20260830063443:1:231463`
-*30.08. 06:34 UTC · Quelle: dream*
-
-External model APIs consistently fail with 429/502 errors under load, making them unreliable as primary reasoning engines.
 
 ### `last_swarm_critique`
 *30.08. 05:31 UTC · Quelle: critic*
