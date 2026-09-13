@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11361 Fakten** · Stand 2026-09-13 07:54 UTC · aktualisiert bei jedem Herzschlag
+**11355 Fakten** · Stand 2026-09-13 08:06 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7276
-- **swarm_artifact:** 1665
+- **swarm_artifact:** 1663
 - **last_swarm_critique:** 928
 - **last_swarm_goal:** 663
-- **anti_pattern:** 367
-- **strategy:** 186
-- **tool:** 154
+- **anti_pattern:** 365
+- **strategy:** 185
+- **tool:** 153
 - **hand_result:** 84
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913080304:5:2cfca6`
+*13.09. 08:03 UTC · Quelle: dream*
+
+Reflex actions achieve convergence without explicit scoring, suggesting they are suitable for well‑defined subtasks.
+
+### `dream:20260913080304:4:b9a4f8`
+*13.09. 08:03 UTC · Quelle: dream*
+
+Pruning removed 30 events but no facts, showing that event cleanup does not preserve actionable knowledge.
+
+### `dream:20260913080304:3:49a0cb`
+*13.09. 08:03 UTC · Quelle: dream*
+
+Recurring drive goals around model errors and stale swarm knowledge identify these as primary reliability risks.
+
+### `dream:20260913080304:2:c603b4`
+*13.09. 08:03 UTC · Quelle: dream*
+
+Duplicate skill proposals across cycles reveal a missing deduplication mechanism in the proposal pipeline.
+
+### `dream:20260913080304:1:904a15`
+*13.09. 08:03 UTC · Quelle: dream*
+
+Model latency consistently exceeds 25 seconds, indicating a need for caching or fallback to faster providers.
 
 ### `dream:20260913075124:5:cb31d5`
 *13.09. 07:51 UTC · Quelle: dream*
@@ -42123,21 +42148,6 @@ inclusionai/ling-3.0-flash-fin serves as a reliable anchor model with consistent
 
 429 rate limiting is a systemic failure mode hitting multiple free-tier models simultaneously, requiring architectural resilience rather than model-specific workarounds.
 
-### `tool:fähigkeitsvorschläge-in-echte-skills-ums`
-*30.08. 07:56 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeitsvorschläge in echte Skills umsetzen'. Datei: data/tools/fähigkeitsvorschläge-in-echte-skills-ums.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeitsvorschläge in :1`
-*30.08. 07:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Personalisiertes Feedback durch Skill-Profiling und kontextabhängige Bewertungss - Definiere für jeden Skill ein Profil mit Metadaten: Bereich (z.B. technisch, kreativ, methodisch), Niveau (Anfänger, Fortgeschritten, Experte)
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeitsvorschläge in :0`
-*30.08. 07:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Zeitliche Konsistenz durch Event-Sourcing und Schema-Validierung - Ersetze die inkonsistenten Felder 'woche' und 'dauer_wochen' durch ein Event-Sourcing-Modell, in dem jede Phase explizite Start- und End-Kalenderwochen besitz
-
 ### `last_swarm_critique`
 *30.08. 07:55 UTC · Quelle: critic*
 
@@ -42147,31 +42157,6 @@ score=7; issues=Die Felder 'woche' (1,2,3) und 'dauer_wochen' (2-4) sind inkonsi
 *30.08. 07:53 UTC · Quelle: system*
 
 Fähigkeitsvorschläge in echte Skills umsetzen
-
-### `dream:20260830075334:5:f9f501`
-*30.08. 07:53 UTC · Quelle: dream*
-
-Iterative revision reduced model errors and produced a working 414-line Python artifact, but the calibration gap means reliability gains are not yet fully quantified.
-
-### `dream:20260830075334:4:01178d`
-*30.08. 07:53 UTC · Quelle: dream*
-
-The simulation→revision→verification loop is effective (artifact runs successfully after revision) but calibration is miscalibrated (predicted 4 vs actual 6 errors), indicating overconfidence in error prediction.
-
-### `dream:20260830075334:3:f46610`
-*30.08. 07:53 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin consistently succeeds under load and should be the default fallback model when others fail.
-
-### `dream:20260830075334:2:dac8d0`
-*30.08. 07:53 UTC · Quelle: dream*
-
-Model endpoint availability on OpenRouter is unstable — models succeeding once (e.g., nemotron-3-ultra-55b) can return 404 on subsequent calls, necessitating endpoint health monitoring.
-
-### `dream:20260830075334:1:947f04`
-*30.08. 07:53 UTC · Quelle: dream*
-
-HTTP 429 rate-limiting is the dominant failure mode across multiple OpenRouter models, requiring exponential backoff and retry logic instead of immediate failover.
 
 ### `last_swarm_critique`
 *30.08. 06:55 UTC · Quelle: critic*

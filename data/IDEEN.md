@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 08:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
@@ -35,12 +35,17 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
+- Simulationen öfter anwenden *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions achieve convergence without explicit scoring, suggesting they are suitable for well‑defined subtasks.
+- Pruning removed 30 events but no facts, showing that event cleanup does not preserve actionable knowledge.
+- Recurring drive goals around model errors and stale swarm knowledge identify these as primary reliability risks.
+- Duplicate skill proposals across cycles reveal a missing deduplication mechanism in the proposal pipeline.
+- Model latency consistently exceeds 25 seconds, indicating a need for caching or fallback to faster providers.
 - Latency variance across providers (9.7s vs 25.4s for same model) exceeds acceptable bounds for real-time control loops.
 - Swarm knowledge decays silently; without scheduled re-evaluation, insights older than 30 days become liability rather than asset.
 - Pruning events without preserving causal chains (decision→action→outcome) destroys the evidence needed for future credit assignment.
@@ -51,11 +56,6 @@
 - The calibration over‑prediction by 3 points suggests that confidence scores should be scaled down or recalibrated after each run.
 - Nvidia's 502 upstream overload errors indicate the need for exponential backoff and fallback to a secondary provider.
 - Repeated 429 errors from Google's free models reveal rate‑limit saturation, requiring request throttling and alternate routing.
-- Evolution runs reliably improve artifact scores from 4 to 9, indicating that iterative refinement should be a mandatory post-generation step.
-- Calibration consistently overestimates quality (predicted 7 vs actual 4, error 3), so predicted scores need a systematic downward correction.
-- Hand actions fail when using relative paths; all file operations must resolve inputs via ZOETRON_DATA and sys.argv[1] to absolute paths first.
-- Fallback models gemma-4-31b and gemma-4-26b hit 429 rate limits within a single session, requiring rate-limit-aware routing.
-- Primary model nemotron-3-ultra fails frequently with 502 upstream errors, making it unreliable as a default choice.
 
 ---
 
