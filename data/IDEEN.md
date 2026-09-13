@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 18:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 18:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,9 +31,9 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 20 facts and 44 events demonstrates that memory cleanup effectively reduces context bloat.
+- The swarm converged in a single cycle with a score of 8, showing that simple goals can be solved efficiently.
+- Hand action failures are transient and resolve on retry, so retry logic improves overall reliability.
+- The dots‑studio model succeeds with high latency but no errors, making it a reliable fallback when other models fail.
+- Free Google Gemma models frequently return HTTP 429 errors, indicating they are rate‑limited and should be avoided for critical tasks.
 - The simulation returned "revise" with five risks, signaling that the current goal is too complex for the remaining budget.
 - The reflex to update swarm goals failed because it depends on external model calls that are rate‑limited.
 - The hand_action failure occurred while the system was in a high‑stress conserve state, indicating reduced action reliability under budget constraints.
@@ -51,11 +56,6 @@
 - Semantic clustering of skill proposals reduces redundancy and highlights high‑priority suggestions.
 - Tracking per‑model error rates and auto‑degrading unhealthy models improves routing to healthier alternatives.
 - Repeated 429 errors on free Google models indicate that rate limiting is a primary failure mode requiring a centralized backoff handler.
-- Pruning old facts and events improves efficiency but must be balanced against retaining useful context.
-- Stale swarm data and the need to combine distant dream events emphasize the importance of periodic data refresh and cross-event integration.
-- Consecutive model failures trigger drive goals to reduce errors, creating a feedback loop between failures and goal generation.
-- dots-studio/dots-3-note-preview:free consistently succeeds with low latency, suggesting it should be the preferred model for similar tasks.
-- The repeated 429 Too Many Requests errors from google/gemma models indicate rate limiting that requires fallback handling.
 
 ---
 

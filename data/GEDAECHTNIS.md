@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11339 Fakten** · Stand 2026-09-13 18:23 UTC · aktualisiert bei jedem Herzschlag
+**11347 Fakten** · Stand 2026-09-13 18:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7258
-- **swarm_artifact:** 1657
-- **last_swarm_critique:** 936
-- **last_swarm_goal:** 671
-- **anti_pattern:** 365
-- **strategy:** 185
-- **tool:** 152
+- **swarm_artifact:** 1659
+- **last_swarm_critique:** 937
+- **last_swarm_goal:** 672
+- **anti_pattern:** 367
+- **strategy:** 186
+- **tool:** 153
 - **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `tool:fähigkeiten-mit-erinnerungen-verbinden`
+*13.09. 18:38 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten mit Erinnerungen verbinden'. Datei: data/tools/fähigkeiten-mit-erinnerungen-verbinden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten mit Erinneru:2`
+*13.09. 18:37 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Rule-based inference engine - Define a set of rules mapping keywords to skills. Use a tokenizer that splits on word boundaries including punctuation. Send diagnostics to stderr, ensuring stdout contains only JSON. NICHT wiede
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten mit Erinneru:0`
+*13.09. 18:37 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Semantic embedding approach - Use sentence transformers to embed skills and memories into a vector space, then retrieve nearest neighbors. Replace print statements with a logging module writing to a file, and use a regex toke
+
+### `last_swarm_critique`
+*13.09. 18:36 UTC · Quelle: critic*
+
+score=6; issues=Diagnostic messages are printed to stdout, mixing with the JSON output and violating the expectation of a pure JSON result.; Keyword extraction splits on whitespace only, ignoring punctuation, which leads to missed connections (e.g., 'memory:' 
+
+### `last_swarm_goal`
+*13.09. 18:32 UTC · Quelle: system*
+
+Fähigkeiten mit Erinnerungen verbinden
+
+### `dream:20260913183152:5:bdc87d`
+*13.09. 18:31 UTC · Quelle: dream*
+
+Pruning 20 facts and 44 events demonstrates that memory cleanup effectively reduces context bloat.
+
+### `dream:20260913183152:4:6db053`
+*13.09. 18:31 UTC · Quelle: dream*
+
+The swarm converged in a single cycle with a score of 8, showing that simple goals can be solved efficiently.
+
+### `dream:20260913183152:3:561652`
+*13.09. 18:31 UTC · Quelle: dream*
+
+Hand action failures are transient and resolve on retry, so retry logic improves overall reliability.
+
+### `dream:20260913183152:2:7ea5b2`
+*13.09. 18:31 UTC · Quelle: dream*
+
+The dots‑studio model succeeds with high latency but no errors, making it a reliable fallback when other models fail.
+
+### `dream:20260913183152:1:5d9d34`
+*13.09. 18:31 UTC · Quelle: dream*
+
+Free Google Gemma models frequently return HTTP 429 errors, indicating they are rate‑limited and should be avoided for critical tasks.
 
 ### `dream:20260913182029:5:dfb1d0`
 *13.09. 18:20 UTC · Quelle: dream*
@@ -41982,31 +42032,6 @@ Simulation-to-practice effort estimation consistently underestimates by ~100%, r
 *30.08. 18:31 UTC · Quelle: dream*
 
 Rate-limited model failures (429 errors) are systemic across multiple providers, indicating a need for resilient routing rather than individual model reliability.
-
-### `dream:20260830182215:5:602103`
-*30.08. 18:22 UTC · Quelle: dream*
-
-Skill proposals must be validated through dry-run integration tests before deployment to avoid introducing broken or incompatible skill chains.
-
-### `dream:20260830182215:4:8c3f0d`
-*30.08. 18:22 UTC · Quelle: dream*
-
-Stress-aware scheduling must degrade gracefully by dropping low-priority goals and limiting iterations when system stress exceeds a threshold.
-
-### `dream:20260830182215:3:499776`
-*30.08. 18:22 UTC · Quelle: dream*
-
-Token output validation is critical because rate-limited models often return truncated or empty responses that appear successful but are unusable.
-
-### `dream:20260830182215:2:bda3c3`
-*30.08. 18:22 UTC · Quelle: dream*
-
-Models that fail consecutively should be temporarily blacklisted with exponential backoff to prevent cascading failures and wasted retries.
-
-### `dream:20260830182215:1:f3a11a`
-*30.08. 18:22 UTC · Quelle: dream*
-
-Repeated 429 and 502 errors across multiple models indicate systemic rate-limiting and upstream overload, not isolated model failures.
 
 ### `last_swarm_critique`
 *30.08. 16:16 UTC · Quelle: critic*

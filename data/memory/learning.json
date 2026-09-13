@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 18:21:47",
+ "stand": "2026-09-13 18:38:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-analysieren.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -63,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "simulationen-konsequent-anwenden.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -79,6 +67,12 @@
    "laeufe": 3,
    "erfolge": 1,
    "quote": 0.333
+  },
+  {
+   "tool": "träume-analysieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
@@ -123,6 +117,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fernere-erinnerungen-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -160,6 +160,12 @@
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -208,12 +214,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "fernere-erinnerungen-verbinden.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
@@ -381,17 +381,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.687,
+ "haende_quote": 0.694,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 35,
   "best": 9.0,
-  "schnitt": 5.29
+  "schnitt": 5.43
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 33,
-   "schnitt": 5.21
+   "schnitt": 5.36
   },
   "bau": {
    "n": 2,
