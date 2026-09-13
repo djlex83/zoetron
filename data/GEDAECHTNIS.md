@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-13 15:35 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-13 15:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7288
 - **swarm_artifact:** 1651
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913154320:5:6d2150`
+*13.09. 15:43 UTC · Quelle: dream*
+
+Successful reflexes like combining distant memories produce actionable outcomes but are not yet persisted as reusable procedures between sessions.
+
+### `dream:20260913154320:4:673b9d`
+*13.09. 15:43 UTC · Quelle: dream*
+
+Swarm goals become stale without periodic refresh, as evidenced by the drive_goal signal flagging outdated objectives.
+
+### `dream:20260913154320:3:d48369`
+*13.09. 15:43 UTC · Quelle: dream*
+
+The system generates redundant skill proposals about the same rate-limiting problem across multiple dream cycles without converging on an implemented solution.
+
+### `dream:20260913154320:2:51a8f6`
+*13.09. 15:43 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free consistently succeeds where Gemma models fail, establishing it as the de facto reliable fallback for rate-limited scenarios.
+
+### `dream:20260913154320:1:d4cd98`
+*13.09. 15:43 UTC · Quelle: dream*
+
+HTTP 429 rate-limiting is the dominant failure mode across multiple models, indicating a shared upstream quota bottleneck rather than a model-specific issue.
 
 ### `dream:20260913153205:5:83c1e6`
 *13.09. 15:32 UTC · Quelle: dream*
@@ -42127,31 +42152,6 @@ inclusionai/ling-3.0-flash-fin:free is the only model showing reliable success a
 *30.08. 15:43 UTC · Quelle: dream*
 
 Free-tier models from major providers (Google, Z.ai) consistently fail with 429 rate-limit errors under load.
-
-### `dream:20260830153609:5:4c2225`
-*30.08. 15:36 UTC · Quelle: dream*
-
-Multi-model consensus requirement (2-of-3) cannot be met when only 1 model responds, causing silent stalls instead of explicit degradation.
-
-### `dream:20260830153609:4:28e93e`
-*30.08. 15:36 UTC · Quelle: dream*
-
-System enters conserve mode (stress=1.0) with max_tasks=3, but no automatic model-fallback or circuit-breaker logic exists to reduce load.
-
-### `dream:20260830153609:3:266bcf`
-*30.08. 15:36 UTC · Quelle: dream*
-
-Token-in/out ratios on the sole working model show 1.6x expansion (3612→5921), validating the truncation-risk guardrail proposal.
-
-### `dream:20260830153609:2:e28926`
-*30.08. 15:36 UTC · Quelle: dream*
-
-The skill-consolidation tool fails due to path resolution issues (relative paths vs. ZOETRON_DATA/env vars), breaking the meta-learning loop.
-
-### `dream:20260830153609:1:d44d5a`
-*30.08. 15:36 UTC · Quelle: dream*
-
-Free-tier models simultaneously hit rate limits (429 errors), creating a single-point-of-failure where 75% of the model pool becomes unavailable at once.
 
 ### `last_swarm_critique`
 *30.08. 14:33 UTC · Quelle: critic*
