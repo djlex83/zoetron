@@ -46440,3 +46440,67 @@
 {"ts": 1788713849.3746066, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.7, "gelesen": 1549}}
 {"ts": 1788713849.37755, "kind": "reflex_used", "payload": {"goal": "Schwarm-Wissen erneuern", "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py", "ok": true}}
 {"ts": 1788713849.7435336, "kind": "act_done", "payload": {"goal_title": "Schwarm-Wissen erneuern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788109988.4751687, "key": "dream:20260830171308:1:ccba0b", "value": "Free-tier models on OpenRouter suffer systemic 429 rate-limiting that makes them unreliable for production workflows.", "source": "dream"}
+{"ts": 1788109988.4752576, "key": "dream:20260830171308:2:75d7ea", "value": "Nvidia Nemotron exhibits high latency (85-146s) and intermittent 502 upstream overload errors despite returning valid responses when healthy.", "source": "dream"}
+{"ts": 1788109988.4753265, "key": "dream:20260830171308:3:30b46d", "value": "Poolside Laguna-S-2.1 delivers the best latency-to-success ratio (9.5s) when not rate-limited, making it the preferred fallback.", "source": "dream"}
+{"ts": 1788109988.475392, "key": "dream:20260830171308:4:28b14c", "value": "Calibration error of 3 points (predicted 3 vs actual 6) indicates the planner consistently underestimates implementation complexity for simulation-to-practice tasks.", "source": "dream"}
+{"ts": 1788109988.4754584, "key": "dream:20260830171308:5:2a36ac", "value": "Evolutionary variant selection (3 variants, winner score 8 vs baseline 6) reliably improves artifact quality when critic feedback targets concrete code-pattern issues like template variable misuse.", "source": "dream"}
+{"ts": 1788110471.5432425, "key": "dream:20260830172111:1:04ed47", "value": "Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502), making them unreliable for production workflows without aggressive fallback.", "source": "dream"}
+{"ts": 1788110471.5433314, "key": "dream:20260830172111:2:b37087", "value": "The evolution/swarm pipeline consistently stalls at score 6/10 with non-convergence, indicating insufficient critic feedback or builder capability.", "source": "dream"}
+{"ts": 1788110471.5434167, "key": "dream:20260830172111:3:ee7364", "value": "Template variable interpolation failures (e.g., {{skill}}) in skill generation reveal a contract mismatch between planner output and builder execution.", "source": "dream"}
+{"ts": 1788110471.543483, "key": "dream:20260830172111:4:6acf3d", "value": "A single reliable model (inclusionai/ling-3.0-flash-fin) handles all successful requests, creating a single point of failure.", "source": "dream"}
+{"ts": 1788110471.5435581, "key": "dream:20260830172111:5:051fd2", "value": "High latency variance (6s vs 64s) on the same model suggests queueing or cold-start effects that degrade swarm cycle times.", "source": "dream"}
+{"ts": 1788110801.9661474, "key": "dream:20260830172641:1:b693d1", "value": "The z-ai/glm-5.2:free model fails deterministically with 429 errors, indicating absent rate-limit awareness before dispatch.", "source": "dream"}
+{"ts": 1788110801.9662342, "key": "dream:20260830172641:2:983aa8", "value": "Fallback to nvidia/nemotron-3-ultra succeeds but violates latency SLAs at 50-65s, making synchronous use impractical.", "source": "dream"}
+{"ts": 1788110801.966308, "key": "dream:20260830172641:3:7fb986", "value": "45 skill proposals exist but only 3 implemented, revealing a broken promotion pipeline from proposal to production.", "source": "dream"}
+{"ts": 1788110801.9663801, "key": "dream:20260830172641:4:032d20", "value": "Reflex actions converge reliably (market analysis cleanup completed), suggesting reflex-to-skill promotion is a viable path.", "source": "dream"}
+{"ts": 1788110801.9664452, "key": "dream:20260830172641:5:5d3470", "value": "Pruning runs remove zero items, indicating either scoring thresholds are too aggressive or relevance signals are missing.", "source": "dream"}
+{"ts": 1788111119.109993, "key": "dream:20260830173159:1:31fc70", "value": "All model failures trace to a shared OpenRouter API gateway, so provider diversity alone cannot prevent cascading 429/502 errors when the gateway is rate-limited or overloaded.", "source": "dream"}
+{"ts": 1788111119.1100824, "key": "dream:20260830173159:2:ebb07e", "value": "The fallback chain retries failed providers immediately without cooldown, amplifying rate-limit exhaustion instead of allowing recovery windows.", "source": "dream"}
+{"ts": 1788111119.1101534, "key": "dream:20260830173159:3:6504aa", "value": "Latency spans from 7s to 77s across successful calls, but no latency-budget guard exists to route slow calls to async mode and protect responsiveness.", "source": "dream"}
+{"ts": 1788111119.1102192, "key": "dream:20260830173159:4:7d2cde", "value": "Proposed skills (model-router, promotion pipeline, pruning scheduler) are well-targeted but remain unvalidated artifacts; they must be smoke-tested before registration.", "source": "dream"}
+{"ts": 1788111119.1102858, "key": "dream:20260830173159:5:f70363", "value": "The reflex system converges reliably when a model is available, proving the internal logic is sound — the bottleneck is entirely external infrastructure availability.", "source": "dream"}
+{"ts": 1788714370.1594195, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788714438.7416, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788714440.5747652, "kind": "prune_run", "payload": {"facts_pruned": 1, "events_pruned": 26}}
+{"ts": 1788714525.0207741, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 80.7, "tokens_ein": 1362, "tokens_aus": 1599}}
+{"ts": 1788714525.021395, "kind": "skill_proposal", "payload": {"proposal": "Implement a model-health registry that tags free models \"quota-exhausted\" for 60s after any 429/502, forces all traffic to ling-3.0-flash-fin:free during that window, and logs routing decisions for audit."}}
+{"ts": 1788714525.021453, "kind": "skill_proposal", "payload": {"proposal": "Wrap every model call in an idempotent retry decorator (max 3 attempts, 2s base exponential backoff, jitter) that only retries on 429, 502, 503 and treats empty choices as 502."}}
+{"ts": 1788714525.0215065, "kind": "skill_proposal", "payload": {"proposal": "Build a rate-limit sentinel that parses Retry-After headers, enforces cooldown proportional to the header value, and atomically removes the affected model from the routing pool until cooldown expires."}}
+{"ts": 1788714525.0215597, "kind": "skill_proposal", "payload": {"proposal": "Hard-code a three-tier fallback chain in the reflex executor: [ling-3.0-flash-fin:free] → [paid-tier-primary] → [paid-tier-secondary], triggering on first non-200 or empty-choice response without waiting for health registry updates."}}
+{"ts": 1788714525.0216184, "kind": "skill_proposal", "payload": {"proposal": "Create a drive scheduler that topologically sorts active goals by prerequisite (model reliability → knowledge freshness → skill execution) and blocks lower-priority drives until prerequisite health checks pass."}}
+{"ts": 1788714525.0216753, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788714612.3954084, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 85.2, "tokens_ein": 489, "tokens_aus": 896}}
+{"ts": 1788714612.3955715, "kind": "drive_goal", "payload": {"title": "Modellfehler deutlich reduzieren", "why": "Das Modell scheitert zu oft, wir müssen es zuverlässiger machen.", "signal": "failure"}}
+{"ts": 1788714612.3956442, "kind": "drive_goal", "payload": {"title": "Schwarm-Arbeit wiederbeleben und nutzen", "why": "Schwarm-Ziele und Kritiken sind veraltet, wir verlieren kollektives Wissen.", "signal": "stale"}}
+{"ts": 1788714612.395717, "kind": "drive_goal", "payload": {"title": "Fähigkeits-Vorschläge in echte Skills verwandeln", "why": "Viele Vorschläge liegen brach, wir müssen sie praktisch umsetzen.", "signal": "gap"}}
+{"ts": 1788714615.7683306, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.75, "gelesen": 2}}
+{"ts": 1788714615.7704117, "kind": "reflex_used", "payload": {"goal": "Schwarm-Kooperation auffrischen", "tool": "schwarmwissen-wieder-auffrischen.py", "ok": true}}
+{"ts": 1788714616.1167204, "kind": "act_done", "payload": {"goal_title": "Schwarm-Kooperation auffrischen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788715138.0259788, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788715206.4548755, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788715208.304589, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 20}}
+{"ts": 1788715278.0524561, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 66.0, "tokens_ein": 1445, "tokens_aus": 941}}
+{"ts": 1788715278.0530164, "kind": "skill_proposal", "payload": {"proposal": "Implement model-health cache tagging free models 'quota-exhausted' for 60s after 429/502 and routing to ling-3.0-flash-fin:free during that window."}}
+{"ts": 1788715278.0530732, "kind": "skill_proposal", "payload": {"proposal": "Add hard-coded failover chain [ling-3.0-flash-fin:free, paid-tier-primary, paid-tier-secondary] to reflex executor on first non-200 or empty response."}}
+{"ts": 1788715278.0531275, "kind": "skill_proposal", "payload": {"proposal": "Create drive-scheduler that topologically sorts active goals by prerequisite (model reliability → swarm update → skill conversion) and executes one at a time."}}
+{"ts": 1788715278.0531843, "kind": "skill_proposal", "payload": {"proposal": "Insert mid-cycle pruning trigger at 70% fact/event budget that checkpoints reusable state before aggressive cleanup."}}
+{"ts": 1788715278.0532403, "kind": "skill_proposal", "payload": {"proposal": "Add path-resolution shim to hand_action that expands ZOETRON_DATA and converts relative paths to absolute before any filesystem call."}}
+{"ts": 1788715278.0532956, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788715392.0332563, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 112.1, "tokens_ein": 490, "tokens_aus": 769}}
+{"ts": 1788715392.0334303, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren und Zuverlässigkeit steigern", "why": "Das Modell macht derzeit mehr Fehler als Erfolge. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788715392.0335064, "kind": "drive_goal", "payload": {"title": "Veraltete Schwarm-Daten aufräumen oder erneuern", "why": "Alte Schwarm-Informationen blockieren neue Zusammenarbeit. Frische Daten helfen beim gemeinsamen Lernen.", "signal": "stale"}}
+{"ts": 1788715392.0335698, "kind": "drive_goal", "payload": {"title": "Fähigkeits-Vorschläge in echte Skills verwandeln", "why": "Viele Ideen für neue Fähigkeiten liegen ungenutzt. Getestete Skills machen das System leistungsfähiger.", "signal": "gap"}}
+{"ts": 1788715407.393865, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 12.92, "gelesen": 495}}
+{"ts": 1788715407.3958342, "kind": "reflex_used", "payload": {"goal": "Fähigkeitsvorschläge umsetzen", "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py", "ok": true}}
+{"ts": 1788715407.9457679, "kind": "act_done", "payload": {"goal_title": "Fähigkeitsvorschläge umsetzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788715927.055675, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788715995.211005, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788715997.1369202, "kind": "prune_run", "payload": {"facts_pruned": 13, "events_pruned": 63}}
+{"ts": 1788716052.247216, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 51.5, "tokens_ein": 1684, "tokens_aus": 990}}
+{"ts": 1788716052.2477822, "kind": "skill_proposal", "payload": {"proposal": "ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff."}}
+{"ts": 1788716052.2478447, "kind": "skill_proposal", "payload": {"proposal": "PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem access."}}
+{"ts": 1788716052.2478993, "kind": "skill_proposal", "payload": {"proposal": "SimulationGate: run simulation verdict; if revise, apply revisions and re-verify before committing artifact."}}
+{"ts": 1788716052.247951, "kind": "skill_proposal", "payload": {"proposal": "CalibrationGuard: reject plans where predicted score deviates >1 from historical actuals for similar goals."}}
+{"ts": 1788716052.2480185, "kind": "skill_proposal", "payload": {"proposal": "ConserveExecutor: batch operations into single-iteration, ≤3-task units that respect metabolism budget."}}
+{"ts": 1788716052.248082, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}

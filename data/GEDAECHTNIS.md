@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11362 Fakten** · Stand 2026-09-13 17:16 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-13 17:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
-- **swarm_artifact:** 1651
-- **last_swarm_critique:** 935
-- **last_swarm_goal:** 670
-- **anti_pattern:** 363
-- **strategy:** 184
-- **tool:** 151
+- **dream:** 7278
+- **swarm_artifact:** 1657
+- **last_swarm_critique:** 936
+- **last_swarm_goal:** 671
+- **anti_pattern:** 365
+- **strategy:** 185
+- **tool:** 152
 - **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `tool:swarm-informationen-aktualisieren`
+*13.09. 17:47 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Swarm-Informationen aktualisieren'. Datei: data/tools/swarm-informationen-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Swarm-Informationen aktu:2`
+*13.09. 17:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Distributed Consensus Protocol - Implement a lightweight consensus mechanism (like Raft) among swarm nodes where information updates require agreement. The script becomes a node in this protocol, ensuring that swarm informati
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Swarm-Informationen aktu:0`
+*13.09. 17:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Data-Centric Transformation - Define swarm information as structured operational data (node states, connections, tasks) and implement a real-time data pipeline that continuously syncs this data from source systems, replacing 
+
+### `last_swarm_critique`
+*13.09. 17:42 UTC · Quelle: critic*
+
+score=4; issues=Das Artefakt führt drei Scripts aus, aber nur das dritte versucht eine Aktualisierung. Die Aktualisierung beschränkt sich auf Metadaten (Timestamps, Versionen) und nicht auf die tatsächlichen Swarm-Informationen. Das Script hat keine klare Defi
+
+### `last_swarm_goal`
+*13.09. 17:36 UTC · Quelle: system*
+
+Swarm-Informationen aktualisieren
+
+### `dream:20260913173510:5:bbe3b1`
+*13.09. 17:35 UTC · Quelle: dream*
+
+Periodic validation of swarm goals prevents accumulation of stale information.
+
+### `dream:20260913173510:4:9558c3`
+*13.09. 17:35 UTC · Quelle: dream*
+
+Persisting successful reflexes as reusable procedures with preconditions accelerates future execution.
+
+### `dream:20260913173510:3:a3d67d`
+*13.09. 17:35 UTC · Quelle: dream*
+
+Semantic clustering of skill proposals reduces redundancy and highlights high‑priority suggestions.
+
+### `dream:20260913173510:2:e47635`
+*13.09. 17:35 UTC · Quelle: dream*
+
+Tracking per‑model error rates and auto‑degrading unhealthy models improves routing to healthier alternatives.
+
+### `dream:20260913173510:1:f50bb9`
+*13.09. 17:35 UTC · Quelle: dream*
+
+Repeated 429 errors on free Google models indicate that rate limiting is a primary failure mode requiring a centralized backoff handler.
 
 ### `last_swarm_critique`
 *13.09. 17:14 UTC · Quelle: critic*
@@ -42057,106 +42107,6 @@ Rate-limit and service-overload errors recur across multiple providers simultane
 *30.08. 17:42 UTC · Quelle: dream*
 
 Free-tier API models are systematically unreliable due to rate limits (429) and upstream overload (502), requiring defensive per-model circuit-breaking and automatic failover.
-
-### `dream:20260830173159:5:f70363`
-*30.08. 17:31 UTC · Quelle: dream*
-
-The reflex system converges reliably when a model is available, proving the internal logic is sound — the bottleneck is entirely external infrastructure availability.
-
-### `dream:20260830173159:4:7d2cde`
-*30.08. 17:31 UTC · Quelle: dream*
-
-Proposed skills (model-router, promotion pipeline, pruning scheduler) are well-targeted but remain unvalidated artifacts; they must be smoke-tested before registration.
-
-### `dream:20260830173159:3:6504aa`
-*30.08. 17:31 UTC · Quelle: dream*
-
-Latency spans from 7s to 77s across successful calls, but no latency-budget guard exists to route slow calls to async mode and protect responsiveness.
-
-### `dream:20260830173159:2:ebb07e`
-*30.08. 17:31 UTC · Quelle: dream*
-
-The fallback chain retries failed providers immediately without cooldown, amplifying rate-limit exhaustion instead of allowing recovery windows.
-
-### `dream:20260830173159:1:31fc70`
-*30.08. 17:31 UTC · Quelle: dream*
-
-All model failures trace to a shared OpenRouter API gateway, so provider diversity alone cannot prevent cascading 429/502 errors when the gateway is rate-limited or overloaded.
-
-### `dream:20260830172641:5:5d3470`
-*30.08. 17:26 UTC · Quelle: dream*
-
-Pruning runs remove zero items, indicating either scoring thresholds are too aggressive or relevance signals are missing.
-
-### `dream:20260830172641:4:032d20`
-*30.08. 17:26 UTC · Quelle: dream*
-
-Reflex actions converge reliably (market analysis cleanup completed), suggesting reflex-to-skill promotion is a viable path.
-
-### `dream:20260830172641:3:7fb986`
-*30.08. 17:26 UTC · Quelle: dream*
-
-45 skill proposals exist but only 3 implemented, revealing a broken promotion pipeline from proposal to production.
-
-### `dream:20260830172641:2:983aa8`
-*30.08. 17:26 UTC · Quelle: dream*
-
-Fallback to nvidia/nemotron-3-ultra succeeds but violates latency SLAs at 50-65s, making synchronous use impractical.
-
-### `dream:20260830172641:1:b693d1`
-*30.08. 17:26 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model fails deterministically with 429 errors, indicating absent rate-limit awareness before dispatch.
-
-### `dream:20260830172111:5:051fd2`
-*30.08. 17:21 UTC · Quelle: dream*
-
-High latency variance (6s vs 64s) on the same model suggests queueing or cold-start effects that degrade swarm cycle times.
-
-### `dream:20260830172111:4:6acf3d`
-*30.08. 17:21 UTC · Quelle: dream*
-
-A single reliable model (inclusionai/ling-3.0-flash-fin) handles all successful requests, creating a single point of failure.
-
-### `dream:20260830172111:3:ee7364`
-*30.08. 17:21 UTC · Quelle: dream*
-
-Template variable interpolation failures (e.g., {{skill}}) in skill generation reveal a contract mismatch between planner output and builder execution.
-
-### `dream:20260830172111:2:b37087`
-*30.08. 17:21 UTC · Quelle: dream*
-
-The evolution/swarm pipeline consistently stalls at score 6/10 with non-convergence, indicating insufficient critic feedback or builder capability.
-
-### `dream:20260830172111:1:04ed47`
-*30.08. 17:21 UTC · Quelle: dream*
-
-Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502), making them unreliable for production workflows without aggressive fallback.
-
-### `dream:20260830171308:5:2a36ac`
-*30.08. 17:13 UTC · Quelle: dream*
-
-Evolutionary variant selection (3 variants, winner score 8 vs baseline 6) reliably improves artifact quality when critic feedback targets concrete code-pattern issues like template variable misuse.
-
-### `dream:20260830171308:4:28b14c`
-*30.08. 17:13 UTC · Quelle: dream*
-
-Calibration error of 3 points (predicted 3 vs actual 6) indicates the planner consistently underestimates implementation complexity for simulation-to-practice tasks.
-
-### `dream:20260830171308:3:30b46d`
-*30.08. 17:13 UTC · Quelle: dream*
-
-Poolside Laguna-S-2.1 delivers the best latency-to-success ratio (9.5s) when not rate-limited, making it the preferred fallback.
-
-### `dream:20260830171308:2:75d7ea`
-*30.08. 17:13 UTC · Quelle: dream*
-
-Nvidia Nemotron exhibits high latency (85-146s) and intermittent 502 upstream overload errors despite returning valid responses when healthy.
-
-### `dream:20260830171308:1:ccba0b`
-*30.08. 17:13 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer systemic 429 rate-limiting that makes them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *30.08. 16:16 UTC · Quelle: critic*

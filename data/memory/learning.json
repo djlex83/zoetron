@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 17:14:13",
+ "stand": "2026-09-13 17:47:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "tool": "ferngedächtnisse-verbinden.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "ferngedächtnisse-verbinden.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -60,12 +60,6 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -147,6 +141,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -163,6 +163,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "ferne-traumverbindungen-neu-erkunden.py",
@@ -192,12 +198,6 @@
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-in-echte-fähigkeiten-wandeln.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -265,12 +265,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "veraltete-infos-auffrischen.py",
@@ -387,17 +381,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.693,
+ "haende_quote": 0.687,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 35,
   "best": 9.0,
-  "schnitt": 5.43
+  "schnitt": 5.29
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 32,
-   "schnitt": 5.25
+   "n": 33,
+   "schnitt": 5.21
   },
   "bau": {
    "n": 2,
