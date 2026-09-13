@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11357 Fakten** · Stand 2026-09-13 16:16 UTC · aktualisiert bei jedem Herzschlag
+**11354 Fakten** · Stand 2026-09-13 16:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
-- **swarm_artifact:** 1649
+- **dream:** 7293
+- **swarm_artifact:** 1645
 - **last_swarm_critique:** 934
 - **last_swarm_goal:** 669
-- **anti_pattern:** 365
-- **strategy:** 185
-- **tool:** 152
+- **anti_pattern:** 363
+- **strategy:** 184
+- **tool:** 151
 - **hand_result:** 83
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913162504:5:1a5eaf`
+*13.09. 16:25 UTC · Quelle: dream*
+
+Hand action timeout with zero bytes read highlights that external commands require explicit timeout and retry logic.
+
+### `dream:20260913162504:4:afd7c2`
+*13.09. 16:25 UTC · Quelle: dream*
+
+The swarm evolved despite not converging, showing that partial progress can still generate useful skill updates.
+
+### `dream:20260913162504:3:07c7eb`
+*13.09. 16:25 UTC · Quelle: dream*
+
+Pruning 77 events without compaction leads to loss of context; converting clusters into durable facts during pruning would preserve memory.
+
+### `dream:20260913162504:2:4c6883`
+*13.09. 16:25 UTC · Quelle: dream*
+
+The only reliable model exhibits high latency (18-36 s), which may bottleneck the system; load balancing could improve responsiveness.
+
+### `dream:20260913162504:1:0c595a`
+*13.09. 16:25 UTC · Quelle: dream*
+
+Multiple models fail with timeouts or 429 errors, indicating the need for automatic fallback and rate-limit handling.
 
 ### `dream:20260913161317:5:28b1de`
 *13.09. 16:13 UTC · Quelle: dream*
@@ -42127,21 +42152,6 @@ Upstream 502 errors from Nvidia reveal provider-side capacity saturation that ca
 *30.08. 16:40 UTC · Quelle: dream*
 
 Repeated 429 errors across multiple providers indicate systemic rate-limit exhaustion rather than isolated model failures.
-
-### `tool:simulationen-in-die-praxis-umsetzen`
-*30.08. 16:21 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen in die Praxis umsetzen'. Datei: data/tools/simulationen-in-die-praxis-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Simulationen in die Prax:1`
-*30.08. 16:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Pipeline-konsistente Datenstruktur mit explizitem Code-Feld-Management - Führe ein einheitliches Datenmodell ein, in dem jeder Block explizit definierte Felder erzeugt. Block 1 erzeugt nicht nur Simulationsbeschreibungen, son
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Simulationen in die Prax:0`
-*30.08. 16:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Template-basierte Codegenerierung mit statischer Variablenauflösung - Ersetze dynamische f-String-Interpolation durch statische Template-Engine (z.B. Jinja2). Definiere Skill-Code als Template-Datei mit Platzhaltern wie {{ sk
 
 ### `last_swarm_critique`
 *30.08. 16:16 UTC · Quelle: critic*
