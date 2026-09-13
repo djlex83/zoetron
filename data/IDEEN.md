@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 02:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 02:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions fail when expected files are missing, so path validation should occur before execution.
+- Skill proposals are generated but rarely tested, so a promotion pipeline with sandbox testing is needed.
+- Simulation is underutilized, indicating that tasks should incorporate simulation steps for better preparation.
+- Stale swarm knowledge leads to inefficient plans and should be refreshed on a regular schedule.
+- Model calls frequently fail due to upstream overload and rate limiting, requiring automatic fallback to alternative providers.
 - Effort estimation lacks calibration; a proposal suggests 3.5× multiplier, confirming systematic underestimation of task duration.
 - Pruning removes events aggressively (29 then 17) while a concurrent proposal warns causal chains from swarm_started to dream_finished are being lost.
 - Swarm knowledge staleness requires explicit reflex intervention ('veraltetes-wissen-erneuern'), indicating no automatic freshness enforcement.
@@ -51,11 +56,6 @@
 - Reflex simulations converge but produce no score, requiring explicit evaluation metrics.
 - Pruning events without preserving causal chains leads to loss of critical sequences.
 - Model latency often exceeds 15 seconds, demanding provider-aware timeout and fallback.
-- Evolution, swarm refresh, and benchmarks stall because no scheduler enforces minimum run cadence.
-- System stress hits maximum (1.0) and enters conserve mode whenever model latency spikes above 15 s, starving other organs.
-- Tool and reflex failures stem from hard-coded relative paths that ignore ZOETRON_DATA, making execution environment-dependent.
-- Proposed skills accumulate but never activate because no automated promotion pipeline validates and deploys them.
-- Model reliability collapses without a token-bucket rate limiter and health-aware fallback routing, as evidenced by repeated 429/502 errors across thre
 
 ---
 

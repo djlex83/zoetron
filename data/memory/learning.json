@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 02:05:24",
+ "stand": "2026-09-13 02:15:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -403,14 +403,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "simulationen-besser-in-praxis-nutzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.716,
- "simulationen_angewandt": 31,
+ "haende_quote": 0.714,
+ "simulationen_angewandt": 30,
  "swarm_scores": {
-  "n": 37,
+  "n": 36,
   "best": 9.0,
-  "schnitt": 5.7
+  "schnitt": 5.67
  },
  "score_nach_ziel_typ": {
   "analyse": {
