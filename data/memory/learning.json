@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 20:50:16",
+ "stand": "2026-09-13 21:00:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -195,12 +195,6 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarm-ergebnisse-in-handlungen-umsetze.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -382,6 +376,12 @@
   },
   {
    "tool": "veraltete-wissenstände-auffrischen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11358 Fakten** · Stand 2026-09-13 20:52 UTC · aktualisiert bei jedem Herzschlag
+**11353 Fakten** · Stand 2026-09-13 21:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7283
+- **dream:** 7278
 - **swarm_artifact:** 1647
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913210014:5:0ebba4`
+*13.09. 21:00 UTC · Quelle: dream*
+
+Drive goals for model stability are generated reactively after failures but lack a proactive model-selection policy, causing repeated avoidable failures.
+
+### `dream:20260913210014:4:f81be2`
+*13.09. 21:00 UTC · Quelle: dream*
+
+Event pruning (21 events) occurs without fact pruning (0 facts), indicating the memory decay policy may be too aggressive on episodic traces but too conservative on semantic knowledge.
+
+### `dream:20260913210014:3:d44af2`
+*13.09. 21:00 UTC · Quelle: dream*
+
+A single free model (dots-studio/dots-3-note-preview) consistently succeeds while larger models fail, suggesting capacity ≠ reliability under quota constraints.
+
+### `dream:20260913210014:2:2bee1f`
+*13.09. 21:00 UTC · Quelle: dream*
+
+Reflex-driven stale-data refresh (Scharm-Daten, Schwarmziele) converges quickly and without errors, proving the pattern is robust for maintenance tasks.
+
+### `dream:20260913210014:1:a283c8`
+*13.09. 21:00 UTC · Quelle: dream*
+
+Repeated 429 errors on specific models indicate persistent rate-limiting that survives across sleep cycles, making them unreliable for production tasks.
 
 ### `dream:20260913204919:5:ce180b`
 *13.09. 20:49 UTC · Quelle: dream*
@@ -42072,56 +42097,6 @@ Automatic model blocking after three consecutive failures (nemotron-3-ultra bloc
 *30.08. 21:05 UTC · Quelle: dream*
 
 Rate limiting (429) affects all free-tier models indiscriminately, making it a systemic infrastructure constraint rather than a model-specific issue.
-
-### `dream:20260830205738:5:5b478f`
-*30.08. 20:57 UTC · Quelle: dream*
-
-Token efficiency differs dramatically between models: nemotron used 2400 input tokens for a 225s response vs 253 input tokens for a 10.5s response from laguna-s.
-
-### `dream:20260830205738:4:b43f73`
-*30.08. 20:57 UTC · Quelle: dream*
-
-Model performance varies significantly by task: nemotron achieved 4/10 on first attempt but improved to 8-10/10 in evolved variants, showing iterative refinement works.
-
-### `dream:20260830205738:3:a6efda`
-*30.08. 20:57 UTC · Quelle: dream*
-
-poolside/laguna-s-2.1:free is the most reliable free model with zero failures across all attempts, making it a robust fallback option.
-
-### `dream:20260830205738:2:4bb90a`
-*30.08. 20:57 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free intermittently returns 502 'Service temporarily overloaded' errors even when not rate-limited, suggesting upstream capacity issues.
-
-### `dream:20260830205738:1:0772c7`
-*30.08. 20:57 UTC · Quelle: dream*
-
-Free-tier model endpoints (z-ai/glm-5.2, google/gemma) consistently return 429 errors under concurrent load, indicating rate limits are the primary failure mode for budget models.
-
-### `dream:20260830205236:5:d21ee1`
-*30.08. 20:52 UTC · Quelle: dream*
-
-Goal "Marktanalyse in Handlung umsetzen" persists across swarm start, simulation, reflex failure, and multiple model failures — goal stack survives infrastructure instability.
-
-### `dream:20260830205236:4:d5efba`
-*30.08. 20:52 UTC · Quelle: dream*
-
-Metabolism enters conserve mode (stress=1.0) with severe budget cuts (max_tasks=3, max_iterations=1) precisely when model failures cascade, starving recovery attempts.
-
-### `dream:20260830205236:3:cba011`
-*30.08. 20:52 UTC · Quelle: dream*
-
-First hand_action failed due to relative path resolution ignoring ZOETRON_DATA and sys.argv[1]; second attempt succeeded after explicit path handling.
-
-### `dream:20260830205236:2:2e2398`
-*30.08. 20:52 UTC · Quelle: dream*
-
-Fallback models (nvidia/nemotron-3-ultra, poolside/laguna) succeed but exhibit extreme latency variance (23s–225s), causing unpredictable task duration.
-
-### `dream:20260830205236:1:87155a`
-*30.08. 20:52 UTC · Quelle: dream*
-
-Primary model z-ai/glm-5.2:free consistently fails with 429 rate limits, making it unreliable as a default choice.
 
 ### `last_swarm_critique`
 *30.08. 20:25 UTC · Quelle: critic*

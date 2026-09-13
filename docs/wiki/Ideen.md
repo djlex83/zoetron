@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 20:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -33,14 +33,19 @@
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals for model stability are generated reactively after failures but lack a proactive model-selection policy, causing repeated avoidable failur
+- Event pruning (21 events) occurs without fact pruning (0 facts), indicating the memory decay policy may be too aggressive on episodic traces but too c
+- A single free model (dots-studio/dots-3-note-preview) consistently succeeds while larger models fail, suggesting capacity ≠ reliability under quota co
+- Reflex-driven stale-data refresh (Scharm-Daten, Schwarmziele) converges quickly and without errors, proving the pattern is robust for maintenance task
+- Repeated 429 errors on specific models indicate persistent rate-limiting that survives across sleep cycles, making them unreliable for production task
 - Prediction errors are frequent enough to spawn a top-level drive goal, indicating planning-time estimates systematically diverge from execution realit
 - Pruning volume fluctuates wildly (8→0 facts, 17→21 events) suggesting memory pressure is event-driven not time-driven, so pruning should couple to wri
 - Three consecutive failures trigger a 30-minute model lockout, which protects system stability but requires a ready fallback to avoid capability gaps.
@@ -51,11 +56,6 @@
 - Proactive pruning of stale facts and events is essential to maintain context clarity and prevent outdated information from blocking active goal progre
 - Autonomous reflex actions can successfully resolve model failures, but they require a pre-verified fallback model to route traffic to when primary opt
 - Free-tier models like Google's Gemma variants are highly susceptible to HTTP 429 rate limits, making the `dots-studio/dots-3-note-preview:free` model 
-- Successful model latencies ranged from 14 to 37 seconds, so timeouts must exceed 40 seconds to avoid spurious failures.
-- Combining two stored distant dreams can generate novel strategies, but only if a parser converts them into actionable tasks.
-- Pruning removed nine events but left facts untouched, showing that event logs are the primary memory pressure point.
-- The reflex to update stale swarm goals succeeded, proving that automated goal hygiene reduces irrelevant tasks.
-- Repeated 429 errors from two gemma models indicate a shared rate limit, making a ranked fallback router necessary.
 
 ---
 
