@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 16:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 17:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning old facts and events improves efficiency but must be balanced against retaining useful context.
+- Stale swarm data and the need to combine distant dream events emphasize the importance of periodic data refresh and cross-event integration.
+- Consecutive model failures trigger drive goals to reduce errors, creating a feedback loop between failures and goal generation.
+- dots-studio/dots-3-note-preview:free consistently succeeds with low latency, suggesting it should be the preferred model for similar tasks.
+- The repeated 429 Too Many Requests errors from google/gemma models indicate rate limiting that requires fallback handling.
 - Regular pruning of facts and events is essential for maintaining system efficiency by removing outdated information that could hinder performance.
 - Reflexes such as 'ferngedächtnisse-verbinden.py' successfully achieve dream combination goals, demonstrating the value of automated tools for knowledg
 - Recurring drive goals for model fixes and data updates suggest that temporary solutions are insufficient without addressing root causes like API limit
@@ -51,11 +56,6 @@
 - Stale swarm information correlates with decision errors, so periodic refresh is essential.
 - dots-studio/dots-3-note-preview:free has succeeded with low latency and no errors, making it a reliable default.
 - Repeated 429 errors from google/gemma models indicate they are rate‑limited or unsupported in this environment.
-- Merging distant memories with dream content produces novel capabilities, revealing a reusable cross‑context learning pattern.
-- Regular pruning of facts and events keeps the knowledge base relevant and prevents performance degradation.
-- Successful execution of the group‑goal update reflex demonstrates that automating stale‑goal refresh improves swarm coordination.
-- Timeout errors on the 550b model caused cascading failures, showing the need for per‑request timeouts and graceful degradation.
-- Frequent HTTP 429 errors from multiple models indicate a systemic rate‑limit vulnerability that requires automatic backoff and fallback routing.
 
 ---
 

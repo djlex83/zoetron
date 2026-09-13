@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11354 Fakten** · Stand 2026-09-13 16:58 UTC · aktualisiert bei jedem Herzschlag
+**11362 Fakten** · Stand 2026-09-13 17:16 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7293
-- **swarm_artifact:** 1645
-- **last_swarm_critique:** 934
-- **last_swarm_goal:** 669
+- **swarm_artifact:** 1651
+- **last_swarm_critique:** 935
+- **last_swarm_goal:** 670
 - **anti_pattern:** 363
 - **strategy:** 184
 - **tool:** 151
-- **hand_result:** 83
-- **aktuell_organfehler:** 32
+- **hand_result:** 84
+- **aktuell_organfehler:** 31
 
 ---
+
+### `last_swarm_critique`
+*13.09. 17:14 UTC · Quelle: critic*
+
+score=8; issues=Die Semantik-Prüfung basiert auf Token-Überlappung, was echte semantische Ähnlichkeit nur unzureichend widerspiegelt.; Die Aktualisierung durch Anhängen von Textfragmenten ist oberflächlich und stellt keine tiefgreifende Aktualisierung der Ziel
+
+### `last_swarm_goal`
+*13.09. 17:07 UTC · Quelle: system*
+
+Veraltete Schwarm-Ziele aktualisieren
+
+### `dream:20260913170605:5:4d15c6`
+*13.09. 17:06 UTC · Quelle: dream*
+
+Pruning old facts and events improves efficiency but must be balanced against retaining useful context.
+
+### `dream:20260913170605:4:ac3e80`
+*13.09. 17:06 UTC · Quelle: dream*
+
+Stale swarm data and the need to combine distant dream events emphasize the importance of periodic data refresh and cross-event integration.
+
+### `dream:20260913170605:3:bfcf2e`
+*13.09. 17:06 UTC · Quelle: dream*
+
+Consecutive model failures trigger drive goals to reduce errors, creating a feedback loop between failures and goal generation.
+
+### `dream:20260913170605:2:41525a`
+*13.09. 17:06 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free consistently succeeds with low latency, suggesting it should be the preferred model for similar tasks.
+
+### `dream:20260913170605:1:8de5ac`
+*13.09. 17:06 UTC · Quelle: dream*
+
+The repeated 429 Too Many Requests errors from google/gemma models indicate rate limiting that requires fallback handling.
 
 ### `dream:20260913165530:5:b11002`
 *13.09. 16:55 UTC · Quelle: dream*
@@ -42122,36 +42157,6 @@ Nvidia Nemotron exhibits high latency (85-146s) and intermittent 502 upstream ov
 *30.08. 17:13 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter suffer systemic 429 rate-limiting that makes them unreliable for production workflows.
-
-### `dream:20260830170418:5:2a429e`
-*30.08. 17:04 UTC · Quelle: dream*
-
-Skill-materialization reflex fails silently; proposals need a dry-run validation step before committing to the skill store.
-
-### `dream:20260830170418:4:278485`
-*30.08. 17:04 UTC · Quelle: dream*
-
-Simulation revision loops (3 risks → 3 revisions) consume 6+ model calls per cycle, exhausting the conserve-mode budget (max 3 tasks).
-
-### `dream:20260830170418:3:22f654`
-*30.08. 17:04 UTC · Quelle: dream*
-
-File operations fail when using relative paths; all data access must resolve through ZOETRON_DATA and sys.argv[1] to absolute paths before I/O.
-
-### `dream:20260830170418:2:e4efc4`
-*30.08. 17:04 UTC · Quelle: dream*
-
-Fallback models exhibit cascading failures: nvidia/nemotron returns 502 upstream errors under load, google/gemma hits 429, only poolside/laguna succeeds but at 200s latency.
-
-### `dream:20260830170418:1:e0f1df`
-*30.08. 17:04 UTC · Quelle: dream*
-
-Primary model (z-ai/glm-5.2) is permanently rate-limited (429), making it unusable without a request queue and exponential backoff.
-
-### `aktuell_organfehler`
-*30.08. 17:00 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-30 16:57:31 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `last_swarm_critique`
 *30.08. 16:16 UTC · Quelle: critic*
