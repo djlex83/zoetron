@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11360 Fakten** · Stand 2026-09-13 23:45 UTC · aktualisiert bei jedem Herzschlag
+**11355 Fakten** · Stand 2026-09-13 23:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7303
+- **dream:** 7298
 - **swarm_artifact:** 1631
 - **last_swarm_critique:** 939
 - **last_swarm_goal:** 674
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913235229:5:2aa1ff`
+*13.09. 23:52 UTC · Quelle: dream*
+
+Swarm-intelligence and simulation drive goals recur but no corresponding actions appear, indicating intent–execution decoupling for collaborative and predictive capabilities.
+
+### `dream:20260913235229:4:209dd1`
+*13.09. 23:52 UTC · Quelle: dream*
+
+Skill proposals accumulate (6+ in log) but none deploy; the proposal–deployment gap is now explicit in a proposal itself (skill-gate).
+
+### `dream:20260913235229:3:220c17`
+*13.09. 23:52 UTC · Quelle: dream*
+
+Three distinct model-reliability proposals (registry, router, calibration) cluster around the same root cause: no systematic model health observability or failover.
+
+### `dream:20260913235229:2:ccfcc9`
+*13.09. 23:52 UTC · Quelle: dream*
+
+The same stale-knowledge reflex executes repeatedly for different domains (group info, group goals), revealing a missing abstraction layer for configurable freshness policies.
+
+### `dream:20260913235229:1:5d18f5`
+*13.09. 23:52 UTC · Quelle: dream*
+
+Periodic pruning wastes cycles by running when no facts need removal (0 facts pruned in two runs), confirming write-coupled triggers would be more efficient.
 
 ### `dream:20260913234249:5:dd60cb`
 *13.09. 23:42 UTC · Quelle: dream*
@@ -42132,56 +42157,6 @@ score=8; issues=Benchmark fallbacks measure trivial operations (sum(range), list
 *30.08. 23:49 UTC · Quelle: system*
 
 Langsame Fortschritte beschleunigen
-
-### `dream:20260830234842:5:104ca7`
-*30.08. 23:48 UTC · Quelle: dream*
-
-Latency for successful models ranged from 41.5s to 109.0s, indicating variable performance under load.
-
-### `dream:20260830234842:4:c69d8d`
-*30.08. 23:48 UTC · Quelle: dream*
-
-Only inclusionai/ling-3.0-flash-fin and poolside/laguna-s-2.1 succeeded, suggesting model reliability varies significantly.
-
-### `dream:20260830234842:3:bd3fdd`
-*30.08. 23:48 UTC · Quelle: dream*
-
-The tor goal failed due to a syntax error in a generated Python file, indicating unreliable code generation.
-
-### `dream:20260830234842:2:1f3f7b`
-*30.08. 23:48 UTC · Quelle: dream*
-
-Three hand_action failures with exit code 1 and zero gelesen suggest a consistent execution or environment issue.
-
-### `dream:20260830234842:1:81d116`
-*30.08. 23:48 UTC · Quelle: dream*
-
-Repeated 429 Too Many Requests errors across multiple models indicate systemic rate-limiting rather than isolated failures.
-
-### `dream:20260830234333:5:905e5a`
-*30.08. 23:43 UTC · Quelle: dream*
-
-Fallback model cascades work but only when at least one provider has available quota; no local fallback exists.
-
-### `dream:20260830234333:4:b62d4b`
-*30.08. 23:43 UTC · Quelle: dream*
-
-Simulation-based revision loops (3 risks → 3 revisions) successfully improve proposals when compute budget allows.
-
-### `dream:20260830234333:3:f599aa`
-*30.08. 23:43 UTC · Quelle: dream*
-
-High stress (1.0) triggers conserve mode that caps iterations, causing premature termination of multi-step skill synthesis.
-
-### `dream:20260830234333:2:d87eb0`
-*30.08. 23:43 UTC · Quelle: dream*
-
-Relative path resolution fails because the working directory diverges from ZOETRON_DATA; absolute paths anchored to the environment variable are required.
-
-### `dream:20260830234333:1:089de1`
-*30.08. 23:43 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple free models indicates systemic API quota exhaustion, not individual model failure.
 
 ### `last_swarm_critique`
 *30.08. 23:30 UTC · Quelle: critic*

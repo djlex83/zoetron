@@ -47348,3 +47348,37 @@
 {"ts": 1788737998.5880527, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.26, "gelesen": 29}}
 {"ts": 1788737998.5921016, "kind": "reflex_used", "payload": {"goal": "Träume in echte Fähigkeiten wandeln", "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py", "ok": true}}
 {"ts": 1788737998.9259226, "kind": "act_done", "payload": {"goal_title": "Träume in echte Fähigkeiten wandeln", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788133413.5364838, "key": "dream:20260830234333:1:089de1", "value": "Rate limiting (429 errors) across multiple free models indicates systemic API quota exhaustion, not individual model failure.", "source": "dream"}
+{"ts": 1788133413.5365698, "key": "dream:20260830234333:2:d87eb0", "value": "Relative path resolution fails because the working directory diverges from ZOETRON_DATA; absolute paths anchored to the environment variable are required.", "source": "dream"}
+{"ts": 1788133413.5366383, "key": "dream:20260830234333:3:f599aa", "value": "High stress (1.0) triggers conserve mode that caps iterations, causing premature termination of multi-step skill synthesis.", "source": "dream"}
+{"ts": 1788133413.5367036, "key": "dream:20260830234333:4:b62d4b", "value": "Simulation-based revision loops (3 risks → 3 revisions) successfully improve proposals when compute budget allows.", "source": "dream"}
+{"ts": 1788133413.5367928, "key": "dream:20260830234333:5:905e5a", "value": "Fallback model cascades work but only when at least one provider has available quota; no local fallback exists.", "source": "dream"}
+{"ts": 1788133722.8847647, "key": "dream:20260830234842:1:81d116", "value": "Repeated 429 Too Many Requests errors across multiple models indicate systemic rate-limiting rather than isolated failures.", "source": "dream"}
+{"ts": 1788133722.8848581, "key": "dream:20260830234842:2:1f3f7b", "value": "Three hand_action failures with exit code 1 and zero gelesen suggest a consistent execution or environment issue.", "source": "dream"}
+{"ts": 1788133722.884928, "key": "dream:20260830234842:3:bd3fdd", "value": "The tor goal failed due to a syntax error in a generated Python file, indicating unreliable code generation.", "source": "dream"}
+{"ts": 1788133722.8849924, "key": "dream:20260830234842:4:c69d8d", "value": "Only inclusionai/ling-3.0-flash-fin and poolside/laguna-s-2.1 succeeded, suggesting model reliability varies significantly.", "source": "dream"}
+{"ts": 1788133722.885056, "key": "dream:20260830234842:5:104ca7", "value": "Latency for successful models ranged from 41.5s to 109.0s, indicating variable performance under load.", "source": "dream"}
+{"ts": 1788738494.6094453, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788738562.8550022, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788738564.7340403, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 39}}
+{"ts": 1788738578.7629719, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 10.5, "tokens_ein": 1438, "tokens_aus": 749}}
+{"ts": 1788738578.763949, "kind": "skill_proposal", "payload": {"proposal": "Implement ProviderFallbackChain with health-check ping: primary=nemotron-3-ultra, secondary=gemma-2-9b-it, tertiary=qwen-2.5-72b, exponential backoff 2s/4s/8s, auto-exclude on 429/5xx."}}
+{"ts": 1788738578.7640572, "kind": "skill_proposal", "payload": {"proposal": "Create PathResolver utility: all file/path inputs canonicalized to absolute via ZOETRON_DATA/env/argv[1] with existence check before any tool execution."}}
+{"ts": 1788738578.7641475, "kind": "skill_proposal", "payload": {"proposal": "Enforce ConvergenceGate: require simulation verdict=go with zero critical risks, critic sign-off on executable artifact, and score≥8 before any swarm goal marks converged."}}
+{"ts": 1788738578.7642386, "kind": "skill_proposal", "payload": {"proposal": "Build SkillValidationGate: every skill proposal must spawn a validation sub-swarm that implements, tests, and scores ≥7 the skill within the same cycle before acceptance."}}
+{"ts": 1788738578.7643027, "kind": "skill_proposal", "payload": {"proposal": "Add PruningAuditLog: record every pruned fact/event with reason and retention score; weekly review to recover items with diagnostic value (e.g., model_error_patterns)."}}
+{"ts": 1788738578.764376, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788738589.6462264, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 9.0, "tokens_ein": 489, "tokens_aus": 753}}
+{"ts": 1788738589.6463892, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Die alten Schwarm-Kritiken und Ziele sind veraltet. Wir müssen sie erneuern, damit die Zusammenarbeit besser funktioniert.", "signal": "stale"}}
+{"ts": 1788738589.6464627, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren", "why": "Es gab 24 Modell-Fehler bei nur 46 Erfolgen. Weniger Fehler machen das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1788738589.6465247, "kind": "drive_goal", "payload": {"title": "Traum-Erinnerungen nutzen", "why": "Zwei alte Traum-Erinnerungen warten darauf, ausgewertet zu werden. Sie könnten neue Ideen liefern.", "signal": "gap"}}
+{"ts": 1788738592.5098372, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.35, "gelesen": 0}}
+{"ts": 1788738592.512361, "kind": "reflex_used", "payload": {"goal": "Vorschläge in echte Fähigkeiten wandeln", "tool": "fähigkeits-vorschläge-in-echte-skills-um.py", "ok": false}}
+{"ts": 1788738593.5798407, "kind": "swarm_started", "payload": {"goal": "Vorschläge in echte Fähigkeiten wandeln"}}
+{"ts": 1788738594.6410544, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1788738598.1789289, "kind": "metabolism_check", "payload": {"stress": 0.692, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1788738613.6422527, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 14.4, "tokens_ein": 3296, "tokens_aus": 614}}
+{"ts": 1788738640.5594082, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 26.0, "tokens_ein": 437, "tokens_aus": 1185}}
+{"ts": 1788738647.5397146, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 6.4, "tokens_ein": 329, "tokens_aus": 485}}
+{"ts": 1788738647.5399067, "kind": "simulation", "payload": {"goal": "Vorschläge in echte Fähigkeiten wandeln", "verdict": "go", "risks": 3, "revisions": 2}}
+{"ts": 1788738715.4532456, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 67.2, "tokens_ein": 1817, "tokens_aus": 2607}}

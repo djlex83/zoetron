@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 23:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 23:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
+- Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm-intelligence and simulation drive goals recur but no corresponding actions appear, indicating intent–execution decoupling for collaborative and 
+- Skill proposals accumulate (6+ in log) but none deploy; the proposal–deployment gap is now explicit in a proposal itself (skill-gate).
+- Three distinct model-reliability proposals (registry, router, calibration) cluster around the same root cause: no systematic model health observabilit
+- The same stale-knowledge reflex executes repeatedly for different domains (group info, group goals), revealing a missing abstraction layer for configu
+- Periodic pruning wastes cycles by running when no facts need removal (0 facts pruned in two runs), confirming write-coupled triggers would be more eff
 - Proactive health monitoring and circuit breaking isolate failures before they degrade the system.
 - Provider reliability fluctuates; continuous calibration and downweighting improve routing decisions.
 - Low swarm confidence after 2+ revisions signals a need for deterministic fallback or human escalation.
@@ -51,11 +56,6 @@
 - Reflex tools (e.g., lernen-aus-fehlern-systematisch-verbesse.py) consistently converge when invoked, but are only triggered manually via dream output.
 - Drive goals for 'stale' swarm data and 'failure' model errors recur every cycle, indicating missing automated refresh/retrain triggers.
 - Model failures cascade when rate limits (429) and service overloads (502) hit multiple providers simultaneously, yet no automatic fallback logic exist
-- Reflex tools succeed in isolation but are not composed into multi-step workflows with rollback, limiting recovery from partial failures.
-- Event-store bloat recurs because pruning lacks tiered TTL (hot/warm/cold) with access-frequency promotion, causing either loss of recent context or un
-- Stale swarm knowledge and drive goals persist because refresh is triggered manually, not on a staleness cadence tied to goal-age or failure signals.
-- Skill proposals accumulate in a deployment gap because no automated shadow-run A/B gate validates them against live reflexes before promotion.
-- Model failures cascade when 429/5xx responses lack automated fallback — a ModelRouter that preemptively switches on Retry-After and error-rate thresho
 
 ---
 
