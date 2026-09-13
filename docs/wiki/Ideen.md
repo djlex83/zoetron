@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 00:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 00:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,10 +29,10 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions fail intermittently (exit 1) without error details, suggesting transient resource contention rather than code defects.
+- Aggressive pruning (11 facts, 33 events) risks severing causal chains linking failures to recoveries, impairing root-cause learning.
+- Swarm convergence achieves high scores (9) in single cycles when model calls succeed, but provider instability makes this unreliable.
+- Calibration systematically underestimates actual swarm scores (predicted 6 vs actual 9), indicating optimistic bias in difficulty estimation.
+- Provider-side rate limits (429) and overloads (502) cause cascading model failures that sequential fallback resolves but at high latency cost.
 - Pruning removed 33 events during conserve mode, risking loss of causal chains needed to debug the hand_action failure.
 - Swarm converged in 1 cycle without evolution, indicating convergence criteria are too weak to ensure genuine solution quality.
 - Self-calibration error of 50% (predicted 6 vs actual 9) reveals systematic overconfidence that corrupts planning under stress.
@@ -51,11 +56,6 @@
 - The evolution run stalled at 6/10 because variant scores were not used to prune low performers; a scoring-driven selection loop is needed.
 - A free model taking 40 s to respond causes downstream timeouts, so routing must prefer models with p95 latency below a threshold and fall back to fast
 - Concurrent 429 and 502 errors from multiple free providers show that uncoordinated requests overwhelm upstream rate limits, requiring a shared token-b
-- Swarm convergence stalls at 2 cycles with fixed role ratios; dynamic role allocation based on failure type accelerates convergence.
-- Evolutionary variant generation (3+ variants) reliably lifts scores from 6→9, but requires critic role to filter hallucinations.
-- Calibration consistently underestimates actual effort by 3–4× (predicted 2 vs actual 6), so multiply initial estimates by 3.5.
-- Latency variance for identical models spans 8x (9.5s–77.3s), mandating timeout budgets per call rather than global constants.
-- Free-tier LLM endpoints exhibit high failure rates (502/429) requiring automatic fallback chains with exponential backoff.
 
 ---
 

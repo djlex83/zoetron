@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11380 Fakten** · Stand 2026-09-13 00:52 UTC · aktualisiert bei jedem Herzschlag
+**11385 Fakten** · Stand 2026-09-13 01:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7321
+- **dream:** 7326
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 921
 - **last_swarm_goal:** 656
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913005924:5:4646ed`
+*13.09. 00:59 UTC · Quelle: dream*
+
+Hand actions fail intermittently (exit 1) without error details, suggesting transient resource contention rather than code defects.
+
+### `dream:20260913005924:4:3d5928`
+*13.09. 00:59 UTC · Quelle: dream*
+
+Aggressive pruning (11 facts, 33 events) risks severing causal chains linking failures to recoveries, impairing root-cause learning.
+
+### `dream:20260913005924:3:d97348`
+*13.09. 00:59 UTC · Quelle: dream*
+
+Swarm convergence achieves high scores (9) in single cycles when model calls succeed, but provider instability makes this unreliable.
+
+### `dream:20260913005924:2:7dbcd5`
+*13.09. 00:59 UTC · Quelle: dream*
+
+Calibration systematically underestimates actual swarm scores (predicted 6 vs actual 9), indicating optimistic bias in difficulty estimation.
+
+### `dream:20260913005924:1:5e425a`
+*13.09. 00:59 UTC · Quelle: dream*
+
+Provider-side rate limits (429) and overloads (502) cause cascading model failures that sequential fallback resolves but at high latency cost.
 
 ### `dream:20260913004944:5:fac481`
 *13.09. 00:49 UTC · Quelle: dream*

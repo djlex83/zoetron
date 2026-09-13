@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 00:50:15",
+ "stand": "2026-09-13 00:59:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,16 +45,16 @@
    "quote": 0.75
   },
   {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
