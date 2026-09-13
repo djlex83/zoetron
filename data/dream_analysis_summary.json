@@ -1,14 +1,14 @@
 {
-  "total": 757,
+  "total": 760,
   "content_length_stats": {
     "min": 0,
     "max": 122,
-    "avg": 3.766182298546896
+    "avg": 3.751315789473684
   },
   "unique_tags": [],
   "time_range": {
     "earliest": "2026-08-26T06:09:15.112365",
-    "latest": "2026-09-13T14:28:38.594150"
+    "latest": "2026-09-13T20:50:11.375682"
   },
   "dreams": [
     {
@@ -421,7 +421,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-12T19:19:36.461872",
+      "timestamp": "2026-09-13T19:27:32.195717",
       "content_length": 0,
       "tags": []
     },
@@ -1537,7 +1537,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-13T06:09:40.893047",
+      "timestamp": "2026-09-13T20:50:11.375682",
       "content_length": 0,
       "tags": []
     },
@@ -4022,6 +4022,24 @@
     {
       "id": "CAP-0042",
       "timestamp": "2026-09-11T13:45:25.693049",
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
       "content_length": 0,
       "tags": []
     },

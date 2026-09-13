@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11353 Fakten** · Stand 2026-09-13 21:33 UTC · aktualisiert bei jedem Herzschlag
+**11351 Fakten** · Stand 2026-09-13 21:43 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7288
-- **swarm_artifact:** 1641
+- **swarm_artifact:** 1639
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
 - **anti_pattern:** 363
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913214109:5:ec488b`
+*13.09. 21:41 UTC · Quelle: dream*
+
+Provider rate limits (429 on Gemma) and outages (502 on Nemotron) demand a circuit-breaker with sub-2s failover.
+
+### `dream:20260913214109:4:3c7a67`
+*13.09. 21:41 UTC · Quelle: dream*
+
+Calibration error of 1 point (predicted 5 vs actual 4) suggests reward model overestimates artifact quality.
+
+### `dream:20260913214109:3:9f6180`
+*13.09. 21:41 UTC · Quelle: dream*
+
+Simulation-revision loops (3-5 revisions per cycle) consume excessive tokens without guaranteeing convergence.
+
+### `dream:20260913214109:2:5fdaff`
+*13.09. 21:41 UTC · Quelle: dream*
+
+Swarm convergence stalls at score 4/10 despite evolution cycles, indicating critic feedback isn't translating into builder fixes.
+
+### `dream:20260913214109:1:a090bc`
+*13.09. 21:41 UTC · Quelle: dream*
+
+Nemotron-3-ultra exhibits 502 upstream errors under load, requiring automatic fallback to faster models like dots-studio (16s vs 50s+).
 
 ### `dream:20260913213104:5:034415`
 *13.09. 21:31 UTC · Quelle: dream*
@@ -42097,31 +42122,6 @@ score=8; issues=Diagnostic script is a separate utility not integrated into the 
 *30.08. 21:34 UTC · Quelle: system*
 
 Veraltete Marktwissen auffrischen
-
-### `dream:20260830213338:5:639bb2`
-*30.08. 21:33 UTC · Quelle: dream*
-
-Hand actions execute reliably with near-zero duration (0.24-0.33s) and no errors, showing robust low-level filesystem operations.
-
-### `dream:20260830213338:4:801c4e`
-*30.08. 21:33 UTC · Quelle: dream*
-
-Calibration consistently under-predicts actual resource needs (predicted 4 vs actual 8), indicating a systematic bias in resource estimation.
-
-### `dream:20260830213338:3:fb5ee2`
-*30.08. 21:33 UTC · Quelle: dream*
-
-The swarm system successfully converged on goal 'Veraltete Infos auffrischen' with score 8 in a single cycle, demonstrating effective parallel execution.
-
-### `dream:20260830213338:2:48aef2`
-*30.08. 21:33 UTC · Quelle: dream*
-
-Model latency varies dramatically (8s to 175s) even for the same model across calls, suggesting API-side throttling or queuing effects.
-
-### `dream:20260830213338:1:ab453b`
-*30.08. 21:33 UTC · Quelle: dream*
-
-All model failures are exclusively 429 Too Many Requests errors from OpenRouter, indicating rate-limiting rather than model-specific issues.
 
 ### `last_swarm_critique`
 *30.08. 21:17 UTC · Quelle: critic*

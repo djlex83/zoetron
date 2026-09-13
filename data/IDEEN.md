@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Provider rate limits (429 on Gemma) and outages (502 on Nemotron) demand a circuit-breaker with sub-2s failover.
+- Calibration error of 1 point (predicted 5 vs actual 4) suggests reward model overestimates artifact quality.
+- Simulation-revision loops (3-5 revisions per cycle) consume excessive tokens without guaranteeing convergence.
+- Swarm convergence stalls at score 4/10 despite evolution cycles, indicating critic feedback isn't translating into builder fixes.
+- Nemotron-3-ultra exhibits 502 upstream errors under load, requiring automatic fallback to faster models like dots-studio (16s vs 50s+).
 - Stale swarm goals persist without TTL or auto-archive, causing reflex tools to act on obsolete objectives.
 - Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), starving parallel exploration needed for model routing.
 - Simulation verdict 'revise' with 5 risks and 3 applied revisions prevented runtime failure on the swarm refresh task.
@@ -51,11 +56,6 @@
 - Successful reflex execution for memory combination demonstrates that deterministic tools outperform LLM calls for structured retrieval tasks.
 - Drive goals accumulate staleness signals without automated lifecycle transitions, causing objective drift and wasted planning effort.
 - Recurring 429 errors on primary models reveal that reactive fallback-only routing wastes cycles and latency before switching to healthy endpoints.
-- Regular pruning (5 facts, 17 events) prevents memory bloat but risks discarding rare high-value patterns.
-- Drive goals emerge from failure signals, staleness detection, and dream combination, showing a healthy meta-cognitive loop.
-- Reflex-driven actions (e.g., swarm goal update) converge reliably without LLM calls, proving non-LLM paths for critical ops.
-- The dots-studio model succeeds but with 25+ second latency, revealing a hard availability-speed trade-off on free tiers.
-- Free-tier Gemma models consistently hit 429 rate limits, making them unreliable for production workloads.
 
 ---
 
