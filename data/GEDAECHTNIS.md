@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11353 Fakten** · Stand 2026-09-13 21:13 UTC · aktualisiert bei jedem Herzschlag
+**11349 Fakten** · Stand 2026-09-13 21:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7278
-- **swarm_artifact:** 1647
+- **dream:** 7283
+- **swarm_artifact:** 1641
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
-- **anti_pattern:** 365
-- **strategy:** 185
+- **anti_pattern:** 363
+- **strategy:** 184
 - **tool:** 152
 - **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913212055:5:eecedd`
+*13.09. 21:20 UTC · Quelle: dream*
+
+Multiple overlapping skill proposals (fallback router, dynamic router, predictive heuristic) signal a missing meta-process to deduplicate and prioritize capability gaps.
+
+### `dream:20260913212055:4:19e181`
+*13.09. 21:20 UTC · Quelle: dream*
+
+Pruning events and facts regularly (27 items this cycle) indicates memory pressure that could degrade retrieval precision if unmonitored.
+
+### `dream:20260913212055:3:f3f4b8`
+*13.09. 21:20 UTC · Quelle: dream*
+
+Successful reflex execution for memory combination demonstrates that deterministic tools outperform LLM calls for structured retrieval tasks.
+
+### `dream:20260913212055:2:7b5ce6`
+*13.09. 21:20 UTC · Quelle: dream*
+
+Drive goals accumulate staleness signals without automated lifecycle transitions, causing objective drift and wasted planning effort.
+
+### `dream:20260913212055:1:8f3eda`
+*13.09. 21:20 UTC · Quelle: dream*
+
+Recurring 429 errors on primary models reveal that reactive fallback-only routing wastes cycles and latency before switching to healthy endpoints.
 
 ### `dream:20260913211038:5:480818`
 *13.09. 21:10 UTC · Quelle: dream*
@@ -42077,16 +42102,6 @@ All model failures are exclusively 429 Too Many Requests errors from OpenRouter,
 *30.08. 21:20 UTC · Quelle: hands*
 
 Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Marktanalysen verwerten'. Datei: data/tools/alte-marktanalysen-verwerten.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Marktanalysen verwe:2`
-*30.08. 21:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Event-Driven Insight Extraction Engine - Replace procedural scripts with an event-driven engine where each legacy data source emits standardized internal events (e.g., 'fact_extracted', 'node_linked', 'semantic_matched'). A c
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Marktanalysen verwe:1`
-*30.08. 21:19 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Schema-Driven Plugin Architecture - Define a strict JSON schema for market analysis results (including fields like 'insight_id', 'relevance_score', 'source_refs', and 'timestamp'). Build modular analysis plugins that each adh
 
 ### `last_swarm_critique`
 *30.08. 21:17 UTC · Quelle: critic*

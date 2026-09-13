@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple overlapping skill proposals (fallback router, dynamic router, predictive heuristic) signal a missing meta-process to deduplicate and prioriti
+- Pruning events and facts regularly (27 items this cycle) indicates memory pressure that could degrade retrieval precision if unmonitored.
+- Successful reflex execution for memory combination demonstrates that deterministic tools outperform LLM calls for structured retrieval tasks.
+- Drive goals accumulate staleness signals without automated lifecycle transitions, causing objective drift and wasted planning effort.
+- Recurring 429 errors on primary models reveal that reactive fallback-only routing wastes cycles and latency before switching to healthy endpoints.
 - Regular pruning (5 facts, 17 events) prevents memory bloat but risks discarding rare high-value patterns.
 - Drive goals emerge from failure signals, staleness detection, and dream combination, showing a healthy meta-cognitive loop.
 - Reflex-driven actions (e.g., swarm goal update) converge reliably without LLM calls, proving non-LLM paths for critical ops.
@@ -51,11 +56,6 @@
 - A single free model (dots-studio/dots-3-note-preview) consistently succeeds while larger models fail, suggesting capacity ≠ reliability under quota co
 - Reflex-driven stale-data refresh (Scharm-Daten, Schwarmziele) converges quickly and without errors, proving the pattern is robust for maintenance task
 - Repeated 429 errors on specific models indicate persistent rate-limiting that survives across sleep cycles, making them unreliable for production task
-- Prediction errors are frequent enough to spawn a top-level drive goal, indicating planning-time estimates systematically diverge from execution realit
-- Pruning volume fluctuates wildly (8→0 facts, 17→21 events) suggesting memory pressure is event-driven not time-driven, so pruning should couple to wri
-- Three consecutive failures trigger a 30-minute model lockout, which protects system stability but requires a ready fallback to avoid capability gaps.
-- Reflex tools achieve 100% convergence on maintenance tasks (group goals, knowledge refresh) without model invocation, proving deterministic scripts ou
-- Model failures cluster by provider: nemotron suffers read timeouts while gemma hits 429 rate limits, making provider-aware fallback essential.
 
 ---
 
