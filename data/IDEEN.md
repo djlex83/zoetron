@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 12:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 13:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Träume mit Fähigkeiten verbinden *(wieder aufgegriffen: 3×)*
+- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system's drive mechanism successfully translates failure signals into actionable reliability goals.
+- Automated pruning and self-diagnosis processes are operating stably without introducing errors.
+- Reflex-based execution is highly effective for routine maintenance tasks like swarm data synchronization.
+- Model diversity prevents total system failure by allowing fallback to alternative providers when primary models are throttled.
+- Rate-limiting (429 errors) is a recurring failure point for specific high-capacity model families.
 - Automated skill proposals already include model routing and retry logic, indicating a self-healing approach to API failures.
 - The successful model dots-studio/dots-3-note-preview:free has higher latency but consistent output, suggesting a reliability-over-speed trade-off.
 - Pruning facts and events without re-linking can discard valuable cross-domain connections.
@@ -51,11 +56,6 @@
 - Reflex-based execution of simulations provides a reliable alternative for task completion during model instability.
 - Model diversity is essential for system availability, as the dots-studio model remains functional while others fail.
 - Free-tier Gemma models on OpenRouter are currently experiencing frequent 429 rate-limiting failures.
-- Selecting models based on recent latency and error rates yields more stable task execution.
-- A generic fallback model (openrouter/free) can sustain operations when specialized models are unavailable.
-- Malformed request payloads cause 400 errors; schema validation before dispatch prevents wasted calls.
-- HTTP 429 rate limits and read timeouts dominate failures; exponential backoff and request queuing improve reliability.
-- When three consecutive model errors occur, the system blocks the model for 1800s, so a circuit‑breaker with fallback models is essential.
 
 ---
 
