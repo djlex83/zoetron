@@ -45157,3 +45157,22 @@
 {"ts": 1788681429.7710705, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.45, "gelesen": 74}}
 {"ts": 1788681429.7730243, "kind": "reflex_used", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py", "ok": true}}
 {"ts": 1788681430.284098, "kind": "act_done", "payload": {"goal_title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788681965.541186, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788682034.0731301, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788682035.927973, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 13}}
+{"ts": 1788682040.9996555, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788682040.9996526, "schalter_geoeffnet": false}}
+{"ts": 1788682063.5753963, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.6, "tokens_ein": 1362, "tokens_aus": 1310}}
+{"ts": 1788682063.576158, "kind": "skill_proposal", "payload": {"proposal": "Implement ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuous health scores and automatically shift traffic away from failing models."}}
+{"ts": 1788682063.5762854, "kind": "skill_proposal", "payload": {"proposal": "Add @circuit_breaker decorator with configurable failure threshold, half-open probe interval, and automatic metric emission for every model call to prevent cascading failures."}}
+{"ts": 1788682063.5763543, "kind": "skill_proposal", "payload": {"proposal": "Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real failure scenarios, and promotes only passing skills to the active registry."}}
+{"ts": 1788682063.5764067, "kind": "skill_proposal", "payload": {"proposal": "Add PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run invocations and ensure consistent memory hygiene."}}
+{"ts": 1788682063.5764716, "kind": "skill_proposal", "payload": {"proposal": "Integrate model_fail events into Selbstdiagnose module to automatically flag degraded external dependencies as organ warnings and surface them in self-diagnostic reports."}}
+{"ts": 1788682063.576539, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788682065.7592356, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788682065.7592316, "schalter_geoeffnet": false}}
+{"ts": 1788682082.9135256, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 17.2, "tokens_ein": 497, "tokens_aus": 454}}
+{"ts": 1788682082.9136665, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell macht zu viele Fehler (71 Fehlschläge vs. 44 Erfolge). Weniger Fehler bedeuten, dass das System verlässlicher handelt.", "signal": "failure"}}
+{"ts": 1788682082.9137404, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Die letzten Schwarm-Ergebnisse sind veraltet. Frische Schwarm-Einsichten verhindern, dass das System auf alten Annahmen basiert.", "signal": "stale"}}
+{"ts": 1788682082.913817, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "why": "Es liegen 45 Fähigkeits-Vorschläge vor, aber unklar, welche wirklich helfen. Eine Auswahl schafft neue echte Möglichkeiten.", "signal": "combination"}}
+{"ts": 1788682085.4909472, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 3}}
+{"ts": 1788682085.493362, "kind": "reflex_used", "payload": {"goal": "Vorschläge in echte Fähigkeiten verwandeln", "tool": "beste-vorschläge-in-fähigkeiten-verwande.py", "ok": true}}
+{"ts": 1788682085.940766, "kind": "act_done", "payload": {"goal_title": "Vorschläge in echte Fähigkeiten verwandeln", "score": null, "converged": true, "mode": "reflex"}}

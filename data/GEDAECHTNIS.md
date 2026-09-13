@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11355 Fakten** · Stand 2026-09-13 08:06 UTC · aktualisiert bei jedem Herzschlag
+**11372 Fakten** · Stand 2026-09-13 08:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7276
-- **swarm_artifact:** 1663
-- **last_swarm_critique:** 928
-- **last_swarm_goal:** 663
-- **anti_pattern:** 365
-- **strategy:** 185
-- **tool:** 153
+- **dream:** 7281
+- **swarm_artifact:** 1669
+- **last_swarm_critique:** 929
+- **last_swarm_goal:** 664
+- **anti_pattern:** 367
+- **strategy:** 186
+- **tool:** 154
 - **hand_result:** 84
 - **aktuell_organfehler:** 38
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-echt-umsetzen`
+*13.09. 08:33 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten echt umsetzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-echt-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*13.09. 08:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 5, 7]): Runtime function registration - Modify the validation process to return actual Python callable objects instead of code strings. Store these callables in a global registry. The generated modules reference the registry 
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:0`
+*13.09. 08:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 8, 8]): Inline code embedding - Parse the validated skill JSON, retrieve the 'implementation' field, and embed it as a string literal inside the generated module. Use exec() to compile and execute this string, defining the re
+
+### `last_swarm_critique`
+*13.09. 08:26 UTC · Quelle: critic*
+
+score=5; issues=Die generierten Module enthalten nur Stub-Implementierungen (_execute_core mit TODO und _default_return), nicht die echte Logik der validierten Fähigkeiten. Der Code aus der Validierung (skill.get('code') / 'implementation') wird nicht extrahie
+
+### `last_swarm_goal`
+*13.09. 08:17 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten echt umsetzen
+
+### `dream:20260913081530:5:39d498`
+*13.09. 08:15 UTC · Quelle: dream*
+
+The 'conserve' state is triggered too late to prevent the cascade of model and action failures.
+
+### `dream:20260913081530:4:e5997b`
+*13.09. 08:15 UTC · Quelle: dream*
+
+Model diversity provides some redundancy, but systemic rate limits can still paralyze the entire swarm.
+
+### `dream:20260913081530:3:9a5fd6`
+*13.09. 08:15 UTC · Quelle: dream*
+
+Proposed skill implementations are failing to transition from proposal to execution during high-stress states.
+
+### `dream:20260913081530:2:359c83`
+*13.09. 08:15 UTC · Quelle: dream*
+
+Maximum stress levels (1.0) correlate directly with hand-action timeouts and failed reflex executions.
+
+### `dream:20260913081530:1:720f1e`
+*13.09. 08:15 UTC · Quelle: dream*
+
+Systemic API failures (429 and 502 errors) across multiple providers indicate a critical dependency on unstable external infrastructure.
 
 ### `dream:20260913080304:5:2cfca6`
 *13.09. 08:03 UTC · Quelle: dream*
