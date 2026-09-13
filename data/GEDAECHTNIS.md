@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11376 Fakten** · Stand 2026-09-13 01:22 UTC · aktualisiert bei jedem Herzschlag
+**11390 Fakten** · Stand 2026-09-13 01:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7326
-- **swarm_artifact:** 1649
-- **last_swarm_critique:** 921
-- **last_swarm_goal:** 656
+- **dream:** 7331
+- **swarm_artifact:** 1655
+- **last_swarm_critique:** 922
+- **last_swarm_goal:** 657
 - **anti_pattern:** 365
 - **strategy:** 185
-- **tool:** 153
+- **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `tool:simulationen-öfter-in-die-praxis-umsetze`
+*13.09. 01:36 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen öfter in die Praxis umsetzen'. Datei: data/tools/simulationen-öfter-in-die-praxis-umsetze.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*13.09. 01:36 UTC · Quelle: critic*
+
+score=9; issues=Hands._execute_step uses simulated execution (placeholder) - noted in comments but not production-ready; Static analysis risk patterns rely on basic string matching rather than AST-based detection; No explicit metric/dashboard for simulation-to
+
+### `last_swarm_goal`
+*13.09. 01:30 UTC · Quelle: system*
+
+Simulationen öfter in die Praxis umsetzen
+
+### `dream:20260913012953:5:3fd671`
+*13.09. 01:29 UTC · Quelle: dream*
+
+Evolution, swarm refresh, and benchmarks stall because no scheduler enforces minimum run cadence.
+
+### `dream:20260913012953:4:fde3ee`
+*13.09. 01:29 UTC · Quelle: dream*
+
+System stress hits maximum (1.0) and enters conserve mode whenever model latency spikes above 15 s, starving other organs.
+
+### `dream:20260913012953:3:9dea9a`
+*13.09. 01:29 UTC · Quelle: dream*
+
+Tool and reflex failures stem from hard-coded relative paths that ignore ZOETRON_DATA, making execution environment-dependent.
+
+### `dream:20260913012953:2:4b0ac6`
+*13.09. 01:29 UTC · Quelle: dream*
+
+Proposed skills accumulate but never activate because no automated promotion pipeline validates and deploys them.
+
+### `dream:20260913012953:1:b3f183`
+*13.09. 01:29 UTC · Quelle: dream*
+
+Model reliability collapses without a token-bucket rate limiter and health-aware fallback routing, as evidenced by repeated 429/502 errors across three providers.
 
 ### `dream:20260913011947:5:245585`
 *13.09. 01:19 UTC · Quelle: dream*

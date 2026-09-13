@@ -44109,3 +44109,22 @@
 {"ts": 1788657269.5777435, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.55, "gelesen": 365}}
 {"ts": 1788657269.5799696, "kind": "reflex_used", "payload": {"goal": "CI-Pipeline nach Fehlschlag neu aufbauen", "tool": "automatische-fehler-reduktions-pipeline-.py", "ok": true}}
 {"ts": 1788657269.9872475, "kind": "act_done", "payload": {"goal_title": "CI-Pipeline nach Fehlschlag neu aufbauen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788657801.8572626, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788657870.4933598, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788657872.261376, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 1}}
+{"ts": 1788657876.6933067, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788657876.693303, "schalter_geoeffnet": false}}
+{"ts": 1788657892.6271822, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 15.9, "tokens_ein": 1365, "tokens_aus": 931}}
+{"ts": 1788657892.6279626, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with per-endpoint health tracking, exponential backoff with jitter for 429/502, and automatic failover to next-best model."}}
+{"ts": 1788657892.6280494, "kind": "skill_proposal", "payload": {"proposal": "Add a circuit-breaker decorator that trips after N consecutive failures, enters half-open state after cooldown, and logs metrics for scorecard updates."}}
+{"ts": 1788657892.628142, "kind": "skill_proposal", "payload": {"proposal": "Create a dream-to-drive hook that converts each dream insight into a drive_goal (signal='combination') and each skill_proposal into a registry entry with priority scoring."}}
+{"ts": 1788657892.6282454, "kind": "skill_proposal", "payload": {"proposal": "Build a prose-to-code converter skill that extracts runnable Python stubs from descriptive simulation plans and validates them via sandbox execution before acceptance."}}
+{"ts": 1788657892.6283343, "kind": "skill_proposal", "payload": {"proposal": "Develop a model reliability scorecard that continuously weights success rate, latency percentiles, error-type frequency, and token efficiency for dynamic model selection."}}
+{"ts": 1788657892.628427, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788657894.8379953, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788657894.837993, "schalter_geoeffnet": false}}
+{"ts": 1788657917.4183898, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.6, "tokens_ein": 469, "tokens_aus": 710}}
+{"ts": 1788657917.4185288, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell macht noch zu viele Fehler. Weniger Fehler bedeuten, dass das System verlässlicher arbeitet.", "signal": "failure"}}
+{"ts": 1788657917.4186032, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Die Infos aus der Zusammenarbeit mit anderen Systemen sind veraltet. Neue Abstimmung bringt bessere Ideen.", "signal": "stale"}}
+{"ts": 1788657917.418666, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber unklar welche wirklich funktionieren. Testen schafft echten Fortschritt.", "signal": "gap"}}
+{"ts": 1788657919.8739154, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.25, "gelesen": 14}}
+{"ts": 1788657919.8759513, "kind": "reflex_used", "payload": {"goal": "Veraltete Schwarm-Aufgaben abschließen", "tool": "veraltete-schwarm-artefakte-aufräumen-un.py", "ok": true}}
+{"ts": 1788657920.4090183, "kind": "act_done", "payload": {"goal_title": "Veraltete Schwarm-Aufgaben abschließen", "score": null, "converged": true, "mode": "reflex"}}

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 01:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 01:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,18 +16,18 @@
 - Add a goal-staleness detector to prune_run that flags drive_goals unchanged for >N cycles and either archives  *(hatte die Idee 4×)*
 - Build a calibration tracker that logs predicted vs actual scores per goal_type and applies learned correction  *(hatte die Idee 4×)*
 - Deploy a tournament-bracket swarm consensus: run parallel evolution tournaments, promote only winners that pas *(hatte die Idee 4×)*
+- Instrument every model call with structured telemetry (provider, latency_ms, error_class, tokens) for continuo *(hatte die Idee 4×)*
 - Build SkillConversionPipeline: auto-promote approved proposals to implemented skills with CI tests, versioning *(hatte die Idee 3×)*
 - Add GoalAwarePruningFilter: score every fact/event against active drive goals before deletion; protect items t *(hatte die Idee 3×)*
 - Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
-- Add a configurable circuit breaker that temporarily blocks a model after N consecutive failures. *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verringern *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
+- Swarm-Ziele erneuern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution, swarm refresh, and benchmarks stall because no scheduler enforces minimum run cadence.
+- System stress hits maximum (1.0) and enters conserve mode whenever model latency spikes above 15 s, starving other organs.
+- Tool and reflex failures stem from hard-coded relative paths that ignore ZOETRON_DATA, making execution environment-dependent.
+- Proposed skills accumulate but never activate because no automated promotion pipeline validates and deploys them.
+- Model reliability collapses without a token-bucket rate limiter and health-aware fallback routing, as evidenced by repeated 429/502 errors across thre
 - Swarm-knowledge revival via reflex works but requires explicit trigger; automate stale-detection and re-indexing.
 - A singleton OpenRouter token-bucket (20 req/min, burst 5) prevents cascade 429s across all callers.
 - Proposed skills accumulate but aren't deployed; a promotion pipeline from proposal to production is missing.
@@ -51,11 +56,6 @@
 - Effort estimates consistently underestimate actual cost; a 3.5× calibration multiplier aligns predictions with reality.
 - Reserving minimum recovery capacity (1 task slot) even in conserve mode prevents cascade failures during model outages.
 - Model instability (429 rate limits, 502 overloads) is systemic and requires health-aware routing with automatic fallback to maintain throughput.
-- Hand actions fail intermittently (exit 1) without error details, suggesting transient resource contention rather than code defects.
-- Aggressive pruning (11 facts, 33 events) risks severing causal chains linking failures to recoveries, impairing root-cause learning.
-- Swarm convergence achieves high scores (9) in single cycles when model calls succeed, but provider instability makes this unreliable.
-- Calibration systematically underestimates actual swarm scores (predicted 6 vs actual 9), indicating optimistic bias in difficulty estimation.
-- Provider-side rate limits (429) and overloads (502) cause cascading model failures that sequential fallback resolves but at high latency cost.
 
 ---
 
