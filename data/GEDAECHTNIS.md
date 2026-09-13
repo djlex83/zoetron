@@ -1,18 +1,23 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11382 Fakten** · Stand 2026-09-13 11:13 UTC · aktualisiert bei jedem Herzschlag
+**11377 Fakten** · Stand 2026-09-13 11:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7291
-- **swarm_artifact:** 1665
+- **dream:** 7292
+- **swarm_artifact:** 1663
 - **last_swarm_critique:** 932
 - **last_swarm_goal:** 667
-- **anti_pattern:** 369
-- **strategy:** 187
+- **anti_pattern:** 367
+- **strategy:** 186
 - **tool:** 155
 - **hand_result:** 83
-- **aktuell_organfehler:** 33
+- **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913112137:1:d8b4ed`
+*13.09. 11:21 UTC · Quelle: dream*
+
+Dream could not parse its own output - check prompt size.
 
 ### `dream:20260913111012:5:8c2978`
 *13.09. 11:10 UTC · Quelle: dream*
@@ -42212,21 +42217,6 @@ Model provider failures (429 rate limits and 404s) are systemic rather than isol
 *30.08. 11:34 UTC · Quelle: dream*
 
 Dream module consistently times out at exactly 180 seconds across three consecutive cycles, indicating a structural bottleneck that blocks the entire consolidation pipeline.
-
-### `aktuell_organfehler`
-*30.08. 11:16 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-30 11:03:54-11:06:54 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Viele Skill-Ideen konkre:2`
-*30.08. 11:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): State-Machine-Runtime: Skill-Ideen als ausführbare Workflows - Skill-Ideen werden als endliche Zustandsautomaten (State Machine) modelliert, wobei jeder Zustand eine Verarbeitungsstufe und jede Transition eine Bedingung/Aktio
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Viele Skill-Ideen konkre:1`
-*30.08. 11:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Plugin-Registry mit dynamischer Skill-Ausführung - Ein Plugin-System wird aufgebaut, bei dem jede Skill-Idee als registrierbares Modul mit definiertem Interface (z.B. execute(input) -> output) in eine Runtime-Registry geladen
 
 ### `last_swarm_critique`
 *30.08. 11:12 UTC · Quelle: critic*

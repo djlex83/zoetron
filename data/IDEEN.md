@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,7 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream could not parse its own output - check prompt size.
 - Pruning stale events reduces noise but must preserve goal‑relevant facts to maintain context.
 - Successful calls complete in roughly 30 s, implying that timeout thresholds should be set above that baseline.
 - Three consecutive errors cause the model to be blocked, demonstrating the need for a circuit‑breaker pattern.
@@ -55,7 +56,6 @@
 - The simulation→reflex→apply loop shows revisions are needed (3 revisions, 3 risks) before application succeeds, indicating simulation validation needs
 - The hand action failed because relative paths do not resolve correctly; absolute paths or environment-variable-based paths (ZOETRON_DATA) must be used
 - High latency (26–56 s) and high token output (up to 5153 tokens) from the working model suggest token budget management is critical under conserve mod
-- The google/gemma models consistently fail with HTTP 429 (rate limit) while dots-studio/dots-3-note-preview:free succeeds, indicating a reliable fallba
 
 ---
 
