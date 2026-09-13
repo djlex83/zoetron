@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8009 Neuronen · 831681 bewertete Synapsen
+Stand: 8010 Neuronen · 831662 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -45,5 +45,5 @@ Stand: 8009 Neuronen · 831681 bewertete Synapsen
 | 11 | **0.55** | 💭 Free-tier models exhibit cascading 429 rate-li… | 💭 Free-tier model endpoints exhibit bursty avail… |
 | 12 | **0.55** | 💭 Free-tier models (Nemotron, Gemma) exhibit hig… | 💭 The inclusionai/ling-3.0-flash-fin:free model … |
 | 13 | **0.55** | 💭 Swarm knowledge staleness is only detected rea… | 💭 Swarm knowledge staleness is detected only aft… |
-| 14 | **0.55** | 💭 Free tier model endpoints exhibit cascading 42… | 💭 Model endpoints exhibit cascading failures (50… |
-| 15 | **0.54** | 💭 Stale goals (market analysis, model-error redu… | 💭 Stale drive goals (market analysis, model reli… |
+| 14 | **0.55** | 💭 Model latency varies 2x (40-86s) for identical… | 💭 Model latency varies 10x (12s to 120s) for ide… |
+| 15 | **0.55** | 💭 Free tier model endpoints exhibit cascading 42… | 💭 Model endpoints exhibit cascading failures (50… |

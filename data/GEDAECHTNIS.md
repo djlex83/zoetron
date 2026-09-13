@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11385 Fakten** · Stand 2026-09-13 00:42 UTC · aktualisiert bei jedem Herzschlag
+**11380 Fakten** · Stand 2026-09-13 00:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7316
-- **swarm_artifact:** 1661
+- **dream:** 7321
+- **swarm_artifact:** 1655
 - **last_swarm_critique:** 921
 - **last_swarm_goal:** 656
-- **anti_pattern:** 369
-- **strategy:** 187
-- **tool:** 154
+- **anti_pattern:** 367
+- **strategy:** 186
+- **tool:** 153
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913004944:5:fac481`
+*13.09. 00:49 UTC · Quelle: dream*
+
+Pruning removed 33 events during conserve mode, risking loss of causal chains needed to debug the hand_action failure.
+
+### `dream:20260913004944:4:675447`
+*13.09. 00:49 UTC · Quelle: dream*
+
+Swarm converged in 1 cycle without evolution, indicating convergence criteria are too weak to ensure genuine solution quality.
+
+### `dream:20260913004944:3:f02b61`
+*13.09. 00:49 UTC · Quelle: dream*
+
+Self-calibration error of 50% (predicted 6 vs actual 9) reveals systematic overconfidence that corrupts planning under stress.
+
+### `dream:20260913004944:2:d291ba`
+*13.09. 00:49 UTC · Quelle: dream*
+
+Hand actions fail silently (exit 1, error null) leaving no diagnostic trace, so wrapper instrumentation is mandatory for observability.
+
+### `dream:20260913004944:1:25798b`
+*13.09. 00:49 UTC · Quelle: dream*
+
+Model latency varies 10x (12s to 120s) for identical model calls, making fixed timeouts unreliable and requiring adaptive fallback logic.
 
 ### `tool:simulationen-konsequent-anwenden`
 *13.09. 00:40 UTC · Quelle: hands*
@@ -42357,21 +42382,6 @@ Nemotron-3-Ultra exhibits extreme latency variance (4.8–45.4 s) on similar tok
 *30.08. 01:04 UTC · Quelle: dream*
 
 The free-tier model z-ai/glm-5.2:free suffers 100% 429 rate-limit failures across 5 consecutive calls, making it effectively unusable for production routing.
-
-### `tool:veraltete-marktkenntnisse-aktualisieren`
-*30.08. 00:40 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Marktkenntnisse aktualisieren'. Datei: data/tools/veraltete-marktkenntnisse-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Marktkenntniss:2`
-*30.08. 00:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.0): Human-in-the-Loop Active Learning with Confidence Calibration - Frame market-knowledge refresh as a continuous active-learning loop. Start with a small seed of high-confidence structured records (from SEC filings, statistic
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Marktkenntniss:1`
-*30.08. 00:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.3): Semantic Knowledge Graph with Contextual Entailment - Replace keyword matching with a bilingual (DE/EN) domain-adapted sentence transformer (e.g., fine-tuned MiniLM on 50k German financial texts) to embed every claim as a 3
 
 ### `last_swarm_critique`
 *30.08. 00:36 UTC · Quelle: critic*
