@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 21:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -33,14 +33,19 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen wieder nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale swarm goals persist without TTL or auto-archive, causing reflex tools to act on obsolete objectives.
+- Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), starving parallel exploration needed for model routing.
+- Simulation verdict 'revise' with 5 risks and 3 applied revisions prevented runtime failure on the swarm refresh task.
+- Hand actions fail when relative paths diverge from ZOETRON_DATA root, indicating environment drift between components.
+- Free-tier models (Gemma variants) consistently hit 429 rate limits under load while Nemotron-3-ultra remains available but slow (36-73s).
 - Multiple overlapping skill proposals (fallback router, dynamic router, predictive heuristic) signal a missing meta-process to deduplicate and prioriti
 - Pruning events and facts regularly (27 items this cycle) indicates memory pressure that could degrade retrieval precision if unmonitored.
 - Successful reflex execution for memory combination demonstrates that deterministic tools outperform LLM calls for structured retrieval tasks.
@@ -51,11 +56,6 @@
 - Reflex-driven actions (e.g., swarm goal update) converge reliably without LLM calls, proving non-LLM paths for critical ops.
 - The dots-studio model succeeds but with 25+ second latency, revealing a hard availability-speed trade-off on free tiers.
 - Free-tier Gemma models consistently hit 429 rate limits, making them unreliable for production workloads.
-- Drive goals for model stability are generated reactively after failures but lack a proactive model-selection policy, causing repeated avoidable failur
-- Event pruning (21 events) occurs without fact pruning (0 facts), indicating the memory decay policy may be too aggressive on episodic traces but too c
-- A single free model (dots-studio/dots-3-note-preview) consistently succeeds while larger models fail, suggesting capacity ≠ reliability under quota co
-- Reflex-driven stale-data refresh (Scharm-Daten, Schwarmziele) converges quickly and without errors, proving the pattern is robust for maintenance task
-- Repeated 429 errors on specific models indicate persistent rate-limiting that survives across sleep cycles, making them unreliable for production task
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 21:21:49",
+ "stand": "2026-09-13 21:31:56",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -195,6 +195,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-verstehen-und-verringern.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -373,15 +379,9 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   }
  ],
- "haende_quote": 0.724,
+ "haende_quote": 0.729,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 33,

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11349 Fakten** · Stand 2026-09-13 21:23 UTC · aktualisiert bei jedem Herzschlag
+**11353 Fakten** · Stand 2026-09-13 21:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7283
+- **dream:** 7288
 - **swarm_artifact:** 1641
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
 - **anti_pattern:** 363
 - **strategy:** 184
-- **tool:** 152
+- **tool:** 151
 - **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913213104:5:034415`
+*13.09. 21:31 UTC · Quelle: dream*
+
+Stale swarm goals persist without TTL or auto-archive, causing reflex tools to act on obsolete objectives.
+
+### `dream:20260913213104:4:a726b8`
+*13.09. 21:31 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), starving parallel exploration needed for model routing.
+
+### `dream:20260913213104:3:9308ee`
+*13.09. 21:31 UTC · Quelle: dream*
+
+Simulation verdict 'revise' with 5 risks and 3 applied revisions prevented runtime failure on the swarm refresh task.
+
+### `dream:20260913213104:2:1d2b77`
+*13.09. 21:31 UTC · Quelle: dream*
+
+Hand actions fail when relative paths diverge from ZOETRON_DATA root, indicating environment drift between components.
+
+### `dream:20260913213104:1:472e1b`
+*13.09. 21:31 UTC · Quelle: dream*
+
+Free-tier models (Gemma variants) consistently hit 429 rate limits under load while Nemotron-3-ultra remains available but slow (36-73s).
 
 ### `dream:20260913212055:5:eecedd`
 *13.09. 21:20 UTC · Quelle: dream*
@@ -42097,11 +42122,6 @@ Model latency varies dramatically (8s to 175s) even for the same model across ca
 *30.08. 21:33 UTC · Quelle: dream*
 
 All model failures are exclusively 429 Too Many Requests errors from OpenRouter, indicating rate-limiting rather than model-specific issues.
-
-### `tool:alte-marktanalysen-verwerten`
-*30.08. 21:20 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Marktanalysen verwerten'. Datei: data/tools/alte-marktanalysen-verwerten.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *30.08. 21:17 UTC · Quelle: critic*
