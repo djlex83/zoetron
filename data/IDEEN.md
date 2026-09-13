@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 22:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
@@ -33,14 +33,19 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes stale artifacts but does not prevent regeneration of outdated facts from unreliable model outputs.
+- Drive goals for reliability persist across cycles without automated enforcement, indicating a gap between intent and operational guardrails.
+- Repeated 429 errors reveal missing client-side rate limiting and exponential backoff, causing self-inflicted denial of service.
+- The only consistently available model (dots-studio) exceeds 20s latency, creating a throughput bottleneck that stalls autonomous cycles.
+- Free-tier models on OpenRouter exhibit correlated 429/502 failures under load, making single-provider reliance a systemic fragility.
 - Stress signals (model latency spikes, error rates) correlate with multi-threaded execution but the scheduler has no feedback loop to contract concurre
 - Swarm knowledge ingestion is a recurring drive goal but no scheduler or TTL mechanism exists to pull and validate external insights periodically.
 - Aggressive pruning (53 events/cycle) discards contextual threads needed for cross-episode pattern detection before consolidation can harvest them.
@@ -51,11 +56,6 @@
 - Reflex tools succeed individually but operate without circuit-breakers or performance auditing, risking silent degradation when dependencies shift.
 - Swarm knowledge and dream outputs accumulate but lack automated refresh/compilation pipelines, causing 60 proposals to stagnate without becoming execu
 - Free-tier model endpoints exhibit high latency variance (22-43s) and 56/96 failure rate, making predictive routing essential for reliability.
-- Pruning removes noise but also discards failed-model signatures needed for predictive routing.
-- Reflex tools (connect-dreams, refresh-swarm) succeed when scoped to single concrete actions but lack composition.
-- Swarm knowledge decays within days without a scheduled refresh reflex, leaving drive goals stale.
-- Skill proposals accumulate (60+) but rarely become executable because no pipeline validates, prioritizes, or deploys them.
-- Model 429 errors cascade into repeated failures because no automated routing or backoff exists across free-tier endpoints.
 
 ---
 
