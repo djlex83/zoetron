@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 23:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 23:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,10 +28,10 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate in logs but lack a deduplication-to-execution pipeline, so valuable ideas (Model Router, Goal Lifecycle Manager) remain uni
+- Prune runs remove fixed counts (10 facts/10 events) without adaptive pressure signals, risking under- or over-pruning.
+- Reflex tools (e.g., lernen-aus-fehlern-systematisch-verbesse.py) consistently converge when invoked, but are only triggered manually via dream output.
+- Drive goals for 'stale' swarm data and 'failure' model errors recur every cycle, indicating missing automated refresh/retrain triggers.
+- Model failures cascade when rate limits (429) and service overloads (502) hit multiple providers simultaneously, yet no automatic fallback logic exist
 - Reflex tools succeed in isolation but are not composed into multi-step workflows with rollback, limiting recovery from partial failures.
 - Event-store bloat recurs because pruning lacks tiered TTL (hot/warm/cold) with access-frequency promotion, causing either loss of recent context or un
 - Stale swarm knowledge and drive goals persist because refresh is triggered manually, not on a staleness cadence tied to goal-age or failure signals.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays silently; refresh only happens on manual reflex trigger, not on staleness detection.
 - Model latency varies 3x (12–39 s) with no health-aware routing, making reliability unpredictable.
 - Skill proposals accumulate but lack a promotion pipeline, causing a 70+:0 proposal-to-production ratio.
-- No automatic fallback activates during model failures — the system logs errors but continues requesting the same degraded providers.
-- Periodic pruning removes fixed counts (4 facts, 16 events) regardless of actual accumulation rate, wasting cycles when quiet and falling behind when b
-- Reflex tools (träume-analysieren.py) converge cleanly when invoked, proving the reflex layer works but is only triggered manually, not automatically o
-- Over 70 skill proposals exist but near-zero implementation rate shows the planner proposes faster than the executor can absorb, creating a proposal gr
-- Provider failures (429/502) cluster on free-tier Google/Nvidia models while dots-studio succeeds, revealing a reliability tier that must drive routing
 
 ---
 

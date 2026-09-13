@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11347 Fakten** · Stand 2026-09-13 23:12 UTC · aktualisiert bei jedem Herzschlag
+**11366 Fakten** · Stand 2026-09-13 23:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7298
-- **swarm_artifact:** 1629
-- **last_swarm_critique:** 938
-- **last_swarm_goal:** 673
-- **anti_pattern:** 361
-- **strategy:** 183
-- **tool:** 151
+- **dream:** 7303
+- **swarm_artifact:** 1637
+- **last_swarm_critique:** 939
+- **last_swarm_goal:** 674
+- **anti_pattern:** 363
+- **strategy:** 184
+- **tool:** 152
 - **hand_result:** 83
 - **aktuell_organfehler:** 31
 
 ---
+
+### `tool:traumerkenntnisse-in-fähigkeiten-umsetze`
+*13.09. 23:30 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Traumerkenntnisse in Fähigkeiten umsetzen'. Datei: data/tools/traumerkenntnisse-in-fähigkeiten-umsetze.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Traumerkenntnisse in Fäh:1`
+*13.09. 23:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 4, 7]): Depth Psychology Integration - Deploy a Jungian active imagination pipeline: 1) Dream journaling with amplification (associating each image to personal/cultural/archetypal layers), 2) Dialogue with dream figures throu
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Traumerkenntnisse in Fäh:0`
+*13.09. 23:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 5, 6]): Neurobiological Protocol - Implement a structured sleep optimization system: 1) Polyphasic sleep scheduling to increase REM density, 2) Targeted memory reactivation using olfactory/auditory cues during REM windows, 3)
+
+### `last_swarm_critique`
+*13.09. 23:28 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*13.09. 23:20 UTC · Quelle: system*
+
+Traumerkenntnisse in Fähigkeiten umsetzen
+
+### `dream:20260913231955:5:8dfde3`
+*13.09. 23:19 UTC · Quelle: dream*
+
+Skill proposals accumulate in logs but lack a deduplication-to-execution pipeline, so valuable ideas (Model Router, Goal Lifecycle Manager) remain unimplemented.
+
+### `dream:20260913231955:4:f3e53e`
+*13.09. 23:19 UTC · Quelle: dream*
+
+Prune runs remove fixed counts (10 facts/10 events) without adaptive pressure signals, risking under- or over-pruning.
+
+### `dream:20260913231955:3:9d2fab`
+*13.09. 23:19 UTC · Quelle: dream*
+
+Reflex tools (e.g., lernen-aus-fehlern-systematisch-verbesse.py) consistently converge when invoked, but are only triggered manually via dream output.
+
+### `dream:20260913231955:2:8d6a6f`
+*13.09. 23:19 UTC · Quelle: dream*
+
+Drive goals for 'stale' swarm data and 'failure' model errors recur every cycle, indicating missing automated refresh/retrain triggers.
+
+### `dream:20260913231955:1:af9e04`
+*13.09. 23:19 UTC · Quelle: dream*
+
+Model failures cascade when rate limits (429) and service overloads (502) hit multiple providers simultaneously, yet no automatic fallback logic exists.
 
 ### `dream:20260913230959:5:b2fc01`
 *13.09. 23:09 UTC · Quelle: dream*

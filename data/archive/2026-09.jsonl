@@ -47283,3 +47283,20 @@
 {"ts": 1788736161.844958, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.06, "gelesen": 1}}
 {"ts": 1788736161.8475, "kind": "reflex_used", "payload": {"goal": "Träume gezielt zum Lernen nutzen", "tool": "hebbisches-lernen-im-graph-synapsen-qual.py", "ok": true}}
 {"ts": 1788736162.2366042, "kind": "act_done", "payload": {"goal_title": "Träume gezielt zum Lernen nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788736658.029482, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788736726.3855064, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788736728.0472944, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 0}}
+{"ts": 1788736749.7255225, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.1, "tokens_ein": 1324, "tokens_aus": 617}}
+{"ts": 1788736749.7260866, "kind": "skill_proposal", "payload": {"proposal": "ProposalToSkillPipeline: autonomous loop that selects top-ranked skill_proposal, generates implementation stub, registers tool, runs smoke test, and promotes to reflex route on success."}}
+{"ts": 1788736749.726146, "kind": "skill_proposal", "payload": {"proposal": "ModelHealthTracker: continuous per-provider latency/error-rate monitoring with circuit-breaker thresholds; auto-demote after 3 consecutive 5xx/429, promote after 10 clean calls."}}
+{"ts": 1788736749.726213, "kind": "skill_proposal", "payload": {"proposal": "ReflexValidator: pre-flight check verifying tool script exists, data paths resolve, and required env vars are set before reflex_used; emits skill_proposal on mismatch."}}
+{"ts": 1788736749.7262676, "kind": "skill_proposal", "payload": {"proposal": "FailurePatternMiner: correlates model_fail timestamps with active goals/tools to emit root-cause skill proposals every 5 failures; includes deduplication against existing proposals."}}
+{"ts": 1788736749.726319, "kind": "skill_proposal", "payload": {"proposal": "StressAwareScheduler: scales planner budget inversely with metabolism stress (max_iterations = max(1, floor(3 * (1 - stress)))) and prioritizes goals tagged 'recovery' when stress > 0.7."}}
+{"ts": 1788736749.7263715, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788736763.30316, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 11.7, "tokens_ein": 488, "tokens_aus": 878}}
+{"ts": 1788736763.3034873, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren und prüfen", "why": "Die alten Schwarm-Ergebnisse sind veraltet und müssen erneuert werden. Sonst basieren Entscheidungen auf falschen Infos.", "signal": "stale"}}
+{"ts": 1788736763.3036027, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und reduzieren", "why": "Das Modell macht noch zu viele Fehler bei Vorhersagen. Wir müssen lernen, warum es scheitert.", "signal": "failure"}}
+{"ts": 1788736763.3036938, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich testen", "why": "Es gibt viele Ideen für neue Fähigkeiten, aber wenige werden wirklich ausprobiert. Wir müssen die besten umsetzen.", "signal": "gap"}}
+{"ts": 1788736767.0098755, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.4, "gelesen": 24}}
+{"ts": 1788736767.0125291, "kind": "reflex_used", "payload": {"goal": "Fertigkeiten besser prüfen vor Nutzung", "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py", "ok": true}}
+{"ts": 1788736767.4352703, "kind": "act_done", "payload": {"goal_title": "Fertigkeiten besser prüfen vor Nutzung", "score": null, "converged": true, "mode": "reflex"}}
