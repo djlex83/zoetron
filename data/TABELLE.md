@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7999 Neuronen · 829923 bewertete Synapsen
+Stand: 8004 Neuronen · 830535 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,9 +11,9 @@ Stand: 7999 Neuronen · 829923 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1013 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1027 | 0.23 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1028 | 0.23 |
 | 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 891 | 0.23 |
-| 4 | 💭 | Rate limiting (429 errors) is the dominant and most persistent f… | 818 | 0.24 |
+| 4 | 💭 | Rate limiting (429 errors) is the dominant and most persistent f… | 819 | 0.24 |
 | 5 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 894 | 0.22 |
 | 6 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 816 | 0.24 |
 | 7 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 790 | 0.25 |

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11377 Fakten** · Stand 2026-09-13 11:23 UTC · aktualisiert bei jedem Herzschlag
+**11382 Fakten** · Stand 2026-09-13 11:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7292
+- **dream:** 7297
 - **swarm_artifact:** 1663
 - **last_swarm_critique:** 932
 - **last_swarm_goal:** 667
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913113129:5:dfe971`
+*13.09. 11:31 UTC · Quelle: dream*
+
+In conserve mode with stress 1.0 and a 3-task budget, the system must prioritize pre-validated, low-risk actions to avoid exhausting the budget on repeat failures.
+
+### `dream:20260913113129:4:2ac055`
+*13.09. 11:31 UTC · Quelle: dream*
+
+Recurring model failures across multiple cycles show that failure knowledge is not persisted between sessions, causing the same 429 errors to repeat indefinitely.
+
+### `dream:20260913113129:3:6c267f`
+*13.09. 11:31 UTC · Quelle: dream*
+
+The reflex 'vorgeschlagene-fähigkeiten-wirklich-nutz.py' failed (ok: false), revealing that skill proposals alone create no working capabilities without a reliable activation and scaffolding mechanism.
+
+### `dream:20260913113129:2:343735`
+*13.09. 11:31 UTC · Quelle: dream*
+
+The hand_action failure ('nichts gelesen') stems from relative path resolution; all file operations must resolve absolute paths from ZOETRON_DATA or sys.argv before execution.
+
+### `dream:20260913113129:1:7f13be`
+*13.09. 11:31 UTC · Quelle: dream*
+
+Google's gemma models on OpenRouter are persistently rate-limited (429) while dots-studio models succeed reliably, making a hardcoded preference for dots-studio over gemma the simplest robust fix.
 
 ### `dream:20260913112137:1:d8b4ed`
 *13.09. 11:21 UTC · Quelle: dream*

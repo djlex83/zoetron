@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 11:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,8 +29,8 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- In conserve mode with stress 1.0 and a 3-task budget, the system must prioritize pre-validated, low-risk actions to avoid exhausting the budget on rep
+- Recurring model failures across multiple cycles show that failure knowledge is not persisted between sessions, causing the same 429 errors to repeat i
+- The reflex 'vorgeschlagene-fähigkeiten-wirklich-nutz.py' failed (ok: false), revealing that skill proposals alone create no working capabilities witho
+- The hand_action failure ('nichts gelesen') stems from relative path resolution; all file operations must resolve absolute paths from ZOETRON_DATA or s
+- Google's gemma models on OpenRouter are persistently rate-limited (429) while dots-studio models succeed reliably, making a hardcoded preference for d
 - Dream could not parse its own output - check prompt size.
 - Pruning stale events reduces noise but must preserve goal‑relevant facts to maintain context.
 - Successful calls complete in roughly 30 s, implying that timeout thresholds should be set above that baseline.
@@ -51,11 +56,6 @@
 - Stale swarm goals degrade system relevance; lightweight periodic refresh via reflexes maintains alignment.
 - Pre-execution health checks prevent wasted cycles on doomed actions (artifact not running, API unhealthy).
 - Fixed timeout values cause cascading failures under load; timeouts must adapt to system stress and model latency history.
-- Model endpoints frequently fail with 502/429 errors requiring automated fallback chains with circuit breakers.
-- System is at stress 1.0 in conserve mode with only 3 max tasks and 1 max iteration, so task prioritization and failure caching are essential to avoid 
-- The simulation→reflex→apply loop shows revisions are needed (3 revisions, 3 risks) before application succeeds, indicating simulation validation needs
-- The hand action failed because relative paths do not resolve correctly; absolute paths or environment-variable-based paths (ZOETRON_DATA) must be used
-- High latency (26–56 s) and high token output (up to 5153 tokens) from the working model suggest token budget management is critical under conserve mod
 
 ---
 

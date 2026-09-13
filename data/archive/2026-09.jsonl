@@ -45622,3 +45622,19 @@
 {"ts": 1788693552.5948517, "kind": "reflex_ok", "payload": {}}
 {"ts": 1788693554.4309607, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 56}}
 {"ts": 1788693558.7395651, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788693558.7395627, "schalter_geoeffnet": false}}
+{"ts": 1788693647.095477, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 88.4, "tokens_ein": 1680, "tokens_aus": 1259}}
+{"ts": 1788693647.0960464, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with health-aware fallback: track 429/502 rates per model, auto-switch to fastest healthy model (e.g., inclusionai/ling-3.0-flash-fin at 2.6s)."}}
+{"ts": 1788693647.0961063, "kind": "skill_proposal", "payload": {"proposal": "Enforce \"executable artifact\" contract: every skill proposal must include a runnable Python block with defined I/O schema before entering evolution."}}
+{"ts": 1788693647.0961595, "kind": "skill_proposal", "payload": {"proposal": "Add calibration correction layer: when hat_code=false, apply penalty factor to predicted score (e.g., predicted * 0.2) to match actual outcomes."}}
+{"ts": 1788693647.0962126, "kind": "skill_proposal", "payload": {"proposal": "Create a latency SLA cache: cache Nemotron responses for repeated prompts; serve from cache if latency > 30s threshold."}}
+{"ts": 1788693647.0962634, "kind": "skill_proposal", "payload": {"proposal": "Build a simulation-driven repair loop: on critic rejection, auto-generate 3 code variants, simulate, apply top revision, re-verify until score ≥ 7."}}
+{"ts": 1788693647.0963314, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788693649.5843768, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788693649.5843735, "schalter_geoeffnet": false}}
+{"ts": 1788693681.9676282, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 32.4, "tokens_ein": 482, "tokens_aus": 607}}
+{"ts": 1788693681.9677799, "kind": "drive_goal", "payload": {"title": "Modellfehler stark reduzieren", "why": "Das Modell scheitert oft (75 Fehlschläge). Weniger Fehler bedeuten verlässlichere Aktionen.", "signal": "failure"}}
+{"ts": 1788693681.9678597, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Die letzten Schwarm-Ziele und Kritiken sind veraltet. Neues Schwarm-Wissen verbessert die Planung.", "signal": "stale"}}
+{"ts": 1788693681.9679222, "kind": "drive_goal", "payload": {"title": "Träume in Fähigkeiten umsetzen", "why": "Es gab Träume und Simulationen, aber wenige neue Skills. Träume sollen konkret nutzbar werden.", "signal": "gap"}}
+{"ts": 1788693686.4148827, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.02, "gelesen": 1535}}
+{"ts": 1788693686.4177246, "kind": "reflex_used", "payload": {"goal": "Schwarm-Wissen auffrischen und messbar machen", "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py", "ok": true}}
+{"ts": 1788693686.9214172, "kind": "act_done", "payload": {"goal_title": "Schwarm-Wissen auffrischen und messbar machen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788694224.0493717, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
