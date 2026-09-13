@@ -44570,3 +44570,32 @@
 {"ts": 1788668178.581159, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.53, "gelesen": 1234}}
 {"ts": 1788668178.6198204, "kind": "reflex_used", "payload": {"goal": "Schwarm-Wissen auffrischen", "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py", "ok": true}}
 {"ts": 1788668179.0146132, "kind": "act_done", "payload": {"goal_title": "Schwarm-Wissen auffrischen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788063842.5012257, "key": "dream:20260830042402:1:0c3cf1", "value": "429 rate limits affect every free model simultaneously, indicating shared OpenRouter quota rather than per-model limits.", "source": "dream"}
+{"ts": 1788063842.50131, "key": "dream:20260830042402:2:ef46c5", "value": "Upstream 502 errors from Nvidia show provider instability beyond rate limiting, requiring circuit-breaker logic per provider.", "source": "dream"}
+{"ts": 1788063842.5013995, "key": "dream:20260830042402:3:4f08d0", "value": "Latency variance (8.9–29 s) makes fixed timeouts unsafe; percentile-based SLOs are needed for each model.", "source": "dream"}
+{"ts": 1788063842.5014732, "key": "dream:20260830042402:4:611f3e", "value": "Reflex-driven completion of stale market analyses proves the StaleWorkReaper concept works when triggered.", "source": "dream"}
+{"ts": 1788063842.5015388, "key": "dream:20260830042402:5:e6f6e8", "value": "Exit code 0 with empty output occurred silently; output validation must be mandatory, not optional.", "source": "dream"}
+{"ts": 1788064134.2857733, "key": "dream:20260830042854:1:850156", "value": "429 rate-limit errors dominate model failures across all free-tier providers, making naive round-robin selection ineffective.", "source": "dream"}
+{"ts": 1788064134.2859194, "key": "dream:20260830042854:2:1e14eb", "value": "Successful calls cluster on inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra, suggesting a small reliable subset exists.", "source": "dream"}
+{"ts": 1788064134.2860415, "key": "dream:20260830042854:3:dc86c6", "value": "Proposed skills (fallback chain, rate-aware scheduler, stale-work sweeper) remain unimplemented, creating a persistent capability gap.", "source": "dream"}
+{"ts": 1788064134.2861526, "key": "dream:20260830042854:4:dc5c58", "value": "Self-diagnosis reports zero organ errors while model failures exceed 80%, indicating health metrics don't capture external API reliability.", "source": "dream"}
+{"ts": 1788064134.286254, "key": "dream:20260830042854:5:9aa948", "value": "Market-analysis swarm completed via reflex but produced no measurable output, revealing a telemetry gap for swarm outcomes.", "source": "dream"}
+{"ts": 1788668707.5342877, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788668775.996845, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788668777.9241369, "kind": "prune_run", "payload": {"facts_pruned": 12, "events_pruned": 38}}
+{"ts": 1788668782.3610861, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788668782.3610835, "schalter_geoeffnet": false}}
+{"ts": 1788668800.1272027, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 17.8, "tokens_ein": 1344, "tokens_aus": 1179}}
+{"ts": 1788668800.1277096, "kind": "skill_proposal", "payload": {"proposal": "Implement a ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuous health scores for traffic shifting."}}
+{"ts": 1788668800.1277778, "kind": "skill_proposal", "payload": {"proposal": "Add a @circuit_breaker decorator with configurable failure threshold, half-open probe interval, and automatic metric emission for every model call."}}
+{"ts": 1788668800.1278398, "kind": "skill_proposal", "payload": {"proposal": "Create a SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests, and promotes passing skills to the active registry."}}
+{"ts": 1788668800.1278942, "kind": "skill_proposal", "payload": {"proposal": "Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run invocations."}}
+{"ts": 1788668800.1279478, "kind": "skill_proposal", "payload": {"proposal": "Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencies."}}
+{"ts": 1788668800.1280005, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788668802.4035048, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788668802.4035015, "schalter_geoeffnet": false}}
+{"ts": 1788668813.9416473, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 11.5, "tokens_ein": 402, "tokens_aus": 482}}
+{"ts": 1788668813.9417934, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Es gibt mehr Fehler als Erfolge bei den Modellen. Wir müssen verstehen, warum sie scheitern.", "signal": "failure"}}
+{"ts": 1788668813.9418697, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Die Infos über Schwarm-Ziele und Kritik sind veraltet. Wir brauchen aktuelle Abstimmung.", "signal": "stale"}}
+{"ts": 1788668813.9419434, "kind": "drive_goal", "payload": {"title": "Vorschläge in echte Fähigkeiten verwandeln", "why": "Viele Fähigkeiten wurden vorgeschlagen, aber wenige umgesetzt. Wir müssen die besten bauen.", "signal": "combination"}}
+{"ts": 1788668817.7046971, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.53, "gelesen": 1519}}
+{"ts": 1788668817.7070649, "kind": "reflex_used", "payload": {"goal": "Schwarm-Zusammenarbeit auffrischen und nutzen", "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py", "ok": true}}
+{"ts": 1788668818.1017983, "kind": "act_done", "payload": {"goal_title": "Schwarm-Zusammenarbeit auffrischen und nutzen", "score": null, "converged": true, "mode": "reflex"}}

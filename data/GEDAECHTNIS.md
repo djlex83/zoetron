@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11369 Fakten** · Stand 2026-09-13 04:22 UTC · aktualisiert bei jedem Herzschlag
+**11364 Fakten** · Stand 2026-09-13 04:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7291
+- **dream:** 7286
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 925
 - **last_swarm_goal:** 660
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913043018:5:74aa23`
+*13.09. 04:30 UTC · Quelle: dream*
+
+Pruning 10 facts and 30 events preserved efficiency, but causal chains must be tagged to avoid breaking knowledge dependencies.
+
+### `dream:20260913043018:4:2e162c`
+*13.09. 04:30 UTC · Quelle: dream*
+
+Calibration error was low (1 unit) but model volatility over time could accumulate bias, requiring per-goal-type correction layers.
+
+### `dream:20260913043018:3:db20e2`
+*13.09. 04:30 UTC · Quelle: dream*
+
+The system achieved its goal (score 8) in a single cycle despite model instability, proving fallback models can maintain task momentum.
+
+### `dream:20260913043018:2:c37988`
+*13.09. 04:30 UTC · Quelle: dream*
+
+High latency and token usage in successful calls often precede upstream failures, so monitoring these metrics enables proactive model switching.
+
+### `dream:20260913043018:1:078e7b`
+*13.09. 04:30 UTC · Quelle: dream*
+
+Model endpoints frequently fail under load (502/429 errors), making health-aware routing with weighted fallback essential for reliability.
 
 ### `dream:20260913042041:5:e4fdbb`
 *13.09. 04:20 UTC · Quelle: dream*
@@ -42212,56 +42237,6 @@ Five skill proposals repeat across cycles but none are implemented, revealing a 
 *30.08. 04:34 UTC · Quelle: dream*
 
 Model z-ai/glm-5.2:free fails 100% with 429 errors while nvidia/nemotron-3-ultra succeeds but with high latency (31-84s), proving single-model dependence is fragile.
-
-### `dream:20260830042854:5:9aa948`
-*30.08. 04:28 UTC · Quelle: dream*
-
-Market-analysis swarm completed via reflex but produced no measurable output, revealing a telemetry gap for swarm outcomes.
-
-### `dream:20260830042854:4:dc5c58`
-*30.08. 04:28 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures exceed 80%, indicating health metrics don't capture external API reliability.
-
-### `dream:20260830042854:3:dc86c6`
-*30.08. 04:28 UTC · Quelle: dream*
-
-Proposed skills (fallback chain, rate-aware scheduler, stale-work sweeper) remain unimplemented, creating a persistent capability gap.
-
-### `dream:20260830042854:2:1e14eb`
-*30.08. 04:28 UTC · Quelle: dream*
-
-Successful calls cluster on inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra, suggesting a small reliable subset exists.
-
-### `dream:20260830042854:1:850156`
-*30.08. 04:28 UTC · Quelle: dream*
-
-429 rate-limit errors dominate model failures across all free-tier providers, making naive round-robin selection ineffective.
-
-### `dream:20260830042402:5:e6f6e8`
-*30.08. 04:24 UTC · Quelle: dream*
-
-Exit code 0 with empty output occurred silently; output validation must be mandatory, not optional.
-
-### `dream:20260830042402:4:611f3e`
-*30.08. 04:24 UTC · Quelle: dream*
-
-Reflex-driven completion of stale market analyses proves the StaleWorkReaper concept works when triggered.
-
-### `dream:20260830042402:3:4f08d0`
-*30.08. 04:24 UTC · Quelle: dream*
-
-Latency variance (8.9–29 s) makes fixed timeouts unsafe; percentile-based SLOs are needed for each model.
-
-### `dream:20260830042402:2:ef46c5`
-*30.08. 04:24 UTC · Quelle: dream*
-
-Upstream 502 errors from Nvidia show provider instability beyond rate limiting, requiring circuit-breaker logic per provider.
-
-### `dream:20260830042402:1:0c3cf1`
-*30.08. 04:24 UTC · Quelle: dream*
-
-429 rate limits affect every free model simultaneously, indicating shared OpenRouter quota rather than per-model limits.
 
 ### `last_swarm_critique`
 *30.08. 03:21 UTC · Quelle: critic*
