@@ -1,13 +1,13 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 03:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 03:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 8×)*
-- Replace fixed 20s hand-action timeout with adaptive deadline: base 20s + 2s per 1000 tokens_in + 5s per extern *(hatte die Idee 5×)*
+- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 7×)*
 - Create a skill promotion pipeline: syntax check → import test → sandbox dry-run → benchmark against baseline;  *(hatte die Idee 5×)*
+- Replace fixed 20s hand-action timeout with adaptive deadline: base 20s + 2s per 1000 tokens_in + 5s per extern *(hatte die Idee 4×)*
 - Harden hand_action entrypoint: resolve input path via ZOETRON_DATA then sys.argv[1], reject relative paths, an *(hatte die Idee 4×)*
 - Extend reflex schema: require effectiveness_metric (float, unit, deadline_ts) at registration; block converged *(hatte die Idee 4×)*
 - Implement exponential backoff with jitter for HTTP 429 and 502 responses before switching models. *(hatte die Idee 4×)*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 14×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Ferne Träume verbinden *(wieder aufgegriffen: 3×)*
 - Swarm-Ziele erneuern *(wieder aufgegriffen: 3×)*
+- Simulationen öfter anwenden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge decays without scheduled refresh: drive_goal signals 'stale' collective intelligence, yet no automated re-synthesis mechanism exists.
+- Pruning discards causal chains: 10 facts + 22 events removed per cycle without preserving why decisions were made, eroding long-term learning.
+- Reflex mode converges goals quickly but only for well-defined, single-step tasks; multi-step skill building stalls without explicit orchestration.
+- Skill proposals accumulate but never become executable code: 7 proposals logged, 0 implemented, creating an illusion of progress without capability ga
+- Model reliability is the primary bottleneck: 3 consecutive failures (502, 429, 429) before fallback succeeded, wasting ~150s and tokens.
 - Swarm feedback staleness correlates with undetected model degradation; fresh critic signals would have caught the 429/502 pattern earlier.
 - Pruning aggressively removes facts/events (15/38, 10/22) without preserving decision context, risking loss of failure-pattern memory.
 - Skill proposals accumulate (5+ in this cycle) but lack automated validation, creating a proposal-execution gap that degrades reliability.
@@ -51,11 +56,6 @@
 - Calibration predicted 8 but actual was 6, an absolute error of 2, revealing a systematic overprediction that can be corrected by a bias adjustment.
 - Latency for Nvidia model ranged from 22.6s to 115.7s, with input tokens up to 8262, suggesting token limits and timeouts are required to avoid excessi
 - Model endpoints returned 502 (Nvidia overload) and 429 (Google rate limit), indicating the need for retry with backoff and fallback models.
-- Swarm/dream combination goals remain declarative without a concrete mechanism to retrieve and synthesize prior dream artifacts.
-- Calibration error (predicted 8 vs actual 6) correlates with high model latency variance (7.8s to 115.7s) under load.
-- Skill-to-artifact pipeline produces runnable code despite intermediate reflex/swarm failures, showing partial fault tolerance.
-- Hand actions fail on path resolution when environment variables (ZOETRON_DATA) and sys.argv[1] disagree on data root.
-- Model provider failures cascade into system-wide stress, triggering conserve mode that starves recovery capacity.
 
 ---
 
