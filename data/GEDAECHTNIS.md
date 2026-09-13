@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11367 Fakten** · Stand 2026-09-13 09:13 UTC · aktualisiert bei jedem Herzschlag
+**11373 Fakten** · Stand 2026-09-13 09:36 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7276
-- **swarm_artifact:** 1667
-- **last_swarm_critique:** 930
-- **last_swarm_goal:** 665
-- **anti_pattern:** 367
-- **strategy:** 186
+- **swarm_artifact:** 1669
+- **last_swarm_critique:** 931
+- **last_swarm_goal:** 666
+- **anti_pattern:** 369
+- **strategy:** 187
 - **tool:** 154
-- **hand_result:** 84
+- **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Simulationen und Tr:2`
+*13.09. 09:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 4, 8]): Cognitive Science Approach - Analyze dream mechanisms through neuroscience, such as using EEG data to study sleep patterns, and then apply these insights to design simulation algorithms. By mimicking cognitive process
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Simulationen und Tr:1`
+*13.09. 09:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 9, 5]): Collaborative Creativity - Organize interdisciplinary workshops or events where artists, scientists, and dreamers collaborate using structured creativity methods like brainwriting or design thinking. The goal is to co
+
+### `last_swarm_critique`
+*13.09. 09:31 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*13.09. 09:22 UTC · Quelle: system*
+
+Neue Simulationen und Träume starten
+
+### `dream:20260913092141:5:25aa45`
+*13.09. 09:21 UTC · Quelle: dream*
+
+The iterative process from simulation revisions to eventual tor success demonstrates that cycles of simulation, revision, and execution can converge to working solutions.
+
+### `dream:20260913092141:4:c2d54f`
+*13.09. 09:21 UTC · Quelle: dream*
+
+The metabolism check with stress and limited budget highlights the importance of resource-aware task scheduling to avoid overextension.
+
+### `dream:20260913092141:3:f2f9a8`
+*13.09. 09:21 UTC · Quelle: dream*
+
+The reflex failure suggests that generated tools or scripts must be validated and tested before being used in critical paths.
+
+### `dream:20260913092141:2:dc4830`
+*13.09. 09:21 UTC · Quelle: dream*
+
+The hand action timeout shows that long-running operations need explicit timeout handling and possibly chunking to prevent failures.
+
+### `dream:20260913092141:1:167620`
+*13.09. 09:21 UTC · Quelle: dream*
+
+Multiple model failures due to upstream overload and rate limiting indicate that a robust model fallback strategy is essential to avoid task interruption.
 
 ### `dream:20260913091117:5:add818`
 *13.09. 09:11 UTC · Quelle: dream*
@@ -42137,31 +42182,6 @@ score=6; issues=Artefakt 3 (Archivierung) bereinigt ALLE Dateien >30 Tage in too
 *30.08. 09:19 UTC · Quelle: system*
 
 Alte Schwarm-Arbeiten zu KI-Markt aufräumen
-
-### `dream:20260830091829:5:472320`
-*30.08. 09:18 UTC · Quelle: dream*
-
-Successful convergence on the first swarm run (reflex mode, score 8+) shows the architecture works when model calls succeed.
-
-### `dream:20260830091829:4:739bc5`
-*30.08. 09:18 UTC · Quelle: dream*
-
-Structured error capture (HTTP status, latency, tokens) is absent, so failure patterns remain invisible to automated analysis.
-
-### `dream:20260830091829:3:e2eb28`
-*30.08. 09:18 UTC · Quelle: dream*
-
-Conserve mode's strict iteration budget (max_iterations=1) prevents retry logic from activating even when fallback providers exist.
-
-### `dream:20260830091829:2:feeac7`
-*30.08. 09:18 UTC · Quelle: dream*
-
-The system accumulates unimplemented skill proposals (router, quota check, executor, limiter, scheduler) while repeatedly suffering the same model failures they would prevent.
-
-### `dream:20260830091829:1:a675cb`
-*30.08. 09:18 UTC · Quelle: dream*
-
-Free-tier model endpoints consistently fail under load via 429 rate limits and 502 upstream errors, making single-provider reliance untenable.
 
 ### `last_swarm_critique`
 *30.08. 09:12 UTC · Quelle: critic*
