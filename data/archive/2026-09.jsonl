@@ -47266,3 +47266,20 @@
 {"ts": 1788735554.8961215, "kind": "act_done", "payload": {"goal_title": "Träume in echte Fähigkeiten verwandeln", "score": 8, "converged": true}}
 {"ts": 1788735555.4891975, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 2}}
 {"ts": 1788735557.5157654, "kind": "issue_synced", "payload": {"issue": 402, "state": "closed"}}
+{"ts": 1788736052.9870403, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788736121.1746275, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788736122.7240055, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788736141.8614447, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 15.6, "tokens_ein": 1343, "tokens_aus": 797}}
+{"ts": 1788736141.8619897, "kind": "skill_proposal", "payload": {"proposal": "Deploy ModelRouter with per-provider latency budgets, exponential backoff on 429/502, and automatic fallback chains."}}
+{"ts": 1788736141.8620467, "kind": "skill_proposal", "payload": {"proposal": "Enforce SimulationGate requiring mandatory 'go' verdict with ≤2 risks before any skill/artifact deployment."}}
+{"ts": 1788736141.8621032, "kind": "skill_proposal", "payload": {"proposal": "Implement CalibrationTuner running online isotonic regression per critic dimension, retraining every 10 scored artifacts."}}
+{"ts": 1788736141.8621573, "kind": "skill_proposal", "payload": {"proposal": "Activate SwarmKnowledgeRefresher that auto-updates stored goals/critiques after each convergence cycle using fresh simulation feedback."}}
+{"ts": 1788736141.86221, "kind": "skill_proposal", "payload": {"proposal": "Institute SkillValidationGate requiring every proposed skill to be executed, scored, and either promoted or rejected within one cycle."}}
+{"ts": 1788736141.8622625, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788736158.442434, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 14.6, "tokens_ein": 475, "tokens_aus": 1062}}
+{"ts": 1788736158.4425914, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Die alten Schwarm-Kritiken und Ziele sind veraltet und blockieren neue Einsichten.", "signal": "stale"}}
+{"ts": 1788736158.4426596, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren", "why": "27 Modell-Fehler zeigen, dass das System oft scheitert und verlässlicher werden muss.", "signal": "failure"}}
+{"ts": 1788736158.442718, "kind": "drive_goal", "payload": {"title": "Träume zu echten Fähigkeiten machen", "why": "Ein gespeicherter Traum mahnt, Träume in nutzbare Werkzeuge zu verwandeln.", "signal": "combination"}}
+{"ts": 1788736161.844958, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.06, "gelesen": 1}}
+{"ts": 1788736161.8475, "kind": "reflex_used", "payload": {"goal": "Träume gezielt zum Lernen nutzen", "tool": "hebbisches-lernen-im-graph-synapsen-qual.py", "ok": true}}
+{"ts": 1788736162.2366042, "kind": "act_done", "payload": {"goal_title": "Träume gezielt zum Lernen nutzen", "score": null, "converged": true, "mode": "reflex"}}

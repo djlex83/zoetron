@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11342 Fakten** · Stand 2026-09-13 23:02 UTC · aktualisiert bei jedem Herzschlag
+**11347 Fakten** · Stand 2026-09-13 23:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7298
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 938
 - **last_swarm_goal:** 673
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913230959:5:b2fc01`
+*13.09. 23:09 UTC · Quelle: dream*
+
+Reflex tools succeed in isolation but are not composed into multi-step workflows with rollback, limiting recovery from partial failures.
+
+### `dream:20260913230959:4:7c8048`
+*13.09. 23:09 UTC · Quelle: dream*
+
+Event-store bloat recurs because pruning lacks tiered TTL (hot/warm/cold) with access-frequency promotion, causing either loss of recent context or unbounded growth.
+
+### `dream:20260913230959:3:8bbbd9`
+*13.09. 23:09 UTC · Quelle: dream*
+
+Stale swarm knowledge and drive goals persist because refresh is triggered manually, not on a staleness cadence tied to goal-age or failure signals.
+
+### `dream:20260913230959:2:3888f6`
+*13.09. 23:09 UTC · Quelle: dream*
+
+Skill proposals accumulate in a deployment gap because no automated shadow-run A/B gate validates them against live reflexes before promotion.
+
+### `dream:20260913230959:1:1b58b8`
+*13.09. 23:09 UTC · Quelle: dream*
+
+Model failures cascade when 429/5xx responses lack automated fallback — a ModelRouter that preemptively switches on Retry-After and error-rate thresholds would prevent cascade.
 
 ### `dream:20260913230004:5:191d97`
 *13.09. 23:00 UTC · Quelle: dream*

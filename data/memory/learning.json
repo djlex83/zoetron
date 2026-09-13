@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 23:00:48",
+ "stand": "2026-09-13 23:10:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,6 +81,12 @@
    "quote": 0.0
   },
   {
+   "tool": "ferne-traumverbindungen-neu-erkunden.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -153,12 +159,6 @@
    "quote": 0.0
   },
   {
-   "tool": "ferne-traumverbindungen-neu-erkunden.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarm-wissen-auffrischen-und-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -192,12 +192,6 @@
    "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-verringern.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
