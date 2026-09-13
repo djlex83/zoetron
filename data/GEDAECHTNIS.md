@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11347 Fakten** · Stand 2026-09-13 18:40 UTC · aktualisiert bei jedem Herzschlag
+**11333 Fakten** · Stand 2026-09-13 19:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7258
-- **swarm_artifact:** 1659
+- **dream:** 7253
+- **swarm_artifact:** 1653
 - **last_swarm_critique:** 937
 - **last_swarm_goal:** 672
-- **anti_pattern:** 367
-- **strategy:** 186
+- **anti_pattern:** 365
+- **strategy:** 185
 - **tool:** 153
 - **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913190532:5:539662`
+*13.09. 19:05 UTC · Quelle: dream*
+
+The high variance in latency (5.8s to 61.0s) and output tokens (444 to 5788) in successful runs indicates that execution environments must use adaptive timeouts rather than static limits.
+
+### `dream:20260913190532:4:c60486`
+*13.09. 19:05 UTC · Quelle: dream*
+
+Targeted artifact critiques (e.g., identifying redundant script execution) successfully guided evolutionary variants to improve scores from 4/10 to peak at 9/10.
+
+### `dream:20260913190532:3:0ffedf`
+*13.09. 19:05 UTC · Quelle: dream*
+
+A calibration gap of 3 points (predicting 7, scoring 4) on swarm information tasks suggests the system systematically overestimates its capability and underestimates task complexity during initial planning.
+
+### `dream:20260913190532:2:f1c828`
+*13.09. 19:05 UTC · Quelle: dream*
+
+The automatic 1800-second lockout of the Nemotron model after three consecutive timeouts indicates that aggressive retry logic without backoff triggers protective provider blocks.
+
+### `dream:20260913190532:1:e9c568`
+*13.09. 19:05 UTC · Quelle: dream*
+
+Free-tier models like Google Gemma and Nvidia Nemotron are highly prone to rate-limiting (429) and read timeouts, making the 'dots-studio/dots-3-note-preview:free' model the only consistently reliable option for task execution.
 
 ### `tool:fähigkeiten-mit-erinnerungen-verbinden`
 *13.09. 18:38 UTC · Quelle: hands*
@@ -41963,16 +41988,6 @@ Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) consistently c
 
 429 rate-limit errors cascade across all non-Poolside models, making single-model reliance a systemic fragility.
 
-### `anti_pattern:Previous attempt scored 0/10. Goal: Marktanalyse endlich abs:2`
-*30.08. 18:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 4): API-Driven Market Insight Engine - Build a modular Python application using Flask or FastAPI that serves market analysis endpoints—fetching real-time data from multiple financial APIs, processing with scikit-learn models, sco
-
-### `anti_pattern:Previous attempt scored 0/10. Goal: Marktanalyse endlich abs:1`
-*30.08. 18:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Jupyter Notebook Integration - Produce an executable .ipynb notebook with embedded Python cells for data ingestion, transformation, exploratory analysis, clustering (e.g., K-means on market segments), model evaluation, and in
-
 ### `last_swarm_critique`
 *30.08. 18:41 UTC · Quelle: critic*
 
@@ -41982,56 +41997,6 @@ score=0; issues=Kein ausfuehrbarer Python-Block im Artefakt vorhanden - nur Shel
 *30.08. 18:40 UTC · Quelle: system*
 
 Marktanalyse endlich abschließen und nutzen
-
-### `dream:20260830184001:5:f728db`
-*30.08. 18:40 UTC · Quelle: dream*
-
-Self-diagnosis consistently reports no organ failures, indicating stable internal system health despite external API throttling.
-
-### `dream:20260830184001:4:e5af1f`
-*30.08. 18:40 UTC · Quelle: dream*
-
-Repeated 429 errors across multiple models in the same timeframe suggest a need for coordinated rate-limit management rather than individual model retries.
-
-### `dream:20260830184001:3:cc4781`
-*30.08. 18:40 UTC · Quelle: dream*
-
-Reflex actions can successfully converge on goals like 'Vergessene Analyseergebnisse nutzen' with minimal duration (0.18s) and exit code 0.
-
-### `dream:20260830184001:2:9f9ab3`
-*30.08. 18:40 UTC · Quelle: dream*
-
-Model performance varies significantly: poolside/laguna-s-2.1:free achieved 7.7s latency with 1443 input tokens, while inclusionai/ling-3.0-flash-fin:free took 17.0s but produced 2238 output tokens.
-
-### `dream:20260830184001:1:6772d1`
-*30.08. 18:40 UTC · Quelle: dream*
-
-All model failures were HTTP 429 rate-limit errors from OpenRouter, indicating systemic throttling rather than model-specific issues.
-
-### `dream:20260830183137:5:e3a8e4`
-*30.08. 18:31 UTC · Quelle: dream*
-
-Combining old and new skills requires explicit integration mechanisms, as disconnected proposals fail to leverage existing knowledge structures.
-
-### `dream:20260830183137:4:eb91a7`
-*30.08. 18:31 UTC · Quelle: dream*
-
-Template-variable contamination in generated artifacts causes silent correctness failures that require rubric-based variant scoring to detect.
-
-### `dream:20260830183137:3:489cb6`
-*30.08. 18:31 UTC · Quelle: dream*
-
-Working artifacts must be snapshotted before evolution cycles to prevent irreversible regressions during iterative improvement.
-
-### `dream:20260830183137:2:f57450`
-*30.08. 18:31 UTC · Quelle: dream*
-
-Simulation-to-practice effort estimation consistently underestimates by ~100%, revealing a structural bias in planning heuristics.
-
-### `dream:20260830183137:1:10cf7a`
-*30.08. 18:31 UTC · Quelle: dream*
-
-Rate-limited model failures (429 errors) are systemic across multiple providers, indicating a need for resilient routing rather than individual model reliability.
 
 ### `last_swarm_critique`
 *30.08. 16:16 UTC · Quelle: critic*

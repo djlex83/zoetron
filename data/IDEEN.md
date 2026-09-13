@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 18:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 19:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The high variance in latency (5.8s to 61.0s) and output tokens (444 to 5788) in successful runs indicates that execution environments must use adaptiv
+- Targeted artifact critiques (e.g., identifying redundant script execution) successfully guided evolutionary variants to improve scores from 4/10 to pe
+- A calibration gap of 3 points (predicting 7, scoring 4) on swarm information tasks suggests the system systematically overestimates its capability and
+- The automatic 1800-second lockout of the Nemotron model after three consecutive timeouts indicates that aggressive retry logic without backoff trigger
+- Free-tier models like Google Gemma and Nvidia Nemotron are highly prone to rate-limiting (429) and read timeouts, making the 'dots-studio/dots-3-note-
 - Pruning 20 facts and 44 events demonstrates that memory cleanup effectively reduces context bloat.
 - The swarm converged in a single cycle with a score of 8, showing that simple goals can be solved efficiently.
 - Hand action failures are transient and resolve on retry, so retry logic improves overall reliability.
@@ -51,11 +56,6 @@
 - The hand_action failure occurred while the system was in a high‑stress conserve state, indicating reduced action reliability under budget constraints.
 - The only consistently available model is dots-studio/dots-3-note-preview:free, suggesting it should be the default.
 - The cascade of 429 errors shows that parallel model requests exceed provider limits.
-- Periodic validation of swarm goals prevents accumulation of stale information.
-- Persisting successful reflexes as reusable procedures with preconditions accelerates future execution.
-- Semantic clustering of skill proposals reduces redundancy and highlights high‑priority suggestions.
-- Tracking per‑model error rates and auto‑degrading unhealthy models improves routing to healthier alternatives.
-- Repeated 429 errors on free Google models indicate that rate limiting is a primary failure mode requiring a centralized backoff handler.
 
 ---
 
