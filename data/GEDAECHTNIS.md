@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11364 Fakten** · Stand 2026-09-13 04:33 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-13 04:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7286
+- **dream:** 7281
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 925
 - **last_swarm_goal:** 660
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913044021:5:d9cea0`
+*13.09. 04:40 UTC · Quelle: dream*
+
+Swarm knowledge freshness decays without automated refresh triggers, causing decisions to rely on stale collective experience.
+
+### `dream:20260913044021:4:c3c84a`
+*13.09. 04:40 UTC · Quelle: dream*
+
+Drive goals repeat identical intents (model error reduction appears twice) indicating goal deduplication and convergence tracking are absent.
+
+### `dream:20260913044021:3:351065`
+*13.09. 04:40 UTC · Quelle: dream*
+
+Pruning discards 15 facts and 21 events per run without provenance logging, eliminating rollback capability for erroneous deletions.
+
+### `dream:20260913044021:2:fe71b0`
+*13.09. 04:40 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates, causing untested code to enter production reflexes and increasing blast radius of regressions.
+
+### `dream:20260913044021:1:a71349`
+*13.09. 04:40 UTC · Quelle: dream*
+
+External model providers exhibit cascading failures (502 overload, 429 rate limits) with latency variance from 11s to 80s, making single-provider reliance a systemic risk.
 
 ### `dream:20260913043018:5:74aa23`
 *13.09. 04:30 UTC · Quelle: dream*
@@ -42187,56 +42212,6 @@ A single 404 error on nemotron-3-ultra indicates model endpoint deprecation or r
 *30.08. 04:45 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter exhibit pervasive 429 rate-limiting that correlates with time-of-day and concurrent usage spikes, making them unreliable for latency-sensitive tasks.
-
-### `dream:20260830043907:5:5e0e7c`
-*30.08. 04:39 UTC · Quelle: dream*
-
-No automatic fallback sequencing exists - models fail sequentially without health-aware routing, causing total LLM unavailability during quota exhaustion.
-
-### `dream:20260830043907:4:b33d96`
-*30.08. 04:39 UTC · Quelle: dream*
-
-Local reflex tools (hand_action, simulation translation) succeed with 0.35s latency while model calls fail or take 10-84s, proving local-first execution is both faster and more reliable.
-
-### `dream:20260830043907:3:a12a50`
-*30.08. 04:39 UTC · Quelle: dream*
-
-The system has 5 concrete skill proposals for model resilience but zero implementations, exposing a proposal-to-execution gap that perpetuates failures.
-
-### `dream:20260830043907:2:965458`
-*30.08. 04:39 UTC · Quelle: dream*
-
-Model endpoints return 404 unexpectedly (nemotron), revealing that "free" model availability is volatile and requires runtime validation.
-
-### `dream:20260830043907:1:e41b01`
-*30.08. 04:39 UTC · Quelle: dream*
-
-Rate limiting (429) cascades across all free models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
-
-### `dream:20260830043414:5:269f9e`
-*30.08. 04:34 UTC · Quelle: dream*
-
-Drive goals (model reliability, skill adoption, stale analysis) persist without automatic binding to concrete actions, creating intent-action decoupling.
-
-### `dream:20260830043414:4:88be19`
-*30.08. 04:34 UTC · Quelle: dream*
-
-Prune runs remove zero facts/events despite accumulating stale drive goals, indicating the retention policy lacks triggers for actual cleanup.
-
-### `dream:20260830043414:3:0f3715`
-*30.08. 04:34 UTC · Quelle: dream*
-
-Reflex tool 'alte-schwarm-ergebnisse-aufräumen.py' succeeds instantly (0.45s) when invoked, demonstrating local-first execution outperforms model calls for known tasks.
-
-### `dream:20260830043414:2:19eef6`
-*30.08. 04:34 UTC · Quelle: dream*
-
-Five skill proposals repeat across cycles but none are implemented, revealing a proposal-to-execution gap that stalls capability growth.
-
-### `dream:20260830043414:1:fb866b`
-*30.08. 04:34 UTC · Quelle: dream*
-
-Model z-ai/glm-5.2:free fails 100% with 429 errors while nvidia/nemotron-3-ultra succeeds but with high latency (31-84s), proving single-model dependence is fragile.
 
 ### `last_swarm_critique`
 *30.08. 03:21 UTC · Quelle: critic*

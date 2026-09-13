@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 04:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 04:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,10 +25,10 @@
 
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge freshness decays without automated refresh triggers, causing decisions to rely on stale collective experience.
+- Drive goals repeat identical intents (model error reduction appears twice) indicating goal deduplication and convergence tracking are absent.
+- Pruning discards 15 facts and 21 events per run without provenance logging, eliminating rollback capability for erroneous deletions.
+- Skill proposals accumulate without validation gates, causing untested code to enter production reflexes and increasing blast radius of regressions.
+- External model providers exhibit cascading failures (502 overload, 429 rate limits) with latency variance from 11s to 80s, making single-provider reli
 - Pruning 10 facts and 30 events preserved efficiency, but causal chains must be tagged to avoid breaking knowledge dependencies.
 - Calibration error was low (1 unit) but model volatility over time could accumulate bias, requiring per-goal-type correction layers.
 - The system achieved its goal (score 8) in a single cycle despite model instability, proving fallback models can maintain task momentum.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without execution pipeline — ideas decay into technical debt without automated implementation.
 - High metabolic stress (1.0) correlates with increased model failures and timeouts, requiring automatic conservative mode activation.
 - Model provider failures cascade rapidly under load — single-provider dependency causes systemic unreliability.
-- Stress-adaptive role dropping (critic disabled under 'conserve') demonstrates that metabolism-aware control flow prevents resource exhaustion during d
-- Swarm knowledge staleness triggers explicit drive goals, but no automated refresh exists; the weekly swarm_refresh_cycle proposal directly closes this
-- Pruning 19 events and 7 facts without causal-chain preservation risks severing decision→action→outcome links needed for future credit assignment.
-- The reflex 'modellfehler-stark-reduzieren.py' converged in one shot, proving that targeted, pre-packaged remediation scripts can resolve whole classes
-- Model provider failures cascade silently (502/429 errors) until a working provider (dots-studio) is tried, revealing that single-provider reliance is 
 
 ---
 
