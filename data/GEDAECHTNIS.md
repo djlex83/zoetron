@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11354 Fakten** · Stand 2026-09-13 05:12 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-13 05:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7286
+- **dream:** 7291
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 925
 - **last_swarm_goal:** 660
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913052025:5:b30bf7`
+*13.09. 05:20 UTC · Quelle: dream*
+
+System stress (metabolism) is monitored but never triggers automatic throttling or local-inference fallback.
+
+### `dream:20260913052025:4:c52b11`
+*13.09. 05:20 UTC · Quelle: dream*
+
+Pruning discards causal decision→action→outcome chains, making post-hoc failure analysis impossible.
+
+### `dream:20260913052025:3:6cb9f2`
+*13.09. 05:20 UTC · Quelle: dream*
+
+Swarm knowledge (goals, critiques) decays within days and has no scheduled refresh mechanism.
+
+### `dream:20260913052025:2:e6548e`
+*13.09. 05:20 UTC · Quelle: dream*
+
+Model failures recur across providers without systematic fallback, latency tracking, or cost-aware routing.
+
+### `dream:20260913052025:1:cdac00`
+*13.09. 05:20 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an automated pipeline to turn them into tested, registered capabilities.
 
 ### `dream:20260913051007:5:225dea`
 *13.09. 05:10 UTC · Quelle: dream*

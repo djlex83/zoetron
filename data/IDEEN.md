@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,11 +15,11 @@
 - Build a calibration tracker that logs predicted vs actual scores per goal_type and applies learned correction  *(hatte die Idee 4×)*
 - Deploy a tournament-bracket swarm consensus: run parallel evolution tournaments, promote only winners that pas *(hatte die Idee 4×)*
 - Instrument every model call with structured telemetry (provider, latency_ms, error_class, tokens) for continuo *(hatte die Idee 4×)*
+- Build skill_implementation_pipeline: consumes skill_proposal events, writes executable Python modules under sk *(hatte die Idee 4×)*
+- Deploy provider_aware_router: wraps all model calls, enforces rate limits, fans out concurrent requests to top *(hatte die Idee 4×)*
+- Create causal_chain_pruner: before pruning, extracts decision→action→outcome triples into immutable causal_log *(hatte die Idee 4×)*
+- Schedule swarm_refresh_cycle: weekly cron that re-runs critic/analyst roles on recent experience, merges new i *(hatte die Idee 4×)*
 - Replace fixed 20s hand-action timeout with adaptive deadline: base 20s + 2s per 1000 tokens_in + 5s per extern *(hatte die Idee 3×)*
-- Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
-- Add a configurable circuit breaker that temporarily blocks a model after N consecutive failures. *(hatte die Idee 3×)*
-- Prefer dots-studio/dots-3-note-preview:free as the default model when others are unavailable. *(hatte die Idee 3×)*
-- For hand_action calls, capture both stdout and stderr and retry with modified parameters on non-zero exit. *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -35,12 +35,17 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele erneuern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System stress (metabolism) is monitored but never triggers automatic throttling or local-inference fallback.
+- Pruning discards causal decision→action→outcome chains, making post-hoc failure analysis impossible.
+- Swarm knowledge (goals, critiques) decays within days and has no scheduled refresh mechanism.
+- Model failures recur across providers without systematic fallback, latency tracking, or cost-aware routing.
+- Skill proposals accumulate but lack an automated pipeline to turn them into tested, registered capabilities.
 - Reflex-driven goal updates (veraltete-schwarmziele-aktualisieren.py) succeed where swarm-driven ones stall, indicating reflexes handle maintenance bet
 - Pruning removes leaf events but preserves causal chains only if explicitly extracted beforehand, risking loss of decision→action→outcome traceability.
 - Skill proposals accumulate without automatic implementation, creating a proposal-execution gap that a dedicated pipeline must close.
@@ -51,11 +56,6 @@
 - Evolution produced a variant scoring nine, but the final pipeline still scored five, showing an integration gap.
 - The swarm's limit of three tasks and one iteration prevented convergence.
 - Model endpoints frequently return 502 or 429 errors, necessitating automatic retry with backoff and fallback.
-- Swarm critiques and goals stale within a single cycle, causing repeated errors; a versioned, scheduled refresh mechanism is required for decision qual
-- Pruning discards 15 facts and 21 events without any audit trail, making rollback impossible; every prune must record timestamp, relevance score, and c
-- The skill-proposal-to-skill reflex failed initially but succeeded after a simulation gate; mandatory pre-execution simulation prevents wasted cycles o
-- Hand actions fail when using relative paths instead of the absolute ZOETRON_DATA root; all file I/O must resolve through a canonical path resolver.
-- Model latency spikes up to 52 seconds trigger conserve mode, crippling throughput; hard per-call timeouts and ordered fallbacks are non-negotiable.
 
 ---
 
