@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -37,10 +37,15 @@
 - Simulationen öfter anwenden *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele erneuern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven goal updates (veraltete-schwarmziele-aktualisieren.py) succeed where swarm-driven ones stall, indicating reflexes handle maintenance bet
+- Pruning removes leaf events but preserves causal chains only if explicitly extracted beforehand, risking loss of decision→action→outcome traceability.
+- Skill proposals accumulate without automatic implementation, creating a proposal-execution gap that a dedicated pipeline must close.
+- Swarm cycles improve proposals (evolved: true) but fail to converge (converged: false), suggesting convergence criteria need tightening or max-cycle e
+- Gemma models consistently hit 429 rate limits while Nemotron and dots-studio succeed, indicating provider-specific quota exhaustion requires hard fall
 - The system generated a 143‑line Python artifact, confirming skill proposals can become runnable code.
 - Pruning ten facts and twenty-five events helps manage context but risks losing useful information.
 - Evolution produced a variant scoring nine, but the final pipeline still scored five, showing an integration gap.
@@ -51,11 +56,6 @@
 - The skill-proposal-to-skill reflex failed initially but succeeded after a simulation gate; mandatory pre-execution simulation prevents wasted cycles o
 - Hand actions fail when using relative paths instead of the absolute ZOETRON_DATA root; all file I/O must resolve through a canonical path resolver.
 - Model latency spikes up to 52 seconds trigger conserve mode, crippling throughput; hard per-call timeouts and ordered fallbacks are non-negotiable.
-- Swarm knowledge freshness decays without automated refresh triggers, causing decisions to rely on stale collective experience.
-- Drive goals repeat identical intents (model error reduction appears twice) indicating goal deduplication and convergence tracking are absent.
-- Pruning discards 15 facts and 21 events per run without provenance logging, eliminating rollback capability for erroneous deletions.
-- Skill proposals accumulate without validation gates, causing untested code to enter production reflexes and increasing blast radius of regressions.
-- External model providers exhibit cascading failures (502 overload, 429 rate limits) with latency variance from 11s to 80s, making single-provider reli
 
 ---
 

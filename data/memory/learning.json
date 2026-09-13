@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 05:00:19",
+ "stand": "2026-09-13 05:10:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,12 +15,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
    "laeufe": 6,
    "erfolge": 6,
@@ -28,6 +22,12 @@
   },
   {
    "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -67,6 +67,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
@@ -169,12 +175,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-verstehen-und-verringern.py",

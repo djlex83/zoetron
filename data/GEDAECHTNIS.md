@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11350 Fakten** · Stand 2026-09-13 05:02 UTC · aktualisiert bei jedem Herzschlag
+**11354 Fakten** · Stand 2026-09-13 05:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7281
+- **dream:** 7286
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 925
 - **last_swarm_goal:** 660
 - **anti_pattern:** 367
 - **strategy:** 186
-- **tool:** 155
+- **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913051007:5:225dea`
+*13.09. 05:10 UTC · Quelle: dream*
+
+Reflex-driven goal updates (veraltete-schwarmziele-aktualisieren.py) succeed where swarm-driven ones stall, indicating reflexes handle maintenance better than deliberative cycles.
+
+### `dream:20260913051007:4:0e19cb`
+*13.09. 05:10 UTC · Quelle: dream*
+
+Pruning removes leaf events but preserves causal chains only if explicitly extracted beforehand, risking loss of decision→action→outcome traceability.
+
+### `dream:20260913051007:3:f1bc45`
+*13.09. 05:10 UTC · Quelle: dream*
+
+Skill proposals accumulate without automatic implementation, creating a proposal-execution gap that a dedicated pipeline must close.
+
+### `dream:20260913051007:2:0b7d09`
+*13.09. 05:10 UTC · Quelle: dream*
+
+Swarm cycles improve proposals (evolved: true) but fail to converge (converged: false), suggesting convergence criteria need tightening or max-cycle enforcement.
+
+### `dream:20260913051007:1:1a87cf`
+*13.09. 05:10 UTC · Quelle: dream*
+
+Gemma models consistently hit 429 rate limits while Nemotron and dots-studio succeed, indicating provider-specific quota exhaustion requires hard fallback chains.
 
 ### `dream:20260913045946:5:54c045`
 *13.09. 04:59 UTC · Quelle: dream*
@@ -42187,11 +42212,6 @@ Reflex tool 'beste-vorschläge-in-fähigkeiten-verwande.py' succeeded where mode
 *30.08. 05:22 UTC · Quelle: dream*
 
 Repeated 429 errors across multiple models indicate systemic rate-limiting, not isolated model failure.
-
-### `tool:wissenswidersprüche-auflösen`
-*30.08. 05:00 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Wissenswidersprüche auflösen'. Datei: data/tools/wissenswidersprüche-auflösen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *30.08. 04:58 UTC · Quelle: critic*
