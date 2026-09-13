@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 15:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 16:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 12×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
@@ -32,15 +32,20 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 5×)*
+- Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Ferne Träume kombinieren *(wieder aufgegriffen: 4×)*
-- Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Träume mit Fähigkeiten verbinden *(wieder aufgegriffen: 3×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A hand action timed out at 30s with 0 bytes read, suggesting network stalls rather than computational delays as the failure mode.
+- The "Entfernte Erinnerungen verbinden" simulation required 5 revisions to pass, indicating that initial outputs often carry unaddressed risks.
+- dots-studio/dots-3-note-preview:free is the only consistently available model, but its latency swings from 27s to 98s depending on load.
+- The nemotron model entered a 1800s lockout after 3 consecutive failures, demonstrating that aggressive retrying without backoff triggers protective ba
+- Free-tier OpenRouter models (gemma-4-31b/26b) consistently return 429 rate-limit errors, making them unreliable for production use.
 - Stale swarm goals are ignored, which limits the generation of new capabilities.
 - The failed reflex to link distant memories indicates that current memory‑linking tools need improvement.
 - The system’s stress level is at maximum with a tight budget, so resource‑intensive operations should be minimized.
@@ -51,11 +56,6 @@
 - The system generates redundant skill proposals about the same rate-limiting problem across multiple dream cycles without converging on an implemented 
 - dots-studio/dots-3-note-preview:free consistently succeeds where Gemma models fail, establishing it as the de facto reliable fallback for rate-limited
 - HTTP 429 rate-limiting is the dominant failure mode across multiple models, indicating a shared upstream quota bottleneck rather than a model-specific
-- Compacting event clusters into durable facts during pruning preserves knowledge across sessions.
-- A dynamic model router that selects the least‑loaded model and auto‑switches on 429 improves reliability.
-- Exponential backoff with jitter reduces the chance of repeated 429 failures.
-- Switching to the dots‑studio model avoided 429 errors and completed the tasks.
-- Repeated HTTP 429 errors from the free Google Gemma models indicate they are rate‑limited.
 
 ---
 

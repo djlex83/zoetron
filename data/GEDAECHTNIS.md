@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11354 Fakten** · Stand 2026-09-13 15:55 UTC · aktualisiert bei jedem Herzschlag
+**11354 Fakten** · Stand 2026-09-13 16:05 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7283
 - **swarm_artifact:** 1651
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913160306:5:858064`
+*13.09. 16:03 UTC · Quelle: dream*
+
+A hand action timed out at 30s with 0 bytes read, suggesting network stalls rather than computational delays as the failure mode.
+
+### `dream:20260913160306:4:6073a3`
+*13.09. 16:03 UTC · Quelle: dream*
+
+The "Entfernte Erinnerungen verbinden" simulation required 5 revisions to pass, indicating that initial outputs often carry unaddressed risks.
+
+### `dream:20260913160306:3:1f56e0`
+*13.09. 16:03 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently available model, but its latency swings from 27s to 98s depending on load.
+
+### `dream:20260913160306:2:98e3fd`
+*13.09. 16:03 UTC · Quelle: dream*
+
+The nemotron model entered a 1800s lockout after 3 consecutive failures, demonstrating that aggressive retrying without backoff triggers protective bans.
+
+### `dream:20260913160306:1:0d59b9`
+*13.09. 16:03 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (gemma-4-31b/26b) consistently return 429 rate-limit errors, making them unreliable for production use.
 
 ### `dream:20260913155322:5:ce04f0`
 *13.09. 15:53 UTC · Quelle: dream*
@@ -42102,31 +42127,6 @@ score=6; issues=generate_skill_file nutzt {{skill_name}} in einem f-String, was 
 *30.08. 15:59 UTC · Quelle: system*
 
 Simulationen in die Praxis umsetzen
-
-### `dream:20260830155740:5:8f09e0`
-*30.08. 15:57 UTC · Quelle: dream*
-
-Successful model calls sometimes return only 8 output tokens for 575 input tokens, signaling silent truncation or refusal.
-
-### `dream:20260830155740:4:e50d41`
-*30.08. 15:57 UTC · Quelle: dream*
-
-Hand actions fail with exit code 1 and zero bytes read, indicating environment permission or path issues.
-
-### `dream:20260830155740:3:ebb3cd`
-*30.08. 15:57 UTC · Quelle: dream*
-
-Model latency varies from 3s to 90s (nemotron) breaking fixed timeouts and causing cascading delays.
-
-### `dream:20260830155740:2:c049bb`
-*30.08. 15:57 UTC · Quelle: dream*
-
-Evolution produces high-scoring variants (9/10) but the merged result still scores 1/10, revealing a synthesis/integration failure mode.
-
-### `dream:20260830155740:1:bacc02`
-*30.08. 15:57 UTC · Quelle: dream*
-
-Free-tier models (glm, gemma) consistently hit 429 rate limits making them unreliable for sustained workloads.
 
 ### `last_swarm_critique`
 *30.08. 14:33 UTC · Quelle: critic*

@@ -46269,3 +46269,24 @@
 {"ts": 1788709391.4932008, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.49, "gelesen": 2}}
 {"ts": 1788709393.315568, "kind": "issue_synced", "payload": {"issue": 399, "state": "open"}}
 {"ts": 1788709917.7668889, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788105460.9591033, "key": "dream:20260830155740:1:bacc02", "value": "Free-tier models (glm, gemma) consistently hit 429 rate limits making them unreliable for sustained workloads.", "source": "dream"}
+{"ts": 1788105460.9592078, "key": "dream:20260830155740:2:c049bb", "value": "Evolution produces high-scoring variants (9/10) but the merged result still scores 1/10, revealing a synthesis/integration failure mode.", "source": "dream"}
+{"ts": 1788105460.95928, "key": "dream:20260830155740:3:ebb3cd", "value": "Model latency varies from 3s to 90s (nemotron) breaking fixed timeouts and causing cascading delays.", "source": "dream"}
+{"ts": 1788105460.9593449, "key": "dream:20260830155740:4:e50d41", "value": "Hand actions fail with exit code 1 and zero bytes read, indicating environment permission or path issues.", "source": "dream"}
+{"ts": 1788105460.9594078, "key": "dream:20260830155740:5:8f09e0", "value": "Successful model calls sometimes return only 8 output tokens for 575 input tokens, signaling silent truncation or refusal.", "source": "dream"}
+{"ts": 1788709986.395699, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788709988.2371738, "kind": "prune_run", "payload": {"facts_pruned": 24, "events_pruned": 71}}
+{"ts": 1788710035.6998765, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 43.8, "tokens_ein": 1408, "tokens_aus": 621}}
+{"ts": 1788710035.7006133, "kind": "skill_proposal", "payload": {"proposal": "Implement ModelHealthRegistry with per-provider 429/502 counters, exponential backoff cooldowns, and automatic deprioritization."}}
+{"ts": 1788710035.7006865, "kind": "skill_proposal", "payload": {"proposal": "Build LatencyAwareRouter that assigns tasks to fastest healthy provider, reserving slow models for complex reasoning only."}}
+{"ts": 1788710035.7007442, "kind": "skill_proposal", "payload": {"proposal": "Create AutomaticFallbackChain: primary → secondary → hand_action → reflex, triggering on any non-200/timeout without manual steps."}}
+{"ts": 1788710035.7008207, "kind": "skill_proposal", "payload": {"proposal": "Add PreFlightCheck querying ModelHealthRegistry before each generation call, skipping providers in cooldown or with >10% recent error rate."}}
+{"ts": 1788710035.7008774, "kind": "skill_proposal", "payload": {"proposal": "Design SkillValidationPipeline that loads proposals, generates mock failure harnesses (429, 502, timeout), runs in sandbox, promotes only 3/3 passes."}}
+{"ts": 1788710035.7009313, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788710077.4331455, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 39.9, "tokens_ein": 505, "tokens_aus": 748}}
+{"ts": 1788710077.4333127, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht zu oft Fehler. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788710077.4333835, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren und nutzen", "why": "Alte Schwarm-Erkenntnisse sind veraltet. Frisches Wissen hilft bei neuen Aufgaben.", "signal": "stale"}}
+{"ts": 1788710077.4334438, "kind": "drive_goal", "payload": {"title": "Fähigkeiten in echte Tests überführen", "why": "Viele Ideen werden vorgeschlagen, aber selten getestet. Echte Tests zeigen was funktioniert.", "signal": "gap"}}
+{"ts": 1788710080.0175672, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.28, "gelesen": 1}}
+{"ts": 1788710080.0200167, "kind": "reflex_used", "payload": {"goal": "Fernere Erinnerungen verbinden", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
+{"ts": 1788710080.4270265, "kind": "act_done", "payload": {"goal_title": "Fernere Erinnerungen verbinden", "score": null, "converged": true, "mode": "reflex"}}
