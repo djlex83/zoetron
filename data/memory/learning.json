@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 12:13:59",
+ "stand": "2026-09-13 12:24:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,6 +22,12 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -57,22 +63,10 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
@@ -181,6 +175,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
@@ -399,7 +399,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.692,
+ "haende_quote": 0.696,
  "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 37,
@@ -408,8 +408,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 35,
-   "schnitt": 5.49
+   "n": 34,
+   "schnitt": 5.41
   },
   "bau": {
    "n": 2,

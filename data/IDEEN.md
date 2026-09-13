@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 12:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 12:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Träume mit Fähigkeiten verbinden *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system automatically generates reliability-focused drive goals in response to recurring API failures.
+- Repeated 429 errors indicate that simple retries are insufficient and dynamic routing is required.
+- Reflex-based execution of simulations provides a reliable alternative for task completion during model instability.
+- Model diversity is essential for system availability, as the dots-studio model remains functional while others fail.
+- Free-tier Gemma models on OpenRouter are currently experiencing frequent 429 rate-limiting failures.
 - Selecting models based on recent latency and error rates yields more stable task execution.
 - A generic fallback model (openrouter/free) can sustain operations when specialized models are unavailable.
 - Malformed request payloads cause 400 errors; schema validation before dispatch prevents wasted calls.
@@ -51,11 +56,6 @@
 - Exponential backoff with jitter reduces retry collisions and improves eventual success.
 - A circuit breaker that trips after two consecutive failures prevents cascading load on overloaded APIs.
 - Repeated timeouts and 429 errors show that the current model selection lacks fallback routing and rate‑limit awareness.
-- Aggressive pruning of 7 facts and 69 events can discard context needed for future planning.
-- Swarm convergence stalled at score 6 because the critic did not adjust criteria after repeated model failures.
-- Observed latencies of 32–44 s imply that timeout thresholds must be set using rolling percentiles rather than fixed values.
-- Relying on a single model family creates a single point of failure; diversifying providers improves resilience.
-- Repeated 429 errors from free-tier models indicate quota exhaustion and require a fallback chain with exponential backoff.
 
 ---
 

@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11372 Fakten** · Stand 2026-09-13 12:15 UTC · aktualisiert bei jedem Herzschlag
+**11368 Fakten** · Stand 2026-09-13 12:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
-- **swarm_artifact:** 1662
+- **dream:** 7293
+- **swarm_artifact:** 1657
 - **last_swarm_critique:** 932
 - **last_swarm_goal:** 667
-- **anti_pattern:** 367
-- **strategy:** 186
-- **tool:** 155
+- **anti_pattern:** 365
+- **strategy:** 185
+- **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 32
 
 ---
+
+### `dream:20260913122330:5:8d64b3`
+*13.09. 12:23 UTC · Quelle: dream*
+
+The system automatically generates reliability-focused drive goals in response to recurring API failures.
+
+### `dream:20260913122330:4:df5fc9`
+*13.09. 12:23 UTC · Quelle: dream*
+
+Repeated 429 errors indicate that simple retries are insufficient and dynamic routing is required.
+
+### `dream:20260913122330:3:2e45d7`
+*13.09. 12:23 UTC · Quelle: dream*
+
+Reflex-based execution of simulations provides a reliable alternative for task completion during model instability.
+
+### `dream:20260913122330:2:7bb9de`
+*13.09. 12:23 UTC · Quelle: dream*
+
+Model diversity is essential for system availability, as the dots-studio model remains functional while others fail.
+
+### `dream:20260913122330:1:d3258a`
+*13.09. 12:23 UTC · Quelle: dream*
+
+Free-tier Gemma models on OpenRouter are currently experiencing frequent 429 rate-limiting failures.
 
 ### `dream:20260913121319:5:c189c2`
 *13.09. 12:13 UTC · Quelle: dream*
@@ -42172,21 +42197,6 @@ Model health varies dramatically: nemotron works but at 17-20s latency, ling-3.0
 *30.08. 12:38 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter suffer pervasive 429 rate limits, making single-model reliance unreliable.
-
-### `tool:marktkenntnisse-auf-aktuellem-stand-halt`
-*30.08. 12:19 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Marktkenntnisse auf aktuellem Stand halten'. Datei: data/tools/marktkenntnisse-auf-aktuellem-stand-halt.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Marktkenntnisse auf aktu:2`
-*30.08. 12:18 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Human-in-the-Loop-Wissensaggregation mit KI-Validierung - Drehe das Paradigma um: Statt rein automatische Datenflüsse zu bauen, positioniere das System als hybrides KI-gestütztes Marktintelligenz-Tool, bei dem menschliche Exp
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Marktkenntnisse auf aktu:1`
-*30.08. 12:18 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Föderiertes Wissensgraphen-Netzwerk statt linearer Pipeline - Verwerfe die lineare Pipeline komplett und ersetze sie durch einen dezentralen Wissensgraphen (z.B. Neo4j oder LangGraph mit GraphState). Jede der drei Komponenten
 
 ### `last_swarm_critique`
 *30.08. 12:18 UTC · Quelle: critic*

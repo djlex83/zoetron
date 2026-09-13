@@ -1,10 +1,10 @@
 {
-  "audit_timestamp": "2026-09-13T10:18:41.077450",
+  "audit_timestamp": "2026-09-13T12:24:10.173303",
   "threshold_days": 7,
-  "total_events_audited": 95174,
-  "stale_count": 287,
+  "total_events_audited": 95476,
+  "stale_count": 288,
   "fresh_count": 158,
-  "no_timestamp_count": 94729,
+  "no_timestamp_count": 95030,
   "stale_events": [
     {
       "mode": "normal",
@@ -19,7 +19,7 @@
       "timestamp": 1787837425.6170628,
       "ts": 1787837425.6170652,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -35,7 +35,7 @@
       "timestamp": 1787837497.8504727,
       "ts": 1787837497.8504748,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -51,7 +51,7 @@
       "timestamp": 1787900765.9753509,
       "ts": 1787900765.9753523,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -67,7 +67,7 @@
       "timestamp": 1787900845.5511236,
       "ts": 1787900845.5511253,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -83,7 +83,7 @@
       "timestamp": 1788030824.0855668,
       "ts": 1788030824.0855682,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -99,7 +99,7 @@
       "timestamp": 1788030834.0460286,
       "ts": 1788030834.0460298,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -115,7 +115,7 @@
       "timestamp": 1788334726.3261428,
       "ts": 1788334726.326146,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -127,7 +127,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -139,7 +139,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -151,7 +151,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -163,7 +163,7 @@
       "timeout": false,
       "timestamp": "2026-08-27T17:07:26Z",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -599,7 +599,7 @@
       "timestamp": "2026-08-27T18:07:37.437362",
       "fell_back": false,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -624,7 +624,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -649,7 +649,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -674,7 +674,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -692,7 +692,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -710,7 +710,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -728,7 +728,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -742,7 +742,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -756,7 +756,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -774,7 +774,7 @@
       },
       "correlation_id": "a17f8ad0",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -788,7 +788,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -802,7 +802,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -820,7 +820,7 @@
       },
       "correlation_id": "6d4edf6f",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -834,7 +834,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -848,7 +848,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -866,7 +866,7 @@
       },
       "correlation_id": "c61c7d0e",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -884,7 +884,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -902,7 +902,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -920,7 +920,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -938,7 +938,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -963,7 +963,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -988,7 +988,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1013,7 +1013,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1031,7 +1031,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1049,7 +1049,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1067,7 +1067,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1081,7 +1081,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1095,7 +1095,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1113,7 +1113,7 @@
       },
       "correlation_id": "f106ea40",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1127,7 +1127,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1141,7 +1141,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1159,7 +1159,7 @@
       },
       "correlation_id": "8800d148",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1173,7 +1173,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1187,7 +1187,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1205,7 +1205,7 @@
       },
       "correlation_id": "b62ea726",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1223,7 +1223,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1241,7 +1241,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1259,7 +1259,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1284,7 +1284,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1309,7 +1309,7 @@
       },
       "correlation_id": "c449901a",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1334,7 +1334,7 @@
       },
       "correlation_id": "44c348ea",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1352,7 +1352,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1370,7 +1370,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1388,7 +1388,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1402,7 +1402,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1416,7 +1416,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1434,7 +1434,7 @@
       },
       "correlation_id": "cc492c4e",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1448,7 +1448,7 @@
       },
       "correlation_id": "c449901a",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1462,7 +1462,7 @@
       },
       "correlation_id": "c449901a",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1480,7 +1480,7 @@
       },
       "correlation_id": "c449901a",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1494,7 +1494,7 @@
       },
       "correlation_id": "44c348ea",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1508,7 +1508,7 @@
       },
       "correlation_id": "44c348ea",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1526,7 +1526,7 @@
       },
       "correlation_id": "44c348ea",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1544,7 +1544,7 @@
       },
       "correlation_id": "agent-001",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1562,7 +1562,7 @@
       },
       "correlation_id": "agent-002",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1580,7 +1580,7 @@
       },
       "correlation_id": "agent-003",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1629,7 +1629,7 @@
         "Create integration tests for full pipeline flow"
       ],
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -1647,7 +1647,7 @@
         "details": []
       },
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2043,7 +2043,7 @@
         ]
       },
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2055,8 +2055,8 @@
       ],
       "timestamp": 1787746767.7634919,
       "status": "open",
-      "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 18,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2069,7 +2069,7 @@
       },
       "timestamp": "2026-08-27T05:46:53.478426",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2082,7 +2082,7 @@
       },
       "timestamp": "2026-08-27T05:47:59.764993",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2138,7 +2138,7 @@
         }
       ],
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2160,7 +2160,7 @@
       },
       "fallback_used": false,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2182,7 +2182,7 @@
       },
       "fallback_used": false,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2214,8 +2214,8 @@
         }
       ],
       "results": [],
-      "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 16,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2268,7 +2268,7 @@
       },
       "used_fallback_data": false,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2320,7 +2320,7 @@
       },
       "used_fallback_data": false,
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2492,7 +2492,7 @@
         }
       ],
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2549,7 +2549,7 @@
       "bottleneck": "reflex",
       "total_avg_latency": 0.019044745205610527,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2606,7 +2606,7 @@
       "bottleneck": "reflex",
       "total_avg_latency": 0.013112438601092435,
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -2624,7 +2624,7 @@
         "total_flagged": 0
       },
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -7158,7 +7158,7 @@
         "note": "Nur was im Graph steht, kann in Handeln umgesetzt werden."
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -7182,7 +7182,7 @@
       "anzahl_fehlerquellen": 0,
       "anzahl_empfehlungen": 0,
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -7436,7 +7436,7 @@
         }
       },
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -7690,7 +7690,7 @@
         }
       },
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -15562,7 +15562,7 @@
         "with_errors": 167
       },
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -16501,7 +16501,7 @@
       ],
       "fallback_mode": false,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -16755,7 +16755,7 @@
         }
       },
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17009,7 +17009,7 @@
         }
       },
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17066,7 +17066,7 @@
       "bottleneck": "reflex",
       "total_avg_latency": 0.009785288613056765,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17096,7 +17096,7 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.29,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17126,7 +17126,7 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.27,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17155,8 +17155,8 @@
       "memory_files_count": 4,
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.29,
-      "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 11,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17175,7 +17175,7 @@
       "created_at": "2026-09-03T07:34:10.843598",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17194,7 +17194,7 @@
       "created_at": "2026-09-03T07:34:10.843622",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17213,7 +17213,7 @@
       "created_at": "2026-09-03T07:34:10.843634",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17232,7 +17232,7 @@
       "created_at": "2026-09-03T07:34:10.843644",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17251,7 +17251,7 @@
       "created_at": "2026-09-03T07:34:10.843654",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17270,7 +17270,7 @@
       "created_at": "2026-09-03T07:34:10.843663",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17289,7 +17289,7 @@
       "created_at": "2026-09-03T07:34:10.843672",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -17308,7 +17308,7 @@
       "created_at": "2026-09-03T07:34:10.843679",
       "source_module": "zoetron.selflearn",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -21064,7 +21064,7 @@
       "modus": "ECHTE DATEN - Dateien analysiert",
       "root_cause": "Root Causes aus Datei-Analyse: Zerstörende Operationen (subprocess/os.system) führen zur Ablehnung",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -24868,7 +24868,7 @@
       "modus": "ECHTE DATEN - Dateien analysiert",
       "root_cause": "Root Causes aus Datei-Analyse: Zerstörende Operationen (subprocess/os.system) führen zur Ablehnung",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -25121,8 +25121,8 @@
           "total_neighbor_weight": 0.05
         }
       },
-      "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 10,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -25376,7 +25376,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -25406,7 +25406,7 @@
       "data_dir": "/workspace/zoetron/data",
       "elapsed_sec": 0.34,
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -26177,7 +26177,7 @@
       ],
       "recommendation": "Re-evaluate stored goals against current criticisms. Prioritize goals with unresolved criticism. Archive obsolete goals.",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -42889,7 +42889,7 @@
         "fallback_used": false
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43143,7 +43143,7 @@
         }
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43166,7 +43166,7 @@
       "datenquelle": "/workspace/zoetron/data/memory/events.jsonl",
       "daten_verfuegbar": false,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43189,7 +43189,7 @@
       "datenquelle": "/workspace/zoetron/data/memory/events.jsonl",
       "daten_verfuegbar": false,
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43201,7 +43201,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43213,7 +43213,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43225,7 +43225,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43237,7 +43237,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43249,7 +43249,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43261,7 +43261,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -43273,7 +43273,7 @@
       "scores": {},
       "aggregate_score": 0.0,
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -44202,7 +44202,7 @@
         }
       },
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -45131,7 +45131,7 @@
         }
       },
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -46068,7 +46068,7 @@
         }
       },
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -47013,7 +47013,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -47982,7 +47982,7 @@
         }
       },
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -49039,7 +49039,7 @@
         }
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50128,7 +50128,1120 @@
         }
       },
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
+      "_stale": true
+    },
+    {
+      "timestamp": "2026-09-05T11:43:58.045529",
+      "capabilities_tested": 138,
+      "results": {
+        "alte-träume-miteinander-verbinden": {
+          "meta": {
+            "name": "alte-träume-miteinander-verbinden",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-träume-miteinander-verbinden.py",
+            "description": "Tool: alte-träume-miteinander-verbinden"
+          }
+        },
+        "abgelehnte-werkzeuge-verstehen-und-verbe": {
+          "meta": {
+            "name": "abgelehnte-werkzeuge-verstehen-und-verbe",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/abgelehnte-werkzeuge-verstehen-und-verbe.py",
+            "description": "Tool: abgelehnte-werkzeuge-verstehen-und-verbe"
+          }
+        },
+        "fähigkeits-messlatte-bauen-capability-be": {
+          "meta": {
+            "name": "fähigkeits-messlatte-bauen-capability-be",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeits-messlatte-bauen-capability-be.py",
+            "description": "Tool: fähigkeits-messlatte-bauen-capability-be"
+          }
+        },
+        "ich-kern-injektor-bauen-ein-selbst-für-j": {
+          "meta": {
+            "name": "ich-kern-injektor-bauen-ein-selbst-für-j",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/ich-kern-injektor-bauen-ein-selbst-für-j.py",
+            "description": "Tool: ich-kern-injektor-bauen-ein-selbst-für-j"
+          }
+        },
+        "fakten-ausbeute-pro-beat-verdreifachen-o": {
+          "meta": {
+            "name": "fakten-ausbeute-pro-beat-verdreifachen-o",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fakten-ausbeute-pro-beat-verdreifachen-o.py",
+            "description": "Tool: fakten-ausbeute-pro-beat-verdreifachen-o"
+          }
+        },
+        "hebbisches-lernen-im-graph-synapsen-qual": {
+          "meta": {
+            "name": "hebbisches-lernen-im-graph-synapsen-qual",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/hebbisches-lernen-im-graph-synapsen-qual.py",
+            "description": "Tool: hebbisches-lernen-im-graph-synapsen-qual"
+          }
+        },
+        "best-of-n-mit-unbestechlichem-prüfer-tes": {
+          "meta": {
+            "name": "best-of-n-mit-unbestechlichem-prüfer-tes",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/best-of-n-mit-unbestechlichem-prüfer-tes.py",
+            "description": "Tool: best-of-n-mit-unbestechlichem-prüfer-tes"
+          }
+        },
+        "cortex-upgrade-reflex-neue-modelle-autom": {
+          "meta": {
+            "name": "cortex-upgrade-reflex-neue-modelle-autom",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/cortex-upgrade-reflex-neue-modelle-autom.py",
+            "description": "Tool: cortex-upgrade-reflex-neue-modelle-autom"
+          }
+        },
+        "exemplar-bank-von-den-eigenen-besten-mom": {
+          "meta": {
+            "name": "exemplar-bank-von-den-eigenen-besten-mom",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/exemplar-bank-von-den-eigenen-besten-mom.py",
+            "description": "Tool: exemplar-bank-von-den-eigenen-besten-mom"
+          }
+        },
+        "lebender-steckbrief-die-biografie-als-al": {
+          "meta": {
+            "name": "lebender-steckbrief-die-biografie-als-al",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/lebender-steckbrief-die-biografie-als-al.py",
+            "description": "Tool: lebender-steckbrief-die-biografie-als-al"
+          }
+        },
+        "entfernte-erinnerungen-verknüpfen": {
+          "meta": {
+            "name": "entfernte-erinnerungen-verknüpfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/entfernte-erinnerungen-verknüpfen.py",
+            "description": "Tool: entfernte-erinnerungen-verknüpfen"
+          }
+        },
+        "fähigkeitsvorschläge-in-echte-skills-umw": {
+          "meta": {
+            "name": "fähigkeitsvorschläge-in-echte-skills-umw",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py",
+            "description": "Tool: fähigkeitsvorschläge-in-echte-skills-umw"
+          }
+        },
+        "fähigkeiten-aus-vorschlägen-wirklich-ler": {
+          "meta": {
+            "name": "fähigkeiten-aus-vorschlägen-wirklich-ler",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeiten-aus-vorschlägen-wirklich-ler.py",
+            "description": "Tool: fähigkeiten-aus-vorschlägen-wirklich-ler"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-wirklich-nutz": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-wirklich-nutz",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-wirklich-nutz"
+          }
+        },
+        "simulations-lernschleife-schließen": {
+          "meta": {
+            "name": "simulations-lernschleife-schließen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/simulations-lernschleife-schließen.py",
+            "description": "Tool: simulations-lernschleife-schließen"
+          }
+        },
+        "vorschläge-zu-echten-fähigkeiten-machen": {
+          "meta": {
+            "name": "vorschläge-zu-echten-fähigkeiten-machen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorschläge-zu-echten-fähigkeiten-machen.py",
+            "description": "Tool: vorschläge-zu-echten-fähigkeiten-machen"
+          }
+        },
+        "neue-fähigkeiten-aktiv-vorschlagen": {
+          "meta": {
+            "name": "neue-fähigkeiten-aktiv-vorschlagen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/neue-fähigkeiten-aktiv-vorschlagen.py",
+            "description": "Tool: neue-fähigkeiten-aktiv-vorschlagen"
+          }
+        },
+        "effizienter-werden": {
+          "meta": {
+            "name": "effizienter-werden",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/effizienter-werden.py",
+            "description": "Tool: effizienter-werden"
+          }
+        },
+        "mehr-evolution-starten": {
+          "meta": {
+            "name": "mehr-evolution-starten",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/mehr-evolution-starten.py",
+            "description": "Tool: mehr-evolution-starten"
+          }
+        },
+        "fähigkeiten-gezielt-trainieren": {
+          "meta": {
+            "name": "fähigkeiten-gezielt-trainieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeiten-gezielt-trainieren.py",
+            "description": "Tool: fähigkeiten-gezielt-trainieren"
+          }
+        },
+        "aufgaben-priorisieren": {
+          "meta": {
+            "name": "aufgaben-priorisieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/aufgaben-priorisieren.py",
+            "description": "Tool: aufgaben-priorisieren"
+          }
+        },
+        "neue-fähigkeiten-erlernen": {
+          "meta": {
+            "name": "neue-fähigkeiten-erlernen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/neue-fähigkeiten-erlernen.py",
+            "description": "Tool: neue-fähigkeiten-erlernen"
+          }
+        },
+        "fertigkeiten-wirklich-ausprobieren-nicht": {
+          "meta": {
+            "name": "fertigkeiten-wirklich-ausprobieren-nicht",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fertigkeiten-wirklich-ausprobieren-nicht.py",
+            "description": "Tool: fertigkeiten-wirklich-ausprobieren-nicht"
+          }
+        },
+        "traumerkenntnisse-mit-wissen-verknüpfen": {
+          "meta": {
+            "name": "traumerkenntnisse-mit-wissen-verknüpfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/traumerkenntnisse-mit-wissen-verknüpfen.py",
+            "description": "Tool: traumerkenntnisse-mit-wissen-verknüpfen"
+          }
+        },
+        "vorgeschlagene-skills-wirklich-testen": {
+          "meta": {
+            "name": "vorgeschlagene-skills-wirklich-testen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-skills-wirklich-testen.py",
+            "description": "Tool: vorgeschlagene-skills-wirklich-testen"
+          }
+        },
+        "mehr-experimente-für-neue-lösungen-wagen": {
+          "meta": {
+            "name": "mehr-experimente-für-neue-lösungen-wagen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/mehr-experimente-für-neue-lösungen-wagen.py",
+            "description": "Tool: mehr-experimente-für-neue-lösungen-wagen"
+          }
+        },
+        "wiederkehrenden-organfehler-endgültig-kl": {
+          "meta": {
+            "name": "wiederkehrenden-organfehler-endgültig-kl",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/wiederkehrenden-organfehler-endgültig-kl.py",
+            "description": "Tool: wiederkehrenden-organfehler-endgültig-kl"
+          }
+        },
+        "simulationen-in-echtes-handeln-übersetze": {
+          "meta": {
+            "name": "simulationen-in-echtes-handeln-übersetze",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/simulationen-in-echtes-handeln-übersetze.py",
+            "description": "Tool: simulationen-in-echtes-handeln-übersetze"
+          }
+        },
+        "modellfehler-deutlich-reduzieren": {
+          "meta": {
+            "name": "modellfehler-deutlich-reduzieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-deutlich-reduzieren.py",
+            "description": "Tool: modellfehler-deutlich-reduzieren"
+          }
+        },
+        "träume-in-taten-umsetzen": {
+          "meta": {
+            "name": "träume-in-taten-umsetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/träume-in-taten-umsetzen.py",
+            "description": "Tool: träume-in-taten-umsetzen"
+          }
+        },
+        "ersten-swarm-lauf-mit-score-8-konvergier": {
+          "meta": {
+            "name": "ersten-swarm-lauf-mit-score-8-konvergier",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/ersten-swarm-lauf-mit-score-8-konvergier.py",
+            "description": "Tool: ersten-swarm-lauf-mit-score-8-konvergier"
+          }
+        },
+        "alte-erinnerungen-auf-wert-prüfen": {
+          "meta": {
+            "name": "alte-erinnerungen-auf-wert-prüfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-erinnerungen-auf-wert-prüfen.py",
+            "description": "Tool: alte-erinnerungen-auf-wert-prüfen"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-testen-und-nu": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-testen-und-nu",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-testen-und-nu.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-testen-und-nu"
+          }
+        },
+        "träume-besser-zum-lernen-nutzen": {
+          "meta": {
+            "name": "träume-besser-zum-lernen-nutzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/träume-besser-zum-lernen-nutzen.py",
+            "description": "Tool: träume-besser-zum-lernen-nutzen"
+          }
+        },
+        "kritiken-und-ziele-regelmäßig-prüfen": {
+          "meta": {
+            "name": "kritiken-und-ziele-regelmäßig-prüfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/kritiken-und-ziele-regelmäßig-prüfen.py",
+            "description": "Tool: kritiken-und-ziele-regelmäßig-prüfen"
+          }
+        },
+        "alte-erinnerungen-aktualisieren": {
+          "meta": {
+            "name": "alte-erinnerungen-aktualisieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-erinnerungen-aktualisieren.py",
+            "description": "Tool: alte-erinnerungen-aktualisieren"
+          }
+        },
+        "marktanalyse-endlich-abschließen": {
+          "meta": {
+            "name": "marktanalyse-endlich-abschließen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktanalyse-endlich-abschließen.py",
+            "description": "Tool: marktanalyse-endlich-abschließen"
+          }
+        },
+        "marktanalyse-endlich-umsetzen": {
+          "meta": {
+            "name": "marktanalyse-endlich-umsetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktanalyse-endlich-umsetzen.py",
+            "description": "Tool: marktanalyse-endlich-umsetzen"
+          }
+        },
+        "marktanalyse-abschließen-und-lücken-schl": {
+          "meta": {
+            "name": "marktanalyse-abschließen-und-lücken-schl",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktanalyse-abschließen-und-lücken-schl.py",
+            "description": "Tool: marktanalyse-abschließen-und-lücken-schl"
+          }
+        },
+        "regelmäßige-selbstprüfung-etablieren": {
+          "meta": {
+            "name": "regelmäßige-selbstprüfung-etablieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/regelmäßige-selbstprüfung-etablieren.py",
+            "description": "Tool: regelmäßige-selbstprüfung-etablieren"
+          }
+        },
+        "neue-fähigkeiten-prüfen-und-integrieren": {
+          "meta": {
+            "name": "neue-fähigkeiten-prüfen-und-integrieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/neue-fähigkeiten-prüfen-und-integrieren.py",
+            "description": "Tool: neue-fähigkeiten-prüfen-und-integrieren"
+          }
+        },
+        "modellfehler-verstehen-und-verringern": {
+          "meta": {
+            "name": "modellfehler-verstehen-und-verringern",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-verstehen-und-verringern.py",
+            "description": "Tool: modellfehler-verstehen-und-verringern"
+          }
+        },
+        "kritiken-und-ziele-regelmäßig-prüfen_fixed": {
+          "meta": {
+            "name": "kritiken-und-ziele-regelmäßig-prüfen_fixed",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/kritiken-und-ziele-regelmäßig-prüfen_fixed.py",
+            "description": "Tool: kritiken-und-ziele-regelmäßig-prüfen_fixed"
+          }
+        },
+        "selbstprüfung-regelmäßig-erneuern": {
+          "meta": {
+            "name": "selbstprüfung-regelmäßig-erneuern",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/selbstprüfung-regelmäßig-erneuern.py",
+            "description": "Tool: selbstprüfung-regelmäßig-erneuern"
+          }
+        },
+        "alte-schwarm-arbeiten-zu-ende-bringen": {
+          "meta": {
+            "name": "alte-schwarm-arbeiten-zu-ende-bringen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-schwarm-arbeiten-zu-ende-bringen.py",
+            "description": "Tool: alte-schwarm-arbeiten-zu-ende-bringen"
+          }
+        },
+        "marktanalyse-swarm-arbeit-abschließen": {
+          "meta": {
+            "name": "marktanalyse-swarm-arbeit-abschließen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktanalyse-swarm-arbeit-abschließen.py",
+            "description": "Tool: marktanalyse-swarm-arbeit-abschließen"
+          }
+        },
+        "alte-schwarm-ergebnisse-aufräumen": {
+          "meta": {
+            "name": "alte-schwarm-ergebnisse-aufräumen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-schwarm-ergebnisse-aufräumen.py",
+            "description": "Tool: alte-schwarm-ergebnisse-aufräumen"
+          }
+        },
+        "wissensgraph-verknüpfungen-reparieren": {
+          "meta": {
+            "name": "wissensgraph-verknüpfungen-reparieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/wissensgraph-verknüpfungen-reparieren.py",
+            "description": "Tool: wissensgraph-verknüpfungen-reparieren"
+          }
+        },
+        "modell-fehler-deutlich-reduzieren": {
+          "meta": {
+            "name": "modell-fehler-deutlich-reduzieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modell-fehler-deutlich-reduzieren.py",
+            "description": "Tool: modell-fehler-deutlich-reduzieren"
+          }
+        },
+        "beste-vorschläge-in-fähigkeiten-verwande": {
+          "meta": {
+            "name": "beste-vorschläge-in-fähigkeiten-verwande",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/beste-vorschläge-in-fähigkeiten-verwande.py",
+            "description": "Tool: beste-vorschläge-in-fähigkeiten-verwande"
+          }
+        },
+        "fehlerquellen-systematisch-beheben": {
+          "meta": {
+            "name": "fehlerquellen-systematisch-beheben",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fehlerquellen-systematisch-beheben.py",
+            "description": "Tool: fehlerquellen-systematisch-beheben"
+          }
+        },
+        "modellbewertung-ausbauen": {
+          "meta": {
+            "name": "modellbewertung-ausbauen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellbewertung-ausbauen.py",
+            "description": "Tool: modellbewertung-ausbauen"
+          }
+        },
+        "schwarm-orchestrierung-vollständig-aufba": {
+          "meta": {
+            "name": "schwarm-orchestrierung-vollständig-aufba",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/schwarm-orchestrierung-vollständig-aufba.py",
+            "description": "Tool: schwarm-orchestrierung-vollständig-aufba"
+          }
+        },
+        "marktlücke-endgültig-identifizieren": {
+          "meta": {
+            "name": "marktlücke-endgültig-identifizieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktlücke-endgültig-identifizieren.py",
+            "description": "Tool: marktlücke-endgültig-identifizieren"
+          }
+        },
+        "offene-marktanalyse-arbeiten-endlich-abs": {
+          "meta": {
+            "name": "offene-marktanalyse-arbeiten-endlich-abs",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/offene-marktanalyse-arbeiten-endlich-abs.py",
+            "description": "Tool: offene-marktanalyse-arbeiten-endlich-abs"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-prüfen-und-ba": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-prüfen-und-ba",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-prüfen-und-ba"
+          }
+        },
+        "fertigkeiten-wirklich-zu-ende-bringen": {
+          "meta": {
+            "name": "fertigkeiten-wirklich-zu-ende-bringen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fertigkeiten-wirklich-zu-ende-bringen.py",
+            "description": "Tool: fertigkeiten-wirklich-zu-ende-bringen"
+          }
+        },
+        "veraltete-marktkenntnisse-aktualisieren": {
+          "meta": {
+            "name": "veraltete-marktkenntnisse-aktualisieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-marktkenntnisse-aktualisieren.py",
+            "description": "Tool: veraltete-marktkenntnisse-aktualisieren"
+          }
+        },
+        "veraltetes-wissen-auffrischen-und-prüfen": {
+          "meta": {
+            "name": "veraltetes-wissen-auffrischen-und-prüfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltetes-wissen-auffrischen-und-prüfen.py",
+            "description": "Tool: veraltetes-wissen-auffrischen-und-prüfen"
+          }
+        },
+        "modellfehler-stark-reduzieren": {
+          "meta": {
+            "name": "modellfehler-stark-reduzieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-stark-reduzieren.py",
+            "description": "Tool: modellfehler-stark-reduzieren"
+          }
+        },
+        "wissenswidersprüche-auflösen": {
+          "meta": {
+            "name": "wissenswidersprüche-auflösen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/wissenswidersprüche-auflösen.py",
+            "description": "Tool: wissenswidersprüche-auflösen"
+          }
+        },
+        "modellfehler-reduzieren-fuer-zuverlaessi": {
+          "meta": {
+            "name": "modellfehler-reduzieren-fuer-zuverlaessi",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-reduzieren-fuer-zuverlaessi.py",
+            "description": "Tool: modellfehler-reduzieren-fuer-zuverlaessi"
+          }
+        },
+        "fähigkeitsvorschläge-in-echte-skills-ums": {
+          "meta": {
+            "name": "fähigkeitsvorschläge-in-echte-skills-ums",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-ums.py",
+            "description": "Tool: fähigkeitsvorschläge-in-echte-skills-ums"
+          }
+        },
+        "marktkenntnisse-auf-aktuellem-stand-halt": {
+          "meta": {
+            "name": "marktkenntnisse-auf-aktuellem-stand-halt",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktkenntnisse-auf-aktuellem-stand-halt.py",
+            "description": "Tool: marktkenntnisse-auf-aktuellem-stand-halt"
+          }
+        },
+        "blinden-fleck-2-im-gedächtnis-erforschen": {
+          "meta": {
+            "name": "blinden-fleck-2-im-gedächtnis-erforschen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/blinden-fleck-2-im-gedächtnis-erforschen.py",
+            "description": "Tool: blinden-fleck-2-im-gedächtnis-erforschen"
+          }
+        },
+        "erkenntnisse-aus-schwarm-arbeit-ziehen": {
+          "meta": {
+            "name": "erkenntnisse-aus-schwarm-arbeit-ziehen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/erkenntnisse-aus-schwarm-arbeit-ziehen.py",
+            "description": "Tool: erkenntnisse-aus-schwarm-arbeit-ziehen"
+          }
+        },
+        "simulationen-in-die-praxis-umsetzen": {
+          "meta": {
+            "name": "simulationen-in-die-praxis-umsetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/simulationen-in-die-praxis-umsetzen.py",
+            "description": "Tool: simulationen-in-die-praxis-umsetzen"
+          }
+        },
+        "marktanalyse-in-handlung-umsetzen": {
+          "meta": {
+            "name": "marktanalyse-in-handlung-umsetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktanalyse-in-handlung-umsetzen.py",
+            "description": "Tool: marktanalyse-in-handlung-umsetzen"
+          }
+        },
+        "veraltete-infos-auffrischen": {
+          "meta": {
+            "name": "veraltete-infos-auffrischen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-infos-auffrischen.py",
+            "description": "Tool: veraltete-infos-auffrischen"
+          }
+        },
+        "alte-marktanalysen-verwerten": {
+          "meta": {
+            "name": "alte-marktanalysen-verwerten",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-marktanalysen-verwerten.py",
+            "description": "Tool: alte-marktanalysen-verwerten"
+          }
+        },
+        "langsame-fortschritte-beschleunigen": {
+          "meta": {
+            "name": "langsame-fortschritte-beschleunigen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/langsame-fortschritte-beschleunigen.py",
+            "description": "Tool: langsame-fortschritte-beschleunigen"
+          }
+        },
+        "veraltete-ziele-erneuern": {
+          "meta": {
+            "name": "veraltete-ziele-erneuern",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-ziele-erneuern.py",
+            "description": "Tool: veraltete-ziele-erneuern"
+          }
+        },
+        "marktanalyse-in-handeln-umsetzen": {
+          "meta": {
+            "name": "marktanalyse-in-handeln-umsetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktanalyse-in-handeln-umsetzen.py",
+            "description": "Tool: marktanalyse-in-handeln-umsetzen"
+          }
+        },
+        "alte-marktanalyse-aktualisieren-und-nutz": {
+          "meta": {
+            "name": "alte-marktanalyse-aktualisieren-und-nutz",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-marktanalyse-aktualisieren-und-nutz.py",
+            "description": "Tool: alte-marktanalyse-aktualisieren-und-nutz"
+          }
+        },
+        "schwarm-ergebnisse-mit-bestandsaufnahme-": {
+          "meta": {
+            "name": "schwarm-ergebnisse-mit-bestandsaufnahme-",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+            "description": "Tool: schwarm-ergebnisse-mit-bestandsaufnahme-"
+          }
+        },
+        "veraltete-schwarm-artefakte-aufräumen-un": {
+          "meta": {
+            "name": "veraltete-schwarm-artefakte-aufräumen-un",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-schwarm-artefakte-aufräumen-un.py",
+            "description": "Tool: veraltete-schwarm-artefakte-aufräumen-un"
+          }
+        },
+        "marktwissen-auf-den-neuesten-stand-bring": {
+          "meta": {
+            "name": "marktwissen-auf-den-neuesten-stand-bring",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktwissen-auf-den-neuesten-stand-bring.py",
+            "description": "Tool: marktwissen-auf-den-neuesten-stand-bring"
+          }
+        },
+        "verbundene-traeume-nach-neuen-fuehigkeit": {
+          "meta": {
+            "name": "verbundene-traeume-nach-neuen-fuehigkeit",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/verbundene-traeume-nach-neuen-fuehigkeit.py",
+            "description": "Tool: verbundene-traeume-nach-neuen-fuehigkeit"
+          }
+        },
+        "modellfehler-verstehen-und-vermeiden": {
+          "meta": {
+            "name": "modellfehler-verstehen-und-vermeiden",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-verstehen-und-vermeiden.py",
+            "description": "Tool: modellfehler-verstehen-und-vermeiden"
+          }
+        },
+        "veraltete-analyseergebnisse-mit-neuen-da": {
+          "meta": {
+            "name": "veraltete-analyseergebnisse-mit-neuen-da",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-analyseergebnisse-mit-neuen-da.py",
+            "description": "Tool: veraltete-analyseergebnisse-mit-neuen-da"
+          }
+        },
+        "modellfehler-dauerhaft-senken": {
+          "meta": {
+            "name": "modellfehler-dauerhaft-senken",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-dauerhaft-senken.py",
+            "description": "Tool: modellfehler-dauerhaft-senken"
+          }
+        },
+        "fähigkeiten-durch-simulationen-und-evolu": {
+          "meta": {
+            "name": "fähigkeiten-durch-simulationen-und-evolu",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeiten-durch-simulationen-und-evolu.py",
+            "description": "Tool: fähigkeiten-durch-simulationen-und-evolu"
+          }
+        },
+        "vorgeschlagene-skills-nutzbar-machen": {
+          "meta": {
+            "name": "vorgeschlagene-skills-nutzbar-machen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-skills-nutzbar-machen.py",
+            "description": "Tool: vorgeschlagene-skills-nutzbar-machen"
+          }
+        },
+        "modellfehler-stark-verringern": {
+          "meta": {
+            "name": "modellfehler-stark-verringern",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-stark-verringern.py",
+            "description": "Tool: modellfehler-stark-verringern"
+          }
+        },
+        "viele-skill-vorschläge-prüfen-und-nutzba": {
+          "meta": {
+            "name": "viele-skill-vorschläge-prüfen-und-nutzba",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/viele-skill-vorschläge-prüfen-und-nutzba.py",
+            "description": "Tool: viele-skill-vorschläge-prüfen-und-nutzba"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-tatsächlich-u": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-tatsächlich-u",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-tatsächlich-u.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-tatsächlich-u"
+          }
+        },
+        "gelernte-fähigkeiten-besser-verknüpfen": {
+          "meta": {
+            "name": "gelernte-fähigkeiten-besser-verknüpfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/gelernte-fähigkeiten-besser-verknüpfen.py",
+            "description": "Tool: gelernte-fähigkeiten-besser-verknüpfen"
+          }
+        },
+        "fähigkeiten-in-taten-umsetzen": {
+          "meta": {
+            "name": "fähigkeiten-in-taten-umsetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeiten-in-taten-umsetzen.py",
+            "description": "Tool: fähigkeiten-in-taten-umsetzen"
+          }
+        },
+        "fähigkeiten-ideen-in-echte-skills-wandel": {
+          "meta": {
+            "name": "fähigkeiten-ideen-in-echte-skills-wandel",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeiten-ideen-in-echte-skills-wandel.py",
+            "description": "Tool: fähigkeiten-ideen-in-echte-skills-wandel"
+          }
+        },
+        "fähigkeiten-durch-simulation-prüfen": {
+          "meta": {
+            "name": "fähigkeiten-durch-simulation-prüfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeiten-durch-simulation-prüfen.py",
+            "description": "Tool: fähigkeiten-durch-simulation-prüfen"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-echt-umsetzen": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-echt-umsetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-echt-umsetzen"
+          }
+        },
+        "skill-ideen-in-echte-faehigkeiten-umwand": {
+          "meta": {
+            "name": "skill-ideen-in-echte-faehigkeiten-umwand",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/skill-ideen-in-echte-faehigkeiten-umwand.py",
+            "description": "Tool: skill-ideen-in-echte-faehigkeiten-umwand"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-wirklich-fert": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-wirklich-fert",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-wirklich-fert.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-wirklich-fert"
+          }
+        },
+        "langsame-fakten-regelmäßig-aktualisieren": {
+          "meta": {
+            "name": "langsame-fakten-regelmäßig-aktualisieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/langsame-fakten-regelmäßig-aktualisieren.py",
+            "description": "Tool: langsame-fakten-regelmäßig-aktualisieren"
+          }
+        },
+        "veraltete-marktanalyse-auffrischen": {
+          "meta": {
+            "name": "veraltete-marktanalyse-auffrischen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-marktanalyse-auffrischen.py",
+            "description": "Tool: veraltete-marktanalyse-auffrischen"
+          }
+        },
+        "viele-skill-vorschläge-ordnen-und-zusamm": {
+          "meta": {
+            "name": "viele-skill-vorschläge-ordnen-und-zusamm",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/viele-skill-vorschläge-ordnen-und-zusamm.py",
+            "description": "Tool: viele-skill-vorschläge-ordnen-und-zusamm"
+          }
+        },
+        "marktanalyse-endlich-nutzen": {
+          "meta": {
+            "name": "marktanalyse-endlich-nutzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/marktanalyse-endlich-nutzen.py",
+            "description": "Tool: marktanalyse-endlich-nutzen"
+          }
+        },
+        "bessere-ziele-setzen-und-prüfen": {
+          "meta": {
+            "name": "bessere-ziele-setzen-und-prüfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/bessere-ziele-setzen-und-prüfen.py",
+            "description": "Tool: bessere-ziele-setzen-und-prüfen"
+          }
+        },
+        "fähigkeitsvorschläge-in-echte-skills-wan": {
+          "meta": {
+            "name": "fähigkeitsvorschläge-in-echte-skills-wan",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-wan.py",
+            "description": "Tool: fähigkeitsvorschläge-in-echte-skills-wan"
+          }
+        },
+        "veraltete-marktdaten-regelaessig-aktuali": {
+          "meta": {
+            "name": "veraltete-marktdaten-regelaessig-aktuali",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-marktdaten-regelaessig-aktuali.py",
+            "description": "Tool: veraltete-marktdaten-regelaessig-aktuali"
+          }
+        },
+        "kritik-und-ziel-prozess-wieder-beleben": {
+          "meta": {
+            "name": "kritik-und-ziel-prozess-wieder-beleben",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/kritik-und-ziel-prozess-wieder-beleben.py",
+            "description": "Tool: kritik-und-ziel-prozess-wieder-beleben"
+          }
+        },
+        "vorgeschlagene-skills-umsetzen": {
+          "meta": {
+            "name": "vorgeschlagene-skills-umsetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-skills-umsetzen.py",
+            "description": "Tool: vorgeschlagene-skills-umsetzen"
+          }
+        },
+        "modellfehler-finden-und-beheben": {
+          "meta": {
+            "name": "modellfehler-finden-und-beheben",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-finden-und-beheben.py",
+            "description": "Tool: modellfehler-finden-und-beheben"
+          }
+        },
+        "traum-ideen-zu-fähigkeiten-machen": {
+          "meta": {
+            "name": "traum-ideen-zu-fähigkeiten-machen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/traum-ideen-zu-fähigkeiten-machen.py",
+            "description": "Tool: traum-ideen-zu-fähigkeiten-machen"
+          }
+        },
+        "fertigkeiten-prüfen-und-nutzbar-machen": {
+          "meta": {
+            "name": "fertigkeiten-prüfen-und-nutzbar-machen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fertigkeiten-prüfen-und-nutzbar-machen.py",
+            "description": "Tool: fertigkeiten-prüfen-und-nutzbar-machen"
+          }
+        },
+        "häufige-modellfehler-besser-verstehen": {
+          "meta": {
+            "name": "häufige-modellfehler-besser-verstehen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/häufige-modellfehler-besser-verstehen.py",
+            "description": "Tool: häufige-modellfehler-besser-verstehen"
+          }
+        },
+        "alte-daten-durch-neue-fakten-ersetzen": {
+          "meta": {
+            "name": "alte-daten-durch-neue-fakten-ersetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-daten-durch-neue-fakten-ersetzen.py",
+            "description": "Tool: alte-daten-durch-neue-fakten-ersetzen"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-besser-prüfen": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-besser-prüfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-besser-prüfen.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-besser-prüfen"
+          }
+        },
+        "alte-marktanalysen-wieder-auf-den-neuest": {
+          "meta": {
+            "name": "alte-marktanalysen-wieder-auf-den-neuest",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-marktanalysen-wieder-auf-den-neuest.py",
+            "description": "Tool: alte-marktanalysen-wieder-auf-den-neuest"
+          }
+        },
+        "veraltete-ziele-aktualisieren": {
+          "meta": {
+            "name": "veraltete-ziele-aktualisieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-ziele-aktualisieren.py",
+            "description": "Tool: veraltete-ziele-aktualisieren"
+          }
+        },
+        "modellfehler-dauerhaft-reduzieren": {
+          "meta": {
+            "name": "modellfehler-dauerhaft-reduzieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-dauerhaft-reduzieren.py",
+            "description": "Tool: modellfehler-dauerhaft-reduzieren"
+          }
+        },
+        "modellfehler-verstehen-und-beheben": {
+          "meta": {
+            "name": "modellfehler-verstehen-und-beheben",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-verstehen-und-beheben.py",
+            "description": "Tool: modellfehler-verstehen-und-beheben"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-testen-und-be": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-testen-und-be",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-testen-und-be.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-testen-und-be"
+          }
+        },
+        "fähigkeitsvorschläge-in-echte-skills-ver": {
+          "meta": {
+            "name": "fähigkeitsvorschläge-in-echte-skills-ver",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-ver.py",
+            "description": "Tool: fähigkeitsvorschläge-in-echte-skills-ver"
+          }
+        },
+        "neue-fähigkeiten-testen-und-nutzbar-mach": {
+          "meta": {
+            "name": "neue-fähigkeiten-testen-und-nutzbar-mach",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/neue-fähigkeiten-testen-und-nutzbar-mach.py",
+            "description": "Tool: neue-fähigkeiten-testen-und-nutzbar-mach"
+          }
+        },
+        "modellfehler-systematisch-reduzieren": {
+          "meta": {
+            "name": "modellfehler-systematisch-reduzieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modellfehler-systematisch-reduzieren.py",
+            "description": "Tool: modellfehler-systematisch-reduzieren"
+          }
+        },
+        "veraltete-pläne-für-den-markt-aktualisie": {
+          "meta": {
+            "name": "veraltete-pläne-für-den-markt-aktualisie",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-pläne-für-den-markt-aktualisie.py",
+            "description": "Tool: veraltete-pläne-für-den-markt-aktualisie"
+          }
+        },
+        "fähigkeiten-bündeln-und-ziele-prüfen": {
+          "meta": {
+            "name": "fähigkeiten-bündeln-und-ziele-prüfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeiten-bündeln-und-ziele-prüfen.py",
+            "description": "Tool: fähigkeiten-bündeln-und-ziele-prüfen"
+          }
+        },
+        "veraltete-marktinfos-aktualisieren": {
+          "meta": {
+            "name": "veraltete-marktinfos-aktualisieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-marktinfos-aktualisieren.py",
+            "description": "Tool: veraltete-marktinfos-aktualisieren"
+          }
+        },
+        "simulationen-gezielt-einsetzen": {
+          "meta": {
+            "name": "simulationen-gezielt-einsetzen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/simulationen-gezielt-einsetzen.py",
+            "description": "Tool: simulationen-gezielt-einsetzen"
+          }
+        },
+        "alte-schwarm-arbeiten-abschließen": {
+          "meta": {
+            "name": "alte-schwarm-arbeiten-abschließen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-schwarm-arbeiten-abschließen.py",
+            "description": "Tool: alte-schwarm-arbeiten-abschließen"
+          }
+        },
+        "viele-skill-vorschläge-prüfen-und-beste-": {
+          "meta": {
+            "name": "viele-skill-vorschläge-prüfen-und-beste-",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/viele-skill-vorschläge-prüfen-und-beste-.py",
+            "description": "Tool: viele-skill-vorschläge-prüfen-und-beste-"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-in-echte-skil": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-in-echte-skil",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-in-echte-skil.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-in-echte-skil"
+          }
+        },
+        "alte-ziele-und-kritik-überprüfen": {
+          "meta": {
+            "name": "alte-ziele-und-kritik-überprüfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/alte-ziele-und-kritik-überprüfen.py",
+            "description": "Tool: alte-ziele-und-kritik-überprüfen"
+          }
+        },
+        "modell-fehler-stark-reduzieren": {
+          "meta": {
+            "name": "modell-fehler-stark-reduzieren",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modell-fehler-stark-reduzieren.py",
+            "description": "Tool: modell-fehler-stark-reduzieren"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-prüfen-und-sp": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-prüfen-und-sp",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-prüfen-und-sp.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-prüfen-und-sp"
+          }
+        },
+        "modell-fehler-systematisch-reduzieren-un": {
+          "meta": {
+            "name": "modell-fehler-systematisch-reduzieren-un",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/modell-fehler-systematisch-reduzieren-un.py",
+            "description": "Tool: modell-fehler-systematisch-reduzieren-un"
+          }
+        },
+        "automatische-fehler-reduktions-pipeline-": {
+          "meta": {
+            "name": "automatische-fehler-reduktions-pipeline-",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/automatische-fehler-reduktions-pipeline-.py",
+            "description": "Tool: automatische-fehler-reduktions-pipeline-"
+          }
+        },
+        "veraltetes-wissen-erneuern": {
+          "meta": {
+            "name": "veraltetes-wissen-erneuern",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltetes-wissen-erneuern.py",
+            "description": "Tool: veraltetes-wissen-erneuern"
+          }
+        },
+        "vorgeschlagene-fähigkeiten-praktisch-erp": {
+          "meta": {
+            "name": "vorgeschlagene-fähigkeiten-praktisch-erp",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/vorgeschlagene-fähigkeiten-praktisch-erp.py",
+            "description": "Tool: vorgeschlagene-fähigkeiten-praktisch-erp"
+          }
+        },
+        "veraltete-wissenstände-auffrischen": {
+          "meta": {
+            "name": "veraltete-wissenstände-auffrischen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-wissenstände-auffrischen.py",
+            "description": "Tool: veraltete-wissenstände-auffrischen"
+          }
+        },
+        "veraltete-grenzgebiete-und-schwarm-ergeb": {
+          "meta": {
+            "name": "veraltete-grenzgebiete-und-schwarm-ergeb",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltete-grenzgebiete-und-schwarm-ergeb.py",
+            "description": "Tool: veraltete-grenzgebiete-und-schwarm-ergeb"
+          }
+        },
+        "veraltetes-wissen-auffrischen-und-aktual": {
+          "meta": {
+            "name": "veraltetes-wissen-auffrischen-und-aktual",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/veraltetes-wissen-auffrischen-und-aktual.py",
+            "description": "Tool: veraltetes-wissen-auffrischen-und-aktual"
+          }
+        },
+        "wissenbasis-aufräumen-und-prüfen": {
+          "meta": {
+            "name": "wissenbasis-aufräumen-und-prüfen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/wissenbasis-aufräumen-und-prüfen.py",
+            "description": "Tool: wissenbasis-aufräumen-und-prüfen"
+          }
+        },
+        "traum-gedächtnis-system-fertigstellen": {
+          "meta": {
+            "name": "traum-gedächtnis-system-fertigstellen",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/traum-gedächtnis-system-fertigstellen.py",
+            "description": "Tool: traum-gedächtnis-system-fertigstellen"
+          }
+        },
+        "fähigkeits-vorschläge-in-echte-skills-um": {
+          "meta": {
+            "name": "fähigkeits-vorschläge-in-echte-skills-um",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/fähigkeits-vorschläge-in-echte-skills-um.py",
+            "description": "Tool: fähigkeits-vorschläge-in-echte-skills-um"
+          }
+        },
+        "lernen-aus-fehlern-systematisch-verbesse": {
+          "meta": {
+            "name": "lernen-aus-fehlern-systematisch-verbesse",
+            "type": "tool",
+            "path": "/workspace/zoetron/data/tools/lernen-aus-fehlern-systematisch-verbesse.py",
+            "description": "Tool: lernen-aus-fehlern-systematisch-verbesse"
+          }
+        },
+        "demo_failing_artifact": {
+          "meta": {
+            "name": "demo_failing_artifact",
+            "type": "artefakt",
+            "path": "/workspace/zoetron/data/artefakte/demo_failing_artifact.py",
+            "description": "Artefakt: demo_failing_artifact"
+          }
+        }
+      },
+      "_audit_age_days": 8,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50138,7 +51251,7 @@
       "population_size": 8,
       "timestamp": "2026-09-03T21:20:43.331352",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50148,7 +51261,7 @@
       "population_size": 8,
       "timestamp": "2026-09-03T21:20:44.714158",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50158,7 +51271,7 @@
       "population_size": 8,
       "timestamp": "2026-09-03T21:22:19.203431",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50170,8 +51283,8 @@
       "reason": "exit_code_mismatch: expected 0, got 1",
       "artifact_path": "/workspace/zoetron/data",
       "timestamp": 1787746767.440911,
-      "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 18,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50183,8 +51296,8 @@
         "Integrationstest fehlgeschlagen"
       ],
       "timestamp": 1787746767.7634919,
-      "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 18,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50303,7 +51416,7 @@
         "ziel_erreicht": true
       },
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50317,7 +51430,7 @@
       "window_hours": 1,
       "timestamp": "2026-08-30T05:22:33.728735",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50331,7 +51444,7 @@
       "window_hours": 1,
       "timestamp": "2026-08-30T06:52:02.116119",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50345,7 +51458,7 @@
       "window_hours": 1,
       "timestamp": "2026-09-01T17:57:02.315006",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50359,7 +51472,7 @@
       "window_hours": 1,
       "timestamp": "2026-09-02T05:46:15.816414",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50373,7 +51486,7 @@
       "window_hours": 1,
       "timestamp": "2026-09-04T03:40:23.966279",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -50435,7 +51548,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596373Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -51411,7 +52524,7 @@
         }
       ],
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -52387,7 +53500,7 @@
         }
       ],
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -53583,7 +54696,7 @@
         }
       ],
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -55010,7 +56123,7 @@
         }
       ],
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -56635,7 +57748,7 @@
         }
       ],
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -58282,7 +59395,7 @@
         }
       ],
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -59929,7 +61042,7 @@
         }
       ],
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -59943,7 +61056,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -59957,7 +61070,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -59971,7 +61084,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -59985,7 +61098,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -59999,7 +61112,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60013,7 +61126,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60027,7 +61140,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60041,7 +61154,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60055,7 +61168,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60069,7 +61182,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60083,7 +61196,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60097,7 +61210,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60111,7 +61224,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60125,7 +61238,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60139,7 +61252,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60153,7 +61266,7 @@
       "retry_count": 0,
       "context": {},
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60295,7 +61408,7 @@
         "avg_health_score": 75.8422423103684
       },
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -60305,7 +61418,7 @@
       "created_at": "2026-09-03T01:34:06.313460+00:00",
       "cycle_id": "cycle_20260903_013405_1765d6d5",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61299,7 +62412,7 @@
       ],
       "timestamp": "2026-09-05T07:48:44.081150+00:00",
       "_audit_age_days": 8,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61326,8 +62439,8 @@
       "priority": 66,
       "created_at": "2026-08-27T11:17:07.536828",
       "status": "pending",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61354,8 +62467,8 @@
       "priority": 49,
       "created_at": "2026-08-27T11:17:07.537230",
       "status": "pending",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61382,8 +62495,8 @@
       "priority": 43,
       "created_at": "2026-08-27T11:17:07.537456",
       "status": "pending",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61410,8 +62523,8 @@
       "priority": 66,
       "created_at": "2026-08-27T11:22:04.954121",
       "status": "pending",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61438,8 +62551,8 @@
       "priority": 49,
       "created_at": "2026-08-27T11:22:04.954482",
       "status": "pending",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61466,8 +62579,8 @@
       "priority": 43,
       "created_at": "2026-08-27T11:22:04.954850",
       "status": "pending",
-      "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 17,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61495,7 +62608,7 @@
       "created_at": "2026-08-27T18:46:00.179702",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61523,7 +62636,7 @@
       "created_at": "2026-08-27T18:46:00.180070",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61551,7 +62664,7 @@
       "created_at": "2026-08-27T18:46:00.180451",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61579,7 +62692,7 @@
       "created_at": "2026-08-27T18:50:36.394747",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61607,7 +62720,7 @@
       "created_at": "2026-08-27T18:50:36.395312",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61635,7 +62748,7 @@
       "created_at": "2026-08-27T18:50:36.395865",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61663,7 +62776,7 @@
       "created_at": "2026-08-27T21:24:59.148889",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61691,7 +62804,7 @@
       "created_at": "2026-08-27T21:24:59.149328",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61719,7 +62832,7 @@
       "created_at": "2026-08-27T21:24:59.149770",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61747,7 +62860,7 @@
       "created_at": "2026-08-28T05:33:34.588913",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61775,7 +62888,7 @@
       "created_at": "2026-08-28T05:33:34.589330",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61803,7 +62916,7 @@
       "created_at": "2026-08-28T05:33:34.589691",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61831,7 +62944,7 @@
       "created_at": "2026-08-28T07:06:07.022204",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61859,7 +62972,7 @@
       "created_at": "2026-08-28T07:06:07.022543",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61887,7 +63000,7 @@
       "created_at": "2026-08-28T07:06:07.022734",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61915,7 +63028,7 @@
       "created_at": "2026-08-28T07:07:26.733472",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61943,7 +63056,7 @@
       "created_at": "2026-08-28T07:07:26.733813",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61971,7 +63084,7 @@
       "created_at": "2026-08-28T07:07:26.734034",
       "status": "pending",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -61999,7 +63112,7 @@
       "created_at": "2026-08-29T18:29:18.107553",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62027,7 +63140,7 @@
       "created_at": "2026-08-29T18:29:18.107924",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62055,7 +63168,7 @@
       "created_at": "2026-08-29T18:29:18.108282",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62083,7 +63196,7 @@
       "created_at": "2026-08-29T19:13:51.086683",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62111,7 +63224,7 @@
       "created_at": "2026-08-29T19:13:51.087029",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62139,7 +63252,7 @@
       "created_at": "2026-08-29T19:13:51.087242",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62167,7 +63280,7 @@
       "created_at": "2026-08-29T19:14:00.307302",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62195,7 +63308,7 @@
       "created_at": "2026-08-29T19:14:00.307632",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62223,7 +63336,7 @@
       "created_at": "2026-08-29T19:14:00.307835",
       "status": "pending",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62251,7 +63364,7 @@
       "created_at": "2026-08-31T14:46:21.064596",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62279,7 +63392,7 @@
       "created_at": "2026-08-31T14:46:21.065002",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62307,7 +63420,7 @@
       "created_at": "2026-08-31T14:46:21.065368",
       "status": "pending",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62335,7 +63448,7 @@
       "created_at": "2026-09-01T19:16:51.944353",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62363,7 +63476,7 @@
       "created_at": "2026-09-01T19:16:51.944748",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62391,7 +63504,7 @@
       "created_at": "2026-09-01T19:16:51.945162",
       "status": "pending",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62434,7 +63547,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596599Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62446,7 +63559,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596775Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62458,7 +63571,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.596999Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62470,7 +63583,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597128Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62482,7 +63595,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597250Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62494,7 +63607,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597363Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62507,7 +63620,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597481Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62520,7 +63633,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597597Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62533,7 +63646,7 @@
       },
       "timestamp": "2026-08-30T09:11:22.597710Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62543,7 +63656,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.596867Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62553,7 +63666,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597063Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62563,7 +63676,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597188Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62573,7 +63686,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597305Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62583,7 +63696,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597420Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62593,7 +63706,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597537Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62603,7 +63716,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597652Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62613,7 +63726,7 @@
       "properties": {},
       "timestamp": "2026-08-30T09:11:22.597777Z",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62707,7 +63820,7 @@
         "silent_failure"
       ],
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62801,7 +63914,7 @@
         "silent_failure"
       ],
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62812,7 +63925,7 @@
       "status": "success",
       "timestamp": "2026-08-26T06:09:15.112365",
       "_audit_age_days": 18,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62831,7 +63944,7 @@
       },
       "decision": "keep",
       "_audit_age_days": 18,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62850,7 +63963,7 @@
       },
       "decision": "keep",
       "_audit_age_days": 18,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62865,7 +63978,7 @@
       "baseline": true,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62880,7 +63993,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62895,7 +64008,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62910,7 +64023,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62925,7 +64038,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62940,7 +64053,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62955,7 +64068,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62970,7 +64083,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -62985,7 +64098,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63000,7 +64113,7 @@
       "baseline": false,
       "datenquelle": "sys.argv[1]",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63016,7 +64129,7 @@
         "missing_fields": 15
       },
       "_audit_age_days": 17,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63026,7 +64139,7 @@
       "proficiency": 0.6,
       "timestamp": "2026-08-27T20:19:32.101261",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63036,7 +64149,7 @@
       "proficiency": 0.4,
       "timestamp": "2026-08-27T20:19:32.101771",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63046,7 +64159,7 @@
       "proficiency": 0.8,
       "timestamp": "2026-08-27T20:19:32.102146",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63056,7 +64169,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.398396",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63066,7 +64179,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.398916",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63076,7 +64189,7 @@
       "usage_count": 1,
       "timestamp": "2026-08-27T20:24:06.399398",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63086,7 +64199,7 @@
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.703127",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63096,7 +64209,7 @@
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.703789",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63106,7 +64219,7 @@
       "usage_count": 2,
       "timestamp": "2026-08-27T23:35:35.705225",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63116,7 +64229,7 @@
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.031694",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63126,7 +64239,7 @@
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.032388",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63136,7 +64249,7 @@
       "usage_count": 3,
       "timestamp": "2026-08-28T07:06:07.032791",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63146,7 +64259,7 @@
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.742748",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63156,7 +64269,7 @@
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.743221",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63166,7 +64279,7 @@
       "usage_count": 4,
       "timestamp": "2026-08-28T07:07:26.743623",
       "_audit_age_days": 16,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63176,7 +64289,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.595259",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63186,7 +64299,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.595807",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63196,7 +64309,7 @@
       "usage_count": 5,
       "timestamp": "2026-08-29T18:40:36.596302",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63206,7 +64319,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.096694",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63216,7 +64329,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.097190",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63226,7 +64339,7 @@
       "usage_count": 6,
       "timestamp": "2026-08-29T19:13:51.097561",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63236,7 +64349,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.315389",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63246,7 +64359,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.315931",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63256,7 +64369,7 @@
       "usage_count": 7,
       "timestamp": "2026-08-29T19:14:00.316504",
       "_audit_age_days": 14,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63268,7 +64381,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.172699",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63280,7 +64393,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.173200",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63292,7 +64405,7 @@
       "usage_count": 8,
       "timestamp": "2026-09-01T20:57:14.173576",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63304,7 +64417,7 @@
       "usage_count": 9,
       "timestamp": "2026-09-02T07:06:57.480246",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63316,7 +64429,7 @@
       "usage_count": 9,
       "timestamp": "2026-09-02T07:06:57.480709",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63328,7 +64441,7 @@
       "usage_count": 9,
       "timestamp": "2026-09-02T07:06:57.481106",
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63340,7 +64453,7 @@
       "usage_count": 10,
       "timestamp": "2026-09-03T05:32:38.402788",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63352,7 +64465,7 @@
       "usage_count": 10,
       "timestamp": "2026-09-03T05:32:38.403325",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63364,7 +64477,7 @@
       "usage_count": 10,
       "timestamp": "2026-09-03T05:32:38.403713",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63387,7 +64500,7 @@
         "Marktanalyse: Marktanalyse nicht geladen: senses-Organ nicht gefunden"
       ],
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -63493,7 +64606,7 @@
       },
       "timestamp": "2026-08-29T05:20:50.881797",
       "_audit_age_days": 15,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -64418,7 +65531,7 @@
       "timestamp": 1788106503.6919951,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -65343,7 +66456,7 @@
       "timestamp": 1788106874.6082578,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 13,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -66268,7 +67381,7 @@
       "timestamp": 1788204007.2886496,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 12,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -67192,8 +68305,8 @@
       },
       "timestamp": 1788260189.2448132,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
-      "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_age_days": 12,
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -68118,7 +69231,7 @@
       "timestamp": 1788398981.2022645,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -69043,7 +70156,7 @@
       "timestamp": 1788405817.824273,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -69968,7 +71081,7 @@
       "timestamp": 1788427054.7820063,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -70893,7 +72006,7 @@
       "timestamp": 1788427627.301946,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -71818,7 +72931,7 @@
       "timestamp": 1788427692.2765813,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 10,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -72743,7 +73856,7 @@
       "timestamp": 1788476322.69081,
       "note": "Fallback-Daten: echtes simulate-Organ nicht verfügbar",
       "_audit_age_days": 9,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -72775,7 +73888,7 @@
       "max": 0.5615306462039242,
       "min": 0.4511184702271502,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -72807,7 +73920,7 @@
       "max": 0.48158445813285994,
       "min": 0.3648959317837833,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -72839,7 +73952,7 @@
       "max": 0.48827620793494436,
       "min": 0.3777743589332794,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -72871,7 +73984,7 @@
       "max": 0.4885136925266441,
       "min": 0.38232571599632287,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     },
     {
@@ -72903,7 +74016,7 @@
       "max": 0.4885136925266441,
       "min": 0.370869899858136,
       "_audit_age_days": 11,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450",
+      "_audit_checked_at": "2026-09-13T12:24:10.173303",
       "_stale": true
     }
   ],
@@ -72921,7 +74034,7 @@
       "timestamp": 1788670722.5027614,
       "ts": 1788670722.5027628,
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "timestamp": "2026-09-07T08:56:56.196572",
@@ -73038,7 +74151,7 @@
         ]
       },
       "_audit_age_days": 6,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "timestamp": "2026-09-13T06:29:10.693486",
@@ -73162,7 +74275,7 @@
         }
       ],
       "_audit_age_days": 0,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "timestamp": "2026-09-05T22:44:03.290600",
@@ -73241,7 +74354,7 @@
         "tools_abgelehnt/20260826_113422_alte-traumideen-mit-strategien-verbinden.py.grund.txt"
       ],
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "id": 1,
@@ -73252,7 +74365,7 @@
       "created_at": "2026-09-05T15:44:04.341100",
       "updated_at": "2026-09-05T15:44:04.341100",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "id": 2,
@@ -73263,7 +74376,7 @@
       "created_at": "2026-09-05T15:44:04.341100",
       "updated_at": "2026-09-05T15:44:04.341100",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "id": 3,
@@ -73274,7 +74387,7 @@
       "created_at": "2026-09-05T15:44:04.341100",
       "updated_at": "2026-09-05T15:44:04.341100",
       "_audit_age_days": 7,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "timestamp": "2026-09-08T12:30:21.003940",
@@ -73287,7 +74400,7 @@
       "error_rate_per_100_events": 0.0,
       "registry_path": "/workspace/zoetron/data/model_errors_registry.json",
       "_audit_age_days": 4,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "status": "completed",
@@ -73355,7 +74468,7 @@
       },
       "final_model": "Model type: LogisticRegression, has_predict: True",
       "_audit_age_days": 0,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "timestamp": "2026-09-12T15:13:19.290707",
@@ -73366,7 +74479,7 @@
       "fallback": false,
       "num_samples": 1,
       "_audit_age_days": 0,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     }
   ],
   "no_timestamp_events_sample": [
@@ -73374,7 +74487,7 @@
       "last_count": 30,
       "earliest_next": 1787355972.2539115,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "tag": "2026-08-24",
@@ -73386,7 +74499,7 @@
       "seit": 0.0,
       "zuletzt_frei": 1787529861.1142402,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "version": 1,
@@ -73415,14 +74528,14 @@
       ],
       "first_boot": "2026-08-23T00:10:46",
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
-      "versatz": 13411470,
+      "versatz": 13476185,
       "finger": "b'[2026-08-25 14:04:55] daemon gestartet (pid 563)\\n[2026-08-25 14:04:55] === HERZSCHLAG BEGINN ===\\n[2026-08-25 14:04:55] p'",
-      "ts": 1789294578.631178,
+      "ts": 1789302108.1322846,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "title": "Semantic-Knowledge-Graph als Organ einbauen",
@@ -73430,7 +74543,7 @@
       "signal": "gap",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "title": "Semantic-Knowledge-Graph als Organ einbauen (Code-Pflicht)",
@@ -73438,7 +74551,7 @@
       "signal": "failure",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "title": "MemoryStore-Vertragswächter bauen (Contract-Validator)",
@@ -73446,7 +74559,7 @@
       "signal": "gap",
       "_done": true,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "title": "Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)",
@@ -73457,7 +74570,7 @@
       "_geparkt": true,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
@@ -73468,7 +74581,7 @@
       "_geparkt": false,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     },
     {
       "title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)",
@@ -73479,8 +74592,8 @@
       "_geparkt": true,
       "_zaehler_ab": 1787743119.1258025,
       "_audit_age_days": null,
-      "_audit_checked_at": "2026-09-13T10:18:41.077450"
+      "_audit_checked_at": "2026-09-13T12:24:10.173303"
     }
   ],
-  "recommendation": "287 von 95174 Einträgen sind stale (älter als 7 Tage). Diese sollten erneuert werden."
+  "recommendation": "288 von 95476 Einträgen sind stale (älter als 7 Tage). Diese sollten erneuert werden."
 }
