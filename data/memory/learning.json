@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-13 04:50:35",
+ "stand": "2026-09-13 05:00:19",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -102,12 +102,6 @@
    "tool": "ferngedächtnisse-verbinden.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fehler-in-modellen-finden-und-reparieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -367,6 +361,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fehler-in-modellen-finden-und-reparieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",

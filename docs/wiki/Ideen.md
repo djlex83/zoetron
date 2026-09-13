@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 04:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 4×)*
-- Ferne Träume verbinden *(wieder aufgegriffen: 3×)*
 - Swarm-Ziele erneuern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system generated a 143‑line Python artifact, confirming skill proposals can become runnable code.
+- Pruning ten facts and twenty-five events helps manage context but risks losing useful information.
+- Evolution produced a variant scoring nine, but the final pipeline still scored five, showing an integration gap.
+- The swarm's limit of three tasks and one iteration prevented convergence.
+- Model endpoints frequently return 502 or 429 errors, necessitating automatic retry with backoff and fallback.
 - Swarm critiques and goals stale within a single cycle, causing repeated errors; a versioned, scheduled refresh mechanism is required for decision qual
 - Pruning discards 15 facts and 21 events without any audit trail, making rollback impossible; every prune must record timestamp, relevance score, and c
 - The skill-proposal-to-skill reflex failed initially but succeeded after a simulation gate; mandatory pre-execution simulation prevents wasted cycles o
@@ -51,11 +56,6 @@
 - Pruning discards 15 facts and 21 events per run without provenance logging, eliminating rollback capability for erroneous deletions.
 - Skill proposals accumulate without validation gates, causing untested code to enter production reflexes and increasing blast radius of regressions.
 - External model providers exhibit cascading failures (502 overload, 429 rate limits) with latency variance from 11s to 80s, making single-provider reli
-- Pruning 10 facts and 30 events preserved efficiency, but causal chains must be tagged to avoid breaking knowledge dependencies.
-- Calibration error was low (1 unit) but model volatility over time could accumulate bias, requiring per-goal-type correction layers.
-- The system achieved its goal (score 8) in a single cycle despite model instability, proving fallback models can maintain task momentum.
-- High latency and token usage in successful calls often precede upstream failures, so monitoring these metrics enables proactive model switching.
-- Model endpoints frequently fail under load (502/429 errors), making health-aware routing with weighted fallback essential for reliability.
 
 ---
 

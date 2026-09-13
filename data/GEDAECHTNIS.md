@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-13 04:52 UTC · aktualisiert bei jedem Herzschlag
+**11350 Fakten** · Stand 2026-09-13 05:02 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7281
-- **swarm_artifact:** 1661
+- **swarm_artifact:** 1655
 - **last_swarm_critique:** 925
 - **last_swarm_goal:** 660
-- **anti_pattern:** 369
-- **strategy:** 187
+- **anti_pattern:** 367
+- **strategy:** 186
 - **tool:** 155
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913045946:5:54c045`
+*13.09. 04:59 UTC · Quelle: dream*
+
+The system generated a 143‑line Python artifact, confirming skill proposals can become runnable code.
+
+### `dream:20260913045946:4:14fee9`
+*13.09. 04:59 UTC · Quelle: dream*
+
+Pruning ten facts and twenty-five events helps manage context but risks losing useful information.
+
+### `dream:20260913045946:3:ebad6a`
+*13.09. 04:59 UTC · Quelle: dream*
+
+Evolution produced a variant scoring nine, but the final pipeline still scored five, showing an integration gap.
+
+### `dream:20260913045946:2:fb396e`
+*13.09. 04:59 UTC · Quelle: dream*
+
+The swarm's limit of three tasks and one iteration prevented convergence.
+
+### `dream:20260913045946:1:276617`
+*13.09. 04:59 UTC · Quelle: dream*
+
+Model endpoints frequently return 502 or 429 errors, necessitating automatic retry with backoff and fallback.
 
 ### `dream:20260913045010:5:1c171f`
 *13.09. 04:50 UTC · Quelle: dream*
@@ -42168,16 +42193,6 @@ Repeated 429 errors across multiple models indicate systemic rate-limiting, not 
 
 Ausfuehrbares Python-Werkzeug aus Ziel 'Wissenswidersprüche auflösen'. Datei: data/tools/wissenswidersprüche-auflösen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
-### `anti_pattern:Previous attempt scored 4/10. Goal: Wissenswidersprüche aufl:1`
-*30.08. 04:59 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 5, 7]): Semantic Embedding Space with Density-Based Conflict Isolation - Represent each knowledge unit as a normalized embedding vector (sentence-transformers or TF-IDF + SVD, all local). Contradiction detection: build k-NN g
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Wissenswidersprüche aufl:0`
-*30.08. 04:59 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 7, 8]): In-Process Symbolic Reasoning Engine - Implement a self-contained contradiction resolver using a lightweight rule engine (e.g., python-rule-engine or custom forward-chaining) operating directly on structured knowledge
-
 ### `last_swarm_critique`
 *30.08. 04:58 UTC · Quelle: critic*
 
@@ -42187,31 +42202,6 @@ score=4; issues=Keine eigentliche Widerspruchserkennung/-auflösungslogik in den
 *30.08. 04:52 UTC · Quelle: system*
 
 Wissenswidersprüche auflösen
-
-### `dream:20260830045215:5:c5db7b`
-*30.08. 04:52 UTC · Quelle: dream*
-
-No output validation exists: hand_action succeeds (exit 0) but could return empty or schema-invalid results silently.
-
-### `dream:20260830045215:4:7db9cf`
-*30.08. 04:52 UTC · Quelle: dream*
-
-Stale work (e.g., market analysis) persists without automatic detection or escalation, wasting planning capacity.
-
-### `dream:20260830045215:3:21aaf3`
-*30.08. 04:52 UTC · Quelle: dream*
-
-Skill proposals accumulate but implementation relies on ad-hoc reflexes; a systematic proposal-to-production pipeline is missing.
-
-### `dream:20260830045215:2:7d3234`
-*30.08. 04:52 UTC · Quelle: dream*
-
-Backup model nvidia/nemotron-3-ultra shows high latency variance (10.8-36.5s), necessitating latency budgets and kill-switches to prevent task stalls.
-
-### `dream:20260830045215:1:a7b412`
-*30.08. 04:52 UTC · Quelle: dream*
-
-Model z-ai/glm-5.2:free consistently returns 429 errors, indicating hard rate limits that require proactive exclusion from routing.
 
 ### `last_swarm_critique`
 *30.08. 03:21 UTC · Quelle: critic*
