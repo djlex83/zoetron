@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 00:59:48",
+ "stand": "2026-09-13 01:09:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -85,12 +85,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "träume-in-handlungen-umsetzen.py",
@@ -249,6 +243,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -394,6 +394,12 @@
   },
   {
    "tool": "ferne-traumverbindungen-neu-erkunden.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

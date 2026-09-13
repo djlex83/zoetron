@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 00:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 01:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verringern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Regular pruning (facts + events) combined with high benchmark scores (23/25) indicates healthy memory homeostasis.
+- Reflex-based distant-memory combination converges reliably and should be the default for cross-context synthesis.
+- Effort estimates consistently underestimate actual cost; a 3.5× calibration multiplier aligns predictions with reality.
+- Reserving minimum recovery capacity (1 task slot) even in conserve mode prevents cascade failures during model outages.
+- Model instability (429 rate limits, 502 overloads) is systemic and requires health-aware routing with automatic fallback to maintain throughput.
 - Hand actions fail intermittently (exit 1) without error details, suggesting transient resource contention rather than code defects.
 - Aggressive pruning (11 facts, 33 events) risks severing causal chains linking failures to recoveries, impairing root-cause learning.
 - Swarm convergence achieves high scores (9) in single cycles when model calls succeed, but provider instability makes this unreliable.
@@ -51,11 +56,6 @@
 - Self-calibration error of 50% (predicted 6 vs actual 9) reveals systematic overconfidence that corrupts planning under stress.
 - Hand actions fail silently (exit 1, error null) leaving no diagnostic trace, so wrapper instrumentation is mandatory for observability.
 - Model latency varies 10x (12s to 120s) for identical model calls, making fixed timeouts unreliable and requiring adaptive fallback logic.
-- Lack of structured telemetry prevents spotting provider degradation; logging provider, latency, error class, and tokens enables proactive health scori
-- Hand‑action timeouts after 20 s indicate missing cancellation; each external call should enforce a deadline and switch to a backup on expiry.
-- The evolution run stalled at 6/10 because variant scores were not used to prune low performers; a scoring-driven selection loop is needed.
-- A free model taking 40 s to respond causes downstream timeouts, so routing must prefer models with p95 latency below a threshold and fall back to fast
-- Concurrent 429 and 502 errors from multiple free providers show that uncoordinated requests overwhelm upstream rate limits, requiring a shared token-b
 
 ---
 

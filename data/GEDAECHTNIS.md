@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11385 Fakten** · Stand 2026-09-13 01:01 UTC · aktualisiert bei jedem Herzschlag
+**11385 Fakten** · Stand 2026-09-13 01:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7326
 - **swarm_artifact:** 1655
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913010923:5:457679`
+*13.09. 01:09 UTC · Quelle: dream*
+
+Regular pruning (facts + events) combined with high benchmark scores (23/25) indicates healthy memory homeostasis.
+
+### `dream:20260913010923:4:c6f10a`
+*13.09. 01:09 UTC · Quelle: dream*
+
+Reflex-based distant-memory combination converges reliably and should be the default for cross-context synthesis.
+
+### `dream:20260913010923:3:56dc98`
+*13.09. 01:09 UTC · Quelle: dream*
+
+Effort estimates consistently underestimate actual cost; a 3.5× calibration multiplier aligns predictions with reality.
+
+### `dream:20260913010923:2:f24cad`
+*13.09. 01:09 UTC · Quelle: dream*
+
+Reserving minimum recovery capacity (1 task slot) even in conserve mode prevents cascade failures during model outages.
+
+### `dream:20260913010923:1:f1017d`
+*13.09. 01:09 UTC · Quelle: dream*
+
+Model instability (429 rate limits, 502 overloads) is systemic and requires health-aware routing with automatic fallback to maintain throughput.
 
 ### `dream:20260913005924:5:4646ed`
 *13.09. 00:59 UTC · Quelle: dream*
@@ -42382,31 +42407,6 @@ Simultaneous multi-model failures (429/502) cascade into total service unavailab
 *30.08. 01:09 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429 rate limits under load, making them unsuitable for production without systematic quota management.
-
-### `dream:20260830010453:5:11e8fb`
-*30.08. 01:04 UTC · Quelle: dream*
-
-Three completed market analyses remain unread (gelesen: 0 then 33), showing stale artifacts accumulate without freshness enforcement or scheduled consumption.
-
-### `dream:20260830010453:4:a88437`
-*30.08. 01:04 UTC · Quelle: dream*
-
-Benchmark scores 23/25 despite repeated model failures, revealing the evaluation does not penalize model unavailability or fallback latency.
-
-### `dream:20260830010453:3:63ce8c`
-*30.08. 01:04 UTC · Quelle: dream*
-
-The system generates high-quality architectural skill proposals (ModelRouter, LatencySLOGuard, etc.) but lacks any automated pipeline to implement, test, and register them.
-
-### `dream:20260830010453:2:d86c7d`
-*30.08. 01:04 UTC · Quelle: dream*
-
-Nemotron-3-Ultra exhibits extreme latency variance (4.8–45.4 s) on similar token loads, indicating unpredictable queueing or cold-start behavior that breaks latency SLAs.
-
-### `dream:20260830010453:1:5a2115`
-*30.08. 01:04 UTC · Quelle: dream*
-
-The free-tier model z-ai/glm-5.2:free suffers 100% 429 rate-limit failures across 5 consecutive calls, making it effectively unusable for production routing.
 
 ### `last_swarm_critique`
 *30.08. 00:36 UTC · Quelle: critic*
