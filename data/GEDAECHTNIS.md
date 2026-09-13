@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11361 Fakten** · Stand 2026-09-13 07:20 UTC · aktualisiert bei jedem Herzschlag
+**11366 Fakten** · Stand 2026-09-13 07:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7276
+- **dream:** 7281
 - **swarm_artifact:** 1665
 - **last_swarm_critique:** 928
 - **last_swarm_goal:** 663
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913072933:5:b6dd29`
+*13.09. 07:29 UTC · Quelle: dream*
+
+Evolution runs reliably improve artifact scores from 4 to 9, indicating that iterative refinement should be a mandatory post-generation step.
+
+### `dream:20260913072933:4:a833a0`
+*13.09. 07:29 UTC · Quelle: dream*
+
+Calibration consistently overestimates quality (predicted 7 vs actual 4, error 3), so predicted scores need a systematic downward correction.
+
+### `dream:20260913072933:3:c9fdb6`
+*13.09. 07:29 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths; all file operations must resolve inputs via ZOETRON_DATA and sys.argv[1] to absolute paths first.
+
+### `dream:20260913072933:2:8a8971`
+*13.09. 07:29 UTC · Quelle: dream*
+
+Fallback models gemma-4-31b and gemma-4-26b hit 429 rate limits within a single session, requiring rate-limit-aware routing.
+
+### `dream:20260913072933:1:e2ca8e`
+*13.09. 07:29 UTC · Quelle: dream*
+
+Primary model nemotron-3-ultra fails frequently with 502 upstream errors, making it unreliable as a default choice.
 
 ### `last_swarm_critique`
 *13.09. 07:18 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution runs reliably improve artifact scores from 4 to 9, indicating that iterative refinement should be a mandatory post-generation step.
+- Calibration consistently overestimates quality (predicted 7 vs actual 4, error 3), so predicted scores need a systematic downward correction.
+- Hand actions fail when using relative paths; all file operations must resolve inputs via ZOETRON_DATA and sys.argv[1] to absolute paths first.
+- Fallback models gemma-4-31b and gemma-4-26b hit 429 rate limits within a single session, requiring rate-limit-aware routing.
+- Primary model nemotron-3-ultra fails frequently with 502 upstream errors, making it unreliable as a default choice.
 - System stress goes unmanaged because no controller throttles task spawns or switches inference modes based on metabolism.
 - Pruning destroys debuggability when causal chains (goal→action→outcome) aren't preserved before leaf removal.
 - Swarm knowledge decays within days without a scheduled critic/analyst refresh cycle tied to prediction error thresholds.
@@ -51,11 +56,6 @@
 - Swarm insights expire silently after ~30 days without a reinforcement mechanism, causing repeated blind-spot rediscovery.
 - Skill proposals accumulate but lack an automated implementation→test→register pipeline, leaving >80% unvalidated.
 - Model provider failures (502/429) cascade across all free tiers simultaneously, making single-provider routing a systemic risk.
-- Combining multiple model providers with real-time latency and cost metrics improves overall reliability.
-- Pruning facts without assessing downstream dependency can discard critical information.
-- Swarm knowledge becomes stale without regular critic and analyst reviews, reducing its usefulness.
-- The accumulation of untested skill proposals indicates a need for automated validation before implementation.
-- Frequent model failures caused by upstream overload and rate limits show that adaptive request routing is essential.
 
 ---
 
