@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11373 Fakten** · Stand 2026-09-13 09:36 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-13 09:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7276
-- **swarm_artifact:** 1669
+- **dream:** 7271
+- **swarm_artifact:** 1663
 - **last_swarm_critique:** 931
 - **last_swarm_goal:** 666
-- **anti_pattern:** 369
-- **strategy:** 187
+- **anti_pattern:** 367
+- **strategy:** 186
 - **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913095641:5:c787b2`
+*13.09. 09:56 UTC · Quelle: dream*
+
+Three consecutive model failures trigger a lockout, showing a circuit‑breaker pattern that should trigger earlier fallback.
+
+### `dream:20260913095641:4:1f5c9e`
+*13.09. 09:56 UTC · Quelle: dream*
+
+Calibration overestimates performance (predicted 6 vs actual 1), so predicted scores need recalibration.
+
+### `dream:20260913095641:3:6c7e55`
+*13.09. 09:56 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free consistently succeeds with moderate latency and can serve as a safe default.
+
+### `dream:20260913095641:2:f3b912`
+*13.09. 09:56 UTC · Quelle: dream*
+
+Nvidia nemotron models frequently return 502 upstream errors and timeouts, making them unreliable under load.
+
+### `dream:20260913095641:1:df075d`
+*13.09. 09:56 UTC · Quelle: dream*
+
+Repeated HTTP 429 errors from google/gemma models indicate rate limiting and should be avoided or handled with backoff.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Simulationen und Tr:2`
 *13.09. 09:33 UTC · Quelle: evolution*
@@ -42112,66 +42137,6 @@ ORGANFEHLER (2026-08-30 10:13:17-10:16:17 UTC): dream -> timeout; drive -> timeo
 *30.08. 10:09 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-30 10:02:58-10:05:58 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `dream:20260830095504:5:2838eb`
-*30.08. 09:55 UTC · Quelle: dream*
-
-Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), so planners must throttle ambition to match budget.
-
-### `dream:20260830095504:4:5a979f`
-*30.08. 09:55 UTC · Quelle: dream*
-
-The reflex tool "alte-erinnerungen-auf-wert-prüfen.py" failed to validate market-analysis memories, indicating a broken retrieval contract.
-
-### `dream:20260830095504:3:1377cf`
-*30.08. 09:55 UTC · Quelle: dream*
-
-Hand actions fail when using relative paths; all file operations must resolve against ZOETRON_DATA or sys.argv[1].
-
-### `dream:20260830095504:2:a0ce85`
-*30.08. 09:55 UTC · Quelle: dream*
-
-The working model "nvidia/nemotron-3-ultra-550b-a55b:free" exhibits high latency (54–176 s) requiring timeout guards and fallback budgets.
-
-### `dream:20260830095504:1:8f1317`
-*30.08. 09:55 UTC · Quelle: dream*
-
-Model "z-ai/glm-5.2:free" consistently returns 429 rate-limit errors and should be excluded from the routing pool.
-
-### `dream:20260830094737:5:56d3a4`
-*30.08. 09:47 UTC · Quelle: dream*
-
-High model latency (50-75s) makes iterative loops impractical; need async/pipelined execution or faster models.
-
-### `dream:20260830094737:4:014609`
-*30.08. 09:47 UTC · Quelle: dream*
-
-Proposed skills accumulate without verification loop; need skill adoption tracker with execution proof.
-
-### `dream:20260830094737:3:9ec4e5`
-*30.08. 09:47 UTC · Quelle: dream*
-
-Hand actions fail due to path resolution issues (relative vs absolute paths, missing data directory handling).
-
-### `dream:20260830094737:2:f0ed10`
-*30.08. 09:47 UTC · Quelle: dream*
-
-Swarm convergence fails when critic capacity is too low relative to builders (1:3 ratio) and no explicit convergence gate exists.
-
-### `dream:20260830094737:1:72a2a8`
-*30.08. 09:47 UTC · Quelle: dream*
-
-Rate-limited models (glm-5.2) must be excluded from primary rotation; fallback chains with health checks are essential for reliability.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Schwarm-Arbeiten zu:2`
-*30.08. 09:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Metadaten-gestützte Lifecycle-Governance-Policy - Anstatt Ad-hoc-Bereinigung wird ein Lebenszyklus-Management-System für KI-Markt-Artefakte eingeführt. Jedes Artefakt in tools/artefakte/memory erhält automatisch Metadaten-Tag
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Schwarm-Arbeiten zu:0`
-*30.08. 09:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Content-Intelligence-basierte KI-Markt-Filterung - Statt datumsgestützter Löschung (Fehler im vorherigen Ansatz) wird ein Content-Analysis-Modul eingesetzt, das jeden Artefakt-Inhalt auf KI-Markt-Relevanz prüft. Ein lokaler K
 
 ### `last_swarm_critique`
 *30.08. 09:29 UTC · Quelle: critic*
