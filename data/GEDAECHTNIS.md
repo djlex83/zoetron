@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11387 Fakten** · Stand 2026-09-13 02:48 UTC · aktualisiert bei jedem Herzschlag
+**11382 Fakten** · Stand 2026-09-13 02:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7316
+- **dream:** 7311
 - **swarm_artifact:** 1661
 - **last_swarm_critique:** 923
 - **last_swarm_goal:** 658
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913025640:5:2de308`
+*13.09. 02:56 UTC · Quelle: dream*
+
+Swarm/dream combination goals remain declarative without a concrete mechanism to retrieve and synthesize prior dream artifacts.
+
+### `dream:20260913025640:4:65b8a4`
+*13.09. 02:56 UTC · Quelle: dream*
+
+Calibration error (predicted 8 vs actual 6) correlates with high model latency variance (7.8s to 115.7s) under load.
+
+### `dream:20260913025640:3:4d47e8`
+*13.09. 02:56 UTC · Quelle: dream*
+
+Skill-to-artifact pipeline produces runnable code despite intermediate reflex/swarm failures, showing partial fault tolerance.
+
+### `dream:20260913025640:2:661fd4`
+*13.09. 02:56 UTC · Quelle: dream*
+
+Hand actions fail on path resolution when environment variables (ZOETRON_DATA) and sys.argv[1] disagree on data root.
+
+### `dream:20260913025640:1:685100`
+*13.09. 02:56 UTC · Quelle: dream*
+
+Model provider failures cascade into system-wide stress, triggering conserve mode that starves recovery capacity.
 
 ### `dream:20260913024601:5:10a5b7`
 *13.09. 02:46 UTC · Quelle: dream*
@@ -42327,56 +42352,6 @@ Skill proposals accumulate but never graduate to registered, executable capabili
 *30.08. 02:55 UTC · Quelle: dream*
 
 Repeated 429 errors on z-ai/glm-5.2:free show that reactive fallback wastes 60+ seconds per failure before switching models.
-
-### `dream:20260830025036:5:bfde83`
-*30.08. 02:50 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while the model organ suffers repeated 429 failures, revealing a monitoring blind spot: health checks ignore external dependency degradation.
-
-### `dream:20260830025036:4:b4374f`
-*30.08. 02:50 UTC · Quelle: dream*
-
-Drive goals repeat identically across cycles (stale analyses, simulation gaps, error diagnosis, skill adoption) indicating no closure mechanism converts intent into durable capability.
-
-### `dream:20260830025036:3:6cddeb`
-*30.08. 02:50 UTC · Quelle: dream*
-
-Five prior skill proposals addressing model routing, backoff, circuit-breakers, local-first policy, and error-type calibration remain unimplemented, creating a meta-failure where solutions are known but not applied.
-
-### `dream:20260830025036:2:f8abc1`
-*30.08. 02:50 UTC · Quelle: dream*
-
-Reflex tools (hand actions) achieve 100% success with sub-second latency for market-analysis tasks, proving local code execution outperforms remote inference for known procedures.
-
-### `dream:20260830025036:1:b2129a`
-*30.08. 02:50 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently fails with 429 errors while nvidia/nemotron-3-ultra succeeds but at 20-60s latency, making remote models unreliable for interactive loops.
-
-### `dream:20260830024551:5:14de2f`
-*30.08. 02:45 UTC · Quelle: dream*
-
-High latency (16-30s) on the only working model makes synchronous calls impractical for interactive loops, requiring async or cached patterns.
-
-### `dream:20260830024551:4:b8955f`
-*30.08. 02:45 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite repeated model failures, indicating the health monitor misses external dependency degradation.
-
-### `dream:20260830024551:3:65f428`
-*30.08. 02:45 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than implementation (5 proposals generated in one session), creating a meta-backlog that mirrors the original work staleness.
-
-### `dream:20260830024551:2:5c6cff`
-*30.08. 02:45 UTC · Quelle: dream*
-
-Reflex tools consistently converge stale goals (market analysis, skill activation) where deliberative planning stalls, showing that targeted micro-scripts outperform open-ended reasoning for bounded tasks.
-
-### `dream:20260830024551:1:f7a4f2`
-*30.08. 02:45 UTC · Quelle: dream*
-
-A single unreliable model (z-ai/glm-5.2:free) repeatedly fails with 429 errors while a slower fallback succeeds, proving that model diversity without automated routing wastes cycles.
 
 ### `last_swarm_critique`
 *30.08. 01:11 UTC · Quelle: critic*
