@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-13 05:21:15",
+ "stand": "2026-09-13 05:39:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -85,6 +85,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
@@ -190,12 +196,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-stark-verringern.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -411,17 +411,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.735,
+ "haende_quote": 0.718,
  "simulationen_angewandt": 29,
  "swarm_scores": {
   "n": 36,
   "best": 9.0,
-  "schnitt": 5.89
+  "schnitt": 5.81
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 34,
-   "schnitt": 5.88
+   "n": 35,
+   "schnitt": 5.71
   },
   "bau": {
    "n": 1,

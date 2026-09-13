@@ -1,12 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 05:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Create a skill promotion pipeline: syntax check → import test → sandbox dry-run → benchmark against baseline;  *(hatte die Idee 5×)*
-- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 4×)*
 - Harden hand_action entrypoint: resolve input path via ZOETRON_DATA then sys.argv[1], reject relative paths, an *(hatte die Idee 4×)*
 - Extend reflex schema: require effectiveness_metric (float, unit, deadline_ts) at registration; block converged *(hatte die Idee 4×)*
 - Implement exponential backoff with jitter for HTTP 429 and 502 responses before switching models. *(hatte die Idee 4×)*
@@ -19,13 +18,14 @@
 - Deploy provider_aware_router: wraps all model calls, enforces rate limits, fans out concurrent requests to top *(hatte die Idee 4×)*
 - Create causal_chain_pruner: before pruning, extracts decision→action→outcome triples into immutable causal_log *(hatte die Idee 4×)*
 - Schedule swarm_refresh_cycle: weekly cron that re-runs critic/analyst roles on recent experience, merges new i *(hatte die Idee 4×)*
-- Replace fixed 20s hand-action timeout with adaptive deadline: base 20s + 2s per 1000 tokens_in + 5s per extern *(hatte die Idee 3×)*
+- Implement model_router.py with per-endpoint success-rate/p95 tracking, 429-aware exponential backoff+jitter, 3 *(hatte die Idee 3×)*
+- Build nightly dream-to-skill pipeline: validate proposals against regression suite, auto-merge passing skills  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
@@ -33,14 +33,19 @@
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele erneuern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning discards causal chains by default — 10 facts and 19–22 events pruned per run without tagging sequences needed for post-hoc debugging.
+- Reflex-driven actions converge reliably when triggered — the two completed reflexes (simulation boost, swarm refresh) both succeeded without manual in
+- Swarm knowledge decays without scheduled refresh — stale critiques and goals degrade collective intelligence unless explicitly renewed.
+- Proposed skills accumulate but remain untested — the gap between proposal and sandbox validation lets broken or redundant skills persist.
+- Model provider failures cascade silently — 502s and 429s from multiple providers indicate no automatic fallback or health-aware routing exists.
 - System stress (metabolism) is monitored but never triggers automatic throttling or local-inference fallback.
 - Pruning discards causal decision→action→outcome chains, making post-hoc failure analysis impossible.
 - Swarm knowledge (goals, critiques) decays within days and has no scheduled refresh mechanism.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without automatic implementation, creating a proposal-execution gap that a dedicated pipeline must close.
 - Swarm cycles improve proposals (evolved: true) but fail to converge (converged: false), suggesting convergence criteria need tightening or max-cycle e
 - Gemma models consistently hit 429 rate limits while Nemotron and dots-studio succeed, indicating provider-specific quota exhaustion requires hard fall
-- The system generated a 143‑line Python artifact, confirming skill proposals can become runnable code.
-- Pruning ten facts and twenty-five events helps manage context but risks losing useful information.
-- Evolution produced a variant scoring nine, but the final pipeline still scored five, showing an integration gap.
-- The swarm's limit of three tasks and one iteration prevented convergence.
-- Model endpoints frequently return 502 or 429 errors, necessitating automatic retry with backoff and fallback.
 
 ---
 

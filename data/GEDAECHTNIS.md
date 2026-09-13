@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-13 05:23 UTC · aktualisiert bei jedem Herzschlag
+**11368 Fakten** · Stand 2026-09-13 05:41 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7291
-- **swarm_artifact:** 1655
-- **last_swarm_critique:** 925
-- **last_swarm_goal:** 660
-- **anti_pattern:** 367
-- **strategy:** 186
+- **swarm_artifact:** 1658
+- **last_swarm_critique:** 926
+- **last_swarm_goal:** 661
+- **anti_pattern:** 369
+- **strategy:** 187
 - **tool:** 154
-- **hand_result:** 83
+- **hand_result:** 84
 - **aktuell_organfehler:** 38
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Modellfehler analysieren:2`
+*13.09. 05:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [4, 3, 7]): Sandboxed Execution with Hard Resource Limits - If dynamic analysis is required, execute external tools only inside a hardened sandbox (e.g., gVisor/Firecracker container) with strict CPU, memory, and wall-clock limit
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Modellfehler analysieren:1`
+*13.09. 05:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 8]): Human-in-the-Loop Active Learning - Deploy an active learning loop: the system flags uncertain or recurring errors for human review via a lightweight UI. Annotators label root causes and corrections, which train a com
+
+### `last_swarm_critique`
+*13.09. 05:37 UTC · Quelle: critic*
+
+score=0; issues=Artifact does not run: timeout after 30s; No timeout handling for exec of external tool; Potential infinite loop in analyzed tool causing sandbox termination; Missing safeguard against hanging execution
+
+### `last_swarm_goal`
+*13.09. 05:31 UTC · Quelle: system*
+
+Modellfehler analysieren und lernen
+
+### `dream:20260913053033:5:bd0fda`
+*13.09. 05:30 UTC · Quelle: dream*
+
+Pruning discards causal chains by default — 10 facts and 19–22 events pruned per run without tagging sequences needed for post-hoc debugging.
+
+### `dream:20260913053033:4:cddf26`
+*13.09. 05:30 UTC · Quelle: dream*
+
+Reflex-driven actions converge reliably when triggered — the two completed reflexes (simulation boost, swarm refresh) both succeeded without manual intervention.
+
+### `dream:20260913053033:3:fc25c2`
+*13.09. 05:30 UTC · Quelle: dream*
+
+Swarm knowledge decays without scheduled refresh — stale critiques and goals degrade collective intelligence unless explicitly renewed.
+
+### `dream:20260913053033:2:9f5144`
+*13.09. 05:30 UTC · Quelle: dream*
+
+Proposed skills accumulate but remain untested — the gap between proposal and sandbox validation lets broken or redundant skills persist.
+
+### `dream:20260913053033:1:1ff212`
+*13.09. 05:30 UTC · Quelle: dream*
+
+Model provider failures cascade silently — 502s and 429s from multiple providers indicate no automatic fallback or health-aware routing exists.
 
 ### `dream:20260913052025:5:b30bf7`
 *13.09. 05:20 UTC · Quelle: dream*
@@ -42212,31 +42257,6 @@ score=1; issues=Sandbox verdict: LAEUFT NICHT - syntax error at line 196: 'async
 *30.08. 05:22 UTC · Quelle: system*
 
 Modellfehler stark verringern
-
-### `dream:20260830052220:5:3a08da`
-*30.08. 05:22 UTC · Quelle: dream*
-
-Drive goal 'Marktanalyse in Taten umsetzen' remains stale despite completed analyses, revealing execution gap.
-
-### `dream:20260830052220:4:00e332`
-*30.08. 05:22 UTC · Quelle: dream*
-
-Model health signals (latency, 429, 502) are observed but not persisted or used for routing decisions.
-
-### `dream:20260830052220:3:712a1d`
-*30.08. 05:22 UTC · Quelle: dream*
-
-Duplicate skill proposals (local-first, pipeline, circuit breaker) appear 2-3× each, showing proposal deduplication is missing.
-
-### `dream:20260830052220:2:ba28a8`
-*30.08. 05:22 UTC · Quelle: dream*
-
-Reflex tool 'beste-vorschläge-in-fähigkeiten-verwande.py' succeeded where model calls failed, validating local-first execution.
-
-### `dream:20260830052220:1:274e12`
-*30.08. 05:22 UTC · Quelle: dream*
-
-Repeated 429 errors across multiple models indicate systemic rate-limiting, not isolated model failure.
 
 ### `last_swarm_critique`
 *30.08. 04:58 UTC · Quelle: critic*
