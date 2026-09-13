@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11353 Fakten** · Stand 2026-09-13 21:02 UTC · aktualisiert bei jedem Herzschlag
+**11353 Fakten** · Stand 2026-09-13 21:13 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7278
 - **swarm_artifact:** 1647
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260913211038:5:480818`
+*13.09. 21:10 UTC · Quelle: dream*
+
+Regular pruning (5 facts, 17 events) prevents memory bloat but risks discarding rare high-value patterns.
+
+### `dream:20260913211038:4:757859`
+*13.09. 21:10 UTC · Quelle: dream*
+
+Drive goals emerge from failure signals, staleness detection, and dream combination, showing a healthy meta-cognitive loop.
+
+### `dream:20260913211038:3:a673aa`
+*13.09. 21:10 UTC · Quelle: dream*
+
+Reflex-driven actions (e.g., swarm goal update) converge reliably without LLM calls, proving non-LLM paths for critical ops.
+
+### `dream:20260913211038:2:3b8e93`
+*13.09. 21:10 UTC · Quelle: dream*
+
+The dots-studio model succeeds but with 25+ second latency, revealing a hard availability-speed trade-off on free tiers.
+
+### `dream:20260913211038:1:f8a602`
+*13.09. 21:10 UTC · Quelle: dream*
+
+Free-tier Gemma models consistently hit 429 rate limits, making them unreliable for production workloads.
 
 ### `dream:20260913210014:5:0ebba4`
 *13.09. 21:00 UTC · Quelle: dream*
@@ -42072,31 +42097,6 @@ score=6; issues=Kein messbares Ergebnis: Die Skripte drucken zwar Ausgaben, aber
 *30.08. 21:06 UTC · Quelle: system*
 
 Alte Marktanalysen verwerten
-
-### `dream:20260830210526:5:8f67b8`
-*30.08. 21:05 UTC · Quelle: dream*
-
-Zero facts pruned despite repeated failures indicates the pruning policy does not capture operational error patterns.
-
-### `dream:20260830210526:4:01fd38`
-*30.08. 21:05 UTC · Quelle: dream*
-
-Successful model latency varies 2x (5.1s vs 10.6s) even on the same tier, making static model selection unreliable.
-
-### `dream:20260830210526:3:240c39`
-*30.08. 21:05 UTC · Quelle: dream*
-
-Swarm convergence fails when critic-to-builder ratio falls below 1:2 (1 critic vs 3 builders), allowing low-quality proposals to persist.
-
-### `dream:20260830210526:2:f8e253`
-*30.08. 21:05 UTC · Quelle: dream*
-
-Automatic model blocking after three consecutive failures (nemotron-3-ultra blocked 1800s) prevents error cascades but reduces available capacity.
-
-### `dream:20260830210526:1:39e976`
-*30.08. 21:05 UTC · Quelle: dream*
-
-Rate limiting (429) affects all free-tier models indiscriminately, making it a systemic infrastructure constraint rather than a model-specific issue.
 
 ### `last_swarm_critique`
 *30.08. 20:25 UTC · Quelle: critic*
