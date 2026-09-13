@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-13 07:30:53",
+ "stand": "2026-09-13 07:41:22",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -207,6 +207,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "automatische-fehler-reduktions-pipeline-.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -286,12 +292,6 @@
   },
   {
    "tool": "träume-in-echte-fähigkeiten-wandeln.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

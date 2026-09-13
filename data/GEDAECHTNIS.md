@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11366 Fakten** · Stand 2026-09-13 07:32 UTC · aktualisiert bei jedem Herzschlag
+**11361 Fakten** · Stand 2026-09-13 07:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7281
+- **dream:** 7276
 - **swarm_artifact:** 1665
 - **last_swarm_critique:** 928
 - **last_swarm_goal:** 663
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913074029:5:89f169`
+*13.09. 07:40 UTC · Quelle: dream*
+
+The evolution run's best variant scoring 9/10 demonstrates that generating multiple candidates and selecting the highest scorer can markedly improve output quality.
+
+### `dream:20260913074029:4:7db546`
+*13.09. 07:40 UTC · Quelle: dream*
+
+The swarm's failure to converge despite a 4/10 score points to insufficient critic iterations or weak feedback integration.
+
+### `dream:20260913074029:3:2a053c`
+*13.09. 07:40 UTC · Quelle: dream*
+
+The calibration over‑prediction by 3 points suggests that confidence scores should be scaled down or recalibrated after each run.
+
+### `dream:20260913074029:2:499327`
+*13.09. 07:40 UTC · Quelle: dream*
+
+Nvidia's 502 upstream overload errors indicate the need for exponential backoff and fallback to a secondary provider.
+
+### `dream:20260913074029:1:047c86`
+*13.09. 07:40 UTC · Quelle: dream*
+
+Repeated 429 errors from Google's free models reveal rate‑limit saturation, requiring request throttling and alternate routing.
 
 ### `dream:20260913072933:5:b6dd29`
 *13.09. 07:29 UTC · Quelle: dream*
@@ -42147,56 +42172,6 @@ Under resource stress (stress=1.0, conserve mode) the system must enforce strict
 *30.08. 07:47 UTC · Quelle: dream*
 
 Cascading API failures through a single provider (OpenRouter) mean retry chains without provider diversity will fail together — diversify fallback endpoints across independent providers.
-
-### `dream:20260830073932:5:95d605`
-*30.08. 07:39 UTC · Quelle: dream*
-
-Rate-limit (429) and server-overload (502) errors demand fundamentally different retry strategies, and ignoring this distinction wastes recovery time.
-
-### `dream:20260830073932:4:1af54e`
-*30.08. 07:39 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260830073932:3:1f746e`
-*30.08. 07:39 UTC · Quelle: dream*
-
-Output results from external model calls require structural validation before downstream consumption to prevent cascading task failures.
-
-### `dream:20260830073932:2:d23bf3`
-*30.08. 07:39 UTC · Quelle: dream*
-
-A persistent gap between skill proposal generation and actual implementation signals that proposals must be auto-promoted to executable specs when backed by multiple failure, gap, or stale signals.
-
-### `dream:20260830073932:1:184015`
-*30.08. 07:39 UTC · Quelle: dream*
-
-Free-tier API models repeatedly hit rate limits under load, making them unsuitable as sole call targets without a resilient fallback architecture.
-
-### `dream:20260830073106:5:bfcf20`
-*30.08. 07:31 UTC · Quelle: dream*
-
-The local-first execution policy — preferring hand_action over model calls — is empirically validated but not yet enforced as a system-wide rule.
-
-### `dream:20260830073106:4:768f3a`
-*30.08. 07:31 UTC · Quelle: dream*
-
-Stale goals accumulate when no expiration or renewal mechanism forces reassessment of long-running abandoned work items.
-
-### `dream:20260830073106:3:5173d2`
-*30.08. 07:31 UTC · Quelle: dream*
-
-Skill proposals decay when no automated pipeline converts failure-validated proposals into registered reflex tools within a bounded timeframe.
-
-### `dream:20260830073106:2:6c2c08`
-*30.08. 07:31 UTC · Quelle: dream*
-
-Reflex-based tool execution consistently converges and outperforms model-dependent execution, yet 55 skill proposals remain unimplemented due to missing automation.
-
-### `dream:20260830073106:1:02ce36`
-*30.08. 07:31 UTC · Quelle: dream*
-
-External model APIs fail predictably with 429 rate limits, and working fallback models exist but lack automated circuit-breaking to prevent cascading failures.
 
 ### `last_swarm_critique`
 *30.08. 06:55 UTC · Quelle: critic*

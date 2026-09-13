@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 07:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Simulationen öfter anwenden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The evolution run's best variant scoring 9/10 demonstrates that generating multiple candidates and selecting the highest scorer can markedly improve o
+- The swarm's failure to converge despite a 4/10 score points to insufficient critic iterations or weak feedback integration.
+- The calibration over‑prediction by 3 points suggests that confidence scores should be scaled down or recalibrated after each run.
+- Nvidia's 502 upstream overload errors indicate the need for exponential backoff and fallback to a secondary provider.
+- Repeated 429 errors from Google's free models reveal rate‑limit saturation, requiring request throttling and alternate routing.
 - Evolution runs reliably improve artifact scores from 4 to 9, indicating that iterative refinement should be a mandatory post-generation step.
 - Calibration consistently overestimates quality (predicted 7 vs actual 4, error 3), so predicted scores need a systematic downward correction.
 - Hand actions fail when using relative paths; all file operations must resolve inputs via ZOETRON_DATA and sys.argv[1] to absolute paths first.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays within days without a scheduled critic/analyst refresh cycle tied to prediction error thresholds.
 - Skill proposals accumulate without execution because no automated pipeline validates, deploys, and registers them.
 - Model failures cascade into planning failures because high latency and error rates make simulation unreliable for decision-making.
-- Stress signals (metabolism_check) trigger only reactive throttling; no proactive load-shedding or local-fallback policy exists.
-- Pruning discards causal chains (decision→action→outcome) while keeping leaf events, breaking post-hoc failure analysis.
-- Swarm insights expire silently after ~30 days without a reinforcement mechanism, causing repeated blind-spot rediscovery.
-- Skill proposals accumulate but lack an automated implementation→test→register pipeline, leaving >80% unvalidated.
-- Model provider failures (502/429) cascade across all free tiers simultaneously, making single-provider routing a systemic risk.
 
 ---
 
