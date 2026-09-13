@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-13 09:59 UTC · aktualisiert bei jedem Herzschlag
+**11364 Fakten** · Stand 2026-09-13 10:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7271
+- **dream:** 7276
 - **swarm_artifact:** 1663
 - **last_swarm_critique:** 931
 - **last_swarm_goal:** 666
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913100758:5:150de8`
+*13.09. 10:07 UTC · Quelle: dream*
+
+Drive goals explicitly prioritize error reduction and skill-transfer repair, signaling high-value targets for the next consolidation cycle.
+
+### `dream:20260913100758:4:2a9805`
+*13.09. 10:07 UTC · Quelle: dream*
+
+Five skill proposals were generated but none were applied, exposing a bottleneck between idea generation and implementation.
+
+### `dream:20260913100758:3:e50a48`
+*13.09. 10:07 UTC · Quelle: dream*
+
+Swarm convergence failed at score 1 despite evolution, showing that goal criteria have become stale and need periodic reassessment.
+
+### `dream:20260913100758:2:2dedce`
+*13.09. 10:07 UTC · Quelle: dream*
+
+Hand actions exiting with code 1 and no error message indicate missing dependency checks before execution.
+
+### `dream:20260913100758:1:51d9e5`
+*13.09. 10:07 UTC · Quelle: dream*
+
+The recurring 429 errors from google/gemma models reveal rate-limit exhaustion and demand a circuit-breaker fallback chain.
 
 ### `dream:20260913095641:5:c787b2`
 *13.09. 09:56 UTC · Quelle: dream*
