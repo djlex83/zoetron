@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 04:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 04:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm critiques and goals stale within a single cycle, causing repeated errors; a versioned, scheduled refresh mechanism is required for decision qual
+- Pruning discards 15 facts and 21 events without any audit trail, making rollback impossible; every prune must record timestamp, relevance score, and c
+- The skill-proposal-to-skill reflex failed initially but succeeded after a simulation gate; mandatory pre-execution simulation prevents wasted cycles o
+- Hand actions fail when using relative paths instead of the absolute ZOETRON_DATA root; all file I/O must resolve through a canonical path resolver.
+- Model latency spikes up to 52 seconds trigger conserve mode, crippling throughput; hard per-call timeouts and ordered fallbacks are non-negotiable.
 - Swarm knowledge freshness decays without automated refresh triggers, causing decisions to rely on stale collective experience.
 - Drive goals repeat identical intents (model error reduction appears twice) indicating goal deduplication and convergence tracking are absent.
 - Pruning discards 15 facts and 21 events per run without provenance logging, eliminating rollback capability for erroneous deletions.
@@ -51,11 +56,6 @@
 - The system achieved its goal (score 8) in a single cycle despite model instability, proving fallback models can maintain task momentum.
 - High latency and token usage in successful calls often precede upstream failures, so monitoring these metrics enables proactive model switching.
 - Model endpoints frequently fail under load (502/429 errors), making health-aware routing with weighted fallback essential for reliability.
-- Swarm insights expire silently — 30-day TTL without reinforcement tracking causes knowledge rot.
-- Causal chains are severed during pruning — decision rationale lost without immutable decision→action→outcome logging.
-- Skill proposals accumulate without execution pipeline — ideas decay into technical debt without automated implementation.
-- High metabolic stress (1.0) correlates with increased model failures and timeouts, requiring automatic conservative mode activation.
-- Model provider failures cascade rapidly under load — single-provider dependency causes systemic unreliability.
 
 ---
 

@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-13 04:42 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-13 04:52 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7281
 - **swarm_artifact:** 1661
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 38
 
 ---
+
+### `dream:20260913045010:5:1c171f`
+*13.09. 04:50 UTC · Quelle: dream*
+
+Swarm critiques and goals stale within a single cycle, causing repeated errors; a versioned, scheduled refresh mechanism is required for decision quality.
+
+### `dream:20260913045010:4:5df70e`
+*13.09. 04:50 UTC · Quelle: dream*
+
+Pruning discards 15 facts and 21 events without any audit trail, making rollback impossible; every prune must record timestamp, relevance score, and content.
+
+### `dream:20260913045010:3:e3c124`
+*13.09. 04:50 UTC · Quelle: dream*
+
+The skill-proposal-to-skill reflex failed initially but succeeded after a simulation gate; mandatory pre-execution simulation prevents wasted cycles on broken artifacts.
+
+### `dream:20260913045010:2:bbb442`
+*13.09. 04:50 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of the absolute ZOETRON_DATA root; all file I/O must resolve through a canonical path resolver.
+
+### `dream:20260913045010:1:4b12c6`
+*13.09. 04:50 UTC · Quelle: dream*
+
+Model latency spikes up to 52 seconds trigger conserve mode, crippling throughput; hard per-call timeouts and ordered fallbacks are non-negotiable.
 
 ### `dream:20260913044021:5:d9cea0`
 *13.09. 04:40 UTC · Quelle: dream*
@@ -42187,31 +42212,6 @@ Backup model nvidia/nemotron-3-ultra shows high latency variance (10.8-36.5s), n
 *30.08. 04:52 UTC · Quelle: dream*
 
 Model z-ai/glm-5.2:free consistently returns 429 errors, indicating hard rate limits that require proactive exclusion from routing.
-
-### `dream:20260830044532:5:06ca25`
-*30.08. 04:45 UTC · Quelle: dream*
-
-Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) succeed silently while model-critical paths lack equivalent automated recovery.
-
-### `dream:20260830044532:4:dbe7de`
-*30.08. 04:45 UTC · Quelle: dream*
-
-Existing skill proposals (ModelRouter, CircuitBreaker, calibration table) remain unimplemented despite repeated failure signals, revealing a proposal-to-execution gap.
-
-### `dream:20260830044532:3:e74dec`
-*30.08. 04:45 UTC · Quelle: dream*
-
-Latency variance (6–29 s) across successful calls dwarfs token-count differences, implying queueing delays dominate over inference time.
-
-### `dream:20260830044532:2:bd3396`
-*30.08. 04:45 UTC · Quelle: dream*
-
-A single 404 error on nemotron-3-ultra indicates model endpoint deprecation or routing misconfiguration that persists until the registry is refreshed.
-
-### `dream:20260830044532:1:159e61`
-*30.08. 04:45 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter exhibit pervasive 429 rate-limiting that correlates with time-of-day and concurrent usage spikes, making them unreliable for latency-sensitive tasks.
 
 ### `last_swarm_critique`
 *30.08. 03:21 UTC · Quelle: critic*
