@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11229 Fakten** · Stand 2026-09-14 23:02 UTC · aktualisiert bei jedem Herzschlag
+**11228 Fakten** · Stand 2026-09-14 23:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7148
-- **swarm_artifact:** 1621
+- **swarm_artifact:** 1620
 - **last_swarm_critique:** 956
 - **last_swarm_goal:** 691
 - **anti_pattern:** 371
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914230926:5:337c94`
+*14.09. 23:09 UTC · Quelle: dream*
+
+Memory pruning runs reactively on idle triggers instead of incremental TTL/frequency decay, risking memory pressure.
+
+### `dream:20260914230926:4:0f1be9`
+*14.09. 23:09 UTC · Quelle: dream*
+
+Simulation revision loops (5 revisions, 5 risks) indicate missing pre-simulation validation gates.
+
+### `dream:20260914230926:3:056943`
+*14.09. 23:09 UTC · Quelle: dream*
+
+Skill proposals accumulate but never enter the learning loop because no automated validation/insertion pipeline exists.
+
+### `dream:20260914230926:2:247573`
+*14.09. 23:09 UTC · Quelle: dream*
+
+Swarm convergence stalls without a quantitative composite metric (score delta + entropy), causing wasted cycles.
+
+### `dream:20260914230926:1:c51af0`
+*14.09. 23:09 UTC · Quelle: dream*
+
+Model API failures cascade into system-wide timeouts because no circuit-breaker/fallback guard wraps external calls.
 
 ### `tool:simulationen-in-echte-taten-umsetzen`
 *14.09. 23:00 UTC · Quelle: hands*
@@ -41369,31 +41394,6 @@ score=6; issues=The artifact is a collection of three separate scripts (simulati
 *31.08. 23:05 UTC · Quelle: system*
 
 Fähigkeiten durch Simulationen und Evolution prüfen
-
-### `dream:20260831230502:5:8b0cbb`
-*31.08. 23:05 UTC · Quelle: dream*
-
-Cycle estimation accuracy can be improved by tracking rolling mean absolute error between predicted and actual cycles per goal type.
-
-### `dream:20260831230502:4:0a7099`
-*31.08. 23:05 UTC · Quelle: dream*
-
-Parallel multi-model dispatch with first-success-wins effectively bypasses correlated rate limits and improves overall success rate.
-
-### `dream:20260831230502:3:e1c352`
-*31.08. 23:05 UTC · Quelle: dream*
-
-Skill proposals that reduce 429 rates or improve latency by measurable thresholds (e.g., >50% or >20%) over 100 calls should be auto-promoted to production.
-
-### `dream:20260831230502:2:c55171`
-*31.08. 23:05 UTC · Quelle: dream*
-
-Latency varies significantly between models (2.9s to 8.3s), making dynamic routing based on output token count and historical p95 latency essential for efficiency.
-
-### `dream:20260831230502:1:de8cb9`
-*31.08. 23:05 UTC · Quelle: dream*
-
-Rate limiting (429) and upstream overload (502) are the dominant failure modes across all model tiers, requiring systematic retry and fallback logic.
 
 ### `last_swarm_critique`
 *31.08. 22:41 UTC · Quelle: critic*

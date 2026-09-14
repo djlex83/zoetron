@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,14 +24,14 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning runs reactively on idle triggers instead of incremental TTL/frequency decay, risking memory pressure.
+- Simulation revision loops (5 revisions, 5 risks) indicate missing pre-simulation validation gates.
+- Skill proposals accumulate but never enter the learning loop because no automated validation/insertion pipeline exists.
+- Swarm convergence stalls without a quantitative composite metric (score delta + entropy), causing wasted cycles.
+- Model API failures cascade into system-wide timeouts because no circuit-breaker/fallback guard wraps external calls.
 - Dots-studio/dots-3-note-preview serves as the only consistently available fallback model despite higher latency (25-30s).
 - System operates in metabolic conserve mode (stress=1.0, max_tasks=3, max_iterations=1) severely constraining throughput during model instability.
 - Simulation-driven revision cycles (verdict: revise, 3 risks, 2 revisions) successfully produce running artifacts verified by TOR (grün=true, 540 lines
@@ -51,11 +56,6 @@
 - Pruning of 7 facts and 27 events suggests stale data accumulates, requiring an automated staleness detector.
 - Latency spikes above 20 seconds for certain models indicate that latency-aware routing should be implemented.
 - The repeated 429 Too Many Requests errors from Google models reveal a need for provider rate-limit monitoring and automatic blacklisting.
-- Reflex-based error diagnosis tools converge autonomously, reducing need for manual intervention.
-- Drive timeouts of 180 seconds indicate storage I/O bottlenecks during high-load consolidation phases.
-- Automated pruning removes 5-7 facts and 17-27 events per cycle, effectively controlling memory growth.
-- The dots-studio/dots-3-note-preview model provides consistent ~22-24s latency as a stable fallback.
-- Google Gemma models consistently hit 429 rate limits on OpenRouter, making them unreliable for sustained workloads.
 
 ---
 
