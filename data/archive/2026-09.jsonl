@@ -48885,3 +48885,35 @@
 {"ts": 1788776971.500515, "kind": "simulation_applied", "payload": {"revisions": 5}}
 {"ts": 1788777157.2005968, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 184.5, "tokens_ein": 1776, "tokens_aus": 4394}}
 {"ts": 1788777332.5670834, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 175.0, "tokens_ein": 2219, "tokens_aus": 8616}}
+{"ts": 1788172789.8781867, "key": "dream:20260831103949:1:82436a", "value": "Rate-limited model endpoints (z-ai/glm-5.2:free) consistently fail under load while fallback models (nvidia/nemotron-3-ultra) succeed, proving single-model dependence is a systemic reliability risk.", "source": "dream"}
+{"ts": 1788172789.8783314, "key": "dream:20260831103949:2:5b04e2", "value": "Multiple independent proposals converge on circuit-breaker patterns, latency-aware routing, and health scorecards — indicating the architecture lacks a unified model-resilience layer.", "source": "dream"}
+{"ts": 1788172789.8784337, "key": "dream:20260831103949:3:975829", "value": "Path-resolution failures recur across hand actions because relative paths are resolved against inconsistent working directories instead of a canonical ZOETRON_DATA root.", "source": "dream"}
+{"ts": 1788172789.8785048, "key": "dream:20260831103949:4:920c9a", "value": "Skill proposals accumulate without promotion criteria or ownership, creating a backlog where valuable ideas (e.g., automated validation harness) never reach production.", "source": "dream"}
+{"ts": 1788172789.878571, "key": "dream:20260831103949:5:16123e", "value": "Stale drive goals (market analysis) persist for days because the planner lacks a staleness-triggered escalation or decomposition mechanism.", "source": "dream"}
+{"ts": 1788173150.0950513, "key": "dream:20260831104550:1:cc7981", "value": "Model failures cluster around rate-limiting (429) and upstream overload (502), indicating need for dynamic routing and backoff strategies.", "source": "dream"}
+{"ts": 1788173150.095138, "key": "dream:20260831104550:2:c5483b", "value": "Latency prediction using EWMA and 2σ inflation improves budget accuracy and enables proactive conserve-mode.", "source": "dream"}
+{"ts": 1788173150.0952106, "key": "dream:20260831104550:3:31c933", "value": "Standardizing path resolution prevents I/O errors and ensures consistent data access across hand actions.", "source": "dream"}
+{"ts": 1788173150.0952735, "key": "dream:20260831104550:4:91c4b4", "value": "Automated skill validation with regression testing prevents performance degradation from new skill integration.", "source": "dream"}
+{"ts": 1788173150.0953827, "key": "dream:20260831104550:5:b860eb", "value": "Drive signals like 'failure', 'stale', and 'gap' effectively prioritize skill proposals and system improvements.", "source": "dream"}
+{"ts": 1788777454.6919363, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 121.8, "tokens_ein": 2642, "tokens_aus": 3801}}
+{"ts": 1788777455.436159, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.35, "gelesen": 0}}
+{"ts": 1788777467.6551442, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 12.22, "gelesen": 12}}
+{"ts": 1788777467.6554778, "kind": "tor", "payload": {"goal": "Mehr Handlungen aus Ideen machen", "gruen": true, "grund": "Artefakt laeuft (865 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788777528.547456, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 60.6, "tokens_ein": 9997, "tokens_aus": 1662}}
+{"ts": 1788777528.548353, "kind": "calibration", "payload": {"goal": "Mehr Handlungen aus Ideen machen", "predicted": 6, "actual": 6, "abs_error": 0}}
+{"ts": 1788777528.5484223, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 6}}
+{"ts": 1788777528.548917, "kind": "bahnen", "payload": {"goal": "Mehr Handlungen aus Ideen machen", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 6, "abgerufen": 4, "ids": ["e:f2d64d47eddf", "e:defcc7ccec04", "e:58ff7db1a61a", "e:2ec1bb183777"], "ziel_id": "g:00fe12f2aced"}}
+{"ts": 1788777543.1682951, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788777543.1682928, "schalter_geoeffnet": false}}
+{"ts": 1788777543.301982, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788777543.30198, "schalter_geoeffnet": false}}
+{"ts": 1788777543.498139, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788777543.498136, "schalter_geoeffnet": false}}
+{"ts": 1788777548.9302485, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 5.4, "tokens_ein": 218, "tokens_aus": 1242}}
+{"ts": 1788777614.1042309, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 65.2, "tokens_ein": 581, "tokens_aus": 993}}
+{"ts": 1788777614.104707, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 6/10. Goal: Mehr Handlungen aus Ideen machen\nCritic issues: Benchmark-Validierung nutzt Keyword-", "variants": 3, "winner_index": 0, "scores": [[8, 6, 8], [7, 8, 7], [7, 5, 7]]}}
+{"ts": 1788777672.7613878, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 53.8, "tokens_ein": 429, "tokens_aus": 1878}}
+{"ts": 1788777732.2507217, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 58.9, "tokens_ein": 479, "tokens_aus": 1488}}
+{"ts": 1788777732.2509196, "kind": "simulation", "payload": {"goal": "Mehr Handlungen aus Ideen machen", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1788777732.251042, "kind": "simulation_applied", "payload": {"revisions": 5}}
+{"ts": 1788777732.251147, "kind": "swarm_finished", "payload": {"goal": "Mehr Handlungen aus Ideen machen", "score": 6, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1788777732.2514405, "kind": "act_done", "payload": {"goal_title": "Mehr Handlungen aus Ideen machen", "score": 6, "converged": false}}
+{"ts": 1788777733.219366, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.34, "gelesen": 0}}
+{"ts": 1788777735.4486926, "kind": "issue_synced", "payload": {"issue": 408, "state": "open"}}

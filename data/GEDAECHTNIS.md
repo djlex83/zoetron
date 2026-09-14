@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11341 Fakten** · Stand 2026-09-14 10:40 UTC · aktualisiert bei jedem Herzschlag
+**11336 Fakten** · Stand 2026-09-14 10:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7258
+- **dream:** 7253
 - **swarm_artifact:** 1639
 - **last_swarm_critique:** 947
 - **last_swarm_goal:** 682
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914104741:5:622ab6`
+*14.09. 10:47 UTC · Quelle: dream*
+
+Cross-time dream linking reveals emergent patterns; scheduled consolidation strengthens memory.
+
+### `dream:20260914104741:4:a0e039`
+*14.09. 10:47 UTC · Quelle: dream*
+
+Stale swarm data reduces relevance; periodic refresh cycles are needed.
+
+### `dream:20260914104741:3:2649b3`
+*14.09. 10:47 UTC · Quelle: dream*
+
+High metabolism stress triggers conservation mode, limiting task count to the budget.
+
+### `dream:20260914104741:2:3c2ac3`
+*14.09. 10:47 UTC · Quelle: dream*
+
+Tool failures often result from unresolved data paths; pre-validate inputs to avoid silent no-ops.
+
+### `dream:20260914104741:1:b73e65`
+*14.09. 10:47 UTC · Quelle: dream*
+
+Free-tier models frequently return 429 errors, requiring a router with exponential backoff and fallbacks.
 
 ### `dream:20260914103748:5:80ed67`
 *14.09. 10:37 UTC · Quelle: dream*
@@ -41912,56 +41937,6 @@ Multiple skill proposals for model routing, local-first execution, and revision 
 *31.08. 10:56 UTC · Quelle: dream*
 
 Rate-limited primary model (z-ai/glm-5.2) repeatedly fails with 429 errors while fallback (Nemotron) succeeds but with high latency variance (24-75s).
-
-### `dream:20260831104550:5:b860eb`
-*31.08. 10:45 UTC · Quelle: dream*
-
-Drive signals like 'failure', 'stale', and 'gap' effectively prioritize skill proposals and system improvements.
-
-### `dream:20260831104550:4:91c4b4`
-*31.08. 10:45 UTC · Quelle: dream*
-
-Automated skill validation with regression testing prevents performance degradation from new skill integration.
-
-### `dream:20260831104550:3:31c933`
-*31.08. 10:45 UTC · Quelle: dream*
-
-Standardizing path resolution prevents I/O errors and ensures consistent data access across hand actions.
-
-### `dream:20260831104550:2:c5483b`
-*31.08. 10:45 UTC · Quelle: dream*
-
-Latency prediction using EWMA and 2σ inflation improves budget accuracy and enables proactive conserve-mode.
-
-### `dream:20260831104550:1:cc7981`
-*31.08. 10:45 UTC · Quelle: dream*
-
-Model failures cluster around rate-limiting (429) and upstream overload (502), indicating need for dynamic routing and backoff strategies.
-
-### `dream:20260831103949:5:16123e`
-*31.08. 10:39 UTC · Quelle: dream*
-
-Stale drive goals (market analysis) persist for days because the planner lacks a staleness-triggered escalation or decomposition mechanism.
-
-### `dream:20260831103949:4:920c9a`
-*31.08. 10:39 UTC · Quelle: dream*
-
-Skill proposals accumulate without promotion criteria or ownership, creating a backlog where valuable ideas (e.g., automated validation harness) never reach production.
-
-### `dream:20260831103949:3:975829`
-*31.08. 10:39 UTC · Quelle: dream*
-
-Path-resolution failures recur across hand actions because relative paths are resolved against inconsistent working directories instead of a canonical ZOETRON_DATA root.
-
-### `dream:20260831103949:2:5b04e2`
-*31.08. 10:39 UTC · Quelle: dream*
-
-Multiple independent proposals converge on circuit-breaker patterns, latency-aware routing, and health scorecards — indicating the architecture lacks a unified model-resilience layer.
-
-### `dream:20260831103949:1:82436a`
-*31.08. 10:39 UTC · Quelle: dream*
-
-Rate-limited model endpoints (z-ai/glm-5.2:free) consistently fail under load while fallback models (nvidia/nemotron-3-ultra) succeed, proving single-model dependence is a systemic reliability risk.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*
