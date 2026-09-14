@@ -48584,3 +48584,25 @@
 {"ts": 1788769694.530075, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.86, "gelesen": 135}}
 {"ts": 1788769696.8479826, "kind": "issue_synced", "payload": {"issue": 406, "state": "open"}}
 {"ts": 1788770193.9885128, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788165637.14179, "key": "dream:20260831084037:1:3a5409", "value": "Multiple free-tier models (GLM, Nemotron, Gemma) consistently fail with 429 rate limits and 502 overload errors under load.", "source": "dream"}
+{"ts": 1788165637.141875, "key": "dream:20260831084037:2:32e68d", "value": "poolside/laguna-s-2.1:free is the only model that reliably succeeds, making it the de facto backbone for free-tier operation.", "source": "dream"}
+{"ts": 1788165637.1419382, "key": "dream:20260831084037:3:56acc7", "value": "First-request latency on cold models is high (14s) but drops sharply on warm reuse (5.3s), confirming cold-start penalty.", "source": "dream"}
+{"ts": 1788165637.1420372, "key": "dream:20260831084037:4:271601", "value": "Reflex-driven goal renewal succeeded without LLM calls, proving deterministic fallbacks can unblock the system during model outages.", "source": "dream"}
+{"ts": 1788165637.1421022, "key": "dream:20260831084037:5:240374", "value": "Skill-conversion scripts lack structured error contracts, forcing manual debugging instead of automated retry.", "source": "dream"}
+{"ts": 1788166039.669826, "key": "swarm_artifact:Inventarisieren aller existierenden Schwarm-Ergebnis-Dateien", "value": "```python\n#!/usr/bin/env python3\n\"\"\"\nInventarisiert alle existierenden Schwarm-Ergebnis-Dateien (JSON, Markdown, Logs)\nund erstellt eine strukturierte Übersicht mit Pfaden, Zeitstempeln und Metadaten.", "source": "builder"}
+{"ts": 1788770669.5155594, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788770671.4001, "kind": "prune_run", "payload": {"facts_pruned": 11, "events_pruned": 28}}
+{"ts": 1788770745.6312783, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 70.6, "tokens_ein": 1351, "tokens_aus": 913}}
+{"ts": 1788770745.6318612, "kind": "skill_proposal", "payload": {"proposal": "ModelHealthRouter: maintain per-model success-rate sliding window (last 20 calls), auto-route requests to top-quartile models and quarantine >30% failure models."}}
+{"ts": 1788770745.6319191, "kind": "skill_proposal", "payload": {"proposal": "ProposalToProductionPipeline: auto-select top-3 proposals by impact score → generate scaffold → register tool → run smoke test → promote on pass, all in one dream cycle."}}
+{"ts": 1788770745.6319768, "kind": "skill_proposal", "payload": {"proposal": "SwarmFreshnessScheduler: cron job every 60 min that queries swarm timestamp, emits drive_goal if max-age > 90 min, with priority scaled by staleness."}}
+{"ts": 1788770745.6320405, "kind": "skill_proposal", "payload": {"proposal": "ReflexPreflightValidator: mandatory checklist (script exists, deps installed, env vars set, dry-run passes) before any reflex_used, auto-files skill_proposal on gap."}}
+{"ts": 1788770745.6320963, "kind": "skill_proposal", "payload": {"proposal": "ErrorTaxonomyRetryEngine: classify errors (429→exp backoff+jitter, 502→immediate failover, 5xx→circuit breaker 5/30s, timeout→retry-once) and enforce per-class policy."}}
+{"ts": 1788770745.6321502, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788770793.2742484, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 45.6, "tokens_ein": 506, "tokens_aus": 915}}
+{"ts": 1788770793.274417, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Viele Modelle scheitern noch. Bessere Modelle helfen bei allen Aufgaben.", "signal": "failure"}}
+{"ts": 1788770793.274491, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Alte Schwarm-Ziele und Kritiken sind veraltet. Neuer Input verbessert die Zusammenarbeit.", "signal": "stale"}}
+{"ts": 1788770793.274554, "kind": "drive_goal", "payload": {"title": "Fähigkeits-Ideen umsetzen", "why": "Viele neue Fähigkeiten wurden vorgeschlagen, aber noch nicht gebaut. Das schließt die Lücke zwischen Idee und Tat.", "signal": "gap"}}
+{"ts": 1788770796.364845, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.7, "gelesen": 29}}
+{"ts": 1788770796.368172, "kind": "reflex_used", "payload": {"goal": "Träume in nutzbare Fähigkeiten umwandeln", "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py", "ok": true}}
+{"ts": 1788770796.7268984, "kind": "act_done", "payload": {"goal_title": "Träume in nutzbare Fähigkeiten umwandeln", "score": null, "converged": true, "mode": "reflex"}}

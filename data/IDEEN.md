@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 08:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 09:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler beheben *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
+- Entfernte Erinnerungen verbinden *(wieder aufgegriffen: 3×)*
+- Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
+- Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 5 facts and 17 events demonstrates that regular memory consolidation improves relevance.
+- Latency for the working model varies from 16.9 s to 33.3 s, indicating dynamic load balancing should adapt to real‑time performance.
+- The failed skill execution shows that proposals need pre‑execution validation of file paths and dependencies.
+- Three consecutive failures trigger a 30‑minute lockout, illustrating a circuit‑breaker pattern that prevents cascading errors.
+- Free models are prone to timeouts and 429 errors, requiring a router with health checks and fallback.
 - Combining multiple skill proposals yields composite capabilities that outperform single‑skill solutions.
 - Reflex tools can complete tasks without model calls, providing a reliable offline path.
 - Pruning events without subsequent retrieval checks leads to silent data loss, requiring an audit step.
@@ -51,11 +56,6 @@
 - The system autonomously generated five concrete skill proposals addressing model resilience, quota management, and circuit-breaking patterns.
 - dots-studio/dots-3-note-preview:free proved to be a stable fallback with acceptable latency (23-47s) and zero failures across two invocations.
 - Google Gemma free-tier models repeatedly trigger 429 rate-limit errors, making them unreliable for latency-sensitive tasks.
-- Accumulated skill proposals remain unused unless a systematic pipeline converts them into enabled capabilities.
-- Reflex tools successfully automate recurring goals, indicating that a generic skill executor can improve observability and reuse.
-- Swarm knowledge decays quickly, requiring scheduled refresh tasks to maintain accuracy and relevance.
-- Repeated identical prompts cause unnecessary latency and rate‑limit hits; caching by prompt hash with TTL eliminates redundancy.
-- Model endpoints return 429/502 errors under load, so a router with health checks and exponential backoff is essential.
 
 ---
 
