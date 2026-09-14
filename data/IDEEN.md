@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 12:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 12:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,8 +28,8 @@
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
@@ -37,10 +37,15 @@
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
+- Entfernte Erinnerungen verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning old facts and events (10 facts, 17 events) kept the knowledge base concise and likely improved retrieval efficiency.
+- The automatic lockout of the nvidia model after three consecutive failures prevented further wasted attempts and is a valuable safeguard.
+- The Google Gemma models returned HTTP 429 Too Many Requests, revealing that the free tier has strict rate limits that must be respected.
+- The nvidia/nemotron-3-ultra-550b-a55b:free model repeatedly timed out, suggesting network latency or server-side issues that require a longer timeout 
+- The only model that completed requests without error in the recent session was dots-studio/dots-3-note-preview:free, indicating it is currently the mo
 - Structured artifact tracking (logging code lines, execution status, retrieval counts) provides quantitative links between model outputs and functional
 - Task complexity predictions overestimate steps by roughly two, creating a gap between planned and actual executions.
 - A primary‑secondary routing layer that switches to an alternative model on 429 or timeout improves reliability.
@@ -51,11 +56,6 @@
 - Aggressive pruning of facts and events is necessary for memory hygiene but risks losing valuable cross-cutting patterns if not carefully scoped.
 - Successful execution of self-reflexes shows that meta-cognitive loops can effectively translate proposed skills into stabilized system behaviors.
 - Frequent 429 rate-limit errors on specific free models highlight the critical need for an automated failover mechanism to alternative endpoints.
-- Combining dream analysis with tool execution yields convergent results, suggesting tight coupling improves goal achievement.
-- Pruning events show that frequent fact/event cleanup maintains memory hygiene but must be balanced with retention of recent model outcomes.
-- The system's drive goals consistently flag model errors and stale swarm data as primary performance bottlenecks.
-- Successful calls to dots‑studio/dots‑3‑note‑preview show that latency‑tolerant models can absorb load when others fail.
-- Repeated 429 errors from google/gemma free models indicate rate‑limit saturation requiring fallback routing.
 
 ---
 

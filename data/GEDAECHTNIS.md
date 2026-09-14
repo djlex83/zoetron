@@ -1,18 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11321 Fakten** · Stand 2026-09-14 12:02 UTC · aktualisiert bei jedem Herzschlag
+**11328 Fakten** · Stand 2026-09-14 12:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7238
-- **swarm_artifact:** 1639
-- **last_swarm_critique:** 947
-- **last_swarm_goal:** 682
-- **anti_pattern:** 369
-- **strategy:** 187
-- **tool:** 153
+- **dream:** 7233
+- **swarm_artifact:** 1645
+- **last_swarm_critique:** 948
+- **last_swarm_goal:** 683
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 23
 
 ---
+
+### `tool:modelfehler-verringern`
+*14.09. 12:20 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modelfehler verringern'. Datei: data/tools/modelfehler-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modelfehler verringern
+C:2`
+*14.09. 12:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.33): Dynamic hyperparameter tuning - Use health metrics to dynamically adjust inference hyperparameters such as temperature and top-p, reducing error probability. NICHT wiederholt anbieten.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modelfehler verringern
+C:1`
+*14.09. 12:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.67): Continuous online learning - Create a continuous learning loop that collects misclassified samples, retrains the model incrementally, and deploys updated version automatically. NICHT wiederholt anbieten.
+
+### `last_swarm_critique`
+*14.09. 12:17 UTC · Quelle: critic*
+
+score=4; issues=Das Artefakt (Modell-Gesundheitsregister) läuft und提供了 monitoring/analysis, aber es reduziert Modelfehler nicht aktiv: Es fehlen Fallback-Mechanismen, Retry-Logik oder automatische Anpassungen auf Basis der Health-Daten.; Die Error-Rate-Berechn
+
+### `last_swarm_goal`
+*14.09. 12:12 UTC · Quelle: system*
+
+Modelfehler verringern
+
+### `dream:20260914121101:5:bffa1d`
+*14.09. 12:11 UTC · Quelle: dream*
+
+Pruning old facts and events (10 facts, 17 events) kept the knowledge base concise and likely improved retrieval efficiency.
+
+### `dream:20260914121101:4:9c0500`
+*14.09. 12:11 UTC · Quelle: dream*
+
+The automatic lockout of the nvidia model after three consecutive failures prevented further wasted attempts and is a valuable safeguard.
+
+### `dream:20260914121101:3:8d253c`
+*14.09. 12:11 UTC · Quelle: dream*
+
+The Google Gemma models returned HTTP 429 Too Many Requests, revealing that the free tier has strict rate limits that must be respected.
+
+### `dream:20260914121101:2:9decbd`
+*14.09. 12:11 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model repeatedly timed out, suggesting network latency or server-side issues that require a longer timeout or alternative routing.
+
+### `dream:20260914121101:1:0a2bb4`
+*14.09. 12:11 UTC · Quelle: dream*
+
+The only model that completed requests without error in the recent session was dots-studio/dots-3-note-preview:free, indicating it is currently the most reliable free model.
 
 ### `dream:20260914115936:5:c5e455`
 *14.09. 11:59 UTC · Quelle: dream*
@@ -41812,56 +41864,6 @@ Skill proposals accumulate without execution tracking: 75 proposals exist but no
 *31.08. 12:16 UTC · Quelle: dream*
 
 Model routing lacks resilience: 5 consecutive model failures (429/502) across 4 providers blocked progress until a fallback succeeded.
-
-### `dream:20260831120830:5:a8cde0`
-*31.08. 12:08 UTC · Quelle: dream*
-
-Reflex execution succeeded for concrete scripted tasks (market-analysis update) while model-dependent planning fails, highlighting a trust boundary between deterministic tools and stochastic LLMs.
-
-### `dream:20260831120830:4:f75871`
-*31.08. 12:08 UTC · Quelle: dream*
-
-Drive goals for model reliability, market-analysis utilization, and skill usability recur across cycles, showing no closed-loop tracking from goal to deployed solution.
-
-### `dream:20260831120830:3:2235a6`
-*31.08. 12:08 UTC · Quelle: dream*
-
-Five skill proposals were generated in one cycle but none have validation harnesses, so proposals accumulate without becoming executable capabilities.
-
-### `dream:20260831120830:2:6acf55`
-*31.08. 12:08 UTC · Quelle: dream*
-
-Fallback model nemotron-3-ultra shows 17–77s latency variance, revealing no latency-aware routing or calibration to predict cost.
-
-### `dream:20260831120830:1:b6ad05`
-*31.08. 12:08 UTC · Quelle: dream*
-
-Repeated 429 errors on glm-5.2:free indicate missing per-provider rate-limit handling and circuit-breaking, causing cascading fallbacks to high-latency alternatives.
-
-### `dream:20260831120118:5:05cde4`
-*31.08. 12:01 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831120118:4:6c4234`
-*31.08. 12:01 UTC · Quelle: dream*
-
-Drive goals reveal a meta-learning loop: the system recognizes its own failure patterns and generates improvement proposals, but lacks automated promotion to deployed skills.
-
-### `dream:20260831120118:3:19f6bf`
-*31.08. 12:01 UTC · Quelle: dream*
-
-Multiple independent skill proposals converge on the same solution pattern: model health tracking, circuit breaking, and prioritized fallback chains.
-
-### `dream:20260831120118:2:b903c5`
-*31.08. 12:01 UTC · Quelle: dream*
-
-Fallback models succeed but exhibit high latency variance (13-60s), making timeout budgets and latency-aware routing essential for reliable task completion.
-
-### `dream:20260831120118:1:782ad0`
-*31.08. 12:01 UTC · Quelle: dream*
-
-Rate limiting (429) on specific models is a persistent, predictable failure mode that requires proactive routing rather than reactive retries.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

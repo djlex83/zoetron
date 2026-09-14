@@ -1,0 +1,29 @@
+{
+  "metrics": {
+    "error_rate": 0.01,
+    "error_count": 1,
+    "total_requests": 100,
+    "last_updated": "2026-09-14T12:16:22.969442",
+    "update_frequency": "real-time",
+    "error_types": {
+      "timeout": 1
+    },
+    "error_trends": [
+      {
+        "date": "2026-09-14",
+        "count": 1,
+        "rate": 0.01
+      }
+    ]
+  },
+  "errors": [
+    {
+      "timestamp": "2026-09-14T12:16:22.969053",
+      "model": "demo-model",
+      "error_type": "timeout",
+      "description": "Model did not respond within 30 seconds",
+      "severity": "high",
+      "metadata": {}
+    }
+  ]
+}
