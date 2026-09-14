@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 02:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 02:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,12 +28,12 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Veraltete Swarm-Daten aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 0 (predicted=actual=6) shows the predictor is reliable for this task class and can gate resource allocation.
+- Recurring 'Path mismatch: tool generator' critic issues indicate missing artifact path contracts between code generation and execution environments.
+- Evolutionary search produces high-scoring variants (9/10) but swarm execution stalls at 6/10 unconverged, revealing a variant-to-integration gap.
+- Simulation revision loops escalate (3→5 revisions) without convergence criteria, wasting cycles on diminishing returns.
+- Free-tier model endpoints (Nemotron, Gemma) fail frequently with 502 upstream errors and 429 rate limits, requiring a hardened fallback chain with hea
 - Integrating simulation outputs into the decision pipeline ensures that computed scenarios are applied to real actions.
 - Regularly pruning outdated facts and events maintains memory efficiency while preserving critical knowledge.
 - Directly compiling approved skill proposals into in-memory Python modules eliminates the need for external shell scripts.
@@ -51,11 +56,6 @@
 - Recurring drive goals about model errors and simulation gaps indicate systemic reliability and utilization issues.
 - Latency for successful calls varies between 22s and 97s, so per-model timeouts and adaptive retries are essential.
 - Free-tier model endpoints frequently return 502 or 429 errors under load, requiring a fallback chain with exponential backoff.
-- Regular pruning (5 facts, 17 events) without corresponding knowledge refresh explains the 'stale swarm data' drive signal recurring.
-- Model fallback to dots-studio succeeded after premium models failed, proving a diverse model pool with automatic failover is more reliable than prefer
-- Reflex tools for skill implementation succeed locally but the proposed skills (backoff, ledger, pre-flight checks) remain unimplemented in the model r
-- Drive goals persist unchanged across cycles, indicating the underlying causes (model unreliability, stale knowledge, unused skills) are not being reso
-- Upstream 502 errors and 429 rate limits are the dominant failure modes requiring systematic retry/fallback logic, not ad-hoc handling.
 
 ---
 
