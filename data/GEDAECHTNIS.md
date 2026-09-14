@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11269 Fakten** · Stand 2026-09-14 19:30 UTC · aktualisiert bei jedem Herzschlag
+**11269 Fakten** · Stand 2026-09-14 19:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7168
-- **swarm_artifact:** 1641
+- **dream:** 7173
+- **swarm_artifact:** 1637
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
 - **anti_pattern:** 373
 - **strategy:** 189
 - **tool:** 152
-- **hand_result:** 82
+- **hand_result:** 81
 - **aktuell_organfehler:** 21
 
 ---
+
+### `dream:20260914193804:5:ae6ed2`
+*14.09. 19:38 UTC · Quelle: dream*
+
+Reflex-driven tool execution succeeds when goals are concrete and tools are pre-validated, as shown by the successful swarm information update.
+
+### `dream:20260914193804:4:0127b3`
+*14.09. 19:38 UTC · Quelle: dream*
+
+Self-diagnosis and automated pruning (facts/events) are functioning as effective maintenance loops that prevent memory bloat.
+
+### `dream:20260914193804:3:294c02`
+*14.09. 19:38 UTC · Quelle: dream*
+
+Dream consolidation timeout (180s) indicates the replay process may be processing excessive volume or lacking incremental checkpoints.
+
+### `dream:20260914193804:2:8ea0f9`
+*14.09. 19:38 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model serves as a reliable fallback with acceptable latency (15–19s) when primary models fail.
+
+### `dream:20260914193804:1:d370ca`
+*14.09. 19:38 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without an automated fallback strategy.
 
 ### `dream:20260914192742:5:a036c5`
 *14.09. 19:27 UTC · Quelle: dream*

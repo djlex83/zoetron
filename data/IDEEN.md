@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 19:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 19:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven tool execution succeeds when goals are concrete and tools are pre-validated, as shown by the successful swarm information update.
+- Self-diagnosis and automated pruning (facts/events) are functioning as effective maintenance loops that prevent memory bloat.
+- Dream consolidation timeout (180s) indicates the replay process may be processing excessive volume or lacking incremental checkpoints.
+- The dots-studio/dots-3-note-preview:free model serves as a reliable fallback with acceptable latency (15–19s) when primary models fail.
+- Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without an automated fallback strateg
 - The dream consolidation module itself suffers from timeouts (180s), suggesting its processing budget is insufficient for current experience volume.
 - Tools that produce only output without side effects (return values, file writes) are rejected by the system, enforcing a contract of tangible state ch
 - Swarm evolution overestimates solution quality (predicted 9 vs actual 6), indicating a systematic calibration gap in critic scoring.
@@ -51,11 +56,6 @@
 - The task "Veraltete swarm-Ziele auffrischen" is highly stable and repeatable, showing consistent execution paths and perfect calibration (abs_error 0)
 - Large free models like `nvidia/nemotron-3-ultra-550b-a55b` are prone to read timeouts and require explicit timeout handling and fallback chains.
 - Free Google Gemma models are currently unreliable due to persistent 429 rate-limiting and should be avoided or deprioritized in favor of `dots-studio/
-- Simulation approved goal with 3 risks but 0 revisions, indicating risk assessment may not gate execution under resource pressure.
-- High stress (1.0) + conserve state reduces operational capacity to 3 tasks/1 iteration, eliminating retry headroom for flaky models.
-- Single reliable model (dots-studio) shows 15x latency variance (5s-74s), violating latency SLAs for time-bounded operations.
-- Automatic model locking after 3 consecutive failures (1800s) creates recovery latency that exceeds task budgets under conserve mode (max_iterations=1)
-- Free-tier models exhibit systematic unreliability: Nemotron fails via timeout cascades, Gemma models fail via 429 rate limits, making them unsuitable 
 
 ---
 
