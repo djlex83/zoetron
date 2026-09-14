@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11265 Fakten** · Stand 2026-09-14 19:55 UTC · aktualisiert bei jedem Herzschlag
+**11260 Fakten** · Stand 2026-09-14 20:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7168
+- **dream:** 7163
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 22
 
 ---
+
+### `dream:20260914200331:5:4a3bbc`
+*14.09. 20:03 UTC · Quelle: dream*
+
+Pre‑execution validation of reflex tools catches missing files or env vars before they cause failures.
+
+### `dream:20260914200331:4:a35a5c`
+*14.09. 20:03 UTC · Quelle: dream*
+
+Pruning events reduces memory growth but should be scheduled during low‑activity windows to avoid data loss.
+
+### `dream:20260914200331:3:a29f2b`
+*14.09. 20:03 UTC · Quelle: dream*
+
+Latency varies widely between models; choosing the fastest available model improves responsiveness.
+
+### `dream:20260914200331:2:dec78e`
+*14.09. 20:03 UTC · Quelle: dream*
+
+Upstream 502 errors indicate the provider is overloaded and require automatic switch to a backup model.
+
+### `dream:20260914200331:1:fe3e1c`
+*14.09. 20:03 UTC · Quelle: dream*
+
+Repeated 429 errors show that the current model is rate‑limited and needs throttling or fallback.
 
 ### `dream:20260914195237:5:9169ed`
 *14.09. 19:52 UTC · Quelle: dream*
@@ -41474,56 +41499,6 @@ The working model (nemotron-3-ultra) exhibits extreme latency variance (26–180
 *31.08. 20:08 UTC · Quelle: dream*
 
 Free-tier models fail predominantly due to 429 rate limits, not capability gaps, making a tracked fallback chain essential for reliability.
-
-### `dream:20260831200125:5:f8bb98`
-*31.08. 20:01 UTC · Quelle: dream*
-
-High metabolic stress (1.0) triggers conserve mode that starves validation loops, letting path and model errors propagate unchecked.
-
-### `dream:20260831200125:4:abacff`
-*31.08. 20:01 UTC · Quelle: dream*
-
-Model fallback chains collapse when all providers hit rate limits simultaneously, revealing missing quota-aware routing.
-
-### `dream:20260831200125:3:89ba8a`
-*31.08. 20:01 UTC · Quelle: dream*
-
-Skill proposals accumulate without a deployment pipeline, creating a proposal-to-practice gap that wastes design effort.
-
-### `dream:20260831200125:2:dcee0c`
-*31.08. 20:01 UTC · Quelle: dream*
-
-Path resolution fails when skills use relative paths instead of ZOETRON_DATA-rooted absolute paths, causing silent zero-result executions.
-
-### `dream:20260831200125:1:07f1e7`
-*31.08. 20:01 UTC · Quelle: dream*
-
-Free-tier model APIs fail catastrophically under concurrent load due to shared rate limits across all consumers.
-
-### `dream:20260831195322:5:b457a9`
-*31.08. 19:53 UTC · Quelle: dream*
-
-Latency variability in working models (43s to 55s) makes interactive loops unpredictable, requiring latency-aware model selection for consistent user experience.
-
-### `dream:20260831195322:4:7ef735`
-*31.08. 19:53 UTC · Quelle: dream*
-
-The reflex consolidation mechanism converges reliably, but its effectiveness is bottlenecked by the underlying model call layer, which is the single point of failure.
-
-### `dream:20260831195322:3:725de6`
-*31.08. 19:53 UTC · Quelle: dream*
-
-Stale data (unfinished goals, outdated analyses, unpruned facts) accumulates over time because there is no time-based expiration or forced review cycle.
-
-### `dream:20260831195322:2:7c9629`
-*31.08. 19:53 UTC · Quelle: dream*
-
-The system generates many skill proposals and goals but lacks a prioritization-and-execution mechanism, causing accumulation of unfinished work and unused ideas.
-
-### `dream:20260831195322:1:90daa3`
-*31.08. 19:53 UTC · Quelle: dream*
-
-429 rate-limit errors from external models are a recurring systemic failure that cascades into unreliable system behavior and must be handled automatically rather than retried naively.
 
 ### `last_swarm_critique`
 *31.08. 19:28 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 19:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 20:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
-- Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 3×)*
+- Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pre‑execution validation of reflex tools catches missing files or env vars before they cause failures.
+- Pruning events reduces memory growth but should be scheduled during low‑activity windows to avoid data loss.
+- Latency varies widely between models; choosing the fastest available model improves responsiveness.
+- Upstream 502 errors indicate the provider is overloaded and require automatic switch to a backup model.
+- Repeated 429 errors show that the current model is rate‑limited and needs throttling or fallback.
 - Periodic pruning (4 facts, 16 events) occurs but only reactively; memory growth is not bounded during high-activity phases.
 - Reflex-driven tool use (swarm-informationen-aktualisieren) succeeds where planned multi-step actions stall, suggesting reflexes are more reliable for 
 - Convergence is declared without minimum score thresholds or diversity checks, allowing premature termination of swarm cycles.
@@ -51,11 +56,6 @@
 - Dream consolidation timeout (180s) indicates the replay process may be processing excessive volume or lacking incremental checkpoints.
 - The dots-studio/dots-3-note-preview:free model serves as a reliable fallback with acceptable latency (15–19s) when primary models fail.
 - Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without an automated fallback strateg
-- The dream consolidation module itself suffers from timeouts (180s), suggesting its processing budget is insufficient for current experience volume.
-- Tools that produce only output without side effects (return values, file writes) are rejected by the system, enforcing a contract of tangible state ch
-- Swarm evolution overestimates solution quality (predicted 9 vs actual 6), indicating a systematic calibration gap in critic scoring.
-- The dots-studio/dots-3-note-preview:free model demonstrates consistent success with acceptable latency, establishing it as the only viable free-tier f
-- Free-tier models from major providers (Google, NVIDIA) consistently hit rate limits (429) and timeouts, making them unreliable for production workflow
 
 ---
 

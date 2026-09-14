@@ -50157,3 +50157,35 @@
 {"ts": 1788809994.5569072, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 8.66, "gelesen": 129}}
 {"ts": 1788809996.2511508, "kind": "issue_synced", "payload": {"issue": 412, "state": "open"}}
 {"ts": 1788810513.832553, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788206002.0570738, "key": "dream:20260831195322:1:90daa3", "value": "429 rate-limit errors from external models are a recurring systemic failure that cascades into unreliable system behavior and must be handled automatically rather than retried naively.", "source": "dream"}
+{"ts": 1788206002.0571744, "key": "dream:20260831195322:2:7c9629", "value": "The system generates many skill proposals and goals but lacks a prioritization-and-execution mechanism, causing accumulation of unfinished work and unused ideas.", "source": "dream"}
+{"ts": 1788206002.0572474, "key": "dream:20260831195322:3:725de6", "value": "Stale data (unfinished goals, outdated analyses, unpruned facts) accumulates over time because there is no time-based expiration or forced review cycle.", "source": "dream"}
+{"ts": 1788206002.0573332, "key": "dream:20260831195322:4:7ef735", "value": "The reflex consolidation mechanism converges reliably, but its effectiveness is bottlenecked by the underlying model call layer, which is the single point of failure.", "source": "dream"}
+{"ts": 1788206002.0574126, "key": "dream:20260831195322:5:b457a9", "value": "Latency variability in working models (43s to 55s) makes interactive loops unpredictable, requiring latency-aware model selection for consistent user experience.", "source": "dream"}
+{"ts": 1788206485.0800328, "key": "dream:20260831200125:1:07f1e7", "value": "Free-tier model APIs fail catastrophically under concurrent load due to shared rate limits across all consumers.", "source": "dream"}
+{"ts": 1788206485.0801282, "key": "dream:20260831200125:2:dcee0c", "value": "Path resolution fails when skills use relative paths instead of ZOETRON_DATA-rooted absolute paths, causing silent zero-result executions.", "source": "dream"}
+{"ts": 1788206485.080225, "key": "dream:20260831200125:3:89ba8a", "value": "Skill proposals accumulate without a deployment pipeline, creating a proposal-to-practice gap that wastes design effort.", "source": "dream"}
+{"ts": 1788206485.0803292, "key": "dream:20260831200125:4:abacff", "value": "Model fallback chains collapse when all providers hit rate limits simultaneously, revealing missing quota-aware routing.", "source": "dream"}
+{"ts": 1788206485.080395, "key": "dream:20260831200125:5:f8bb98", "value": "High metabolic stress (1.0) triggers conserve mode that starves validation loops, letting path and model errors propagate unchecked.", "source": "dream"}
+{"ts": 1788810685.3339784, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788810687.020902, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 42}}
+{"ts": 1788810710.5445933, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 19.8, "tokens_ein": 1318, "tokens_aus": 644}}
+{"ts": 1788810710.5451586, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router skill with provider circuit breakers, latency budgets, and automatic failover to flash models."}}
+{"ts": 1788810710.5452147, "kind": "skill_proposal", "payload": {"proposal": "Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before registry promotion."}}
+{"ts": 1788810710.5452678, "kind": "skill_proposal", "payload": {"proposal": "Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours."}}
+{"ts": 1788810710.5453186, "kind": "skill_proposal", "payload": {"proposal": "Enforce absolute_path_guard middleware on all file tools with canonical ZOETRON_DATA rewriting."}}
+{"ts": 1788810710.545369, "kind": "skill_proposal", "payload": {"proposal": "Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with backoff requeue."}}
+{"ts": 1788810710.5454195, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788810719.4874039, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788810719.4874008, "schalter_geoeffnet": false}}
+{"ts": 1788810719.638309, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788810719.6383054, "schalter_geoeffnet": false}}
+{"ts": 1788810719.7463994, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788810719.7463975, "schalter_geoeffnet": false}}
+{"ts": 1788810722.9480789, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 3.2, "tokens_ein": 486, "tokens_aus": 1090}}
+{"ts": 1788810722.948221, "kind": "drive_goal", "payload": {"title": "Modellfehler systematisch reduzieren", "why": "Es gab viele Modellfehler, die das System ausgebremst haben. Weniger Fehler bedeuten zuverlässigere Ergebnisse und schnelleres Lernen.", "signal": "failure"}}
+{"ts": 1788810722.9482965, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten aktiv einsetzen", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber noch nicht alle angewendet. Ihre Nutzung macht das System deutlich stärker.", "signal": "gap"}}
+{"ts": 1788810722.9483593, "kind": "drive_goal", "payload": {"title": "Schwarm-Informationen regelmäßig auffrischen", "why": "Die Schwarm-Daten sind veraltet und nicht mehr aktuell. Frische Informationen helfen dem Schwarm, besser zusammenzuarbeiten.", "signal": "stale"}}
+{"ts": 1788810731.1892688, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 5.62, "gelesen": 53}}
+{"ts": 1788810731.1914515, "kind": "reflex_used", "payload": {"goal": "Modellfehler verstehen und beheben", "tool": "modellfehler-verstehen-und-verringern.py", "ok": true}}
+{"ts": 1788810731.5395348, "kind": "act_done", "payload": {"goal_title": "Modellfehler verstehen und beheben", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788811247.023909, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788811315.641573, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788811317.2881613, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 34}}
