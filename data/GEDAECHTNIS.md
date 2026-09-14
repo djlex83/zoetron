@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11355 Fakten** · Stand 2026-09-14 06:32 UTC · aktualisiert bei jedem Herzschlag
+**11350 Fakten** · Stand 2026-09-14 06:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
-- **swarm_artifact:** 1635
+- **dream:** 7293
+- **swarm_artifact:** 1629
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
-- **anti_pattern:** 365
-- **strategy:** 185
-- **tool:** 153
+- **anti_pattern:** 363
+- **strategy:** 184
+- **tool:** 152
 - **hand_result:** 83
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914064057:5:0849d7`
+*14.09. 06:40 UTC · Quelle: dream*
+
+Aggressive pruning (20 events per cycle) maintains lean memory but may discard cross-episode context needed for latent pattern detection.
+
+### `dream:20260914064057:4:b92e9f`
+*14.09. 06:40 UTC · Quelle: dream*
+
+Dream consolidation recurs (dream_finished logged) yet insights and skill_proposals accumulate without deduplication or priority ranking, risking redundancy.
+
+### `dream:20260914064057:3:cba463`
+*14.09. 06:40 UTC · Quelle: dream*
+
+Automated skill proposals emerge from failure patterns but are emitted without deployment validation, creating a proposal-deployment gap.
+
+### `dream:20260914064057:2:eb9899`
+*14.09. 06:40 UTC · Quelle: dream*
+
+Reflex-driven recovery (swarm refresh, model accuracy repair) converges reliably without planner involvement, suggesting reflexes are the primary self-healing pathway.
+
+### `dream:20260914064057:1:060fd7`
+*14.09. 06:40 UTC · Quelle: dream*
+
+Rate limiting (429) on primary models is a systemic failure mode; fallback models succeed but exhibit high latency variance (14–43 s) that can stall goal loops.
 
 ### `dream:20260914063005:5:e3c63a`
 *14.09. 06:30 UTC · Quelle: dream*
@@ -42067,21 +42092,6 @@ Dream and drive modules consistently hit 180-second timeouts, indicating a syste
 *31.08. 07:29 UTC · Quelle: dream*
 
 Rate limiting (429) affects all free-tier OpenRouter models simultaneously, making single-model reliance unreliable.
-
-### `tool:marktanalyse-in-handeln-umsetzen`
-*31.08. 06:34 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse in Handeln umsetzen'. Datei: data/tools/marktanalyse-in-handeln-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Marktanalyse in Handeln :2`
-*31.08. 06:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Event-Driven State Machine mit Deterministic Replay - Modelliere das gesamte Handelsworkflow als deterministische State Machine, die auf marktgenerierte Events reagiert. Jeder State Transition wird als strukturierte Nachricht
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Marktanalyse in Handeln :1`
-*31.08. 06:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Service-Orchestrierung mit Contract-First Design - Implementiere jeden Organismus (Datenfindung, Analyse, Handel) als eigenständigen Microservice mit klar definierten API-Verträgen (z.B. gRPC/REST mit Protobuf). Der Haupt-Orc
 
 ### `last_swarm_critique`
 *31.08. 06:34 UTC · Quelle: critic*
