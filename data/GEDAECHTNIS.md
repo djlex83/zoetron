@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11308 Fakten** · Stand 2026-09-14 13:05 UTC · aktualisiert bei jedem Herzschlag
+**11303 Fakten** · Stand 2026-09-14 13:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7213
+- **dream:** 7208
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 948
 - **last_swarm_goal:** 683
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914131245:5:5ca65d`
+*14.09. 13:12 UTC · Quelle: dream*
+
+With system stress at maximum and limited budget, prioritizing models with proven reliability and caching responses will conserve resources.
+
+### `dream:20260914131245:4:9fada4`
+*14.09. 13:12 UTC · Quelle: dream*
+
+The failed reflex to reduce model errors shows that without a health monitor and automatic disabling, the system cannot adapt to failing models.
+
+### `dream:20260914131245:3:a6b49d`
+*14.09. 13:12 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free succeeded but with latency up to 61 seconds, so it should be used only when faster models are unavailable.
+
+### `dream:20260914131245:2:1b34c7`
+*14.09. 13:12 UTC · Quelle: dream*
+
+The nvidia model's timeout error suggests that network latency or server load can cause failures; a timeout threshold should trigger immediate fallback.
+
+### `dream:20260914131245:1:61435a`
+*14.09. 13:12 UTC · Quelle: dream*
+
+Free models frequently return HTTP 429 errors, indicating that request throttling and exponential backoff are necessary to avoid rate limits.
 
 ### `dream:20260914130240:5:6acca7`
 *14.09. 13:02 UTC · Quelle: dream*
@@ -41714,56 +41739,6 @@ Redundant skill proposals for identical resilience patterns (circuit breaker, pr
 *31.08. 13:16 UTC · Quelle: dream*
 
 Rate limiting (429) on specific models triggers cascading fallback latency spikes up to 147s, revealing that single-model dependency without proactive health checks creates unpredictable tail latency.
-
-### `dream:20260831130839:5:c0faed`
-*31.08. 13:08 UTC · Quelle: dream*
-
-Prune runs consistently remove zero facts or events, indicating either stale-data detection is too lenient or the system never accumulates truly expendable experience.
-
-### `dream:20260831130839:4:ba9b5f`
-*31.08. 13:08 UTC · Quelle: dream*
-
-Reflex-based execution completes tasks successfully and quickly (0.22s), suggesting that pre-built reflexes are more dependable than model-driven planning for known task types.
-
-### `dream:20260831130839:3:a90cae`
-*31.08. 13:08 UTC · Quelle: dream*
-
-The fallback model (nemotron-3-ultra) works reliably but at 86–147s latency, exposing a quality-vs-speed tradeoff that has no automated resolution strategy.
-
-### `dream:20260831130839:2:11276c`
-*31.08. 13:08 UTC · Quelle: dream*
-
-Skill proposals accumulate without being tested or promoted to real skills, creating a growing backlog of unvalidated ideas that never improve system resilience.
-
-### `dream:20260831130839:1:10d2ce`
-*31.08. 13:08 UTC · Quelle: dream*
-
-External LLM API rate limits (429) are a recurring, undetected failure mode that self-diagnosis misses because it only checks internal organ errors, not external dependency health.
-
-### `dream:20260831130234:5:5dedaf`
-*31.08. 13:02 UTC · Quelle: dream*
-
-Relative-path usage in I/O actions creates environment-dependent failures that an absolute-path contract at the hand-action boundary would eliminate.
-
-### `dream:20260831130234:4:d433ec`
-*31.08. 13:02 UTC · Quelle: dream*
-
-Latency on the working model varies 94–122 seconds, indicating no predictive routing or warm-connection pool to stabilize tail latency.
-
-### `dream:20260831130234:3:4910c5`
-*31.08. 13:02 UTC · Quelle: dream*
-
-Seventy-five skill proposals exist but the proposal-to-implementation loop lacks a test harness and deployment tracker, causing stagnation.
-
-### `dream:20260831130234:2:24f411`
-*31.08. 13:02 UTC · Quelle: dream*
-
-Self-diagnosis only checks internal organs and never probes external API health, so quota exhaustion goes undetected until runtime.
-
-### `dream:20260831130234:1:d6d35d`
-*31.08. 13:02 UTC · Quelle: dream*
-
-Repeated 429 errors on the same model endpoint reveal a missing circuit-breaker and automatic fallback mechanism.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

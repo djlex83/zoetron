@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 13:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 13:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- With system stress at maximum and limited budget, prioritizing models with proven reliability and caching responses will conserve resources.
+- The failed reflex to reduce model errors shows that without a health monitor and automatic disabling, the system cannot adapt to failing models.
+- dots-studio/dots-3-note-preview:free succeeded but with latency up to 61 seconds, so it should be used only when faster models are unavailable.
+- The nvidia model's timeout error suggests that network latency or server load can cause failures; a timeout threshold should trigger immediate fallbac
+- Free models frequently return HTTP 429 errors, indicating that request throttling and exponential backoff are necessary to avoid rate limits.
 - The drive goals highlight the need to stabilize models, refresh stale swarm data, and connect remote memories.
 - Pruning operations reduce the number of stored facts and events, helping to keep the knowledge base concise.
 - The system automatically blocks a model after three consecutive failures, which prevents further wasted calls.
@@ -51,11 +56,6 @@
 - Periodic pruning of facts and events maintains a lean and relevant knowledge base.
 - Timeouts on large models like nemotron underscore the need for a circuit breaker that falls back to faster models after a threshold.
 - Repeated 429 errors from free models reveal the necessity of an adaptive model router that detects rate limits and switches to alternatives.
-- Pruning old facts and events (10 facts, 17 events) kept the knowledge base concise and likely improved retrieval efficiency.
-- The automatic lockout of the nvidia model after three consecutive failures prevented further wasted attempts and is a valuable safeguard.
-- The Google Gemma models returned HTTP 429 Too Many Requests, revealing that the free tier has strict rate limits that must be respected.
-- The nvidia/nemotron-3-ultra-550b-a55b:free model repeatedly timed out, suggesting network latency or server-side issues that require a longer timeout 
-- The only model that completed requests without error in the recent session was dots-studio/dots-3-note-preview:free, indicating it is currently the mo
 
 ---
 
