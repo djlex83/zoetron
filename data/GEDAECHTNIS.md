@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11356 Fakten** · Stand 2026-09-14 06:22 UTC · aktualisiert bei jedem Herzschlag
+**11355 Fakten** · Stand 2026-09-14 06:32 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7288
 - **swarm_artifact:** 1635
@@ -10,9 +10,34 @@
 - **strategy:** 185
 - **tool:** 153
 - **hand_result:** 83
-- **aktuell_organfehler:** 24
+- **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914063005:5:e3c63a`
+*14.09. 06:30 UTC · Quelle: dream*
+
+Multiple skill proposals (fallback manager, sync, pipeline, gate, monitor) were generated but not instantiated, showing a proposal-to-execution gap.
+
+### `dream:20260914063005:4:df3256`
+*14.09. 06:30 UTC · Quelle: dream*
+
+Event pruning aggressively removes 17–20 events per cycle while facts persist, risking loss of temporal context needed for causal reasoning.
+
+### `dream:20260914063005:3:e1dbca`
+*14.09. 06:30 UTC · Quelle: dream*
+
+Swarm knowledge refresh only occurs via explicit reflex action, not automatically on staleness signals, causing periodic collective-intelligence gaps.
+
+### `dream:20260914063005:2:02a63c`
+*14.09. 06:30 UTC · Quelle: dream*
+
+The dots-studio fallback model succeeds but with high latency variance (14–25 s), indicating need for latency-aware routing and timeout budgets.
+
+### `dream:20260914063005:1:a2da81`
+*14.09. 06:30 UTC · Quelle: dream*
+
+Repeated 429 errors on primary models reveal missing circuit-breaker logic that should trigger immediate fallback instead of retrying exhausted endpoints.
 
 ### `dream:20260914061926:5:bdab5a`
 *14.09. 06:19 UTC · Quelle: dream*
@@ -42067,36 +42092,6 @@ score=7; issues=execute_task() nutzt eval()/exec() als Fallback - Sicherheits- u
 *31.08. 06:24 UTC · Quelle: system*
 
 Marktanalyse in Handeln umsetzen
-
-### `dream:20260831062412:5:36874b`
-*31.08. 06:24 UTC · Quelle: dream*
-
-Error type classification (quota vs. structural vs. retryable) is a prerequisite for any intelligent fallback chain, yet no middleware currently tags failures at request time.
-
-### `dream:20260831062412:4:18dd9f`
-*31.08. 06:24 UTC · Quelle: dream*
-
-The working model nvidia/nemotron-3-ultra-550b-a55b:free exhibits dangerous latency variance (9.5s–29.6s), threatening the 10s SLA even when it does not return 429 errors.
-
-### `dream:20260831062412:3:cdf35a`
-*31.08. 06:24 UTC · Quelle: dream*
-
-Stale goals (e.g., market analysis) accumulate across cycles without automated enforcement, indicating that staleness detection alone is insufficient without auto-escalation.
-
-### `dream:20260831062412:2:0a0934`
-*31.08. 06:24 UTC · Quelle: dream*
-
-A persistent proposal-to-implementation gap exists: skills are repeatedly suggested but rarely executed, making the gap itself the primary reliability bottleneck.
-
-### `dream:20260831062412:1:58d323`
-*31.08. 06:24 UTC · Quelle: dream*
-
-429 rate-limit errors recur every few seconds on z-ai/glm-5.2:free, proving that reactive retries without quota awareness guarantee repeated exhaustion.
-
-### `aktuell_organfehler`
-*31.08. 06:22 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 06:16:04-06:19:04 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*

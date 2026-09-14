@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 06:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 06:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,10 +29,10 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple skill proposals (fallback manager, sync, pipeline, gate, monitor) were generated but not instantiated, showing a proposal-to-execution gap.
+- Event pruning aggressively removes 17–20 events per cycle while facts persist, risking loss of temporal context needed for causal reasoning.
+- Swarm knowledge refresh only occurs via explicit reflex action, not automatically on staleness signals, causing periodic collective-intelligence gaps.
+- The dots-studio fallback model succeeds but with high latency variance (14–25 s), indicating need for latency-aware routing and timeout budgets.
+- Repeated 429 errors on primary models reveal missing circuit-breaker logic that should trigger immediate fallback instead of retrying exhausted endpoi
 - Self-diagnosis reports zero organ errors while model failures persist, showing monitoring blind spots for external API dependencies.
 - Existing skill proposals (circuit breaker, freshness checker, validator, convergence gate, path executor) form a coherent resilience stack but lack an
 - Automatic model blocking after 3 failures prevents cascade errors but leaves no automated unblocking or health-check retry.
@@ -51,11 +56,6 @@
 - Swarm knowledge staleness goes undetected until a drive goal fires; a freshness metric would trigger proactive sync instead of reactive repair.
 - Path resolution failures recur because scripts assume relative paths; anchoring to ZOETRON_DATA eliminates a whole class of hand-action errors.
 - Multiple LLM providers fail simultaneously under load (502/429), but a single reliable fallback (dots-studio) sustains throughput.
-- Stale swarm knowledge persists without automated freshness validation, leading to outdated collaborative context.
-- Swarm convergence declared after only two cycles with inconsistent metrics indicates missing stability gates.
-- Destructive subprocess tools block execution without human approval, necessitating pre-execution safety classification.
-- Hardcoded tool identifiers in artifacts cause critic rejection and require dynamic resolution via registry lookup.
-- Model provider failures (502/429) cascade into system-wide degradation unless isolated by circuit breakers with automatic fallback.
 
 ---
 
