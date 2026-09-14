@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 00:58:21",
+ "stand": "2026-09-14 01:09:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -97,6 +91,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 1,
+   "quote": 0.333
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
@@ -183,16 +183,16 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",

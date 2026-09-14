@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 00:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 01:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
@@ -37,10 +37,15 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
+- Veraltete Swarm-Daten aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 3 points reveals systematic prediction bias needing closed-loop correction.
+- Single-cycle swarm convergence with role specialization (planner/builder/critic) achieves reliable outcomes for scoped tasks.
+- Simulation gate with mandatory revisions (4 risks → 3 revisions) prevented defective artifact execution.
+- Latency variance across models (33-68s) exceeds typical timeout budgets, demanding adaptive time allocation per call.
+- Free-tier models exhibit systematic rate-limiting (429) and upstream failures (502) requiring health-aware routing with circuit breakers.
 - The automatic generation of the 'Modell-Fehler reduzieren' drive goal directly from model failure metrics demonstrates a successful feedback loop wher
 - Under a 'conserve' metabolic state with a strict task budget, the system should batch low-priority skill proposals and focus execution efforts on high
 - The simulation phase successfully flagged 4 risks and forced 3 revisions on the skill implementation plan, proving that offline simulation is a critic
@@ -51,11 +56,6 @@
 - Staleness detection exists only for facts/events, not for drive-goals, model endpoints, or reflex tools, leaving the system blind to its own decay.
 - Skill proposals accumulate faster than they are validated or deployed, creating a proposal–production gap that wastes the dreaming cycle's output.
 - Model reliability is the primary systemic bottleneck: 429 rate-limits and timeouts cascade into failed reflexes, stalled drive-goals, and wasted token
-- Circuit-breaker and dynamic-timeout skill proposals already exist in the log but were not yet instantiated as callable skills, creating a proposal-exe
-- Pruning removed 37 events and 11 facts in a single run while selbstdiagnose reported zero organ errors, showing aggressive garbage collection without 
-- Calibration loop predicted exactly 5 and actual was 5 (zero error) yet the system still triggered revision/simulation cycles, suggesting the calibrati
-- Evolutionary search with 3 variants and critic feedback lifted scores from 5/10 to 9/8/9 but swarm convergence still failed after 2 cycles, indicating
-- Provider reliability is bimodal: dots-studio/dots-3-note-preview consistently succeeds with high latency (16-88s) while nemotron-3-ultra and gemma mod
 
 ---
 

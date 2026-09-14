@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11347 Fakten** · Stand 2026-09-14 01:00 UTC · aktualisiert bei jedem Herzschlag
+**11347 Fakten** · Stand 2026-09-14 01:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7293
 - **swarm_artifact:** 1627
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914010818:5:372c99`
+*14.09. 01:08 UTC · Quelle: dream*
+
+Calibration error of 3 points reveals systematic prediction bias needing closed-loop correction.
+
+### `dream:20260914010818:4:a19143`
+*14.09. 01:08 UTC · Quelle: dream*
+
+Single-cycle swarm convergence with role specialization (planner/builder/critic) achieves reliable outcomes for scoped tasks.
+
+### `dream:20260914010818:3:04c395`
+*14.09. 01:08 UTC · Quelle: dream*
+
+Simulation gate with mandatory revisions (4 risks → 3 revisions) prevented defective artifact execution.
+
+### `dream:20260914010818:2:53751f`
+*14.09. 01:08 UTC · Quelle: dream*
+
+Latency variance across models (33-68s) exceeds typical timeout budgets, demanding adaptive time allocation per call.
+
+### `dream:20260914010818:1:4e0271`
+*14.09. 01:08 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic rate-limiting (429) and upstream failures (502) requiring health-aware routing with circuit breakers.
 
 ### `dream:20260914005749:5:dbc4b3`
 *14.09. 00:57 UTC · Quelle: dream*
@@ -42092,31 +42117,6 @@ Evolutionary improvement can rescue low-scoring tasks but convergence remains un
 *31.08. 01:08 UTC · Quelle: dream*
 
 Free-tier model rate limits cause cascading failures requiring robust fallback orchestration.
-
-### `dream:20260831010258:5:4bc877`
-*31.08. 01:02 UTC · Quelle: dream*
-
-Repeated 429 errors on the same model within 60 s indicate no client-side retry/backoff logic is active.
-
-### `dream:20260831010258:4:c2a6b8`
-*31.08. 01:02 UTC · Quelle: dream*
-
-Hand actions complete in <0.5 s with zero errors, confirming local tooling is reliable for fast feedback loops.
-
-### `dream:20260831010258:3:d0dfab`
-*31.08. 01:02 UTC · Quelle: dream*
-
-Goal 'Veraltete Ziele erneuern' shows iterative progress: simulation approved, artifact running (201 lines Python), TOR green, but calibration error of +1 and evolution score only 4/10 indicate incomplete convergence.
-
-### `dream:20260831010258:2:1120a1`
-*31.08. 01:02 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but exhibits high latency variance (66–114 s), requiring async invocation with generous timeouts.
-
-### `dream:20260831010258:1:e35b1f`
-*31.08. 01:02 UTC · Quelle: dream*
-
-The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without exponential backoff or quota management.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*
