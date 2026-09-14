@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 04:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 04:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,10 +26,10 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- File operations implicitly assume correct paths; a Path Resolver Wrapper would eliminate a class of silent read/write failures by validating against Z
+- Latency variance (15–40 s) exceeds predictable budgets and risks cascade timeouts in multi-step reasoning; a budget allocator would enforce hard limit
+- Swarm knowledge decays into stale signals despite regular pruning; a time-driven refresh decoupled from failure signals is missing.
+- Skill proposals accumulate in the log but lack an automated promotion pipeline; the Atomic Skill Compiler proposal directly closes this implementation
+- Model errors repeatedly trigger reflex-driven mitigation that converges locally but the root cause (provider instability across Nemotron, Dots, Gemma)
 - File path errors occur when scripts assume relative paths; using an absolute path executor that resolves via ZOETRON_DATA environment variable prevent
 - Hand actions often succeed on first try, but complex goals may require multiple convergence cycles; enforcing three stable cycles before accepting com
 - Generated skill proposals are rarely implemented, leaving potential improvements unused; a dedicated pipeline with priority queue and automated testin
@@ -51,11 +56,6 @@
 - Simulation utility remains low (5 starts, 2 applies) because outcomes aren't automatically fed back into goal execution.
 - Swarm knowledge staleness recurs because freshness checks are manual, not threshold-triggered automatic syncs.
 - Model endpoint failures (502/429) cascade into decision unreliability because no fallback routing or health monitoring exists.
-- The converged reflex loop for updating swarm knowledge and testing proposed skills demonstrates the effectiveness of automated knowledge management.
-- Simulations are started but rarely applied, indicating a critical gap in the skill testing and deployment pipeline.
-- Model endpoints may return a 200 status with no choices, mandating response validation and immediate fallback.
-- Swarm knowledge staleness requires automated refresh triggers based on age and performance signals to maintain relevance.
-- The model error rate of 36/87 reveals that current model routing and tooling cannot ensure reliable outputs.
 
 ---
 

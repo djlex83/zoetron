@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11340 Fakten** · Stand 2026-09-14 04:18 UTC · aktualisiert bei jedem Herzschlag
+**11340 Fakten** · Stand 2026-09-14 04:28 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7278
 - **swarm_artifact:** 1629
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 29
 
 ---
+
+### `dream:20260914042604:5:b7d3fe`
+*14.09. 04:26 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260914042604:4:86be70`
+*14.09. 04:26 UTC · Quelle: dream*
+
+Latency variance (15–40 s) exceeds predictable budgets and risks cascade timeouts in multi-step reasoning; a budget allocator would enforce hard limits.
+
+### `dream:20260914042604:3:7647f0`
+*14.09. 04:26 UTC · Quelle: dream*
+
+Swarm knowledge decays into stale signals despite regular pruning; a time-driven refresh decoupled from failure signals is missing.
+
+### `dream:20260914042604:2:c04ca0`
+*14.09. 04:26 UTC · Quelle: dream*
+
+Skill proposals accumulate in the log but lack an automated promotion pipeline; the Atomic Skill Compiler proposal directly closes this implementation gap.
+
+### `dream:20260914042604:1:0f117a`
+*14.09. 04:26 UTC · Quelle: dream*
+
+Model errors repeatedly trigger reflex-driven mitigation that converges locally but the root cause (provider instability across Nemotron, Dots, Gemma) persists across sleep cycles.
 
 ### `dream:20260914041533:5:674ad0`
 *14.09. 04:15 UTC · Quelle: dream*
@@ -42027,31 +42052,6 @@ Model failover to nvidia/nemotron-3-ultra-550b consistently succeeds but with hi
 *31.08. 04:27 UTC · Quelle: dream*
 
 Repeated 429 errors on z-ai/glm-5.2:free indicate account-level rate limit exhaustion rather than model-specific issues, requiring shared quota management across all models.
-
-### `dream:20260831042025:5:b55167`
-*31.08. 04:20 UTC · Quelle: dream*
-
-Latency variance (8.4s to 54.9s) on the same model indicates unstable performance under load, requiring SLA-based circuit breaking.
-
-### `dream:20260831042025:4:68b144`
-*31.08. 04:20 UTC · Quelle: dream*
-
-Drive goals with 'failure' and 'stale' signals persist across cycles, revealing systemic gaps in error recovery and task completion pipelines.
-
-### `dream:20260831042025:3:07cf5f`
-*31.08. 04:20 UTC · Quelle: dream*
-
-Reflex-mode execution consistently converges when tools are pre-validated, suggesting automation reliability depends on upstream error handling.
-
-### `dream:20260831042025:2:5b32fb`
-*31.08. 04:20 UTC · Quelle: dream*
-
-Successful convergence correlates with fallback to nvidia/nemotron-3-ultra-550b-a55b:free, which handles 3x more tokens with acceptable latency.
-
-### `dream:20260831042025:1:7a7069`
-*31.08. 04:20 UTC · Quelle: dream*
-
-Model failures cluster on specific endpoints (z-ai/glm-5.2:free) with 429 errors, indicating rate-limit exhaustion rather than capability gaps.
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*
