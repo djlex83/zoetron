@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 00:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 00:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,11 +26,11 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The automatic generation of the 'Modell-Fehler reduzieren' drive goal directly from model failure metrics demonstrates a successful feedback loop wher
+- Under a 'conserve' metabolic state with a strict task budget, the system should batch low-priority skill proposals and focus execution efforts on high
+- The simulation phase successfully flagged 4 risks and forced 3 revisions on the skill implementation plan, proving that offline simulation is a critic
+- The failure of the skill conversion reflex due to relative path resolution errors ('nichts gelesen') highlights that script implementations must stric
+- The frequent 429 rate-limit and timeout errors on free Gemma and Nemotron models indicate a lack of adaptive model selection, which can be mitigated b
 - No closed-loop calibration exists between predicted task scores and actual outcomes, so planning error compounds silently across cycles.
 - Pruning runs are reactive and coarse-grained (fixed counts), missing the opportunity to prune by semantic relevance or drive-goal alignment.
 - Staleness detection exists only for facts/events, not for drive-goals, model endpoints, or reflex tools, leaving the system blind to its own decay.
@@ -51,11 +56,6 @@
 - Calibration loop predicted exactly 5 and actual was 5 (zero error) yet the system still triggered revision/simulation cycles, suggesting the calibrati
 - Evolutionary search with 3 variants and critic feedback lifted scores from 5/10 to 9/8/9 but swarm convergence still failed after 2 cycles, indicating
 - Provider reliability is bimodal: dots-studio/dots-3-note-preview consistently succeeds with high latency (16-88s) while nemotron-3-ultra and gemma mod
-- Model latency varies wildly (10s–192s) even for the same model, requiring timeout budgets and async handling to avoid pipeline stalls.
-- Critic output parsing failures ('unparseable') indicate a need for structured output enforcement or robust parsing fallback logic.
-- Evolutionary optimization with 3 variants improved critic scores from 5/10 to 9/8/9, demonstrating that iterative refinement outperforms single-pass g
-- Simulation-based pre-execution review caught 5 risks and triggered 2 revisions, preventing downstream failures in the generated artifact.
-- Primary models (Nemotron, Gemma) fail frequently with 502/429 errors, making fallback to slower but reliable models (dots-studio) essential for task c
 
 ---
 

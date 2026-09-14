@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8000 Neuronen · 831175 bewertete Synapsen
+Stand: 7999 Neuronen · 830349 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,18 +10,18 @@ Stand: 8000 Neuronen · 831175 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1012 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1012 | 0.23 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1011 | 0.24 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1011 | 0.23 |
 | 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 894 | 0.23 |
 | 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 897 | 0.22 |
-| 5 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 785 | 0.25 |
-| 6 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 828 | 0.23 |
-| 7 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 804 | 0.24 |
+| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 828 | 0.23 |
+| 6 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 782 | 0.25 |
+| 7 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 803 | 0.24 |
 | 8 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 812 | 0.24 |
-| 9 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 797 | 0.24 |
-| 10 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 817 | 0.23 |
+| 9 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 817 | 0.23 |
+| 10 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 796 | 0.24 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 829 | 0.23 |
-| 12 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 749 | 0.25 |
+| 12 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 748 | 0.25 |
 | 13 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 721 | 0.26 |
 | 14 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 830 | 0.22 |
 | 15 | 💭 | Model failures cascade from primary providers (502, 429, 99s lat… | 815 | 0.23 |

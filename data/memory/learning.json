@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 00:48:23",
+ "stand": "2026-09-14 00:58:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -195,15 +195,15 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
   },
   {
-   "tool": "fähigkeits-vorschläge-verbessern.py",
-   "laeufe": 1,
-   "erfolge": 1,
+   "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -310,12 +310,6 @@
   },
   {
    "tool": "simulationen-gezielt-einsetzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

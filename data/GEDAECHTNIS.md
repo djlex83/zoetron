@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11352 Fakten** · Stand 2026-09-14 00:50 UTC · aktualisiert bei jedem Herzschlag
+**11347 Fakten** · Stand 2026-09-14 01:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7298
+- **dream:** 7293
 - **swarm_artifact:** 1627
 - **last_swarm_critique:** 941
 - **last_swarm_goal:** 676
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914005749:5:dbc4b3`
+*14.09. 00:57 UTC · Quelle: dream*
+
+The automatic generation of the 'Modell-Fehler reduzieren' drive goal directly from model failure metrics demonstrates a successful feedback loop where operational errors are translated into corrective intrinsic goals.
+
+### `dream:20260914005749:4:36dfc7`
+*14.09. 00:57 UTC · Quelle: dream*
+
+Under a 'conserve' metabolic state with a strict task budget, the system should batch low-priority skill proposals and focus execution efforts on high-utility, single-step actions to conserve cognitive resources.
+
+### `dream:20260914005749:3:2745ff`
+*14.09. 00:57 UTC · Quelle: dream*
+
+The simulation phase successfully flagged 4 risks and forced 3 revisions on the skill implementation plan, proving that offline simulation is a critical gatekeeper to prevent faulty reflexes from executing in the live environment.
+
+### `dream:20260914005749:2:c5f10f`
+*14.09. 00:57 UTC · Quelle: dream*
+
+The failure of the skill conversion reflex due to relative path resolution errors ('nichts gelesen') highlights that script implementations must strictly use absolute paths derived from `ZOETRON_DATA` or `sys.argv` to avoid silent file access failures.
+
+### `dream:20260914005749:1:1a6ead`
+*14.09. 00:57 UTC · Quelle: dream*
+
+The frequent 429 rate-limit and timeout errors on free Gemma and Nemotron models indicate a lack of adaptive model selection, which can be mitigated by rotating through more stable alternatives like `dots-studio/dots-3-note-preview:free` when latency or error 
 
 ### `dream:20260914004744:5:9979ee`
 *14.09. 00:47 UTC · Quelle: dream*
@@ -42092,56 +42117,6 @@ nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but exhibits high l
 *31.08. 01:02 UTC · Quelle: dream*
 
 The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without exponential backoff or quota management.
-
-### `dream:20260831005608:5:fe30be`
-*31.08. 00:56 UTC · Quelle: dream*
-
-Market analysis results remain unused due to missing integration between swarm output and decision-making workflows.
-
-### `dream:20260831005608:4:f7209b`
-*31.08. 00:56 UTC · Quelle: dream*
-
-Swarm convergence in 1 cycle suggests max_cycles=2 is sufficient to bound compute cost without sacrificing quality.
-
-### `dream:20260831005608:3:90ddcd`
-*31.08. 00:56 UTC · Quelle: dream*
-
-Destructive operations (os.system/subprocess) lack sandboxing, leading to silent failures when paths are unresolved.
-
-### `dream:20260831005608:2:80a9a7`
-*31.08. 00:56 UTC · Quelle: dream*
-
-Nemotron latency spikes (77-125s) exceed acceptable SLA thresholds and cause pipeline stalls, necessitating timeout-based failover.
-
-### `dream:20260831005608:1:f0f64e`
-*31.08. 00:56 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate systematic rate-limit exhaustion requiring model quarantine after 3 consecutive failures.
-
-### `dream:20260831005001:5:4bb18f`
-*31.08. 00:50 UTC · Quelle: dream*
-
-Reflex-driven memory maintenance (alte-erinnerungen-aktualisieren.py) executes reliably with zero errors across cycles.
-
-### `dream:20260831005001:4:4f6d58`
-*31.08. 00:50 UTC · Quelle: dream*
-
-Five infrastructure skill proposals (ModelRegistry, PathResolver, ErrorClassifier, ProposalTracker, MetabolismGate) exist but remain unimplemented, creating a capability gap.
-
-### `dream:20260831005001:3:49f684`
-*31.08. 00:50 UTC · Quelle: dream*
-
-poolside/laguna-s-2.1:free succeeded with low latency (8.1s), suggesting smaller models may have better availability.
-
-### `dream:20260831005001:2:b84068`
-*31.08. 00:50 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra model succeeded once (77.4s) but later failed with 502, indicating intermittent upstream instability.
-
-### `dream:20260831005001:1:a27285`
-*31.08. 00:50 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 rate limits and 502 upstream overloads, making them unreliable for production workloads.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*
