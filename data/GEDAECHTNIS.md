@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11271 Fakten** · Stand 2026-09-14 18:57 UTC · aktualisiert bei jedem Herzschlag
+**11276 Fakten** · Stand 2026-09-14 19:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7168
+- **dream:** 7173
 - **swarm_artifact:** 1643
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 21
 
 ---
+
+### `dream:20260914190536:5:f55c1c`
+*14.09. 19:05 UTC · Quelle: dream*
+
+Simulation approved goal with 3 risks but 0 revisions, indicating risk assessment may not gate execution under resource pressure.
+
+### `dream:20260914190536:4:2f8186`
+*14.09. 19:05 UTC · Quelle: dream*
+
+High stress (1.0) + conserve state reduces operational capacity to 3 tasks/1 iteration, eliminating retry headroom for flaky models.
+
+### `dream:20260914190536:3:3b07f2`
+*14.09. 19:05 UTC · Quelle: dream*
+
+Single reliable model (dots-studio) shows 15x latency variance (5s-74s), violating latency SLAs for time-bounded operations.
+
+### `dream:20260914190536:2:d30a1e`
+*14.09. 19:05 UTC · Quelle: dream*
+
+Automatic model locking after 3 consecutive failures (1800s) creates recovery latency that exceeds task budgets under conserve mode (max_iterations=1).
+
+### `dream:20260914190536:1:c1dd47`
+*14.09. 19:05 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic unreliability: Nemotron fails via timeout cascades, Gemma models fail via 429 rate limits, making them unsuitable for critical-path tasks without fallback chains.
 
 ### `dream:20260914185455:5:f7e764`
 *14.09. 18:54 UTC · Quelle: dream*

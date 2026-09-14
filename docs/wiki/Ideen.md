@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 18:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 19:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
@@ -31,16 +31,21 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
-- Ferne Träume kombinieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Träume verbinden *(wieder aufgegriffen: 3×)*
 - Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation approved goal with 3 risks but 0 revisions, indicating risk assessment may not gate execution under resource pressure.
+- High stress (1.0) + conserve state reduces operational capacity to 3 tasks/1 iteration, eliminating retry headroom for flaky models.
+- Single reliable model (dots-studio) shows 15x latency variance (5s-74s), violating latency SLAs for time-bounded operations.
+- Automatic model locking after 3 consecutive failures (1800s) creates recovery latency that exceeds task budgets under conserve mode (max_iterations=1)
+- Free-tier models exhibit systematic unreliability: Nemotron fails via timeout cascades, Gemma models fail via 429 rate limits, making them unsuitable 
 - Inconsistent error handling between successful collaboration-knowledge update and failed swarm-goal update points to a need for unified reflex wrapper
 - Metabolism is in conserve mode with a tight budget, so tasks should be prioritized by the frequency of failure signals.
 - The dream consolidation timed out after 180 seconds, suggesting the process must be scoped to recent events or use a faster model.
@@ -51,11 +56,6 @@
 - Regular pruning of facts and events is critical to prevent memory bloat and maintain system efficiency.
 - Dream consolidation can timeout, indicating a need for better process monitoring and timeout handling.
 - Model endpoints frequently fail due to overload or rate-limiting, requiring robust fallback mechanisms.
-- Memory pruning removed 21 facts and 62 events, suggesting active consolidation but potential loss of context needed for convergence.
-- The 'vorgeschlagene-fähigkeiten-integrieren' tool was blocked because destructive subprocess operations require human approval that was not obtained.
-- Evolution generated variants scoring 8/10 but the overall swarm goal remained at 5/10 without convergence in 2 cycles.
-- Calibration overpredicted by 2 points (7 vs 5), indicating systematic overconfidence in self-assessment.
-- Free-tier gemma models consistently fail with HTTP 429 rate-limit errors, making dots-studio the only viable free option despite 20–60s latency.
 
 ---
 

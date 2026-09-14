@@ -50018,3 +50018,20 @@
 {"ts": 1788806890.427924, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.09, "gelesen": 63}}
 {"ts": 1788806890.4300406, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten und Träume besser verbinden", "tool": "gelernte-fähigkeiten-besser-verknüpfen.py", "ok": true}}
 {"ts": 1788806890.8690574, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten und Träume besser verbinden", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788807397.9179807, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788807466.2841454, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788807467.8946335, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788807504.156161, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 32.7, "tokens_ein": 1403, "tokens_aus": 1653}}
+{"ts": 1788807504.1567922, "kind": "skill_proposal", "payload": {"proposal": "Deploy a model router that defaults to inclusionai/ling-3.0-flash-fin:free, falls back to nemotron only when token budget >8000, and permanently blacklists any model after its first 429 response."}}
+{"ts": 1788807504.1568544, "kind": "skill_proposal", "payload": {"proposal": "Enforce a universal convergence gate: every act_done (including reflex) must have score≥8 and score_delta<0.5 over last 3 cycles, else auto-extend critic cycles."}}
+{"ts": 1788807504.1569152, "kind": "skill_proposal", "payload": {"proposal": "Build a skill-validation pipeline that clones each proposal, runs it in a sandbox with static import analysis, and promotes only those passing integration tests to the active registry."}}
+{"ts": 1788807504.1569698, "kind": "skill_proposal", "payload": {"proposal": "Implement per-provider circuit breakers tracking p50/p95 latency, 5xx/429 rates, with automatic failover within a 10-second latency budget."}}
+{"ts": 1788807504.1570232, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-commit hook that statically validates every tool for file writes, return values, or state mutations, rejecting any that lack all three."}}
+{"ts": 1788807504.1570785, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788807535.3420374, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 29.2, "tokens_ein": 499, "tokens_aus": 461}}
+{"ts": 1788807535.3422208, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell scheitert fast so oft wie es gelingt. Weniger Fehler machen das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1788807535.3423574, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Die letzten Schwarm-Ergebnisse sind veraltet. Frisches Wissen verhindert falsche Entscheidungen.", "signal": "stale"}}
+{"ts": 1788807535.3424447, "kind": "drive_goal", "payload": {"title": "Fähigkeiten aus Träumen nutzen", "why": "Viele Träume und Vorschläge liegen brach. Sie in echte Fähigkeiten zu verwandeln erweitert das Können.", "signal": "combination"}}
+{"ts": 1788807538.2872791, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.72, "gelesen": 2}}
+{"ts": 1788807538.2899053, "kind": "reflex_used", "payload": {"goal": "Schwarm-Lernen wieder aktivieren", "tool": "schwarmwissen-wieder-auffrischen.py", "ok": true}}
+{"ts": 1788807538.7117984, "kind": "act_done", "payload": {"goal_title": "Schwarm-Lernen wieder aktivieren", "score": null, "converged": true, "mode": "reflex"}}
