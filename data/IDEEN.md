@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 18:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 18:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The gap between simulation and action remains a persistent challenge requiring deliberate strategies to apply simulated outcomes.
+- Reflexes that update knowledge (e.g., refreshing outdated information) are effective and should be triggered by staleness signals.
+- Regular pruning of facts and events is critical to prevent memory bloat and maintain system efficiency.
+- Dream consolidation can timeout, indicating a need for better process monitoring and timeout handling.
+- Model endpoints frequently fail due to overload or rate-limiting, requiring robust fallback mechanisms.
 - Memory pruning removed 21 facts and 62 events, suggesting active consolidation but potential loss of context needed for convergence.
 - The 'vorgeschlagene-fähigkeiten-integrieren' tool was blocked because destructive subprocess operations require human approval that was not obtained.
 - Evolution generated variants scoring 8/10 but the overall swarm goal remained at 5/10 without convergence in 2 cycles.
@@ -51,11 +56,6 @@
 - Critic agents producing unparseable output breaks the evolution loop and prevents quality improvement.
 - The dots-studio/dots-3-note-preview:free model is the only consistently available model but exhibits high latency variance (12-50s).
 - Google Gemma models on OpenRouter free tier consistently hit 429 rate limits, making them unreliable for production workloads.
-- Successful execution of reflex actions and self-diagnosis with zero organ errors indicates robust internal monitoring that should be extended to model
-- Drive goals focusing on model reliability, stale data refresh, and organ error resolution reveal cross-cutting priorities for improving system resilie
-- The system pruned 26 facts and 60 events in one cycle, showing effective memory consolidation but also the need for adaptive pruning thresholds to avo
-- Timeouts on large models like nvidia/nemotron-3-ultra-550b-a55b demonstrate the need for latency-aware model selection and timeout handling.
-- Repeated 429 Too Many Requests errors on free-tier models indicate a rate-limit vulnerability that requires automatic fallback to alternative models.
 
 ---
 

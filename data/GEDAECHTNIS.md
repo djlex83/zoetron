@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11265 Fakten** · Stand 2026-09-14 18:36 UTC · aktualisiert bei jedem Herzschlag
+**11266 Fakten** · Stand 2026-09-14 18:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7158
+- **dream:** 7163
 - **swarm_artifact:** 1643
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
-- **anti_pattern:** 375
-- **strategy:** 190
-- **tool:** 153
+- **anti_pattern:** 373
+- **strategy:** 189
+- **tool:** 152
 - **hand_result:** 82
 - **aktuell_organfehler:** 21
 
 ---
+
+### `dream:20260914184329:5:9d21f2`
+*14.09. 18:43 UTC · Quelle: dream*
+
+The gap between simulation and action remains a persistent challenge requiring deliberate strategies to apply simulated outcomes.
+
+### `dream:20260914184329:4:85af42`
+*14.09. 18:43 UTC · Quelle: dream*
+
+Reflexes that update knowledge (e.g., refreshing outdated information) are effective and should be triggered by staleness signals.
+
+### `dream:20260914184329:3:4a100c`
+*14.09. 18:43 UTC · Quelle: dream*
+
+Regular pruning of facts and events is critical to prevent memory bloat and maintain system efficiency.
+
+### `dream:20260914184329:2:0570e4`
+*14.09. 18:43 UTC · Quelle: dream*
+
+Dream consolidation can timeout, indicating a need for better process monitoring and timeout handling.
+
+### `dream:20260914184329:1:129fee`
+*14.09. 18:43 UTC · Quelle: dream*
+
+Model endpoints frequently fail due to overload or rate-limiting, requiring robust fallback mechanisms.
 
 ### `dream:20260914183323:5:089c21`
 *14.09. 18:33 UTC · Quelle: dream*
@@ -41479,21 +41504,6 @@ The previously proposed resilience patterns (parallel probes, response caching, 
 *31.08. 19:06 UTC · Quelle: dream*
 
 Free-tier models consistently hit 429 quota limits under sustained load, making them unreliable as primary providers without a resilience layer.
-
-### `tool:modellfehler-verstehen-und-vermeiden`
-*31.08. 18:33 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler verstehen und vermeiden'. Datei: data/tools/modellfehler-verstehen-und-vermeiden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler verstehen u:2`
-*31.08. 18:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [5, 4, 7]): Capability-basiertes Sandboxing mit Bytecode-Interpretation - Falls Code-Ausführung unvermeidbar ist, implementiere einen eigenen eingeschränkten Bytecode-Interpreter statt exec(). Parse den Code in CPython-Bytecode, 
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler verstehen u:1`
-*31.08. 18:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): Semantische Fehlerklassifikation mit Embeddings (ML-basierter Ansatz) - Ersetze die naive Keyword-basierte classify_error() durch ein Sentence-Transformer-Embedding-Modell. Trainiere oder lade ein vortrainiertes Model
 
 ### `last_swarm_critique`
 *31.08. 18:32 UTC · Quelle: critic*
