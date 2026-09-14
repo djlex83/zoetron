@@ -48728,3 +48728,25 @@
 {"ts": 1788773263.7676475, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.45, "gelesen": 67}}
 {"ts": 1788773263.7699468, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Ergebnisse wiederbeleben", "tool": "alte-schwarm-ergebnisse-aufräumen.py", "ok": true}}
 {"ts": 1788773264.2205255, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Ergebnisse wiederbeleben", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788169316.9033363, "key": "dream:20260831094156:1:7a92c1", "value": "Free-tier models consistently fail with 429 rate limits, making them unreliable as primary workers without a routing layer.", "source": "dream"}
+{"ts": 1788169316.9034235, "key": "dream:20260831094156:2:05b065", "value": "Local hand actions (file ops, scripts) succeed deterministically where model calls fail stochastically.", "source": "dream"}
+{"ts": 1788169316.9034925, "key": "dream:20260831094156:3:57bd91", "value": "Fixed calibration offsets drift; online bias estimators updated per task family from prediction residuals maintain accuracy.", "source": "dream"}
+{"ts": 1788169316.903555, "key": "dream:20260831094156:4:45c2b2", "value": "Swarm decomposition decisions lack evidence; a benchmark harness measuring API calls, latency, and error rate before/after decomposition is missing.", "source": "dream"}
+{"ts": 1788169316.9036207, "key": "dream:20260831094156:5:61514c", "value": "Reflexes reliably handle routine maintenance (fact updates, pruning) without model involvement, reducing failure surface.", "source": "dream"}
+{"ts": 1788773764.5452187, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788773833.1015697, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788773835.0203698, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 41}}
+{"ts": 1788773963.3586378, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 124.9, "tokens_ein": 1484, "tokens_aus": 1429}}
+{"ts": 1788773963.3592675, "kind": "skill_proposal", "payload": {"proposal": "MetricSchemaLock: enforce critic output JSON schema with versioned keys, auto-reject evaluations with unknown fields, and migrate legacy keys on schema bump."}}
+{"ts": 1788773963.3593247, "kind": "skill_proposal", "payload": {"proposal": "ModelCostLatencyPareto: track (latency, tokens, success-rate) per model per task-type, route requests to Pareto-optimal frontier, and log routing decisions for audit."}}
+{"ts": 1788773963.3593786, "kind": "skill_proposal", "payload": {"proposal": "SwarmConvergenceDetector: monitor score delta and role entropy across cycles; if delta < 0.5 for 3 cycles, auto-inject diversity via new planner prompt or external critic."}}
+{"ts": 1788773963.3594432, "kind": "skill_proposal", "payload": {"proposal": "SkillGraduationGate: require smoke-test pass + latency budget + error-rate < 5% over 10 runs before promoting skill_proposal to registered tool, with auto-rollback on regression."}}
+{"ts": 1788773963.3595002, "kind": "skill_proposal", "payload": {"proposal": "DriveGoalDeduplicator: embed semantic hash of goal title+why; suppress new drive_goal if cosine similarity > 0.85 to existing open/active goal, merging signals instead."}}
+{"ts": 1788773963.3595543, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788774005.081164, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 38.1, "tokens_ein": 507, "tokens_aus": 906}}
+{"ts": 1788774005.0813708, "kind": "drive_goal", "payload": {"title": "Modellfehler deutlich reduzieren", "why": "Zu viele Modelle scheitern, das bremst das System aus.", "signal": "failure"}}
+{"ts": 1788774005.081461, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Alte Schwarm-Daten sind veraltet und führen zu Fehlentscheidungen.", "signal": "stale"}}
+{"ts": 1788774005.0815268, "kind": "drive_goal", "payload": {"title": "Mehr Simulationen zum Lernen nutzen", "why": "Wenige Simulationen bedeuten wenig neues Wissen für bessere Entscheidungen.", "signal": "gap"}}
+{"ts": 1788774008.1500623, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.71, "gelesen": 2}}
+{"ts": 1788774008.1528673, "kind": "reflex_used", "payload": {"goal": "Schwarm-Informationen wieder auffrischen", "tool": "schwarmwissen-wieder-auffrischen.py", "ok": true}}
+{"ts": 1788774008.641867, "kind": "act_done", "payload": {"goal_title": "Schwarm-Informationen wieder auffrischen", "score": null, "converged": true, "mode": "reflex"}}

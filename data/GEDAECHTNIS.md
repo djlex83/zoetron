@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-14 09:39 UTC · aktualisiert bei jedem Herzschlag
+**11371 Fakten** · Stand 2026-09-14 09:58 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7288
-- **swarm_artifact:** 1633
-- **last_swarm_critique:** 946
-- **last_swarm_goal:** 681
-- **anti_pattern:** 367
-- **strategy:** 186
-- **tool:** 152
+- **swarm_artifact:** 1639
+- **last_swarm_critique:** 947
+- **last_swarm_goal:** 682
+- **anti_pattern:** 369
+- **strategy:** 187
+- **tool:** 153
 - **hand_result:** 83
 - **aktuell_organfehler:** 23
 
 ---
+
+### `tool:fähigkeiten-ideen-in-taten-umsetzen`
+*14.09. 09:56 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten-Ideen in Taten umsetzen'. Datei: data/tools/fähigkeiten-ideen-in-taten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeiten-Ideen in Tat:2`
+*14.09. 09:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Reinforcement learning agent for idea-to-action mapping - Train an RL agent that maps the current idea set and toolset to a sequence of actions; reward successful execution and impact, allowing the agent to learn optimal tran
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeiten-Ideen in Tat:1`
+*14.09. 09:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Workflow orchestration with dynamic task graphs - Model each idea as a node in a DAG; use an orchestration engine to schedule code generation, API calls, or human tasks based on inferred dependencies, executing them in order.
+
+### `last_swarm_critique`
+*14.09. 09:53 UTC · Quelle: critic*
+
+score=4; issues=The scripts collect and filter ideas but do not turn them into actions (e.g., by generating or executing code).; There is no integration of the scripts: each reads independently from the 'ideen' organ, no pipeline.; The filtering is simple (key
+
+### `last_swarm_goal`
+*14.09. 09:48 UTC · Quelle: system*
+
+Fähigkeiten-Ideen in Taten umsetzen
+
+### `dream:20260914094707:5:b207f3`
+*14.09. 09:47 UTC · Quelle: dream*
+
+Pruning 6 facts and 16 events per cycle keeps the knowledge base lean, reducing noise for future reasoning.
+
+### `dream:20260914094707:4:e26914`
+*14.09. 09:47 UTC · Quelle: dream*
+
+Skill proposals from dreams target concrete gaps (routing, caching, instrumentation), confirming they are directly actionable.
+
+### `dream:20260914094707:3:de79fd`
+*14.09. 09:47 UTC · Quelle: dream*
+
+Reflex-driven swarm goal updates converge in a single iteration, showing that automated reflexes can resolve staleness efficiently.
+
+### `dream:20260914094707:2:93b4e1`
+*14.09. 09:47 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model consistently succeeds with ~30s latency, making it the preferred primary model.
+
+### `dream:20260914094707:1:340d3c`
+*14.09. 09:47 UTC · Quelle: dream*
+
+Repeated 429 errors from gemma models indicate rate limiting, requiring a router with exponential backoff and fallback.
 
 ### `dream:20260914093710:5:2b7b7a`
 *14.09. 09:37 UTC · Quelle: dream*
@@ -42062,31 +42112,6 @@ High latency of fallback models (18-27s) creates a reliability-speed tradeoff th
 *31.08. 09:47 UTC · Quelle: dream*
 
 Rate limiting (429 errors) on specific models is the dominant failure mode, causing repeated fallback to slower but reliable models.
-
-### `dream:20260831094156:5:61514c`
-*31.08. 09:41 UTC · Quelle: dream*
-
-Reflexes reliably handle routine maintenance (fact updates, pruning) without model involvement, reducing failure surface.
-
-### `dream:20260831094156:4:45c2b2`
-*31.08. 09:41 UTC · Quelle: dream*
-
-Swarm decomposition decisions lack evidence; a benchmark harness measuring API calls, latency, and error rate before/after decomposition is missing.
-
-### `dream:20260831094156:3:57bd91`
-*31.08. 09:41 UTC · Quelle: dream*
-
-Fixed calibration offsets drift; online bias estimators updated per task family from prediction residuals maintain accuracy.
-
-### `dream:20260831094156:2:05b065`
-*31.08. 09:41 UTC · Quelle: dream*
-
-Local hand actions (file ops, scripts) succeed deterministically where model calls fail stochastically.
-
-### `dream:20260831094156:1:7a92c1`
-*31.08. 09:41 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 rate limits, making them unreliable as primary workers without a routing layer.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 09:37:52",
+ "stand": "2026-09-14 09:56:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "ferne-traumverbindungen-neu-erkunden.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -66,12 +60,6 @@
    "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -112,6 +100,12 @@
   },
   {
    "tool": "träume-analysieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "ferne-traumverbindungen-neu-erkunden.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -163,6 +157,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "veraltete-marktanalyse-auffrischen.py",
@@ -385,19 +385,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-in-taten-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.813,
- "simulationen_angewandt": 22,
+ "haende_quote": 0.808,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 27,
   "best": 9.0,
-  "schnitt": 5.81
+  "schnitt": 5.63
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 25,
-   "schnitt": 5.76
+   "n": 26,
+   "schnitt": 5.69
   },
   "bau": {
    "n": 1,

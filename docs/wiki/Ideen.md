@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 09:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 09:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 16×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 17×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Modellfehler beheben *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
+- Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 - Entfernte Erinnerungen verbinden *(wieder aufgegriffen: 3×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
-- Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 6 facts and 16 events per cycle keeps the knowledge base lean, reducing noise for future reasoning.
+- Skill proposals from dreams target concrete gaps (routing, caching, instrumentation), confirming they are directly actionable.
+- Reflex-driven swarm goal updates converge in a single iteration, showing that automated reflexes can resolve staleness efficiently.
+- The dots-studio/dots-3-note-preview:free model consistently succeeds with ~30s latency, making it the preferred primary model.
+- Repeated 429 errors from gemma models indicate rate limiting, requiring a router with exponential backoff and fallback.
 - Reflex actions that bind tools to goals succeed when the tool exists and the goal is well‑defined, but they are not automatically retried on failure.
 - Pruning removed 12 events but zero facts, suggesting event cleanup is safe but fact retention requires verification.
 - The model dots-studio/dots-3-note-preview:free consistently shows lower latency and higher token throughput, making it the preferred primary.
@@ -51,11 +56,6 @@
 - Swarm convergence stalled at score 3 despite evolution, indicating that partial solution deployment without full integration gates leaves residual fai
 - The system generated five targeted skill proposals directly mapping to observed failure modes (health monitoring, quota scheduling, backoff unblocking
 - When multiple models fail simultaneously with 429 rate-limit and timeout errors, the root cause is quota exhaustion and latency spikes—not model quali
-- Pruning 5 facts and 17 events demonstrates that regular memory consolidation improves relevance.
-- Latency for the working model varies from 16.9 s to 33.3 s, indicating dynamic load balancing should adapt to real‑time performance.
-- The failed skill execution shows that proposals need pre‑execution validation of file paths and dependencies.
-- Three consecutive failures trigger a 30‑minute lockout, illustrating a circuit‑breaker pattern that prevents cascading errors.
-- Free models are prone to timeouts and 429 errors, requiring a router with health checks and fallback.
 
 ---
 
