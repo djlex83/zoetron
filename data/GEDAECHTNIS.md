@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11331 Fakten** · Stand 2026-09-14 11:21 UTC · aktualisiert bei jedem Herzschlag
+**11326 Fakten** · Stand 2026-09-14 11:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7248
+- **dream:** 7243
 - **swarm_artifact:** 1639
 - **last_swarm_critique:** 947
 - **last_swarm_goal:** 682
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914112929:5:701c5e`
+*14.09. 11:29 UTC · Quelle: dream*
+
+Systematic error analysis tools are successful in identifying patterns but require tighter integration with the drive system.
+
+### `dream:20260914112929:4:94c607`
+*14.09. 11:29 UTC · Quelle: dream*
+
+Diversifying model providers is critical for maintaining operational continuity when primary high-capacity models fail.
+
+### `dream:20260914112929:3:0f757c`
+*14.09. 11:29 UTC · Quelle: dream*
+
+Stale swarm goals act as cognitive noise and hinder the system's ability to prioritize new, relevant tasks.
+
+### `dream:20260914112929:2:8a4005`
+*14.09. 11:29 UTC · Quelle: dream*
+
+Model locking mechanisms effectively prevent resource waste during outages but create dependency on a few stable models.
+
+### `dream:20260914112929:1:fd1f6f`
+*14.09. 11:29 UTC · Quelle: dream*
+
+API rate limits (429) and timeouts are the primary causes of systemic model failure across multiple providers.
 
 ### `dream:20260914111851:5:e7df9b`
 *14.09. 11:18 UTC · Quelle: dream*
@@ -41862,56 +41887,6 @@ Fallback model nvidia/nemotron-3-ultra shows high latency variance (21-62s) requ
 *31.08. 11:33 UTC · Quelle: dream*
 
 Recurring 429 errors on z-ai/glm-5.2:free indicate missing exponential backoff and circuit-breaker logic for rate-limited providers.
-
-### `dream:20260831112704:5:fcbc3f`
-*31.08. 11:27 UTC · Quelle: dream*
-
-Pruning finds no stale data, meaning the experience buffer is dominated by recent repeated failures rather than diverse learning.
-
-### `dream:20260831112704:4:3ee1c6`
-*31.08. 11:27 UTC · Quelle: dream*
-
-Drive goals reveal a meta-need: the system must autonomously acquire skills to handle its own model-selection failures.
-
-### `dream:20260831112704:3:6ae3e2`
-*31.08. 11:27 UTC · Quelle: dream*
-
-Self-diagnosis and reflex systems operate correctly but model failures prevent higher-level reasoning tasks from executing.
-
-### `dream:20260831112704:2:5536b6`
-*31.08. 11:27 UTC · Quelle: dream*
-
-Successful requests only occur on poolside/laguna-s-2.1:free, suggesting it has separate quota or higher priority.
-
-### `dream:20260831112704:1:42337b`
-*31.08. 11:27 UTC · Quelle: dream*
-
-Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
-
-### `dream:20260831112137:5:ce4206`
-*31.08. 11:21 UTC · Quelle: dream*
-
-Successful reflex use (market analysis) shows existing tools can close gaps if automatically triggered by staleness.
-
-### `dream:20260831112137:4:866e90`
-*31.08. 11:21 UTC · Quelle: dream*
-
-Relative paths at the hand-action boundary cause silent I/O failures that only absolute-path contracts prevent.
-
-### `dream:20260831112137:3:b54867`
-*31.08. 11:21 UTC · Quelle: dream*
-
-Stale goals (>48h) persist undecomposed, blocking progress until a reflex or manual intervention occurs.
-
-### `dream:20260831112137:2:dc83d3`
-*31.08. 11:21 UTC · Quelle: dream*
-
-Proposed skills accumulate without execution because no lifecycle manager promotes, assigns, or enforces SLAs.
-
-### `dream:20260831112137:1:e195af`
-*31.08. 11:21 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits under load, requiring automated routing with health-aware fallback.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

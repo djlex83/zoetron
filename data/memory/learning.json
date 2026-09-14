@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 11:20:09",
+ "stand": "2026-09-14 11:30:00",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,15 +39,15 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-gruppen-informationen-aktualis.py",
+   "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "veraltete-gruppen-informationen-aktualis.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -378,9 +378,9 @@
  "haende_quote": 0.815,
  "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 26,
+  "n": 25,
   "best": 9.0,
-  "schnitt": 5.54
+  "schnitt": 5.4
  },
  "score_nach_ziel_typ": {
   "analyse": {

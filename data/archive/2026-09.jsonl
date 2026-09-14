@@ -48991,3 +48991,30 @@
 {"ts": 1788779699.4095502, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.49, "gelesen": 122}}
 {"ts": 1788779699.412509, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten-Vorschläge in Ziele umwandeln", "tool": "fähigkeiten-bündeln-und-ziele-prüfen.py", "ok": true}}
 {"ts": 1788779699.871964, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten-Vorschläge in Ziele umwandeln", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788175297.64005, "key": "dream:20260831112137:1:e195af", "value": "Free-tier models consistently hit 429 rate limits under load, requiring automated routing with health-aware fallback.", "source": "dream"}
+{"ts": 1788175297.6401865, "key": "dream:20260831112137:2:dc83d3", "value": "Proposed skills accumulate without execution because no lifecycle manager promotes, assigns, or enforces SLAs.", "source": "dream"}
+{"ts": 1788175297.640297, "key": "dream:20260831112137:3:b54867", "value": "Stale goals (>48h) persist undecomposed, blocking progress until a reflex or manual intervention occurs.", "source": "dream"}
+{"ts": 1788175297.6404045, "key": "dream:20260831112137:4:866e90", "value": "Relative paths at the hand-action boundary cause silent I/O failures that only absolute-path contracts prevent.", "source": "dream"}
+{"ts": 1788175297.640506, "key": "dream:20260831112137:5:ce4206", "value": "Successful reflex use (market analysis) shows existing tools can close gaps if automatically triggered by staleness.", "source": "dream"}
+{"ts": 1788175624.8094034, "key": "dream:20260831112704:1:42337b", "value": "Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.", "source": "dream"}
+{"ts": 1788175624.8094926, "key": "dream:20260831112704:2:5536b6", "value": "Successful requests only occur on poolside/laguna-s-2.1:free, suggesting it has separate quota or higher priority.", "source": "dream"}
+{"ts": 1788175624.8095636, "key": "dream:20260831112704:3:6ae3e2", "value": "Self-diagnosis and reflex systems operate correctly but model failures prevent higher-level reasoning tasks from executing.", "source": "dream"}
+{"ts": 1788175624.8096306, "key": "dream:20260831112704:4:3ee1c6", "value": "Drive goals reveal a meta-need: the system must autonomously acquire skills to handle its own model-selection failures.", "source": "dream"}
+{"ts": 1788175624.8097029, "key": "dream:20260831112704:5:fcbc3f", "value": "Pruning finds no stale data, meaning the experience buffer is dominated by recent repeated failures rather than diverse learning.", "source": "dream"}
+{"ts": 1788780201.4207833, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788780269.5757182, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788780271.4238336, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 37}}
+{"ts": 1788780340.4417307, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 65.2, "tokens_ein": 1555, "tokens_aus": 872}}
+{"ts": 1788780340.4423192, "kind": "skill_proposal", "payload": {"proposal": "Implement model latency circuit breaker that switches to faster models when p95 > 30s."}}
+{"ts": 1788780340.4423764, "kind": "skill_proposal", "payload": {"proposal": "Add ZOETRON_DATA path resolver wrapper for all hand_action file operations."}}
+{"ts": 1788780340.4424288, "kind": "skill_proposal", "payload": {"proposal": "Create SwarmConvergenceGuard that blocks evolution until critic timeout issues are fixed."}}
+{"ts": 1788780340.4424796, "kind": "skill_proposal", "payload": {"proposal": "Build SkillDeploymentPipeline with mandatory smoke test + monitoring hook validation."}}
+{"ts": 1788780340.4425294, "kind": "skill_proposal", "payload": {"proposal": "Add MetabolismAwareScheduler that pauses non-critical goals when stress > 0.8."}}
+{"ts": 1788780340.4425817, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788780377.595561, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 35.1, "tokens_ein": 496, "tokens_aus": 612}}
+{"ts": 1788780377.5957465, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft (31 Fehlschläge), was unsere Fähigkeiten stark einschränkt. Weniger Fehler bedeuten zuverlässigeres Handeln.", "signal": "failure"}}
+{"ts": 1788780377.5958698, "kind": "drive_goal", "payload": {"title": "Veraltetes Schwarm-Wissen erneuern", "why": "Kritiken und Ziele vom Schwarm sind veraltet. Frisches Wissen hilft uns, besser im Team zu lernen.", "signal": "stale"}}
+{"ts": 1788780377.5959527, "kind": "drive_goal", "payload": {"title": "Mehr Simulationen zum Lernen nutzen", "why": "Wir simulieren sehr wenig (nur 4 Mal). Mehr Übung im Kopf verbessert echte Aktionen ohne Risiko.", "signal": "gap"}}
+{"ts": 1788780381.3215368, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.73, "gelesen": 29}}
+{"ts": 1788780381.3241796, "kind": "reflex_used", "payload": {"goal": "Neue Fähigkeiten prüfen und nutzen", "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py", "ok": true}}
+{"ts": 1788780381.7487211, "kind": "act_done", "payload": {"goal_title": "Neue Fähigkeiten prüfen und nutzen", "score": null, "converged": true, "mode": "reflex"}}

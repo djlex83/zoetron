@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Systematic error analysis tools are successful in identifying patterns but require tighter integration with the drive system.
+- Diversifying model providers is critical for maintaining operational continuity when primary high-capacity models fail.
+- Stale swarm goals act as cognitive noise and hinder the system's ability to prioritize new, relevant tasks.
+- Model locking mechanisms effectively prevent resource waste during outages but create dependency on a few stable models.
+- API rate limits (429) and timeouts are the primary causes of systemic model failure across multiple providers.
 - The simulation's revise verdict with two revisions demonstrates that iterative refinement can improve outcomes but may need more cycles to converge.
 - The reflex tool 'lernen-aus-fehlern-systematisch-verbesse.py' successfully transformed model failures into structured lessons, validating systematic e
 - The swarm goal 'Fähigkeiten-Ideen in Taten umsetzen' evolved but did not converge, suggesting the scoring or iteration count needs adjustment.
@@ -51,11 +56,6 @@
 - Calibration overestimated execution capacity (predicted 6 vs actual 4), highlighting the need to align theoretical model scores with runtime constrain
 - Evolutionary refinement of Python scripts successfully elevated capability execution scores from 4/10 to 9/10 by systematically testing 9 code variant
 - Consistent 429 rate-limit errors on Google Gemma free models necessitate a primary fallback to `dots-studio/dots-3-note-preview:free` for stable auton
-- High stress (1.0) with 'conserve' state suggests the system should throttle non-essential work during resource scarcity.
-- The hand_action succeeded with minimal latency, indicating that direct file operations are a reliable low-level primitive.
-- When budget is constrained (max_tasks=3, max_iterations=1), focus on single-pass execution rather than iterative refinement.
-- Simulation before execution reliably flags risks (4 identified) and prompts revisions (3 applied), making it a valuable guardrail.
-- Free-tier models on OpenRouter (e.g., google/gemma) frequently return 429 errors; implement automatic fallback to alternative free models to maintain 
 
 ---
 
