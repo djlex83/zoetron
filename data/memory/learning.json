@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 05:46:38",
+ "stand": "2026-09-14 05:58:19",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "ferngedächtnisse-verbinden.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "tool": "veraltete-gruppen-informationen-aktualis.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "veraltete-gruppen-informationen-aktualis.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -33,13 +33,13 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "ferngedächtnisse-verbinden.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0

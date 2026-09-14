@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11344 Fakten** · Stand 2026-09-14 05:48 UTC · aktualisiert bei jedem Herzschlag
+**11348 Fakten** · Stand 2026-09-14 06:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7273
+- **dream:** 7278
 - **swarm_artifact:** 1635
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
@@ -10,9 +10,34 @@
 - **strategy:** 185
 - **tool:** 153
 - **hand_result:** 83
-- **aktuell_organfehler:** 27
+- **aktuell_organfehler:** 26
 
 ---
+
+### `dream:20260914055713:5:95715d`
+*14.09. 05:57 UTC · Quelle: dream*
+
+Stale swarm knowledge persists without automated freshness validation, leading to outdated collaborative context.
+
+### `dream:20260914055713:4:cbdd43`
+*14.09. 05:57 UTC · Quelle: dream*
+
+Swarm convergence declared after only two cycles with inconsistent metrics indicates missing stability gates.
+
+### `dream:20260914055713:3:477deb`
+*14.09. 05:57 UTC · Quelle: dream*
+
+Destructive subprocess tools block execution without human approval, necessitating pre-execution safety classification.
+
+### `dream:20260914055713:2:d83e9a`
+*14.09. 05:57 UTC · Quelle: dream*
+
+Hardcoded tool identifiers in artifacts cause critic rejection and require dynamic resolution via registry lookup.
+
+### `dream:20260914055713:1:fbc323`
+*14.09. 05:57 UTC · Quelle: dream*
+
+Model provider failures (502/429) cascade into system-wide degradation unless isolated by circuit breakers with automatic fallback.
 
 ### `dream:20260914054546:5:301ddc`
 *14.09. 05:45 UTC · Quelle: dream*
@@ -42032,11 +42057,6 @@ ORGANFEHLER (2026-08-31 06:05:10-06:08:10 UTC): dream -> timeout; drive -> timeo
 *31.08. 06:00 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-31 05:54:06-05:57:06 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `aktuell_organfehler`
-*31.08. 05:49 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 05:43:13-05:46:13 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*
