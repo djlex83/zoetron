@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11290 Fakten** · Stand 2026-09-14 17:31 UTC · aktualisiert bei jedem Herzschlag
+**11285 Fakten** · Stand 2026-09-14 17:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7173
+- **dream:** 7168
 - **swarm_artifact:** 1655
 - **last_swarm_critique:** 953
 - **last_swarm_goal:** 688
@@ -41564,31 +41564,6 @@ Latency variance across models (27–173s) and within the same model (139s vs 17
 *31.08. 17:39 UTC · Quelle: dream*
 
 Free-tier models exhibit pervasive rate-limiting (429) and upstream instability (502/404), making single-model reliance untenable for production workloads.
-
-### `dream:20260831173123:5:11530c`
-*31.08. 17:31 UTC · Quelle: dream*
-
-Code-artifact generation (222-line Python) consistently passes gate verification (tor green), making it the most reliable output format for this task.
-
-### `dream:20260831173123:4:fb9c23`
-*31.08. 17:31 UTC · Quelle: dream*
-
-Calibration systematically underestimates actual scores by ~2 points (predicted 3 vs actual 5), indicating a persistent bias that needs correction.
-
-### `dream:20260831173123:3:5f5aae`
-*31.08. 17:31 UTC · Quelle: dream*
-
-Dream extraction (Traum-Extraktion) is the weakest pipeline component — naive implementations cap evolution scores at 5/10, while structured variants reach 8/10.
-
-### `dream:20260831173123:2:a81e7f`
-*31.08. 17:31 UTC · Quelle: dream*
-
-The nemotron-3-ultra model is the only reliable backend but incurs 100–226s latency per call, requiring async or batched execution to remain practical.
-
-### `dream:20260831173123:1:4cb5e8`
-*31.08. 17:31 UTC · Quelle: dream*
-
-Free-tier models (glm-5.2) consistently fail with 429 rate-limit errors under load, making them unusable as primary inference backends without automatic fallback.
 
 ### `last_swarm_critique`
 *31.08. 17:06 UTC · Quelle: critic*
