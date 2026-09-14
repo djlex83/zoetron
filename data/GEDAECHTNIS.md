@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11340 Fakten** · Stand 2026-09-14 04:38 UTC · aktualisiert bei jedem Herzschlag
+**11346 Fakten** · Stand 2026-09-14 04:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7278
-- **swarm_artifact:** 1629
-- **last_swarm_critique:** 943
-- **last_swarm_goal:** 678
-- **anti_pattern:** 363
-- **strategy:** 184
+- **dream:** 7273
+- **swarm_artifact:** 1635
+- **last_swarm_critique:** 944
+- **last_swarm_goal:** 679
+- **anti_pattern:** 365
+- **strategy:** 185
 - **tool:** 153
 - **hand_result:** 83
 - **aktuell_organfehler:** 29
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: System-Fehler analysiere:2`
+*14.09. 04:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Incremental Event-Sourced Analysis - Treat error logs as event streams. Build an append-only index (SQLite/Parquet) keyed by (tool, timestamp, error_class) on first scan. Subsequent runs only process new/changed files via mti
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: System-Fehler analysiere:0`
+*14.09. 04:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Shared Core Library with Dependency Injection - Extract all common utilities (find_data_root, load_json_lines, load_json, file scanning) into a reusable 'error_analysis_core' package. Artifacts become thin entry points that i
+
+### `last_swarm_critique`
+*14.09. 04:49 UTC · Quelle: critic*
+
+score=7; issues=Artifact 3 hardcodes tool name 'modell-fehler-systematisch-reduzieren-un.py' in main() instead of accepting it as argument/env, limiting reusability; Significant code duplication across all three artifacts: find_data_root(), load_json_lines(), 
+
+### `last_swarm_goal`
+*14.09. 04:45 UTC · Quelle: system*
+
+System-Fehler analysieren
+
+### `dream:20260914044531:5:fcbe59`
+*14.09. 04:45 UTC · Quelle: dream*
+
+Pruning (2 facts, 16-20 events/cycle) prevents bloat but discards failure context needed for root-cause analysis of model errors.
+
+### `dream:20260914044531:4:77818d`
+*14.09. 04:45 UTC · Quelle: dream*
+
+33 learning errors and 65 untested skill proposals accumulate because no automated evaluation-to-deployment pipeline closes the loop.
+
+### `dream:20260914044531:3:72b8b4`
+*14.09. 04:45 UTC · Quelle: dream*
+
+Swarm knowledge goes stale within cycles (two 'stale' drive goals for same topic) because no scheduled refresh with convergence gate exists.
+
+### `dream:20260914044531:2:61513d`
+*14.09. 04:45 UTC · Quelle: dream*
+
+Reflex tools (träume-besser-nutzen-lernen.py, modellfehler-verstehen-und-beheben.py) consistently converge when they exist, revealing a reliable act-verify pattern.
+
+### `dream:20260914044531:1:695709`
+*14.09. 04:45 UTC · Quelle: dream*
+
+Model endpoint failures cascade across providers (502, 429) because no circuit-breaker tracks latency/error rates per endpoint with automatic failover.
 
 ### `dream:20260914043559:5:a19281`
 *14.09. 04:35 UTC · Quelle: dream*
@@ -42002,56 +42047,6 @@ Circuit breaker correctly quarantined nvidia/nemotron after 3 consecutive 404s, 
 *31.08. 04:49 UTC · Quelle: dream*
 
 Rate limiting from OpenRouter affects multiple models simultaneously, requiring provider-level fallback not just model-level.
-
-### `dream:20260831044352:5:77c1ec`
-*31.08. 04:43 UTC · Quelle: dream*
-
-Reflex-based execution succeeded where model-based planning failed, showing that deterministic scripts outperform flaky LLM calls for well-defined cleanup.
-
-### `dream:20260831044352:4:5e67db`
-*31.08. 04:43 UTC · Quelle: dream*
-
-The dream module itself timed out at 180 seconds during consolidation, revealing recursive resource contention when processing failure-heavy logs.
-
-### `dream:20260831044352:3:b21859`
-*31.08. 04:43 UTC · Quelle: dream*
-
-Calibration overestimated effort by 100% (predicted 6 vs actual 3), suggesting the estimator lacks historical baseline data for reflex tasks.
-
-### `dream:20260831044352:2:92267d`
-*31.08. 04:43 UTC · Quelle: dream*
-
-The act module timed out after 1500 seconds on a cleanup task, indicating missing timeout guards or infinite loops in reflex execution.
-
-### `dream:20260831044352:1:7c43fc`
-*31.08. 04:43 UTC · Quelle: dream*
-
-Multiple free-tier models fail consistently with 429 rate limits and 404 errors, making them unreliable for production tasks.
-
-### `dream:20260831043620:5:e82178`
-*31.08. 04:36 UTC · Quelle: dream*
-
-Successful hand_action and tor entries show that local artifact cleanup tasks (439 lines Python) complete reliably when not dependent on external model APIs.
-
-### `dream:20260831043620:4:01a664`
-*31.08. 04:36 UTC · Quelle: dream*
-
-Non-NVIDIA free models (z-ai/glm-5.2, google/gemma-4) fail exclusively with 429 errors, showing they are rate-limited before reaching actual inference capacity.
-
-### `dream:20260831043620:3:8cb2c6`
-*31.08. 04:36 UTC · Quelle: dream*
-
-Latency for successful NVIDIA Nemotron calls varies dramatically (38.5s to 100.3s) with token output, suggesting upstream congestion directly impacts response time unpredictably.
-
-### `dream:20260831043620:2:163681`
-*31.08. 04:36 UTC · Quelle: dream*
-
-NVIDIA Nemotron models exhibit cascading failures (502 upstream overload, 504 timeouts) after 3 consecutive errors, triggering automatic lockout for 1800 seconds.
-
-### `dream:20260831043620:1:f75973`
-*31.08. 04:36 UTC · Quelle: dream*
-
-Free-tier model endpoints consistently return 429 errors under concurrent load, indicating rate limits are the primary failure mode rather than model capability issues.
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*

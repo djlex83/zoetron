@@ -48032,3 +48032,30 @@
 {"ts": 1788755373.6764257, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.3, "gelesen": 1}}
 {"ts": 1788755373.678528, "kind": "reflex_used", "payload": {"goal": "Modell-Fehler reduzieren für zuverlässigeres Handeln", "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py", "ok": true}}
 {"ts": 1788755374.2053437, "kind": "act_done", "payload": {"goal_title": "Modell-Fehler reduzieren für zuverlässigeres Handeln", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788150980.7966797, "key": "dream:20260831043620:1:f75973", "value": "Free-tier model endpoints consistently return 429 errors under concurrent load, indicating rate limits are the primary failure mode rather than model capability issues.", "source": "dream"}
+{"ts": 1788150980.7967808, "key": "dream:20260831043620:2:163681", "value": "NVIDIA Nemotron models exhibit cascading failures (502 upstream overload, 504 timeouts) after 3 consecutive errors, triggering automatic lockout for 1800 seconds.", "source": "dream"}
+{"ts": 1788150980.7968683, "key": "dream:20260831043620:3:8cb2c6", "value": "Latency for successful NVIDIA Nemotron calls varies dramatically (38.5s to 100.3s) with token output, suggesting upstream congestion directly impacts response time unpredictably.", "source": "dream"}
+{"ts": 1788150980.7969375, "key": "dream:20260831043620:4:01a664", "value": "Non-NVIDIA free models (z-ai/glm-5.2, google/gemma-4) fail exclusively with 429 errors, showing they are rate-limited before reaching actual inference capacity.", "source": "dream"}
+{"ts": 1788150980.7970088, "key": "dream:20260831043620:5:e82178", "value": "Successful hand_action and tor entries show that local artifact cleanup tasks (439 lines Python) complete reliably when not dependent on external model APIs.", "source": "dream"}
+{"ts": 1788151432.0654588, "key": "dream:20260831044352:1:7c43fc", "value": "Multiple free-tier models fail consistently with 429 rate limits and 404 errors, making them unreliable for production tasks.", "source": "dream"}
+{"ts": 1788151432.0655859, "key": "dream:20260831044352:2:92267d", "value": "The act module timed out after 1500 seconds on a cleanup task, indicating missing timeout guards or infinite loops in reflex execution.", "source": "dream"}
+{"ts": 1788151432.0656898, "key": "dream:20260831044352:3:b21859", "value": "Calibration overestimated effort by 100% (predicted 6 vs actual 3), suggesting the estimator lacks historical baseline data for reflex tasks.", "source": "dream"}
+{"ts": 1788151432.065794, "key": "dream:20260831044352:4:5e67db", "value": "The dream module itself timed out at 180 seconds during consolidation, revealing recursive resource contention when processing failure-heavy logs.", "source": "dream"}
+{"ts": 1788151432.065864, "key": "dream:20260831044352:5:77c1ec", "value": "Reflex-based execution succeeded where model-based planning failed, showing that deterministic scripts outperform flaky LLM calls for well-defined cleanup.", "source": "dream"}
+{"ts": 1788755870.8833618, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788755939.0100143, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788755940.827111, "kind": "prune_run", "payload": {"facts_pruned": 1, "events_pruned": 23}}
+{"ts": 1788755971.6394968, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 26.4, "tokens_ein": 1372, "tokens_aus": 678}}
+{"ts": 1788755971.6400716, "kind": "skill_proposal", "payload": {"proposal": "Implement FailurePatternMiner: every 5 model_fail events, correlate active goals/tools/providers; emit deduplicated root-cause skill proposals."}}
+{"ts": 1788755971.6401293, "kind": "skill_proposal", "payload": {"proposal": "Deploy SkillValidationGate: require deterministic test harness with acceptance criteria (success rate >0.8, latency <2s) before registry promotion."}}
+{"ts": 1788755971.6401858, "kind": "skill_proposal", "payload": {"proposal": "Create ProviderHealthMonitor: track per-provider success rate, latency p95, error-class frequency; expose health score for scheduler."}}
+{"ts": 1788755971.640241, "kind": "skill_proposal", "payload": {"proposal": "Build SwarmKnowledgeRefresher: after each goal convergence, re-simulate top 3 critiques with current models; overwrite stale entries."}}
+{"ts": 1788755971.6403008, "kind": "skill_proposal", "payload": {"proposal": "Design StressAwareScheduler as a parameterized skill: stress = 0.7*failure_rate + 0.3*latency_p95; cap iterations, prioritize recovery goals when stress>0.7."}}
+{"ts": 1788755971.6403568, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788756001.1522763, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 27.7, "tokens_ein": 488, "tokens_aus": 449}}
+{"ts": 1788756001.1524668, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Fast jeder zweite Modell-Versuch scheitert. Weniger Fehler bedeuten zuverlässigeres Handeln.", "signal": "failure"}}
+{"ts": 1788756001.1525438, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen wieder nutzen", "why": "Die letzten Schwarm-Ergebnisse sind veraltet. Frischer Austausch bringt neue Ideen.", "signal": "stale"}}
+{"ts": 1788756001.152604, "kind": "drive_goal", "payload": {"title": "Träume in echte Fähigkeiten verwandeln", "why": "Träume laufen, aber ihre Erkenntnisse werden kaum genutzt. Das verschwendet Potenzial.", "signal": "combination"}}
+{"ts": 1788756004.5376468, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.18, "gelesen": 1}}
+{"ts": 1788756004.540225, "kind": "reflex_used", "payload": {"goal": "Aus schlechtem Versuch lernen", "tool": "hebbisches-lernen-im-graph-synapsen-qual.py", "ok": true}}
+{"ts": 1788756004.9986746, "kind": "act_done", "payload": {"goal_title": "Aus schlechtem Versuch lernen", "score": null, "converged": true, "mode": "reflex"}}
