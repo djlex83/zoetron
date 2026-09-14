@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 15:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 16:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,9 +9,6 @@
 - EvolutionToDeploymentPipeline: promotes winning variant artifacts directly into skill registry with integratio *(hatte die Idee 4×)*
 - ModelFallbackManager: circuit-breaker wrapper tracking latency/error rates per endpoint with exponential backo *(hatte die Idee 4×)*
 - SimulationConvergenceGate: halts revision loops when risk delta falls below threshold or revision count exceed *(hatte die Idee 4×)*
-- Add exponential backoff with jitter for all HTTP requests to model APIs and external commands. *(hatte die Idee 3×)*
-- Create a memory compaction routine that converts clusters of events into durable facts during pruning. *(hatte die Idee 3×)*
-- Build a task scheduler that respects the metabolism budget, limiting concurrent tasks and iterations when stre *(hatte die Idee 3×)*
 - Implement a centralized rate‑limit handler that intercepts HTTP 429 responses, applies exponential backoff wit *(hatte die Idee 3×)*
 - Create a dynamic model health dashboard that tracks per‑model error rates and auto‑degrades models after a thr *(hatte die Idee 3×)*
 - Generalize the stale-knowledge reflex into a configurable skill: domain, freshness predicate, fetch tool, and  *(hatte die Idee 3×)*
@@ -20,11 +17,14 @@
 - Create a fallback router that selects the next available model when a request fails. *(hatte die Idee 3×)*
 - Add a simulation result applicator that automatically applies simulation outcomes to goal execution. *(hatte die Idee 3×)*
 - Develop a swarm data freshness checker that triggers sync when staleness exceeds threshold. *(hatte die Idee 3×)*
+- Build a convergence gate requiring three stable cycles before accepting goal completion. *(hatte die Idee 3×)*
+- Implement a Provider Circuit Breaker that blacklists flaky endpoints after repeated 5xx/429 errors and switche *(hatte die Idee 3×)*
+- Develop a Swarm Data Freshness Checker that triggers sync when staleness exceeds threshold. *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 19×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
-- Schwarmdaten auffrischen *(wieder aufgegriffen: 3×)*
-- Veraltete Swarm-Daten aktualisieren *(wieder aufgegriffen: 3×)*
+- Alte Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
+- Träume verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation identified 5 risks and required 5 revisions, highlighting the importance of pre-application validation.
+- Calibration predicted 4 and the actual outcome was 4, demonstrating accurate self-assessment.
+- Evolutionary refinement raised the solution score from 4/10 to 9/10, confirming the value of iterative criticism.
+- The dots-studio/dots-3-note-preview:free model provided consistent success with latencies under 50s, serving as a reliable alternative.
+- Google/gemma free models repeatedly returned HTTP 429, indicating rate-limit exhaustion and the need for fallback.
 - Updating stale swarm data is a prerequisite for combining dreams, as the initial update failure blocked progress on the combination goal.
 - High metabolic stress triggers a conservative state with strict budgets (max 3 tasks, 1 iteration), which naturally limits task scope but ensures syst
 - Pre-execution simulation with revisions successfully mitigated risks before the final update action, proving its value in resource-constrained environ
@@ -51,11 +56,6 @@
 - Swarm processes that evolve but do not converge show that iterative refinement alone does not guarantee task completion.
 - The safety layer blocks destructive operations such as os.remove, preventing the execution of necessary tools.
 - Free-tier models like google/gemma frequently return HTTP 429 errors, making them unreliable for critical tasks.
-- Integrating distant dreams with swarm data requires up-to-date sources to produce meaningful results.
-- Model latency varies widely; including latency in scoring balances speed and quality.
-- Hand action errors often stem from missing data files; validating paths before execution avoids wasted runs.
-- Model read timeouts cause task failures; setting explicit timeouts and retrying with another model improves resilience.
-- OpenRouter returns HTTP 429 under rate limiting; automatic fallback to alternative models prevents task interruption.
 
 ---
 

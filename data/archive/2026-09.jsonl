@@ -49595,3 +49595,20 @@
 {"ts": 1788795374.480595, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.26, "gelesen": 1}}
 {"ts": 1788795374.485316, "kind": "reflex_used", "payload": {"goal": "Modellfehler verstehen beheben", "tool": "modellfehler-verstehen-und-beheben.py", "ok": true}}
 {"ts": 1788795374.983554, "kind": "act_done", "payload": {"goal_title": "Modellfehler verstehen beheben", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788795880.2124012, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788795948.9037979, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788795950.701306, "kind": "prune_run", "payload": {"facts_pruned": 8, "events_pruned": 13}}
+{"ts": 1788796007.3279936, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 53.2, "tokens_ein": 1308, "tokens_aus": 758}}
+{"ts": 1788796007.3290312, "kind": "skill_proposal", "payload": {"proposal": "Deploy a model-router with live health scores, exponential backoff (max 3 retries), and automatic quarantine of failing providers."}}
+{"ts": 1788796007.3292017, "kind": "skill_proposal", "payload": {"proposal": "Implement a knowledge-freshness daemon that tags swarm insights with TTL, auto-triggers refresh reflexes, and archives stale items."}}
+{"ts": 1788796007.3293333, "kind": "skill_proposal", "payload": {"proposal": "Create a skill-lifecycle tracker that promotes approved proposals to scheduled work items with owners, deadlines, and convergence criteria."}}
+{"ts": 1788796007.3294308, "kind": "skill_proposal", "payload": {"proposal": "Build a pre-flight validation gate checking model availability, path integrity (ZOETRON_DATA), and tool existence before compute commitment."}}
+{"ts": 1788796007.3295038, "kind": "skill_proposal", "payload": {"proposal": "Add adaptive pruning controller that adjusts retention thresholds based on fact-access frequency and event relevance decay."}}
+{"ts": 1788796007.3295867, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788796083.20121, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 73.7, "tokens_ein": 404, "tokens_aus": 754}}
+{"ts": 1788796083.2014403, "kind": "drive_goal", "payload": {"title": "Bessere Vorhersagen für Handlungen lernen", "why": "Das System macht manchmal falsche Vorhersagen. Wenn es besser vorhersagt, klappen Aktionen zuverlässiger.", "signal": "failure"}}
+{"ts": 1788796083.2015421, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren und nutzen", "why": "Alte Informationen über Schwarm-Ziele und Kritiken sind veraltet. Frisches Wissen hilft bei Zusammenarbeit.", "signal": "stale"}}
+{"ts": 1788796083.2016125, "kind": "drive_goal", "payload": {"title": "Erforschte Fähigkeiten festigen und verbinden", "why": "Viele neue Fähigkeiten wurden vorgeschlagen. Sie zusammenzufügen macht das System vielseitiger.", "signal": "combination"}}
+{"ts": 1788796087.4020789, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.78, "gelesen": 137}}
+{"ts": 1788796087.4044554, "kind": "reflex_used", "payload": {"goal": "Schwarmwissen aktualisieren und veraltene Erkenntnisse ersetzen", "tool": "veraltete-schwarmziele-aktualisieren.py", "ok": true}}
+{"ts": 1788796087.8080823, "kind": "act_done", "payload": {"goal_title": "Schwarmwissen aktualisieren und veraltene Erkenntnisse ersetzen", "score": null, "converged": true, "mode": "reflex"}}

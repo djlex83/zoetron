@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11284 Fakten** · Stand 2026-09-14 15:45 UTC · aktualisiert bei jedem Herzschlag
+**11301 Fakten** · Stand 2026-09-14 16:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7168
-- **swarm_artifact:** 1653
-- **last_swarm_critique:** 951
-- **last_swarm_goal:** 686
-- **anti_pattern:** 375
-- **strategy:** 190
+- **dream:** 7173
+- **swarm_artifact:** 1659
+- **last_swarm_critique:** 952
+- **last_swarm_goal:** 687
+- **anti_pattern:** 377
+- **strategy:** 191
 - **tool:** 156
-- **hand_result:** 82
+- **hand_result:** 83
 - **aktuell_organfehler:** 23
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Ferne Traum-Erinnerungen:2`
+*14.09. 16:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Technological Synchronization - Employ a wearable EEG device to record dream patterns and use machine learning to identify overlapping neural signatures, then present the linked dreams via an interactive visual interface. NIC
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Ferne Traum-Erinnerungen:1`
+*14.09. 16:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Sensory Cue Bridging - Use consistent sensory triggers (e.g., a specific scent, sound, or tactile object) during waking life to recall and connect disparate dream memories. NICHT wiederholt anbieten.
+
+### `last_swarm_critique`
+*14.09. 16:05 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*14.09. 15:55 UTC · Quelle: system*
+
+Ferne Traum-Erinnerungen verbinden
+
+### `dream:20260914155348:5:80cefc`
+*14.09. 15:53 UTC · Quelle: dream*
+
+Simulation identified 5 risks and required 5 revisions, highlighting the importance of pre-application validation.
+
+### `dream:20260914155348:4:974c18`
+*14.09. 15:53 UTC · Quelle: dream*
+
+Calibration predicted 4 and the actual outcome was 4, demonstrating accurate self-assessment.
+
+### `dream:20260914155348:3:e9a68a`
+*14.09. 15:53 UTC · Quelle: dream*
+
+Evolutionary refinement raised the solution score from 4/10 to 9/10, confirming the value of iterative criticism.
+
+### `dream:20260914155348:2:a3a754`
+*14.09. 15:53 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model provided consistent success with latencies under 50s, serving as a reliable alternative.
+
+### `dream:20260914155348:1:4e77fa`
+*14.09. 15:53 UTC · Quelle: dream*
+
+Google/gemma free models repeatedly returned HTTP 429, indicating rate-limit exhaustion and the need for fallback.
 
 ### `dream:20260914154321:5:e9c50f`
 *14.09. 15:43 UTC · Quelle: dream*
