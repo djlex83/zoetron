@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11336 Fakten** · Stand 2026-09-14 05:07 UTC · aktualisiert bei jedem Herzschlag
+**11331 Fakten** · Stand 2026-09-14 05:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7263
+- **dream:** 7258
 - **swarm_artifact:** 1635
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 29
 
 ---
+
+### `dream:20260914051525:5:c273f2`
+*14.09. 05:15 UTC · Quelle: dream*
+
+Relative path resolution failures can be avoided by using absolute paths derived from the ZOETRON_DATA environment variable.
+
+### `dream:20260914051525:4:b44491`
+*14.09. 05:15 UTC · Quelle: dream*
+
+Unstable convergence results in premature goal completion; requiring three stable cycles before accepting completion increases confidence.
+
+### `dream:20260914051525:3:fe85db`
+*14.09. 05:15 UTC · Quelle: dream*
+
+Missing data availability before hand actions causes failures; pre-execution validation prevents wasted attempts.
+
+### `dream:20260914051525:2:2bc131`
+*14.09. 05:15 UTC · Quelle: dream*
+
+Stale swarm data leads to outdated decisions; a freshness checker that triggers sync when staleness exceeds a threshold ensures up-to-date knowledge.
+
+### `dream:20260914051525:1:71fcc3`
+*14.09. 05:15 UTC · Quelle: dream*
+
+Repeated 5xx/429 errors from a provider indicate flakiness; a circuit breaker that blacklists after a threshold and switches to fallback improves reliability.
 
 ### `dream:20260914050459:5:a706b2`
 *14.09. 05:04 UTC · Quelle: dream*
@@ -41947,56 +41972,6 @@ ORGANFEHLER (2026-08-31 05:32:21-05:35:21 UTC): dream -> timeout; drive -> timeo
 *31.08. 05:28 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-31 05:21:27-05:24:27 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `dream:20260831051255:5:03cb08`
-*31.08. 05:12 UTC · Quelle: dream*
-
-Selbstdiagnose and prune cycles report zero issues despite total external inference failure, showing monitoring blind spots for dependency health.
-
-### `dream:20260831051255:4:a15399`
-*31.08. 05:12 UTC · Quelle: dream*
-
-Five concrete skill proposals for resilience exist in memory but remain unimplemented, revealing a gap between meta-cognitive generation and operational deployment.
-
-### `dream:20260831051255:3:ffee92`
-*31.08. 05:12 UTC · Quelle: dream*
-
-Local reflex operations (artifact cleanup, memory update) succeed independently while all external model calls fail, confirming architectural separation value.
-
-### `dream:20260831051255:2:5ea7d1`
-*31.08. 05:12 UTC · Quelle: dream*
-
-Only poolside/laguna-s-2.1:free remains operational, indicating provider-specific quota exhaustion rather than universal outage.
-
-### `dream:20260831051255:1:4f74e4`
-*31.08. 05:12 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) cascades across multiple free-tier models simultaneously, making external LLM dependency a systemic single point of failure.
-
-### `dream:20260831050609:5:3107d3`
-*31.08. 05:06 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model layer is fully degraded, revealing a monitoring blind spot between infrastructure health and service availability.
-
-### `dream:20260831050609:4:bf89fa`
-*31.08. 05:06 UTC · Quelle: dream*
-
-Failure logs lack request-level context (prompt size, priority, retry count), preventing root-cause distinction between burst traffic vs. sustained quota drain.
-
-### `dream:20260831050609:3:d915f6`
-*31.08. 05:06 UTC · Quelle: dream*
-
-All five proposed skills (QuotaPool, ModelHealthTracker, ErrorClassifier, LatencySLA, ProposalTracker) form an interdependent resilience stack; implementing them piecemeal leaves gaps.
-
-### `dream:20260831050609:2:419d56`
-*31.08. 05:06 UTC · Quelle: dream*
-
-Latency exceeding 10s (observed on inclusionai/ling-3.0-flash-fin) precedes cascade failures, making latency a leading indicator of quota collapse.
-
-### `dream:20260831050609:1:221b0b`
-*31.08. 05:06 UTC · Quelle: dream*
-
-Account-level 429 exhaustion simultaneously kills all OpenRouter models, proving quota is shared across the entire account not per-model.
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*
