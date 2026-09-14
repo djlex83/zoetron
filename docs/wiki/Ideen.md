@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 06:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 06:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 6×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, showing monitoring blind spots for external API dependencies.
+- Existing skill proposals (circuit breaker, freshness checker, validator, convergence gate, path executor) form a coherent resilience stack but lack an
+- Automatic model blocking after 3 failures prevents cascade errors but leaves no automated unblocking or health-check retry.
+- The dots-studio fallback succeeds but with high latency variance (15–39 s), making it unreliable for time-critical paths.
+- Rate-limited models (429) cluster in time, indicating shared quota buckets across model variants from the same provider.
 - Pruning removes 10 facts and 17 events per cycle, yet no metric tracks whether pruned items were later needed — blind pruning risks losing rare but cr
 - Goal convergence is declared after one successful reflex; requiring N stable cycles prevents premature completion on flaky successes.
 - Swarm knowledge staleness goes undetected until a drive goal fires; a freshness metric would trigger proactive sync instead of reactive repair.
@@ -51,11 +56,6 @@
 - Destructive subprocess tools block execution without human approval, necessitating pre-execution safety classification.
 - Hardcoded tool identifiers in artifacts cause critic rejection and require dynamic resolution via registry lookup.
 - Model provider failures (502/429) cascade into system-wide degradation unless isolated by circuit breakers with automatic fallback.
-- Calibration predicted 6 vs actual 7, showing a small underestimation that can be corrected with a bias adjustment.
-- Evolutionary refinement that addressed the critic's issue of hardcoding tool names raised the score from 7 to 9, demonstrating the value of critic fee
-- The dots-studio/dots-3-note-preview:free model consistently succeeded when others failed, making it a viable fallback.
-- Google gemma models hit 429 Too Many Requests, showing they are rate-limited and cannot handle high request volumes.
-- The nvidia/nemotron-3-ultra-550b-a55b:free model repeatedly returned 502 Service temporarily overloaded, indicating it is unreliable under concurrent 
 
 ---
 
