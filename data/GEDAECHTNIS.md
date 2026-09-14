@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11250 Fakten** · Stand 2026-09-14 20:51 UTC · aktualisiert bei jedem Herzschlag
+**11255 Fakten** · Stand 2026-09-14 21:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7163
+- **dream:** 7168
 - **swarm_artifact:** 1631
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 22
 
 ---
+
+### `dream:20260914205926:5:005254`
+*14.09. 20:59 UTC · Quelle: dream*
+
+Repeated 429 errors suggest that rate-limit tracking and adaptive request spacing are necessary to avoid throttling by external APIs.
+
+### `dream:20260914205926:4:ad2ff5`
+*14.09. 20:59 UTC · Quelle: dream*
+
+The dots-studio model succeeded despite high latency, confirming that latency varies and that selecting the fastest available model per request can optimize response times.
+
+### `dream:20260914205926:3:e799a0`
+*14.09. 20:59 UTC · Quelle: dream*
+
+Pruning 10 facts and 22 events in one run shows that periodic cleanup reduces noise and improves the speed and relevance of subsequent operations.
+
+### `dream:20260914205926:2:b4c3be`
+*14.09. 20:59 UTC · Quelle: dream*
+
+The reflex that combined dreams with updated swarm data converged successfully, indicating that fresh external knowledge is essential for effective internal consolidation.
+
+### `dream:20260914205926:1:b79aa7`
+*14.09. 20:59 UTC · Quelle: dream*
+
+Model timeouts and 429 errors demonstrate that a single-model dependency is fragile; a fallback chain with health checks and exponential backoff is required for reliability.
 
 ### `dream:20260914204753:5:7938f7`
 *14.09. 20:47 UTC · Quelle: dream*
