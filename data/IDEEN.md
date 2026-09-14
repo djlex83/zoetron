@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 14:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 14:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,13 +24,12 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler beheben *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
@@ -38,9 +37,15 @@
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Träume aus der Ferne verbinden *(wieder aufgegriffen: 3×)*
+- Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Integrating distant dreams with swarm data requires up-to-date sources to produce meaningful results.
+- Model latency varies widely; including latency in scoring balances speed and quality.
+- Hand action errors often stem from missing data files; validating paths before execution avoids wasted runs.
+- Model read timeouts cause task failures; setting explicit timeouts and retrying with another model improves resilience.
+- OpenRouter returns HTTP 429 under rate limiting; automatic fallback to alternative models prevents task interruption.
 - Self-diagnosis with zero findings confirms system integrity and can be used as a routine health check.
 - Regular pruning of stale facts prevents outdated information from steering goals.
 - Pairing distant dream events creates novel associations that enhance learning.
@@ -51,11 +56,6 @@
 - There is a persistent gap between generating skill proposals and activating them, limiting system improvement.
 - The reflex that merges dreams and swarm data successfully creates new knowledge, demonstrating the value of automated memory integration.
 - The dominant cause of model failures is HTTP 429 rate limiting, which requires automatic throttling and fallback.
-- Calibration predictions showed an absolute error of 2, indicating that the forecasting model needs further tuning to align predictions with actual out
-- The dots-studio/dots-3-note-preview:free model proved to be a highly reliable and consistent performer across multiple call cycles.
-- A 152-line Python health-register artifact was successfully deployed to monitor and mitigate model errors in real-time.
-- The evolutionary refinement loop successfully improved the artifact score from 4/10 to 8.67/10 by generating and selecting the best of three variants.
-- Consistent HTTP 429 errors on google/gemma models indicate severe rate limiting, requiring a reliable fallback to stable alternatives like dots-studio
 
 ---
 

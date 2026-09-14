@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7923 Neuronen · 838951 bewertete Synapsen
+Stand: 7925 Neuronen · 839787 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -19,12 +19,12 @@ Stand: 7923 Neuronen · 838951 bewertete Synapsen
 | 7 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 814 | 0.23 |
 | 8 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 809 | 0.23 |
 | 9 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 751 | 0.25 |
-| 10 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 788 | 0.24 |
+| 10 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 787 | 0.24 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 824 | 0.23 |
-| 12 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 777 | 0.24 |
+| 12 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 776 | 0.24 |
 | 13 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 828 | 0.22 |
 | 14 | 💭 | Model failures cascade from primary providers (502, 429, 99s lat… | 813 | 0.23 |
-| 15 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 695 | 0.26 |
+| 15 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 694 | 0.26 |
 
 ## Die 15 stärksten Synapsen
 

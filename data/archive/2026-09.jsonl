@@ -49413,3 +49413,25 @@
 {"ts": 1788790328.5187771, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.47, "gelesen": 78}}
 {"ts": 1788790328.521002, "kind": "reflex_used", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py", "ok": true}}
 {"ts": 1788790328.938281, "kind": "act_done", "payload": {"goal_title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788186055.154414, "key": "dream:20260831142055:1:387354", "value": "API rate limiting (429) and service overload (502) are systemic failure modes across multiple providers, requiring circuit breakers and exponential backoff instead of naive retries.", "source": "dream"}
+{"ts": 1788186055.1544998, "key": "dream:20260831142055:2:9a8604", "value": "Reflex-based execution paths converge reliably when full model inference is unavailable, making reflex the resilient fallback for well-defined tasks.", "source": "dream"}
+{"ts": 1788186055.1545746, "key": "dream:20260831142055:3:01c4f5", "value": "A persistent gap between 75 skill proposals and near-zero implementations reveals missing validation and tracking infrastructure as the root cause, not lack of ideas.", "source": "dream"}
+{"ts": 1788186055.1546443, "key": "dream:20260831142055:4:08c76a", "value": "Pre-flight validation of paths, executables, shebangs, and import dependencies prevents wasted model calls on malformed or broken configurations.", "source": "dream"}
+{"ts": 1788186055.1547065, "key": "dream:20260831142055:5:f3b20a", "value": "Latency and token prediction drift degrades routing decisions, so continuous calibration against actual task outcomes is required for reliable model selection.", "source": "dream"}
+{"ts": 1788790835.3778205, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788790903.9164922, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788790905.7262862, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 50}}
+{"ts": 1788790967.954637, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 58.5, "tokens_ein": 1371, "tokens_aus": 744}}
+{"ts": 1788790967.95542, "kind": "skill_proposal", "payload": {"proposal": "Implement model health circuit breaker: track 502 rate and latency p95 per endpoint; auto-exclude degraded models for cooldown and reroute to fallback."}}
+{"ts": 1788790967.955487, "kind": "skill_proposal", "payload": {"proposal": "Create skill promotion gateway: every reflex execution must emit skill metadata (preconditions, effects, confidence) into agent registry before marking converged."}}
+{"ts": 1788790967.9555342, "kind": "skill_proposal", "payload": {"proposal": "Build scheduled swarm knowledge validator: cron job that checks freshness timestamps and re-runs refresh tools when TTL expires."}}
+{"ts": 1788790967.955588, "kind": "skill_proposal", "payload": {"proposal": "Add universal path resolution guard: prepend ZOETRON_DATA to all relative inputs and verify file existence before any tool execution."}}
+{"ts": 1788790967.955657, "kind": "skill_proposal", "payload": {"proposal": "Implement drive goal convergence tracker: persist goal state across cycles and escalate to planning when same goal reappears >2 times."}}
+{"ts": 1788790967.9557188, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788791016.2696242, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 46.4, "tokens_ein": 496, "tokens_aus": 981}}
+{"ts": 1788791016.2699018, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren und verstehen", "why": "Das Modell macht noch zu viele Fehler. Wir müssen lernen, warum es scheitert, damit es verlässlicher wird.", "signal": "failure"}}
+{"ts": 1788791016.2700615, "kind": "drive_goal", "payload": {"title": "Schwarm-Arbeit wieder beleben und nutzen", "why": "Die Schwarm-Erkenntnisse sind veraltet. Gemeinsames Lernen mit anderen Systemen bringt neue Ideen.", "signal": "stale"}}
+{"ts": 1788791016.2701647, "kind": "drive_goal", "payload": {"title": "Fähigkeiten-Vorschläge in echte Skills verwandeln", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber wenige werden wirklich geprüft und fertig.", "signal": "gap"}}
+{"ts": 1788791020.3766093, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.77, "gelesen": 137}}
+{"ts": 1788791020.3792434, "kind": "reflex_used", "payload": {"goal": "Schwarm-Wissen regelmäßig nutzen", "tool": "veraltete-schwarmziele-aktualisieren.py", "ok": true}}
+{"ts": 1788791020.850537, "kind": "act_done", "payload": {"goal_title": "Schwarm-Wissen regelmäßig nutzen", "score": null, "converged": true, "mode": "reflex"}}

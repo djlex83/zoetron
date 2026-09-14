@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11299 Fakten** · Stand 2026-09-14 14:22 UTC · aktualisiert bei jedem Herzschlag
+**11307 Fakten** · Stand 2026-09-14 14:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7203
-- **swarm_artifact:** 1645
-- **last_swarm_critique:** 949
-- **last_swarm_goal:** 684
-- **anti_pattern:** 371
-- **strategy:** 188
-- **tool:** 154
+- **swarm_artifact:** 1647
+- **last_swarm_critique:** 950
+- **last_swarm_goal:** 685
+- **anti_pattern:** 373
+- **strategy:** 189
+- **tool:** 155
 - **hand_result:** 82
 - **aktuell_organfehler:** 23
 
 ---
+
+### `tool:schwarminformationen-aktualisieren`
+*14.09. 14:38 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Schwarminformationen aktualisieren'. Datei: data/tools/schwarminformationen-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Schwarminformationen akt:2`
+*14.09. 14:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Database-backed synthesis - Store swarm information in a relational database. Use a query to retrieve all relevant records and generate a plan document that includes research, drafting, and validation sections, allowing updat
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Schwarminformationen akt:1`
+*14.09. 14:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Event-driven file watcher - Implement a watcher that monitors the directory for new or modified swarm information files. Upon each event, invoke a plan generator that reads the file, constructs a plan with the three sections,
+
+### `last_swarm_critique`
+*14.09. 14:35 UTC · Quelle: critic*
+
+score=4; issues=The update_plan function does not add the required research, drafting, or validation sections; only a timestamp and a review pending line are appended.; When an existing swarm information file is found, the script fails to generate a plan with 
+
+### `last_swarm_goal`
+*14.09. 14:31 UTC · Quelle: system*
+
+Schwarminformationen aktualisieren
+
+### `dream:20260914143049:5:b8832f`
+*14.09. 14:30 UTC · Quelle: dream*
+
+Integrating distant dreams with swarm data requires up-to-date sources to produce meaningful results.
+
+### `dream:20260914143049:4:3f100d`
+*14.09. 14:30 UTC · Quelle: dream*
+
+Model latency varies widely; including latency in scoring balances speed and quality.
+
+### `dream:20260914143049:3:3bd92d`
+*14.09. 14:30 UTC · Quelle: dream*
+
+Hand action errors often stem from missing data files; validating paths before execution avoids wasted runs.
+
+### `dream:20260914143049:2:624984`
+*14.09. 14:30 UTC · Quelle: dream*
+
+Model read timeouts cause task failures; setting explicit timeouts and retrying with another model improves resilience.
+
+### `dream:20260914143049:1:a39064`
+*14.09. 14:30 UTC · Quelle: dream*
+
+OpenRouter returns HTTP 429 under rate limiting; automatic fallback to alternative models prevents task interruption.
 
 ### `dream:20260914141858:5:a1b89c`
 *14.09. 14:18 UTC · Quelle: dream*
@@ -41689,31 +41739,6 @@ The simulation's 'revise' verdict with 5 identified risks prevented a flawed exe
 *31.08. 14:30 UTC · Quelle: dream*
 
 Free-tier API models on OpenRouter consistently hit 429 rate limits and 502 upstream errors, making a known-working model whitelist with exponential backoff essential for reliability.
-
-### `dream:20260831142055:5:f3b20a`
-*31.08. 14:20 UTC · Quelle: dream*
-
-Latency and token prediction drift degrades routing decisions, so continuous calibration against actual task outcomes is required for reliable model selection.
-
-### `dream:20260831142055:4:08c76a`
-*31.08. 14:20 UTC · Quelle: dream*
-
-Pre-flight validation of paths, executables, shebangs, and import dependencies prevents wasted model calls on malformed or broken configurations.
-
-### `dream:20260831142055:3:01c4f5`
-*31.08. 14:20 UTC · Quelle: dream*
-
-A persistent gap between 75 skill proposals and near-zero implementations reveals missing validation and tracking infrastructure as the root cause, not lack of ideas.
-
-### `dream:20260831142055:2:9a8604`
-*31.08. 14:20 UTC · Quelle: dream*
-
-Reflex-based execution paths converge reliably when full model inference is unavailable, making reflex the resilient fallback for well-defined tasks.
-
-### `dream:20260831142055:1:387354`
-*31.08. 14:20 UTC · Quelle: dream*
-
-API rate limiting (429) and service overload (502) are systemic failure modes across multiple providers, requiring circuit breakers and exponential backoff instead of naive retries.
 
 ### `last_swarm_critique`
 *31.08. 13:34 UTC · Quelle: critic*
