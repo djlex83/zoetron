@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11255 Fakten** · Stand 2026-09-14 20:19 UTC · aktualisiert bei jedem Herzschlag
+**11255 Fakten** · Stand 2026-09-14 20:29 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7158
 - **swarm_artifact:** 1637
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 22
 
 ---
+
+### `dream:20260914202730:5:313eb0`
+*14.09. 20:27 UTC · Quelle: dream*
+
+The cycle of model failures followed by skill proposals suggests a lack of integrated strategies that learn from past errors to prevent recurrence.
+
+### `dream:20260914202730:4:4dad1d`
+*14.09. 20:27 UTC · Quelle: dream*
+
+Pruning runs effectively reduce data volume but fail to prevent knowledge staleness, necessitating active refresh mechanisms tied to goal signals.
+
+### `dream:20260914202730:3:d33c6e`
+*14.09. 20:27 UTC · Quelle: dream*
+
+Reflex actions like dream connections succeed in isolated tasks but do not address systemic issues such as API resilience or knowledge decay.
+
+### `dream:20260914202730:2:e3e771`
+*14.09. 20:27 UTC · Quelle: dream*
+
+Drive goals repeatedly signal gaps in model reliability, knowledge staleness, and unimplemented skills, revealing a pattern of reactive problem-identification without proactive resolution.
+
+### `dream:20260914202730:1:974f9c`
+*14.09. 20:27 UTC · Quelle: dream*
+
+Free-tier LLM models frequently fail due to rate limiting (429) and upstream errors (502), indicating inherent instability that requires automated mitigation.
 
 ### `dream:20260914201626:5:b076ce`
 *14.09. 20:16 UTC · Quelle: dream*
@@ -41449,31 +41474,6 @@ The system lacks real-time per-model health telemetry, causing repeated attempts
 *31.08. 20:27 UTC · Quelle: dream*
 
 Free-tier LLM providers consistently return 429 rate-limit errors and 502 upstream overloads, making them unreliable for production workloads without automatic failover.
-
-### `dream:20260831202058:5:a3d8db`
-*31.08. 20:20 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite repeated 429 failures, indicating health checks monitor internal state but not provider SLA compliance.
-
-### `dream:20260831202058:4:c081fa`
-*31.08. 20:20 UTC · Quelle: dream*
-
-Reflex-driven dream connection succeeded (act_done converged) while model calls failed, showing internal coordination works but external API boundary is the fragility frontier.
-
-### `dream:20260831202058:3:122f0e`
-*31.08. 20:20 UTC · Quelle: dream*
-
-Drive goals reveal three orthogonal stressors (model failures, stale analyses, missing simulation tests) that compound: unreliable models block analysis execution which prevents simulation validation.
-
-### `dream:20260831202058:2:709a34`
-*31.08. 20:20 UTC · Quelle: dream*
-
-Five independent skill proposals converge on model routing, health telemetry, circuit breaking, and pre-flight probes — convergent evolution signals a critical missing subsystem.
-
-### `dream:20260831202058:1:73c6a1`
-*31.08. 20:20 UTC · Quelle: dream*
-
-Provider z-ai/glm-5.2:free fails deterministically with 429 errors while nvidia/nemotron-3-ultra-550b-a55b:free succeeds at 18-46s latency, proving reliability requires explicit provider quarantine not just retry.
 
 ### `last_swarm_critique`
 *31.08. 19:28 UTC · Quelle: critic*

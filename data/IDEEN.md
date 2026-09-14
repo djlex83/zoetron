@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 20:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 20:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The cycle of model failures followed by skill proposals suggests a lack of integrated strategies that learn from past errors to prevent recurrence.
+- Pruning runs effectively reduce data volume but fail to prevent knowledge staleness, necessitating active refresh mechanisms tied to goal signals.
+- Reflex actions like dream connections succeed in isolated tasks but do not address systemic issues such as API resilience or knowledge decay.
+- Drive goals repeatedly signal gaps in model reliability, knowledge staleness, and unimplemented skills, revealing a pattern of reactive problem-identi
+- Free-tier LLM models frequently fail due to rate limiting (429) and upstream errors (502), indicating inherent instability that requires automated mit
 - Consolidation timeouts arise from processing too many events with a slow model, requiring event limits and fast model selection.
 - Many simulations are never executed, creating a gap between planning and action.
 - Reflex tools frequently abort due to unvalidated file paths and environment variables.
@@ -51,11 +56,6 @@
 - Latency varies widely between models; choosing the fastest available model improves responsiveness.
 - Upstream 502 errors indicate the provider is overloaded and require automatic switch to a backup model.
 - Repeated 429 errors show that the current model is rate‑limited and needs throttling or fallback.
-- Periodic pruning (4 facts, 16 events) occurs but only reactively; memory growth is not bounded during high-activity phases.
-- Reflex-driven tool use (swarm-informationen-aktualisieren) succeeds where planned multi-step actions stall, suggesting reflexes are more reliable for 
-- Convergence is declared without minimum score thresholds or diversity checks, allowing premature termination of swarm cycles.
-- Evolution loops improve variants but fail to map improvements back to the swarm goal, so gains are lost before final scoring.
-- Free-tier model rate limits (429 errors) cause cascading failures because the system lacks a proactive fallback chain with health checks.
 
 ---
 

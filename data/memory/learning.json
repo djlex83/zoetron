@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 20:17:18",
+ "stand": "2026-09-14 20:28:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -189,6 +189,12 @@
    "quote": 0.0
   },
   {
+   "tool": "modellfehler-verstehen-und-beheben.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-skills-wirklich-testen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -291,12 +297,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "träume-in-echte-fähigkeiten-umwandeln.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -384,9 +384,9 @@
  "haende_quote": 0.848,
  "simulationen_angewandt": 26,
  "swarm_scores": {
-  "n": 24,
+  "n": 23,
   "best": 9.0,
-  "schnitt": 5.62
+  "schnitt": 5.65
  },
  "score_nach_ziel_typ": {
   "analyse": {
