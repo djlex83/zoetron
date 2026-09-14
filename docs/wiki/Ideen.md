@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- File operations fail due to missing environment-aware path resolution (ZOETRON_DATA, sys.argv[1]), causing hand_action errors that a path resolver uti
+- Latency variance (15s–55s) across providers indicates cold-start penalties and load-dependent performance, necessitating warm-up routines and latency-
+- Swarm knowledge staleness is only detected reactively after goals fail, missing proactive freshness thresholds that could trigger automated refreshes.
+- Skill proposals accumulate without a validation pipeline, creating a backlog of untested capabilities that cannot be trusted in production.
+- Model provider instability (429 rate limits, 502 overloads, high latency variance) is the primary reliability bottleneck requiring automated health-aw
 - Cold-start latency and timeout issues during consolidation can be mitigated with warm-up routines and I/O monitoring.
 - World model errors propagate across tasks, indicating a foundational issue that must be addressed first.
 - Stale swarm knowledge degrades collective intelligence, necessitating periodic refreshing.
@@ -51,11 +56,6 @@
 - Reflex tools successfully handle tactical fixes but strategic drive goals require architectural changes beyond reflex scope.
 - Skill proposals are generated but not automatically integrated into learning, creating a persistent gap between capability identification and capabili
 - Model failures cascade because the system lacks proactive health checks and automatic failover, causing multiple sequential 502/429 errors before a wo
-- Memory pruning runs reactively on idle triggers instead of incremental TTL/frequency decay, risking memory pressure.
-- Simulation revision loops (5 revisions, 5 risks) indicate missing pre-simulation validation gates.
-- Skill proposals accumulate but never enter the learning loop because no automated validation/insertion pipeline exists.
-- Swarm convergence stalls without a quantitative composite metric (score delta + entropy), causing wasted cycles.
-- Model API failures cascade into system-wide timeouts because no circuit-breaker/fallback guard wraps external calls.
 
 ---
 

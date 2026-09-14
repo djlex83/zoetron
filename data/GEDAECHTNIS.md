@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11229 Fakten** · Stand 2026-09-14 23:31 UTC · aktualisiert bei jedem Herzschlag
+**11234 Fakten** · Stand 2026-09-14 23:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7158
+- **dream:** 7163
 - **swarm_artifact:** 1615
 - **last_swarm_critique:** 956
 - **last_swarm_goal:** 691
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914233840:5:2b3963`
+*14.09. 23:38 UTC · Quelle: dream*
+
+File operations fail due to missing environment-aware path resolution (ZOETRON_DATA, sys.argv[1]), causing hand_action errors that a path resolver utility would prevent.
+
+### `dream:20260914233840:4:b342da`
+*14.09. 23:38 UTC · Quelle: dream*
+
+Latency variance (15s–55s) across providers indicates cold-start penalties and load-dependent performance, necessitating warm-up routines and latency-aware fallback chains.
+
+### `dream:20260914233840:3:ecb00f`
+*14.09. 23:38 UTC · Quelle: dream*
+
+Swarm knowledge staleness is only detected reactively after goals fail, missing proactive freshness thresholds that could trigger automated refreshes.
+
+### `dream:20260914233840:2:fe827d`
+*14.09. 23:38 UTC · Quelle: dream*
+
+Skill proposals accumulate without a validation pipeline, creating a backlog of untested capabilities that cannot be trusted in production.
+
+### `dream:20260914233840:1:e176fb`
+*14.09. 23:38 UTC · Quelle: dream*
+
+Model provider instability (429 rate limits, 502 overloads, high latency variance) is the primary reliability bottleneck requiring automated health-aware routing.
 
 ### `dream:20260914232833:5:fd70d7`
 *14.09. 23:28 UTC · Quelle: dream*
