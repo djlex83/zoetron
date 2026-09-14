@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 04:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (47 events in one run) risks discarding diagnostic context needed for failure pattern recognition.
+- Dream-generated skill proposals accumulate but lack a convergence gate to validate and promote them into active capabilities.
+- Simulation utility remains low (5 starts, 2 applies) because outcomes aren't automatically fed back into goal execution.
+- Swarm knowledge staleness recurs because freshness checks are manual, not threshold-triggered automatic syncs.
+- Model endpoint failures (502/429) cascade into decision unreliability because no fallback routing or health monitoring exists.
 - The converged reflex loop for updating swarm knowledge and testing proposed skills demonstrates the effectiveness of automated knowledge management.
 - Simulations are started but rarely applied, indicating a critical gap in the skill testing and deployment pipeline.
 - Model endpoints may return a 200 status with no choices, mandating response validation and immediate fallback.
@@ -51,11 +56,6 @@
 - Model latency variance (13-35s) on identical endpoints demands per-endpoint circuit-breakers and live performance ledgers for routing.
 - Swarm convergence fails at 2 cycles with score plateaus, indicating missing automated early-stopping criteria for critic-driven plateaus.
 - Hand-crafted error classification remains a systemic bottleneck preventing model error reduction below 6/10 despite evolutionary variants.
-- Hand-action file reads (166-167 lines, 2-3s) succeed reliably while model calls fail, suggesting local deterministic operations should be preferred ov
-- Calibration drift (predicted 7 vs actual 6) reveals the error prediction model systematically overestimates success probability for current model sele
-- Evolutionary optimization cycles stall at score 6/10 without convergence, indicating the fitness function or mutation operators lack sufficient gradie
-- dots-studio/dots-3-note-preview:free demonstrates consistent reliability (33-34s latency, successful completions) making it the preferred primary free
-- Free-tier models exhibit two distinct failure modes: NVIDIA Nemotron returns 502 upstream overload errors while Google Gemma models hit 429 rate limit
 
 ---
 

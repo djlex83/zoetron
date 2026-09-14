@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11337 Fakten** · Stand 2026-09-14 03:57 UTC · aktualisiert bei jedem Herzschlag
+**11341 Fakten** · Stand 2026-09-14 04:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7273
+- **dream:** 7278
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 943
 - **last_swarm_goal:** 678
@@ -10,9 +10,34 @@
 - **strategy:** 184
 - **tool:** 153
 - **hand_result:** 83
-- **aktuell_organfehler:** 31
+- **aktuell_organfehler:** 30
 
 ---
+
+### `dream:20260914040529:5:5d496a`
+*14.09. 04:05 UTC · Quelle: dream*
+
+Aggressive pruning (47 events in one run) risks discarding diagnostic context needed for failure pattern recognition.
+
+### `dream:20260914040529:4:651163`
+*14.09. 04:05 UTC · Quelle: dream*
+
+Dream-generated skill proposals accumulate but lack a convergence gate to validate and promote them into active capabilities.
+
+### `dream:20260914040529:3:5e3b75`
+*14.09. 04:05 UTC · Quelle: dream*
+
+Simulation utility remains low (5 starts, 2 applies) because outcomes aren't automatically fed back into goal execution.
+
+### `dream:20260914040529:2:a94e7a`
+*14.09. 04:05 UTC · Quelle: dream*
+
+Swarm knowledge staleness recurs because freshness checks are manual, not threshold-triggered automatic syncs.
+
+### `dream:20260914040529:1:510421`
+*14.09. 04:05 UTC · Quelle: dream*
+
+Model endpoint failures (502/429) cascade into decision unreliability because no fallback routing or health monitoring exists.
 
 ### `dream:20260914035541:5:987e05`
 *14.09. 03:55 UTC · Quelle: dream*
@@ -42032,11 +42057,6 @@ Repeated 429 errors from z-ai/glm-5.2:free indicate a systemic rate-limiting iss
 *31.08. 04:08 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-31 04:04:36 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `aktuell_organfehler`
-*31.08. 04:00 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 03:56:46 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Orga
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*

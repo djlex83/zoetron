@@ -47944,3 +47944,21 @@
 {"ts": 1788752794.0233552, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.27, "gelesen": 151}}
 {"ts": 1788752794.0258563, "kind": "reflex_used", "payload": {"goal": "Simulationen öfter nutzen", "tool": "fähigkeiten-durch-simulation-prüfen.py", "ok": true}}
 {"ts": 1788752794.4294434, "kind": "act_done", "payload": {"goal_title": "Simulationen öfter nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788148824.9140964, "key": "aktuell_organfehler", "value": "ORGANFEHLER (2026-08-31 03:56:46 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ Herzschlag Phase reparieren.", "source": "selbstdiagnose.py"}
+{"ts": 1788753287.628944, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788753356.0511477, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788753357.8662722, "kind": "prune_run", "payload": {"facts_pruned": 6, "events_pruned": 14}}
+{"ts": 1788753466.449467, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 105.2, "tokens_ein": 1389, "tokens_aus": 953}}
+{"ts": 1788753466.4500337, "kind": "skill_proposal", "payload": {"proposal": "Build ProviderFailoverChain: ordered model list per capability tier with real-time 429/latency health checks, auto-promote/demote, and hard latency SLA per tier (reflex<2s, planning<10s, batch<60s)."}}
+{"ts": 1788753466.4500937, "kind": "skill_proposal", "payload": {"proposal": "Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill against failure scenarios before it is activated."}}
+{"ts": 1788753466.4501486, "kind": "skill_proposal", "payload": {"proposal": "Implement FailureTaxonomyIngestor: parse every model_fail into {provider, error_code, retryable, latency_bucket}, compute daily reliability scores, and feed ModelRegistry ranking."}}
+{"ts": 1788753466.4502017, "kind": "skill_proposal", "payload": {"proposal": "Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject calls exceeding budget and invoke failover before the caller waits."}}
+{"ts": 1788753466.4502554, "kind": "skill_proposal", "payload": {"proposal": "Design StaleKnowledgeDetector: periodic diff of local facts vs. swarm HEAD, emit patch proposals with confidence scores, and auto-trigger convergence test before marking goals converged."}}
+{"ts": 1788753466.4503112, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788753542.211357, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 73.8, "tokens_ein": 496, "tokens_aus": 812}}
+{"ts": 1788753542.2116618, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Alte Schwarm-Ziele und Kritiken sind veraltet. Wir brauchen frische Infos für gute Entscheidungen.", "signal": "stale"}}
+{"ts": 1788753542.2117863, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren", "why": "Fast halb so viele Fehler wie Erfolge. Bessere Vorhersagen machen uns sicherer.", "signal": "failure"}}
+{"ts": 1788753542.2118802, "kind": "drive_goal", "payload": {"title": "Viele Fähigkeiten sortieren", "why": "65 neue Fähigkeits-Vorschläge liegen herum. Wir müssen die besten finden und nutzen.", "signal": "gap"}}
+{"ts": 1788753545.5262337, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.12, "gelesen": 58}}
+{"ts": 1788753545.5305696, "kind": "reflex_used", "payload": {"goal": "Aktualisiere alte Schwarm-Infos", "tool": "alte-erinnerungen-aktualisieren.py", "ok": true}}
+{"ts": 1788753545.874313, "kind": "act_done", "payload": {"goal_title": "Aktualisiere alte Schwarm-Infos", "score": null, "converged": true, "mode": "reflex"}}
