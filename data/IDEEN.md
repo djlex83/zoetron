@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 02:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 02:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,7 +19,7 @@
 - Implement a centralized rate‑limit handler that intercepts HTTP 429 responses, applies exponential backoff wit *(hatte die Idee 3×)*
 - Create a dynamic model health dashboard that tracks per‑model error rates and auto‑degrades models after a thr *(hatte die Idee 3×)*
 - Generalize the stale-knowledge reflex into a configurable skill: domain, freshness predicate, fetch tool, and  *(hatte die Idee 3×)*
-- Implement provider-aware request router with per-provider token buckets, concurrent fallback fan-out, and circ *(hatte die Idee 2×)*
+- Wrap the skill-proposal-to-skill pipeline in a checkpointing supervisor that retries failed reflexes with expo *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 15–37 items per cycle yet self-diagnosis reports zero organ errors, suggesting pruning masks rather than fixes root causes.
+- Proposed skills accumulate but are never validated against live performance, so the meta-learning loop remains open.
+- Latency variance (28–58s) on the same model makes time-budget planning unreliable without per-model p50/p95 tracking.
+- Swarm evolution consistently stalls at score 6/10 with converged=false, indicating the critic/builder loop lacks a hard acceptance threshold.
+- Model endpoint failures (502 upstream errors) cascade into task failure because no automatic failover or circuit-breaker exists.
 - Calibration error of 0 (predicted=actual=6) shows the predictor is reliable for this task class and can gate resource allocation.
 - Recurring 'Path mismatch: tool generator' critic issues indicate missing artifact path contracts between code generation and execution environments.
 - Evolutionary search produces high-scoring variants (9/10) but swarm execution stalls at 6/10 unconverged, revealing a variant-to-integration gap.
@@ -51,11 +56,6 @@
 - Directly compiling approved skill proposals into in-memory Python modules eliminates the need for external shell scripts.
 - Incorporating the p90 latency of the active model into task budgets prevents timeout failures.
 - When model endpoints return 5xx or 429 errors, they should be temporarily blacklisted and traffic redirected to fallback providers.
-- Pruning 10 facts and 23 events reduced memory overhead, confirming periodic cleanup is beneficial.
-- Reflex actions successfully executed auto-generated skill proposals, demonstrating a viable automation loop.
-- Recurring drive goals about model errors and simulation gaps indicate systemic reliability and utilization issues.
-- Latency for successful calls varies between 22s and 97s, so per-model timeouts and adaptive retries are essential.
-- Free-tier model endpoints frequently return 502 or 429 errors under load, requiring a fallback chain with exponential backoff.
 
 ---
 

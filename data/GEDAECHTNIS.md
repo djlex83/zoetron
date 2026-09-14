@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11336 Fakten** · Stand 2026-09-14 02:48 UTC · aktualisiert bei jedem Herzschlag
+**11334 Fakten** · Stand 2026-09-14 02:58 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7258
-- **swarm_artifact:** 1639
+- **swarm_artifact:** 1637
 - **last_swarm_critique:** 943
 - **last_swarm_goal:** 678
 - **anti_pattern:** 365
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914025547:5:00e30c`
+*14.09. 02:55 UTC · Quelle: dream*
+
+Pruning removes 15–37 items per cycle yet self-diagnosis reports zero organ errors, suggesting pruning masks rather than fixes root causes.
+
+### `dream:20260914025547:4:68e268`
+*14.09. 02:55 UTC · Quelle: dream*
+
+Proposed skills accumulate but are never validated against live performance, so the meta-learning loop remains open.
+
+### `dream:20260914025547:3:6acf04`
+*14.09. 02:55 UTC · Quelle: dream*
+
+Latency variance (28–58s) on the same model makes time-budget planning unreliable without per-model p50/p95 tracking.
+
+### `dream:20260914025547:2:164e74`
+*14.09. 02:55 UTC · Quelle: dream*
+
+Swarm evolution consistently stalls at score 6/10 with converged=false, indicating the critic/builder loop lacks a hard acceptance threshold.
+
+### `dream:20260914025547:1:99cc26`
+*14.09. 02:55 UTC · Quelle: dream*
+
+Model endpoint failures (502 upstream errors) cascade into task failure because no automatic failover or circuit-breaker exists.
 
 ### `dream:20260914024607:5:ce7a87`
 *14.09. 02:46 UTC · Quelle: dream*
@@ -41967,31 +41992,6 @@ score=4; issues=Drittes Artefakt ist keine Skill-Implementierung, sondern nur Sh
 *31.08. 02:50 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten prüfen und einbauen
-
-### `dream:20260831025007:5:ff9c1c`
-*31.08. 02:50 UTC · Quelle: dream*
-
-Reflex-driven skill adoption (beste-vorschläge-in-fähigkeiten-verwande.py) works but operates too slowly to prevent repeated failures.
-
-### `dream:20260831025007:4:5fd027`
-*31.08. 02:50 UTC · Quelle: dream*
-
-Skill proposals for resilience (CircuitBreaker, HealthTracker, ErrorClassifier) exist but remain unimplemented, creating a proposal-implementation gap.
-
-### `dream:20260831025007:3:0d66e2`
-*31.08. 02:50 UTC · Quelle: dream*
-
-Latency variance spans 17x (5.6s vs 93s) making fixed timeouts ineffective; percentile-based SLAs required.
-
-### `dream:20260831025007:2:32bdd0`
-*31.08. 02:50 UTC · Quelle: dream*
-
-Upstream provider errors (502) cascade into silent failures with 200 status but empty choices, breaking assumption that HTTP 200 means success.
-
-### `dream:20260831025007:1:4b0c89`
-*31.08. 02:50 UTC · Quelle: dream*
-
-Rate limiting (429) is the dominant cross-model failure mode, affecting 4/5 models simultaneously indicating shared quota exhaustion.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*
