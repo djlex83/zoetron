@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 07:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 07:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
+- Modellfehler reduzieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Exponential backoff with probe requests re-enables blocked models, but must be paired with circuit breakers to avoid cascading failures.
+- Automated A/B simulation of skill proposals against a fitness function accelerates convergence to robust procedures.
+- Stale collective knowledge leads to incorrect swarm decisions; push-based sync with TTL and version vectors ensures freshness.
+- Per-model health tracking (latency, error rate, quota) enables dynamic fallback and circuit breaking within a latency budget.
+- Dominant model failures are HTTP 429 (quota) and 502 (upstream overload), requiring intelligent request routing and backoff.
 - Hand actions and reflexes complete successfully only when preconditions (file paths, env vars, swarm freshness) are implicitly satisfied; a pre-execut
 - Pruning 21 events and 1 fact per cycle maintains working memory, yet without a recall audit the system risks discarding information that could prevent
 - Drive goals are triggered by internal signals (stale knowledge, failure logs, dream artifacts), proving that self-motivated learning cycles are effect
@@ -51,11 +56,6 @@
 - Reflex actions converge quickly but do not address root causes, leading to recurring issues.
 - Skill proposals are generated but not executed, creating a persistent gap between ideas and capabilities.
 - Free models are being rate-limited (429 errors), indicating the need for exponential backoff and provider rotation.
-- Pruning (facts/events) prevents memory bloat but must preserve cross-references for dream connectivity.
-- Reflex-driven tool use (model accuracy, simulation learning) converges quickly when goals are concrete.
-- Stale swarm goals and disconnected dreams indicate knowledge decay; periodic refresh and linking are necessary.
-- High-latency fallback models (16–42 s) degrade responsiveness; caching identical queries can mitigate this.
-- Rate-limited models (429 errors) require automatic fallback with exponential backoff to maintain reliability.
 
 ---
 

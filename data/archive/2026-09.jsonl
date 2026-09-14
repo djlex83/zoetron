@@ -48407,3 +48407,20 @@
 {"ts": 1788765020.1517081, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 3}}
 {"ts": 1788765020.154514, "kind": "reflex_used", "payload": {"goal": "Vorschläge in Taten umwandeln", "tool": "beste-vorschläge-in-fähigkeiten-verwande.py", "ok": true}}
 {"ts": 1788765020.6229854, "kind": "act_done", "payload": {"goal_title": "Vorschläge in Taten umwandeln", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788765518.1369298, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788765586.6861758, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788765588.4809444, "kind": "prune_run", "payload": {"facts_pruned": 2, "events_pruned": 0}}
+{"ts": 1788765663.1843224, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 71.2, "tokens_ein": 1295, "tokens_aus": 561}}
+{"ts": 1788765663.184935, "kind": "skill_proposal", "payload": {"proposal": "ProviderHealthMonitor: track per-provider success rate, latency p95, and error-class frequency; expose a health score for scheduler routing decisions."}}
+{"ts": 1788765663.184996, "kind": "skill_proposal", "payload": {"proposal": "FailureContextPreserver: snapshot last 20 model_fail events with active goal/tool/provider context before any pruning; discard only successful routine events."}}
+{"ts": 1788765663.185051, "kind": "skill_proposal", "payload": {"proposal": "SkillValidationGate: require deterministic test harness (success rate >0.8, latency <2s, 3 consecutive passes) before any skill enters the registry."}}
+{"ts": 1788765663.1851027, "kind": "skill_proposal", "payload": {"proposal": "FailurePatternMiner: every 5 model_fail events, correlate active goals/tools/providers; emit deduplicated pattern report with suggested mitigations."}}
+{"ts": 1788765663.1851554, "kind": "skill_proposal", "payload": {"proposal": "ErrorTrendTracker: maintain a rolling window of per-cycle error rates and trigger model fallback or retraining only after 3 consecutive cycles of worsening trends, not on individual failures."}}
+{"ts": 1788765663.1852117, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788765695.1638353, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 29.7, "tokens_ein": 499, "tokens_aus": 583}}
+{"ts": 1788765695.1640065, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft (50 Fehlschläge), was neue Fähigkeiten blockiert. Weniger Fehler bedeuten verlässlichere Aktionen.", "signal": "failure"}}
+{"ts": 1788765695.164085, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Kritiken und Ziele vom Schwarm sind veraltet. Frische Infos helfen, besser mit anderen zu lernen.", "signal": "stale"}}
+{"ts": 1788765695.1641536, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Skills wirklich nutzen", "why": "Es gibt viele Skill-Vorschläge (65), aber unklar ob sie angewendet werden. Umsetzung macht das System fähiger.", "signal": "gap"}}
+{"ts": 1788765697.8633533, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.45, "gelesen": 67}}
+{"ts": 1788765697.8667293, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Ziele aufräumen", "tool": "alte-schwarm-ergebnisse-aufräumen.py", "ok": true}}
+{"ts": 1788765698.220774, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Ziele aufräumen", "score": null, "converged": true, "mode": "reflex"}}
