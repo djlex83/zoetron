@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 00:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 00:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
+- Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency varies wildly (10s–192s) even for the same model, requiring timeout budgets and async handling to avoid pipeline stalls.
+- Critic output parsing failures ('unparseable') indicate a need for structured output enforcement or robust parsing fallback logic.
+- Evolutionary optimization with 3 variants improved critic scores from 5/10 to 9/8/9, demonstrating that iterative refinement outperforms single-pass g
+- Simulation-based pre-execution review caught 5 risks and triggered 2 revisions, preventing downstream failures in the generated artifact.
+- Primary models (Nemotron, Gemma) fail frequently with 502/429 errors, making fallback to slower but reliable models (dots-studio) essential for task c
 - Model latency and token usage vary wildly between calls, suggesting that the system does not yet adapt its request patterns to model health.
 - Prune runs remove events but ignore facts, leaving a growing knowledge base that is never systematically aged or deprecated.
 - Reflex-based goal updates and memory consolidation are effective self-correction mechanisms but remain manually triggered and isolated.
@@ -51,11 +56,6 @@
 - Three distinct model-reliability proposals (registry, router, calibration) cluster around the same root cause: no systematic model health observabilit
 - The same stale-knowledge reflex executes repeatedly for different domains (group info, group goals), revealing a missing abstraction layer for configu
 - Periodic pruning wastes cycles by running when no facts need removal (0 facts pruned in two runs), confirming write-coupled triggers would be more eff
-- Proactive health monitoring and circuit breaking isolate failures before they degrade the system.
-- Provider reliability fluctuates; continuous calibration and downweighting improve routing decisions.
-- Low swarm confidence after 2+ revisions signals a need for deterministic fallback or human escalation.
-- Free-tier endpoints demand rate limiting with backoff to avoid 429 errors and ensure stability.
-- Model latency is highly variable (6–17s) and requires adaptive timeouts to prevent cascading failures.
 
 ---
 

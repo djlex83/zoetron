@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11358 Fakten** · Stand 2026-09-14 00:11 UTC · aktualisiert bei jedem Herzschlag
+**11352 Fakten** · Stand 2026-09-14 00:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7303
-- **swarm_artifact:** 1627
+- **dream:** 7298
+- **swarm_artifact:** 1626
 - **last_swarm_critique:** 940
 - **last_swarm_goal:** 675
 - **anti_pattern:** 363
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914001943:5:c8d610`
+*14.09. 00:19 UTC · Quelle: dream*
+
+Model latency varies wildly (10s–192s) even for the same model, requiring timeout budgets and async handling to avoid pipeline stalls.
+
+### `dream:20260914001943:4:fb531f`
+*14.09. 00:19 UTC · Quelle: dream*
+
+Critic output parsing failures ('unparseable') indicate a need for structured output enforcement or robust parsing fallback logic.
+
+### `dream:20260914001943:3:b09c0c`
+*14.09. 00:19 UTC · Quelle: dream*
+
+Evolutionary optimization with 3 variants improved critic scores from 5/10 to 9/8/9, demonstrating that iterative refinement outperforms single-pass generation.
+
+### `dream:20260914001943:2:a89f97`
+*14.09. 00:19 UTC · Quelle: dream*
+
+Simulation-based pre-execution review caught 5 risks and triggered 2 revisions, preventing downstream failures in the generated artifact.
+
+### `dream:20260914001943:1:f7c92e`
+*14.09. 00:19 UTC · Quelle: dream*
+
+Primary models (Nemotron, Gemma) fail frequently with 502/429 errors, making fallback to slower but reliable models (dots-studio) essential for task completion.
 
 ### `tool:träume-in-echte-fähigkeiten-umsetzen`
 *14.09. 00:09 UTC · Quelle: hands*
@@ -42132,56 +42157,6 @@ score=4; issues=Field name mismatch between artifacts: Artifact 2 outputs 'renew
 *31.08. 00:11 UTC · Quelle: system*
 
 Veraltete Ziele erneuern
-
-### `dream:20260831000947:5:cd1963`
-*31.08. 00:09 UTC · Quelle: dream*
-
-Single-cycle swarm convergence with score 8 indicates planner-builder-critic role allocation is well-calibrated for this task class.
-
-### `dream:20260831000947:4:83e7d4`
-*31.08. 00:09 UTC · Quelle: dream*
-
-Automated tool rejection for destructive operations (os.system/subprocess) correctly enforces human-in-the-loop safety.
-
-### `dream:20260831000947:3:3a7d12`
-*31.08. 00:09 UTC · Quelle: dream*
-
-Poolside Laguna consistently delivers low-latency (1.2s) successful completions, making it the only viable free fallback.
-
-### `dream:20260831000947:2:f5ca2e`
-*31.08. 00:09 UTC · Quelle: dream*
-
-Nvidia Nemotron succeeds but exhibits extreme latency variance (29-95s) that violates real-time constraints.
-
-### `dream:20260831000947:1:22d8f2`
-*31.08. 00:09 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer systematic rate-limiting (429) making them unreliable for production workflows.
-
-### `dream:20260831000243:5:1eb522`
-*31.08. 00:02 UTC · Quelle: dream*
-
-System operates at stress=1.0 in conserve mode but still spawns swarms and model calls, violating its own metabolic budget.
-
-### `dream:20260831000243:4:4661dd`
-*31.08. 00:02 UTC · Quelle: dream*
-
-Previous dream proposals (registry, probes, classifier, retriever, lifecycle) remain unimplemented, creating an idea-execution gap.
-
-### `dream:20260831000243:3:8e24eb`
-*31.08. 00:02 UTC · Quelle: dream*
-
-Nemotron's latency varies 4x (18-73s) and now returns empty choices, showing even 'healthy' models degrade without circuit-breaking.
-
-### `dream:20260831000243:2:f73865`
-*31.08. 00:02 UTC · Quelle: dream*
-
-Hand actions fail because relative paths ignore ZOETRON_DATA, revealing a systemic path-resolution fragility across tools.
-
-### `dream:20260831000243:1:665d20`
-*31.08. 00:02 UTC · Quelle: dream*
-
-z-ai/glm-5.2:free consistently returns 429 errors yet remains in rotation, proving no automatic quarantine exists for rate-limited models.
 
 ### `last_swarm_critique`
 *30.08. 23:56 UTC · Quelle: critic*

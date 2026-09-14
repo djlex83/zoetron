@@ -1,11 +1,17 @@
 {
- "stand": "2026-09-14 00:09:47",
+ "stand": "2026-09-14 00:20:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
    "laeufe": 15,
    "erfolge": 15,
+   "quote": 1.0
+  },
+  {
+   "tool": "ferngedächtnisse-verbinden.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -22,12 +28,6 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "ferngedächtnisse-verbinden.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -198,12 +198,6 @@
    "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
