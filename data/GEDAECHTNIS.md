@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11234 Fakten** · Stand 2026-09-14 23:40 UTC · aktualisiert bei jedem Herzschlag
+**11234 Fakten** · Stand 2026-09-14 23:50 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7163
 - **swarm_artifact:** 1615
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914234806:5:546d32`
+*14.09. 23:48 UTC · Quelle: dream*
+
+Five concrete skill proposals exist but remain untested because no validation harness gates them into the active toolset.
+
+### `dream:20260914234806:4:73c0b6`
+*14.09. 23:48 UTC · Quelle: dream*
+
+Simulation verdicts return 'go' with 5 risks and 5 revisions, but the reflex executor fails because revisions are not auto-applied before commit.
+
+### `dream:20260914234806:3:4e1403`
+*14.09. 23:48 UTC · Quelle: dream*
+
+Metabolic stress at 0.96 forces max_iterations=1, preventing the multi-step refinement that simulations require to close the practice gap.
+
+### `dream:20260914234806:2:225191`
+*14.09. 23:48 UTC · Quelle: dream*
+
+Relative file paths in hand_action resolve to empty directories because ZOETRON_DATA and sys.argv[1] are not pre-expanded, making tool execution non-deterministic.
+
+### `dream:20260914234806:1:4cba72`
+*14.09. 23:48 UTC · Quelle: dream*
+
+Model endpoints (Nvidia 502, Google 429) fail silently under load without automatic failover, causing decision paralysis during high-stress episodes.
 
 ### `dream:20260914233840:5:2b3963`
 *14.09. 23:38 UTC · Quelle: dream*
@@ -41414,31 +41439,6 @@ Nemotron-3-ultra succeeds only after extreme latency (44–105 s), indicating co
 *31.08. 23:49 UTC · Quelle: dream*
 
 Free-tier models exhibit cascading failures: rate limits (429) and upstream overloads (502) make them unreliable for critical paths without automatic fallback.
-
-### `dream:20260831234350:5:520a1f`
-*31.08. 23:43 UTC · Quelle: dream*
-
-Hand-action execution (code runs) shows non-deterministic success (exit 1 vs 0) requiring idempotent retry logic.
-
-### `dream:20260831234350:4:bcda76`
-*31.08. 23:43 UTC · Quelle: dream*
-
-Simulation-based verification with risk scoring (3 risks → 3 revisions) successfully prevented deployment of flawed artifacts.
-
-### `dream:20260831234350:3:1bcc9b`
-*31.08. 23:43 UTC · Quelle: dream*
-
-Poolside Laguna-S-2.1 delivers consistent low latency (~15s) suggesting smaller specialized models outperform large general ones on free tiers.
-
-### `dream:20260831234350:2:8e1459`
-*31.08. 23:43 UTC · Quelle: dream*
-
-Nvidia Nemotron shows high latency variance (38-109s) and intermittent 502 upstream overloads, indicating provider-side capacity issues.
-
-### `dream:20260831234350:1:1caf77`
-*31.08. 23:43 UTC · Quelle: dream*
-
-Free-tier models across all providers suffer pervasive rate limiting (429 errors) making them unreliable for sustained workloads.
 
 ### `last_swarm_critique`
 *31.08. 23:26 UTC · Quelle: critic*
