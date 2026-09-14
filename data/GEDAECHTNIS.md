@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11321 Fakten** · Stand 2026-09-14 11:51 UTC · aktualisiert bei jedem Herzschlag
+**11321 Fakten** · Stand 2026-09-14 12:02 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7238
 - **swarm_artifact:** 1639
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914115936:5:c5e455`
+*14.09. 11:59 UTC · Quelle: dream*
+
+Structured artifact tracking (logging code lines, execution status, retrieval counts) provides quantitative links between model outputs and functional success.
+
+### `dream:20260914115936:4:8ce472`
+*14.09. 11:59 UTC · Quelle: dream*
+
+Task complexity predictions overestimate steps by roughly two, creating a gap between planned and actual executions.
+
+### `dream:20260914115936:3:1e510c`
+*14.09. 11:59 UTC · Quelle: dream*
+
+A primary‑secondary routing layer that switches to an alternative model on 429 or timeout improves reliability.
+
+### `dream:20260914115936:2:f4ad6f`
+*14.09. 11:59 UTC · Quelle: dream*
+
+Free‑tier model latency varies between 20 and 91 seconds, causing read timeouts that must be handled.
+
+### `dream:20260914115936:1:9acdb3`
+*14.09. 11:59 UTC · Quelle: dream*
+
+Repeated HTTP 429 errors from free‑tier Gemma models show that rate limiting is a dominant failure cause.
 
 ### `dream:20260914114858:5:6990ae`
 *14.09. 11:48 UTC · Quelle: dream*
@@ -41837,31 +41862,6 @@ Fallback models succeed but exhibit high latency variance (13-60s), making timeo
 *31.08. 12:01 UTC · Quelle: dream*
 
 Rate limiting (429) on specific models is a persistent, predictable failure mode that requires proactive routing rather than reactive retries.
-
-### `dream:20260831115454:5:f545cd`
-*31.08. 11:54 UTC · Quelle: dream*
-
-Skill proposals lack automated promotion-to-commitment pipeline causing implementation drift despite reflex execution capability.
-
-### `dream:20260831115454:4:b31183`
-*31.08. 11:54 UTC · Quelle: dream*
-
-Multiple independent skill proposals converge on identical resilience primitives (circuit breaker, EWMA, fallback chain) confirming architectural necessity.
-
-### `dream:20260831115454:3:0dc629`
-*31.08. 11:54 UTC · Quelle: dream*
-
-Silent degradation manifests as 200-status empty responses necessitating pre-flight probe validation before production traffic.
-
-### `dream:20260831115454:2:65ba61`
-*31.08. 11:54 UTC · Quelle: dream*
-
-Latency variance across models spans 10x (6s–60s) demanding real-time health-score routing over static priority.
-
-### `dream:20260831115454:1:403629`
-*31.08. 11:54 UTC · Quelle: dream*
-
-Free-tier model endpoints exhibit systemic rate-limiting (429) and upstream overload (502) failures requiring circuit-breaker isolation.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-14 11:49:39",
+ "stand": "2026-09-14 12:01:08",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 18,
-   "erfolge": 18,
+   "laeufe": 19,
+   "erfolge": 19,
    "quote": 1.0
   },
   {
@@ -384,9 +384,9 @@
  "haende_quote": 0.819,
  "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 25,
+  "n": 24,
   "best": 9.0,
-  "schnitt": 5.4
+  "schnitt": 5.38
  },
  "score_nach_ziel_typ": {
   "analyse": {

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 12:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Modellfehler beheben *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
+- Modellfehler beheben *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
-- Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Structured artifact tracking (logging code lines, execution status, retrieval counts) provides quantitative links between model outputs and functional
+- Task complexity predictions overestimate steps by roughly two, creating a gap between planned and actual executions.
+- A primary‑secondary routing layer that switches to an alternative model on 429 or timeout improves reliability.
+- Free‑tier model latency varies between 20 and 91 seconds, causing read timeouts that must be handled.
+- Repeated HTTP 429 errors from free‑tier Gemma models show that rate limiting is a dominant failure cause.
 - The transition from model failures to successful completions using alternative models underscores the value of a diverse and redundant model pool.
 - Stale swarm information and outdated collective goals directly degrade the quality of distributed decision-making and coordination.
 - Aggressive pruning of facts and events is necessary for memory hygiene but risks losing valuable cross-cutting patterns if not carefully scoped.
@@ -51,11 +56,6 @@
 - The system's drive goals consistently flag model errors and stale swarm data as primary performance bottlenecks.
 - Successful calls to dots‑studio/dots‑3‑note‑preview show that latency‑tolerant models can absorb load when others fail.
 - Repeated 429 errors from google/gemma free models indicate rate‑limit saturation requiring fallback routing.
-- Systematic error analysis tools are successful in identifying patterns but require tighter integration with the drive system.
-- Diversifying model providers is critical for maintaining operational continuity when primary high-capacity models fail.
-- Stale swarm goals act as cognitive noise and hinder the system's ability to prioritize new, relevant tasks.
-- Model locking mechanisms effectively prevent resource waste during outages but create dependency on a few stable models.
-- API rate limits (429) and timeouts are the primary causes of systemic model failure across multiple providers.
 
 ---
 
