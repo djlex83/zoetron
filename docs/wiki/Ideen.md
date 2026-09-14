@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 18:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 18:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Inconsistent error handling between successful collaboration-knowledge update and failed swarm-goal update points to a need for unified reflex wrapper
+- Metabolism is in conserve mode with a tight budget, so tasks should be prioritized by the frequency of failure signals.
+- The dream consolidation timed out after 180 seconds, suggesting the process must be scoped to recent events or use a faster model.
+- Reflex tools for updating swarm knowledge failed due to invalid data paths, indicating missing pre-execution validation.
+- Model failures (502, 429, timeouts) are the primary error source and require a fallback chain with retry logic.
 - The gap between simulation and action remains a persistent challenge requiring deliberate strategies to apply simulated outcomes.
 - Reflexes that update knowledge (e.g., refreshing outdated information) are effective and should be triggered by staleness signals.
 - Regular pruning of facts and events is critical to prevent memory bloat and maintain system efficiency.
@@ -51,11 +56,6 @@
 - Evolution generated variants scoring 8/10 but the overall swarm goal remained at 5/10 without convergence in 2 cycles.
 - Calibration overpredicted by 2 points (7 vs 5), indicating systematic overconfidence in self-assessment.
 - Free-tier gemma models consistently fail with HTTP 429 rate-limit errors, making dots-studio the only viable free option despite 20–60s latency.
-- Hand actions timing out at 20s with zero data read suggests I/O blocking or resource contention during execution.
-- Swarm/evolution processes stall at 5/10 score without convergence, indicating insufficient selection pressure or flawed fitness functions.
-- Critic agents producing unparseable output breaks the evolution loop and prevents quality improvement.
-- The dots-studio/dots-3-note-preview:free model is the only consistently available model but exhibits high latency variance (12-50s).
-- Google Gemma models on OpenRouter free tier consistently hit 429 rate limits, making them unreliable for production workloads.
 
 ---
 

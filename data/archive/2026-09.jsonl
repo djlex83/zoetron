@@ -50001,3 +50001,20 @@
 {"ts": 1788806195.4842048, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.8, "gelesen": 9}}
 {"ts": 1788806195.4867806, "kind": "reflex_used", "payload": {"goal": "Aus Fehlern lernen und Modelle verbessern", "tool": "lernen-aus-fehlern-systematisch-verbesse.py", "ok": true}}
 {"ts": 1788806195.903012, "kind": "act_done", "payload": {"goal_title": "Aus Fehlern lernen und Modelle verbessern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788806716.6865726, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788806785.1681633, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788806786.9505882, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 1}}
+{"ts": 1788806840.247944, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 49.9, "tokens_ein": 1370, "tokens_aus": 903}}
+{"ts": 1788806840.2488241, "kind": "skill_proposal", "payload": {"proposal": "Implement model_health_monitor that logs per-model success/error/latency triads every 10 calls and auto-disables models exceeding 15% error rate or 60s p95 latency."}}
+{"ts": 1788806840.2489269, "kind": "skill_proposal", "payload": {"proposal": "Create swarm_freshness_daemon that timestamps last_swarm_interaction per topic and injects a revival goal when age > 4h or external_signal=stale."}}
+{"ts": 1788806840.2489965, "kind": "skill_proposal", "payload": {"proposal": "Build simulation_habit_scheduler that inserts a zero-cost simulation step before every hand_action with write_side_effects=true, using the revision_loop skill."}}
+{"ts": 1788806840.2490532, "kind": "skill_proposal", "payload": {"proposal": "Deploy path_guard middleware that wraps all file tools, rejects non-absolute paths, and rewrites ZOETRON_DATA/... to canonical absolute paths before execution."}}
+{"ts": 1788806840.2491534, "kind": "skill_proposal", "payload": {"proposal": "Add metabolic_gatekeeper to goal_selector: read metabolism_check.state and budget.max_iterations; reject new goals if state=conserve or max_iterations<3, requeue with backoff."}}
+{"ts": 1788806840.2492516, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788806887.058312, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 45.1, "tokens_ein": 487, "tokens_aus": 939}}
+{"ts": 1788806887.058514, "kind": "drive_goal", "payload": {"title": "Modellfehler systematisch finden und beheben", "why": "Unser Modell macht fast halb so viele Fehler wie Erfolge. Wir müssen verstehen, warum es scheitert, damit es verlässlicher wird.", "signal": "failure"}}
+{"ts": 1788806887.058594, "kind": "drive_goal", "payload": {"title": "Neue Schwarm-Rückmeldungen einholen und nutzen", "why": "Die letzten Rückmeldungen aus dem Schwarm sind veraltet. Frische Kritik hilft uns, blinde Flecken zu erkennen.", "signal": "stale"}}
+{"ts": 1788806887.0586565, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich erlernen und testen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber unklar, welche wirklich funktionieren. Wir müssen sie ausprobieren.", "signal": "gap"}}
+{"ts": 1788806890.427924, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.09, "gelesen": 63}}
+{"ts": 1788806890.4300406, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten und Träume besser verbinden", "tool": "gelernte-fähigkeiten-besser-verknüpfen.py", "ok": true}}
+{"ts": 1788806890.8690574, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten und Träume besser verbinden", "score": null, "converged": true, "mode": "reflex"}}

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 18:44:58",
+ "stand": "2026-09-14 18:56:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,6 +57,12 @@
    "quote": 1.0
   },
   {
+   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "simulationen-besser-in-praxis-nutzen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -82,12 +88,6 @@
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11266 Fakten** · Stand 2026-09-14 18:46 UTC · aktualisiert bei jedem Herzschlag
+**11271 Fakten** · Stand 2026-09-14 18:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7163
+- **dream:** 7168
 - **swarm_artifact:** 1643
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 21
 
 ---
+
+### `dream:20260914185455:5:f7e764`
+*14.09. 18:54 UTC · Quelle: dream*
+
+Inconsistent error handling between successful collaboration-knowledge update and failed swarm-goal update points to a need for unified reflex wrappers.
+
+### `dream:20260914185455:4:4b9cbb`
+*14.09. 18:54 UTC · Quelle: dream*
+
+Metabolism is in conserve mode with a tight budget, so tasks should be prioritized by the frequency of failure signals.
+
+### `dream:20260914185455:3:6fdc11`
+*14.09. 18:54 UTC · Quelle: dream*
+
+The dream consolidation timed out after 180 seconds, suggesting the process must be scoped to recent events or use a faster model.
+
+### `dream:20260914185455:2:2feeed`
+*14.09. 18:54 UTC · Quelle: dream*
+
+Reflex tools for updating swarm knowledge failed due to invalid data paths, indicating missing pre-execution validation.
+
+### `dream:20260914185455:1:7dd37b`
+*14.09. 18:54 UTC · Quelle: dream*
+
+Model failures (502, 429, timeouts) are the primary error source and require a fallback chain with retry logic.
 
 ### `dream:20260914184329:5:9d21f2`
 *14.09. 18:43 UTC · Quelle: dream*
