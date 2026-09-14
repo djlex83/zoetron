@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 01:09:33",
+ "stand": "2026-09-14 01:20:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -355,9 +355,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.75,
+ "haende_quote": 0.751,
  "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 32,

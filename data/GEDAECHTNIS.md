@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11347 Fakten** · Stand 2026-09-14 01:11 UTC · aktualisiert bei jedem Herzschlag
+**11342 Fakten** · Stand 2026-09-14 01:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7288
 - **swarm_artifact:** 1627
 - **last_swarm_critique:** 941
 - **last_swarm_goal:** 676
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914012002:5:a476d7`
+*14.09. 01:20 UTC · Quelle: dream*
+
+Dream memory connection works (reflex succeeded) but insights from 14 dream cycles aren't being harvested into durable skills.
+
+### `dream:20260914012002:4:ed45dc`
+*14.09. 01:20 UTC · Quelle: dream*
+
+Swarm feedback loops are stale (repeated drive goals) because convergence gates lack delta-threshold enforcement.
+
+### `dream:20260914012002:3:9c685f`
+*14.09. 01:20 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ this cycle) but no instantiation pipeline converts them into tested, versioned modules.
+
+### `dream:20260914012002:2:1e5bd1`
+*14.09. 01:20 UTC · Quelle: dream*
+
+24 model errors accumulated but no automated classification or root-cause tracking exists, preventing targeted fallback routing.
+
+### `dream:20260914012002:1:874014`
+*14.09. 01:20 UTC · Quelle: dream*
+
+Model latency varies 2x (32-68s) on same provider, making fixed time budgets unreliable without percentile-aware scheduling.
 
 ### `dream:20260914010818:5:372c99`
 *14.09. 01:08 UTC · Quelle: dream*
@@ -42067,56 +42092,6 @@ Successful model calls exhibit 88-92s p95 latency, exceeding the 60s threshold f
 *31.08. 01:21 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429 rate-limits and 404/empty-choice errors, making them unreliable for production workflows.
-
-### `dream:20260831011352:5:1d04f8`
-*31.08. 01:13 UTC · Quelle: dream*
-
-Free-tier OpenRouter models cannot be trusted for critical-path calls; any system depending on them must assume intermittent failure as the default state.
-
-### `dream:20260831011352:4:6f0b26`
-*31.08. 01:13 UTC · Quelle: dream*
-
-Self-diagnosis and cleanup reflexes (alte-erinnerungen-aktualisieren) are functioning correctly and should be preserved as core reactive infrastructure.
-
-### `dream:20260831011352:3:12f4a7`
-*31.08. 01:13 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds every time but with 77–95s latency, so success-rate-only routing is insufficient without latency-aware fallback.
-
-### `dream:20260831011352:2:f2bf59`
-*31.08. 01:13 UTC · Quelle: dream*
-
-A persistent gap exists between skill proposals and their implementation, meaning the system generates solutions but lacks a closing mechanism to convert proposals into working code.
-
-### `dream:20260831011352:1:0509c8`
-*31.08. 01:13 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model repeatedly hits 429 rate limits on every call, indicating a structural unreliability that demands automatic quarantine rather than retry.
-
-### `dream:20260831010820:5:8eb888`
-*31.08. 01:08 UTC · Quelle: dream*
-
-Static resource budgets waste capacity on failing tasks and starve promising ones.
-
-### `dream:20260831010820:4:fa750a`
-*31.08. 01:08 UTC · Quelle: dream*
-
-High fallback latency (65-88s) makes synchronous workflows brittle; async patterns needed.
-
-### `dream:20260831010820:3:e00e3a`
-*31.08. 01:08 UTC · Quelle: dream*
-
-Field name mismatches between artifacts indicate missing schema validation in goal decomposition.
-
-### `dream:20260831010820:2:ddc8c2`
-*31.08. 01:08 UTC · Quelle: dream*
-
-Evolutionary improvement can rescue low-scoring tasks but convergence remains unreliable without explicit convergence criteria.
-
-### `dream:20260831010820:1:06e348`
-*31.08. 01:08 UTC · Quelle: dream*
-
-Free-tier model rate limits cause cascading failures requiring robust fallback orchestration.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*
