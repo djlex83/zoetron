@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 22:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dots-studio/dots-3-note-preview serves as the only consistently available fallback model despite higher latency (25-30s).
+- System operates in metabolic conserve mode (stress=1.0, max_tasks=3, max_iterations=1) severely constraining throughput during model instability.
+- Simulation-driven revision cycles (verdict: revise, 3 risks, 2 revisions) successfully produce running artifacts verified by TOR (grün=true, 540 lines
+- Hand actions fail when using relative paths instead of resolving sys.argv[1] and ZOETRON_DATA environment variable for absolute data paths.
+- Nvidia Nemotron and Google Gemma models fail systematically (502 upstream overload, 429 rate limits) making them unreliable as primary reasoning engin
 - A gap exists between generated skill proposals and their implementation, calling for a proposal scoring engine.
 - The hand action failure due to missing file underscores the necessity of pre-execution file existence validation.
 - Pruning of 7 facts and 27 events suggests stale data accumulates, requiring an automated staleness detector.
@@ -51,11 +56,6 @@
 - Automated pruning removes 5-7 facts and 17-27 events per cycle, effectively controlling memory growth.
 - The dots-studio/dots-3-note-preview model provides consistent ~22-24s latency as a stable fallback.
 - Google Gemma models consistently hit 429 rate limits on OpenRouter, making them unreliable for sustained workloads.
-- Reflex actions that connect distant memories generate novel associations, enhancing the system's understanding of complex relationships.
-- Pruning stale facts and events improves memory hygiene but should be scheduled during low-activity windows to avoid resource contention.
-- The dots-studio/dots-3-note-preview model consistently succeeds but with high latency, making it a reliable fallback option.
-- The model lockdown after three consecutive failures can cause prolonged unavailability, suggesting a need for finer-grained error handling.
-- Free-tier models frequently return 429 rate-limit errors, indicating the need for request queuing and exponential backoff.
 
 ---
 

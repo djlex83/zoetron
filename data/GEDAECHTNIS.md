@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11219 Fakten** · Stand 2026-09-14 22:47 UTC · aktualisiert bei jedem Herzschlag
+**11229 Fakten** · Stand 2026-09-14 23:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7143
-- **swarm_artifact:** 1615
-- **last_swarm_critique:** 955
-- **last_swarm_goal:** 690
-- **anti_pattern:** 373
-- **strategy:** 189
-- **tool:** 149
-- **hand_result:** 81
+- **dream:** 7148
+- **swarm_artifact:** 1621
+- **last_swarm_critique:** 956
+- **last_swarm_goal:** 691
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 150
+- **hand_result:** 80
 - **aktuell_organfehler:** 24
 
 ---
+
+### `tool:simulationen-in-echte-taten-umsetzen`
+*14.09. 23:00 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen in echte Taten umsetzen'. Datei: data/tools/simulationen-in-echte-taten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*14.09. 23:00 UTC · Quelle: critic*
+
+score=8; issues=Step extraction logic is overly broad - may capture non-action data from simulation output; Multiple execution fallback strategies indicate uncertainty about Hands organ interface contract; Metabolic conserve mode enforcement (max 3 tasks, 1 it
+
+### `last_swarm_goal`
+*14.09. 22:55 UTC · Quelle: system*
+
+Simulationen in echte Taten umsetzen
+
+### `dream:20260914225441:5:46e435`
+*14.09. 22:54 UTC · Quelle: dream*
+
+Dots-studio/dots-3-note-preview serves as the only consistently available fallback model despite higher latency (25-30s).
+
+### `dream:20260914225441:4:1e57cf`
+*14.09. 22:54 UTC · Quelle: dream*
+
+System operates in metabolic conserve mode (stress=1.0, max_tasks=3, max_iterations=1) severely constraining throughput during model instability.
+
+### `dream:20260914225441:3:3a439e`
+*14.09. 22:54 UTC · Quelle: dream*
+
+Simulation-driven revision cycles (verdict: revise, 3 risks, 2 revisions) successfully produce running artifacts verified by TOR (grün=true, 540 lines Python).
+
+### `dream:20260914225441:2:0d960f`
+*14.09. 22:54 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of resolving sys.argv[1] and ZOETRON_DATA environment variable for absolute data paths.
+
+### `dream:20260914225441:1:8d4ff0`
+*14.09. 22:54 UTC · Quelle: dream*
+
+Nvidia Nemotron and Google Gemma models fail systematically (502 upstream overload, 429 rate limits) making them unreliable as primary reasoning engines.
 
 ### `dream:20260914224419:5:32dc8f`
 *14.09. 22:44 UTC · Quelle: dream*
@@ -41354,16 +41394,6 @@ Latency varies significantly between models (2.9s to 8.3s), making dynamic routi
 *31.08. 23:05 UTC · Quelle: dream*
 
 Rate limiting (429) and upstream overload (502) are the dominant failure modes across all model tiers, requiring systematic retry and fallback logic.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:2`
-*31.08. 22:44 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Deterministic WASM Micro-Sandbox - Compile skill implementations to WASM (via wasmtime/pyodide/Rust). Each skill: single WASM module with wit interface (exports: validate, execute, metadata). Sandbox: (1) Fuel metering (instr
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:1`
-*31.08. 22:44 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Contract-Driven Abstract Interpretation - Skills are Python classes implementing a Protocol (typing.Protocol) with @contract decorators (icontract/deal) specifying pre/post/invariants. Validation: (1) Static analysis via mypy
 
 ### `last_swarm_critique`
 *31.08. 22:41 UTC · Quelle: critic*
