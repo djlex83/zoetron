@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11369 Fakten** · Stand 2026-09-14 08:32 UTC · aktualisiert bei jedem Herzschlag
+**11374 Fakten** · Stand 2026-09-14 08:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7303
+- **dream:** 7308
 - **swarm_artifact:** 1633
 - **last_swarm_critique:** 945
 - **last_swarm_goal:** 680
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914084007:5:be28a2`
+*14.09. 08:40 UTC · Quelle: dream*
+
+Combining multiple skill proposals yields composite capabilities that outperform single‑skill solutions.
+
+### `dream:20260914084007:4:17f896`
+*14.09. 08:40 UTC · Quelle: dream*
+
+Reflex tools can complete tasks without model calls, providing a reliable offline path.
+
+### `dream:20260914084007:3:417177`
+*14.09. 08:40 UTC · Quelle: dream*
+
+Pruning events without subsequent retrieval checks leads to silent data loss, requiring an audit step.
+
+### `dream:20260914084007:2:bbeff4`
+*14.09. 08:40 UTC · Quelle: dream*
+
+The dots‑studio model remains the only consistently successful fallback, with latency staying under 32 s.
+
+### `dream:20260914084007:1:3e1dbd`
+*14.09. 08:40 UTC · Quelle: dream*
+
+Repeated 429 errors from Google models indicate a rate‑limit bottleneck that must be handled with backoff or alternate routing.
 
 ### `dream:20260914082843:5:556551`
 *14.09. 08:28 UTC · Quelle: dream*

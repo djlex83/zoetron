@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 08:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 08:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler beheben *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Combining multiple skill proposals yields composite capabilities that outperform single‑skill solutions.
+- Reflex tools can complete tasks without model calls, providing a reliable offline path.
+- Pruning events without subsequent retrieval checks leads to silent data loss, requiring an audit step.
+- The dots‑studio model remains the only consistently successful fallback, with latency staying under 32 s.
+- Repeated 429 errors from Google models indicate a rate‑limit bottleneck that must be handled with backoff or alternate routing.
 - Pruning operations removed 37 events and 10 facts across two runs, confirming that periodic cleanup prevents memory bloat.
 - Reflex-driven goals ('Modellfehler reduzieren', 'Simulationen besser für Handlungen nutzen') both converged successfully, validating the reflex mechan
 - The system autonomously generated five concrete skill proposals addressing model resilience, quota management, and circuit-breaking patterns.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays quickly, requiring scheduled refresh tasks to maintain accuracy and relevance.
 - Repeated identical prompts cause unnecessary latency and rate‑limit hits; caching by prompt hash with TTL eliminates redundancy.
 - Model endpoints return 429/502 errors under load, so a router with health checks and exponential backoff is essential.
-- Automated A/B simulation of proposals against fitness functions accelerates convergence toward reliable skills.
-- Linking symbols, goals, and failure signatures across dream cycles surfaces latent patterns missed by isolated consolidation.
-- Capturing reflex outcomes with latency and success rates enables a reliability matrix for smarter routing.
-- Without auditing pruned events against retrieval failures, retention thresholds become misaligned with actual knowledge needs.
-- Concurrent endpoint failures require a circuit‑breaker with a latency budget to prevent cascading timeouts.
 
 ---
 
