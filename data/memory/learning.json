@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 13:13:18",
+ "stand": "2026-09-14 13:22:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,12 +81,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 3,
-   "erfolge": 1,
-   "quote": 0.333
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -117,6 +111,12 @@
    "quote": 1.0
   },
   {
+   "tool": "träume-besser-nutzen-lernen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -139,6 +139,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 1,
+   "quote": 0.5
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
@@ -187,12 +193,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "mehr-evolution-starten.py",
@@ -381,7 +381,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.813,
+ "haende_quote": 0.817,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 25,
@@ -390,8 +390,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 24,
-   "schnitt": 5.38
+   "n": 23,
+   "schnitt": 5.26
   },
   "bau": {
    "n": 1,

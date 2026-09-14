@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 13:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 13:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 8×)*
@@ -36,11 +36,16 @@
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
-- Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
-- Schwarmdaten auffrischen *(wieder aufgegriffen: 3×)*
+- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
+- Träume aus der Ferne verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation phase with 3 revisions successfully pre-empted risks before execution, proving its value as a safety net.
+- Model latency varied from 22.7s to 61.8s for the same model, suggesting network or load variability that should inform timeout settings.
+- The system retried the same failing models repeatedly without adjusting its selection strategy, wasting iterations and budget.
+- The dots-studio/dots-3-note-preview:free model was the only reliable fallback when Gemma models were rate-limited.
+- Google Gemma free models on OpenRouter consistently returned 429 Too Many Requests, indicating rate-limit saturation that the system failed to detect 
 - With system stress at maximum and limited budget, prioritizing models with proven reliability and caching responses will conserve resources.
 - The failed reflex to reduce model errors shows that without a health monitor and automatic disabling, the system cannot adapt to failing models.
 - dots-studio/dots-3-note-preview:free succeeded but with latency up to 61 seconds, so it should be used only when faster models are unavailable.
@@ -51,11 +56,6 @@
 - The system automatically blocks a model after three consecutive failures, which prevents further wasted calls.
 - The dots-studio/dots-3-note-preview:free model consistently succeeds with acceptable latency, making it a reliable fallback.
 - Multiple free models are failing with timeouts or HTTP 429 errors, indicating rate limiting and instability.
-- The gap between generated skill proposals and their actual implementation demands an automated deployment and testing pipeline.
-- Reflex actions using specialized scripts consistently achieve convergence, demonstrating the power of tool-based automation.
-- Periodic pruning of facts and events maintains a lean and relevant knowledge base.
-- Timeouts on large models like nemotron underscore the need for a circuit breaker that falls back to faster models after a threshold.
-- Repeated 429 errors from free models reveal the necessity of an adaptive model router that detects rate limits and switches to alternatives.
 
 ---
 

@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11303 Fakten** · Stand 2026-09-14 13:15 UTC · aktualisiert bei jedem Herzschlag
+**11303 Fakten** · Stand 2026-09-14 13:24 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7208
 - **swarm_artifact:** 1645
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914132224:5:2a8686`
+*14.09. 13:22 UTC · Quelle: dream*
+
+The simulation phase with 3 revisions successfully pre-empted risks before execution, proving its value as a safety net.
+
+### `dream:20260914132224:4:1ca2c3`
+*14.09. 13:22 UTC · Quelle: dream*
+
+Model latency varied from 22.7s to 61.8s for the same model, suggesting network or load variability that should inform timeout settings.
+
+### `dream:20260914132224:3:52986e`
+*14.09. 13:22 UTC · Quelle: dream*
+
+The system retried the same failing models repeatedly without adjusting its selection strategy, wasting iterations and budget.
+
+### `dream:20260914132224:2:38d8c6`
+*14.09. 13:22 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model was the only reliable fallback when Gemma models were rate-limited.
+
+### `dream:20260914132224:1:4f3d0c`
+*14.09. 13:22 UTC · Quelle: dream*
+
+Google Gemma free models on OpenRouter consistently returned 429 Too Many Requests, indicating rate-limit saturation that the system failed to detect and adapt to.
 
 ### `dream:20260914131245:5:5ca65d`
 *14.09. 13:12 UTC · Quelle: dream*
@@ -41714,31 +41739,6 @@ Latency variance (25-68s) on nvidia/nemotron-3-ultra indicates absent SLA-aware 
 *31.08. 13:23 UTC · Quelle: dream*
 
 Recurring 429 errors on z-ai/glm-5.2:free reveal single-model dependency without quota-aware rotation, causing predictable cascade failures.
-
-### `dream:20260831131629:5:fe94f0`
-*31.08. 13:16 UTC · Quelle: dream*
-
-Model latency variance (47s vs 147s) on the same endpoint suggests silent degradation or queueing effects that passive monitoring misses, requiring active synthetic probes to detect before production traffic arrives.
-
-### `dream:20260831131629:4:b45d25`
-*31.08. 13:16 UTC · Quelle: dream*
-
-Absolute path contract violations recur across proposals because path resolution is enforced only at hand-action boundary, not at skill composition time, allowing relative paths to propagate into execution.
-
-### `dream:20260831131629:3:d0dda6`
-*31.08. 13:16 UTC · Quelle: dream*
-
-Drive goals persistently signal execution gaps (stale market analysis, untested skill proposals) while self-diagnosis reports zero internal errors, exposing a blind spot between perceived health and actual delivery capability.
-
-### `dream:20260831131629:2:2d942d`
-*31.08. 13:16 UTC · Quelle: dream*
-
-Redundant skill proposals for identical resilience patterns (circuit breaker, pre-flight probe, fallback chain) indicate a missing proposal deduplication and implementation tracking mechanism.
-
-### `dream:20260831131629:1:abca3d`
-*31.08. 13:16 UTC · Quelle: dream*
-
-Rate limiting (429) on specific models triggers cascading fallback latency spikes up to 147s, revealing that single-model dependency without proactive health checks creates unpredictable tail latency.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*
