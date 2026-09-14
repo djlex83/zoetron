@@ -1,17 +1,11 @@
 {
- "stand": "2026-09-14 07:26:54",
+ "stand": "2026-09-14 07:36:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
    "laeufe": 17,
    "erfolge": 17,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 7,
-   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -28,6 +22,12 @@
   },
   {
    "tool": "ferngedächtnisse-verbinden.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -127,12 +127,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
@@ -235,6 +229,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "simulationen-in-die-praxis-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
@@ -391,9 +391,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "vergessene-schwarmprojekte-reaktivieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.785,
+ "haende_quote": 0.789,
  "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 28,
@@ -401,13 +407,13 @@
   "schnitt": 6.11
  },
  "score_nach_ziel_typ": {
-  "analyse": {
-   "n": 26,
-   "schnitt": 6.08
-  },
   "bau": {
    "n": 2,
    "schnitt": 6.5
+  },
+  "analyse": {
+   "n": 25,
+   "schnitt": 6.0
   }
  }
 }

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11370 Fakten** · Stand 2026-09-14 07:28 UTC · aktualisiert bei jedem Herzschlag
+**11365 Fakten** · Stand 2026-09-14 07:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7313
+- **dream:** 7308
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914073611:5:f7a336`
+*14.09. 07:36 UTC · Quelle: dream*
+
+Automated A/B simulation of proposals against fitness functions accelerates convergence toward reliable skills.
+
+### `dream:20260914073611:4:8f017a`
+*14.09. 07:36 UTC · Quelle: dream*
+
+Linking symbols, goals, and failure signatures across dream cycles surfaces latent patterns missed by isolated consolidation.
+
+### `dream:20260914073611:3:793c4c`
+*14.09. 07:36 UTC · Quelle: dream*
+
+Capturing reflex outcomes with latency and success rates enables a reliability matrix for smarter routing.
+
+### `dream:20260914073611:2:a35b19`
+*14.09. 07:36 UTC · Quelle: dream*
+
+Without auditing pruned events against retrieval failures, retention thresholds become misaligned with actual knowledge needs.
+
+### `dream:20260914073611:1:582709`
+*14.09. 07:36 UTC · Quelle: dream*
+
+Concurrent endpoint failures require a circuit‑breaker with a latency budget to prevent cascading timeouts.
 
 ### `dream:20260914072621:5:bb5555`
 *14.09. 07:26 UTC · Quelle: dream*
@@ -42142,56 +42167,6 @@ Free tier models cascade into 429 rate limits within seconds, making sequential 
 *31.08. 07:40 UTC · Quelle: dream*
 
 Relative path resolution fails silently when ZOETRON_DATA environment variable exists but sys.argv[1] points elsewhere, causing zero-byte reads.
-
-### `dream:20260831073509:5:9c9a87`
-*31.08. 07:35 UTC · Quelle: dream*
-
-Existing skill proposals target the observed failure modes but lack an execution tracker to prevent proposal staleness.
-
-### `dream:20260831073509:4:1f7e4e`
-*31.08. 07:35 UTC · Quelle: dream*
-
-Zero pruning activity despite repeated failures suggests the memory retention policy is decoupled from error signals.
-
-### `dream:20260831073509:3:3b43f6`
-*31.08. 07:35 UTC · Quelle: dream*
-
-Latency spread of 10.8 s vs 20.5 s on successful calls shows SLA variance large enough to break downstream timeouts.
-
-### `dream:20260831073509:2:4191ad`
-*31.08. 07:35 UTC · Quelle: dream*
-
-The single 404 on nemotron-3-ultra reveals endpoint volatility that requires proactive health probes before routing traffic.
-
-### `dream:20260831073509:1:830340`
-*31.08. 07:35 UTC · Quelle: dream*
-
-Simultaneous 429 errors across four distinct free models indicate a shared account-level quota pool rather than per-model limits.
-
-### `dream:20260831072933:5:d35e17`
-*31.08. 07:29 UTC · Quelle: dream*
-
-Pruning runs remove zero facts/events repeatedly, suggesting retention thresholds are misconfigured or data volume is below trigger levels.
-
-### `dream:20260831072933:4:0b41fa`
-*31.08. 07:29 UTC · Quelle: dream*
-
-Model fallback to inclusionai/ling-3.0-flash-fin:free succeeded with 10.8s latency, proving automated failover works when triggered.
-
-### `dream:20260831072933:3:2a7b0a`
-*31.08. 07:29 UTC · Quelle: dream*
-
-Reflex-mode tool execution successfully converts skill proposals and upgrades models without human intervention.
-
-### `dream:20260831072933:2:482fca`
-*31.08. 07:29 UTC · Quelle: dream*
-
-Dream and drive modules consistently hit 180-second timeouts, indicating a systemic processing bottleneck rather than isolated delays.
-
-### `dream:20260831072933:1:570968`
-*31.08. 07:29 UTC · Quelle: dream*
-
-Rate limiting (429) affects all free-tier OpenRouter models simultaneously, making single-model reliance unreliable.
 
 ### `last_swarm_critique`
 *31.08. 06:34 UTC · Quelle: critic*
