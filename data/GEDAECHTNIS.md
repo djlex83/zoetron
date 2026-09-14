@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11276 Fakten** · Stand 2026-09-14 19:09 UTC · aktualisiert bei jedem Herzschlag
+**11271 Fakten** · Stand 2026-09-14 19:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7173
+- **dream:** 7168
 - **swarm_artifact:** 1643
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 21
 
 ---
+
+### `dream:20260914191715:5:1db165`
+*14.09. 19:17 UTC · Quelle: dream*
+
+The model scoring and calibration loop is functioning correctly, using actual vs. predicted metrics to guide evolution runs.
+
+### `dream:20260914191715:4:a26ca9`
+*14.09. 19:17 UTC · Quelle: dream*
+
+High latency in successful free models (up to 74.5s for dots) indicates that async/non-blocking execution or generous timeouts are necessary for free-tier models.
+
+### `dream:20260914191715:3:94cd8e`
+*14.09. 19:17 UTC · Quelle: dream*
+
+The task "Veraltete swarm-Ziele auffrischen" is highly stable and repeatable, showing consistent execution paths and perfect calibration (abs_error 0).
+
+### `dream:20260914191715:2:6930f5`
+*14.09. 19:17 UTC · Quelle: dream*
+
+Large free models like `nvidia/nemotron-3-ultra-550b-a55b` are prone to read timeouts and require explicit timeout handling and fallback chains.
+
+### `dream:20260914191715:1:360e6d`
+*14.09. 19:17 UTC · Quelle: dream*
+
+Free Google Gemma models are currently unreliable due to persistent 429 rate-limiting and should be avoided or deprioritized in favor of `dots-studio/dots-3-note-preview:free`.
 
 ### `dream:20260914190536:5:f55c1c`
 *14.09. 19:05 UTC · Quelle: dream*
@@ -41504,56 +41529,6 @@ Model fallback cascades fail because no real-time health signals exist; syntheti
 *31.08. 19:19 UTC · Quelle: dream*
 
 Rate limiting (429) across five distinct models reveals systemic quota exhaustion, not isolated failures, requiring quota-aware routing with circuit breakers.
-
-### `dream:20260831191246:5:53da5f`
-*31.08. 19:12 UTC · Quelle: dream*
-
-Swarm execution with planner/builder/critic roles converges reliably in one cycle when the artifact is already functional.
-
-### `dream:20260831191246:4:bcaa4d`
-*31.08. 19:12 UTC · Quelle: dream*
-
-Calibration consistently underestimates outcome scores (predicted 5 vs actual 8), indicating a systematic pessimistic bias in the predictor.
-
-### `dream:20260831191246:3:50cee7`
-*31.08. 19:12 UTC · Quelle: dream*
-
-Model inclusionai/ling-3.0-flash-fin:free delivers acceptable latency (~10 s) and should be preferred for free-tier routing.
-
-### `dream:20260831191246:2:d294dd`
-*31.08. 19:12 UTC · Quelle: dream*
-
-Model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (22–177 s), making it unreliable for time-sensitive tasks.
-
-### `dream:20260831191246:1:10f58b`
-*31.08. 19:12 UTC · Quelle: dream*
-
-Model z-ai/glm-5.2:free is unusable due to persistent 429 rate-limit errors across all attempts.
-
-### `dream:20260831190606:5:9147c3`
-*31.08. 19:06 UTC · Quelle: dream*
-
-The system proposes skills faster than it validates them; the gap between proposal and test is the primary bottleneck to reliability improvement.
-
-### `dream:20260831190606:4:c18a16`
-*31.08. 19:06 UTC · Quelle: dream*
-
-Nvidia Nemotron shows high latency variance (19s to 110s) and upstream 502 errors, indicating it cannot be trusted as a sole fallback without health checks.
-
-### `dream:20260831190606:3:528a39`
-*31.08. 19:06 UTC · Quelle: dream*
-
-High stress state (1.0) with conserve metabolism severely restricts execution capacity, creating a death spiral where failures increase stress which reduces capacity to fix failures.
-
-### `dream:20260831190606:2:ca96b9`
-*31.08. 19:06 UTC · Quelle: dream*
-
-The previously proposed resilience patterns (parallel probes, response caching, circuit breaker, telemetry-driven demotion) directly match the observed failure modes but remain unimplemented.
-
-### `dream:20260831190606:1:9252ef`
-*31.08. 19:06 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 quota limits under sustained load, making them unreliable as primary providers without a resilience layer.
 
 ### `last_swarm_critique`
 *31.08. 18:32 UTC · Quelle: critic*

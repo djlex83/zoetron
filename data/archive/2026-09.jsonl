@@ -50035,3 +50035,30 @@
 {"ts": 1788807538.2872791, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.72, "gelesen": 2}}
 {"ts": 1788807538.2899053, "kind": "reflex_used", "payload": {"goal": "Schwarm-Lernen wieder aktivieren", "tool": "schwarmwissen-wieder-auffrischen.py", "ok": true}}
 {"ts": 1788807538.7117984, "kind": "act_done", "payload": {"goal_title": "Schwarm-Lernen wieder aktivieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788203166.0140455, "key": "dream:20260831190606:1:9252ef", "value": "Free-tier models consistently hit 429 quota limits under sustained load, making them unreliable as primary providers without a resilience layer.", "source": "dream"}
+{"ts": 1788203166.0141327, "key": "dream:20260831190606:2:ca96b9", "value": "The previously proposed resilience patterns (parallel probes, response caching, circuit breaker, telemetry-driven demotion) directly match the observed failure modes but remain unimplemented.", "source": "dream"}
+{"ts": 1788203166.0142019, "key": "dream:20260831190606:3:528a39", "value": "High stress state (1.0) with conserve metabolism severely restricts execution capacity, creating a death spiral where failures increase stress which reduces capacity to fix failures.", "source": "dream"}
+{"ts": 1788203166.014266, "key": "dream:20260831190606:4:c18a16", "value": "Nvidia Nemotron shows high latency variance (19s to 110s) and upstream 502 errors, indicating it cannot be trusted as a sole fallback without health checks.", "source": "dream"}
+{"ts": 1788203166.0143301, "key": "dream:20260831190606:5:9147c3", "value": "The system proposes skills faster than it validates them; the gap between proposal and test is the primary bottleneck to reliability improvement.", "source": "dream"}
+{"ts": 1788203566.4120655, "key": "dream:20260831191246:1:10f58b", "value": "Model z-ai/glm-5.2:free is unusable due to persistent 429 rate-limit errors across all attempts.", "source": "dream"}
+{"ts": 1788203566.4121552, "key": "dream:20260831191246:2:d294dd", "value": "Model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (22–177 s), making it unreliable for time-sensitive tasks.", "source": "dream"}
+{"ts": 1788203566.4122295, "key": "dream:20260831191246:3:50cee7", "value": "Model inclusionai/ling-3.0-flash-fin:free delivers acceptable latency (~10 s) and should be preferred for free-tier routing.", "source": "dream"}
+{"ts": 1788203566.4123042, "key": "dream:20260831191246:4:bcaa4d", "value": "Calibration consistently underestimates outcome scores (predicted 5 vs actual 8), indicating a systematic pessimistic bias in the predictor.", "source": "dream"}
+{"ts": 1788203566.412372, "key": "dream:20260831191246:5:53da5f", "value": "Swarm execution with planner/builder/critic roles converges reliably in one cycle when the artifact is already functional.", "source": "dream"}
+{"ts": 1788808049.916262, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788808119.9419281, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788808121.7778103, "kind": "prune_run", "payload": {"facts_pruned": 10, "events_pruned": 18}}
+{"ts": 1788808164.9369671, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 39.4, "tokens_ein": 1399, "tokens_aus": 903}}
+{"ts": 1788808164.9376197, "kind": "skill_proposal", "payload": {"proposal": "Deploy a model router with per-provider circuit breakers tracking p50/p95 latency, 5xx/429 rates, and automatic failover within a 10s latency budget."}}
+{"ts": 1788808164.937703, "kind": "skill_proposal", "payload": {"proposal": "Enforce convergence gate on ALL paths including reflex: require score≥8, score_delta<0.1 over 3 cycles, and explicit critic approval before act_done."}}
+{"ts": 1788808164.9378178, "kind": "skill_proposal", "payload": {"proposal": "Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructable causal graphs."}}
+{"ts": 1788808164.9379067, "kind": "skill_proposal", "payload": {"proposal": "Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, tokens) and alert on non-zero exits or latency >2x p95."}}
+{"ts": 1788808164.937991, "kind": "skill_proposal", "payload": {"proposal": "Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to mission backlog with owner and deadline."}}
+{"ts": 1788808164.9380572, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788808200.254649, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 33.2, "tokens_ein": 500, "tokens_aus": 545}}
+{"ts": 1788808200.2548723, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und beheben", "why": "36 Modell-Fehler zeigen, dass das System oft falsch liegt. Wenn wir die Ursachen finden, werden zukünftige Entscheidungen zuverlässiger.", "signal": "failure"}}
+{"ts": 1788808200.2549524, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Erkenntnisse neu nutzen", "why": "Es liegen 5 veraltete Schwarm-Kritiken und -Ziele im Speicher. Frische Bewertung könnte wertvolle Ideen wieder zugänglich machen.", "signal": "stale"}}
+{"ts": 1788808200.255022, "kind": "drive_goal", "payload": {"title": "Träume in echte Fähigkeiten verwandeln", "why": "13 beendete Träume und 63 Skill-Vorschläge existieren, aber wenig Handlung. Die Lücke zwischen Vorstellung und Können schließen.", "signal": "combination"}}
+{"ts": 1788808204.30481, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.71, "gelesen": 2}}
+{"ts": 1788808204.3074641, "kind": "reflex_used", "payload": {"goal": "Schwarmziele und -kritiken auffrischen", "tool": "schwarmwissen-wieder-auffrischen.py", "ok": true}}
+{"ts": 1788808204.7228963, "kind": "act_done", "payload": {"goal_title": "Schwarmziele und -kritiken auffrischen", "score": null, "converged": true, "mode": "reflex"}}
