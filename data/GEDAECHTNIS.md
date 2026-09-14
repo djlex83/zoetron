@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11245 Fakten** · Stand 2026-09-14 20:39 UTC · aktualisiert bei jedem Herzschlag
+**11250 Fakten** · Stand 2026-09-14 20:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7158
+- **dream:** 7163
 - **swarm_artifact:** 1631
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 22
 
 ---
+
+### `dream:20260914204753:5:7938f7`
+*14.09. 20:47 UTC · Quelle: dream*
+
+Unvalidated model outputs and weak convergence criteria lead to premature termination and incorrect decision-making across the swarm.
+
+### `dream:20260914204753:4:882f52`
+*14.09. 20:47 UTC · Quelle: dream*
+
+Proactive, scheduled memory pruning during low-activity windows effectively reduces the event footprint and prevents system timeout during consolidation.
+
+### `dream:20260914204753:3:8688c7`
+*14.09. 20:47 UTC · Quelle: dream*
+
+The absence of circuit breakers on external model calls allows transient timeouts to cascade and block the entire autonomous execution loop.
+
+### `dream:20260914204753:2:d1582a`
+*14.09. 20:47 UTC · Quelle: dream*
+
+Swarm knowledge degrades rapidly, necessitating automated, recurring synchronization reflexes to merge fresh dream insights with active swarm goals.
+
+### `dream:20260914204753:1:b17d0e`
+*14.09. 20:47 UTC · Quelle: dream*
+
+Free-tier model latency and rate-limiting (429 errors) are the primary root causes of cascading read timeouts in the drive and act organs.
 
 ### `dream:20260914203710:5:8e2c67`
 *14.09. 20:37 UTC · Quelle: dream*

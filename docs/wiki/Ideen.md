@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 20:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 20:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Unvalidated model outputs and weak convergence criteria lead to premature termination and incorrect decision-making across the swarm.
+- Proactive, scheduled memory pruning during low-activity windows effectively reduces the event footprint and prevents system timeout during consolidati
+- The absence of circuit breakers on external model calls allows transient timeouts to cascade and block the entire autonomous execution loop.
+- Swarm knowledge degrades rapidly, necessitating automated, recurring synchronization reflexes to merge fresh dream insights with active swarm goals.
+- Free-tier model latency and rate-limiting (429 errors) are the primary root causes of cascading read timeouts in the drive and act organs.
 - Current memory pruning is aggressive and may discard useful context; a balanced retention policy is needed.
 - Dream consolidation times out under high event loads; adding incremental checkpoints every 60 seconds will preserve progress.
 - Skill proposals often lack observable side effects, resulting in low implementation rates; enforcing side-effect contracts will improve adoption.
@@ -51,11 +56,6 @@
 - Reflex actions like dream connections succeed in isolated tasks but do not address systemic issues such as API resilience or knowledge decay.
 - Drive goals repeatedly signal gaps in model reliability, knowledge staleness, and unimplemented skills, revealing a pattern of reactive problem-identi
 - Free-tier LLM models frequently fail due to rate limiting (429) and upstream errors (502), indicating inherent instability that requires automated mit
-- Consolidation timeouts arise from processing too many events with a slow model, requiring event limits and fast model selection.
-- Many simulations are never executed, creating a gap between planning and action.
-- Reflex tools frequently abort due to unvalidated file paths and environment variables.
-- Outdated swarm knowledge leads to poor decisions, so periodic knowledge refresh is critical.
-- Model failures occur nearly twice as often as successes, highlighting the need for reliable fallback chains.
 
 ---
 

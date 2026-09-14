@@ -50303,3 +50303,20 @@
 {"ts": 1788813230.8337708, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.1, "gelesen": 1580}}
 {"ts": 1788813230.8398676, "kind": "reflex_used", "payload": {"goal": "Reflexe gezielt verbessern", "tool": "simulationen-gezielt-einsetzen.py", "ok": true}}
 {"ts": 1788813231.2800262, "kind": "act_done", "payload": {"goal_title": "Reflexe gezielt verbessern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788813758.9324045, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788813827.5889812, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788813829.436706, "kind": "prune_run", "payload": {"facts_pruned": 7, "events_pruned": 31}}
+{"ts": 1788813858.4100163, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 25.5, "tokens_ein": 1410, "tokens_aus": 712}}
+{"ts": 1788813858.410553, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router with provider circuit breakers, latency budgets, and automatic failover to flash models."}}
+{"ts": 1788813858.410611, "kind": "skill_proposal", "payload": {"proposal": "Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before registry promotion."}}
+{"ts": 1788813858.4106758, "kind": "skill_proposal", "payload": {"proposal": "Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours."}}
+{"ts": 1788813858.4107318, "kind": "skill_proposal", "payload": {"proposal": "Enforce absolute_path_guard middleware on all file tools with canonical ZOETRON_DATA rewriting."}}
+{"ts": 1788813858.4107947, "kind": "skill_proposal", "payload": {"proposal": "Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with backoff requeue."}}
+{"ts": 1788813858.4108505, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788813924.6476684, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 64.4, "tokens_ein": 518, "tokens_aus": 864}}
+{"ts": 1788813924.648014, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell macht fast so viele Fehler wie Erfolge. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788813924.6481175, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen regelmäßig auffrischen", "why": "Die Schwarm-Daten sind veraltet. Frische Kritik und Ziele helfen dem System, besser zu lernen.", "signal": "stale"}}
+{"ts": 1788813924.6481988, "kind": "drive_goal", "payload": {"title": "Fähigkeiten aus Vorschlägen umsetzen", "why": "Es gibt viele Fähigkeits-Vorschläge, aber unklar welche genutzt werden. Umsetzung macht das System fähiger.", "signal": "gap"}}
+{"ts": 1788813927.5083303, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.41, "gelesen": 823}}
+{"ts": 1788813927.5107596, "kind": "reflex_used", "payload": {"goal": "Eigene Ziele konsequenter zu Ende bringen", "tool": "fertigkeiten-wirklich-zu-ende-bringen.py", "ok": true}}
+{"ts": 1788813927.9183297, "kind": "act_done", "payload": {"goal_title": "Eigene Ziele konsequenter zu Ende bringen", "score": null, "converged": true, "mode": "reflex"}}

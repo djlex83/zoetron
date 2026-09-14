@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7875 Neuronen · 834636 bewertete Synapsen
+Stand: 7879 Neuronen · 835161 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -19,7 +19,7 @@ Stand: 7875 Neuronen · 834636 bewertete Synapsen
 | 7 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 813 | 0.23 |
 | 8 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 804 | 0.23 |
 | 9 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 749 | 0.25 |
-| 10 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 821 | 0.23 |
+| 10 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 822 | 0.23 |
 | 11 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 779 | 0.24 |
 | 12 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 823 | 0.22 |
 | 13 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 770 | 0.24 |
