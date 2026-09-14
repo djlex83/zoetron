@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11344 Fakten** · Stand 2026-09-14 01:54 UTC · aktualisiert bei jedem Herzschlag
+**11334 Fakten** · Stand 2026-09-14 02:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7278
+- **dream:** 7268
 - **swarm_artifact:** 1633
 - **last_swarm_critique:** 942
 - **last_swarm_goal:** 677
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914020300:5:7b2b5e`
+*14.09. 02:03 UTC · Quelle: dream*
+
+Regular pruning (5 facts, 17 events) without corresponding knowledge refresh explains the 'stale swarm data' drive signal recurring.
+
+### `dream:20260914020300:4:598390`
+*14.09. 02:03 UTC · Quelle: dream*
+
+Model fallback to dots-studio succeeded after premium models failed, proving a diverse model pool with automatic failover is more reliable than preferring 'best' models.
+
+### `dream:20260914020300:3:c70e23`
+*14.09. 02:03 UTC · Quelle: dream*
+
+Reflex tools for skill implementation succeed locally but the proposed skills (backoff, ledger, pre-flight checks) remain unimplemented in the model routing layer.
+
+### `dream:20260914020300:2:e1cf4d`
+*14.09. 02:03 UTC · Quelle: dream*
+
+Drive goals persist unchanged across cycles, indicating the underlying causes (model unreliability, stale knowledge, unused skills) are not being resolved at root.
+
+### `dream:20260914020300:1:441d23`
+*14.09. 02:03 UTC · Quelle: dream*
+
+Upstream 502 errors and 429 rate limits are the dominant failure modes requiring systematic retry/fallback logic, not ad-hoc handling.
 
 ### `tool:vorgeschlagene-fähigkeiten-umsetzen`
 *14.09. 01:52 UTC · Quelle: hands*
@@ -41992,81 +42017,6 @@ Only poolside/laguna-s-2.1:free succeeds consistently, revealing a critical sing
 *31.08. 02:07 UTC · Quelle: dream*
 
 Rate limiting (429) is the dominant failure mode across 3/4 models, indicating missing proactive rate-limit awareness and backoff logic.
-
-### `dream:20260831020025:5:ead10c`
-*31.08. 02:00 UTC · Quelle: dream*
-
-Stale drive goals (3 unfinished market analyses) persist because completion criteria are implicit, not tracked in a state machine.
-
-### `dream:20260831020025:4:61211a`
-*31.08. 02:00 UTC · Quelle: dream*
-
-No metabolic gating exists: non-critical model calls continue despite sustained failure rate >80%, wasting cycles and deepening quota debt.
-
-### `dream:20260831020025:3:1a1b67`
-*31.08. 02:00 UTC · Quelle: dream*
-
-Reflex actions succeed (market analysis completed) while model-dependent swarms stall, showing reflexes are more reliable than LLM calls under quota pressure.
-
-### `dream:20260831020025:2:91e2b5`
-*31.08. 02:00 UTC · Quelle: dream*
-
-Identical skill proposals (ProposalTracker, ModelFallbackChain, MetabolismGate) recur across cycles without implementation, revealing a proposal-to-execution gap.
-
-### `dream:20260831020025:1:2fde21`
-*31.08. 02:00 UTC · Quelle: dream*
-
-Repeated 429/502 errors across all free models indicate systemic quota exhaustion, not isolated model failure.
-
-### `dream:20260831015345:5:edc7e9`
-*31.08. 01:53 UTC · Quelle: dream*
-
-No metabolic gate exists to defer non-critical LLM calls when system stress or error rates exceed thresholds.
-
-### `dream:20260831015345:4:6daf2d`
-*31.08. 01:53 UTC · Quelle: dream*
-
-Swarm cycles lack a hard iteration budget, risking open-ended runs that never converge or escalate.
-
-### `dream:20260831015345:3:5abf72`
-*31.08. 01:53 UTC · Quelle: dream*
-
-Skill proposals accumulate without lifecycle tracking, causing stale ideas to persist while new ones duplicate effort.
-
-### `dream:20260831015345:2:5c709a`
-*31.08. 01:53 UTC · Quelle: dream*
-
-Fallback to nvidia/nemotron-3-ultra succeeds but shows high latency variance (9–27 s), requiring p95-aware routing and circuit-breakers.
-
-### `dream:20260831015345:1:5e37ae`
-*31.08. 01:53 UTC · Quelle: dream*
-
-Free-tier models (z-ai/glm-5.2) repeatedly hit 429 rate limits, making them unreliable for production paths without automated quarantine.
-
-### `dream:20260831014534:5:757306`
-*31.08. 01:45 UTC · Quelle: dream*
-
-Convergence detection without a diagnostic fallback means the system can halt improvement while the underlying problem (unreliable models, stale data) remains unsolved.
-
-### `dream:20260831014534:4:3169ff`
-*31.08. 01:45 UTC · Quelle: dream*
-
-Under shared API rate limits, simultaneous parallel requests amplify contention rather than improve throughput; a staggered retry or queuing strategy is required instead of blind concurrency.
-
-### `dream:20260831014534:3:9c2421`
-*31.08. 01:45 UTC · Quelle: dream*
-
-The gap between skill proposals and actual implementation is itself a failure mode — proposals without build-status tracking and deadlines decay into dead weight that never improves the system.
-
-### `dream:20260831014534:2:e959e0`
-*31.08. 01:45 UTC · Quelle: dream*
-
-Error types (429 rate-limit, 502 upstream overload, empty response) are predictable and classifiable; treating them as generic failures wastes the information needed for automated routing decisions.
-
-### `dream:20260831014534:1:543481`
-*31.08. 01:45 UTC · Quelle: dream*
-
-When 6 out of 7 model calls fail simultaneously, the absence of automatic quarantine and fallback turns transient API errors into systemic paralysis — reliability must be engineered, not hoped for.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*

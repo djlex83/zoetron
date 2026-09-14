@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 01:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 02:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,20 +12,20 @@
 - Add exponential backoff with jitter for all HTTP requests to model APIs and external commands. *(hatte die Idee 4×)*
 - Create a memory compaction routine that converts clusters of events into durable facts during pruning. *(hatte die Idee 4×)*
 - Build a task scheduler that respects the metabolism budget, limiting concurrent tasks and iterations when stre *(hatte die Idee 4×)*
-- Implement provider-aware request router with per-provider token buckets, concurrent fallback fan-out, and circ *(hatte die Idee 3×)*
-- Wrap hand_action in idempotent retry with exponential backoff, structured error capture, and reflex fallback r *(hatte die Idee 3×)*
-- Create model-reliability dashboard tracking per-provider success rate, latency p99, and error taxonomy to driv *(hatte die Idee 3×)*
 - Add TokenBudgetEnforcer that caps input tokens per call and enforces per-model timeouts to bound latency spike *(hatte die Idee 3×)*
 - Create PruningAuditTrail that logs every pruned fact/event with timestamps and relevance scores, enabling poin *(hatte die Idee 3×)*
 - Implement a dynamic model router that selects the least‑loaded model and automatically switches on 429 or time *(hatte die Idee 3×)*
 - Develop a stale‑information detector that refreshes swarm goals older than a threshold and merges distant memo *(hatte die Idee 3×)*
 - Implement a centralized rate‑limit handler that intercepts HTTP 429 responses, applies exponential backoff wit *(hatte die Idee 3×)*
+- Create a dynamic model health dashboard that tracks per‑model error rates and auto‑degrades models after a thr *(hatte die Idee 3×)*
+- Generalize the stale-knowledge reflex into a configurable skill: domain, freshness predicate, fetch tool, and  *(hatte die Idee 3×)*
+- Implement model router with health-aware fallback: track per-model error rates, latency percentiles, and auto- *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
@@ -34,13 +34,18 @@
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Veraltete Swarm-Daten aktualisieren *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Regular pruning (5 facts, 17 events) without corresponding knowledge refresh explains the 'stale swarm data' drive signal recurring.
+- Model fallback to dots-studio succeeded after premium models failed, proving a diverse model pool with automatic failover is more reliable than prefer
+- Reflex tools for skill implementation succeed locally but the proposed skills (backoff, ledger, pre-flight checks) remain unimplemented in the model r
+- Drive goals persist unchanged across cycles, indicating the underlying causes (model unreliability, stale knowledge, unused skills) are not being reso
+- Upstream 502 errors and 429 rate limits are the dominant failure modes requiring systematic retry/fallback logic, not ad-hoc handling.
 - Aggressive pruning (10 facts, 1 event per cycle) bounds memory but discards the very failure-pattern evidence needed for intelligent model routing.
 - Calibration consistently underestimates cycle count (predicted 6 vs actual 9, error +3) when model failures trigger extra retry cycles.
 - The system achieved goal convergence (score 9) despite >60% model-call failure rate, proving the retry/fallback logic works but incurs high latency ov
@@ -51,11 +56,6 @@
 - High latency variance between models (Nemotron at 42-55s vs. Dots at 17s) means task planning must incorporate real-time latency predictions to avoid 
 - The failure of the automated skill conversion script shows that relative path resolution and argument passing in hand-action scripts remain fragile an
 - External model providers frequently fail with 502 (overloaded) or 429 (rate limit) errors, which disrupts multi-step swarm workflows and requires dyna
-- Dream memory connection works (reflex succeeded) but insights from 14 dream cycles aren't being harvested into durable skills.
-- Swarm feedback loops are stale (repeated drive goals) because convergence gates lack delta-threshold enforcement.
-- Skill proposals accumulate (10+ this cycle) but no instantiation pipeline converts them into tested, versioned modules.
-- 24 model errors accumulated but no automated classification or root-cause tracking exists, preventing targeted fallback routing.
-- Model latency varies 2x (32-68s) on same provider, making fixed time budgets unreliable without percentile-aware scheduling.
 
 ---
 
