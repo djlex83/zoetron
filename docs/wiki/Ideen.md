@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 16:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 17:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Ferne Träume kombinieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler beheben *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Träume verbinden *(wieder aufgegriffen: 3×)*
-- Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions timing out at 20s with zero data read suggests I/O blocking or resource contention during execution.
+- Swarm/evolution processes stall at 5/10 score without convergence, indicating insufficient selection pressure or flawed fitness functions.
+- Critic agents producing unparseable output breaks the evolution loop and prevents quality improvement.
+- The dots-studio/dots-3-note-preview:free model is the only consistently available model but exhibits high latency variance (12-50s).
+- Google Gemma models on OpenRouter free tier consistently hit 429 rate limits, making them unreliable for production workloads.
 - Successful execution of reflex actions and self-diagnosis with zero organ errors indicates robust internal monitoring that should be extended to model
 - Drive goals focusing on model reliability, stale data refresh, and organ error resolution reveal cross-cutting priorities for improving system resilie
 - The system pruned 26 facts and 60 events in one cycle, showing effective memory consolidation but also the need for adaptive pruning thresholds to avo
@@ -51,11 +56,6 @@
 - dots-studio/dots-3-note-preview:free was the only consistently successful model, completing 4 tasks with 27-36s latency and reasonable token usage.
 - The system's auto-block mechanism triggered after 3 consecutive NVIDIA model errors, but a fallback at error 2 would have prevented the 1800s lockout.
 - Google Gemma models on OpenRouter are persistently failing with HTTP 429 rate-limit errors, making them unreliable for autonomous operation.
-- Simulation identified 5 risks and required 5 revisions, highlighting the importance of pre-application validation.
-- Calibration predicted 4 and the actual outcome was 4, demonstrating accurate self-assessment.
-- Evolutionary refinement raised the solution score from 4/10 to 9/10, confirming the value of iterative criticism.
-- The dots-studio/dots-3-note-preview:free model provided consistent success with latencies under 50s, serving as a reliable alternative.
-- Google/gemma free models repeatedly returned HTTP 429, indicating rate-limit exhaustion and the need for fallback.
 
 ---
 

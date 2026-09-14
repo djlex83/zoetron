@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11306 Fakten** · Stand 2026-09-14 16:59 UTC · aktualisiert bei jedem Herzschlag
+**11290 Fakten** · Stand 2026-09-14 17:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7178
-- **swarm_artifact:** 1661
+- **dream:** 7173
+- **swarm_artifact:** 1655
 - **last_swarm_critique:** 953
 - **last_swarm_goal:** 688
-- **anti_pattern:** 377
-- **strategy:** 191
-- **tool:** 156
+- **anti_pattern:** 375
+- **strategy:** 190
+- **tool:** 155
 - **hand_result:** 82
-- **aktuell_organfehler:** 20
+- **aktuell_organfehler:** 19
 
 ---
+
+### `dream:20260914172919:5:484028`
+*14.09. 17:29 UTC · Quelle: dream*
+
+Hand actions timing out at 20s with zero data read suggests I/O blocking or resource contention during execution.
+
+### `dream:20260914172919:4:671950`
+*14.09. 17:29 UTC · Quelle: dream*
+
+Swarm/evolution processes stall at 5/10 score without convergence, indicating insufficient selection pressure or flawed fitness functions.
+
+### `dream:20260914172919:3:f4e60a`
+*14.09. 17:29 UTC · Quelle: dream*
+
+Critic agents producing unparseable output breaks the evolution loop and prevents quality improvement.
+
+### `dream:20260914172919:2:4d935f`
+*14.09. 17:29 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model is the only consistently available model but exhibits high latency variance (12-50s).
+
+### `dream:20260914172919:1:0fdf77`
+*14.09. 17:29 UTC · Quelle: dream*
+
+Google Gemma models on OpenRouter free tier consistently hit 429 rate limits, making them unreliable for production workloads.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
 *14.09. 16:55 UTC · Quelle: evolution*
@@ -41565,21 +41590,6 @@ The nemotron-3-ultra model is the only reliable backend but incurs 100–226s la
 
 Free-tier models (glm-5.2) consistently fail with 429 rate-limit errors under load, making them unusable as primary inference backends without automatic fallback.
 
-### `tool:veraltete-schwarm-artefakte-aufräumen-un`
-*31.08. 17:08 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Schwarm-Artefakte aufräumen und archivieren'. Datei: data/tools/veraltete-schwarm-artefakte-aufräumen-un.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Veraltete Schwarm-Artefa:2`
-*31.08. 17:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Policy-as-Code Engine - Externalize all retention/classification logic into a declarative policy engine (OPA/Rego or custom DSL). Artifacts become thin adapters: scanner feeds artifact metadata to policy engine; engine retur 
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Veraltete Schwarm-Artefa:1`
-*31.08. 17:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Event-Driven Decoupled Architecture - Introduce a message bus (e.g., Redis Streams or Kafka) with a canonical event schema: ArtifactScanned, ClassificationDecided, ActionExecuted. Each artifact becomes an independent consumer
-
 ### `last_swarm_critique`
 *31.08. 17:06 UTC · Quelle: critic*
 
@@ -41589,61 +41599,6 @@ score=5; issues=Kreuz-Artefakt-Integrationslücke: Artefakt 2 speichert Ergebnis
 *31.08. 16:59 UTC · Quelle: system*
 
 Veraltete Schwarm-Artefakte aufräumen und archivieren
-
-### `dream:20260831165908:5:976c07`
-*31.08. 16:59 UTC · Quelle: dream*
-
-Pruning runs remove zero facts/events, indicating retention policies may be too aggressive or data not yet eligible.
-
-### `dream:20260831165908:4:89d1f1`
-*31.08. 16:59 UTC · Quelle: dream*
-
-Skill proposals accumulate without deduplication or lifecycle tracking, risking redundant implementations and untracked effectiveness.
-
-### `dream:20260831165908:3:03b7e1`
-*31.08. 16:59 UTC · Quelle: dream*
-
-Successful model nvidia/nemotron-3-ultra-550b-a55b:free exhibits high latency (35-80s), making it unsuitable for time-sensitive paths without async handling.
-
-### `dream:20260831165908:2:d6de02`
-*31.08. 16:59 UTC · Quelle: dream*
-
-Drive and dream modules repeatedly hit 180-second timeouts, suggesting the timeout threshold is too low for current workloads or tasks are blocking.
-
-### `dream:20260831165908:1:043b32`
-*31.08. 16:59 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently fails with rate limits (429) and server errors (500/502), indicating it should be deprioritized or circuit-broken.
-
-### `aktuell_organfehler`
-*31.08. 16:57 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 16:52:59 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `dream:20260831164959:5:871235`
-*31.08. 16:49 UTC · Quelle: dream*
-
-Reflex-mode convergence on the swarm mission proves that pre-wired tool chains bypass planner latency; future missions should ship reflex scripts for known high-value targets.
-
-### `dream:20260831164959:4:8967e5`
-*31.08. 16:49 UTC · Quelle: dream*
-
-Drive goals accumulate (stale/failure/gap) but no automatic linker creates skill proposals; an ExecutionGapTracker that alerts on goal age > threshold without linked skill in testing/deployed state closes the loop.
-
-### `dream:20260831164959:3:cfcd32`
-*31.08. 16:49 UTC · Quelle: dream*
-
-Three duplicate proposals (ProposalDeduplicator, CircuitBreaker, PathContract) show the proposal generator lacks semantic deduplication; hashing by intent must run before SkillLifecycleManager ingestion.
-
-### `dream:20260831164959:2:bfd8d5`
-*31.08. 16:49 UTC · Quelle: dream*
-
-Nemotron latency variance (25–80s) indicates cold-start or queueing effects; synthetic probes every 60s must measure p95 not mean to trigger fallbacks correctly.
-
-### `dream:20260831164959:1:595f08`
-*31.08. 16:49 UTC · Quelle: dream*
-
-Repeated 429 errors on glm-5.2 reveal that single-key-per-model routing fails under quota pressure; rotating key pools with per-key circuit breakers are necessary.
 
 ### `last_swarm_critique`
 *31.08. 16:32 UTC · Quelle: critic*
