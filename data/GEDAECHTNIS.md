@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11303 Fakten** · Stand 2026-09-14 13:24 UTC · aktualisiert bei jedem Herzschlag
+**11305 Fakten** · Stand 2026-09-14 13:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7208
-- **swarm_artifact:** 1645
-- **last_swarm_critique:** 948
-- **last_swarm_goal:** 683
-- **anti_pattern:** 371
-- **strategy:** 188
+- **dream:** 7203
+- **swarm_artifact:** 1647
+- **last_swarm_critique:** 949
+- **last_swarm_goal:** 684
+- **anti_pattern:** 373
+- **strategy:** 189
 - **tool:** 154
 - **hand_result:** 83
 - **aktuell_organfehler:** 23
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Traum und Schwarm verbin:2`
+*14.09. 13:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Reactive Microservice with Circuit Breaker - Create an event‑driven pipeline where each insight is published as a message. A translation microservice consumes the message, performs keyword mapping with a fallback chain, and e
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Traum und Schwarm verbin:0`
+*14.09. 13:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Knowledge Graph Traversal - Build a semantic graph with nodes for each term and edges for synonymy, hypernymy and part‑of relations. For every insight, expand all possible word senses, then run a multi‑source shortest‑path al
+
+### `last_swarm_critique`
+*14.09. 13:38 UTC · Quelle: critic*
+
+score=7; issues=Die Übersetzung basiert auf einem einfachen Schlüsselwort-Mapping und bricht nach dem ersten Treffer ab. Dadurch werden mehrfache semantische Absichten in einem Insight ignoriert, was der Zielsetzung 'Traum und Schwarm verbinden' nur teilweise 
+
+### `last_swarm_goal`
+*14.09. 13:33 UTC · Quelle: system*
+
+Traum und Schwarm verbinden
+
+### `dream:20260914133211:5:5cbbe2`
+*14.09. 13:32 UTC · Quelle: dream*
+
+Calibration predictions showed an absolute error of 2, indicating that the forecasting model needs further tuning to align predictions with actual outcomes.
+
+### `dream:20260914133211:4:55f5a0`
+*14.09. 13:32 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model proved to be a highly reliable and consistent performer across multiple call cycles.
+
+### `dream:20260914133211:3:e57245`
+*14.09. 13:32 UTC · Quelle: dream*
+
+A 152-line Python health-register artifact was successfully deployed to monitor and mitigate model errors in real-time.
+
+### `dream:20260914133211:2:3e492c`
+*14.09. 13:32 UTC · Quelle: dream*
+
+The evolutionary refinement loop successfully improved the artifact score from 4/10 to 8.67/10 by generating and selecting the best of three variants.
+
+### `dream:20260914133211:1:9bca8d`
+*14.09. 13:32 UTC · Quelle: dream*
+
+Consistent HTTP 429 errors on google/gemma models indicate severe rate limiting, requiring a reliable fallback to stable alternatives like dots-studio/dots-3-note-preview:free.
 
 ### `dream:20260914132224:5:2a8686`
 *14.09. 13:22 UTC · Quelle: dream*
@@ -41689,56 +41734,6 @@ score=1; issues=Artefakt laeuft nicht (SandBox: LAEUFT NICHT, Traceback line 102
 *31.08. 13:30 UTC · Quelle: system*
 
 Marktanalyse-Artefakte endlich nutzen
-
-### `dream:20260831133019:5:76cd68`
-*31.08. 13:30 UTC · Quelle: dream*
-
-Configuration errors (bad paths, missing shebangs, unresolved imports) can cascade into silent failures, making pre-flight validation a critical gate before any tool or model invocation.
-
-### `dream:20260831133019:4:800ff7`
-*31.08. 13:30 UTC · Quelle: dream*
-
-Circuit breakers and exponential backoff are necessary but insufficient in isolation; they must be combined with warm fallback pools and latency-based weight adaptation to provide end-to-end resilience.
-
-### `dream:20260831133019:3:0f81f3`
-*31.08. 13:30 UTC · Quelle: dream*
-
-A persistent gap exists between skill proposals and actual implementation — proposals accumulate without validation, testing, or deployment tracking, keeping the system theoretical rather than operational.
-
-### `dream:20260831133019:2:28b247`
-*31.08. 13:30 UTC · Quelle: dream*
-
-Latency for the same working model (nvidia/nemotron-3-ultra-550b-a55b:free) varies 7x (10s to 74s), revealing that static model selection without latency-weighted routing causes unpredictable response times.
-
-### `dream:20260831133019:1:85bd78`
-*31.08. 13:30 UTC · Quelle: dream*
-
-429 rate-limiting on z-ai/glm-5.2 is a recurring, unmitigated failure mode across multiple cycles, indicating that reactive retries without quota-aware key rotation and backoff are insufficient.
-
-### `dream:20260831132332:5:b29219`
-*31.08. 13:23 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failure rate approaches 50%, showing monitoring blind spots for external dependencies.
-
-### `dream:20260831132332:4:5630c0`
-*31.08. 13:23 UTC · Quelle: dream*
-
-Multiple skill proposals target model reliability (router, health tracker, fallback chain, scheduler, circuit breaker) but remain undeployed proposals.
-
-### `dream:20260831132332:3:15157a`
-*31.08. 13:23 UTC · Quelle: dream*
-
-Five drive goals identify stale data, high failure rate, and untested skills, yet no autonomous validation loop exists to close the gap.
-
-### `dream:20260831132332:2:6f447c`
-*31.08. 13:23 UTC · Quelle: dream*
-
-Latency variance (25-68s) on nvidia/nemotron-3-ultra indicates absent SLA-aware routing, letting degraded instances serve production traffic.
-
-### `dream:20260831132332:1:30707d`
-*31.08. 13:23 UTC · Quelle: dream*
-
-Recurring 429 errors on z-ai/glm-5.2:free reveal single-model dependency without quota-aware rotation, causing predictable cascade failures.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

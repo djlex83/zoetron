@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7926 Neuronen · 838407 bewertete Synapsen
+Stand: 7926 Neuronen · 838669 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,20 +11,20 @@ Stand: 7926 Neuronen · 838407 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1000 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 994 | 0.23 |
-| 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 897 | 0.23 |
-| 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 896 | 0.22 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 992 | 0.23 |
+| 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 896 | 0.23 |
+| 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 895 | 0.22 |
 | 5 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 815 | 0.24 |
 | 6 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 771 | 0.25 |
 | 7 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 813 | 0.23 |
 | 8 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 809 | 0.23 |
-| 9 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 750 | 0.25 |
+| 9 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 751 | 0.25 |
 | 10 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 787 | 0.24 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 823 | 0.23 |
 | 12 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 777 | 0.24 |
-| 13 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 830 | 0.22 |
+| 13 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 828 | 0.22 |
 | 14 | 💭 | Model failures cascade from primary providers (502, 429, 99s lat… | 814 | 0.23 |
-| 15 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 697 | 0.26 |
+| 15 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 696 | 0.26 |
 
 ## Die 15 stärksten Synapsen
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 13:22:58",
+ "stand": "2026-09-14 13:42:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -117,12 +117,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -183,6 +177,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fernere-erinnerungen-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -195,12 +195,6 @@
    "quote": 0.0
   },
   {
-   "tool": "mehr-evolution-starten.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -211,6 +205,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "träume-und-simulationen-häufiger-anwende.py",
@@ -271,12 +271,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "fernere-erinnerungen-verbinden.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fehler-in-modellen-finden-und-reparieren.py",
@@ -381,17 +375,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.817,
- "simulationen_angewandt": 24,
+ "haende_quote": 0.816,
+ "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 25,
+  "n": 24,
   "best": 9.0,
-  "schnitt": 5.32
+  "schnitt": 5.29
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 23,
-   "schnitt": 5.26
+   "schnitt": 5.35
   },
   "bau": {
    "n": 1,
