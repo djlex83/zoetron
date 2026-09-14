@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11364 Fakten** · Stand 2026-09-14 09:28 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-14 09:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7288
 - **swarm_artifact:** 1633
 - **last_swarm_critique:** 946
 - **last_swarm_goal:** 681
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914093710:5:2b7b7a`
+*14.09. 09:37 UTC · Quelle: dream*
+
+Reflex actions that bind tools to goals succeed when the tool exists and the goal is well‑defined, but they are not automatically retried on failure.
+
+### `dream:20260914093710:4:8581ae`
+*14.09. 09:37 UTC · Quelle: dream*
+
+Pruning removed 12 events but zero facts, suggesting event cleanup is safe but fact retention requires verification.
+
+### `dream:20260914093710:3:e946eb`
+*14.09. 09:37 UTC · Quelle: dream*
+
+The model dots-studio/dots-3-note-preview:free consistently shows lower latency and higher token throughput, making it the preferred primary.
+
+### `dream:20260914093710:2:26eecb`
+*14.09. 09:37 UTC · Quelle: dream*
+
+Rate‑limit errors (429) from free‑tier models are the dominant failure mode, indicating that request throttling is necessary.
+
+### `dream:20260914093710:1:7bde78`
+*14.09. 09:37 UTC · Quelle: dream*
+
+Three consecutive model failures (timeout or 429) trigger a 1800‑second lockout, blocking the model even after the transient error has passed.
 
 ### `dream:20260914092532:5:aac7b2`
 *14.09. 09:25 UTC · Quelle: dream*
@@ -42062,56 +42087,6 @@ Local hand actions (file ops, scripts) succeed deterministically where model cal
 *31.08. 09:41 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429 rate limits, making them unreliable as primary workers without a routing layer.
-
-### `dream:20260831093540:5:d60ad1`
-*31.08. 09:35 UTC · Quelle: dream*
-
-Hand actions succeed on absolute paths but skill proposals reveal latent relative-path fragility in ZOETRON_DATA resolution.
-
-### `dream:20260831093540:4:229953`
-*31.08. 09:35 UTC · Quelle: dream*
-
-Swarm converges in single cycle with 5 agents but never evolves, suggesting premature convergence or insufficient search depth.
-
-### `dream:20260831093540:3:f47c3b`
-*31.08. 09:35 UTC · Quelle: dream*
-
-Calibration consistently underestimates cycle count by ~25% (predicted 6 vs actual 8) indicating systematic planning bias.
-
-### `dream:20260831093540:2:7477c5`
-*31.08. 09:35 UTC · Quelle: dream*
-
-Nemotron-3-Ultra latency (136-142s) exceeds practical interactive thresholds despite quality scores.
-
-### `dream:20260831093540:1:0146c7`
-*31.08. 09:35 UTC · Quelle: dream*
-
-Free-tier model endpoints exhibit cascading 429/404 failures making single-model reliance untenable.
-
-### `dream:20260831092752:5:9596f9`
-*31.08. 09:27 UTC · Quelle: dream*
-
-The conserve state with max 1 iteration budget forced sequential model attempts, amplifying the impact of rate limits across the entire call chain.
-
-### `dream:20260831092752:4:d72f73`
-*31.08. 09:27 UTC · Quelle: dream*
-
-Nvidia nemotron-3-ultra-550b-a55b was the most reliable model, succeeding 4 times with high token throughput despite variable latency (60-211s).
-
-### `dream:20260831092752:3:705505`
-*31.08. 09:27 UTC · Quelle: dream*
-
-The simulation-revision loop (3 revisions applied) was the mechanism that converted repeated model failures into a successful outcome.
-
-### `dream:20260831092752:2:9bfeaa`
-*31.08. 09:27 UTC · Quelle: dream*
-
-Hand actions exiting with 0 but reading nothing indicate a path resolution bug where relative paths fail to map under the real ZOETRON_DATA directory.
-
-### `dream:20260831092752:1:c53f5c`
-*31.08. 09:27 UTC · Quelle: dream*
-
-OpenRouter free models consistently hit 429 rate limits, making them unreliable for sequential calls without backoff or cooldown windows.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

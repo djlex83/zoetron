@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 09:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 09:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions that bind tools to goals succeed when the tool exists and the goal is well‑defined, but they are not automatically retried on failure.
+- Pruning removed 12 events but zero facts, suggesting event cleanup is safe but fact retention requires verification.
+- The model dots-studio/dots-3-note-preview:free consistently shows lower latency and higher token throughput, making it the preferred primary.
+- Rate‑limit errors (429) from free‑tier models are the dominant failure mode, indicating that request throttling is necessary.
+- Three consecutive model failures (timeout or 429) trigger a 1800‑second lockout, blocking the model even after the transient error has passed.
 - Memory pruning removed 83 events in a single cycle, confirming that unconsolidated experience accumulates rapidly and making periodic dream consolidat
 - Self-generated drive goals from failure and staleness signals show the system can identify its own operational problems, but recurring model failures 
 - Swarm convergence stalled at score 3 despite evolution, indicating that partial solution deployment without full integration gates leaves residual fai
@@ -51,11 +56,6 @@
 - The failed skill execution shows that proposals need pre‑execution validation of file paths and dependencies.
 - Three consecutive failures trigger a 30‑minute lockout, illustrating a circuit‑breaker pattern that prevents cascading errors.
 - Free models are prone to timeouts and 429 errors, requiring a router with health checks and fallback.
-- Combining multiple skill proposals yields composite capabilities that outperform single‑skill solutions.
-- Reflex tools can complete tasks without model calls, providing a reliable offline path.
-- Pruning events without subsequent retrieval checks leads to silent data loss, requiring an audit step.
-- The dots‑studio model remains the only consistently successful fallback, with latency staying under 32 s.
-- Repeated 429 errors from Google models indicate a rate‑limit bottleneck that must be handled with backoff or alternate routing.
 
 ---
 
