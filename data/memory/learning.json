@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-14 13:42:10",
+ "stand": "2026-09-14 14:08:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 18,
-   "erfolge": 18,
+   "laeufe": 17,
+   "erfolge": 17,
    "quote": 1.0
   },
   {
@@ -24,6 +24,12 @@
    "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 6,
    "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "simulationen-besser-in-praxis-nutzen.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -48,12 +54,6 @@
    "tool": "veraltete-gruppen-informationen-aktualis.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "simulationen-besser-in-praxis-nutzen.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
