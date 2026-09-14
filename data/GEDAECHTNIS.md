@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11331 Fakten** · Stand 2026-09-14 03:37 UTC · aktualisiert bei jedem Herzschlag
+**11334 Fakten** · Stand 2026-09-14 03:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7263
-- **swarm_artifact:** 1633
+- **dream:** 7268
+- **swarm_artifact:** 1631
 - **last_swarm_critique:** 943
 - **last_swarm_goal:** 678
 - **anti_pattern:** 363
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914034501:5:9474fe`
+*14.09. 03:45 UTC · Quelle: dream*
+
+Aggressive pruning (15 facts/51 events then 7/16) suggests experience accumulation outpaces consolidation, risking loss of rare failure signatures.
+
+### `dream:20260914034501:4:e6cf2a`
+*14.09. 03:45 UTC · Quelle: dream*
+
+Reflex-driven maintenance (e.g., updating stale swarm goals) converges reliably where multi-cycle swarms stall.
+
+### `dream:20260914034501:3:0b1329`
+*14.09. 03:45 UTC · Quelle: dream*
+
+Model latency variance (13-35s) on identical endpoints demands per-endpoint circuit-breakers and live performance ledgers for routing.
+
+### `dream:20260914034501:2:a1d0cc`
+*14.09. 03:45 UTC · Quelle: dream*
+
+Swarm convergence fails at 2 cycles with score plateaus, indicating missing automated early-stopping criteria for critic-driven plateaus.
+
+### `dream:20260914034501:1:b45367`
+*14.09. 03:45 UTC · Quelle: dream*
+
+Hand-crafted error classification remains a systemic bottleneck preventing model error reduction below 6/10 despite evolutionary variants.
 
 ### `dream:20260914033509:5:18d09e`
 *14.09. 03:35 UTC · Quelle: dream*

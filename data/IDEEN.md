@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (15 facts/51 events then 7/16) suggests experience accumulation outpaces consolidation, risking loss of rare failure signatures.
+- Reflex-driven maintenance (e.g., updating stale swarm goals) converges reliably where multi-cycle swarms stall.
+- Model latency variance (13-35s) on identical endpoints demands per-endpoint circuit-breakers and live performance ledgers for routing.
+- Swarm convergence fails at 2 cycles with score plateaus, indicating missing automated early-stopping criteria for critic-driven plateaus.
+- Hand-crafted error classification remains a systemic bottleneck preventing model error reduction below 6/10 despite evolutionary variants.
 - Hand-action file reads (166-167 lines, 2-3s) succeed reliably while model calls fail, suggesting local deterministic operations should be preferred ov
 - Calibration drift (predicted 7 vs actual 6) reveals the error prediction model systematically overestimates success probability for current model sele
 - Evolutionary optimization cycles stall at score 6/10 without convergence, indicating the fitness function or mutation operators lack sufficient gradie
@@ -51,11 +56,6 @@
 - Hand actions fail on relative paths because the working directory diverges from ZOETRON_DATA; every file op must resolve absolute paths via the enviro
 - Latency variance (14s–196s) breaks downstream budgets; tasks spawn sub-tasks without subtracting active model p90 latency first.
 - Model API failures (502 overload, 429 rate-limit) cascade into task failure because no fallback chain or circuit breaker exists across providers.
-- Resolving all paths via the ZOETRON_DATA environment variable eliminates path ambiguity and improves script portability.
-- Requiring three stable cycles before accepting goal completion reduces false convergence and improves reliability.
-- Hand actions that read zero items indicate missing preconditions; adding a validation step before execution prevents wasted cycles.
-- Swarm data becomes stale quickly, so a freshness checker that triggers synchronization when staleness exceeds a threshold is essential.
-- Repeated 5xx and 429 errors from model providers demonstrate the necessity of a circuit breaker that blacklists flaky endpoints and switches to fallba
 
 ---
 

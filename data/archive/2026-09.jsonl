@@ -47904,3 +47904,21 @@
 {"ts": 1788751531.7753813, "kind": "reflex_used", "payload": {"goal": "Modellfehler verstehen und reduzieren", "tool": "modellfehler-deutlich-reduzieren.py", "ok": true}}
 {"ts": 1788751532.1735911, "kind": "act_done", "payload": {"goal_title": "Modellfehler verstehen und reduzieren", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1788752025.4306104, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788147323.0623446, "key": "swarm_artifact:Bestandsaufnahme aller alten Schwarm-Arbeitsverzeichnisse un", "value": "I'll explore the data directory structure first to understand what's available, then build the inventory tool.<tool_call>shell<arg_key>cmd</arg_key><arg_value>echo \"=== ZOETRON_DATA ===\" && echo \"$ZOE", "source": "builder"}
+{"ts": 1788147424.1970456, "key": "swarm_artifact:Klassifizierung der gefundenen Schwarm-Ergebnisse nach Werti", "value": "```python\n#!/usr/bin/env python3\n\"\"\"\nKlassifizierung alter Schwarm-Ergebnisse nach Wertigkeit.\nNutzt semantic.SemanticMemory für Deduplizierung und graph.KnowledgeGraph für Verknüpfungsprüfung.\n\"\"\"\n\ni", "source": "builder"}
+{"ts": 1788752093.649013, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788752095.5872245, "kind": "prune_run", "payload": {"facts_pruned": 7, "events_pruned": 47}}
+{"ts": 1788752152.3000963, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 53.3, "tokens_ein": 1383, "tokens_aus": 1200}}
+{"ts": 1788752152.3009086, "kind": "skill_proposal", "payload": {"proposal": "Implement ProviderHealthMonitor: continuously track per-provider success rate, latency, and error-class frequency; expose a health score for scheduler decisions."}}
+{"ts": 1788752152.3010046, "kind": "skill_proposal", "payload": {"proposal": "Deploy SkillValidationGate: require every proposed skill to pass a deterministic test harness with acceptance criteria before registry promotion."}}
+{"ts": 1788752152.3010907, "kind": "skill_proposal", "payload": {"proposal": "Build FailurePatternMiner: correlate model_fail events with active goals/tools every 5 failures; emit deduplicated root-cause skill proposals."}}
+{"ts": 1788752152.3011787, "kind": "skill_proposal", "payload": {"proposal": "Create SwarmKnowledgeRefresher: after each goal convergence, re-simulate top critiques with current models and overwrite stale entries."}}
+{"ts": 1788752152.3012426, "kind": "skill_proposal", "payload": {"proposal": "Design StressAwareScheduler: compute stress from recent failure rate and latency; cap iterations and prioritize recovery goals when stress > 0.7."}}
+{"ts": 1788752152.3013198, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788752201.719065, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 47.6, "tokens_ein": 498, "tokens_aus": 1094}}
+{"ts": 1788752201.7192347, "kind": "drive_goal", "payload": {"title": "Modellfehler reduzieren und Zuverlässigkeit steigern", "why": "Das Modell scheitert fast so oft wie es gelingt. Weniger Fehler machen künftige Aktionen sicherer.", "signal": "failure"}}
+{"ts": 1788752201.719311, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen und neu nutzen", "why": "Alte Schwarm-Erkenntnisse verstauben ungenutzt. Frisches Schwarm-Wissen verbessert gemeinsame Problemlösung.", "signal": "stale"}}
+{"ts": 1788752201.7193875, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten prüfen und anwenden", "why": "Viele neue Fähigkeiten wurden vorgeschlagen aber nicht getestet. Geprüfte Fähigkeiten erweitern den Handlungsspielraum.", "signal": "gap"}}
+{"ts": 1788752205.0626118, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.06, "gelesen": 3}}
+{"ts": 1788752205.0660684, "kind": "reflex_used", "payload": {"goal": "Traum-Erinnerungen nutzen", "tool": "traum-fähigkeiten-prüfen-und-nutzen.py", "ok": true}}
+{"ts": 1788752205.5178752, "kind": "act_done", "payload": {"goal_title": "Traum-Erinnerungen nutzen", "score": null, "converged": true, "mode": "reflex"}}
