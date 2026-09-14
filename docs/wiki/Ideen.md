@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The transition from model failures to successful completions using alternative models underscores the value of a diverse and redundant model pool.
+- Stale swarm information and outdated collective goals directly degrade the quality of distributed decision-making and coordination.
+- Aggressive pruning of facts and events is necessary for memory hygiene but risks losing valuable cross-cutting patterns if not carefully scoped.
+- Successful execution of self-reflexes shows that meta-cognitive loops can effectively translate proposed skills into stabilized system behaviors.
+- Frequent 429 rate-limit errors on specific free models highlight the critical need for an automated failover mechanism to alternative endpoints.
 - Combining dream analysis with tool execution yields convergent results, suggesting tight coupling improves goal achievement.
 - Pruning events show that frequent fact/event cleanup maintains memory hygiene but must be balanced with retention of recent model outcomes.
 - The system's drive goals consistently flag model errors and stale swarm data as primary performance bottlenecks.
@@ -51,11 +56,6 @@
 - Stale swarm goals act as cognitive noise and hinder the system's ability to prioritize new, relevant tasks.
 - Model locking mechanisms effectively prevent resource waste during outages but create dependency on a few stable models.
 - API rate limits (429) and timeouts are the primary causes of systemic model failure across multiple providers.
-- The simulation's revise verdict with two revisions demonstrates that iterative refinement can improve outcomes but may need more cycles to converge.
-- The reflex tool 'lernen-aus-fehlern-systematisch-verbesse.py' successfully transformed model failures into structured lessons, validating systematic e
-- The swarm goal 'Fähigkeiten-Ideen in Taten umsetzen' evolved but did not converge, suggesting the scoring or iteration count needs adjustment.
-- dots-studio/dots-3-note-preview:free has consistently succeeded with latency under 25 s, making it the most reliable model observed.
-- The repeated 429 errors on google/gemma models and timeouts on nvidia/nemotron indicate that free‑tier models hit quota and stability limits, requirin
 
 ---
 
