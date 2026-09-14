@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 09:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 10:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler beheben *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
+- Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 - Entfernte Erinnerungen verbinden *(wieder aufgegriffen: 3×)*
-- Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions successfully automate swarm updates without manual intervention.
+- Regular pruning of facts and events improves system responsiveness.
+- Only one model succeeded, exposing a single point of failure in routing.
+- Timeout errors on slow models necessitate latency-aware fallback mechanisms.
+- Repeated 429 errors indicate quota exhaustion across provider accounts.
 - Pruning 6 facts and 16 events per cycle keeps the knowledge base lean, reducing noise for future reasoning.
 - Skill proposals from dreams target concrete gaps (routing, caching, instrumentation), confirming they are directly actionable.
 - Reflex-driven swarm goal updates converge in a single iteration, showing that automated reflexes can resolve staleness efficiently.
@@ -51,11 +56,6 @@
 - The model dots-studio/dots-3-note-preview:free consistently shows lower latency and higher token throughput, making it the preferred primary.
 - Rate‑limit errors (429) from free‑tier models are the dominant failure mode, indicating that request throttling is necessary.
 - Three consecutive model failures (timeout or 429) trigger a 1800‑second lockout, blocking the model even after the transient error has passed.
-- Memory pruning removed 83 events in a single cycle, confirming that unconsolidated experience accumulates rapidly and making periodic dream consolidat
-- Self-generated drive goals from failure and staleness signals show the system can identify its own operational problems, but recurring model failures 
-- Swarm convergence stalled at score 3 despite evolution, indicating that partial solution deployment without full integration gates leaves residual fai
-- The system generated five targeted skill proposals directly mapping to observed failure modes (health monitoring, quota scheduling, backoff unblocking
-- When multiple models fail simultaneously with 429 rate-limit and timeout errors, the root cause is quota exhaustion and latency spikes—not model quali
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11371 Fakten** · Stand 2026-09-14 09:58 UTC · aktualisiert bei jedem Herzschlag
+**11346 Fakten** · Stand 2026-09-14 10:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
+- **dream:** 7263
 - **swarm_artifact:** 1639
 - **last_swarm_critique:** 947
 - **last_swarm_goal:** 682
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914102633:5:21516a`
+*14.09. 10:26 UTC · Quelle: dream*
+
+Reflex actions successfully automate swarm updates without manual intervention.
+
+### `dream:20260914102633:4:d3c005`
+*14.09. 10:26 UTC · Quelle: dream*
+
+Regular pruning of facts and events improves system responsiveness.
+
+### `dream:20260914102633:3:072f00`
+*14.09. 10:26 UTC · Quelle: dream*
+
+Only one model succeeded, exposing a single point of failure in routing.
+
+### `dream:20260914102633:2:623758`
+*14.09. 10:26 UTC · Quelle: dream*
+
+Timeout errors on slow models necessitate latency-aware fallback mechanisms.
+
+### `dream:20260914102633:1:6761b9`
+*14.09. 10:26 UTC · Quelle: dream*
+
+Repeated 429 errors indicate quota exhaustion across provider accounts.
 
 ### `tool:fähigkeiten-ideen-in-taten-umsetzen`
 *14.09. 09:56 UTC · Quelle: hands*
@@ -41962,156 +41987,6 @@ The 'Marktanalyse' goal was marked stale and converged via reflex without a scor
 *31.08. 10:26 UTC · Quelle: dream*
 
 Repeated 429 errors on z-ai/glm-5.2:free and 502 on nvidia/nemotron-3-ultra-550b-a55b:free indicate systemic provider-side rate limiting and overload, not transient failures.
-
-### `dream:20260831102043:5:f232bd`
-*31.08. 10:20 UTC · Quelle: dream*
-
-Repeated 429 errors on specific models indicate need for per-model health tracking and automatic disablement.
-
-### `dream:20260831102043:4:9dcf7d`
-*31.08. 10:20 UTC · Quelle: dream*
-
-Successful hand actions (file ops, scripts) demonstrate local execution reliability versus model invocation fragility.
-
-### `dream:20260831102043:3:6cbbe3`
-*31.08. 10:20 UTC · Quelle: dream*
-
-Prediction calibration is absent, leading to unchecked drift between estimated and actual task outcomes.
-
-### `dream:20260831102043:2:d0664b`
-*31.08. 10:20 UTC · Quelle: dream*
-
-Simulation critiques are not reliably applied without a mandatory revision gate blocking task completion.
-
-### `dream:20260831102043:1:18bf09`
-*31.08. 10:20 UTC · Quelle: dream*
-
-External model dependencies cause cascading failures when rate-limited or overloaded, requiring local-first fallbacks and circuit breakers.
-
-### `dream:20260831101316:5:d62043`
-*31.08. 10:13 UTC · Quelle: dream*
-
-Local-first execution of deterministic hand actions reduces unnecessary model calls and improves system reliability.
-
-### `dream:20260831101316:4:e2f8e1`
-*31.08. 10:13 UTC · Quelle: dream*
-
-Model selection lacks real-time performance feedback, leading to repeated failures on overloaded or rate-limited endpoints.
-
-### `dream:20260831101316:3:024973`
-*31.08. 10:13 UTC · Quelle: dream*
-
-Stale market analyses persist because there is no automated pipeline converting insights into executable actions.
-
-### `dream:20260831101316:2:e9a773`
-*31.08. 10:13 UTC · Quelle: dream*
-
-High-latency models like nvidia/nemotron-3-ultra-550b benefit from micro-step decomposition with checkpointing to maintain progress under timeouts.
-
-### `dream:20260831101316:1:fc7e27`
-*31.08. 10:13 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limit fragility requiring adaptive routing and backoff strategies.
-
-### `dream:20260831100747:5:9881ea`
-*31.08. 10:07 UTC · Quelle: dream*
-
-Batch application of simulation revisions reduces total API calls versus iterative single-revision cycles.
-
-### `dream:20260831100747:4:550feb`
-*31.08. 10:07 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than implementation, creating a capability gap despite known solutions.
-
-### `dream:20260831100747:3:f51d0d`
-*31.08. 10:07 UTC · Quelle: dream*
-
-Relative path resolution in hand actions fails silently when ZOETRON_DATA context shifts.
-
-### `dream:20260831100747:2:6a7977`
-*31.08. 10:07 UTC · Quelle: dream*
-
-Working model (nemotron-3-ultra) exhibits high latency variance (18-50s) making time-bounded planning unreliable.
-
-### `dream:20260831100747:1:b65bcb`
-*31.08. 10:07 UTC · Quelle: dream*
-
-Free-tier model endpoints repeatedly hit 429 rate limits causing cascading failures across tasks.
-
-### `dream:20260831100102:5:82283e`
-*31.08. 10:01 UTC · Quelle: dream*
-
-Simulation revisions applied one-at-a-time cause redundant re-attempts; batching all revisions before retry improves convergence efficiency.
-
-### `dream:20260831100102:4:6f887f`
-*31.08. 10:01 UTC · Quelle: dream*
-
-Stale market analysis data remains unused because there is no automated pipeline to convert it into actionable execution steps.
-
-### `dream:20260831100102:3:62ad51`
-*31.08. 10:01 UTC · Quelle: dream*
-
-Model performance varies significantly under load — nemotron-3-ultra-550b-a55b showed acceptable latency (8.2s) while others failed with 429 or 502 errors.
-
-### `dream:20260831100102:2:1a93fc`
-*31.08. 10:01 UTC · Quelle: dream*
-
-Relative path usage in scripts causes silent failures; absolute paths derived from a central configuration prevent data resolution errors.
-
-### `dream:20260831100102:1:dfb6fa`
-*31.08. 10:01 UTC · Quelle: dream*
-
-Repeated 429 errors across multiple models indicate systemic rate-limiting that requires exponential backoff with jitter and model cooldown windows.
-
-### `dream:20260831095326:5:257463`
-*31.08. 09:53 UTC · Quelle: dream*
-
-No checkpointing exists for long-running swarms, so any model interruption discards all intermediate progress.
-
-### `dream:20260831095326:4:467213`
-*31.08. 09:53 UTC · Quelle: dream*
-
-Relative script paths and missing pre-flight checks cause silent environment mismatches that masquerade as model failures.
-
-### `dream:20260831095326:3:678142`
-*31.08. 09:53 UTC · Quelle: dream*
-
-Swarm cycles lack a hard convergence gate, allowing infinite iteration without quality improvement.
-
-### `dream:20260831095326:2:04ada0`
-*31.08. 09:53 UTC · Quelle: dream*
-
-Skill proposals accumulate but remain untested because the system lacks an automated 'proposal-to-validation' pipeline.
-
-### `dream:20260831095326:1:07fa2c`
-*31.08. 09:53 UTC · Quelle: dream*
-
-Model provider rate limits (429) and upstream overloads (502) are the dominant failure mode, making single-model reliance untenable.
-
-### `dream:20260831094749:5:3564be`
-*31.08. 09:47 UTC · Quelle: dream*
-
-Simulation-revision loops are proposed with risk thresholds but lack a gate to enforce application before task completion.
-
-### `dream:20260831094749:4:153275`
-*31.08. 09:47 UTC · Quelle: dream*
-
-Stale work (market analysis) persists for days while new skills accumulate unused, indicating a prioritization and closure deficit.
-
-### `dream:20260831094749:3:8d35c4`
-*31.08. 09:47 UTC · Quelle: dream*
-
-Multiple skill proposals for retry logic, circuit breaking, and model rotation exist but remain unimplemented, revealing a proposal-execution gap.
-
-### `dream:20260831094749:2:0e1950`
-*31.08. 09:47 UTC · Quelle: dream*
-
-High latency of fallback models (18-27s) creates a reliability-speed tradeoff that current routing doesn't optimize.
-
-### `dream:20260831094749:1:7021bc`
-*31.08. 09:47 UTC · Quelle: dream*
-
-Rate limiting (429 errors) on specific models is the dominant failure mode, causing repeated fallback to slower but reliable models.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*
