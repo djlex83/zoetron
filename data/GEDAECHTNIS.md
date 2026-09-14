@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11313 Fakten** · Stand 2026-09-14 12:54 UTC · aktualisiert bei jedem Herzschlag
+**11308 Fakten** · Stand 2026-09-14 13:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7218
+- **dream:** 7213
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 948
 - **last_swarm_goal:** 683
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914130240:5:6acca7`
+*14.09. 13:02 UTC · Quelle: dream*
+
+The drive goals highlight the need to stabilize models, refresh stale swarm data, and connect remote memories.
+
+### `dream:20260914130240:4:52cbe8`
+*14.09. 13:02 UTC · Quelle: dream*
+
+Pruning operations reduce the number of stored facts and events, helping to keep the knowledge base concise.
+
+### `dream:20260914130240:3:3e00d5`
+*14.09. 13:02 UTC · Quelle: dream*
+
+The system automatically blocks a model after three consecutive failures, which prevents further wasted calls.
+
+### `dream:20260914130240:2:b6c01f`
+*14.09. 13:02 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model consistently succeeds with acceptable latency, making it a reliable fallback.
+
+### `dream:20260914130240:1:c481bc`
+*14.09. 13:02 UTC · Quelle: dream*
+
+Multiple free models are failing with timeouts or HTTP 429 errors, indicating rate limiting and instability.
 
 ### `dream:20260914125053:5:0fef2a`
 *14.09. 12:50 UTC · Quelle: dream*
@@ -41739,56 +41764,6 @@ Self-diagnosis only checks internal organs and never probes external API health,
 *31.08. 13:02 UTC · Quelle: dream*
 
 Repeated 429 errors on the same model endpoint reveal a missing circuit-breaker and automatic fallback mechanism.
-
-### `dream:20260831125620:5:4b6c3c`
-*31.08. 12:56 UTC · Quelle: dream*
-
-Pre-flight validation of tool paths/dependencies is absent; hand_action succeeds but only because scripts happen to exist, not because they were verified.
-
-### `dream:20260831125620:4:0e1d48`
-*31.08. 12:56 UTC · Quelle: dream*
-
-Latency telemetry is collected per call but never feeds back into model selection, wasting signal that could prevent 100s delays.
-
-### `dream:20260831125620:3:54841d`
-*31.08. 12:56 UTC · Quelle: dream*
-
-Reflex-driven goals converge quickly (exit 0, converged true) but only address symptoms (market analysis, model errors) not root causes (no model router, no proposal harness).
-
-### `dream:20260831125620:2:30c855`
-*31.08. 12:56 UTC · Quelle: dream*
-
-Skill proposals accumulate (5+ in this session) but none are auto-tested or deployed, revealing a broken proposal→implementation loop despite existing reflex infrastructure.
-
-### `dream:20260831125620:1:531a9d`
-*31.08. 12:56 UTC · Quelle: dream*
-
-A single model provider (z-ai/glm-5.2) fails deterministically with 429 errors while the fallback (nvidia/nemotron-3-ultra) succeeds but exhibits 3× latency variance (34–101s), indicating missing health-aware routing.
-
-### `dream:20260831124938:5:e585d5`
-*31.08. 12:49 UTC · Quelle: dream*
-
-Model failures cluster in time (multiple 429s within seconds), indicating burst traffic exceeds free-tier quotas rather than sustained load.
-
-### `dream:20260831124938:4:b5e213`
-*31.08. 12:49 UTC · Quelle: dream*
-
-Existing skill proposals (ModelRouter, CircuitBreaker, quota-aware routing) directly address observed failure patterns but remain undeployed.
-
-### `dream:20260831124938:3:38bb56`
-*31.08. 12:49 UTC · Quelle: dream*
-
-The reflex system successfully auto-upgrades models but lacks a health-aware selection policy to avoid picking another rate-limited model.
-
-### `dream:20260831124938:2:d70dc9`
-*31.08. 12:49 UTC · Quelle: dream*
-
-Latency variance between working models exceeds 5x (10s vs 53s), making latency-aware routing essential for user-facing tasks.
-
-### `dream:20260831124938:1:74cd08`
-*31.08. 12:49 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter share rate-limit buckets, causing cascading 429 failures across multiple models simultaneously.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*
