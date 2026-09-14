@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11377 Fakten** · Stand 2026-09-14 08:00 UTC · aktualisiert bei jedem Herzschlag
+**11369 Fakten** · Stand 2026-09-14 08:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7308
-- **swarm_artifact:** 1635
+- **dream:** 7303
+- **swarm_artifact:** 1633
 - **last_swarm_critique:** 945
 - **last_swarm_goal:** 680
 - **anti_pattern:** 365
 - **strategy:** 185
-- **tool:** 153
+- **tool:** 152
 - **hand_result:** 83
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914082843:5:556551`
+*14.09. 08:28 UTC · Quelle: dream*
+
+Pruning operations removed 37 events and 10 facts across two runs, confirming that periodic cleanup prevents memory bloat.
+
+### `dream:20260914082843:4:ff0b22`
+*14.09. 08:28 UTC · Quelle: dream*
+
+Reflex-driven goals ('Modellfehler reduzieren', 'Simulationen besser für Handlungen nutzen') both converged successfully, validating the reflex mechanism.
+
+### `dream:20260914082843:3:a3271e`
+*14.09. 08:28 UTC · Quelle: dream*
+
+The system autonomously generated five concrete skill proposals addressing model resilience, quota management, and circuit-breaking patterns.
+
+### `dream:20260914082843:2:3c90d0`
+*14.09. 08:28 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free proved to be a stable fallback with acceptable latency (23-47s) and zero failures across two invocations.
+
+### `dream:20260914082843:1:d32550`
+*14.09. 08:28 UTC · Quelle: dream*
+
+Google Gemma free-tier models repeatedly trigger 429 rate-limit errors, making them unreliable for latency-sensitive tasks.
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-ausf`
 *14.09. 07:58 UTC · Quelle: hands*
@@ -42128,11 +42153,6 @@ poolside/laguna-s-2.1:free is the only model that reliably succeeds, making it t
 
 Multiple free-tier models (GLM, Nemotron, Gemma) consistently fail with 429 rate limits and 502 overload errors under load.
 
-### `tool:alte-marktanalyse-aktualisieren-und-nutz`
-*31.08. 07:59 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Marktanalyse aktualisieren und nutzen'. Datei: data/tools/alte-marktanalyse-aktualisieren-und-nutz.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *31.08. 07:58 UTC · Quelle: critic*
 
@@ -42142,56 +42162,6 @@ score=6; issues=Tippfehler 'SCHITT' statt 'SCHRITT' in den Print-Ausgaben (Zeile
 *31.08. 07:56 UTC · Quelle: system*
 
 Alte Marktanalyse aktualisieren und nutzen
-
-### `dream:20260831075630:5:1ee7e7`
-*31.08. 07:56 UTC · Quelle: dream*
-
-The recall of 'swarm_artifact:Tasks ueber das hands-Organ ausfuehren' indicates an active knowledge structure for task decomposition that, if leveraged, could reduce redundant model calls by pre-decomposing work.
-
-### `dream:20260831075630:4:e6dcad`
-*31.08. 07:56 UTC · Quelle: dream*
-
-Calibration consistently underestimates outcomes (predicted 5 vs actual 7, abs_error 2), revealing a conservative bias that requires a systematic upward adjustment or wider confidence intervals in this domain.
-
-### `dream:20260831075630:3:a7544d`
-*31.08. 07:56 UTC · Quelle: dream*
-
-The critic-driven evolution loop successfully identified a concrete code smell (eval()/exec() in execute_task()) and produced variants that improved scoring from 7 to 9, confirming that targeted code criticism plus variant generation is an effective improvemen
-
-### `dream:20260831075630:2:237a4e`
-*31.08. 07:56 UTC · Quelle: dream*
-
-poolside/laguna-s-2.1:free exhibits a resilience pattern: initial 429 failures followed by successful responses with rapidly decreasing latency (14.7s → 5.4s → 0.8s), suggesting it warms up or benefits from caching under sustained load.
-
-### `dream:20260831075630:1:de6a79`
-*31.08. 07:56 UTC · Quelle: dream*
-
-429 rate-limit errors are systemic across all providers simultaneously, indicating a shared API gateway bottleneck rather than model-specific failures — retry logic must treat rate limits as infrastructure events, not model quality signals.
-
-### `dream:20260831074658:5:ba758f`
-*31.08. 07:46 UTC · Quelle: dream*
-
-Token input size remains constant at 2171 tokens across most requests, indicating standardized prompt formatting.
-
-### `dream:20260831074658:4:ff693b`
-*31.08. 07:46 UTC · Quelle: dream*
-
-Rate limiting occurs in bursts, suggesting OpenRouter enforces per-model quotas that reset periodically.
-
-### `dream:20260831074658:3:65e33c`
-*31.08. 07:46 UTC · Quelle: dream*
-
-Latency scales predictably with token output volume, with 10000-token responses taking ~207s versus 1105-token responses at ~24.7s.
-
-### `dream:20260831074658:2:39f44b`
-*31.08. 07:46 UTC · Quelle: dream*
-
-The poolside/laguna-s-2.1:free model is the only reliable endpoint, handling all successful requests across varying token loads.
-
-### `dream:20260831074658:1:fca221`
-*31.08. 07:46 UTC · Quelle: dream*
-
-All non-poolside models consistently fail with HTTP 429 errors, indicating a systemic rate-limiting issue rather than isolated model failures.
 
 ### `last_swarm_critique`
 *31.08. 06:34 UTC · Quelle: critic*

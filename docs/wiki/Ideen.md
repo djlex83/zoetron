@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 07:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 08:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Ferne Träume kombinieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
+- Modellfehler beheben *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
-- Modellfehler beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning operations removed 37 events and 10 facts across two runs, confirming that periodic cleanup prevents memory bloat.
+- Reflex-driven goals ('Modellfehler reduzieren', 'Simulationen besser für Handlungen nutzen') both converged successfully, validating the reflex mechan
+- The system autonomously generated five concrete skill proposals addressing model resilience, quota management, and circuit-breaking patterns.
+- dots-studio/dots-3-note-preview:free proved to be a stable fallback with acceptable latency (23-47s) and zero failures across two invocations.
+- Google Gemma free-tier models repeatedly trigger 429 rate-limit errors, making them unreliable for latency-sensitive tasks.
 - Accumulated skill proposals remain unused unless a systematic pipeline converts them into enabled capabilities.
 - Reflex tools successfully automate recurring goals, indicating that a generic skill executor can improve observability and reuse.
 - Swarm knowledge decays quickly, requiring scheduled refresh tasks to maintain accuracy and relevance.
@@ -51,11 +56,6 @@
 - Capturing reflex outcomes with latency and success rates enables a reliability matrix for smarter routing.
 - Without auditing pruned events against retrieval failures, retention thresholds become misaligned with actual knowledge needs.
 - Concurrent endpoint failures require a circuit‑breaker with a latency budget to prevent cascading timeouts.
-- Exponential backoff with probe requests re-enables blocked models, but must be paired with circuit breakers to avoid cascading failures.
-- Automated A/B simulation of skill proposals against a fitness function accelerates convergence to robust procedures.
-- Stale collective knowledge leads to incorrect swarm decisions; push-based sync with TTL and version vectors ensures freshness.
-- Per-model health tracking (latency, error rate, quota) enables dynamic fallback and circuit breaking within a latency budget.
-- Dominant model failures are HTTP 429 (quota) and 502 (upstream overload), requiring intelligent request routing and backoff.
 
 ---
 
