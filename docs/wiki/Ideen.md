@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 02:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goal completion is declared without verifying three stable cycles, risking premature convergence.
+- Simulation outcomes are not automatically applied, creating a gap between planning and execution.
+- Stale swarm knowledge leads to outdated decisions, requiring periodic refresh with validation against current task performance.
+- Latency varies widely between calls, so pre‑flight token estimation can prevent overspending on slow models.
+- Model endpoints frequently return 502 or 429 errors under load, indicating a need for health monitoring and fallback routing.
 - Pruning removes 15–37 items per cycle yet self-diagnosis reports zero organ errors, suggesting pruning masks rather than fixes root causes.
 - Proposed skills accumulate but are never validated against live performance, so the meta-learning loop remains open.
 - Latency variance (28–58s) on the same model makes time-budget planning unreliable without per-model p50/p95 tracking.
@@ -51,11 +56,6 @@
 - Evolutionary search produces high-scoring variants (9/10) but swarm execution stalls at 6/10 unconverged, revealing a variant-to-integration gap.
 - Simulation revision loops escalate (3→5 revisions) without convergence criteria, wasting cycles on diminishing returns.
 - Free-tier model endpoints (Nemotron, Gemma) fail frequently with 502 upstream errors and 429 rate limits, requiring a hardened fallback chain with hea
-- Integrating simulation outputs into the decision pipeline ensures that computed scenarios are applied to real actions.
-- Regularly pruning outdated facts and events maintains memory efficiency while preserving critical knowledge.
-- Directly compiling approved skill proposals into in-memory Python modules eliminates the need for external shell scripts.
-- Incorporating the p90 latency of the active model into task budgets prevents timeout failures.
-- When model endpoints return 5xx or 429 errors, they should be temporarily blacklisted and traffic redirected to fallback providers.
 
 ---
 

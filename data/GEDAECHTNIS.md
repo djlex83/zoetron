@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11334 Fakten** · Stand 2026-09-14 02:58 UTC · aktualisiert bei jedem Herzschlag
+**11331 Fakten** · Stand 2026-09-14 03:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7258
-- **swarm_artifact:** 1637
+- **dream:** 7263
+- **swarm_artifact:** 1633
 - **last_swarm_critique:** 943
 - **last_swarm_goal:** 678
-- **anti_pattern:** 365
-- **strategy:** 185
+- **anti_pattern:** 363
+- **strategy:** 184
 - **tool:** 153
-- **hand_result:** 84
+- **hand_result:** 83
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914030527:5:ffae92`
+*14.09. 03:05 UTC · Quelle: dream*
+
+Goal completion is declared without verifying three stable cycles, risking premature convergence.
+
+### `dream:20260914030527:4:97ca4a`
+*14.09. 03:05 UTC · Quelle: dream*
+
+Simulation outcomes are not automatically applied, creating a gap between planning and execution.
+
+### `dream:20260914030527:3:b31bcc`
+*14.09. 03:05 UTC · Quelle: dream*
+
+Stale swarm knowledge leads to outdated decisions, requiring periodic refresh with validation against current task performance.
+
+### `dream:20260914030527:2:87a7bf`
+*14.09. 03:05 UTC · Quelle: dream*
+
+Latency varies widely between calls, so pre‑flight token estimation can prevent overspending on slow models.
+
+### `dream:20260914030527:1:663a2d`
+*14.09. 03:05 UTC · Quelle: dream*
+
+Model endpoints frequently return 502 or 429 errors under load, indicating a need for health monitoring and fallback routing.
 
 ### `dream:20260914025547:5:00e30c`
 *14.09. 02:55 UTC · Quelle: dream*
@@ -41972,16 +41997,6 @@ Only inclusionai/ling-3.0-flash-fin:free remained available, creating a single p
 *31.08. 03:19 UTC · Quelle: dream*
 
 Multiple free-tier models simultaneously hit 429 rate limits, revealing that routing without per-model quota awareness causes cascading failures.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:2`
-*31.08. 02:58 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 18): Event-Driven Skill Bus Integration - Deploy a central SkillEventBus that organs publish to and skills subscribe from. CircuitBreaker listens for failure events and manages state transitions. HealthTracker aggregates heartbea
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:0`
-*31.08. 02:58 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 23): Architectural Refactoring with Dependency Injection - Restructure the organ architecture to accept skills as injectable dependencies. Create a SkillRegistry that loads CircuitBreaker, HealthTracker, and ErrorClassifier as pl
 
 ### `last_swarm_critique`
 *31.08. 02:57 UTC · Quelle: critic*
