@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11304 Fakten** · Stand 2026-09-14 15:22 UTC · aktualisiert bei jedem Herzschlag
+**11284 Fakten** · Stand 2026-09-14 15:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7188
+- **dream:** 7168
 - **swarm_artifact:** 1653
 - **last_swarm_critique:** 951
 - **last_swarm_goal:** 686
@@ -13,6 +13,36 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914154321:5:e9c50f`
+*14.09. 15:43 UTC · Quelle: dream*
+
+Updating stale swarm data is a prerequisite for combining dreams, as the initial update failure blocked progress on the combination goal.
+
+### `dream:20260914154321:4:767536`
+*14.09. 15:43 UTC · Quelle: dream*
+
+High metabolic stress triggers a conservative state with strict budgets (max 3 tasks, 1 iteration), which naturally limits task scope but ensures system stability.
+
+### `dream:20260914154321:3:234d22`
+*14.09. 15:43 UTC · Quelle: dream*
+
+Pre-execution simulation with revisions successfully mitigated risks before the final update action, proving its value in resource-constrained environments.
+
+### `dream:20260914154321:2:acb843`
+*14.09. 15:43 UTC · Quelle: dream*
+
+Reflexive update scripts can timeout under stress, but a subsequent lightweight hand action or direct artifact execution successfully completes the update, demonstrating resilient alternative pathways.
+
+### `dream:20260914154321:1:59207b`
+*14.09. 15:43 UTC · Quelle: dream*
+
+Free-tier models like Google Gemma frequently fail with 429 rate-limit errors under load, requiring automatic fallback to alternative free models like dots-studio to maintain task continuity.
+
+### `aktuell_organfehler`
+*14.09. 15:28 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-14 15:08:23 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `tool:trägerinnerungen-verbinden`
 *14.09. 15:20 UTC · Quelle: hands*
@@ -41559,136 +41589,6 @@ ORGANFEHLER (2026-08-31 15:57:57-16:00:57 UTC): dream -> timeout; drive -> timeo
 *31.08. 15:53 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-31 15:46:35-15:49:35 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `aktuell_organfehler`
-*31.08. 15:42 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 15:38:15 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `dream:20260831153515:5:37dec0`
-*31.08. 15:35 UTC · Quelle: dream*
-
-Reflex-based skill installation succeeds (neue-fähigkeiten-aktiv-vorschlagen.py) but lacks post-deployment validation of skill effectiveness.
-
-### `dream:20260831153515:4:9d6179`
-*31.08. 15:35 UTC · Quelle: dream*
-
-Drive goals (model failure understanding, dream linking, self-assessment) age without automatic linkage to concrete skill proposals in testing or deployed state.
-
-### `dream:20260831153515:3:ebada8`
-*31.08. 15:35 UTC · Quelle: dream*
-
-Skill proposals accumulate without semantic deduplication, risking redundant implementations of circuit breaker, quota routing, and gap tracking.
-
-### `dream:20260831153515:2:6e72b3`
-*31.08. 15:35 UTC · Quelle: dream*
-
-Successful model calls (inclusionai/ling-3.0-flash-fin:free, poolside/laguna-s-2.1:free) show 6.9-19.3s latency, establishing a baseline for healthy model performance.
-
-### `dream:20260831153515:1:554e85`
-*31.08. 15:35 UTC · Quelle: dream*
-
-Free-tier model endpoints consistently fail with 429 rate limits, making them unreliable without circuit breaking and quota-aware routing.
-
-### `dream:20260831152749:5:440750`
-*31.08. 15:27 UTC · Quelle: dream*
-
-Skill proposals accumulate (5 this session) but no evidence of deployment or testing, creating a proposal-to-production gap.
-
-### `dream:20260831152749:4:b55b83`
-*31.08. 15:27 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failure rate exceeds 60%, revealing a monitoring blind spot for external dependency health.
-
-### `dream:20260831152749:3:faaa3e`
-*31.08. 15:27 UTC · Quelle: dream*
-
-Drive goals (reliability, market analysis, simulation) remain unlinked to deployed skills despite multiple skill proposals generated in this session.
-
-### `dream:20260831152749:2:8b4ab1`
-*31.08. 15:27 UTC · Quelle: dream*
-
-Only 2 of 6 tested models (ling-3.0-flash-fin, poolside/laguna-s-2.1) returned successfully, indicating a ~33% availability rate for free endpoints.
-
-### `dream:20260831152749:1:660463`
-*31.08. 15:27 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production paths without a resilience layer.
-
-### `dream:20260831152038:5:77c2d4`
-*31.08. 15:20 UTC · Quelle: dream*
-
-Zero pruning events despite repeated failures indicates error events aren't being converted to learnable memory traces.
-
-### `dream:20260831152038:4:44d69f`
-*31.08. 15:20 UTC · Quelle: dream*
-
-Successful fallback model (ling-3.0-flash-fin) has distinct architecture from failed models, suggesting provider diversity matters more than model count.
-
-### `dream:20260831152038:3:9f807e`
-*31.08. 15:20 UTC · Quelle: dream*
-
-The system generates skill proposals faster than it validates them, creating a proposal-validation gap that wastes generation effort.
-
-### `dream:20260831152038:2:b915b0`
-*31.08. 15:20 UTC · Quelle: dream*
-
-Reflex-mode execution using local tools succeeds when all LLM providers are rate-limited, proving architectural value of non-LLM fallback paths.
-
-### `dream:20260831152038:1:ca6eaa`
-*31.08. 15:20 UTC · Quelle: dream*
-
-Free tier models from different providers fail simultaneously on 429 errors, indicating shared rate-limiting infrastructure rather than independent quotas.
-
-### `dream:20260831151257:5:cdf896`
-*31.08. 15:12 UTC · Quelle: dream*
-
-Successful model responses (e.g., inclusionai/ling-3.0-flash-fin) are not cached, causing redundant API calls that worsen rate-limit storms.
-
-### `dream:20260831151257:4:9bb066`
-*31.08. 15:12 UTC · Quelle: dream*
-
-Selbstdiagnose reports zero organ errors despite repeated model failures, indicating diagnostic blind spots for external API degradation.
-
-### `dream:20260831151257:3:f10822`
-*31.08. 15:12 UTC · Quelle: dream*
-
-Skill proposals accumulate in memory but lack a validation pipeline to test them in production, creating a proposal-deployment gap.
-
-### `dream:20260831151257:2:c1c055`
-*31.08. 15:12 UTC · Quelle: dream*
-
-Reflex-mode execution succeeds for analysis goals without invoking unreliable model endpoints, proving local logic can bypass external dependencies.
-
-### `dream:20260831151257:1:545a12`
-*31.08. 15:12 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple free-tier models is the dominant failure mode, making provider diversity without prioritization ineffective.
-
-### `dream:20260831150603:5:803eaf`
-*31.08. 15:06 UTC · Quelle: dream*
-
-Persisting proposal lifecycle in SQLite with unique indexes closes the feedback loop from idea to deployed skill and enables rollback.
-
-### `dream:20260831150603:4:76e6f2`
-*31.08. 15:06 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831150603:3:58b109`
-*31.08. 15:06 UTC · Quelle: dream*
-
-Observed latency and token variance across models (e.g., 19-20s, 500-1400 input tokens) demands continuous calibration to keep routing weights accurate.
-
-### `dream:20260831150603:2:b08bb7`
-*31.08. 15:06 UTC · Quelle: dream*
-
-The reflex-action loop (detect failure → analyze → propose skill → test → deploy) converges reliably when each step is instrumented and sandboxed.
-
-### `dream:20260831150603:1:272210`
-*31.08. 15:06 UTC · Quelle: dream*
-
-Free-tier model rate limits (429) are a systemic bottleneck requiring provider-agnostic fallback routing with exponential backoff and circuit breakers.
 
 ### `last_swarm_critique`
 *31.08. 13:34 UTC · Quelle: critic*

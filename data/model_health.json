@@ -1,5 +1,5 @@
 {
- "stand": 1789399254.032723,
+ "stand": 1789400619.234104,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -31,7 +31,7 @@
    "latenz_summe_s": 862.4096169471741,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 2011
+   "kontofehler": 2013
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 18,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 686.6346969604492,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 1984
+   "kontofehler": 1986
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -111,11 +111,11 @@
    "letzte_sperre": 0.0
   },
   "dots-studio/dots-3-note-preview:free": {
-   "laeufe": 522,
+   "laeufe": 524,
    "fehler": 4,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 17175.418396234512,
+   "latenz_summe_s": 17210.498864889145,
    "letzter_fehler": "Client error '400 Bad Request' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/",
    "letzte_sperre": 0.0
   },
