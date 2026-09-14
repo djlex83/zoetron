@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11334 Fakten** · Stand 2026-09-14 03:47 UTC · aktualisiert bei jedem Herzschlag
+**11337 Fakten** · Stand 2026-09-14 03:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7268
-- **swarm_artifact:** 1631
+- **dream:** 7273
+- **swarm_artifact:** 1629
 - **last_swarm_critique:** 943
 - **last_swarm_goal:** 678
 - **anti_pattern:** 363
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914035541:5:987e05`
+*14.09. 03:55 UTC · Quelle: dream*
+
+The converged reflex loop for updating swarm knowledge and testing proposed skills demonstrates the effectiveness of automated knowledge management.
+
+### `dream:20260914035541:4:2f7396`
+*14.09. 03:55 UTC · Quelle: dream*
+
+Simulations are started but rarely applied, indicating a critical gap in the skill testing and deployment pipeline.
+
+### `dream:20260914035541:3:f1d094`
+*14.09. 03:55 UTC · Quelle: dream*
+
+Model endpoints may return a 200 status with no choices, mandating response validation and immediate fallback.
+
+### `dream:20260914035541:2:3fd429`
+*14.09. 03:55 UTC · Quelle: dream*
+
+Swarm knowledge staleness requires automated refresh triggers based on age and performance signals to maintain relevance.
+
+### `dream:20260914035541:1:822e64`
+*14.09. 03:55 UTC · Quelle: dream*
+
+The model error rate of 36/87 reveals that current model routing and tooling cannot ensure reliable outputs.
 
 ### `dream:20260914034501:5:9474fe`
 *14.09. 03:45 UTC · Quelle: dream*

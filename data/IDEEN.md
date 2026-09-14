@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,16 +19,16 @@
 - Implement a centralized rate‑limit handler that intercepts HTTP 429 responses, applies exponential backoff wit *(hatte die Idee 3×)*
 - Create a dynamic model health dashboard that tracks per‑model error rates and auto‑degrades models after a thr *(hatte die Idee 3×)*
 - Generalize the stale-knowledge reflex into a configurable skill: domain, freshness predicate, fetch tool, and  *(hatte die Idee 3×)*
-- Wrap the skill-proposal-to-skill pipeline in a checkpointing supervisor that retries failed reflexes with expo *(hatte die Idee 2×)*
+- Add pre-flight token estimation and dynamic time-budget selection before each model call to avoid overspending *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The converged reflex loop for updating swarm knowledge and testing proposed skills demonstrates the effectiveness of automated knowledge management.
+- Simulations are started but rarely applied, indicating a critical gap in the skill testing and deployment pipeline.
+- Model endpoints may return a 200 status with no choices, mandating response validation and immediate fallback.
+- Swarm knowledge staleness requires automated refresh triggers based on age and performance signals to maintain relevance.
+- The model error rate of 36/87 reveals that current model routing and tooling cannot ensure reliable outputs.
 - Aggressive pruning (15 facts/51 events then 7/16) suggests experience accumulation outpaces consolidation, risking loss of rare failure signatures.
 - Reflex-driven maintenance (e.g., updating stale swarm goals) converges reliably where multi-cycle swarms stall.
 - Model latency variance (13-35s) on identical endpoints demands per-endpoint circuit-breakers and live performance ledgers for routing.
@@ -51,11 +56,6 @@
 - Evolutionary optimization cycles stall at score 6/10 without convergence, indicating the fitness function or mutation operators lack sufficient gradie
 - dots-studio/dots-3-note-preview:free demonstrates consistent reliability (33-34s latency, successful completions) making it the preferred primary free
 - Free-tier models exhibit two distinct failure modes: NVIDIA Nemotron returns 502 upstream overload errors while Google Gemma models hit 429 rate limit
-- Metabolic stress hits 1.0 and forces conserve mode (max_tasks=3), yet the planner still queues work, causing queue buildup and starvation.
-- Reflex tools are registered without validation; 'modellfehler-stark-verringern.py' returned ok:false but stayed in the registry, wasting retries.
-- Hand actions fail on relative paths because the working directory diverges from ZOETRON_DATA; every file op must resolve absolute paths via the enviro
-- Latency variance (14s–196s) breaks downstream budgets; tasks spawn sub-tasks without subtracting active model p90 latency first.
-- Model API failures (502 overload, 429 rate-limit) cascade into task failure because no fallback chain or circuit breaker exists across providers.
 
 ---
 
