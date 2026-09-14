@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system detects its own degradation signals and creates drive goals, but resolution loops are slow because they depend on the same unreliable model
+- Pruning removes significant volumes reactively rather than during predicted low-activity windows, risking latency spikes during consolidation.
+- Reflex tools successfully handle tactical fixes but strategic drive goals require architectural changes beyond reflex scope.
+- Skill proposals are generated but not automatically integrated into learning, creating a persistent gap between capability identification and capabili
+- Model failures cascade because the system lacks proactive health checks and automatic failover, causing multiple sequential 502/429 errors before a wo
 - Memory pruning runs reactively on idle triggers instead of incremental TTL/frequency decay, risking memory pressure.
 - Simulation revision loops (5 revisions, 5 risks) indicate missing pre-simulation validation gates.
 - Skill proposals accumulate but never enter the learning loop because no automated validation/insertion pipeline exists.
@@ -51,11 +56,6 @@
 - Simulation-driven revision cycles (verdict: revise, 3 risks, 2 revisions) successfully produce running artifacts verified by TOR (grün=true, 540 lines
 - Hand actions fail when using relative paths instead of resolving sys.argv[1] and ZOETRON_DATA environment variable for absolute data paths.
 - Nvidia Nemotron and Google Gemma models fail systematically (502 upstream overload, 429 rate limits) making them unreliable as primary reasoning engin
-- A gap exists between generated skill proposals and their implementation, calling for a proposal scoring engine.
-- The hand action failure due to missing file underscores the necessity of pre-execution file existence validation.
-- Pruning of 7 facts and 27 events suggests stale data accumulates, requiring an automated staleness detector.
-- Latency spikes above 20 seconds for certain models indicate that latency-aware routing should be implemented.
-- The repeated 429 Too Many Requests errors from Google models reveal a need for provider rate-limit monitoring and automatic blacklisting.
 
 ---
 

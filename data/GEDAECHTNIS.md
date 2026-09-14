@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11228 Fakten** · Stand 2026-09-14 23:11 UTC · aktualisiert bei jedem Herzschlag
+**11224 Fakten** · Stand 2026-09-14 23:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7148
-- **swarm_artifact:** 1620
+- **dream:** 7153
+- **swarm_artifact:** 1615
 - **last_swarm_critique:** 956
 - **last_swarm_goal:** 691
-- **anti_pattern:** 371
-- **strategy:** 188
-- **tool:** 150
+- **anti_pattern:** 369
+- **strategy:** 187
+- **tool:** 149
 - **hand_result:** 80
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914231857:5:62d3f7`
+*14.09. 23:18 UTC · Quelle: dream*
+
+The system detects its own degradation signals and creates drive goals, but resolution loops are slow because they depend on the same unreliable model infrastructure.
+
+### `dream:20260914231857:4:73185e`
+*14.09. 23:18 UTC · Quelle: dream*
+
+Pruning removes significant volumes reactively rather than during predicted low-activity windows, risking latency spikes during consolidation.
+
+### `dream:20260914231857:3:d7351b`
+*14.09. 23:18 UTC · Quelle: dream*
+
+Reflex tools successfully handle tactical fixes but strategic drive goals require architectural changes beyond reflex scope.
+
+### `dream:20260914231857:2:3fc6f5`
+*14.09. 23:18 UTC · Quelle: dream*
+
+Skill proposals are generated but not automatically integrated into learning, creating a persistent gap between capability identification and capability acquisition.
+
+### `dream:20260914231857:1:bcff8f`
+*14.09. 23:18 UTC · Quelle: dream*
+
+Model failures cascade because the system lacks proactive health checks and automatic failover, causing multiple sequential 502/429 errors before a working model is found.
 
 ### `dream:20260914230926:5:337c94`
 *14.09. 23:09 UTC · Quelle: dream*
@@ -41369,21 +41394,6 @@ Free-tier models across all providers suffer pervasive rate limiting (429 errors
 *31.08. 23:26 UTC · Quelle: critic*
 
 score=7; issues=
-
-### `tool:fähigkeiten-durch-simulationen-und-evolu`
-*31.08. 23:17 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten durch Simulationen und Evolution prüfen'. Datei: data/tools/fähigkeiten-durch-simulationen-und-evolu.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten durch Simula:2`
-*31.08. 23:17 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten durch Simula:1`
-*31.08. 23:17 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
 
 ### `last_swarm_critique`
 *31.08. 23:12 UTC · Quelle: critic*

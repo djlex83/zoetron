@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-14 23:09:59",
+ "stand": "2026-09-14 23:19:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
@@ -183,6 +183,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-ideen-in-taten-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modell-fehler-verringern.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -328,12 +334,6 @@
   },
   {
    "tool": "fähigkeitsvorschläge-in-produktion-überf.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-ideen-in-taten-umsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
