@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 14:08:53",
+ "stand": "2026-09-14 14:20:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,12 +27,6 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-besser-in-praxis-nutzen.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -57,6 +51,18 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "simulationen-besser-in-praxis-nutzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -70,12 +76,6 @@
   },
   {
    "tool": "ferne-traumverbindungen-neu-erkunden.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0

@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11299 Fakten** · Stand 2026-09-14 14:10 UTC · aktualisiert bei jedem Herzschlag
+**11299 Fakten** · Stand 2026-09-14 14:22 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7203
 - **swarm_artifact:** 1645
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914141858:5:a1b89c`
+*14.09. 14:18 UTC · Quelle: dream*
+
+Self-diagnosis with zero findings confirms system integrity and can be used as a routine health check.
+
+### `dream:20260914141858:4:66726a`
+*14.09. 14:18 UTC · Quelle: dream*
+
+Regular pruning of stale facts prevents outdated information from steering goals.
+
+### `dream:20260914141858:3:331bf6`
+*14.09. 14:18 UTC · Quelle: dream*
+
+Pairing distant dream events creates novel associations that enhance learning.
+
+### `dream:20260914141858:2:1fd352`
+*14.09. 14:18 UTC · Quelle: dream*
+
+A model that succeeds despite high latency can serve as a reliable fallback when others are unavailable.
+
+### `dream:20260914141858:1:b86f54`
+*14.09. 14:18 UTC · Quelle: dream*
+
+Repeated 429 errors from the same model indicate rate limiting and should trigger an immediate switch to another model.
 
 ### `dream:20260914140808:5:47ba64`
 *14.09. 14:08 UTC · Quelle: dream*
@@ -41689,31 +41714,6 @@ Reflex-based execution paths converge reliably when full model inference is unav
 *31.08. 14:20 UTC · Quelle: dream*
 
 API rate limiting (429) and service overload (502) are systemic failure modes across multiple providers, requiring circuit breakers and exponential backoff instead of naive retries.
-
-### `dream:20260831140928:5:32926c`
-*31.08. 14:09 UTC · Quelle: dream*
-
-Rate limits are key-pair specific, so circuit breakers and rotation must operate per API key, not just per model identifier.
-
-### `dream:20260831140928:4:49316b`
-*31.08. 14:09 UTC · Quelle: dream*
-
-Stale drive goals (e.g., unused Marktanalyse) are resolvable via reflex automation, but gap goals (unlearned skills) remain stalled without execution commitment.
-
-### `dream:20260831140928:3:db330e`
-*31.08. 14:09 UTC · Quelle: dream*
-
-Skill proposals accumulate within the same problem domain (model reliability) without effective deduplication, despite a ProposalDeduplicator being previously suggested.
-
-### `dream:20260831140928:2:88ce58`
-*31.08. 14:09 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free shows latency doubling (32.5s → 71.8s) between probes, indicating silent degradation that static health scores miss.
-
-### `dream:20260831140928:1:697404`
-*31.08. 14:09 UTC · Quelle: dream*
-
-429 rate-limit errors on z-ai/glm-5.2:free are the dominant recurring failure mode and require per-key quota management rather than naive retry.
 
 ### `last_swarm_critique`
 *31.08. 13:34 UTC · Quelle: critic*
