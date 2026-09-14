@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 22:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 22:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions that connect distant memories generate novel associations, enhancing the system's understanding of complex relationships.
+- Pruning stale facts and events improves memory hygiene but should be scheduled during low-activity windows to avoid resource contention.
+- The dots-studio/dots-3-note-preview model consistently succeeds but with high latency, making it a reliable fallback option.
+- The model lockdown after three consecutive failures can cause prolonged unavailability, suggesting a need for finer-grained error handling.
+- Free-tier models frequently return 429 rate-limit errors, indicating the need for request queuing and exponential backoff.
 - Event pruning occurs only during explicit low-activity windows, leaving transient noise to pollute context and inflate token costs.
 - Swarm evolution runs lack measurable convergence criteria, allowing premature termination or infinite loops that waste compute cycles.
 - Skill proposals accumulate without a validation gate, risking integration of untested or redundant capabilities that degrade system coherence.
@@ -51,11 +56,6 @@
 - A large backlog of unimplemented skill proposals suggests the need for an automated prioritization pipeline.
 - The dots-studio model exhibits high latency on first call, indicating a cold-start penalty that can be reduced by warming.
 - Repeated 429 errors from google/gemma free models show they are rate-limited and should be bypassed after a short pause.
-- Updating outdated swarm data with fresh information improves the quality of subsequent decisions.
-- Selecting models based on observed latency and warming them with dummy requests reduces cold-start variance.
-- Validating tool arguments before execution eliminates many runtime errors.
-- Consecutive failures of the same model class trigger automatic demotion, preventing repeated wasted calls.
-- The system frequently encounters 429 Too Many Requests and timeout errors, pointing to rate limits and network latency.
 
 ---
 

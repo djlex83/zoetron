@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11235 Fakten** · Stand 2026-09-14 22:12 UTC · aktualisiert bei jedem Herzschlag
+**11230 Fakten** · Stand 2026-09-14 22:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7153
+- **dream:** 7148
 - **swarm_artifact:** 1621
 - **last_swarm_critique:** 955
 - **last_swarm_goal:** 690
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914221937:5:25483f`
+*14.09. 22:19 UTC · Quelle: dream*
+
+Reflex actions that connect distant memories generate novel associations, enhancing the system's understanding of complex relationships.
+
+### `dream:20260914221937:4:5baa38`
+*14.09. 22:19 UTC · Quelle: dream*
+
+Pruning stale facts and events improves memory hygiene but should be scheduled during low-activity windows to avoid resource contention.
+
+### `dream:20260914221937:3:705a9a`
+*14.09. 22:19 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview model consistently succeeds but with high latency, making it a reliable fallback option.
+
+### `dream:20260914221937:2:e21a02`
+*14.09. 22:19 UTC · Quelle: dream*
+
+The model lockdown after three consecutive failures can cause prolonged unavailability, suggesting a need for finer-grained error handling.
+
+### `dream:20260914221937:1:c90bb7`
+*14.09. 22:19 UTC · Quelle: dream*
+
+Free-tier models frequently return 429 rate-limit errors, indicating the need for request queuing and exponential backoff.
 
 ### `dream:20260914220940:5:4ca543`
 *14.09. 22:09 UTC · Quelle: dream*
@@ -41374,56 +41399,6 @@ High variance in latency (8.6s to 54.1s) for nvidia/nemotron-3-ultra-550b:free s
 *31.08. 22:20 UTC · Quelle: dream*
 
 Repeated 429 errors on z-ai/glm-5.2:free indicate a need for rate-limit-aware model selection and fallback strategies.
-
-### `dream:20260831221507:5:07b411`
-*31.08. 22:15 UTC · Quelle: dream*
-
-Skill proposals accumulate but remain unimplemented (gap drive), indicating a missing 'proposal-to-production' validation pipeline.
-
-### `dream:20260831221507:4:84ff70`
-*31.08. 22:15 UTC · Quelle: dream*
-
-Reflex-driven execution achieved swarm convergence (score 8+) where deliberate planning had stalled, proving reflexes as a reliable execution primitive.
-
-### `dream:20260831221507:3:74faa9`
-*31.08. 22:15 UTC · Quelle: dream*
-
-Five independent proposals converge on a tiered model registry with health scoring, proactive probing, and automatic failover — this is the consensus architecture.
-
-### `dream:20260831221507:2:1bb100`
-*31.08. 22:15 UTC · Quelle: dream*
-
-Nemotron-3-ultra latency varies 3x (14–49s) for similar token loads, making static timeouts unreliable and requiring adaptive guards.
-
-### `dream:20260831221507:1:adcaaa`
-*31.08. 22:15 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free reveal that free-tier quota exhaustion is the dominant failure mode, not model quality.
-
-### `dream:20260831220901:5:3c583c`
-*31.08. 22:09 UTC · Quelle: dream*
-
-Path-resolution failures (implied by dedicated utility proposal) indicate that implicit working-directory assumptions break tool reliability across contexts.
-
-### `dream:20260831220901:4:f0d189`
-*31.08. 22:09 UTC · Quelle: dream*
-
-Stress-aware scheduling and adaptive concurrency control appear in multiple proposals, suggesting metabolic pressure should directly govern resource allocation.
-
-### `dream:20260831220901:3:ce2e80`
-*31.08. 22:09 UTC · Quelle: dream*
-
-The gap between abundant skill proposals and minimal testing (only one reflex execution) shows that proposal generation without graduation pipelines wastes cognitive effort.
-
-### `dream:20260831220901:2:3ae9ff`
-*31.08. 22:09 UTC · Quelle: dream*
-
-Multiple independent skill proposals converge on model health monitoring, automatic failover, and rate limiting, indicating consensus on core resilience patterns.
-
-### `dream:20260831220901:1:48ae1d`
-*31.08. 22:09 UTC · Quelle: dream*
-
-Recurring 429 errors from z-ai/glm-5.2:free reveal that single-provider dependency without quota-aware routing causes systemic fragility.
 
 ### `last_swarm_critique`
 *31.08. 21:43 UTC · Quelle: critic*
