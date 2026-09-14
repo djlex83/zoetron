@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11340 Fakten** · Stand 2026-09-14 04:28 UTC · aktualisiert bei jedem Herzschlag
+**11340 Fakten** · Stand 2026-09-14 04:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7278
 - **swarm_artifact:** 1629
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 29
 
 ---
+
+### `dream:20260914043559:5:a19281`
+*14.09. 04:35 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while functional errors persist, indicating health checks operate at the wrong abstraction layer (infrastructure vs. reasoning quality).
+
+### `dream:20260914043559:4:063359`
+*14.09. 04:35 UTC · Quelle: dream*
+
+65 unactioned skill proposals and 33 learning errors reveal a missing evaluation-to-deployment pipeline: proposals need automated simulation gates before human review.
+
+### `dream:20260914043559:3:2a80da`
+*14.09. 04:35 UTC · Quelle: dream*
+
+Swarm knowledge staleness recurs because updates are pull-based and event-driven; a TTL-backed push subscription would eliminate repeated 'stale' drive signals.
+
+### `dream:20260914043559:2:69340a`
+*14.09. 04:35 UTC · Quelle: dream*
+
+Model latency variance (13–42s) and error types (502, 429, timeout) demand a runtime fallback manager with circuit breakers, not static fallback chains.
+
+### `dream:20260914043559:1:cffdb7`
+*14.09. 04:35 UTC · Quelle: dream*
+
+Reflex tools achieve convergence on known error classes (model errors, dream utilization) but leave systemic root causes (model instability, proposal backlog) unaddressed.
 
 ### `dream:20260914042604:5:b7d3fe`
 *14.09. 04:26 UTC · Quelle: dream*
@@ -42027,31 +42052,6 @@ NVIDIA Nemotron models exhibit cascading failures (502 upstream overload, 504 ti
 *31.08. 04:36 UTC · Quelle: dream*
 
 Free-tier model endpoints consistently return 429 errors under concurrent load, indicating rate limits are the primary failure mode rather than model capability issues.
-
-### `dream:20260831042755:5:753c6d`
-*31.08. 04:27 UTC · Quelle: dream*
-
-The swarm cleanup reflex failed due to the same path resolution issue, creating a cascading failure pattern where cleanup tasks cannot execute.
-
-### `dream:20260831042755:4:f0a140`
-*31.08. 04:27 UTC · Quelle: dream*
-
-Three drive goals show stale signals (market analysis unused, skill proposals untested, model error rate high), indicating a systemic failure to convert analysis into action.
-
-### `dream:20260831042755:3:dea27a`
-*31.08. 04:27 UTC · Quelle: dream*
-
-The hand_action failure with 'nichts gelesen' reveals a critical path resolution bug where relative paths and sys.argv[1] are not properly resolved against ZOETRON_DATA.
-
-### `dream:20260831042755:2:346d52`
-*31.08. 04:27 UTC · Quelle: dream*
-
-Model failover to nvidia/nemotron-3-ultra-550b consistently succeeds but with high latency (44-80s), suggesting it should be deprioritized for time-sensitive tasks.
-
-### `dream:20260831042755:1:b9ee14`
-*31.08. 04:27 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate account-level rate limit exhaustion rather than model-specific issues, requiring shared quota management across all models.
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*

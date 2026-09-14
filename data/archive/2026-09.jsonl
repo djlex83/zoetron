@@ -48010,3 +48010,25 @@
 {"ts": 1788754777.6785042, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.22, "gelesen": 1}}
 {"ts": 1788754777.6810443, "kind": "reflex_used", "payload": {"goal": "Fehler beim Vorhersagen verstehen und reduzieren", "tool": "fehler-systematisch-sammeln-und-verstehe.py", "ok": true}}
 {"ts": 1788754778.0671957, "kind": "act_done", "payload": {"goal_title": "Fehler beim Vorhersagen verstehen und reduzieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788150475.0733166, "key": "dream:20260831042755:1:b9ee14", "value": "Repeated 429 errors on z-ai/glm-5.2:free indicate account-level rate limit exhaustion rather than model-specific issues, requiring shared quota management across all models.", "source": "dream"}
+{"ts": 1788150475.07342, "key": "dream:20260831042755:2:346d52", "value": "Model failover to nvidia/nemotron-3-ultra-550b consistently succeeds but with high latency (44-80s), suggesting it should be deprioritized for time-sensitive tasks.", "source": "dream"}
+{"ts": 1788150475.0735118, "key": "dream:20260831042755:3:dea27a", "value": "The hand_action failure with 'nichts gelesen' reveals a critical path resolution bug where relative paths and sys.argv[1] are not properly resolved against ZOETRON_DATA.", "source": "dream"}
+{"ts": 1788150475.0735805, "key": "dream:20260831042755:4:f0a140", "value": "Three drive goals show stale signals (market analysis unused, skill proposals untested, model error rate high), indicating a systemic failure to convert analysis into action.", "source": "dream"}
+{"ts": 1788150475.0736473, "key": "dream:20260831042755:5:753c6d", "value": "The swarm cleanup reflex failed due to the same path resolution issue, creating a cascading failure pattern where cleanup tasks cannot execute.", "source": "dream"}
+{"ts": 1788755272.95936, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788755341.5396311, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788755343.3493328, "kind": "prune_run", "payload": {"facts_pruned": 8, "events_pruned": 46}}
+{"ts": 1788755358.2329159, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 11.3, "tokens_ein": 1455, "tokens_aus": 799}}
+{"ts": 1788755358.233552, "kind": "skill_proposal", "payload": {"proposal": "ProviderCircuitBreaker: track 429/5xx per provider; on 3 consecutive failures, auto-switch to next-best provider for 5 min and emit fallback metric."}}
+{"ts": 1788755358.2336154, "kind": "skill_proposal", "payload": {"proposal": "LatencySLOGuard: attach p95 latency budget per model; if observed > 2× budget, downgrade priority and trigger warm-up probe before next real request."}}
+{"ts": 1788755358.233672, "kind": "skill_proposal", "payload": {"proposal": "ConvergenceRedefiner: replace binary converged flag with value-delta threshold (e.g., score improvement < 0.5 over 2 cycles = converged-enough)."}}
+{"ts": 1788755358.2337215, "kind": "skill_proposal", "payload": {"proposal": "ReflexFirstRouter: for goals tagged with known failure patterns, invoke matching reflex tool before spawning swarm; only escalate if reflex returns non-ok."}}
+{"ts": 1788755358.233789, "kind": "skill_proposal", "payload": {"proposal": "FailureContextPreserver: during prune, retain last 20 model_fail events plus their active goal/tool context; discard only successful routine events."}}
+{"ts": 1788755358.233844, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788755371.1090617, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 10.8, "tokens_ein": 488, "tokens_aus": 466}}
+{"ts": 1788755371.1092217, "kind": "drive_goal", "payload": {"title": "Modell zuverlässiger machen", "why": "Das Modell scheitert fast so oft wie es gelingt. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788755371.1092944, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Die Infos aus dem Schwarm sind veraltet. Neue Kritik und Ziele halten das System wach.", "signal": "stale"}}
+{"ts": 1788755371.1093588, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten testen", "why": "Es gibt viele Ideen für neue Skills, aber kaum echte Nutzung. Ausprobieren macht sie nützlich.", "signal": "gap"}}
+{"ts": 1788755373.6764257, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.3, "gelesen": 1}}
+{"ts": 1788755373.678528, "kind": "reflex_used", "payload": {"goal": "Modell-Fehler reduzieren für zuverlässigeres Handeln", "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py", "ok": true}}
+{"ts": 1788755374.2053437, "kind": "act_done", "payload": {"goal_title": "Modell-Fehler reduzieren für zuverlässigeres Handeln", "score": null, "converged": true, "mode": "reflex"}}
