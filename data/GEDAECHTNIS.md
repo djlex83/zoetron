@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11341 Fakten** · Stand 2026-09-14 04:08 UTC · aktualisiert bei jedem Herzschlag
+**11340 Fakten** · Stand 2026-09-14 04:18 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7278
 - **swarm_artifact:** 1629
@@ -10,9 +10,34 @@
 - **strategy:** 184
 - **tool:** 153
 - **hand_result:** 83
-- **aktuell_organfehler:** 30
+- **aktuell_organfehler:** 29
 
 ---
+
+### `dream:20260914041533:5:674ad0`
+*14.09. 04:15 UTC · Quelle: dream*
+
+File path errors occur when scripts assume relative paths; using an absolute path executor that resolves via ZOETRON_DATA environment variable prevents these failures.
+
+### `dream:20260914041533:4:82522b`
+*14.09. 04:15 UTC · Quelle: dream*
+
+Hand actions often succeed on first try, but complex goals may require multiple convergence cycles; enforcing three stable cycles before accepting completion improves reliability.
+
+### `dream:20260914041533:3:61796c`
+*14.09. 04:15 UTC · Quelle: dream*
+
+Generated skill proposals are rarely implemented, leaving potential improvements unused; a dedicated pipeline with priority queue and automated testing would accelerate adoption.
+
+### `dream:20260914041533:2:200c01`
+*14.09. 04:15 UTC · Quelle: dream*
+
+Swarm knowledge becomes stale quickly, leading to poor decisions; an automatic freshness checker that triggers sync when staleness exceeds a threshold is needed.
+
+### `dream:20260914041533:1:3db57c`
+*14.09. 04:15 UTC · Quelle: dream*
+
+Model endpoints frequently return 5xx or 429 errors, causing task failures; a circuit breaker that blacklists flaky providers and switches to fallbacks is critical.
 
 ### `dream:20260914040529:5:5d496a`
 *14.09. 04:05 UTC · Quelle: dream*
@@ -42027,36 +42052,6 @@ Successful convergence correlates with fallback to nvidia/nemotron-3-ultra-550b-
 *31.08. 04:20 UTC · Quelle: dream*
 
 Model failures cluster on specific endpoints (z-ai/glm-5.2:free) with 429 errors, indicating rate-limit exhaustion rather than capability gaps.
-
-### `dream:20260831041004:5:b544fd`
-*31.08. 04:10 UTC · Quelle: dream*
-
-Skill proposals are being generated but not tracked or implemented, leading to repeated proposals and unresolved system weaknesses.
-
-### `dream:20260831041004:4:41062a`
-*31.08. 04:10 UTC · Quelle: dream*
-
-The timeout after 20.0s with 0 bytes read points to a network or API hang that needs circuit-breaker protection and retry logic.
-
-### `dream:20260831041004:3:fdcaef`
-*31.08. 04:10 UTC · Quelle: dream*
-
-Model latency and token usage vary significantly (9.4s to 39.4s), indicating inconsistent performance that should inform dynamic model selection.
-
-### `dream:20260831041004:2:88cf83`
-*31.08. 04:10 UTC · Quelle: dream*
-
-The swarm failed to converge in 2 cycles with a score of 4/10, suggesting insufficient iteration depth or poor variant quality in the builder role.
-
-### `dream:20260831041004:1:266f6a`
-*31.08. 04:10 UTC · Quelle: dream*
-
-Repeated 429 errors from z-ai/glm-5.2:free indicate a systemic rate-limiting issue that requires model-level quarantine and fallback routing.
-
-### `aktuell_organfehler`
-*31.08. 04:08 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 04:04:36 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*

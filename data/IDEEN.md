@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 04:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 04:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Veraltete Swarm-Daten aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- File path errors occur when scripts assume relative paths; using an absolute path executor that resolves via ZOETRON_DATA environment variable prevent
+- Hand actions often succeed on first try, but complex goals may require multiple convergence cycles; enforcing three stable cycles before accepting com
+- Generated skill proposals are rarely implemented, leaving potential improvements unused; a dedicated pipeline with priority queue and automated testin
+- Swarm knowledge becomes stale quickly, leading to poor decisions; an automatic freshness checker that triggers sync when staleness exceeds a threshold
+- Model endpoints frequently return 5xx or 429 errors, causing task failures; a circuit breaker that blacklists flaky providers and switches to fallback
 - Aggressive pruning (47 events in one run) risks discarding diagnostic context needed for failure pattern recognition.
 - Dream-generated skill proposals accumulate but lack a convergence gate to validate and promote them into active capabilities.
 - Simulation utility remains low (5 starts, 2 applies) because outcomes aren't automatically fed back into goal execution.
@@ -51,11 +56,6 @@
 - Model endpoints may return a 200 status with no choices, mandating response validation and immediate fallback.
 - Swarm knowledge staleness requires automated refresh triggers based on age and performance signals to maintain relevance.
 - The model error rate of 36/87 reveals that current model routing and tooling cannot ensure reliable outputs.
-- Aggressive pruning (15 facts/51 events then 7/16) suggests experience accumulation outpaces consolidation, risking loss of rare failure signatures.
-- Reflex-driven maintenance (e.g., updating stale swarm goals) converges reliably where multi-cycle swarms stall.
-- Model latency variance (13-35s) on identical endpoints demands per-endpoint circuit-breakers and live performance ledgers for routing.
-- Swarm convergence fails at 2 cycles with score plateaus, indicating missing automated early-stopping criteria for critic-driven plateaus.
-- Hand-crafted error classification remains a systemic bottleneck preventing model error reduction below 6/10 despite evolutionary variants.
 
 ---
 
