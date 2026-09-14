@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 20:06:21",
+ "stand": "2026-09-14 20:17:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -189,12 +189,6 @@
    "quote": 0.0
   },
   {
-   "tool": "träume-und-simulationen-häufiger-anwende.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-skills-wirklich-testen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -379,10 +373,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.843,
- "simulationen_angewandt": 27,
+ "haende_quote": 0.848,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 24,
   "best": 9.0,

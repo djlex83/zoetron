@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 20:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 20:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Consolidation timeouts arise from processing too many events with a slow model, requiring event limits and fast model selection.
+- Many simulations are never executed, creating a gap between planning and action.
+- Reflex tools frequently abort due to unvalidated file paths and environment variables.
+- Outdated swarm knowledge leads to poor decisions, so periodic knowledge refresh is critical.
+- Model failures occur nearly twice as often as successes, highlighting the need for reliable fallback chains.
 - Pre‑execution validation of reflex tools catches missing files or env vars before they cause failures.
 - Pruning events reduces memory growth but should be scheduled during low‑activity windows to avoid data loss.
 - Latency varies widely between models; choosing the fastest available model improves responsiveness.
@@ -51,11 +56,6 @@
 - Convergence is declared without minimum score thresholds or diversity checks, allowing premature termination of swarm cycles.
 - Evolution loops improve variants but fail to map improvements back to the swarm goal, so gains are lost before final scoring.
 - Free-tier model rate limits (429 errors) cause cascading failures because the system lacks a proactive fallback chain with health checks.
-- Reflex-driven tool execution succeeds when goals are concrete and tools are pre-validated, as shown by the successful swarm information update.
-- Self-diagnosis and automated pruning (facts/events) are functioning as effective maintenance loops that prevent memory bloat.
-- Dream consolidation timeout (180s) indicates the replay process may be processing excessive volume or lacking incremental checkpoints.
-- The dots-studio/dots-3-note-preview:free model serves as a reliable fallback with acceptable latency (15–19s) when primary models fail.
-- Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without an automated fallback strateg
 
 ---
 

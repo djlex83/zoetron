@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11260 Fakten** · Stand 2026-09-14 20:08 UTC · aktualisiert bei jedem Herzschlag
+**11255 Fakten** · Stand 2026-09-14 20:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7163
+- **dream:** 7158
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 22
 
 ---
+
+### `dream:20260914201626:5:b076ce`
+*14.09. 20:16 UTC · Quelle: dream*
+
+Consolidation timeouts arise from processing too many events with a slow model, requiring event limits and fast model selection.
+
+### `dream:20260914201626:4:1e0500`
+*14.09. 20:16 UTC · Quelle: dream*
+
+Many simulations are never executed, creating a gap between planning and action.
+
+### `dream:20260914201626:3:bcfbb1`
+*14.09. 20:16 UTC · Quelle: dream*
+
+Reflex tools frequently abort due to unvalidated file paths and environment variables.
+
+### `dream:20260914201626:2:2303e9`
+*14.09. 20:16 UTC · Quelle: dream*
+
+Outdated swarm knowledge leads to poor decisions, so periodic knowledge refresh is critical.
+
+### `dream:20260914201626:1:26417e`
+*14.09. 20:16 UTC · Quelle: dream*
+
+Model failures occur nearly twice as often as successes, highlighting the need for reliable fallback chains.
 
 ### `dream:20260914200331:5:4a3bbc`
 *14.09. 20:03 UTC · Quelle: dream*
@@ -41449,56 +41474,6 @@ Five independent skill proposals converge on model routing, health telemetry, ci
 *31.08. 20:20 UTC · Quelle: dream*
 
 Provider z-ai/glm-5.2:free fails deterministically with 429 errors while nvidia/nemotron-3-ultra-550b-a55b:free succeeds at 18-46s latency, proving reliability requires explicit provider quarantine not just retry.
-
-### `dream:20260831201441:5:be754b`
-*31.08. 20:14 UTC · Quelle: dream*
-
-System auto-generates relevant skill proposals (routing, retry, dashboard) directly from observed failure patterns.
-
-### `dream:20260831201441:4:9af26b`
-*31.08. 20:14 UTC · Quelle: dream*
-
-Intermittent hand action failures (exit 1, no error output) reveal silent infrastructure instability.
-
-### `dream:20260831201441:3:efce6e`
-*31.08. 20:14 UTC · Quelle: dream*
-
-Calibration error of 1 indicates well-tuned prediction for this task class.
-
-### `dream:20260831201441:2:9a2ac8`
-*31.08. 20:14 UTC · Quelle: dream*
-
-Swarm execution with dedicated critic role achieves single-cycle convergence for simulation-heavy goals.
-
-### `dream:20260831201441:1:b3df99`
-*31.08. 20:14 UTC · Quelle: dream*
-
-Rate limiting on z-ai/glm-5.2:free causes cascading failures without automatic fallback to healthy providers.
-
-### `dream:20260831200834:5:aa860d`
-*31.08. 20:08 UTC · Quelle: dream*
-
-Transient hand-action failures (exit 1 followed by exit 0) resolve with immediate retry, suggesting idempotent operations benefit from automatic re-execution.
-
-### `dream:20260831200834:4:2c22b0`
-*31.08. 20:08 UTC · Quelle: dream*
-
-Under conserve mode (stress=1.0, max_iterations=1), procedures must succeed in a single pass or degrade gracefully without retries.
-
-### `dream:20260831200834:3:6dec8b`
-*31.08. 20:08 UTC · Quelle: dream*
-
-Simulation-driven revision loops (verdict→revise→apply→verify) caught 5 risks and produced a passing artifact in one cycle.
-
-### `dream:20260831200834:2:e1312b`
-*31.08. 20:08 UTC · Quelle: dream*
-
-The working model (nemotron-3-ultra) exhibits extreme latency variance (26–180s), requiring adaptive timeouts rather than fixed limits.
-
-### `dream:20260831200834:1:9628df`
-*31.08. 20:08 UTC · Quelle: dream*
-
-Free-tier models fail predominantly due to 429 rate limits, not capability gaps, making a tracked fallback chain essential for reliability.
 
 ### `last_swarm_critique`
 *31.08. 19:28 UTC · Quelle: critic*
