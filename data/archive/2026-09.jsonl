@@ -50340,3 +50340,25 @@
 {"ts": 1788814547.2085354, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.32, "gelesen": 33}}
 {"ts": 1788814547.212288, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Skills wirklich einsetzen", "tool": "vorgeschlagene-skills-nutzbar-machen.py", "ok": true}}
 {"ts": 1788814547.575448, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Skills wirklich einsetzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788210371.8163085, "key": "dream:20260831210611:1:7cc91d", "value": "The primary model (z-ai/glm-5.2) consistently fails with 429 rate limits, indicating missing retry/backoff logic and over-reliance on a single provider.", "source": "dream"}
+{"ts": 1788210371.8164053, "key": "dream:20260831210611:2:19813b", "value": "Fallback model (nvidia/nemotron) exhibits high latency (9-21s) with no task-type routing, causing unpredictable response times.", "source": "dream"}
+{"ts": 1788210371.8164768, "key": "dream:20260831210611:3:7521a9", "value": "Drive goals repeat across cycles (reduce errors, update market data, implement skills) without convergence, showing goal management lacks progress tracking.", "source": "dream"}
+{"ts": 1788210371.816544, "key": "dream:20260831210611:4:09a45d", "value": "Skill proposals accumulate (5 in logs) but drive goal \"implement skills\" persists, revealing a proposal-to-implementation gap.", "source": "dream"}
+{"ts": 1788210371.8166084, "key": "dream:20260831210611:5:eea350", "value": "Pruning removes zero facts/events despite ongoing experience, suggesting pruning thresholds are misconfigured or memory grows unbounded.", "source": "dream"}
+{"ts": 1788815058.122058, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788815126.4533887, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788815127.9183764, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788815168.7208104, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 37.4, "tokens_ein": 1362, "tokens_aus": 678}}
+{"ts": 1788815168.7213557, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router with per-model circuit breakers, exponential backoff, and auto-fallback to validated healthy free-tier models."}}
+{"ts": 1788815168.7214198, "kind": "skill_proposal", "payload": {"proposal": "Add structured JSON telemetry wrapper for every hand_action and model_call capturing stdout, stderr, exit_code, duration, tokens, and alert on anomalies."}}
+{"ts": 1788815168.7214751, "kind": "skill_proposal", "payload": {"proposal": "Build proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and defined success metrics to mission backlog with owner and deadline."}}
+{"ts": 1788815168.7215402, "kind": "skill_proposal", "payload": {"proposal": "Deploy swarm_sync_heartbeat: periodic broadcast of goal state, critique digest, and model health to prevent stale coordination."}}
+{"ts": 1788815168.7216108, "kind": "skill_proposal", "payload": {"proposal": "Create skill_evaluator that runs A/B micro-trials on proposed skills against baseline metrics before adoption."}}
+{"ts": 1788815168.72167, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788815225.8476956, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 55.3, "tokens_ein": 519, "tokens_aus": 650}}
+{"ts": 1788815225.8478723, "kind": "drive_goal", "payload": {"title": "Modellfehler reduzieren", "why": "Das Modell macht noch zu viele Fehler, wir müssen es verbessern.", "signal": "failure"}}
+{"ts": 1788815225.8479583, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Die alten Schwarm-Ziele und Kritiken sind veraltet und müssen erneuert werden.", "signal": "stale"}}
+{"ts": 1788815225.8480222, "kind": "drive_goal", "payload": {"title": "Traumerkenntnisse für Fähigkeiten nutzen", "why": "Alte Träume enthalten wertvolle Ideen, die wir für neue Fähigkeiten kombinieren können.", "signal": "combination"}}
+{"ts": 1788815229.2396598, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.15, "gelesen": 943}}
+{"ts": 1788815229.242523, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "tool": "vorgeschlagene-fähigkeiten-prüfen-und-be.py", "ok": true}}
+{"ts": 1788815229.7410767, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "score": null, "converged": true, "mode": "reflex"}}

@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11255 Fakten** · Stand 2026-09-14 21:02 UTC · aktualisiert bei jedem Herzschlag
+**11255 Fakten** · Stand 2026-09-14 21:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7168
 - **swarm_artifact:** 1631
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 22
 
 ---
+
+### `dream:20260914210939:5:64a634`
+*14.09. 21:09 UTC · Quelle: dream*
+
+Updating outdated swarm data with fresh information improves the quality of subsequent decisions.
+
+### `dream:20260914210939:4:fd519a`
+*14.09. 21:09 UTC · Quelle: dream*
+
+Selecting models based on observed latency and warming them with dummy requests reduces cold-start variance.
+
+### `dream:20260914210939:3:540346`
+*14.09. 21:09 UTC · Quelle: dream*
+
+Validating tool arguments before execution eliminates many runtime errors.
+
+### `dream:20260914210939:2:9597f3`
+*14.09. 21:09 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260914210939:1:fe6cc9`
+*14.09. 21:09 UTC · Quelle: dream*
+
+The system frequently encounters 429 Too Many Requests and timeout errors, pointing to rate limits and network latency.
 
 ### `dream:20260914205926:5:005254`
 *14.09. 20:59 UTC · Quelle: dream*
@@ -41474,31 +41499,6 @@ score=8; issues=Fallback-Implementierungen (HealthRegister, ExperienceBoost) sin
 *31.08. 21:06 UTC · Quelle: system*
 
 Modellfehler deutlich reduzieren
-
-### `dream:20260831210611:5:eea350`
-*31.08. 21:06 UTC · Quelle: dream*
-
-Pruning removes zero facts/events despite ongoing experience, suggesting pruning thresholds are misconfigured or memory grows unbounded.
-
-### `dream:20260831210611:4:09a45d`
-*31.08. 21:06 UTC · Quelle: dream*
-
-Skill proposals accumulate (5 in logs) but drive goal "implement skills" persists, revealing a proposal-to-implementation gap.
-
-### `dream:20260831210611:3:7521a9`
-*31.08. 21:06 UTC · Quelle: dream*
-
-Drive goals repeat across cycles (reduce errors, update market data, implement skills) without convergence, showing goal management lacks progress tracking.
-
-### `dream:20260831210611:2:19813b`
-*31.08. 21:06 UTC · Quelle: dream*
-
-Fallback model (nvidia/nemotron) exhibits high latency (9-21s) with no task-type routing, causing unpredictable response times.
-
-### `dream:20260831210611:1:7cc91d`
-*31.08. 21:06 UTC · Quelle: dream*
-
-The primary model (z-ai/glm-5.2) consistently fails with 429 rate limits, indicating missing retry/backoff logic and over-reliance on a single provider.
 
 ### `last_swarm_critique`
 *31.08. 20:34 UTC · Quelle: critic*
