@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11224 Fakten** · Stand 2026-09-14 23:21 UTC · aktualisiert bei jedem Herzschlag
+**11229 Fakten** · Stand 2026-09-14 23:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7153
+- **dream:** 7158
 - **swarm_artifact:** 1615
 - **last_swarm_critique:** 956
 - **last_swarm_goal:** 691
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914232833:5:fd70d7`
+*14.09. 23:28 UTC · Quelle: dream*
+
+Cold-start latency and timeout issues during consolidation can be mitigated with warm-up routines and I/O monitoring.
+
+### `dream:20260914232833:4:225f92`
+*14.09. 23:28 UTC · Quelle: dream*
+
+World model errors propagate across tasks, indicating a foundational issue that must be addressed first.
+
+### `dream:20260914232833:3:6a16c4`
+*14.09. 23:28 UTC · Quelle: dream*
+
+Stale swarm knowledge degrades collective intelligence, necessitating periodic refreshing.
+
+### `dream:20260914232833:2:d87612`
+*14.09. 23:28 UTC · Quelle: dream*
+
+Skill proposals are generated rapidly but lack prioritization, leading to potential implementation bottlenecks.
+
+### `dream:20260914232833:1:624c2a`
+*14.09. 23:28 UTC · Quelle: dream*
+
+Model provider instability (429/502 errors) is a primary failure cause requiring automatic failover and health monitoring.
 
 ### `dream:20260914231857:5:62d3f7`
 *14.09. 23:18 UTC · Quelle: dream*

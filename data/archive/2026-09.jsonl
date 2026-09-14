@@ -50694,3 +50694,20 @@
 {"ts": 1788822741.386134, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.47, "gelesen": 2}}
 {"ts": 1788822741.3889802, "kind": "reflex_used", "payload": {"goal": "Schwarm-Informationen regelmäßig aktualisieren", "tool": "schwarmwissen-regelmäßig-aktualisieren.py", "ok": true}}
 {"ts": 1788822741.712695, "kind": "act_done", "payload": {"goal_title": "Schwarm-Informationen regelmäßig aktualisieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788823259.0663128, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788823327.4741087, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788823329.3357875, "kind": "prune_run", "payload": {"facts_pruned": 7, "events_pruned": 26}}
+{"ts": 1788823365.2649832, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 32.4, "tokens_ein": 1288, "tokens_aus": 952}}
+{"ts": 1788823365.2655613, "kind": "skill_proposal", "payload": {"proposal": "model_fallback_router: maintain ranked provider chain with per-model health scores (success rate, latency, error type); auto-switch on 502/429 with exponential backoff and sub-5s timeout."}}
+{"ts": 1788823365.2656233, "kind": "skill_proposal", "payload": {"proposal": "stress_aware_planner: before each planning step, read metabolism state; if stress>0.8, cap max_tasks=3 and max_iterations=1; reject plans exceeding budget."}}
+{"ts": 1788823365.2656758, "kind": "skill_proposal", "payload": {"proposal": "swarm_dream_synthesizer: nightly job that ingests swarm API docs, runs dream_link_analyzer on recent narratives, emits transfer hypotheses as skill proposals with confidence scores."}}
+{"ts": 1788823365.265733, "kind": "skill_proposal", "payload": {"proposal": "reflex_persistence_protocol: on reflex failure, auto-retry once with increased budget; validate output artifact exists and non-empty before marking success; log artifact hash for traceability."}}
+{"ts": 1788823365.265825, "kind": "skill_proposal", "payload": {"proposal": "path_normalization_guard: middleware that intercepts every tool invocation, rewrites any relative path to absolute using ZOETRON_DATA env var; fails fast if env var unset."}}
+{"ts": 1788823365.265898, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788823377.7615268, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 10.5, "tokens_ein": 480, "tokens_aus": 900}}
+{"ts": 1788823377.7616978, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und reduzieren", "why": "Das System macht noch zu viele Fehler beim Vorhersagen. Weniger Fehler bedeuten verlässlicheres Handeln.", "signal": "failure"}}
+{"ts": 1788823377.7617798, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren und nutzen", "why": "Die Infos aus der Zusammenarbeit mit anderen sind veraltet. Frische Schwarm-Erfahrungen verbessern das Lernen.", "signal": "stale"}}
+{"ts": 1788823377.761844, "kind": "drive_goal", "payload": {"title": "Träume in echte Fähigkeiten umsetzen", "why": "Das System träumt viel, nutzt die Ideen aber kaum. Träume als Übung für neue Skills machen es schlauer.", "signal": "gap"}}
+{"ts": 1788823390.1512764, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 10.21, "gelesen": 1044}}
+{"ts": 1788823390.1557012, "kind": "reflex_used", "payload": {"goal": "Verbundene Träume tiefer untersuchen", "tool": "verbundene-traeume-nach-neuen-fuehigkeit.py", "ok": true}}
+{"ts": 1788823390.6086538, "kind": "act_done", "payload": {"goal_title": "Verbundene Träume tiefer untersuchen", "score": null, "converged": true, "mode": "reflex"}}

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
@@ -34,13 +34,18 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Cold-start latency and timeout issues during consolidation can be mitigated with warm-up routines and I/O monitoring.
+- World model errors propagate across tasks, indicating a foundational issue that must be addressed first.
+- Stale swarm knowledge degrades collective intelligence, necessitating periodic refreshing.
+- Skill proposals are generated rapidly but lack prioritization, leading to potential implementation bottlenecks.
+- Model provider instability (429/502 errors) is a primary failure cause requiring automatic failover and health monitoring.
 - The system detects its own degradation signals and creates drive goals, but resolution loops are slow because they depend on the same unreliable model
 - Pruning removes significant volumes reactively rather than during predicted low-activity windows, risking latency spikes during consolidation.
 - Reflex tools successfully handle tactical fixes but strategic drive goals require architectural changes beyond reflex scope.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but never enter the learning loop because no automated validation/insertion pipeline exists.
 - Swarm convergence stalls without a quantitative composite metric (score delta + entropy), causing wasted cycles.
 - Model API failures cascade into system-wide timeouts because no circuit-breaker/fallback guard wraps external calls.
-- Dots-studio/dots-3-note-preview serves as the only consistently available fallback model despite higher latency (25-30s).
-- System operates in metabolic conserve mode (stress=1.0, max_tasks=3, max_iterations=1) severely constraining throughput during model instability.
-- Simulation-driven revision cycles (verdict: revise, 3 risks, 2 revisions) successfully produce running artifacts verified by TOR (grün=true, 540 lines
-- Hand actions fail when using relative paths instead of resolving sys.argv[1] and ZOETRON_DATA environment variable for absolute data paths.
-- Nvidia Nemotron and Google Gemma models fail systematically (502 upstream overload, 429 rate limits) making them unreliable as primary reasoning engin
 
 ---
 
