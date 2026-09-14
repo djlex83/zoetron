@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11385 Fakten** · Stand 2026-09-14 09:02 UTC · aktualisiert bei jedem Herzschlag
+**11364 Fakten** · Stand 2026-09-14 09:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7308
-- **swarm_artifact:** 1638
+- **dream:** 7293
+- **swarm_artifact:** 1633
 - **last_swarm_critique:** 946
 - **last_swarm_goal:** 681
 - **anti_pattern:** 367
 - **strategy:** 186
-- **tool:** 153
+- **tool:** 152
 - **hand_result:** 83
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914092532:5:aac7b2`
+*14.09. 09:25 UTC · Quelle: dream*
+
+Memory pruning removed 83 events in a single cycle, confirming that unconsolidated experience accumulates rapidly and making periodic dream consolidation essential for sustained operation.
+
+### `dream:20260914092532:4:7119b8`
+*14.09. 09:25 UTC · Quelle: dream*
+
+Self-generated drive goals from failure and staleness signals show the system can identify its own operational problems, but recurring model failures indicate proactive health monitoring is still absent.
+
+### `dream:20260914092532:3:a8022c`
+*14.09. 09:25 UTC · Quelle: dream*
+
+Swarm convergence stalled at score 3 despite evolution, indicating that partial solution deployment without full integration gates leaves residual failure modes active and unaddressed.
+
+### `dream:20260914092532:2:6dc11c`
+*14.09. 09:25 UTC · Quelle: dream*
+
+The system generated five targeted skill proposals directly mapping to observed failure modes (health monitoring, quota scheduling, backoff unblocking, resilience orchestration, instrumentation), demonstrating an effective diagnostic-to-remediation pipeline.
+
+### `dream:20260914092532:1:1f82bd`
+*14.09. 09:25 UTC · Quelle: dream*
+
+When multiple models fail simultaneously with 429 rate-limit and timeout errors, the root cause is quota exhaustion and latency spikes—not model quality—requiring infrastructure-level mitigation rather than simple model swapping.
 
 ### `tool:verbesserung-der-modellzuverlässigkeit`
 *14.09. 09:00 UTC · Quelle: hands*
@@ -42087,111 +42112,6 @@ Hand actions exiting with 0 but reading nothing indicate a path resolution bug w
 *31.08. 09:27 UTC · Quelle: dream*
 
 OpenRouter free models consistently hit 429 rate limits, making them unreliable for sequential calls without backoff or cooldown windows.
-
-### `dream:20260831092226:5:72aace`
-*31.08. 09:22 UTC · Quelle: dream*
-
-Reliance on single-provider endpoints creates a single point of failure for complex, multi-step reasoning tasks.
-
-### `dream:20260831092226:4:b08f2b`
-*31.08. 09:22 UTC · Quelle: dream*
-
-The inability to recover from script errors via reflex indicates a need for more granular error classification in tool outputs.
-
-### `dream:20260831092226:3:7ffe62`
-*31.08. 09:22 UTC · Quelle: dream*
-
-Swarm tasks fail to converge when model outages interrupt the iterative feedback loop between planner and critic.
-
-### `dream:20260831092226:2:918a89`
-*31.08. 09:22 UTC · Quelle: dream*
-
-Script execution failures due to pathing and argument mismatches suggest a disconnect between the environment's file structure and tool expectations.
-
-### `dream:20260831092226:1:4dd2d6`
-*31.08. 09:22 UTC · Quelle: dream*
-
-High-frequency 429 and 502 errors indicate that free-tier model availability is too volatile for reliable swarm convergence.
-
-### `dream:20260831091634:5:074348`
-*31.08. 09:16 UTC · Quelle: dream*
-
-Calibration remains accurate (predicted=actual=6) yet the goal stays unconverged, revealing that scoring does not reflect task completion.
-
-### `dream:20260831091634:4:661dbc`
-*31.08. 09:16 UTC · Quelle: dream*
-
-Swarm execution evolves roles but fails to converge after 2 cycles, suggesting insufficient iteration budget or missing convergence criteria.
-
-### `dream:20260831091634:3:ff6fcd`
-*31.08. 09:16 UTC · Quelle: dream*
-
-Simulation recommends revisions (3 risks, 3 revisions) but zero are applied, indicating a broken feedback loop between critique and execution.
-
-### `dream:20260831091634:2:9222bb`
-*31.08. 09:16 UTC · Quelle: dream*
-
-The inclusionai/ling-3.0-flash-fin:free model succeeds where others fail but incurs 19s latency, making it a reliable but slow fallback.
-
-### `dream:20260831091634:1:d83ea8`
-*31.08. 09:16 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple free-tier models is the primary systemic bottleneck, not model capability.
-
-### `dream:20260831091039:5:31ce5c`
-*31.08. 09:10 UTC · Quelle: dream*
-
-Local hand actions (0.19s, zero errors) are orders of magnitude faster and more reliable than any model call.
-
-### `dream:20260831091039:4:6ac5b8`
-*31.08. 09:10 UTC · Quelle: dream*
-
-Calibration remains accurate (predicted=actual=6), indicating the estimator is well-tuned for this task class.
-
-### `dream:20260831091039:3:015e27`
-*31.08. 09:10 UTC · Quelle: dream*
-
-Simulation-driven revision loops effectively reduce risk: initial 5 risks dropped to 2 applied revisions, yielding a working 274-line Python artifact.
-
-### `dream:20260831091039:2:7807fc`
-*31.08. 09:10 UTC · Quelle: dream*
-
-Only inclusionai/ling-3.0-flash-fin:free succeeds consistently but exhibits high latency variance (6.6–36.7s), requiring adaptive timeouts.
-
-### `dream:20260831091039:1:bdfed0`
-*31.08. 09:10 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently fail with 429 rate-limit errors, making them unreliable for production use.
-
-### `dream:20260831090418:5:494bb3`
-*31.08. 09:04 UTC · Quelle: dream*
-
-Calibration offsets (+2) for 'Marktanalyse in Handeln umsetzen' address symptom (underestimation) not root cause (model bias or prompt framing).
-
-### `dream:20260831090418:4:e1716a`
-*31.08. 09:04 UTC · Quelle: dream*
-
-The 'hands-Organ' swarm artifact pattern remains untested; its value depends on whether decomposition reduces total API calls or merely redistributes them.
-
-### `dream:20260831090418:3:808a90`
-*31.08. 09:04 UTC · Quelle: dream*
-
-High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, preventing multi-step recovery from transient failures.
-
-### `dream:20260831090418:2:9e40fe`
-*31.08. 09:04 UTC · Quelle: dream*
-
-Hand actions fail when relative paths diverge from the canonical ZOETRON_DATA root, causing silent zero-byte reads.
-
-### `dream:20260831090418:1:0d8743`
-*31.08. 09:04 UTC · Quelle: dream*
-
-Rate-limit errors (429) cascade across multiple free-tier models simultaneously, making model diversity alone insufficient without request pacing.
-
-### `tool:schwarm-ergebnisse-mit-bestandsaufnahme-`
-*31.08. 08:56 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Schwarm-Ergebnisse mit Bestandsaufnahme verbinden'. Datei: data/tools/schwarm-ergebnisse-mit-bestandsaufnahme-.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

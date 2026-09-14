@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 09:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 09:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,7 +31,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Modellfehler beheben *(wieder aufgegriffen: 4×)*
+- Modellfehler beheben *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning removed 83 events in a single cycle, confirming that unconsolidated experience accumulates rapidly and making periodic dream consolidat
+- Self-generated drive goals from failure and staleness signals show the system can identify its own operational problems, but recurring model failures 
+- Swarm convergence stalled at score 3 despite evolution, indicating that partial solution deployment without full integration gates leaves residual fai
+- The system generated five targeted skill proposals directly mapping to observed failure modes (health monitoring, quota scheduling, backoff unblocking
+- When multiple models fail simultaneously with 429 rate-limit and timeout errors, the root cause is quota exhaustion and latency spikes—not model quali
 - Pruning 5 facts and 17 events demonstrates that regular memory consolidation improves relevance.
 - Latency for the working model varies from 16.9 s to 33.3 s, indicating dynamic load balancing should adapt to real‑time performance.
 - The failed skill execution shows that proposals need pre‑execution validation of file paths and dependencies.
@@ -51,11 +56,6 @@
 - Pruning events without subsequent retrieval checks leads to silent data loss, requiring an audit step.
 - The dots‑studio model remains the only consistently successful fallback, with latency staying under 32 s.
 - Repeated 429 errors from Google models indicate a rate‑limit bottleneck that must be handled with backoff or alternate routing.
-- Pruning operations removed 37 events and 10 facts across two runs, confirming that periodic cleanup prevents memory bloat.
-- Reflex-driven goals ('Modellfehler reduzieren', 'Simulationen besser für Handlungen nutzen') both converged successfully, validating the reflex mechan
-- The system autonomously generated five concrete skill proposals addressing model resilience, quota management, and circuit-breaking patterns.
-- dots-studio/dots-3-note-preview:free proved to be a stable fallback with acceptable latency (23-47s) and zero failures across two invocations.
-- Google Gemma free-tier models repeatedly trigger 429 rate-limit errors, making them unreliable for latency-sensitive tasks.
 
 ---
 
