@@ -1,18 +1,38 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11254 Fakten** · Stand 2026-09-14 21:24 UTC · aktualisiert bei jedem Herzschlag
+**11256 Fakten** · Stand 2026-09-14 22:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7173
-- **swarm_artifact:** 1625
-- **last_swarm_critique:** 954
-- **last_swarm_goal:** 689
-- **anti_pattern:** 371
-- **strategy:** 188
+- **dream:** 7168
+- **swarm_artifact:** 1627
+- **last_swarm_critique:** 955
+- **last_swarm_goal:** 690
+- **anti_pattern:** 373
+- **strategy:** 189
 - **tool:** 150
 - **hand_result:** 81
 - **aktuell_organfehler:** 23
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen öfter anwen:2`
+*14.09. 21:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Environment-Driven Simulation Scheduler - Leverage environmental signals from the context (calendar events, project milestones, resource availability) to automatically schedule dedicated simulation sessions, reserve necessary
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen öfter anwen:1`
+*14.09. 21:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Personalized Simulation Prescription Engine - Build a recommendation system that uses context data (user roles, skill matrices, current project challenges) to prescribe specific simulations at the right moment. Deliver prescr
+
+### `last_swarm_critique`
+*14.09. 21:49 UTC · Quelle: critic*
+
+score=7; issues=The generate_deliverable function does not utilize the loaded context, resulting in a generic action plan that may not address specific existing tools, competencies, or needs from the environment.
+
+### `last_swarm_goal`
+*14.09. 21:43 UTC · Quelle: system*
+
+Simulationen öfter anwenden
 
 ### `dream:20260914212159:5:181ef5`
 *14.09. 21:21 UTC · Quelle: dream*
@@ -41489,31 +41509,6 @@ nvidia/nemotron-3-ultra-550b-a55b:free succeeds where others fail but exhibits 6
 *31.08. 21:31 UTC · Quelle: dream*
 
 Free-tier models consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads without aggressive request spacing.
-
-### `dream:20260831212543:5:d4db9b`
-*31.08. 21:25 UTC · Quelle: dream*
-
-Swarm convergence lacks enforcement: goals start but reflex tools fail silently without critic/planner validation loops.
-
-### `dream:20260831212543:4:15483a`
-*31.08. 21:25 UTC · Quelle: dream*
-
-Multiple skill proposals exist for resilience (router, telemetry, scheduler) but none have been graduated through an A/B pipeline into production.
-
-### `dream:20260831212543:3:8f20d0`
-*31.08. 21:25 UTC · Quelle: dream*
-
-System stress reaches maximum (1.0) triggering conserve mode, but no automatic workload shedding or timeout scaling occurs.
-
-### `dream:20260831212543:2:d6a7f5`
-*31.08. 21:25 UTC · Quelle: dream*
-
-File operations fail because tools use relative paths instead of the canonical ZOETRON_DATA environment variable, breaking data access.
-
-### `dream:20260831212543:1:9beedd`
-*31.08. 21:25 UTC · Quelle: dream*
-
-Free-tier model providers consistently fail under load (429/502), requiring a router with local fallback and quota-aware scheduling.
 
 ### `last_swarm_critique`
 *31.08. 21:15 UTC · Quelle: critic*
