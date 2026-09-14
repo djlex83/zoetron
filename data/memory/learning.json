@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 06:53:52",
+ "stand": "2026-09-14 07:05:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,16 +51,16 @@
    "quote": 1.0
   },
   {
+   "tool": "ferne-traumverbindungen-neu-erkunden.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "ferne-traumverbindungen-neu-erkunden.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
   },
   {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
@@ -400,11 +400,11 @@
   }
  ],
  "haende_quote": 0.785,
- "simulationen_angewandt": 24,
+ "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 29,
+  "n": 28,
   "best": 9.0,
-  "schnitt": 6.1
+  "schnitt": 6.11
  },
  "score_nach_ziel_typ": {
   "analyse": {

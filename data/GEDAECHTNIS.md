@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11355 Fakten** · Stand 2026-09-14 06:55 UTC · aktualisiert bei jedem Herzschlag
+**11360 Fakten** · Stand 2026-09-14 07:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7298
+- **dream:** 7303
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914070406:5:e66f59`
+*14.09. 07:04 UTC · Quelle: dream*
+
+Model latency varies widely (42s–107s), requiring adaptive timeouts and fallback selection.
+
+### `dream:20260914070406:4:7de5aa`
+*14.09. 07:04 UTC · Quelle: dream*
+
+Event pruning removes potentially useful context, weakening long-term memory.
+
+### `dream:20260914070406:3:d82d55`
+*14.09. 07:04 UTC · Quelle: dream*
+
+Reflex actions converge quickly but do not address root causes, leading to recurring issues.
+
+### `dream:20260914070406:2:1185b8`
+*14.09. 07:04 UTC · Quelle: dream*
+
+Skill proposals are generated but not executed, creating a persistent gap between ideas and capabilities.
+
+### `dream:20260914070406:1:0fe10b`
+*14.09. 07:04 UTC · Quelle: dream*
+
+Free models are being rate-limited (429 errors), indicating the need for exponential backoff and provider rotation.
 
 ### `dream:20260914065255:5:2e8dd7`
 *14.09. 06:52 UTC · Quelle: dream*

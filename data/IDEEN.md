@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 06:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 07:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency varies widely (42s–107s), requiring adaptive timeouts and fallback selection.
+- Event pruning removes potentially useful context, weakening long-term memory.
+- Reflex actions converge quickly but do not address root causes, leading to recurring issues.
+- Skill proposals are generated but not executed, creating a persistent gap between ideas and capabilities.
+- Free models are being rate-limited (429 errors), indicating the need for exponential backoff and provider rotation.
 - Pruning (facts/events) prevents memory bloat but must preserve cross-references for dream connectivity.
 - Reflex-driven tool use (model accuracy, simulation learning) converges quickly when goals are concrete.
 - Stale swarm goals and disconnected dreams indicate knowledge decay; periodic refresh and linking are necessary.
@@ -51,11 +56,6 @@
 - Automated skill proposals emerge from failure patterns but are emitted without deployment validation, creating a proposal-deployment gap.
 - Reflex-driven recovery (swarm refresh, model accuracy repair) converges reliably without planner involvement, suggesting reflexes are the primary self
 - Rate limiting (429) on primary models is a systemic failure mode; fallback models succeed but exhibit high latency variance (14–43 s) that can stall g
-- Multiple skill proposals (fallback manager, sync, pipeline, gate, monitor) were generated but not instantiated, showing a proposal-to-execution gap.
-- Event pruning aggressively removes 17–20 events per cycle while facts persist, risking loss of temporal context needed for causal reasoning.
-- Swarm knowledge refresh only occurs via explicit reflex action, not automatically on staleness signals, causing periodic collective-intelligence gaps.
-- The dots-studio fallback model succeeds but with high latency variance (14–25 s), indicating need for latency-aware routing and timeout budgets.
-- Repeated 429 errors on primary models reveal missing circuit-breaker logic that should trigger immediate fallback instead of retrying exhausted endpoi
 
 ---
 
