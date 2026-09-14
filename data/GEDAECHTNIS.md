@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11334 Fakten** · Stand 2026-09-14 02:15 UTC · aktualisiert bei jedem Herzschlag
+**11346 Fakten** · Stand 2026-09-14 02:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7268
-- **swarm_artifact:** 1633
-- **last_swarm_critique:** 942
-- **last_swarm_goal:** 677
-- **anti_pattern:** 363
-- **strategy:** 184
-- **tool:** 152
+- **swarm_artifact:** 1639
+- **last_swarm_critique:** 943
+- **last_swarm_goal:** 678
+- **anti_pattern:** 365
+- **strategy:** 185
+- **tool:** 153
 - **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `tool:modell-fehler-verringern`
+*14.09. 02:36 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler verringern'. Datei: data/tools/modell-fehler-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modell-Fehler verringern:1`
+*14.09. 02:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 4, 9]): Formal Reasoning Structure Extraction & Verification - Parse model outputs into explicit reasoning graphs using a constituency-to-dependency conversion pipeline enhanced with a neural semantic parser (e.g., AMR or log
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modell-Fehler verringern:0`
+*14.09. 02:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 8, 7]): Learned Semantic Error Classification & Evaluation - Replace hand-crafted regex classifiers with a fine-tuned encoder model (e.g., DeBERTa-v3) trained on a diverse, human-annotated error taxonomy spanning factual, log
+
+### `last_swarm_critique`
+*14.09. 02:33 UTC · Quelle: critic*
+
+score=6; issues=Error classification relies on hand-crafted regex patterns that may not cover all error types or may produce false positives/negatives.; Benchmark fact-checking uses token overlap instead of semantic similarity, yielding inaccurate error rate m
+
+### `last_swarm_goal`
+*14.09. 02:23 UTC · Quelle: system*
+
+Modell-Fehler verringern
+
+### `dream:20260914022306:5:c120a9`
+*14.09. 02:23 UTC · Quelle: dream*
+
+Integrating simulation outputs into the decision pipeline ensures that computed scenarios are applied to real actions.
+
+### `dream:20260914022306:4:b9aef3`
+*14.09. 02:23 UTC · Quelle: dream*
+
+Regularly pruning outdated facts and events maintains memory efficiency while preserving critical knowledge.
+
+### `dream:20260914022306:3:5b860d`
+*14.09. 02:23 UTC · Quelle: dream*
+
+Directly compiling approved skill proposals into in-memory Python modules eliminates the need for external shell scripts.
+
+### `dream:20260914022306:2:77e766`
+*14.09. 02:23 UTC · Quelle: dream*
+
+Incorporating the p90 latency of the active model into task budgets prevents timeout failures.
+
+### `dream:20260914022306:1:527100`
+*14.09. 02:23 UTC · Quelle: dream*
+
+When model endpoints return 5xx or 429 errors, they should be temporarily blacklisted and traffic redirected to fallback providers.
 
 ### `dream:20260914021305:5:77233a`
 *14.09. 02:13 UTC · Quelle: dream*
@@ -41992,31 +42042,6 @@ The absence of per-model health tracking forces repeated hammering of failing en
 *31.08. 02:24 UTC · Quelle: dream*
 
 Cascading 429/502 errors across five distinct models reveal a systemic API-rate-limit and upstream-overload pattern that blind retries cannot resolve.
-
-### `dream:20260831021354:5:bad8da`
-*31.08. 02:13 UTC · Quelle: dream*
-
-Compute budgets are wasted on stagnant goals because there is no convergence detection or dynamic reallocation mechanism to redirect effort toward improving tasks.
-
-### `dream:20260831021354:4:badff1`
-*31.08. 02:13 UTC · Quelle: dream*
-
-Proposed skills remain unused because there is no systematic pipeline to test, integrate, and retire skill proposals based on real-world performance.
-
-### `dream:20260831021354:3:218539`
-*31.08. 02:13 UTC · Quelle: dream*
-
-Goal completion is being falsely marked as converged when artifact execution results (exit codes, output schemas) are not validated before status updates.
-
-### `dream:20260831021354:2:5bc3f1`
-*31.08. 02:13 UTC · Quelle: dream*
-
-High-latency model calls (e.g., nvidia/nemotron-3-ultra-550b-a55b:free at 18.4s) require async handling with timeouts and progress tracking to avoid blocking dependent tasks.
-
-### `dream:20260831021354:1:78508b`
-*31.08. 02:13 UTC · Quelle: dream*
-
-Rate-limit errors (429) on specific models like z-ai/glm-5.2:free are a recurring failure mode that degrades overall system reliability and must be detected and mitigated automatically.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*

@@ -102,5 +102,9 @@
     }
   },
   "last_updated": "2026-09-02T05:50:50.451891+00:00",
-  "version": 2
+  "version": 2,
+  "error_frequencies": {},
+  "error_tags": {},
+  "last_analysis": "2026-09-14T02:36:49.487821",
+  "analysis_version": "1.0"
 }
