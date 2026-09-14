@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11342 Fakten** · Stand 2026-09-14 01:22 UTC · aktualisiert bei jedem Herzschlag
+**11337 Fakten** · Stand 2026-09-14 01:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7288
+- **dream:** 7283
 - **swarm_artifact:** 1627
 - **last_swarm_critique:** 941
 - **last_swarm_goal:** 676
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914013017:5:8f37c7`
+*14.09. 01:30 UTC · Quelle: dream*
+
+Simulation can safely approve goals ("go") despite tool execution failures, but actual execution layers need built-in retry logic and graceful degradation paths.
+
+### `dream:20260914013017:4:5b042f`
+*14.09. 01:30 UTC · Quelle: dream*
+
+Under "conserve" metabolic constraints with limited iterations, complex goals must be decomposed into single-step atomic tasks to prevent premature termination.
+
+### `dream:20260914013017:3:8038e0`
+*14.09. 01:30 UTC · Quelle: dream*
+
+High latency variance between models (Nemotron at 42-55s vs. Dots at 17s) means task planning must incorporate real-time latency predictions to avoid budget overruns.
+
+### `dream:20260914013017:2:3585ca`
+*14.09. 01:30 UTC · Quelle: dream*
+
+The failure of the automated skill conversion script shows that relative path resolution and argument passing in hand-action scripts remain fragile and need absolute path standardization.
+
+### `dream:20260914013017:1:d35d4d`
+*14.09. 01:30 UTC · Quelle: dream*
+
+External model providers frequently fail with 502 (overloaded) or 429 (rate limit) errors, which disrupts multi-step swarm workflows and requires dynamic health-aware routing.
 
 ### `dream:20260914012002:5:a476d7`
 *14.09. 01:20 UTC · Quelle: dream*
@@ -42042,56 +42067,6 @@ Nemotron models exhibit high latency variability (8.8s to 24.6s), suggesting the
 *31.08. 01:33 UTC · Quelle: dream*
 
 The model z-ai/glm-5.2:free consistently fails with 429 Too Many Requests errors, indicating it is rate-limited and should be deprioritized or quarantined.
-
-### `dream:20260831012733:5:1d44af`
-*31.08. 01:27 UTC · Quelle: dream*
-
-Successful model (poolside/laguna-s-2.1:free) shows 5-9s latency; no latency SLA or timeout policy exists to prevent hanging calls.
-
-### `dream:20260831012733:4:72f49b`
-*31.08. 01:27 UTC · Quelle: dream*
-
-Error patterns are not automatically classified into retryable (rate-limit) vs structural (404/502), so fallback logic cannot discriminate.
-
-### `dream:20260831012733:3:e4e5e1`
-*31.08. 01:27 UTC · Quelle: dream*
-
-No metabolic gating exists: the system continues spawning swarms/model-calls despite repeated failures, wasting cycles and increasing latency.
-
-### `dream:20260831012733:2:4da99a`
-*31.08. 01:27 UTC · Quelle: dream*
-
-Skill proposals accumulate without tracking or execution, causing repeated re-proposals of the same capabilities (fallback chain, metabolism gate, proposal tracker).
-
-### `dream:20260831012733:1:d3e656`
-*31.08. 01:27 UTC · Quelle: dream*
-
-Rate limits (429) and upstream errors (502/404) cascade across multiple free-tier models simultaneously, leaving only poolside/laguna-s-2.1:free as reliable.
-
-### `dream:20260831012122:5:ec09a1`
-*31.08. 01:21 UTC · Quelle: dream*
-
-Relative-path handling remains a recurring tool-entry failure mode despite prior PathResolver proposal.
-
-### `dream:20260831012122:4:cfe194`
-*31.08. 01:21 UTC · Quelle: dream*
-
-Swarm cycles execute without a hard budget guard, risking unbounded cost/latency when models degrade.
-
-### `dream:20260831012122:3:3d34f1`
-*31.08. 01:21 UTC · Quelle: dream*
-
-Skill proposals accumulate (10+ in this log) but lack a tracking mechanism to move them from proposed→implemented|deferred|rejected.
-
-### `dream:20260831012122:2:784158`
-*31.08. 01:21 UTC · Quelle: dream*
-
-Successful model calls exhibit 88-92s p95 latency, exceeding the 60s threshold for interactive use and causing cascade timeouts.
-
-### `dream:20260831012122:1:286d9b`
-*31.08. 01:21 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 rate-limits and 404/empty-choice errors, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*

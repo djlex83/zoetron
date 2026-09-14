@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 01:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 01:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,14 +12,14 @@
 - Add exponential backoff with jitter for all HTTP requests to model APIs and external commands. *(hatte die Idee 4×)*
 - Create a memory compaction routine that converts clusters of events into durable facts during pruning. *(hatte die Idee 4×)*
 - Build a task scheduler that respects the metabolism budget, limiting concurrent tasks and iterations when stre *(hatte die Idee 4×)*
-- Implement model router with health-aware fallback: track per-model error rates, latency percentiles, and auto- *(hatte die Idee 3×)*
-- Add calibration multiplier (3.5×) to all effort estimates and log prediction vs actual for continuous refineme *(hatte die Idee 3×)*
 - Implement provider-aware request router with per-provider token buckets, concurrent fallback fan-out, and circ *(hatte die Idee 3×)*
 - Wrap hand_action in idempotent retry with exponential backoff, structured error capture, and reflex fallback r *(hatte die Idee 3×)*
 - Create model-reliability dashboard tracking per-provider success rate, latency p99, and error taxonomy to driv *(hatte die Idee 3×)*
 - Add TokenBudgetEnforcer that caps input tokens per call and enforces per-model timeouts to bound latency spike *(hatte die Idee 3×)*
 - Create PruningAuditTrail that logs every pruned fact/event with timestamps and relevance scores, enabling poin *(hatte die Idee 3×)*
 - Implement a dynamic model router that selects the least‑loaded model and automatically switches on 429 or time *(hatte die Idee 3×)*
+- Develop a stale‑information detector that refreshes swarm goals older than a threshold and merges distant memo *(hatte die Idee 3×)*
+- Implement a centralized rate‑limit handler that intercepts HTTP 429 responses, applies exponential backoff wit *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -29,18 +29,23 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Veraltete Swarm-Daten aktualisieren *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation can safely approve goals ("go") despite tool execution failures, but actual execution layers need built-in retry logic and graceful degrada
+- Under "conserve" metabolic constraints with limited iterations, complex goals must be decomposed into single-step atomic tasks to prevent premature te
+- High latency variance between models (Nemotron at 42-55s vs. Dots at 17s) means task planning must incorporate real-time latency predictions to avoid 
+- The failure of the automated skill conversion script shows that relative path resolution and argument passing in hand-action scripts remain fragile an
+- External model providers frequently fail with 502 (overloaded) or 429 (rate limit) errors, which disrupts multi-step swarm workflows and requires dyna
 - Dream memory connection works (reflex succeeded) but insights from 14 dream cycles aren't being harvested into durable skills.
 - Swarm feedback loops are stale (repeated drive goals) because convergence gates lack delta-threshold enforcement.
 - Skill proposals accumulate (10+ this cycle) but no instantiation pipeline converts them into tested, versioned modules.
@@ -51,11 +56,6 @@
 - Simulation gate with mandatory revisions (4 risks → 3 revisions) prevented defective artifact execution.
 - Latency variance across models (33-68s) exceeds typical timeout budgets, demanding adaptive time allocation per call.
 - Free-tier models exhibit systematic rate-limiting (429) and upstream failures (502) requiring health-aware routing with circuit breakers.
-- The automatic generation of the 'Modell-Fehler reduzieren' drive goal directly from model failure metrics demonstrates a successful feedback loop wher
-- Under a 'conserve' metabolic state with a strict task budget, the system should batch low-priority skill proposals and focus execution efforts on high
-- The simulation phase successfully flagged 4 risks and forced 3 revisions on the skill implementation plan, proving that offline simulation is a critic
-- The failure of the skill conversion reflex due to relative path resolution errors ('nichts gelesen') highlights that script implementations must stric
-- The frequent 429 rate-limit and timeout errors on free Gemma and Nemotron models indicate a lack of adaptive model selection, which can be mitigated b
 
 ---
 
