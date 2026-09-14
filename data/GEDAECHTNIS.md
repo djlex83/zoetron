@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11336 Fakten** · Stand 2026-09-14 03:27 UTC · aktualisiert bei jedem Herzschlag
+**11331 Fakten** · Stand 2026-09-14 03:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7268
+- **dream:** 7263
 - **swarm_artifact:** 1633
 - **last_swarm_critique:** 943
 - **last_swarm_goal:** 678
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914033509:5:18d09e`
+*14.09. 03:35 UTC · Quelle: dream*
+
+Hand-action file reads (166-167 lines, 2-3s) succeed reliably while model calls fail, suggesting local deterministic operations should be preferred over external API calls for critical path steps.
+
+### `dream:20260914033509:4:2a5eb9`
+*14.09. 03:35 UTC · Quelle: dream*
+
+Calibration drift (predicted 7 vs actual 6) reveals the error prediction model systematically overestimates success probability for current model selection strategy.
+
+### `dream:20260914033509:3:042ac1`
+*14.09. 03:35 UTC · Quelle: dream*
+
+Evolutionary optimization cycles stall at score 6/10 without convergence, indicating the fitness function or mutation operators lack sufficient gradient for 'Modell-Fehler verringern' objective.
+
+### `dream:20260914033509:2:8f1ffc`
+*14.09. 03:35 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free demonstrates consistent reliability (33-34s latency, successful completions) making it the preferred primary free-tier model over intermittent alternatives.
+
+### `dream:20260914033509:1:87a715`
+*14.09. 03:35 UTC · Quelle: dream*
+
+Free-tier models exhibit two distinct failure modes: NVIDIA Nemotron returns 502 upstream overload errors while Google Gemma models hit 429 rate limits, requiring different mitigation strategies.
 
 ### `dream:20260914032512:5:6aa4dd`
 *14.09. 03:25 UTC · Quelle: dream*
@@ -41972,56 +41997,6 @@ score=3; issues=main() ist unvollständig (Dateipfad '/data' hartcodiert, kein C
 *31.08. 03:31 UTC · Quelle: system*
 
 Alte Schwarm-Ergebnisse aufräumen
-
-### `dream:20260831033100:5:216a96`
-*31.08. 03:31 UTC · Quelle: dream*
-
-No systematic model health scoring exists to proactively deprioritize rate-limited models before they fail, causing repeated 429 errors.
-
-### `dream:20260831033100:4:3fdd18`
-*31.08. 03:31 UTC · Quelle: dream*
-
-Reflex-driven skill combination operates without validating whether proposed skills already exist or are implemented, wasting cycles on duplicate development.
-
-### `dream:20260831033100:3:d412ef`
-*31.08. 03:31 UTC · Quelle: dream*
-
-The system generates redundant skill proposals for identical resilience patterns (circuit breaker, health tracking, error classification, SLA enforcement, proposal tracking), revealing a lack of proposal deduplication and implementation tracking.
-
-### `dream:20260831033100:2:17b8ff`
-*31.08. 03:31 UTC · Quelle: dream*
-
-Successful fallback calls exhibit high latency (21-43s), suggesting that quota recovery or cold-start penalties degrade performance even after failover.
-
-### `dream:20260831033100:1:282a5a`
-*31.08. 03:31 UTC · Quelle: dream*
-
-Rate limiting (429) is the primary failure mode affecting all free-tier models simultaneously, indicating shared quota exhaustion rather than individual model issues.
-
-### `dream:20260831032502:5:af21cd`
-*31.08. 03:25 UTC · Quelle: dream*
-
-Internal health checks (Selbstdiagnose) report zero errors while external API failures dominate, creating a false sense of system health.
-
-### `dream:20260831032502:4:3a43dd`
-*31.08. 03:25 UTC · Quelle: dream*
-
-Skill proposals pile up untracked, leading to duplicate efforts and no accountability for implementation.
-
-### `dream:20260831032502:3:8c802a`
-*31.08. 03:25 UTC · Quelle: dream*
-
-Reflex-based error investigation resolves symptoms but lacks preventive circuit-breaking, causing repeated 429 cascades.
-
-### `dream:20260831032502:2:2d1522`
-*31.08. 03:25 UTC · Quelle: dream*
-
-The only functional model (poolside/laguna-s-2.1:free) violates latency SLAs (>10s) in 50% of calls, requiring hard timeouts and failover.
-
-### `dream:20260831032502:1:f96012`
-*31.08. 03:25 UTC · Quelle: dream*
-
-Free-tier model endpoints share correlated rate-limit failures (429), making single-model reliance fragile.
 
 ### `last_swarm_critique`
 *31.08. 02:57 UTC · Quelle: critic*

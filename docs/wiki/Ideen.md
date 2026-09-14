@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,8 +30,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand-action file reads (166-167 lines, 2-3s) succeed reliably while model calls fail, suggesting local deterministic operations should be preferred ov
+- Calibration drift (predicted 7 vs actual 6) reveals the error prediction model systematically overestimates success probability for current model sele
+- Evolutionary optimization cycles stall at score 6/10 without convergence, indicating the fitness function or mutation operators lack sufficient gradie
+- dots-studio/dots-3-note-preview:free demonstrates consistent reliability (33-34s latency, successful completions) making it the preferred primary free
+- Free-tier models exhibit two distinct failure modes: NVIDIA Nemotron returns 502 upstream overload errors while Google Gemma models hit 429 rate limit
 - Metabolic stress hits 1.0 and forces conserve mode (max_tasks=3), yet the planner still queues work, causing queue buildup and starvation.
 - Reflex tools are registered without validation; 'modellfehler-stark-verringern.py' returned ok:false but stayed in the registry, wasting retries.
 - Hand actions fail on relative paths because the working directory diverges from ZOETRON_DATA; every file op must resolve absolute paths via the enviro
@@ -51,11 +56,6 @@
 - Hand actions that read zero items indicate missing preconditions; adding a validation step before execution prevents wasted cycles.
 - Swarm data becomes stale quickly, so a freshness checker that triggers synchronization when staleness exceeds a threshold is essential.
 - Repeated 5xx and 429 errors from model providers demonstrate the necessity of a circuit breaker that blacklists flaky endpoints and switches to fallba
-- Goal completion is declared without verifying three stable cycles, risking premature convergence.
-- Simulation outcomes are not automatically applied, creating a gap between planning and execution.
-- Stale swarm knowledge leads to outdated decisions, requiring periodic refresh with validation against current task performance.
-- Latency varies widely between calls, so pre‑flight token estimation can prevent overspending on slow models.
-- Model endpoints frequently return 502 or 429 errors under load, indicating a need for health monitoring and fallback routing.
 
 ---
 
