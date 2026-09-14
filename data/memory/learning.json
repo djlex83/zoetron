@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 06:42:34",
+ "stand": "2026-09-14 06:53:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {

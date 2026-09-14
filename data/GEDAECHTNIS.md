@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11350 Fakten** · Stand 2026-09-14 06:44 UTC · aktualisiert bei jedem Herzschlag
+**11355 Fakten** · Stand 2026-09-14 06:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7293
+- **dream:** 7298
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914065255:5:2e8dd7`
+*14.09. 06:52 UTC · Quelle: dream*
+
+Pruning (facts/events) prevents memory bloat but must preserve cross-references for dream connectivity.
+
+### `dream:20260914065255:4:d868b9`
+*14.09. 06:52 UTC · Quelle: dream*
+
+Reflex-driven tool use (model accuracy, simulation learning) converges quickly when goals are concrete.
+
+### `dream:20260914065255:3:ff1e9c`
+*14.09. 06:52 UTC · Quelle: dream*
+
+Stale swarm goals and disconnected dreams indicate knowledge decay; periodic refresh and linking are necessary.
+
+### `dream:20260914065255:2:f7ff7b`
+*14.09. 06:52 UTC · Quelle: dream*
+
+High-latency fallback models (16–42 s) degrade responsiveness; caching identical queries can mitigate this.
+
+### `dream:20260914065255:1:7f75fc`
+*14.09. 06:52 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) require automatic fallback with exponential backoff to maintain reliability.
 
 ### `dream:20260914064057:5:0849d7`
 *14.09. 06:40 UTC · Quelle: dream*

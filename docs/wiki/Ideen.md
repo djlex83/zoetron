@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 06:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 06:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,15 +25,15 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning (facts/events) prevents memory bloat but must preserve cross-references for dream connectivity.
+- Reflex-driven tool use (model accuracy, simulation learning) converges quickly when goals are concrete.
+- Stale swarm goals and disconnected dreams indicate knowledge decay; periodic refresh and linking are necessary.
+- High-latency fallback models (16–42 s) degrade responsiveness; caching identical queries can mitigate this.
+- Rate-limited models (429 errors) require automatic fallback with exponential backoff to maintain reliability.
 - Aggressive pruning (20 events per cycle) maintains lean memory but may discard cross-episode context needed for latent pattern detection.
 - Dream consolidation recurs (dream_finished logged) yet insights and skill_proposals accumulate without deduplication or priority ranking, risking redu
 - Automated skill proposals emerge from failure patterns but are emitted without deployment validation, creating a proposal-deployment gap.
@@ -51,11 +56,6 @@
 - Swarm knowledge refresh only occurs via explicit reflex action, not automatically on staleness signals, causing periodic collective-intelligence gaps.
 - The dots-studio fallback model succeeds but with high latency variance (14–25 s), indicating need for latency-aware routing and timeout budgets.
 - Repeated 429 errors on primary models reveal missing circuit-breaker logic that should trigger immediate fallback instead of retrying exhausted endpoi
-- Self-diagnosis reports zero organ errors while model failures persist, showing monitoring blind spots for external API dependencies.
-- Existing skill proposals (circuit breaker, freshness checker, validator, convergence gate, path executor) form a coherent resilience stack but lack an
-- Automatic model blocking after 3 failures prevents cascade errors but leaves no automated unblocking or health-check retry.
-- The dots-studio fallback succeeds but with high latency variance (15–39 s), making it unreliable for time-critical paths.
-- Rate-limited models (429) cluster in time, indicating shared quota buckets across model variants from the same provider.
 
 ---
 
