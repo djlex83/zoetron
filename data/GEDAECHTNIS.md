@@ -1,18 +1,48 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11255 Fakten** · Stand 2026-09-14 21:14 UTC · aktualisiert bei jedem Herzschlag
+**11254 Fakten** · Stand 2026-09-14 21:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7168
-- **swarm_artifact:** 1631
+- **dream:** 7173
+- **swarm_artifact:** 1625
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
 - **anti_pattern:** 371
 - **strategy:** 188
-- **tool:** 151
+- **tool:** 150
 - **hand_result:** 81
-- **aktuell_organfehler:** 22
+- **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914212159:5:181ef5`
+*14.09. 21:21 UTC · Quelle: dream*
+
+Failure patterns (e.g., 429) are provider-specific and can be used to dynamically route requests away from failing models.
+
+### `dream:20260914212159:4:5e9182`
+*14.09. 21:21 UTC · Quelle: dream*
+
+Staleness in swarm data triggers reflex updates, proving that staleness signals can drive maintenance actions.
+
+### `dream:20260914212159:3:463542`
+*14.09. 21:21 UTC · Quelle: dream*
+
+A large backlog of unimplemented skill proposals suggests the need for an automated prioritization pipeline.
+
+### `dream:20260914212159:2:5484bd`
+*14.09. 21:21 UTC · Quelle: dream*
+
+The dots-studio model exhibits high latency on first call, indicating a cold-start penalty that can be reduced by warming.
+
+### `dream:20260914212159:1:f5f82f`
+*14.09. 21:21 UTC · Quelle: dream*
+
+Repeated 429 errors from google/gemma free models show they are rate-limited and should be bypassed after a short pause.
+
+### `aktuell_organfehler`
+*14.09. 21:20 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-14 21:12:39 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260914210939:5:64a634`
 *14.09. 21:09 UTC · Quelle: dream*
@@ -41484,11 +41514,6 @@ File operations fail because tools use relative paths instead of the canonical Z
 *31.08. 21:25 UTC · Quelle: dream*
 
 Free-tier model providers consistently fail under load (429/502), requiring a router with local fallback and quota-aware scheduling.
-
-### `tool:modellfehler-deutlich-reduzieren`
-*31.08. 21:15 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler deutlich reduzieren'. Datei: data/tools/modellfehler-deutlich-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *31.08. 21:15 UTC · Quelle: critic*
