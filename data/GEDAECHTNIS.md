@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11269 Fakten** · Stand 2026-09-14 19:43 UTC · aktualisiert bei jedem Herzschlag
+**11265 Fakten** · Stand 2026-09-14 19:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7173
+- **dream:** 7168
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
@@ -10,9 +10,39 @@
 - **strategy:** 189
 - **tool:** 152
 - **hand_result:** 81
-- **aktuell_organfehler:** 21
+- **aktuell_organfehler:** 22
 
 ---
+
+### `dream:20260914195237:5:9169ed`
+*14.09. 19:52 UTC · Quelle: dream*
+
+Periodic pruning (4 facts, 16 events) occurs but only reactively; memory growth is not bounded during high-activity phases.
+
+### `dream:20260914195237:4:0f3515`
+*14.09. 19:52 UTC · Quelle: dream*
+
+Reflex-driven tool use (swarm-informationen-aktualisieren) succeeds where planned multi-step actions stall, suggesting reflexes are more reliable for atomic updates.
+
+### `dream:20260914195237:3:1e0f9c`
+*14.09. 19:52 UTC · Quelle: dream*
+
+Convergence is declared without minimum score thresholds or diversity checks, allowing premature termination of swarm cycles.
+
+### `dream:20260914195237:2:df0391`
+*14.09. 19:52 UTC · Quelle: dream*
+
+Evolution loops improve variants but fail to map improvements back to the swarm goal, so gains are lost before final scoring.
+
+### `dream:20260914195237:1:d036fa`
+*14.09. 19:52 UTC · Quelle: dream*
+
+Free-tier model rate limits (429 errors) cause cascading failures because the system lacks a proactive fallback chain with health checks.
+
+### `aktuell_organfehler`
+*14.09. 19:49 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-14 19:41:04-19:41:39 UTC): drive -> timeout; act -> ReadTimeout in _exceptions.py:14; act -> ReadTimeout in default.py:118; act -> rc. Phase nach 180 s abgebrochen | The read operation timed out | The read operation timed out Diese Phase d
 
 ### `dream:20260914193804:5:ae6ed2`
 *14.09. 19:38 UTC · Quelle: dream*
@@ -41494,56 +41524,6 @@ The system generates many skill proposals and goals but lacks a prioritization-a
 *31.08. 19:53 UTC · Quelle: dream*
 
 429 rate-limit errors from external models are a recurring systemic failure that cascades into unreliable system behavior and must be handled automatically rather than retried naively.
-
-### `dream:20260831194654:5:15fb06`
-*31.08. 19:46 UTC · Quelle: dream*
-
-System stress signals (metabolism.stress > 0.8) correlate with cascade model failures, yet no scheduler currently backs off concurrency or expands timeouts automatically.
-
-### `dream:20260831194654:4:39dda3`
-*31.08. 19:46 UTC · Quelle: dream*
-
-Thirty-five skill proposals exist but adoption is near zero, revealing a missing 'skill graduation' gate that validates utility before registry insertion.
-
-### `dream:20260831194654:3:5e6284`
-*31.08. 19:46 UTC · Quelle: dream*
-
-Swarm evolution cycles consistently fail to converge (score 6, converged=false), suggesting the critic/planner feedback loop lacks a hard acceptance threshold or the search space is too broad.
-
-### `dream:20260831194654:2:339f9f`
-*31.08. 19:46 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra fallback exhibits high latency variance (7.4–16.6 s) and token inefficiency (output often < input), indicating it is a poor quality/latency trade-off for production use.
-
-### `dream:20260831194654:1:552c3b`
-*31.08. 19:46 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model fails deterministically with 429 rate-limit errors, making it unusable as a primary provider without aggressive request spacing or quota negotiation.
-
-### `dream:20260831194021:5:eb6c5b`
-*31.08. 19:40 UTC · Quelle: dream*
-
-Calibration prediction matched actual score exactly (6/10), suggesting the scoring heuristic is well-calibrated for this task type.
-
-### `dream:20260831194021:4:615a84`
-*31.08. 19:40 UTC · Quelle: dream*
-
-Evolutionary iteration improved artifact score from 6 to 9 by addressing critic-identified security risks in validation code.
-
-### `dream:20260831194021:3:4b83f5`
-*31.08. 19:40 UTC · Quelle: dream*
-
-Only inclusionai/ling-3.0-flash-fin:free succeeded consistently (2/2 attempts) with reasonable latency (10-24s).
-
-### `dream:20260831194021:2:2dd90c`
-*31.08. 19:40 UTC · Quelle: dream*
-
-Nvidia nemotron fails with upstream 502 errors, indicating provider-side instability beyond rate limits.
-
-### `dream:20260831194021:1:88aefa`
-*31.08. 19:40 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the dominant failure mode across 5/6 free models, making them unreliable for production use.
 
 ### `last_swarm_critique`
 *31.08. 19:28 UTC · Quelle: critic*

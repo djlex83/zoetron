@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 19:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 19:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Periodic pruning (4 facts, 16 events) occurs but only reactively; memory growth is not bounded during high-activity phases.
+- Reflex-driven tool use (swarm-informationen-aktualisieren) succeeds where planned multi-step actions stall, suggesting reflexes are more reliable for 
+- Convergence is declared without minimum score thresholds or diversity checks, allowing premature termination of swarm cycles.
+- Evolution loops improve variants but fail to map improvements back to the swarm goal, so gains are lost before final scoring.
+- Free-tier model rate limits (429 errors) cause cascading failures because the system lacks a proactive fallback chain with health checks.
 - Reflex-driven tool execution succeeds when goals are concrete and tools are pre-validated, as shown by the successful swarm information update.
 - Self-diagnosis and automated pruning (facts/events) are functioning as effective maintenance loops that prevent memory bloat.
 - Dream consolidation timeout (180s) indicates the replay process may be processing excessive volume or lacking incremental checkpoints.
@@ -51,11 +56,6 @@
 - Swarm evolution overestimates solution quality (predicted 9 vs actual 6), indicating a systematic calibration gap in critic scoring.
 - The dots-studio/dots-3-note-preview:free model demonstrates consistent success with acceptable latency, establishing it as the only viable free-tier f
 - Free-tier models from major providers (Google, NVIDIA) consistently hit rate limits (429) and timeouts, making them unreliable for production workflow
-- The model scoring and calibration loop is functioning correctly, using actual vs. predicted metrics to guide evolution runs.
-- High latency in successful free models (up to 74.5s for dots) indicates that async/non-blocking execution or generous timeouts are necessary for free-
-- The task "Veraltete swarm-Ziele auffrischen" is highly stable and repeatable, showing consistent execution paths and perfect calibration (abs_error 0)
-- Large free models like `nvidia/nemotron-3-ultra-550b-a55b` are prone to read timeouts and require explicit timeout handling and fallback chains.
-- Free Google Gemma models are currently unreliable due to persistent 429 rate-limiting and should be avoided or deprioritized in favor of `dots-studio/
 
 ---
 

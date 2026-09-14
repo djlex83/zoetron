@@ -1,4 +1,4 @@
 {
- "letzter_bericht": 1789414905.8021467,
- "letzte_nachricht": "🫀 Zoetron · 19:41 UTC · vor 34 min berichtet\n\n▸ Kein offenes Flüster-Ziel – er wählt selbst\n   Note 6 ✅ läuft · dots-3-note-previe · vor 1 h 30 min\n\n▸ Noten ▅▇▆▆▇  4 6 5 5 6\n   ⌀ 5.2 · best 6 · Latte 8 · Tor 5/5 grün\n\n▸ Takt 11 min · 808 von 1453 Aufrufen heute (55 %)\n▸ 0 offen · 8 erledigt · 15 geparkt · 212 Werkzeuge"
+ "letzter_bericht": 1789415612.6521623,
+ "letzte_nachricht": "🫀 Zoetron · 19:53 UTC · vor 11 min berichtet\n\n🔴 3 Organfehler seit dem letzten Bericht:\n   • act: ReadTimeout _exceptions.py:14 (2x) [19:41]\n     The read operation timed out\n   • drive: timeout [19:41]\n     Phase nach 180 s abgebrochen\n   • act: rc [19:41]\n     Phase endete mit rc=1\n\n▸ Kein offenes Flüster-Ziel – er wählt selbst\n   Note 6 ✅ läuft · dots-3-note-previe · vor 1 h 41 min\n\n▸ Noten ▅▇▆▆▇  4 6 5 5 6\n   ⌀ 5.2 · best 6 · Latte 8 · Tor 5/5 grün\n\n▸ Takt 11 min · 810 von 1453 Aufrufen heute (55 %)\n▸ 0 offen · 8 erledigt · 15 geparkt · 212 Werkzeuge"
 }
