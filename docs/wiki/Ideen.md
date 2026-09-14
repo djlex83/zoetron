@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 05:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 05:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,10 +9,6 @@
 - Create a memory compaction routine that converts clusters of events into durable facts during pruning. *(hatte die Idee 4×)*
 - Build a task scheduler that respects the metabolism budget, limiting concurrent tasks and iterations when stre *(hatte die Idee 4×)*
 - Introduce an Absolute Path Executor that resolves all script and data paths using the ZOETRON_DATA environment *(hatte die Idee 4×)*
-- Build skill_implementation_pipeline: consumes skill_proposal events, writes executable Python modules under sk *(hatte die Idee 3×)*
-- Deploy provider_aware_router: wraps all model calls, enforces rate limits, fans out concurrent requests to top *(hatte die Idee 3×)*
-- Create causal_chain_pruner: before pruning, extracts decision→action→outcome triples into immutable causal_log *(hatte die Idee 3×)*
-- Schedule swarm_refresh_cycle: weekly cron that re-runs critic/analyst roles on recent experience, merges new i *(hatte die Idee 3×)*
 - Implement a dynamic model router that selects the least‑loaded model and automatically switches on 429 or time *(hatte die Idee 3×)*
 - Develop a stale‑information detector that refreshes swarm goals older than a threshold and merges distant memo *(hatte die Idee 3×)*
 - Implement a centralized rate‑limit handler that intercepts HTTP 429 responses, applies exponential backoff wit *(hatte die Idee 3×)*
@@ -20,19 +16,23 @@
 - Generalize the stale-knowledge reflex into a configurable skill: domain, freshness predicate, fetch tool, and  *(hatte die Idee 3×)*
 - Add pre-flight token estimation and dynamic time-budget selection before each model call to avoid overspending *(hatte die Idee 3×)*
 - Implement a model health registry that classifies errors by type and records p50/p90 latency per endpoint. *(hatte die Idee 3×)*
+- Create a fallback router that selects the next available model when a request fails. *(hatte die Idee 3×)*
+- Add a simulation result applicator that automatically applies simulation outcomes to goal execution. *(hatte die Idee 3×)*
+- Develop a swarm data freshness checker that triggers sync when staleness exceeds threshold. *(hatte die Idee 3×)*
+- Build a convergence gate requiring three stable cycles before accepting goal completion. *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 13×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Lack of per‑task error monitoring prevents early detection of model degradation.
+- Simulations are underutilized because there is no convergence gate to stop unproductive loops.
+- Only a fraction of proposed skills are tested, indicating a missing automated evaluation pipeline.
+- Stale swarm knowledge leads to outdated decisions and requires push‑based synchronization.
+- The model's 27 errors reveal a need for circuit‑breaker fallback mechanisms.
 - Relative path resolution failures can be avoided by using absolute paths derived from the ZOETRON_DATA environment variable.
 - Unstable convergence results in premature goal completion; requiring three stable cycles before accepting completion increases confidence.
 - Missing data availability before hand actions causes failures; pre-execution validation prevents wasted attempts.
@@ -51,11 +56,6 @@
 - Goal convergence lacks stability verification, risking premature completion acceptance before true steady state.
 - Swarm goals become stale without automated freshness detection, causing misaligned actions until manual refresh occurs.
 - Multiple model providers fail intermittently with 5xx/429 errors, requiring automatic fallback and circuit-breaking to maintain system availability.
-- Pruning (2 facts, 16-20 events/cycle) prevents bloat but discards failure context needed for root-cause analysis of model errors.
-- 33 learning errors and 65 untested skill proposals accumulate because no automated evaluation-to-deployment pipeline closes the loop.
-- Swarm knowledge goes stale within cycles (two 'stale' drive goals for same topic) because no scheduled refresh with convergence gate exists.
-- Reflex tools (träume-besser-nutzen-lernen.py, modellfehler-verstehen-und-beheben.py) consistently converge when they exist, revealing a reliable act-v
-- Model endpoint failures cascade across providers (502, 429) because no circuit-breaker tracks latency/error rates per endpoint with automatic failover
 
 ---
 

@@ -48138,3 +48138,20 @@
 {"ts": 1788757895.7391903, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 9}}
 {"ts": 1788757895.7413526, "kind": "reflex_used", "payload": {"goal": "Veraltete Schwarmdaten aktualisieren", "tool": "veraltete-marktinfos-aktualisieren.py", "ok": true}}
 {"ts": 1788757896.199135, "kind": "act_done", "payload": {"goal_title": "Veraltete Schwarmdaten aktualisieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788758394.291884, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788758462.774875, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788758464.6911883, "kind": "prune_run", "payload": {"facts_pruned": 8, "events_pruned": 23}}
+{"ts": 1788758490.1556342, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.0, "tokens_ein": 1354, "tokens_aus": 1195}}
+{"ts": 1788758490.1563852, "kind": "skill_proposal", "payload": {"proposal": "Implement model health registry with circuit breakers: track error rates per model, auto-disable after 3 consecutive failures, prefer Ling-3.0-flash-fin as primary."}}
+{"ts": 1788758490.1564777, "kind": "skill_proposal", "payload": {"proposal": "Add exponential backoff with jitter for 429 errors and immediate failover to healthy model instead of retrying same endpoint."}}
+{"ts": 1788758490.1565623, "kind": "skill_proposal", "payload": {"proposal": "Create convergence gate for evolution: require critic score >=8 and no architectural severity issues before declaring convergence."}}
+{"ts": 1788758490.1566746, "kind": "skill_proposal", "payload": {"proposal": "Build latency-aware router selecting models by p95 latency * success_rate, not just availability."}}
+{"ts": 1788758490.1567743, "kind": "skill_proposal", "payload": {"proposal": "Design swarm knowledge refresh protocol that timestamps and invalidates stale collective assessments."}}
+{"ts": 1788758490.1568668, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788758500.7371316, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 8.7, "tokens_ein": 480, "tokens_aus": 797}}
+{"ts": 1788758500.7372954, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht noch zu viele Fehler. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788758500.737369, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren und nutzen", "why": "Alte Schwarm-Informationen sind veraltet. Frisches Wissen hilft bei besseren gemeinsamen Entscheidungen.", "signal": "stale"}}
+{"ts": 1788758500.7374313, "kind": "drive_goal", "payload": {"title": "Träume in nutzbare Fähigkeiten umwandeln", "why": "Träume laufen schon, aber ihre Ideen werden selten zu echten Fertigkeiten. Das soll sich ändern.", "signal": "combination"}}
+{"ts": 1788758516.1962528, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 13.13, "gelesen": 495}}
+{"ts": 1788758516.1983416, "kind": "reflex_used", "payload": {"goal": "Modellfehler deutlich reduzieren", "tool": "modell-fehler-deutlich-reduzieren.py", "ok": true}}
+{"ts": 1788758516.8485548, "kind": "act_done", "payload": {"goal_title": "Modellfehler deutlich reduzieren", "score": null, "converged": true, "mode": "reflex"}}

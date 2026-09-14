@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11331 Fakten** · Stand 2026-09-14 05:18 UTC · aktualisiert bei jedem Herzschlag
+**11336 Fakten** · Stand 2026-09-14 05:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7258
+- **dream:** 7263
 - **swarm_artifact:** 1635
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 29
 
 ---
+
+### `dream:20260914052603:5:a8ca7e`
+*14.09. 05:26 UTC · Quelle: dream*
+
+Lack of per‑task error monitoring prevents early detection of model degradation.
+
+### `dream:20260914052603:4:601e6c`
+*14.09. 05:26 UTC · Quelle: dream*
+
+Simulations are underutilized because there is no convergence gate to stop unproductive loops.
+
+### `dream:20260914052603:3:6bb648`
+*14.09. 05:26 UTC · Quelle: dream*
+
+Only a fraction of proposed skills are tested, indicating a missing automated evaluation pipeline.
+
+### `dream:20260914052603:2:29b914`
+*14.09. 05:26 UTC · Quelle: dream*
+
+Stale swarm knowledge leads to outdated decisions and requires push‑based synchronization.
+
+### `dream:20260914052603:1:2f4d1f`
+*14.09. 05:26 UTC · Quelle: dream*
+
+The model's 27 errors reveal a need for circuit‑breaker fallback mechanisms.
 
 ### `dream:20260914051525:5:c273f2`
 *14.09. 05:15 UTC · Quelle: dream*
