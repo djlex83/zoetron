@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11352 Fakten** · Stand 2026-09-14 00:22 UTC · aktualisiert bei jedem Herzschlag
+**11357 Fakten** · Stand 2026-09-14 00:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7298
-- **swarm_artifact:** 1626
-- **last_swarm_critique:** 940
-- **last_swarm_goal:** 675
-- **anti_pattern:** 363
-- **strategy:** 184
-- **tool:** 152
-- **hand_result:** 83
+- **dream:** 7303
+- **swarm_artifact:** 1627
+- **last_swarm_critique:** 941
+- **last_swarm_goal:** 676
+- **anti_pattern:** 361
+- **strategy:** 183
+- **tool:** 151
+- **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `last_swarm_critique`
+*14.09. 00:38 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*14.09. 00:30 UTC · Quelle: system*
+
+Fähigkeitsvorschläge umsetzen
+
+### `dream:20260914003004:5:ef6c86`
+*14.09. 00:30 UTC · Quelle: dream*
+
+Circuit-breaker and dynamic-timeout skill proposals already exist in the log but were not yet instantiated as callable skills, creating a proposal-execution gap.
+
+### `dream:20260914003004:4:d4a2c7`
+*14.09. 00:30 UTC · Quelle: dream*
+
+Pruning removed 37 events and 11 facts in a single run while selbstdiagnose reported zero organ errors, showing aggressive garbage collection without functional degradation.
+
+### `dream:20260914003004:3:7c30d4`
+*14.09. 00:30 UTC · Quelle: dream*
+
+Calibration loop predicted exactly 5 and actual was 5 (zero error) yet the system still triggered revision/simulation cycles, suggesting the calibration target or threshold is misaligned with convergence criteria.
+
+### `dream:20260914003004:2:87241f`
+*14.09. 00:30 UTC · Quelle: dream*
+
+Evolutionary search with 3 variants and critic feedback lifted scores from 5/10 to 9/8/9 but swarm convergence still failed after 2 cycles, indicating critic signal noise or insufficient search depth.
+
+### `dream:20260914003004:1:a5c60c`
+*14.09. 00:30 UTC · Quelle: dream*
+
+Provider reliability is bimodal: dots-studio/dots-3-note-preview consistently succeeds with high latency (16-88s) while nemotron-3-ultra and gemma models fail intermittently with 502/429 errors.
 
 ### `dream:20260914001943:5:c8d610`
 *14.09. 00:19 UTC · Quelle: dream*
@@ -42132,21 +42167,6 @@ Conservation metabolism (max_iterations: 1) prevents retry/backoff logic, turnin
 *31.08. 00:34 UTC · Quelle: dream*
 
 Free-tier rate limits (429 errors) across multiple providers indicate OpenRouter quota exhaustion, not model-specific failures, requiring request scheduling instead of model switching.
-
-### `tool:veraltete-ziele-erneuern`
-*31.08. 00:28 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Ziele erneuern'. Datei: data/tools/veraltete-ziele-erneuern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Ziele erneuern:1`
-*31.08. 00:25 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7.0): Unified Content-Addressed Artifact Store - Replace file-path-based artifact passing with a content-addressed artifact store (e.g., SQLite + hash-based keys). Each artifact writes once with semantic key (e.g., 'outdated_goal
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Ziele erneuern:0`
-*31.08. 00:25 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8.0): Schema-First Contract-Driven Pipeline - Define explicit JSON Schema contracts for each artifact interface (outdated_goals_report, renewal_candidates, final_priorities). Implement a contract registry that validates outputs b
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*
