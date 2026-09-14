@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,8 +31,8 @@
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration systematically underestimates cycle count (predicted 6 vs actual 8), indicating the estimator ignores model-latency variance.
+- Swarm convergence can succeed in one cycle with asymmetric role allocation (1 planner, 3 builders, 1 critic) when the artifact is already near-runnabl
+- High metabolic stress (0.96) triggers conserve mode that caps task budget, causing premature termination of multi-step workflows.
+- Model endpoint instability (502 upstream, 429 rate limits) requires multi-model fallback chains with health-score routing, not single-model dependence
+- Relative path resolution fails under ZOETRON_DATA; all file operations must anchor to the absolute data root from the environment variable.
 - Five concrete skill proposals exist but remain untested because no validation harness gates them into the active toolset.
 - Simulation verdicts return 'go' with 5 risks and 5 revisions, but the reflex executor fails because revisions are not auto-applied before commit.
 - Metabolic stress at 0.96 forces max_iterations=1, preventing the multi-step refinement that simulations require to close the practice gap.
@@ -51,11 +56,6 @@
 - Swarm knowledge staleness is only detected reactively after goals fail, missing proactive freshness thresholds that could trigger automated refreshes.
 - Skill proposals accumulate without a validation pipeline, creating a backlog of untested capabilities that cannot be trusted in production.
 - Model provider instability (429 rate limits, 502 overloads, high latency variance) is the primary reliability bottleneck requiring automated health-aw
-- Cold-start latency and timeout issues during consolidation can be mitigated with warm-up routines and I/O monitoring.
-- World model errors propagate across tasks, indicating a foundational issue that must be addressed first.
-- Stale swarm knowledge degrades collective intelligence, necessitating periodic refreshing.
-- Skill proposals are generated rapidly but lack prioritization, leading to potential implementation bottlenecks.
-- Model provider instability (429/502 errors) is a primary failure cause requiring automatic failover and health monitoring.
 
 ---
 

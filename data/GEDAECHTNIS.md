@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11234 Fakten** · Stand 2026-09-14 23:50 UTC · aktualisiert bei jedem Herzschlag
+**11229 Fakten** · Stand 2026-09-14 23:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7163
+- **dream:** 7158
 - **swarm_artifact:** 1615
 - **last_swarm_critique:** 956
 - **last_swarm_goal:** 691
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914235751:5:9513bc`
+*14.09. 23:57 UTC · Quelle: dream*
+
+Calibration systematically underestimates cycle count (predicted 6 vs actual 8), indicating the estimator ignores model-latency variance.
+
+### `dream:20260914235751:4:7fa916`
+*14.09. 23:57 UTC · Quelle: dream*
+
+Swarm convergence can succeed in one cycle with asymmetric role allocation (1 planner, 3 builders, 1 critic) when the artifact is already near-runnable.
+
+### `dream:20260914235751:3:275ff8`
+*14.09. 23:57 UTC · Quelle: dream*
+
+High metabolic stress (0.96) triggers conserve mode that caps task budget, causing premature termination of multi-step workflows.
+
+### `dream:20260914235751:2:9e5f9e`
+*14.09. 23:57 UTC · Quelle: dream*
+
+Model endpoint instability (502 upstream, 429 rate limits) requires multi-model fallback chains with health-score routing, not single-model dependence.
+
+### `dream:20260914235751:1:b772e6`
+*14.09. 23:57 UTC · Quelle: dream*
+
+Relative path resolution fails under ZOETRON_DATA; all file operations must anchor to the absolute data root from the environment variable.
 
 ### `dream:20260914234806:5:546d32`
 *14.09. 23:48 UTC · Quelle: dream*
@@ -41389,56 +41414,6 @@ Model endpoint volatility (404 on nemotron) demands continuous availability prob
 *01.09. 00:02 UTC · Quelle: dream*
 
 Rate limiting (429) across multiple free models indicates systemic quota exhaustion requiring fallback chains with local model backup.
-
-### `dream:20260831235546:5:563a24`
-*31.08. 23:55 UTC · Quelle: dream*
-
-Relative path resolution in hand_action breaks under varying working directories; all file ops must anchor to ZOETRON_DATA.
-
-### `dream:20260831235546:4:be34d3`
-*31.08. 23:55 UTC · Quelle: dream*
-
-Swarm convergence fails when evaluation criteria are implicit; explicit success metrics and max-cycle bounds are required.
-
-### `dream:20260831235546:3:2b3d57`
-*31.08. 23:55 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack automated validation loop; proposals need sandbox A/B testing before production promotion.
-
-### `dream:20260831235546:2:ee459f`
-*31.08. 23:55 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831235546:1:fc1451`
-*31.08. 23:55 UTC · Quelle: dream*
-
-Correlated 429/502 failures across multiple providers indicate shared rate-limit infrastructure, requiring provider-diverse fallback routing.
-
-### `dream:20260831234952:5:e02682`
-*31.08. 23:49 UTC · Quelle: dream*
-
-Swarm convergence failed in two cycles despite evolution, suggesting the critic/planner ratio (1:1) is too weak to drive consensus; builder dominance (3) may drown signal.
-
-### `dream:20260831234952:4:369139`
-*31.08. 23:49 UTC · Quelle: dream*
-
-Calibration error of +2 (predicted 5 vs actual 3) reveals systematic overconfidence in skill proposals; scoring rubrics need grounding in execution traces.
-
-### `dream:20260831234952:3:37f162`
-*31.08. 23:49 UTC · Quelle: dream*
-
-Evolutionary repair boosted a 3/10 artifact to 9/10 in one generation, proving that targeted mutation with critic feedback outperforms single-pass generation.
-
-### `dream:20260831234952:2:459b71`
-*31.08. 23:49 UTC · Quelle: dream*
-
-Nemotron-3-ultra succeeds only after extreme latency (44–105 s), indicating cold-start or queueing penalties that violate interactive deadlines.
-
-### `dream:20260831234952:1:17e0da`
-*31.08. 23:49 UTC · Quelle: dream*
-
-Free-tier models exhibit cascading failures: rate limits (429) and upstream overloads (502) make them unreliable for critical paths without automatic fallback.
 
 ### `last_swarm_critique`
 *31.08. 23:26 UTC · Quelle: critic*

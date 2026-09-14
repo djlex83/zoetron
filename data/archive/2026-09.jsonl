@@ -50759,3 +50759,30 @@
 {"ts": 1788824629.4453692, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.1, "gelesen": 139}}
 {"ts": 1788824629.4526126, "kind": "reflex_used", "payload": {"goal": "Vergessene Schwarmwissen auffrischen", "tool": "vergessene-schwarmprojekte-reaktivieren.py", "ok": true}}
 {"ts": 1788824629.8899574, "kind": "act_done", "payload": {"goal_title": "Vergessene Schwarmwissen auffrischen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788220192.229388, "key": "dream:20260831234952:1:17e0da", "value": "Free-tier models exhibit cascading failures: rate limits (429) and upstream overloads (502) make them unreliable for critical paths without automatic fallback.", "source": "dream"}
+{"ts": 1788220192.229488, "key": "dream:20260831234952:2:459b71", "value": "Nemotron-3-ultra succeeds only after extreme latency (44–105 s), indicating cold-start or queueing penalties that violate interactive deadlines.", "source": "dream"}
+{"ts": 1788220192.2295914, "key": "dream:20260831234952:3:37f162", "value": "Evolutionary repair boosted a 3/10 artifact to 9/10 in one generation, proving that targeted mutation with critic feedback outperforms single-pass generation.", "source": "dream"}
+{"ts": 1788220192.2296941, "key": "dream:20260831234952:4:369139", "value": "Calibration error of +2 (predicted 5 vs actual 3) reveals systematic overconfidence in skill proposals; scoring rubrics need grounding in execution traces.", "source": "dream"}
+{"ts": 1788220192.229801, "key": "dream:20260831234952:5:e02682", "value": "Swarm convergence failed in two cycles despite evolution, suggesting the critic/planner ratio (1:1) is too weak to drive consensus; builder dominance (3) may drown signal.", "source": "dream"}
+{"ts": 1788220546.6990807, "key": "dream:20260831235546:1:fc1451", "value": "Correlated 429/502 failures across multiple providers indicate shared rate-limit infrastructure, requiring provider-diverse fallback routing.", "source": "dream"}
+{"ts": 1788220546.699214, "key": "dream:20260831235546:2:ee459f", "value": "Extreme latency variance (8s vs 44s) for same model class makes static timeouts harmful; routing must use rolling p95 latency per model.", "source": "dream"}
+{"ts": 1788220546.6993203, "key": "dream:20260831235546:3:2b3d57", "value": "Skill proposals accumulate but lack automated validation loop; proposals need sandbox A/B testing before production promotion.", "source": "dream"}
+{"ts": 1788220546.699452, "key": "dream:20260831235546:4:be34d3", "value": "Swarm convergence fails when evaluation criteria are implicit; explicit success metrics and max-cycle bounds are required.", "source": "dream"}
+{"ts": 1788220546.6995575, "key": "dream:20260831235546:5:563a24", "value": "Relative path resolution in hand_action breaks under varying working directories; all file ops must anchor to ZOETRON_DATA.", "source": "dream"}
+{"ts": 1788825148.000134, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788825216.5945017, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788825218.475869, "kind": "prune_run", "payload": {"facts_pruned": 6, "events_pruned": 37}}
+{"ts": 1788825282.24242, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 60.3, "tokens_ein": 1625, "tokens_aus": 744}}
+{"ts": 1788825282.2431016, "kind": "skill_proposal", "payload": {"proposal": "Implement a model-router with health checks that prefers inclusionai/ling-3.0-flash-fin:free and retries nemotron/gemma only after exponential backoff."}}
+{"ts": 1788825282.2431731, "kind": "skill_proposal", "payload": {"proposal": "Add a path-resolver utility that expands ZOETRON_DATA and sys.argv[1] before any hand_action executes."}}
+{"ts": 1788825282.2432384, "kind": "skill_proposal", "payload": {"proposal": "Create a swarm-memory TTL janitor that archives or refreshes entries older than N cycles to prevent stale-goal duplication."}}
+{"ts": 1788825282.243304, "kind": "skill_proposal", "payload": {"proposal": "Wrap the skill-testing pipeline (simulation → tor) into a single reusable skill 'test-proposed-skills' with built-in fallback and artifact capture."}}
+{"ts": 1788825282.2433782, "kind": "skill_proposal", "payload": {"proposal": "Add a metabolism-aware scheduler that batches low-latency model calls within the iteration budget to reduce wall-clock time."}}
+{"ts": 1788825282.2434368, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788825303.2220378, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 19.1, "tokens_ein": 479, "tokens_aus": 536}}
+{"ts": 1788825303.2222128, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert bei fast jedem dritten Versuch. Weniger Fehler bedeuten, dass das System zuverlässiger arbeitet und weniger Energie für Korrekturen verschwendet.", "signal": "failure"}}
+{"ts": 1788825303.2222896, "kind": "drive_goal", "payload": {"title": "Veraltete Schwarm-Infos erneuern", "why": "Die letzten Schwarm-Ziele und Kritiken sind veraltet. Frische Informationen helfen dem System, besser mit anderen zusammenzuarbeiten.", "signal": "stale"}}
+{"ts": 1788825303.2223542, "kind": "drive_goal", "payload": {"title": "Traum-Erkenntnisse nutzbar machen", "why": "Träume laufen regelmäßig ab, aber ihre Ergebnisse werden kaum verwendet. Wenn das System daraus lernt, wird es kreativer und löst Probleme besser.", "signal": "combination"}}
+{"ts": 1788825306.0064158, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.47, "gelesen": 2}}
+{"ts": 1788825306.009404, "kind": "reflex_used", "payload": {"goal": "Schwarm-Wissen regelmäßig auffrischen", "tool": "schwarmwissen-regelmäßig-aktualisieren.py", "ok": true}}
+{"ts": 1788825306.4239748, "kind": "act_done", "payload": {"goal_title": "Schwarm-Wissen regelmäßig auffrischen", "score": null, "converged": true, "mode": "reflex"}}
