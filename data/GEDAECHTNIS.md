@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11340 Fakten** · Stand 2026-09-14 05:38 UTC · aktualisiert bei jedem Herzschlag
+**11344 Fakten** · Stand 2026-09-14 05:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7268
+- **dream:** 7273
 - **swarm_artifact:** 1635
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
@@ -10,9 +10,34 @@
 - **strategy:** 185
 - **tool:** 153
 - **hand_result:** 83
-- **aktuell_organfehler:** 28
+- **aktuell_organfehler:** 27
 
 ---
+
+### `dream:20260914054546:5:301ddc`
+*14.09. 05:45 UTC · Quelle: dream*
+
+Calibration predicted 6 vs actual 7, showing a small underestimation that can be corrected with a bias adjustment.
+
+### `dream:20260914054546:4:f7021b`
+*14.09. 05:45 UTC · Quelle: dream*
+
+Evolutionary refinement that addressed the critic's issue of hardcoding tool names raised the score from 7 to 9, demonstrating the value of critic feedback.
+
+### `dream:20260914054546:3:d8fa0e`
+*14.09. 05:45 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model consistently succeeded when others failed, making it a viable fallback.
+
+### `dream:20260914054546:2:f04a46`
+*14.09. 05:45 UTC · Quelle: dream*
+
+Google gemma models hit 429 Too Many Requests, showing they are rate-limited and cannot handle high request volumes.
+
+### `dream:20260914054546:1:94766a`
+*14.09. 05:45 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model repeatedly returned 502 Service temporarily overloaded, indicating it is unreliable under concurrent load.
 
 ### `dream:20260914053543:5:b90493`
 *14.09. 05:35 UTC · Quelle: dream*
@@ -42012,11 +42037,6 @@ ORGANFEHLER (2026-08-31 05:54:06-05:57:06 UTC): dream -> timeout; drive -> timeo
 *31.08. 05:49 UTC · Quelle: selbstdiagnose.py*
 
 ORGANFEHLER (2026-08-31 05:43:13-05:46:13 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `aktuell_organfehler`
-*31.08. 05:39 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 05:32:21-05:35:21 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*

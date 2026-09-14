@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 05:36:40",
+ "stand": "2026-09-14 05:46:38",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,12 +51,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-analysieren.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -70,6 +64,12 @@
   },
   {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -111,6 +111,12 @@
    "quote": 1.0
   },
   {
+   "tool": "träume-analysieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -142,12 +148,6 @@
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0

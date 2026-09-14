@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 05:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 05:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
+- Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predicted 6 vs actual 7, showing a small underestimation that can be corrected with a bias adjustment.
+- Evolutionary refinement that addressed the critic's issue of hardcoding tool names raised the score from 7 to 9, demonstrating the value of critic fee
+- The dots-studio/dots-3-note-preview:free model consistently succeeded when others failed, making it a viable fallback.
+- Google gemma models hit 429 Too Many Requests, showing they are rate-limited and cannot handle high request volumes.
+- The nvidia/nemotron-3-ultra-550b-a55b:free model repeatedly returned 502 Service temporarily overloaded, indicating it is unreliable under concurrent 
 - Simulation loops often require multiple revisions to converge, suggesting a convergence gate would reduce wasted cycles.
 - Metabolism stress triggers a conserve state with limited task budget, forcing prioritization of high-impact actions.
 - Skill proposals are generated but rarely executed, indicating a missing pipeline to convert proposals into registered skills.
@@ -51,11 +56,6 @@
 - Only a fraction of proposed skills are tested, indicating a missing automated evaluation pipeline.
 - Stale swarm knowledge leads to outdated decisions and requires push‑based synchronization.
 - The model's 27 errors reveal a need for circuit‑breaker fallback mechanisms.
-- Relative path resolution failures can be avoided by using absolute paths derived from the ZOETRON_DATA environment variable.
-- Unstable convergence results in premature goal completion; requiring three stable cycles before accepting completion increases confidence.
-- Missing data availability before hand actions causes failures; pre-execution validation prevents wasted attempts.
-- Stale swarm data leads to outdated decisions; a freshness checker that triggers sync when staleness exceeds a threshold ensures up-to-date knowledge.
-- Repeated 5xx/429 errors from a provider indicate flakiness; a circuit breaker that blacklists after a threshold and switches to fallback improves reli
 
 ---
 
