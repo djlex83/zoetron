@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11301 Fakten** · Stand 2026-09-14 16:10 UTC · aktualisiert bei jedem Herzschlag
+**11294 Fakten** · Stand 2026-09-14 16:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7173
-- **swarm_artifact:** 1659
+- **swarm_artifact:** 1655
 - **last_swarm_critique:** 952
 - **last_swarm_goal:** 687
 - **anti_pattern:** 377
 - **strategy:** 191
 - **tool:** 156
 - **hand_result:** 83
-- **aktuell_organfehler:** 23
+- **aktuell_organfehler:** 20
 
 ---
+
+### `dream:20260914163515:5:17be92`
+*14.09. 16:35 UTC · Quelle: dream*
+
+A drive timeout (180s) occurred alongside aggressive memory pruning (26 facts, 60 events), suggesting I/O contention during storage operations.
+
+### `dream:20260914163515:4:012597`
+*14.09. 16:35 UTC · Quelle: dream*
+
+The swarm failed to converge (score 6/10) despite evolution and 3 revisions, indicating the critic feedback loop or role distribution needs adjustment for this task type.
+
+### `dream:20260914163515:3:9101ae`
+*14.09. 16:35 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free was the only consistently successful model, completing 4 tasks with 27-36s latency and reasonable token usage.
+
+### `dream:20260914163515:2:83941d`
+*14.09. 16:35 UTC · Quelle: dream*
+
+The system's auto-block mechanism triggered after 3 consecutive NVIDIA model errors, but a fallback at error 2 would have prevented the 1800s lockout.
+
+### `dream:20260914163515:1:86b493`
+*14.09. 16:35 UTC · Quelle: dream*
+
+Google Gemma models on OpenRouter are persistently failing with HTTP 429 rate-limit errors, making them unreliable for autonomous operation.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Ferne Traum-Erinnerungen:2`
 *14.09. 16:06 UTC · Quelle: evolution*
@@ -41594,46 +41619,6 @@ score=5; issues=Traum-Extraktion ist naive Wort-Haeufigkeitsanalyse ohne semanti
 *31.08. 16:17 UTC · Quelle: system*
 
 Neue Fähigkeiten aus Träumen entwickeln
-
-### `dream:20260831161646:5:a6faa6`
-*31.08. 16:16 UTC · Quelle: dream*
-
-Drive goals recognize stale self-assessment and unused market analyses but lack automated triggers to convert insights into actions.
-
-### `dream:20260831161646:4:cd0621`
-*31.08. 16:16 UTC · Quelle: dream*
-
-Token input variance (526-1332 tokens) without budget enforcement risks context overflow on smaller-window models.
-
-### `dream:20260831161646:3:44b729`
-*31.08. 16:16 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors despite persistent model failures, suggesting diagnostic blind spots for external dependency health.
-
-### `dream:20260831161646:2:321064`
-*31.08. 16:16 UTC · Quelle: dream*
-
-Reflex-based cleanup tasks converge reliably but skill proposals accumulate without implementation, creating a proposal-execution gap.
-
-### `dream:20260831161646:1:f38111`
-*31.08. 16:16 UTC · Quelle: dream*
-
-The model router lacks health-aware routing, causing repeated 429 errors on z-ai/glm-5.2:free while fallback latencies vary 3x (31-94s) indicating no load balancing.
-
-### `aktuell_organfehler`
-*31.08. 16:14 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 16:09:23 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `aktuell_organfehler`
-*31.08. 16:05 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 15:57:57-16:00:57 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
-
-### `aktuell_organfehler`
-*31.08. 15:53 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-08-31 15:46:35-15:49:35 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `last_swarm_critique`
 *31.08. 13:34 UTC · Quelle: critic*

@@ -1,8 +1,8 @@
 {
-  "total_nodes_checked": 304,
+  "total_nodes_checked": 314,
   "market_analyses_found": 1,
   "outdated_analyses": [],
   "cutoff_days": 90,
-  "timestamp": "2026-09-13T20:50:11.375682",
+  "timestamp": "2026-09-14T16:36:41.535276",
   "data_source": "/workspace/zoetron/data"
 }

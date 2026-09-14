@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 16:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 16:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 19×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
-- Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A drive timeout (180s) occurred alongside aggressive memory pruning (26 facts, 60 events), suggesting I/O contention during storage operations.
+- The swarm failed to converge (score 6/10) despite evolution and 3 revisions, indicating the critic feedback loop or role distribution needs adjustment
+- dots-studio/dots-3-note-preview:free was the only consistently successful model, completing 4 tasks with 27-36s latency and reasonable token usage.
+- The system's auto-block mechanism triggered after 3 consecutive NVIDIA model errors, but a fallback at error 2 would have prevented the 1800s lockout.
+- Google Gemma models on OpenRouter are persistently failing with HTTP 429 rate-limit errors, making them unreliable for autonomous operation.
 - Simulation identified 5 risks and required 5 revisions, highlighting the importance of pre-application validation.
 - Calibration predicted 4 and the actual outcome was 4, demonstrating accurate self-assessment.
 - Evolutionary refinement raised the solution score from 4/10 to 9/10, confirming the value of iterative criticism.
@@ -51,11 +56,6 @@
 - Pre-execution simulation with revisions successfully mitigated risks before the final update action, proving its value in resource-constrained environ
 - Reflexive update scripts can timeout under stress, but a subsequent lightweight hand action or direct artifact execution successfully completes the up
 - Free-tier models like Google Gemma frequently fail with 429 rate-limit errors under load, requiring automatic fallback to alternative free models like
-- Regular memory pruning of stale facts and events is essential for maintaining system responsiveness.
-- Reflex actions using specialized scripts achieved convergence where the general swarm failed.
-- Swarm processes that evolve but do not converge show that iterative refinement alone does not guarantee task completion.
-- The safety layer blocks destructive operations such as os.remove, preventing the execution of necessary tools.
-- Free-tier models like google/gemma frequently return HTTP 429 errors, making them unreliable for critical tasks.
 
 ---
 
