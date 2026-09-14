@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 12:20:10",
+ "stand": "2026-09-14 12:52:30",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -370,6 +370,12 @@
   },
   {
    "tool": "fähigkeitsvorschläge-in-produktion-überf.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-ideen-in-taten-umsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

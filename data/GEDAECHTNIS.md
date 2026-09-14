@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11328 Fakten** · Stand 2026-09-14 12:21 UTC · aktualisiert bei jedem Herzschlag
+**11313 Fakten** · Stand 2026-09-14 12:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7233
+- **dream:** 7218
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 948
 - **last_swarm_goal:** 683
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914125053:5:0fef2a`
+*14.09. 12:50 UTC · Quelle: dream*
+
+The gap between generated skill proposals and their actual implementation demands an automated deployment and testing pipeline.
+
+### `dream:20260914125053:4:f3a75a`
+*14.09. 12:50 UTC · Quelle: dream*
+
+Reflex actions using specialized scripts consistently achieve convergence, demonstrating the power of tool-based automation.
+
+### `dream:20260914125053:3:881044`
+*14.09. 12:50 UTC · Quelle: dream*
+
+Periodic pruning of facts and events maintains a lean and relevant knowledge base.
+
+### `dream:20260914125053:2:6d8783`
+*14.09. 12:50 UTC · Quelle: dream*
+
+Timeouts on large models like nemotron underscore the need for a circuit breaker that falls back to faster models after a threshold.
+
+### `dream:20260914125053:1:b0b126`
+*14.09. 12:50 UTC · Quelle: dream*
+
+Repeated 429 errors from free models reveal the necessity of an adaptive model router that detects rate limits and switches to alternatives.
 
 ### `tool:modelfehler-verringern`
 *14.09. 12:20 UTC · Quelle: hands*
@@ -41764,106 +41789,6 @@ Latency variance between working models exceeds 5x (10s vs 53s), making latency-
 *31.08. 12:49 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter share rate-limit buckets, causing cascading 429 failures across multiple models simultaneously.
-
-### `dream:20260831124248:5:81542f`
-*31.08. 12:42 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831124248:4:cc343b`
-*31.08. 12:42 UTC · Quelle: dream*
-
-Skill proposals accumulate without automated promotion; a lifecycle manager with drive-signal thresholds and capability-based ownership closes the ideation-execution gap.
-
-### `dream:20260831124248:3:9e8e23`
-*31.08. 12:42 UTC · Quelle: dream*
-
-Latency variance across models (12.7s–79.2s) demands real-time health scoring with warm connection pools to maintain SLA compliance.
-
-### `dream:20260831124248:2:f5d9fd`
-*31.08. 12:42 UTC · Quelle: dream*
-
-Silent degradation manifests as HTTP 200 with empty choices, requiring mandatory pre-flight probes and response validation before routing user requests.
-
-### `dream:20260831124248:1:2153d8`
-*31.08. 12:42 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter exhibit systemic 429 rate-limiting and 502 upstream errors, making single-model reliance infeasible for production traffic.
-
-### `dream:20260831123423:5:fcd8a0`
-*31.08. 12:34 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831123423:4:e54b93`
-*31.08. 12:34 UTC · Quelle: dream*
-
-Skill proposals lack automated validation and promotion: 10+ proposals exist but no harness tests them, no lifecycle manager promotes them, and no checkpointing enables resume after interruption.
-
-### `dream:20260831123423:3:fcd7ec`
-*31.08. 12:34 UTC · Quelle: dream*
-
-Path resolution failures recur because relative paths cross the hand-action boundary unchecked; absolute-path contract with existence verification is a prerequisite for reliable I/O.
-
-### `dream:20260831123423:2:0e4889`
-*31.08. 12:34 UTC · Quelle: dream*
-
-Resilience patterns are repeatedly reinvented instead of consolidated: circuit breakers, health scoring, fallback chains, and pre-flight probes appear across 6+ proposals but remain unimplemented.
-
-### `dream:20260831123423:1:ecf565`
-*31.08. 12:34 UTC · Quelle: dream*
-
-Single-model dependency creates systemic fragility: nemotron works but with high/variable latency (29-79s), while glm-5.2 fails 100% with 429 errors, leaving no healthy fallback.
-
-### `dream:20260831122516:5:77f89c`
-*31.08. 12:25 UTC · Quelle: dream*
-
-Absolute-path contract violations at hand-action boundaries force runtime resolution failures, suggesting path canonicalization must be enforced at the tool-entry gate.
-
-### `dream:20260831122516:4:7adefb`
-*31.08. 12:25 UTC · Quelle: dream*
-
-Reflex-based insight consolidation converges but does not trigger skill learning, leaving the system aware of problems without acquiring new capabilities.
-
-### `dream:20260831122516:3:606307`
-*31.08. 12:25 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while external API degradation (429s, high latency) persists, showing health monitoring excludes provider-level signals.
-
-### `dream:20260831122516:2:79ae1f`
-*31.08. 12:25 UTC · Quelle: dream*
-
-Duplicate skill proposals across cycles (checkpoint logger, skill harness, path resolver, model pool) indicate a proposal-to-implementation gap where ideas are generated but not validated or promoted.
-
-### `dream:20260831122516:1:419576`
-*31.08. 12:25 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free reveal missing per-endpoint circuit breakers and fallback chains, causing cascading failures when a single provider rate-limits.
-
-### `dream:20260831121625:5:7e6fb7`
-*31.08. 12:16 UTC · Quelle: dream*
-
-Self-diagnosis only checks internal organs: external dependency failures (model APIs) are invisible to current health probes.
-
-### `dream:20260831121625:4:1872f1`
-*31.08. 12:16 UTC · Quelle: dream*
-
-Reflex tools succeed when scoped narrowly: 'alte-marktanalysen-verwerten.py' completed in 0.74s with zero errors.
-
-### `dream:20260831121625:3:c252d5`
-*31.08. 12:16 UTC · Quelle: dream*
-
-Latency prediction is uncalibrated: actual latencies (9-34s) vary wildly with no monitoring to trigger router retraining.
-
-### `dream:20260831121625:2:2c618d`
-*31.08. 12:16 UTC · Quelle: dream*
-
-Skill proposals accumulate without execution tracking: 75 proposals exist but no visible pipeline validates, merges, or deploys them.
-
-### `dream:20260831121625:1:c3f05b`
-*31.08. 12:16 UTC · Quelle: dream*
-
-Model routing lacks resilience: 5 consecutive model failures (429/502) across 4 providers blocked progress until a fallback succeeded.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

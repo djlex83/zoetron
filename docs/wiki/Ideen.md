@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 12:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 12:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,14 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
-- Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler beheben *(wieder aufgegriffen: 4×)*
@@ -38,9 +37,15 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Entfernte Erinnerungen verbinden *(wieder aufgegriffen: 3×)*
+- Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The gap between generated skill proposals and their actual implementation demands an automated deployment and testing pipeline.
+- Reflex actions using specialized scripts consistently achieve convergence, demonstrating the power of tool-based automation.
+- Periodic pruning of facts and events maintains a lean and relevant knowledge base.
+- Timeouts on large models like nemotron underscore the need for a circuit breaker that falls back to faster models after a threshold.
+- Repeated 429 errors from free models reveal the necessity of an adaptive model router that detects rate limits and switches to alternatives.
 - Pruning old facts and events (10 facts, 17 events) kept the knowledge base concise and likely improved retrieval efficiency.
 - The automatic lockout of the nvidia model after three consecutive failures prevented further wasted attempts and is a valuable safeguard.
 - The Google Gemma models returned HTTP 429 Too Many Requests, revealing that the free tier has strict rate limits that must be respected.
@@ -51,11 +56,6 @@
 - A primary‑secondary routing layer that switches to an alternative model on 429 or timeout improves reliability.
 - Free‑tier model latency varies between 20 and 91 seconds, causing read timeouts that must be handled.
 - Repeated HTTP 429 errors from free‑tier Gemma models show that rate limiting is a dominant failure cause.
-- The transition from model failures to successful completions using alternative models underscores the value of a diverse and redundant model pool.
-- Stale swarm information and outdated collective goals directly degrade the quality of distributed decision-making and coordination.
-- Aggressive pruning of facts and events is necessary for memory hygiene but risks losing valuable cross-cutting patterns if not carefully scoped.
-- Successful execution of self-reflexes shows that meta-cognitive loops can effectively translate proposed skills into stabilized system behaviors.
-- Frequent 429 rate-limit errors on specific free models highlight the critical need for an automated failover mechanism to alternative endpoints.
 
 ---
 
