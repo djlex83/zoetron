@@ -48942,3 +48942,25 @@
 {"ts": 1788778383.4001207, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.73, "gelesen": 4}}
 {"ts": 1788778383.402207, "kind": "reflex_used", "payload": {"goal": "Schwarm-Infos auf den neuesten Stand bringen", "tool": "marktwissen-auf-den-neuesten-stand-bring.py", "ok": true}}
 {"ts": 1788778383.760463, "kind": "act_done", "payload": {"goal_title": "Schwarm-Infos auf den neuesten Stand bringen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788174134.6345086, "key": "dream:20260831110214:1:096c3f", "value": "Rate-limiting (429) and upstream overload (502) across multiple free-tier providers indicate that single-provider reliance is a systemic reliability bottleneck.", "source": "dream"}
+{"ts": 1788174134.634619, "key": "dream:20260831110214:2:9ce196", "value": "Skill proposals accumulate but remain unimplemented because no automated pipeline validates, tests, and merges them into the agent's toolset.", "source": "dream"}
+{"ts": 1788174134.6346896, "key": "dream:20260831110214:3:eaf994", "value": "Reflex actions succeed when the tool path is pre-validated, but ad-hoc model calls fail silently without a pre-flight environment check.", "source": "dream"}
+{"ts": 1788174134.6347642, "key": "dream:20260831110214:4:213f22", "value": "Self-diagnosis reports zero organ errors while the model layer repeatedly fails, revealing a monitoring blind spot for external API dependencies.", "source": "dream"}
+{"ts": 1788174134.6348386, "key": "dream:20260831110214:5:221609", "value": "Checkpoint logging is proposed but absent; without durable cycle state, every restart loses swarm context and forces full re-convergence.", "source": "dream"}
+{"ts": 1788778883.708181, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788778952.1396546, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788778953.9806123, "kind": "prune_run", "payload": {"facts_pruned": 1, "events_pruned": 30}}
+{"ts": 1788779035.6497257, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 78.0, "tokens_ein": 1564, "tokens_aus": 1378}}
+{"ts": 1788779035.650361, "kind": "skill_proposal", "payload": {"proposal": "Implement mandatory 1-token pre-flight probe with 2s timeout for models unused >60s, caching per model+task-type."}}
+{"ts": 1788779035.650419, "kind": "skill_proposal", "payload": {"proposal": "Deploy shared model health registry with exponential backoff TTL (502: 30s→5m, 429: 60s→10m) consulted by all selectors."}}
+{"ts": 1788779035.6504767, "kind": "skill_proposal", "payload": {"proposal": "Create reliable fallback chain config (primary → next best) activating automatically when health score < 0.7."}}
+{"ts": 1788779035.650532, "kind": "skill_proposal", "payload": {"proposal": "Build task-type calibration layer learning per-model latency/error multipliers from historical outcomes."}}
+{"ts": 1788779035.6505861, "kind": "skill_proposal", "payload": {"proposal": "Define swarm knowledge freshness SLA (max age per domain) with automatic re-fetch on staleness during convergence."}}
+{"ts": 1788779035.6506462, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788779071.9844067, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 34.4, "tokens_ein": 497, "tokens_aus": 662}}
+{"ts": 1788779071.984577, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht noch fast so viele Fehler wie Erfolge. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788779071.9846544, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen neu bewerten", "why": "Die letzten Schwarm-Ergebnisse sind veraltet. Frische Bewertungen bringen neue Ideen und Korrekturen.", "signal": "stale"}}
+{"ts": 1788779071.9847171, "kind": "drive_goal", "payload": {"title": "Vorschläge in echte Fähigkeiten umsetzen", "why": "Es gibt viele Fähigkeits-Vorschläge, aber unklar ob sie genutzt werden. Umsetzung erweitert das Können.", "signal": "combination"}}
+{"ts": 1788779074.5427327, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 33}}
+{"ts": 1788779074.5453513, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Skills wirklich nutzen", "tool": "vorgeschlagene-skills-nutzbar-machen.py", "ok": true}}
+{"ts": 1788779074.9489534, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Skills wirklich nutzen", "score": null, "converged": true, "mode": "reflex"}}

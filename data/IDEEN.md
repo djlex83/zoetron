@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 10:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful artifact generation (91 lines of Python) was directly tied to tracking functional metrics like `hat_code` and `abgerufen` during the evolut
+- The working model exhibited high latency variance (20.5s to 91.1s), requiring robust async task scheduling to prevent loop blocking.
+- Calibration overestimated execution capacity (predicted 6 vs actual 4), highlighting the need to align theoretical model scores with runtime constrain
+- Evolutionary refinement of Python scripts successfully elevated capability execution scores from 4/10 to 9/10 by systematically testing 9 code variant
+- Consistent 429 rate-limit errors on Google Gemma free models necessitate a primary fallback to `dots-studio/dots-3-note-preview:free` for stable auton
 - High stress (1.0) with 'conserve' state suggests the system should throttle non-essential work during resource scarcity.
 - The hand_action succeeded with minimal latency, indicating that direct file operations are a reliable low-level primitive.
 - When budget is constrained (max_tasks=3, max_iterations=1), focus on single-pass execution rather than iterative refinement.
@@ -51,11 +56,6 @@
 - High metabolism stress triggers conservation mode, limiting task count to the budget.
 - Tool failures often result from unresolved data paths; pre-validate inputs to avoid silent no-ops.
 - Free-tier models frequently return 429 errors, requiring a router with exponential backoff and fallbacks.
-- Reflex actions can complete goals without invoking the model, providing a resilient fallback path when models are unavailable.
-- Pruning operations remove facts and events; without a feedback loop, knowledge loss can accumulate unnoticed.
-- After lockout, the system successfully used a different free model (dots‑studio/dots‑3‑note‑preview) with acceptable latency, validating the need for 
-- Repeated 429 Too Many Requests responses from free‑tier models indicate that rate‑limit handling must include exponential backoff and fallback.
-- Three consecutive model errors trigger an automatic lockout, showing that a circuit‑breaker is essential to prevent cascading failures.
 
 ---
 

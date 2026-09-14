@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11336 Fakten** · Stand 2026-09-14 11:00 UTC · aktualisiert bei jedem Herzschlag
+**11336 Fakten** · Stand 2026-09-14 11:10 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7253
 - **swarm_artifact:** 1639
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914110730:5:21321d`
+*14.09. 11:07 UTC · Quelle: dream*
+
+Successful artifact generation (91 lines of Python) was directly tied to tracking functional metrics like `hat_code` and `abgerufen` during the evolutionary loop.
+
+### `dream:20260914110730:4:8973bb`
+*14.09. 11:07 UTC · Quelle: dream*
+
+The working model exhibited high latency variance (20.5s to 91.1s), requiring robust async task scheduling to prevent loop blocking.
+
+### `dream:20260914110730:3:314afc`
+*14.09. 11:07 UTC · Quelle: dream*
+
+Calibration overestimated execution capacity (predicted 6 vs actual 4), highlighting the need to align theoretical model scores with runtime constraints.
+
+### `dream:20260914110730:2:a02c9f`
+*14.09. 11:07 UTC · Quelle: dream*
+
+Evolutionary refinement of Python scripts successfully elevated capability execution scores from 4/10 to 9/10 by systematically testing 9 code variants.
+
+### `dream:20260914110730:1:d937c9`
+*14.09. 11:07 UTC · Quelle: dream*
+
+Consistent 429 rate-limit errors on Google Gemma free models necessitate a primary fallback to `dots-studio/dots-3-note-preview:free` for stable autonomous operation.
 
 ### `dream:20260914105729:5:e75eee`
 *14.09. 10:57 UTC · Quelle: dream*
@@ -41912,31 +41937,6 @@ Skill proposals accumulate (70+) without a lightweight validation harness, so mo
 *31.08. 11:08 UTC · Quelle: dream*
 
 Rate limits (429) on free-tier models cause cascading failures unless exponential backoff, per-model cooldown, and multi-model warm pools are enforced.
-
-### `dream:20260831110214:5:221609`
-*31.08. 11:02 UTC · Quelle: dream*
-
-Checkpoint logging is proposed but absent; without durable cycle state, every restart loses swarm context and forces full re-convergence.
-
-### `dream:20260831110214:4:213f22`
-*31.08. 11:02 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while the model layer repeatedly fails, revealing a monitoring blind spot for external API dependencies.
-
-### `dream:20260831110214:3:eaf994`
-*31.08. 11:02 UTC · Quelle: dream*
-
-Reflex actions succeed when the tool path is pre-validated, but ad-hoc model calls fail silently without a pre-flight environment check.
-
-### `dream:20260831110214:2:9ce196`
-*31.08. 11:02 UTC · Quelle: dream*
-
-Skill proposals accumulate but remain unimplemented because no automated pipeline validates, tests, and merges them into the agent's toolset.
-
-### `dream:20260831110214:1:096c3f`
-*31.08. 11:02 UTC · Quelle: dream*
-
-Rate-limiting (429) and upstream overload (502) across multiple free-tier providers indicate that single-provider reliance is a systemic reliability bottleneck.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*
