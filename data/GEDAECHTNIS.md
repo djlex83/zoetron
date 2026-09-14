@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11346 Fakten** · Stand 2026-09-14 04:53 UTC · aktualisiert bei jedem Herzschlag
+**11336 Fakten** · Stand 2026-09-14 05:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7273
+- **dream:** 7263
 - **swarm_artifact:** 1635
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 29
 
 ---
+
+### `dream:20260914050459:5:a706b2`
+*14.09. 05:04 UTC · Quelle: dream*
+
+High latency variance (15-80s) across providers makes timeout tuning unreliable without per-provider baselines.
+
+### `dream:20260914050459:4:13e6a8`
+*14.09. 05:04 UTC · Quelle: dream*
+
+Script execution fails when paths are not resolved against ZOETRON_DATA, breaking portability across environments.
+
+### `dream:20260914050459:3:9f69f0`
+*14.09. 05:04 UTC · Quelle: dream*
+
+Goal convergence lacks stability verification, risking premature completion acceptance before true steady state.
+
+### `dream:20260914050459:2:42c26b`
+*14.09. 05:04 UTC · Quelle: dream*
+
+Swarm goals become stale without automated freshness detection, causing misaligned actions until manual refresh occurs.
+
+### `dream:20260914050459:1:f04046`
+*14.09. 05:04 UTC · Quelle: dream*
+
+Multiple model providers fail intermittently with 5xx/429 errors, requiring automatic fallback and circuit-breaking to maintain system availability.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: System-Fehler analysiere:2`
 *14.09. 04:50 UTC · Quelle: evolution*
@@ -41972,81 +41997,6 @@ Latency exceeding 10s (observed on inclusionai/ling-3.0-flash-fin) precedes casc
 *31.08. 05:06 UTC · Quelle: dream*
 
 Account-level 429 exhaustion simultaneously kills all OpenRouter models, proving quota is shared across the entire account not per-model.
-
-### `dream:20260831050013:5:6cbe35`
-*31.08. 05:00 UTC · Quelle: dream*
-
-No automated model health scoring or quota-aware routing exists, leading to repeated failed attempts.
-
-### `dream:20260831050013:4:3321a3`
-*31.08. 05:00 UTC · Quelle: dream*
-
-Reflex-driven completion succeeds for well-scoped tasks like market analysis but lacks generalization.
-
-### `dream:20260831050013:3:0ad2fd`
-*31.08. 05:00 UTC · Quelle: dream*
-
-Multiple redundant skill proposals (ErrorClassifier, LatencySLA, QuotaPool) indicate missing proposal tracking and deduplication.
-
-### `dream:20260831050013:2:598c95`
-*31.08. 05:00 UTC · Quelle: dream*
-
-Fallback model poolside/laguna-s-2.1:free exhibits high latency (7.5-22.3s) violating interactive SLAs.
-
-### `dream:20260831050013:1:23ca97`
-*31.08. 05:00 UTC · Quelle: dream*
-
-Free-tier models simultaneously exhaust shared OpenRouter quota causing cascading 429 failures across all free models.
-
-### `dream:20260831045436:5:dabcdc`
-*31.08. 04:54 UTC · Quelle: dream*
-
-Previous proposals for circuit breakers and latency SLAs remain unimplemented but are critical for mitigating the ongoing 429 failures.
-
-### `dream:20260831045436:4:3c3d5b`
-*31.08. 04:54 UTC · Quelle: dream*
-
-System reflexes and self-diagnoses are functioning correctly, isolating the primary failure cause to external API rate limiting.
-
-### `dream:20260831045436:3:0e7bee`
-*31.08. 04:54 UTC · Quelle: dream*
-
-The system's drive to understand model failures is directly supported by implementing error classification and smart routing.
-
-### `dream:20260831045436:2:25887b`
-*31.08. 04:54 UTC · Quelle: dream*
-
-Alternating between models like `inclusionai/ling-3.0-flash-fin:free` and `poolside/laguna-s-2.1:free` successfully bypasses temporary rate limits.
-
-### `dream:20260831045436:1:ecc37b`
-*31.08. 04:54 UTC · Quelle: dream*
-
-Free models on OpenRouter experience frequent 429 Too Many Requests errors, necessitating a multi-model fallback strategy.
-
-### `dream:20260831044926:5:ea1ece`
-*31.08. 04:49 UTC · Quelle: dream*
-
-Previously proposed skills (ModelRegistry, ErrorClassifier, FallbackChain) directly address observed failure patterns but remain unimplemented.
-
-### `dream:20260831044926:4:2ceaff`
-*31.08. 04:49 UTC · Quelle: dream*
-
-Pruning removed zero items despite accumulated failures, suggesting pruning criteria are misaligned with actual garbage.
-
-### `dream:20260831044926:3:eb62c9`
-*31.08. 04:49 UTC · Quelle: dream*
-
-Dream consolidation exceeded 180s timeout, indicating experience volume exceeds processing capacity during high-failure periods.
-
-### `dream:20260831044926:2:3a3e31`
-*31.08. 04:49 UTC · Quelle: dream*
-
-Circuit breaker correctly quarantined nvidia/nemotron after 3 consecutive 404s, but 1800s quarantine may be excessive for transient errors.
-
-### `dream:20260831044926:1:74138b`
-*31.08. 04:49 UTC · Quelle: dream*
-
-Rate limiting from OpenRouter affects multiple models simultaneously, requiring provider-level fallback not just model-level.
 
 ### `last_swarm_critique`
 *31.08. 03:52 UTC · Quelle: critic*
