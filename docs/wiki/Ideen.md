@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 07:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 07:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Ferne Träume kombinieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
-- Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
+- Modellfehler beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Accumulated skill proposals remain unused unless a systematic pipeline converts them into enabled capabilities.
+- Reflex tools successfully automate recurring goals, indicating that a generic skill executor can improve observability and reuse.
+- Swarm knowledge decays quickly, requiring scheduled refresh tasks to maintain accuracy and relevance.
+- Repeated identical prompts cause unnecessary latency and rate‑limit hits; caching by prompt hash with TTL eliminates redundancy.
+- Model endpoints return 429/502 errors under load, so a router with health checks and exponential backoff is essential.
 - Automated A/B simulation of proposals against fitness functions accelerates convergence toward reliable skills.
 - Linking symbols, goals, and failure signatures across dream cycles surfaces latent patterns missed by isolated consolidation.
 - Capturing reflex outcomes with latency and success rates enables a reliability matrix for smarter routing.
@@ -51,11 +56,6 @@
 - Stale collective knowledge leads to incorrect swarm decisions; push-based sync with TTL and version vectors ensures freshness.
 - Per-model health tracking (latency, error rate, quota) enables dynamic fallback and circuit breaking within a latency budget.
 - Dominant model failures are HTTP 429 (quota) and 502 (upstream overload), requiring intelligent request routing and backoff.
-- Hand actions and reflexes complete successfully only when preconditions (file paths, env vars, swarm freshness) are implicitly satisfied; a pre-execut
-- Pruning 21 events and 1 fact per cycle maintains working memory, yet without a recall audit the system risks discarding information that could prevent
-- Drive goals are triggered by internal signals (stale knowledge, failure logs, dream artifacts), proving that self-motivated learning cycles are effect
-- The system generates resilience proposals (circuit breakers, fallbacks, monitors) in every dream cycle, indicating that external model dependency is t
-- Repeated model failures (36 errors, upstream 200 with no choices) reveal that HTTP status codes are insufficient health signals; structured error bodi
 
 ---
 

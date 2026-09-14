@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11365 Fakten** · Stand 2026-09-14 07:38 UTC · aktualisiert bei jedem Herzschlag
+**11377 Fakten** · Stand 2026-09-14 08:00 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7308
-- **swarm_artifact:** 1629
-- **last_swarm_critique:** 944
-- **last_swarm_goal:** 679
-- **anti_pattern:** 363
-- **strategy:** 184
-- **tool:** 152
+- **swarm_artifact:** 1635
+- **last_swarm_critique:** 945
+- **last_swarm_goal:** 680
+- **anti_pattern:** 365
+- **strategy:** 185
+- **tool:** 153
 - **hand_result:** 83
 - **aktuell_organfehler:** 23
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-wirklich-ausf`
+*14.09. 07:58 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich ausführen'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-ausf.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:1`
+*14.09. 07:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Workflow orchestration with state machine - Model the set of skills as a directed acyclic graph where each node is a skill and edges represent dependencies. Implement a state machine that traverses the graph, starting from ro
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:0`
+*14.09. 07:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Reflection-based dynamic dispatch - Create a central ExecutionEngine that loads each skill as a plugin (e.g., a Python module or Java class). The engine maintains a list of pending skill identifiers, resolves the correspondin
+
+### `last_swarm_critique`
+*14.09. 07:55 UTC · Quelle: critic*
+
+score=3; issues=Does not execute skills, only finds them; Goal is execution, but script only identifies pending skills; Missing execution functionality
+
+### `last_swarm_goal`
+*14.09. 07:48 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich ausführen
+
+### `dream:20260914074657:5:b4be1a`
+*14.09. 07:46 UTC · Quelle: dream*
+
+Accumulated skill proposals remain unused unless a systematic pipeline converts them into enabled capabilities.
+
+### `dream:20260914074657:4:7ab475`
+*14.09. 07:46 UTC · Quelle: dream*
+
+Reflex tools successfully automate recurring goals, indicating that a generic skill executor can improve observability and reuse.
+
+### `dream:20260914074657:3:0230e4`
+*14.09. 07:46 UTC · Quelle: dream*
+
+Swarm knowledge decays quickly, requiring scheduled refresh tasks to maintain accuracy and relevance.
+
+### `dream:20260914074657:2:361242`
+*14.09. 07:46 UTC · Quelle: dream*
+
+Repeated identical prompts cause unnecessary latency and rate‑limit hits; caching by prompt hash with TTL eliminates redundancy.
+
+### `dream:20260914074657:1:72ef57`
+*14.09. 07:46 UTC · Quelle: dream*
+
+Model endpoints return 429/502 errors under load, so a router with health checks and exponential backoff is essential.
 
 ### `dream:20260914073611:5:f7a336`
 *14.09. 07:36 UTC · Quelle: dream*
@@ -42142,31 +42192,6 @@ The poolside/laguna-s-2.1:free model is the only reliable endpoint, handling all
 *31.08. 07:46 UTC · Quelle: dream*
 
 All non-poolside models consistently fail with HTTP 429 errors, indicating a systemic rate-limiting issue rather than isolated model failures.
-
-### `dream:20260831074041:5:56b25e`
-*31.08. 07:40 UTC · Quelle: dream*
-
-Skill conversion reflex (fähigkeitsvorschläge-in-echte-skills-ums.py) fails without error details, breaking the plan-to-act pipeline.
-
-### `dream:20260831074041:4:f7a7e3`
-*31.08. 07:40 UTC · Quelle: dream*
-
-Metabolism conserve mode (stress=1.0) caps iterations to 1, preventing retry loops that could recover from transient failures.
-
-### `dream:20260831074041:3:75d6c2`
-*31.08. 07:40 UTC · Quelle: dream*
-
-A single working model (inclusionai/ling-3.0-flash-fin:free) exhibits high cold-start latency (25s) then stabilizes (5.6s), suggesting connection pooling or warm-up effects.
-
-### `dream:20260831074041:2:9c9abc`
-*31.08. 07:40 UTC · Quelle: dream*
-
-Free tier models cascade into 429 rate limits within seconds, making sequential fallback unreliable under load.
-
-### `dream:20260831074041:1:05da10`
-*31.08. 07:40 UTC · Quelle: dream*
-
-Relative path resolution fails silently when ZOETRON_DATA environment variable exists but sys.argv[1] points elsewhere, causing zero-byte reads.
 
 ### `last_swarm_critique`
 *31.08. 06:34 UTC · Quelle: critic*
