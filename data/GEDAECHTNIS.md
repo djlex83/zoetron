@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11326 Fakten** · Stand 2026-09-14 11:31 UTC · aktualisiert bei jedem Herzschlag
+**11326 Fakten** · Stand 2026-09-14 11:41 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7243
 - **swarm_artifact:** 1639
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914113906:5:85d3ad`
+*14.09. 11:39 UTC · Quelle: dream*
+
+Combining dream analysis with tool execution yields convergent results, suggesting tight coupling improves goal achievement.
+
+### `dream:20260914113906:4:cef66d`
+*14.09. 11:39 UTC · Quelle: dream*
+
+Pruning events show that frequent fact/event cleanup maintains memory hygiene but must be balanced with retention of recent model outcomes.
+
+### `dream:20260914113906:3:aee4fc`
+*14.09. 11:39 UTC · Quelle: dream*
+
+The system's drive goals consistently flag model errors and stale swarm data as primary performance bottlenecks.
+
+### `dream:20260914113906:2:60a01a`
+*14.09. 11:39 UTC · Quelle: dream*
+
+Successful calls to dots‑studio/dots‑3‑note‑preview show that latency‑tolerant models can absorb load when others fail.
+
+### `dream:20260914113906:1:8bdf76`
+*14.09. 11:39 UTC · Quelle: dream*
+
+Repeated 429 errors from google/gemma free models indicate rate‑limit saturation requiring fallback routing.
 
 ### `dream:20260914112929:5:701c5e`
 *14.09. 11:29 UTC · Quelle: dream*
@@ -41862,31 +41887,6 @@ Skill proposals improve in specificity across iterations but remain unverified w
 *31.08. 11:39 UTC · Quelle: dream*
 
 External API rate-limiting (429) on z-ai/glm-5.2:free is a persistent failure mode, not transient, requiring architectural resilience beyond simple retries.
-
-### `dream:20260831113348:5:ae356d`
-*31.08. 11:33 UTC · Quelle: dream*
-
-Multiple skill proposals exist but drive goal 'Vorgeschlagene Fähigkeiten in echte Handlungen umsetzen' reveals systematic proposal-to-implementation gap.
-
-### `dream:20260831113348:4:fdd396`
-*31.08. 11:33 UTC · Quelle: dream*
-
-Zero pruning events across cycles suggests pruning thresholds are misconfigured or memory pressure is absent.
-
-### `dream:20260831113348:3:c29559`
-*31.08. 11:33 UTC · Quelle: dream*
-
-Reflex mode successfully completed market analysis using local Python script, validating local-first execution over model calls.
-
-### `dream:20260831113348:2:a478d4`
-*31.08. 11:33 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra shows high latency variance (21-62s) requiring latency-aware routing and timeout budgets.
-
-### `dream:20260831113348:1:ee23b0`
-*31.08. 11:33 UTC · Quelle: dream*
-
-Recurring 429 errors on z-ai/glm-5.2:free indicate missing exponential backoff and circuit-breaker logic for rate-limited providers.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

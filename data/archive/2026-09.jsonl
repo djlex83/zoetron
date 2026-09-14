@@ -49018,3 +49018,28 @@
 {"ts": 1788780381.3215368, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.73, "gelesen": 29}}
 {"ts": 1788780381.3241796, "kind": "reflex_used", "payload": {"goal": "Neue Fähigkeiten prüfen und nutzen", "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py", "ok": true}}
 {"ts": 1788780381.7487211, "kind": "act_done", "payload": {"goal_title": "Neue Fähigkeiten prüfen und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788176028.9665918, "key": "dream:20260831113348:1:ee23b0", "value": "Recurring 429 errors on z-ai/glm-5.2:free indicate missing exponential backoff and circuit-breaker logic for rate-limited providers.", "source": "dream"}
+{"ts": 1788176028.9667976, "key": "dream:20260831113348:2:a478d4", "value": "Fallback model nvidia/nemotron-3-ultra shows high latency variance (21-62s) requiring latency-aware routing and timeout budgets.", "source": "dream"}
+{"ts": 1788176028.966891, "key": "dream:20260831113348:3:c29559", "value": "Reflex mode successfully completed market analysis using local Python script, validating local-first execution over model calls.", "source": "dream"}
+{"ts": 1788176028.966989, "key": "dream:20260831113348:4:fdd396", "value": "Zero pruning events across cycles suggests pruning thresholds are misconfigured or memory pressure is absent.", "source": "dream"}
+{"ts": 1788176028.9670866, "key": "dream:20260831113348:5:ae356d", "value": "Multiple skill proposals exist but drive goal 'Vorgeschlagene Fähigkeiten in echte Handlungen umsetzen' reveals systematic proposal-to-implementation gap.", "source": "dream"}
+{"ts": 1788780883.4170504, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788780952.1381955, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788780953.997848, "kind": "prune_run", "payload": {"facts_pruned": 2, "events_pruned": 38}}
+{"ts": 1788781016.3126414, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 58.6, "tokens_ein": 1545, "tokens_aus": 848}}
+{"ts": 1788781016.313603, "kind": "skill_proposal", "payload": {"proposal": "Implement ModelRouter with per-provider 429/502 counters, exponential backoff, and automatic exclusion after 3 failures."}}
+{"ts": 1788781016.3137012, "kind": "skill_proposal", "payload": {"proposal": "Add PreFlightHealthCheck reflex that pings /models endpoint before assignment, skipping providers with >10% error rate in last 10min."}}
+{"ts": 1788781016.3138018, "kind": "skill_proposal", "payload": {"proposal": "Deploy SkillDeploymentVerifier that runs smoke tests + monitoring hook validation post-deployment, blocking promotion on failure."}}
+{"ts": 1788781016.313921, "kind": "skill_proposal", "payload": {"proposal": "Build CrossCyclePatternDetector analyzing failure events across consolidations to proactively adjust routing weights."}}
+{"ts": 1788781016.3140357, "kind": "skill_proposal", "payload": {"proposal": "Enforce SwarmKnowledgeFreshnessGate as mandatory pre-condition: reject swarm goal if last_swarm_goal recall >2 cycles old."}}
+{"ts": 1788781016.3141196, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788781032.1091654, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788781032.109163, "schalter_geoeffnet": false}}
+{"ts": 1788781032.220293, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788781032.2202897, "schalter_geoeffnet": false}}
+{"ts": 1788781032.3625858, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788781032.3625836, "schalter_geoeffnet": false}}
+{"ts": 1788781035.7124336, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 3.3, "tokens_ein": 492, "tokens_aus": 1033}}
+{"ts": 1788781035.7125928, "kind": "drive_goal", "payload": {"title": "Modelle fehlerfreier machen", "why": "Wir hatten viele Modellfehler, was unser Denken unsicher macht. Zuverlässigere Modelle helfen uns, bessere Entscheidungen zu treffen.", "signal": "failure"}}
+{"ts": 1788781035.712688, "kind": "drive_goal", "payload": {"title": "Schwarmwissen auf den neuesten Stand bringen", "why": "Die Schwarmdaten sind alt und veraltet. Frisches Wissen hilft uns, besser zusammenzuarbeiten und neue Lösungen zu finden.", "signal": "stale"}}
+{"ts": 1788781035.7127943, "kind": "drive_goal", "payload": {"title": "Ferne Erinnerungen miteinander verbinden", "why": "Alte Träume sind miteinander verknüpft und könnten neue Muster zeigen. Diese Verbindung könnte uns unerwartete Einsichten bringen.", "signal": "combination"}}
+{"ts": 1788781038.3522844, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.29, "gelesen": 380}}
+{"ts": 1788781038.3549678, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Skills wirklich umsetzen", "tool": "vorgeschlagene-skills-umsetzen.py", "ok": true}}
+{"ts": 1788781038.8632638, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Skills wirklich umsetzen", "score": null, "converged": true, "mode": "reflex"}}

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 11:30:00",
+ "stand": "2026-09-14 11:39:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -78,12 +78,6 @@
    "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -177,7 +171,19 @@
    "quote": 0.5
   },
   {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -250,12 +256,6 @@
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Combining dream analysis with tool execution yields convergent results, suggesting tight coupling improves goal achievement.
+- Pruning events show that frequent fact/event cleanup maintains memory hygiene but must be balanced with retention of recent model outcomes.
+- The system's drive goals consistently flag model errors and stale swarm data as primary performance bottlenecks.
+- Successful calls to dots‑studio/dots‑3‑note‑preview show that latency‑tolerant models can absorb load when others fail.
+- Repeated 429 errors from google/gemma free models indicate rate‑limit saturation requiring fallback routing.
 - Systematic error analysis tools are successful in identifying patterns but require tighter integration with the drive system.
 - Diversifying model providers is critical for maintaining operational continuity when primary high-capacity models fail.
 - Stale swarm goals act as cognitive noise and hinder the system's ability to prioritize new, relevant tasks.
@@ -51,11 +56,6 @@
 - The swarm goal 'Fähigkeiten-Ideen in Taten umsetzen' evolved but did not converge, suggesting the scoring or iteration count needs adjustment.
 - dots-studio/dots-3-note-preview:free has consistently succeeded with latency under 25 s, making it the most reliable model observed.
 - The repeated 429 errors on google/gemma models and timeouts on nvidia/nemotron indicate that free‑tier models hit quota and stability limits, requirin
-- Successful artifact generation (91 lines of Python) was directly tied to tracking functional metrics like `hat_code` and `abgerufen` during the evolut
-- The working model exhibited high latency variance (20.5s to 91.1s), requiring robust async task scheduling to prevent loop blocking.
-- Calibration overestimated execution capacity (predicted 6 vs actual 4), highlighting the need to align theoretical model scores with runtime constrain
-- Evolutionary refinement of Python scripts successfully elevated capability execution scores from 4/10 to 9/10 by systematically testing 9 code variant
-- Consistent 429 rate-limit errors on Google Gemma free models necessitate a primary fallback to `dots-studio/dots-3-note-preview:free` for stable auton
 
 ---
 
