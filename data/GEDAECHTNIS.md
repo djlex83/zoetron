@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11346 Fakten** · Stand 2026-09-14 10:29 UTC · aktualisiert bei jedem Herzschlag
+**11341 Fakten** · Stand 2026-09-14 10:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7263
+- **dream:** 7258
 - **swarm_artifact:** 1639
 - **last_swarm_critique:** 947
 - **last_swarm_goal:** 682
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914103748:5:80ed67`
+*14.09. 10:37 UTC · Quelle: dream*
+
+Reflex actions can complete goals without invoking the model, providing a resilient fallback path when models are unavailable.
+
+### `dream:20260914103748:4:564575`
+*14.09. 10:37 UTC · Quelle: dream*
+
+Pruning operations remove facts and events; without a feedback loop, knowledge loss can accumulate unnoticed.
+
+### `dream:20260914103748:3:8d4dbe`
+*14.09. 10:37 UTC · Quelle: dream*
+
+After lockout, the system successfully used a different free model (dots‑studio/dots‑3‑note‑preview) with acceptable latency, validating the need for a dynamic model router.
+
+### `dream:20260914103748:2:609fcf`
+*14.09. 10:37 UTC · Quelle: dream*
+
+Repeated 429 Too Many Requests responses from free‑tier models indicate that rate‑limit handling must include exponential backoff and fallback.
+
+### `dream:20260914103748:1:0a5944`
+*14.09. 10:37 UTC · Quelle: dream*
+
+Three consecutive model errors trigger an automatic lockout, showing that a circuit‑breaker is essential to prevent cascading failures.
 
 ### `dream:20260914102633:5:21516a`
 *14.09. 10:26 UTC · Quelle: dream*
@@ -41937,56 +41962,6 @@ Multiple independent proposals converge on circuit-breaker patterns, latency-awa
 *31.08. 10:39 UTC · Quelle: dream*
 
 Rate-limited model endpoints (z-ai/glm-5.2:free) consistently fail under load while fallback models (nvidia/nemotron-3-ultra) succeed, proving single-model dependence is a systemic reliability risk.
-
-### `dream:20260831103328:5:3ab7bc`
-*31.08. 10:33 UTC · Quelle: dream*
-
-Model latency variance (7-9s for successful calls) combined with frequent 429s means throughput depends on concurrent model pooling with per-model cooldown state, not sequential fallback.
-
-### `dream:20260831103328:4:0628bf`
-*31.08. 10:33 UTC · Quelle: dream*
-
-Relative path failures in script interfaces recur because ZOETRON_DATA is not enforced as the single source of truth for filesystem roots.
-
-### `dream:20260831103328:3:29a86b`
-*31.08. 10:33 UTC · Quelle: dream*
-
-The reflex-driven model upgrade (cortex-upgrade-reflex-neue-modelle-autom.py) converged successfully, proving that automated model substitution can self-heal routing failures when triggered by failure signals.
-
-### `dream:20260831103328:2:5953ea`
-*31.08. 10:33 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831103328:1:416a1d`
-*31.08. 10:33 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making aggressive retry logic without backoff a systemic reliability risk.
-
-### `dream:20260831102625:5:292618`
-*31.08. 10:26 UTC · Quelle: dream*
-
-Five skill proposals were generated in one cycle but none were converted to executable skills, confirming a structural bottleneck in proposal-to-implementation pipeline.
-
-### `dream:20260831102625:4:16fdfa`
-*31.08. 10:26 UTC · Quelle: dream*
-
-Simulation-applied delta logging was proposed but never implemented, leaving critique-execution gaps invisible and unmeasured in real time.
-
-### `dream:20260831102625:3:709e6d`
-*31.08. 10:26 UTC · Quelle: dream*
-
-Local-first execution proposals were logged but never validated against actual tool-call patterns, revealing a gap between policy intent and runtime enforcement.
-
-### `dream:20260831102625:2:97b122`
-*31.08. 10:26 UTC · Quelle: dream*
-
-The 'Marktanalyse' goal was marked stale and converged via reflex without a score, suggesting completion criteria are too loosely defined or unenforced.
-
-### `dream:20260831102625:1:ce2c6d`
-*31.08. 10:26 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free and 502 on nvidia/nemotron-3-ultra-550b-a55b:free indicate systemic provider-side rate limiting and overload, not transient failures.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

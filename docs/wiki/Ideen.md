@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 10:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 10:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 17×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 18×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -32,15 +32,20 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler beheben *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
-- Entfernte Erinnerungen verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions can complete goals without invoking the model, providing a resilient fallback path when models are unavailable.
+- Pruning operations remove facts and events; without a feedback loop, knowledge loss can accumulate unnoticed.
+- After lockout, the system successfully used a different free model (dots‑studio/dots‑3‑note‑preview) with acceptable latency, validating the need for 
+- Repeated 429 Too Many Requests responses from free‑tier models indicate that rate‑limit handling must include exponential backoff and fallback.
+- Three consecutive model errors trigger an automatic lockout, showing that a circuit‑breaker is essential to prevent cascading failures.
 - Reflex actions successfully automate swarm updates without manual intervention.
 - Regular pruning of facts and events improves system responsiveness.
 - Only one model succeeded, exposing a single point of failure in routing.
@@ -51,11 +56,6 @@
 - Reflex-driven swarm goal updates converge in a single iteration, showing that automated reflexes can resolve staleness efficiently.
 - The dots-studio/dots-3-note-preview:free model consistently succeeds with ~30s latency, making it the preferred primary model.
 - Repeated 429 errors from gemma models indicate rate limiting, requiring a router with exponential backoff and fallback.
-- Reflex actions that bind tools to goals succeed when the tool exists and the goal is well‑defined, but they are not automatically retried on failure.
-- Pruning removed 12 events but zero facts, suggesting event cleanup is safe but fact retention requires verification.
-- The model dots-studio/dots-3-note-preview:free consistently shows lower latency and higher token throughput, making it the preferred primary.
-- Rate‑limit errors (429) from free‑tier models are the dominant failure mode, indicating that request throttling is necessary.
-- Three consecutive model failures (timeout or 429) trigger a 1800‑second lockout, blocking the model even after the transient error has passed.
 
 ---
 

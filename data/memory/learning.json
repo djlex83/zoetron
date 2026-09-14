@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 10:27:52",
+ "stand": "2026-09-14 10:38:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,15 +57,15 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
+   "tool": "träume-analysieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "träume-besser-nutzen-lernen.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -94,12 +94,6 @@
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-analysieren.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -205,6 +199,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "träume-besser-nutzen-lernen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
@@ -387,7 +387,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.812,
+ "haende_quote": 0.811,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 26,

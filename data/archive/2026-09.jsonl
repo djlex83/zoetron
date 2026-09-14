@@ -48850,3 +48850,38 @@
 {"ts": 1788776641.7915633, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
 {"ts": 1788776710.3008993, "kind": "reflex_ok", "payload": {}}
 {"ts": 1788776712.1543689, "kind": "prune_run", "payload": {"facts_pruned": 1, "events_pruned": 82}}
+{"ts": 1788171985.9045353, "key": "dream:20260831102625:1:ce2c6d", "value": "Repeated 429 errors on z-ai/glm-5.2:free and 502 on nvidia/nemotron-3-ultra-550b-a55b:free indicate systemic provider-side rate limiting and overload, not transient failures.", "source": "dream"}
+{"ts": 1788171985.9046302, "key": "dream:20260831102625:2:97b122", "value": "The 'Marktanalyse' goal was marked stale and converged via reflex without a score, suggesting completion criteria are too loosely defined or unenforced.", "source": "dream"}
+{"ts": 1788171985.9047177, "key": "dream:20260831102625:3:709e6d", "value": "Local-first execution proposals were logged but never validated against actual tool-call patterns, revealing a gap between policy intent and runtime enforcement.", "source": "dream"}
+{"ts": 1788171985.9048073, "key": "dream:20260831102625:4:16fdfa", "value": "Simulation-applied delta logging was proposed but never implemented, leaving critique-execution gaps invisible and unmeasured in real time.", "source": "dream"}
+{"ts": 1788171985.9048793, "key": "dream:20260831102625:5:292618", "value": "Five skill proposals were generated in one cycle but none were converted to executable skills, confirming a structural bottleneck in proposal-to-implementation pipeline.", "source": "dream"}
+{"ts": 1788172408.9057164, "key": "dream:20260831103328:1:416a1d", "value": "Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making aggressive retry logic without backoff a systemic reliability risk.", "source": "dream"}
+{"ts": 1788172408.90584, "key": "dream:20260831103328:2:5953ea", "value": "Upstream provider overload (HTTP 502 from Nvidia) indicates that model routing must treat provider health as a first-class scheduling constraint, not just model capability.", "source": "dream"}
+{"ts": 1788172408.9059136, "key": "dream:20260831103328:3:29a86b", "value": "The reflex-driven model upgrade (cortex-upgrade-reflex-neue-modelle-autom.py) converged successfully, proving that automated model substitution can self-heal routing failures when triggered by failure signals.", "source": "dream"}
+{"ts": 1788172408.906005, "key": "dream:20260831103328:4:0628bf", "value": "Relative path failures in script interfaces recur because ZOETRON_DATA is not enforced as the single source of truth for filesystem roots.", "source": "dream"}
+{"ts": 1788172408.9060717, "key": "dream:20260831103328:5:3ab7bc", "value": "Model latency variance (7-9s for successful calls) combined with frequent 429s means throughput depends on concurrent model pooling with per-model cooldown state, not sequential fallback.", "source": "dream"}
+{"ts": 1788776746.6934097, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 30.9, "tokens_ein": 1240, "tokens_aus": 875}}
+{"ts": 1788776746.6940057, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router that tracks 429 errors per provider and automatically excludes them with exponential backoff."}}
+{"ts": 1788776746.6940548, "kind": "skill_proposal", "payload": {"proposal": "Create a pre-flight health check that pings model endpoints before assignment to avoid known-overloaded services."}}
+{"ts": 1788776746.6940985, "kind": "skill_proposal", "payload": {"proposal": "Deploy SkillDeploymentVerifier to run smoke tests and validate monitoring hooks after automated skill deployment."}}
+{"ts": 1788776746.6941392, "kind": "skill_proposal", "payload": {"proposal": "Build CrossCyclePatternDetector to analyze failure events across consolidation cycles and proactively adjust routing strategy."}}
+{"ts": 1788776746.694182, "kind": "skill_proposal", "payload": {"proposal": "Enforce SwarmKnowledgeFreshnessGate as a mandatory reflex pre-condition for all swarm goal executions."}}
+{"ts": 1788776746.6942298, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788776824.3983161, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 75.4, "tokens_ein": 498, "tokens_aus": 773}}
+{"ts": 1788776824.398502, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und reduzieren", "why": "Das System macht oft Fehler beim Vorhersagen. Wenn wir die Gründe kennen, wird es zuverlässiger.", "signal": "failure"}}
+{"ts": 1788776824.3985786, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren und nutzen", "why": "Alte Informationen über die Schwarm-Arbeit sind veraltet. Frisches Wissen hilft bei neuen Aufgaben.", "signal": "stale"}}
+{"ts": 1788776824.398642, "kind": "drive_goal", "payload": {"title": "Fähigkeiten besser in Taten umsetzen", "why": "Viele Vorschläge für neue Fähigkeiten werden gemacht, aber selten wirklich ausgeführt. Das soll sich ändern.", "signal": "gap"}}
+{"ts": 1788776827.8298812, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 1.14, "gelesen": 0}}
+{"ts": 1788776827.832567, "kind": "reflex_used", "payload": {"goal": "Mehr Handlungen aus Ideen machen", "tool": "traum-ideen-zu-fähigkeiten-machen.py", "ok": false}}
+{"ts": 1788776830.5655942, "kind": "swarm_started", "payload": {"goal": "Mehr Handlungen aus Ideen machen"}}
+{"ts": 1788776831.6830676, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1788776835.3319116, "kind": "metabolism_check", "payload": {"stress": 0.936, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1788776860.923184, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 24.6, "tokens_ein": 3149, "tokens_aus": 748}}
+{"ts": 1788776881.0289743, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788776881.0289717, "schalter_geoeffnet": false}}
+{"ts": 1788776881.1374617, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788776881.137459, "schalter_geoeffnet": false}}
+{"ts": 1788776915.0914896, "kind": "model_ok", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "latency_s": 34.0, "tokens_ein": 417, "tokens_aus": 1586}}
+{"ts": 1788776971.5002038, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 54.9, "tokens_ein": 373, "tokens_aus": 1102}}
+{"ts": 1788776971.5003953, "kind": "simulation", "payload": {"goal": "Mehr Handlungen aus Ideen machen", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1788776971.500515, "kind": "simulation_applied", "payload": {"revisions": 5}}
+{"ts": 1788777157.2005968, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 184.5, "tokens_ein": 1776, "tokens_aus": 4394}}
+{"ts": 1788777332.5670834, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 175.0, "tokens_ein": 2219, "tokens_aus": 8616}}
