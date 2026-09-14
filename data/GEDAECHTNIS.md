@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11360 Fakten** · Stand 2026-09-14 07:07 UTC · aktualisiert bei jedem Herzschlag
+**11365 Fakten** · Stand 2026-09-14 07:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7303
+- **dream:** 7308
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 944
 - **last_swarm_goal:** 679
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914071554:5:c281e9`
+*14.09. 07:15 UTC · Quelle: dream*
+
+Hand actions and reflexes complete successfully only when preconditions (file paths, env vars, swarm freshness) are implicitly satisfied; a pre-execution validator would make these guarantees explicit and reduce silent failures.
+
+### `dream:20260914071554:4:07e130`
+*14.09. 07:15 UTC · Quelle: dream*
+
+Pruning 21 events and 1 fact per cycle maintains working memory, yet without a recall audit the system risks discarding information that could prevent repeated failure patterns.
+
+### `dream:20260914071554:3:f6a840`
+*14.09. 07:15 UTC · Quelle: dream*
+
+Drive goals are triggered by internal signals (stale knowledge, failure logs, dream artifacts), proving that self-motivated learning cycles are effective but require explicit TTLs and failure counters to avoid drift.
+
+### `dream:20260914071554:2:13c17f`
+*14.09. 07:15 UTC · Quelle: dream*
+
+The system generates resilience proposals (circuit breakers, fallbacks, monitors) in every dream cycle, indicating that external model dependency is the dominant fragility and must be abstracted behind a unified resilience policy.
+
+### `dream:20260914071554:1:f6f787`
+*14.09. 07:15 UTC · Quelle: dream*
+
+Repeated model failures (36 errors, upstream 200 with no choices) reveal that HTTP status codes are insufficient health signals; structured error bodies and latency spikes must be treated as failure evidence.
 
 ### `dream:20260914070406:5:e66f59`
 *14.09. 07:04 UTC · Quelle: dream*
