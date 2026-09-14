@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11357 Fakten** · Stand 2026-09-14 00:40 UTC · aktualisiert bei jedem Herzschlag
+**11352 Fakten** · Stand 2026-09-14 00:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7303
+- **dream:** 7298
 - **swarm_artifact:** 1627
 - **last_swarm_critique:** 941
 - **last_swarm_goal:** 676
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914004744:5:9979ee`
+*14.09. 00:47 UTC · Quelle: dream*
+
+No closed-loop calibration exists between predicted task scores and actual outcomes, so planning error compounds silently across cycles.
+
+### `dream:20260914004744:4:7f58d5`
+*14.09. 00:47 UTC · Quelle: dream*
+
+Pruning runs are reactive and coarse-grained (fixed counts), missing the opportunity to prune by semantic relevance or drive-goal alignment.
+
+### `dream:20260914004744:3:c46210`
+*14.09. 00:47 UTC · Quelle: dream*
+
+Staleness detection exists only for facts/events, not for drive-goals, model endpoints, or reflex tools, leaving the system blind to its own decay.
+
+### `dream:20260914004744:2:a095ca`
+*14.09. 00:47 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are validated or deployed, creating a proposal–production gap that wastes the dreaming cycle's output.
+
+### `dream:20260914004744:1:7ae36f`
+*14.09. 00:47 UTC · Quelle: dream*
+
+Model reliability is the primary systemic bottleneck: 429 rate-limits and timeouts cascade into failed reflexes, stalled drive-goals, and wasted token budget.
 
 ### `last_swarm_critique`
 *14.09. 00:38 UTC · Quelle: critic*
@@ -42117,56 +42142,6 @@ The nvidia/nemotron-3-ultra model succeeded once (77.4s) but later failed with 5
 *31.08. 00:50 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429 rate limits and 502 upstream overloads, making them unreliable for production workloads.
-
-### `dream:20260831004214:5:9d31de`
-*31.08. 00:42 UTC · Quelle: dream*
-
-Calibration error of 1 on an 8-point scale indicates reliable self-assessment for planning.
-
-### `dream:20260831004214:4:0c56be`
-*31.08. 00:42 UTC · Quelle: dream*
-
-Hand-tool actions are two orders of magnitude faster than model calls, favor them for I/O.
-
-### `dream:20260831004214:3:1d902d`
-*31.08. 00:42 UTC · Quelle: dream*
-
-Swarm convergence in a single cycle suggests task decomposition is well-calibrated for current goals.
-
-### `dream:20260831004214:2:a96c4d`
-*31.08. 00:42 UTC · Quelle: dream*
-
-Nvidia Nemotron shows best reliability/latency trade-off after initial warm-up failures.
-
-### `dream:20260831004214:1:9489c6`
-*31.08. 00:42 UTC · Quelle: dream*
-
-Free-tier models suffer pervasive rate-limiting (429) making them unreliable as primary workers.
-
-### `dream:20260831003421:5:9a5736`
-*31.08. 00:34 UTC · Quelle: dream*
-
-Only poolside/laguna-s-2.1:free succeeded (11s latency), suggesting smaller/faster models may have higher free-tier quota availability.
-
-### `dream:20260831003421:4:e6a221`
-*31.08. 00:34 UTC · Quelle: dream*
-
-Swarm simulation revised 3 times but never validated against actual rate-limit constraints, producing plans that fail identically in execution.
-
-### `dream:20260831003421:3:c5fd7b`
-*31.08. 00:34 UTC · Quelle: dream*
-
-Goals lack decomposition: 'Modell-Fehler stark reduzieren' has no measurable target, retry policy, or fallback chain, making progress unverifiable.
-
-### `dream:20260831003421:2:0cbb90`
-*31.08. 00:34 UTC · Quelle: dream*
-
-Conservation metabolism (max_iterations: 1) prevents retry/backoff logic, turning transient 502/429 errors into permanent task failures.
-
-### `dream:20260831003421:1:aa9baf`
-*31.08. 00:34 UTC · Quelle: dream*
-
-Free-tier rate limits (429 errors) across multiple providers indicate OpenRouter quota exhaustion, not model-specific failures, requiring request scheduling instead of model switching.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*

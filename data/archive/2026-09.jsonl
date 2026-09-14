@@ -47458,3 +47458,14 @@
 {"ts": 1788740716.9224627, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.41, "gelesen": 1230}}
 {"ts": 1788740716.9272199, "kind": "reflex_used", "payload": {"goal": "Modell-Fehler besser verstehen", "tool": "häufige-modellfehler-besser-verstehen.py", "ok": true}}
 {"ts": 1788740717.5313578, "kind": "act_done", "payload": {"goal_title": "Modell-Fehler besser verstehen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788136461.853784, "key": "dream:20260831003421:1:aa9baf", "value": "Free-tier rate limits (429 errors) across multiple providers indicate OpenRouter quota exhaustion, not model-specific failures, requiring request scheduling instead of model switching.", "source": "dream"}
+{"ts": 1788136461.8538802, "key": "dream:20260831003421:2:0cbb90", "value": "Conservation metabolism (max_iterations: 1) prevents retry/backoff logic, turning transient 502/429 errors into permanent task failures.", "source": "dream"}
+{"ts": 1788136461.8539572, "key": "dream:20260831003421:3:c5fd7b", "value": "Goals lack decomposition: 'Modell-Fehler stark reduzieren' has no measurable target, retry policy, or fallback chain, making progress unverifiable.", "source": "dream"}
+{"ts": 1788136461.8540268, "key": "dream:20260831003421:4:e6a221", "value": "Swarm simulation revised 3 times but never validated against actual rate-limit constraints, producing plans that fail identically in execution.", "source": "dream"}
+{"ts": 1788136461.85409, "key": "dream:20260831003421:5:9a5736", "value": "Only poolside/laguna-s-2.1:free succeeded (11s latency), suggesting smaller/faster models may have higher free-tier quota availability.", "source": "dream"}
+{"ts": 1788136934.450267, "key": "dream:20260831004214:1:9489c6", "value": "Free-tier models suffer pervasive rate-limiting (429) making them unreliable as primary workers.", "source": "dream"}
+{"ts": 1788136934.4503365, "key": "dream:20260831004214:2:a96c4d", "value": "Nvidia Nemotron shows best reliability/latency trade-off after initial warm-up failures.", "source": "dream"}
+{"ts": 1788136934.4503922, "key": "dream:20260831004214:3:1d902d", "value": "Swarm convergence in a single cycle suggests task decomposition is well-calibrated for current goals.", "source": "dream"}
+{"ts": 1788136934.4504445, "key": "dream:20260831004214:4:0c56be", "value": "Hand-tool actions are two orders of magnitude faster than model calls, favor them for I/O.", "source": "dream"}
+{"ts": 1788136934.4504952, "key": "dream:20260831004214:5:9d31de", "value": "Calibration error of 1 on an 8-point scale indicates reliable self-assessment for planning.", "source": "dream"}
+{"ts": 1788742004.6101367, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

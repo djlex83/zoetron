@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 00:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 00:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No closed-loop calibration exists between predicted task scores and actual outcomes, so planning error compounds silently across cycles.
+- Pruning runs are reactive and coarse-grained (fixed counts), missing the opportunity to prune by semantic relevance or drive-goal alignment.
+- Staleness detection exists only for facts/events, not for drive-goals, model endpoints, or reflex tools, leaving the system blind to its own decay.
+- Skill proposals accumulate faster than they are validated or deployed, creating a proposal–production gap that wastes the dreaming cycle's output.
+- Model reliability is the primary systemic bottleneck: 429 rate-limits and timeouts cascade into failed reflexes, stalled drive-goals, and wasted token
 - Circuit-breaker and dynamic-timeout skill proposals already exist in the log but were not yet instantiated as callable skills, creating a proposal-exe
 - Pruning removed 37 events and 11 facts in a single run while selbstdiagnose reported zero organ errors, showing aggressive garbage collection without 
 - Calibration loop predicted exactly 5 and actual was 5 (zero error) yet the system still triggered revision/simulation cycles, suggesting the calibrati
@@ -51,11 +56,6 @@
 - Evolutionary optimization with 3 variants improved critic scores from 5/10 to 9/8/9, demonstrating that iterative refinement outperforms single-pass g
 - Simulation-based pre-execution review caught 5 risks and triggered 2 revisions, preventing downstream failures in the generated artifact.
 - Primary models (Nemotron, Gemma) fail frequently with 502/429 errors, making fallback to slower but reliable models (dots-studio) essential for task c
-- Model latency and token usage vary wildly between calls, suggesting that the system does not yet adapt its request patterns to model health.
-- Prune runs remove events but ignore facts, leaving a growing knowledge base that is never systematically aged or deprecated.
-- Reflex-based goal updates and memory consolidation are effective self-correction mechanisms but remain manually triggered and isolated.
-- Recurring drive goals around model errors and stale swarm knowledge indicate that reactive reflexes are insufficient without predictive maintenance.
-- The system repeatedly generates skill proposals but lacks a closed loop to implement and validate them, creating a growing backlog of unmet potential.
 
 ---
 
