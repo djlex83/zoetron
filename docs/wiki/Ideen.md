@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 22:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 22:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,8 +32,8 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based error diagnosis tools converge autonomously, reducing need for manual intervention.
+- Drive timeouts of 180 seconds indicate storage I/O bottlenecks during high-load consolidation phases.
+- Automated pruning removes 5-7 facts and 17-27 events per cycle, effectively controlling memory growth.
+- The dots-studio/dots-3-note-preview model provides consistent ~22-24s latency as a stable fallback.
+- Google Gemma models consistently hit 429 rate limits on OpenRouter, making them unreliable for sustained workloads.
 - Reflex actions that connect distant memories generate novel associations, enhancing the system's understanding of complex relationships.
 - Pruning stale facts and events improves memory hygiene but should be scheduled during low-activity windows to avoid resource contention.
 - The dots-studio/dots-3-note-preview model consistently succeeds but with high latency, making it a reliable fallback option.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without a validation gate, risking integration of untested or redundant capabilities that degrade system coherence.
 - Rate-limit errors (429) and read timeouts correlate with missing exponential backoff and health-aware routing, making fallback selection reactive rath
 - Model failures cascade when timeout guards and circuit breakers are absent, causing downstream blocking across the entire inference pipeline.
-- Failure patterns (e.g., 429) are provider-specific and can be used to dynamically route requests away from failing models.
-- Staleness in swarm data triggers reflex updates, proving that staleness signals can drive maintenance actions.
-- A large backlog of unimplemented skill proposals suggests the need for an automated prioritization pipeline.
-- The dots-studio model exhibits high latency on first call, indicating a cold-start penalty that can be reduced by warming.
-- Repeated 429 errors from google/gemma free models show they are rate-limited and should be bypassed after a short pause.
 
 ---
 

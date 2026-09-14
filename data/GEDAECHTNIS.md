@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11230 Fakten** · Stand 2026-09-14 22:26 UTC · aktualisiert bei jedem Herzschlag
+**11225 Fakten** · Stand 2026-09-14 22:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7148
+- **dream:** 7143
 - **swarm_artifact:** 1621
 - **last_swarm_critique:** 955
 - **last_swarm_goal:** 690
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914223410:5:8b549e`
+*14.09. 22:34 UTC · Quelle: dream*
+
+Reflex-based error diagnosis tools converge autonomously, reducing need for manual intervention.
+
+### `dream:20260914223410:4:294ca2`
+*14.09. 22:34 UTC · Quelle: dream*
+
+Drive timeouts of 180 seconds indicate storage I/O bottlenecks during high-load consolidation phases.
+
+### `dream:20260914223410:3:075dea`
+*14.09. 22:34 UTC · Quelle: dream*
+
+Automated pruning removes 5-7 facts and 17-27 events per cycle, effectively controlling memory growth.
+
+### `dream:20260914223410:2:dfe97d`
+*14.09. 22:34 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview model provides consistent ~22-24s latency as a stable fallback.
+
+### `dream:20260914223410:1:df4e72`
+*14.09. 22:34 UTC · Quelle: dream*
+
+Google Gemma models consistently hit 429 rate limits on OpenRouter, making them unreliable for sustained workloads.
 
 ### `dream:20260914221937:5:25483f`
 *14.09. 22:19 UTC · Quelle: dream*
@@ -41349,56 +41374,6 @@ Fallback latency variance (18-60s) indicates need for SLA-aware routing that sel
 *31.08. 22:35 UTC · Quelle: dream*
 
 Rate-limited models (429 errors) require automatic fallback with persistent health tracking to avoid repeated hammering of exhausted endpoints.
-
-### `dream:20260831222819:5:5cef08`
-*31.08. 22:28 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures persist, revealing a blind spot: external API health is not modeled as an organ.
-
-### `dream:20260831222819:4:f56814`
-*31.08. 22:28 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831222819:3:62cf02`
-*31.08. 22:28 UTC · Quelle: dream*
-
-A single-cycle swarm with explicit planner/builder/critic roles converged at score 8, confirming that role specialization + critic feedback accelerates convergence.
-
-### `dream:20260831222819:2:87b3e0`
-*31.08. 22:28 UTC · Quelle: dream*
-
-Backup model (Nemotron) exhibits extreme latency variance (8.6–107s) correlated with input token volume, requiring latency-aware routing or token budgeting.
-
-### `dream:20260831222819:1:180971`
-*31.08. 22:28 UTC · Quelle: dream*
-
-Free-tier models (GLM-5.2) fail systematically under rate limits (429), making them unreliable as primaries without a validated fallback chain.
-
-### `dream:20260831222052:5:aae09e`
-*31.08. 22:20 UTC · Quelle: dream*
-
-Swarm-based goal pursuit under stress state (conserve) with max_tasks=3 leads to premature termination without achieving meaningful convergence.
-
-### `dream:20260831222052:4:4da30d`
-*31.08. 22:20 UTC · Quelle: dream*
-
-Drive goals with signals like 'stale' and 'gap' remain unaddressed, indicating a prioritization failure between reactive tasks and strategic objectives.
-
-### `dream:20260831222052:3:33a5e5`
-*31.08. 22:20 UTC · Quelle: dream*
-
-The 'Modell-Fehler deutlich reduzieren' goal failed due to a path resolution issue, revealing a systemic gap in input validation and environment-aware execution.
-
-### `dream:20260831222052:2:b3a6f3`
-*31.08. 22:20 UTC · Quelle: dream*
-
-High variance in latency (8.6s to 54.1s) for nvidia/nemotron-3-ultra-550b:free suggests inconsistent performance requiring adaptive timeout handling.
-
-### `dream:20260831222052:1:c05c96`
-*31.08. 22:20 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate a need for rate-limit-aware model selection and fallback strategies.
 
 ### `last_swarm_critique`
 *31.08. 21:43 UTC · Quelle: critic*
