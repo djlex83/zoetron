@@ -48917,3 +48917,28 @@
 {"ts": 1788777732.2514405, "kind": "act_done", "payload": {"goal_title": "Mehr Handlungen aus Ideen machen", "score": 6, "converged": false}}
 {"ts": 1788777733.219366, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.34, "gelesen": 0}}
 {"ts": 1788777735.4486926, "kind": "issue_synced", "payload": {"issue": 408, "state": "open"}}
+{"ts": 1788173768.645802, "key": "dream:20260831105608:1:cb73a8", "value": "Rate-limited primary model (z-ai/glm-5.2) repeatedly fails with 429 errors while fallback (Nemotron) succeeds but with high latency variance (24-75s).", "source": "dream"}
+{"ts": 1788173768.6458914, "key": "dream:20260831105608:2:af74e4", "value": "Multiple skill proposals for model routing, local-first execution, and revision gates exist but remain unimplemented, creating a proposal-execution gap.", "source": "dream"}
+{"ts": 1788173768.6459618, "key": "dream:20260831105608:3:f05f57", "value": "Local hand actions (file ops, scripts) consistently succeed in <0.3s, yet model invocations are still attempted first for applicable tasks.", "source": "dream"}
+{"ts": 1788173768.6460283, "key": "dream:20260831105608:4:a01b0b", "value": "No circuit breaker, exponential backoff, or latency-aware fallback ordering exists despite repeated 429 failures across sessions.", "source": "dream"}
+{"ts": 1788173768.6461518, "key": "dream:20260831105608:5:b095b6", "value": "Market analysis insights and proposed skills accumulate stale without conversion to executable tasks or implemented capabilities.", "source": "dream"}
+{"ts": 1788778239.7824078, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788778308.5406058, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788778310.376348, "kind": "prune_run", "payload": {"facts_pruned": 15, "events_pruned": 88}}
+{"ts": 1788778330.42733, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788778330.4273274, "schalter_geoeffnet": false}}
+{"ts": 1788778330.538212, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788778330.5382102, "schalter_geoeffnet": false}}
+{"ts": 1788778330.6572607, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788778330.6572578, "schalter_geoeffnet": false}}
+{"ts": 1788778335.6091409, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 5.0, "tokens_ein": 1414, "tokens_aus": 1508}}
+{"ts": 1788778335.6097097, "kind": "skill_proposal", "payload": {"proposal": "Implement a shared model health registry with exponential backoff TTL (502: 30s→5m, 429: 60s→10m) that all selectors consult before routing, persisting across dream cycles."}}
+{"ts": 1788778335.6097915, "kind": "skill_proposal", "payload": {"proposal": "Add a mandatory 1-token pre-flight probe with 2s timeout for any model not used in the last 60s, caching results per model+task-type to avoid redundant probes."}}
+{"ts": 1788778335.6098542, "kind": "skill_proposal", "payload": {"proposal": "Create a reliable fallback chain configuration (ling-3.0-flash-fin → next best) that activates automatically when the primary model health score drops below 0.7."}}
+{"ts": 1788778335.6099114, "kind": "skill_proposal", "payload": {"proposal": "Build a fail-fast routing policy that consults the error taxonomy cache before each assignment and immediately routes around known-bad models without waiting for retry exhaustion."}}
+{"ts": 1788778335.609966, "kind": "skill_proposal", "payload": {"proposal": "Create an automated ProposalToProductionPipeline that guarantees every approved skill proposal is scaffolded, registered, smoke-tested, and promoted within a single dream cycle."}}
+{"ts": 1788778335.6100268, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788778380.1603582, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 42.6, "tokens_ein": 483, "tokens_aus": 778}}
+{"ts": 1788778380.1606166, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Zu viele Vorhersagen gehen schief, das bremst das Lernen.", "signal": "failure"}}
+{"ts": 1788778380.1606936, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen regelmäßig nutzen", "why": "Alte Schwarm-Ergebnisse verstauben ungenutzt im Gedächtnis.", "signal": "stale"}}
+{"ts": 1788778380.1607957, "kind": "drive_goal", "payload": {"title": "Ideen schneller in Handlungen verwandeln", "why": "Gute Ideen werden zu selten zu echten Taten.", "signal": "combination"}}
+{"ts": 1788778383.4001207, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.73, "gelesen": 4}}
+{"ts": 1788778383.402207, "kind": "reflex_used", "payload": {"goal": "Schwarm-Infos auf den neuesten Stand bringen", "tool": "marktwissen-auf-den-neuesten-stand-bring.py", "ok": true}}
+{"ts": 1788778383.760463, "kind": "act_done", "payload": {"goal_title": "Schwarm-Infos auf den neuesten Stand bringen", "score": null, "converged": true, "mode": "reflex"}}

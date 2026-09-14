@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 10:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 10:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 19×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High stress (1.0) with 'conserve' state suggests the system should throttle non-essential work during resource scarcity.
+- The hand_action succeeded with minimal latency, indicating that direct file operations are a reliable low-level primitive.
+- When budget is constrained (max_tasks=3, max_iterations=1), focus on single-pass execution rather than iterative refinement.
+- Simulation before execution reliably flags risks (4 identified) and prompts revisions (3 applied), making it a valuable guardrail.
+- Free-tier models on OpenRouter (e.g., google/gemma) frequently return 429 errors; implement automatic fallback to alternative free models to maintain 
 - Cross-time dream linking reveals emergent patterns; scheduled consolidation strengthens memory.
 - Stale swarm data reduces relevance; periodic refresh cycles are needed.
 - High metabolism stress triggers conservation mode, limiting task count to the budget.
@@ -51,11 +56,6 @@
 - After lockout, the system successfully used a different free model (dots‑studio/dots‑3‑note‑preview) with acceptable latency, validating the need for 
 - Repeated 429 Too Many Requests responses from free‑tier models indicate that rate‑limit handling must include exponential backoff and fallback.
 - Three consecutive model errors trigger an automatic lockout, showing that a circuit‑breaker is essential to prevent cascading failures.
-- Reflex actions successfully automate swarm updates without manual intervention.
-- Regular pruning of facts and events improves system responsiveness.
-- Only one model succeeded, exposing a single point of failure in routing.
-- Timeout errors on slow models necessitate latency-aware fallback mechanisms.
-- Repeated 429 errors indicate quota exhaustion across provider accounts.
 
 ---
 
