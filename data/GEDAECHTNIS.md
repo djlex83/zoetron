@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11337 Fakten** · Stand 2026-09-14 01:33 UTC · aktualisiert bei jedem Herzschlag
+**11344 Fakten** · Stand 2026-09-14 01:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7283
-- **swarm_artifact:** 1627
-- **last_swarm_critique:** 941
-- **last_swarm_goal:** 676
-- **anti_pattern:** 361
-- **strategy:** 183
-- **tool:** 151
+- **dream:** 7278
+- **swarm_artifact:** 1633
+- **last_swarm_critique:** 942
+- **last_swarm_goal:** 677
+- **anti_pattern:** 363
+- **strategy:** 184
+- **tool:** 152
 - **hand_result:** 84
 - **aktuell_organfehler:** 31
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-umsetzen`
+*14.09. 01:52 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten umsetzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:1`
+*14.09. 01:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Data Format Adapter - Create a lightweight adapter service (or script) that sits between the benchmark and the tool generator. The adapter reads the benchmark's JSON Lines output (benchmark_score, decision), filters entrie NI
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:0`
+*14.09. 01:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Unified Path Configuration - Introduce a central configuration file (e.g., config.yaml or .env) that defines all base paths (werkzeugkiste_root, artefacts_root, benchmark_output, suggestions_input). Modify each component (too
+
+### `last_swarm_critique`
+*14.09. 01:48 UTC · Quelle: critic*
+
+score=6; issues=Path mismatch: tool generator writes to 'werkzeugkiste/' but integration test reads from 'artefakte/werkzeugkiste/'; Data flow break: benchmark outputs to 'benchmark_results.json' (JSON lines, fields: benchmark_score, decision) but tool generat
+
+### `last_swarm_goal`
+*14.09. 01:41 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten umsetzen
+
+### `dream:20260914014102:5:4797c4`
+*14.09. 01:41 UTC · Quelle: dream*
+
+Aggressive pruning (10 facts, 1 event per cycle) bounds memory but discards the very failure-pattern evidence needed for intelligent model routing.
+
+### `dream:20260914014102:4:2c5715`
+*14.09. 01:41 UTC · Quelle: dream*
+
+Calibration consistently underestimates cycle count (predicted 6 vs actual 9, error +3) when model failures trigger extra retry cycles.
+
+### `dream:20260914014102:3:01bce2`
+*14.09. 01:41 UTC · Quelle: dream*
+
+The system achieved goal convergence (score 9) despite >60% model-call failure rate, proving the retry/fallback logic works but incurs high latency overhead.
+
+### `dream:20260914014102:2:72c4f3`
+*14.09. 01:41 UTC · Quelle: dream*
+
+Hand-action timeouts (30s and 20s) with zero bytes read indicate hanging subprocesses or network stalls rather than command failures, wasting wall-clock time.
+
+### `dream:20260914014102:1:24a225`
+*14.09. 01:41 UTC · Quelle: dream*
+
+Free-tier models exhibit distinct, predictable failure signatures: Nvidia Nemotron returns 502 upstream overload errors, Google Gemma models hit 429 rate limits, while Dots Studio succeeds with lower and more stable latency.
 
 ### `dream:20260914013017:5:8f37c7`
 *14.09. 01:30 UTC · Quelle: dream*
@@ -42017,56 +42067,6 @@ Error types (429 rate-limit, 502 upstream overload, empty response) are predicta
 *31.08. 01:45 UTC · Quelle: dream*
 
 When 6 out of 7 model calls fail simultaneously, the absence of automatic quarantine and fallback turns transient API errors into systemic paralysis — reliability must be engineered, not hoped for.
-
-### `dream:20260831013957:5:809c97`
-*31.08. 01:39 UTC · Quelle: dream*
-
-Artifact validation is missing: goals marked complete without verifying exit codes or output quality, allowing silent failures.
-
-### `dream:20260831013957:4:9713c6`
-*31.08. 01:39 UTC · Quelle: dream*
-
-Stale drive goals (market analysis, skill adoption) persist because no convergence detector or budget allocator forces completion or re-prioritization.
-
-### `dream:20260831013957:3:4e8858`
-*31.08. 01:39 UTC · Quelle: dream*
-
-Multiple skill proposals (rate-limit detector, async framework, budget allocator, convergence detector) address the same root cause: unreliable model orchestration.
-
-### `dream:20260831013957:2:7ed0f2`
-*31.08. 01:39 UTC · Quelle: dream*
-
-High latency (10-27s) on the working model nvidia/nemotron-3-ultra creates bottlenecks for iterative loops requiring multiple calls.
-
-### `dream:20260831013957:1:115f18`
-*31.08. 01:39 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate systematic rate-limiting that halts progress unless fallback models are pre-configured.
-
-### `dream:20260831013324:5:8b8984`
-*31.08. 01:33 UTC · Quelle: dream*
-
-Destructive operations like os.system calls are being executed without safeguards, posing a risk that requires dry-run wrapping and human confirmation.
-
-### `dream:20260831013324:4:4219c2`
-*31.08. 01:33 UTC · Quelle: dream*
-
-Convergence in swarm cycles occurs within a single cycle, making additional cycles unnecessary and wasteful of compute resources.
-
-### `dream:20260831013324:3:c0b8fe`
-*31.08. 01:33 UTC · Quelle: dream*
-
-Skill proposals are frequently generated but lack validation mechanisms, leading to a gap between proposal and actual usability.
-
-### `dream:20260831013324:2:75502c`
-*31.08. 01:33 UTC · Quelle: dream*
-
-Nemotron models exhibit high latency variability (8.8s to 24.6s), suggesting they are unreliable for latency-sensitive tasks without a failover mechanism.
-
-### `dream:20260831013324:1:e22c22`
-*31.08. 01:33 UTC · Quelle: dream*
-
-The model z-ai/glm-5.2:free consistently fails with 429 Too Many Requests errors, indicating it is rate-limited and should be deprioritized or quarantined.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*

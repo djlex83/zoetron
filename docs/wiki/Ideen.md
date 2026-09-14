@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 01:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 01:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Veraltete Swarm-Daten aktualisieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
+- Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (10 facts, 1 event per cycle) bounds memory but discards the very failure-pattern evidence needed for intelligent model routing.
+- Calibration consistently underestimates cycle count (predicted 6 vs actual 9, error +3) when model failures trigger extra retry cycles.
+- The system achieved goal convergence (score 9) despite >60% model-call failure rate, proving the retry/fallback logic works but incurs high latency ov
+- Hand-action timeouts (30s and 20s) with zero bytes read indicate hanging subprocesses or network stalls rather than command failures, wasting wall-clo
+- Free-tier models exhibit distinct, predictable failure signatures: Nvidia Nemotron returns 502 upstream overload errors, Google Gemma models hit 429 r
 - Simulation can safely approve goals ("go") despite tool execution failures, but actual execution layers need built-in retry logic and graceful degrada
 - Under "conserve" metabolic constraints with limited iterations, complex goals must be decomposed into single-step atomic tasks to prevent premature te
 - High latency variance between models (Nemotron at 42-55s vs. Dots at 17s) means task planning must incorporate real-time latency predictions to avoid 
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (10+ this cycle) but no instantiation pipeline converts them into tested, versioned modules.
 - 24 model errors accumulated but no automated classification or root-cause tracking exists, preventing targeted fallback routing.
 - Model latency varies 2x (32-68s) on same provider, making fixed time budgets unreliable without percentile-aware scheduling.
-- Calibration error of 3 points reveals systematic prediction bias needing closed-loop correction.
-- Single-cycle swarm convergence with role specialization (planner/builder/critic) achieves reliable outcomes for scoped tasks.
-- Simulation gate with mandatory revisions (4 risks → 3 revisions) prevented defective artifact execution.
-- Latency variance across models (33-68s) exceeds typical timeout budgets, demanding adaptive time allocation per call.
-- Free-tier models exhibit systematic rate-limiting (429) and upstream failures (502) requiring health-aware routing with circuit breakers.
 
 ---
 

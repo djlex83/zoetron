@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 01:31:19",
+ "stand": "2026-09-14 01:52:38",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "ferngedächtnisse-verbinden.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 6,
-   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -40,6 +34,12 @@
   },
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -367,18 +367,24 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.755,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.751,
+ "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 32,
   "best": 9.0,
-  "schnitt": 6.0
+  "schnitt": 5.94
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 29,
+   "n": 30,
    "schnitt": 5.9
   },
   "bau": {
