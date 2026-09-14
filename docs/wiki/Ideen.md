@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 22:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 22:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A gap exists between generated skill proposals and their implementation, calling for a proposal scoring engine.
+- The hand action failure due to missing file underscores the necessity of pre-execution file existence validation.
+- Pruning of 7 facts and 27 events suggests stale data accumulates, requiring an automated staleness detector.
+- Latency spikes above 20 seconds for certain models indicate that latency-aware routing should be implemented.
+- The repeated 429 Too Many Requests errors from Google models reveal a need for provider rate-limit monitoring and automatic blacklisting.
 - Reflex-based error diagnosis tools converge autonomously, reducing need for manual intervention.
 - Drive timeouts of 180 seconds indicate storage I/O bottlenecks during high-load consolidation phases.
 - Automated pruning removes 5-7 facts and 17-27 events per cycle, effectively controlling memory growth.
@@ -51,11 +56,6 @@
 - The dots-studio/dots-3-note-preview model consistently succeeds but with high latency, making it a reliable fallback option.
 - The model lockdown after three consecutive failures can cause prolonged unavailability, suggesting a need for finer-grained error handling.
 - Free-tier models frequently return 429 rate-limit errors, indicating the need for request queuing and exponential backoff.
-- Event pruning occurs only during explicit low-activity windows, leaving transient noise to pollute context and inflate token costs.
-- Swarm evolution runs lack measurable convergence criteria, allowing premature termination or infinite loops that waste compute cycles.
-- Skill proposals accumulate without a validation gate, risking integration of untested or redundant capabilities that degrade system coherence.
-- Rate-limit errors (429) and read timeouts correlate with missing exponential backoff and health-aware routing, making fallback selection reactive rath
-- Model failures cascade when timeout guards and circuit breakers are absent, causing downstream blocking across the entire inference pipeline.
 
 ---
 

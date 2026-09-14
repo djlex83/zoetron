@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11225 Fakten** · Stand 2026-09-14 22:36 UTC · aktualisiert bei jedem Herzschlag
+**11219 Fakten** · Stand 2026-09-14 22:47 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7143
-- **swarm_artifact:** 1621
+- **swarm_artifact:** 1615
 - **last_swarm_critique:** 955
 - **last_swarm_goal:** 690
 - **anti_pattern:** 373
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914224419:5:32dc8f`
+*14.09. 22:44 UTC · Quelle: dream*
+
+A gap exists between generated skill proposals and their implementation, calling for a proposal scoring engine.
+
+### `dream:20260914224419:4:a110a6`
+*14.09. 22:44 UTC · Quelle: dream*
+
+The hand action failure due to missing file underscores the necessity of pre-execution file existence validation.
+
+### `dream:20260914224419:3:71f27f`
+*14.09. 22:44 UTC · Quelle: dream*
+
+Pruning of 7 facts and 27 events suggests stale data accumulates, requiring an automated staleness detector.
+
+### `dream:20260914224419:2:907637`
+*14.09. 22:44 UTC · Quelle: dream*
+
+Latency spikes above 20 seconds for certain models indicate that latency-aware routing should be implemented.
+
+### `dream:20260914224419:1:e35b8b`
+*14.09. 22:44 UTC · Quelle: dream*
+
+The repeated 429 Too Many Requests errors from Google models reveal a need for provider rate-limit monitoring and automatic blacklisting.
 
 ### `dream:20260914223410:5:8b549e`
 *14.09. 22:34 UTC · Quelle: dream*
@@ -41349,31 +41374,6 @@ score=3; issues=Sandbox verdict LAEUGT nicht bestätigt: Artefakt ist zu lang (1
 *31.08. 22:35 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten besser prüfen
-
-### `dream:20260831223507:5:feee69`
-*31.08. 22:35 UTC · Quelle: dream*
-
-Task complexity classification (token count, reasoning depth) enables cost-optimal model routing while maintaining quality thresholds.
-
-### `dream:20260831223507:4:19c611`
-*31.08. 22:35 UTC · Quelle: dream*
-
-Circuit-breaker pattern with exponential backoff is essential for external API dependencies to prevent cascade failures during provider outages.
-
-### `dream:20260831223507:3:422ce0`
-*31.08. 22:35 UTC · Quelle: dream*
-
-Skill proposals accumulate without implementation - a proposal-to-deployment pipeline is missing to convert ideas into executable capabilities.
-
-### `dream:20260831223507:2:23ecc6`
-*31.08. 22:35 UTC · Quelle: dream*
-
-Fallback latency variance (18-60s) indicates need for SLA-aware routing that selects models based on current performance, not just availability.
-
-### `dream:20260831223507:1:1d7e2d`
-*31.08. 22:35 UTC · Quelle: dream*
-
-Rate-limited models (429 errors) require automatic fallback with persistent health tracking to avoid repeated hammering of exhausted endpoints.
 
 ### `last_swarm_critique`
 *31.08. 21:43 UTC · Quelle: critic*

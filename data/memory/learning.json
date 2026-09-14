@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-14 22:35:00",
+ "stand": "2026-09-14 22:45:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -33,6 +33,12 @@
    "quote": 1.0
   },
   {
+   "tool": "simulationen-besser-in-praxis-nutzen.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -48,12 +54,6 @@
    "tool": "träume-analysieren.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "simulationen-besser-in-praxis-nutzen.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
