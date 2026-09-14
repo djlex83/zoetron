@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 19:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 19:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,9 +31,9 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The dream consolidation module itself suffers from timeouts (180s), suggesting its processing budget is insufficient for current experience volume.
+- Tools that produce only output without side effects (return values, file writes) are rejected by the system, enforcing a contract of tangible state ch
+- Swarm evolution overestimates solution quality (predicted 9 vs actual 6), indicating a systematic calibration gap in critic scoring.
+- The dots-studio/dots-3-note-preview:free model demonstrates consistent success with acceptable latency, establishing it as the only viable free-tier f
+- Free-tier models from major providers (Google, NVIDIA) consistently hit rate limits (429) and timeouts, making them unreliable for production workflow
 - The model scoring and calibration loop is functioning correctly, using actual vs. predicted metrics to guide evolution runs.
 - High latency in successful free models (up to 74.5s for dots) indicates that async/non-blocking execution or generous timeouts are necessary for free-
 - The task "Veraltete swarm-Ziele auffrischen" is highly stable and repeatable, showing consistent execution paths and perfect calibration (abs_error 0)
@@ -51,11 +56,6 @@
 - Single reliable model (dots-studio) shows 15x latency variance (5s-74s), violating latency SLAs for time-bounded operations.
 - Automatic model locking after 3 consecutive failures (1800s) creates recovery latency that exceeds task budgets under conserve mode (max_iterations=1)
 - Free-tier models exhibit systematic unreliability: Nemotron fails via timeout cascades, Gemma models fail via 429 rate limits, making them unsuitable 
-- Inconsistent error handling between successful collaboration-knowledge update and failed swarm-goal update points to a need for unified reflex wrapper
-- Metabolism is in conserve mode with a tight budget, so tasks should be prioritized by the frequency of failure signals.
-- The dream consolidation timed out after 180 seconds, suggesting the process must be scoped to recent events or use a faster model.
-- Reflex tools for updating swarm knowledge failed due to invalid data paths, indicating missing pre-execution validation.
-- Model failures (502, 429, timeouts) are the primary error source and require a fallback chain with retry logic.
 
 ---
 

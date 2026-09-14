@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11271 Fakten** · Stand 2026-09-14 19:20 UTC · aktualisiert bei jedem Herzschlag
+**11269 Fakten** · Stand 2026-09-14 19:30 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7168
-- **swarm_artifact:** 1643
+- **swarm_artifact:** 1641
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
 - **anti_pattern:** 373
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 21
 
 ---
+
+### `dream:20260914192742:5:a036c5`
+*14.09. 19:27 UTC · Quelle: dream*
+
+The dream consolidation module itself suffers from timeouts (180s), suggesting its processing budget is insufficient for current experience volume.
+
+### `dream:20260914192742:4:3047c5`
+*14.09. 19:27 UTC · Quelle: dream*
+
+Tools that produce only output without side effects (return values, file writes) are rejected by the system, enforcing a contract of tangible state change.
+
+### `dream:20260914192742:3:c9aac3`
+*14.09. 19:27 UTC · Quelle: dream*
+
+Swarm evolution overestimates solution quality (predicted 9 vs actual 6), indicating a systematic calibration gap in critic scoring.
+
+### `dream:20260914192742:2:d1eb4b`
+*14.09. 19:27 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model demonstrates consistent success with acceptable latency, establishing it as the only viable free-tier fallback.
+
+### `dream:20260914192742:1:0c1bab`
+*14.09. 19:27 UTC · Quelle: dream*
+
+Free-tier models from major providers (Google, NVIDIA) consistently hit rate limits (429) and timeouts, making them unreliable for production workflows.
 
 ### `dream:20260914191715:5:1db165`
 *14.09. 19:17 UTC · Quelle: dream*
@@ -41504,31 +41529,6 @@ Rate limiting (HTTP 429) is the dominant failure mode across 5/6 free models, ma
 *31.08. 19:20 UTC · Quelle: system*
 
 Simulationen öfter zum Testen einsetzen
-
-### `dream:20260831191936:5:ff6192`
-*31.08. 19:19 UTC · Quelle: dream*
-
-Duplicate skill proposals waste cycles; a ProposalDeduplicator using semantic hashing (embedding + keyword signature) surfaces only novel or improved proposals.
-
-### `dream:20260831191936:4:61422e`
-*31.08. 19:19 UTC · Quelle: dream*
-
-File-access skills repeatedly fail on path resolution because they don't declare I/O contracts; enforcing PathContract at registration with auto-wrapped resolve_path prevents this.
-
-### `dream:20260831191936:3:83b28d`
-*31.08. 19:19 UTC · Quelle: dream*
-
-Drive goals accumulate without execution linkage; an ExecutionGapTracker mapping each goal to concrete skill proposals with age alerts (>24h) closes the loop.
-
-### `dream:20260831191936:2:f1b067`
-*31.08. 19:19 UTC · Quelle: dream*
-
-Model fallback cascades fail because no real-time health signals exist; synthetic probes every 60s per model are needed to populate a ModelHealthRegistry.
-
-### `dream:20260831191936:1:8b9d96`
-*31.08. 19:19 UTC · Quelle: dream*
-
-Rate limiting (429) across five distinct models reveals systemic quota exhaustion, not isolated failures, requiring quota-aware routing with circuit breakers.
 
 ### `last_swarm_critique`
 *31.08. 18:32 UTC · Quelle: critic*
