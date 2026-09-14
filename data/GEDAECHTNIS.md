@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11331 Fakten** · Stand 2026-09-14 03:07 UTC · aktualisiert bei jedem Herzschlag
+**11336 Fakten** · Stand 2026-09-14 03:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7263
+- **dream:** 7268
 - **swarm_artifact:** 1633
 - **last_swarm_critique:** 943
 - **last_swarm_goal:** 678
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914031524:5:6b9516`
+*14.09. 03:15 UTC · Quelle: dream*
+
+Resolving all paths via the ZOETRON_DATA environment variable eliminates path ambiguity and improves script portability.
+
+### `dream:20260914031524:4:a39936`
+*14.09. 03:15 UTC · Quelle: dream*
+
+Requiring three stable cycles before accepting goal completion reduces false convergence and improves reliability.
+
+### `dream:20260914031524:3:8253a7`
+*14.09. 03:15 UTC · Quelle: dream*
+
+Hand actions that read zero items indicate missing preconditions; adding a validation step before execution prevents wasted cycles.
+
+### `dream:20260914031524:2:23c422`
+*14.09. 03:15 UTC · Quelle: dream*
+
+Swarm data becomes stale quickly, so a freshness checker that triggers synchronization when staleness exceeds a threshold is essential.
+
+### `dream:20260914031524:1:9d25a3`
+*14.09. 03:15 UTC · Quelle: dream*
+
+Repeated 5xx and 429 errors from model providers demonstrate the necessity of a circuit breaker that blacklists flaky endpoints and switches to fallback providers.
 
 ### `dream:20260914030527:5:ffae92`
 *14.09. 03:05 UTC · Quelle: dream*

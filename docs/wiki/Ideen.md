@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Daten aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fähigkeiten aus Vorschlägen bauen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Resolving all paths via the ZOETRON_DATA environment variable eliminates path ambiguity and improves script portability.
+- Requiring three stable cycles before accepting goal completion reduces false convergence and improves reliability.
+- Hand actions that read zero items indicate missing preconditions; adding a validation step before execution prevents wasted cycles.
+- Swarm data becomes stale quickly, so a freshness checker that triggers synchronization when staleness exceeds a threshold is essential.
+- Repeated 5xx and 429 errors from model providers demonstrate the necessity of a circuit breaker that blacklists flaky endpoints and switches to fallba
 - Goal completion is declared without verifying three stable cycles, risking premature convergence.
 - Simulation outcomes are not automatically applied, creating a gap between planning and execution.
 - Stale swarm knowledge leads to outdated decisions, requiring periodic refresh with validation against current task performance.
@@ -51,11 +56,6 @@
 - Latency variance (28–58s) on the same model makes time-budget planning unreliable without per-model p50/p95 tracking.
 - Swarm evolution consistently stalls at score 6/10 with converged=false, indicating the critic/builder loop lacks a hard acceptance threshold.
 - Model endpoint failures (502 upstream errors) cascade into task failure because no automatic failover or circuit-breaker exists.
-- Calibration error of 0 (predicted=actual=6) shows the predictor is reliable for this task class and can gate resource allocation.
-- Recurring 'Path mismatch: tool generator' critic issues indicate missing artifact path contracts between code generation and execution environments.
-- Evolutionary search produces high-scoring variants (9/10) but swarm execution stalls at 6/10 unconverged, revealing a variant-to-integration gap.
-- Simulation revision loops escalate (3→5 revisions) without convergence criteria, wasting cycles on diminishing returns.
-- Free-tier model endpoints (Nemotron, Gemma) fail frequently with 502 upstream errors and 429 rate limits, requiring a hardened fallback chain with hea
 
 ---
 
