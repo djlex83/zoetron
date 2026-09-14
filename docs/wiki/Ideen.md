@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 05:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 06:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,13 +25,13 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 10 facts and 17 events per cycle, yet no metric tracks whether pruned items were later needed — blind pruning risks losing rare but cr
+- Goal convergence is declared after one successful reflex; requiring N stable cycles prevents premature completion on flaky successes.
+- Swarm knowledge staleness goes undetected until a drive goal fires; a freshness metric would trigger proactive sync instead of reactive repair.
+- Path resolution failures recur because scripts assume relative paths; anchoring to ZOETRON_DATA eliminates a whole class of hand-action errors.
+- Multiple LLM providers fail simultaneously under load (502/429), but a single reliable fallback (dots-studio) sustains throughput.
 - Stale swarm knowledge persists without automated freshness validation, leading to outdated collaborative context.
 - Swarm convergence declared after only two cycles with inconsistent metrics indicates missing stability gates.
 - Destructive subprocess tools block execution without human approval, necessitating pre-execution safety classification.
@@ -51,11 +56,6 @@
 - The dots-studio/dots-3-note-preview:free model consistently succeeded when others failed, making it a viable fallback.
 - Google gemma models hit 429 Too Many Requests, showing they are rate-limited and cannot handle high request volumes.
 - The nvidia/nemotron-3-ultra-550b-a55b:free model repeatedly returned 502 Service temporarily overloaded, indicating it is unreliable under concurrent 
-- Simulation loops often require multiple revisions to converge, suggesting a convergence gate would reduce wasted cycles.
-- Metabolism stress triggers a conserve state with limited task budget, forcing prioritization of high-impact actions.
-- Skill proposals are generated but rarely executed, indicating a missing pipeline to convert proposals into registered skills.
-- Hand actions fail when the target path is not resolved correctly, so pre-execution path validation is essential.
-- Model endpoints frequently return 502 or 429 errors under load, requiring exponential backoff and automatic failover.
 
 ---
 
