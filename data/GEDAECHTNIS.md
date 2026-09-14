@@ -1,18 +1,48 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11282 Fakten** · Stand 2026-09-14 18:20 UTC · aktualisiert bei jedem Herzschlag
+**11265 Fakten** · Stand 2026-09-14 18:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7163
-- **swarm_artifact:** 1655
+- **dream:** 7158
+- **swarm_artifact:** 1643
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
 - **anti_pattern:** 375
 - **strategy:** 190
-- **tool:** 154
+- **tool:** 153
 - **hand_result:** 82
-- **aktuell_organfehler:** 20
+- **aktuell_organfehler:** 21
 
 ---
+
+### `dream:20260914183323:5:089c21`
+*14.09. 18:33 UTC · Quelle: dream*
+
+Memory pruning removed 21 facts and 62 events, suggesting active consolidation but potential loss of context needed for convergence.
+
+### `dream:20260914183323:4:67f240`
+*14.09. 18:33 UTC · Quelle: dream*
+
+The 'vorgeschlagene-fähigkeiten-integrieren' tool was blocked because destructive subprocess operations require human approval that was not obtained.
+
+### `dream:20260914183323:3:e26cce`
+*14.09. 18:33 UTC · Quelle: dream*
+
+Evolution generated variants scoring 8/10 but the overall swarm goal remained at 5/10 without convergence in 2 cycles.
+
+### `dream:20260914183323:2:84d0e3`
+*14.09. 18:33 UTC · Quelle: dream*
+
+Calibration overpredicted by 2 points (7 vs 5), indicating systematic overconfidence in self-assessment.
+
+### `dream:20260914183323:1:d02bc2`
+*14.09. 18:33 UTC · Quelle: dream*
+
+Free-tier gemma models consistently fail with HTTP 429 rate-limit errors, making dots-studio the only viable free option despite 20–60s latency.
+
+### `aktuell_organfehler`
+*14.09. 18:26 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-14 17:54:57 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete swarm-Ziele au:2`
 *14.09. 18:14 UTC · Quelle: evolution*
@@ -41475,36 +41505,6 @@ score=6; issues=Sicherheitsrisiko: _validate_python_imports fuehrt beliebigen Mo
 
 Modellfehler verstehen und vermeiden
 
-### `dream:20260831182351:5:998b90`
-*31.08. 18:23 UTC · Quelle: dream*
-
-Duplicate skill proposals waste cycles; semantic hashing (embedding + keyword signature) can deduplicate at ingestion.
-
-### `dream:20260831182351:4:18a196`
-*31.08. 18:23 UTC · Quelle: dream*
-
-Path resolution failures in skills stem from missing PathContract enforcement at registration time.
-
-### `dream:20260831182351:3:6ea56b`
-*31.08. 18:23 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than deployment; an ExecutionGapTracker with age alerts would close the proposal-to-production loop.
-
-### `dream:20260831182351:2:637184`
-*31.08. 18:23 UTC · Quelle: dream*
-
-Fallback to nemotron-3-ultra succeeds but adds 20-30s latency per call, making parallel batching essential for multi-step pipelines.
-
-### `dream:20260831182351:1:95d9d8`
-*31.08. 18:23 UTC · Quelle: dream*
-
-Recurring 429 errors on glm-5.2:free indicate hard quota limits that require proactive circuit-breaking rather than reactive fallback.
-
-### `tool:verbundene-traeume-nach-neuen-fuehigkeit`
-*31.08. 18:14 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Verbundene Traeume nach neuen Fuehigkeiten durchsuchen'. Datei: data/tools/verbundene-traeume-nach-neuen-fuehigkeit.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *31.08. 18:14 UTC · Quelle: critic*
 
@@ -41514,31 +41514,6 @@ score=8; issues=Starke Abhaengigkeit von Fallback-Mechanismen: Kernfunktionalita
 *31.08. 18:03 UTC · Quelle: system*
 
 Verbundene Traeume nach neuen Fuehigkeiten durchsuchen
-
-### `dream:20260831180258:5:b98a42`
-*31.08. 18:02 UTC · Quelle: dream*
-
-Simulation and hand-action tools (tor, hand_action) succeeded deterministically, confirming non-LLM subsystems remain reliable under LLM quota pressure.
-
-### `dream:20260831180258:4:20e44d`
-*31.08. 18:02 UTC · Quelle: dream*
-
-The fallback cascade (Nemotron → GLM → Gemma → Poolside → Ling) burns ~30s per failed model before reaching a working one, making sequential retry costly.
-
-### `dream:20260831180258:3:47f1bc`
-*31.08. 18:02 UTC · Quelle: dream*
-
-InclusionAI Ling 3.0 Flash Fin succeeded on first attempt with high token throughput (4875 out), suggesting it operates on a separate quota pool or higher priority tier.
-
-### `dream:20260831180258:2:1a6a3f`
-*31.08. 18:02 UTC · Quelle: dream*
-
-Nvidia Nemotron shows bimodal reliability: successful calls complete in 35-106s, but upstream 502 errors ('Service temporarily overloaded') indicate provider-side capacity saturation.
-
-### `dream:20260831180258:1:80076b`
-*31.08. 18:02 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) from OpenRouter is the dominant failure mode across all free-tier models, indicating shared quota exhaustion rather than model-specific issues.
 
 ### `last_swarm_critique`
 *31.08. 17:45 UTC · Quelle: critic*

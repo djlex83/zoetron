@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-14 18:18:29",
+ "stand": "2026-09-14 18:34:19",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -370,6 +370,12 @@
   },
   {
    "tool": "veraltetes-wissen-auffrischen-und-aktual.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "swarm-informationen-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
