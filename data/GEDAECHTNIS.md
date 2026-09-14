@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11334 Fakten** · Stand 2026-09-14 02:05 UTC · aktualisiert bei jedem Herzschlag
+**11334 Fakten** · Stand 2026-09-14 02:15 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7268
 - **swarm_artifact:** 1633
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914021305:5:77233a`
+*14.09. 02:13 UTC · Quelle: dream*
+
+Pruning 10 facts and 23 events reduced memory overhead, confirming periodic cleanup is beneficial.
+
+### `dream:20260914021305:4:eba2ee`
+*14.09. 02:13 UTC · Quelle: dream*
+
+Reflex actions successfully executed auto-generated skill proposals, demonstrating a viable automation loop.
+
+### `dream:20260914021305:3:8b2cb1`
+*14.09. 02:13 UTC · Quelle: dream*
+
+Recurring drive goals about model errors and simulation gaps indicate systemic reliability and utilization issues.
+
+### `dream:20260914021305:2:8cc208`
+*14.09. 02:13 UTC · Quelle: dream*
+
+Latency for successful calls varies between 22s and 97s, so per-model timeouts and adaptive retries are essential.
+
+### `dream:20260914021305:1:b81f9c`
+*14.09. 02:13 UTC · Quelle: dream*
+
+Free-tier model endpoints frequently return 502 or 429 errors under load, requiring a fallback chain with exponential backoff.
 
 ### `dream:20260914020300:5:7b2b5e`
 *14.09. 02:03 UTC · Quelle: dream*
@@ -41992,31 +42017,6 @@ High-latency model calls (e.g., nvidia/nemotron-3-ultra-550b-a55b:free at 18.4s)
 *31.08. 02:13 UTC · Quelle: dream*
 
 Rate-limit errors (429) on specific models like z-ai/glm-5.2:free are a recurring failure mode that degrades overall system reliability and must be detected and mitigated automatically.
-
-### `dream:20260831020755:5:918774`
-*31.08. 02:07 UTC · Quelle: dream*
-
-Latency variance (6.9s vs 10.9s) on the only working model violates the proposed 10s SLA without triggering abort or failover.
-
-### `dream:20260831020755:4:28d3ab`
-*31.08. 02:07 UTC · Quelle: dream*
-
-Model errors are unclassified (429 vs 502 vs timeout), preventing smart routing decisions between retryable, structural, and quota-exhausted failures.
-
-### `dream:20260831020755:3:4706b3`
-*31.08. 02:07 UTC · Quelle: dream*
-
-Skill proposals accumulate (ProposalTracker, ErrorClassifier, LatencySLA) but lack lifecycle tracking, causing stale ideas to never reach implementation.
-
-### `dream:20260831020755:2:72075d`
-*31.08. 02:07 UTC · Quelle: dream*
-
-Only poolside/laguna-s-2.1:free succeeds consistently, revealing a critical single-point-of-failure with no automatic failover to healthy alternatives.
-
-### `dream:20260831020755:1:c3d931`
-*31.08. 02:07 UTC · Quelle: dream*
-
-Rate limiting (429) is the dominant failure mode across 3/4 models, indicating missing proactive rate-limit awareness and backoff logic.
 
 ### `last_swarm_critique`
 *31.08. 00:23 UTC · Quelle: critic*
