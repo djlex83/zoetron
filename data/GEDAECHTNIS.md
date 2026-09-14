@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11285 Fakten** · Stand 2026-09-14 17:44 UTC · aktualisiert bei jedem Herzschlag
+**11282 Fakten** · Stand 2026-09-14 18:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7168
+- **dream:** 7163
 - **swarm_artifact:** 1655
-- **last_swarm_critique:** 953
-- **last_swarm_goal:** 688
+- **last_swarm_critique:** 954
+- **last_swarm_goal:** 689
 - **anti_pattern:** 375
 - **strategy:** 190
-- **tool:** 155
+- **tool:** 154
 - **hand_result:** 82
-- **aktuell_organfehler:** 19
+- **aktuell_organfehler:** 20
 
 ---
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete swarm-Ziele au:2`
+*14.09. 18:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Database-backed goal management with versioning - Store swarm goals in a database with a version column. A background worker periodically checks for outdated rows and recomputes them directly, bypassing the SwarmOrchestrator 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete swarm-Ziele au:0`
+*14.09. 18:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Configuration-driven service location - Create a configuration file that explicitly declares the SwarmOrchestrator module path and the refresh function name. The application loads this config, imports the module dynamically, 
+
+### `last_swarm_critique`
+*14.09. 18:11 UTC · Quelle: critic*
+
+score=6; issues=Fallback manual refresh only adds a 'last_refreshed' timestamp, which does not actually update or reset the swarm goals themselves – this is insufficient if the SwarmOrchestrator is unavailable.; Fragile discovery of SwarmOrchestrator: searches
+
+### `last_swarm_goal`
+*14.09. 17:56 UTC · Quelle: system*
+
+Veraltete swarm-Ziele auffrischen
+
+### `aktuell_organfehler`
+*14.09. 17:50 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-14 17:41:53 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260914172919:5:484028`
 *14.09. 17:29 UTC · Quelle: dream*
@@ -41515,21 +41540,6 @@ Nvidia Nemotron shows bimodal reliability: successful calls complete in 35-106s,
 
 Rate limiting (HTTP 429) from OpenRouter is the dominant failure mode across all free-tier models, indicating shared quota exhaustion rather than model-specific issues.
 
-### `tool:marktwissen-auf-den-neuesten-stand-bring`
-*31.08. 17:47 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Marktwissen auf den neuesten Stand bringen'. Datei: data/tools/marktwissen-auf-den-neuesten-stand-bring.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Marktwissen auf den neue:2`
-*31.08. 17:46 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Declarative ETL with dbt + DuckDB - Shift from imperative scripts to declarative SQL transformations. 1) Python fetcher (script 1) writes raw JSON to S3/local partitioned by date (raw/market_data/date=2024-01-15/*.json). 2) D
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Marktwissen auf den neue:1`
-*31.08. 17:46 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Event-Sourced Architecture with Projections - Append-only event log (JSONL file or Kafka) as single source of truth. Events: MarketDataFetched, MarketDataValidated, KnowledgeGraphUpdated. Three independent projection workers 
-
 ### `last_swarm_critique`
 *31.08. 17:45 UTC · Quelle: critic*
 
@@ -41539,31 +41549,6 @@ score=4; issues=Script 3 (KnowledgeGraph-Updater) ist abgeschnitten/unvollständ
 *31.08. 17:39 UTC · Quelle: system*
 
 Marktwissen auf den neuesten Stand bringen
-
-### `dream:20260831173913:5:a774ef`
-*31.08. 17:39 UTC · Quelle: dream*
-
-Synthetic probes and quota-aware routing are already proposed but not yet deployed, revealing a deployment lag between skill proposal and operationalization.
-
-### `dream:20260831173913:4:fbcfc2`
-*31.08. 17:39 UTC · Quelle: dream*
-
-Execution gaps persist: hand actions fail silently (exit 1, no error detail) and goals age without linked skill deployment, requiring explicit tracking and alerting.
-
-### `dream:20260831173913:3:b9a30a`
-*31.08. 17:39 UTC · Quelle: dream*
-
-Swarm-based skill evolution converges slowly (score 5, not converged after 2 cycles), indicating need for clearer acceptance criteria and automated regression gates.
-
-### `dream:20260831173913:2:1b2e1b`
-*31.08. 17:39 UTC · Quelle: dream*
-
-Latency variance across models (27–173s) and within the same model (139s vs 172s) demands per-request timeout budgets and fallback sequencing.
-
-### `dream:20260831173913:1:41e708`
-*31.08. 17:39 UTC · Quelle: dream*
-
-Free-tier models exhibit pervasive rate-limiting (429) and upstream instability (502/404), making single-model reliance untenable for production workloads.
 
 ### `last_swarm_critique`
 *31.08. 17:06 UTC · Quelle: critic*
