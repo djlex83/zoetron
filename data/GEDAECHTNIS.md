@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11307 Fakten** · Stand 2026-09-14 14:40 UTC · aktualisiert bei jedem Herzschlag
+**11304 Fakten** · Stand 2026-09-14 15:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7203
-- **swarm_artifact:** 1647
-- **last_swarm_critique:** 950
-- **last_swarm_goal:** 685
-- **anti_pattern:** 373
-- **strategy:** 189
-- **tool:** 155
+- **dream:** 7188
+- **swarm_artifact:** 1653
+- **last_swarm_critique:** 951
+- **last_swarm_goal:** 686
+- **anti_pattern:** 375
+- **strategy:** 190
+- **tool:** 156
 - **hand_result:** 82
 - **aktuell_organfehler:** 23
 
 ---
+
+### `tool:trägerinnerungen-verbinden`
+*14.09. 15:20 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Trägerinnerungen verbinden'. Datei: data/tools/trägerinnerungen-verbinden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Trägerinnerungen verbind:2`
+*14.09. 15:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Probabilistic graphical model inference - Model memories as nodes in a Bayesian network with conditional probability tables derived from co-occurrence statistics. Use inference algorithms (e.g., belief propagation) to compute
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Trägerinnerungen verbind:1`
+*14.09. 15:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Vector embedding clustering - Encode each memory using a sentence transformer to obtain dense vectors. Perform clustering (e.g., DBSCAN) to group related memories. When SemanticMemory lacks query methods, fall back to cosine 
+
+### `last_swarm_critique`
+*14.09. 15:17 UTC · Quelle: critic*
+
+score=6; issues=If the SemanticMemory organ is available but does not provide `query` or `search` methods, the script fails to find connections and does not fall back to the token-based similarity, reducing robustness.; The output is unstructured text (printed
+
+### `last_swarm_goal`
+*14.09. 15:08 UTC · Quelle: system*
+
+Trägerinnerungen verbinden
+
+### `dream:20260914150523:5:c85cd9`
+*14.09. 15:05 UTC · Quelle: dream*
+
+Regular memory pruning of stale facts and events is essential for maintaining system responsiveness.
+
+### `dream:20260914150523:4:112c2e`
+*14.09. 15:05 UTC · Quelle: dream*
+
+Reflex actions using specialized scripts achieved convergence where the general swarm failed.
+
+### `dream:20260914150523:3:34d3ef`
+*14.09. 15:05 UTC · Quelle: dream*
+
+Swarm processes that evolve but do not converge show that iterative refinement alone does not guarantee task completion.
+
+### `dream:20260914150523:2:2a8654`
+*14.09. 15:05 UTC · Quelle: dream*
+
+The safety layer blocks destructive operations such as os.remove, preventing the execution of necessary tools.
+
+### `dream:20260914150523:1:ffdb9d`
+*14.09. 15:05 UTC · Quelle: dream*
+
+Free-tier models like google/gemma frequently return HTTP 429 errors, making them unreliable for critical tasks.
 
 ### `tool:schwarminformationen-aktualisieren`
 *14.09. 14:38 UTC · Quelle: hands*
@@ -41639,106 +41689,6 @@ The reflex-action loop (detect failure → analyze → propose skill → test �
 *31.08. 15:06 UTC · Quelle: dream*
 
 Free-tier model rate limits (429) are a systemic bottleneck requiring provider-agnostic fallback routing with exponential backoff and circuit breakers.
-
-### `dream:20260831145434:5:0be140`
-*31.08. 14:54 UTC · Quelle: dream*
-
-Repeated failures on the same model within seconds indicate lack of effective circuit breaking or failover mechanisms.
-
-### `dream:20260831145434:4:a4af2b`
-*31.08. 14:54 UTC · Quelle: dream*
-
-Free-tier models consistently fail under load, implying resource contention or aggressive rate limiting on shared endpoints.
-
-### `dream:20260831145434:3:b0d12f`
-*31.08. 14:54 UTC · Quelle: dream*
-
-Latency spikes (8.3s to 11.3s) on successful calls correlate with degraded model performance, suggesting throttling before outright failure.
-
-### `dream:20260831145434:2:985ac8`
-*31.08. 14:54 UTC · Quelle: dream*
-
-Models returning 200 with empty choices (e.g., Nvidia upstream overload) reveal silent failure modes that bypass standard error handling.
-
-### `dream:20260831145434:1:a4ea32`
-*31.08. 14:54 UTC · Quelle: dream*
-
-429 errors dominate across multiple providers, indicating systemic rate-limit exhaustion rather than isolated model issues.
-
-### `dream:20260831144553:5:e76b1d`
-*31.08. 14:45 UTC · Quelle: dream*
-
-Skill proposals are generated but not deduplicated or prioritized by novelty or impact, leading to redundant or low-value suggestions being surfaced.
-
-### `dream:20260831144553:4:56ba72`
-*31.08. 14:45 UTC · Quelle: dream*
-
-Drive goals related to error reduction, artifact cleanup, and skill activation remain unlinked to concrete skill implementations, creating execution gaps.
-
-### `dream:20260831144553:3:46a82b`
-*31.08. 14:45 UTC · Quelle: dream*
-
-Latency and token efficiency vary significantly between successful model calls, suggesting that lightweight tasks should route to faster, cheaper models.
-
-### `dream:20260831144553:2:26cd0c`
-*31.08. 14:45 UTC · Quelle: dream*
-
-Model failures cascade when fallback chains are not enforced, causing repeated attempts on already-failing endpoints within short time windows.
-
-### `dream:20260831144553:1:f98fe7`
-*31.08. 14:45 UTC · Quelle: dream*
-
-Rate limiting (429) is the dominant failure mode across multiple model endpoints, indicating systemic overload rather than isolated model issues.
-
-### `dream:20260831143631:5:701f40`
-*31.08. 14:36 UTC · Quelle: dream*
-
-High-latency models (nemotron-3-ultra, 27-96s per call) were used repeatedly for tasks that the fast flash model (21.5s) already handled successfully, wasting cycle time on unnecessary compute.
-
-### `dream:20260831143631:4:33bc04`
-*31.08. 14:36 UTC · Quelle: dream*
-
-Evolution runs showed a massive gap between the base score (1/10) and variant scores (7-8), yet the swarm did not converge in 2 cycles, suggesting variants are too incremental rather than radically re-exploring the solution space.
-
-### `dream:20260831143631:3:5f2523`
-*31.08. 14:36 UTC · Quelle: dream*
-
-Calibration predicted a score of 6 against an actual score of 1 (6x overestimate), revealing a dangerous confidence inflation that could misguide future resource allocation.
-
-### `dream:20260831143631:2:b20fa8`
-*31.08. 14:36 UTC · Quelle: dream*
-
-Artifacts consistently fail to execute in the sandbox (hand_action exit 1, gelesen=0, traceback at line 102), meaning generated code is not validated before being marked as a deliverable.
-
-### `dream:20260831143631:1:ec4bac`
-*31.08. 14:36 UTC · Quelle: dream*
-
-Rate-limited models (glm-5.2 returning 429) failed repeatedly without fallback, indicating the absence of a circuit-breaker that switches providers after consecutive throttling errors.
-
-### `dream:20260831143043:5:a33398`
-*31.08. 14:30 UTC · Quelle: dream*
-
-Metabolism signaled conserve mode with a budget of max 3 tasks and 1 iteration, yet the system continued attempting multiple model calls, suggesting budget constraints are informational rather than hard gates.
-
-### `dream:20260831143043:4:6a8b77`
-*31.08. 14:30 UTC · Quelle: dream*
-
-The artifact itself does not run (Traceback in TOR check), indicating that artifacts must be validated for executability before being queued for deployment.
-
-### `dream:20260831143043:3:18ff7e`
-*31.08. 14:30 UTC · Quelle: dream*
-
-The hand_action step failed silently (exit 1, 0 bytes read, no error message), revealing that execution-layer tools lack proper error reporting and retry resilience.
-
-### `dream:20260831143043:2:5a1b78`
-*31.08. 14:30 UTC · Quelle: dream*
-
-The simulation's 'revise' verdict with 5 identified risks prevented a flawed execution, proving that pre-execution validation gates save wasted resources.
-
-### `dream:20260831143043:1:941111`
-*31.08. 14:30 UTC · Quelle: dream*
-
-Free-tier API models on OpenRouter consistently hit 429 rate limits and 502 upstream errors, making a known-working model whitelist with exponential backoff essential for reliability.
 
 ### `last_swarm_critique`
 *31.08. 13:34 UTC · Quelle: critic*
