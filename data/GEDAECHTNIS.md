@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11294 Fakten** · Stand 2026-09-14 16:38 UTC · aktualisiert bei jedem Herzschlag
+**11306 Fakten** · Stand 2026-09-14 16:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7173
-- **swarm_artifact:** 1655
-- **last_swarm_critique:** 952
-- **last_swarm_goal:** 687
+- **dream:** 7178
+- **swarm_artifact:** 1661
+- **last_swarm_critique:** 953
+- **last_swarm_goal:** 688
 - **anti_pattern:** 377
 - **strategy:** 191
 - **tool:** 156
-- **hand_result:** 83
+- **hand_result:** 82
 - **aktuell_organfehler:** 20
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*14.09. 16:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Strict input validation and capability-based path resolution - Whitelist skill names, sanitize paths by removing '..' and resolving relative to a safe root, and enforce that file copy operations are restricted to the designat
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:0`
+*14.09. 16:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Full AST traversal with pattern matching on all node types - Implement a custom AST visitor that walks every node (including Attribute, Name, and Subscript) and flags any occurrence of 'os.system' or similar dangerous identif
+
+### `last_swarm_critique`
+*14.09. 16:55 UTC · Quelle: critic*
+
+score=5; issues=Safety check fails to detect os.system calls because AST dump does not contain the pattern 'os.system'; Path traversal vulnerability: skill name is not sanitized when constructing file path, allowing directory traversal; Arbitrary file copy: 'p
+
+### `last_swarm_goal`
+*14.09. 16:48 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten integrieren
+
+### `dream:20260914164724:5:a80068`
+*14.09. 16:47 UTC · Quelle: dream*
+
+Successful execution of reflex actions and self-diagnosis with zero organ errors indicates robust internal monitoring that should be extended to model failures.
+
+### `dream:20260914164724:4:587789`
+*14.09. 16:47 UTC · Quelle: dream*
+
+Drive goals focusing on model reliability, stale data refresh, and organ error resolution reveal cross-cutting priorities for improving system resilience.
+
+### `dream:20260914164724:3:0426b6`
+*14.09. 16:47 UTC · Quelle: dream*
+
+The system pruned 26 facts and 60 events in one cycle, showing effective memory consolidation but also the need for adaptive pruning thresholds to avoid over-pruning.
+
+### `dream:20260914164724:2:22a396`
+*14.09. 16:47 UTC · Quelle: dream*
+
+Timeouts on large models like nvidia/nemotron-3-ultra-550b-a55b demonstrate the need for latency-aware model selection and timeout handling.
+
+### `dream:20260914164724:1:925a75`
+*14.09. 16:47 UTC · Quelle: dream*
+
+Repeated 429 Too Many Requests errors on free-tier models indicate a rate-limit vulnerability that requires automatic fallback to alternative models.
 
 ### `dream:20260914163515:5:17be92`
 *14.09. 16:35 UTC · Quelle: dream*
@@ -41599,16 +41644,6 @@ Nemotron latency variance (25–80s) indicates cold-start or queueing effects; s
 *31.08. 16:49 UTC · Quelle: dream*
 
 Repeated 429 errors on glm-5.2 reveal that single-key-per-model routing fails under quota pressure; rotating key pools with per-key circuit breakers are necessary.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten aus Trä:2`
-*31.08. 16:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Evolutionary Dream-Driven Genetic Programming with Niche Preservation - Treat each dream as a fitness landscape generator: an LLM converts dream narratives into executable fitness functions (property-based, simulation-based, 
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten aus Trä:1`
-*31.08. 16:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Latent Skill Manifold Crystallization via Diffusion Code Generation - Train a dream encoder (Transformer + contrastive learning) mapping dream reports to a latent skill manifold. Condition a code diffusion model (fine-tuned C
 
 ### `last_swarm_critique`
 *31.08. 16:32 UTC · Quelle: critic*

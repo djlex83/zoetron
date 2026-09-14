@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 16:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 16:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler beheben *(wieder aufgegriffen: 4×)*
-- Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
-- Alte Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 - Träume verbinden *(wieder aufgegriffen: 3×)*
+- Veraltete Schwarm-Ziele aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful execution of reflex actions and self-diagnosis with zero organ errors indicates robust internal monitoring that should be extended to model
+- Drive goals focusing on model reliability, stale data refresh, and organ error resolution reveal cross-cutting priorities for improving system resilie
+- The system pruned 26 facts and 60 events in one cycle, showing effective memory consolidation but also the need for adaptive pruning thresholds to avo
+- Timeouts on large models like nvidia/nemotron-3-ultra-550b-a55b demonstrate the need for latency-aware model selection and timeout handling.
+- Repeated 429 Too Many Requests errors on free-tier models indicate a rate-limit vulnerability that requires automatic fallback to alternative models.
 - A drive timeout (180s) occurred alongside aggressive memory pruning (26 facts, 60 events), suggesting I/O contention during storage operations.
 - The swarm failed to converge (score 6/10) despite evolution and 3 revisions, indicating the critic feedback loop or role distribution needs adjustment
 - dots-studio/dots-3-note-preview:free was the only consistently successful model, completing 4 tasks with 27-36s latency and reasonable token usage.
@@ -51,11 +56,6 @@
 - Evolutionary refinement raised the solution score from 4/10 to 9/10, confirming the value of iterative criticism.
 - The dots-studio/dots-3-note-preview:free model provided consistent success with latencies under 50s, serving as a reliable alternative.
 - Google/gemma free models repeatedly returned HTTP 429, indicating rate-limit exhaustion and the need for fallback.
-- Updating stale swarm data is a prerequisite for combining dreams, as the initial update failure blocked progress on the combination goal.
-- High metabolic stress triggers a conservative state with strict budgets (max 3 tasks, 1 iteration), which naturally limits task scope but ensures syst
-- Pre-execution simulation with revisions successfully mitigated risks before the final update action, proving its value in resource-constrained environ
-- Reflexive update scripts can timeout under stress, but a subsequent lightweight hand action or direct artifact execution successfully completes the up
-- Free-tier models like Google Gemma frequently fail with 429 rate-limit errors under load, requiring automatic fallback to alternative free models like
 
 ---
 
