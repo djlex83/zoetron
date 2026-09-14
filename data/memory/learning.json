@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 03:16:04",
+ "stand": "2026-09-14 03:25:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -165,6 +165,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modellfehler-stark-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -250,12 +256,6 @@
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

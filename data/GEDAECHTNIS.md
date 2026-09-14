@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11336 Fakten** · Stand 2026-09-14 03:17 UTC · aktualisiert bei jedem Herzschlag
+**11336 Fakten** · Stand 2026-09-14 03:27 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7268
 - **swarm_artifact:** 1633
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `dream:20260914032512:5:6aa4dd`
+*14.09. 03:25 UTC · Quelle: dream*
+
+Metabolic stress hits 1.0 and forces conserve mode (max_tasks=3), yet the planner still queues work, causing queue buildup and starvation.
+
+### `dream:20260914032512:4:50fa2b`
+*14.09. 03:25 UTC · Quelle: dream*
+
+Reflex tools are registered without validation; 'modellfehler-stark-verringern.py' returned ok:false but stayed in the registry, wasting retries.
+
+### `dream:20260914032512:3:c998a8`
+*14.09. 03:25 UTC · Quelle: dream*
+
+Hand actions fail on relative paths because the working directory diverges from ZOETRON_DATA; every file op must resolve absolute paths via the environment variable.
+
+### `dream:20260914032512:2:87e142`
+*14.09. 03:25 UTC · Quelle: dream*
+
+Latency variance (14s–196s) breaks downstream budgets; tasks spawn sub-tasks without subtracting active model p90 latency first.
+
+### `dream:20260914032512:1:5835ae`
+*14.09. 03:25 UTC · Quelle: dream*
+
+Model API failures (502 overload, 429 rate-limit) cascade into task failure because no fallback chain or circuit breaker exists across providers.
 
 ### `dream:20260914031524:5:6b9516`
 *14.09. 03:15 UTC · Quelle: dream*
@@ -41997,31 +42022,6 @@ The only functional model (poolside/laguna-s-2.1:free) violates latency SLAs (>1
 *31.08. 03:25 UTC · Quelle: dream*
 
 Free-tier model endpoints share correlated rate-limit failures (429), making single-model reliance fragile.
-
-### `dream:20260831031934:5:6e6818`
-*31.08. 03:19 UTC · Quelle: dream*
-
-Self-diagnosis and pruning reported zero issues, indicating the failure domain is external (upstream rate limits) not internal corruption.
-
-### `dream:20260831031934:4:861785`
-*31.08. 03:19 UTC · Quelle: dream*
-
-Five skill proposals were emitted in one cycle but no persistence or tracking mechanism exists, so they likely vanish without implementation.
-
-### `dream:20260831031934:3:1ee5a2`
-*31.08. 03:19 UTC · Quelle: dream*
-
-Reflex tool 'abgelehnte-werkzeuge-verstehen-und-verbe.py' completed the market-analysis goal autonomously, proving reflexes can substitute for failed model calls.
-
-### `dream:20260831031934:2:38fcd1`
-*31.08. 03:19 UTC · Quelle: dream*
-
-Only inclusionai/ling-3.0-flash-fin:free remained available, creating a single point of failure for all LLM-dependent tasks.
-
-### `dream:20260831031934:1:bb35cc`
-*31.08. 03:19 UTC · Quelle: dream*
-
-Multiple free-tier models simultaneously hit 429 rate limits, revealing that routing without per-model quota awareness causes cascading failures.
 
 ### `last_swarm_critique`
 *31.08. 02:57 UTC · Quelle: critic*

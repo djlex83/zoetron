@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7974 Neuronen · 830228 bewertete Synapsen
+Stand: 7971 Neuronen · 830540 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 7974 Neuronen · 830228 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1009 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1010 | 0.23 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 1010 | 0.24 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 1009 | 0.23 |
 | 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 894 | 0.23 |
-| 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 893 | 0.22 |
+| 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 894 | 0.22 |
 | 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 823 | 0.23 |
 | 6 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 778 | 0.25 |
-| 7 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 813 | 0.24 |
-| 8 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 798 | 0.24 |
+| 7 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 812 | 0.24 |
+| 8 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 799 | 0.24 |
 | 9 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 818 | 0.23 |
-| 10 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 791 | 0.24 |
+| 10 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 792 | 0.24 |
 | 11 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 827 | 0.23 |
 | 12 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 745 | 0.25 |
-| 13 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 833 | 0.22 |
+| 13 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 834 | 0.22 |
 | 14 | 💭 | Model failures cascade from primary providers (502, 429, 99s lat… | 815 | 0.23 |
-| 15 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 713 | 0.26 |
+| 15 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 712 | 0.26 |
 
 ## Die 15 stärksten Synapsen
 
@@ -42,8 +42,8 @@ Stand: 7974 Neuronen · 830228 bewertete Synapsen
 | 8 | **0.55** | 💭 The swarm architecture with planner/builder/cr… | 💭 Swarm convergence in a single cycle with role … |
 | 9 | **0.55** | 💭 nvidia/nemotron-3-ultra succeeds consistently … | 💭 The inclusionai/ling-3.0-flash-fin:free model … |
 | 10 | **0.55** | 💭 Free-tier models exhibit cascading 429 rate-li… | 💭 Free-tier model endpoints exhibit bursty avail… |
-| 11 | **0.55** | 💭 Free-tier models (Nemotron, Gemma) exhibit hig… | 💭 The inclusionai/ling-3.0-flash-fin:free model … |
-| 12 | **0.55** | 💭 Swarm knowledge staleness is only detected rea… | 💭 Swarm knowledge staleness is detected only aft… |
-| 13 | **0.55** | 💭 Model latency varies 2x (40-86s) for identical… | 💭 Model latency varies 10x (12s to 120s) for ide… |
-| 14 | **0.55** | 💭 Free tier model endpoints exhibit cascading 42… | 💭 Model endpoints exhibit cascading failures (50… |
-| 15 | **0.54** | 💭 Stale goals (market analysis, model-error redu… | 💭 Stale drive goals (market analysis, model reli… |
+| 11 | **0.55** | 💭 File operations fail when using relative paths… | 💭 Hand actions fail on relative paths because th… |
+| 12 | **0.55** | 💭 Free-tier models (Nemotron, Gemma) exhibit hig… | 💭 The inclusionai/ling-3.0-flash-fin:free model … |
+| 13 | **0.55** | 💭 Swarm knowledge staleness is only detected rea… | 💭 Swarm knowledge staleness is detected only aft… |
+| 14 | **0.55** | 💭 Model latency varies 2x (40-86s) for identical… | 💭 Model latency varies 10x (12s to 120s) for ide… |
+| 15 | **0.55** | 💭 Free tier model endpoints exhibit cascading 42… | 💭 Model endpoints exhibit cascading failures (50… |

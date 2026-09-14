@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 03:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolic stress hits 1.0 and forces conserve mode (max_tasks=3), yet the planner still queues work, causing queue buildup and starvation.
+- Reflex tools are registered without validation; 'modellfehler-stark-verringern.py' returned ok:false but stayed in the registry, wasting retries.
+- Hand actions fail on relative paths because the working directory diverges from ZOETRON_DATA; every file op must resolve absolute paths via the enviro
+- Latency variance (14s–196s) breaks downstream budgets; tasks spawn sub-tasks without subtracting active model p90 latency first.
+- Model API failures (502 overload, 429 rate-limit) cascade into task failure because no fallback chain or circuit breaker exists across providers.
 - Resolving all paths via the ZOETRON_DATA environment variable eliminates path ambiguity and improves script portability.
 - Requiring three stable cycles before accepting goal completion reduces false convergence and improves reliability.
 - Hand actions that read zero items indicate missing preconditions; adding a validation step before execution prevents wasted cycles.
@@ -51,11 +56,6 @@
 - Stale swarm knowledge leads to outdated decisions, requiring periodic refresh with validation against current task performance.
 - Latency varies widely between calls, so pre‑flight token estimation can prevent overspending on slow models.
 - Model endpoints frequently return 502 or 429 errors under load, indicating a need for health monitoring and fallback routing.
-- Pruning removes 15–37 items per cycle yet self-diagnosis reports zero organ errors, suggesting pruning masks rather than fixes root causes.
-- Proposed skills accumulate but are never validated against live performance, so the meta-learning loop remains open.
-- Latency variance (28–58s) on the same model makes time-budget planning unreliable without per-model p50/p95 tracking.
-- Swarm evolution consistently stalls at score 6/10 with converged=false, indicating the critic/builder loop lacks a hard acceptance threshold.
-- Model endpoint failures (502 upstream errors) cascade into task failure because no automatic failover or circuit-breaker exists.
 
 ---
 
