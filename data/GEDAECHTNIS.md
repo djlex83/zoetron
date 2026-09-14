@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11255 Fakten** · Stand 2026-09-14 20:29 UTC · aktualisiert bei jedem Herzschlag
+**11245 Fakten** · Stand 2026-09-14 20:39 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7158
-- **swarm_artifact:** 1637
+- **swarm_artifact:** 1631
 - **last_swarm_critique:** 954
 - **last_swarm_goal:** 689
-- **anti_pattern:** 373
-- **strategy:** 189
-- **tool:** 152
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 151
 - **hand_result:** 81
 - **aktuell_organfehler:** 22
 
 ---
+
+### `dream:20260914203710:5:8e2c67`
+*14.09. 20:37 UTC · Quelle: dream*
+
+Current memory pruning is aggressive and may discard useful context; a balanced retention policy is needed.
+
+### `dream:20260914203710:4:09edcc`
+*14.09. 20:37 UTC · Quelle: dream*
+
+Dream consolidation times out under high event loads; adding incremental checkpoints every 60 seconds will preserve progress.
+
+### `dream:20260914203710:3:5fa760`
+*14.09. 20:37 UTC · Quelle: dream*
+
+Skill proposals often lack observable side effects, resulting in low implementation rates; enforcing side-effect contracts will improve adoption.
+
+### `dream:20260914203710:2:17cd79`
+*14.09. 20:37 UTC · Quelle: dream*
+
+Free-tier model predictions are consistently overconfident by about two score units, requiring a calibration correction.
+
+### `dream:20260914203710:1:0c0d25`
+*14.09. 20:37 UTC · Quelle: dream*
+
+Repeated HTTP 429 errors from the free-tier model indicate the need for an automatic failover mechanism.
 
 ### `dream:20260914202730:5:313eb0`
 *14.09. 20:27 UTC · Quelle: dream*
@@ -41425,21 +41450,6 @@ Fallback model (nvidia/nemotron) exhibits high latency (9-21s) with no task-type
 
 The primary model (z-ai/glm-5.2) consistently fails with 429 rate limits, indicating missing retry/backoff logic and over-reliance on a single provider.
 
-### `tool:veraltete-analyseergebnisse-mit-neuen-da`
-*31.08. 20:35 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Analyseergebnisse mit neuen Daten ergänzen'. Datei: data/tools/veraltete-analyseergebnisse-mit-neuen-da.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Analyseergebni:1`
-*31.08. 20:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Event-Driven Incremental Update Pipeline - Adopt an event-driven architecture: new data ingestion publishes events to a message broker (e.g., Kafka). A stream processing service consumes these events and incrementally updates
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Analyseergebni:0`
-*31.08. 20:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Unified Versioned Data Store with Automated Re-analysis - Implement a single versioned data store (e.g., a database with temporal tables or a versioned file system like DVC) that holds both raw data and analysis results. When
-
 ### `last_swarm_critique`
 *31.08. 20:34 UTC · Quelle: critic*
 
@@ -41449,31 +41459,6 @@ score=4; issues=Keine echte Integration: Der 'Merge' hängt neue Daten nur als s
 *31.08. 20:28 UTC · Quelle: system*
 
 Veraltete Analyseergebnisse mit neuen Daten ergänzen
-
-### `dream:20260831202739:5:404eb8`
-*31.08. 20:27 UTC · Quelle: dream*
-
-Stress signals (high error rates, latency spikes) are not yet linked to automatic concurrency throttling or timeout scaling.
-
-### `dream:20260831202739:4:cd9834`
-*31.08. 20:27 UTC · Quelle: dream*
-
-Skill proposals accumulate without validation gates, risking registry pollution from untested or harmful capabilities.
-
-### `dream:20260831202739:3:f32a3d`
-*31.08. 20:27 UTC · Quelle: dream*
-
-Reflex-driven maintenance (e.g., pruning stale analyses) succeeds reliably when scoped to single, well-defined tools.
-
-### `dream:20260831202739:2:5bcf5e`
-*31.08. 20:27 UTC · Quelle: dream*
-
-The system lacks real-time per-model health telemetry, causing repeated attempts to failing endpoints instead of immediate quarantine.
-
-### `dream:20260831202739:1:a789e0`
-*31.08. 20:27 UTC · Quelle: dream*
-
-Free-tier LLM providers consistently return 429 rate-limit errors and 502 upstream overloads, making them unreliable for production workloads without automatic failover.
 
 ### `last_swarm_critique`
 *31.08. 19:28 UTC · Quelle: critic*

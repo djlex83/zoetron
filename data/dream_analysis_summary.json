@@ -1,14 +1,14 @@
 {
-  "total": 777,
+  "total": 782,
   "content_length_stats": {
     "min": 0,
     "max": 122,
-    "avg": 3.6692406692406694
+    "avg": 3.6457800511508953
   },
   "unique_tags": [],
   "time_range": {
     "earliest": "2026-08-26T06:09:15.112365",
-    "latest": "2026-09-14T06:53:47.259527"
+    "latest": "2026-09-14T16:36:41.535276"
   },
   "dreams": [
     {
@@ -1123,7 +1123,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-10T17:06:16.178493+00:00",
+      "timestamp": "2026-09-14T17:42:50.807761+00:00",
       "content_length": 0,
       "tags": []
     },
@@ -1537,6 +1537,12 @@
     },
     {
       "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
       "timestamp": "2026-08-27T00:10:20.365546+00:00",
       "content_length": 0,
       "tags": []
@@ -1573,7 +1579,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-13T20:50:11.375682",
+      "timestamp": "2026-09-14T16:36:41.535276",
       "content_length": 0,
       "tags": []
     },
@@ -1609,7 +1615,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-10T17:06:14.813501+00:00",
+      "timestamp": "2026-09-14T17:42:49.529294+00:00",
       "content_length": 0,
       "tags": []
     },
@@ -3703,6 +3709,12 @@
     },
     {
       "id": "unknown",
+      "timestamp": "2026-09-14T19:28:36.975265+00:00",
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
       "timestamp": null,
       "content_length": 0,
       "tags": []
@@ -4124,6 +4136,24 @@
     {
       "id": "CAP-0042",
       "timestamp": "2026-09-11T13:45:25.693049",
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
       "content_length": 0,
       "tags": []
     },
