@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 21:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 22:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning occurs only during explicit low-activity windows, leaving transient noise to pollute context and inflate token costs.
+- Swarm evolution runs lack measurable convergence criteria, allowing premature termination or infinite loops that waste compute cycles.
+- Skill proposals accumulate without a validation gate, risking integration of untested or redundant capabilities that degrade system coherence.
+- Rate-limit errors (429) and read timeouts correlate with missing exponential backoff and health-aware routing, making fallback selection reactive rath
+- Model failures cascade when timeout guards and circuit breakers are absent, causing downstream blocking across the entire inference pipeline.
 - Failure patterns (e.g., 429) are provider-specific and can be used to dynamically route requests away from failing models.
 - Staleness in swarm data triggers reflex updates, proving that staleness signals can drive maintenance actions.
 - A large backlog of unimplemented skill proposals suggests the need for an automated prioritization pipeline.
@@ -51,11 +56,6 @@
 - Validating tool arguments before execution eliminates many runtime errors.
 - Consecutive failures of the same model class trigger automatic demotion, preventing repeated wasted calls.
 - The system frequently encounters 429 Too Many Requests and timeout errors, pointing to rate limits and network latency.
-- Repeated 429 errors suggest that rate-limit tracking and adaptive request spacing are necessary to avoid throttling by external APIs.
-- The dots-studio model succeeded despite high latency, confirming that latency varies and that selecting the fastest available model per request can op
-- Pruning 10 facts and 22 events in one run shows that periodic cleanup reduces noise and improves the speed and relevance of subsequent operations.
-- The reflex that combined dreams with updated swarm data converged successfully, indicating that fresh external knowledge is essential for effective in
-- Model timeouts and 429 errors demonstrate that a single-model dependency is fragile; a fallback chain with health checks and exponential backoff is re
 
 ---
 

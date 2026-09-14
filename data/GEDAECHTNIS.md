@@ -1,18 +1,48 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11256 Fakten** · Stand 2026-09-14 22:01 UTC · aktualisiert bei jedem Herzschlag
+**11235 Fakten** · Stand 2026-09-14 22:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7168
-- **swarm_artifact:** 1627
+- **dream:** 7153
+- **swarm_artifact:** 1621
 - **last_swarm_critique:** 955
 - **last_swarm_goal:** 690
 - **anti_pattern:** 373
 - **strategy:** 189
-- **tool:** 150
+- **tool:** 149
 - **hand_result:** 81
-- **aktuell_organfehler:** 23
+- **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260914220940:5:4ca543`
+*14.09. 22:09 UTC · Quelle: dream*
+
+Event pruning occurs only during explicit low-activity windows, leaving transient noise to pollute context and inflate token costs.
+
+### `dream:20260914220940:4:84c339`
+*14.09. 22:09 UTC · Quelle: dream*
+
+Swarm evolution runs lack measurable convergence criteria, allowing premature termination or infinite loops that waste compute cycles.
+
+### `dream:20260914220940:3:620cb4`
+*14.09. 22:09 UTC · Quelle: dream*
+
+Skill proposals accumulate without a validation gate, risking integration of untested or redundant capabilities that degrade system coherence.
+
+### `dream:20260914220940:2:b67d22`
+*14.09. 22:09 UTC · Quelle: dream*
+
+Rate-limit errors (429) and read timeouts correlate with missing exponential backoff and health-aware routing, making fallback selection reactive rather than predictive.
+
+### `dream:20260914220940:1:298331`
+*14.09. 22:09 UTC · Quelle: dream*
+
+Model failures cascade when timeout guards and circuit breakers are absent, causing downstream blocking across the entire inference pipeline.
+
+### `aktuell_organfehler`
+*14.09. 22:07 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-14 21:34:22-21:59:47 UTC): dream -> timeout; act -> timeout. Phase nach 180 s abgebrochen | Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, 
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen öfter anwen:2`
 *14.09. 21:50 UTC · Quelle: evolution*
@@ -41395,61 +41425,6 @@ Multiple independent skill proposals converge on model health monitoring, automa
 
 Recurring 429 errors from z-ai/glm-5.2:free reveal that single-provider dependency without quota-aware routing causes systemic fragility.
 
-### `dream:20260831220210:5:e7ae95`
-*31.08. 22:02 UTC · Quelle: dream*
-
-Five concrete resilience proposals were already generated in-session, demonstrating the system can self-prescribe architectural fixes when given failure telemetry.
-
-### `dream:20260831220210:4:630ce8`
-*31.08. 22:02 UTC · Quelle: dream*
-
-Calibration error of 1 (predicted 7 vs actual 8) shows the internal predictor is well-tuned for model-error tasks.
-
-### `dream:20260831220210:3:8affdc`
-*31.08. 22:02 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831220210:2:ad920d`
-*31.08. 22:02 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (7.6–210.8 s), indicating unreliable SLOs for production use.
-
-### `dream:20260831220210:1:141ebf`
-*31.08. 22:02 UTC · Quelle: dream*
-
-Provider z-ai/glm-5.2:free fails deterministically with 429 rate-limit errors, making it unusable without quota management or fallback.
-
-### `dream:20260831215519:5:0a1c88`
-*31.08. 21:55 UTC · Quelle: dream*
-
-Simulation step caught 3 risks and forced 3 revisions before green-lighting execution, preventing wasted cycles on flawed approaches.
-
-### `dream:20260831215519:4:187b36`
-*31.08. 21:55 UTC · Quelle: dream*
-
-The reflex+swarm pattern (modellfehler-deutlich-reduzieren.py + swarm) combined with simulation verdict "go" produced a working 283-line artifact despite repeated model failures.
-
-### `dream:20260831215519:3:64658d`
-*31.08. 21:55 UTC · Quelle: dream*
-
-Metabolism stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1), forcing the system to serialize work and abandon parallel exploration.
-
-### `dream:20260831215519:2:7063c5`
-*31.08. 21:55 UTC · Quelle: dream*
-
-Hand actions fail when using relative paths instead of absolute paths from ZOETRON_DATA and sys.argv[1]; every file operation must resolve against the real data root first.
-
-### `dream:20260831215519:1:ad320e`
-*31.08. 21:55 UTC · Quelle: dream*
-
-Rate limits (429) on specific models (z-ai/glm-5.2, google/gemma) make them unreliable primaries; nvidia/nemotron and poolside/laguna serve as stable fallbacks.
-
-### `tool:modellfehler-dauerhaft-senken`
-*31.08. 21:43 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler dauerhaft senken'. Datei: data/tools/modellfehler-dauerhaft-senken.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *31.08. 21:43 UTC · Quelle: critic*
 
@@ -41459,56 +41434,6 @@ score=8; issues=Artefakt 2 im Prompt gekappt (nicht Artefakt-Fehler), aber Fallb
 *31.08. 21:38 UTC · Quelle: system*
 
 Modellfehler dauerhaft senken
-
-### `dream:20260831213815:5:0efd45`
-*31.08. 21:38 UTC · Quelle: dream*
-
-Lightweight models (poolside/laguna-s-2.1, inclusionai/ling-3.0-flash-fin) succeed with sub-second latency when heavy models fail.
-
-### `dream:20260831213815:4:24c495`
-*31.08. 21:38 UTC · Quelle: dream*
-
-Calibration consistently overestimates cycle count (predicted 6 vs actual 4), suggesting the planner underestimates tool efficiency.
-
-### `dream:20260831213815:3:ccbc92`
-*31.08. 21:38 UTC · Quelle: dream*
-
-Evolutionary refinement with critic feedback can recover severely flawed artifacts (score 4→9) in a single generation.
-
-### `dream:20260831213815:2:494e29`
-*31.08. 21:38 UTC · Quelle: dream*
-
-Nvidia Nemotron-3-Ultra exhibits bimodal latency (15s vs 60s+) and intermittent 502 upstream errors, indicating unreliable capacity.
-
-### `dream:20260831213815:1:4badae`
-*31.08. 21:38 UTC · Quelle: dream*
-
-Rate limiting (429) affects all free-tier models simultaneously, making sequential fallback ineffective during high load.
-
-### `dream:20260831213141:5:c4f3bd`
-*31.08. 21:31 UTC · Quelle: dream*
-
-No circuit-breaker or model-health tracking exists: failed models are retried identically to healthy ones, causing cascading delays.
-
-### `dream:20260831213141:4:64d2cc`
-*31.08. 21:31 UTC · Quelle: dream*
-
-The system retries rate-limited models (z-ai/glm-5.2:free) immediately with zero backoff, wasting cycles and accelerating quota exhaustion.
-
-### `dream:20260831213141:3:347a4e`
-*31.08. 21:31 UTC · Quelle: dream*
-
-poolside/laguna-s-2.1:free latency scales linearly with output tokens (0.8s for 8 tokens vs 197s for 10k tokens), revealing per-token processing bottleneck.
-
-### `dream:20260831213141:2:1d54a0`
-*31.08. 21:31 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free succeeds where others fail but exhibits 6x latency variance (8-48s), indicating queue-dependent upstream capacity.
-
-### `dream:20260831213141:1:184052`
-*31.08. 21:31 UTC · Quelle: dream*
-
-Free-tier models consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads without aggressive request spacing.
 
 ### `last_swarm_critique`
 *31.08. 21:15 UTC · Quelle: critic*

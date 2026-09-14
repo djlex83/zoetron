@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 21:59:52",
+ "stand": "2026-09-14 22:10:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -189,6 +189,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "simulationen-gezielt-einsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -268,12 +274,6 @@
   },
   {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
