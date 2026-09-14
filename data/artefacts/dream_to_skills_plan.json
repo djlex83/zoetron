@@ -1,0 +1,109 @@
+{
+  "goal": "Träume in echte Fähigkeiten umsetzen",
+  "skills": [
+    {
+      "name": "Dream Analysis",
+      "description": "Interpret dreams to identify underlying desires and themes.",
+      "deliverables": [
+        "Maintain a dream journal for 30 days",
+        "Identify 5 recurring themes",
+        "Write a summary report linking themes to potential skills"
+      ]
+    },
+    {
+      "name": "Skill Mapping",
+      "description": "Convert dream themes into concrete, learnable skills.",
+      "deliverables": [
+        "List of 3-5 skills to develop",
+        "For each skill, define a clear outcome (e.g., 'able to build a website')",
+        "Prioritize skills based on interest and feasibility"
+      ]
+    },
+    {
+      "name": "Learning Plan Design",
+      "description": "Create a structured learning path for each skill.",
+      "deliverables": [
+        "For each skill, a step-by-step learning plan with resources",
+        "Estimated time commitment per week",
+        "Milestones for each skill"
+      ]
+    },
+    {
+      "name": "Practice Schedule",
+      "description": "Establish a consistent routine for practicing skills.",
+      "deliverables": [
+        "Weekly schedule with dedicated practice blocks",
+        "Method for tracking practice sessions",
+        "Plan for handling obstacles (e.g., time constraints)"
+      ]
+    },
+    {
+      "name": "Progress Tracking",
+      "description": "Monitor and record progress towards skill mastery.",
+      "deliverables": [
+        "Choose a tracking tool (e.g., spreadsheet, app)",
+        "Define metrics for each skill",
+        "Weekly review process"
+      ]
+    },
+    {
+      "name": "Review and Adjustment",
+      "description": "Regularly evaluate the plan and make necessary changes.",
+      "deliverables": [
+        "Monthly review checklist",
+        "Criteria for adjusting goals or methods",
+        "Plan for celebrating milestones"
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "name": "Dream Journal Complete",
+      "description": "30 days of dream entries",
+      "duration": "30 days"
+    },
+    {
+      "name": "Skill List Finalized",
+      "description": "Select and prioritize skills",
+      "duration": "1 week after journal"
+    },
+    {
+      "name": "Learning Plans Created",
+      "description": "Detailed plans for each skill",
+      "duration": "2 weeks after skill list"
+    },
+    {
+      "name": "First Practice Session",
+      "description": "Begin practicing first skill",
+      "duration": "1 week after learning plan"
+    },
+    {
+      "name": "First Monthly Review",
+      "description": "Assess progress and adjust",
+      "duration": "30 days after start"
+    }
+  ],
+  "success_metrics": [
+    {
+      "metric": "Number of skills actively practiced",
+      "target": ">= 3"
+    },
+    {
+      "metric": "Consistency of practice (sessions per week)",
+      "target": ">= 80% of planned sessions"
+    },
+    {
+      "metric": "Completion of learning plan milestones",
+      "target": "100% of milestones within 2 weeks of target"
+    },
+    {
+      "metric": "Demonstrable output for each skill",
+      "target": "At least one concrete artifact per skill (e.g., project, presentation)"
+    }
+  ],
+  "resources": {
+    "time": "2-3 hours per week for practice, plus 30 minutes for journaling and review",
+    "budget": "Low (mostly free online resources, may include books or courses)",
+    "mentors": "Optional: seek feedback from experts in desired skill areas"
+  }
+}

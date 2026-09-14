@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-13 23:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 00:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder aktuell machen *(wieder aufgegriffen: 3×)*
-- Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency and token usage vary wildly between calls, suggesting that the system does not yet adapt its request patterns to model health.
+- Prune runs remove events but ignore facts, leaving a growing knowledge base that is never systematically aged or deprecated.
+- Reflex-based goal updates and memory consolidation are effective self-correction mechanisms but remain manually triggered and isolated.
+- Recurring drive goals around model errors and stale swarm knowledge indicate that reactive reflexes are insufficient without predictive maintenance.
+- The system repeatedly generates skill proposals but lacks a closed loop to implement and validate them, creating a growing backlog of unmet potential.
 - Swarm-intelligence and simulation drive goals recur but no corresponding actions appear, indicating intent–execution decoupling for collaborative and 
 - Skill proposals accumulate (6+ in log) but none deploy; the proposal–deployment gap is now explicit in a proposal itself (skill-gate).
 - Three distinct model-reliability proposals (registry, router, calibration) cluster around the same root cause: no systematic model health observabilit
@@ -51,11 +56,6 @@
 - Low swarm confidence after 2+ revisions signals a need for deterministic fallback or human escalation.
 - Free-tier endpoints demand rate limiting with backoff to avoid 429 errors and ensure stability.
 - Model latency is highly variable (6–17s) and requires adaptive timeouts to prevent cascading failures.
-- Skill proposals accumulate in logs but lack a deduplication-to-execution pipeline, so valuable ideas (Model Router, Goal Lifecycle Manager) remain uni
-- Prune runs remove fixed counts (10 facts/10 events) without adaptive pressure signals, risking under- or over-pruning.
-- Reflex tools (e.g., lernen-aus-fehlern-systematisch-verbesse.py) consistently converge when invoked, but are only triggered manually via dream output.
-- Drive goals for 'stale' swarm data and 'failure' model errors recur every cycle, indicating missing automated refresh/retrain triggers.
-- Model failures cascade when rate limits (429) and service overloads (502) hit multiple providers simultaneously, yet no automatic fallback logic exist
 
 ---
 

@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11355 Fakten** · Stand 2026-09-13 23:55 UTC · aktualisiert bei jedem Herzschlag
+**11358 Fakten** · Stand 2026-09-14 00:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7298
-- **swarm_artifact:** 1631
-- **last_swarm_critique:** 939
-- **last_swarm_goal:** 674
+- **dream:** 7303
+- **swarm_artifact:** 1627
+- **last_swarm_critique:** 940
+- **last_swarm_goal:** 675
 - **anti_pattern:** 363
 - **strategy:** 184
 - **tool:** 152
@@ -13,6 +13,46 @@
 - **aktuell_organfehler:** 31
 
 ---
+
+### `tool:träume-in-echte-fähigkeiten-umsetzen`
+*14.09. 00:09 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume in echte Fähigkeiten umsetzen'. Datei: data/tools/träume-in-echte-fähigkeiten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*14.09. 00:09 UTC · Quelle: critic*
+
+score=8; issues=Hardcoded default plan for the specific German goal - not extensible for other default goals; No output schema validation - JSON structure assumed correct; Generic fallback plan for non-default goals lacks specificity; No unit tests or verifica
+
+### `last_swarm_goal`
+*14.09. 00:04 UTC · Quelle: system*
+
+Träume in echte Fähigkeiten umsetzen
+
+### `dream:20260914000311:5:b08c4c`
+*14.09. 00:03 UTC · Quelle: dream*
+
+Model latency and token usage vary wildly between calls, suggesting that the system does not yet adapt its request patterns to model health.
+
+### `dream:20260914000311:4:7557a1`
+*14.09. 00:03 UTC · Quelle: dream*
+
+Prune runs remove events but ignore facts, leaving a growing knowledge base that is never systematically aged or deprecated.
+
+### `dream:20260914000311:3:d039f9`
+*14.09. 00:03 UTC · Quelle: dream*
+
+Reflex-based goal updates and memory consolidation are effective self-correction mechanisms but remain manually triggered and isolated.
+
+### `dream:20260914000311:2:242aa4`
+*14.09. 00:03 UTC · Quelle: dream*
+
+Recurring drive goals around model errors and stale swarm knowledge indicate that reactive reflexes are insufficient without predictive maintenance.
+
+### `dream:20260914000311:1:0393cc`
+*14.09. 00:03 UTC · Quelle: dream*
+
+The system repeatedly generates skill proposals but lacks a closed loop to implement and validate them, creating a growing backlog of unmet potential.
 
 ### `dream:20260913235229:5:2aa1ff`
 *13.09. 23:52 UTC · Quelle: dream*
@@ -42142,11 +42182,6 @@ Hand actions fail because relative paths ignore ZOETRON_DATA, revealing a system
 *31.08. 00:02 UTC · Quelle: dream*
 
 z-ai/glm-5.2:free consistently returns 429 errors yet remains in rotation, proving no automatic quarantine exists for rate-limited models.
-
-### `tool:langsame-fortschritte-beschleunigen`
-*30.08. 23:56 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Langsame Fortschritte beschleunigen'. Datei: data/tools/langsame-fortschritte-beschleunigen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *30.08. 23:56 UTC · Quelle: critic*

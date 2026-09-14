@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8008 Neuronen · 831230 bewertete Synapsen
+Stand: 8007 Neuronen · 831525 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -23,7 +23,7 @@ Stand: 8008 Neuronen · 831230 bewertete Synapsen
 | 11 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 750 | 0.25 |
 | 12 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 829 | 0.23 |
 | 13 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 830 | 0.22 |
-| 14 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 718 | 0.26 |
+| 14 | 💭 | Skill proposals accumulate (5 in last dream) but only one reflex… | 719 | 0.26 |
 | 15 | 💭 | Model failures cascade from primary providers (502, 429, 99s lat… | 815 | 0.23 |
 
 ## Die 15 stärksten Synapsen
