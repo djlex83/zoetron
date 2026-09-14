@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-14 11:08:43",
+ "stand": "2026-09-14 11:20:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,6 +57,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "träume-analysieren.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -94,12 +100,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -193,12 +193,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
@@ -381,8 +375,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.811,
- "simulationen_angewandt": 24,
+ "haende_quote": 0.815,
+ "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 26,
   "best": 9.0,
@@ -390,8 +384,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 25,
-   "schnitt": 5.6
+   "n": 24,
+   "schnitt": 5.46
   },
   "bau": {
    "n": 1,

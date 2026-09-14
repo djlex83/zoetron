@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11336 Fakten** · Stand 2026-09-14 11:10 UTC · aktualisiert bei jedem Herzschlag
+**11331 Fakten** · Stand 2026-09-14 11:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7253
+- **dream:** 7248
 - **swarm_artifact:** 1639
 - **last_swarm_critique:** 947
 - **last_swarm_goal:** 682
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260914111851:5:e7df9b`
+*14.09. 11:18 UTC · Quelle: dream*
+
+The simulation's revise verdict with two revisions demonstrates that iterative refinement can improve outcomes but may need more cycles to converge.
+
+### `dream:20260914111851:4:f86648`
+*14.09. 11:18 UTC · Quelle: dream*
+
+The reflex tool 'lernen-aus-fehlern-systematisch-verbesse.py' successfully transformed model failures into structured lessons, validating systematic error learning.
+
+### `dream:20260914111851:3:cf9d14`
+*14.09. 11:18 UTC · Quelle: dream*
+
+The swarm goal 'Fähigkeiten-Ideen in Taten umsetzen' evolved but did not converge, suggesting the scoring or iteration count needs adjustment.
+
+### `dream:20260914111851:2:5b99af`
+*14.09. 11:18 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free has consistently succeeded with latency under 25 s, making it the most reliable model observed.
+
+### `dream:20260914111851:1:0ba76e`
+*14.09. 11:18 UTC · Quelle: dream*
+
+The repeated 429 errors on google/gemma models and timeouts on nvidia/nemotron indicate that free‑tier models hit quota and stability limits, requiring intelligent fallback.
 
 ### `dream:20260914110730:5:21321d`
 *14.09. 11:07 UTC · Quelle: dream*
@@ -41887,56 +41912,6 @@ Proposed skills accumulate without execution because no lifecycle manager promot
 *31.08. 11:21 UTC · Quelle: dream*
 
 Free-tier models consistently hit 429 rate limits under load, requiring automated routing with health-aware fallback.
-
-### `dream:20260831111441:5:8cb4de`
-*31.08. 11:14 UTC · Quelle: dream*
-
-Concurrent warm-connection pools with real-time health scoring (EWMA latency + error rate) outperform sequential fallback by reducing tail latency and avoiding cold-start penalties.
-
-### `dream:20260831111441:4:043f1e`
-*31.08. 11:14 UTC · Quelle: dream*
-
-Skill proposals accumulate without a promotion mechanism; auto-committing proposals with ≥2 drive signals and assigning owners via capability match ensures implementation follow-through.
-
-### `dream:20260831111441:3:dd6b71`
-*31.08. 11:14 UTC · Quelle: dream*
-
-Silent degradation (latency spikes, empty choices) goes undetected without pre-flight probes; a lightweight completion check before routing production traffic catches degraded endpoints early.
-
-### `dream:20260831111441:2:9832ad`
-*31.08. 11:14 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831111441:1:37e25e`
-*31.08. 11:14 UTC · Quelle: dream*
-
-Rate limiting (429) and upstream overload (502) are the dominant failure modes across free-tier model endpoints, requiring proactive circuit-breaking and health-aware routing.
-
-### `dream:20260831110818:5:361d1c`
-*31.08. 11:08 UTC · Quelle: dream*
-
-Convergence criteria are implicit; making them explicit (score≥8, zero critical risks, no new revisions) prevents premature termination.
-
-### `dream:20260831110818:4:9a37fa`
-*31.08. 11:08 UTC · Quelle: dream*
-
-Swarm iterations lack a durable checkpoint/resume mechanism, forcing full restarts after any crash or rate-limit stall.
-
-### `dream:20260831110818:3:690c3a`
-*31.08. 11:08 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260831110818:2:d14885`
-*31.08. 11:08 UTC · Quelle: dream*
-
-Skill proposals accumulate (70+) without a lightweight validation harness, so most never get tested or adopted.
-
-### `dream:20260831110818:1:fd7d64`
-*31.08. 11:08 UTC · Quelle: dream*
-
-Rate limits (429) on free-tier models cause cascading failures unless exponential backoff, per-model cooldown, and multi-model warm pools are enforced.
 
 ### `last_swarm_critique`
 *31.08. 08:56 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 11:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modellfehler beheben *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation's revise verdict with two revisions demonstrates that iterative refinement can improve outcomes but may need more cycles to converge.
+- The reflex tool 'lernen-aus-fehlern-systematisch-verbesse.py' successfully transformed model failures into structured lessons, validating systematic e
+- The swarm goal 'Fähigkeiten-Ideen in Taten umsetzen' evolved but did not converge, suggesting the scoring or iteration count needs adjustment.
+- dots-studio/dots-3-note-preview:free has consistently succeeded with latency under 25 s, making it the most reliable model observed.
+- The repeated 429 errors on google/gemma models and timeouts on nvidia/nemotron indicate that free‑tier models hit quota and stability limits, requirin
 - Successful artifact generation (91 lines of Python) was directly tied to tracking functional metrics like `hat_code` and `abgerufen` during the evolut
 - The working model exhibited high latency variance (20.5s to 91.1s), requiring robust async task scheduling to prevent loop blocking.
 - Calibration overestimated execution capacity (predicted 6 vs actual 4), highlighting the need to align theoretical model scores with runtime constrain
@@ -51,11 +56,6 @@
 - When budget is constrained (max_tasks=3, max_iterations=1), focus on single-pass execution rather than iterative refinement.
 - Simulation before execution reliably flags risks (4 identified) and prompts revisions (3 applied), making it a valuable guardrail.
 - Free-tier models on OpenRouter (e.g., google/gemma) frequently return 429 errors; implement automatic fallback to alternative free models to maintain 
-- Cross-time dream linking reveals emergent patterns; scheduled consolidation strengthens memory.
-- Stale swarm data reduces relevance; periodic refresh cycles are needed.
-- High metabolism stress triggers conservation mode, limiting task count to the budget.
-- Tool failures often result from unresolved data paths; pre-validate inputs to avoid silent no-ops.
-- Free-tier models frequently return 429 errors, requiring a router with exponential backoff and fallbacks.
 
 ---
 
