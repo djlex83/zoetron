@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11233 Fakten** · Stand 2026-09-15 08:55 UTC · aktualisiert bei jedem Herzschlag
+**11232 Fakten** · Stand 2026-09-15 09:07 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7113
-- **swarm_artifact:** 1635
+- **swarm_artifact:** 1634
 - **last_swarm_critique:** 967
 - **last_swarm_goal:** 702
 - **anti_pattern:** 371
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915090451:5:b3c135`
+*15.09. 09:04 UTC · Quelle: dream*
+
+Targeted reflex actions can effectively resolve specific failure modes when they are precisely defined and monitored.
+
+### `dream:20260915090451:4:22a04b`
+*15.09. 09:04 UTC · Quelle: dream*
+
+The gap between skill proposal generation and implementation is a critical source of recurring failures.
+
+### `dream:20260915090451:3:08c26c`
+*15.09. 09:04 UTC · Quelle: dream*
+
+Memory integration is a fragile capability that must be deliberately trained and structured to be reliable.
+
+### `dream:20260915090451:2:73dc28`
+*15.09. 09:04 UTC · Quelle: dream*
+
+Stale goals and data silently accumulate and necessitate automatic detection and refresh to maintain relevance.
+
+### `dream:20260915090451:1:2ac0d6`
+*15.09. 09:04 UTC · Quelle: dream*
+
+Model API failures (timeouts, rate limits) are the primary cause of system instability and require automated resilience patterns.
 
 ### `dream:20260915085233:5:364e32`
 *15.09. 08:52 UTC · Quelle: dream*
@@ -41231,31 +41256,6 @@ score=8; issues=Keine Unit-Tests oder Integrationstests in den Artefakten vorhan
 *01.09. 08:57 UTC · Quelle: system*
 
 Gelernte Fähigkeiten besser verknüpfen
-
-### `dream:20260901085630:5:eb2149`
-*01.09. 08:56 UTC · Quelle: dream*
-
-Prune runs consistently remove zero facts or events, suggesting the pruning logic is either too conservative or the knowledge base is already compact.
-
-### `dream:20260901085630:4:8b5a10`
-*01.09. 08:56 UTC · Quelle: dream*
-
-The only reliable model (nvidia/nemotron-3-ultra) has high latency (25-72s), creating a fundamental tension between reliability and responsiveness.
-
-### `dream:20260901085630:3:20b479`
-*01.09. 08:56 UTC · Quelle: dream*
-
-A persistent gap exists between skill proposal generation and actual implementation — many proposals are produced but few are trained and operationalized.
-
-### `dream:20260901085630:2:339697`
-*01.09. 08:56 UTC · Quelle: dream*
-
-Self-diagnosis consistently reports zero organ errors despite observable API-level failures, revealing a blind spot in infrastructure error detection.
-
-### `dream:20260901085630:1:66ca30`
-*01.09. 08:56 UTC · Quelle: dream*
-
-Free-tier models on shared APIs (z-ai/glm-5.2) repeatedly hit 429 rate limits and must never serve as primary models on critical paths.
 
 ### `last_swarm_critique`
 *01.09. 08:28 UTC · Quelle: critic*
