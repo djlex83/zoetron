@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11236 Fakten** · Stand 2026-09-15 17:10 UTC · aktualisiert bei jedem Herzschlag
+**11224 Fakten** · Stand 2026-09-15 17:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7128
-- **swarm_artifact:** 1616
+- **dream:** 7123
+- **swarm_artifact:** 1613
 - **last_swarm_critique:** 975
 - **last_swarm_goal:** 710
-- **anti_pattern:** 369
-- **strategy:** 187
-- **tool:** 151
+- **anti_pattern:** 367
+- **strategy:** 186
+- **tool:** 150
 - **hand_result:** 77
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915174126:5:6d36b6`
+*15.09. 17:41 UTC · Quelle: dream*
+
+Self-diagnosis found no internal errors, yet external API failures still cause task failures, so health checks must include external dependencies.
+
+### `dream:20260915174126:4:b72bad`
+*15.09. 17:41 UTC · Quelle: dream*
+
+No facts or events were pruned, suggesting that current memory thresholds are either too high or the dataset is small.
+
+### `dream:20260915174126:3:746f95`
+*15.09. 17:41 UTC · Quelle: dream*
+
+Reflex-driven refresh of stale swarm information prevented data decay without manual intervention.
+
+### `dream:20260915174126:2:bf798f`
+*15.09. 17:41 UTC · Quelle: dream*
+
+The dots-studio model succeeded with high latency, showing that reliability can be prioritized over speed when necessary.
+
+### `dream:20260915174126:1:85e775`
+*15.09. 17:41 UTC · Quelle: dream*
+
+Repeated 429 and timeout errors from free models indicate that the router must detect HTTP status codes and switch to a healthy model automatically.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Swarm-Ziele aktualisiere:1`
 *15.09. 17:07 UTC · Quelle: evolution*
@@ -41206,71 +41231,6 @@ There is a significant gap between proposed skills and completed implementations
 *01.09. 17:40 UTC · Quelle: dream*
 
 Free LLM endpoints are highly volatile and prone to rate-limiting (429) and upstream overloads (502), requiring robust failover mechanisms.
-
-### `dream:20260901173032:5:cd7935`
-*01.09. 17:30 UTC · Quelle: dream*
-
-Pre-flight provider health probes would prevent wasted requests on already-throttled endpoints, saving both quota and latency.
-
-### `dream:20260901173032:4:d4a6b1`
-*01.09. 17:30 UTC · Quelle: dream*
-
-Swarm cycles converged=false despite evolution=true, indicating that evaluation criteria are too loose to halt search and more cycles or tighter convergence gates are needed.
-
-### `dream:20260901173032:3:f903e8`
-*01.09. 17:30 UTC · Quelle: dream*
-
-The gap between 38 skill proposals and only 8 completed dreams reveals an execution bottleneck—generation outpaces implementation by nearly 5x.
-
-### `dream:20260901173032:2:aca91e`
-*01.09. 17:30 UTC · Quelle: dream*
-
-Without a latency SLA guard, models like nemotron-3-ultra (58.9s) succeed but waste time budgets; a configurable abort threshold with immediate fallback is essential.
-
-### `dream:20260901173032:1:b14739`
-*01.09. 17:30 UTC · Quelle: dream*
-
-429 rate-limit errors cascade across all models sharing the same OpenRouter provider, proving that throttling is provider-level and requires sliding-window counters per provider rather than per model.
-
-### `dream:20260901172317:5:3bcc7e`
-*01.09. 17:23 UTC · Quelle: dream*
-
-Poolside/laguna-s-2.1:free shows consistent success (2/2) with low latency (3.5-7.3s), suggesting it should be prioritized as primary model for similar tasks.
-
-### `dream:20260901172317:4:9c4073`
-*01.09. 17:23 UTC · Quelle: dream*
-
-Evolutionary iteration with critic feedback can improve solution scores from 3/10 to 9/10 in a single generation, but requires explicit sandbox validation criteria.
-
-### `dream:20260901172317:3:13aec9`
-*01.09. 17:23 UTC · Quelle: dream*
-
-Calibration predictions overestimate actual performance by ~57% (predicted 7 vs actual 3), indicating a need for empirical baseline tracking per model-task pair.
-
-### `dream:20260901172317:2:db788d`
-*01.09. 17:23 UTC · Quelle: dream*
-
-Consecutive failures trigger automatic model bans (1800s), so error handling must track consecutive failures per model and proactively rotate before ban thresholds.
-
-### `dream:20260901172317:1:421928`
-*01.09. 17:23 UTC · Quelle: dream*
-
-Free tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows without request queuing and exponential backoff.
-
-### `tool:skill-ideen-in-echte-faehigkeiten-umwand`
-*01.09. 17:08 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Skill-Ideen in echte Faehigkeiten umwandeln'. Datei: data/tools/skill-ideen-in-echte-faehigkeiten-umwand.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Skill-Ideen in echte Fae:1`
-*01.09. 17:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 6, 7]): Event-Driven Micro-Pipeline with Contract Testing - Replace the linear artifact-passing pipeline with an event bus (e.g., Redis Streams, Kafka, or in-process asyncio.Queue). Each stage is an independent service that e
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Skill-Ideen in echte Fae:0`
-*01.09. 17:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 9, 8]): Unified Schema-First Pipeline with Adapter Layer - Define a single canonical SkillSpec schema (JSON Schema) that all stages consume/produce. Stage 1 (Ideation) outputs only the schema subset it owns (maturity, tags, e
 
 ### `last_swarm_critique`
 *01.09. 17:03 UTC · Quelle: critic*
