@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11232 Fakten** · Stand 2026-09-15 13:08 UTC · aktualisiert bei jedem Herzschlag
+**11225 Fakten** · Stand 2026-09-15 13:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
-- **swarm_artifact:** 1625
+- **dream:** 7113
+- **swarm_artifact:** 1623
 - **last_swarm_critique:** 971
 - **last_swarm_goal:** 706
 - **anti_pattern:** 371
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915132302:5:807cd3`
+*15.09. 13:23 UTC · Quelle: dream*
+
+Current model routing is reactive fallback rather than proactive health-based selection.
+
+### `dream:20260915132302:4:fe0780`
+*15.09. 13:23 UTC · Quelle: dream*
+
+Memory pruning occurs regularly but does not prevent recurring failure patterns from repeating.
+
+### `dream:20260915132302:3:cd3645`
+*15.09. 13:23 UTC · Quelle: dream*
+
+The system generates skill proposals but there is no evidence they are being implemented, creating a proposal-execution gap.
+
+### `dream:20260915132302:2:0eb7ca`
+*15.09. 13:23 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently available model across all recorded sessions.
+
+### `dream:20260915132302:1:f180a2`
+*15.09. 13:23 UTC · Quelle: dream*
+
+Google Gemma 4 models consistently fail with HTTP 429 rate-limit errors, making them unreliable for production use.
 
 ### `tool:alte-gruppen-entscheidungen-überprüfen`
 *15.09. 13:06 UTC · Quelle: hands*
@@ -41206,56 +41231,6 @@ score=4; issues=Task 1/2 Data Contract Violation: Task 1 outputs pruefe-result o
 *01.09. 13:16 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten zu bewährten Fertigkeiten verbinden
-
-### `dream:20260901131504:5:20f3ab`
-*01.09. 13:15 UTC · Quelle: dream*
-
-Rate-limit errors cluster in time across multiple providers, suggesting shared infrastructure or coordinated quota windows that defeat naive round-robin load balancing.
-
-### `dream:20260901131504:4:1b8501`
-*01.09. 13:15 UTC · Quelle: dream*
-
-Reflex-mode convergence on "turn suggestions into actions" succeeded despite model chaos, indicating the orchestration layer can absorb provider instability when fallback logic exists.
-
-### `dream:20260901131504:3:6769da`
-*01.09. 13:15 UTC · Quelle: dream*
-
-HTTP 200 responses from Nvidia contained error payloads instead of choices, demonstrating that status-code-only success checks allow silent failures to propagate.
-
-### `dream:20260901131504:2:6a462f`
-*01.09. 13:15 UTC · Quelle: dream*
-
-A single reliable model (inclusionai/ling-3.0-flash-fin) sustained the entire workload, proving that one robust endpoint can compensate for multiple failing free-tier alternatives.
-
-### `dream:20260901131504:1:db60b2`
-*01.09. 13:15 UTC · Quelle: dream*
-
-Free-tier LLM endpoints exhibit systematic quota exhaustion (429) and upstream overload (502) making them unreliable as sole providers for any critical path.
-
-### `dream:20260901130655:5:899a0e`
-*01.09. 13:06 UTC · Quelle: dream*
-
-Hand actions and reflexes succeed locally (exit 0, 0.25s) but cannot compensate for upstream model unavailability that blocks cognitive steps.
-
-### `dream:20260901130655:4:05b2f2`
-*01.09. 13:06 UTC · Quelle: dream*
-
-Self-diagnosis and pruning report zero issues while model failures persist, indicating monitoring blind spots for external API dependencies.
-
-### `dream:20260901130655:3:305cce`
-*01.09. 13:06 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack a mechanism to graduate into deployed capabilities, creating a proposal-to-production gap.
-
-### `dream:20260901130655:2:9bcb55`
-*01.09. 13:06 UTC · Quelle: dream*
-
-The nemotron-3-ultra endpoint succeeded after glm-5.2 failures, proving fallback chains work but only when at least one endpoint has available quota.
-
-### `dream:20260901130655:1:354f5a`
-*01.09. 13:06 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple free-tier models is the dominant failure mode, making endpoint diversity without quota management ineffective.
 
 ### `last_swarm_critique`
 *01.09. 12:51 UTC · Quelle: critic*

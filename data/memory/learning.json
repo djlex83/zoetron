@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 13:06:29",
+ "stand": "2026-09-15 13:23:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -165,6 +165,12 @@
    "quote": 0.0
   },
   {
+   "tool": "veraltete-gruppen-informationen-aktualis.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "swarm-informationen-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -259,12 +265,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "veraltete-gruppen-informationen-aktualis.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-auffrischen-und-aktual.py",
