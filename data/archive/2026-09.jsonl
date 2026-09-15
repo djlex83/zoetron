@@ -52385,3 +52385,16 @@
 {"ts": 1788870461.4920962, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 259.1, "tokens_ein": 2468, "tokens_aus": 4024}}
 {"ts": 1788870462.44447, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.47, "gelesen": 1}}
 {"ts": 1788870462.4446218, "kind": "tor", "payload": {"goal": "Modellfehler systematisch verringern", "gruen": true, "grund": "Artefakt laeuft (217 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788266333.5346787, "key": "dream:20260901123853:1:e6a78b", "value": "Rate-limited models without automatic fallback create systemic unreliability; a router with health scoring and instant failover is necessary infrastructure, not optional.", "source": "dream"}
+{"ts": 1788266333.5347931, "key": "dream:20260901123853:2:6a2db1", "value": "Proposed skills accumulate without validation because no simulation gate exists; mandatory dry-run in a production-like sandbox must gate promotion.", "source": "dream"}
+{"ts": 1788266333.5348666, "key": "dream:20260901123853:3:8c4bb1", "value": "Hand actions fail on path resolution because relative paths diverge from ZOETRON_DATA; all file operations must resolve against the canonical data root.", "source": "dream"}
+{"ts": 1788266333.5349317, "key": "dream:20260901123853:4:50f36f", "value": "Completed analyses (three market reports) remain unused because no process links outputs to downstream decisions; every artifact needs an explicit consumer or deletion trigger.", "source": "dream"}
+{"ts": 1788266333.5349963, "key": "dream:20260901123853:5:0b1d36", "value": "Model failures dominate the error budget (2:1 failure:success) but self-diagnosis only checks internal organs; external dependency health must be part of system health.", "source": "dream"}
+{"ts": 1788870619.6574178, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 156.8, "tokens_ein": 8703, "tokens_aus": 657}}
+{"ts": 1788870619.6588042, "kind": "calibration", "payload": {"goal": "Modellfehler systematisch verringern", "predicted": 6, "actual": 9, "abs_error": 3}}
+{"ts": 1788870619.6589131, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 9}}
+{"ts": 1788870620.1377914, "kind": "bahnen", "payload": {"goal": "Modellfehler systematisch verringern", "delta": 1.0, "kanten": 10, "hat_code": true, "score": 9, "abgerufen": 4, "ids": ["e:24492f573959", "e:f018f8e640cd", "e:866cb62a07e1", "e:7e6d81995dd7"], "ziel_id": "g:b6de801275a3"}}
+{"ts": 1788870620.1379895, "kind": "swarm_finished", "payload": {"goal": "Modellfehler systematisch verringern", "score": 9, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1788870620.138201, "kind": "act_done", "payload": {"goal_title": "Modellfehler systematisch verringern", "score": 9, "converged": true}}
+{"ts": 1788870621.0423095, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.42, "gelesen": 1}}
+{"ts": 1788870623.6302538, "kind": "issue_synced", "payload": {"issue": 422, "state": "closed"}}

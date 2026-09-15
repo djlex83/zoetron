@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11229 Fakten** · Stand 2026-09-15 12:32 UTC · aktualisiert bei jedem Herzschlag
+**11229 Fakten** · Stand 2026-09-15 12:42 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7113
 - **swarm_artifact:** 1629
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915123945:5:c6559f`
+*15.09. 12:39 UTC · Quelle: dream*
+
+The tor artifact running (108 lines Python) may be contributing to resource contention, compounding the model latency issues.
+
+### `dream:20260915123945:4:c10fd7`
+*15.09. 12:39 UTC · Quelle: dream*
+
+The 'conserve' state with max_tasks=3 and max_iterations=1 is too restrictive to recover from a cascade of model failures — it guarantees the task will not complete.
+
+### `dream:20260915123945:3:5f2fac`
+*15.09. 12:39 UTC · Quelle: dream*
+
+The system is stuck in a retry loop: every failed Gemma call is followed by another attempt, wasting budget and increasing stress to 1.0 without making progress on the actual goal.
+
+### `dream:20260915123945:2:eababf`
+*15.09. 12:39 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only currently healthy model but with 25–77s latency, indicating it may be overloaded or the free tier is also approaching limits.
+
+### `dream:20260915123945:1:b15fc8`
+*15.09. 12:39 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter (Gemma variants) are unreliable under load — repeated 429 rate-limit errors suggest the system is hammering the same endpoints without effective backoff.
 
 ### `dream:20260915123010:5:0cc41f`
 *15.09. 12:30 UTC · Quelle: dream*
@@ -41201,31 +41226,6 @@ The 'Fähigkeiten-Ideen in echte Skills wandeln' goal repeatedly fails due to a 
 *01.09. 12:45 UTC · Quelle: dream*
 
 Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating a need for request throttling or fallback strategies.
-
-### `dream:20260901123853:5:0b1d36`
-*01.09. 12:38 UTC · Quelle: dream*
-
-Model failures dominate the error budget (2:1 failure:success) but self-diagnosis only checks internal organs; external dependency health must be part of system health.
-
-### `dream:20260901123853:4:50f36f`
-*01.09. 12:38 UTC · Quelle: dream*
-
-Completed analyses (three market reports) remain unused because no process links outputs to downstream decisions; every artifact needs an explicit consumer or deletion trigger.
-
-### `dream:20260901123853:3:8c4bb1`
-*01.09. 12:38 UTC · Quelle: dream*
-
-Hand actions fail on path resolution because relative paths diverge from ZOETRON_DATA; all file operations must resolve against the canonical data root.
-
-### `dream:20260901123853:2:6a2db1`
-*01.09. 12:38 UTC · Quelle: dream*
-
-Proposed skills accumulate without validation because no simulation gate exists; mandatory dry-run in a production-like sandbox must gate promotion.
-
-### `dream:20260901123853:1:e6a78b`
-*01.09. 12:38 UTC · Quelle: dream*
-
-Rate-limited models without automatic fallback create systemic unreliability; a router with health scoring and instant failover is necessary infrastructure, not optional.
 
 ### `last_swarm_critique`
 *01.09. 11:56 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The tor artifact running (108 lines Python) may be contributing to resource contention, compounding the model latency issues.
+- The 'conserve' state with max_tasks=3 and max_iterations=1 is too restrictive to recover from a cascade of model failures — it guarantees the task wil
+- The system is stuck in a retry loop: every failed Gemma call is followed by another attempt, wasting budget and increasing stress to 1.0 without makin
+- dots-studio/dots-3-note-preview:free is the only currently healthy model but with 25–77s latency, indicating it may be overloaded or the free tier is 
+- Free-tier models on OpenRouter (Gemma variants) are unreliable under load — repeated 429 rate-limit errors suggest the system is hammering the same en
 - Diversifying model dependencies with proven fallbacks (like dots-studio) ensures operational continuity when primary models are rate-limited.
 - Routine memory pruning of stale events and facts keeps the context window clean, directly reducing LLM latency and context overflow.
 - When system stress reaches 1.0, the 'conserve' budget limits tasks to 3, requiring strict prioritization of high-impact repairs.
@@ -51,11 +56,6 @@
 - Simulation identified four risks and required four revisions, and after applying three revisions the swarm converged, showing iterative risk mitigatio
 - dots-studio/dots-3-note-preview:free provides reliable responses with moderate latency, making it a suitable primary or fallback model.
 - Google gemma models consistently return 429 Too Many Requests, indicating rate limits that necessitate exponential backoff or model switching.
-- The 'retry_with_backoff' strategy is insufficient on its own for free-tier APIs under global rate limiting, as repeated retries to the same endpoint e
-- The hand action and reflex failures highlight a lack of pre-flight validation for file paths and environment variables, leading to silent 'ok: false' 
-- Under maximum stress (1.0), the metabolism check correctly constrained the system to a conservative budget of 3 tasks and 1 iteration to prevent resou
-- The system's circuit breaker successfully isolated the failing 'nvidia/nemotron-3-ultra-550b-a55b:free' model by locking it out for 1800 seconds after
-- The free-tier Google Gemma models are repeatedly returning HTTP 429 errors, indicating that the API rate limits are fully exhausted and requiring an i
 
 ---
 
