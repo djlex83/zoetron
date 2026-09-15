@@ -51513,3 +51513,21 @@
 {"ts": 1788843427.801978, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 3}}
 {"ts": 1788843427.80489, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten aus Vorschlägen bauen", "tool": "beste-vorschläge-in-fähigkeiten-verwande.py", "ok": true}}
 {"ts": 1788843428.2556987, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten aus Vorschlägen bauen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788238795.9322677, "key": "tool:modellfehler-stark-verringern", "value": "Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler stark verringern'. Datei: data/tools/modellfehler-stark-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.", "source": "hands"}
+{"ts": 1788843960.0246327, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788844028.4276724, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788844030.0643969, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 29}}
+{"ts": 1788844090.3012812, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 56.7, "tokens_ein": 1367, "tokens_aus": 971}}
+{"ts": 1788844090.302092, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error taxonomy), and automatic failover to flash models when p95 >30s or 429/502 rate exceeds threshold."}}
+{"ts": 1788844090.302177, "kind": "skill_proposal", "payload": {"proposal": "Add rate-limit-aware backoff with exponential retry, jitter, and concurrent request throttling to prevent 429 errors from cascading."}}
+{"ts": 1788844090.3022625, "kind": "skill_proposal", "payload": {"proposal": "Enforce schema validation gates before artifact scoring to catch mismatches early and avoid wasted evaluation cycles."}}
+{"ts": 1788844090.302333, "kind": "skill_proposal", "payload": {"proposal": "Extend swarm convergence criteria to require minimum 5 cycles or a stability threshold (score delta <0.5 over 3 cycles) before accepting suboptimal scores."}}
+{"ts": 1788844090.3024049, "kind": "skill_proposal", "payload": {"proposal": "Replace point-estimate calibration with distributional predictions (quantile regression) and confidence intervals to quantify scoring uncertainty."}}
+{"ts": 1788844090.3024838, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788844183.9326963, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 91.8, "tokens_ein": 487, "tokens_aus": 528}}
+{"ts": 1788844183.9328854, "kind": "drive_goal", "payload": {"title": "Modellfehler deutlich reduzieren", "why": "Das Modell macht noch zu viele Fehler. Weniger Fehler bedeuten, dass das System verlässlicher handelt.", "signal": "failure"}}
+{"ts": 1788844183.932961, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Die Infos aus dem Schwarm sind veraltet. Neue Kritik und Ziele helfen, besser zusammenzuarbeiten.", "signal": "stale"}}
+{"ts": 1788844183.933022, "kind": "drive_goal", "payload": {"title": "Träume in echtes Handeln übertragen", "why": "Es gibt viele Träume, aber wenig davon wird angewendet. Die Lücke zwischen Simulation und Tat schließen.", "signal": "gap"}}
+{"ts": 1788844187.4139264, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.19, "gelesen": 336}}
+{"ts": 1788844187.4169414, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten testen und nutzen", "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py", "ok": true}}
+{"ts": 1788844188.0503726, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten testen und nutzen", "score": null, "converged": true, "mode": "reflex"}}

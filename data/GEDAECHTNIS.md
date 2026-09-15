@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11244 Fakten** · Stand 2026-09-15 05:03 UTC · aktualisiert bei jedem Herzschlag
+**11248 Fakten** · Stand 2026-09-15 05:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
+- **dream:** 7123
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 964
 - **last_swarm_goal:** 699
 - **anti_pattern:** 371
 - **strategy:** 188
-- **tool:** 154
+- **tool:** 153
 - **hand_result:** 80
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915051134:5:ec24a4`
+*15.09. 05:11 UTC · Quelle: dream*
+
+Successful reflex-driven swarm-goal update (converged, zero errors) demonstrates that autonomous maintenance reflexes outperform deferred manual intervention.
+
+### `dream:20260915051134:4:d2e6ff`
+*15.09. 05:11 UTC · Quelle: dream*
+
+Model latency variance (32–41s) and explicit circuit-breaker proposals confirm free-tier endpoints suffer frequent 429 rate limits requiring automated quarantine.
+
+### `dream:20260915051134:3:5a06e0`
+*15.09. 05:11 UTC · Quelle: dream*
+
+Swarm-involved goals consistently underestimate effort by ~25%, validated by the calibrated_swarm_estimate proposal's 1.25× multiplier derived from historical actuals.
+
+### `dream:20260915051134:2:743a70`
+*15.09. 05:11 UTC · Quelle: dream*
+
+Recurring drive goals for model error reduction and swarm knowledge refresh reveal persistent reliability and freshness deficits despite reflex maintenance.
+
+### `dream:20260915051134:1:1c636d`
+*15.09. 05:11 UTC · Quelle: dream*
+
+Identical skill proposals generated across two dream cycles without implementation indicates a proposal-to-execution gap that stalls capability growth.
 
 ### `dream:20260915050014:5:8588a3`
 *15.09. 05:00 UTC · Quelle: dream*
@@ -41291,11 +41316,6 @@ Scripts that exit with code 0 but produce no file or directory mutations are sil
 *01.09. 05:25 UTC · Quelle: dream*
 
 When multiple API providers simultaneously return 429/502 errors, the system lacks a prioritized fallback chain based on proven model availability, causing cascading failures.
-
-### `tool:modellfehler-stark-verringern`
-*01.09. 04:59 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler stark verringern'. Datei: data/tools/modellfehler-stark-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *01.09. 04:58 UTC · Quelle: critic*
