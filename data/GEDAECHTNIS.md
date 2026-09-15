@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11229 Fakten** · Stand 2026-09-15 12:52 UTC · aktualisiert bei jedem Herzschlag
+**11232 Fakten** · Stand 2026-09-15 13:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7113
-- **swarm_artifact:** 1629
-- **last_swarm_critique:** 970
-- **last_swarm_goal:** 705
+- **dream:** 7118
+- **swarm_artifact:** 1625
+- **last_swarm_critique:** 971
+- **last_swarm_goal:** 706
 - **anti_pattern:** 371
 - **strategy:** 188
-- **tool:** 151
-- **hand_result:** 79
+- **tool:** 152
+- **hand_result:** 78
 - **aktuell_organfehler:** 23
 
 ---
+
+### `tool:alte-gruppen-entscheidungen-überprüfen`
+*15.09. 13:06 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Gruppen-Entscheidungen überprüfen'. Datei: data/tools/alte-gruppen-entscheidungen-überprüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*15.09. 13:06 UTC · Quelle: critic*
+
+score=8; issues=Die Bewertung beschränkt sich auf die Prüfung von Schlüsselwörtern im JSON/Text, ohne die inhaltliche Qualität oder Konsistenz der Entscheidungen zu prüfen.; Die Kriterien sind hart kodiert; eine Anpassung oder Erweiterung der Review-Regeln ist
+
+### `last_swarm_goal`
+*15.09. 13:01 UTC · Quelle: system*
+
+Alte Gruppen-Entscheidungen überprüfen
+
+### `dream:20260915130000:5:9bdacb`
+*15.09. 13:00 UTC · Quelle: dream*
+
+The swarm evaluation failed to converge, indicating insufficient coordination or scoring.
+
+### `dream:20260915130000:4:fa01df`
+*15.09. 13:00 UTC · Quelle: dream*
+
+Missing pre‑flight validation of files and environment variables leads to hand‑action errors.
+
+### `dream:20260915130000:3:442aba`
+*15.09. 13:00 UTC · Quelle: dream*
+
+Silent failures (exit 0 with no output) are not detected, masking incomplete tasks.
+
+### `dream:20260915130000:2:fbdf50`
+*15.09. 13:00 UTC · Quelle: dream*
+
+The dots-studio model succeeds but introduces 20–30 s latency, limiting throughput.
+
+### `dream:20260915130000:1:7ce054`
+*15.09. 13:00 UTC · Quelle: dream*
+
+Free-tier models repeatedly return HTTP 429, causing cascading request failures.
 
 ### `dream:20260915124929:5:5c689b`
 *15.09. 12:49 UTC · Quelle: dream*

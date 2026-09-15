@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 13:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 24×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Ferngedächtnisse verbinden *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
+- Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Veraltete Fakten auffrischen *(wieder aufgegriffen: 3×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm evaluation failed to converge, indicating insufficient coordination or scoring.
+- Missing pre‑flight validation of files and environment variables leads to hand‑action errors.
+- Silent failures (exit 0 with no output) are not detected, masking incomplete tasks.
+- The dots-studio model succeeds but introduces 20–30 s latency, limiting throughput.
+- Free-tier models repeatedly return HTTP 429, causing cascading request failures.
 - Successful task execution (such as analyzing error patterns and generating a 108-line Python artifact) depends on decoupling the generation model from
 - Calibration predictions exhibit a minor systematic offset (e.g., predicting 6 when the actual score is 7), requiring a dynamic correction margin based
 - Iterative evolutionary refinement can elevate baseline script scores from 7/10 to 9/10 by systematically resolving specific structural issues like mis
@@ -51,11 +56,6 @@
 - The system is stuck in a retry loop: every failed Gemma call is followed by another attempt, wasting budget and increasing stress to 1.0 without makin
 - dots-studio/dots-3-note-preview:free is the only currently healthy model but with 25–77s latency, indicating it may be overloaded or the free tier is 
 - Free-tier models on OpenRouter (Gemma variants) are unreliable under load — repeated 429 rate-limit errors suggest the system is hammering the same en
-- Diversifying model dependencies with proven fallbacks (like dots-studio) ensures operational continuity when primary models are rate-limited.
-- Routine memory pruning of stale events and facts keeps the context window clean, directly reducing LLM latency and context overflow.
-- When system stress reaches 1.0, the 'conserve' budget limits tasks to 3, requiring strict prioritization of high-impact repairs.
-- Pre-execution path and permission validation prevents immediate tool failures (like exit code 1 on hand actions) and saves time.
-- Persistent banning of models that return HTTP 429 errors is crucial to prevent retry loops and wasted execution cycles.
 
 ---
 
