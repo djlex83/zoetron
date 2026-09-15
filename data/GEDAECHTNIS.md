@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11223 Fakten** · Stand 2026-09-15 16:54 UTC · aktualisiert bei jedem Herzschlag
+**11236 Fakten** · Stand 2026-09-15 17:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
-- **swarm_artifact:** 1613
-- **last_swarm_critique:** 974
-- **last_swarm_goal:** 709
-- **anti_pattern:** 367
-- **strategy:** 186
+- **dream:** 7128
+- **swarm_artifact:** 1616
+- **last_swarm_critique:** 975
+- **last_swarm_goal:** 710
+- **anti_pattern:** 369
+- **strategy:** 187
 - **tool:** 151
 - **hand_result:** 77
 - **aktuell_organfehler:** 23
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Swarm-Ziele aktualisiere:1`
+*15.09. 17:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Decentralized Consensus Mechanism - Enable agents to propose and vote on goal changes through a distributed consensus algorithm, such as Paxos or Raft. Goals are updated only when a supermajority agreement is reached, fosteri
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Swarm-Ziele aktualisiere:0`
+*15.09. 17:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Centralized Command and Control - Implement a hierarchical structure where a primary coordinator agent dynamically assesses swarm performance and environmental changes, then broadcasts updated goals to all subordinate agents 
+
+### `last_swarm_critique`
+*15.09. 17:06 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*15.09. 17:02 UTC · Quelle: system*
+
+Swarm-Ziele aktualisieren
+
+### `dream:20260915170145:5:eab45b`
+*15.09. 17:01 UTC · Quelle: dream*
+
+Pruning should avoid removing facts or events directly referenced by active swarm goals.
+
+### `dream:20260915170145:4:3ea976`
+*15.09. 17:01 UTC · Quelle: dream*
+
+Pre-execution validation of hand actions prevents exit code 1 failures with zero reads.
+
+### `dream:20260915170145:3:9c4094`
+*15.09. 17:01 UTC · Quelle: dream*
+
+The model dots-studio/dots-3-note-preview:free consistently succeeds and can serve as a default fallback.
+
+### `dream:20260915170145:2:d19e48`
+*15.09. 17:01 UTC · Quelle: dream*
+
+Timeout errors often stem from large models; switching to a smaller, faster model improves reliability.
+
+### `dream:20260915170145:1:fd5541`
+*15.09. 17:01 UTC · Quelle: dream*
+
+Consecutive 429 errors from a model signal rate limiting and should trigger temporary blacklisting.
 
 ### `dream:20260915165201:5:cb78df`
 *15.09. 16:52 UTC · Quelle: dream*

@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-15 16:52:43",
+ "stand": "2026-09-15 17:09:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -54,12 +54,6 @@
    "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -117,13 +111,13 @@
    "quote": 0.0
   },
   {
-   "tool": "träume-besser-nutzen-lernen.py",
+   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
   },
   {
-   "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -189,12 +183,6 @@
    "quote": 1.0
   },
   {
-   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "vergessene-schwarmprojekte-reaktivieren.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -220,6 +208,12 @@
   },
   {
    "tool": "fähigkeitsvorschläge-in-produktion-überf.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -385,19 +379,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "veraltetes-schwarm-wissen-aktualisieren-.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.775,
+ "haende_quote": 0.769,
  "simulationen_angewandt": 33,
  "swarm_scores": {
-  "n": 30,
+  "n": 31,
   "best": 10.0,
-  "schnitt": 5.77
+  "schnitt": 5.74
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 30,
-   "schnitt": 5.77
+   "n": 31,
+   "schnitt": 5.74
   }
  }
 }
