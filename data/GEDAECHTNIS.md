@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11250 Fakten** · Stand 2026-09-15 10:27 UTC · aktualisiert bei jedem Herzschlag
+**11240 Fakten** · Stand 2026-09-15 11:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7133
-- **swarm_artifact:** 1629
-- **last_swarm_critique:** 968
-- **last_swarm_goal:** 703
+- **dream:** 7118
+- **swarm_artifact:** 1633
+- **last_swarm_critique:** 969
+- **last_swarm_goal:** 704
 - **anti_pattern:** 373
 - **strategy:** 189
 - **tool:** 151
-- **hand_result:** 79
-- **aktuell_organfehler:** 25
+- **hand_result:** 80
+- **aktuell_organfehler:** 23
 
 ---
+
+### `last_swarm_critique`
+*15.09. 11:08 UTC · Quelle: critic*
+
+score=8; issues=Performance: In 'Verbindungen zwischen fernen Erinnerungen herstellen', 'find_components' is called inside a nested loop, resulting in O(N^2 * (V+E)) complexity, which will fail on larger graphs.; Performance: In 'Semantische Brücken finden', t
+
+### `last_swarm_goal`
+*15.09. 11:02 UTC · Quelle: system*
+
+Erinnerungen aus der Ferne verbinden
+
+### `dream:20260915110034:5:95acf2`
+*15.09. 11:00 UTC · Quelle: dream*
+
+Combining dream thoughts can produce new high-level goals and tasks.
+
+### `dream:20260915110034:4:6a8109`
+*15.09. 11:00 UTC · Quelle: dream*
+
+Self-diagnosis currently finds no organ errors, indicating short-term health.
+
+### `dream:20260915110034:3:dbb5ba`
+*15.09. 11:00 UTC · Quelle: dream*
+
+Pruning stale facts and events keeps memory relevant and reduces noise.
+
+### `dream:20260915110034:2:ff06d9`
+*15.09. 11:00 UTC · Quelle: dream*
+
+The system generates many skill proposals but lacks a validation pipeline to test them.
+
+### `dream:20260915110034:1:7f0c7d`
+*15.09. 11:00 UTC · Quelle: dream*
+
+Free models frequently hit rate limits, causing 429 errors that require automatic failover.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Menschliche Eingriffe üb:2`
 *15.09. 10:24 UTC · Quelle: evolution*
@@ -41236,116 +41271,6 @@ score=7; issues=Demo-Stubs werden als Fallback genutzt wenn zoetron-Module fehle
 *01.09. 10:56 UTC · Quelle: system*
 
 Simulationen echt testen
-
-### `dream:20260901105605:5:ed3164`
-*01.09. 10:56 UTC · Quelle: dream*
-
-Response-body validation is essential because upstream errors (502) can masquerade as successful HTTP 200 responses, silently degrading output quality.
-
-### `dream:20260901105605:4:f6bb90`
-*01.09. 10:56 UTC · Quelle: dream*
-
-Skill proposals generated during operation require deduplication and validation gates before entering the consolidation queue to prevent noise accumulation.
-
-### `dream:20260901105605:3:a33d92`
-*01.09. 10:56 UTC · Quelle: dream*
-
-A single evolutionary run is insufficient for robust improvement; multiple iterations are required to converge on durable solutions.
-
-### `dream:20260901105605:2:a22562`
-*01.09. 10:56 UTC · Quelle: dream*
-
-Self-diagnosis mechanisms currently detect only internal organ errors but miss external service failures, creating a critical blind spot in system reliability monitoring.
-
-### `dream:20260901105605:1:7a89bc`
-*01.09. 10:56 UTC · Quelle: dream*
-
-External model API failures (429 rate limits, 502 upstream errors) are the dominant failure mode and must be mitigated through health-aware routing with automatic fallback to surviving models.
-
-### `dream:20260901104924:5:fe8ad6`
-*01.09. 10:49 UTC · Quelle: dream*
-
-Calibration consistently underestimates actual performance (predicted 6 vs actual 9), indicating the predictor lacks visibility into swarm compensation effects.
-
-### `dream:20260901104924:4:f49035`
-*01.09. 10:49 UTC · Quelle: dream*
-
-System achieved goal convergence in 1 cycle with score 9 despite 80% model failure rate, proving the swarm architecture tolerates massive LLM unreliability.
-
-### `dream:20260901104924:3:6186ff`
-*01.09. 10:49 UTC · Quelle: dream*
-
-InclusionAI Ling-3.0-Flash-Fin consistently succeeds with lowest latency (74.7s), suggesting smaller specialized models outperform large general ones under load.
-
-### `dream:20260901104924:2:5cf79d`
-*01.09. 10:49 UTC · Quelle: dream*
-
-NVIDIA Nemotron-3-Ultra shows intermittent 502 upstream overloads despite 200 OK responses, requiring response-body validation not just status codes.
-
-### `dream:20260901104924:1:205346`
-*01.09. 10:49 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter exhibit cascading 429 rate-limit failures once one model hits quota, making sequential fallback unreliable.
-
-### `dream:20260901104041:5:d1e687`
-*01.09. 10:40 UTC · Quelle: dream*
-
-The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed silently, indicating skill-to-action conversion lacks pre-flight validation and error observability.
-
-### `dream:20260901104041:4:d7e89f`
-*01.09. 10:40 UTC · Quelle: dream*
-
-Simulation-driven revisions (3 risks, 3 revisions) addressed code-level issues but cannot resolve infrastructure failures like rate limits or path resolution.
-
-### `dream:20260901104041:3:03858b`
-*01.09. 10:40 UTC · Quelle: dream*
-
-High stress (1.0) and conserve mode with severely limited budget (max_tasks: 3, max_iterations: 1) demand idempotent, minimal operations that can resume after interruption.
-
-### `dream:20260901104041:2:a09e62`
-*01.09. 10:40 UTC · Quelle: dream*
-
-The hand_action failure reveals that relative paths are not resolved against ZOETRON_DATA, requiring absolute path canonicalization before any filesystem operation.
-
-### `dream:20260901104041:1:248c80`
-*01.09. 10:40 UTC · Quelle: dream*
-
-Rate limiting (429 errors) across multiple models indicates the need for proactive model rotation with exponential backoff rather than reactive fallback.
-
-### `aktuell_organfehler`
-*01.09. 10:37 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-09-01 10:30:01 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
-
-### `aktuell_organfehler`
-*01.09. 10:25 UTC · Quelle: selbstdiagnose.py*
-
-ORGANFEHLER (2026-09-01 10:18:27-10:21:11 UTC): drive -> RuntimeError in router.py:395; drive -> rc. all route candidates failed: z-ai/glm-5.2:free: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://o | Phase endete mit rc=1 Diese Phase de
-
-### `dream:20260901101827:5:1495e8`
-*01.09. 10:18 UTC · Quelle: dream*
-
-Zero pruning despite completed cycles suggests retention thresholds are too aggressive or metrics insufficient to trigger cleanup.
-
-### `dream:20260901101827:4:c48cb7`
-*01.09. 10:18 UTC · Quelle: dream*
-
-Calibration error of 2 points (predicted 6 vs actual 8) indicates systematic over-pessimism in self-assessment that skews resource allocation.
-
-### `dream:20260901101827:3:4ce5b8`
-*01.09. 10:18 UTC · Quelle: dream*
-
-Swarm convergence in one cycle with planner/builder/critic roles validates the multi-agent pattern for skill integration tasks.
-
-### `dream:20260901101827:2:d9c485`
-*01.09. 10:18 UTC · Quelle: dream*
-
-Nemotron-3-ultra shows high latency variance (43–116 s) despite success, requiring latency-aware routing not just availability checks.
-
-### `dream:20260901101827:1:5a0d0a`
-*01.09. 10:18 UTC · Quelle: dream*
-
-Free-tier models exhibit cascading 429/502 failures under load, making single-model reliance unsafe for production workflows.
 
 ### `last_swarm_critique`
 *01.09. 09:38 UTC · Quelle: critic*

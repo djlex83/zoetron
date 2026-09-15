@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 10:26:08",
+ "stand": "2026-09-15 11:09:00",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
    "laeufe": 6,
    "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -45,6 +39,12 @@
    "quote": 1.0
   },
   {
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -60,12 +60,6 @@
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -111,8 +105,8 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 2,
+   "tool": "fernere-erinnerungen-verbinden.py",
+   "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -147,16 +141,16 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-ideen-in-taten-umsetzen.py",
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
   },
   {
-   "tool": "fernere-erinnerungen-verbinden.py",
+   "tool": "fähigkeiten-ideen-in-taten-umsetzen.py",
    "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
@@ -199,6 +193,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
@@ -405,12 +405,12 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.8,
- "simulationen_angewandt": 32,
+ "haende_quote": 0.787,
+ "simulationen_angewandt": 33,
  "swarm_scores": {
-  "n": 29,
+  "n": 30,
   "best": 9.0,
-  "schnitt": 5.62
+  "schnitt": 5.7
  },
  "score_nach_ziel_typ": {
   "analyse": {
