@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 15:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 15:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -11,26 +11,26 @@
 - Wrap hand actions in async timeout guards with a circuit breaker to prevent cascade blocking. *(hatte die Idee 3×)*
 - model_health_router_with_fallback(): tracks latency/429 rates per endpoint; fails over within 2s to next-healt *(hatte die Idee 3×)*
 - hand_action_preflight_with_dependency_graph(): checks paths, permissions, and transitive deps; returns structu *(hatte die Idee 3×)*
-- Add model health tracking that records success/failure per model per session and ranks models by recent succes *(hatte die Idee 2×)*
-- Build a fallback model chain ordered by historical reliability, with the dots-studio model as a proven reliabl *(hatte die Idee 2×)*
-- Add latency-based timeout scaling that doubles the timeout after each slow response to avoid premature failure *(hatte die Idee 2×)*
 - Implement a model fallback chain that detects 429 errors and immediately switches to dots-studio as the reliab *(hatte die Idee 2×)*
 - Add a calibration correction factor subtracting 2 from predicted scores when using free-tier models based on h *(hatte die Idee 2×)*
 - Enforce tool contracts requiring at least one observable side effect (file write, state mutation, return value *(hatte die Idee 2×)*
 - Introduce adaptive timeout budgeting for dream consolidation based on recent event count to prevent self-timeo *(hatte die Idee 2×)*
 - Implement a model health scoring system that tracks success rate, latency, and error class, auto‑demoting mode *(hatte die Idee 2×)*
 - Add a circuit‑breaker per provider that pauses for 60 seconds on 429 errors and reduces max tokens on timeouts *(hatte die Idee 2×)*
+- Create a pre‑execution validator for reflex tools that checks file paths, environment variables, and required  *(hatte die Idee 2×)*
+- Develop a simulation‑to‑action converter that automatically translates approved simulation steps into real exe *(hatte die Idee 2×)*
+- Build a latency‑aware model selector that prefers low‑latency models and warms them with dummy requests to red *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 17×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
+- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system prunes many facts and events, risking loss of critical context.
+- Calibration predictions deviate by 2 points, suggesting the model underestimates complexity.
+- Hand actions succeed when the target file exists; failures are caused by missing or empty files.
+- dots-studio/dots-3-note-preview:free consistently succeeds with low latency, making it the preferred model.
+- Repeated 429 errors from google/gemma models indicate rate limiting that requires backoff and fallback.
 - The simulation approved "Traumgedanken kombinieren" with 5 risks and 0 revisions, indicating the system is willing to accept moderate risk for innovat
 - With metabolism stress at 1.0 and state "conserve", the budget of 3 tasks and 1 iteration is a hard constraint that should be enforced at the swarm le
 - The system's drive layer correctly surfaced "Modelle stabiler machen" as a meta-goal in response to repeated model failures, showing the drive system 
@@ -51,11 +56,6 @@
 - The dots‑studio/dots‑3‑note‑preview model consistently succeeds with low latency, making it a reliable fallback.
 - Free‑tier models frequently return 429 errors, indicating that request throttling is required.
 - Three consecutive failures trigger an automatic 30‑minute model block, preventing further wasted calls.
-- Aggressive pruning of 22 facts and 30 events during active task cycles may risk losing critical context required for swarm convergence.
-- The high variance in evolutionary scores (ranging from 4 to 9) indicates that the critic's evaluation criteria may be unstable, leading to unreliable 
-- The hand action failure (exit 1, gelesen: 0) suggests that tool execution can fail silently if the target state or input is not properly validated bef
-- The swarm task 'Alte Fakten aktualisieren' failed to converge (score 5/10) due to critic issues regarding fallback semantic updates setting confidence
-- Free Gemma models on OpenRouter are highly prone to 429 rate-limit errors, making dots-studio/dots-3-note-preview:free the more reliable choice despit
 
 ---
 

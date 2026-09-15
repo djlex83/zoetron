@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11218 Fakten** · Stand 2026-09-15 15:50 UTC · aktualisiert bei jedem Herzschlag
+**11217 Fakten** · Stand 2026-09-15 16:01 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7108
-- **swarm_artifact:** 1619
+- **swarm_artifact:** 1618
 - **last_swarm_critique:** 974
 - **last_swarm_goal:** 709
 - **anti_pattern:** 369
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915155806:5:9c7bb0`
+*15.09. 15:58 UTC · Quelle: dream*
+
+The system prunes many facts and events, risking loss of critical context.
+
+### `dream:20260915155806:4:a8929d`
+*15.09. 15:58 UTC · Quelle: dream*
+
+Calibration predictions deviate by 2 points, suggesting the model underestimates complexity.
+
+### `dream:20260915155806:3:5a4ded`
+*15.09. 15:58 UTC · Quelle: dream*
+
+Hand actions succeed when the target file exists; failures are caused by missing or empty files.
+
+### `dream:20260915155806:2:f551f7`
+*15.09. 15:58 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free consistently succeeds with low latency, making it the preferred model.
+
+### `dream:20260915155806:1:3c49b4`
+*15.09. 15:58 UTC · Quelle: dream*
+
+Repeated 429 errors from google/gemma models indicate rate limiting that requires backoff and fallback.
 
 ### `dream:20260915154734:5:b53751`
 *15.09. 15:47 UTC · Quelle: dream*
@@ -41161,31 +41186,6 @@ score=3; issues=Sandbox-Urteil fehlt: Es ist nicht dokumentiert, ob das Artefakt
 *01.09. 15:54 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten echt umsetzen
-
-### `dream:20260901155310:5:a2bada`
-*01.09. 15:53 UTC · Quelle: dream*
-
-Simulation gates (verdict=go, grün=true) precede successful artifact runs, confirming pre-flight checks reduce runtime failures.
-
-### `dream:20260901155310:4:388062`
-*01.09. 15:53 UTC · Quelle: dream*
-
-Local hand-action execution completes in <0.3s with zero failures, outperforming all remote API calls by orders of magnitude.
-
-### `dream:20260901155310:3:8b0ac0`
-*01.09. 15:53 UTC · Quelle: dream*
-
-Poolside Laguna-S-2.1:free succeeded on both attempts with moderate latency (~50–68s), suggesting it is the most reliable free option observed.
-
-### `dream:20260901155310:2:b7ab25`
-*01.09. 15:53 UTC · Quelle: dream*
-
-Nvidia Nemotron shows high latency variance (35–79s) and intermittent 502 upstream overloads, indicating unstable capacity.
-
-### `dream:20260901155310:1:169cf2`
-*01.09. 15:53 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without aggressive backoff and rotation.
 
 ### `last_swarm_critique`
 *01.09. 15:03 UTC · Quelle: critic*
