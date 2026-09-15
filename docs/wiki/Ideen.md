@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 08:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 08:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A successful local hand_action after model failures suggests a fallback mechanism can bypass model unavailability.
+- Aggressive pruning of facts and events risks losing context needed for future reasoning.
+- The dots-studio model consistently succeeds with low latency, making it a reliable default.
+- Stale swarm goals correlate with convergence failure and must be refreshed periodically.
+- Repeated timeouts and 429 errors from multiple providers indicate that health-aware routing is essential.
 - Under metabolic stress the system conserves resources; aligning skill proposals with current stress and budget increases acceptance.
 - Stale facts about swarm goals lead to poor decisions; a scheduler that triggers refresh reflexes based on age and access frequency is needed.
 - Swarm cycles fail if required roles or tools are missing; enforcing role assignment and tool availability before start improves reliability.
@@ -51,11 +56,6 @@
 - Multiple skill proposals exist without corresponding implementations, revealing a gap between insight generation and execution.
 - Pruning cycles reduce memory but do not address stale goals, which continue to drive outdated behavior.
 - Repeated 429 and timeout errors indicate that the current failover logic is insufficient to prevent cascading model failures.
-- The circuit breaker mechanism (schalter_geoeffnet) effectively quarantines failing models after repeated errors.
-- Drive goals are auto-generated from failure signals, creating a self-improvement feedback loop.
-- Regular pruning of facts and events prevents stale data accumulation and maintains system performance.
-- The system maintains operation by automatically switching to a healthy model (dots-studio) when others fail.
-- Model failures are concentrated on specific providers (Nvidia timeouts, Google 429) revealing provider-specific reliability issues.
 
 ---
 

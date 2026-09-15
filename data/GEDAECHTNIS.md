@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11248 Fakten** · Stand 2026-09-15 08:28 UTC · aktualisiert bei jedem Herzschlag
+**11233 Fakten** · Stand 2026-09-15 08:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
-- **swarm_artifact:** 1641
+- **dream:** 7113
+- **swarm_artifact:** 1635
 - **last_swarm_critique:** 967
 - **last_swarm_goal:** 702
-- **anti_pattern:** 373
-- **strategy:** 189
+- **anti_pattern:** 371
+- **strategy:** 188
 - **tool:** 153
-- **hand_result:** 80
+- **hand_result:** 79
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915085233:5:364e32`
+*15.09. 08:52 UTC · Quelle: dream*
+
+A successful local hand_action after model failures suggests a fallback mechanism can bypass model unavailability.
+
+### `dream:20260915085233:4:ca15e5`
+*15.09. 08:52 UTC · Quelle: dream*
+
+Aggressive pruning of facts and events risks losing context needed for future reasoning.
+
+### `dream:20260915085233:3:c9c4ae`
+*15.09. 08:52 UTC · Quelle: dream*
+
+The dots-studio model consistently succeeds with low latency, making it a reliable default.
+
+### `dream:20260915085233:2:3d9724`
+*15.09. 08:52 UTC · Quelle: dream*
+
+Stale swarm goals correlate with convergence failure and must be refreshed periodically.
+
+### `dream:20260915085233:1:a3e9d8`
+*15.09. 08:52 UTC · Quelle: dream*
+
+Repeated timeouts and 429 errors from multiple providers indicate that health-aware routing is essential.
 
 ### `tool:träume-in-handeln-umsetzen`
 *15.09. 08:26 UTC · Quelle: hands*
@@ -41231,66 +41256,6 @@ Self-diagnosis consistently reports zero organ errors despite observable API-lev
 *01.09. 08:56 UTC · Quelle: dream*
 
 Free-tier models on shared APIs (z-ai/glm-5.2) repeatedly hit 429 rate limits and must never serve as primary models on critical paths.
-
-### `dream:20260901084927:5:732d78`
-*01.09. 08:49 UTC · Quelle: dream*
-
-Transient failures (429, network) need automatic retry-with-backoff to improve robustness of external calls.
-
-### `dream:20260901084927:4:5b6fb7`
-*01.09. 08:49 UTC · Quelle: dream*
-
-Self-diagnosis and pruning report healthy system but lack proactive degradation detection for model performance.
-
-### `dream:20260901084927:3:c3a182`
-*01.09. 08:49 UTC · Quelle: dream*
-
-Multiple skill proposals accumulate without an implementation gate, causing idea hoarding instead of execution.
-
-### `dream:20260901084927:2:d252ab`
-*01.09. 08:49 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra exhibits high latency (56–106s), requiring latency-aware routing for interactive vs batch tasks.
-
-### `dream:20260901084927:1:72228b`
-*01.09. 08:49 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model consistently returns 429 errors, making it unreliable for production use without rate-limit handling.
-
-### `dream:20260901084103:5:30aed8`
-*01.09. 08:41 UTC · Quelle: dream*
-
-Skill proposals accumulate without execution pipeline; drive goal explicitly notes 'few become usable'.
-
-### `dream:20260901084103:4:782b54`
-*01.09. 08:41 UTC · Quelle: dream*
-
-Reflex-based task completion succeeds despite model instability, showing procedural knowledge compensates for LLM unreliability.
-
-### `dream:20260901084103:3:e88b73`
-*01.09. 08:41 UTC · Quelle: dream*
-
-Multiple independent skill proposals converge on same fixes: retry/fallback wrapper, absolute-path resolution, stale-work reaper.
-
-### `dream:20260901084103:2:3020c3`
-*01.09. 08:41 UTC · Quelle: dream*
-
-Fallback model succeeds but exhibits high latency (31-56s), indicating need for faster alternative or caching layer.
-
-### `dream:20260901084103:1:ec7c7b`
-*01.09. 08:41 UTC · Quelle: dream*
-
-Primary model z-ai/glm-5.2:free consistently fails with 429 rate limits, forcing fallback to slower nvidia/nemotron-3-ultra.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
-*01.09. 08:29 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): Capability Registry as Single Source of Truth - Introduce a persistent Capability Registry (SQLite, PostgreSQL, or even a JSON index) that stores capability metadata, validation status, and artifact pointers. Validati
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
-*01.09. 08:29 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 5, 7]): Event-Driven Pipeline with Shared Message Bus - Decouple validation and integration via a lightweight message bus (e.g., Redis Streams, Kafka, or even a local file-system queue). Validation publishes a 'CapabilityVali
 
 ### `last_swarm_critique`
 *01.09. 08:28 UTC · Quelle: critic*
