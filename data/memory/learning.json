@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 02:22:44",
+ "stand": "2026-09-15 02:32:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,6 +81,12 @@
    "quote": 0.0
   },
   {
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -136,12 +142,6 @@
   },
   {
    "tool": "veraltete-marktanalyse-auffrischen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -393,7 +393,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.816,
+ "haende_quote": 0.82,
  "simulationen_angewandt": 29,
  "swarm_scores": {
   "n": 27,

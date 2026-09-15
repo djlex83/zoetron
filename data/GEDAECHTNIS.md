@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11246 Fakten** · Stand 2026-09-15 02:24 UTC · aktualisiert bei jedem Herzschlag
+**11250 Fakten** · Stand 2026-09-15 02:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7138
+- **dream:** 7143
 - **swarm_artifact:** 1635
 - **last_swarm_critique:** 961
 - **last_swarm_goal:** 696
 - **anti_pattern:** 371
 - **strategy:** 188
 - **tool:** 152
-- **hand_result:** 81
+- **hand_result:** 80
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260915023211:5:ffefd8`
+*15.09. 02:32 UTC · Quelle: dream*
+
+Pruning removes 78 events per cycle but the core reliability problem (model selection) persists, indicating pruning treats symptoms not causes.
+
+### `dream:20260915023211:4:42c191`
+*15.09. 02:32 UTC · Quelle: dream*
+
+Manual handoff (hand_action) fails silently with exit code 1 and no error details, preventing human-in-the-loop recovery.
+
+### `dream:20260915023211:3:c6287c`
+*15.09. 02:32 UTC · Quelle: dream*
+
+Model reliability varies drastically by provider: Google free models are unusable under load, NVIDIA and dots-studio models deliver consistent latency (10-40s).
+
+### `dream:20260915023211:2:273b01`
+*15.09. 02:32 UTC · Quelle: dream*
+
+The evolution/swarm loop improves scores from 5 to 8-9 but fails to converge because critic outputs are unparseable, breaking the feedback cycle.
+
+### `dream:20260915023211:1:ecc28b`
+*15.09. 02:32 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter (Gemma variants) fail consistently with 429 rate-limit errors while dots-studio/dots-3-note-preview and Nemotron succeed reliably.
 
 ### `dream:20260915022200:5:01120a`
 *15.09. 02:22 UTC · Quelle: dream*

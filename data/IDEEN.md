@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 78 events per cycle but the core reliability problem (model selection) persists, indicating pruning treats symptoms not causes.
+- Manual handoff (hand_action) fails silently with exit code 1 and no error details, preventing human-in-the-loop recovery.
+- Model reliability varies drastically by provider: Google free models are unusable under load, NVIDIA and dots-studio models deliver consistent latency
+- The evolution/swarm loop improves scores from 5 to 8-9 but fails to converge because critic outputs are unparseable, breaking the feedback cycle.
+- Free-tier models on OpenRouter (Gemma variants) fail consistently with 429 rate-limit errors while dots-studio/dots-3-note-preview and Nemotron succee
 - The 195-line Python artifact executes successfully, confirming the code-generation pipeline produces runnable output.
 - Calibration error of 1 on a 6-point scale shows the planner estimates task complexity reasonably well.
 - Hand actions fail instantly (exit 1, ~0.02 s) with zero bytes read, indicating missing preconditions or environment misconfiguration.
@@ -51,11 +56,6 @@
 - Tool scripts fail pre-flight checks: missing executable bits, unverified file existence, and absent required environment variables block execution.
 - Model provider failures cascade (502 overload → 429 rate limits) without automatic failover, leaving only a high-latency fallback (dots-studio) operat
 - Relative paths consistently fail to resolve against ZOETRON_DATA and sys.argv[1], causing hand actions to read zero files despite valid inputs.
-- Lightweight hand actions (0.22s, exit 0) and artifact health checks (235-line Python running) provide fast, reliable feedback loops that don't depend 
-- Simulation-driven fact revision (verdict: revise, 5 risks identified, 3/5 revisions applied) proves effective for knowledge maintenance when paired wi
-- Only dots-studio/dots-3-note-preview:free demonstrated consistent success across 5 calls with acceptable latency (19-42s), establishing it as the sole
-- The three-strike blocking policy (1800s penalty) amplifies transient failures into extended outages, as seen when a single 502 error triggered consecu
-- Free-tier models exhibit systematic unavailability: Google Gemma variants consistently return 429 rate limits while Nvidia Nemotron returns 502 upstre
 
 ---
 

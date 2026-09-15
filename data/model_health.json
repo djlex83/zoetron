@@ -1,14 +1,14 @@
 {
- "stand": 1789438956.6699722,
+ "stand": 1789439545.1885188,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 6102,
+   "laeufe": 6104,
    "fehler": 1479,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 212919.80256795883,
+   "latenz_summe_s": 212976.40586042404,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502, 'metadata': {'error_type': 'pr",
    "letzte_sperre": 1789434331.8950613,
    "kontofehler": 6
