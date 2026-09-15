@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11233 Fakten** · Stand 2026-09-15 15:31 UTC · aktualisiert bei jedem Herzschlag
+**11218 Fakten** · Stand 2026-09-15 15:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
+- **dream:** 7108
 - **swarm_artifact:** 1619
 - **last_swarm_critique:** 974
 - **last_swarm_goal:** 709
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915154734:5:b53751`
+*15.09. 15:47 UTC · Quelle: dream*
+
+The simulation approved "Traumgedanken kombinieren" with 5 risks and 0 revisions, indicating the system is willing to accept moderate risk for innovation goals when in exploration mode.
+
+### `dream:20260915154734:4:cd92be`
+*15.09. 15:47 UTC · Quelle: dream*
+
+With metabolism stress at 1.0 and state "conserve", the budget of 3 tasks and 1 iteration is a hard constraint that should be enforced at the swarm level, not just tracked.
+
+### `dream:20260915154734:3:ce990d`
+*15.09. 15:47 UTC · Quelle: dream*
+
+The system's drive layer correctly surfaced "Modelle stabiler machen" as a meta-goal in response to repeated model failures, showing the drive system learns from operational patterns rather than just task outcomes.
+
+### `dream:20260915154734:2:4e535c`
+*15.09. 15:47 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model has been the only consistently available model across 5 successful calls, making it the de facto primary while gemma models are rate-limited.
+
+### `dream:20260915154734:1:02bd1a`
+*15.09. 15:47 UTC · Quelle: dream*
+
+When two models fail with identical 429 rate-limit errors while a third succeeds, the failure is provider-side throttling, not a system logic error—immediate failover to the healthy model is the correct response.
 
 ### `last_swarm_critique`
 *15.09. 15:29 UTC · Quelle: critic*
@@ -41161,106 +41186,6 @@ Nvidia Nemotron shows high latency variance (35–79s) and intermittent 502 upst
 *01.09. 15:53 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without aggressive backoff and rotation.
-
-### `dream:20260901154541:5:e4264d`
-*01.09. 15:45 UTC · Quelle: dream*
-
-Conserve mode budget (max_iterations=1) conflicts with multi-step fallback strategies, requiring single-call success or pre-verified artifacts.
-
-### `dream:20260901154541:4:08f064`
-*01.09. 15:45 UTC · Quelle: dream*
-
-Reflex/simulation tools fail silently without error details, preventing diagnostic feedback loops for capability validation.
-
-### `dream:20260901154541:3:0cfc8c`
-*01.09. 15:45 UTC · Quelle: dream*
-
-Hand actions fail due to path resolution errors (relative vs absolute paths), not command logic, revealing environment configuration drift.
-
-### `dream:20260901154541:2:8f3e48`
-*01.09. 15:45 UTC · Quelle: dream*
-
-Latency variance between models (10.7s vs 47.4s) exceeds 4x, making latency-aware routing critical under tight iteration budgets.
-
-### `dream:20260901154541:1:af113d`
-*01.09. 15:45 UTC · Quelle: dream*
-
-Rate limiting (429) affects all free-tier models simultaneously, indicating shared quota exhaustion rather than individual model failure.
-
-### `dream:20260901153748:5:2967d6`
-*01.09. 15:37 UTC · Quelle: dream*
-
-Hand actions can fail with exit code 1 without a specific error message, indicating a need for better error capture in execution environments.
-
-### `dream:20260901153748:4:fc8496`
-*01.09. 15:37 UTC · Quelle: dream*
-
-Evolution runs effectively improve task scores, as seen by a variant scoring 9 out of 10 after an initial score of 7.
-
-### `dream:20260901153748:3:183569`
-*01.09. 15:37 UTC · Quelle: dream*
-
-The inclusionai/ling-3.0-flash-fin:free model provides a good balance of reliability and low latency (~10s) compared to other free models.
-
-### `dream:20260901153748:2:377eb9`
-*01.09. 15:37 UTC · Quelle: dream*
-
-The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but suffers from high latency (up to 183s) and occasional 502 upstream overload.
-
-### `dream:20260901153748:1:52d8b8`
-*01.09. 15:37 UTC · Quelle: dream*
-
-Free models on OpenRouter frequently hit 429 Too Many Requests errors, requiring robust fallback mechanisms.
-
-### `dream:20260901153058:5:1c6815`
-*01.09. 15:30 UTC · Quelle: dream*
-
-Token throughput on successful Nemotron calls scales with input size (2k-8k tokens in, 2k-3k out), but latency remains prohibitively high for interactive use.
-
-### `dream:20260901153058:4:b328cb`
-*01.09. 15:30 UTC · Quelle: dream*
-
-Hand-action retry (fail then succeed on second attempt) demonstrates that transient filesystem or permission issues self-resolve with immediate retry.
-
-### `dream:20260901153058:3:14ef7b`
-*01.09. 15:30 UTC · Quelle: dream*
-
-The simulation-revision-apply loop successfully detected stale analysis data, executed 3 revisions, and produced a verified 296-line Python artifact.
-
-### `dream:20260901153058:2:6b5b7e`
-*01.09. 15:30 UTC · Quelle: dream*
-
-Nemotron-3-Ultra exhibits a bimodal failure pattern: 502 upstream overload errors followed by eventual success at 64-100s latency, indicating severe queueing.
-
-### `dream:20260901153058:1:1d8f01`
-*01.09. 15:30 UTC · Quelle: dream*
-
-Free-tier models across providers (Google, Z.ai, Poolside) consistently hit 429 rate limits, making them unreliable for sustained workloads.
-
-### `dream:20260901152138:5:94d1c6`
-*01.09. 15:21 UTC · Quelle: dream*
-
-Only 2 out of ~7 attempted model calls succeeded, yielding a <30% success rate — free-tier models are unsuitable for critical or time-sensitive tasks without robust fallback chains.
-
-### `dream:20260901152138:4:66126e`
-*01.09. 15:21 UTC · Quelle: dream*
-
-Proposed safeguards (health-aware routing, async timeouts) remain unimplemented, allowing the same failures to recur — proposals must be executed before they can prevent failures.
-
-### `dream:20260901152138:3:1d3e75`
-*01.09. 15:21 UTC · Quelle: dream*
-
-System stress at maximum (1.0) with conserve mode and a budget of 1 iteration means the system cannot absorb repeated external failures — external calls must be gated by internal resource availability.
-
-### `dream:20260901152138:2:4ff989`
-*01.09. 15:21 UTC · Quelle: dream*
-
-The 502 'service temporarily overloaded' from Nvidia shows that even HTTP-200 responses can carry upstream failures, requiring response-payload validation beyond status-code checks.
-
-### `dream:20260901152138:1:452992`
-*01.09. 15:21 UTC · Quelle: dream*
-
-OpenRouter's free-tier models share a common rate-limit pool, so 429 errors cascade across all models simultaneously — diversification across providers is essential, not just across models.
 
 ### `last_swarm_critique`
 *01.09. 15:03 UTC · Quelle: critic*
