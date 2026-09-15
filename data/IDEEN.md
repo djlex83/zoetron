@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple skill proposals for reliability (registry, fallback chain, circuit breaker) exist but none are deployed as executable skills.
+- Simulation-revision pipeline successfully generated 5 revisions but the revised skill still crashed on the same model errors.
+- High metabolic stress (0.82) triggers conserve mode that caps iterations, preventing recovery retries exactly when needed.
+- Hand-action tools fail silently when relative paths are used instead of absolute paths anchored to ZOETRON_DATA.
+- Model API failures (502/429) cascade because no circuit breaker or health-check probes exist before dispatch.
 - Pruning aggressively removes facts/events (19/36 then 1/17) without measurable impact on subsequent task success, suggesting memory pressure is low.
 - Hand actions succeed rapidly (<8s) when environment state is valid, but no preflight validation exists to catch misconfigurations early.
 - Swarm feedback loops converge in a single cycle when roles (planner/builder/critic) are balanced, but calibration underestimates effort by ~25%.
@@ -51,11 +56,6 @@
 - Swarm revival converges in one cycle when the simulation verdict is 'go' and the builder role dominates (3 builders vs 1 planner/critic), suggesting a
 - Model fallback chain is essential: nemotron-3-ultra succeeds but intermittently returns 502; gemma models hit 429 rate limits; dots-studio/dots-3-note
 - Relative paths in hand actions fail because the working directory differs from ZOETRON_DATA; always resolve inputs via sys.argv[1] or the environment 
-- Tool invocation fails when scripts lack executable bits, valid shebangs, or required env vars; pre-flight validation prevents waste.
-- Metabolism stress at 1.0 triggers conserve mode that caps tasks/iterations, starving recovery actions when most needed.
-- Swarm synchronization attempts repeat without conflict resolution; vector-clock merging is needed to prevent stale-goal oscillation.
-- Relative path handling causes silent hand-action failures; all inputs must resolve to absolute paths under ZOETRON_DATA before use.
-- Model providers exhibit cascading failures (502 upstream overload, 429 rate limits) requiring circuit breakers and prioritized failover.
 
 ---
 

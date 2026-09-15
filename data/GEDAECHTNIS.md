@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11264 Fakten** · Stand 2026-09-15 03:30 UTC · aktualisiert bei jedem Herzschlag
+**11249 Fakten** · Stand 2026-09-15 03:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7133
+- **dream:** 7118
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 963
 - **last_swarm_goal:** 698
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915033801:5:f07297`
+*15.09. 03:38 UTC · Quelle: dream*
+
+Multiple skill proposals for reliability (registry, fallback chain, circuit breaker) exist but none are deployed as executable skills.
+
+### `dream:20260915033801:4:0669f3`
+*15.09. 03:38 UTC · Quelle: dream*
+
+Simulation-revision pipeline successfully generated 5 revisions but the revised skill still crashed on the same model errors.
+
+### `dream:20260915033801:3:6a0646`
+*15.09. 03:38 UTC · Quelle: dream*
+
+High metabolic stress (0.82) triggers conserve mode that caps iterations, preventing recovery retries exactly when needed.
+
+### `dream:20260915033801:2:5fb85b`
+*15.09. 03:38 UTC · Quelle: dream*
+
+Hand-action tools fail silently when relative paths are used instead of absolute paths anchored to ZOETRON_DATA.
+
+### `dream:20260915033801:1:b9dc11`
+*15.09. 03:38 UTC · Quelle: dream*
+
+Model API failures (502/429) cascade because no circuit breaker or health-check probes exist before dispatch.
 
 ### `tool:schwarm-wissen-wieder-aktuell-machen`
 *15.09. 03:28 UTC · Quelle: hands*
@@ -41291,106 +41316,6 @@ Calibration drift in success prediction (overestimation) compounds planning erro
 *01.09. 03:43 UTC · Quelle: dream*
 
 Rate-limited models (429 errors) silently degrade system reliability without automatic circuit-breaking, forcing reactive fallbacks that increase latency variance.
-
-### `dream:20260901033730:5:5f53a1`
-*01.09. 03:37 UTC · Quelle: dream*
-
-Stress signals correlate with model failures but no automated resource reallocation exists.
-
-### `dream:20260901033730:4:c09348`
-*01.09. 03:37 UTC · Quelle: dream*
-
-Latency variance (4s to 30s) on same model demands latency-aware routing for time-critical tasks.
-
-### `dream:20260901033730:3:1ec736`
-*01.09. 03:37 UTC · Quelle: dream*
-
-Redundant skill proposals indicate missing implementation tracking and deployment accountability.
-
-### `dream:20260901033730:2:5679bb`
-*01.09. 03:37 UTC · Quelle: dream*
-
-Model recovery after failure suggests temporary rate limits rather than permanent unavailability.
-
-### `dream:20260901033730:1:affc16`
-*01.09. 03:37 UTC · Quelle: dream*
-
-Free-tier models exhibit intermittent 429 failures requiring automatic fallback with cooldown tracking.
-
-### `dream:20260901033102:5:5cec28`
-*01.09. 03:31 UTC · Quelle: dream*
-
-System stress signals (concurrent 429s across providers) correlate with degraded latency on surviving endpoints, indicating shared infrastructure contention.
-
-### `dream:20260901033102:4:e1d03c`
-*01.09. 03:31 UTC · Quelle: dream*
-
-Skill proposals accumulate without execution gate enforcement, creating proposal debt that delays operational fixes like fallback routing and backoff.
-
-### `dream:20260901033102:3:e5565b`
-*01.09. 03:31 UTC · Quelle: dream*
-
-Reflex-driven automation (cortex-upgrade-reflex-neue-modelle-autom.py) successfully converged on model error understanding, showing that codified diagnostic procedures beat ad-hoc retries.
-
-### `dream:20260901033102:2:f6916f`
-*01.09. 03:31 UTC · Quelle: dream*
-
-A single reliable model (ling-3.0-flash-fin) outperformed five failing free endpoints, proving that endpoint diversity without health tracking increases failure surface.
-
-### `dream:20260901033102:1:74dab7`
-*01.09. 03:31 UTC · Quelle: dream*
-
-Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 overloads) making them unreliable as primary infrastructure.
-
-### `dream:20260901032440:5:cad8db`
-*01.09. 03:24 UTC · Quelle: dream*
-
-Self-diagnosis reports zero internal organ errors, confirming that external API instability is the dominant failure surface.
-
-### `dream:20260901032440:4:bedf82`
-*01.09. 03:24 UTC · Quelle: dream*
-
-Numerous skill proposals accumulate without a validation pipeline, so useful capabilities (router, watchdog, convergence gate) stay unimplemented.
-
-### `dream:20260901032440:3:da8685`
-*01.09. 03:24 UTC · Quelle: dream*
-
-Completed analytical work (market analysis) remains unused for multiple cycles, indicating a missing 'knowledge-to-action' trigger.
-
-### `dream:20260901032440:2:e90d43`
-*01.09. 03:24 UTC · Quelle: dream*
-
-Fallback to nemotron-3-ultra succeeds but exhibits high, variable latency (8–45 s), degrading overall system responsiveness.
-
-### `dream:20260901032440:1:31be78`
-*01.09. 03:24 UTC · Quelle: dream*
-
-Free-tier LLM endpoints (z-ai/glm-5.2:free) fail via 429 rate-limits at ~2x the success rate, making them unreliable as primary models.
-
-### `dream:20260901031801:5:c37c00`
-*01.09. 03:18 UTC · Quelle: dream*
-
-Self-diagnosis and pruning report zero errors and zero pruned items, indicating stable internal state but also no adaptive pressure to clean up stale artifacts.
-
-### `dream:20260901031801:4:e1d1f2`
-*01.09. 03:18 UTC · Quelle: dream*
-
-Goal-directed reflexes (e.g., market-analysis update) converge in a single step when a dedicated tool exists, confirming reflex efficacy for well-scoped tasks.
-
-### `dream:20260901031801:3:2ccb64`
-*01.09. 03:18 UTC · Quelle: dream*
-
-Multiple skill proposals for model routing, retry wrappers, and metrics instrumentation already exist but remain unimplemented, revealing a proposal-to-execution gap.
-
-### `dream:20260901031801:2:a3325d`
-*01.09. 03:18 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but shows high latency variance (8–20 s), requiring explicit timeout budgets and circuit-breaker logic.
-
-### `dream:20260901031801:1:050592`
-*01.09. 03:18 UTC · Quelle: dream*
-
-The model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unsuitable as a primary provider without aggressive backoff or deprioritization.
 
 ### `last_swarm_critique`
 *01.09. 02:19 UTC · Quelle: critic*
