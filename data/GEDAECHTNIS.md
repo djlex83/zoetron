@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11240 Fakten** · Stand 2026-09-15 11:10 UTC · aktualisiert bei jedem Herzschlag
+**11249 Fakten** · Stand 2026-09-15 11:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
-- **swarm_artifact:** 1633
-- **last_swarm_critique:** 969
-- **last_swarm_goal:** 704
+- **dream:** 7123
+- **swarm_artifact:** 1635
+- **last_swarm_critique:** 970
+- **last_swarm_goal:** 705
 - **anti_pattern:** 373
 - **strategy:** 189
-- **tool:** 151
-- **hand_result:** 80
+- **tool:** 152
+- **hand_result:** 79
 - **aktuell_organfehler:** 23
 
 ---
+
+### `tool:analisiere-alte-fehlermuster`
+*15.09. 11:38 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Analisiere alte Fehlermuster'. Datei: data/tools/analisiere-alte-fehlermuster.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Analisiere alte Fehlermu:2`
+*15.09. 11:37 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Streaming Count-Min Sketch for Co-occurrence - Process the error stream sequentially, maintaining a Count-Min sketch for pairs of error types. For each new error event, update the sketch for all pairs present in the event. Af
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Analisiere alte Fehlermu:0`
+*15.09. 11:37 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Bayesian Network Modeling - Construct a directed acyclic graph where each node corresponds to an error type. Use a structure learning algorithm such as PC or score-based search to infer dependencies from the error log. The le
+
+### `last_swarm_critique`
+*15.09. 11:34 UTC · Quelle: critic*
+
+score=7; issues=The script does not import or use the selflearn module as implied by the title, relying instead on built-in functions, which may limit integration with existing systems.; The co-occurrence analysis uses itertools.combinations on all source-type
+
+### `last_swarm_goal`
+*15.09. 11:28 UTC · Quelle: system*
+
+Analisiere alte Fehlermuster
+
+### `dream:20260915112728:5:8a7218`
+*15.09. 11:27 UTC · Quelle: dream*
+
+Simulation produced five revisions, showing that iterative refinement is needed but currently occurs too late.
+
+### `dream:20260915112728:4:267d3f`
+*15.09. 11:27 UTC · Quelle: dream*
+
+The reflex to convert dream ideas into capabilities returned false, suggesting the tool is broken or misconfigured.
+
+### `dream:20260915112728:3:16e45c`
+*15.09. 11:27 UTC · Quelle: dream*
+
+The hand action failed because the expected file was not found at the resolved path, indicating missing path validation.
+
+### `dream:20260915112728:2:7b68f1`
+*15.09. 11:27 UTC · Quelle: dream*
+
+Only one free model succeeded, so depending on a single provider creates a single point of failure.
+
+### `dream:20260915112728:1:dae219`
+*15.09. 11:27 UTC · Quelle: dream*
+
+Model failures from rate limiting and timeouts dominate; a fallback chain with exponential backoff is essential.
 
 ### `last_swarm_critique`
 *15.09. 11:08 UTC · Quelle: critic*
@@ -41251,16 +41301,6 @@ Skill proposals accumulate in a backlog because no automated pipeline validates,
 *01.09. 11:35 UTC · Quelle: dream*
 
 Model endpoint failures follow a predictable pattern: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra succeeds with high latency, indicating a need for proactive health-aware routing rather than reactive fallback.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen echt testen:2`
-*01.09. 11:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Event-Sourced Simulation Pipeline - Reframe the three artifacts as stages in an event-sourced pipeline backed by an append-only event store (e.g., SQLite or Kafka). A single CLI entry-point (`simulate`) writes a `SimulationSt
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen echt testen:1`
-*01.09. 11:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Contract-Driven Consumer-Driven Testing - Define explicit OpenAPI/JSON-Schema contracts for each artifact's CLI and file interfaces. Generate provider stubs from the contracts and run consumer-driven contract tests (Pact) so 
 
 ### `last_swarm_critique`
 *01.09. 11:00 UTC · Quelle: critic*
