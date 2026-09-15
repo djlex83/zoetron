@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 04:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 04:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -33,14 +33,19 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A single fast alternative model (dots-studio, 4s latency) exists but isn't systematically preferred for low-stakes calls.
+- Planner effort estimates consistently underrun swarm-involved goals by ~25%, causing budget overruns.
+- Swarm knowledge refresh recurs but the revival script fails, indicating missing idempotency or state checks.
+- Hand actions fail silently when sys.argv[1] or ZOETRON_DATA paths are unresolved, needing preflight validation.
+- Free-tier models exhibit burst 429/502 failures requiring automatic failover to maintain throughput.
 - Effort estimates for swarm-involved goals consistently underpredict actuals, requiring systematic calibration.
 - Prune runs remove facts/events without preserving successful tool chains, risking loss of reusable procedures.
 - Swarm knowledge (critiques, goals) becomes stale within cycles, degrading collaboration quality unless actively refreshed.
@@ -51,11 +56,6 @@
 - Pruning is effective but needs preservation tags for facts linked to successful tool chains.
 - Model timeouts (ReadTimeout) are a persistent failure mode requiring automatic fallback chains.
 - Repeated skill proposals without implementation indicate a broken feedback loop between suggestion and execution.
-- Pruning 43 events per cycle without organ errors shows the memory hygiene loop is healthy but aggressive; retention thresholds may discard reusable co
-- Latency variance for the same model (14s to 126s) correlates with token volume, so timeout budgets must scale with input size.
-- Swarm convergence in one cycle with high score (9) occurs when the goal is narrowly scoped to 'working model only', suggesting scope restriction accel
-- Calibration consistently underestimates risk (predicted 5 vs actual 9), indicating the risk model needs historical error-rate weighting.
-- Upstream 502 errors and 429 rate limits dominate model failures, requiring automatic fallback with exponential backoff rather than single-model relian
 
 ---
 

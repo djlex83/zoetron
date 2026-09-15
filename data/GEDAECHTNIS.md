@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11244 Fakten** · Stand 2026-09-15 04:11 UTC · aktualisiert bei jedem Herzschlag
+**11239 Fakten** · Stand 2026-09-15 04:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7113
+- **dream:** 7108
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 963
 - **last_swarm_goal:** 698
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915041840:5:9b6481`
+*15.09. 04:18 UTC · Quelle: dream*
+
+A single fast alternative model (dots-studio, 4s latency) exists but isn't systematically preferred for low-stakes calls.
+
+### `dream:20260915041840:4:a39e3b`
+*15.09. 04:18 UTC · Quelle: dream*
+
+Planner effort estimates consistently underrun swarm-involved goals by ~25%, causing budget overruns.
+
+### `dream:20260915041840:3:116155`
+*15.09. 04:18 UTC · Quelle: dream*
+
+Swarm knowledge refresh recurs but the revival script fails, indicating missing idempotency or state checks.
+
+### `dream:20260915041840:2:a31913`
+*15.09. 04:18 UTC · Quelle: dream*
+
+Hand actions fail silently when sys.argv[1] or ZOETRON_DATA paths are unresolved, needing preflight validation.
+
+### `dream:20260915041840:1:9d4488`
+*15.09. 04:18 UTC · Quelle: dream*
+
+Free-tier models exhibit burst 429/502 failures requiring automatic failover to maintain throughput.
 
 ### `dream:20260915040841:5:3a3c6b`
 *15.09. 04:08 UTC · Quelle: dream*
@@ -41241,56 +41266,6 @@ score=6; issues=Die drei Skripte bilden eine lose Pipeline, aber die Datenflüss
 *01.09. 04:16 UTC · Quelle: system*
 
 Vorgeschlagene Skills nutzbar machen
-
-### `dream:20260901041608:5:f9d7e2`
-*01.09. 04:16 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model failures persist, indicating health checks miss external API degradation.
-
-### `dream:20260901041608:4:550f3b`
-*01.09. 04:16 UTC · Quelle: dream*
-
-Reflex actions succeed when concrete tools exist (alte-erinnerungen-aktualisieren.py, ersten-swarm-lauf-mit-score-8-konvergier.py), showing tool-mediated execution is reliable.
-
-### `dream:20260901041608:3:2dff11`
-*01.09. 04:16 UTC · Quelle: dream*
-
-System generates skill proposals (5+ this session) but drive_goal 'Vorgeschlagene Fähigkeiten wirklich lernen' reveals a persistent proposal-to-implementation gap.
-
-### `dream:20260901041608:2:764ed1`
-*01.09. 04:16 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (9.9–20.7s), indicating unstable capacity on free tier.
-
-### `dream:20260901041608:1:e13c06`
-*01.09. 04:16 UTC · Quelle: dream*
-
-Free-tier model z-ai/glm-5.2:free consistently returns 429 errors under load, making it unreliable for production use without circuit-breaking.
-
-### `dream:20260901040953:5:9cdc39`
-*01.09. 04:09 UTC · Quelle: dream*
-
-Self-diagnosis and reflex actions operate in isolation without feeding back into model routing or skill deployment decisions.
-
-### `dream:20260901040953:4:e06a6e`
-*01.09. 04:09 UTC · Quelle: dream*
-
-Latency variance across models (5.9s–17.6s) and frequent failures indicate no circuit-breaker or fallback logic is active.
-
-### `dream:20260901040953:3:0bd54b`
-*01.09. 04:09 UTC · Quelle: dream*
-
-Model selection is reactive without health-based routing, causing repeated calls to known-failing endpoints.
-
-### `dream:20260901040953:2:ac3720`
-*01.09. 04:09 UTC · Quelle: dream*
-
-Skill proposals accumulate (5 recorded) but lack an execution gate to promote or reject them, causing capability stagnation.
-
-### `dream:20260901040953:1:336968`
-*01.09. 04:09 UTC · Quelle: dream*
-
-Free-tier model endpoints consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production workloads.
 
 ### `last_swarm_critique`
 *01.09. 02:19 UTC · Quelle: critic*
