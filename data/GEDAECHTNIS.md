@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11216 Fakten** · Stand 2026-09-15 14:36 UTC · aktualisiert bei jedem Herzschlag
+**11226 Fakten** · Stand 2026-09-15 14:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7113
-- **swarm_artifact:** 1613
-- **last_swarm_critique:** 972
-- **last_swarm_goal:** 707
-- **anti_pattern:** 371
-- **strategy:** 188
-- **tool:** 152
-- **hand_result:** 77
+- **dream:** 7118
+- **swarm_artifact:** 1619
+- **last_swarm_critique:** 973
+- **last_swarm_goal:** 708
+- **anti_pattern:** 369
+- **strategy:** 187
+- **tool:** 153
+- **hand_result:** 76
 - **aktuell_organfehler:** 23
 
 ---
+
+### `tool:traumgedanken-kombinieren`
+*15.09. 14:51 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Traumgedanken kombinieren'. Datei: data/tools/traumgedanken-kombinieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*15.09. 14:51 UTC · Quelle: critic*
+
+score=8; issues=Similarity threshold (0.6) is hardcoded, limiting adaptability to different dream corpora.; Combination is purely syntactic string concatenation; no attempt to resolve contradictions or synthesize meaning.; The script defines `similarity_func` 
+
+### `last_swarm_goal`
+*15.09. 14:44 UTC · Quelle: system*
+
+Traumgedanken kombinieren
+
+### `dream:20260915144322:5:2cfa37`
+*15.09. 14:43 UTC · Quelle: dream*
+
+Metabolism in conserve mode with stress 1.0 requires prioritizing high-impact, low-cost actions to avoid budget exhaustion.
+
+### `dream:20260915144322:4:7cf1f6`
+*15.09. 14:43 UTC · Quelle: dream*
+
+The hand_action failure with exit code 0 and no file touched reveals a silent failure mode where empty input or relative paths cause no-op runs.
+
+### `dream:20260915144322:3:f70c51`
+*15.09. 14:43 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently successful free model, but its 34–37s latency limits it to non-time-critical tasks.
+
+### `dream:20260915144322:2:42e224`
+*15.09. 14:43 UTC · Quelle: dream*
+
+HTTP 429 rate-limit errors dominate free-tier model failures, indicating quota exhaustion rather than inherent model instability.
+
+### `dream:20260915144322:1:189888`
+*15.09. 14:43 UTC · Quelle: dream*
+
+Three consecutive model failures trigger an automatic 1800-second lockout, proving circuit-breaker patterns effectively isolate unreliable providers.
 
 ### `dream:20260915143337:5:1ccd13`
 *15.09. 14:33 UTC · Quelle: dream*
@@ -41201,16 +41241,6 @@ Latency on successful calls degrades progressively under sustained load (42s →
 *01.09. 14:55 UTC · Quelle: dream*
 
 429 rate-limit errors are systemic across nearly all free-tier OpenRouter models, not isolated to a single provider, making model diversity the primary resilience strategy.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Analysedaten e:2`
-*01.09. 14:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Lazy on-demand reconciliation layer: Wrap SemanticMemory in a proxy that transpa - Build a ReconcilingMemoryProxy that implements the SemanticMemory interface but intercepts all read calls (get_entry, query). On each read: (1
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Analysedaten e:0`
-*01.09. 14:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Event-sourced rebuild: Instead of patching existing memory in place, replay all  - Create an EventReplayUpdater that (1) collects all analysis events from a structured event log (not raw JSON files), (2) applies a determinist
 
 ### `last_swarm_critique`
 *01.09. 14:32 UTC · Quelle: critic*
