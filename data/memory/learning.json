@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 05:55:27",
+ "stand": "2026-09-15 06:06:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -393,10 +393,10 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.833,
- "simulationen_angewandt": 30,
+ "haende_quote": 0.834,
+ "simulationen_angewandt": 29,
  "swarm_scores": {
-  "n": 28,
+  "n": 27,
   "best": 9.0,
   "schnitt": 5.89
  },

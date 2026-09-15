@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11239 Fakten** · Stand 2026-09-15 05:57 UTC · aktualisiert bei jedem Herzschlag
+**11243 Fakten** · Stand 2026-09-15 06:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
+- **dream:** 7128
 - **swarm_artifact:** 1639
 - **last_swarm_critique:** 964
 - **last_swarm_goal:** 699
 - **anti_pattern:** 369
 - **strategy:** 187
-- **tool:** 153
+- **tool:** 152
 - **hand_result:** 80
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915060511:5:ecb324`
+*15.09. 06:05 UTC · Quelle: dream*
+
+Cross-epoch memory pairing during consolidation helps combine distant experiences to generate novel, cross-cutting insights.
+
+### `dream:20260915060511:4:301779`
+*15.09. 06:05 UTC · Quelle: dream*
+
+Regular memory pruning of stale facts and events is crucial to prevent context pollution and maintain a clean, actionable knowledge base.
+
+### `dream:20260915060511:3:421fef`
+*15.09. 06:05 UTC · Quelle: dream*
+
+Insufficient simulation and evolutionary runs limit system evolution, indicating that structured, periodic experimentation is necessary to drive capability improvements.
+
+### `dream:20260915060511:2:41ccba`
+*15.09. 06:05 UTC · Quelle: dream*
+
+Swarm goals and criticisms easily become stale or remain open, blocking new learning cycles, which requires automated auditing and role-balancing interventions.
+
+### `dream:20260915060511:1:ac5fe5`
+*15.09. 06:05 UTC · Quelle: dream*
+
+Free-tier LLM endpoints frequently fail with 429 (rate limits) or 502 (overloaded) errors, making resilient model routing and circuit-breaking mechanisms essential for system stability.
 
 ### `dream:20260915055429:5:4bc9ff`
 *15.09. 05:54 UTC · Quelle: dream*
@@ -41291,11 +41316,6 @@ A persistent gap exists between generating skill proposals and implementing them
 *01.09. 06:14 UTC · Quelle: dream*
 
 The z-ai/glm-5.2:free model repeatedly fails with 429 Too Many Requests errors across multiple cycles, indicating free-tier rate limits are a systemic bottleneck requiring automatic fallback rather than blind retries.
-
-### `tool:viele-skill-vorschläge-prüfen-und-nutzba`
-*01.09. 05:55 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Viele Skill-Vorschläge prüfen und nutzbare auswählen'. Datei: data/tools/viele-skill-vorschläge-prüfen-und-nutzba.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *01.09. 05:52 UTC · Quelle: critic*
