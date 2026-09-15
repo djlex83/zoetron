@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11226 Fakten** · Stand 2026-09-15 14:53 UTC · aktualisiert bei jedem Herzschlag
+**11219 Fakten** · Stand 2026-09-15 15:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7118
-- **swarm_artifact:** 1619
+- **swarm_artifact:** 1613
 - **last_swarm_critique:** 973
 - **last_swarm_goal:** 708
 - **anti_pattern:** 369
 - **strategy:** 187
-- **tool:** 153
+- **tool:** 152
 - **hand_result:** 76
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915151056:5:39c784`
+*15.09. 15:10 UTC · Quelle: dream*
+
+Aggressive pruning of 22 facts and 30 events during active task cycles may risk losing critical context required for swarm convergence.
+
+### `dream:20260915151056:4:e0e337`
+*15.09. 15:10 UTC · Quelle: dream*
+
+The high variance in evolutionary scores (ranging from 4 to 9) indicates that the critic's evaluation criteria may be unstable, leading to unreliable variant selection.
+
+### `dream:20260915151056:3:ab966e`
+*15.09. 15:10 UTC · Quelle: dream*
+
+The hand action failure (exit 1, gelesen: 0) suggests that tool execution can fail silently if the target state or input is not properly validated before execution.
+
+### `dream:20260915151056:2:e2597e`
+*15.09. 15:10 UTC · Quelle: dream*
+
+The swarm task 'Alte Fakten aktualisieren' failed to converge (score 5/10) due to critic issues regarding fallback semantic updates setting confidence incorrectly.
+
+### `dream:20260915151056:1:e5932b`
+*15.09. 15:10 UTC · Quelle: dream*
+
+Free Gemma models on OpenRouter are highly prone to 429 rate-limit errors, making dots-studio/dots-3-note-preview:free the more reliable choice despite higher latency.
 
 ### `tool:traumgedanken-kombinieren`
 *15.09. 14:51 UTC · Quelle: hands*
@@ -41202,11 +41227,6 @@ The 502 'service temporarily overloaded' from Nvidia shows that even HTTP-200 re
 
 OpenRouter's free-tier models share a common rate-limit pool, so 429 errors cascade across all models simultaneously — diversification across providers is essential, not just across models.
 
-### `tool:fähigkeiten-durch-simulation-prüfen`
-*01.09. 15:03 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten durch Simulation prüfen'. Datei: data/tools/fähigkeiten-durch-simulation-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
 ### `last_swarm_critique`
 *01.09. 15:03 UTC · Quelle: critic*
 
@@ -41216,31 +41236,6 @@ score=8; issues=
 *01.09. 14:56 UTC · Quelle: system*
 
 Fähigkeiten durch Simulation prüfen
-
-### `dream:20260901145524:5:d18dca`
-*01.09. 14:55 UTC · Quelle: dream*
-
-The inclusionai/ling-3.0-flash-fin:free model delivered fast, successful results (22.4s) when all other free models failed, proving that a sufficiently diverse pool catches outliers.
-
-### `dream:20260901145524:4:63bbe7`
-*01.09. 14:55 UTC · Quelle: dream*
-
-In conserve mode with a budget of max 3 tasks and 1 iteration, each failed model call wastes irreplaceable budget, so artifact verification should precede new inference calls.
-
-### `dream:20260901145524:3:29557b`
-*01.09. 14:55 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model has a near-100% failure rate in this session and should be deprioritized or removed from the active fallback pool.
-
-### `dream:20260901145524:2:c27a15`
-*01.09. 14:55 UTC · Quelle: dream*
-
-Latency on successful calls degrades progressively under sustained load (42s → 213s), so early success does not guarantee continued availability within budget.
-
-### `dream:20260901145524:1:beec9e`
-*01.09. 14:55 UTC · Quelle: dream*
-
-429 rate-limit errors are systemic across nearly all free-tier OpenRouter models, not isolated to a single provider, making model diversity the primary resilience strategy.
 
 ### `last_swarm_critique`
 *01.09. 14:32 UTC · Quelle: critic*

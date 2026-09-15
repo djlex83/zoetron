@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 14:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 15:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning of 22 facts and 30 events during active task cycles may risk losing critical context required for swarm convergence.
+- The high variance in evolutionary scores (ranging from 4 to 9) indicates that the critic's evaluation criteria may be unstable, leading to unreliable 
+- The hand action failure (exit 1, gelesen: 0) suggests that tool execution can fail silently if the target state or input is not properly validated bef
+- The swarm task 'Alte Fakten aktualisieren' failed to converge (score 5/10) due to critic issues regarding fallback semantic updates setting confidence
+- Free Gemma models on OpenRouter are highly prone to 429 rate-limit errors, making dots-studio/dots-3-note-preview:free the more reliable choice despit
 - Metabolism in conserve mode with stress 1.0 requires prioritizing high-impact, low-cost actions to avoid budget exhaustion.
 - The hand_action failure with exit code 0 and no file touched reveals a silent failure mode where empty input or relative paths cause no-op runs.
 - dots-studio/dots-3-note-preview:free is the only consistently successful free model, but its 34–37s latency limits it to non-time-critical tasks.
@@ -51,11 +56,6 @@
 - The circuit breaker is opened but timeouts still occur, suggesting the breaker does not fully prevent calls to failing models.
 - Only the model "dots-studio/dots-3-note-preview:free" returned successful responses, making it the current most reliable option.
 - The system frequently encounters 429 Too Many Requests and read timeouts, indicating rate limiting and network instability as primary failure causes.
-- Multiple skill proposals are generated but none are tracked, leading to potential duplication of effort.
-- Consistent pruning of facts and events highlights the need for ongoing memory consolidation to maintain relevance.
-- The reflex action successfully updated stale group data, proving that automated data refresh can be reliable.
-- Timeout errors on large models like Nemotron indicate that request timeouts must be handled with fallback mechanisms.
-- Repeated 429 errors from Google Gemma models show that rate limiting is the dominant cause of model failures.
 
 ---
 
