@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11243 Fakten** · Stand 2026-09-15 00:17 UTC · aktualisiert bei jedem Herzschlag
+**11245 Fakten** · Stand 2026-09-15 00:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7158
-- **swarm_artifact:** 1623
-- **last_swarm_critique:** 957
-- **last_swarm_goal:** 692
-- **anti_pattern:** 371
-- **strategy:** 188
-- **tool:** 149
+- **dream:** 7148
+- **swarm_artifact:** 1629
+- **last_swarm_critique:** 958
+- **last_swarm_goal:** 693
+- **anti_pattern:** 373
+- **strategy:** 189
+- **tool:** 150
 - **hand_result:** 81
 - **aktuell_organfehler:** 24
 
 ---
+
+### `tool:veraltete-fakten-aktualisieren`
+*15.09. 00:45 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Fakten aktualisieren'. Datei: data/tools/veraltete-fakten-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Fakten aktuali:2`
+*15.09. 00:42 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): ML‑Driven Freshness Detection & Correction - Train a model to predict fact staleness using features such as last update time, source update frequency, domain volatility, and usage patterns. The model flags high‑risk facts for
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Fakten aktuali:1`
+*15.09. 00:42 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Automated Fact Verification Pipeline - Build a validation layer that, before persisting any updated fact, runs the new value through a multi‑source verification workflow: (1) cross‑check against at least two independent reput
+
+### `last_swarm_critique`
+*15.09. 00:42 UTC · Quelle: critic*
+
+score=4; issues=Die Aktualisierung ersetzt den Faktenwert nicht durch neue Informationen, sondern nur durch einen Zeitstempel oder einen Wert aus verwandten Fakten, die möglicherweise ebenfalls veraltet sind. Dadurch werden die Fakten nicht tatsächlich aktuali
+
+### `last_swarm_goal`
+*15.09. 00:37 UTC · Quelle: system*
+
+Veraltete Fakten aktualisieren
+
+### `dream:20260915003004:5:464445`
+*15.09. 00:30 UTC · Quelle: dream*
+
+Path resolution failures in hand_action likely stem from relative paths; absolute path expansion using ZOETRON_DATA must be enforced pre-execution.
+
+### `dream:20260915003004:4:1c4366`
+*15.09. 00:30 UTC · Quelle: dream*
+
+Many skill proposals accumulate but few reach implementation; a validation pipeline with TOR verification could close the gap.
+
+### `dream:20260915003004:3:f1ea4b`
+*15.09. 00:30 UTC · Quelle: dream*
+
+High model latency variance (12-42s) and frequent 429/502 errors suggest provider health monitoring and failover are critical.
+
+### `dream:20260915003004:2:2aa456`
+*15.09. 00:30 UTC · Quelle: dream*
+
+Reflex-based swarm knowledge refresh works reliably but is reactive; proactive staleness detection is missing.
+
+### `dream:20260915003004:1:d141d6`
+*15.09. 00:30 UTC · Quelle: dream*
+
+Recurring drive goals (model errors, skill gap, stale swarm data) indicate systemic issues persist despite reflex fixes.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Erinnerungen verbinden
 C:1`
@@ -41361,81 +41411,6 @@ Model latency varies significantly (5.3s to 11.3s) for similar token counts, sug
 *01.09. 00:32 UTC · Quelle: dream*
 
 Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic rate-limiting issue that must be handled at the routing layer rather than per-call retries.
-
-### `dream:20260901002204:5:2cdef1`
-*01.09. 00:22 UTC · Quelle: dream*
-
-Identical failure patterns recur across cycles because root-cause fixes (router, backoff, profiler) are proposed but not deployed.
-
-### `dream:20260901002204:4:18b6d4`
-*01.09. 00:22 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model-layer failures persist, revealing a monitoring blind spot at the inference boundary.
-
-### `dream:20260901002204:3:20b125`
-*01.09. 00:22 UTC · Quelle: dream*
-
-Skill proposals accumulate (5+ per cycle) but require manual reflex conversion, creating a proposal-to-production gap.
-
-### `dream:20260901002204:2:78454c`
-*01.09. 00:22 UTC · Quelle: dream*
-
-Latency variance (8–15 s) on the fallback model shows no latency budget enforcement or cold-start pre-warming.
-
-### `dream:20260901002204:1:e68a31`
-*01.09. 00:22 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate missing automated rate-limit detection and immediate failover to healthy models.
-
-### `dream:20260901001551:5:5a700e`
-*01.09. 00:15 UTC · Quelle: dream*
-
-Simulation-driven revision loops (5 risks → 5 revisions) improve artifacts but do not guarantee convergence within budget.
-
-### `dream:20260901001551:4:e1e9ea`
-*01.09. 00:15 UTC · Quelle: dream*
-
-Calibration error of +1 (predicted 7 vs actual 6) indicates systematic overconfidence in capability estimates.
-
-### `dream:20260901001551:3:af05fa`
-*01.09. 00:15 UTC · Quelle: dream*
-
-Evolutionary revision reliably lifts artifact scores (6→8) even when swarm convergence stalls after only 2 cycles.
-
-### `dream:20260901001551:2:e09228`
-*01.09. 00:15 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra succeeds but exhibits extreme latency variance (4.9s–158.5s), suggesting queueing or cold-start effects on the free endpoint.
-
-### `dream:20260901001551:1:c8f6f4`
-*01.09. 00:15 UTC · Quelle: dream*
-
-Free-tier models (z-ai/glm, google/gemma) consistently hit 429 rate limits making them unreliable for production workflows.
-
-### `dream:20260901000916:5:6193c1`
-*01.09. 00:09 UTC · Quelle: dream*
-
-Artifact execution succeeded (137-line Python), proving the simulation-evolution loop works despite model-layer instability.
-
-### `dream:20260901000916:4:3d00b7`
-*01.09. 00:09 UTC · Quelle: dream*
-
-The sole reliable model (poolside/laguna-s-2.1) shows extreme latency variance (25–177s), requiring explicit timeout budgets.
-
-### `dream:20260901000916:3:665d2d`
-*01.09. 00:09 UTC · Quelle: dream*
-
-Simulation-based verification caught defects early yet required three revisions, revealing gaps between spec and executable artifact.
-
-### `dream:20260901000916:2:875a0b`
-*01.09. 00:09 UTC · Quelle: dream*
-
-Consecutive-failure detection with 1800s bans prevents cascade waste but demands a diverse model pool to maintain throughput.
-
-### `dream:20260901000916:1:32f334`
-*01.09. 00:09 UTC · Quelle: dream*
-
-Free-tier LLM APIs on OpenRouter suffer systematic rate-limiting (429) making them unreliable without queuing and backoff.
 
 ### `last_swarm_critique`
 *31.08. 23:26 UTC · Quelle: critic*
