@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 09:25:26",
+ "stand": "2026-09-15 09:36:49",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -201,12 +201,6 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-marktanalysen-wieder-auf-den-neuest.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "traumerkenntnisse-in-fähigkeiten-umsetze.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -400,6 +394,12 @@
   },
   {
    "tool": "schwarm-rückmeldungen-wieder-aktivieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-prüfen-und-nutzbar-machen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

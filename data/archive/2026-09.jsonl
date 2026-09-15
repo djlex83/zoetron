@@ -52049,3 +52049,13 @@
 {"ts": 1788859407.0861075, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.26, "gelesen": 9}}
 {"ts": 1788859407.088851, "kind": "reflex_used", "payload": {"goal": "Veraltete Schwarmdaten aktualisieren und nutzen", "tool": "veraltete-marktinfos-aktualisieren.py", "ok": true}}
 {"ts": 1788859407.6077747, "kind": "act_done", "payload": {"goal_title": "Veraltete Schwarmdaten aktualisieren und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788254694.094701, "key": "dream:20260901092454:1:9d3fc2", "value": "Single-model dependency on z-ai/glm-5.2 causes systemic 429 failures that halt all LLM-dependent workflows.", "source": "dream"}
+{"ts": 1788254694.094838, "key": "dream:20260901092454:2:dba68d", "value": "Proposed skills accumulate but never integrate — the integration pipeline itself is the bottleneck, not proposal generation.", "source": "dream"}
+{"ts": 1788254694.0949287, "key": "dream:20260901092454:3:d81337", "value": "Validation path breaks ('Pfadbruch zwischen Valid') indicate missing contract enforcement between planner, builder, and critic roles.", "source": "dream"}
+{"ts": 1788254694.0950015, "key": "dream:20260901092454:4:381f30", "value": "Swarm evolution produces high-scoring variants (9/9/9) but overall score stalls at 5/10, revealing a metric–reward misalignment.", "source": "dream"}
+{"ts": 1788254694.095071, "key": "dream:20260901092454:5:e25d51", "value": "Nemotron-3-ultra latency (29–56 s) makes iterative development infeasible; speed must be a first-class selection criterion.", "source": "dream"}
+{"ts": 1788254993.209788, "key": "swarm_artifact:Capability Proposals aus Memory/Graph katalogisieren", "value": "This script catalogs capability proposals from both the knowledge graph and memory store, applies unified ID-based deduplication, and outputs a structured JSON artifact.\n```python\n#!/usr/bin/env pytho", "source": "builder"}
+{"ts": 1788255137.0825438, "key": "swarm_artifact:Skill-Generierungs-Pipeline mit Hands + Konvergenztor bauen", "value": "```python\n#!/usr/bin/env python3\n\"\"\"\nSkill-Generierungs-Pipeline mit Hands + Konvergenztor + Sandbox-Phase.\nErzeugt aus Fähigkeitsvorschlägen echte Skills (Python-Module mit Decorator-Metadaten),\nführ", "source": "builder"}
+{"ts": 1788859946.0697262, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788860014.8009503, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788860016.5192635, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 43}}

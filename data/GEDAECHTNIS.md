@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11236 Fakten** · Stand 2026-09-15 09:27 UTC · aktualisiert bei jedem Herzschlag
+**11234 Fakten** · Stand 2026-09-15 09:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7123
-- **swarm_artifact:** 1629
+- **swarm_artifact:** 1627
 - **last_swarm_critique:** 967
 - **last_swarm_goal:** 702
 - **anti_pattern:** 371
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915093522:5:8bba19`
+*15.09. 09:35 UTC · Quelle: dream*
+
+Recall of prior artifacts before planning reduces redundant computation and preserves context.
+
+### `dream:20260915093522:4:185fad`
+*15.09. 09:35 UTC · Quelle: dream*
+
+Calibration predictions are within 1 point of actual, indicating self-assessment is reasonably accurate.
+
+### `dream:20260915093522:3:5a32c8`
+*15.09. 09:35 UTC · Quelle: dream*
+
+Evolution runs raise scores from 6 to 9, showing iterative refinement is an effective improvement loop.
+
+### `dream:20260915093522:2:54bbdb`
+*15.09. 09:35 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model consistently succeeds with acceptable latency, making it the reliable default.
+
+### `dream:20260915093522:1:abc3d3`
+*15.09. 09:35 UTC · Quelle: dream*
+
+Repeated 429 errors from google/gemma models indicate rate-limiting, not model unsuitability.
 
 ### `dream:20260915092443:5:bd6284`
 *15.09. 09:24 UTC · Quelle: dream*
@@ -41266,31 +41291,6 @@ score=9; issues=Skill-Generierung nutzt einfache Heuristik (Titel -> Funktionsna
 *01.09. 09:25 UTC · Quelle: system*
 
 Fähigkeiten in Taten umsetzen
-
-### `dream:20260901092454:5:e25d51`
-*01.09. 09:24 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:20260901092454:4:381f30`
-*01.09. 09:24 UTC · Quelle: dream*
-
-Swarm evolution produces high-scoring variants (9/9/9) but overall score stalls at 5/10, revealing a metric–reward misalignment.
-
-### `dream:20260901092454:3:d81337`
-*01.09. 09:24 UTC · Quelle: dream*
-
-Validation path breaks ('Pfadbruch zwischen Valid') indicate missing contract enforcement between planner, builder, and critic roles.
-
-### `dream:20260901092454:2:dba68d`
-*01.09. 09:24 UTC · Quelle: dream*
-
-Proposed skills accumulate but never integrate — the integration pipeline itself is the bottleneck, not proposal generation.
-
-### `dream:20260901092454:1:9d3fc2`
-*01.09. 09:24 UTC · Quelle: dream*
-
-Single-model dependency on z-ai/glm-5.2 causes systemic 429 failures that halt all LLM-dependent workflows.
 
 ### `last_swarm_critique`
 *01.09. 09:07 UTC · Quelle: critic*

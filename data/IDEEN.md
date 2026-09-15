@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 09:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 09:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,14 +12,14 @@
 - Wrap hand actions in async timeout guards with a circuit breaker to prevent cascade blocking. *(hatte die Idee 3×)*
 - model_health_router_with_fallback(): tracks latency/429 rates per endpoint; fails over within 2s to next-healt *(hatte die Idee 3×)*
 - hand_action_preflight_with_dependency_graph(): checks paths, permissions, and transitive deps; returns structu *(hatte die Idee 3×)*
-- Implement a model router with health checks, exponential backoff+jitter, and automatic fallback to ranked alte *(hatte die Idee 2×)*
-- Add a response cache keyed by prompt hash with TTL to avoid repeated calls to slow/rate-limited models. *(hatte die Idee 2×)*
-- Schedule periodic “knowledge refresh” tasks that update swarm critiques/goals and link isolated dream clusters *(hatte die Idee 2×)*
-- Instrument all model calls with latency/token/error metrics; expose a dashboard for dynamic load balancing. *(hatte die Idee 2×)*
 - Implement a ModelHealthMonitor that tracks per-model success, latency, and quota, feeding a dynamic fallback r *(hatte die Idee 2×)*
 - Build a QuotaAwareScheduler that spreads requests across provider accounts to prevent 429 bursts. *(hatte die Idee 2×)*
 - Add an AutoUnblockTimer that re-enables blocked models after exponential backoff with a probe request. *(hatte die Idee 2×)*
 - Create a ResilienceOrchestrator that wires circuit breaker, freshness checker, validator, convergence gate, an *(hatte die Idee 2×)*
+- Instrument external API calls with structured latency/error metrics pushed to the self-diagnosis organ for end *(hatte die Idee 2×)*
+- RateLimitBackoff: wraps model calls with exponential backoff and automatic fallback to a secondary provider. *(hatte die Idee 2×)*
+- FallbackRouter: maintains a health‑scored list of models and selects the best available one in real time. *(hatte die Idee 2×)*
+- PruningImpactAuditor: samples pruned facts and verifies retrieval success, adjusting retention thresholds. *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -31,16 +31,21 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
+- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Systemfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 3×)*
 - Modellfehler beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Recall of prior artifacts before planning reduces redundant computation and preserves context.
+- Calibration predictions are within 1 point of actual, indicating self-assessment is reasonably accurate.
+- Evolution runs raise scores from 6 to 9, showing iterative refinement is an effective improvement loop.
+- The dots-studio/dots-3-note-preview:free model consistently succeeds with acceptable latency, making it the reliable default.
+- Repeated 429 errors from google/gemma models indicate rate-limiting, not model unsuitability.
 - The same goal appeared in reflex, swarm, and tor events, causing redundant execution; a single coordination point prevents duplication.
 - Metabolism stress hit 1.0 with a budget of three tasks and one iteration, so limiting concurrency conserves resources.
 - Simulation identified two risks and required two revisions, showing that pre‑execution risk assessment improves reliability.
@@ -51,11 +56,6 @@
 - The system's drive goals consistently focus on error analysis, stale data refresh, and dream combination, revealing a self-improvement loop that shoul
 - A hand action failed because the target path did not exist, underscoring the need for preflight validation of file system dependencies before executio
 - The repeated 429 Too Many Requests errors from google/gemma free models indicate rate limiting that necessitates a health monitoring and automatic fai
-- Targeted reflex actions can effectively resolve specific failure modes when they are precisely defined and monitored.
-- The gap between skill proposal generation and implementation is a critical source of recurring failures.
-- Memory integration is a fragile capability that must be deliberately trained and structured to be reliable.
-- Stale goals and data silently accumulate and necessitate automatic detection and refresh to maintain relevance.
-- Model API failures (timeouts, rate limits) are the primary cause of system instability and require automated resilience patterns.
 
 ---
 
