@@ -1,38 +1,38 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 06:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 06:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- ModelFallbackManager: circuit-breaker wrapper tracking latency/error rates per endpoint with exponential backo *(hatte die Idee 4×)*
-- SimulationConvergenceGate: halts revision loops when risk delta falls below threshold or revision count exceed *(hatte die Idee 4×)*
 - Introduce an Absolute Path Executor that resolves all script and data paths using the ZOETRON_DATA environment *(hatte die Idee 4×)*
-- ArtifactPathValidator: pre-execution regex + existence probe ensuring generated tool paths match loader expect *(hatte die Idee 3×)*
-- EvolutionToDeploymentPipeline: promotes winning variant artifacts directly into skill registry with integratio *(hatte die Idee 3×)*
+- ModelFallbackManager: circuit-breaker wrapper tracking latency/error rates per endpoint with exponential backo *(hatte die Idee 3×)*
+- SimulationConvergenceGate: halts revision loops when risk delta falls below threshold or revision count exceed *(hatte die Idee 3×)*
 - Add an AutoUnblockTimer that re-enables blocked models after exponential backoff with a probe request. *(hatte die Idee 3×)*
 - Create a ResilienceOrchestrator that wires circuit breaker, freshness checker, validator, convergence gate, an *(hatte die Idee 3×)*
 - Instrument external API calls with structured latency/error metrics pushed to the self-diagnosis organ for end *(hatte die Idee 3×)*
 - InsightDeduplicator: embeds new insights against the existing registry, merges duplicates, and tags provenance *(hatte die Idee 3×)*
 - Limit dream consolidation to the last 50 events and use the fastest available model. *(hatte die Idee 3×)*
 - Wrap hand actions in async timeout guards with a circuit breaker to prevent cascade blocking. *(hatte die Idee 3×)*
-- Model Router with health-checked fallback chain: probe each provider on startup, track error rates, auto-failo *(hatte die Idee 2×)*
-- Latency Budget Allocator: before spawning sub-tasks, subtract the active model's p90 latency from the remainin *(hatte die Idee 2×)*
-- Path Resolver Wrapper: all hand_action file operations receive a PathResolver that expands relative paths agai *(hatte die Idee 2×)*
-- Scheduled Evolution & Swarm Refresh: cron-like driver that triggers evolution cycle every N cycles and swarm r *(hatte die Idee 2×)*
+- Implement a Provider Circuit Breaker that blacklists flaky endpoints after repeated 5xx/429 errors and switche *(hatte die Idee 2×)*
+- Develop a Swarm Data Freshness Checker that triggers sync when staleness exceeds threshold. *(hatte die Idee 2×)*
+- Create a Pre-Execution Validator that checks data availability before running hand actions. *(hatte die Idee 2×)*
+- Add a Convergence Gate requiring three stable cycles before accepting goal completion. *(hatte die Idee 2×)*
+- ArtifactPathValidator: pre-execution regex + existence probe ensuring generated tool paths match loader expect *(hatte die Idee 2×)*
+- EvolutionToDeploymentPipeline: promotes winning variant artifacts directly into skill registry with integratio *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning is active but inconsistently effective, suggesting tuning of retention thresholds.
+- A persistent gap exists in validating proposed skills via simulation before real-world deployment.
+- Model latency (~80s) and token usage indicate a critical need for a router with fallback to maintain system responsiveness.
+- Reflexes successfully drove convergence on data-refresh and error-reduction goals, proving their reliability.
+- Stale swarm data and model errors are recurring failure modes that demand automated reflex-based correction.
 - Cross-epoch memory pairing during consolidation helps combine distant experiences to generate novel, cross-cutting insights.
 - Regular memory pruning of stale facts and events is crucial to prevent context pollution and maintain a clean, actionable knowledge base.
 - Insufficient simulation and evolutionary runs limit system evolution, indicating that structured, periodic experimentation is necessary to drive capab
@@ -51,11 +56,6 @@
 - Risk predictions are systematically miscalibrated: simulations required 4 revisions and swarm estimates need 1.25× multiplier, indicating no feedback 
 - Model reliability is the primary system bottleneck with ~25% error rate (18 failures/55 successes), yet no automated fallback or circuit-breaking exis
 - Swarm processes consistently fail to converge (0/2 converged) because goals lack single measurable success criteria and reflex triggers, causing open-
-- The system successfully generated meta-skill proposals (adaptive fallback, scoped-goal template) that address its own failure modes, demonstrating the
-- Calibration predictions overestimate actual performance (predicted 6, actual 4), so self-assessment mechanisms should be calibrated with historical da
-- Evolutionary runs can improve scores significantly (from 4 to 9), but the swarm still failed to converge, suggesting that more cycles or better critic
-- The simulation phase consistently requires multiple revisions (4) and flags risks, indicating that initial skill proposals are often incomplete and ne
-- Model calls frequently fail due to timeouts and rate limits, so a dynamic fallback chain that monitors error rates and latency is essential for reliab
 
 ---
 

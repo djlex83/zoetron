@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11243 Fakten** · Stand 2026-09-15 06:08 UTC · aktualisiert bei jedem Herzschlag
+**11255 Fakten** · Stand 2026-09-15 06:27 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7128
-- **swarm_artifact:** 1639
-- **last_swarm_critique:** 964
-- **last_swarm_goal:** 699
-- **anti_pattern:** 369
-- **strategy:** 187
-- **tool:** 152
+- **swarm_artifact:** 1645
+- **last_swarm_critique:** 965
+- **last_swarm_goal:** 700
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 153
 - **hand_result:** 80
 - **aktuell_organfehler:** 25
 
 ---
+
+### `tool:veraltetes-schwarm-wissen-aktualisieren-`
+*15.09. 06:25 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltetes Schwarm-Wissen aktualisieren für bessere Zusammen'. Datei: data/tools/veraltetes-schwarm-wissen-aktualisieren-.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltetes Schwarm-Wisse:2`
+*15.09. 06:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Distributed Ledger Knowledge Graph - Use a distributed ledger (e.g., Hyperledger Fabric) to record each knowledge node as a transaction. Each transaction includes the node's data and a list of referenced node IDs, establishin
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltetes Schwarm-Wisse:0`
+*15.09. 06:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Graph-Centric Approach - Deploy a native graph database (e.g., Neo4j) where each knowledge item is a node with properties including timestamp and confidence score. When a new node is added, a trigger computes cosine similarit
+
+### `last_swarm_critique`
+*15.09. 06:23 UTC · Quelle: critic*
+
+score=6; issues=The auto-fill functionality in the second script creates new nodes but does not establish connections to existing nodes, failing to actually improve connectivity or collaboration.; The archiving function in the first script only writes a log fi
+
+### `last_swarm_goal`
+*15.09. 06:17 UTC · Quelle: system*
+
+Veraltetes Schwarm-Wissen aktualisieren für bessere Zusammenarbeit
+
+### `dream:20260915061559:5:d799dd`
+*15.09. 06:15 UTC · Quelle: dream*
+
+Memory pruning is active but inconsistently effective, suggesting tuning of retention thresholds.
+
+### `dream:20260915061559:4:6e4317`
+*15.09. 06:15 UTC · Quelle: dream*
+
+A persistent gap exists in validating proposed skills via simulation before real-world deployment.
+
+### `dream:20260915061559:3:6a5732`
+*15.09. 06:15 UTC · Quelle: dream*
+
+Model latency (~80s) and token usage indicate a critical need for a router with fallback to maintain system responsiveness.
+
+### `dream:20260915061559:2:1fac7c`
+*15.09. 06:15 UTC · Quelle: dream*
+
+Reflexes successfully drove convergence on data-refresh and error-reduction goals, proving their reliability.
+
+### `dream:20260915061559:1:a1a811`
+*15.09. 06:15 UTC · Quelle: dream*
+
+Stale swarm data and model errors are recurring failure modes that demand automated reflex-based correction.
 
 ### `dream:20260915060511:5:ecb324`
 *15.09. 06:05 UTC · Quelle: dream*
@@ -41291,31 +41341,6 @@ ABGELEHNT von Evolution (Score [7, 6, 7]): Runtime-Validation-First: Laufzeit-Te
 *01.09. 06:14 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten tatsächlich umsetzen und testen
-
-### `dream:20260901061417:5:868a0f`
-*01.09. 06:14 UTC · Quelle: dream*
-
-Zero knowledge base pruning occurred despite stale goals accumulating, indicating that unused facts and abandoned goals build up and may degrade decision-making quality.
-
-### `dream:20260901061417:4:5c9e8a`
-*01.09. 06:14 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while operational failures persist, revealing that diagnostic coverage is incomplete and misses runtime failures like rate limits and silent no-ops.
-
-### `dream:20260901061417:3:ffaaac`
-*01.09. 06:14 UTC · Quelle: dream*
-
-Nemotron's latency degraded from 16.1s to 21.2s between successful calls, demonstrating that even healthy models can worsen over time and need enforced latency budgets to prevent cascade stalls.
-
-### `dream:20260901061417:2:b53db2`
-*01.09. 06:14 UTC · Quelle: dream*
-
-A persistent gap exists between generating skill proposals and implementing them, as overlapping proposals recur across cycles without evidence of conversion into executed skills.
-
-### `dream:20260901061417:1:0977f0`
-*01.09. 06:14 UTC · Quelle: dream*
-
-The z-ai/glm-5.2:free model repeatedly fails with 429 Too Many Requests errors across multiple cycles, indicating free-tier rate limits are a systemic bottleneck requiring automatic fallback rather than blind retries.
 
 ### `last_swarm_critique`
 *01.09. 05:52 UTC · Quelle: critic*
