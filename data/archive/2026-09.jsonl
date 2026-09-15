@@ -51153,3 +51153,56 @@
 {"ts": 1788835197.8388245, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.33, "gelesen": 25}}
 {"ts": 1788835197.8417172, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten endlich nutzen", "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py", "ok": true}}
 {"ts": 1788835198.3364584, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten endlich nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788230655.4491737, "key": "dream:20260901024415:1:87263f", "value": "Free-tier models on OpenRouter exhibit systemic rate-limiting (429) under concurrent load, making them unreliable for production workflows.", "source": "dream"}
+{"ts": 1788230655.449267, "key": "dream:20260901024415:2:15d04b", "value": "The inclusionai/ling-3.0-flash-fin model consistently succeeds where larger models fail, suggesting smaller specialized models have more generous quotas.", "source": "dream"}
+{"ts": 1788230655.449339, "key": "dream:20260901024415:3:a562a9", "value": "Swarm-based debugging (planner/builder/critic) did not converge in 2 cycles, indicating the error-space is too large for fixed-iteration consensus.", "source": "dream"}
+{"ts": 1788230655.449404, "key": "dream:20260901024415:4:1ac0ef", "value": "Hand-action tooling returned exit code 1 with zero bytes read, revealing a silent I/O failure mode that bypasses error logging.", "source": "dream"}
+{"ts": 1788230655.4494686, "key": "dream:20260901024415:5:6de242", "value": "NVIDIA Nemotron returned 502 'Service temporarily overloaded' despite HTTP 200, showing upstream provider errors masquerade as success codes.", "source": "dream"}
+{"ts": 1788231075.3279243, "key": "dream:20260901025115:1:f71aab", "value": "Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary endpoints.", "source": "dream"}
+{"ts": 1788231075.3280108, "key": "dream:20260901025115:2:060d34", "value": "Latency variance across successful models spans 9.9s to 71.7s, violating any reasonable SLO without active routing.", "source": "dream"}
+{"ts": 1788231075.3280785, "key": "dream:20260901025115:3:1889f5", "value": "Skill proposals accumulate (55+) but lack a mandatory prototype gate, causing proposal inflation without execution.", "source": "dream"}
+{"ts": 1788231075.3281426, "key": "dream:20260901025115:4:867538", "value": "Reflex-based skill evaluation works but operates in isolation from the model routing layer that needs those skills.", "source": "dream"}
+{"ts": 1788231075.328207, "key": "dream:20260901025115:5:b9ee89", "value": "No systematic model health registry exists, so routing decisions remain reactive instead of predictive.", "source": "dream"}
+{"ts": 1788835724.1759737, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788835792.7357023, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788835794.4941692, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 20}}
+{"ts": 1788835889.2191365, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 90.5, "tokens_ein": 1341, "tokens_aus": 881}}
+{"ts": 1788835889.2197378, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router with per-provider circuit breakers tracking p50/p95 latency, 5xx/429 error rates, and automatic failover to inclusionai/ling-3.0-flash-fin within a 10-second budget."}}
+{"ts": 1788835889.2198205, "kind": "skill_proposal", "payload": {"proposal": "Build proposal-to-mission funnel that auto-promotes proposals with ≥3 upvotes and clear success metrics into the mission backlog with assigned owner and deadline."}}
+{"ts": 1788835889.2198815, "kind": "skill_proposal", "payload": {"proposal": "Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with exponential backoff requeue to prevent resource exhaustion."}}
+{"ts": 1788835889.2199564, "kind": "skill_proposal", "payload": {"proposal": "Create dream-to-skill pipeline that takes latest dream insights, generates skill proposals, runs simulation and tor tests, and promotes passing skills to the registry."}}
+{"ts": 1788835889.2200382, "kind": "skill_proposal", "payload": {"proposal": "Deploy model-error taxonomy classifier tagging failures by provider/error-type (overload, rate-limit, timeout, content-filter) to drive targeted fallback strategies."}}
+{"ts": 1788835889.220158, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788835915.112811, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 24.1, "tokens_ein": 496, "tokens_aus": 689}}
+{"ts": 1788835915.1129825, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Die alten Schwarm-Ziele und Kritiken sind veraltet und blockieren neue Ideen.", "signal": "stale"}}
+{"ts": 1788835915.1130533, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren", "why": "Zu viele Aktionen schlagen fehl, das System lernt nicht genug daraus.", "signal": "failure"}}
+{"ts": 1788835915.1131127, "kind": "drive_goal", "payload": {"title": "Fähigkeiten aus Vorschlägen bauen", "why": "Viele Skill-Vorschläge liegen brach, sie sollten zu echten Fähigkeiten werden.", "signal": "gap"}}
+{"ts": 1788835917.4088678, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.21, "gelesen": 0}}
+{"ts": 1788835917.4129088, "kind": "reflex_used", "payload": {"goal": "Träume in echte Fähigkeiten umsetzen", "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py", "ok": false}}
+{"ts": 1788835920.0981007, "kind": "swarm_started", "payload": {"goal": "Träume in echte Fähigkeiten umsetzen"}}
+{"ts": 1788835921.1591938, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1788835924.680286, "kind": "metabolism_check", "payload": {"stress": 0.701, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1788835934.381221, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788835934.3812187, "schalter_geoeffnet": false}}
+{"ts": 1788835934.5103984, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788835934.5103958, "schalter_geoeffnet": false}}
+{"ts": 1788835934.6338081, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788835934.633805, "schalter_geoeffnet": false}}
+{"ts": 1788835938.8725138, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 4.2, "tokens_ein": 3363, "tokens_aus": 1496}}
+{"ts": 1788835971.3863785, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.8, "tokens_ein": 434, "tokens_aus": 696}}
+{"ts": 1788836026.4178567, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 54.5, "tokens_ein": 401, "tokens_aus": 1018}}
+{"ts": 1788836026.4180467, "kind": "simulation", "payload": {"goal": "Träume in echte Fähigkeiten umsetzen", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1788836026.418153, "kind": "simulation_applied", "payload": {"revisions": 5}}
+{"ts": 1788836065.7528856, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 38.7, "tokens_ein": 1905, "tokens_aus": 1703}}
+{"ts": 1788836179.3467896, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 113.3, "tokens_ein": 2248, "tokens_aus": 3474}}
+{"ts": 1788836187.6031878, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788836187.6031852, "schalter_geoeffnet": false}}
+{"ts": 1788836187.7011206, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788836187.701118, "schalter_geoeffnet": false}}
+{"ts": 1788836187.7987955, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788836187.7987924, "schalter_geoeffnet": false}}
+{"ts": 1788836206.9471931, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 19.1, "tokens_ein": 2831, "tokens_aus": 7279}}
+{"ts": 1788836208.264293, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.09, "gelesen": 0}}
+{"ts": 1788836208.2644699, "kind": "tor", "payload": {"goal": "Träume in echte Fähigkeiten umsetzen", "gruen": true, "grund": "Artefakt laeuft (189 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788836230.789609, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.3, "tokens_ein": 8564, "tokens_aus": 1000}}
+{"ts": 1788836230.7907755, "kind": "calibration", "payload": {"goal": "Träume in echte Fähigkeiten umsetzen", "predicted": 3, "actual": 9, "abs_error": 6}}
+{"ts": 1788836230.790881, "kind": "model_score", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "score": 9}}
+{"ts": 1788836231.2562735, "kind": "bahnen", "payload": {"goal": "Träume in echte Fähigkeiten umsetzen", "delta": 1.0, "kanten": 10, "hat_code": true, "score": 9, "abgerufen": 4, "ids": ["e:33dd40ed09d2", "e:32cad10f5ed0", "f:56bca9fa7cc8", "f:f484dc6631ae"], "ziel_id": "g:1fc0e40e38ed"}}
+{"ts": 1788836231.2564697, "kind": "swarm_finished", "payload": {"goal": "Träume in echte Fähigkeiten umsetzen", "score": 9, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1788836231.2566805, "kind": "act_done", "payload": {"goal_title": "Träume in echte Fähigkeiten umsetzen", "score": 9, "converged": true}}
+{"ts": 1788836232.5379071, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.04, "gelesen": 0}}
+{"ts": 1788836234.8163056, "kind": "issue_synced", "payload": {"issue": 417, "state": "closed"}}

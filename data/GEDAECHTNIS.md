@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11259 Fakten** · Stand 2026-09-15 02:51 UTC · aktualisiert bei jedem Herzschlag
+**11254 Fakten** · Stand 2026-09-15 03:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7143
+- **dream:** 7138
 - **swarm_artifact:** 1641
 - **last_swarm_critique:** 962
 - **last_swarm_goal:** 697
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260915025829:5:b66d6a`
+*15.09. 02:58 UTC · Quelle: dream*
+
+Tool invocation fails when scripts lack executable bits, valid shebangs, or required env vars; pre-flight validation prevents waste.
+
+### `dream:20260915025829:4:934146`
+*15.09. 02:58 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 triggers conserve mode that caps tasks/iterations, starving recovery actions when most needed.
+
+### `dream:20260915025829:3:c192cb`
+*15.09. 02:58 UTC · Quelle: dream*
+
+Swarm synchronization attempts repeat without conflict resolution; vector-clock merging is needed to prevent stale-goal oscillation.
+
+### `dream:20260915025829:2:0e1947`
+*15.09. 02:58 UTC · Quelle: dream*
+
+Relative path handling causes silent hand-action failures; all inputs must resolve to absolute paths under ZOETRON_DATA before use.
+
+### `dream:20260915025829:1:baeade`
+*15.09. 02:58 UTC · Quelle: dream*
+
+Model providers exhibit cascading failures (502 upstream overload, 429 rate limits) requiring circuit breakers and prioritized failover.
 
 ### `tool:fähigkeiten-nur-bei-funktionierendem-mod`
 *15.09. 02:49 UTC · Quelle: hands*
@@ -41361,56 +41386,6 @@ The system operates at maximum stress (1.0) with severely constrained budgets, c
 *01.09. 02:58 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429 rate limits after minimal usage, making them unreliable for production workloads.
-
-### `dream:20260901025115:5:b9ee89`
-*01.09. 02:51 UTC · Quelle: dream*
-
-No systematic model health registry exists, so routing decisions remain reactive instead of predictive.
-
-### `dream:20260901025115:4:867538`
-*01.09. 02:51 UTC · Quelle: dream*
-
-Reflex-based skill evaluation works but operates in isolation from the model routing layer that needs those skills.
-
-### `dream:20260901025115:3:1889f5`
-*01.09. 02:51 UTC · Quelle: dream*
-
-Skill proposals accumulate (55+) but lack a mandatory prototype gate, causing proposal inflation without execution.
-
-### `dream:20260901025115:2:060d34`
-*01.09. 02:51 UTC · Quelle: dream*
-
-Latency variance across successful models spans 9.9s to 71.7s, violating any reasonable SLO without active routing.
-
-### `dream:20260901025115:1:f71aab`
-*01.09. 02:51 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary endpoints.
-
-### `dream:20260901024415:5:6de242`
-*01.09. 02:44 UTC · Quelle: dream*
-
-NVIDIA Nemotron returned 502 'Service temporarily overloaded' despite HTTP 200, showing upstream provider errors masquerade as success codes.
-
-### `dream:20260901024415:4:1ac0ef`
-*01.09. 02:44 UTC · Quelle: dream*
-
-Hand-action tooling returned exit code 1 with zero bytes read, revealing a silent I/O failure mode that bypasses error logging.
-
-### `dream:20260901024415:3:a562a9`
-*01.09. 02:44 UTC · Quelle: dream*
-
-Swarm-based debugging (planner/builder/critic) did not converge in 2 cycles, indicating the error-space is too large for fixed-iteration consensus.
-
-### `dream:20260901024415:2:15d04b`
-*01.09. 02:44 UTC · Quelle: dream*
-
-The inclusionai/ling-3.0-flash-fin model consistently succeeds where larger models fail, suggesting smaller specialized models have more generous quotas.
-
-### `dream:20260901024415:1:87263f`
-*01.09. 02:44 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter exhibit systemic rate-limiting (429) under concurrent load, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *01.09. 02:19 UTC · Quelle: critic*

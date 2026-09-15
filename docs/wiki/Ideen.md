@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Tool invocation fails when scripts lack executable bits, valid shebangs, or required env vars; pre-flight validation prevents waste.
+- Metabolism stress at 1.0 triggers conserve mode that caps tasks/iterations, starving recovery actions when most needed.
+- Swarm synchronization attempts repeat without conflict resolution; vector-clock merging is needed to prevent stale-goal oscillation.
+- Relative path handling causes silent hand-action failures; all inputs must resolve to absolute paths under ZOETRON_DATA before use.
+- Model providers exhibit cascading failures (502 upstream overload, 429 rate limits) requiring circuit breakers and prioritized failover.
 - Proposed reliability skills (scoring, fallback, circuit breaker) remain unimplemented while failures repeat, indicating a deployment gap between skill
 - High metabolic stress (1.0) forces conserve mode that starves critical tasks like model health probes, creating a reliability death spiral.
 - Swarm collaborations stall without convergence because goals lack measurable acceptance criteria and critic roles are underweighted.
@@ -51,11 +56,6 @@
 - Model reliability varies drastically by provider: Google free models are unusable under load, NVIDIA and dots-studio models deliver consistent latency
 - The evolution/swarm loop improves scores from 5 to 8-9 but fails to converge because critic outputs are unparseable, breaking the feedback cycle.
 - Free-tier models on OpenRouter (Gemma variants) fail consistently with 429 rate-limit errors while dots-studio/dots-3-note-preview and Nemotron succee
-- The 195-line Python artifact executes successfully, confirming the code-generation pipeline produces runnable output.
-- Calibration error of 1 on a 6-point scale shows the planner estimates task complexity reasonably well.
-- Hand actions fail instantly (exit 1, ~0.02 s) with zero bytes read, indicating missing preconditions or environment misconfiguration.
-- The dots-studio/dots-3-note-preview:free model succeeds as a fallback but shows high latency variance (29–92 s), requiring adaptive timeout budgets.
-- Free-tier Gemma models on OpenRouter consistently return 429 rate-limit errors, making them unreliable for sustained workloads.
 
 ---
 
