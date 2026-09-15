@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11229 Fakten** · Stand 2026-09-15 12:11 UTC · aktualisiert bei jedem Herzschlag
+**11234 Fakten** · Stand 2026-09-15 12:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7113
+- **dream:** 7118
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 970
 - **last_swarm_goal:** 705
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915121938:5:028498`
+*15.09. 12:19 UTC · Quelle: dream*
+
+Swarm achieved convergence in a single cycle with a planner, three builders, and a critic, demonstrating effective role assignment.
+
+### `dream:20260915121938:4:e3a3bc`
+*15.09. 12:19 UTC · Quelle: dream*
+
+Hand actions frequently fail with exit code 1 but eventually succeed, suggesting transient errors that require retry logic.
+
+### `dream:20260915121938:3:2b4846`
+*15.09. 12:19 UTC · Quelle: dream*
+
+Simulation identified four risks and required four revisions, and after applying three revisions the swarm converged, showing iterative risk mitigation improves outcomes.
+
+### `dream:20260915121938:2:a67a1d`
+*15.09. 12:19 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free provides reliable responses with moderate latency, making it a suitable primary or fallback model.
+
+### `dream:20260915121938:1:3e67aa`
+*15.09. 12:19 UTC · Quelle: dream*
+
+Google gemma models consistently return 429 Too Many Requests, indicating rate limits that necessitate exponential backoff or model switching.
 
 ### `dream:20260915120821:5:7ff7b2`
 *15.09. 12:08 UTC · Quelle: dream*

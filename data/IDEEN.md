@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 24×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm achieved convergence in a single cycle with a planner, three builders, and a critic, demonstrating effective role assignment.
+- Hand actions frequently fail with exit code 1 but eventually succeed, suggesting transient errors that require retry logic.
+- Simulation identified four risks and required four revisions, and after applying three revisions the swarm converged, showing iterative risk mitigatio
+- dots-studio/dots-3-note-preview:free provides reliable responses with moderate latency, making it a suitable primary or fallback model.
+- Google gemma models consistently return 429 Too Many Requests, indicating rate limits that necessitate exponential backoff or model switching.
 - The 'retry_with_backoff' strategy is insufficient on its own for free-tier APIs under global rate limiting, as repeated retries to the same endpoint e
 - The hand action and reflex failures highlight a lack of pre-flight validation for file paths and environment variables, leading to silent 'ok: false' 
 - Under maximum stress (1.0), the metabolism check correctly constrained the system to a conservative budget of 3 tasks and 1 iteration to prevent resou
@@ -51,11 +56,6 @@
 - The hand action failed because the expected file was not found at the resolved path, indicating missing path validation.
 - Only one free model succeeded, so depending on a single provider creates a single point of failure.
 - Model failures from rate limiting and timeouts dominate; a fallback chain with exponential backoff is essential.
-- Combining dream thoughts can produce new high-level goals and tasks.
-- Self-diagnosis currently finds no organ errors, indicating short-term health.
-- Pruning stale facts and events keeps memory relevant and reduces noise.
-- The system generates many skill proposals but lacks a validation pipeline to test them.
-- Free models frequently hit rate limits, causing 429 errors that require automatic failover.
 
 ---
 
