@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11245 Fakten** · Stand 2026-09-15 08:01 UTC · aktualisiert bei jedem Herzschlag
+**11245 Fakten** · Stand 2026-09-15 08:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7123
 - **swarm_artifact:** 1639
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915080917:5:d259ee`
+*15.09. 08:09 UTC · Quelle: dream*
+
+Self-diagnoses report no organ errors, implying that internal health checks are not detecting subtle degradation in model performance.
+
+### `dream:20260915080917:4:d7c07c`
+*15.09. 08:09 UTC · Quelle: dream*
+
+Model latency varies significantly, suggesting that latency-aware routing could improve response times and reduce timeouts.
+
+### `dream:20260915080917:3:a2c520`
+*15.09. 08:09 UTC · Quelle: dream*
+
+Multiple skill proposals exist without corresponding implementations, revealing a gap between insight generation and execution.
+
+### `dream:20260915080917:2:7c25ea`
+*15.09. 08:09 UTC · Quelle: dream*
+
+Pruning cycles reduce memory but do not address stale goals, which continue to drive outdated behavior.
+
+### `dream:20260915080917:1:62013a`
+*15.09. 08:09 UTC · Quelle: dream*
+
+Repeated 429 and timeout errors indicate that the current failover logic is insufficient to prevent cascading model failures.
 
 ### `dream:20260915075811:5:6b6ab4`
 *15.09. 07:58 UTC · Quelle: dream*
@@ -41276,31 +41301,6 @@ Latency variance between models spans 30x (5s vs 150s), so model selection must 
 *01.09. 08:09 UTC · Quelle: dream*
 
 Rate limiting (429) is the dominant failure mode across multiple free-tier models, making automatic fallback essential for reliability.
-
-### `dream:20260901080105:5:7ea1b5`
-*01.09. 08:01 UTC · Quelle: dream*
-
-Three completed swarm analyses and 35 skill proposals remain unprocessed for days, creating stale work backlog that blocks new capacity.
-
-### `dream:20260901080105:4:c70240`
-*01.09. 08:01 UTC · Quelle: dream*
-
-Metabolism stress at 1.0 with conserve state and single-iteration budget shows resource exhaustion cascades from model latency spikes (up to 110s).
-
-### `dream:20260901080105:3:91c604`
-*01.09. 08:01 UTC · Quelle: dream*
-
-Simulation verdicts repeatedly demand revisions (5 risks, 3 revisions) before approval, indicating skill proposals are under-specified before simulation.
-
-### `dream:20260901080105:2:c46622`
-*01.09. 08:01 UTC · Quelle: dream*
-
-Hand actions fail when relative paths ignore sys.argv[1] and ZOETRON_DATA environment variables, preventing access to actual data directories.
-
-### `dream:20260901080105:1:f8b349`
-*01.09. 08:01 UTC · Quelle: dream*
-
-Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *01.09. 07:19 UTC · Quelle: critic*

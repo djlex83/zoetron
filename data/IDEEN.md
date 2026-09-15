@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 07:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 08:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,7 +12,6 @@
 - Limit dream consolidation to the last 50 events and use the fastest available model. *(hatte die Idee 3×)*
 - Wrap hand actions in async timeout guards with a circuit breaker to prevent cascade blocking. *(hatte die Idee 3×)*
 - swarm_role_enforcer(min_critics=1, min_planners=1): blocks cycle start until roles filled; auto-spawns missing *(hatte die Idee 3×)*
-- Introduce an Absolute Path Executor that resolves all script and data paths using the ZOETRON_DATA environment *(hatte die Idee 2×)*
 - SimulationConvergenceGate: halts revision loops when risk delta falls below threshold or revision budget exhau *(hatte die Idee 2×)*
 - ReasoningHealthMonitor: tracks prediction vs actual error rates, convergence speed, and token efficiency per t *(hatte die Idee 2×)*
 - Implement a model router with health checks, exponential backoff+jitter, and automatic fallback to ranked alte *(hatte die Idee 2×)*
@@ -20,6 +19,7 @@
 - Schedule periodic “knowledge refresh” tasks that update swarm critiques/goals and link isolated dream clusters *(hatte die Idee 2×)*
 - Instrument all model calls with latency/token/error metrics; expose a dashboard for dynamic load balancing. *(hatte die Idee 2×)*
 - Implement a ModelHealthMonitor that tracks per-model success, latency, and quota, feeding a dynamic fallback r *(hatte die Idee 2×)*
+- Build a QuotaAwareScheduler that spreads requests across provider accounts to prevent 429 bursts. *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnoses report no organ errors, implying that internal health checks are not detecting subtle degradation in model performance.
+- Model latency varies significantly, suggesting that latency-aware routing could improve response times and reduce timeouts.
+- Multiple skill proposals exist without corresponding implementations, revealing a gap between insight generation and execution.
+- Pruning cycles reduce memory but do not address stale goals, which continue to drive outdated behavior.
+- Repeated 429 and timeout errors indicate that the current failover logic is insufficient to prevent cascading model failures.
 - The circuit breaker mechanism (schalter_geoeffnet) effectively quarantines failing models after repeated errors.
 - Drive goals are auto-generated from failure signals, creating a self-improvement feedback loop.
 - Regular pruning of facts and events prevents stale data accumulation and maintains system performance.
@@ -51,11 +56,6 @@
 - The dots model succeeded with acceptable latency, confirming it as a reliable fallback.
 - Free gemma models return 429 errors under load, so rate limiting and exponential backoff are necessary.
 - The nvidia model repeatedly times out after ~10 minutes, indicating a network bottleneck that requires a timeout-based circuit breaker.
-- Bridging dream consolidation with tool-based reflexes ensures that abstract lessons are translated into concrete, automated system behaviors.
-- High manual intervention counts signal a lack of autonomous error recovery, highlighting the need to embed self-healing loops into system drives.
-- Routine context pruning of outdated facts and events is a reusable procedure that prevents context window overflow and maintains cognitive clarity.
-- The `dots-studio/dots-3-note-preview:free` model serves as a consistently available fallback with acceptable latency (~18-20s) during peak API usage.
-- Model API instability (HTTP 429 rate limiting and read timeouts) is a primary failure cause that demands automated, health-monitoring failover routing
 
 ---
 
