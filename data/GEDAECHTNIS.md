@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11224 Fakten** · Stand 2026-09-15 18:48 UTC · aktualisiert bei jedem Herzschlag
+**11228 Fakten** · Stand 2026-09-15 19:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7128
-- **swarm_artifact:** 1609
-- **last_swarm_critique:** 976
-- **last_swarm_goal:** 711
+- **dream:** 7123
+- **swarm_artifact:** 1615
+- **last_swarm_critique:** 977
+- **last_swarm_goal:** 712
 - **anti_pattern:** 365
 - **strategy:** 185
 - **tool:** 151
-- **hand_result:** 76
+- **hand_result:** 77
 - **aktuell_organfehler:** 23
 
 ---
+
+### `last_swarm_critique`
+*15.09. 19:06 UTC · Quelle: critic*
+
+score=8; issues=The enrichment logic relies on simple keyword matching which may not capture semantic context well.; Thresholds for outdated detection are hardcoded and not adjustable per deployment.
+
+### `last_swarm_goal`
+*15.09. 18:57 UTC · Quelle: system*
+
+Veraltete Swarm-Ziele auffrischen
+
+### `dream:20260915185653:5:9c19a3`
+*15.09. 18:56 UTC · Quelle: dream*
+
+Dream and swarm cycles operate in isolation; merging them into a single joint reasoning loop would allow cross-pollination of insights and reduce redundant computation.
+
+### `dream:20260915185653:4:e0469d`
+*15.09. 18:56 UTC · Quelle: dream*
+
+Reflex tools (e.g., trägeinnerungen-verbinden.py) run without input validation, leading to silent failures; wrap each reflex with schema checks and fallback defaults.
+
+### `dream:20260915185653:3:11e45c`
+*15.09. 18:56 UTC · Quelle: dream*
+
+System stress at 1.0 triggers conserve mode but does not automatically shed low-priority tasks; an adaptive load-shedder should drop tasks when stress > 0.8.
+
+### `dream:20260915185653:2:c7264c`
+*15.09. 18:56 UTC · Quelle: dream*
+
+Hand actions fail because they execute without verifying that the target path exists and contains data; a pre-flight validator must gate every filesystem operation.
+
+### `dream:20260915185653:1:c30913`
+*15.09. 18:56 UTC · Quelle: dream*
+
+Primary models (gemma-4-26b/31b) consistently return 429 errors without retry logic, causing cascade failures; durable fix: exponential backoff with jitter plus proactive model health scoring.
 
 ### `dream:20260915184532:5:a4e6ff`
 *15.09. 18:45 UTC · Quelle: dream*
@@ -41201,56 +41236,6 @@ Successful fallback calls suffer extreme latency variance (4.9s to 138.9s) indic
 *01.09. 19:01 UTC · Quelle: dream*
 
 Free-tier model endpoints exhibit systemic rate limiting (429) and upstream failures (502) that cascade across providers simultaneously.
-
-### `dream:20260901185448:5:80f1a0`
-*01.09. 18:54 UTC · Quelle: dream*
-
-System stress at maximum (1.0) with conserve-mode budget constraints amplifies the cost of any model failure or retry loop.
-
-### `dream:20260901185448:4:4480cd`
-*01.09. 18:54 UTC · Quelle: dream*
-
-Reflex failure on 'Modellfehler stark reduzieren' despite existing skill proposals shows a gap between proposal and executable implementation.
-
-### `dream:20260901185448:3:633a13`
-*01.09. 18:54 UTC · Quelle: dream*
-
-Repeated 429 errors on the same model indicate missing client-side rate-limit awareness and exponential backoff.
-
-### `dream:20260901185448:2:289aea`
-*01.09. 18:54 UTC · Quelle: dream*
-
-High latency variance (20-74s) in fallback models destabilizes interactive workflows and requires latency-aware scheduling.
-
-### `dream:20260901185448:1:733235`
-*01.09. 18:54 UTC · Quelle: dream*
-
-Free-tier models exhibit unreliable availability under load, making them unsuitable for critical-path operations without automated fallback.
-
-### `dream:20260901184751:5:8ebaca`
-*01.09. 18:47 UTC · Quelle: dream*
-
-Core organ CI failure (herzschlag) during high model stress suggests resource contention between inference and system maintenance.
-
-### `dream:20260901184751:4:20adfc`
-*01.09. 18:47 UTC · Quelle: dream*
-
-Existing skill proposals (circuit-breaker, health monitor, stress scheduler) directly address observed failure modes but remain unimplemented.
-
-### `dream:20260901184751:3:19e24d`
-*01.09. 18:47 UTC · Quelle: dream*
-
-Latency variance (14s–74s) across successful calls indicates unpredictable queue depths, necessitating per-model timeout budgets.
-
-### `dream:20260901184751:2:be5159`
-*01.09. 18:47 UTC · Quelle: dream*
-
-Upstream provider overload (502) can affect even previously reliable models like Nemotron, requiring multi-provider fallback chains.
-
-### `dream:20260901184751:1:a695b4`
-*01.09. 18:47 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter exhibit correlated 429 rate-limiting failures across multiple providers, making single-model reliance untenable.
 
 ### `last_swarm_critique`
 *01.09. 18:02 UTC · Quelle: critic*

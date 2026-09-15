@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 18:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 19:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream and swarm cycles operate in isolation; merging them into a single joint reasoning loop would allow cross-pollination of insights and reduce redu
+- Reflex tools (e.g., trägeinnerungen-verbinden.py) run without input validation, leading to silent failures; wrap each reflex with schema checks and fa
+- System stress at 1.0 triggers conserve mode but does not automatically shed low-priority tasks; an adaptive load-shedder should drop tasks when stress
+- Hand actions fail because they execute without verifying that the target path exists and contains data; a pre-flight validator must gate every filesys
+- Primary models (gemma-4-26b/31b) consistently return 429 errors without retry logic, causing cascade failures; durable fix: exponential backoff with j
 - Pruning removed 10 facts and 16 events without scoring, risking loss of high-value memories that are infrequently accessed but critical.
 - dots-studio/dots-3-note-preview consistently succeeds but at 24-26s latency, making it a reliable last-resort fallback, not a primary choice.
 - The 3-strike blocker (1800s) is too blunt; it removes a model entirely instead of degrading gracefully to a slower fallback.
@@ -51,11 +56,6 @@
 - Rate limiting on multiple models simultaneously indicates missing centralized request orchestration; per-model retries worsen contention.
 - The swarm tool 'swarm-ziele-aktualisieren' was rejected for having no input schema, revealing a contract mismatch between planner expectations and too
 - Model failures (timeouts, 429s) cascade into swarm non-convergence because swarms amplify single-model unreliability across multiple roles.
-- Working model (dots-studio) exhibits high latency (12–44s) and large output tokens (up to 4.2k), creating cost and timeout risks.
-- Calibration systematically overestimates outcomes (predicted 7 vs actual 5), indicating a persistent optimism bias.
-- Evolutionary search improves variant scores (6→9) yet final swarm output still scores only 5/10 and fails to converge.
-- The swarm tool 'swarm-ziele-aktualisieren' rejects invocations because it expects zero-input interface but callers supply parameters.
-- Free-tier Google Gemma models consistently fail with 429 rate-limit errors, making them unreliable for production workflows.
 
 ---
 
