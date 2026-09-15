@@ -52755,3 +52755,20 @@
 {"ts": 1788884058.9953055, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.74, "gelesen": 3}}
 {"ts": 1788884058.9978347, "kind": "reflex_used", "payload": {"goal": "Schwarmwissen aus alten Kritiken wiederbeleben", "tool": "schwarmwissen-wieder-auffrischen.py", "ok": true}}
 {"ts": 1788884059.474765, "kind": "act_done", "payload": {"goal_title": "Schwarmwissen aus alten Kritiken wiederbeleben", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788884618.9635735, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788884687.5677679, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788884689.2852166, "kind": "prune_run", "payload": {"facts_pruned": 6, "events_pruned": 0}}
+{"ts": 1788884805.588048, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 112.8, "tokens_ein": 1346, "tokens_aus": 868}}
+{"ts": 1788884805.5888667, "kind": "skill_proposal", "payload": {"proposal": "Implement ModelRouter with per-provider circuit breakers tracking success rate, p95 latency, error taxonomy; auto-failover to flash when p95>30s or 429/502 rate>10%."}}
+{"ts": 1788884805.5889354, "kind": "skill_proposal", "payload": {"proposal": "Build SkillCompiler pipeline: ingest proposals, generate scaffold code, run contract tests in sandbox, register only verified skills in capability registry."}}
+{"ts": 1788884805.5889926, "kind": "skill_proposal", "payload": {"proposal": "Create FactDistiller post-pruning pass: cluster high-value events by error signature, extract reusable procedures (retry policies, fallback chains), store as durable procedural facts."}}
+{"ts": 1788884805.589046, "kind": "skill_proposal", "payload": {"proposal": "Deploy LatencyAwareRoleAssigner: map critic/planner to flash (<5s), builder to ultra with hard timeout budgets, enforce per-role latency ceilings."}}
+{"ts": 1788884805.5891373, "kind": "skill_proposal", "payload": {"proposal": "Add ConvergenceMonitor: require minimum 3 swarm cycles, detect score plateau (delta<0.01 over 2 cycles), validate critic confidence>0.8 before termination."}}
+{"ts": 1788884805.589227, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788884938.9670467, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 131.1, "tokens_ein": 480, "tokens_aus": 597}}
+{"ts": 1788884938.9672189, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Ziele und Kritiken aktualisieren", "why": "Die gespeicherten Infos zum Schwarm sind veraltet. Frische Ziele und Bewertungen helfen, besser im Team zu arbeiten.", "signal": "stale"}}
+{"ts": 1788884938.9673052, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und reduzieren", "why": "Es gab 24 Fehler beim Modell. Wenn wir die Ursachen finden, werden Vorhersagen zuverlässiger.", "signal": "failure"}}
+{"ts": 1788884938.9673796, "kind": "drive_goal", "payload": {"title": "Traum-Erinnerungen zusammenführen und nutzen", "why": "Zwei alte Träume liegen weit auseinander. Wenn wir sie verbinden, entstehen neue Ideen für Skills.", "signal": "combination"}}
+{"ts": 1788884948.017122, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.36, "gelesen": 16}}
+{"ts": 1788884948.0198953, "kind": "reflex_used", "payload": {"goal": "Lerne aus Modellfehlern", "tool": "exemplar-bank-von-den-eigenen-besten-mom.py", "ok": true}}
+{"ts": 1788884948.452327, "kind": "act_done", "payload": {"goal_title": "Lerne aus Modellfehlern", "score": null, "converged": true, "mode": "reflex"}}

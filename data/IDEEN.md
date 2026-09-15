@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 16:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 16:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 19×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Alternating between failing Gemma models and successful dots models shows that diversity in model selection is key to maintaining operational continui
+- Generated code execution failed due to a forbidden pattern ('shutdown'), highlighting the need for static code scanning and sanitization before runnin
+- Pre-execution simulation successfully identified 5 risks and drove 5 concrete revisions, proving its value in mitigating prediction errors before acti
+- The dots-studio/dots-3-note-preview:free model is more stable but exhibits high latency (up to 57s) and high token consumption, requiring strict timeo
+- Free Google Gemma models on OpenRouter are highly prone to 429 rate-limit errors under rapid or sequential request loads, requiring robust fallback me
 - The simultaneous emergence of five skill proposals targeting rate limiting and model health highlights a systemic gap in real-time, automated feedback
 - Operating at maximum stress (1.0) in conserve mode means the system must prioritize failover and path-validation tasks over exploratory skill generati
 - The reflex tool 'modell-fehler-systematisch-reduzieren-un.py' failing to reduce prediction errors indicates that error-correction mechanisms must be d
@@ -51,11 +56,6 @@
 - Hand actions fail with exit code 1 and zero reads when the target path is missing, indicating a need for pre-validation.
 - Reflex actions for refreshing stale data have proven effective, achieving convergence without human intervention.
 - The model fleet suffers from frequent 429 and timeout errors, making the dots-studio model the only reliable fallback.
-- The system prunes many facts and events, risking loss of critical context.
-- Calibration predictions deviate by 2 points, suggesting the model underestimates complexity.
-- Hand actions succeed when the target file exists; failures are caused by missing or empty files.
-- dots-studio/dots-3-note-preview:free consistently succeeds with low latency, making it the preferred model.
-- Repeated 429 errors from google/gemma models indicate rate limiting that requires backoff and fallback.
 
 ---
 

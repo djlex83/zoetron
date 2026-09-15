@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11218 Fakten** · Stand 2026-09-15 16:22 UTC · aktualisiert bei jedem Herzschlag
+**11223 Fakten** · Stand 2026-09-15 16:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
+- **dream:** 7123
 - **swarm_artifact:** 1613
 - **last_swarm_critique:** 974
 - **last_swarm_goal:** 709
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915162949:5:62cc37`
+*15.09. 16:29 UTC · Quelle: dream*
+
+Alternating between failing Gemma models and successful dots models shows that diversity in model selection is key to maintaining operational continuity.
+
+### `dream:20260915162949:4:308d08`
+*15.09. 16:29 UTC · Quelle: dream*
+
+Generated code execution failed due to a forbidden pattern ('shutdown'), highlighting the need for static code scanning and sanitization before running scripts.
+
+### `dream:20260915162949:3:c1558d`
+*15.09. 16:29 UTC · Quelle: dream*
+
+Pre-execution simulation successfully identified 5 risks and drove 5 concrete revisions, proving its value in mitigating prediction errors before action.
+
+### `dream:20260915162949:2:d97b6a`
+*15.09. 16:29 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model is more stable but exhibits high latency (up to 57s) and high token consumption, requiring strict timeout and budget controls.
+
+### `dream:20260915162949:1:24cd9c`
+*15.09. 16:29 UTC · Quelle: dream*
+
+Free Google Gemma models on OpenRouter are highly prone to 429 rate-limit errors under rapid or sequential request loads, requiring robust fallback mechanisms.
 
 ### `dream:20260915161957:5:95b373`
 *15.09. 16:19 UTC · Quelle: dream*
