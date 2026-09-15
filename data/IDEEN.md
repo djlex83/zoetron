@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 01:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm goals and critiques diverge from local state because synchronization lacks periodic pull and version reconciliation.
+- Stale facts and events accumulate (20 facts, 42 events pruned in one run) because no scheduled cleanup binds to memory pressure signals.
+- Tool scripts fail pre-flight checks: missing executable bits, unverified file existence, and absent required environment variables block execution.
+- Model provider failures cascade (502 overload → 429 rate limits) without automatic failover, leaving only a high-latency fallback (dots-studio) operat
+- Relative paths consistently fail to resolve against ZOETRON_DATA and sys.argv[1], causing hand actions to read zero files despite valid inputs.
 - Lightweight hand actions (0.22s, exit 0) and artifact health checks (235-line Python running) provide fast, reliable feedback loops that don't depend 
 - Simulation-driven fact revision (verdict: revise, 5 risks identified, 3/5 revisions applied) proves effective for knowledge maintenance when paired wi
 - Only dots-studio/dots-3-note-preview:free demonstrated consistent success across 5 calls with acceptable latency (19-42s), establishing it as the sole
@@ -51,11 +56,6 @@
 - Reflex_used tool failure demonstrates that missing or non‑executable scripts cause silent failures; a pre‑check of tool existence and permissions is n
 - Hand_action errors show that relative file paths are not resolved correctly, causing 'no file read' failures; absolute path validation is required bef
 - Model endpoints frequently return 502 (overloaded) or 429 (rate limited), indicating that the system must retry with exponential backoff and fall back
-- Path resolution failures in hand_action likely stem from relative paths; absolute path expansion using ZOETRON_DATA must be enforced pre-execution.
-- Many skill proposals accumulate but few reach implementation; a validation pipeline with TOR verification could close the gap.
-- High model latency variance (12-42s) and frequent 429/502 errors suggest provider health monitoring and failover are critical.
-- Reflex-based swarm knowledge refresh works reliably but is reactive; proactive staleness detection is missing.
-- Recurring drive goals (model errors, skill gap, stale swarm data) indicate systemic issues persist despite reflex fixes.
 
 ---
 

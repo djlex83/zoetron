@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11246 Fakten** · Stand 2026-09-15 01:56 UTC · aktualisiert bei jedem Herzschlag
+**11260 Fakten** · Stand 2026-09-15 02:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7138
-- **swarm_artifact:** 1635
-- **last_swarm_critique:** 960
-- **last_swarm_goal:** 695
+- **dream:** 7143
+- **swarm_artifact:** 1641
+- **last_swarm_critique:** 961
+- **last_swarm_goal:** 696
 - **anti_pattern:** 373
 - **strategy:** 189
-- **tool:** 151
+- **tool:** 152
 - **hand_result:** 81
 - **aktuell_organfehler:** 24
 
 ---
+
+### `tool:schwarm-rückmeldungen-wieder-aktivieren`
+*15.09. 02:12 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Schwarm-Rückmeldungen wieder aktivieren'. Datei: data/tools/schwarm-rückmeldungen-wieder-aktivieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*15.09. 02:12 UTC · Quelle: critic*
+
+score=8; issues=
+
+### `last_swarm_goal`
+*15.09. 02:05 UTC · Quelle: system*
+
+Schwarm-Rückmeldungen wieder aktivieren
+
+### `dream:20260915020457:5:5a5c22`
+*15.09. 02:04 UTC · Quelle: dream*
+
+Swarm goals and critiques diverge from local state because synchronization lacks periodic pull and version reconciliation.
+
+### `dream:20260915020457:4:513542`
+*15.09. 02:04 UTC · Quelle: dream*
+
+Stale facts and events accumulate (20 facts, 42 events pruned in one run) because no scheduled cleanup binds to memory pressure signals.
+
+### `dream:20260915020457:3:46fc98`
+*15.09. 02:04 UTC · Quelle: dream*
+
+Tool scripts fail pre-flight checks: missing executable bits, unverified file existence, and absent required environment variables block execution.
+
+### `dream:20260915020457:2:7b9252`
+*15.09. 02:04 UTC · Quelle: dream*
+
+Model provider failures cascade (502 overload → 429 rate limits) without automatic failover, leaving only a high-latency fallback (dots-studio) operational.
+
+### `dream:20260915020457:1:94bc4f`
+*15.09. 02:04 UTC · Quelle: dream*
+
+Relative paths consistently fail to resolve against ZOETRON_DATA and sys.argv[1], causing hand actions to read zero files despite valid inputs.
 
 ### `tool:veraltete-fakten-erneuern`
 *15.09. 01:54 UTC · Quelle: hands*
