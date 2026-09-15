@@ -51551,3 +51551,11 @@
 {"ts": 1788844845.8486366, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.83, "gelesen": 9}}
 {"ts": 1788844845.8514545, "kind": "reflex_used", "payload": {"goal": "Fehlerbehebung gründlich verbessern", "tool": "lernen-aus-fehlern-systematisch-verbesse.py", "ok": true}}
 {"ts": 1788844846.2145922, "kind": "act_done", "payload": {"goal_title": "Fehlerbehebung gründlich verbessern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788240331.6678407, "key": "dream:20260901052531:1:6ef906", "value": "When multiple API providers simultaneously return 429/502 errors, the system lacks a prioritized fallback chain based on proven model availability, causing cascading failures.", "source": "dream"}
+{"ts": 1788240331.667927, "key": "dream:20260901052531:2:b8c56c", "value": "Scripts that exit with code 0 but produce no file or directory mutations are silently treated as successes, masking real execution failures.", "source": "dream"}
+{"ts": 1788240331.667993, "key": "dream:20260901052531:3:729c8c", "value": "Under maximum stress (1.0) and conserve mode, the system still attempted parallel model calls instead of serializing around the single working model.", "source": "dream"}
+{"ts": 1788240331.668056, "key": "dream:20260901052531:4:344657", "value": "The simulation-revision loop (5 risks → 5 revisions) proved effective but was followed by further failed model calls, suggesting revisions were applied before the model layer was stabilized.", "source": "dream"}
+{"ts": 1788240331.6681223, "key": "dream:20260901052531:5:b5d63d", "value": "Recalling last_swarm_goal after a failed reflex indicates the system can self-correct by revisiting prior goals, but only after exhausting retries on broken paths.", "source": "dream"}
+{"ts": 1788845377.5374243, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788845446.1713364, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788845447.8903222, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 23}}

@@ -1,12 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 05:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 05:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Introduce an Absolute Path Executor that resolves all script and data paths using the ZOETRON_DATA environment *(hatte die Idee 5×)*
-- EvolutionToDeploymentPipeline: promotes winning variant artifacts directly into skill registry with integratio *(hatte die Idee 4×)*
 - ModelFallbackManager: circuit-breaker wrapper tracking latency/error rates per endpoint with exponential backo *(hatte die Idee 4×)*
 - SimulationConvergenceGate: halts revision loops when risk delta falls below threshold or revision count exceed *(hatte die Idee 4×)*
 - Implement a Provider Circuit Breaker that blacklists flaky endpoints after repeated 5xx/429 errors and switche *(hatte die Idee 3×)*
@@ -14,6 +13,7 @@
 - Create a Pre-Execution Validator that checks data availability before running hand actions. *(hatte die Idee 3×)*
 - Add a Convergence Gate requiring three stable cycles before accepting goal completion. *(hatte die Idee 3×)*
 - ArtifactPathValidator: pre-execution regex + existence probe ensuring generated tool paths match loader expect *(hatte die Idee 3×)*
+- EvolutionToDeploymentPipeline: promotes winning variant artifacts directly into skill registry with integratio *(hatte die Idee 3×)*
 - Add an AutoUnblockTimer that re-enables blocked models after exponential backoff with a probe request. *(hatte die Idee 3×)*
 - Create a ResilienceOrchestrator that wires circuit breaker, freshness checker, validator, convergence gate, an *(hatte die Idee 3×)*
 - Instrument external API calls with structured latency/error metrics pushed to the self-diagnosis organ for end *(hatte die Idee 3×)*
@@ -35,12 +35,17 @@
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 3×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
+- Systemfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 27 items without evidence that critic-tagged 'load-bearing' facts were spared, risking knowledge loss.
+- Calibration overestimated cycles by 50% (pred 6 vs actual 4), confirming need for per-goal-type EMA tracker.
+- Reflex→Swarm→Simulation→Revision→Hand-action→TOR pipeline succeeded on second pass, proving the critique loop works when triggered.
+- Hand-action timeout (20s) on trivial read suggests tool sandbox or network pathology, not model slowness.
+- Nemotron-3-ultra latency varies 6x (21-130s) making it unreliable as primary model without fallback chain.
 - Effort estimates for swarm-involved goals consistently underrun actuals, requiring a calibrated 1.25× multiplier tracked via exponential moving averag
 - Pruning removes 10-19 facts/events per run without preserving critic/evolution-tagged 'load-bearing' facts, eroding institutional memory.
 - Swarm cycles repeatedly lack required critic/planner roles and converge prematurely (score delta <1), wasting compute on stale knowledge.
@@ -51,11 +56,6 @@
 - Swarm-involved goals consistently underestimate effort by ~25%, validated by the calibrated_swarm_estimate proposal's 1.25× multiplier derived from hi
 - Recurring drive goals for model error reduction and swarm knowledge refresh reveal persistent reliability and freshness deficits despite reflex mainte
 - Identical skill proposals generated across two dream cycles without implementation indicates a proposal-to-execution gap that stalls capability growth
-- Hand actions execute without preflight verification of paths, permissions, and dependencies, risking silent failures.
-- Pruning runs discard facts indiscriminately without preserving successful tool-chain patterns for future reuse.
-- Dream-generated skill proposals accumulate but lack a lifecycle manager to deduplicate, prioritize, and assign builders with test criteria.
-- Swarm knowledge decays silently without automated refresh cycles, blocking novel idea generation despite available tooling.
-- Free-tier model endpoints fail catastrophically under load (429/502) with no automatic fallback, causing cascading task failures.
 
 ---
 

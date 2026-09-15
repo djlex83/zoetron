@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11253 Fakten** · Stand 2026-09-15 05:25 UTC · aktualisiert bei jedem Herzschlag
+**11253 Fakten** · Stand 2026-09-15 05:37 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7128
 - **swarm_artifact:** 1645
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915053349:5:2eff61`
+*15.09. 05:33 UTC · Quelle: dream*
+
+Pruning removed 27 items without evidence that critic-tagged 'load-bearing' facts were spared, risking knowledge loss.
+
+### `dream:20260915053349:4:b590ef`
+*15.09. 05:33 UTC · Quelle: dream*
+
+Calibration overestimated cycles by 50% (pred 6 vs actual 4), confirming need for per-goal-type EMA tracker.
+
+### `dream:20260915053349:3:858eed`
+*15.09. 05:33 UTC · Quelle: dream*
+
+Reflex→Swarm→Simulation→Revision→Hand-action→TOR pipeline succeeded on second pass, proving the critique loop works when triggered.
+
+### `dream:20260915053349:2:e2e7a0`
+*15.09. 05:33 UTC · Quelle: dream*
+
+Hand-action timeout (20s) on trivial read suggests tool sandbox or network pathology, not model slowness.
+
+### `dream:20260915053349:1:f23d09`
+*15.09. 05:33 UTC · Quelle: dream*
+
+Nemotron-3-ultra latency varies 6x (21-130s) making it unreliable as primary model without fallback chain.
 
 ### `dream:20260915052238:5:60d66a`
 *15.09. 05:22 UTC · Quelle: dream*
@@ -41316,31 +41341,6 @@ Nvidia Nemotron-3-Ultra succeeds but exhibits high latency variance (24–56s) a
 *01.09. 05:33 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter consistently hit 429 rate limits under sequential load, making them unreliable for multi-step workflows.
-
-### `dream:20260901052531:5:b5d63d`
-*01.09. 05:25 UTC · Quelle: dream*
-
-Recalling last_swarm_goal after a failed reflex indicates the system can self-correct by revisiting prior goals, but only after exhausting retries on broken paths.
-
-### `dream:20260901052531:4:344657`
-*01.09. 05:25 UTC · Quelle: dream*
-
-The simulation-revision loop (5 risks → 5 revisions) proved effective but was followed by further failed model calls, suggesting revisions were applied before the model layer was stabilized.
-
-### `dream:20260901052531:3:729c8c`
-*01.09. 05:25 UTC · Quelle: dream*
-
-Under maximum stress (1.0) and conserve mode, the system still attempted parallel model calls instead of serializing around the single working model.
-
-### `dream:20260901052531:2:b8c56c`
-*01.09. 05:25 UTC · Quelle: dream*
-
-Scripts that exit with code 0 but produce no file or directory mutations are silently treated as successes, masking real execution failures.
-
-### `dream:20260901052531:1:6ef906`
-*01.09. 05:25 UTC · Quelle: dream*
-
-When multiple API providers simultaneously return 429/502 errors, the system lacks a prioritized fallback chain based on proven model availability, causing cascading failures.
 
 ### `last_swarm_critique`
 *01.09. 04:58 UTC · Quelle: critic*
