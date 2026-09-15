@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 19:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 19:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
-- Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
+- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 4×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Ferngedächtnisse verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Unbounded model outputs inflate latency and cost; per-call token budgets with automatic truncation create predictable resource usage.
+- Tool input/output contract violations are preventable through pre-flight schema validation, avoiding cascading failures during execution.
+- Skill proposals accumulate without implementation, creating a gap between ideation and execution that blocks system improvement.
+- Predicted performance metrics are systematically overconfident; applying a historical-error-based calibration factor brings planning closer to reality
+- Free-tier models frequently fail with 429 rate-limit errors; a router with exponential backoff and paid-tier fallback is essential for swarm reliabili
 - Dream and swarm cycles operate in isolation; merging them into a single joint reasoning loop would allow cross-pollination of insights and reduce redu
 - Reflex tools (e.g., trägeinnerungen-verbinden.py) run without input validation, leading to silent failures; wrap each reflex with schema checks and fa
 - System stress at 1.0 triggers conserve mode but does not automatically shed low-priority tasks; an adaptive load-shedder should drop tasks when stress
@@ -51,11 +56,6 @@
 - The 3-strike blocker (1800s) is too blunt; it removes a model entirely instead of degrading gracefully to a slower fallback.
 - Nemotron timeouts suggest the model's inference latency exceeds the client's read timeout, necessitating longer timeouts or async handling.
 - Repeated 429 errors on Gemma models indicate strict rate limits that require proactive request spacing or API key rotation.
-- Goal staleness triggers swarm remediation, but infrastructure unreliability prevents convergence, creating a stale-goal trap.
-- Reflex-based tool use (ferngedächtnisse-verbinden.py) succeeded where swarm failed, showing that direct execution avoids compounding model failures.
-- Rate limiting on multiple models simultaneously indicates missing centralized request orchestration; per-model retries worsen contention.
-- The swarm tool 'swarm-ziele-aktualisieren' was rejected for having no input schema, revealing a contract mismatch between planner expectations and too
-- Model failures (timeouts, 429s) cascade into swarm non-convergence because swarms amplify single-model unreliability across multiple roles.
 
 ---
 

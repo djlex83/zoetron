@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11228 Fakten** · Stand 2026-09-15 19:07 UTC · aktualisiert bei jedem Herzschlag
+**11223 Fakten** · Stand 2026-09-15 19:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
+- **dream:** 7118
 - **swarm_artifact:** 1615
 - **last_swarm_critique:** 977
 - **last_swarm_goal:** 712
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915191618:5:9b1da9`
+*15.09. 19:16 UTC · Quelle: dream*
+
+Unbounded model outputs inflate latency and cost; per-call token budgets with automatic truncation create predictable resource usage.
+
+### `dream:20260915191618:4:b692ea`
+*15.09. 19:16 UTC · Quelle: dream*
+
+Tool input/output contract violations are preventable through pre-flight schema validation, avoiding cascading failures during execution.
+
+### `dream:20260915191618:3:d1a1bb`
+*15.09. 19:16 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation, creating a gap between ideation and execution that blocks system improvement.
+
+### `dream:20260915191618:2:913d14`
+*15.09. 19:16 UTC · Quelle: dream*
+
+Predicted performance metrics are systematically overconfident; applying a historical-error-based calibration factor brings planning closer to reality.
+
+### `dream:20260915191618:1:bfc12f`
+*15.09. 19:16 UTC · Quelle: dream*
+
+Free-tier models frequently fail with 429 rate-limit errors; a router with exponential backoff and paid-tier fallback is essential for swarm reliability.
 
 ### `last_swarm_critique`
 *15.09. 19:06 UTC · Quelle: critic*
@@ -41186,56 +41211,6 @@ A single model (inclusionai/ling-3.0-flash-fin) sustains 100% success across rep
 *01.09. 19:16 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429 rate limits making them unreliable as primary workers.
-
-### `dream:20260901190932:5:810902`
-*01.09. 19:09 UTC · Quelle: dream*
-
-Latency variance for same model (Nemotron: 23s vs 139s) suggests cold-start or queueing effects not accounted in planning.
-
-### `dream:20260901190932:4:437e14`
-*01.09. 19:09 UTC · Quelle: dream*
-
-Calibration system overestimates success rate by 250% (predicted 7 vs actual 2) indicating broken feedback loop.
-
-### `dream:20260901190932:3:e11194`
-*01.09. 19:09 UTC · Quelle: dream*
-
-Generated Python code uses dict[str, str] type syntax requiring Python 3.9+ but runtime environment appears older causing syntax errors.
-
-### `dream:20260901190932:2:9ea552`
-*01.09. 19:09 UTC · Quelle: dream*
-
-Nvidia Nemotron models exhibit recurring 502 upstream overload errors indicating provider-side capacity constraints.
-
-### `dream:20260901190932:1:294ad6`
-*01.09. 19:09 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer systemic 429 rate limiting across all providers making them unreliable for production workloads.
-
-### `dream:20260901190152:5:65e3c8`
-*01.09. 19:01 UTC · Quelle: dream*
-
-Model diversity without request pacing creates thundering herd on shared OpenRouter infrastructure.
-
-### `dream:20260901190152:4:1b6c8a`
-*01.09. 19:01 UTC · Quelle: dream*
-
-High stress state (1.0) with conservative budget does not prevent new task spawns, worsening contention.
-
-### `dream:20260901190152:3:5a0eb0`
-*01.09. 19:01 UTC · Quelle: dream*
-
-Generated code artifacts contain syntax errors (type annotation misuse) that pass simulation but fail at execution time.
-
-### `dream:20260901190152:2:8edf4c`
-*01.09. 19:01 UTC · Quelle: dream*
-
-Successful fallback calls suffer extreme latency variance (4.9s to 138.9s) indicating queue buildup rather than capacity limits.
-
-### `dream:20260901190152:1:261dfb`
-*01.09. 19:01 UTC · Quelle: dream*
-
-Free-tier model endpoints exhibit systemic rate limiting (429) and upstream failures (502) that cascade across providers simultaneously.
 
 ### `last_swarm_critique`
 *01.09. 18:02 UTC · Quelle: critic*
