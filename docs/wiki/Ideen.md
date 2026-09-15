@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 04:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
-- Systemfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Effort estimates for swarm-involved goals consistently underpredict actuals, requiring systematic calibration.
+- Prune runs remove facts/events without preserving successful tool chains, risking loss of reusable procedures.
+- Swarm knowledge (critiques, goals) becomes stale within cycles, degrading collaboration quality unless actively refreshed.
+- Proposed skills accumulate across dream cycles but remain unused until explicit reflex testing, revealing a deployment gap between proposal and availa
+- Model nemotron-3-ultra shows high latency variance (29-57s) and drive goals repeatedly flag near-50% failure rate, indicating unreliable free-tier end
 - Redundant proposal generation across cycles suggests missing deduplication and lifecycle management.
 - Self-diagnosis identifies drive organ failures but lacks automated repair triggers.
 - Pruning is effective but needs preservation tags for facts linked to successful tool chains.
@@ -51,11 +56,6 @@
 - Swarm convergence in one cycle with high score (9) occurs when the goal is narrowly scoped to 'working model only', suggesting scope restriction accel
 - Calibration consistently underestimates risk (predicted 5 vs actual 9), indicating the risk model needs historical error-rate weighting.
 - Upstream 502 errors and 429 rate limits dominate model failures, requiring automatic fallback with exponential backoff rather than single-model relian
-- Multiple skill proposals for reliability (registry, fallback chain, circuit breaker) exist but none are deployed as executable skills.
-- Simulation-revision pipeline successfully generated 5 revisions but the revised skill still crashed on the same model errors.
-- High metabolic stress (0.82) triggers conserve mode that caps iterations, preventing recovery retries exactly when needed.
-- Hand-action tools fail silently when relative paths are used instead of absolute paths anchored to ZOETRON_DATA.
-- Model API failures (502/429) cascade because no circuit breaker or health-check probes exist before dispatch.
 
 ---
 

@@ -51357,3 +51357,16 @@
 {"ts": 1788839878.789353, "kind": "skill_proposal", "payload": {"proposal": "Build a swarm-role model affinity map: assign critic/planner to low-latency models (ling-flash), builder to high-throughput models (Nemotron when healthy)."}}
 {"ts": 1788839878.7894294, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-flight check that pings each candidate model with a 5-token request; only include models responding <5s in the active pool."}}
 {"ts": 1788839878.7894957, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788235377.3931496, "key": "dream:20260901040257:1:76315b", "value": "Free-tier model endpoints (glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota management.", "source": "dream"}
+{"ts": 1788235377.3932598, "key": "dream:20260901040257:2:c79124", "value": "Nemotron-3-ultra succeeds but exhibits high latency variance (17–42 s), indicating cold-start or queueing effects that degrade user-facing SLAs.", "source": "dream"}
+{"ts": 1788235377.3933394, "key": "dream:20260901040257:3:e31f81", "value": "Skill proposals duplicate across cycles (model-health registry, fallback router) because no promotion gate validates and graduates prototypes to production.", "source": "dream"}
+{"ts": 1788235377.3934076, "key": "dream:20260901040257:4:05b469", "value": "Stale assets (three market analyses) persist unused until a reflex tool forces action, revealing a missing 'stale-data → task' trigger.", "source": "dream"}
+{"ts": 1788235377.3934762, "key": "dream:20260901040257:5:b1d03b", "value": "Pruning runs remove zero facts/events, suggesting retention policies are either misconfigured or the knowledge graph lacks TTL metadata.", "source": "dream"}
+{"ts": 1788839896.5196033, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 15.9, "tokens_ein": 498, "tokens_aus": 778}}
+{"ts": 1788839896.5197752, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren", "why": "Das Modell macht noch zu viele Fehler. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788839896.5198493, "kind": "drive_goal", "payload": {"title": "Mehr Evolutions-Runden starten", "why": "Es gab erst wenige Evolutions-Läufe. Mehr Evolution verbessert die Fähigkeiten dauerhaft.", "signal": "stale"}}
+{"ts": 1788839896.5199091, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Die Infos über Schwarm-Ziele und Kritik sind veraltet. Frisches Wissen hilft bei Zusammenarbeit.", "signal": "stale"}}
+{"ts": 1788839899.192985, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.48, "gelesen": 1278}}
+{"ts": 1788839899.1951609, "kind": "reflex_used", "payload": {"goal": "Häufige Modellfehler verstehen und mindern", "tool": "häufige-modellfehler-besser-verstehen.py", "ok": true}}
+{"ts": 1788839899.7576365, "kind": "act_done", "payload": {"goal_title": "Häufige Modellfehler verstehen und mindern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788840424.8687062, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

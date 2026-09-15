@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11244 Fakten** · Stand 2026-09-15 04:01 UTC · aktualisiert bei jedem Herzschlag
+**11244 Fakten** · Stand 2026-09-15 04:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7113
 - **swarm_artifact:** 1649
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915040841:5:3a3c6b`
+*15.09. 04:08 UTC · Quelle: dream*
+
+Effort estimates for swarm-involved goals consistently underpredict actuals, requiring systematic calibration.
+
+### `dream:20260915040841:4:1746ad`
+*15.09. 04:08 UTC · Quelle: dream*
+
+Prune runs remove facts/events without preserving successful tool chains, risking loss of reusable procedures.
+
+### `dream:20260915040841:3:af274a`
+*15.09. 04:08 UTC · Quelle: dream*
+
+Swarm knowledge (critiques, goals) becomes stale within cycles, degrading collaboration quality unless actively refreshed.
+
+### `dream:20260915040841:2:c3ecaa`
+*15.09. 04:08 UTC · Quelle: dream*
+
+Proposed skills accumulate across dream cycles but remain unused until explicit reflex testing, revealing a deployment gap between proposal and availability.
+
+### `dream:20260915040841:1:54b0f2`
+*15.09. 04:08 UTC · Quelle: dream*
+
+Model nemotron-3-ultra shows high latency variance (29-57s) and drive goals repeatedly flag near-50% failure rate, indicating unreliable free-tier endpoint.
 
 ### `dream:20260915035850:5:27c918`
 *15.09. 03:58 UTC · Quelle: dream*
@@ -41266,31 +41291,6 @@ Skill proposals accumulate (5 recorded) but lack an execution gate to promote or
 *01.09. 04:09 UTC · Quelle: dream*
 
 Free-tier model endpoints consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production workloads.
-
-### `dream:20260901040257:5:b1d03b`
-*01.09. 04:02 UTC · Quelle: dream*
-
-Pruning runs remove zero facts/events, suggesting retention policies are either misconfigured or the knowledge graph lacks TTL metadata.
-
-### `dream:20260901040257:4:05b469`
-*01.09. 04:02 UTC · Quelle: dream*
-
-Stale assets (three market analyses) persist unused until a reflex tool forces action, revealing a missing 'stale-data → task' trigger.
-
-### `dream:20260901040257:3:e31f81`
-*01.09. 04:02 UTC · Quelle: dream*
-
-Skill proposals duplicate across cycles (model-health registry, fallback router) because no promotion gate validates and graduates prototypes to production.
-
-### `dream:20260901040257:2:c79124`
-*01.09. 04:02 UTC · Quelle: dream*
-
-Nemotron-3-ultra succeeds but exhibits high latency variance (17–42 s), indicating cold-start or queueing effects that degrade user-facing SLAs.
-
-### `dream:20260901040257:1:76315b`
-*01.09. 04:02 UTC · Quelle: dream*
-
-Free-tier model endpoints (glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota management.
 
 ### `last_swarm_critique`
 *01.09. 02:19 UTC · Quelle: critic*
