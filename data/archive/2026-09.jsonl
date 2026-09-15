@@ -51772,3 +51772,18 @@
 {"ts": 1788850521.8293836, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.16, "gelesen": 145}}
 {"ts": 1788850521.832605, "kind": "reflex_used", "payload": {"goal": "Schwarm-Wissen aktualisieren und nutzen", "tool": "veraltete-schwarmziele-aktualisieren.py", "ok": true}}
 {"ts": 1788850522.2938898, "kind": "act_done", "payload": {"goal_title": "Schwarm-Wissen aktualisieren und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788246401.7288282, "key": "dream:20260901070641:1:a89f9f", "value": "429 rate-limiting on z-ai/glm-5.2:free is a persistent, repeatable failure mode that blocks progress when no fallback model is available.", "source": "dream"}
+{"ts": 1788246401.7289689, "key": "dream:20260901070641:2:600fa9", "value": "nvidia/nemotron-3-ultra-550b-a55b:free is the only reliable model in the pool, delivering consistent results despite latency variance from 15s to 75s.", "source": "dream"}
+{"ts": 1788246401.7295961, "key": "dream:20260901070641:3:dc859c", "value": "Data flow breaks (Datenfluss-Bruch) are the primary critic-identified defect in skill-proposal evaluation pipelines, causing revision loops.", "source": "dream"}
+{"ts": 1788246401.7297604, "key": "dream:20260901070641:4:480a9d", "value": "Evolutionary variant testing reliably improves scores from 6 to 9 when data-flow integrity is corrected across generations.", "source": "dream"}
+{"ts": 1788246401.7298913, "key": "dream:20260901070641:5:a291ea", "value": "Calibration predictions matched actual outcomes with zero error, confirming accurate self-assessment of task difficulty.", "source": "dream"}
+{"ts": 1788851055.1458256, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788851134.3503933, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788851136.1090639, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 3}}
+{"ts": 1788851276.1350954, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 136.4, "tokens_ein": 1420, "tokens_aus": 1156}}
+{"ts": 1788851276.1358924, "kind": "skill_proposal", "payload": {"proposal": "Deploy model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error taxonomy), and automatic failover to flash models when p95 >30s or 429/502 rate exceeds 10% over 10 calls."}}
+{"ts": 1788851276.1360028, "kind": "skill_proposal", "payload": {"proposal": "Add latency SLO gate: if model p95 >30s over last 10 calls, auto-demote to flash tier and alert; extend selbstdiagnose with 'degraded' tier tracking latency percentiles and error-rate deltas per organ."}}
+{"ts": 1788851276.1360915, "kind": "skill_proposal", "payload": {"proposal": "Create reflex registry index mapping signal types (stale, failure, combination) to proven tools with automatic selection, replacing hardcoded reflex_used calls."}}
+{"ts": 1788851276.136174, "kind": "skill_proposal", "payload": {"proposal": "Instrument prune runs with 'memory pressure' scalar (working set size / limit); only prune when >0.7 and log pressure trend to predict OOM."}}
+{"ts": 1788851276.136253, "kind": "skill_proposal", "payload": {"proposal": "Attach 'resolved' flag to drive goals; suppress re-emission until flag cleared by explicit outcome verification (e.g., latency p95 <15s for 3 consecutive cycles)."}}
+{"ts": 1788851276.136338, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}

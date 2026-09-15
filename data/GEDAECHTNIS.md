@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11250 Fakten** · Stand 2026-09-15 07:01 UTC · aktualisiert bei jedem Herzschlag
+**11250 Fakten** · Stand 2026-09-15 07:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7133
 - **swarm_artifact:** 1639
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915070909:5:0553a3`
+*15.09. 07:09 UTC · Quelle: dream*
+
+Bridging dream consolidation with tool-based reflexes ensures that abstract lessons are translated into concrete, automated system behaviors.
+
+### `dream:20260915070909:4:0cbdb5`
+*15.09. 07:09 UTC · Quelle: dream*
+
+High manual intervention counts signal a lack of autonomous error recovery, highlighting the need to embed self-healing loops into system drives.
+
+### `dream:20260915070909:3:17a932`
+*15.09. 07:09 UTC · Quelle: dream*
+
+Routine context pruning of outdated facts and events is a reusable procedure that prevents context window overflow and maintains cognitive clarity.
+
+### `dream:20260915070909:2:d12619`
+*15.09. 07:09 UTC · Quelle: dream*
+
+The `dots-studio/dots-3-note-preview:free` model serves as a consistently available fallback with acceptable latency (~18-20s) during peak API usage.
+
+### `dream:20260915070909:1:1dd773`
+*15.09. 07:09 UTC · Quelle: dream*
+
+Model API instability (HTTP 429 rate limiting and read timeouts) is a primary failure cause that demands automated, health-monitoring failover routing.
 
 ### `dream:20260915065748:5:4f83d0`
 *15.09. 06:57 UTC · Quelle: dream*
@@ -41316,31 +41341,6 @@ score=8; issues=Sandbox bestätigt Laufen des Artefakts (131 Zeilen Python) - ke
 *01.09. 07:08 UTC · Quelle: system*
 
 Simulationen in Praxis umsetzen
-
-### `dream:20260901070641:5:a291ea`
-*01.09. 07:06 UTC · Quelle: dream*
-
-Calibration predictions matched actual outcomes with zero error, confirming accurate self-assessment of task difficulty.
-
-### `dream:20260901070641:4:480a9d`
-*01.09. 07:06 UTC · Quelle: dream*
-
-Evolutionary variant testing reliably improves scores from 6 to 9 when data-flow integrity is corrected across generations.
-
-### `dream:20260901070641:3:dc859c`
-*01.09. 07:06 UTC · Quelle: dream*
-
-Data flow breaks (Datenfluss-Bruch) are the primary critic-identified defect in skill-proposal evaluation pipelines, causing revision loops.
-
-### `dream:20260901070641:2:600fa9`
-*01.09. 07:06 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free is the only reliable model in the pool, delivering consistent results despite latency variance from 15s to 75s.
-
-### `dream:20260901070641:1:a89f9f`
-*01.09. 07:06 UTC · Quelle: dream*
-
-429 rate-limiting on z-ai/glm-5.2:free is a persistent, repeatable failure mode that blocks progress when no fallback model is available.
 
 ### `last_swarm_critique`
 *01.09. 06:20 UTC · Quelle: critic*
