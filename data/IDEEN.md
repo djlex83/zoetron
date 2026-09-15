@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 13:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 13:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Combining old memories can generate novel insights beyond individual recollections.
+- Stale swarm data can interfere with collaboration, requiring periodic updates.
+- Pruning old facts and events reduces memory overhead and improves performance.
+- The dots-studio model succeeded with low latency, showing it is currently more reliable.
+- Repeated 429 errors from free Google models indicate rate limiting as a primary failure cause.
 - Current model routing is reactive fallback rather than proactive health-based selection.
 - Memory pruning occurs regularly but does not prevent recurring failure patterns from repeating.
 - The system generates skill proposals but there is no evidence they are being implemented, creating a proposal-execution gap.
@@ -51,11 +56,6 @@
 - Silent failures (exit 0 with no output) are not detected, masking incomplete tasks.
 - The dots-studio model succeeds but introduces 20–30 s latency, limiting throughput.
 - Free-tier models repeatedly return HTTP 429, causing cascading request failures.
-- Successful task execution (such as analyzing error patterns and generating a 108-line Python artifact) depends on decoupling the generation model from
-- Calibration predictions exhibit a minor systematic offset (e.g., predicting 6 when the actual score is 7), requiring a dynamic correction margin based
-- Iterative evolutionary refinement can elevate baseline script scores from 7/10 to 9/10 by systematically resolving specific structural issues like mis
-- The 'dots-studio/dots-3-note-preview:free' model consistently succeeded where others failed, proving to be the most robust and high-performing fallbac
-- Consecutive timeouts and HTTP 429 rate-limit errors on free-tier models (such as the NVIDIA and Google Gemma variants) trigger automatic 1800-second l
 
 ---
 

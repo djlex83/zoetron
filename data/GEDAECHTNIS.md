@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11225 Fakten** · Stand 2026-09-15 13:25 UTC · aktualisiert bei jedem Herzschlag
+**11222 Fakten** · Stand 2026-09-15 13:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7113
-- **swarm_artifact:** 1623
+- **dream:** 7118
+- **swarm_artifact:** 1619
 - **last_swarm_critique:** 971
 - **last_swarm_goal:** 706
-- **anti_pattern:** 371
-- **strategy:** 188
+- **anti_pattern:** 369
+- **strategy:** 187
 - **tool:** 152
-- **hand_result:** 78
+- **hand_result:** 77
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915133333:5:0de27c`
+*15.09. 13:33 UTC · Quelle: dream*
+
+Combining old memories can generate novel insights beyond individual recollections.
+
+### `dream:20260915133333:4:acb1df`
+*15.09. 13:33 UTC · Quelle: dream*
+
+Stale swarm data can interfere with collaboration, requiring periodic updates.
+
+### `dream:20260915133333:3:323cc0`
+*15.09. 13:33 UTC · Quelle: dream*
+
+Pruning old facts and events reduces memory overhead and improves performance.
+
+### `dream:20260915133333:2:ad4ee6`
+*15.09. 13:33 UTC · Quelle: dream*
+
+The dots-studio model succeeded with low latency, showing it is currently more reliable.
+
+### `dream:20260915133333:1:082c10`
+*15.09. 13:33 UTC · Quelle: dream*
+
+Repeated 429 errors from free Google models indicate rate limiting as a primary failure cause.
 
 ### `dream:20260915132302:5:807cd3`
 *15.09. 13:23 UTC · Quelle: dream*
@@ -41211,16 +41236,6 @@ Conserve mode with max_iterations=1 is too restrictive for multi-step validation
 *01.09. 13:45 UTC · Quelle: dream*
 
 Simultaneous 429 errors across multiple models indicate a shared API rate-limit bottleneck, not model-specific failures, requiring provider diversification or backoff.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:2`
-*01.09. 13:29 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 7, 8]): Task Fusion with In-Memory Pipeline - Merge the three tasks into a single executable workflow that passes data as in-memory objects without serialization. Define a pipeline function that chains the logic: first, evalu
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:0`
-*01.09. 13:29 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 8, 8]): Schema-First Contract Enforcement - Define explicit JSON schemas for each task's input and output. Task 1 outputs a standardized 'Pruefergebnis' schema containing only 'typ' and 'beschreibung' (no numeric scores). Tas
 
 ### `last_swarm_critique`
 *01.09. 13:26 UTC · Quelle: critic*

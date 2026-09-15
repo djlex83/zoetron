@@ -1,14 +1,14 @@
 {
-  "total": 782,
+  "total": 786,
   "content_length_stats": {
     "min": 0,
     "max": 122,
-    "avg": 3.6457800511508953
+    "avg": 3.627226463104326
   },
   "unique_tags": [],
   "time_range": {
     "earliest": "2026-08-26T06:09:15.112365",
-    "latest": "2026-09-14T16:36:41.535276"
+    "latest": "2026-09-15T10:16:30.584611"
   },
   "dreams": [
     {
@@ -319,7 +319,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-13T06:29:10.693486",
+      "timestamp": "2026-09-15T10:16:30.584611",
       "content_length": 0,
       "tags": []
     },
@@ -439,7 +439,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-14T05:36:35.291571",
+      "timestamp": "2026-09-15T03:39:23.646524",
       "content_length": 0,
       "tags": []
     },
@@ -1045,7 +1045,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-06T04:58:37.432632",
+      "timestamp": "2026-09-15T08:53:46.852971",
       "content_length": 0,
       "tags": []
     },
@@ -1183,7 +1183,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-13T18:21:41.877315Z",
+      "timestamp": "2026-09-15T05:55:21.397802Z",
       "content_length": 0,
       "tags": []
     },
@@ -1543,6 +1543,18 @@
     },
     {
       "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
       "timestamp": "2026-08-27T00:10:20.365546+00:00",
       "content_length": 0,
       "tags": []
@@ -1579,7 +1591,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-14T16:36:41.535276",
+      "timestamp": "2026-09-15T05:01:30.202708",
       "content_length": 0,
       "tags": []
     },
@@ -1633,7 +1645,7 @@
     },
     {
       "id": "unknown",
-      "timestamp": "2026-09-14T06:53:47.259527",
+      "timestamp": "2026-09-15T03:59:20.121548",
       "content_length": 0,
       "tags": []
     },
@@ -2971,6 +2983,12 @@
     },
     {
       "id": "unknown",
+      "timestamp": 1789426508.6790414,
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
       "timestamp": null,
       "content_length": 0,
       "tags": []
@@ -3164,6 +3182,12 @@
     {
       "id": "unknown",
       "timestamp": "2026-09-12T15:01:39.365722",
+      "content_length": 0,
+      "tags": []
+    },
+    {
+      "id": "unknown",
+      "timestamp": null,
       "content_length": 0,
       "tags": []
     },
