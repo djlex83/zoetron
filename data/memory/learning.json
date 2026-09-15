@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 15:59:20",
+ "stand": "2026-09-15 16:10:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -373,14 +373,20 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modelle-stabiler-machen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.775,
  "simulationen_angewandt": 33,
  "swarm_scores": {
-  "n": 31,
+  "n": 30,
   "best": 10.0,
-  "schnitt": 5.81
+  "schnitt": 5.77
  },
  "score_nach_ziel_typ": {
   "analyse": {

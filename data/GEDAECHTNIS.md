@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11217 Fakten** · Stand 2026-09-15 16:01 UTC · aktualisiert bei jedem Herzschlag
+**11213 Fakten** · Stand 2026-09-15 16:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7108
-- **swarm_artifact:** 1618
+- **dream:** 7113
+- **swarm_artifact:** 1613
 - **last_swarm_critique:** 974
 - **last_swarm_goal:** 709
-- **anti_pattern:** 369
-- **strategy:** 187
-- **tool:** 152
+- **anti_pattern:** 367
+- **strategy:** 186
+- **tool:** 151
 - **hand_result:** 77
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915161014:5:f4e0a8`
+*15.09. 16:10 UTC · Quelle: dream*
+
+Pruning events without facts fragments knowledge; a context-preservation lock on facts referenced by active goals is necessary.
+
+### `dream:20260915161014:4:f51efe`
+*15.09. 16:10 UTC · Quelle: dream*
+
+The critic's confidence update logic for fallback semantic updates can produce incorrect scores, undermining swarm convergence.
+
+### `dream:20260915161014:3:662270`
+*15.09. 16:10 UTC · Quelle: dream*
+
+Hand actions fail with exit code 1 and zero reads when the target path is missing, indicating a need for pre-validation.
+
+### `dream:20260915161014:2:4cb8fd`
+*15.09. 16:10 UTC · Quelle: dream*
+
+Reflex actions for refreshing stale data have proven effective, achieving convergence without human intervention.
+
+### `dream:20260915161014:1:db83b1`
+*15.09. 16:10 UTC · Quelle: dream*
+
+The model fleet suffers from frequent 429 and timeout errors, making the dots-studio model the only reliable fallback.
 
 ### `dream:20260915155806:5:9c7bb0`
 *15.09. 15:58 UTC · Quelle: dream*
@@ -41161,21 +41186,6 @@ Extreme latency variance (5s vs 75s for successful calls) without SLA enforcemen
 *01.09. 16:43 UTC · Quelle: dream*
 
 Provider-level quota exhaustion (429 errors across all Google models simultaneously) makes per-model fallback ineffective; routing must track provider-level rate limits.
-
-### `tool:vorgeschlagene-fähigkeiten-echt-umsetzen`
-*01.09. 16:02 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten echt umsetzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-echt-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:2`
-*01.09. 16:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Live-Demo als interaktiver Proof-of-Concept - Ersetze statische Artefakte durch eine laufende, interaktive Umgebung (z.B. Web-App oder API-Endpunkt), in der die Fähigkeiten in Echtzeit sichtbar angewendet werden. Das Ziel wir
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:1`
-*01.09. 16:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Ergebnisorientierte Messung via definierten KPIs - Überspringe die Implementierungsanleitung und definiere exakte, messbare Outputs (KPIs) für jede Fähigkeit. Setze die Fähigkeiten direkt ein und beweise die Zielerreichung du
 
 ### `last_swarm_critique`
 *01.09. 16:00 UTC · Quelle: critic*
