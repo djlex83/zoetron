@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 02:32:51",
+ "stand": "2026-09-15 02:49:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,12 +27,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-gruppen-informationen-aktualis.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "träume-analysieren.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -52,6 +46,12 @@
   },
   {
    "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-gruppen-informationen-aktualis.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -103,6 +103,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "träume-besser-nutzen-lernen.py",
@@ -171,12 +177,6 @@
    "quote": 0.5
   },
   {
-   "tool": "modellfehler-stark-verringern.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -186,12 +186,6 @@
    "tool": "fähigkeiten-ideen-in-taten-umsetzen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -393,17 +387,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.82,
- "simulationen_angewandt": 29,
+ "haende_quote": 0.816,
+ "simulationen_angewandt": 30,
  "swarm_scores": {
-  "n": 27,
+  "n": 28,
   "best": 9.0,
-  "schnitt": 5.93
+  "schnitt": 6.04
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 27,
-   "schnitt": 5.93
+   "n": 28,
+   "schnitt": 6.04
   }
  }
 }

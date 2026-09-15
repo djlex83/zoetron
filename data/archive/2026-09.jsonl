@@ -51131,3 +51131,25 @@
 {"ts": 1788834538.96145, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.06, "gelesen": 66}}
 {"ts": 1788834538.9662108, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Infos aktualisieren", "tool": "alte-erinnerungen-aktualisieren.py", "ok": true}}
 {"ts": 1788834539.3686504, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Infos aktualisieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788230288.294166, "key": "dream:20260901023808:1:252ec2", "value": "Rate limiting (429) is systemic across free-tier models and should be treated as expected behavior rather than exceptional failure.", "source": "dream"}
+{"ts": 1788230288.2942533, "key": "dream:20260901023808:2:89ce1e", "value": "inclusionai/ling-3.0-flash-fin:free is the only consistently available free model under load and should be prioritized as primary.", "source": "dream"}
+{"ts": 1788230288.2943242, "key": "dream:20260901023808:3:24c62e", "value": "Evolution with critic feedback yields >50% quality improvement (6→9) and should be standard after every first-pass generation.", "source": "dream"}
+{"ts": 1788230288.294393, "key": "dream:20260901023808:4:6afd4e", "value": "Calibration predictions match actual scores exactly (error 0), making them reliable for resource allocation decisions.", "source": "dream"}
+{"ts": 1788230288.294458, "key": "dream:20260901023808:5:34a04d", "value": "Transient hand-action failures self-correct on immediate retry, so single automatic retries should precede escalation.", "source": "dream"}
+{"ts": 1788835061.2413204, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788835129.7687826, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788835131.4384105, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 18}}
+{"ts": 1788835159.0285966, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 23.9, "tokens_ein": 1377, "tokens_aus": 812}}
+{"ts": 1788835159.0291834, "kind": "skill_proposal", "payload": {"proposal": "Deploy model_router with per-provider circuit breakers tracking p50/p95 latency, 5xx/429 rates, and <10s failover to flash-tier models."}}
+{"ts": 1788835159.0292392, "kind": "skill_proposal", "payload": {"proposal": "Build skill_validation_pipeline: sandbox proposals with static analysis + integration tests before registry promotion."}}
+{"ts": 1788835159.029339, "kind": "skill_proposal", "payload": {"proposal": "Create model-error taxonomy classifier tagging failures by provider/error-type to drive targeted fallback strategies."}}
+{"ts": 1788835159.0294242, "kind": "skill_proposal", "payload": {"proposal": "Implement proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to mission backlog."}}
+{"ts": 1788835159.029527, "kind": "skill_proposal", "payload": {"proposal": "Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with exponential backoff requeue."}}
+{"ts": 1788835159.0296206, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788835194.09653, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 33.0, "tokens_ein": 494, "tokens_aus": 943}}
+{"ts": 1788835194.0967224, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren und prüfen", "why": "Das Wissen über Schwarm-Ziele und Kritiken ist veraltet. Wir müssen prüfen, ob die alten Infos noch stimmen.", "signal": "stale"}}
+{"ts": 1788835194.0968187, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und verringern", "why": "Es gab 30 Modell-Fehler bei nur 48 Erfolgen. Wir sollten herausfinden, warum das Modell scheitert.", "signal": "failure"}}
+{"ts": 1788835194.096884, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten testen und nutzen", "why": "Es gibt 65 Vorschläge für neue Fähigkeiten. Wir sollten die besten davon ausprobieren und einbauen.", "signal": "gap"}}
+{"ts": 1788835197.8388245, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.33, "gelesen": 25}}
+{"ts": 1788835197.8417172, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten endlich nutzen", "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py", "ok": true}}
+{"ts": 1788835198.3364584, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten endlich nutzen", "score": null, "converged": true, "mode": "reflex"}}

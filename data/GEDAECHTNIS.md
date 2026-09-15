@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11250 Fakten** · Stand 2026-09-15 02:34 UTC · aktualisiert bei jedem Herzschlag
+**11259 Fakten** · Stand 2026-09-15 02:51 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7143
-- **swarm_artifact:** 1635
-- **last_swarm_critique:** 961
-- **last_swarm_goal:** 696
+- **swarm_artifact:** 1641
+- **last_swarm_critique:** 962
+- **last_swarm_goal:** 697
 - **anti_pattern:** 371
 - **strategy:** 188
-- **tool:** 152
+- **tool:** 153
 - **hand_result:** 80
 - **aktuell_organfehler:** 24
 
 ---
+
+### `tool:fähigkeiten-nur-bei-funktionierendem-mod`
+*15.09. 02:49 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten nur bei funktionierendem Modell vorschlagen'. Datei: data/tools/fähigkeiten-nur-bei-funktionierendem-mod.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*15.09. 02:49 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*15.09. 02:43 UTC · Quelle: system*
+
+Fähigkeiten nur bei funktionierendem Modell vorschlagen
+
+### `dream:20260915024244:5:75aa66`
+*15.09. 02:42 UTC · Quelle: dream*
+
+Proposed reliability skills (scoring, fallback, circuit breaker) remain unimplemented while failures repeat, indicating a deployment gap between skill proposal and activation.
+
+### `dream:20260915024244:4:3523ef`
+*15.09. 02:42 UTC · Quelle: dream*
+
+High metabolic stress (1.0) forces conserve mode that starves critical tasks like model health probes, creating a reliability death spiral.
+
+### `dream:20260915024244:3:e4858a`
+*15.09. 02:42 UTC · Quelle: dream*
+
+Swarm collaborations stall without convergence because goals lack measurable acceptance criteria and critic roles are underweighted.
+
+### `dream:20260915024244:2:f4a23e`
+*15.09. 02:42 UTC · Quelle: dream*
+
+Hand actions fail silently due to unresolved relative paths and missing data directory validation, needing explicit path resolution and pre-flight checks.
+
+### `dream:20260915024244:1:c7682a`
+*15.09. 02:42 UTC · Quelle: dream*
+
+Model API failures (429/502) cascade because immediate retries trigger provider blocks, requiring circuit breakers with exponential backoff.
 
 ### `dream:20260915023211:5:ffefd8`
 *15.09. 02:32 UTC · Quelle: dream*
@@ -41371,31 +41411,6 @@ The inclusionai/ling-3.0-flash-fin model consistently succeeds where larger mode
 *01.09. 02:44 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter exhibit systemic rate-limiting (429) under concurrent load, making them unreliable for production workflows.
-
-### `dream:20260901023808:5:34a04d`
-*01.09. 02:38 UTC · Quelle: dream*
-
-Transient hand-action failures self-correct on immediate retry, so single automatic retries should precede escalation.
-
-### `dream:20260901023808:4:6afd4e`
-*01.09. 02:38 UTC · Quelle: dream*
-
-Calibration predictions match actual scores exactly (error 0), making them reliable for resource allocation decisions.
-
-### `dream:20260901023808:3:24c62e`
-*01.09. 02:38 UTC · Quelle: dream*
-
-Evolution with critic feedback yields >50% quality improvement (6→9) and should be standard after every first-pass generation.
-
-### `dream:20260901023808:2:89ce1e`
-*01.09. 02:38 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free is the only consistently available free model under load and should be prioritized as primary.
-
-### `dream:20260901023808:1:252ec2`
-*01.09. 02:38 UTC · Quelle: dream*
-
-Rate limiting (429) is systemic across free-tier models and should be treated as expected behavior rather than exceptional failure.
 
 ### `last_swarm_critique`
 *01.09. 02:19 UTC · Quelle: critic*

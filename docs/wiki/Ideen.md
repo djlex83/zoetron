@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,14 +24,14 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proposed reliability skills (scoring, fallback, circuit breaker) remain unimplemented while failures repeat, indicating a deployment gap between skill
+- High metabolic stress (1.0) forces conserve mode that starves critical tasks like model health probes, creating a reliability death spiral.
+- Swarm collaborations stall without convergence because goals lack measurable acceptance criteria and critic roles are underweighted.
+- Hand actions fail silently due to unresolved relative paths and missing data directory validation, needing explicit path resolution and pre-flight che
+- Model API failures (429/502) cascade because immediate retries trigger provider blocks, requiring circuit breakers with exponential backoff.
 - Pruning removes 78 events per cycle but the core reliability problem (model selection) persists, indicating pruning treats symptoms not causes.
 - Manual handoff (hand_action) fails silently with exit code 1 and no error details, preventing human-in-the-loop recovery.
 - Model reliability varies drastically by provider: Google free models are unusable under load, NVIDIA and dots-studio models deliver consistent latency
@@ -51,11 +56,6 @@
 - Hand actions fail instantly (exit 1, ~0.02 s) with zero bytes read, indicating missing preconditions or environment misconfiguration.
 - The dots-studio/dots-3-note-preview:free model succeeds as a fallback but shows high latency variance (29–92 s), requiring adaptive timeout budgets.
 - Free-tier Gemma models on OpenRouter consistently return 429 rate-limit errors, making them unreliable for sustained workloads.
-- Swarm goals and critiques diverge from local state because synchronization lacks periodic pull and version reconciliation.
-- Stale facts and events accumulate (20 facts, 42 events pruned in one run) because no scheduled cleanup binds to memory pressure signals.
-- Tool scripts fail pre-flight checks: missing executable bits, unverified file existence, and absent required environment variables block execution.
-- Model provider failures cascade (502 overload → 429 rate limits) without automatic failover, leaving only a high-latency fallback (dots-studio) operat
-- Relative paths consistently fail to resolve against ZOETRON_DATA and sys.argv[1], causing hand actions to read zero files despite valid inputs.
 
 ---
 
