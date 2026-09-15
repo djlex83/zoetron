@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11214 Fakten** · Stand 2026-09-15 18:15 UTC · aktualisiert bei jedem Herzschlag
+**11219 Fakten** · Stand 2026-09-15 18:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
+- **dream:** 7123
 - **swarm_artifact:** 1609
 - **last_swarm_critique:** 976
 - **last_swarm_goal:** 711
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915182341:5:a88d7f`
+*15.09. 18:23 UTC · Quelle: dream*
+
+Working model (dots-studio) exhibits high latency (12–44s) and large output tokens (up to 4.2k), creating cost and timeout risks.
+
+### `dream:20260915182341:4:64af26`
+*15.09. 18:23 UTC · Quelle: dream*
+
+Calibration systematically overestimates outcomes (predicted 7 vs actual 5), indicating a persistent optimism bias.
+
+### `dream:20260915182341:3:4a0b84`
+*15.09. 18:23 UTC · Quelle: dream*
+
+Evolutionary search improves variant scores (6→9) yet final swarm output still scores only 5/10 and fails to converge.
+
+### `dream:20260915182341:2:b096f0`
+*15.09. 18:23 UTC · Quelle: dream*
+
+The swarm tool 'swarm-ziele-aktualisieren' rejects invocations because it expects zero-input interface but callers supply parameters.
+
+### `dream:20260915182341:1:e74a5c`
+*15.09. 18:23 UTC · Quelle: dream*
+
+Free-tier Google Gemma models consistently fail with 429 rate-limit errors, making them unreliable for production workflows.
 
 ### `dream:20260915181339:5:244b10`
 *15.09. 18:13 UTC · Quelle: dream*

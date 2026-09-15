@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 18:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 18:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Ferngedächtnisse verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Working model (dots-studio) exhibits high latency (12–44s) and large output tokens (up to 4.2k), creating cost and timeout risks.
+- Calibration systematically overestimates outcomes (predicted 7 vs actual 5), indicating a persistent optimism bias.
+- Evolutionary search improves variant scores (6→9) yet final swarm output still scores only 5/10 and fails to converge.
+- The swarm tool 'swarm-ziele-aktualisieren' rejects invocations because it expects zero-input interface but callers supply parameters.
+- Free-tier Google Gemma models consistently fail with 429 rate-limit errors, making them unreliable for production workflows.
 - Local execution and simulation steps are fast and reliable (1.07s), meaning overall system latency is dominated by API model selection and response ti
 - Calibration predictions for swarm goal updates tend to overestimate actual outcomes (predicted 7 vs actual 5), indicating a systematic overconfidence 
 - Despite multiple upstream model failures, the system successfully completed the 'Swarm-Ziele aktualisieren' goal, demonstrating the resilience of mult
@@ -51,11 +56,6 @@
 - Aggressive pruning of facts without considering access frequency leads to loss of potentially valuable knowledge.
 - The system's ability to switch to a less‑loaded model after consecutive failures shows that adaptive routing can restore functionality.
 - Repeated 429 and timeout errors across models reveal that rate‑limit handling is a critical failure point.
-- Self-diagnosis found no internal errors, yet external API failures still cause task failures, so health checks must include external dependencies.
-- No facts or events were pruned, suggesting that current memory thresholds are either too high or the dataset is small.
-- Reflex-driven refresh of stale swarm information prevented data decay without manual intervention.
-- The dots-studio model succeeded with high latency, showing that reliability can be prioritized over speed when necessary.
-- Repeated 429 and timeout errors from free models indicate that the router must detect HTTP status codes and switch to a healthy model automatically.
 
 ---
 
