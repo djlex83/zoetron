@@ -1,17 +1,11 @@
 {
- "stand": "2026-09-15 09:05:28",
+ "stand": "2026-09-15 09:15:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
    "laeufe": 12,
    "erfolge": 12,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 6,
-   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -33,6 +27,12 @@
    "quote": 1.0
   },
   {
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -46,6 +46,12 @@
   },
   {
    "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -105,21 +111,9 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "träume-analysieren.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -369,6 +363,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -399,7 +399,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.805,
+ "haende_quote": 0.804,
  "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 29,

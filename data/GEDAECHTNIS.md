@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11232 Fakten** · Stand 2026-09-15 09:07 UTC · aktualisiert bei jedem Herzschlag
+**11231 Fakten** · Stand 2026-09-15 09:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7113
-- **swarm_artifact:** 1634
+- **dream:** 7118
+- **swarm_artifact:** 1629
 - **last_swarm_critique:** 967
 - **last_swarm_goal:** 702
 - **anti_pattern:** 371
 - **strategy:** 188
-- **tool:** 153
+- **tool:** 152
 - **hand_result:** 79
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915091503:5:1b3131`
+*15.09. 09:15 UTC · Quelle: dream*
+
+The successful execution of the 'marktanalyse-endlich-nutzen.py' reflex demonstrates that tool-backed reflexes can achieve convergence when prerequisites are satisfied.
+
+### `dream:20260915091503:4:f96855`
+*15.09. 09:15 UTC · Quelle: dream*
+
+Aggressive pruning of 10 facts and 19 events in one cycle may discard valuable cross-cutting patterns, requiring a balanced retention policy.
+
+### `dream:20260915091503:3:a9f92f`
+*15.09. 09:15 UTC · Quelle: dream*
+
+The system's drive goals consistently focus on error analysis, stale data refresh, and dream combination, revealing a self-improvement loop that should be automated.
+
+### `dream:20260915091503:2:6282b2`
+*15.09. 09:15 UTC · Quelle: dream*
+
+A hand action failed because the target path did not exist, underscoring the need for preflight validation of file system dependencies before execution.
+
+### `dream:20260915091503:1:d80026`
+*15.09. 09:15 UTC · Quelle: dream*
+
+The repeated 429 Too Many Requests errors from google/gemma free models indicate rate limiting that necessitates a health monitoring and automatic failover mechanism.
 
 ### `dream:20260915090451:5:b3c135`
 *15.09. 09:04 UTC · Quelle: dream*
@@ -41241,11 +41266,6 @@ Proposed skills accumulate but never integrate — the integration pipeline itse
 *01.09. 09:24 UTC · Quelle: dream*
 
 Single-model dependency on z-ai/glm-5.2 causes systemic 429 failures that halt all LLM-dependent workflows.
-
-### `tool:gelernte-fähigkeiten-besser-verknüpfen`
-*01.09. 09:07 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Gelernte Fähigkeiten besser verknüpfen'. Datei: data/tools/gelernte-fähigkeiten-besser-verknüpfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *01.09. 09:07 UTC · Quelle: critic*
