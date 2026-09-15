@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 19 facts and 36 events per cycle prevents memory bloat but risks discarding reusable patterns; tag high-value patterns (e.g., successful tool 
+- Calibration consistently underestimates cycle count (predicted 6, actual 8); adding a +2 buffer to cycle predictions improves planning accuracy under 
+- Swarm revival converges in one cycle when the simulation verdict is 'go' and the builder role dominates (3 builders vs 1 planner/critic), suggesting a
+- Model fallback chain is essential: nemotron-3-ultra succeeds but intermittently returns 502; gemma models hit 429 rate limits; dots-studio/dots-3-note
+- Relative paths in hand actions fail because the working directory differs from ZOETRON_DATA; always resolve inputs via sys.argv[1] or the environment 
 - Tool invocation fails when scripts lack executable bits, valid shebangs, or required env vars; pre-flight validation prevents waste.
 - Metabolism stress at 1.0 triggers conserve mode that caps tasks/iterations, starving recovery actions when most needed.
 - Swarm synchronization attempts repeat without conflict resolution; vector-clock merging is needed to prevent stale-goal oscillation.
@@ -51,11 +56,6 @@
 - Swarm collaborations stall without convergence because goals lack measurable acceptance criteria and critic roles are underweighted.
 - Hand actions fail silently due to unresolved relative paths and missing data directory validation, needing explicit path resolution and pre-flight che
 - Model API failures (429/502) cascade because immediate retries trigger provider blocks, requiring circuit breakers with exponential backoff.
-- Pruning removes 78 events per cycle but the core reliability problem (model selection) persists, indicating pruning treats symptoms not causes.
-- Manual handoff (hand_action) fails silently with exit code 1 and no error details, preventing human-in-the-loop recovery.
-- Model reliability varies drastically by provider: Google free models are unusable under load, NVIDIA and dots-studio models deliver consistent latency
-- The evolution/swarm loop improves scores from 5 to 8-9 but fails to converge because critic outputs are unparseable, breaking the feedback cycle.
-- Free-tier models on OpenRouter (Gemma variants) fail consistently with 429 rate-limit errors while dots-studio/dots-3-note-preview and Nemotron succee
 
 ---
 

@@ -51206,3 +51206,16 @@
 {"ts": 1788836231.2566805, "kind": "act_done", "payload": {"goal_title": "Träume in echte Fähigkeiten umsetzen", "score": 9, "converged": true}}
 {"ts": 1788836232.5379071, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.04, "gelesen": 0}}
 {"ts": 1788836234.8163056, "kind": "issue_synced", "payload": {"issue": 417, "state": "closed"}}
+{"ts": 1788231511.7601323, "key": "dream:20260901025831:1:139c57", "value": "Free-tier models consistently fail with 429 rate limits after minimal usage, making them unreliable for production workloads.", "source": "dream"}
+{"ts": 1788231511.7602232, "key": "dream:20260901025831:2:848465", "value": "The system operates at maximum stress (1.0) with severely constrained budgets, causing cascading failures in hand actions and reflexes.", "source": "dream"}
+{"ts": 1788231511.7602835, "key": "dream:20260901025831:3:07c443", "value": "Fifty-five skill proposals exist but remain unimplemented due to missing deployment tracking and accountability mechanisms.", "source": "dream"}
+{"ts": 1788231511.7603369, "key": "dream:20260901025831:4:d1b7fe", "value": "Model failures follow predictable signatures (429 on free tiers, 502 upstream errors) that can be cached and preemptively routed around.", "source": "dream"}
+{"ts": 1788231511.7603893, "key": "dream:20260901025831:5:1860b8", "value": "Critical goals (market analysis, error reduction) stall because non-critical combination goals consume scarce iteration budget.", "source": "dream"}
+{"ts": 1788231870.2309697, "key": "dream:20260901030430:1:d05061", "value": "The `z-ai/glm-5.2:free` model is consistently rate-limited (429) and should be temporarily blacklisted to avoid wasting cycles.", "source": "dream"}
+{"ts": 1788231870.2310555, "key": "dream:20260901030430:2:221824", "value": "High latency on `nvidia/nemotron-3-ultra-550b-a55b:free` (up to 111.2s) indicates a need for timeout handling or asynchronous execution to prevent blocking.", "source": "dream"}
+{"ts": 1788231870.2311246, "key": "dream:20260901030430:3:9902f1", "value": "Repeated `hand_action` failures with `exit: 1` and `gelesen: 0` suggest the generated Python code is failing immediately on execution, likely due to syntax or import errors.", "source": "dream"}
+{"ts": 1788231870.2311902, "key": "dream:20260901030430:4:f34ede", "value": "The calibration error of 5 (predicted 6, actual 1) reveals a significant overestimation of task success probability for complex goals like 'Marktanalyse'.", "source": "dream"}
+{"ts": 1788231870.231255, "key": "dream:20260901030430:5:322a1b", "value": "The goal 'Marktanalyse abschließen und Lücke nutzen' failed because the generated artifact contained a runtime error (Traceback), highlighting the need for syntax validation before execution.", "source": "dream"}
+{"ts": 1788836762.6916158, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788836830.9014096, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788836832.654844, "kind": "prune_run", "payload": {"facts_pruned": 9, "events_pruned": 59}}
