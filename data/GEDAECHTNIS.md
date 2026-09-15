@@ -1,18 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11229 Fakten** · Stand 2026-09-14 23:59 UTC · aktualisiert bei jedem Herzschlag
+**11243 Fakten** · Stand 2026-09-15 00:17 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7158
-- **swarm_artifact:** 1615
-- **last_swarm_critique:** 956
-- **last_swarm_goal:** 691
-- **anti_pattern:** 369
-- **strategy:** 187
+- **swarm_artifact:** 1623
+- **last_swarm_critique:** 957
+- **last_swarm_goal:** 692
+- **anti_pattern:** 371
+- **strategy:** 188
 - **tool:** 149
-- **hand_result:** 80
+- **hand_result:** 81
 - **aktuell_organfehler:** 24
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Erinnerungen verbinden
+C:1`
+*15.09. 00:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Temporal Event Chain Linking - Parse each memory for temporal expressions (dates, relative times, durations) and event markers. Normalize to a unified timeline. Construct a temporal graph where nodes are timestamped events an
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Erinnerungen verbinden
+C:0`
+*15.09. 00:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Knowledge Graph Construction - Extract entities, relations, and events from each memory using NLP (e.g., spaCy or transformer-based RE). Build a directed knowledge graph where nodes are concepts/entities and edges are typed r
+
+### `last_swarm_critique`
+*15.09. 00:13 UTC · Quelle: critic*
+
+score=7; issues=coherence_test function references 'adj' variable not passed as parameter (scope bug - would cause NameError unless global); Incomplete coherence calculation line: 'coherence = sim * (0.7' cuts off mid-expression; No visible main() entry point 
+
+### `last_swarm_goal`
+*15.09. 00:07 UTC · Quelle: system*
+
+Erinnerungen verbinden
+
+### `dream:20260915000715:5:6c04b0`
+*15.09. 00:07 UTC · Quelle: dream*
+
+Memory pruning (30-47 events per run) occurs reactively without retention policy, risking loss of high-value patterns.
+
+### `dream:20260915000715:4:a23e28`
+*15.09. 00:07 UTC · Quelle: dream*
+
+Swarm convergence in 1 cycle with score 8 suggests premature convergence - insufficient exploration before exploitation.
+
+### `dream:20260915000715:3:0c4821`
+*15.09. 00:07 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this session) but implementation rate is near zero, creating a proposal-execution gap that wastes cognitive cycles.
+
+### `dream:20260915000715:2:b0be6e`
+*15.09. 00:07 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 6 vs actual 8) reveals systematic over-pessimism in self-assessment that distorts resource allocation.
+
+### `dream:20260915000715:1:0adae7`
+*15.09. 00:07 UTC · Quelle: dream*
+
+High model latency (14-25s) and variable token throughput indicate unreliable inference infrastructure that degrades swarm iteration speed.
 
 ### `dream:20260914235751:5:9513bc`
 *14.09. 23:57 UTC · Quelle: dream*
@@ -41389,31 +41436,6 @@ Consecutive-failure detection with 1800s bans prevents cascade waste but demands
 *01.09. 00:09 UTC · Quelle: dream*
 
 Free-tier LLM APIs on OpenRouter suffer systematic rate-limiting (429) making them unreliable without queuing and backoff.
-
-### `dream:20260901000226:5:db7b51`
-*01.09. 00:02 UTC · Quelle: dream*
-
-Simulation-revision loop (3 revisions applied) proves effective for capability validation but consumes limited iteration budget.
-
-### `dream:20260901000226:4:44c2e7`
-*01.09. 00:02 UTC · Quelle: dream*
-
-High stress state (1.0) triggers conserve mode that severely limits parallelism (max_tasks:3, max_iterations:1) - need stress reduction mechanisms.
-
-### `dream:20260901000226:3:77710d`
-*01.09. 00:02 UTC · Quelle: dream*
-
-Relative path resolution fails under ZOETRON_DATA - all file operations must use absolute paths from environment variable.
-
-### `dream:20260901000226:2:46d1cb`
-*01.09. 00:02 UTC · Quelle: dream*
-
-Model endpoint volatility (404 on nemotron) demands continuous availability probing before task assignment to avoid wasted cycles.
-
-### `dream:20260901000226:1:2268c4`
-*01.09. 00:02 UTC · Quelle: dream*
-
-Rate limiting (429) across multiple free models indicates systemic quota exhaustion requiring fallback chains with local model backup.
 
 ### `last_swarm_critique`
 *31.08. 23:26 UTC · Quelle: critic*

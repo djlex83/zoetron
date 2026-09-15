@@ -1,17 +1,11 @@
 {
- "stand": "2026-09-14 23:58:10",
+ "stand": "2026-09-15 00:15:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
    "laeufe": 15,
    "erfolge": 15,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 7,
-   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -34,6 +28,12 @@
   },
   {
    "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -81,6 +81,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fernere-erinnerungen-verbinden.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "lernen-aus-fehlern-systematisch-verbesse.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -118,12 +124,6 @@
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "fernere-erinnerungen-verbinden.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -393,17 +393,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.85,
+ "haende_quote": 0.837,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 24,
   "best": 9.0,
-  "schnitt": 5.79
+  "schnitt": 5.92
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 23,
-   "schnitt": 5.87
+   "n": 24,
+   "schnitt": 5.92
   }
  }
 }

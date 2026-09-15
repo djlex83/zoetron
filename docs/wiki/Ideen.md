@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-14 23:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 00:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning (30-47 events per run) occurs reactively without retention policy, risking loss of high-value patterns.
+- Swarm convergence in 1 cycle with score 8 suggests premature convergence - insufficient exploration before exploitation.
+- Skill proposals accumulate (10+ in this session) but implementation rate is near zero, creating a proposal-execution gap that wastes cognitive cycles.
+- Calibration error of 2 points (predicted 6 vs actual 8) reveals systematic over-pessimism in self-assessment that distorts resource allocation.
+- High model latency (14-25s) and variable token throughput indicate unreliable inference infrastructure that degrades swarm iteration speed.
 - Calibration systematically underestimates cycle count (predicted 6 vs actual 8), indicating the estimator ignores model-latency variance.
 - Swarm convergence can succeed in one cycle with asymmetric role allocation (1 planner, 3 builders, 1 critic) when the artifact is already near-runnabl
 - High metabolic stress (0.96) triggers conserve mode that caps task budget, causing premature termination of multi-step workflows.
@@ -51,11 +56,6 @@
 - Metabolic stress at 0.96 forces max_iterations=1, preventing the multi-step refinement that simulations require to close the practice gap.
 - Relative file paths in hand_action resolve to empty directories because ZOETRON_DATA and sys.argv[1] are not pre-expanded, making tool execution non-d
 - Model endpoints (Nvidia 502, Google 429) fail silently under load without automatic failover, causing decision paralysis during high-stress episodes.
-- File operations fail due to missing environment-aware path resolution (ZOETRON_DATA, sys.argv[1]), causing hand_action errors that a path resolver uti
-- Latency variance (15s–55s) across providers indicates cold-start penalties and load-dependent performance, necessitating warm-up routines and latency-
-- Swarm knowledge staleness is only detected reactively after goals fail, missing proactive freshness thresholds that could trigger automated refreshes.
-- Skill proposals accumulate without a validation pipeline, creating a backlog of untested capabilities that cannot be trusted in production.
-- Model provider instability (429 rate limits, 502 overloads, high latency variance) is the primary reliability bottleneck requiring automated health-aw
 
 ---
 
