@@ -2,7 +2,7 @@
   "status": "success",
   "data_dir": "/workspace/zoetron/data",
   "documents_analyzed": 305,
-  "connections_found": 4186,
+  "connections_found": 4181,
   "connections": [
     {
       "source": "s01_1789035345_modell-gesundheitsregister-auditieren-und-fehlerkategorien-e.md",
@@ -32,7 +32,7 @@
     {
       "source": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
       "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
-      "strength": 0.9651
+      "strength": 0.965
     },
     {
       "source": "s01_1789082753_kalibrierungs-multiplikator-4-5-in-sch-tzungen-einbauen.md",
@@ -56,13 +56,13 @@
     },
     {
       "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
-      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "target": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
       "strength": 0.947
     },
     {
       "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
-      "target": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
-      "strength": 0.947
+      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "strength": 0.9469
     },
     {
       "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
@@ -112,7 +112,7 @@
     {
       "source": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
       "target": "s01_1789111069_self-healing-fallback-logic-in-router.md",
-      "strength": 0.9357
+      "strength": 0.9356
     },
     {
       "source": "s01_1789050342_semantische-pfad-reconstruction-fern-tr-ume-wieder-verkn-pfe.md",
@@ -122,12 +122,12 @@
     {
       "source": "s01_1789035345_modell-gesundheitsregister-auditieren-und-fehlerkategorien-e.md",
       "target": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
-      "strength": 0.9243
+      "strength": 0.9242
     },
     {
       "source": "s01_1789035348_router-basiertes-fehler-vermeidungs-setup-mit-resilientllm.md",
       "target": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
-      "strength": 0.9243
+      "strength": 0.9242
     },
     {
       "source": "s01_1789043561_swarm-task-queue-mit-persistenz-und-heartbeat.md",
@@ -145,19 +145,19 @@
       "strength": 0.9196
     },
     {
-      "source": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
-      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
-      "strength": 0.9187
+      "source": "s01_1789111069_self-healing-fallback-logic-in-router.md",
+      "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
+      "strength": 0.9185
     },
     {
       "source": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
       "target": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
-      "strength": 0.9187
+      "strength": 0.9184
     },
     {
-      "source": "s01_1789111069_self-healing-fallback-logic-in-router.md",
-      "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
-      "strength": 0.9185
+      "source": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
+      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "strength": 0.9183
     },
     {
       "source": "s04_1789094863_modell-gesundheitsregister-f-r-genauigkeitspr-fung-erweitern.md",
@@ -237,12 +237,12 @@
     {
       "source": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
       "target": "s08_1789063381_validierung-der-neuen-verbindungen-durch-replay-nachspiel-un.md",
-      "strength": 0.8988
+      "strength": 0.8985
     },
     {
       "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
       "target": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
-      "strength": 0.8976
+      "strength": 0.8973
     },
     {
       "source": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
@@ -269,7 +269,7 @@
             "the",
             "and"
           ],
-          "preview": "# 🧠 Zoetrons Gedächtnis (LIVE)\n\n**11224 Fakten** · Stand 2026-09-15 17:44 UTC · aktualisiert bei jedem Herzschlag\n\n- **dream:** 7123\n- **swarm_artifact:** 1613\n- **last_swarm_critique:** 975\n- **last_"
+          "preview": "# 🧠 Zoetrons Gedächtnis (LIVE)\n\n**11219 Fakten** · Stand 2026-09-15 18:26 UTC · aktualisiert bei jedem Herzschlag\n\n- **dream:** 7123\n- **swarm_artifact:** 1609\n- **last_swarm_critique:** 976\n- **last_"
         },
         {
           "document": "IDEEN.md",
@@ -280,7 +280,7 @@
             "wieder",
             "aufgegriffen"
           ],
-          "preview": "# 💡 Zoetrons Ideen-Board (AUTONOM)\n\n**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 17:42 UTC\n\n"
+          "preview": "# 💡 Zoetrons Ideen-Board (AUTONOM)\n\n**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 18:24 UTC\n\n"
         },
         {
           "document": "Schwarminformationen_aktualisieren.md",
@@ -302,7 +302,7 @@
             "rate",
             "failures"
           ],
-          "preview": "# 🏆 Zoetrons Bestenliste\n\n*Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*\n\nStand: 7859 Neuronen · 815260 bewertete Synapsen\n\n## Die 15 besten Neuronen\n\n(nach"
+          "preview": "# 🏆 Zoetrons Bestenliste\n\n*Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*\n\nStand: 7857 Neuronen · 814453 bewertete Synapsen\n\n## Die 15 besten Neuronen\n\n(nach"
         },
         {
           "document": "deliverable_simulationen_oefter_anwenden_20260914_214828.md",
@@ -3598,7 +3598,7 @@
   ],
   "summary": {
     "total_documents": 305,
-    "connected_pairs": 4186,
+    "connected_pairs": 4181,
     "num_clusters": 1,
     "largest_cluster": 303
   }

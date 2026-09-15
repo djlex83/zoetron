@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11219 Fakten** · Stand 2026-09-15 18:26 UTC · aktualisiert bei jedem Herzschlag
+**11224 Fakten** · Stand 2026-09-15 18:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
+- **dream:** 7128
 - **swarm_artifact:** 1609
 - **last_swarm_critique:** 976
 - **last_swarm_goal:** 711
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915183439:5:159a9d`
+*15.09. 18:34 UTC · Quelle: dream*
+
+Goal staleness triggers swarm remediation, but infrastructure unreliability prevents convergence, creating a stale-goal trap.
+
+### `dream:20260915183439:4:95cdea`
+*15.09. 18:34 UTC · Quelle: dream*
+
+Reflex-based tool use (ferngedächtnisse-verbinden.py) succeeded where swarm failed, showing that direct execution avoids compounding model failures.
+
+### `dream:20260915183439:3:f770a7`
+*15.09. 18:34 UTC · Quelle: dream*
+
+Rate limiting on multiple models simultaneously indicates missing centralized request orchestration; per-model retries worsen contention.
+
+### `dream:20260915183439:2:ad0d9f`
+*15.09. 18:34 UTC · Quelle: dream*
+
+The swarm tool 'swarm-ziele-aktualisieren' was rejected for having no input schema, revealing a contract mismatch between planner expectations and tool implementation.
+
+### `dream:20260915183439:1:d8bf0b`
+*15.09. 18:34 UTC · Quelle: dream*
+
+Model failures (timeouts, 429s) cascade into swarm non-convergence because swarms amplify single-model unreliability across multiple roles.
 
 ### `dream:20260915182341:5:a88d7f`
 *15.09. 18:23 UTC · Quelle: dream*

@@ -52980,3 +52980,11 @@
 {"ts": 1788891723.4799833, "kind": "skill_proposal", "payload": {"proposal": "Add a convergence_guardrail that caps dream processing at 120s and triggers graceful degradation (partial consolidation) instead of hard timeout to prevent incomplete knowledge consolidation."}}
 {"ts": 1788891723.4800363, "kind": "skill_proposal", "payload": {"proposal": "Create a pruning_audit_log that records every pruned fact/event with its cross-reference count and reason, enabling post-hoc analysis of whether aggressive pruning caused insight gaps."}}
 {"ts": 1788891723.4800916, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788891794.0240903, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 68.6, "tokens_ein": 492, "tokens_aus": 585}}
+{"ts": 1788891794.0242746, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und reduzieren", "why": "Das Modell macht fast so viele Fehler wie Erfolge. Wenn wir die Fehlerursachen finden, werden zukünftige Entscheidungen zuverlässiger.", "signal": "failure"}}
+{"ts": 1788891794.02435, "kind": "drive_goal", "payload": {"title": "Veraltetes Schwarm-Wissen aktualisieren", "why": "Die gespeicherten Schwarm-Ziele und Kritiken sind veraltet. Frisches Wissen aus der Zusammenarbeit macht das System schlauer.", "signal": "stale"}}
+{"ts": 1788891794.0244136, "kind": "drive_goal", "payload": {"title": "Fähigkeits-Vorschläge in echte Skills umsetzen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber wenige wurden wirklich gebaut. Umsetzung bringt echte neue Möglichkeiten.", "signal": "gap"}}
+{"ts": 1788891796.701557, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22, "gelesen": 2}}
+{"ts": 1788891796.704287, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Erkenntnisse wieder nutzen", "tool": "alte-marktanalysen-wieder-auf-den-neuest.py", "ok": true}}
+{"ts": 1788891797.250568, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Erkenntnisse wieder nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788892363.8882296, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

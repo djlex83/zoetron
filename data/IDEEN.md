@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 18:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 18:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goal staleness triggers swarm remediation, but infrastructure unreliability prevents convergence, creating a stale-goal trap.
+- Reflex-based tool use (ferngedächtnisse-verbinden.py) succeeded where swarm failed, showing that direct execution avoids compounding model failures.
+- Rate limiting on multiple models simultaneously indicates missing centralized request orchestration; per-model retries worsen contention.
+- The swarm tool 'swarm-ziele-aktualisieren' was rejected for having no input schema, revealing a contract mismatch between planner expectations and too
+- Model failures (timeouts, 429s) cascade into swarm non-convergence because swarms amplify single-model unreliability across multiple roles.
 - Working model (dots-studio) exhibits high latency (12–44s) and large output tokens (up to 4.2k), creating cost and timeout risks.
 - Calibration systematically overestimates outcomes (predicted 7 vs actual 5), indicating a persistent optimism bias.
 - Evolutionary search improves variant scores (6→9) yet final swarm output still scores only 5/10 and fails to converge.
@@ -51,11 +56,6 @@
 - Despite multiple upstream model failures, the system successfully completed the 'Swarm-Ziele aktualisieren' goal, demonstrating the resilience of mult
 - The dots-studio/dots-3-note-preview:free model proved to be a stable and successful alternative when Gemma models were rate-limited.
 - Free Google Gemma models on OpenRouter consistently fail with HTTP 429 rate-limiting errors, making them highly unreliable for sequential task executi
-- Combining dream replay with swarm analysis produces cross‑domain insights that improve skill proposal quality.
-- Reflex actions for updating swarm information are reliable but must be scheduled periodically to avoid staleness.
-- Aggressive pruning of facts without considering access frequency leads to loss of potentially valuable knowledge.
-- The system's ability to switch to a less‑loaded model after consecutive failures shows that adaptive routing can restore functionality.
-- Repeated 429 and timeout errors across models reveal that rate‑limit handling is a critical failure point.
 
 ---
 
