@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 04:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 05:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions execute without preflight verification of paths, permissions, and dependencies, risking silent failures.
+- Pruning runs discard facts indiscriminately without preserving successful tool-chain patterns for future reuse.
+- Dream-generated skill proposals accumulate but lack a lifecycle manager to deduplicate, prioritize, and assign builders with test criteria.
+- Swarm knowledge decays silently without automated refresh cycles, blocking novel idea generation despite available tooling.
+- Free-tier model endpoints fail catastrophically under load (429/502) with no automatic fallback, causing cascading task failures.
 - Path resolution failures recur because relative paths and symlinks under ZOETRON_DATA are not normalized before tool execution, breaking reproducibili
 - Rate limiting (429) and upstream overload (502) errors correlate with high token throughput, suggesting dynamic timeout calculation must incorporate p
 - Pruning runs remove 10 facts and 10 events per cycle without preserving tool-chain facts that led to successful outcomes, causing repeated relearning.
@@ -51,11 +56,6 @@
 - Dots-3-note-preview delivers 10x lower latency (~4s) than Nemotron (~30-80s) for comparable tasks, suggesting tiered routing by latency sensitivity.
 - Gemma-4 models on OpenRouter hit 429 rate limits quickly, making them unsuitable as primary fallbacks without request pacing or quota awareness.
 - Nemotron-3-Ultra exhibits unreliable availability with 502 upstream overload errors despite HTTP 200 responses, requiring explicit response-body valid
-- A single fast alternative model (dots-studio, 4s latency) exists but isn't systematically preferred for low-stakes calls.
-- Planner effort estimates consistently underrun swarm-involved goals by ~25%, causing budget overruns.
-- Swarm knowledge refresh recurs but the revival script fails, indicating missing idempotency or state checks.
-- Hand actions fail silently when sys.argv[1] or ZOETRON_DATA paths are unresolved, needing preflight validation.
-- Free-tier models exhibit burst 429/502 failures requiring automatic failover to maintain throughput.
 
 ---
 
