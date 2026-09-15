@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 05:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 05:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,8 +30,8 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Effort estimates for swarm-involved goals consistently underrun actuals, requiring a calibrated 1.25× multiplier tracked via exponential moving averag
+- Pruning removes 10-19 facts/events per run without preserving critic/evolution-tagged 'load-bearing' facts, eroding institutional memory.
+- Swarm cycles repeatedly lack required critic/planner roles and converge prematurely (score delta <1), wasting compute on stale knowledge.
+- Hand-action timeouts (20s) reveal missing preflight checks for paths, permissions, and dependencies before execution.
+- Model rate limits (429s) and silent 200-level errors (Nemotron 502-in-200) cause cascading failures without per-model health tracking and response-bod
 - Successful reflex-driven swarm-goal update (converged, zero errors) demonstrates that autonomous maintenance reflexes outperform deferred manual inter
 - Model latency variance (32–41s) and explicit circuit-breaker proposals confirm free-tier endpoints suffer frequent 429 rate limits requiring automated
 - Swarm-involved goals consistently underestimate effort by ~25%, validated by the calibrated_swarm_estimate proposal's 1.25× multiplier derived from hi
@@ -51,11 +56,6 @@
 - Dream-generated skill proposals accumulate but lack a lifecycle manager to deduplicate, prioritize, and assign builders with test criteria.
 - Swarm knowledge decays silently without automated refresh cycles, blocking novel idea generation despite available tooling.
 - Free-tier model endpoints fail catastrophically under load (429/502) with no automatic fallback, causing cascading task failures.
-- Path resolution failures recur because relative paths and symlinks under ZOETRON_DATA are not normalized before tool execution, breaking reproducibili
-- Rate limiting (429) and upstream overload (502) errors correlate with high token throughput, suggesting dynamic timeout calculation must incorporate p
-- Pruning runs remove 10 facts and 10 events per cycle without preserving tool-chain facts that led to successful outcomes, causing repeated relearning.
-- Reflex-driven goals converge in a single cycle when they have a single, concrete success criterion (swarm criticism update), whereas complex multi-cri
-- Model provider failures follow a clear pattern: premium models (Nemotron, Gemma) fail with 502/429 errors while the free dots-studio model succeeds bu
 
 ---
 

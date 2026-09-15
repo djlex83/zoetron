@@ -51531,3 +51531,23 @@
 {"ts": 1788844187.4139264, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.19, "gelesen": 336}}
 {"ts": 1788844187.4169414, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten testen und nutzen", "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py", "ok": true}}
 {"ts": 1788844188.0503726, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten testen und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788844716.4863646, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788844784.8683083, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788844786.5648248, "kind": "prune_run", "payload": {"facts_pruned": 11, "events_pruned": 0}}
+{"ts": 1788844818.6468775, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 28.6, "tokens_ein": 1368, "tokens_aus": 1323}}
+{"ts": 1788844818.6474051, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router with per-provider circuit breakers, health scores, and automatic failover to flash models when p95 >30s or 429/502 rate exceeds threshold."}}
+{"ts": 1788844818.6474614, "kind": "skill_proposal", "payload": {"proposal": "Add rate-limit-aware exponential backoff with jitter and concurrent request throttling to prevent 429 errors from cascading into pipeline failures."}}
+{"ts": 1788844818.6475132, "kind": "skill_proposal", "payload": {"proposal": "Replace point-estimate calibration with distributional predictions and confidence intervals to prevent overconfident scoring in future runs."}}
+{"ts": 1788844818.6475637, "kind": "skill_proposal", "payload": {"proposal": "Extend swarm convergence criteria to require minimum 5 cycles and a stability threshold (score variance <0.1) before accepting results."}}
+{"ts": 1788844818.6476142, "kind": "skill_proposal", "payload": {"proposal": "Wrap hand_action calls with structured error capture (stderr, exit codes, context) that returns actionable error objects instead of null."}}
+{"ts": 1788844818.6476717, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788844838.7026744, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788844838.7026718, "schalter_geoeffnet": false}}
+{"ts": 1788844838.8230534, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788844838.8230484, "schalter_geoeffnet": false}}
+{"ts": 1788844838.914759, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788844838.9147568, "schalter_geoeffnet": false}}
+{"ts": 1788844842.870792, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 4.0, "tokens_ein": 482, "tokens_aus": 1450}}
+{"ts": 1788844842.8709414, "kind": "drive_goal", "payload": {"title": "Modellfehler durch bessere Simulation senken", "why": "Viele Modelle scheitern noch. Bessere Simulationen könnten die Trefferquote deutlich verbessern.", "signal": "gap"}}
+{"ts": 1788844842.8710177, "kind": "drive_goal", "payload": {"title": "Veraltete Schwarmdaten aktualisieren und nutzen", "why": "Die Schwarm-Informationen sind veraltet und unbrauchbar geworden. Neue Daten könnten wichtige Einsichten liefern.", "signal": "stale"}}
+{"ts": 1788844842.8710818, "kind": "drive_goal", "payload": {"title": "Verbundene Träume in neue Fähigkeiten übersetzen", "why": "Zwei verknüpfte Träume enthalten möglicherweise brauchbare Ideen. Ihre Kombination könnte neue Fähigkeiten schaffen.", "signal": "combination"}}
+{"ts": 1788844845.8486366, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.83, "gelesen": 9}}
+{"ts": 1788844845.8514545, "kind": "reflex_used", "payload": {"goal": "Fehlerbehebung gründlich verbessern", "tool": "lernen-aus-fehlern-systematisch-verbesse.py", "ok": true}}
+{"ts": 1788844846.2145922, "kind": "act_done", "payload": {"goal_title": "Fehlerbehebung gründlich verbessern", "score": null, "converged": true, "mode": "reflex"}}

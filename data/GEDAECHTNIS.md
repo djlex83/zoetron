@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11248 Fakten** · Stand 2026-09-15 05:14 UTC · aktualisiert bei jedem Herzschlag
+**11253 Fakten** · Stand 2026-09-15 05:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
+- **dream:** 7128
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 964
 - **last_swarm_goal:** 699
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915052238:5:60d66a`
+*15.09. 05:22 UTC · Quelle: dream*
+
+Effort estimates for swarm-involved goals consistently underrun actuals, requiring a calibrated 1.25× multiplier tracked via exponential moving average.
+
+### `dream:20260915052238:4:4063cf`
+*15.09. 05:22 UTC · Quelle: dream*
+
+Pruning removes 10-19 facts/events per run without preserving critic/evolution-tagged 'load-bearing' facts, eroding institutional memory.
+
+### `dream:20260915052238:3:8c44b4`
+*15.09. 05:22 UTC · Quelle: dream*
+
+Swarm cycles repeatedly lack required critic/planner roles and converge prematurely (score delta <1), wasting compute on stale knowledge.
+
+### `dream:20260915052238:2:8ebbe1`
+*15.09. 05:22 UTC · Quelle: dream*
+
+Hand-action timeouts (20s) reveal missing preflight checks for paths, permissions, and dependencies before execution.
+
+### `dream:20260915052238:1:fa7d52`
+*15.09. 05:22 UTC · Quelle: dream*
+
+Model rate limits (429s) and silent 200-level errors (Nemotron 502-in-200) cause cascading failures without per-model health tracking and response-body validation.
 
 ### `dream:20260915051134:5:ec24a4`
 *15.09. 05:11 UTC · Quelle: dream*
