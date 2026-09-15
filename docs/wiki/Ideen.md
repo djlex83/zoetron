@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 16:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 16:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The hand action failed due to a forbidden 'shutdown' pattern, showing that safety filters can block automation and require alternative strategies or f
+- Memory pruning removed 20 facts and 26 events, demonstrating that active context management is essential to prevent overflow and maintain performance.
+- A calibration error of 3 units remained after task completion, highlighting the need for explicit feedback loops to correct prediction models.
+- The swarm converged in one cycle with a perfect score, yet the calibration error of 3 persisted, indicating that swarm success metrics may not capture
+- Google Gemma models repeatedly return 429 Too Many Requests, making them unreliable under load while dots-studio models remain stable.
 - Alternating between failing Gemma models and successful dots models shows that diversity in model selection is key to maintaining operational continui
 - Generated code execution failed due to a forbidden pattern ('shutdown'), highlighting the need for static code scanning and sanitization before runnin
 - Pre-execution simulation successfully identified 5 risks and drove 5 concrete revisions, proving its value in mitigating prediction errors before acti
@@ -51,11 +56,6 @@
 - The reflex tool 'modell-fehler-systematisch-reduzieren-un.py' failing to reduce prediction errors indicates that error-correction mechanisms must be d
 - The hand action's silent failure due to unresolved relative paths and missing ZOETRON_DATA validation shows that file operations require strict absolu
 - Repeated 429 rate-limit errors on Google Gemma free models reveal that the request dispatcher lacks adaptive fallback logic, causing cascading failure
-- Pruning events without facts fragments knowledge; a context-preservation lock on facts referenced by active goals is necessary.
-- The critic's confidence update logic for fallback semantic updates can produce incorrect scores, undermining swarm convergence.
-- Hand actions fail with exit code 1 and zero reads when the target path is missing, indicating a need for pre-validation.
-- Reflex actions for refreshing stale data have proven effective, achieving convergence without human intervention.
-- The model fleet suffers from frequent 429 and timeout errors, making the dots-studio model the only reliable fallback.
 
 ---
 

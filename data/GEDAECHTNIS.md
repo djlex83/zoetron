@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11223 Fakten** · Stand 2026-09-15 16:32 UTC · aktualisiert bei jedem Herzschlag
+**11228 Fakten** · Stand 2026-09-15 16:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
+- **dream:** 7128
 - **swarm_artifact:** 1613
 - **last_swarm_critique:** 974
 - **last_swarm_goal:** 709
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915164028:5:21a26c`
+*15.09. 16:40 UTC · Quelle: dream*
+
+The hand action failed due to a forbidden 'shutdown' pattern, showing that safety filters can block automation and require alternative strategies or fallbacks.
+
+### `dream:20260915164028:4:d0be44`
+*15.09. 16:40 UTC · Quelle: dream*
+
+Memory pruning removed 20 facts and 26 events, demonstrating that active context management is essential to prevent overflow and maintain performance.
+
+### `dream:20260915164028:3:03e6e3`
+*15.09. 16:40 UTC · Quelle: dream*
+
+A calibration error of 3 units remained after task completion, highlighting the need for explicit feedback loops to correct prediction models.
+
+### `dream:20260915164028:2:a1f725`
+*15.09. 16:40 UTC · Quelle: dream*
+
+The swarm converged in one cycle with a perfect score, yet the calibration error of 3 persisted, indicating that swarm success metrics may not capture underlying prediction inaccuracies.
+
+### `dream:20260915164028:1:22d59d`
+*15.09. 16:40 UTC · Quelle: dream*
+
+Google Gemma models repeatedly return 429 Too Many Requests, making them unreliable under load while dots-studio models remain stable.
 
 ### `dream:20260915162949:5:62cc37`
 *15.09. 16:29 UTC · Quelle: dream*
