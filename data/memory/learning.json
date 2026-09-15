@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 11:38:52",
+ "stand": "2026-09-15 12:09:42",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
    "laeufe": 6,
    "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -58,6 +52,12 @@
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -397,14 +397,20 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "träume-in-handeln-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.793,
+ "haende_quote": 0.797,
  "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 30,
+  "n": 29,
   "best": 9.0,
-  "schnitt": 5.67
+  "schnitt": 5.55
  },
  "score_nach_ziel_typ": {
   "analyse": {

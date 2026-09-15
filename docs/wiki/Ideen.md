@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 11:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 24×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The 'retry_with_backoff' strategy is insufficient on its own for free-tier APIs under global rate limiting, as repeated retries to the same endpoint e
+- The hand action and reflex failures highlight a lack of pre-flight validation for file paths and environment variables, leading to silent 'ok: false' 
+- Under maximum stress (1.0), the metabolism check correctly constrained the system to a conservative budget of 3 tasks and 1 iteration to prevent resou
+- The system's circuit breaker successfully isolated the failing 'nvidia/nemotron-3-ultra-550b-a55b:free' model by locking it out for 1800 seconds after
+- The free-tier Google Gemma models are repeatedly returning HTTP 429 errors, indicating that the API rate limits are fully exhausted and requiring an i
 - Simulation produced five revisions, showing that iterative refinement is needed but currently occurs too late.
 - The reflex to convert dream ideas into capabilities returned false, suggesting the tool is broken or misconfigured.
 - The hand action failed because the expected file was not found at the resolved path, indicating missing path validation.
@@ -51,11 +56,6 @@
 - Pruning stale facts and events keeps memory relevant and reduces noise.
 - The system generates many skill proposals but lacks a validation pipeline to test them.
 - Free models frequently hit rate limits, causing 429 errors that require automatic failover.
-- Model failures cluster by provider (google/gemma) rather than being uniformly distributed, indicating provider-specific fixes are needed.
-- Hand action durations vary from 0.21s to 8.06s and correlate strongly with bytes read (1 vs 2512).
-- The pruning mechanism removed 20 events but zero facts, showing event logs accumulate faster than durable knowledge.
-- dots-studio/dots-3-note-preview:free is the only consistently available free model with acceptable 17–23s latency.
-- Google gemma free-tier models consistently return HTTP 429 rate-limit errors, making them unreliable for sustained operation.
 
 ---
 

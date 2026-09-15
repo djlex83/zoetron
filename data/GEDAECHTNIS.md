@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11249 Fakten** · Stand 2026-09-15 11:40 UTC · aktualisiert bei jedem Herzschlag
+**11229 Fakten** · Stand 2026-09-15 12:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
-- **swarm_artifact:** 1635
+- **dream:** 7113
+- **swarm_artifact:** 1629
 - **last_swarm_critique:** 970
 - **last_swarm_goal:** 705
-- **anti_pattern:** 373
-- **strategy:** 189
-- **tool:** 152
+- **anti_pattern:** 371
+- **strategy:** 188
+- **tool:** 151
 - **hand_result:** 79
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915120821:5:7ff7b2`
+*15.09. 12:08 UTC · Quelle: dream*
+
+The 'retry_with_backoff' strategy is insufficient on its own for free-tier APIs under global rate limiting, as repeated retries to the same endpoint exacerbate the 429 bottleneck.
+
+### `dream:20260915120821:4:ee091d`
+*15.09. 12:08 UTC · Quelle: dream*
+
+The hand action and reflex failures highlight a lack of pre-flight validation for file paths and environment variables, leading to silent 'ok: false' errors.
+
+### `dream:20260915120821:3:807b7c`
+*15.09. 12:08 UTC · Quelle: dream*
+
+Under maximum stress (1.0), the metabolism check correctly constrained the system to a conservative budget of 3 tasks and 1 iteration to prevent resource exhaustion.
+
+### `dream:20260915120821:2:4de955`
+*15.09. 12:08 UTC · Quelle: dream*
+
+The system's circuit breaker successfully isolated the failing 'nvidia/nemotron-3-ultra-550b-a55b:free' model by locking it out for 1800 seconds after three consecutive timeouts.
+
+### `dream:20260915120821:1:9d479a`
+*15.09. 12:08 UTC · Quelle: dream*
+
+The free-tier Google Gemma models are repeatedly returning HTTP 429 errors, indicating that the API rate limits are fully exhausted and requiring an immediate switch to the stable 'dots-studio/dots-3-note-preview:free' model.
 
 ### `tool:analisiere-alte-fehlermuster`
 *15.09. 11:38 UTC · Quelle: hands*
@@ -41202,21 +41227,6 @@ Evolution cycles stall at 7/10 because the critic detects demo stubs substitutin
 
 Free tier models consistently hit 429 rate limits under load, requiring a health-aware router that tracks consecutive 429s and shifts traffic to healthier endpoints.
 
-### `tool:fähigkeiten-ideen-in-echte-skills-wandel`
-*01.09. 12:00 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten-Ideen in echte Skills wandeln'. Datei: data/tools/fähigkeiten-ideen-in-echte-skills-wandel.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeiten-Ideen in ech:2`
-*01.09. 11:59 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Generative Test-Driven Development - Write a suite of property-based integration tests first, describing the expected behavior of the entire skill-generation pipeline. Then implement each artifact (discovery, transformation, 
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeiten-Ideen in ech:0`
-*01.09. 11:59 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Complete and Validate - Finish the truncated implementation in Artifact 3 by reconstructing the missing return statement and adding full type annotations to satisfy mypy --strict. Then create a comprehensive end-to-end integ 
-
 ### `last_swarm_critique`
 *01.09. 11:56 UTC · Quelle: critic*
 
@@ -41226,81 +41236,6 @@ score=7; issues=Artifact 3 (implementation) ends with incomplete return statemen
 *01.09. 11:50 UTC · Quelle: system*
 
 Fähigkeiten-Ideen in echte Skills wandeln
-
-### `dream:20260901114933:5:1b6c08`
-*01.09. 11:49 UTC · Quelle: dream*
-
-Zero organ errors but 80 model failures vs 36 successes reveals a reliability gap between infrastructure health and cognitive throughput.
-
-### `dream:20260901114933:4:887201`
-*01.09. 11:49 UTC · Quelle: dream*
-
-Duplicate goals (two 'reduce model errors' drives) and near-duplicate skill proposals indicate missing deduplication at the intention layer.
-
-### `dream:20260901114933:3:446932`
-*01.09. 11:49 UTC · Quelle: dream*
-
-Reflex-driven execution succeeded where model-dependent planning failed, proving reflexes as a stable fallback for deterministic tasks.
-
-### `dream:20260901114933:2:f963ae`
-*01.09. 11:49 UTC · Quelle: dream*
-
-Upstream errors (e.g., 502) masked inside HTTP 200 responses evade current error handling and corrupt routing decisions.
-
-### `dream:20260901114933:1:edcafa`
-*01.09. 11:49 UTC · Quelle: dream*
-
-Free-tier model reliance causes cascading 429 rate-limit failures across multiple providers, making single-model strategies unreliable.
-
-### `dream:20260901114211:5:de0ae1`
-*01.09. 11:42 UTC · Quelle: dream*
-
-Zero pruning events and zero organ errors indicate healthy memory but stagnant optimization - the system maintains rather than improves.
-
-### `dream:20260901114211:4:3c31fd`
-*01.09. 11:42 UTC · Quelle: dream*
-
-Skill proposals accumulate (5+ this cycle) but only one reflex executed, revealing a proposal-to-implementation gap despite available tooling.
-
-### `dream:20260901114211:3:cf6fe9`
-*01.09. 11:42 UTC · Quelle: dream*
-
-Fallback models (nvidia/nemotron) succeed but at 20-30s latency, creating a reliability-speed tradeoff with no fast-path tier for time-critical subtasks.
-
-### `dream:20260901114211:2:e168bc`
-*01.09. 11:42 UTC · Quelle: dream*
-
-Identical high-priority goals (reduce model errors, finish market analyses, implement skills) recur across cycles, proving reflex completions don't resolve root causes.
-
-### `dream:20260901114211:1:ed18d5`
-*01.09. 11:42 UTC · Quelle: dream*
-
-Provider-level quota exhaustion (429 errors on z-ai/glm-5.2) cascades because backoff is per-model not per-provider, starving all models from that provider.
-
-### `dream:20260901113535:5:77d888`
-*01.09. 11:35 UTC · Quelle: dream*
-
-Reflex execution via dedicated Python tools (alte-marktanalysen-verwerten.py, vorgeschlagene-skills-nutzbar-machen.py) achieved 100% success with sub-second latency, confirming that encapsulated, single-purpose scripts are the most reliable action primitive.
-
-### `dream:20260901113535:4:85f3db`
-*01.09. 11:35 UTC · Quelle: dream*
-
-The dream consolidation module itself timed out at 180 seconds, revealing that unbounded reflection on growing experience logs exceeds fixed time budgets and requires incremental or prioritized processing.
-
-### `dream:20260901113535:3:cd3b7e`
-*01.09. 11:35 UTC · Quelle: dream*
-
-Stale analysis artifacts persist across cycles because freshness enforcement is manual and event-driven rather than policy-driven with automated TTL checks.
-
-### `dream:20260901113535:2:f22931`
-*01.09. 11:35 UTC · Quelle: dream*
-
-Skill proposals accumulate in a backlog because no automated pipeline validates, simulates, and promotes them to executable goals, creating a persistent gap between ideation and deployment.
-
-### `dream:20260901113535:1:30589d`
-*01.09. 11:35 UTC · Quelle: dream*
-
-Model endpoint failures follow a predictable pattern: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra succeeds with high latency, indicating a need for proactive health-aware routing rather than reactive fallback.
 
 ### `last_swarm_critique`
 *01.09. 11:00 UTC · Quelle: critic*
