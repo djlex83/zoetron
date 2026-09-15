@@ -52398,3 +52398,25 @@
 {"ts": 1788870620.138201, "kind": "act_done", "payload": {"goal_title": "Modellfehler systematisch verringern", "score": 9, "converged": true}}
 {"ts": 1788870621.0423095, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.42, "gelesen": 1}}
 {"ts": 1788870623.6302538, "kind": "issue_synced", "payload": {"issue": 422, "state": "closed"}}
+{"ts": 1788266758.420139, "key": "dream:20260901124558:1:574372", "value": "Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating a need for request throttling or fallback strategies.", "source": "dream"}
+{"ts": 1788266758.4202268, "key": "dream:20260901124558:2:94420e", "value": "The 'Fähigkeiten-Ideen in echte Skills wandeln' goal repeatedly fails due to a path resolution error in the script, suggesting a systemic issue with data path handling.", "source": "dream"}
+{"ts": 1788266758.4203007, "key": "dream:20260901124558:3:62f7ca", "value": "Market analysis results remain unused despite completion, pointing to a gap between task execution and actionable integration.", "source": "dream"}
+{"ts": 1788266758.4203672, "key": "dream:20260901124558:4:2723e1", "value": "Model performance varies significantly by provider, with some models consistently timing out or returning upstream errors under load.", "source": "dream"}
+{"ts": 1788266758.4204338, "key": "dream:20260901124558:5:b3b9a5", "value": "The system is in a 'conserve' state with limited budget, which may be contributing to premature task termination and incomplete skill implementation.", "source": "dream"}
+{"ts": 1788871171.6479695, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788871239.9170897, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788871241.6877427, "kind": "prune_run", "payload": {"facts_pruned": 10, "events_pruned": 65}}
+{"ts": 1788871352.4711373, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 106.6, "tokens_ein": 1355, "tokens_aus": 1315}}
+{"ts": 1788871352.4717107, "kind": "skill_proposal", "payload": {"proposal": "Implement flash_first_policy: route all cost-sensitive and high-volume goals to flash models first, escalating to large models only on explicit quality-gate failure."}}
+{"ts": 1788871352.4717777, "kind": "skill_proposal", "payload": {"proposal": "Add model_health_tracker: maintain per-model success/latency/rate-limit counters and auto-demote models after 3 consecutive failures or 429 responses."}}
+{"ts": 1788871352.471836, "kind": "skill_proposal", "payload": {"proposal": "Create dream_incremental_consolidation: split dream work into 60-second chunks with checkpointed intermediate state to avoid 180-second timeouts."}}
+{"ts": 1788871352.4718907, "kind": "skill_proposal", "payload": {"proposal": "Build reflex_library_for_common_goals: codify successful reflex patterns (swarm convergence, error reduction) as reusable, parameterized scripts."}}
+{"ts": 1788871352.4719453, "kind": "skill_proposal", "payload": {"proposal": "Design cost_aware_router: weight model selection by (latency * cost_per_token) / historical_success_rate, preferring flash for bulk work."}}
+{"ts": 1788871352.472, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788871463.4360144, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 108.9, "tokens_ein": 472, "tokens_aus": 633}}
+{"ts": 1788871463.4362612, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Erkenntnisse aktualisieren", "why": "Die gespeicherten Bewertungen und Ziele vom Schwarm sind veraltet. Wir müssen prüfen, was heute noch stimmt.", "signal": "stale"}}
+{"ts": 1788871463.4364028, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht noch 27 Fehler bei 45 Erfolgen. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788871463.436497, "kind": "drive_goal", "payload": {"title": "Fehlerfesten Router weiterentwickeln", "why": "Die Idee eines Routers, der Fehler selbst meldet, liegt im Gedächtnis. Darauf können wir jetzt aufbauen.", "signal": "combination"}}
+{"ts": 1788871482.574668, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 16.81, "gelesen": 554}}
+{"ts": 1788871482.5778186, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich lernen", "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py", "ok": true}}
+{"ts": 1788871483.0383246, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten wirklich lernen", "score": null, "converged": true, "mode": "reflex"}}

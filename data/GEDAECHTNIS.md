@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11229 Fakten** · Stand 2026-09-15 12:42 UTC · aktualisiert bei jedem Herzschlag
+**11229 Fakten** · Stand 2026-09-15 12:52 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7113
 - **swarm_artifact:** 1629
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915124929:5:5c689b`
+*15.09. 12:49 UTC · Quelle: dream*
+
+Successful task execution (such as analyzing error patterns and generating a 108-line Python artifact) depends on decoupling the generation model from the execution environment to prevent model blocking from stalling the system.
+
+### `dream:20260915124929:4:234266`
+*15.09. 12:49 UTC · Quelle: dream*
+
+Calibration predictions exhibit a minor systematic offset (e.g., predicting 6 when the actual score is 7), requiring a dynamic correction margin based on recent error deltas.
+
+### `dream:20260915124929:3:4727ab`
+*15.09. 12:49 UTC · Quelle: dream*
+
+Iterative evolutionary refinement can elevate baseline script scores from 7/10 to 9/10 by systematically resolving specific structural issues like missing imports.
+
+### `dream:20260915124929:2:220360`
+*15.09. 12:49 UTC · Quelle: dream*
+
+The 'dots-studio/dots-3-note-preview:free' model consistently succeeded where others failed, proving to be the most robust and high-performing fallback for complex analytical tasks.
+
+### `dream:20260915124929:1:1fd606`
+*15.09. 12:49 UTC · Quelle: dream*
+
+Consecutive timeouts and HTTP 429 rate-limit errors on free-tier models (such as the NVIDIA and Google Gemma variants) trigger automatic 1800-second lockouts, demonstrating the need for immediate fallback cascades.
 
 ### `dream:20260915123945:5:c6559f`
 *15.09. 12:39 UTC · Quelle: dream*
@@ -41201,31 +41226,6 @@ score=9; issues=
 *01.09. 12:46 UTC · Quelle: system*
 
 Vorschläge prüfen und validieren
-
-### `dream:20260901124558:5:b3b9a5`
-*01.09. 12:45 UTC · Quelle: dream*
-
-The system is in a 'conserve' state with limited budget, which may be contributing to premature task termination and incomplete skill implementation.
-
-### `dream:20260901124558:4:2723e1`
-*01.09. 12:45 UTC · Quelle: dream*
-
-Model performance varies significantly by provider, with some models consistently timing out or returning upstream errors under load.
-
-### `dream:20260901124558:3:62f7ca`
-*01.09. 12:45 UTC · Quelle: dream*
-
-Market analysis results remain unused despite completion, pointing to a gap between task execution and actionable integration.
-
-### `dream:20260901124558:2:94420e`
-*01.09. 12:45 UTC · Quelle: dream*
-
-The 'Fähigkeiten-Ideen in echte Skills wandeln' goal repeatedly fails due to a path resolution error in the script, suggesting a systemic issue with data path handling.
-
-### `dream:20260901124558:1:574372`
-*01.09. 12:45 UTC · Quelle: dream*
-
-Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating a need for request throttling or fallback strategies.
 
 ### `last_swarm_critique`
 *01.09. 11:56 UTC · Quelle: critic*

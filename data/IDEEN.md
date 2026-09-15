@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 24×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful task execution (such as analyzing error patterns and generating a 108-line Python artifact) depends on decoupling the generation model from
+- Calibration predictions exhibit a minor systematic offset (e.g., predicting 6 when the actual score is 7), requiring a dynamic correction margin based
+- Iterative evolutionary refinement can elevate baseline script scores from 7/10 to 9/10 by systematically resolving specific structural issues like mis
+- The 'dots-studio/dots-3-note-preview:free' model consistently succeeded where others failed, proving to be the most robust and high-performing fallbac
+- Consecutive timeouts and HTTP 429 rate-limit errors on free-tier models (such as the NVIDIA and Google Gemma variants) trigger automatic 1800-second l
 - The tor artifact running (108 lines Python) may be contributing to resource contention, compounding the model latency issues.
 - The 'conserve' state with max_tasks=3 and max_iterations=1 is too restrictive to recover from a cascade of model failures — it guarantees the task wil
 - The system is stuck in a retry loop: every failed Gemma call is followed by another attempt, wasting budget and increasing stress to 1.0 without makin
@@ -51,11 +56,6 @@
 - When system stress reaches 1.0, the 'conserve' budget limits tasks to 3, requiring strict prioritization of high-impact repairs.
 - Pre-execution path and permission validation prevents immediate tool failures (like exit code 1 on hand actions) and saves time.
 - Persistent banning of models that return HTTP 429 errors is crucial to prevent retry loops and wasted execution cycles.
-- Swarm achieved convergence in a single cycle with a planner, three builders, and a critic, demonstrating effective role assignment.
-- Hand actions frequently fail with exit code 1 but eventually succeed, suggesting transient errors that require retry logic.
-- Simulation identified four risks and required four revisions, and after applying three revisions the swarm converged, showing iterative risk mitigatio
-- dots-studio/dots-3-note-preview:free provides reliable responses with moderate latency, making it a suitable primary or fallback model.
-- Google gemma models consistently return 429 Too Many Requests, indicating rate limits that necessitate exponential backoff or model switching.
 
 ---
 
