@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-15 13:35:01",
+ "stand": "2026-09-15 13:54:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
@@ -75,12 +75,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-stark-verringern.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -105,10 +99,10 @@
    "quote": 0.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
+   "tool": "veraltete-fakten-aktualisieren.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "verbessere-die-modell-genauigkeit.py",
@@ -127,6 +121,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "ferngedächtnisse-verbinden.py",
@@ -175,12 +175,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "veraltete-fakten-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "schwarmlernen-wiederbeleben-für-kollekti.py",
@@ -297,6 +291,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -393,17 +393,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.797,
- "simulationen_angewandt": 31,
+ "haende_quote": 0.786,
+ "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 29,
   "best": 9.0,
-  "schnitt": 5.62
+  "schnitt": 5.59
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 29,
-   "schnitt": 5.62
+   "schnitt": 5.59
   }
  }
 }

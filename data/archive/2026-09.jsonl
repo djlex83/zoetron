@@ -52504,3 +52504,20 @@
 {"ts": 1788874084.301572, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.44, "gelesen": 146}}
 {"ts": 1788874084.304087, "kind": "reflex_used", "payload": {"goal": "Schwarm für Skill-Tests aktivieren", "tool": "veraltete-schwarmziele-aktualisieren.py", "ok": true}}
 {"ts": 1788874084.73794, "kind": "act_done", "payload": {"goal_title": "Schwarm für Skill-Tests aktivieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788874633.7066674, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788874702.22967, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788874704.0059507, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 25}}
+{"ts": 1788874862.9978013, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 154.8, "tokens_ein": 1427, "tokens_aus": 1706}}
+{"ts": 1788874862.998375, "kind": "skill_proposal", "payload": {"proposal": "Deploy model_router with per-provider circuit breakers tracking 429/502 rates, p95 latency, success rate; auto-failover to flash models when 429 rate >20% or p95 >30s."}}
+{"ts": 1788874862.9984357, "kind": "skill_proposal", "payload": {"proposal": "Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill proposal per sleep cycle with automatic rollback on regression."}}
+{"ts": 1788874862.9984925, "kind": "skill_proposal", "payload": {"proposal": "Add convergence_guardrail that detects stalled optimization scores across N cycles and triggers emergency evolution restart or model switch automatically."}}
+{"ts": 1788874862.9985476, "kind": "skill_proposal", "payload": {"proposal": "Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh facts into router's provider scoring."}}
+{"ts": 1788874862.9986193, "kind": "skill_proposal", "payload": {"proposal": "Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before execution."}}
+{"ts": 1788874862.9986901, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788874971.3510094, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 106.3, "tokens_ein": 481, "tokens_aus": 969}}
+{"ts": 1788874971.3512464, "kind": "drive_goal", "payload": {"title": "Modellfehler deutlich reduzieren", "why": "Zu viele Aktionen schlagen fehl. Weniger Fehler machen das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1788874971.3513417, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich lernen", "why": "Viele Ideen für neue Skills werden nicht umgesetzt. Echtes Lernen braucht Ausprobieren.", "signal": "gap"}}
+{"ts": 1788874971.3514237, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Alte Schwarm-Ziele und Kritiken blockieren neue Zusammenarbeit. Frische Infos helfen dem Team.", "signal": "stale"}}
+{"ts": 1788874975.886199, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.88, "gelesen": 1659}}
+{"ts": 1788874975.88842, "kind": "reflex_used", "payload": {"goal": "Schwarmwissen aus alten Ergebnissen nutzen", "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py", "ok": true}}
+{"ts": 1788874976.360842, "kind": "act_done", "payload": {"goal_title": "Schwarmwissen aus alten Ergebnissen nutzen", "score": null, "converged": true, "mode": "reflex"}}

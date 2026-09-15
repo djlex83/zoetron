@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11222 Fakten** · Stand 2026-09-15 13:36 UTC · aktualisiert bei jedem Herzschlag
+**11239 Fakten** · Stand 2026-09-15 13:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
-- **swarm_artifact:** 1619
-- **last_swarm_critique:** 971
-- **last_swarm_goal:** 706
-- **anti_pattern:** 369
-- **strategy:** 187
+- **dream:** 7123
+- **swarm_artifact:** 1625
+- **last_swarm_critique:** 972
+- **last_swarm_goal:** 707
+- **anti_pattern:** 371
+- **strategy:** 188
 - **tool:** 152
-- **hand_result:** 77
+- **hand_result:** 78
 - **aktuell_organfehler:** 23
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Alte Fakten aktualisiere:2`
+*15.09. 13:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Active learning loop with human validation - Instead of a static fallback, route uncertain updates to a human annotator. Collect annotations, use them to train a lightweight classifier that predicts update validity. Over time
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Alte Fakten aktualisiere:1`
+*15.09. 13:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Knowledge graph augmentation via entity linking - When zoetron.semantic is unavailable, perform entity linking on the new fact to identify corresponding nodes in an external knowledge graph (e.g., Wikidata). Retrieve the late
+
+### `last_swarm_critique`
+*15.09. 13:52 UTC · Quelle: critic*
+
+score=5; issues=Fallback semantic update sets confidence to 0.6, which is below the validation threshold of 0.7, so fallback updates are always rejected. This means if zoetron.semantic is not available, no updates are applied, and the script fails to achieve i
+
+### `last_swarm_goal`
+*15.09. 13:45 UTC · Quelle: system*
+
+Alte Fakten aktualisieren
+
+### `dream:20260915134502:5:36d625`
+*15.09. 13:45 UTC · Quelle: dream*
+
+The coexistence of multiple model failures and successful completions underscores the need for adaptive model routing and robust error handling.
+
+### `dream:20260915134502:4:5ee012`
+*15.09. 13:45 UTC · Quelle: dream*
+
+Self-generated drive goals to reduce model errors, update swarm facts, and leverage dreams demonstrate emergent meta-cognition and self-improvement.
+
+### `dream:20260915134502:3:be1eab`
+*15.09. 13:45 UTC · Quelle: dream*
+
+Timeout errors from large models such as nvidia/nemotron-3-ultra-550b suggest that very large models are unsuitable for latency-sensitive tasks.
+
+### `dream:20260915134502:2:5edd67`
+*15.09. 13:45 UTC · Quelle: dream*
+
+The system's periodic pruning of facts and events successfully maintains memory efficiency and prevents information overload.
+
+### `dream:20260915134502:1:614cac`
+*15.09. 13:45 UTC · Quelle: dream*
+
+Repeated 429 Too Many Requests errors from Google Gemma models indicate severe rate limiting, which can be circumvented by switching to alternative models like dots-studio/dots-3-note-preview:free.
 
 ### `dream:20260915133333:5:0de27c`
 *15.09. 13:33 UTC · Quelle: dream*

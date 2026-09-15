@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 13:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 13:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
-- Veraltete Fakten auffrischen *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 3×)*
+- Entfernte Träume kombinieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The coexistence of multiple model failures and successful completions underscores the need for adaptive model routing and robust error handling.
+- Self-generated drive goals to reduce model errors, update swarm facts, and leverage dreams demonstrate emergent meta-cognition and self-improvement.
+- Timeout errors from large models such as nvidia/nemotron-3-ultra-550b suggest that very large models are unsuitable for latency-sensitive tasks.
+- The system's periodic pruning of facts and events successfully maintains memory efficiency and prevents information overload.
+- Repeated 429 Too Many Requests errors from Google Gemma models indicate severe rate limiting, which can be circumvented by switching to alternative mo
 - Combining old memories can generate novel insights beyond individual recollections.
 - Stale swarm data can interfere with collaboration, requiring periodic updates.
 - Pruning old facts and events reduces memory overhead and improves performance.
@@ -51,11 +56,6 @@
 - The system generates skill proposals but there is no evidence they are being implemented, creating a proposal-execution gap.
 - dots-studio/dots-3-note-preview:free is the only consistently available model across all recorded sessions.
 - Google Gemma 4 models consistently fail with HTTP 429 rate-limit errors, making them unreliable for production use.
-- The swarm evaluation failed to converge, indicating insufficient coordination or scoring.
-- Missing pre‑flight validation of files and environment variables leads to hand‑action errors.
-- Silent failures (exit 0 with no output) are not detected, masking incomplete tasks.
-- The dots-studio model succeeds but introduces 20–30 s latency, limiting throughput.
-- Free-tier models repeatedly return HTTP 429, causing cascading request failures.
 
 ---
 
