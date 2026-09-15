@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 09:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 09:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Systemfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Ferne Träume kombinieren *(wieder aufgegriffen: 3×)*
 - Modellfehler beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
+- Veraltete Fakten auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes many facts and events without semantic filtering, risking loss of critical knowledge.
+- Dream goals are repeatedly revised yet rarely executed, revealing a broken pipeline from aspiration to concrete action.
+- Swarm runs evolve but fail to converge, suggesting missing early-stopping criteria based on score stability.
+- The only successful model exhibits ~22s latency, highlighting the need for latency-aware provider selection.
+- Model timeouts and 429 rate-limit errors dominate failures, indicating a lack of exponential backoff and fallback mechanisms.
 - Recall of prior artifacts before planning reduces redundant computation and preserves context.
 - Calibration predictions are within 1 point of actual, indicating self-assessment is reasonably accurate.
 - Evolution runs raise scores from 6 to 9, showing iterative refinement is an effective improvement loop.
@@ -51,11 +56,6 @@
 - Simulation identified two risks and required two revisions, showing that pre‑execution risk assessment improves reliability.
 - Hand action failed because the input path did not exist; checking file existence before execution avoids wasted cycles.
 - Repeated 429 errors from google/gemma models indicate rate limiting; falling back to dots-studio restored functionality.
-- The successful execution of the 'marktanalyse-endlich-nutzen.py' reflex demonstrates that tool-backed reflexes can achieve convergence when prerequisi
-- Aggressive pruning of 10 facts and 19 events in one cycle may discard valuable cross-cutting patterns, requiring a balanced retention policy.
-- The system's drive goals consistently focus on error analysis, stale data refresh, and dream combination, revealing a self-improvement loop that shoul
-- A hand action failed because the target path did not exist, underscoring the need for preflight validation of file system dependencies before executio
-- The repeated 429 Too Many Requests errors from google/gemma free models indicate rate limiting that necessitates a health monitoring and automatic fai
 
 ---
 

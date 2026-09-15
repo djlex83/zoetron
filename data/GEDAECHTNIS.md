@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11234 Fakten** · Stand 2026-09-15 09:38 UTC · aktualisiert bei jedem Herzschlag
+**11234 Fakten** · Stand 2026-09-15 09:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
-- **swarm_artifact:** 1627
+- **dream:** 7128
+- **swarm_artifact:** 1623
 - **last_swarm_critique:** 967
 - **last_swarm_goal:** 702
 - **anti_pattern:** 371
 - **strategy:** 188
-- **tool:** 152
+- **tool:** 151
 - **hand_result:** 79
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915094634:5:ce8857`
+*15.09. 09:46 UTC · Quelle: dream*
+
+Pruning removes many facts and events without semantic filtering, risking loss of critical knowledge.
+
+### `dream:20260915094634:4:b4321e`
+*15.09. 09:46 UTC · Quelle: dream*
+
+Dream goals are repeatedly revised yet rarely executed, revealing a broken pipeline from aspiration to concrete action.
+
+### `dream:20260915094634:3:8f0a3e`
+*15.09. 09:46 UTC · Quelle: dream*
+
+Swarm runs evolve but fail to converge, suggesting missing early-stopping criteria based on score stability.
+
+### `dream:20260915094634:2:fb5015`
+*15.09. 09:46 UTC · Quelle: dream*
+
+The only successful model exhibits ~22s latency, highlighting the need for latency-aware provider selection.
+
+### `dream:20260915094634:1:a47fd1`
+*15.09. 09:46 UTC · Quelle: dream*
+
+Model timeouts and 429 rate-limit errors dominate failures, indicating a lack of exponential backoff and fallback mechanisms.
 
 ### `dream:20260915093522:5:8bba19`
 *15.09. 09:35 UTC · Quelle: dream*
@@ -41276,11 +41301,6 @@ A single reliable fallback model (inclusionai/ling-3.0-flash-fin) maintains avai
 *01.09. 09:57 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary providers without rate-limit management.
-
-### `tool:fähigkeiten-in-taten-umsetzen`
-*01.09. 09:38 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten in Taten umsetzen'. Datei: data/tools/fähigkeiten-in-taten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
 
 ### `last_swarm_critique`
 *01.09. 09:38 UTC · Quelle: critic*
