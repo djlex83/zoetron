@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11239 Fakten** · Stand 2026-09-15 10:08 UTC · aktualisiert bei jedem Herzschlag
+**11250 Fakten** · Stand 2026-09-15 10:27 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7133
-- **swarm_artifact:** 1623
-- **last_swarm_critique:** 967
-- **last_swarm_goal:** 702
-- **anti_pattern:** 371
-- **strategy:** 188
+- **swarm_artifact:** 1629
+- **last_swarm_critique:** 968
+- **last_swarm_goal:** 703
+- **anti_pattern:** 373
+- **strategy:** 189
 - **tool:** 151
 - **hand_result:** 79
 - **aktuell_organfehler:** 25
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Menschliche Eingriffe üb:2`
+*15.09. 10:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Zero‑touch infrastructure provisioning - Use declarative infrastructure‑as‑code with automated validation pipelines that run linting, security scanning, and integration tests; only when all checks pass does the system apply c
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Menschliche Eingriffe üb:0`
+*15.09. 10:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Conversational AI orchestrator - Develop an AI system that interprets natural language commands, breaks them into subtasks, invokes appropriate tools or APIs, and tracks progress using memory, completing the objective without
+
+### `last_swarm_critique`
+*15.09. 10:21 UTC · Quelle: critic*
+
+score=1; issues=Kein ausführbarer Python-Block im Artefakt enthalten; Das Artefakt besteht nur aus wiederholter Prosa und Tool-Aufruf-Formatierung ohne jede implementierte Funktionalität; Eine Bewertung des Ziels 'Menschliche Eingriffe überflüssig machen' ist 
+
+### `last_swarm_goal`
+*15.09. 10:16 UTC · Quelle: system*
+
+Menschliche Eingriffe überflüssig machen
+
+### `dream:20260915101605:5:11c457`
+*15.09. 10:16 UTC · Quelle: dream*
+
+Model failures cluster by provider (google/gemma) rather than being uniformly distributed, indicating provider-specific fixes are needed.
+
+### `dream:20260915101605:4:4133d9`
+*15.09. 10:16 UTC · Quelle: dream*
+
+Hand action durations vary from 0.21s to 8.06s and correlate strongly with bytes read (1 vs 2512).
+
+### `dream:20260915101605:3:fa623a`
+*15.09. 10:16 UTC · Quelle: dream*
+
+The pruning mechanism removed 20 events but zero facts, showing event logs accumulate faster than durable knowledge.
+
+### `dream:20260915101605:2:5ff76c`
+*15.09. 10:16 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only consistently available free model with acceptable 17–23s latency.
+
+### `dream:20260915101605:1:cebfc6`
+*15.09. 10:16 UTC · Quelle: dream*
+
+Google gemma free-tier models consistently return HTTP 429 rate-limit errors, making them unreliable for sustained operation.
 
 ### `dream:20260915100607:5:7f9d8d`
 *15.09. 10:06 UTC · Quelle: dream*
@@ -41301,31 +41346,6 @@ Nemotron-3-ultra shows high latency variance (43–116 s) despite success, requi
 *01.09. 10:18 UTC · Quelle: dream*
 
 Free-tier models exhibit cascading 429/502 failures under load, making single-model reliance unsafe for production workflows.
-
-### `dream:20260901100655:5:e521ef`
-*01.09. 10:06 UTC · Quelle: dream*
-
-TOR validation (grün, 423-line Python artifact) provides reliable ground-truth success signal.
-
-### `dream:20260901100655:4:e165c0`
-*01.09. 10:06 UTC · Quelle: dream*
-
-Simulation-driven revision loops (3 risks → 3 revisions → applied) converge to working artifacts.
-
-### `dream:20260901100655:3:a3d507`
-*01.09. 10:06 UTC · Quelle: dream*
-
-High stress (1.0) and conserve mode force strict task/iteration budgets that prevent retry storms.
-
-### `dream:20260901100655:2:6f9e3d`
-*01.09. 10:06 UTC · Quelle: dream*
-
-Nvidia Nemotron succeeds but exhibits extreme latency variance (5.8s–161s) requiring adaptive timeouts.
-
-### `dream:20260901100655:1:73b597`
-*01.09. 10:06 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 rate limits making them unreliable for primary workloads.
 
 ### `last_swarm_critique`
 *01.09. 09:38 UTC · Quelle: critic*

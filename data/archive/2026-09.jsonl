@@ -52120,3 +52120,22 @@
 {"ts": 1788861918.6140544, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788861918.6140518, "schalter_geoeffnet": false}}
 {"ts": 1788861918.8778236, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788861918.877821, "schalter_geoeffnet": false}}
 {"ts": 1788861919.0506024, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788861919.0506, "schalter_geoeffnet": false}}
+{"ts": 1788257215.4835541, "key": "dream:20260901100655:1:73b597", "value": "Free-tier models consistently fail with 429 rate limits making them unreliable for primary workloads.", "source": "dream"}
+{"ts": 1788257215.4837403, "key": "dream:20260901100655:2:6f9e3d", "value": "Nvidia Nemotron succeeds but exhibits extreme latency variance (5.8s–161s) requiring adaptive timeouts.", "source": "dream"}
+{"ts": 1788257215.4838638, "key": "dream:20260901100655:3:a3d507", "value": "High stress (1.0) and conserve mode force strict task/iteration budgets that prevent retry storms.", "source": "dream"}
+{"ts": 1788257215.4839327, "key": "dream:20260901100655:4:e165c0", "value": "Simulation-driven revision loops (3 risks → 3 revisions → applied) converge to working artifacts.", "source": "dream"}
+{"ts": 1788257215.4839993, "key": "dream:20260901100655:5:e521ef", "value": "TOR validation (grün, 423-line Python artifact) provides reliable ground-truth success signal.", "source": "dream"}
+{"ts": 1788861940.034337, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 21.0, "tokens_ein": 8617, "tokens_aus": 10000}}
+{"ts": 1788861940.0352633, "kind": "calibration", "payload": {"goal": "Träume in echte Fähigkeiten umwandeln", "predicted": 7, "actual": 5, "abs_error": 2}}
+{"ts": 1788861940.0353427, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 5}}
+{"ts": 1788861940.0358, "kind": "bahnen", "payload": {"goal": "Träume in echte Fähigkeiten umwandeln", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 4, "ids": ["e:f1b365f6e363", "e:3a2e7fa652bd", "e:21b9a00b218a", "e:b633ff175f9c"], "ziel_id": "g:ad7257716878"}}
+{"ts": 1788862044.058725, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 104.0, "tokens_ein": 125, "tokens_aus": 904}}
+{"ts": 1788862177.0421093, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 133.0, "tokens_ein": 711, "tokens_aus": 747}}
+{"ts": 1788862177.0424697, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Träume in echte Fähigkeiten umwandeln\nCritic issues: Critic output unparseable.\nDevi", "variants": 3, "winner_index": 0, "scores": [[8, 9, 8], [6, 5, 7], [5, 3, 6]]}}
+{"ts": 1788862315.3912418, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 133.6, "tokens_ein": 419, "tokens_aus": 2556}}
+{"ts": 1788862387.6258729, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 71.3, "tokens_ein": 275, "tokens_aus": 629}}
+{"ts": 1788862387.626049, "kind": "simulation", "payload": {"goal": "Träume in echte Fähigkeiten umwandeln", "verdict": "go", "risks": 5, "revisions": 3}}
+{"ts": 1788862387.6261673, "kind": "swarm_finished", "payload": {"goal": "Träume in echte Fähigkeiten umwandeln", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1788862387.6267087, "kind": "act_done", "payload": {"goal_title": "Träume in echte Fähigkeiten umwandeln", "score": 5, "converged": false}}
+{"ts": 1788862389.120359, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.71, "gelesen": 3}}
+{"ts": 1788862391.2388902, "kind": "issue_synced", "payload": {"issue": 421, "state": "open"}}
