@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 06:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 06:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,16 +14,16 @@
 - InsightDeduplicator: embeds new insights against the existing registry, merges duplicates, and tags provenance *(hatte die Idee 3×)*
 - Limit dream consolidation to the last 50 events and use the fastest available model. *(hatte die Idee 3×)*
 - Wrap hand actions in async timeout guards with a circuit breaker to prevent cascade blocking. *(hatte die Idee 3×)*
-- Implement a Provider Circuit Breaker that blacklists flaky endpoints after repeated 5xx/429 errors and switche *(hatte die Idee 2×)*
-- Develop a Swarm Data Freshness Checker that triggers sync when staleness exceeds threshold. *(hatte die Idee 2×)*
 - Create a Pre-Execution Validator that checks data availability before running hand actions. *(hatte die Idee 2×)*
 - Add a Convergence Gate requiring three stable cycles before accepting goal completion. *(hatte die Idee 2×)*
 - ArtifactPathValidator: pre-execution regex + existence probe ensuring generated tool paths match loader expect *(hatte die Idee 2×)*
 - EvolutionToDeploymentPipeline: promotes winning variant artifacts directly into skill registry with integratio *(hatte die Idee 2×)*
+- Implement a Provider Circuit Breaker that blacklists endpoints after repeated 5xx/429 errors and switches to f *(hatte die Idee 2×)*
+- Develop a Swarm Data Freshness Checker that triggers sync when staleness exceeds a configurable threshold. *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
@@ -33,14 +33,19 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
-- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Systemfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge becomes outdated quickly, requiring scheduled refreshes rather than on-demand updates.
+- Aggressive pruning of facts and events risks losing context needed for long-term planning.
+- Reflex actions that directly update stale knowledge converge in a single cycle, demonstrating the value of targeted tooling.
+- Latency exceeding 50 seconds and token counts above 1000 suggest that prompt length should be limited for responsiveness.
+- Consecutive 429 errors and timeouts from free-tier models indicate that provider health must be monitored to avoid failures.
 - Memory pruning is active but inconsistently effective, suggesting tuning of retention thresholds.
 - A persistent gap exists in validating proposed skills via simulation before real-world deployment.
 - Model latency (~80s) and token usage indicate a critical need for a router with fallback to maintain system responsiveness.
@@ -51,11 +56,6 @@
 - Insufficient simulation and evolutionary runs limit system evolution, indicating that structured, periodic experimentation is necessary to drive capab
 - Swarm goals and criticisms easily become stale or remain open, blocking new learning cycles, which requires automated auditing and role-balancing inte
 - Free-tier LLM endpoints frequently fail with 429 (rate limits) or 502 (overloaded) errors, making resilient model routing and circuit-breaking mechani
-- Reflex actions achieve single-cycle convergence where swarms fail, suggesting scoped, tool-specific reflexes should replace swarms for well-defined ve
-- Skill proposals accumulate without deduplication or lifecycle management, creating noise; 10+ proposals generated but no integration test mandate or a
-- Risk predictions are systematically miscalibrated: simulations required 4 revisions and swarm estimates need 1.25× multiplier, indicating no feedback 
-- Model reliability is the primary system bottleneck with ~25% error rate (18 failures/55 successes), yet no automated fallback or circuit-breaking exis
-- Swarm processes consistently fail to converge (0/2 converged) because goals lack single measurable success criteria and reflex triggers, causing open-
 
 ---
 

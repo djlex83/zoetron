@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11255 Fakten** · Stand 2026-09-15 06:27 UTC · aktualisiert bei jedem Herzschlag
+**11250 Fakten** · Stand 2026-09-15 07:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7128
-- **swarm_artifact:** 1645
+- **dream:** 7133
+- **swarm_artifact:** 1639
 - **last_swarm_critique:** 965
 - **last_swarm_goal:** 700
-- **anti_pattern:** 371
-- **strategy:** 188
-- **tool:** 153
+- **anti_pattern:** 369
+- **strategy:** 187
+- **tool:** 152
 - **hand_result:** 80
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915065748:5:4f83d0`
+*15.09. 06:57 UTC · Quelle: dream*
+
+Swarm knowledge becomes outdated quickly, requiring scheduled refreshes rather than on-demand updates.
+
+### `dream:20260915065748:4:bc11f7`
+*15.09. 06:57 UTC · Quelle: dream*
+
+Aggressive pruning of facts and events risks losing context needed for long-term planning.
+
+### `dream:20260915065748:3:ff62c9`
+*15.09. 06:57 UTC · Quelle: dream*
+
+Reflex actions that directly update stale knowledge converge in a single cycle, demonstrating the value of targeted tooling.
+
+### `dream:20260915065748:2:037e8d`
+*15.09. 06:57 UTC · Quelle: dream*
+
+Latency exceeding 50 seconds and token counts above 1000 suggest that prompt length should be limited for responsiveness.
+
+### `dream:20260915065748:1:9bad2d`
+*15.09. 06:57 UTC · Quelle: dream*
+
+Consecutive 429 errors and timeouts from free-tier models indicate that provider health must be monitored to avoid failures.
 
 ### `tool:veraltetes-schwarm-wissen-aktualisieren-`
 *15.09. 06:25 UTC · Quelle: hands*
@@ -41316,21 +41341,6 @@ nvidia/nemotron-3-ultra-550b-a55b:free is the only reliable model in the pool, d
 *01.09. 07:06 UTC · Quelle: dream*
 
 429 rate-limiting on z-ai/glm-5.2:free is a persistent, repeatable failure mode that blocks progress when no fallback model is available.
-
-### `tool:vorgeschlagene-fähigkeiten-tatsächlich-u`
-*01.09. 06:21 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten tatsächlich umsetzen und testen'. Datei: data/tools/vorgeschlagene-fähigkeiten-tatsächlich-u.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:2`
-*01.09. 06:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 7, 8]): Architecture-First: Plugin-Strategie mit transparentem Zustandsmodell und Protok - Strukturiere die Lösung um ein `Capability`-Protokoll (aus `typing.Protocol`), das jede Fähigkeit als austauschbares Plugin definiert 
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:1`
-*01.09. 06:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 7]): Runtime-Validation-First: Laufzeit-Tests und Property-Based-Testing statt Typ-Hi - Entferne die Abhängigkeit von `typing`-Importen komplett und setze stattdessen auf `dataclasses` und `pydantic`-Modelle für die Fähigk
 
 ### `last_swarm_critique`
 *01.09. 06:20 UTC · Quelle: critic*
