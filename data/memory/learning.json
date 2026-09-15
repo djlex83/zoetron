@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 04:40:57",
+ "stand": "2026-09-15 04:50:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -129,12 +129,6 @@
    "quote": 1.0
   },
   {
-   "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "veraltete-infos-auffrischen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -166,6 +160,12 @@
   },
   {
    "tool": "verbessere-die-modell-genauigkeit.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -285,12 +285,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "vergessene-schwarmprojekte-reaktivieren.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -313,6 +307,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "trägerinnerungen-verbinden.py",
@@ -393,7 +393,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.823,
+ "haende_quote": 0.828,
  "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 29,
@@ -402,8 +402,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 29,
-   "schnitt": 5.83
+   "n": 28,
+   "schnitt": 5.89
   }
  }
 }

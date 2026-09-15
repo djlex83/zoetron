@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11248 Fakten** · Stand 2026-09-15 04:42 UTC · aktualisiert bei jedem Herzschlag
+**11253 Fakten** · Stand 2026-09-15 04:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7113
+- **dream:** 7118
 - **swarm_artifact:** 1651
 - **last_swarm_critique:** 964
 - **last_swarm_goal:** 699
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915045017:5:e2d87e`
+*15.09. 04:50 UTC · Quelle: dream*
+
+Path resolution failures recur because relative paths and symlinks under ZOETRON_DATA are not normalized before tool execution, breaking reproducibility.
+
+### `dream:20260915045017:4:66a6d0`
+*15.09. 04:50 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) errors correlate with high token throughput, suggesting dynamic timeout calculation must incorporate provider-specific rate-limit headers.
+
+### `dream:20260915045017:3:f81a85`
+*15.09. 04:50 UTC · Quelle: dream*
+
+Pruning runs remove 10 facts and 10 events per cycle without preserving tool-chain facts that led to successful outcomes, causing repeated relearning.
+
+### `dream:20260915045017:2:428c44`
+*15.09. 04:50 UTC · Quelle: dream*
+
+Reflex-driven goals converge in a single cycle when they have a single, concrete success criterion (swarm criticism update), whereas complex multi-criterion goals stall.
+
+### `dream:20260915045017:1:a3c8f0`
+*15.09. 04:50 UTC · Quelle: dream*
+
+Model provider failures follow a clear pattern: premium models (Nemotron, Gemma) fail with 502/429 errors while the free dots-studio model succeeds but with 18-25s latency, making adaptive fallback chains essential.
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-test`
 *15.09. 04:40 UTC · Quelle: hands*
