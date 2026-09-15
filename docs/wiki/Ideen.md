@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 15:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 15:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 20×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system generates many skill proposals but lacks a mechanism to implement them, leaving improvements unused.
+- Reflex actions such as modell‑fehler‑verringern.py can autonomously diagnose and mitigate model error patterns.
+- The dots‑studio/dots‑3‑note‑preview model consistently succeeds with low latency, making it a reliable fallback.
+- Free‑tier models frequently return 429 errors, indicating that request throttling is required.
+- Three consecutive failures trigger an automatic 30‑minute model block, preventing further wasted calls.
 - Aggressive pruning of 22 facts and 30 events during active task cycles may risk losing critical context required for swarm convergence.
 - The high variance in evolutionary scores (ranging from 4 to 9) indicates that the critic's evaluation criteria may be unstable, leading to unreliable 
 - The hand action failure (exit 1, gelesen: 0) suggests that tool execution can fail silently if the target state or input is not properly validated bef
@@ -51,11 +56,6 @@
 - dots-studio/dots-3-note-preview:free is the only consistently successful free model, but its 34–37s latency limits it to non-time-critical tasks.
 - HTTP 429 rate-limit errors dominate free-tier model failures, indicating quota exhaustion rather than inherent model instability.
 - Three consecutive model failures trigger an automatic 1800-second lockout, proving circuit-breaker patterns effectively isolate unreliable providers.
-- Event pruning removed many events while facts remained unchanged, showing that event cleanup is independent of fact updates.
-- The reflex for combining dreams achieved convergence, demonstrating that specialized reflexes can complete complex tasks autonomously.
-- The circuit breaker is opened but timeouts still occur, suggesting the breaker does not fully prevent calls to failing models.
-- Only the model "dots-studio/dots-3-note-preview:free" returned successful responses, making it the current most reliable option.
-- The system frequently encounters 429 Too Many Requests and read timeouts, indicating rate limiting and network instability as primary failure causes.
 
 ---
 

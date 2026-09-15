@@ -1,18 +1,53 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11219 Fakten** · Stand 2026-09-15 15:14 UTC · aktualisiert bei jedem Herzschlag
+**11233 Fakten** · Stand 2026-09-15 15:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
-- **swarm_artifact:** 1613
-- **last_swarm_critique:** 973
-- **last_swarm_goal:** 708
+- **dream:** 7123
+- **swarm_artifact:** 1619
+- **last_swarm_critique:** 974
+- **last_swarm_goal:** 709
 - **anti_pattern:** 369
 - **strategy:** 187
 - **tool:** 152
-- **hand_result:** 76
+- **hand_result:** 77
 - **aktuell_organfehler:** 23
 
 ---
+
+### `last_swarm_critique`
+*15.09. 15:29 UTC · Quelle: critic*
+
+score=10; issues=
+
+### `last_swarm_goal`
+*15.09. 15:23 UTC · Quelle: system*
+
+Fehler bei Vorhersagen reduzieren
+
+### `dream:20260915152231:5:722a4c`
+*15.09. 15:22 UTC · Quelle: dream*
+
+The system generates many skill proposals but lacks a mechanism to implement them, leaving improvements unused.
+
+### `dream:20260915152231:4:0031bb`
+*15.09. 15:22 UTC · Quelle: dream*
+
+Reflex actions such as modell‑fehler‑verringern.py can autonomously diagnose and mitigate model error patterns.
+
+### `dream:20260915152231:3:1a7c62`
+*15.09. 15:22 UTC · Quelle: dream*
+
+The dots‑studio/dots‑3‑note‑preview model consistently succeeds with low latency, making it a reliable fallback.
+
+### `dream:20260915152231:2:284d87`
+*15.09. 15:22 UTC · Quelle: dream*
+
+Free‑tier models frequently return 429 errors, indicating that request throttling is required.
+
+### `dream:20260915152231:1:cdfebc`
+*15.09. 15:22 UTC · Quelle: dream*
+
+Three consecutive failures trigger an automatic 30‑minute model block, preventing further wasted calls.
 
 ### `dream:20260915151056:5:39c784`
 *15.09. 15:10 UTC · Quelle: dream*
