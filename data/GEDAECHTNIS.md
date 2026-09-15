@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11234 Fakten** · Stand 2026-09-15 09:48 UTC · aktualisiert bei jedem Herzschlag
+**11239 Fakten** · Stand 2026-09-15 09:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7128
+- **dream:** 7133
 - **swarm_artifact:** 1623
 - **last_swarm_critique:** 967
 - **last_swarm_goal:** 702
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915095612:5:272691`
+*15.09. 09:56 UTC · Quelle: dream*
+
+Skill proposals remain theoretical without a validation and deployment pipeline to integrate them into the system.
+
+### `dream:20260915095612:4:115438`
+*15.09. 09:56 UTC · Quelle: dream*
+
+Self-diagnosis is valuable but must be run frequently to catch issues before they cascade into system failures.
+
+### `dream:20260915095612:3:9286bc`
+*15.09. 09:56 UTC · Quelle: dream*
+
+The gap between high-level dreams and concrete actions is a critical bottleneck that requires explicit task decomposition.
+
+### `dream:20260915095612:2:5c25a7`
+*15.09. 09:56 UTC · Quelle: dream*
+
+Stale goals and data accumulate rapidly and cause repetitive work, necessitating automated detection and cleanup.
+
+### `dream:20260915095612:1:341829`
+*15.09. 09:56 UTC · Quelle: dream*
+
+Model API failures (timeouts, rate limits) are the primary cause of operational disruption, requiring robust fallback mechanisms.
 
 ### `dream:20260915094634:5:ce8857`
 *15.09. 09:46 UTC · Quelle: dream*
