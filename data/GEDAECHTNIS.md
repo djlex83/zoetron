@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11265 Fakten** · Stand 2026-09-15 07:28 UTC · aktualisiert bei jedem Herzschlag
+**11245 Fakten** · Stand 2026-09-15 08:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7138
-- **swarm_artifact:** 1643
+- **dream:** 7123
+- **swarm_artifact:** 1639
 - **last_swarm_critique:** 966
 - **last_swarm_goal:** 701
 - **anti_pattern:** 371
 - **strategy:** 188
 - **tool:** 152
-- **hand_result:** 81
+- **hand_result:** 80
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915075811:5:6b6ab4`
+*15.09. 07:58 UTC · Quelle: dream*
+
+The circuit breaker mechanism (schalter_geoeffnet) effectively quarantines failing models after repeated errors.
+
+### `dream:20260915075811:4:8641a2`
+*15.09. 07:58 UTC · Quelle: dream*
+
+Drive goals are auto-generated from failure signals, creating a self-improvement feedback loop.
+
+### `dream:20260915075811:3:d5cf22`
+*15.09. 07:58 UTC · Quelle: dream*
+
+Regular pruning of facts and events prevents stale data accumulation and maintains system performance.
+
+### `dream:20260915075811:2:648ccf`
+*15.09. 07:58 UTC · Quelle: dream*
+
+The system maintains operation by automatically switching to a healthy model (dots-studio) when others fail.
+
+### `dream:20260915075811:1:f98979`
+*15.09. 07:58 UTC · Quelle: dream*
+
+Model failures are concentrated on specific providers (Nvidia timeouts, Google 429) revealing provider-specific reliability issues.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Trägerinnerungen verknüp:1`
 *15.09. 07:24 UTC · Quelle: evolution*
@@ -41276,106 +41301,6 @@ Hand actions fail when relative paths ignore sys.argv[1] and ZOETRON_DATA enviro
 *01.09. 08:01 UTC · Quelle: dream*
 
 Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
-
-### `dream:20260901075341:5:c2a27f`
-*01.09. 07:53 UTC · Quelle: dream*
-
-Previous dream's exponential-backoff proposal remains unimplemented, revealing a meta-failure: consolidation without deployment.
-
-### `dream:20260901075341:4:425446`
-*01.09. 07:53 UTC · Quelle: dream*
-
-Swarm-to-practice reflex fails because simulation artifacts don't validate against real data paths before execution.
-
-### `dream:20260901075341:3:ed1ac0`
-*01.09. 07:53 UTC · Quelle: dream*
-
-Skill proposals accumulate (35+) but lack an automated trial loop, turning innovation into inventory instead of capability.
-
-### `dream:20260901075341:2:b0c9ee`
-*01.09. 07:53 UTC · Quelle: dream*
-
-Relative path resolution in hand_action breaks when working directory diverges from ZOETRON_DATA, causing silent zero-result runs.
-
-### `dream:20260901075341:1:6b694a`
-*01.09. 07:53 UTC · Quelle: dream*
-
-Rate-limiting (429) across multiple free-tier models indicates systemic dependency on unreliable external APIs rather than isolated model failures.
-
-### `dream:20260901074640:5:8a30c6`
-*01.09. 07:46 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while external API failures persist, revealing a blind spot in health monitoring scope.
-
-### `dream:20260901074640:4:505d2c`
-*01.09. 07:46 UTC · Quelle: dream*
-
-Calibration remains accurate (predicted=actual=6) despite model instability, suggesting the estimator is robust to provider noise.
-
-### `dream:20260901074640:3:18e1f6`
-*01.09. 07:46 UTC · Quelle: dream*
-
-Simulation gate catches 4 risks and forces 2 revisions before 'go' verdict, proving its value as a pre-execution quality filter.
-
-### `dream:20260901074640:2:688219`
-*01.09. 07:46 UTC · Quelle: dream*
-
-Evolutionary swarm cycles improve solution scores (6→8-9) but fail to converge, indicating missing convergence criteria or insufficient critic diversity.
-
-### `dream:20260901074640:1:03c864`
-*01.09. 07:46 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) across multiple model providers is the dominant failure mode, requiring systematic request throttling and fallback chaining.
-
-### `dream:20260901073915:5:47d652`
-*01.09. 07:39 UTC · Quelle: dream*
-
-Goal achievement (269-line Python artifact running) validates that the planner→executor→verifier loop works when model calls succeed.
-
-### `dream:20260901073915:4:b64520`
-*01.09. 07:39 UTC · Quelle: dream*
-
-Hand actions (file reads) complete in <0.3s with zero failures, confirming local tooling is more reliable than remote inference.
-
-### `dream:20260901073915:3:fc3680`
-*01.09. 07:39 UTC · Quelle: dream*
-
-poolside/laguna-s-2.1:free exhibits extreme latency variance (72s vs 191s) when it succeeds, suggesting queue-depth-dependent scheduling.
-
-### `dream:20260901073915:2:d7f214`
-*01.09. 07:39 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free is the only consistently available model with acceptable latency (23-36s), making it the de facto primary backend.
-
-### `dream:20260901073915:1:443c81`
-*01.09. 07:39 UTC · Quelle: dream*
-
-Rate limiting (HTTP 429) is the systemic failure mode across 4 of 5 models, indicating provider-level quota exhaustion rather than model defects.
-
-### `dream:20260901073222:5:355362`
-*01.09. 07:32 UTC · Quelle: dream*
-
-Circuit-breaker lockout (1800 s) is too coarse: it discards a model entirely instead of backing off exponentially, wasting recoverable capacity.
-
-### `dream:20260901073222:4:4efb44`
-*01.09. 07:32 UTC · Quelle: dream*
-
-The simulation gate caught 3 risks and forced 3 revisions before apply, proving that dry-run validation prevents faulty skill deployment.
-
-### `dream:20260901073222:3:a18868`
-*01.09. 07:32 UTC · Quelle: dream*
-
-Latency variance for successful calls spans 6–23 s even on the same model (Ling 3.0 Flash), indicating queue-depth jitter rather than model complexity.
-
-### `dream:20260901073222:2:6591c0`
-*01.09. 07:32 UTC · Quelle: dream*
-
-Nvidia Nemotron exhibits a distinct 502 upstream-overload failure mode that triggers a hard 30-minute lockout after three consecutive errors, removing capacity precisely when load is highest.
-
-### `dream:20260901073222:1:9292cf`
-*01.09. 07:32 UTC · Quelle: dream*
-
-Free-tier models across all providers suffer pervasive 429 rate-limiting, making them unreliable for production workloads without aggressive request spacing.
 
 ### `last_swarm_critique`
 *01.09. 07:19 UTC · Quelle: critic*
