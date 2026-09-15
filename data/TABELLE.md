@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7869 Neuronen · 825621 bewertete Synapsen
+Stand: 7870 Neuronen · 824455 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 7869 Neuronen · 825621 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 979 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 957 | 0.23 |
-| 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 875 | 0.23 |
-| 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 875 | 0.22 |
-| 5 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 804 | 0.24 |
-| 6 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 748 | 0.25 |
-| 7 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 794 | 0.23 |
-| 8 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 791 | 0.23 |
-| 9 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 806 | 0.23 |
+| 1 | 💭 | Primary model (nemotron-3-ultra) exhibits high latency variance … | 977 | 0.24 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 956 | 0.23 |
+| 3 | 💭 | Model provider failures (502/429) cascade into pipeline failures… | 876 | 0.23 |
+| 4 | 💭 | Model failures cascade without automatic fallback, rate-limit de… | 876 | 0.22 |
+| 5 | 💭 | Fast fallback model (inclusionai/ling-3.0-flash-fin) succeeds co… | 803 | 0.24 |
+| 6 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 746 | 0.25 |
+| 7 | 💭 | Model failures cascade: nemotron-3-ultra returns 502 upstream er… | 793 | 0.23 |
+| 8 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 790 | 0.23 |
+| 9 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 804 | 0.23 |
 | 10 | 💭 | Repeated 429 errors across multiple Google and Poolside models i… | 766 | 0.24 |
 | 11 | 💭 | Model failure rate approaches 50% due to upstream provider overl… | 813 | 0.22 |
-| 12 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 731 | 0.25 |
-| 13 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 753 | 0.24 |
-| 14 | 💭 | Model failures cascade from primary providers (502, 429, 99s lat… | 792 | 0.23 |
-| 15 | 💭 | Skill proposals accumulate without a validation pipeline, creati… | 627 | 0.28 |
+| 12 | 💭 | Free-tier models from Google (Gemma) and Poolside consistently h… | 730 | 0.25 |
+| 13 | 💭 | Model failures cascade from primary providers (502, 429, 99s lat… | 793 | 0.23 |
+| 14 | 💭 | Recurring 429/502 errors across multiple providers indicate syst… | 752 | 0.24 |
+| 15 | 💭 | Skill proposals accumulate without a validation pipeline, creati… | 628 | 0.28 |
 
 ## Die 15 stärksten Synapsen
 
@@ -39,11 +39,11 @@ Stand: 7869 Neuronen · 825621 bewertete Synapsen
 | 5 | **0.55** | 💭 The swarm architecture with planner/builder/cr… | 💭 Swarm convergence in a single cycle with role … |
 | 6 | **0.55** | 💭 nvidia/nemotron-3-ultra succeeds consistently … | 💭 The inclusionai/ling-3.0-flash-fin:free model … |
 | 7 | **0.55** | 💭 Free-tier models exhibit cascading 429 rate-li… | 💭 Free-tier model endpoints exhibit bursty avail… |
-| 8 | **0.55** | 💭 File operations fail when using relative paths… | 💭 Hand actions fail on relative paths because th… |
-| 9 | **0.55** | 💭 Free-tier models (Nemotron, Gemma) exhibit hig… | 💭 The inclusionai/ling-3.0-flash-fin:free model … |
-| 10 | **0.55** | 💭 Swarm knowledge staleness is only detected rea… | 💭 Swarm knowledge staleness is detected only aft… |
-| 11 | **0.55** | 💭 Model latency varies 2x (40-86s) for identical… | 💭 Model latency varies 10x (12s to 120s) for ide… |
-| 12 | **0.55** | 💭 Free tier model endpoints exhibit cascading 42… | 💭 Model endpoints exhibit cascading failures (50… |
-| 13 | **0.55** | 💭 Repeated 5xx and 429 errors from model provide… | 💭 Model endpoints frequently return 5xx or 429 e… |
-| 14 | **0.55** | 💭 Swarm knowledge becomes stale quickly, leading… | 💭 Stale swarm data leads to outdated decisions; … |
-| 15 | **0.54** | 💭 Stale goals (market analysis, model-error redu… | 💭 Stale drive goals (market analysis, model reli… |
+| 8 | **0.55** | 💭 Hand actions fail when using relative paths in… | 💭 Hand actions fail silently when using relative… |
+| 9 | **0.55** | 💭 File operations fail when using relative paths… | 💭 Hand actions fail on relative paths because th… |
+| 10 | **0.55** | 💭 Free-tier models (Nemotron, Gemma) exhibit hig… | 💭 The inclusionai/ling-3.0-flash-fin:free model … |
+| 11 | **0.55** | 💭 Swarm knowledge staleness is only detected rea… | 💭 Swarm knowledge staleness is detected only aft… |
+| 12 | **0.55** | 💭 Model latency varies 2x (40-86s) for identical… | 💭 Model latency varies 10x (12s to 120s) for ide… |
+| 13 | **0.55** | 💭 Free tier model endpoints exhibit cascading 42… | 💭 Model endpoints exhibit cascading failures (50… |
+| 14 | **0.55** | 💭 Repeated 5xx and 429 errors from model provide… | 💭 Model endpoints frequently return 5xx or 429 e… |
+| 15 | **0.55** | 💭 Swarm knowledge becomes stale quickly, leading… | 💭 Stale swarm data leads to outdated decisions; … |

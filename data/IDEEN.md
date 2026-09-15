@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 05:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 05:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Systemfehler reduzieren *(wieder aufgegriffen: 3×)*
-- Modellfehler beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions achieve single-cycle convergence where swarms fail, suggesting scoped, tool-specific reflexes should replace swarms for well-defined ve
+- Skill proposals accumulate without deduplication or lifecycle management, creating noise; 10+ proposals generated but no integration test mandate or a
+- Risk predictions are systematically miscalibrated: simulations required 4 revisions and swarm estimates need 1.25× multiplier, indicating no feedback 
+- Model reliability is the primary system bottleneck with ~25% error rate (18 failures/55 successes), yet no automated fallback or circuit-breaking exis
+- Swarm processes consistently fail to converge (0/2 converged) because goals lack single measurable success criteria and reflex triggers, causing open-
 - The system successfully generated meta-skill proposals (adaptive fallback, scoped-goal template) that address its own failure modes, demonstrating the
 - Calibration predictions overestimate actual performance (predicted 6, actual 4), so self-assessment mechanisms should be calibrated with historical da
 - Evolutionary runs can improve scores significantly (from 4 to 9), but the swarm still failed to converge, suggesting that more cycles or better critic
@@ -51,11 +56,6 @@
 - Reflex→Swarm→Simulation→Revision→Hand-action→TOR pipeline succeeded on second pass, proving the critique loop works when triggered.
 - Hand-action timeout (20s) on trivial read suggests tool sandbox or network pathology, not model slowness.
 - Nemotron-3-ultra latency varies 6x (21-130s) making it unreliable as primary model without fallback chain.
-- Effort estimates for swarm-involved goals consistently underrun actuals, requiring a calibrated 1.25× multiplier tracked via exponential moving averag
-- Pruning removes 10-19 facts/events per run without preserving critic/evolution-tagged 'load-bearing' facts, eroding institutional memory.
-- Swarm cycles repeatedly lack required critic/planner roles and converge prematurely (score delta <1), wasting compute on stale knowledge.
-- Hand-action timeouts (20s) reveal missing preflight checks for paths, permissions, and dependencies before execution.
-- Model rate limits (429s) and silent 200-level errors (Nemotron 502-in-200) cause cascading failures without per-model health tracking and response-bod
 
 ---
 
