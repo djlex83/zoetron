@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11249 Fakten** · Stand 2026-09-15 03:41 UTC · aktualisiert bei jedem Herzschlag
+**11249 Fakten** · Stand 2026-09-15 03:51 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7118
 - **swarm_artifact:** 1649
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915034854:5:9164f5`
+*15.09. 03:48 UTC · Quelle: dream*
+
+Pruning 43 events per cycle without organ errors shows the memory hygiene loop is healthy but aggressive; retention thresholds may discard reusable context.
+
+### `dream:20260915034854:4:d35a27`
+*15.09. 03:48 UTC · Quelle: dream*
+
+Latency variance for the same model (14s to 126s) correlates with token volume, so timeout budgets must scale with input size.
+
+### `dream:20260915034854:3:fa81fd`
+*15.09. 03:48 UTC · Quelle: dream*
+
+Swarm convergence in one cycle with high score (9) occurs when the goal is narrowly scoped to 'working model only', suggesting scope restriction accelerates consensus.
+
+### `dream:20260915034854:2:07b0cd`
+*15.09. 03:48 UTC · Quelle: dream*
+
+Calibration consistently underestimates risk (predicted 5 vs actual 9), indicating the risk model needs historical error-rate weighting.
+
+### `dream:20260915034854:1:6ca732`
+*15.09. 03:48 UTC · Quelle: dream*
+
+Upstream 502 errors and 429 rate limits dominate model failures, requiring automatic fallback with exponential backoff rather than single-model reliance.
 
 ### `dream:20260915033801:5:f07297`
 *15.09. 03:38 UTC · Quelle: dream*
@@ -41291,31 +41316,6 @@ Multiple skill proposals for model reliability (health tracker, router, timeout/
 *01.09. 03:50 UTC · Quelle: dream*
 
 Repeated 429 errors on the primary model (z-ai/glm-5.2:free) reveal no automatic failover mechanism, causing reliance on a high-latency fallback (nvidia/nemotron-3-ultra).
-
-### `dream:20260901034344:5:960abc`
-*01.09. 03:43 UTC · Quelle: dream*
-
-Model health tracking is absent; consecutive 429 errors should trigger timed cooldowns and automatic re-enable probes rather than persistent manual intervention.
-
-### `dream:20260901034344:4:b55714`
-*01.09. 03:43 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than validation capacity, creating a backlog that demands automated triage (critic scoring, minimum sub-score thresholds) to convert ideas into verified capabilities.
-
-### `dream:20260901034344:3:9077a3`
-*01.09. 03:43 UTC · Quelle: dream*
-
-Pre-execution validation gaps (syntax, file existence, readability) allow preventable runtime failures that could be caught by static gates before hand_action.
-
-### `dream:20260901034344:2:d6072a`
-*01.09. 03:43 UTC · Quelle: dream*
-
-Calibration drift in success prediction (overestimation) compounds planning errors, requiring dampening rules that halve predictions after large misses until accuracy recovers.
-
-### `dream:20260901034344:1:cb2f0e`
-*01.09. 03:43 UTC · Quelle: dream*
-
-Rate-limited models (429 errors) silently degrade system reliability without automatic circuit-breaking, forcing reactive fallbacks that increase latency variance.
 
 ### `last_swarm_critique`
 *01.09. 02:19 UTC · Quelle: critic*

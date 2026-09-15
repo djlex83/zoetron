@@ -51316,3 +51316,24 @@
 {"ts": 1788837953.835168, "kind": "act_done", "payload": {"goal_title": "Erinnerungen sinnvoll verknüpfen", "score": 1, "converged": false}}
 {"ts": 1788837956.1753085, "kind": "issue_synced", "payload": {"issue": 418, "state": "open"}}
 {"ts": 1788838480.3207047, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788234224.866727, "key": "dream:20260901034344:1:cb2f0e", "value": "Rate-limited models (429 errors) silently degrade system reliability without automatic circuit-breaking, forcing reactive fallbacks that increase latency variance.", "source": "dream"}
+{"ts": 1788234224.86683, "key": "dream:20260901034344:2:d6072a", "value": "Calibration drift in success prediction (overestimation) compounds planning errors, requiring dampening rules that halve predictions after large misses until accuracy recovers.", "source": "dream"}
+{"ts": 1788234224.8669012, "key": "dream:20260901034344:3:9077a3", "value": "Pre-execution validation gaps (syntax, file existence, readability) allow preventable runtime failures that could be caught by static gates before hand_action.", "source": "dream"}
+{"ts": 1788234224.8669653, "key": "dream:20260901034344:4:b55714", "value": "Skill proposals accumulate faster than validation capacity, creating a backlog that demands automated triage (critic scoring, minimum sub-score thresholds) to convert ideas into verified capabilities.", "source": "dream"}
+{"ts": 1788234224.8670323, "key": "dream:20260901034344:5:960abc", "value": "Model health tracking is absent; consecutive 429 errors should trigger timed cooldowns and automatic re-enable probes rather than persistent manual intervention.", "source": "dream"}
+{"ts": 1788839172.757253, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788839174.5907476, "kind": "prune_run", "payload": {"facts_pruned": 9, "events_pruned": 80}}
+{"ts": 1788839224.4360368, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 46.3, "tokens_ein": 1476, "tokens_aus": 1216}}
+{"ts": 1788839224.436706, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router with per-provider circuit breakers tracking p50/p95 latency, 5xx/429 error rates, and automatic failover to inclusionai/ling-3.0-flash-fin within a 10-second budget."}}
+{"ts": 1788839224.4367793, "kind": "skill_proposal", "payload": {"proposal": "Fix skill proposal pipeline by hardening path resolution in 'fähigkeitsvorschläge-in-echte-skills-ums.py' to use absolute ZOETRON_DATA paths and validate file existence before execution."}}
+{"ts": 1788839224.4368398, "kind": "skill_proposal", "payload": {"proposal": "Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with exponential backoff requeue to prevent resource exhaustion during conserve mode."}}
+{"ts": 1788839224.436898, "kind": "skill_proposal", "payload": {"proposal": "Create dream-to-skill pipeline that takes latest dream insights, generates skill proposals, runs simulation and tor tests, and promotes passing skills to the registry."}}
+{"ts": 1788839224.4369519, "kind": "skill_proposal", "payload": {"proposal": "Deploy model-error taxonomy classifier tagging failures by provider/error-type (overload, rate-limit, timeout, content-filter) to drive targeted fallback strategies."}}
+{"ts": 1788839224.4370065, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788839251.134456, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 24.6, "tokens_ein": 477, "tokens_aus": 762}}
+{"ts": 1788839251.1346488, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Wissen aktualisieren", "why": "Die Kritiken und Ziele vom Schwarm sind veraltet. Wir brauchen frische Infos.", "signal": "stale"}}
+{"ts": 1788839251.1347225, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren", "why": "Das Modell macht noch zu viele Fehler. Weniger Fehler heißt bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788839251.134802, "kind": "drive_goal", "payload": {"title": "Träume nutzen für bessere Erinnerung", "why": "Träume helfen, Erlebnisse sinnvoll zu verknüpfen. Das macht das System schlauer.", "signal": "combination"}}
+{"ts": 1788839254.7556462, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.22, "gelesen": 1}}
+{"ts": 1788839254.7583256, "kind": "reflex_used", "payload": {"goal": "Veraltete Schwarm-Infos erneuern", "tool": "veraltetes-wissen-erneuern.py", "ok": true}}
+{"ts": 1788839255.2276735, "kind": "act_done", "payload": {"goal_title": "Veraltete Schwarm-Infos erneuern", "score": null, "converged": true, "mode": "reflex"}}

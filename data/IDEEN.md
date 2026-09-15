@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 43 events per cycle without organ errors shows the memory hygiene loop is healthy but aggressive; retention thresholds may discard reusable co
+- Latency variance for the same model (14s to 126s) correlates with token volume, so timeout budgets must scale with input size.
+- Swarm convergence in one cycle with high score (9) occurs when the goal is narrowly scoped to 'working model only', suggesting scope restriction accel
+- Calibration consistently underestimates risk (predicted 5 vs actual 9), indicating the risk model needs historical error-rate weighting.
+- Upstream 502 errors and 429 rate limits dominate model failures, requiring automatic fallback with exponential backoff rather than single-model relian
 - Multiple skill proposals for reliability (registry, fallback chain, circuit breaker) exist but none are deployed as executable skills.
 - Simulation-revision pipeline successfully generated 5 revisions but the revised skill still crashed on the same model errors.
 - High metabolic stress (0.82) triggers conserve mode that caps iterations, preventing recovery retries exactly when needed.
@@ -51,11 +56,6 @@
 - Swarm feedback loops converge in a single cycle when roles (planner/builder/critic) are balanced, but calibration underestimates effort by ~25%.
 - Nemotron-3-ultra demonstrates consistent success and moderate latency (34-46s), emerging as the most reliable free-tier model for critical paths.
 - Free-tier OpenRouter models consistently hit 429 rate limits, making them unreliable as primary endpoints without automatic rotation and backoff.
-- Pruning 19 facts and 36 events per cycle prevents memory bloat but risks discarding reusable patterns; tag high-value patterns (e.g., successful tool 
-- Calibration consistently underestimates cycle count (predicted 6, actual 8); adding a +2 buffer to cycle predictions improves planning accuracy under 
-- Swarm revival converges in one cycle when the simulation verdict is 'go' and the builder role dominates (3 builders vs 1 planner/critic), suggesting a
-- Model fallback chain is essential: nemotron-3-ultra succeeds but intermittently returns 502; gemma models hit 429 rate limits; dots-studio/dots-3-note
-- Relative paths in hand actions fail because the working directory differs from ZOETRON_DATA; always resolve inputs via sys.argv[1] or the environment 
 
 ---
 
