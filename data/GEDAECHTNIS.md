@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11245 Fakten** · Stand 2026-09-15 00:47 UTC · aktualisiert bei jedem Herzschlag
+**11242 Fakten** · Stand 2026-09-15 01:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7148
-- **swarm_artifact:** 1629
-- **last_swarm_critique:** 958
-- **last_swarm_goal:** 693
-- **anti_pattern:** 373
-- **strategy:** 189
+- **dream:** 7133
+- **swarm_artifact:** 1635
+- **last_swarm_critique:** 959
+- **last_swarm_goal:** 694
+- **anti_pattern:** 375
+- **strategy:** 190
 - **tool:** 150
-- **hand_result:** 81
+- **hand_result:** 82
 - **aktuell_organfehler:** 24
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Modelle zuverlässiger ma:2`
+*15.09. 01:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Post-generation validation and iterative correction - After the model produces an output, run a validator that checks it against a schema. If the output is invalid, feed the error message back to the model as a prompt and ask
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Modelle zuverlässiger ma:0`
+*15.09. 01:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Structured output learning with differentiable parsing - Fine-tune the model using a loss that incorporates a differentiable parser, rewarding outputs that conform to a target schema and penalizing those that do not, thereby 
+
+### `last_swarm_critique`
+*15.09. 01:19 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*15.09. 01:06 UTC · Quelle: system*
+
+Modelle zuverlässiger machen
+
+### `dream:20260915010519:5:b4fae9`
+*15.09. 01:05 UTC · Quelle: dream*
+
+Drive goals highlight that model unreliability, insufficient skill testing, and stale swarm knowledge form a feedback loop that must be broken by integrated improvements.
+
+### `dream:20260915010519:4:024655`
+*15.09. 01:05 UTC · Quelle: dream*
+
+Simulation cycles with multiple revisions reveal that iterative testing catches issues early, so a mandatory simulation phase should precede any deployment.
+
+### `dream:20260915010519:3:1fbfd9`
+*15.09. 01:05 UTC · Quelle: dream*
+
+Reflex_used tool failure demonstrates that missing or non‑executable scripts cause silent failures; a pre‑check of tool existence and permissions is necessary.
+
+### `dream:20260915010519:2:84a900`
+*15.09. 01:05 UTC · Quelle: dream*
+
+Hand_action errors show that relative file paths are not resolved correctly, causing 'no file read' failures; absolute path validation is required before execution.
+
+### `dream:20260915010519:1:9234c8`
+*15.09. 01:05 UTC · Quelle: dream*
+
+Model endpoints frequently return 502 (overloaded) or 429 (rate limited), indicating that the system must retry with exponential backoff and fall back to alternative models.
 
 ### `tool:veraltete-fakten-aktualisieren`
 *15.09. 00:45 UTC · Quelle: hands*
@@ -41311,106 +41356,6 @@ score=6; issues=Drei separate Skripte ohne vereinheitlichendes Hauptskript – k
 *01.09. 01:04 UTC · Quelle: system*
 
 Häufige Fehlerquellen finden und beheben
-
-### `dream:20260901010357:5:21f06d`
-*01.09. 01:03 UTC · Quelle: dream*
-
-Self-diagnosis and pruning both report zero issues, indicating the consolidation system is healthy and current knowledge is still valid.
-
-### `dream:20260901010357:4:e32458`
-*01.09. 01:03 UTC · Quelle: dream*
-
-The system productively generates concrete skill proposals from failure patterns, creating a self-improving loop where failures directly feed capability upgrades.
-
-### `dream:20260901010357:3:10f322`
-*01.09. 01:03 UTC · Quelle: dream*
-
-The sole successful model (poolside/laguna-s-2.1 at 8.4s) confirms that low-latency pools are consistently more available than high-latency free-tier alternatives.
-
-### `dream:20260901010357:2:e49f12`
-*01.09. 01:03 UTC · Quelle: dream*
-
-Reflex execution mode reliably converges on well-defined cleanup and decision tasks without any model dependency, outperforming model-driven approaches for routine goals.
-
-### `dream:20260901010357:1:7fc0a4`
-*01.09. 01:03 UTC · Quelle: dream*
-
-Free-tier model endpoints cluster-fail under load (429/502 errors within seconds), making them unreliable as primary inference routes without circuit-breaking and fallback.
-
-### `dream:20260901005523:5:002fcd`
-*01.09. 00:55 UTC · Quelle: dream*
-
-Self-diagnosis consistently reports zero organ failures, indicating stable internal system health monitoring.
-
-### `dream:20260901005523:4:11eb32`
-*01.09. 00:55 UTC · Quelle: dream*
-
-Stale market analyses persist because there is no automated process to convert insights into actionable tasks.
-
-### `dream:20260901005523:3:d0a59f`
-*01.09. 00:55 UTC · Quelle: dream*
-
-Unimplemented skill proposals represent a gap between planning and execution that undermines system reliability.
-
-### `dream:20260901005523:2:19316c`
-*01.09. 00:55 UTC · Quelle: dream*
-
-Consistent success with nvidia/nemotron-3-ultra-550b-a55b:free suggests it should be prioritized as a reliable default model.
-
-### `dream:20260901005523:1:6fece4`
-*01.09. 00:55 UTC · Quelle: dream*
-
-Repeated 429 errors from z-ai/glm-5.2:free indicate a need for rate-limit-aware model routing and automatic failover.
-
-### `dream:20260901004531:5:31e675`
-*01.09. 00:45 UTC · Quelle: dream*
-
-Repeated identical 429 failures on the same endpoint within seconds suggest no backoff or cooldown is applied between retry attempts.
-
-### `dream:20260901004531:4:361f44`
-*01.09. 00:45 UTC · Quelle: dream*
-
-Stale goals (market analysis, self-assessment) persist across multiple cycles without convergence, indicating no escalation mechanism for blocked or abandoned objectives.
-
-### `dream:20260901004531:3:beafcf`
-*01.09. 00:45 UTC · Quelle: dream*
-
-Skill proposals accumulate across dream cycles without implementation, creating a widening gap between proposed and actual capabilities.
-
-### `dream:20260901004531:2:149edc`
-*01.09. 00:45 UTC · Quelle: dream*
-
-Fallback model nvidia/nemotron shows extreme latency variance (11s to 41s) with no timeout or latency-budget enforcement, risking cascading delays.
-
-### `dream:20260901004531:1:52a6be`
-*01.09. 00:45 UTC · Quelle: dream*
-
-The model z-ai/glm-5.2:free is chronically rate-limited with repeated 429s across multiple cycles, yet no circuit breaker removes it from the active routing pool.
-
-### `dream:20260901003235:5:a33e1d`
-*01.09. 00:32 UTC · Quelle: dream*
-
-Self-diagnosis consistently reports zero issues despite observable failures, suggesting internal monitoring is not capturing external dependency failures effectively.
-
-### `dream:20260901003235:4:5f8d69`
-*01.09. 00:32 UTC · Quelle: dream*
-
-Stale market analysis steps and unused skill proposals reveal a gap between idea generation and execution, indicating need for automated proposal-to-skill conversion.
-
-### `dream:20260901003235:3:736c24`
-*01.09. 00:32 UTC · Quelle: dream*
-
-High failure count (68) on a single model shows lack of automatic failover and health-aware routing is causing cascading task delays.
-
-### `dream:20260901003235:2:432ddc`
-*01.09. 00:32 UTC · Quelle: dream*
-
-Model latency varies significantly (5.3s to 11.3s) for similar token counts, suggesting cold starts or provider-side throttling that can be mitigated with pre-warming and latency budgets.
-
-### `dream:20260901003235:1:b08c50`
-*01.09. 00:32 UTC · Quelle: dream*
-
-Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic rate-limiting issue that must be handled at the routing layer rather than per-call retries.
 
 ### `last_swarm_critique`
 *31.08. 23:26 UTC · Quelle: critic*

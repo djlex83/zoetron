@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 00:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 01:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
+- Systemfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals highlight that model unreliability, insufficient skill testing, and stale swarm knowledge form a feedback loop that must be broken by inte
+- Simulation cycles with multiple revisions reveal that iterative testing catches issues early, so a mandatory simulation phase should precede any deplo
+- Reflex_used tool failure demonstrates that missing or non‑executable scripts cause silent failures; a pre‑check of tool existence and permissions is n
+- Hand_action errors show that relative file paths are not resolved correctly, causing 'no file read' failures; absolute path validation is required bef
+- Model endpoints frequently return 502 (overloaded) or 429 (rate limited), indicating that the system must retry with exponential backoff and fall back
 - Path resolution failures in hand_action likely stem from relative paths; absolute path expansion using ZOETRON_DATA must be enforced pre-execution.
 - Many skill proposals accumulate but few reach implementation; a validation pipeline with TOR verification could close the gap.
 - High model latency variance (12-42s) and frequent 429/502 errors suggest provider health monitoring and failover are critical.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (10+ in this session) but implementation rate is near zero, creating a proposal-execution gap that wastes cognitive cycles.
 - Calibration error of 2 points (predicted 6 vs actual 8) reveals systematic over-pessimism in self-assessment that distorts resource allocation.
 - High model latency (14-25s) and variable token throughput indicate unreliable inference infrastructure that degrades swarm iteration speed.
-- Calibration systematically underestimates cycle count (predicted 6 vs actual 8), indicating the estimator ignores model-latency variance.
-- Swarm convergence can succeed in one cycle with asymmetric role allocation (1 planner, 3 builders, 1 critic) when the artifact is already near-runnabl
-- High metabolic stress (0.96) triggers conserve mode that caps task budget, causing premature termination of multi-step workflows.
-- Model endpoint instability (502 upstream, 429 rate limits) requires multi-model fallback chains with health-score routing, not single-model dependence
-- Relative path resolution fails under ZOETRON_DATA; all file operations must anchor to the absolute data root from the environment variable.
 
 ---
 

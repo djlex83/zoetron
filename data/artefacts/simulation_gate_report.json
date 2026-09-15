@@ -1,0 +1,44 @@
+{
+  "model": {
+    "name": "default_model",
+    "version": "0.0.1"
+  },
+  "results": [
+    {
+      "scenario": "normal_load",
+      "success": true,
+      "latency_ms": 0.34567201510071754,
+      "error": null,
+      "output": 1.0
+    },
+    {
+      "scenario": "high_latency",
+      "success": true,
+      "latency_ms": 500.3554989816621,
+      "error": null,
+      "output": 2.0
+    },
+    {
+      "scenario": "edge_missing_data",
+      "success": true,
+      "latency_ms": 0.352501985616982,
+      "error": null,
+      "output": 0.0
+    },
+    {
+      "scenario": "edge_out_of_range",
+      "success": true,
+      "latency_ms": 0.25161198573186994,
+      "error": null,
+      "output": 1000.0
+    },
+    {
+      "scenario": "adversarial_noise",
+      "success": true,
+      "latency_ms": 0.2442019758746028,
+      "error": null,
+      "output": 0.5
+    }
+  ],
+  "all_passed": true
+}

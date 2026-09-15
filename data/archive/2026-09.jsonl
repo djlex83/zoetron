@@ -50856,3 +50856,65 @@
 {"ts": 1788827375.4543648, "kind": "skill_proposal", "payload": {"proposal": "Create path_normalization_guard middleware intercepting all tool invocations, rewriting relative paths to absolute using ZOETRON_DATA env var, failing fast with structured error if unset."}}
 {"ts": 1788827375.4544425, "kind": "skill_proposal", "payload": {"proposal": "Add stress_aware_planner hook reading metabolism state pre-planning; if stress > 0.8, enforce max_tasks=3, max_iterations=1, and reject any plan exceeding token/time budget."}}
 {"ts": 1788827375.4545097, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788222755.4257936, "key": "dream:20260901003235:1:b08c50", "value": "Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic rate-limiting issue that must be handled at the routing layer rather than per-call retries.", "source": "dream"}
+{"ts": 1788222755.4262366, "key": "dream:20260901003235:2:432ddc", "value": "Model latency varies significantly (5.3s to 11.3s) for similar token counts, suggesting cold starts or provider-side throttling that can be mitigated with pre-warming and latency budgets.", "source": "dream"}
+{"ts": 1788222755.4263272, "key": "dream:20260901003235:3:736c24", "value": "High failure count (68) on a single model shows lack of automatic failover and health-aware routing is causing cascading task delays.", "source": "dream"}
+{"ts": 1788222755.4264011, "key": "dream:20260901003235:4:5f8d69", "value": "Stale market analysis steps and unused skill proposals reveal a gap between idea generation and execution, indicating need for automated proposal-to-skill conversion.", "source": "dream"}
+{"ts": 1788222755.4264884, "key": "dream:20260901003235:5:a33e1d", "value": "Self-diagnosis consistently reports zero issues despite observable failures, suggesting internal monitoring is not capturing external dependency failures effectively.", "source": "dream"}
+{"ts": 1788223531.2095568, "key": "dream:20260901004531:1:52a6be", "value": "The model z-ai/glm-5.2:free is chronically rate-limited with repeated 429s across multiple cycles, yet no circuit breaker removes it from the active routing pool.", "source": "dream"}
+{"ts": 1788223531.2096746, "key": "dream:20260901004531:2:149edc", "value": "Fallback model nvidia/nemotron shows extreme latency variance (11s to 41s) with no timeout or latency-budget enforcement, risking cascading delays.", "source": "dream"}
+{"ts": 1788223531.20981, "key": "dream:20260901004531:3:beafcf", "value": "Skill proposals accumulate across dream cycles without implementation, creating a widening gap between proposed and actual capabilities.", "source": "dream"}
+{"ts": 1788223531.2099202, "key": "dream:20260901004531:4:361f44", "value": "Stale goals (market analysis, self-assessment) persist across multiple cycles without convergence, indicating no escalation mechanism for blocked or abandoned objectives.", "source": "dream"}
+{"ts": 1788223531.2100196, "key": "dream:20260901004531:5:31e675", "value": "Repeated identical 429 failures on the same endpoint within seconds suggest no backoff or cooldown is applied between retry attempts.", "source": "dream"}
+{"ts": 1788224123.7000875, "key": "dream:20260901005523:1:6fece4", "value": "Repeated 429 errors from z-ai/glm-5.2:free indicate a need for rate-limit-aware model routing and automatic failover.", "source": "dream"}
+{"ts": 1788224123.700222, "key": "dream:20260901005523:2:19316c", "value": "Consistent success with nvidia/nemotron-3-ultra-550b-a55b:free suggests it should be prioritized as a reliable default model.", "source": "dream"}
+{"ts": 1788224123.7003713, "key": "dream:20260901005523:3:d0a59f", "value": "Unimplemented skill proposals represent a gap between planning and execution that undermines system reliability.", "source": "dream"}
+{"ts": 1788224123.700502, "key": "dream:20260901005523:4:11eb32", "value": "Stale market analyses persist because there is no automated process to convert insights into actionable tasks.", "source": "dream"}
+{"ts": 1788224123.700614, "key": "dream:20260901005523:5:002fcd", "value": "Self-diagnosis consistently reports zero organ failures, indicating stable internal system health monitoring.", "source": "dream"}
+{"ts": 1788224637.114786, "key": "dream:20260901010357:1:7fc0a4", "value": "Free-tier model endpoints cluster-fail under load (429/502 errors within seconds), making them unreliable as primary inference routes without circuit-breaking and fallback.", "source": "dream"}
+{"ts": 1788224637.1148806, "key": "dream:20260901010357:2:e49f12", "value": "Reflex execution mode reliably converges on well-defined cleanup and decision tasks without any model dependency, outperforming model-driven approaches for routine goals.", "source": "dream"}
+{"ts": 1788224637.1149504, "key": "dream:20260901010357:3:10f322", "value": "The sole successful model (poolside/laguna-s-2.1 at 8.4s) confirms that low-latency pools are consistently more available than high-latency free-tier alternatives.", "source": "dream"}
+{"ts": 1788224637.11503, "key": "dream:20260901010357:4:e32458", "value": "The system productively generates concrete skill proposals from failure patterns, creating a self-improving loop where failures directly feed capability upgrades.", "source": "dream"}
+{"ts": 1788224637.1151025, "key": "dream:20260901010357:5:21f06d", "value": "Self-diagnosis and pruning both report zero issues, indicating the consolidation system is healthy and current knowledge is still valid.", "source": "dream"}
+{"ts": 1788827424.6116889, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 47.3, "tokens_ein": 480, "tokens_aus": 569}}
+{"ts": 1788827424.6119168, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft (27 Fehlschläge). Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788827424.6119938, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Kritiken und Ziele vom Schwarm sind veraltet. Neuer Schwarm-Input bringt frische Perspektiven.", "signal": "stale"}}
+{"ts": 1788827424.6120565, "kind": "drive_goal", "payload": {"title": "Fähigkeiten besser prüfen und nutzen", "why": "Viele Vorschläge (75), aber selten bewertet. Gute Fähigkeiten müssen erkannt und angewendet werden.", "signal": "gap"}}
+{"ts": 1788827429.355008, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.23, "gelesen": 142}}
+{"ts": 1788827429.3587606, "kind": "reflex_used", "payload": {"goal": "Schwarm-Intelligenz neu beleben", "tool": "veraltete-schwarmziele-aktualisieren.py", "ok": true}}
+{"ts": 1788827430.1032627, "kind": "act_done", "payload": {"goal_title": "Schwarm-Intelligenz neu beleben", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788827955.3867395, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788828023.8596604, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788828025.6416585, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 25}}
+{"ts": 1788828081.19514, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 52.1, "tokens_ein": 1351, "tokens_aus": 913}}
+{"ts": 1788828081.19569, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router with per-provider circuit breakers, latency budgets (p95 < 30s), and automatic failover to flash-tier models."}}
+{"ts": 1788828081.1957452, "kind": "skill_proposal", "payload": {"proposal": "Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before registry promotion."}}
+{"ts": 1788828081.1958299, "kind": "skill_proposal", "payload": {"proposal": "Create model-error taxonomy classifier tagging failures by provider and error-type to drive targeted fallback strategies."}}
+{"ts": 1788828081.1959505, "kind": "skill_proposal", "payload": {"proposal": "Add metabolic_gatekeeper to goal_selector that reads metabolism_check.state and budget.max_iterations with exponential backoff requeue."}}
+{"ts": 1788828081.1960235, "kind": "skill_proposal", "payload": {"proposal": "Deploy swarm_refresh_scheduler triggering new feedback collection when last critique exceeds 24-hour staleness threshold."}}
+{"ts": 1788828081.1960876, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788828163.1303089, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 80.0, "tokens_ein": 480, "tokens_aus": 544}}
+{"ts": 1788828163.130495, "kind": "drive_goal", "payload": {"title": "Modell-Fehler verstehen und beheben", "why": "Es gab 24 Modell-Fehler. Wenn wir verstehen warum, wird das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1788828163.1305702, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen auffrischen", "why": "Die Infos über Schwarm-Kritik und Ziele sind veraltet. Neue Infos helfen bei Zusammenarbeit.", "signal": "stale"}}
+{"ts": 1788828163.1306357, "kind": "drive_goal", "payload": {"title": "Viele Skill-Ideen nutzbar machen", "why": "75 Skill-Vorschläge liegen vor. Die besten davon in echte Fähigkeiten umwandeln.", "signal": "gap"}}
+{"ts": 1788828167.7740078, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.36, "gelesen": 142}}
+{"ts": 1788828167.7763472, "kind": "reflex_used", "payload": {"goal": "Veraltetes Schwarm-Wissen auffrischen", "tool": "veraltete-schwarmziele-aktualisieren.py", "ok": true}}
+{"ts": 1788828168.1843204, "kind": "act_done", "payload": {"goal_title": "Veraltetes Schwarm-Wissen auffrischen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788828690.787473, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788828759.1730344, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788828760.9028347, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 23}}
+{"ts": 1788828858.668179, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 94.3, "tokens_ein": 1351, "tokens_aus": 1134}}
+{"ts": 1788828858.6688178, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router with per-provider circuit breakers tracking p50/p95 latency, 5xx/429 rates, and automatic failover within 10s budget."}}
+{"ts": 1788828858.6688812, "kind": "skill_proposal", "payload": {"proposal": "Create proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to mission backlog with owner and deadline."}}
+{"ts": 1788828858.6689398, "kind": "skill_proposal", "payload": {"proposal": "Schedule weekly schwarm-knowledge-refresh job that re-fetches critiques/goals and links memories via temporal-conceptual association scoring."}}
+{"ts": 1788828858.6689987, "kind": "skill_proposal", "payload": {"proposal": "Enforce absolute_path_guard middleware on all file tools that rewrites paths to canonical ZOETRON_DATA before execution."}}
+{"ts": 1788828858.6690557, "kind": "skill_proposal", "payload": {"proposal": "Require convergence gates on ALL paths including reflex: score≥8, score_delta<0.1 over 3 cycles, explicit critic approval before act_done."}}
+{"ts": 1788828858.6691127, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788828897.9758923, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 37.5, "tokens_ein": 481, "tokens_aus": 669}}
+{"ts": 1788828897.9761586, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Die Schwarm-Kritiken und -Ziele sind veraltet. Frische Infos helfen beim gemeinsamen Lernen.", "signal": "stale"}}
+{"ts": 1788828897.976256, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren", "why": "Es gab 24 Modell-Fehler bei nur 41 Erfolgen. Weniger Fehler machen das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1788828897.9763584, "kind": "drive_goal", "payload": {"title": "Fähigkeiten aus Vorschlägen bauen", "why": "75 Fähigkeits-Vorschläge liegen vor, aber unklar was umgesetzt wurde. Echte Skills erweitern die Möglichkeiten.", "signal": "gap"}}
+{"ts": 1788828901.3316126, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.13, "gelesen": 3}}
+{"ts": 1788828901.3339884, "kind": "reflex_used", "payload": {"goal": "Fähigkeits-Vorschläge prüfen und nutzen", "tool": "traum-fähigkeiten-prüfen-und-nutzen.py", "ok": true}}
+{"ts": 1788828901.8073857, "kind": "act_done", "payload": {"goal_title": "Fähigkeits-Vorschläge prüfen und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788829432.7990007, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
