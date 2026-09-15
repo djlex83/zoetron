@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 02:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,13 +24,13 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The 195-line Python artifact executes successfully, confirming the code-generation pipeline produces runnable output.
+- Calibration error of 1 on a 6-point scale shows the planner estimates task complexity reasonably well.
+- Hand actions fail instantly (exit 1, ~0.02 s) with zero bytes read, indicating missing preconditions or environment misconfiguration.
+- The dots-studio/dots-3-note-preview:free model succeeds as a fallback but shows high latency variance (29–92 s), requiring adaptive timeout budgets.
+- Free-tier Gemma models on OpenRouter consistently return 429 rate-limit errors, making them unreliable for sustained workloads.
 - Swarm goals and critiques diverge from local state because synchronization lacks periodic pull and version reconciliation.
 - Stale facts and events accumulate (20 facts, 42 events pruned in one run) because no scheduled cleanup binds to memory pressure signals.
 - Tool scripts fail pre-flight checks: missing executable bits, unverified file existence, and absent required environment variables block execution.
@@ -51,11 +56,6 @@
 - Only dots-studio/dots-3-note-preview:free demonstrated consistent success across 5 calls with acceptable latency (19-42s), establishing it as the sole
 - The three-strike blocking policy (1800s penalty) amplifies transient failures into extended outages, as seen when a single 502 error triggered consecu
 - Free-tier models exhibit systematic unavailability: Google Gemma variants consistently return 429 rate limits while Nvidia Nemotron returns 502 upstre
-- Drive goals highlight that model unreliability, insufficient skill testing, and stale swarm knowledge form a feedback loop that must be broken by inte
-- Simulation cycles with multiple revisions reveal that iterative testing catches issues early, so a mandatory simulation phase should precede any deplo
-- Reflex_used tool failure demonstrates that missing or non‑executable scripts cause silent failures; a pre‑check of tool existence and permissions is n
-- Hand_action errors show that relative file paths are not resolved correctly, causing 'no file read' failures; absolute path validation is required bef
-- Model endpoints frequently return 502 (overloaded) or 429 (rate limited), indicating that the system must retry with exponential backoff and fall back
 
 ---
 

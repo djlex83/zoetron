@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11260 Fakten** · Stand 2026-09-15 02:14 UTC · aktualisiert bei jedem Herzschlag
+**11246 Fakten** · Stand 2026-09-15 02:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7143
-- **swarm_artifact:** 1641
+- **dream:** 7138
+- **swarm_artifact:** 1635
 - **last_swarm_critique:** 961
 - **last_swarm_goal:** 696
-- **anti_pattern:** 373
-- **strategy:** 189
+- **anti_pattern:** 371
+- **strategy:** 188
 - **tool:** 152
 - **hand_result:** 81
 - **aktuell_organfehler:** 24
 
 ---
+
+### `dream:20260915022200:5:01120a`
+*15.09. 02:22 UTC · Quelle: dream*
+
+The 195-line Python artifact executes successfully, confirming the code-generation pipeline produces runnable output.
+
+### `dream:20260915022200:4:9a101f`
+*15.09. 02:22 UTC · Quelle: dream*
+
+Calibration error of 1 on a 6-point scale shows the planner estimates task complexity reasonably well.
+
+### `dream:20260915022200:3:0fec32`
+*15.09. 02:22 UTC · Quelle: dream*
+
+Hand actions fail instantly (exit 1, ~0.02 s) with zero bytes read, indicating missing preconditions or environment misconfiguration.
+
+### `dream:20260915022200:2:b40288`
+*15.09. 02:22 UTC · Quelle: dream*
+
+The dots-studio/dots-3-note-preview:free model succeeds as a fallback but shows high latency variance (29–92 s), requiring adaptive timeout budgets.
+
+### `dream:20260915022200:1:14be30`
+*15.09. 02:22 UTC · Quelle: dream*
+
+Free-tier Gemma models on OpenRouter consistently return 429 rate-limit errors, making them unreliable for sustained workloads.
 
 ### `tool:schwarm-rückmeldungen-wieder-aktivieren`
 *15.09. 02:12 UTC · Quelle: hands*
@@ -41347,16 +41372,6 @@ inclusionai/ling-3.0-flash-fin:free is the only consistently available free mode
 
 Rate limiting (429) is systemic across free-tier models and should be treated as expected behavior rather than exceptional failure.
 
-### `anti_pattern:Previous attempt scored 1/10. Goal: Marktanalyse abschließen:1`
-*01.09. 02:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 4, 7]): LLM-augmentierte Research-Synthese mit Human-in-the-Loop - Verzicht auf eigene Crawler/Scraper. Stattdessen: Kuratierte Datenquellen (Statista, Crunchbase, G2, Google Trends API) per strukturierten Prompts an LLM (RAG
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Marktanalyse abschließen:0`
-*01.09. 02:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 3, 8]): Modular Data Pipeline mit Validierungsschichten - Statt monolithischer Skripte: Aufbau einer fehlertoleranten Pipeline aus separaten, testbaren Modulen (Datensammlung → Bereinigung → Analyse → Reporting). Jedes Modul 
-
 ### `last_swarm_critique`
 *01.09. 02:19 UTC · Quelle: critic*
 
@@ -41366,56 +41381,6 @@ score=1; issues=Sandbox-Urteil: LAEUFT NICHT - Artefakt ist nicht lauffähig (ha
 *01.09. 02:12 UTC · Quelle: system*
 
 Marktanalyse abschließen und Lücke nutzen
-
-### `dream:20260901021127:5:79e210`
-*01.09. 02:11 UTC · Quelle: dream*
-
-Swarm-based error investigation recurs without preventing new 429 failures, suggesting reactive analysis lacks proactive routing enforcement.
-
-### `dream:20260901021127:4:026ba3`
-*01.09. 02:11 UTC · Quelle: dream*
-
-Maximum stress (1.0) triggers conserve mode limiting to 3 tasks, creating a capacity trap where root-cause fixes cannot be executed.
-
-### `dream:20260901021127:3:a59695`
-*01.09. 02:11 UTC · Quelle: dream*
-
-The system generates effective skill proposals (router, latency scheduling, revision budgets) but recurring swarm goals indicate they are not deployed fast enough.
-
-### `dream:20260901021127:2:a2a3dd`
-*01.09. 02:11 UTC · Quelle: dream*
-
-A single free model (inclusionai/ling-3.0-flash-fin) succeeded twice with stable ~9s latency, proving viable fallback exists if routed to exclusively.
-
-### `dream:20260901021127:1:4b76e1`
-*01.09. 02:11 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429 rate limits across four different providers, making them unreliable for production workloads.
-
-### `dream:20260901020352:5:5d65a6`
-*01.09. 02:03 UTC · Quelle: dream*
-
-Self-diagnosis and pruning report clean internal health, so the entire failure surface is external API throttling rather than internal system decay.
-
-### `dream:20260901020352:4:25f1a2`
-*01.09. 02:03 UTC · Quelle: dream*
-
-Skill proposals accumulate across cycles without being implemented, creating a persistent proposal-to-execution gap that blocks system improvement.
-
-### `dream:20260901020352:3:62407a`
-*01.09. 02:03 UTC · Quelle: dream*
-
-Availability and latency are independent dimensions: a 4.3s success and a 12.5s success both work, but only one meets a tight performance budget.
-
-### `dream:20260901020352:2:1162fa`
-*01.09. 02:03 UTC · Quelle: dream*
-
-The same model alternates between success and failure, so a single retry is unreliable and staggered backoff timing is required.
-
-### `dream:20260901020352:1:80c8ea`
-*01.09. 02:03 UTC · Quelle: dream*
-
-429 rate-limit errors strike every model uniformly, proving the bottleneck is the OpenRouter API gateway, not any individual model endpoint.
 
 ### `last_swarm_critique`
 *01.09. 01:12 UTC · Quelle: critic*
