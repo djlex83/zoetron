@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11239 Fakten** · Stand 2026-09-15 04:21 UTC · aktualisiert bei jedem Herzschlag
+**11248 Fakten** · Stand 2026-09-15 04:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7108
-- **swarm_artifact:** 1649
-- **last_swarm_critique:** 963
-- **last_swarm_goal:** 698
+- **dream:** 7113
+- **swarm_artifact:** 1651
+- **last_swarm_critique:** 964
+- **last_swarm_goal:** 699
 - **anti_pattern:** 373
 - **strategy:** 189
 - **tool:** 154
@@ -13,6 +13,56 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-wirklich-test`
+*15.09. 04:40 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich testen'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-test.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:2`
+*15.09. 04:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Integration with Standard Benchmarks - Integrate directly with established, publicly available benchmark suites (e.g., HumanEval for code generation, GSM8K for reasoning, MMLU for knowledge). The artifact downloads the benchm
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:1`
+*15.09. 04:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Property-Based Testing with Automated Input Generation - Adopt a property-based testing framework (e.g., Hypothesis) to specify invariants that the capabilities must satisfy. Instead of fixed test cases, define properties (e.
+
+### `last_swarm_critique`
+*15.09. 04:37 UTC · Quelle: critic*
+
+score=4; issues=All four artifacts are orchestration wrappers that delegate actual testing to external modules (benchmark_organ, werkzeugpruefung, konvergenztor, reflex) which may not exist - sandbox only confirms the wrappers run, not the test modules; Fallba
+
+### `last_swarm_goal`
+*15.09. 04:29 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich testen
+
+### `dream:20260915042829:5:863f96`
+*15.09. 04:28 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 7 vs actual 4) reveals systematic overestimation of single-cycle task completion.
+
+### `dream:20260915042829:4:1cb2e2`
+*15.09. 04:28 UTC · Quelle: dream*
+
+Evolution runs consistently improve artifact scores (4→8-9) but swarm convergence remains false, indicating evaluation criteria misalignment with actual quality.
+
+### `dream:20260915042829:3:cd4a21`
+*15.09. 04:28 UTC · Quelle: dream*
+
+Dots-3-note-preview delivers 10x lower latency (~4s) than Nemotron (~30-80s) for comparable tasks, suggesting tiered routing by latency sensitivity.
+
+### `dream:20260915042829:2:45b35c`
+*15.09. 04:28 UTC · Quelle: dream*
+
+Gemma-4 models on OpenRouter hit 429 rate limits quickly, making them unsuitable as primary fallbacks without request pacing or quota awareness.
+
+### `dream:20260915042829:1:7f6cf1`
+*15.09. 04:28 UTC · Quelle: dream*
+
+Nemotron-3-Ultra exhibits unreliable availability with 502 upstream overload errors despite HTTP 200 responses, requiring explicit response-body validation.
 
 ### `dream:20260915041840:5:9b6481`
 *15.09. 04:18 UTC · Quelle: dream*
@@ -41241,21 +41291,6 @@ Fallback latency varies 2× (18–40 s) even on the same model, so latency-based
 *01.09. 04:53 UTC · Quelle: dream*
 
 Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary endpoints without health-aware routing.
-
-### `tool:vorgeschlagene-skills-nutzbar-machen`
-*01.09. 04:23 UTC · Quelle: hands*
-
-Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Skills nutzbar machen'. Datei: data/tools/vorgeschlagene-skills-nutzbar-machen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Skills nu:1`
-*01.09. 04:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Persistent Repository + CLI Commands - SQLite database (skills.db) as single source of truth with tables: raw_skills, validated_skills, organ_modules. Three independent CLI tools sharing SQLAlchemy models: `skill-extract` (AS
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Skills nu:0`
-*01.09. 04:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Monolithic Typed Pipeline - Single Python package with shared Pydantic models defining Skill, ValidatedSkill, OrganModule contracts. One entrypoint (main.py) orchestrates three stages: ParserStage (AST-based extraction using 
 
 ### `last_swarm_critique`
 *01.09. 04:20 UTC · Quelle: critic*
