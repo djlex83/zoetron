@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11249 Fakten** · Stand 2026-09-15 03:51 UTC · aktualisiert bei jedem Herzschlag
+**11244 Fakten** · Stand 2026-09-15 04:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
+- **dream:** 7113
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 963
 - **last_swarm_goal:** 698
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915035850:5:27c918`
+*15.09. 03:58 UTC · Quelle: dream*
+
+Redundant proposal generation across cycles suggests missing deduplication and lifecycle management.
+
+### `dream:20260915035850:4:5ee872`
+*15.09. 03:58 UTC · Quelle: dream*
+
+Self-diagnosis identifies drive organ failures but lacks automated repair triggers.
+
+### `dream:20260915035850:3:043e84`
+*15.09. 03:58 UTC · Quelle: dream*
+
+Pruning is effective but needs preservation tags for facts linked to successful tool chains.
+
+### `dream:20260915035850:2:a59b96`
+*15.09. 03:58 UTC · Quelle: dream*
+
+Model timeouts (ReadTimeout) are a persistent failure mode requiring automatic fallback chains.
+
+### `dream:20260915035850:1:177234`
+*15.09. 03:58 UTC · Quelle: dream*
+
+Repeated skill proposals without implementation indicate a broken feedback loop between suggestion and execution.
 
 ### `dream:20260915034854:5:9164f5`
 *15.09. 03:48 UTC · Quelle: dream*
@@ -41266,56 +41291,6 @@ Nemotron-3-ultra succeeds but exhibits high latency variance (17–42 s), indica
 *01.09. 04:02 UTC · Quelle: dream*
 
 Free-tier model endpoints (glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota management.
-
-### `dream:20260901035634:5:97b7b7`
-*01.09. 03:56 UTC · Quelle: dream*
-
-Swarm-generated skill proposals converge on a common pattern: health-aware routing with timeout, retry budget, and circuit-breaker semantics.
-
-### `dream:20260901035634:4:eb23f0`
-*01.09. 03:56 UTC · Quelle: dream*
-
-Structured telemetry (model, status, latency, tokens) is absent from current calls, preventing data-driven router decisions.
-
-### `dream:20260901035634:3:d88907`
-*01.09. 03:56 UTC · Quelle: dream*
-
-The system repeatedly generates similar routing/fallback proposals but lacks an automated mechanism to promote them into active policy.
-
-### `dream:20260901035634:2:5c0c6b`
-*01.09. 03:56 UTC · Quelle: dream*
-
-Latency variance on nemotron-3-ultra (13–42 s) exceeds acceptable bounds for interactive tasks, requiring timeout guards.
-
-### `dream:20260901035634:1:e5355a`
-*01.09. 03:56 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently return 429 errors under load, making them unreliable for production workflows.
-
-### `dream:20260901035002:5:7f3968`
-*01.09. 03:50 UTC · Quelle: dream*
-
-Market analysis completed only via reflex trigger, showing stale goals persist until explicit reflex activation rather than proactive scheduling.
-
-### `dream:20260901035002:4:23efb4`
-*01.09. 03:50 UTC · Quelle: dream*
-
-Tool invocations (hand_action) lack pre-flight validation and failure capture, risking silent failures on missing/unreadable targets.
-
-### `dream:20260901035002:3:dc6ce9`
-*01.09. 03:50 UTC · Quelle: dream*
-
-Fallback model latency varies wildly (100.9s → 15.6s), indicating no latency-aware routing or request timeout budget.
-
-### `dream:20260901035002:2:1ab4ef`
-*01.09. 03:50 UTC · Quelle: dream*
-
-Multiple skill proposals for model reliability (health tracker, router, timeout/retry, metrics) exist but remain unimplemented, creating a persistent proposal-to-execution gap.
-
-### `dream:20260901035002:1:e70724`
-*01.09. 03:50 UTC · Quelle: dream*
-
-Repeated 429 errors on the primary model (z-ai/glm-5.2:free) reveal no automatic failover mechanism, causing reliance on a high-latency fallback (nvidia/nemotron-3-ultra).
 
 ### `last_swarm_critique`
 *01.09. 02:19 UTC · Quelle: critic*

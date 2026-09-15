@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Redundant proposal generation across cycles suggests missing deduplication and lifecycle management.
+- Self-diagnosis identifies drive organ failures but lacks automated repair triggers.
+- Pruning is effective but needs preservation tags for facts linked to successful tool chains.
+- Model timeouts (ReadTimeout) are a persistent failure mode requiring automatic fallback chains.
+- Repeated skill proposals without implementation indicate a broken feedback loop between suggestion and execution.
 - Pruning 43 events per cycle without organ errors shows the memory hygiene loop is healthy but aggressive; retention thresholds may discard reusable co
 - Latency variance for the same model (14s to 126s) correlates with token volume, so timeout budgets must scale with input size.
 - Swarm convergence in one cycle with high score (9) occurs when the goal is narrowly scoped to 'working model only', suggesting scope restriction accel
@@ -51,11 +56,6 @@
 - High metabolic stress (0.82) triggers conserve mode that caps iterations, preventing recovery retries exactly when needed.
 - Hand-action tools fail silently when relative paths are used instead of absolute paths anchored to ZOETRON_DATA.
 - Model API failures (502/429) cascade because no circuit breaker or health-check probes exist before dispatch.
-- Pruning aggressively removes facts/events (19/36 then 1/17) without measurable impact on subsequent task success, suggesting memory pressure is low.
-- Hand actions succeed rapidly (<8s) when environment state is valid, but no preflight validation exists to catch misconfigurations early.
-- Swarm feedback loops converge in a single cycle when roles (planner/builder/critic) are balanced, but calibration underestimates effort by ~25%.
-- Nemotron-3-ultra demonstrates consistent success and moderate latency (34-46s), emerging as the most reliable free-tier model for critical paths.
-- Free-tier OpenRouter models consistently hit 429 rate limits, making them unreliable as primary endpoints without automatic rotation and backoff.
 
 ---
 

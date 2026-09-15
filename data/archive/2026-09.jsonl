@@ -51337,3 +51337,23 @@
 {"ts": 1788839254.7556462, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.22, "gelesen": 1}}
 {"ts": 1788839254.7583256, "kind": "reflex_used", "payload": {"goal": "Veraltete Schwarm-Infos erneuern", "tool": "veraltetes-wissen-erneuern.py", "ok": true}}
 {"ts": 1788839255.2276735, "kind": "act_done", "payload": {"goal_title": "Veraltete Schwarm-Infos erneuern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788234602.6521125, "key": "dream:20260901035002:1:e70724", "value": "Repeated 429 errors on the primary model (z-ai/glm-5.2:free) reveal no automatic failover mechanism, causing reliance on a high-latency fallback (nvidia/nemotron-3-ultra).", "source": "dream"}
+{"ts": 1788234602.6521983, "key": "dream:20260901035002:2:1ab4ef", "value": "Multiple skill proposals for model reliability (health tracker, router, timeout/retry, metrics) exist but remain unimplemented, creating a persistent proposal-to-execution gap.", "source": "dream"}
+{"ts": 1788234602.6522667, "key": "dream:20260901035002:3:dc6ce9", "value": "Fallback model latency varies wildly (100.9s → 15.6s), indicating no latency-aware routing or request timeout budget.", "source": "dream"}
+{"ts": 1788234602.6523364, "key": "dream:20260901035002:4:23efb4", "value": "Tool invocations (hand_action) lack pre-flight validation and failure capture, risking silent failures on missing/unreadable targets.", "source": "dream"}
+{"ts": 1788234602.6524005, "key": "dream:20260901035002:5:7f3968", "value": "Market analysis completed only via reflex trigger, showing stale goals persist until explicit reflex activation rather than proactive scheduling.", "source": "dream"}
+{"ts": 1788234994.9126, "key": "dream:20260901035634:1:e5355a", "value": "Free-tier models on OpenRouter consistently return 429 errors under load, making them unreliable for production workflows.", "source": "dream"}
+{"ts": 1788234994.9126935, "key": "dream:20260901035634:2:5c0c6b", "value": "Latency variance on nemotron-3-ultra (13–42 s) exceeds acceptable bounds for interactive tasks, requiring timeout guards.", "source": "dream"}
+{"ts": 1788234994.912779, "key": "dream:20260901035634:3:d88907", "value": "The system repeatedly generates similar routing/fallback proposals but lacks an automated mechanism to promote them into active policy.", "source": "dream"}
+{"ts": 1788234994.912856, "key": "dream:20260901035634:4:eb23f0", "value": "Structured telemetry (model, status, latency, tokens) is absent from current calls, preventing data-driven router decisions.", "source": "dream"}
+{"ts": 1788234994.9129307, "key": "dream:20260901035634:5:97b7b7", "value": "Swarm-generated skill proposals converge on a common pattern: health-aware routing with timeout, retry budget, and circuit-breaker semantics.", "source": "dream"}
+{"ts": 1788839782.7375755, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788839850.979993, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788839852.8159628, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 38}}
+{"ts": 1788839878.7884216, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.2, "tokens_ein": 1727, "tokens_aus": 752}}
+{"ts": 1788839878.789117, "kind": "skill_proposal", "payload": {"proposal": "Implement a provider fallback chain that ranks models by recent success rate and latency, auto-switching after 2 consecutive failures or latency > 60s."}}
+{"ts": 1788839878.78921, "kind": "skill_proposal", "payload": {"proposal": "Add a model-health cache (TTL 5 min) tracking 502/429/error rates per model; exclude models with >30% failure rate from planner selection."}}
+{"ts": 1788839878.7892866, "kind": "skill_proposal", "payload": {"proposal": "Create a calibration adjuster that down-weights predicted scores when the selected model's recent failure rate exceeds 20%."}}
+{"ts": 1788839878.789353, "kind": "skill_proposal", "payload": {"proposal": "Build a swarm-role model affinity map: assign critic/planner to low-latency models (ling-flash), builder to high-throughput models (Nemotron when healthy)."}}
+{"ts": 1788839878.7894294, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-flight check that pings each candidate model with a 5-token request; only include models responding <5s in the active pool."}}
+{"ts": 1788839878.7894957, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
