@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 03:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und prüfen *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 3×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
 - Systemfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning aggressively removes facts/events (19/36 then 1/17) without measurable impact on subsequent task success, suggesting memory pressure is low.
+- Hand actions succeed rapidly (<8s) when environment state is valid, but no preflight validation exists to catch misconfigurations early.
+- Swarm feedback loops converge in a single cycle when roles (planner/builder/critic) are balanced, but calibration underestimates effort by ~25%.
+- Nemotron-3-ultra demonstrates consistent success and moderate latency (34-46s), emerging as the most reliable free-tier model for critical paths.
+- Free-tier OpenRouter models consistently hit 429 rate limits, making them unreliable as primary endpoints without automatic rotation and backoff.
 - Pruning 19 facts and 36 events per cycle prevents memory bloat but risks discarding reusable patterns; tag high-value patterns (e.g., successful tool 
 - Calibration consistently underestimates cycle count (predicted 6, actual 8); adding a +2 buffer to cycle predictions improves planning accuracy under 
 - Swarm revival converges in one cycle when the simulation verdict is 'go' and the builder role dominates (3 builders vs 1 planner/critic), suggesting a
@@ -51,11 +56,6 @@
 - Swarm synchronization attempts repeat without conflict resolution; vector-clock merging is needed to prevent stale-goal oscillation.
 - Relative path handling causes silent hand-action failures; all inputs must resolve to absolute paths under ZOETRON_DATA before use.
 - Model providers exhibit cascading failures (502 upstream overload, 429 rate limits) requiring circuit breakers and prioritized failover.
-- Proposed reliability skills (scoring, fallback, circuit breaker) remain unimplemented while failures repeat, indicating a deployment gap between skill
-- High metabolic stress (1.0) forces conserve mode that starves critical tasks like model health probes, creating a reliability death spiral.
-- Swarm collaborations stall without convergence because goals lack measurable acceptance criteria and critic roles are underweighted.
-- Hand actions fail silently due to unresolved relative paths and missing data directory validation, needing explicit path resolution and pre-flight che
-- Model API failures (429/502) cascade because immediate retries trigger provider blocks, requiring circuit breakers with exponential backoff.
 
 ---
 
