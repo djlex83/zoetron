@@ -1,18 +1,63 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11250 Fakten** · Stand 2026-09-15 07:11 UTC · aktualisiert bei jedem Herzschlag
+**11265 Fakten** · Stand 2026-09-15 07:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7133
-- **swarm_artifact:** 1639
-- **last_swarm_critique:** 965
-- **last_swarm_goal:** 700
-- **anti_pattern:** 369
-- **strategy:** 187
+- **dream:** 7138
+- **swarm_artifact:** 1643
+- **last_swarm_critique:** 966
+- **last_swarm_goal:** 701
+- **anti_pattern:** 371
+- **strategy:** 188
 - **tool:** 152
-- **hand_result:** 80
+- **hand_result:** 81
 - **aktuell_organfehler:** 25
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Trägerinnerungen verknüp:1`
+*15.09. 07:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Modular Reimplementation - Redesign the artifact using a modular architecture, breaking it down into independent components. Each module should be developed and tested separately to ensure reliability. This approach isolates 
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Trägerinnerungen verknüp:0`
+*15.09. 07:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Root Cause Analysis and Debugging - Conduct a systematic debugging process to identify the specific technical fault preventing the artifact from running. This involves reviewing logs, checking dependencies, and using sandbox 
+
+### `last_swarm_critique`
+*15.09. 07:23 UTC · Quelle: critic*
+
+score=0; issues=Das Artefakt läuft nicht, wie vom Sandbox-Urteil bestätigt.
+
+### `last_swarm_goal`
+*15.09. 07:19 UTC · Quelle: system*
+
+Trägerinnerungen verknüpfen
+
+### `dream:20260915071845:5:f83a81`
+*15.09. 07:18 UTC · Quelle: dream*
+
+Reflex execution failed due to missing tool, so tool existence checks must precede invocation.
+
+### `dream:20260915071845:4:4847d4`
+*15.09. 07:18 UTC · Quelle: dream*
+
+Hand action failed because the data path was missing, so preflight path validation is essential.
+
+### `dream:20260915071845:3:fba882`
+*15.09. 07:18 UTC · Quelle: dream*
+
+The dots model succeeded with acceptable latency, confirming it as a reliable fallback.
+
+### `dream:20260915071845:2:f721f4`
+*15.09. 07:18 UTC · Quelle: dream*
+
+Free gemma models return 429 errors under load, so rate limiting and exponential backoff are necessary.
+
+### `dream:20260915071845:1:96317c`
+*15.09. 07:18 UTC · Quelle: dream*
+
+The nvidia model repeatedly times out after ~10 minutes, indicating a network bottleneck that requires a timeout-based circuit breaker.
 
 ### `dream:20260915070909:5:0553a3`
 *15.09. 07:09 UTC · Quelle: dream*
