@@ -52029,3 +52029,23 @@
 {"ts": 1788858548.3149736, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.33, "gelesen": 79}}
 {"ts": 1788858548.3180683, "kind": "reflex_used", "payload": {"goal": "Träume in echtes Handeln übertragen", "tool": "simulationen-in-echtes-handeln-übersetze.py", "ok": true}}
 {"ts": 1788858548.7075458, "kind": "act_done", "payload": {"goal_title": "Träume in echtes Handeln übertragen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788859086.062156, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788859154.5032017, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788859156.2133143, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 13}}
+{"ts": 1788859293.3561304, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 133.4, "tokens_ein": 1304, "tokens_aus": 1320}}
+{"ts": 1788859293.3566291, "kind": "skill_proposal", "payload": {"proposal": "Implement model_router with per-provider circuit breakers, health scores (success rate, p95 latency, error taxonomy), and automatic failover to flash models when p95 >30s or 429/502 rate exceeds 10%."}}
+{"ts": 1788859293.3566933, "kind": "skill_proposal", "payload": {"proposal": "Add rate-limit awareness module detecting 429 responses, pausing requests to that model for configurable backoff, and redistributing load to alternatives."}}
+{"ts": 1788859293.3567493, "kind": "skill_proposal", "payload": {"proposal": "Build critic output validator with fallback parser handling malformed responses, defaulting to safe revision strategy."}}
+{"ts": 1788859293.3568332, "kind": "skill_proposal", "payload": {"proposal": "Create convergence guardrail detecting stalled scores across cycles, triggering emergency evolution restart or model switch after N cycles."}}
+{"ts": 1788859293.3569021, "kind": "skill_proposal", "payload": {"proposal": "Deploy dream-to-skill promotion daemon validating, testing, and deploying one skill proposal per sleep cycle."}}
+{"ts": 1788859293.3569698, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788859400.439481, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788859400.4394789, "schalter_geoeffnet": false}}
+{"ts": 1788859400.7489002, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788859400.7488964, "schalter_geoeffnet": false}}
+{"ts": 1788859400.8664205, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788859400.8664176, "schalter_geoeffnet": false}}
+{"ts": 1788859404.3298354, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 3.5, "tokens_ein": 490, "tokens_aus": 940}}
+{"ts": 1788859404.3299797, "kind": "drive_goal", "payload": {"title": "Modellfehler deutlich reduzieren", "why": "Das Modell hat genauso oft Versagen wie Erfolg. Wenn es weniger fehlerhaft arbeitet, werden alle Aufgaben besser gelöst.", "signal": "failure"}}
+{"ts": 1788859404.3300552, "kind": "drive_goal", "payload": {"title": "Schwarmwissen aus alten Ergebnissen nutzen", "why": "Die letzten Schwarm-Ergebnisse sind veraltet und wurden nicht eingebaut. Wenn sie jetzt verwendet werden, wächst das Wissen.", "signal": "stale"}}
+{"ts": 1788859404.330118, "kind": "drive_goal", "payload": {"title": "Zusammenhänge zwischen Träumen erforschen", "why": "Zwei Erinnerungen aus Träumen hängen zusammen. Mehr darüber zu verstehen eröffnet völlig neue Fähigkeiten.", "signal": "combination"}}
+{"ts": 1788859407.0861075, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.26, "gelesen": 9}}
+{"ts": 1788859407.088851, "kind": "reflex_used", "payload": {"goal": "Veraltete Schwarmdaten aktualisieren und nutzen", "tool": "veraltete-marktinfos-aktualisieren.py", "ok": true}}
+{"ts": 1788859407.6077747, "kind": "act_done", "payload": {"goal_title": "Veraltete Schwarmdaten aktualisieren und nutzen", "score": null, "converged": true, "mode": "reflex"}}

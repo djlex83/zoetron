@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11231 Fakten** · Stand 2026-09-15 09:17 UTC · aktualisiert bei jedem Herzschlag
+**11236 Fakten** · Stand 2026-09-15 09:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
+- **dream:** 7123
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 967
 - **last_swarm_goal:** 702
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915092443:5:bd6284`
+*15.09. 09:24 UTC · Quelle: dream*
+
+The same goal appeared in reflex, swarm, and tor events, causing redundant execution; a single coordination point prevents duplication.
+
+### `dream:20260915092443:4:545c03`
+*15.09. 09:24 UTC · Quelle: dream*
+
+Metabolism stress hit 1.0 with a budget of three tasks and one iteration, so limiting concurrency conserves resources.
+
+### `dream:20260915092443:3:ec43df`
+*15.09. 09:24 UTC · Quelle: dream*
+
+Simulation identified two risks and required two revisions, showing that pre‑execution risk assessment improves reliability.
+
+### `dream:20260915092443:2:cc4178`
+*15.09. 09:24 UTC · Quelle: dream*
+
+Hand action failed because the input path did not exist; checking file existence before execution avoids wasted cycles.
+
+### `dream:20260915092443:1:139005`
+*15.09. 09:24 UTC · Quelle: dream*
+
+Repeated 429 errors from google/gemma models indicate rate limiting; falling back to dots-studio restored functionality.
 
 ### `dream:20260915091503:5:1b3131`
 *15.09. 09:15 UTC · Quelle: dream*

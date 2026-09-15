@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 09:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 09:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The same goal appeared in reflex, swarm, and tor events, causing redundant execution; a single coordination point prevents duplication.
+- Metabolism stress hit 1.0 with a budget of three tasks and one iteration, so limiting concurrency conserves resources.
+- Simulation identified two risks and required two revisions, showing that pre‑execution risk assessment improves reliability.
+- Hand action failed because the input path did not exist; checking file existence before execution avoids wasted cycles.
+- Repeated 429 errors from google/gemma models indicate rate limiting; falling back to dots-studio restored functionality.
 - The successful execution of the 'marktanalyse-endlich-nutzen.py' reflex demonstrates that tool-backed reflexes can achieve convergence when prerequisi
 - Aggressive pruning of 10 facts and 19 events in one cycle may discard valuable cross-cutting patterns, requiring a balanced retention policy.
 - The system's drive goals consistently focus on error analysis, stale data refresh, and dream combination, revealing a self-improvement loop that shoul
@@ -51,11 +56,6 @@
 - Memory integration is a fragile capability that must be deliberately trained and structured to be reliable.
 - Stale goals and data silently accumulate and necessitate automatic detection and refresh to maintain relevance.
 - Model API failures (timeouts, rate limits) are the primary cause of system instability and require automated resilience patterns.
-- A successful local hand_action after model failures suggests a fallback mechanism can bypass model unavailability.
-- Aggressive pruning of facts and events risks losing context needed for future reasoning.
-- The dots-studio model consistently succeeds with low latency, making it a reliable default.
-- Stale swarm goals correlate with convergence failure and must be refreshed periodically.
-- Repeated timeouts and 429 errors from multiple providers indicate that health-aware routing is essential.
 
 ---
 
