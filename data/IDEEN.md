@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 16:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 16:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simultaneous emergence of five skill proposals targeting rate limiting and model health highlights a systemic gap in real-time, automated feedback
+- Operating at maximum stress (1.0) in conserve mode means the system must prioritize failover and path-validation tasks over exploratory skill generati
+- The reflex tool 'modell-fehler-systematisch-reduzieren-un.py' failing to reduce prediction errors indicates that error-correction mechanisms must be d
+- The hand action's silent failure due to unresolved relative paths and missing ZOETRON_DATA validation shows that file operations require strict absolu
+- Repeated 429 rate-limit errors on Google Gemma free models reveal that the request dispatcher lacks adaptive fallback logic, causing cascading failure
 - Pruning events without facts fragments knowledge; a context-preservation lock on facts referenced by active goals is necessary.
 - The critic's confidence update logic for fallback semantic updates can produce incorrect scores, undermining swarm convergence.
 - Hand actions fail with exit code 1 and zero reads when the target path is missing, indicating a need for pre-validation.
@@ -51,11 +56,6 @@
 - Hand actions succeed when the target file exists; failures are caused by missing or empty files.
 - dots-studio/dots-3-note-preview:free consistently succeeds with low latency, making it the preferred model.
 - Repeated 429 errors from google/gemma models indicate rate limiting that requires backoff and fallback.
-- The simulation approved "Traumgedanken kombinieren" with 5 risks and 0 revisions, indicating the system is willing to accept moderate risk for innovat
-- With metabolism stress at 1.0 and state "conserve", the budget of 3 tasks and 1 iteration is a hard constraint that should be enforced at the swarm le
-- The system's drive layer correctly surfaced "Modelle stabiler machen" as a meta-goal in response to repeated model failures, showing the drive system 
-- The dots-studio/dots-3-note-preview:free model has been the only consistently available model across 5 successful calls, making it the de facto primar
-- When two models fail with identical 429 rate-limit errors while a third succeeds, the failure is provider-side throttling, not a system logic error—im
 
 ---
 

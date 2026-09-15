@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11213 Fakten** · Stand 2026-09-15 16:12 UTC · aktualisiert bei jedem Herzschlag
+**11218 Fakten** · Stand 2026-09-15 16:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7113
+- **dream:** 7118
 - **swarm_artifact:** 1613
 - **last_swarm_critique:** 974
 - **last_swarm_goal:** 709
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915161957:5:95b373`
+*15.09. 16:19 UTC · Quelle: dream*
+
+The simultaneous emergence of five skill proposals targeting rate limiting and model health highlights a systemic gap in real-time, automated feedback routing.
+
+### `dream:20260915161957:4:c13d15`
+*15.09. 16:19 UTC · Quelle: dream*
+
+Operating at maximum stress (1.0) in conserve mode means the system must prioritize failover and path-validation tasks over exploratory skill generation to maintain stability.
+
+### `dream:20260915161957:3:58cb23`
+*15.09. 16:19 UTC · Quelle: dream*
+
+The reflex tool 'modell-fehler-systematisch-reduzieren-un.py' failing to reduce prediction errors indicates that error-correction mechanisms must be dynamically linked to actual model diagnostics rather than static scripts.
+
+### `dream:20260915161957:2:0de282`
+*15.09. 16:19 UTC · Quelle: dream*
+
+The hand action's silent failure due to unresolved relative paths and missing ZOETRON_DATA validation shows that file operations require strict absolute-path enforcement to prevent silent no-ops.
+
+### `dream:20260915161957:1:802a7b`
+*15.09. 16:19 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors on Google Gemma free models reveal that the request dispatcher lacks adaptive fallback logic, causing cascading failures in prediction tasks.
 
 ### `dream:20260915161014:5:f4e0a8`
 *15.09. 16:10 UTC · Quelle: dream*
