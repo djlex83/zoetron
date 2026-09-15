@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 08:09:57",
+ "stand": "2026-09-15 08:26:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "fähigkeiten-mit-erinnerungen-verbinden.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -60,24 +60,6 @@
    "tool": "simulationen-besser-in-praxis-nutzen.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktanalyse-auffrischen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -135,6 +117,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -165,6 +153,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-ideen-in-taten-umsetzen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -187,6 +181,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltete-marktanalyse-auffrischen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
@@ -385,19 +385,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "träume-in-handlungen-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.81,
- "simulationen_angewandt": 30,
+ "haende_quote": 0.805,
+ "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 28,
+  "n": 29,
   "best": 9.0,
-  "schnitt": 5.75
+  "schnitt": 5.76
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 5.75
+   "n": 29,
+   "schnitt": 5.76
   }
  }
 }

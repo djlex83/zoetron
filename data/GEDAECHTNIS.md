@@ -1,18 +1,68 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11245 Fakten** · Stand 2026-09-15 08:11 UTC · aktualisiert bei jedem Herzschlag
+**11248 Fakten** · Stand 2026-09-15 08:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
-- **swarm_artifact:** 1639
-- **last_swarm_critique:** 966
-- **last_swarm_goal:** 701
-- **anti_pattern:** 371
-- **strategy:** 188
-- **tool:** 152
+- **dream:** 7118
+- **swarm_artifact:** 1641
+- **last_swarm_critique:** 967
+- **last_swarm_goal:** 702
+- **anti_pattern:** 373
+- **strategy:** 189
+- **tool:** 153
 - **hand_result:** 80
 - **aktuell_organfehler:** 25
 
 ---
+
+### `tool:träume-in-handeln-umsetzen`
+*15.09. 08:26 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume in Handeln umsetzen'. Datei: data/tools/träume-in-handeln-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Träume in Handeln umsetz:2`
+*15.09. 08:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Interactive Feedback Loop - Create an interactive planning loop where the system proposes actions, the user provides feedback, and the plan is revised accordingly; incorporate reinforcement learning to optimize action selecti
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Träume in Handeln umsetz:1`
+*15.09. 08:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Event-Driven Service Pipeline - Design an event-driven microservice pipeline where each service validates its input, executes its function, and emits structured logs and metrics; use circuit breakers and retries for resilienc
+
+### `last_swarm_critique`
+*15.09. 08:24 UTC · Quelle: critic*
+
+score=6; issues=The plan is static and does not derive specific actions from the context; it merely appends raw context files, failing to actually turn dreams into action.; Error handling uses bare except and silently ignores failures, reducing robustness.; Th
+
+### `last_swarm_goal`
+*15.09. 08:20 UTC · Quelle: system*
+
+Träume in Handeln umsetzen
+
+### `dream:20260915081922:5:5e9ed4`
+*15.09. 08:19 UTC · Quelle: dream*
+
+Under metabolic stress the system conserves resources; aligning skill proposals with current stress and budget increases acceptance.
+
+### `dream:20260915081922:4:a58d2b`
+*15.09. 08:19 UTC · Quelle: dream*
+
+Stale facts about swarm goals lead to poor decisions; a scheduler that triggers refresh reflexes based on age and access frequency is needed.
+
+### `dream:20260915081922:3:18e9e0`
+*15.09. 08:19 UTC · Quelle: dream*
+
+Swarm cycles fail if required roles or tools are missing; enforcing role assignment and tool availability before start improves reliability.
+
+### `dream:20260915081922:2:69d85c`
+*15.09. 08:19 UTC · Quelle: dream*
+
+Hand actions fail when target paths are missing; preflight validation of paths and permissions prevents wasted cycles.
+
+### `dream:20260915081922:1:ed7b36`
+*15.09. 08:19 UTC · Quelle: dream*
+
+Free models from Google are prone to 429 rate limiting, causing cascading failures; a health router with failover is essential.
 
 ### `dream:20260915080917:5:d259ee`
 *15.09. 08:09 UTC · Quelle: dream*
@@ -41251,56 +41301,6 @@ score=5; issues=Pfadbruch zwischen Validierung und Integration: Validierung schr
 *01.09. 08:18 UTC · Quelle: system*
 
 Vorgeschlagene Fähigkeiten wirklich einbauen
-
-### `dream:20260901081711:5:7c4253`
-*01.09. 08:17 UTC · Quelle: dream*
-
-High-value market analyses stall without automated execution triggers or freshness monitoring.
-
-### `dream:20260901081711:4:e0f382`
-*01.09. 08:17 UTC · Quelle: dream*
-
-Simulation-to-practice gap persists despite explicit recognition, lacking enforced deployment gates.
-
-### `dream:20260901081711:3:4d4eee`
-*01.09. 08:17 UTC · Quelle: dream*
-
-Multiple identical skill proposals for rate limiting and backoff indicate missing proposal deduplication.
-
-### `dream:20260901081711:2:79b63d`
-*01.09. 08:17 UTC · Quelle: dream*
-
-Fallback models consistently exhibit high latency (28-35s) without latency-based traffic shedding.
-
-### `dream:20260901081711:1:f8954c`
-*01.09. 08:17 UTC · Quelle: dream*
-
-Rate limiting (429 errors) on specific models recurs predictably but routing lacks proactive quota awareness.
-
-### `dream:20260901080959:5:a68dba`
-*01.09. 08:09 UTC · Quelle: dream*
-
-Calibration error of 1 cycle on an 8-cycle prediction shows the effort estimator is accurate enough for scheduling.
-
-### `dream:20260901080959:4:8ce19a`
-*01.09. 08:09 UTC · Quelle: dream*
-
-Swarm convergence in a single cycle with high score (8) indicates the planner-builder-critic loop is well-calibrated for implementation tasks.
-
-### `dream:20260901080959:3:3034a8`
-*01.09. 08:09 UTC · Quelle: dream*
-
-Hand actions fail intermittently (exit 1) without error details, suggesting transient environment issues rather than code defects.
-
-### `dream:20260901080959:2:0f12a4`
-*01.09. 08:09 UTC · Quelle: dream*
-
-Latency variance between models spans 30x (5s vs 150s), so model selection must weigh speed against availability.
-
-### `dream:20260901080959:1:e7ca4a`
-*01.09. 08:09 UTC · Quelle: dream*
-
-Rate limiting (429) is the dominant failure mode across multiple free-tier models, making automatic fallback essential for reliability.
 
 ### `last_swarm_critique`
 *01.09. 07:19 UTC · Quelle: critic*
