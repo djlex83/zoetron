@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 12:21:04",
+ "stand": "2026-09-15 12:30:49",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -111,12 +111,6 @@
    "quote": 0.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -178,6 +172,12 @@
   },
   {
    "tool": "swarm-informationen-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeits-vorschläge-verbessern.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -309,12 +309,6 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeits-vorschläge-verbessern.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -352,6 +346,12 @@
   },
   {
    "tool": "schwarm-wissen-auffrischen-und-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

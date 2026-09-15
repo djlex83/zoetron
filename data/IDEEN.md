@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 12:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 24×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -31,16 +31,21 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
-- Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Ferngedächtnisse verbinden *(wieder aufgegriffen: 4×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 - Veraltete Fakten auffrischen *(wieder aufgegriffen: 3×)*
+- Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Diversifying model dependencies with proven fallbacks (like dots-studio) ensures operational continuity when primary models are rate-limited.
+- Routine memory pruning of stale events and facts keeps the context window clean, directly reducing LLM latency and context overflow.
+- When system stress reaches 1.0, the 'conserve' budget limits tasks to 3, requiring strict prioritization of high-impact repairs.
+- Pre-execution path and permission validation prevents immediate tool failures (like exit code 1 on hand actions) and saves time.
+- Persistent banning of models that return HTTP 429 errors is crucial to prevent retry loops and wasted execution cycles.
 - Swarm achieved convergence in a single cycle with a planner, three builders, and a critic, demonstrating effective role assignment.
 - Hand actions frequently fail with exit code 1 but eventually succeed, suggesting transient errors that require retry logic.
 - Simulation identified four risks and required four revisions, and after applying three revisions the swarm converged, showing iterative risk mitigatio
@@ -51,11 +56,6 @@
 - Under maximum stress (1.0), the metabolism check correctly constrained the system to a conservative budget of 3 tasks and 1 iteration to prevent resou
 - The system's circuit breaker successfully isolated the failing 'nvidia/nemotron-3-ultra-550b-a55b:free' model by locking it out for 1800 seconds after
 - The free-tier Google Gemma models are repeatedly returning HTTP 429 errors, indicating that the API rate limits are fully exhausted and requiring an i
-- Simulation produced five revisions, showing that iterative refinement is needed but currently occurs too late.
-- The reflex to convert dream ideas into capabilities returned false, suggesting the tool is broken or misconfigured.
-- The hand action failed because the expected file was not found at the resolved path, indicating missing path validation.
-- Only one free model succeeded, so depending on a single provider creates a single point of failure.
-- Model failures from rate limiting and timeouts dominate; a fallback chain with exponential backoff is essential.
 
 ---
 

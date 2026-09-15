@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11234 Fakten** · Stand 2026-09-15 12:22 UTC · aktualisiert bei jedem Herzschlag
+**11229 Fakten** · Stand 2026-09-15 12:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7118
+- **dream:** 7113
 - **swarm_artifact:** 1629
 - **last_swarm_critique:** 970
 - **last_swarm_goal:** 705
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915123010:5:0cc41f`
+*15.09. 12:30 UTC · Quelle: dream*
+
+Diversifying model dependencies with proven fallbacks (like dots-studio) ensures operational continuity when primary models are rate-limited.
+
+### `dream:20260915123010:4:6c5b23`
+*15.09. 12:30 UTC · Quelle: dream*
+
+Routine memory pruning of stale events and facts keeps the context window clean, directly reducing LLM latency and context overflow.
+
+### `dream:20260915123010:3:7cb4c5`
+*15.09. 12:30 UTC · Quelle: dream*
+
+When system stress reaches 1.0, the 'conserve' budget limits tasks to 3, requiring strict prioritization of high-impact repairs.
+
+### `dream:20260915123010:2:d11765`
+*15.09. 12:30 UTC · Quelle: dream*
+
+Pre-execution path and permission validation prevents immediate tool failures (like exit code 1 on hand actions) and saves time.
+
+### `dream:20260915123010:1:8c9596`
+*15.09. 12:30 UTC · Quelle: dream*
+
+Persistent banning of models that return HTTP 429 errors is crucial to prevent retry loops and wasted execution cycles.
 
 ### `dream:20260915121938:5:028498`
 *15.09. 12:19 UTC · Quelle: dream*
@@ -41201,56 +41226,6 @@ Proposed skills accumulate without validation because no simulation gate exists;
 *01.09. 12:38 UTC · Quelle: dream*
 
 Rate-limited models without automatic fallback create systemic unreliability; a router with health scoring and instant failover is necessary infrastructure, not optional.
-
-### `dream:20260901122729:5:fb5f88`
-*01.09. 12:27 UTC · Quelle: dream*
-
-Swarm role allocation must include graceful degradation by pinning critical roles (planner, critic) to reliable models while allowing best-effort roles to fall back.
-
-### `dream:20260901122729:4:9c4b2b`
-*01.09. 12:27 UTC · Quelle: dream*
-
-Historical gaps between predicted and actual scores reveal systematic bias per goal type, which a calibration layer can learn and compensate for over time.
-
-### `dream:20260901122729:3:0ccb12`
-*01.09. 12:27 UTC · Quelle: dream*
-
-HTTP 200 responses can still carry upstream error payloads, so response-body schema validation is required to catch masquerading failures.
-
-### `dream:20260901122729:2:ed7afe`
-*01.09. 12:27 UTC · Quelle: dream*
-
-Free models exhibit unpredictable latency (5s to 27s) and availability, necessitating a tiered architecture that separates fast-path endpoints from quality-tier ones.
-
-### `dream:20260901122729:1:fbfe66`
-*01.09. 12:27 UTC · Quelle: dream*
-
-Rate-limit errors (429) recur predictably on free-tier models and require provider-level circuit breakers rather than per-model handling to isolate quota exhaustion.
-
-### `dream:20260901122026:5:b667f5`
-*01.09. 12:20 UTC · Quelle: dream*
-
-Skill proposals accumulate without a staged promotion pipeline, causing proposals to linger as unactioned ideas.
-
-### `dream:20260901122026:4:dd65ee`
-*01.09. 12:20 UTC · Quelle: dream*
-
-Hand actions returning exit code 1 with zero bytes read reveal missing pre-flight checks for file existence and permissions.
-
-### `dream:20260901122026:3:2ece06`
-*01.09. 12:20 UTC · Quelle: dream*
-
-Swarm convergence fails when builder-to-critic ratio exceeds 3:1, suggesting a mandatory critic gate after each builder iteration.
-
-### `dream:20260901122026:2:5894e1`
-*01.09. 12:20 UTC · Quelle: dream*
-
-Evolution cycles stall at 7/10 because the critic detects demo stubs substituting for real simulations, indicating the simulation harness must enforce genuine execution before scoring.
-
-### `dream:20260901122026:1:8d02fd`
-*01.09. 12:20 UTC · Quelle: dream*
-
-Free tier models consistently hit 429 rate limits under load, requiring a health-aware router that tracks consecutive 429s and shifts traffic to healthier endpoints.
 
 ### `last_swarm_critique`
 *01.09. 11:56 UTC · Quelle: critic*
