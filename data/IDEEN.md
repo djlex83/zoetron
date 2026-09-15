@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 16:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 16:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,8 +30,8 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
-- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
+- Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Combining dream and swarm analysis yields novel insights, indicating cross-module synergy is valuable.
+- Pruning facts and events improves performance but must retain high-access or recent items to preserve knowledge.
+- nvidia/nemotron-3-ultra-550b-a55b:free times out frequently, suggesting it is overloaded or unstable.
+- dots-studio/dots-3-note-preview:free is the only model that consistently succeeds with latency under 30s.
+- Repeated 429 errors from google/gemma models show they are rate-limited and should be blacklisted after consecutive failures.
 - The hand action failed due to a forbidden 'shutdown' pattern, showing that safety filters can block automation and require alternative strategies or f
 - Memory pruning removed 20 facts and 26 events, demonstrating that active context management is essential to prevent overflow and maintain performance.
 - A calibration error of 3 units remained after task completion, highlighting the need for explicit feedback loops to correct prediction models.
@@ -51,11 +56,6 @@
 - Pre-execution simulation successfully identified 5 risks and drove 5 concrete revisions, proving its value in mitigating prediction errors before acti
 - The dots-studio/dots-3-note-preview:free model is more stable but exhibits high latency (up to 57s) and high token consumption, requiring strict timeo
 - Free Google Gemma models on OpenRouter are highly prone to 429 rate-limit errors under rapid or sequential request loads, requiring robust fallback me
-- The simultaneous emergence of five skill proposals targeting rate limiting and model health highlights a systemic gap in real-time, automated feedback
-- Operating at maximum stress (1.0) in conserve mode means the system must prioritize failover and path-validation tasks over exploratory skill generati
-- The reflex tool 'modell-fehler-systematisch-reduzieren-un.py' failing to reduce prediction errors indicates that error-correction mechanisms must be d
-- The hand action's silent failure due to unresolved relative paths and missing ZOETRON_DATA validation shows that file operations require strict absolu
-- Repeated 429 rate-limit errors on Google Gemma free models reveal that the request dispatcher lacks adaptive fallback logic, causing cascading failure
 
 ---
 

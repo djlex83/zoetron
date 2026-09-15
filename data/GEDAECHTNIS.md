@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11228 Fakten** · Stand 2026-09-15 16:43 UTC · aktualisiert bei jedem Herzschlag
+**11223 Fakten** · Stand 2026-09-15 16:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7128
+- **dream:** 7123
 - **swarm_artifact:** 1613
 - **last_swarm_critique:** 974
 - **last_swarm_goal:** 709
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915165201:5:cb78df`
+*15.09. 16:52 UTC · Quelle: dream*
+
+Combining dream and swarm analysis yields novel insights, indicating cross-module synergy is valuable.
+
+### `dream:20260915165201:4:46c104`
+*15.09. 16:52 UTC · Quelle: dream*
+
+Pruning facts and events improves performance but must retain high-access or recent items to preserve knowledge.
+
+### `dream:20260915165201:3:e6d63a`
+*15.09. 16:52 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free times out frequently, suggesting it is overloaded or unstable.
+
+### `dream:20260915165201:2:bd16f5`
+*15.09. 16:52 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free is the only model that consistently succeeds with latency under 30s.
+
+### `dream:20260915165201:1:05b633`
+*15.09. 16:52 UTC · Quelle: dream*
+
+Repeated 429 errors from google/gemma models show they are rate-limited and should be blacklisted after consecutive failures.
 
 ### `dream:20260915164028:5:21a26c`
 *15.09. 16:40 UTC · Quelle: dream*
@@ -41211,56 +41236,6 @@ score=6; issues=Datenformat-Inkompatibilität zwischen den Pipeline-Stufen: Arte
 *01.09. 16:51 UTC · Quelle: system*
 
 Skill-Ideen in echte Faehigkeiten umwandeln
-
-### `dream:20260901165021:5:5b4e98`
-*01.09. 16:50 UTC · Quelle: dream*
-
-Without per-model rate-limit tracking and exponential backoff, the system wastes cycles hammering throttled endpoints instead of failing over to available candidates.
-
-### `dream:20260901165021:4:6af20d`
-*01.09. 16:50 UTC · Quelle: dream*
-
-Stale self-diagnoses create blind spots: infrequent health checks allow degradation to accumulate until it cascades into visible failures.
-
-### `dream:20260901165021:3:78331d`
-*01.09. 16:50 UTC · Quelle: dream*
-
-Models that occasionally succeed under load (e.g., inclusionai/ling-3.0-flash-fin at 11s) must be tracked via a rolling reliability scorecard to inform routing decisions.
-
-### `dream:20260901165021:2:24b41f`
-*01.09. 16:50 UTC · Quelle: dream*
-
-Local execution (hand-action/interpreter) completes in sub-second time and succeeds where remote LLM calls fail repeatedly, establishing a clear preference hierarchy for reliability.
-
-### `dream:20260901165021:1:e1ebfe`
-*01.09. 16:50 UTC · Quelle: dream*
-
-Simultaneous 429/502 errors across multiple remote models indicate systemic API-level rate limiting, not isolated model failures, requiring a circuit breaker rather than per-model retries.
-
-### `dream:20260901164305:5:c481b5`
-*01.09. 16:43 UTC · Quelle: dream*
-
-39 skill proposals accumulate unimplemented because no mechanism exists to validate, prioritize, and deploy proposals as executable code.
-
-### `dream:20260901164305:4:03a715`
-*01.09. 16:43 UTC · Quelle: dream*
-
-Reflection loops (8 self-checks, 6 reflex uses) produce no measurable improvement because they lack automated verification of corrective actions.
-
-### `dream:20260901164305:3:1b0de4`
-*01.09. 16:43 UTC · Quelle: dream*
-
-Self-diagnosis reports zero organ errors while model inference fails repeatedly, indicating diagnostic coverage misses external dependency health.
-
-### `dream:20260901164305:2:285959`
-*01.09. 16:43 UTC · Quelle: dream*
-
-Extreme latency variance (5s vs 75s for successful calls) without SLA enforcement causes unpredictable iteration times and timeout cascades.
-
-### `dream:20260901164305:1:fd2ad0`
-*01.09. 16:43 UTC · Quelle: dream*
-
-Provider-level quota exhaustion (429 errors across all Google models simultaneously) makes per-model fallback ineffective; routing must track provider-level rate limits.
 
 ### `last_swarm_critique`
 *01.09. 16:00 UTC · Quelle: critic*

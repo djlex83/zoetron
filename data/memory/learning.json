@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 16:42:09",
+ "stand": "2026-09-15 16:52:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -117,12 +117,6 @@
    "quote": 0.0
   },
   {
-   "tool": "verbessere-die-modell-genauigkeit.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -187,6 +181,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "schwarminformationen-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
@@ -291,7 +291,7 @@
    "quote": 0.0
   },
   {
-   "tool": "schwarminformationen-aktualisieren.py",
+   "tool": "verbessere-die-modell-genauigkeit.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
