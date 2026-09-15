@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-15 05:35:21",
+ "stand": "2026-09-15 05:45:00",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "veraltete-schwarmziele-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -73,12 +73,6 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
-  },
-  {
-   "tool": "fernere-erinnerungen-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "veraltete-marktanalyse-auffrischen.py",
@@ -175,6 +169,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "fernere-erinnerungen-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
@@ -387,7 +387,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.829,
+ "haende_quote": 0.833,
  "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 28,
@@ -396,7 +396,7 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
+   "n": 27,
    "schnitt": 5.89
   }
  }

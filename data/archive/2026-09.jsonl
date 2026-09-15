@@ -51559,3 +51559,28 @@
 {"ts": 1788845377.5374243, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
 {"ts": 1788845446.1713364, "kind": "reflex_ok", "payload": {}}
 {"ts": 1788845447.8903222, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 23}}
+{"ts": 1788240791.8710372, "key": "dream:20260901053311:1:7d9207", "value": "Free-tier models on OpenRouter consistently hit 429 rate limits under sequential load, making them unreliable for multi-step workflows.", "source": "dream"}
+{"ts": 1788240791.871126, "key": "dream:20260901053311:2:0b1204", "value": "Nvidia Nemotron-3-Ultra succeeds but exhibits high latency variance (24–56s) and eventual 502 upstream overload, indicating capacity saturation.", "source": "dream"}
+{"ts": 1788240791.8711998, "key": "dream:20260901053311:3:fc7a1f", "value": "Evolutionary iteration (3 variants, critic feedback) lifted artifact score from 6 to 8–9, confirming that structured self-critique loops produce measurable quality gains.", "source": "dream"}
+{"ts": 1788240791.8712685, "key": "dream:20260901053311:4:7981c2", "value": "Calibration error of 1 point (predicted 5 vs actual 6) shows the predictor is well-tuned for this task class.", "source": "dream"}
+{"ts": 1788240791.8713326, "key": "dream:20260901053311:5:e88508", "value": "Graph traversal (bahnen) returned zero new edges despite code presence, suggesting the retrieval heuristic misses relevant connections when artifact structure is fragmented.", "source": "dream"}
+{"ts": 1788241165.4650202, "key": "dream:20260901053925:1:8be413", "value": "Free-tier endpoints on shared APIs are systematically prone to 429 rate-limit errors, making them unreliable for production workflows.", "source": "dream"}
+{"ts": 1788241165.4651043, "key": "dream:20260901053925:2:a73b5c", "value": "Even previously reliable models can fail with upstream 502 errors, so dependency on a single endpoint is a single point of failure.", "source": "dream"}
+{"ts": 1788241165.465171, "key": "dream:20260901053925:3:660660", "value": "Skill proposals generated during consolidation cycles require a validation gate to prevent unvetted ideas from consuming execution resources.", "source": "dream"}
+{"ts": 1788241165.4652455, "key": "dream:20260901053925:4:992fc1", "value": "Swarm execution without explicit convergence criteria wastes cycles, as a score of 6 with no convergence demonstrates.", "source": "dream"}
+{"ts": 1788241165.4653268, "key": "dream:20260901053925:5:b9c2b1", "value": "Latency variance on the same model (7.9s to 51.4s) means timeout configuration is critical to avoid blocking the entire pipeline.", "source": "dream"}
+{"ts": 1788845552.7535276, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 101.1, "tokens_ein": 1352, "tokens_aus": 663}}
+{"ts": 1788845552.754132, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with health-tracking, exponential backoff+jitter (max 2 retries), and circuit-breaker cooldown that auto-fails over to the prioritized fallback chain."}}
+{"ts": 1788845552.7541912, "kind": "skill_proposal", "payload": {"proposal": "Create a path-resolution utility that canonicalizes all file accesses against ZOETRON_DATA and use it as a mandatory pre-check in every hand_action."}}
+{"ts": 1788845552.7542465, "kind": "skill_proposal", "payload": {"proposal": "Add a dream-to-skill validation gate: each proposal must pass a dry-run test against recent failure logs before entering the skill registry."}}
+{"ts": 1788845552.7543018, "kind": "skill_proposal", "payload": {"proposal": "Modify drive emission to check goal convergence history and suppress re-emission for N cycles after a converged act_done."}}
+{"ts": 1788845552.7543554, "kind": "skill_proposal", "payload": {"proposal": "Instrument hand_action with the same path-resolution and error-context capture that reflexes use, eliminating the manual/reflex reliability gap."}}
+{"ts": 1788845552.7544096, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788845634.1185033, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 79.4, "tokens_ein": 489, "tokens_aus": 532}}
+{"ts": 1788845634.1187057, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Viele Modelle scheitern noch oft. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788845634.118794, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich testen", "why": "Es gibt viele Skill-Ideen, aber kaum Evolution. Nur durch Testen werden sie nützlich.", "signal": "gap"}}
+{"ts": 1788845634.1188602, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Kritiken und Ziele vom Schwarm sind veraltet. Frische Infos helfen bei Zusammenarbeit.", "signal": "stale"}}
+{"ts": 1788845637.1227589, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.75, "gelesen": 2}}
+{"ts": 1788845637.1254556, "kind": "reflex_used", "payload": {"goal": "Schwarm-Lernen wiederbeleben", "tool": "schwarmwissen-wieder-auffrischen.py", "ok": true}}
+{"ts": 1788845637.6705852, "kind": "act_done", "payload": {"goal_title": "Schwarm-Lernen wiederbeleben", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788846166.4164262, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

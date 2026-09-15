@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11253 Fakten** · Stand 2026-09-15 05:37 UTC · aktualisiert bei jedem Herzschlag
+**11248 Fakten** · Stand 2026-09-15 05:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7128
+- **dream:** 7123
 - **swarm_artifact:** 1645
 - **last_swarm_critique:** 964
 - **last_swarm_goal:** 699
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915054425:5:b87e79`
+*15.09. 05:44 UTC · Quelle: dream*
+
+The system successfully generated meta-skill proposals (adaptive fallback, scoped-goal template) that address its own failure modes, demonstrating the value of reflective self-improvement.
+
+### `dream:20260915054425:4:dde420`
+*15.09. 05:44 UTC · Quelle: dream*
+
+Calibration predictions overestimate actual performance (predicted 6, actual 4), so self-assessment mechanisms should be calibrated with historical data.
+
+### `dream:20260915054425:3:e046a2`
+*15.09. 05:44 UTC · Quelle: dream*
+
+Evolutionary runs can improve scores significantly (from 4 to 9), but the swarm still failed to converge, suggesting that more cycles or better critic feedback are needed.
+
+### `dream:20260915054425:2:85693a`
+*15.09. 05:44 UTC · Quelle: dream*
+
+The simulation phase consistently requires multiple revisions (4) and flags risks, indicating that initial skill proposals are often incomplete and need iterative refinement.
+
+### `dream:20260915054425:1:20ccd2`
+*15.09. 05:44 UTC · Quelle: dream*
+
+Model calls frequently fail due to timeouts and rate limits, so a dynamic fallback chain that monitors error rates and latency is essential for reliability.
 
 ### `dream:20260915053349:5:2eff61`
 *15.09. 05:33 UTC · Quelle: dream*
@@ -41291,56 +41316,6 @@ The nvidia/nemotron-3-ultra model succeeds but exhibits high latency variance (8
 *01.09. 05:46 UTC · Quelle: dream*
 
 Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
-
-### `dream:20260901053925:5:b9c2b1`
-*01.09. 05:39 UTC · Quelle: dream*
-
-Latency variance on the same model (7.9s to 51.4s) means timeout configuration is critical to avoid blocking the entire pipeline.
-
-### `dream:20260901053925:4:992fc1`
-*01.09. 05:39 UTC · Quelle: dream*
-
-Swarm execution without explicit convergence criteria wastes cycles, as a score of 6 with no convergence demonstrates.
-
-### `dream:20260901053925:3:660660`
-*01.09. 05:39 UTC · Quelle: dream*
-
-Skill proposals generated during consolidation cycles require a validation gate to prevent unvetted ideas from consuming execution resources.
-
-### `dream:20260901053925:2:a73b5c`
-*01.09. 05:39 UTC · Quelle: dream*
-
-Even previously reliable models can fail with upstream 502 errors, so dependency on a single endpoint is a single point of failure.
-
-### `dream:20260901053925:1:8be413`
-*01.09. 05:39 UTC · Quelle: dream*
-
-Free-tier endpoints on shared APIs are systematically prone to 429 rate-limit errors, making them unreliable for production workflows.
-
-### `dream:20260901053311:5:e88508`
-*01.09. 05:33 UTC · Quelle: dream*
-
-Graph traversal (bahnen) returned zero new edges despite code presence, suggesting the retrieval heuristic misses relevant connections when artifact structure is fragmented.
-
-### `dream:20260901053311:4:7981c2`
-*01.09. 05:33 UTC · Quelle: dream*
-
-Calibration error of 1 point (predicted 5 vs actual 6) shows the predictor is well-tuned for this task class.
-
-### `dream:20260901053311:3:fc7a1f`
-*01.09. 05:33 UTC · Quelle: dream*
-
-Evolutionary iteration (3 variants, critic feedback) lifted artifact score from 6 to 8–9, confirming that structured self-critique loops produce measurable quality gains.
-
-### `dream:20260901053311:2:0b1204`
-*01.09. 05:33 UTC · Quelle: dream*
-
-Nvidia Nemotron-3-Ultra succeeds but exhibits high latency variance (24–56s) and eventual 502 upstream overload, indicating capacity saturation.
-
-### `dream:20260901053311:1:7d9207`
-*01.09. 05:33 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits under sequential load, making them unreliable for multi-step workflows.
 
 ### `last_swarm_critique`
 *01.09. 04:58 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 05:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 05:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -32,8 +32,8 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
 - Systemfehler reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system successfully generated meta-skill proposals (adaptive fallback, scoped-goal template) that address its own failure modes, demonstrating the
+- Calibration predictions overestimate actual performance (predicted 6, actual 4), so self-assessment mechanisms should be calibrated with historical da
+- Evolutionary runs can improve scores significantly (from 4 to 9), but the swarm still failed to converge, suggesting that more cycles or better critic
+- The simulation phase consistently requires multiple revisions (4) and flags risks, indicating that initial skill proposals are often incomplete and ne
+- Model calls frequently fail due to timeouts and rate limits, so a dynamic fallback chain that monitors error rates and latency is essential for reliab
 - Pruning removed 27 items without evidence that critic-tagged 'load-bearing' facts were spared, risking knowledge loss.
 - Calibration overestimated cycles by 50% (pred 6 vs actual 4), confirming need for per-goal-type EMA tracker.
 - Reflex→Swarm→Simulation→Revision→Hand-action→TOR pipeline succeeded on second pass, proving the critique loop works when triggered.
@@ -51,11 +56,6 @@
 - Swarm cycles repeatedly lack required critic/planner roles and converge prematurely (score delta <1), wasting compute on stale knowledge.
 - Hand-action timeouts (20s) reveal missing preflight checks for paths, permissions, and dependencies before execution.
 - Model rate limits (429s) and silent 200-level errors (Nemotron 502-in-200) cause cascading failures without per-model health tracking and response-bod
-- Successful reflex-driven swarm-goal update (converged, zero errors) demonstrates that autonomous maintenance reflexes outperform deferred manual inter
-- Model latency variance (32–41s) and explicit circuit-breaker proposals confirm free-tier endpoints suffer frequent 429 rate limits requiring automated
-- Swarm-involved goals consistently underestimate effort by ~25%, validated by the calibrated_swarm_estimate proposal's 1.25× multiplier derived from hi
-- Recurring drive goals for model error reduction and swarm knowledge refresh reveal persistent reliability and freshness deficits despite reflex mainte
-- Identical skill proposals generated across two dream cycles without implementation indicates a proposal-to-execution gap that stalls capability growth
 
 ---
 
