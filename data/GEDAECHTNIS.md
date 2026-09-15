@@ -1,18 +1,43 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11239 Fakten** · Stand 2026-09-15 13:56 UTC · aktualisiert bei jedem Herzschlag
+**11222 Fakten** · Stand 2026-09-15 14:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
-- **swarm_artifact:** 1625
+- **dream:** 7113
+- **swarm_artifact:** 1619
 - **last_swarm_critique:** 972
 - **last_swarm_goal:** 707
 - **anti_pattern:** 371
 - **strategy:** 188
 - **tool:** 152
-- **hand_result:** 78
+- **hand_result:** 77
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915142224:5:016a1b`
+*15.09. 14:22 UTC · Quelle: dream*
+
+Multiple skill proposals are generated but none are tracked, leading to potential duplication of effort.
+
+### `dream:20260915142224:4:0a951a`
+*15.09. 14:22 UTC · Quelle: dream*
+
+Consistent pruning of facts and events highlights the need for ongoing memory consolidation to maintain relevance.
+
+### `dream:20260915142224:3:8cecef`
+*15.09. 14:22 UTC · Quelle: dream*
+
+The reflex action successfully updated stale group data, proving that automated data refresh can be reliable.
+
+### `dream:20260915142224:2:6bfadb`
+*15.09. 14:22 UTC · Quelle: dream*
+
+Timeout errors on large models like Nemotron indicate that request timeouts must be handled with fallback mechanisms.
+
+### `dream:20260915142224:1:25a4ec`
+*15.09. 14:22 UTC · Quelle: dream*
+
+Repeated 429 errors from Google Gemma models show that rate limiting is the dominant cause of model failures.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Alte Fakten aktualisiere:2`
 *15.09. 13:53 UTC · Quelle: evolution*
@@ -41197,31 +41222,6 @@ nvidia/nemotron-3-ultra-550b-a55b:free succeeds reliably but shows high latency 
 
 The model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limiting errors, making it unreliable without exponential backoff and automatic fallback routing.
 
-### `dream:20260901141416:5:b25514`
-*01.09. 14:14 UTC · Quelle: dream*
-
-The simulation-driven revision loop (verdict=revise, risks=3, revisions=3) indicates skill proposals require multi-pass validation before consolidation.
-
-### `dream:20260901141416:4:05f005`
-*01.09. 14:14 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free exhibits high latency variance (76-158s) and intermittent 502 upstream errors.
-
-### `dream:20260901141416:3:928c34`
-*01.09. 14:14 UTC · Quelle: dream*
-
-z-ai/glm-5.2:free offers low latency (~4.5s) when requests succeed but fails with 429 errors >80% of the time.
-
-### `dream:20260901141416:2:6bc8af`
-*01.09. 14:14 UTC · Quelle: dream*
-
-inclusionai/ling-3.0-flash-fin:free is the only model with consistent availability (100% success in logs) albeit at 16-18s latency.
-
-### `dream:20260901141416:1:f806ec`
-*01.09. 14:14 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream overloads, making them unreliable as primary endpoints.
-
 ### `last_swarm_critique`
 *01.09. 14:06 UTC · Quelle: critic*
 
@@ -41231,56 +41231,6 @@ score=8; issues=Drei separate Artefakte (adaptive Mutationsraten, Benchmark-Feed
 *01.09. 13:54 UTC · Quelle: system*
 
 Evolutionelle Verbesserung fördern
-
-### `dream:20260901135302:5:3af592`
-*01.09. 13:53 UTC · Quelle: dream*
-
-Swarm convergence in one cycle with high score masks the underlying model instability that preceded it.
-
-### `dream:20260901135302:4:4b33c1`
-*01.09. 13:53 UTC · Quelle: dream*
-
-Proposed skills accumulate (45+) but require manual tool invocation to test and activate, creating a deployment gap.
-
-### `dream:20260901135302:3:6f2b2a`
-*01.09. 13:53 UTC · Quelle: dream*
-
-Calibration consistently underestimates actual effort (predicted 6 vs actual 9), causing under-resourced planning cycles.
-
-### `dream:20260901135302:2:247456`
-*01.09. 13:53 UTC · Quelle: dream*
-
-Self-diagnosis treats API failures as transient rather than organ-level degradation, so health signals never trigger fallback logic.
-
-### `dream:20260901135302:1:6ba126`
-*01.09. 13:53 UTC · Quelle: dream*
-
-Rate-limited endpoints (429 errors) repeatedly block primary model calls while fallback models succeed with high latency, revealing no automatic quota-aware routing.
-
-### `dream:20260901134545:5:14298d`
-*01.09. 13:45 UTC · Quelle: dream*
-
-Hand_action failed because relative paths did not resolve to real files under the data path, indicating missing pre-execution argument validation.
-
-### `dream:20260901134545:4:384412`
-*01.09. 13:45 UTC · Quelle: dream*
-
-Calibration underestimated effort by 50% (predicted 6 vs actual 9), revealing a systematic undercounting of iteration overhead.
-
-### `dream:20260901134545:3:3c08e2`
-*01.09. 13:45 UTC · Quelle: dream*
-
-The simulation acted as a circuit breaker: after applying its 3 revisions, previously failing models resumed succeeding.
-
-### `dream:20260901134545:2:fa4370`
-*01.09. 13:45 UTC · Quelle: dream*
-
-Conserve mode with max_iterations=1 is too restrictive for multi-step validation tasks, causing incomplete execution under high stress.
-
-### `dream:20260901134545:1:cec646`
-*01.09. 13:45 UTC · Quelle: dream*
-
-Simultaneous 429 errors across multiple models indicate a shared API rate-limit bottleneck, not model-specific failures, requiring provider diversification or backoff.
 
 ### `last_swarm_critique`
 *01.09. 13:26 UTC · Quelle: critic*

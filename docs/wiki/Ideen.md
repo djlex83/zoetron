@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 13:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 14:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 3×)*
-- Entfernte Träume kombinieren *(wieder aufgegriffen: 2×)*
+- Veraltete Fakten aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple skill proposals are generated but none are tracked, leading to potential duplication of effort.
+- Consistent pruning of facts and events highlights the need for ongoing memory consolidation to maintain relevance.
+- The reflex action successfully updated stale group data, proving that automated data refresh can be reliable.
+- Timeout errors on large models like Nemotron indicate that request timeouts must be handled with fallback mechanisms.
+- Repeated 429 errors from Google Gemma models show that rate limiting is the dominant cause of model failures.
 - The coexistence of multiple model failures and successful completions underscores the need for adaptive model routing and robust error handling.
 - Self-generated drive goals to reduce model errors, update swarm facts, and leverage dreams demonstrate emergent meta-cognition and self-improvement.
 - Timeout errors from large models such as nvidia/nemotron-3-ultra-550b suggest that very large models are unsuitable for latency-sensitive tasks.
@@ -51,11 +56,6 @@
 - Pruning old facts and events reduces memory overhead and improves performance.
 - The dots-studio model succeeded with low latency, showing it is currently more reliable.
 - Repeated 429 errors from free Google models indicate rate limiting as a primary failure cause.
-- Current model routing is reactive fallback rather than proactive health-based selection.
-- Memory pruning occurs regularly but does not prevent recurring failure patterns from repeating.
-- The system generates skill proposals but there is no evidence they are being implemented, creating a proposal-execution gap.
-- dots-studio/dots-3-note-preview:free is the only consistently available model across all recorded sessions.
-- Google Gemma 4 models consistently fail with HTTP 429 rate-limit errors, making them unreliable for production use.
 
 ---
 
