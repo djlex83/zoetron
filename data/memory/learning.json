@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 09:56:55",
+ "stand": "2026-09-15 10:06:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -111,12 +111,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-gruppen-informationen-aktualis.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -199,6 +193,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "traumerkenntnisse-in-fähigkeiten-umsetze.py",
@@ -291,6 +291,12 @@
    "quote": 0.0
   },
   {
+   "tool": "veraltete-gruppen-informationen-aktualis.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltetes-wissen-auffrischen-und-aktual.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -352,12 +358,6 @@
   },
   {
    "tool": "schwarminformationen-aktualisieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

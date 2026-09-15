@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11239 Fakten** · Stand 2026-09-15 09:58 UTC · aktualisiert bei jedem Herzschlag
+**11239 Fakten** · Stand 2026-09-15 10:08 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7133
 - **swarm_artifact:** 1623
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 25
 
 ---
+
+### `dream:20260915100607:5:7f9d8d`
+*15.09. 10:06 UTC · Quelle: dream*
+
+Drive goals consistently target model reliability and data freshness, marking them as core system concerns.
+
+### `dream:20260915100607:4:3044e5`
+*15.09. 10:06 UTC · Quelle: dream*
+
+The reflex 'fähigkeiten-durch-simulation-prüfen.py' successfully validated evolution and simulation, demonstrating automated capability testing converges.
+
+### `dream:20260915100607:3:6161fe`
+*15.09. 10:06 UTC · Quelle: dream*
+
+Pruning 6 facts and 17 events improved signal-to-noise ratio, confirming periodic garbage collection is beneficial.
+
+### `dream:20260915100607:2:af3ae8`
+*15.09. 10:06 UTC · Quelle: dream*
+
+The dots-studio model, while functional, exhibits latency of 21–42 s, making it unsuitable for time-critical operations.
+
+### `dream:20260915100607:1:1e946f`
+*15.09. 10:06 UTC · Quelle: dream*
+
+Repeated 429 errors from google/gemma free models indicate rate limiting, requiring automatic failover to alternative endpoints.
 
 ### `dream:20260915095612:5:272691`
 *15.09. 09:56 UTC · Quelle: dream*
@@ -41301,31 +41326,6 @@ Nvidia Nemotron succeeds but exhibits extreme latency variance (5.8s–161s) req
 *01.09. 10:06 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429 rate limits making them unreliable for primary workloads.
-
-### `dream:20260901095740:5:a8c99c`
-*01.09. 09:57 UTC · Quelle: dream*
-
-Drive goals repeat thematic priorities (learning from failure, promoting proposals, connecting memories) without concrete execution criteria, causing goal drift.
-
-### `dream:20260901095740:4:4bddf4`
-*01.09. 09:57 UTC · Quelle: dream*
-
-Multiple identical skill proposals appear in the log, indicating proposal generation lacks deduplication and wastes consolidation cycles.
-
-### `dream:20260901095740:3:0fb0ea`
-*01.09. 09:57 UTC · Quelle: dream*
-
-Upstream provider errors (502 from Nvidia) cascade as silent failures with HTTP 200, requiring response-body validation not just status codes.
-
-### `dream:20260901095740:2:fbfc30`
-*01.09. 09:57 UTC · Quelle: dream*
-
-A single reliable fallback model (inclusionai/ling-3.0-flash-fin) maintains availability when all primary models fail, proving the value of a verified backup.
-
-### `dream:20260901095740:1:3e0f31`
-*01.09. 09:57 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary providers without rate-limit management.
 
 ### `last_swarm_critique`
 *01.09. 09:38 UTC · Quelle: critic*

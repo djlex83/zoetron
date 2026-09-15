@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 09:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 10:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,21 +12,21 @@
 - Wrap hand actions in async timeout guards with a circuit breaker to prevent cascade blocking. *(hatte die Idee 3×)*
 - model_health_router_with_fallback(): tracks latency/429 rates per endpoint; fails over within 2s to next-healt *(hatte die Idee 3×)*
 - hand_action_preflight_with_dependency_graph(): checks paths, permissions, and transitive deps; returns structu *(hatte die Idee 3×)*
-- Implement a ModelHealthMonitor that tracks per-model success, latency, and quota, feeding a dynamic fallback r *(hatte die Idee 2×)*
-- Build a QuotaAwareScheduler that spreads requests across provider accounts to prevent 429 bursts. *(hatte die Idee 2×)*
-- Add an AutoUnblockTimer that re-enables blocked models after exponential backoff with a probe request. *(hatte die Idee 2×)*
-- Create a ResilienceOrchestrator that wires circuit breaker, freshness checker, validator, convergence gate, an *(hatte die Idee 2×)*
-- Instrument external API calls with structured latency/error metrics pushed to the self-diagnosis organ for end *(hatte die Idee 2×)*
 - RateLimitBackoff: wraps model calls with exponential backoff and automatic fallback to a secondary provider. *(hatte die Idee 2×)*
 - FallbackRouter: maintains a health‑scored list of models and selects the best available one in real time. *(hatte die Idee 2×)*
 - PruningImpactAuditor: samples pruned facts and verifies retrieval success, adjusting retention thresholds. *(hatte die Idee 2×)*
+- ReflexOutcomeTracker: logs each reflex invocation with tool, success, latency, and goal context for later anal *(hatte die Idee 2×)*
+- Build a model router that monitors latency and errors, applying exponential backoff and switching to ranked al *(hatte die Idee 2×)*
+- Instrument every model call with latency, token usage, and error metrics, then expose a dashboard for dynamic  *(hatte die Idee 2×)*
+- Implement a model router with latency monitoring, exponential backoff, and ranked fallbacks. *(hatte die Idee 2×)*
+- Deploy a response cache with TTL keyed by prompt hash to reduce redundant model calls. *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 23×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle stabiler machen *(wieder aufgegriffen: 6×)*
+- Modelle stabiler machen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
@@ -34,13 +34,18 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Veraltete Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Ferne Träume kombinieren *(wieder aufgegriffen: 3×)*
 - Modellfehler beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Ziele auffrischen *(wieder aufgegriffen: 3×)*
 - Veraltete Fakten auffrischen *(wieder aufgegriffen: 3×)*
+- Ferngedächtnisse verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals consistently target model reliability and data freshness, marking them as core system concerns.
+- The reflex 'fähigkeiten-durch-simulation-prüfen.py' successfully validated evolution and simulation, demonstrating automated capability testing conver
+- Pruning 6 facts and 17 events improved signal-to-noise ratio, confirming periodic garbage collection is beneficial.
+- The dots-studio model, while functional, exhibits latency of 21–42 s, making it unsuitable for time-critical operations.
+- Repeated 429 errors from google/gemma free models indicate rate limiting, requiring automatic failover to alternative endpoints.
 - Skill proposals remain theoretical without a validation and deployment pipeline to integrate them into the system.
 - Self-diagnosis is valuable but must be run frequently to catch issues before they cascade into system failures.
 - The gap between high-level dreams and concrete actions is a critical bottleneck that requires explicit task decomposition.
@@ -51,11 +56,6 @@
 - Swarm runs evolve but fail to converge, suggesting missing early-stopping criteria based on score stability.
 - The only successful model exhibits ~22s latency, highlighting the need for latency-aware provider selection.
 - Model timeouts and 429 rate-limit errors dominate failures, indicating a lack of exponential backoff and fallback mechanisms.
-- Recall of prior artifacts before planning reduces redundant computation and preserves context.
-- Calibration predictions are within 1 point of actual, indicating self-assessment is reasonably accurate.
-- Evolution runs raise scores from 6 to 9, showing iterative refinement is an effective improvement loop.
-- The dots-studio/dots-3-note-preview:free model consistently succeeds with acceptable latency, making it the reliable default.
-- Repeated 429 errors from google/gemma models indicate rate-limiting, not model unsuitability.
 
 ---
 
