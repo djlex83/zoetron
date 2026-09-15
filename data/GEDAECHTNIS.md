@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11242 Fakten** · Stand 2026-09-15 01:23 UTC · aktualisiert bei jedem Herzschlag
+**11246 Fakten** · Stand 2026-09-15 01:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7133
+- **dream:** 7138
 - **swarm_artifact:** 1635
-- **last_swarm_critique:** 959
-- **last_swarm_goal:** 694
-- **anti_pattern:** 375
-- **strategy:** 190
-- **tool:** 150
-- **hand_result:** 82
+- **last_swarm_critique:** 960
+- **last_swarm_goal:** 695
+- **anti_pattern:** 373
+- **strategy:** 189
+- **tool:** 151
+- **hand_result:** 81
 - **aktuell_organfehler:** 24
 
 ---
+
+### `tool:veraltete-fakten-erneuern`
+*15.09. 01:54 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Fakten erneuern'. Datei: data/tools/veraltete-fakten-erneuern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*15.09. 01:54 UTC · Quelle: critic*
+
+score=8; issues=Heuristic revision fallback uses basic regex substitution (limited semantic understanding); Simulation tools loading depends on external modules that may not exist in all environments; Assumes specific directory structure (memory/, artefakte/, 
+
+### `last_swarm_goal`
+*15.09. 01:46 UTC · Quelle: system*
+
+Veraltete Fakten erneuern
+
+### `dream:20260915014541:5:db1833`
+*15.09. 01:45 UTC · Quelle: dream*
+
+Lightweight hand actions (0.22s, exit 0) and artifact health checks (235-line Python running) provide fast, reliable feedback loops that don't depend on external model APIs.
+
+### `dream:20260915014541:4:9cd906`
+*15.09. 01:45 UTC · Quelle: dream*
+
+Simulation-driven fact revision (verdict: revise, 5 risks identified, 3/5 revisions applied) proves effective for knowledge maintenance when paired with a working model.
+
+### `dream:20260915014541:3:85607e`
+*15.09. 01:45 UTC · Quelle: dream*
+
+Only dots-studio/dots-3-note-preview:free demonstrated consistent success across 5 calls with acceptable latency (19-42s), establishing it as the sole reliable backbone model in the current roster.
+
+### `dream:20260915014541:2:9b6e2e`
+*15.09. 01:45 UTC · Quelle: dream*
+
+The three-strike blocking policy (1800s penalty) amplifies transient failures into extended outages, as seen when a single 502 error triggered consecutive retries that locked out Nemotron for 30 minutes.
+
+### `dream:20260915014541:1:3a0876`
+*15.09. 01:45 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic unavailability: Google Gemma variants consistently return 429 rate limits while Nvidia Nemotron returns 502 upstream errors, making them unreliable for production workloads.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Modelle zuverlässiger ma:2`
 *15.09. 01:20 UTC · Quelle: evolution*
@@ -41336,16 +41376,6 @@ The same model alternates between success and failure, so a single retry is unre
 *01.09. 02:03 UTC · Quelle: dream*
 
 429 rate-limit errors strike every model uniformly, proving the bottleneck is the OpenRouter API gateway, not any individual model endpoint.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Häufige Fehlerquellen fi:2`
-*01.09. 01:12 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Functional Reactive Step-Pipeline with Async Auto-Patching - Implement a single functional pipeline script where data flows through a series of pure functions: `check_organ_1() -> repair_organ_1() -> check_organ_2() -> repair
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Häufige Fehlerquellen fi:1`
-*01.09. 01:12 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Declarative Configuration-Driven Remediation Engine - Develop a single entry point script that reads a YAML configuration file defining the three organs, their potential error sources, and the exact remediation steps (e.g., r
 
 ### `last_swarm_critique`
 *01.09. 01:12 UTC · Quelle: critic*
