@@ -1,0 +1,3605 @@
+{
+  "status": "success",
+  "data_dir": "/workspace/zoetron/data",
+  "documents_analyzed": 305,
+  "connections_found": 4186,
+  "connections": [
+    {
+      "source": "s01_1789035345_modell-gesundheitsregister-auditieren-und-fehlerkategorien-e.md",
+      "target": "s01_1789035348_router-basiertes-fehler-vermeidungs-setup-mit-resilientllm.md",
+      "strength": 1.0
+    },
+    {
+      "source": "s01_1789082718_insight-zu-f-higkeit-pipeline-bauen-import-bestehender-organ.md",
+      "target": "s01_1789082753_kalibrierungs-multiplikator-4-5-in-sch-tzungen-einbauen.md",
+      "strength": 0.9985
+    },
+    {
+      "source": "s01_1789467696_selbstverifikation-ohne-menschliche-review.md",
+      "target": "s01_1789467700_autonomes-lernen-aus-fehlern-ohne-anleitung.md",
+      "strength": 0.9948
+    },
+    {
+      "source": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "target": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+      "strength": 0.9916
+    },
+    {
+      "source": "s04_1789442740_knowledgegraph-mit-frischen-schwarm-erkenntnissen-anreichern.md",
+      "target": "s04_1789442762_konsolidierungs-zyklus-dream-f-r-schwarm-wissen-ansto-en.md",
+      "strength": 0.9891
+    },
+    {
+      "source": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
+      "strength": 0.9651
+    },
+    {
+      "source": "s01_1789082753_kalibrierungs-multiplikator-4-5-in-sch-tzungen-einbauen.md",
+      "target": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+      "strength": 0.951
+    },
+    {
+      "source": "s01_1789082753_kalibrierungs-multiplikator-4-5-in-sch-tzungen-einbauen.md",
+      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "strength": 0.9509
+    },
+    {
+      "source": "s01_1789082718_insight-zu-f-higkeit-pipeline-bauen-import-bestehender-organ.md",
+      "target": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+      "strength": 0.9476
+    },
+    {
+      "source": "s01_1789082718_insight-zu-f-higkeit-pipeline-bauen-import-bestehender-organ.md",
+      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "strength": 0.9475
+    },
+    {
+      "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "strength": 0.947
+    },
+    {
+      "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+      "target": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+      "strength": 0.947
+    },
+    {
+      "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+      "target": "s01_1789082753_kalibrierungs-multiplikator-4-5-in-sch-tzungen-einbauen.md",
+      "strength": 0.9436
+    },
+    {
+      "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+      "target": "s01_1789082718_insight-zu-f-higkeit-pipeline-bauen-import-bestehender-organ.md",
+      "strength": 0.9402
+    },
+    {
+      "source": "s01_1789035345_modell-gesundheitsregister-auditieren-und-fehlerkategorien-e.md",
+      "target": "s01_1789035350_kontosperre-integration-fuer-429-fehler-als-schutzschicht.md",
+      "strength": 0.9395
+    },
+    {
+      "source": "s01_1789035348_router-basiertes-fehler-vermeidungs-setup-mit-resilientllm.md",
+      "target": "s01_1789035350_kontosperre-integration-fuer-429-fehler-als-schutzschicht.md",
+      "strength": 0.9395
+    },
+    {
+      "source": "s01_1789082753_kalibrierungs-multiplikator-4-5-in-sch-tzungen-einbauen.md",
+      "target": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "strength": 0.9389
+    },
+    {
+      "source": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+      "target": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "strength": 0.9379
+    },
+    {
+      "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+      "target": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "strength": 0.9378
+    },
+    {
+      "source": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "target": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "strength": 0.9378
+    },
+    {
+      "source": "s01_1789082718_insight-zu-f-higkeit-pipeline-bauen-import-bestehender-organ.md",
+      "target": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "strength": 0.9362
+    },
+    {
+      "source": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "target": "s01_1789111069_self-healing-fallback-logic-in-router.md",
+      "strength": 0.9357
+    },
+    {
+      "source": "s01_1789050342_semantische-pfad-reconstruction-fern-tr-ume-wieder-verkn-pfe.md",
+      "target": "s01_1789050345_konvergenz-tor-pr-fung-messbarer-fortschritt-der-traum-recon.md",
+      "strength": 0.9312
+    },
+    {
+      "source": "s01_1789035345_modell-gesundheitsregister-auditieren-und-fehlerkategorien-e.md",
+      "target": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "strength": 0.9243
+    },
+    {
+      "source": "s01_1789035348_router-basiertes-fehler-vermeidungs-setup-mit-resilientllm.md",
+      "target": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "strength": 0.9243
+    },
+    {
+      "source": "s01_1789043561_swarm-task-queue-mit-persistenz-und-heartbeat.md",
+      "target": "s01_1789043608_autonomer-schwarm-start-via-drive-integration.md",
+      "strength": 0.92
+    },
+    {
+      "source": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+      "target": "s04_1789094874_automatisierter-genauigkeits-check-als-reflex-implementieren.md",
+      "strength": 0.9197
+    },
+    {
+      "source": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "target": "s04_1789094874_automatisierter-genauigkeits-check-als-reflex-implementieren.md",
+      "strength": 0.9196
+    },
+    {
+      "source": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
+      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "strength": 0.9187
+    },
+    {
+      "source": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
+      "target": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+      "strength": 0.9187
+    },
+    {
+      "source": "s01_1789111069_self-healing-fallback-logic-in-router.md",
+      "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
+      "strength": 0.9185
+    },
+    {
+      "source": "s04_1789094863_modell-gesundheitsregister-f-r-genauigkeitspr-fung-erweitern.md",
+      "target": "s04_1789094901_genauigkeits-dashboard-mit-trendanalyse-bauen.md",
+      "strength": 0.9178
+    },
+    {
+      "source": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
+      "strength": 0.9148
+    },
+    {
+      "source": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+      "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
+      "strength": 0.9148
+    },
+    {
+      "source": "s01_1789082753_kalibrierungs-multiplikator-4-5-in-sch-tzungen-einbauen.md",
+      "target": "s04_1789094863_modell-gesundheitsregister-f-r-genauigkeitspr-fung-erweitern.md",
+      "strength": 0.9135
+    },
+    {
+      "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+      "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
+      "strength": 0.9126
+    },
+    {
+      "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+      "target": "s04_1789094874_automatisierter-genauigkeits-check-als-reflex-implementieren.md",
+      "strength": 0.9116
+    },
+    {
+      "source": "s01_1789035345_modell-gesundheitsregister-auditieren-und-fehlerkategorien-e.md",
+      "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
+      "strength": 0.9106
+    },
+    {
+      "source": "s01_1789035348_router-basiertes-fehler-vermeidungs-setup-mit-resilientllm.md",
+      "target": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
+      "strength": 0.9106
+    },
+    {
+      "source": "s01_1789082753_kalibrierungs-multiplikator-4-5-in-sch-tzungen-einbauen.md",
+      "target": "s01_1789111069_self-healing-fallback-logic-in-router.md",
+      "strength": 0.9084
+    },
+    {
+      "source": "s01_1789082718_insight-zu-f-higkeit-pipeline-bauen-import-bestehender-organ.md",
+      "target": "s04_1789094863_modell-gesundheitsregister-f-r-genauigkeitspr-fung-erweitern.md",
+      "strength": 0.9066
+    },
+    {
+      "source": "s01_1789082718_insight-zu-f-higkeit-pipeline-bauen-import-bestehender-organ.md",
+      "target": "s01_1789111069_self-healing-fallback-logic-in-router.md",
+      "strength": 0.9057
+    },
+    {
+      "source": "s01_1789035345_modell-gesundheitsregister-auditieren-und-fehlerkategorien-e.md",
+      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "strength": 0.9023
+    },
+    {
+      "source": "s01_1789035348_router-basiertes-fehler-vermeidungs-setup-mit-resilientllm.md",
+      "target": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "strength": 0.9023
+    },
+    {
+      "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+      "target": "s01_1789111069_self-healing-fallback-logic-in-router.md",
+      "strength": 0.9018
+    },
+    {
+      "source": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+      "target": "s04_1789094863_modell-gesundheitsregister-f-r-genauigkeitspr-fung-erweitern.md",
+      "strength": 0.9
+    },
+    {
+      "source": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
+      "target": "s08_1789063381_validierung-der-neuen-verbindungen-durch-replay-nachspiel-un.md",
+      "strength": 0.8988
+    },
+    {
+      "source": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+      "target": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
+      "strength": 0.8976
+    },
+    {
+      "source": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+      "target": "s04_1789094874_automatisierter-genauigkeits-check-als-reflex-implementieren.md",
+      "strength": 0.8945
+    },
+    {
+      "source": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+      "target": "s04_1789094863_modell-gesundheitsregister-f-r-genauigkeitspr-fung-erweitern.md",
+      "strength": 0.8941
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_id": "s08_1789229132_standardisierter-absoluter-pfad-aufl-ser-f-r-zoetron-data.md",
+      "size": 303,
+      "members": [
+        {
+          "document": "GEDAECHTNIS.md",
+          "themes": [
+            "dream",
+            "utc",
+            "quelle",
+            "the",
+            "and"
+          ],
+          "preview": "# 🧠 Zoetrons Gedächtnis (LIVE)\n\n**11224 Fakten** · Stand 2026-09-15 17:44 UTC · aktualisiert bei jedem Herzschlag\n\n- **dream:** 7123\n- **swarm_artifact:** 1613\n- **last_swarm_critique:** 975\n- **last_"
+        },
+        {
+          "document": "IDEEN.md",
+          "themes": [
+            "idee",
+            "hatte",
+            "and",
+            "wieder",
+            "aufgegriffen"
+          ],
+          "preview": "# 💡 Zoetrons Ideen-Board (AUTONOM)\n\n**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 17:42 UTC\n\n"
+        },
+        {
+          "document": "Schwarminformationen_aktualisieren.md",
+          "themes": [
+            "append",
+            "lines",
+            "phase",
+            "item",
+            "path"
+          ],
+          "preview": "# Aktualisiert am 2026-09-15T16:52:37.390908\n\n# Aktualisiert am 2026-09-15T02:22:38.890284\n\n# Aktualisiert am 2026-09-14T14:38:18.434281\n\n# Aktualisiert am 2026-09-14T14:35:04.149013\n\nDas Artefakt lie"
+        },
+        {
+          "document": "TABELLE.md",
+          "themes": [
+            "model",
+            "free",
+            "tier",
+            "rate",
+            "failures"
+          ],
+          "preview": "# 🏆 Zoetrons Bestenliste\n\n*Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*\n\nStand: 7859 Neuronen · 815260 bewertete Synapsen\n\n## Die 15 besten Neuronen\n\n(nach"
+        },
+        {
+          "document": "deliverable_simulationen_oefter_anwenden_20260914_214828.md",
+          "themes": [
+            "target",
+            "simulations",
+            "simulation",
+            "review",
+            "dauer"
+          ],
+          "preview": "# Deliverable: Simulationen öfter anwenden\n**Generiert:** 2026-09-14T21:48:28.451208  |  **Datenquelle:** /workspace/zoetron/data  |  **Fallback:** False\n\n## Executive Summary\n**Ziel:** Systematisch d"
+        },
+        {
+          "document": "evolution_roadmap.md",
+          "themes": [
+            "evo",
+            "evolution",
+            "owner",
+            "impact",
+            "with"
+          ],
+          "preview": "# Evolution Roadmap: Mehr Evolution starten\n\n**Generated:** 2026-09-13T03:45:31.710924\n**Data Source:** /workspace/zoetron/data\n\n---\n\n## 📋 Sub-Tasks (5 Steps, 3 Weeks)\n\n### EVO-1: Define 'Evolution' S"
+        },
+        {
+          "document": "s00_1789130054_draft-deliverable-for-traum-erkenntnisse-verbinden.md",
+          "themes": [
+            "data",
+            "insights",
+            "motifs",
+            "for",
+            "categories"
+          ],
+          "preview": "\n\nThis script reads dream insights from a data directory, categorizes them into themes, identifies recurring motifs, and produces a structured JSON report. It falls back to the current directory if no"
+        },
+        {
+          "document": "s00_1789148123_dream-analysis-for-actionable-patterns.md",
+          "themes": [
+            "data",
+            "bash",
+            "dev",
+            "null",
+            "the"
+          ],
+          "preview": "\n\nI'll start by exploring the data directory to understand what's available, then build the dream analysis tool.\n\n```bash\nfind /data -type f 2>/dev/null | head -50\n```\n\n```bash\nls -la /data/memory/ /d"
+        },
+        {
+          "document": "s00_1789148336_semantic-tool-mapping.md",
+          "themes": [
+            "data",
+            "bash",
+            "let",
+            "the",
+            "directory"
+          ],
+          "preview": "I'll explore the data directory to understand the available tools, memory, and artifacts before building the semantic tool mapping.\n\n```bash\nfind /data -type f 2>/dev/null | head -80\n```\n\n```bash\nls -"
+        },
+        {
+          "document": "s00_1789148498_simulation-of-dream-actions.md",
+          "themes": [
+            "data",
+            "bash",
+            "dev",
+            "null",
+            "let"
+          ],
+          "preview": "Let me explore the actual data directory structure and content.\n\n```bash\nfind /data -type f 2>/dev/null | head -100\n```\n\n```bash\nls -laR /data/ 2>/dev/null | head -200\n```\n\n```bash\ncat /data/memory/*."
+        },
+        {
+          "document": "s00_1789205364_draft-deliverable-for-simulationen-konsequent-nutzen.md",
+          "themes": [
+            "simulation",
+            "data",
+            "scenario",
+            "gates",
+            "root"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDeliverable: Simulation Strategy Protocol\nType: Strategy Document + Checklist + Quality Gates\nTarget Audience: Swarm Engineers, Tool Builders, Quality Gatekeepers\n"
+        },
+        {
+          "document": "s00_1789221749_calibration-tracker-f-r-ziel-typen.md",
+          "themes": [
+            "self",
+            "path",
+            "data",
+            "model",
+            "type"
+          ],
+          "preview": "\n\nThis script implements a calibration tracker for goal types. It records predictions and actual outcomes, computes divergence metrics, and updates the model health registry and memory store. Use the "
+        },
+        {
+          "document": "s00_1789221815_modellaufruf-scheduler-mit-conserve-warteschleife.md",
+          "themes": [
+            "state",
+            "self",
+            "call",
+            "scheduler",
+            "sys"
+          ],
+          "preview": "\n\nDieses Skript implementiert einen Modellaufruf-Scheduler, der Aufrufe während des 'conserve'-Metabolismuszustands wartet und ausführt, sobald der Zustand wechselt. Es nutzt die Module `metabolism` u"
+        },
+        {
+          "document": "s00_1789221843_erweiterung-von-model-health-um-reliabilit-ts-score.md",
+          "themes": [
+            "registry",
+            "data",
+            "path",
+            "the",
+            "reliability"
+          ],
+          "preview": "\n\nThis script extends the model_health registry with a continuous reliability score computed from error counts and total calls. It reads the existing JSON registry from the data directory, calculates "
+        },
+        {
+          "document": "s00_1789277574_fehlgeschlagenes-tool-modellfehler-stark-verringern-py-analy.md",
+          "themes": [
+            "error",
+            "info",
+            "category",
+            "tool",
+            "dir"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyze failed tool 'modellfehler-stark-verringern.py' and register error in model health registry.\n\"\"\"\nimport sys\nimport os\nimport json\nimport traceback\nfrom path"
+        },
+        {
+          "document": "s00_1789277637_systematische-fehlerkategorisierung-aus-memory-events-aufbau.md",
+          "themes": [
+            "error",
+            "errors",
+            "file",
+            "dir",
+            "cluster"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nSystematische Fehlerkategorisierung aus Memory/Events.\nDurchsucht alle Events und Facts nach Modellfehlern, extrahiert Muster\n(Timeout, Halluzination, Formatfehler"
+        },
+        {
+          "document": "s00_1789277829_lern-schleife-implementieren-fehler-muster-gegenma-nahme-ver.md",
+          "themes": [
+            "error",
+            "patterns",
+            "pattern",
+            "name",
+            "success"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nLearning Loop Pipeline: Error -> Pattern -> Countermeasure -> Verification\nImplements a complete learning cycle using reflex, model_health, and retro systems.\n\"\"\"\n"
+        },
+        {
+          "document": "s00_1789456900_bestandsaufnahme-tool-existenz-und-pfad-validierung-pr-fen.md",
+          "themes": [
+            "graph",
+            "path",
+            "root",
+            "result",
+            "data"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nBestandsaufnahme: Tool-Existenz und Pfad-Validierung prüfen\nÜberprüft ob data/tools/trägerinnerungen-verbinden.py existiert und alle benötigten Pfade validiert.\n"
+        },
+        {
+          "document": "s00_1789456960_tool-reparieren-pfad-validierung-vor-ausf-hrung-einf-gen.md",
+          "themes": [
+            "path",
+            "data",
+            "links",
+            "print",
+            "memories"
+          ],
+          "preview": "\n\nI'll repair the tool by adding a `validate_paths()` function that checks all required directories before the main logic, and include a unit test phase to ensure robustness. The script reads from the"
+        },
+        {
+          "document": "s00_1789457008_sicherer-aufruf-tool-existenz-check-vor-invocation.md",
+          "themes": [
+            "tool",
+            "path",
+            "result",
+            "data",
+            "lock"
+          ],
+          "preview": "\n\nWrapper that checks tool existence before invocation, with exponential backoff retry and file locking to prevent race conditions. Reads data root from argv[1] or ZOETRON_DATA, defaults to checking `"
+        },
+        {
+          "document": "s01_1789035345_modell-gesundheitsregister-auditieren-und-fehlerkategorien-e.md",
+          "themes": [
+            "arg",
+            "key",
+            "value",
+            "dev",
+            "null"
+          ],
+          "preview": "I need to explore the data directory structure to understand the existing model_health organ and register before building the artifact.\n<tool_call>bash\n<arg_key>command</arg_key>\n<arg_value>find /root"
+        },
+        {
+          "document": "s01_1789035348_router-basiertes-fehler-vermeidungs-setup-mit-resilientllm.md",
+          "themes": [
+            "arg",
+            "key",
+            "value",
+            "dev",
+            "null"
+          ],
+          "preview": "I need to explore the data directory structure to understand the existing model_health organ and register before building the artifact.\n<tool_call>bash\n<arg_key>command</arg_key>\n<arg_value>find /root"
+        },
+        {
+          "document": "s01_1789035350_kontosperre-integration-fuer-429-fehler-als-schutzschicht.md",
+          "themes": [
+            "arg",
+            "key",
+            "value",
+            "dev",
+            "null"
+          ],
+          "preview": "<tool_call>bash\n<arg_key>command</arg_key>\n<arg_value>find /root/zoeotron/data -type f 2>/dev/null | head -80; echo \"---DIR---\"; ls -laR /root/zoeotron/data/ 2>/dev/null | head -80; echo \"---ZOETRON--"
+        },
+        {
+          "document": "s01_1789043517_swarm-orchestrator-status-pr-fen-und-minimal-beispiel-erstel.md",
+          "themes": [
+            "tool",
+            "call",
+            "python",
+            "the",
+            "need"
+          ],
+          "preview": "I need to inspect the `zoetron.swarm` module and the data directory, then build a working artifact. Let me check what's available.\n<tool_call>python\n\n</tool_call>\n<tool_call>python\n\n</tool_call>\n<tool"
+        },
+        {
+          "document": "s01_1789043561_swarm-task-queue-mit-persistenz-und-heartbeat.md",
+          "themes": [
+            "zoetron",
+            "dev",
+            "null",
+            "arg",
+            "tool"
+          ],
+          "preview": "Let me inspect the existing codebase and data directory first.\n<tool_call>BUILDER\n<arg_key>command</arg_key>\n<arg_value>find /root -name \"zoetron\" -type d 2>/dev/null; find /root -path \"*/zoetron*\" -n"
+        },
+        {
+          "document": "s01_1789043608_autonomer-schwarm-start-via-drive-integration.md",
+          "themes": [
+            "arg",
+            "zoetron",
+            "root",
+            "dev",
+            "null"
+          ],
+          "preview": "<tool_call>BUILDER\n<arg_key>command</arg_key>\n<arg_value>ls -la /root/data 2>/dev/null; ls -la /root/zoetron 2>/dev/null; python3 -c \"import sys; sys.path.insert(0, '/root'); import zoetron; print(zoe"
+        },
+        {
+          "document": "s01_1789050340_tr-ume-verbindungs-audit-distante-tr-ume-identifizieren.md",
+          "themes": [
+            "data",
+            "files",
+            "indent",
+            "sys",
+            "zoetron"
+          ],
+          "preview": "I'll explore the data directories to understand available modules and data structures, then build the audit artifact.\n<tool_call>python3 -c \"\nimport os, sys, json\nzoetron = os.environ.get('ZOETRON_DAT"
+        },
+        {
+          "document": "s01_1789050342_semantische-pfad-reconstruction-fern-tr-ume-wieder-verkn-pfe.md",
+          "themes": [
+            "files",
+            "indent",
+            "data",
+            "sys",
+            "zoetron"
+          ],
+          "preview": "Let me first explore the data landscape to understand available modules and structures.\n<tool_call>python3 -c \"\nimport os, sys\nzoetron = os.environ.get('ZOETRON_DATA', '')\npaths = [sys.argv[1] if len("
+        },
+        {
+          "document": "s01_1789050345_konvergenz-tor-pr-fung-messbarer-fortschritt-der-traum-recon.md",
+          "themes": [
+            "files",
+            "indent",
+            "data",
+            "sys",
+            "zoetron"
+          ],
+          "preview": "Let me explore the data landscape to understand available modules and structures before building the convergence gate artifact.\n<tool_call>python3 -c \"\nimport os, sys\nzoetron = os.environ.get('ZOETRON"
+        },
+        {
+          "document": "s01_1789064239_draft-deliverable-for-f-higkeiten-zusammenf-hren-und-verfest.md",
+          "themes": [
+            "data",
+            "entry",
+            "skill",
+            "for",
+            "path"
+          ],
+          "preview": "Ein Konsolidierungs-Artefakt, das Fähigkeitsdaten aus dem Datenverzeichnis einliest, Duplikate zusammenführt und ein einheitliches Fähigkeitsprofil erzeugt. Es verarbeitet JSON-Strukturen und rohen Te"
+        },
+        {
+          "document": "s01_1789082712_dream-organ-ausgabe-analysieren-und-insight-struktur-versteh.md",
+          "themes": [
+            "arg",
+            "zoetron",
+            "data",
+            "key",
+            "value"
+          ],
+          "preview": "I'll first explore the data directory and the Dream organ module to understand the actual structure before writing the extraction script.<tool_call>shell<arg_key>cmd</arg_key><arg_value>echo \"=== ZOET"
+        },
+        {
+          "document": "s01_1789082718_insight-zu-f-higkeit-pipeline-bauen-import-bestehender-organ.md",
+          "themes": [
+            "arg",
+            "zoetron",
+            "data",
+            "echo",
+            "value"
+          ],
+          "preview": "<tool_call>shell<arg_key>cmd</arg_key><arg_value>echo \"=== ZOETRON_DATA ===\" && echo \"$ZOETRON_DATA\" && echo \"=== ls ZOETRON_DATA ===\" && ls -la \"$ZOETRON_DATA\" 2>/dev/null && echo \"=== memory/ ===\" &"
+        },
+        {
+          "document": "s01_1789082753_kalibrierungs-multiplikator-4-5-in-sch-tzungen-einbauen.md",
+          "themes": [
+            "arg",
+            "zoetron",
+            "data",
+            "echo",
+            "value"
+          ],
+          "preview": "<tool_call>shell<arg_key>cmd</arg_key><arg_value>echo \"=== ZOETRON_DATA ===\" && echo \"$ZOETRON_DATA\" && echo \"=== ls ZOETRON_DATA ===\" && ls -la \"$ZOETRON_DATA\" 2>/dev/null && echo \"=== memory/ ===\" &"
+        },
+        {
+          "document": "s01_1789102378_draft-deliverable-for-tr-ume-in-echte-entwicklung-umsetzen.md",
+          "themes": [
+            "plan",
+            "data",
+            "path",
+            "json",
+            "records"
+          ],
+          "preview": "Lies die Daten aus dem konfigurierten Verzeichnis, extrahiere Traum-Entwicklungs-Muster und erzeuge einen strukturierten Umsetzungsplan als Artefaktdatei.\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nTräume "
+        },
+        {
+          "document": "s01_1789106904_selbstdiagnose-ausf-hren-absturzursache-identifizieren.md",
+          "themes": [
+            "arg",
+            "zoetron",
+            "data",
+            "echo",
+            "key"
+          ],
+          "preview": "I'll explore the data directory first to understand the structure, then build the self-diagnosis tool.<tool_call>shell<arg_key>cmd</arg_key><arg_value>echo \"=== argv[1] ===\" && ls -la \"$1\" 2>/dev/null"
+        },
+        {
+          "document": "s01_1789106947_modell-gesundheitsregister-pr-fen-kontofehler-erkennen.md",
+          "themes": [
+            "arg",
+            "zoetron",
+            "echo",
+            "data",
+            "key"
+          ],
+          "preview": "<tool_call>shell<arg_key>cmd</arg_key><arg_value>echo \"=== argv[1] ===\" && ls -la \"$1\" 2>/dev/null || echo \"no argv[1]\"; echo \"=== ZOETRON_DATA ===\" && echo \"$ZOETRON_DATA\" && ls -la \"$ZOETRON_DATA\" 2"
+        },
+        {
+          "document": "s01_1789106985_werkzeugpr-fung-vor-einsatz-fehlerquellen-blockieren.md",
+          "themes": [
+            "arg",
+            "zoetron",
+            "echo",
+            "data",
+            "key"
+          ],
+          "preview": "<tool_call>shell<arg_key>cmd</arg_key><arg_value>echo \"=== argv[1] ===\" && ls -la \"$1\" 2>/dev/null || echo \"no argv[1]\"; echo \"=== ZOETRON_DATA ===\" && echo \"$ZOETRON_DATA\" && ls -la \"$ZOETRON_DATA\" 2"
+        },
+        {
+          "document": "s01_1789111062_real-time-model-query-interception-with-accuracy-tracking.md",
+          "themes": [
+            "arg",
+            "key",
+            "zoetron",
+            "value",
+            "echo"
+          ],
+          "preview": "Let me first explore the available data directories to understand the real data structure.\n<tool_call>Bash\n<arg_key>command</arg_key>\n<arg_value>echo \"ZOETRON_DATA=$ZOETRON_DATA\" && ls -la \"$ZOETRON_D"
+        },
+        {
+          "document": "s01_1789111069_self-healing-fallback-logic-in-router.md",
+          "themes": [
+            "arg",
+            "data",
+            "key",
+            "value",
+            "echo"
+          ],
+          "preview": "I'll explore the real data structure first to understand what's available before building the self-healing router.<tool_call>Bash<arg_key>command</arg_key><arg_value>echo \"ZOETRON_DATA=$ZOETRON_DATA\" "
+        },
+        {
+          "document": "s01_1789111071_error-pattern-analysis-and-prompt-optimization.md",
+          "themes": [
+            "arg",
+            "zoetron",
+            "key",
+            "value",
+            "echo"
+          ],
+          "preview": "Let me first explore the real data structure to understand what's available.\n<tool_call>Bash\n<arg_key>command</arg_key>\n<arg_value>echo \"ZOETRON_DATA=$ZOETRON_DATA\" && ls -la \"$ZOETRON_DATA\" 2>/dev/nu"
+        },
+        {
+          "document": "s01_1789203485_draft-deliverable-for-simulationen-in-echte-aktionen-umsetze.md",
+          "themes": [
+            "data",
+            "action",
+            "simulation",
+            "deliverable",
+            "for"
+          ],
+          "preview": "This script generates a comprehensive deliverable draft for turning simulations into real actions, reading any existing project data and producing a structured markdown document with objectives, metho"
+        },
+        {
+          "document": "s01_1789214166_draft-deliverable-for-vorgeschlagene-f-higkeiten-pr-fen-und.md",
+          "themes": [
+            "data",
+            "cap",
+            "capabilities",
+            "root",
+            "file"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nVorgeschlagene Fähigkeiten prüfen und einbauen\nReads proposed capabilities from data directory, validates them, and integrates valid ones.\n\"\"\"\nimport sys\nimport os"
+        },
+        {
+          "document": "s01_1789289375_diagnose-existing-skill-conversion-pipeline-failures.md",
+          "themes": [
+            "tool",
+            "data",
+            "dir",
+            "path",
+            "result"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDiagnose skill-conversion pipeline failures by executing the reflex and hand tools\nand capturing their exact error traces for root-cause analysis.\n\"\"\"\nimport os\nim"
+        },
+        {
+          "document": "s01_1789289427_build-a-validated-skill-idea-capability-pipeline-using-exist.md",
+          "themes": [
+            "data",
+            "workspace",
+            "zoetron",
+            "dev",
+            "null"
+          ],
+          "preview": "\n\nI'll start by exploring the data directory to understand the existing organs and their interfaces before building the pipeline.\n\n```\nfind /workspace/zoetron/data -type f -name \"*.py\" | head -50\nls /"
+        },
+        {
+          "document": "s01_1789289511_implement-static-analysis-based-skill-validation-per-winning.md",
+          "themes": [
+            "ast",
+            "node",
+            "func",
+            "name",
+            "self"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nStatic Analysis Skill Validator using AST parsing.\nValidates skill code safety before execution, replacing dynamic execution approaches.\n\"\"\"\nimport ast\nimport os"
+        },
+        {
+          "document": "s01_1789467688_autonomer-provider-failover-bei-modellausf-llen.md",
+          "themes": [
+            "the",
+            "start",
+            "exploring",
+            "data",
+            "directory"
+          ],
+          "preview": "\n\nI'll start by exploring the data directory to understand the existing structure and files."
+        },
+        {
+          "document": "s01_1789467696_selbstverifikation-ohne-menschliche-review.md",
+          "themes": [
+            "tool",
+            "name",
+            "the",
+            "data",
+            "directory"
+          ],
+          "preview": "\n\nI'll start by exploring the data directory to understand the existing structure and available tools.\n\n<mcp:tool>\n<server_name>filesystem</server_name>\n<tool_name>list_directory</tool_name>\n<argument"
+        },
+        {
+          "document": "s01_1789467700_autonomes-lernen-aus-fehlern-ohne-anleitung.md",
+          "themes": [
+            "tool",
+            "name",
+            "the",
+            "data",
+            "directory"
+          ],
+          "preview": "\n\nI'll start by exploring the data directory to understand the existing structure and files.\n\n<mcp:tool>\n<server_name>filesystem</server_name>\n<tool_name>list_directory</tool_name>\n<arguments>\n{\"path\""
+        },
+        {
+          "document": "s02_1789232641_diagnose-system-errors.md",
+          "themes": [
+            "dir",
+            "data",
+            "errors",
+            "for",
+            "findings"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\nimport sys\nimport os\nimport json\nimport re\nfrom pathlib import Path\n\ndef find_data_dir():\n    \"\"\"Determine the live data directory from CLI arg, env var, or fall bac"
+        },
+        {
+          "document": "s02_1789232688_check-model-health.md",
+          "themes": [
+            "register",
+            "path",
+            "data",
+            "unhealthy",
+            "health"
+          ],
+          "preview": "\n\nThis script verifies the health of all models by reading the model health register from the live data directory. It searches for a register file, parses it, and reports any unhealthy models. If no r"
+        },
+        {
+          "document": "s02_1789232719_run-self-healing-reflexes.md",
+          "themes": [
+            "data",
+            "config",
+            "return",
+            "json",
+            "health"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\nimport sys\nimport os\nimport json\nfrom pathlib import Path\n\ndef find_data_dir():\n    if len(sys.argv) > 1:\n        return sys.argv[1]\n    if 'ZOETRON_DATA' in os.envi"
+        },
+        {
+          "document": "s03_1789153575_analysiere-veraltete-swarm-ziele-und-identifiziere-erneuerun.md",
+          "themes": [
+            "goals",
+            "path",
+            "tool",
+            "swarm",
+            "dir"
+          ],
+          "preview": "\n\nThis script analyzes the current swarm goals and investigates the previous failure.\n\n```python\nimport os, sys, json, datetime\n\ndef get_data_dir():\n    if len(sys.argv) > 1:\n        return sys.argv[1"
+        },
+        {
+          "document": "s03_1789153581_erstelle-das-erneuerungs-werkzeug-fuer-veraltete-swarm-ziele.md",
+          "themes": [
+            "data",
+            "dir",
+            "sys",
+            "get",
+            "return"
+          ],
+          "preview": "\n\nI'll start by examining the data directory and existing tools to understand the current state.\n\n```python\nimport os, sys, json, datetime\n\ndef get_data_dir():\n    if len(sys.argv) > 1:\n        return"
+        },
+        {
+          "document": "s03_1789153598_fuehre-die-erneuerung-aller-veralteten-ziele-aus-und-validie.md",
+          "themes": [
+            "tool",
+            "path",
+            "result",
+            "dir",
+            "data"
+          ],
+          "preview": "\n\n```python\nimport os, sys, json, datetime, random, hashlib\n\ndef get_data_dir():\n    if len(sys.argv) > 1:\n        return sys.argv[1]\n    env = os.environ.get('ZOETRON_DATA')\n    if env:\n        retur"
+        },
+        {
+          "document": "s03_1789372326_find-proposed-skills-pending-execution.md",
+          "themes": [
+            "data",
+            "the",
+            "organ",
+            "dir",
+            "pending"
+          ],
+          "preview": "\n\nThe following script scans the `data/tools` directory for proposed skills and uses the `werkzeugpruefung` organ to identify those pending execution. It accepts the data directory via command-line ar"
+        },
+        {
+          "document": "s03_1789372375_validate-proposed-skills-for-safety-and-syntax.md",
+          "themes": [
+            "data",
+            "dir",
+            "safety",
+            "syntax",
+            "organ"
+          ],
+          "preview": "\n\nThis script validates proposed skills for syntax and safety using the werkzeugpruefung organ. It scans the tools directory for Python files, checks syntax via AST parsing, and uses the organ for saf"
+        },
+        {
+          "document": "s03_1789372404_execute-validated-skills-in-sandbox.md",
+          "themes": [
+            "result",
+            "skills",
+            "data",
+            "dir",
+            "skill"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"Execute validated skills using the Hands organ or safe in-process execution.\"\"\"\n\nimport sys\nimport os\nimport io\nimport contextlib\nimport importlib.util\nimport jso"
+        },
+        {
+          "document": "s04_1789094863_modell-gesundheitsregister-f-r-genauigkeitspr-fung-erweitern.md",
+          "themes": [
+            "arg",
+            "echo",
+            "dev",
+            "null",
+            "tool"
+          ],
+          "preview": "I'll explore the existing data directory structure to understand the model_health organ and how to extend it properly.<tool_call>shell<arg_key>cmd</arg_key><arg_value>find / -path /proc -prune -o -pat"
+        },
+        {
+          "document": "s04_1789094874_automatisierter-genauigkeits-check-als-reflex-implementieren.md",
+          "themes": [
+            "arg",
+            "tool",
+            "call",
+            "key",
+            "value"
+          ],
+          "preview": "<tool_call>shell<arg_key>cmd</arg_key><arg_value>ls -la \"$ZOETRON_DATA\" 2>/dev/null; echo \"---\"; find \"$ZOETRON_DATA\" -type f -name \"*.py\" 2>/dev/null | head -30</arg_value></tool_call>\n"
+        },
+        {
+          "document": "s04_1789094889_benchmark-aufgaben-f-r-genauigkeitsmessung-definieren.md",
+          "themes": [
+            "results",
+            "expected",
+            "benchmark",
+            "data",
+            "path"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"Benchmark-Aufgaben für Modellgenauigkeit im benchmark_organ ablegen.\"\"\"\n\nimport json, os, sys, hashlib, datetime\n\nDATA = os.environ.get('ZOETRON_DATA', '')\nif len(s"
+        },
+        {
+          "document": "s04_1789094901_genauigkeits-dashboard-mit-trendanalyse-bauen.md",
+          "themes": [
+            "dev",
+            "null",
+            "arg",
+            "echo",
+            "tool"
+          ],
+          "preview": "<tool_call>shell<arg_key>cmd</arg_key>\n<arg_value>find / -path /proc -prune -o -path /sys -prune -o -type d -name \"ZOETRON*\" -print 2>/dev/null; echo \"===\"; ls -la /app 2>/dev/null; echo \"===\"; ls -la"
+        },
+        {
+          "document": "s04_1789170403_inspect-current-swarm-facts-and-failed-updater-tool.md",
+          "themes": [
+            "print",
+            "path",
+            "data",
+            "facts",
+            "graph"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nInspect current swarm facts and the failed updater tool.\nReads from live data directory (sys.argv[1] or ZOETRON_DATA).\n\"\"\"\nimport sys\nimport os\nimport json\nfrom pa"
+        },
+        {
+          "document": "s04_1789170442_fix-and-execute-swarm-fact-updater.md",
+          "themes": [
+            "path",
+            "data",
+            "facts",
+            "root",
+            "jsonl"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nFix and execute swarm fact updater.\nReads from live data directory (sys.argv[1] or ZOETRON_DATA), repairs the updater, runs it.\n\"\"\"\nimport sys\nimport os\nimport jso"
+        },
+        {
+          "document": "s04_1789170568_verify-fact-updates-and-archive-old-versions.md",
+          "themes": [
+            "facts",
+            "fact",
+            "path",
+            "data",
+            "file"
+          ],
+          "preview": "This script verifies fact updates, archives superseded facts per the preserve_memory instinct, and logs the update cycle. It reads from the live data directory and handles missing data gracefully.\n```"
+        },
+        {
+          "document": "s04_1789216162_analyse-vorhandener-tr-ume-und-erinnerungen-auf-verbindungsm.md",
+          "themes": [
+            "json",
+            "text",
+            "entry",
+            "get",
+            "metas"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyse Träume und Erinnerungen auf Verbindungsmuster.\nLädt alle gespeicherten Einträge, berechnet semantische Ähnlichkeiten\nund identifiziert Cluster von verwandt"
+        },
+        {
+          "document": "s04_1789216270_bahnen-gebahnte-verbindungen-zwischen-entfernten-tr-umen-eri.md",
+          "themes": [
+            "get",
+            "entry",
+            "graph",
+            "weight",
+            "dopamin"
+          ],
+          "preview": "\n\nDieses Skript erweitert zoetron.bahnen um die Funktion verbinde_ferne_traeume(), die basierend auf Analyseergebnissen gewichtete Kanten im KnowledgeGraph anlegt und die Dopamin-Verstärkung initialis"
+        },
+        {
+          "document": "s04_1789216376_nachspiel-replay-f-r-neue-bahnen-ausl-sen-und-wirksamkeit-me.md",
+          "themes": [
+            "print",
+            "connections",
+            "replay",
+            "sys",
+            "data"
+          ],
+          "preview": "\n\nThis script triggers the replay for new connections and measures convergence before and after.\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nNachspiel-Replay für neue Bahnen auslösen und Wirksamkeit messen."
+        },
+        {
+          "document": "s04_1789235725_identifiziere-veraltete-gruppen-informationen.md",
+          "themes": [
+            "node",
+            "graph",
+            "for",
+            "data",
+            "outdated"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nIdentifiziert veraltete Gruppen-Informationen im Wissensgraphen.\nSucht nach Einträgen mit alten Datumsangaben oder Widersprüchen und\nendet eine Stichprobenprüfun"
+        },
+        {
+          "document": "s04_1789235753_aktualisiere-veraltete-gruppen-informationen.md",
+          "themes": [
+            "updated",
+            "memory",
+            "backup",
+            "file",
+            "graph"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nAktualisiert veraltete Gruppen-Informationen im Wissensgraph mit Transaktionslogik und Rollback.\nLiest Daten aus dem Live-Data-Verzeichnis (sys.argv[1] oder ZOET"
+        },
+        {
+          "document": "s04_1789235804_verifiziere-die-aktualisierungen.md",
+          "themes": [
+            "graph",
+            "node",
+            "updates",
+            "load",
+            "data"
+          ],
+          "preview": "\n\nThis script verifies the updates of group information by performing a convergence check, benchmarking performance under high load and real-time queries, and reflecting on any introduced errors. It r"
+        },
+        {
+          "document": "s04_1789239496_extract-dream-insights-and-convert-to-skill-proposals.md",
+          "themes": [
+            "skill",
+            "self",
+            "the",
+            "dream",
+            "insights"
+          ],
+          "preview": "This tool processes dream memories to identify systemic gaps and converts them into structured skill proposals with validation test cases. It implements a preprocessing pipeline to ensure dream insigh"
+        },
+        {
+          "document": "s04_1789239627_validate-skill-proposals-through-benchmark-organ.md",
+          "themes": [
+            "proposal",
+            "proposals",
+            "results",
+            "self",
+            "score"
+          ],
+          "preview": "```python\nimport os\nimport sys\nimport json\nimport time\nfrom datetime import datetime\nfrom pathlib import Path\nfrom typing import Dict, List, Any, Optional\n\nclass BenchmarkOrgan:\n    \"\"\"Validates skill"
+        },
+        {
+          "document": "s04_1789239730_promote-validated-skills-via-convergence-gate.md",
+          "themes": [
+            "self",
+            "proposal",
+            "stage",
+            "skill",
+            "feedback"
+          ],
+          "preview": "This convergence gate implements staged skill promotion with configurable thresholds and a feedback loop to inform future dream extraction.\n\n```python\nimport os\nimport sys\nimport json\nimport time\nfrom"
+        },
+        {
+          "document": "s04_1789281172_traum-muster-extrahieren-und-semantisch-clustern.md",
+          "themes": [
+            "data",
+            "dream",
+            "texts",
+            "dreams",
+            "cluster"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nExtract dream patterns from dream experiences and semantically cluster them as skill candidates.\nUses Dream-Organ data and SemanticMemory for embedding-based clust"
+        },
+        {
+          "document": "s04_1789281181_traum-insights-in-simulierbare-f-higkeits-skizzen-berf-hren.md",
+          "themes": [
+            "the",
+            "explore",
+            "data",
+            "directory",
+            "first"
+          ],
+          "preview": "\n\nI'll explore the data directory first to understand what's available, then build the capability prototype generator.\n<dots_function_call>\n"
+        },
+        {
+          "document": "s04_1789281241_f-higkeits-prototypen-validieren-und-in-werkzeugkiste-aufneh.md",
+          "themes": [
+            "data",
+            "root",
+            "graph",
+            "path",
+            "return"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nValidate capability prototypes with werkzeugpruefung and selflearn,\nmeasure convergence via benchmark_organ, and adopt successful capabilities into the graph.\n\"\"\"\n"
+        },
+        {
+          "document": "s04_1789303203_f-higkeits-inventar-bestand-erfassen.md",
+          "themes": [
+            "skills",
+            "for",
+            "name",
+            "has",
+            "path"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"Faehigkeits-Inventar: Bestand erfassen — katalogisiert vorgeschlagene Faehigkeiten,\nmisst Fertigstellungsgrad ueber Werkzeugpruefung, Reflexsuche und Ideen-Scan.\""
+        },
+        {
+          "document": "s04_1789303293_sandbox-ausf-hrung-sicher-testen.md",
+          "themes": [
+            "name",
+            "for",
+            "len",
+            "results",
+            "get"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"Sandbox-Schicht: Sicher testen — fuehrt vorgeschlagene Faehigkeiten in einer \nSandbox aus, faengt Fehler ab, generiert detaillierte Berichte und nutzt das \nKonver"
+        },
+        {
+          "document": "s04_1789303357_fertigstellungs-loop-evolution-self-learn.md",
+          "themes": [
+            "data",
+            "return",
+            "issues",
+            "skill",
+            "incomplete"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"Fertigstellungs-Loop: Evolution + Self-Learn — finds incomplete skill proposals,\ngenerates working completions, writes them as artifacts, and learns failure patte"
+        },
+        {
+          "document": "s04_1789321125_abrufen-der-aktuellen-swarm-informationen.md",
+          "themes": [
+            "data",
+            "synapses",
+            "json",
+            "swarm",
+            "for"
+          ],
+          "preview": "\n\nThis script retrieves the current swarm information by locating and parsing the synapse table from the live data directory. It searches for common JSON-based swarm table files, extracts the stronges"
+        },
+        {
+          "document": "s04_1789321217_pr-fen-von-widerspr-chen-im-swarm-ged-chtnis.md",
+          "themes": [
+            "for",
+            "json",
+            "goal",
+            "item",
+            "get"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"Check for contradictions in swarm memory by validating goals and memories for inconsistencies.\"\"\"\nimport sys\nimport os\nimport json\nfrom collections import default"
+        },
+        {
+          "document": "s04_1789321288_aktualisieren-der-semantischen-swarm-fakten.md",
+          "themes": [
+            "memory",
+            "update",
+            "path",
+            "semantic",
+            "module"
+          ],
+          "preview": "\n\nThis script updates semantic swarm facts by invoking the semantic memory's main refresh function, handling both direct module calls and file-based updates with proper error reporting.\n\n```python\n#!/"
+        },
+        {
+          "document": "s04_1789331613_inspect-existing-swarm-organ-and-update-tool.md",
+          "themes": [
+            "swarm",
+            "file",
+            "data",
+            "organ",
+            "name"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nInspect zoetron.swarm organ and locate 'swarm-informationen-aktualisieren' tool.\nReads from live data directory (sys.argv[1] or ZOETRON_DATA).\n\"\"\"\nimport sys\nimpor"
+        },
+        {
+          "document": "s04_1789331681_diagnose-why-veraltete-infos-auffrischen-py-failed.md",
+          "themes": [
+            "tool",
+            "path",
+            "data",
+            "root",
+            "info"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDiagnose why veraltete-infos-auffrischen.py failed.\nSearches for the tool, runs it with error capture, and checks SwarmOrchestrator availability.\n\"\"\"\nimport sys\nim"
+        },
+        {
+          "document": "s04_1789331738_implement-swarm-info-update-using-existing-swarmorchestrator.md",
+          "themes": [
+            "data",
+            "stale",
+            "memory",
+            "path",
+            "age"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nRead-only probe using SwarmOrchestrator to fetch current goals/memories/associations\nand identify staleness criteria. Uses live data from sys.argv[1] or ZOETRON_DA"
+        },
+        {
+          "document": "s04_1789379453_ideen-sammlung-und-filterung.md",
+          "themes": [
+            "ideen",
+            "data",
+            "text",
+            "print",
+            "item"
+          ],
+          "preview": "\n\nHere is the script that collects ideas from the `ideen` organ, filters them for skill-related content, and validates the intermediate results.\n\n```python\n#!/usr/bin/env python3\n\"\"\"Ideen-Sammlung und"
+        },
+        {
+          "document": "s04_1789379478_werkzeug-pr-fung-der-ideen.md",
+          "themes": [
+            "ergebnis",
+            "ziel",
+            "ideen",
+            "print",
+            "gefilterte"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"Werkzeug-Prüfung der Ideen: Prüft Ideen mit dem werkzeugpruefung-Organ auf Zulässigkeit.\"\"\"\n\nimport os\nimport sys\nimport json\nfrom pathlib import Path\n\n\ndef get_d"
+        },
+        {
+          "document": "s04_1789379570_konvergenz-pr-fung-und-code-extraktion.md",
+          "themes": [
+            "code",
+            "ergebnis",
+            "str",
+            "path",
+            "tool"
+          ],
+          "preview": "\n\nDas Skript führt eine Konvergenz-Prüfung und Code-Extraktion auf den Python-Dateien im Tools-Verzeichnis durch. Es nutzt das `ast`-Modul zur Syntaxprüfung und Extraktion von Funktionsblöcken. Die Er"
+        },
+        {
+          "document": "s04_1789388094_modell-gesundheitsregister-erweitern-und-analysieren.md",
+          "themes": [
+            "self",
+            "data",
+            "error",
+            "metrics",
+            "analysis"
+          ],
+          "preview": "\n\n```python\nimport json\nimport os\nimport sys\nfrom datetime import datetime, timedelta\nfrom collections import defaultdict, Counter\nfrom typing import Dict, List, Any, Optional\n\nclass ModelHealthRegist"
+        },
+        {
+          "document": "s04_1789388156_router-immunsystem-f-r-automatische-fallbacks-aktivieren.md",
+          "themes": [
+            "model",
+            "self",
+            "health",
+            "data",
+            "success"
+          ],
+          "preview": "\n\nThis artifact implements a router immune system that monitors model health, automatically switches to fallback models when errors occur, and uses phased testing to evaluate alternative models before"
+        },
+        {
+          "document": "s04_1789388181_r-ckkopplungsschluss-zwischen-ablehnungen-und-router-herstel.md",
+          "themes": [
+            "self",
+            "config",
+            "router",
+            "tool",
+            "path"
+          ],
+          "preview": "\n\n```python\nimport json\nimport os\nimport sys\nfrom datetime import datetime, timedelta\nfrom collections import defaultdict, deque\nfrom typing import Dict, List, Any, Optional\n\nclass FeedbackRouterConne"
+        },
+        {
+          "document": "s04_1789396499_draft-deliverable-for-schwarminformationen-aktualisieren.md",
+          "themes": [
+            "plan",
+            "root",
+            "now",
+            "path",
+            "review"
+          ],
+          "preview": "\n\nThe script reads existing swarm information, drafts an updated plan with research, drafting, review, and validation sections, and writes the deliverable.\n\n```python\nimport os\nimport sys\nimport datet"
+        },
+        {
+          "document": "s04_1789432823_veraltete-fakten-im-wissensgraphen-aktualisieren.md",
+          "themes": [
+            "fact",
+            "data",
+            "get",
+            "path",
+            "rating"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nVeraltete Fakten im Wissensgraphen aktualisieren\nLiest den Wissensgraphen aus dem Data-Verzeichnis, identifiziert veraltete Fakten\nanhand von Zeitstempeln und Qu"
+        },
+        {
+          "document": "s04_1789432854_veraltete-eintr-ge-im-semantischen-ged-chtnis-auffrischen.md",
+          "themes": [
+            "memory",
+            "path",
+            "refreshed",
+            "data",
+            "dir"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nVeraltete Einträge im semantischen Gedächtnis auffrischen\nDurchsucht das semantische Gedächtnis nach veralteten Einträgen und aktualisiert sie,\num die Konsistenz"
+        },
+        {
+          "document": "s04_1789432897_veraltete-informationen-im-speicher-aktualisieren.md",
+          "themes": [
+            "path",
+            "data",
+            "entry",
+            "return",
+            "log"
+          ],
+          "preview": "\n\nDieses Skript identifiziert veraltete Fakten im Wissensgraphen und semantischen Gedächtnis, aktualisiert sie und sichert die Daten durch Backups und Transaktionsprotokolle.\n\n```python\n#!/usr/bin/env"
+        },
+        {
+          "document": "s04_1789442685_aktuellen-schwarm-zustand-und-wissens-frische-pr-fen.md",
+          "themes": [
+            "print",
+            "facts",
+            "get",
+            "data",
+            "event"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nCheck current swarm state and knowledge freshness.\nReads from live data directory (sys.argv[1] or ZOETRON_DATA).\n\"\"\"\n\nimport sys\nimport os\nimport json\nfrom datetim"
+        },
+        {
+          "document": "s04_1789442712_schwarm-r-ckmeldeschleifen-reaktivieren-und-test-lauf-starte.md",
+          "themes": [
+            "data",
+            "zoetron",
+            "the",
+            "dots",
+            "function"
+          ],
+          "preview": "\n\nI'll first explore the live data directory to understand the memory store structure, then build the swarm orchestrator.\n<dots_function_call>\n<invoke name=\"exec\">\n<parameter name=\"command\">echo \"ZOET"
+        },
+        {
+          "document": "s04_1789442740_knowledgegraph-mit-frischen-schwarm-erkenntnissen-anreichern.md",
+          "themes": [
+            "name",
+            "dots",
+            "function",
+            "call",
+            "invoke"
+          ],
+          "preview": "<dots_function_call>\n<invoke name=\"exec\">\n<parameter name=\"command\">ls -la \"$ZOETRON_DATA\" 2>/dev/null && find \"$ZOETRON_DATA\" -type f -name \"*.json*\" -o -name \"*.graph*\" -o -name \"*.pkl\" 2>/dev/null "
+        },
+        {
+          "document": "s04_1789442762_konsolidierungs-zyklus-dream-f-r-schwarm-wissen-ansto-en.md",
+          "themes": [
+            "name",
+            "dots",
+            "function",
+            "call",
+            "invoke"
+          ],
+          "preview": "<dots_function_call>\n<invoke name=\"exec\">\n<parameter name=\"command\">ls -la \"$ZOETRON_DATA\" 2>/dev/null && find \"$ZOETRON_DATA\" -type f \\( -name \"*.json*\" -o -name \"*.graph*\" -o -name \"*.pkl\" -o -name "
+        },
+        {
+          "document": "s04_1789446773_import-and-run-the-capability-benchmark-benchmark-organ-on-a.md",
+          "themes": [
+            "benchmark",
+            "skill",
+            "self",
+            "module",
+            "result"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nImport and run the capability benchmark (benchmark_organ) on all proposed skills.\nMeasures reflexes, tools, and convergence scores.\n\"\"\"\n\nimport sys\nimport os\nimpor"
+        },
+        {
+          "document": "s04_1789446815_test-proposed-tools-through-werkzeugpruefung-tool-validation.md",
+          "themes": [
+            "skill",
+            "result",
+            "validation",
+            "get",
+            "skills"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nTest proposed skills through werkzeugpruefung (tool validation gate).\nValidates each proposed skill against toolbox admission criteria and runs integration tests.\n"
+        },
+        {
+          "document": "s04_1789446892_run-convergence-gate-konvergenztor-on-validated-skills.md",
+          "themes": [
+            "skill",
+            "konvergenztor",
+            "data",
+            "noise",
+            "convergence"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nRun convergence gate (konvergenztor) on validated skills.\nEnforces convergence test over multiple epochs with noise injection before passing.\n\"\"\"\n\nimport sys\nimpor"
+        },
+        {
+          "document": "s04_1789447022_execute-reflex-self-healing-tests-on-proposed-capabilities.md",
+          "themes": [
+            "reflex",
+            "skill",
+            "skills",
+            "results",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nExecute reflex self-healing tests on proposed capabilities.\nRuns reflex.run_reflexes() to trigger spinal-cord level self-healing tests,\nverifying skills survive au"
+        },
+        {
+          "document": "s05_1789120369_vorgeschlagene-f-higkeiten-sammeln-und-filtern.md",
+          "themes": [
+            "data",
+            "capabilities",
+            "for",
+            "path",
+            "str"
+          ],
+          "preview": "This script scans the Zoetron data directory for proposed capabilities by searching through files in the memory and artifacts organs. It filters for relevance using a set of capability-related keyword"
+        },
+        {
+          "document": "s05_1789120487_werkzeugpr-fung-der-kandidaten.md",
+          "themes": [
+            "str",
+            "get",
+            "path",
+            "data",
+            "score"
+          ],
+          "preview": "This script reads proposed capabilities from the Zoetron data directory, validates each candidate tool against integration criteria, scores them, and writes the examination results to an output file.\n"
+        },
+        {
+          "document": "s05_1789120691_testgetriebene-implementierung.md",
+          "themes": [
+            "data",
+            "candidate",
+            "name",
+            "hands",
+            "root"
+          ],
+          "preview": "\n\nDas folgende Skript implementiert den besten Kandidaten mit einem testgetriebenen Ansatz. Es liest die Daten aus dem angegebenen Verzeichnis, ermittelt den besten Kandidaten aus vorherigen Prüfungse"
+        },
+        {
+          "document": "s05_1789125144_bestandsaufnahme-existierende-organe-f-r-f-higkeits-vorschl.md",
+          "themes": [
+            "organ",
+            "proposals",
+            "conversions",
+            "path",
+            "evaluations"
+          ],
+          "preview": "\n\nHere is a script that scans the data directory for the specified organs, inspects their code and documentation for keywords related to skill proposal, evaluation, and conversion, and prints a report"
+        },
+        {
+          "document": "s05_1789125235_fehlgeschlagenes-werkzeug-analysieren-und-reparieren.md",
+          "themes": [
+            "data",
+            "dir",
+            "script",
+            "skill",
+            "print"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyze and repair the failed script 'vorgeschlagene-fähigkeiten-wirklich-fert.py'\nLoad the existing script, analyze the error, fix it, and make it executable.\nThe"
+        },
+        {
+          "document": "s05_1789125315_pipeline-bauen-von-vorschlag-ber-benchmark-bis-registriertes.md",
+          "themes": [
+            "dir",
+            "benchmark",
+            "data",
+            "organ",
+            "werkzeugpruefung"
+          ],
+          "preview": "\n\nDieses Skript implementiert die Pipeline: es liest Vorschläge aus `drive/ideen`, prüft sie mit `benchmark_organ`, validiert mit `werkzeugpruefung` und registriert die Bestandenen in `reflexsuche/wer"
+        },
+        {
+          "document": "s05_1789137240_vorgeschlagene-f-higkeiten-aus-dem-ideen-sammler-abrufen.md",
+          "themes": [
+            "data",
+            "ideen",
+            "ideas",
+            "try",
+            "dir"
+          ],
+          "preview": "\n\nThis script retrieves suggested skills from the 'ideen' organ by first attempting to import from `zoetron.ideen`, then falling back to the data directory (via `sys.argv[1]` or `ZOETRON_DATA`), and f"
+        },
+        {
+          "document": "s05_1789137322_vorgeschlagene-f-higkeiten-auf-zul-ssigkeit-pr-fen.md",
+          "themes": [
+            "data",
+            "skills",
+            "dir",
+            "print",
+            "path"
+          ],
+          "preview": "This script retrieves suggested skills from the data directory and validates each one using the `werkzeugpruefung` module. It ensures that only skills passing both the primary and secondary security c"
+        },
+        {
+          "document": "s05_1789137428_ausf-hrbare-code-wrappers-f-r-validierte-f-higkeiten-generie.md",
+          "themes": [
+            "skills",
+            "skill",
+            "data",
+            "hands",
+            "return"
+          ],
+          "preview": "\n\nDas Skript ruft vorgeschlagene Fähigkeiten aus dem Data-Directory ab, validiert sie mit `werkzeugpruefung` (falls verfügbar) und nutzt die `Hands`-Klasse zur Code-Generierung für jeden Wrapper. Wenn"
+        },
+        {
+          "document": "s05_1789143405_audit-existing-resilience-organs-and-locate-unimplemented-sk.md",
+          "themes": [
+            "methods",
+            "classes",
+            "skill",
+            "name",
+            "missing"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAudit existing resilience organs and locate unimplemented skill proposals.\nScans for circuit breaker, provider-health monitor, deadline-aware executor\nand maps to "
+        },
+        {
+          "document": "s05_1789143464_implement-missing-circuit-breaker-logic-inside-router-resili.md",
+          "themes": [
+            "echo",
+            "find",
+            "arg",
+            "data",
+            "router"
+          ],
+          "preview": "I'll start by exploring the actual data directory to find the existing `router.ResilientLLM` and kontosperre-related code.<tool_call>shell<arg_key>cmd</arg_key><arg_value>echo \"=== argv[1] ===\" && ech"
+        },
+        {
+          "document": "s05_1789143516_add-provider-health-monitoring-to-model-health-register.md",
+          "themes": [
+            "echo",
+            "find",
+            "arg",
+            "the",
+            "data"
+          ],
+          "preview": "I'll explore the actual data directory to find the existing `model_health.Register` code before building the enhancement.<tool_call>shell<arg_key>cmd</arg_key><arg_value>echo \"=== argv[1] ===\" && echo"
+        },
+        {
+          "document": "s05_1789159162_scan-existing-skill-proposals-from-dreams-and-ideas-memory.md",
+          "themes": [
+            "proposals",
+            "data",
+            "for",
+            "score",
+            "title"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nScan existing skill proposals from dreams and ideas memory.\nOutputs structured list of unimplemented proposals with source references,\ndeduplication, and quality s"
+        },
+        {
+          "document": "s05_1789159259_build-dream-to-skill-converter-using-existing-organs.md",
+          "themes": [
+            "insight",
+            "module",
+            "data",
+            "tool",
+            "file"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDream-to-Skill Converter: Converts high-scoring dream insights into verified Python tools.\nImports from zoetron.dream, zoetron.ideen, zoetron.hands, zoetron.werkze"
+        },
+        {
+          "document": "s05_1789159296_run-new-skills-through-benchmark-organ-and-convergence-gate.md",
+          "themes": [
+            "data",
+            "dev",
+            "null",
+            "echo",
+            "the"
+          ],
+          "preview": "\n\nI'll start by exploring the data directory structure and understanding the existing tools and zoetron modules.\n<dots_function_call>\ninvoke=\"bash\">\n<parameter name=\"command\">find /data -type f -name "
+        },
+        {
+          "document": "s05_1789186203_modell-fehler-inventar-und-klassifizierung.md",
+          "themes": [
+            "model",
+            "path",
+            "json",
+            "health",
+            "metacog"
+          ],
+          "preview": "\n\nCreates an inventory of model errors by reading the model_health register and metacog self-model from the data directory. The script categorizes errors by severity, frequency, and cause, and writes "
+        },
+        {
+          "document": "s05_1789186338_fehlerbewusste-modell-routing-optimierung.md",
+          "themes": [
+            "model",
+            "error",
+            "self",
+            "load",
+            "health"
+          ],
+          "preview": "```python\nimport os\nimport sys\nimport json\nimport time\nfrom collections import defaultdict\nfrom typing import Dict, List, Optional, Any\n\ndef load_json(path: str) -> Optional[Any]:\n    if os.path.exist"
+        },
+        {
+          "document": "s05_1789186418_automatische-fehlerkorrektur-reflexe.md",
+          "themes": [
+            "self",
+            "pattern",
+            "error",
+            "get",
+            "correction"
+          ],
+          "preview": "```python\nimport os\nimport sys\nimport json\nimport time\nimport hashlib\nfrom collections import defaultdict\nfrom typing import Dict, List, Optional, Any, Callable\nfrom dataclasses import dataclass, fiel"
+        },
+        {
+          "document": "s05_1789190441_discover-proposed-capabilities-from-memory-and-knowledge-gra.md",
+          "themes": [
+            "graph",
+            "for",
+            "dir",
+            "path",
+            "results"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDiscover proposed capabilities from memory and knowledge graph.\nQueries semantic memory and knowledge graph for nodes related to 'Vorgeschlagene Fähigkeiten'\nand e"
+        },
+        {
+          "document": "s05_1789190528_find-executable-tools-for-proposed-capabilities-via-reflexsu.md",
+          "themes": [
+            "data",
+            "dir",
+            "file",
+            "tools",
+            "path"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nFind executable tools for proposed capabilities via reflexsuche.\nSearches for tools by semantic meaning that match discovered proposed capabilities.\n\"\"\"\nimport sys"
+        },
+        {
+          "document": "s05_1789190614_execute-and-validate-each-proposed-capability-with-hands-and.md",
+          "themes": [
+            "path",
+            "dir",
+            "data",
+            "return",
+            "tools"
+          ],
+          "preview": "\n\nThis script discovers proposed capabilities from memory and knowledge graph, finds corresponding tools, executes them using the hands organ (with subprocess fallback), validates them with werkzeugpr"
+        },
+        {
+          "document": "s05_1789225637_messung-der-aktuellen-modellgenauigkeit.md",
+          "themes": [
+            "model",
+            "path",
+            "dataset",
+            "files",
+            "return"
+          ],
+          "preview": "\n\nThe following script benchmarks available models, validates accuracy on known datasets, and saves a baseline with timestamp and versioning. It reads from the live data directory provided via command"
+        },
+        {
+          "document": "s05_1789225768_optimierung-der-modell-routing-strategie.md",
+          "themes": [
+            "task",
+            "model",
+            "aggregates",
+            "ranking",
+            "agg"
+          ],
+          "preview": "\n\nDieses Skript liest Leistungsdaten aus dem Live‑Verzeichnis, aktualisiert das Ranking kontinuierlich und baut eine optimierte Kette. Bei fehlenden Daten wird auf synthetische Daten zurückgegriffen u"
+        },
+        {
+          "document": "s05_1789271785_audit-existing-skill-proposals-and-failed-conversion-tool.md",
+          "themes": [
+            "tool",
+            "data",
+            "proposals",
+            "ideen",
+            "path"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAudit existing skill proposals and failed conversion tool.\nLoads the failed tool, examines its error, and queries the ideen organ for pending skill proposals.\nOutp"
+        },
+        {
+          "document": "s05_1789271809_build-skill-validation-pipeline-using-werkzeugpruefung.md",
+          "themes": [
+            "proposals",
+            "data",
+            "content",
+            "proposal",
+            "skill"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nSkill validation pipeline using werkzeugpruefung.pruefe.\nLoads skill proposals from the ideen organ, validates each with werkzeugpruefung,\nand outputs validated pr"
+        },
+        {
+          "document": "s05_1789271862_convert-validated-proposals-into-executable-skill-modules.md",
+          "themes": [
+            "skill",
+            "path",
+            "proposals",
+            "data",
+            "name"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nConvert validated skill proposals into executable skill modules.\nReads validated proposals, uses reflexsuche.vektor for semantic naming,\nand writes complete Python"
+        },
+        {
+          "document": "s05_1789287831_inventarisierung-aller-vorgeschlagenen-f-higkeiten-aus-dem-i.md",
+          "themes": [
+            "idea",
+            "data",
+            "ideen",
+            "nutzen",
+            "root"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nInventarisierung aller vorgeschlagenen Fähigkeiten aus dem Ideen-Speicher.\nLädt Ideen, filtert nach Status 'vorgeschlagen'/'ungeprüft', priorisiert nach Nutzen/Imp"
+        },
+        {
+          "document": "s05_1789287881_validierung-der-kandidaten-durch-werkzeugpruefung-organ.md",
+          "themes": [
+            "organ",
+            "data",
+            "path",
+            "result",
+            "file"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nValidierung der Kandidaten durch werkzeugpruefung-Organ.\nFührt jeden Kandidaten durch das Prüf-Organ, um echte Ausführbarkeit, Sicherheit und Nutzen zu prüfen.\nNur"
+        },
+        {
+          "document": "s05_1789287963_implementierung-der-validierten-f-higkeiten-als-echte-werkze.md",
+          "themes": [
+            "name",
+            "test",
+            "skill",
+            "str",
+            "module"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nImplementierung der validierten Fähigkeiten als echte Werkzeuge.\nErstellt für jede validierte Fähigkeit ein vollständiges Python-Modul in src/zoetron/\nmit korrekte"
+        },
+        {
+          "document": "s05_1789291587_analyse-des-vorherigen-fehlers-und-planung.md",
+          "themes": [
+            "analysis",
+            "plan",
+            "errors",
+            "data",
+            "strategies"
+          ],
+          "preview": "\n\nThis script analyzes the failure of the previous tool by searching for error logs and generates a new plan using winning strategies while avoiding forbidden approaches. It reads from the provided da"
+        },
+        {
+          "document": "s05_1789291645_neue-simulation-starten.md",
+          "themes": [
+            "simulate",
+            "dir",
+            "data",
+            "artefakte",
+            "simulation"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nStartet eine neue Simulation mit dem Simulate-Modul unter Berücksichtigung von Ressourcenbegrenzungen.\nLiest Daten aus dem angegebenen Verzeichnis oder fällt auf"
+        },
+        {
+          "document": "s05_1789291701_neuen-traum-starten.md",
+          "themes": [
+            "result",
+            "dream",
+            "time",
+            "module",
+            "dir"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nStartet einen neuen Traum mit dem Dream-Modul und führt den Konsolidierungsprozess durch.\nFügt Kontrollpunkte und Fehlerbehandlungen hinzu, um Probleme frühzeiti"
+        },
+        {
+          "document": "s05_1789341740_extract-and-deduplicate-skill-proposals-from-dream-logs.md",
+          "themes": [
+            "data",
+            "proposals",
+            "skills",
+            "dir",
+            "dream"
+          ],
+          "preview": "\n\nThis tool extracts skill proposals from dream logs, deduplicates them against existing skills using TF-IDF cosine similarity, and outputs a ranked list with a human-in-the-loop validation gate. It r"
+        },
+        {
+          "document": "s05_1789341812_implement-skill-proposal-to-execution-pipeline.md",
+          "themes": [
+            "self",
+            "test",
+            "passed",
+            "results",
+            "code"
+          ],
+          "preview": "```python\nimport os\nimport sys\nimport json\nimport subprocess\nimport tempfile\nimport shutil\nimport ast\nimport re\nimport textwrap\nfrom pathlib import Path\nfrom typing import Dict, List, Any, Optional, T"
+        },
+        {
+          "document": "s05_1789341831_build-adaptive-pruning-pressure-signal-for-dream-consolidati.md",
+          "themes": [
+            "salience",
+            "dream",
+            "data",
+            "pressure",
+            "dir"
+          ],
+          "preview": "```python\nimport os\nimport sys\nimport json\nimport math\nfrom pathlib import Path\nfrom typing import Dict, List, Any, Optional, Tuple\nfrom dataclasses import dataclass, asdict\nfrom datetime import datet"
+        },
+        {
+          "document": "s05_1789342024_implement-model-router-skill-from-dream-backlog.md",
+          "themes": [
+            "model",
+            "cost",
+            "tier",
+            "latency",
+            "capabilities"
+          ],
+          "preview": "```python\nimport os\nimport sys\nimport json\nimport asyncio\nfrom pathlib import Path\nfrom typing import Dict, List, Any, Optional, Literal\nfrom dataclasses import dataclass, asdict\nfrom datetime import "
+        },
+        {
+          "document": "s05_1789401610_query-semantic-memory-for-distant-dream-memories.md",
+          "themes": [
+            "dir",
+            "memory",
+            "path",
+            "related",
+            "data"
+          ],
+          "preview": "\n\nThis script uses the existing SemanticMemory module to query dream-related entries and find distant but semantically related memories. It reads memory files from the data directory and outputs conne"
+        },
+        {
+          "document": "s05_1789401726_create-graph-connections-between-distant-memories.md",
+          "themes": [
+            "graph",
+            "node",
+            "nodes",
+            "memory",
+            "data"
+          ],
+          "preview": "\n\nThis script extends the existing KnowledgeGraph with adaptive edge weights by traversing the graph and connecting distant dream and memory nodes with weights inversely proportional to their shortest"
+        },
+        {
+          "document": "s05_1789401790_dream-consolidation-with-memory-linking.md",
+          "themes": [
+            "dream",
+            "path",
+            "dir",
+            "connections",
+            "data"
+          ],
+          "preview": "\n\nThis script consolidates sleep-phase memories and forms connections between distant dream and memory entries using the Dream module. If the module is unavailable, it falls back to a keyword-based si"
+        },
+        {
+          "document": "s05_1789404657_vorgeschlagene-f-higkeiten-identifizieren.md",
+          "themes": [
+            "suggestions",
+            "path",
+            "suggestion",
+            "data",
+            "item"
+          ],
+          "preview": "\n\n```python\nimport os\nimport sys\nimport json\nimport re\nfrom datetime import datetime\n\ndef validate_suggestion(suggestion):\n    \"\"\"Validate a skill suggestion to exclude malicious or faulty contributio"
+        },
+        {
+          "document": "s05_1789404679_code-sicherheitspr-fung-der-vorschl-ge.md",
+          "themes": [
+            "code",
+            "issues",
+            "syntax",
+            "return",
+            "data"
+          ],
+          "preview": "\n\n```python\nimport os\nimport sys\nimport ast\nimport json\nimport re\nfrom pathlib import Path\n\ndef find_data_dir():\n    \"\"\"Resolve the live data directory from argv or environment.\"\"\"\n    if len(sys.argv"
+        },
+        {
+          "document": "s05_1789404849_sandkasten-ausf-hrung-der-f-higkeiten.md",
+          "themes": [
+            "skills",
+            "data",
+            "dir",
+            "path",
+            "name"
+          ],
+          "preview": "\n\nThis artifact integrates validated skills into the system after sandbox testing. It reads the skills from the live data directory, performs a safety check, and copies them into an integration folder"
+        },
+        {
+          "document": "s05_1789434515_analyze-failed-model-reliability-tool.md",
+          "themes": [
+            "report",
+            "analysis",
+            "data",
+            "path",
+            "dir"
+          ],
+          "preview": "\n\nThis script analyzes the previously failed tool `modelle-zuverlaessiger-machen.py` to extract error patterns and document the failure. It reads the tool's source code from the live data directory, p"
+        },
+        {
+          "document": "s05_1789434547_extend-model-health-with-reliability-metrics.md",
+          "themes": [
+            "model",
+            "latency",
+            "register",
+            "cost",
+            "data"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"Extend model_health register with reliability metrics: error rates, latency, cost.\nPilots new metrics on a single model before full rollout. Defines actionable th"
+        },
+        {
+          "document": "s05_1789434609_implement-simulation-pre-deployment-gate.md",
+          "themes": [
+            "latency",
+            "error",
+            "model",
+            "output",
+            "scenario"
+          ],
+          "preview": "\n\nImplements a mandatory simulation gate that runs diverse scenarios with time limits before any model update. The script prints results and exits non-zero on failure, enforcing early issue detection."
+        },
+        {
+          "document": "s05_1789480152_veraltete-fakten-im-wissensgraph-identifizieren.md",
+          "themes": [
+            "fact",
+            "data",
+            "time",
+            "fid",
+            "none"
+          ],
+          "preview": "\n\n```python\nimport sys\nimport os\nimport json\nimport datetime\n\ntry:\n    from zoetron.graph import Graph\n    from zoetron.widerspruch import find_contradictions\nexcept ImportError as e:\n    print(f\"Erro"
+        },
+        {
+          "document": "s05_1789480192_fakten-basierend-auf-aktuellem-swarm-state-aktualisieren.md",
+          "themes": [
+            "graph",
+            "facts",
+            "swarm",
+            "state",
+            "updates"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nAlte Fakten basierend auf aktuellem Swarm-State aktualisieren.\nUses zoetron.semantic for semantic updates and zoetron.retro for self-reflection.\nValidates with c"
+        },
+        {
+          "document": "s05_1789480278_aktualisierte-fakten-konsistenzpr-fen-und-bereinigen.md",
+          "themes": [
+            "graph",
+            "data",
+            "get",
+            "dir",
+            "node"
+          ],
+          "preview": "\n\nAlte Fakten-Konsistenzpruefung und Bereinigung. Uses zoetron.widerspruch for contradiction detection and resolution, and zoetron.prune for orphan removal. Ensures memory consistency after the update"
+        },
+        {
+          "document": "s05_1789491886_analyse-aktueller-swarm-ziele-und-identifikation-veralteter.md",
+          "themes": [
+            "results",
+            "goals",
+            "swarm",
+            "import",
+            "state"
+          ],
+          "preview": "\n\nThis script analyzes swarm goals by importing the zoetron.swarm module and using will-organ functions to identify outdated or contradictory entries. It focuses on import-based analysis as specified,"
+        },
+        {
+          "document": "s05_1789491945_aktualisierung-veralteter-swarm-ziele-mit-semantischer-konsi.md",
+          "themes": [
+            "swarm",
+            "zoetron",
+            "import",
+            "ziel",
+            "ziele"
+          ],
+          "preview": "\n\nDieses Skript führt die Aktualisierung veralteter Swarm-Ziele mit semantischer Konsistenzprüfung durch. Es nutzt die Module zoetron.semantic und zoetron.drive zur Bestimmung korrekter Zielwerte und "
+        },
+        {
+          "document": "s05_1789491978_validierung-der-aktualisierten-swarm-ziele-gegen-konvergenzt.md",
+          "themes": [
+            "goals",
+            "swarm",
+            "return",
+            "data",
+            "path"
+          ],
+          "preview": "\n\nThis script validates updated swarm goals against the convergence gate. It attempts to load the goals from known locations and uses the gate when available, falling back to a simple internal check o"
+        },
+        {
+          "document": "s06_1789116736_draft-deliverable-for-fehler-in-modellen-finden-und-reparier.md",
+          "themes": [
+            "model",
+            "test",
+            "self",
+            "data",
+            "error"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nModel Error Detection and Repair System\nFinds errors in models through systematic testing, validation, and applies repair techniques.\nQuality assurance ensures c"
+        },
+        {
+          "document": "s06_1789210517_analyse-der-aktuellen-modell-fehler-muster-mit-model-health.md",
+          "themes": [
+            "model",
+            "error",
+            "data",
+            "fallback",
+            "path"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyse der aktuellen Modell-Fehler-Muster mit model_health und router.\nErzeugt einen JSON-Report als Basis für messbare Ziele.\n\"\"\"\nimport json\nimport os\nimport sy"
+        },
+        {
+          "document": "s06_1789210638_erweitere-resilientllm-um-messbare-retry-policy-und-fallback.md",
+          "themes": [
+            "self",
+            "error",
+            "model",
+            "return",
+            "module"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nErweitert ResilientLLM um messbare Retry-Policy und Fallback-Ketten.\nLädt den existierenden Router aus dem Datenverzeichnis, patcht die ResilientLLM-Klasse\nund f"
+        },
+        {
+          "document": "s06_1789210746_implementiere-konvergenz-tor-f-r-modell-ausgaben-vor-werkzeu.md",
+          "themes": [
+            "model",
+            "self",
+            "health",
+            "result",
+            "fallback"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nKonvergenz-Tor für Modell-Ausgaben vor Werkzeug-Einsatz.\nJede Modell-Ausgabe muss konvergenztor.pruefe bestehen, bevor sie weiterverarbeitet wird.\nFehlschläge werd"
+        },
+        {
+          "document": "s06_1789248042_identify-stale-swarm-goals-via-drive-signal-analysis.md",
+          "themes": [
+            "data",
+            "goal",
+            "file",
+            "root",
+            "goals"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nIdentify stale swarm goals via drive signal analysis.\nQueries the 'stale' drive signal to find outdated goals and their metadata.\n\"\"\"\nimport sys\nimport os\nimport j"
+        },
+        {
+          "document": "s06_1789248119_repair-and-execute-the-veraltete-swarm-ziele-erneuern-tool.md",
+          "themes": [
+            "data",
+            "goals",
+            "stale",
+            "signal",
+            "return"
+          ],
+          "preview": "\n\nThis tool refreshes outdated swarm goals by locating the 'stale' drive signal and updating the corresponding swarm goals file. It reads from the live ZOETRON_DATA directory or a provided path, falli"
+        },
+        {
+          "document": "s06_1789248173_validate-refreshed-goals-via-convergence-gate.md",
+          "themes": [
+            "goals",
+            "path",
+            "data",
+            "get",
+            "gate"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nValidate refreshed swarm goals via convergence gate (Konvergenztor).\nEnsures updated goals pass test-pflicht before marking as fulfilled.\n\"\"\"\nimport sys\nimport os\n"
+        },
+        {
+          "document": "s06_1789255244_discover-and-catalog-all-proposed-capabilities-awaiting-vali.md",
+          "themes": [
+            "path",
+            "capability",
+            "benchmarked",
+            "name",
+            "for"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDiscover and catalog all proposed capabilities awaiting validation.\nScans workspace for capability definitions (Python, JSON, Markdown) not yet benchmarked.\n\"\"\"\nim"
+        },
+        {
+          "document": "s06_1789255302_execute-benchmark-suite-on-each-untested-proposed-capability.md",
+          "themes": [
+            "results",
+            "file",
+            "benchmark",
+            "path",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nExecute benchmark suite on each untested proposed capability.\nRuns pre-benchmark assessment, then messe_werkzeuge, messe_reflex, messe_konvergenz.\nStores results i"
+        },
+        {
+          "document": "s06_1789255379_validate-proposed-capabilities-through-convergence-gate-befo.md",
+          "themes": [
+            "result",
+            "gate",
+            "file",
+            "capability",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nValidate proposed capabilities through convergence gate before execution.\nPasses each proposed capability's code through konvergenztor.pruefe to ensure\nit meets sa"
+        },
+        {
+          "document": "s06_1789264768_discover-and-catalog-proposed-capabilities-from-memory.md",
+          "themes": [
+            "proposals",
+            "data",
+            "root",
+            "file",
+            "memory"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDiscover and catalog proposed capabilities from memory that need conversion to skills.\nReads from live data directory (sys.argv[1] or ZOETRON_DATA).\n\"\"\"\nimport sys"
+        },
+        {
+          "document": "s06_1789264811_validate-each-proposed-capability-against-benchmark-standard.md",
+          "themes": [
+            "score",
+            "capability",
+            "benchmark",
+            "data",
+            "results"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nValidate proposed capabilities against benchmark standards using benchmark_organ and konvergenztor.\nReads from live data directory (sys.argv[1] or ZOETRON_DATA).\n\""
+        },
+        {
+          "document": "s06_1789264863_register-validated-capabilities-as-executable-skills-in-the.md",
+          "themes": [
+            "skill",
+            "validation",
+            "return",
+            "module",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nRegister validated capabilities as executable skills in the toolbox.\nUses werkzeugpruefung and hands organs to register verified capabilities\nas callable skills wi"
+        },
+        {
+          "document": "s06_1789295591_draft-deliverable-for-vorgeschlagene-f-higkeiten-wirklich-nu.md",
+          "themes": [
+            "skills",
+            "data",
+            "append",
+            "lines",
+            "score"
+          ],
+          "preview": "\n\nThis script reads proposed skills from the live data directory and generates a usability plan to make them actionable. It assesses each skill against criteria like functionality, user-friendliness, "
+        },
+        {
+          "document": "s06_1789324576_draft-deliverable-for-f-higkeiten-mit-erinnerungen-verbinden.md",
+          "themes": [
+            "memories",
+            "data",
+            "keywords",
+            "skills",
+            "and"
+          ],
+          "preview": "\n\nThis script connects skills and memories by mapping them based on shared keywords. It reads from a data directory containing `skills` and `memories` subdirectories, extracts keywords from each file,"
+        },
+        {
+          "document": "s06_1789350309_pipeline-vorgeschlagene-f-higkeiten-aus-ideen-sammler-holen.md",
+          "themes": [
+            "score",
+            "logger",
+            "prop",
+            "benchmark",
+            "path"
+          ],
+          "preview": "\n\nDieses Skript orchestriert den Benchmark-Prozess für vorgeschlagene Fähigkeiten, importiert die nötigen Organe mit Fallback auf Datei-Lesen und wendet konfigurierte Schwellenwerte an. Die Ergebnisse"
+        },
+        {
+          "document": "s06_1789350396_automatische-werkzeug-generierung-aus-bestandenen-benchmarks.md",
+          "themes": [
+            "name",
+            "code",
+            "tool",
+            "path",
+            "dir"
+          ],
+          "preview": "\n\nAutomatische Werkzeug-Generierung aus bestandenen Benchmarks: Dieses Skript liest Vorschläge aus einer JSON-Datei, filtert nach konfigurierbarer Schwelle, generiert Werkzeug-Code via Evolution (mit "
+        },
+        {
+          "document": "s06_1789350458_integrationstest-neue-werkzeuge-im-reflex-suchindex-registri.md",
+          "themes": [
+            "self",
+            "tool",
+            "name",
+            "index",
+            "graph"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nIntegrationstest: Neue Werkzeuge im Reflex-Suchindex registrieren.\nImportiert zoetron.reflexsuche und zoetron.graph.KnowledgeGraph, erzeugt Embeddings,\nfügt sie in"
+        },
+        {
+          "document": "s06_1789352958_analyse-der-aktuellen-modell-fehler-via-model-health-registe.md",
+          "themes": [
+            "error",
+            "data",
+            "register",
+            "self",
+            "model"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyse der aktuellen Modell-Fehler via Model-Health-Register und Router.\nErweitert das Register um Fehler-Typ-Tagging und Frequenzzählung.\n\"\"\"\nimport sys\nimport o"
+        },
+        {
+          "document": "s06_1789353113_implementiere-automatische-fehler-klassifikation-und-reflex.md",
+          "themes": [
+            "error",
+            "context",
+            "model",
+            "self",
+            "str"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nErweitert reflex.run_reflexes um eine Fehler-Klassifikations-Pipeline.\nErkennt Modell-Fehler (Halluzination, Formatbruch, Logikfehler, Kontextverlust)\nund triggert"
+        },
+        {
+          "document": "s06_1789353155_benchmark-suite-f-r-modell-fehler-raten-erstellen-und-baseli.md",
+          "themes": [
+            "print",
+            "rate",
+            "json",
+            "baseline",
+            "error"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nErweitert benchmark_organ um einen 'model_error_rate' Test.\nSystematische Prüfung bekannter Fehler-Szenarien (JSON-Format, Faktenwiedergabe, Reasoning-Schritte)."
+        },
+        {
+          "document": "s06_1789376100_resolve-import-errors-for-critical-modules.md",
+          "themes": [
+            "path",
+            "data",
+            "mod",
+            "missing",
+            "import"
+          ],
+          "preview": "\n\nThis script attempts to import the required modules and, on failure, searches the data directory for the missing packages to extend the Python path. It handles edge cases such as missing directories"
+        },
+        {
+          "document": "s06_1789376175_implement-dynamic-load-balancing.md",
+          "themes": [
+            "data",
+            "path",
+            "model",
+            "self",
+            "the"
+          ],
+          "preview": "This implementation introduces a `DynamicLoadBalancer` that resolves model endpoints from the environment and measures real-time latency to optimize selection. It integrates with the `zoetron` ecosyst"
+        },
+        {
+          "document": "s06_1789376238_enhance-memory-consolidation.md",
+          "themes": [
+            "path",
+            "facts",
+            "events",
+            "count",
+            "json"
+          ],
+          "preview": "\n\nEnhances memory consolidation by safely pruning low‑relevance facts and events, archiving them first, and including validation tests to prevent data loss.\n\n```python\nimport os\nimport sys\nimport json"
+        },
+        {
+          "document": "s06_1789398870_semantic-memory-connection-discovery.md",
+          "themes": [
+            "organ",
+            "memories",
+            "value",
+            "for",
+            "key"
+          ],
+          "preview": "\n\nDas Skript nutzt das bestehende SemanticMemory-Organ, um nach Einträgen zu suchen, die „Trägerinnerungen“ verbinden, und stellt semantische Verbindungen zwischen diesen her. Es liest die Daten aus d"
+        },
+        {
+          "document": "s06_1789398915_strengthen-existing-memory-paths.md",
+          "themes": [
+            "data",
+            "memory",
+            "memories",
+            "carrier",
+            "weight"
+          ],
+          "preview": "\n\nDieses Skript stärkt bestehende Gedächtnisbahnen, indem es Trägerinnerungen über das bahnen-Organ verbindet. Es liest die Gedächtnisdaten aus dem angegebenen Verzeichnis oder fällt auf eine Standard"
+        },
+        {
+          "document": "s06_1789398964_graph-based-connection-discovery.md",
+          "themes": [
+            "data",
+            "graph",
+            "terms",
+            "path",
+            "dir"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\"\"\"\nGraph-based Connection Discovery\nEntdeckt neue Verbindungen zwischen Trägerinnerungen durch Graph-Traversal.\nNutzt das KnowledgeGraph-Org"
+        },
+        {
+          "document": "s06_1789409209_inspect-existing-swarm-goal-refresh-tools.md",
+          "themes": [
+            "dir",
+            "tools",
+            "path",
+            "data",
+            "print"
+          ],
+          "preview": "\n\nI'll start by examining the existing tools to understand their current implementation.\n\n```python\nimport os, sys, json\n\ndata_dir = os.environ.get('ZOETRON_DATA', sys.argv[1] if len(sys.argv) > 1 els"
+        },
+        {
+          "document": "s06_1789409218_run-diagnostic-on-failed-tool-execution.md",
+          "themes": [
+            "print",
+            "dir",
+            "target",
+            "path",
+            "data"
+          ],
+          "preview": "\n\n```python\nimport os, sys, traceback, subprocess\n\ndata_dir = os.environ.get('ZOETRON_DATA', sys.argv[1] if len(sys.argv) > 1 else '.')\ntools_dir = os.path.join(data_dir, 'tools')\n\n# Find the previous"
+        },
+        {
+          "document": "s06_1789409293_fix-and-enhance-the-refresh-tool.md",
+          "themes": [
+            "data",
+            "dir",
+            "goals",
+            "method",
+            "file"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"Fix and enhance the swarm goal refresh tool.\n\nThis script repairs the previous tool by properly locating and using the\nSwarmOrchestrator module, avoiding I/O bloc"
+        },
+        {
+          "document": "s06_1789453291_audit-swarm-wissen-auf-konsistenz-und-verfallsdatum.md",
+          "themes": [
+            "get",
+            "path",
+            "data",
+            "expired",
+            "nodes"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nSwarm-Wissen Audit: Konsistenz- und Verfallsdatumprüfung\nVerbesserte Konflikterkennung, Aktualisierungsvorschläge und Gesundheitsmetriken.\nLiest Daten aus sys.ar"
+        },
+        {
+          "document": "s06_1789453339_wissensl-cken-und-veraltete-bereiche-identifizieren.md",
+          "themes": [
+            "nodes",
+            "domain",
+            "data",
+            "audit",
+            "node"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nSwarm-Wissen Analyse: Wissenslücken und veraltete Bereiche identifizieren\nAutomatische Lückenfüllung mit Audit-Phase.\nLiest Daten aus sys.argv[1] oder ZOETRON_DA"
+        },
+        {
+          "document": "s06_1789453382_swarm-wissen-aktualisieren-und-validieren.md",
+          "themes": [
+            "nodes",
+            "data",
+            "updated",
+            "node",
+            "path"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nSwarm-Wissen Aktualisierung und Validierung\nAktualisiert veraltete Einträge im Wissensgraphen und validiert die Ergebnisse.\nLiest Daten aus sys.argv[1] oder ZOET"
+        },
+        {
+          "document": "s06_1789460631_draft-deliverable-for-tr-ume-in-handeln-umsetzen.md",
+          "themes": [
+            "plan",
+            "data",
+            "dir",
+            "contexts",
+            "path"
+          ],
+          "preview": "\n\nHere is a Python script that generates a plan document for turning dreams into action, reading any available context from the data directory.\n\n```python\n#!/usr/bin/env python3\nimport sys\nimport os\ni"
+        },
+        {
+          "document": "s07_1789140203_draft-deliverable-for-vorgeschlagene-f-higkeiten-endlich-ums.md",
+          "themes": [
+            "and",
+            "skill",
+            "skills",
+            "data",
+            "dir"
+          ],
+          "preview": "\n\nThe following script reads the memory data directory, extracts proposed skills, and generates a structured implementation plan. It outputs the plan as JSON and writes it to the artefakte folder. Run"
+        },
+        {
+          "document": "s07_1789161891_analyze-failed-fernere-erinnerungen-verbinden-py-and-extract.md",
+          "themes": [
+            "name",
+            "func",
+            "node",
+            "docstring",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyze failed fernere-erinnerungen-verbinden.py and extract reusable logic.\nReads from ZOETRON_DATA or sys.argv[1] for the tools directory.\n\"\"\"\nimport sys\nimport "
+        },
+        {
+          "document": "s07_1789161979_implement-distant-memory-connection-using-existing-knowledge.md",
+          "themes": [
+            "connections",
+            "nodes",
+            "node",
+            "print",
+            "path"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDistant Memory Connection - Connect semantically related but topologically distant nodes.\nUses zoetron.graph.KnowledgeGraph and zoetron.semantic.SemanticMemory.\n\"\""
+        },
+        {
+          "document": "s07_1789162005_add-bahnen-pathway-reinforcement-for-newly-connected-memorie.md",
+          "themes": [
+            "bahnen",
+            "print",
+            "data",
+            "verstaerken",
+            "nachspiel"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nTest script to verify zoetron.bahnen.verstaerken and nachspiel exist and behave as expected.\nReads from ZOETRON_DATA or sys.argv[1] for the tools directory.\n\"\"\"\nim"
+        },
+        {
+          "document": "s07_1789183846_alte-traum-erinnerungen-aus-events-archiven-wiederbeleben.md",
+          "themes": [
+            "dream",
+            "data",
+            "revived",
+            "memories",
+            "zoetron"
+          ],
+          "preview": "\n\nThis script revives old dream memories by querying the SemanticMemory and Dream classes, falling back to a direct file search if the classes are unavailable or return nothing. It reads from the data"
+        },
+        {
+          "document": "s07_1789183919_traum-elemente-verbinden-und-werkzeuge-finden.md",
+          "themes": [
+            "data",
+            "tools",
+            "get",
+            "dream",
+            "for"
+          ],
+          "preview": "\n\nThis script connects dream elements and finds relevant tools using reflex search and the knowledge graph. It loads dream memories from the data directory and uses vector similarity to find connectio"
+        },
+        {
+          "document": "s07_1789184018_traum-ideen-zu-f-higkeiten-machen.md",
+          "themes": [
+            "data",
+            "insights",
+            "dream",
+            "for",
+            "dir"
+          ],
+          "preview": "\n\nThis script transforms revived dream insights into concrete capabilities. It reads dream insights from the provided data directory (or ZOETRON_DATA) and maps them to capabilities using a rule-based "
+        },
+        {
+          "document": "s07_1789311264_dream-consolidation-merge-distant-memories.md",
+          "themes": [
+            "memories",
+            "data",
+            "dir",
+            "pairs",
+            "content"
+          ],
+          "preview": "\n\nThe script loads memories from the data directory, computes a Jaccard-based distance metric, and selects distant pairs for consolidation. It runs a pilot test on a subset to validate targeting, then"
+        },
+        {
+          "document": "s07_1789311307_strengthen-new-pathways-via-bahnen.md",
+          "themes": [
+            "data",
+            "dir",
+            "path",
+            "bahnen",
+            "return"
+          ],
+          "preview": "\n\n```python\nimport os\nimport sys\nimport json\nimport re\nfrom collections import Counter\nfrom datetime import datetime, timedelta\n\ndef get_data_dir():\n    if len(sys.argv) > 1:\n        return sys.argv[1"
+        },
+        {
+          "document": "s07_1789311370_verify-cross-domain-connections-in-knowledge-graph.md",
+          "themes": [
+            "content",
+            "graph",
+            "domain",
+            "data",
+            "return"
+          ],
+          "preview": "\n\nThis script loads the knowledge graph from the data directory, enriches it with domain ontologies, and verifies that cross‑domain edges are both present and semantically meaningful. It uses a lightw"
+        },
+        {
+          "document": "s07_1789361266_system-selbstdiagnose-ausf-hren-und-herzschlag-fehler-erfass.md",
+          "themes": [
+            "error",
+            "msg",
+            "for",
+            "data",
+            "return"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nSystem-Selbstdiagnose: Herzschlag-Fehler erfassen und kategorisieren.\nLiest Live-Daten aus ZOETRON_DATA (memory/, tools/, artefakte/) und analysiert Abstürze.\n\"\"\"\n"
+        },
+        {
+          "document": "s07_1789361299_modell-gesundheitsregister-pr-fen-und-kontofehler-identifizi.md",
+          "themes": [
+            "health",
+            "model",
+            "rec",
+            "data",
+            "path"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nModell-Gesundheitsregister prüfen: Modell-Fehler, Kontofehler und Gesundheitsmetriken analysieren.\nLiest Live-Daten aus ZOETRON_DATA (memory/, tools/, artefakte/) "
+        },
+        {
+          "document": "s07_1789361325_fehlgeschlagene-werkzeug-ausf-hrungen-und-lernfehler-analysi.md",
+          "themes": [
+            "path",
+            "json",
+            "str",
+            "item",
+            "get"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nSystem-Fehler analysieren: Lernfehler, ungetestete Skill-Vorschläge und fehlgeschlagene Werkzeug-Ausführungen untersuchen.\nLiest Live-Daten aus ZOETRON_DATA (mem"
+        },
+        {
+          "document": "s07_1789393087_traum-schwarm-br-cke-traumkonsolidierung-in-schwarmaufgaben.md",
+          "themes": [
+            "task",
+            "data",
+            "insight",
+            "path",
+            "self"
+          ],
+          "preview": "This module implements the `DreamSwarmBridge`, which acts as the semantic translator between the `zoetron.dream` consolidation phase and the `zoetron.swarm` execution layer. It scans the memory direct"
+        },
+        {
+          "document": "s07_1789422465_draft-deliverable-for-simulationen-fter-anwenden.md",
+          "themes": [
+            "lines",
+            "append",
+            "target",
+            "data",
+            "review"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDeliverable Generator: Simulationen öfter anwenden\nCreates a comprehensive action plan with timelines, resources, metrics,\nstakeholder engagement, training, and pe"
+        },
+        {
+          "document": "s07_1789430942_analyze-current-memory-graph-topology-and-identify-disconnec.md",
+          "themes": [
+            "nodes",
+            "get",
+            "rel",
+            "data",
+            "files"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyze memory graph topology: find disconnected clusters, measure connection density.\nReads from live data directory (sys.argv[1] or ZOETRON_DATA). Falls back to "
+        },
+        {
+          "document": "s07_1789430983_strengthen-weak-memory-pathways-using-bahnen-dopamin-verstae.md",
+          "themes": [
+            "edge",
+            "edges",
+            "nodes",
+            "graph",
+            "value"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nStrengthen weak memory pathways using bahnen-like reinforcement.\nReads memory graph from live data directory, boosts low-weight edges between\nhigh-value nodes if"
+        },
+        {
+          "document": "s07_1789431051_run-delayed-reinforcement-replay-nachspiel-on-recent-memory.md",
+          "themes": [
+            "edges",
+            "data",
+            "events",
+            "seq",
+            "path"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nNachspiel organ: delayed reinforcement replay on recent memory sequences.\nCreates temporal associations between sequentially occurring events that lack explicit li"
+        },
+        {
+          "document": "s07_1789431121_trigger-dream-consolidation-cycle-to-form-associative-links.md",
+          "themes": [
+            "links",
+            "nodes",
+            "str",
+            "dream",
+            "node"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDream Consolidation Cycle: Simulate offline memory reorganization to form associative links.\nRuns in sandbox mode first (no write-back), validates generated links "
+        },
+        {
+          "document": "s07_1789471925_erweitere-selbstdiagnose-um-fehlermuster-kategorisierung.md",
+          "themes": [
+            "data",
+            "for",
+            "error",
+            "print",
+            "self"
+          ],
+          "preview": "\n\nThis script extends the existing self-diagnosis organ by importing its core class and adding a method for structured error pattern categorization via metacog. It collects diagnostic data through the"
+        },
+        {
+          "document": "s07_1789471951_extrahiere-ablehnungsmuster-aus-rueckmeldung.md",
+          "themes": [
+            "data",
+            "feedback",
+            "selflearn",
+            "get",
+            "module"
+          ],
+          "preview": "\n\nThis script imports feedback data to analyze blocked tools and rejection reasons, then combines it with selflearn to identify statistical patterns and system problems. It gracefully falls back to fi"
+        },
+        {
+          "document": "s07_1789471994_statistische-fehleranalyse-mit-selflearn.md",
+          "themes": [
+            "type",
+            "source",
+            "events",
+            "data",
+            "for"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nStatistische Fehleranalyse mit selflearn und Metacog.\nAnalysiert Fehlerdaten aus diagnose- und rueckmeldungquellen, erkennt Muster und identifiziert versteckte K"
+        },
+        {
+          "document": "s08_1789063234_analyse-der-aktuellen-ged-chtnisgraph-struktur-und-identifik.md",
+          "themes": [
+            "node",
+            "cluster",
+            "for",
+            "len",
+            "clusters"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyse der aktuellen Gedächtnisgraph-Struktur und Identifikation isolierter Cluster.\nLädt KnowledgeGraph und SemanticMemory, analysiert Verbindungsdichte, identif"
+        },
+        {
+          "document": "s08_1789063318_implementierung-einer-graph-basierten-reconnection-strategie.md",
+          "themes": [
+            "edges",
+            "cluster",
+            "get",
+            "node",
+            "new"
+          ],
+          "preview": "Hier ist die Implementierung der graph-basierten Reconnection-Strategie:\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nGraph-basierte Reconnection-Strategie: Schwache Brücken zwischen identifizierten Clustern"
+        },
+        {
+          "document": "s08_1789063381_validierung-der-neuen-verbindungen-durch-replay-nachspiel-un.md",
+          "themes": [
+            "echo",
+            "arg",
+            "zoetron",
+            "data",
+            "dev"
+          ],
+          "preview": "I'll explore the data directory structure first to understand what's available, then build the validation script.<tool_call>shell<arg_key>cmd</arg_key><arg_value>find / -path \"*/zoetron*\" -type f 2>/d"
+        },
+        {
+          "document": "s08_1789174034_traum-skill-vorschl-ge-extrahieren-und-strukturieren.md",
+          "themes": [
+            "skill",
+            "data",
+            "path",
+            "dream",
+            "skills"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nExtract skill proposals from consolidated dream results and structure them.\nUses the dream module and knowledge graph for semantic linking.\n\"\"\"\nimport sys\nimport o"
+        },
+        {
+          "document": "s08_1789174080_skill-vorschl-ge-gegen-existierende-organe-pr-fen-deduplizie.md",
+          "themes": [
+            "data",
+            "name",
+            "tool",
+            "proposals",
+            "organ"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nSkill-Vorschläge gegen existierende Organe prüfen (Deduplizierung).\nVergleicht extrahierte Vorschläge mit organliste und werkzeugpruefung, um Dopplungen zu vermeid"
+        },
+        {
+          "document": "s08_1789174194_ausgew-hlte-vorschl-ge-in-ausf-hrbare-python-tools-verwandel.md",
+          "themes": [
+            "self",
+            "data",
+            "root",
+            "tool",
+            "name"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nGenerate executable Python tools from validated skill proposals.\nReads deduplicated proposals and creates complete, testable tool scripts in data/tools/.\n\"\"\"\nimpor"
+        },
+        {
+          "document": "s08_1789174223_generierte-tools-durch-werkzeugpruefung-und-hands-ausf-hren.md",
+          "themes": [
+            "tools",
+            "path",
+            "data",
+            "return",
+            "output"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nRun newly generated tools through werkzeugpruefung and execute them once with Hands\nto produce real results. Reads from ZOETRON_DATA (sys.argv[1] or env).\n\"\"\"\nimpo"
+        },
+        {
+          "document": "s08_1789181085_discover-all-proposed-skills-from-memory-and-knowledge-graph.md",
+          "themes": [
+            "file",
+            "for",
+            "data",
+            "dir",
+            "memory"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDiscover all proposed skills from semantic memory and knowledge graph.\nQueries memory organs and graph for skill proposals accumulated across dreams.\n\"\"\"\nimport sy"
+        },
+        {
+          "document": "s08_1789181119_build-skill-test-harness-to-execute-each-proposed-skill.md",
+          "themes": [
+            "skill",
+            "path",
+            "file",
+            "result",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nSkill Test Harness - Execute each proposed skill and record success/failure.\nLoads candidate skills from memory/tools, attempts import/execution via hands organ.\n\""
+        },
+        {
+          "document": "s08_1789181201_create-auto-promotion-mechanism-for-verified-skills.md",
+          "themes": [
+            "path",
+            "skill",
+            "data",
+            "root",
+            "hash"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAuto-Promotion Mechanism for Verified Skills.\nTakes successfully tested skills, verifies with werkzeugpruefung, copies to werkzeugkiste, updates registry.\n\"\"\"\nimpo"
+        },
+        {
+          "document": "s08_1789207423_analyze-current-simulation-invocation-patterns-and-gaps.md",
+          "themes": [
+            "simulate",
+            "data",
+            "files",
+            "for",
+            "main"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyze current simulation invocation patterns and gaps.\nExamines how Simulate organ is called, identifies missing integration points,\nand measures baseline simula"
+        },
+        {
+          "document": "s08_1789207490_create-simulation-scheduler-hook-for-drive-cycle.md",
+          "themes": [
+            "self",
+            "scheduler",
+            "cycle",
+            "config",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nSimulation Scheduler Hook for Drive Cycle.\nLightweight scheduler that triggers Simulate organ at configurable intervals\nduring the autonomous drive cycle, using ex"
+        },
+        {
+          "document": "s08_1789207593_integrate-simulation-trigger-into-main-forge-loop.md",
+          "themes": [
+            "self",
+            "swarm",
+            "data",
+            "simulation",
+            "iteration"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nIntegrate simulation trigger into main forge loop.\nModifies the core cycle to invoke simulation before/after each swarm iteration.\n\"\"\"\nimport sys\nimport os\nimport "
+        },
+        {
+          "document": "s08_1789229026_model-health-register-mit-stabilit-tsmetriken-erweitern.md",
+          "themes": [
+            "register",
+            "time",
+            "root",
+            "response",
+            "json"
+          ],
+          "preview": "\n\nThis script extends an existing model health register by scanning log files for stability metrics such as error frequency, availability, and response time stability. It reads from the data directory"
+        },
+        {
+          "document": "s08_1789229095_router-resilienz-durch-erweiterte-fallback-ketten-verbessern.md",
+          "themes": [
+            "model",
+            "sys",
+            "root",
+            "config",
+            "error"
+          ],
+          "preview": "\n\nDieses Skript implementiert einen Router mit erweiterten Fallback-Ketten. Es liest die Modellkonfiguration aus dem Datenverzeichnis und versucht bei einem Fehler automatisch das nächste Modell. Fehl"
+        },
+        {
+          "document": "s08_1789229132_standardisierter-absoluter-pfad-aufl-ser-f-r-zoetron-data.md",
+          "themes": [
+            "path",
+            "data",
+            "resolve",
+            "resolver",
+            "root"
+          ],
+          "preview": "\n\nThis script implements a standardized absolute path resolver for ZOETRON_DATA, ensuring all file accesses use absolute paths to prevent the relative path failures seen in previous hand actions. It d"
+        },
+        {
+          "document": "s08_1789242735_inspect-existing-dream-data-structure-and-storage.md",
+          "themes": [
+            "data",
+            "return",
+            "path",
+            "records",
+            "file"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nInspect dream data structure and storage.\nReads from live data directory (sys.argv[1] or ZOETRON_DATA).\nOutputs schema analysis: field types, null rates, and 10 sa"
+        },
+        {
+          "document": "s08_1789242805_create-dream-combination-script-that-aggregates-multiple-dre.md",
+          "themes": [
+            "dreams",
+            "cluster",
+            "for",
+            "clusters",
+            "dream"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDream Combination Script: Aggregates multiple dreams by theme/timestamp,\nextracts recurring patterns and insights.\nGroups by weekly date ranges and keyword cluster"
+        },
+        {
+          "document": "s08_1789242865_extract-actionable-insights-from-combined-dream-data.md",
+          "themes": [
+            "data",
+            "str",
+            "calibration",
+            "for",
+            "failed"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDream Insight Extractor: Extracts actionable insights from combined dream data.\nIdentifies recurring themes, failed goals, and calibration data (predicted vs actua"
+        },
+        {
+          "document": "s08_1789246299_stale-fact-detector-identify-outdated-knowledge-entries.md",
+          "themes": [
+            "facts",
+            "data",
+            "fact",
+            "memory",
+            "get"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nStale-Fact-Detector: Identifies outdated knowledge entries from semantic memory and knowledge graph.\nOutputs a ranked list of stale facts with IDs and last-update "
+        },
+        {
+          "document": "s08_1789246353_fact-update-scheduler-plan-and-execute-fact-refreshes.md",
+          "themes": [
+            "fact",
+            "data",
+            "memory",
+            "simulate",
+            "str"
+          ],
+          "preview": "\n\nCreates a scheduling system that uses the taktung organ to plan fact refreshes. It prioritizes facts by staleness and active references, then executes revisions via the simulate organ. Falls back to"
+        },
+        {
+          "document": "s08_1789246445_fact-archive-and-prune-safe-removal-of-obsolete-knowledge.md",
+          "themes": [
+            "facts",
+            "data",
+            "prune",
+            "archive",
+            "fact"
+          ],
+          "preview": "\n\nThis artifact wraps the existing prune organ to safely archive deleted facts before pruning. It snapshots all facts, executes the prune organ, then archives any removed facts with metadata to a sepa"
+        },
+        {
+          "document": "s08_1789251393_analyse-der-bestehenden-simulations-infrastruktur-und-des-fe.md",
+          "themes": [
+            "data",
+            "content",
+            "root",
+            "print",
+            "simulate"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalyse der bestehenden Simulations-Infrastruktur und des fehlgeschlagenen Werkzeugs.\nUntersucht das simulate-Organ, das Werkzeug 'simulationen-in-die-praxis-umset"
+        },
+        {
+          "document": "s08_1789251583_pipeline-simulation-validierung-praktische-anwendung-bauen.md",
+          "themes": [
+            "self",
+            "sim",
+            "result",
+            "data",
+            "score"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nPipeline: Simulation → Validierung → Praktische Anwendung\nNimmt Simulationsergebnisse, validiert sie (Konvergenztor, Benchmark) und überführt bestandene in die Wer"
+        },
+        {
+          "document": "s08_1789251659_integration-mit-drive-dream-f-r-kontinuierliches-lernen.md",
+          "themes": [
+            "transfer",
+            "self",
+            "data",
+            "file",
+            "dream"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nIntegration mit Drive & Dream für kontinuierliches Lernen.\nVerbindet die Simulations-Pipeline mit dem Drive-Organ (Zielgenerierung) und Dream-Organ (Konsolidierung"
+        },
+        {
+          "document": "s08_1789259751_audit-existing-simulation-organ-and-failed-tool-to-identify.md",
+          "themes": [
+            "tool",
+            "organ",
+            "path",
+            "data",
+            "for"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAudit existing simulation organ and failed tool to identify gaps.\nReads from live data directory (sys.argv[1] or ZOETRON_DATA).\n\"\"\"\nimport sys\nimport os\nimport jso"
+        },
+        {
+          "document": "s08_1789259878_implement-consistent-simulation-runner-with-deadline-enforce.md",
+          "themes": [
+            "fallback",
+            "telemetry",
+            "error",
+            "provider",
+            "test"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nSimulationRunner - Consistent simulation runner with deadline enforcement and telemetry.\nExtends the simulate organ with deadline enforcement, structured logging, "
+        },
+        {
+          "document": "s08_1789259985_add-simulation-application-reflex-for-automatic-invocation-o.md",
+          "themes": [
+            "simulation",
+            "goal",
+            "self",
+            "reflex",
+            "matches"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nSimulation Application Reflex - Triggers simulation runs when goals match simulation patterns.\nIntegrates with existing reflex system and uses SimulationRunner.\n\"\""
+        },
+        {
+          "document": "s08_1789270209_semantic-capability-discovery-pipeline-using-reflexsuche.md",
+          "themes": [
+            "daten",
+            "pfad",
+            "embeddings",
+            "for",
+            "sys"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nSemantic capability discovery pipeline using reflexsuche's vector search.\nFinds proposed capabilities from the knowledge graph using cosine similarity ranking.\n\"\"\""
+        },
+        {
+          "document": "s08_1789270306_fast-track-validation-via-konvergenztor-integration.md",
+          "themes": [
+            "candidate",
+            "data",
+            "file",
+            "candidates",
+            "path"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nBatch validation script integrating konvergenztor.pruefe as mandatory gate.\nRuns convergence tests on proposed capabilities in parallel, returns only passing candi"
+        },
+        {
+          "document": "s08_1789270400_automated-capability-to-skill-conversion-using-hands-simulat.md",
+          "themes": [
+            "data",
+            "get",
+            "candidate",
+            "skill",
+            "self"
+          ],
+          "preview": "This script automates capability-to-skill conversion by executing validated capabilities in a simulated sandbox using hands.Hands, then registering successful executions as skills in the werkzeugpruef"
+        },
+        {
+          "document": "s08_1789283729_gelernte-f-higkeiten-abrufen-und-anwenden.md",
+          "themes": [
+            "data",
+            "memory",
+            "skills",
+            "result",
+            "file"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nRetrieve and apply learned skills from the SELBSTLERN-ORGAN memory.\nReads actual data from ZOETRON_DATA or sys.argv[1], falls back gracefully.\n\"\"\"\nimport sys\nimpor"
+        },
+        {
+          "document": "s08_1789283793_f-higkeiten-mit-der-messlatte-testen.md",
+          "themes": [
+            "data",
+            "applications",
+            "get",
+            "records",
+            "return"
+          ],
+          "preview": "\n\nHere is the implementation of the FAEHIGKEITS‑MESSLATte, which reads applied skills from memory data, computes honest metrics, and writes a benchmark report.\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nFä"
+        },
+        {
+          "document": "s08_1789283840_semantische-werkzeugsuche.md",
+          "themes": [
+            "score",
+            "data",
+            "meta",
+            "content",
+            "text"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nSemantische Werkzeugsuche: Findet Werkzeuge per Reflexsuche, die für das Anwenden\ngelernter Fähigkeiten relevant sind. Liest echte Daten aus ZOETRON_DATA oder sy"
+        },
+        {
+          "document": "s08_1789319474_veraltete-schwarm-ziele-identifizieren.md",
+          "themes": [
+            "data",
+            "json",
+            "path",
+            "will",
+            "stale"
+          ],
+          "preview": "\n\nIdentifies stale swarm goals by scanning will data and comparing with semantic memory. Uses flexible age thresholds per category and checks semantic relevance. Outputs stale goals as JSON and writes"
+        },
+        {
+          "document": "s08_1789319512_veraltete-ziele-mit-aktuellem-wissen-kreuzintegrieren.md",
+          "themes": [
+            "goal",
+            "data",
+            "json",
+            "path",
+            "assoc"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nIdentifiziert veraltete Schwarm-Ziele, kreuzintegriert Assoziationen und Traumereignisse\nund erzeugt aktualisierte Zielbeschreibungen. Die Bewertung von Assoziat"
+        },
+        {
+          "document": "s08_1789319597_scharm-ziel-registry-aktualisieren.md",
+          "themes": [
+            "data",
+            "will",
+            "path",
+            "print",
+            "goal"
+          ],
+          "preview": "\n\nDas Skript lädt die Will-Daten, identifiziert veraltete Ziele anhand von Alter und semantischer Relevanz, ersetzt sie durch frische Versionen mit integrierten Assoziationen und Traumereignissen und "
+        },
+        {
+          "document": "s08_1789344536_draft-deliverable-for-tr-ume-in-echte-f-higkeiten-umsetzen.md",
+          "themes": [
+            "goal",
+            "plan",
+            "skills",
+            "name",
+            "description"
+          ],
+          "preview": "\n\nThis tool generates a structured plan to convert dreams into concrete skills, reading the goal from the live data directory or falling back to a default. It produces a JSON deliverable with specific"
+        },
+        {
+          "document": "s08_1789426707_inspect-existing-simulation-organ-capabilities-and-outputs.md",
+          "themes": [
+            "organ",
+            "simulation",
+            "path",
+            "file",
+            "name"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nInspect existing simulation organ capabilities and outputs.\nDiscovers simulation types, output formats, and programmatic triggers.\n\"\"\"\nimport sys\nimport os\nimport "
+        },
+        {
+          "document": "s08_1789426755_build-simulation-to-hands-execution-bridge.md",
+          "themes": [
+            "step",
+            "data",
+            "hands",
+            "steps",
+            "return"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nBuild simulation-to-hands execution bridge.\nTakes simulation output from zoetron.simulate.Simulate, extracts actionable steps,\nand executes them via zoetron.hand"
+        },
+        {
+          "document": "s08_1789426796_validate-bridge-with-a-concrete-simulation-scenario.md",
+          "themes": [
+            "hands",
+            "print",
+            "module",
+            "path",
+            "simulate"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nValidate bridge with a concrete simulation scenario.\nEnd-to-end test: trigger simulation -> bridge -> hands -> verify side effects.\n\"\"\"\nimport sys\nimport os\nimport"
+        },
+        {
+          "document": "s08_1789436933_scan-knowledge-graph-for-stale-facts-using-simulation-driven.md",
+          "themes": [
+            "fact",
+            "data",
+            "facts",
+            "get",
+            "notes"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nScan knowledge graph for stale facts using simulation-driven revision.\nLoads graph from ZOETRON_DATA, runs staleness detection with secondary validation.\n\"\"\"\nimpor"
+        },
+        {
+          "document": "s08_1789437069_apply-verified-revisions-to-outdated-facts.md",
+          "themes": [
+            "fact",
+            "text",
+            "data",
+            "dir",
+            "revised"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nApply verified revisions to outdated facts with simulation-driven validation.\nArchives originals via append-only log, validates via semantic memory and consistency"
+        },
+        {
+          "document": "s08_1789437216_verify-post-update-consistency-and-prune-archives.md",
+          "themes": [
+            "fact",
+            "contradictions",
+            "get",
+            "for",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nVerify post-update consistency and prune archives with versioned audit trail.\nRuns extended contradiction detection (temporal, probabilistic, causal) on full graph"
+        },
+        {
+          "document": "s08_1789438120_diagnose-current-swarm-feedback-state-and-synchronization-ga.md",
+          "themes": [
+            "print",
+            "data",
+            "root",
+            "files",
+            "for"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDiagnose swarm feedback state and synchronization gaps.\nInspects swarm module and rueckmeldung organ for broken feedback loops.\n\"\"\"\nimport sys\nimport os\nimport jso"
+        },
+        {
+          "document": "s08_1789438187_implement-periodic-pull-and-version-reconciliation-for-swarm.md",
+          "themes": [
+            "self",
+            "data",
+            "pulled",
+            "pull",
+            "components"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nImplement periodic pull and version reconciliation for swarm sync.\nAdds synchronization mechanism to SwarmOrchestrator with periodic state pulls and version reconc"
+        },
+        {
+          "document": "s08_1789438249_reactivate-feedback-loop-between-planner-builder-and-critic.md",
+          "themes": [
+            "self",
+            "state",
+            "lesson",
+            "data",
+            "feedback"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nReactivate feedback loop between Planner, Builder, and Critic agents.\nWires up the rueckmeldung organ to enable Builder->Critic->Planner feedback flow.\nUses existi"
+        },
+        {
+          "document": "s08_1789470371_ferne-erinnerungen-identifizieren.md",
+          "themes": [
+            "nodes",
+            "print",
+            "degrees",
+            "node",
+            "threshold"
+          ],
+          "preview": "\n\nThe script loads the knowledge graph from the given data directory, computes degree statistics, and uses the KnowledgeGraph and bahnen modules to identify memory nodes with minimal connectivity. A t"
+        },
+        {
+          "document": "s08_1789470431_semantische-br-cken-finden.md",
+          "themes": [
+            "node",
+            "nodes",
+            "text",
+            "return",
+            "bridges"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nFind semantic bridges between distant memories using graph distance and cosine similarity.\nUses KnowledgeGraph, bahnen, and semantic analysis with domain-specifi"
+        },
+        {
+          "document": "s08_1789470478_verbindungen-zwischen-fernen-erinnerungen-herstellen.md",
+          "themes": [
+            "node",
+            "return",
+            "text",
+            "comp",
+            "def"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nConnect distant memories using semantic similarity and minimal connectivity.\nUses verstaerken from bahnen to create/strengthen edges with pre-connection validati"
+        },
+        {
+          "document": "s08_1789477515_draft-deliverable-for-alte-gruppen-entscheidungen-berpr-fen.md",
+          "themes": [
+            "data",
+            "decisions",
+            "append",
+            "get",
+            "lines"
+          ],
+          "preview": "\n\nThis script reviews old group decisions by reading data from the specified directory, evaluating them against criteria, and outputting a report. It falls back to a message if no data is found.\n\n```p"
+        },
+        {
+          "document": "s08_1789483689_traumgedanken-kombinieren-dream-organ-erweitern.md",
+          "themes": [
+            "dreams",
+            "return",
+            "data",
+            "similarity",
+            "root"
+          ],
+          "preview": "\n\nThis script extends the Dream-Organ by importing an existing dream module (if present) and adding a semantic combination function. It reads dreams from the data directory, uses available SemanticMem"
+        },
+        {
+          "document": "s08_1789483768_traumgedanken-kombinieren-assoziations-scan.md",
+          "themes": [
+            "graph",
+            "concepts",
+            "mod",
+            "for",
+            "root"
+          ],
+          "preview": "\n\nDieses Skript durchläuft den Wissensgraphen und findet Verbindungen zwischen Traumgedanken und anderen Domänen. Es nutzt assoziativer_kontext und reflexsuche, um verbundene Konzepte zu identifiziere"
+        },
+        {
+          "document": "s08_1789483815_traumgedanken-kombinieren-ideen-generator.md",
+          "themes": [
+            "str",
+            "data",
+            "list",
+            "return",
+            "json"
+          ],
+          "preview": "\n\nCombines dreams with existing ideas to generate new capabilities. Reads from the Zoetron data directory, falling back to example data if necessary. Outputs the combined ideas as JSON.\n\n```python\n#!/"
+        },
+        {
+          "document": "s08_1789494960_draft-deliverable-for-ferne-tr-ume-miteinander-verbinden.md",
+          "themes": [
+            "data",
+            "docs",
+            "for",
+            "doc",
+            "dir"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nFerne Träume miteinander verbinden — Connecting Distant Dreams\nReads dream/memory entries from a data directory, computes semantic\nsimilarities, and outputs a co"
+        },
+        {
+          "document": "s09_1789074836_bestandsaufnahme-aller-gespeicherten-pl-ne-und-ziele-aus-mem.md",
+          "themes": [
+            "data",
+            "plans",
+            "file",
+            "get",
+            "organ"
+          ],
+          "preview": "This script imports all organs, extracts historical plans/goals with timestamps, and produces a unified JSON inventory using a common schema with organ-specific adapters.\n```python\n#!/usr/bin/env pyth"
+        },
+        {
+          "document": "s09_1789074936_bewertungslogik-f-r-pl-ne-relevanz-alter-status-abh-ngigkeit.md",
+          "themes": [
+            "score",
+            "data",
+            "config",
+            "str",
+            "get"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nBewertungslogik für Pläne: Relevanz, Alter, Status, Abhängigkeiten prüfen.\nKonfigurierbares Scoring, Fallback-Heuristiken, inkrementelles Caching.\n\"\"\"\nimport sys\ni"
+        },
+        {
+          "document": "s09_1789075044_automatisierter-review-reflex-pr-ft-alte-pl-ne-bei-jedem-zyk.md",
+          "themes": [
+            "plan",
+            "plans",
+            "score",
+            "config",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nReflex 'review_old_plans': Intervall- und Event-getriggertes Review alter Pläne.\nNutzt die Plan-Bewertung aus Task 2, filtert auf Score > Schwellenwert,\nreicht hoc"
+        },
+        {
+          "document": "s09_1789084212_erweitere-model-health-register-um-fehlerklassifikation-und.md",
+          "themes": [
+            "model",
+            "self",
+            "fallback",
+            "error",
+            "str"
+          ],
+          "preview": "```python\nimport sys\nimport os\nimport json\nimport time\nimport sqlite3\nfrom datetime import datetime\nfrom enum import Enum\nfrom dataclasses import dataclass, field, asdict\nfrom typing import Optional, "
+        },
+        {
+          "document": "s09_1789084281_verst-rke-router-resilientllm-mit-semantischem-fallback-und.md",
+          "themes": [
+            "model",
+            "self",
+            "error",
+            "str",
+            "prompt"
+          ],
+          "preview": "```python\nimport sys\nimport os\nimport json\nimport time\nimport sqlite3\nimport threading\nfrom datetime import datetime, timedelta\nfrom enum import Enum\nfrom dataclasses import dataclass, field, asdict\nf"
+        },
+        {
+          "document": "s09_1789084457_erstelle-benchmark-skript-f-r-modellzuverl-ssigkeit-mit-echt.md",
+          "themes": [
+            "model",
+            "class",
+            "error",
+            "self",
+            "benchmark"
+          ],
+          "preview": "```python\nimport sys\nimport os\nimport json\nimport time\nimport sqlite3\nimport threading\nimport uuid\nfrom datetime import datetime\nfrom enum import Enum\nfrom dataclasses import dataclass, field, asdict\n"
+        },
+        {
+          "document": "s09_1789175038_discover-and-catalog-all-existing-skill-proposals.md",
+          "themes": [
+            "data",
+            "meta",
+            "for",
+            "proposal",
+            "key"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDiscover and catalog all existing skill proposals in the Zoetron data directory.\nScans memory/, tools/, artefakte/ for skill proposal files and creates a structure"
+        },
+        {
+          "document": "s09_1789175077_build-proposal-to-skill-validation-pipeline.md",
+          "themes": [
+            "proposal",
+            "root",
+            "name",
+            "for",
+            "data"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nProposal-to-Skill Validation Pipeline\nValidates skill proposals for completeness, feasibility, and duplicates.\nReads from ZOETRON_DATA or argv[1]; writes validat"
+        },
+        {
+          "document": "s09_1789175158_implement-first-batch-of-3-high-priority-skills-as-executabl.md",
+          "themes": [
+            "name",
+            "proposals",
+            "data",
+            "get",
+            "str"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nImplement first batch of 3 high-priority skills as executable tools.\nReads validated proposals from artefakte/, generates tool files in data/tools/.\n\"\"\"\nimport os\n"
+        },
+        {
+          "document": "s09_1789175204_register-new-skills-in-tool-registry-and-test-execution.md",
+          "themes": [
+            "tool",
+            "path",
+            "registry",
+            "tools",
+            "root"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nRegister new skills in tool registry and test execution.\nDiscovers implemented tools, registers them in the discovery system, and validates execution.\n\"\"\"\nimport o"
+        },
+        {
+          "document": "s09_1789175307_create-automated-proposal-to-skill-workflow-for-future-propo.md",
+          "themes": [
+            "self",
+            "path",
+            "proposal",
+            "state",
+            "root"
+          ],
+          "preview": "This script creates a complete automated workflow that watches for new skill proposals, validates them, implements approved ones, and registers them - closing the broken pipeline.\n```python\n#!/usr/bin"
+        },
+        {
+          "document": "s09_1789197036_lade-und-inspiziere-bestehende-traum-daten-aus-dem-dream-org.md",
+          "themes": [
+            "dreams",
+            "print",
+            "data",
+            "dream",
+            "tags"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nLade und inspiziere bestehende Traum-Daten aus dem Dream-Organ.\nGibt Übersicht aus: Anzahl, Zeitstempel, Inhaltslänge, assoziierte Tags.\n\"\"\"\n\nimport sys\nimport os\n"
+        },
+        {
+          "document": "s09_1789197110_extrahiere-wiederkehrende-muster-und-themen-aus-den-tr-umen.md",
+          "themes": [
+            "cluster",
+            "labels",
+            "texts",
+            "cache",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nAnalysiere Träume: Extrahiere wiederkehrende Muster und Themen via semantische Embeddings.\nNutzt Embedding-Cache, Parameter-Sweep für DBSCAN, speichert Cluster-Mod"
+        },
+        {
+          "document": "s09_1789197193_verkn-pfe-traummuster-mit-bestehenden-f-higkeits-vorschl-gen.md",
+          "themes": [
+            "data",
+            "cluster",
+            "proposals",
+            "path",
+            "json"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nVerknüpft Traummuster (Cluster) mit Skill-Proposals aus dem Wissensgraphen via Kosinus-Ähnlichkeit.\nErzeugt Embeddings für Skill-Proposals on-the-fall falls nicht "
+        },
+        {
+          "document": "s09_1789197405_erzeuge-validierbare-aktionspl-ne-aus-den-st-rksten-traum-sk.md",
+          "themes": [
+            "self",
+            "str",
+            "return",
+            "node",
+            "import"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nErzeuge validierbare Aktionspläne aus den stärksten Traum-Skill-Matches.\nLiest echte Traum-Daten und Skill-Proposals, generiert 3 ausführbare Python-Skripte\nals Pr"
+        },
+        {
+          "document": "s09_1789199550_discover-existing-skill-proposals-from-memory-and-idea-colle.md",
+          "themes": [
+            "data",
+            "proposals",
+            "dir",
+            "for",
+            "memory"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nDiscover existing skill proposals from memory and idea collector.\nQueries semantic memory graph and ideen organ for pending skill proposals,\nfilters for those not "
+        },
+        {
+          "document": "s09_1789199625_validate-skill-proposals-against-tool-admission-criteria.md",
+          "themes": [
+            "proposal",
+            "result",
+            "return",
+            "validationresult",
+            "data"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nValidate skill proposals against tool admission criteria.\nUses werkzeugpruefung organ to test each candidate for safety, correctness, and conformity.\nLogs validati"
+        },
+        {
+          "document": "s09_1789199715_convert-validated-proposals-into-executable-skill-modules.md",
+          "themes": [
+            "dir",
+            "proposal",
+            "skill",
+            "memory",
+            "path"
+          ],
+          "preview": "This script scans the `memory/` directory for JSON proposals marked with `status: \"validated\"`, generates syntactically verified Python modules using a template, and writes them to the `skills/` direc"
+        },
+        {
+          "document": "s09_1789199826_register-new-skills-in-the-capability-benchmark-and-reflex-s.md",
+          "themes": [
+            "skill",
+            "skills",
+            "registry",
+            "str",
+            "index"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nRegister activated skills in benchmark_organ and reflexsuche for measurement and semantic discovery.\nReads activated skill modules from skills/ directory, register"
+        },
+        {
+          "document": "s09_1789199872_run-integration-test-and-report-activation-status.md",
+          "themes": [
+            "skill",
+            "organliste",
+            "module",
+            "dir",
+            "path"
+          ],
+          "preview": "\n\nThis script runs an integration test on all generated skill modules, verifies their presence in the organliste, and writes a JSON activation report to swarm memory. It reads from the live data direc"
+        },
+        {
+          "document": "s09_1789253674_health-triggered-reflex-pipeline.md",
+          "themes": [
+            "self",
+            "model",
+            "health",
+            "check",
+            "config"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nHealth-Triggered Reflex Pipeline\nConnects model_health with reflex for proactive error reduction.\nImplements async health checks with caching, threshold tuning, an"
+        },
+        {
+          "document": "s09_1789253785_model-reliability-scoring-ranking.md",
+          "themes": [
+            "model",
+            "metrics",
+            "self",
+            "data",
+            "latency"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nModel Reliability Scoring & Ranking\nCreates a reliability-based ranking of all available models using router, model_health, and selflearn data.\nImplements quantifi"
+        },
+        {
+          "document": "s09_1789253880_failure-pattern-learning-from-rueckmeldung.md",
+          "themes": [
+            "data",
+            "self",
+            "tool",
+            "model",
+            "for"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nFailure Pattern Learning from Rueckmeldung\nLearns patterns from rejected tools/models using selflearn and rueckmeldung data.\nImplements anomaly detection for novel"
+        },
+        {
+          "document": "s09_1789257284_erweitere-model-health-register-um-automatische-failover-sta.md",
+          "themes": [
+            "self",
+            "model",
+            "history",
+            "correction",
+            "failover"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nExtend model_health.Register with failover statistics, calibration error history,\nand auto-correction factor. Includes backward compatibility layer and audit loggi"
+        },
+        {
+          "document": "s09_1789257336_integriere-benchmark-organ-in-router-resilientllm-f-r-eviden.md",
+          "themes": [
+            "self",
+            "benchmark",
+            "model",
+            "router",
+            "evidence"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nIntegrate benchmark_organ into router.ResilientLLM for evidence-based model selection.\nConnects benchmark_organ.messe_konvergenz and messe_reflex with router.rank_"
+        },
+        {
+          "document": "s09_1789257375_erstelle-reliabilit-ts-regressionstest-suite-mit-konvergenzt.md",
+          "themes": [
+            "baseline",
+            "score",
+            "test",
+            "self",
+            "print"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nReliability Regression Test Suite with konvergenztor as Quality Gate.\nLoads historical error patterns from Memory, tests against current models,\nand only passes if"
+        },
+        {
+          "document": "s09_1789263167_aufbau-einer-direkten-br-cke-zwischen-simulation-und-ausf-hr.md",
+          "themes": [
+            "result",
+            "self",
+            "data",
+            "safety",
+            "step"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nBridge between Simulate organ and Hands organ for direct simulation-to-execution pipeline.\nReads live data from ZOETRON_DATA or sys.argv[1], validates safety, exec"
+        },
+        {
+          "document": "s09_1789263280_integration-von-simulation-in-die-werkzeugpr-fung.md",
+          "themes": [
+            "tool",
+            "name",
+            "risk",
+            "self",
+            "path"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nIntegration von Simulation in die Werkzeugprüfung.\nNutzt Simulate und werkzeugpruefung, um Werkzeugverhalten vor Ausführung zu simulieren und Risiken abzufangen.\nL"
+        },
+        {
+          "document": "s09_1789263346_nachspiel-basiertes-lernen-aus-simulationsfehlern.md",
+          "themes": [
+            "data",
+            "error",
+            "goal",
+            "lesson",
+            "self"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"\nNachspiel-basiertes Lernen aus Simulationsfehlern.\nReplayed vergangene Fehlschläge des Tools 'simulationen-in-die-praxis-umsetzen' und extrahiert Lehren.\nLiest Liv"
+        },
+        {
+          "document": "s09_1789346023_inspect-existing-skill-proposals-in-memory-and-logs.md",
+          "themes": [
+            "data",
+            "path",
+            "for",
+            "key",
+            "findings"
+          ],
+          "preview": "\n\n```python\n#!/usr/bin/env python3\n\"\"\"Inspect existing skill proposals in memory and logs.\n\nReads from the data directory given as sys.argv[1] or ZOETRON_DATA,\nsearches for skill proposals (especially"
+        },
+        {
+          "document": "s09_1789346066_analyze-failed-conversion-tool-and-existing-dream-to-skill-o.md",
+          "themes": [
+            "tool",
+            "dir",
+            "print",
+            "data",
+            "tools"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"Analyze failed conversion tool and existing dream-to-skill organ.\"\"\"\n\nimport os\nimport sys\nimport json\nfrom pathlib import Path\n\n\ndef find_data_dir() -> Path:\n    i"
+        },
+        {
+          "document": "s09_1789346194_implement-circuit-breaker-skill-as-callable-python-module.md",
+          "themes": [
+            "self",
+            "name",
+            "state",
+            "circuit",
+            "get"
+          ],
+          "preview": "```python\n#!/usr/bin/env python3\n\"\"\"Implement circuit-breaker skill as callable Python module.\n\nReads skill proposals from the data directory and creates a concrete,\ntestable circuit-breaker skill fol"
+        },
+        {
+          "document": "s09_1789440309_model-health-check-integration-read-current-health-status.md",
+          "themes": [
+            "health",
+            "data",
+            "snapshot",
+            "cache",
+            "get"
+          ],
+          "preview": "\n\nReads the model health register via a versioned `get_health_snapshot()` interface with TTL caching and a staleness metric, then reports whether the model is healthy enough for capability suggestions"
+        },
+        {
+          "document": "s09_1789440402_capability-suggestion-gate-block-suggestions-when-model-unhe.md",
+          "themes": [
+            "self",
+            "capabilities",
+            "decision",
+            "data",
+            "health"
+          ],
+          "preview": "```python\nimport sys\nimport os\nimport json\nimport time\nimport logging\nimport threading\nfrom dataclasses import dataclass, field\nfrom typing import Optional, Dict, Any, List\nfrom enum import Enum\nfrom "
+        },
+        {
+          "document": "s09_1789440529_health-aware-capability-proposal-flow.md",
+          "themes": [
+            "self",
+            "benchmark",
+            "health",
+            "decision",
+            "result"
+          ],
+          "preview": "```python\nimport sys\nimport os\nimport json\nimport time\nimport logging\nimport threading\nimport asyncio\nfrom dataclasses import dataclass, field\nfrom typing import Optional, Dict, Any, List, Callable\nfr"
+        },
+        {
+          "document": "s10_1789485968_systematische-erfassung-und-analyse-von-vorhersagefehlern.md",
+          "themes": [
+            "self",
+            "error",
+            "errors",
+            "report",
+            "type"
+          ],
+          "preview": "\n\nThis implementation extends the model_health register with systematic error logging, a comprehensive taxonomy, and statistical analysis. It uses JSON Lines for scalable storage and supports asynchro"
+        },
+        {
+          "document": "s10_1789486028_korrektur-des-weltmodells-durch-simulation.md",
+          "themes": [
+            "model",
+            "val",
+            "float",
+            "data",
+            "train"
+          ],
+          "preview": "\n\nThis artifact implements an automated world model correction system using simulation and revision. It loads historical data and model parameters, iteratively simulates predictions, computes deviatio"
+        },
+        {
+          "document": "s10_1789486079_statistisches-lernen-aus-fehlern-self-learn.md",
+          "themes": [
+            "error",
+            "self",
+            "data",
+            "errors",
+            "adjustment"
+          ],
+          "preview": "\n\nThis artifact implements a statistical self-learning organ that analyzes prediction error patterns (mean, variance, trend, autocorrelation) and dynamically adjusts internal parameters without any LL"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_documents": 305,
+    "connected_pairs": 4186,
+    "num_clusters": 1,
+    "largest_cluster": 303
+  }
+}

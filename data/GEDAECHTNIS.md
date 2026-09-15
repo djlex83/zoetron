@@ -1,18 +1,58 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11224 Fakten** · Stand 2026-09-15 17:44 UTC · aktualisiert bei jedem Herzschlag
+**11224 Fakten** · Stand 2026-09-15 17:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7123
-- **swarm_artifact:** 1613
-- **last_swarm_critique:** 975
-- **last_swarm_goal:** 710
+- **dream:** 7118
+- **swarm_artifact:** 1615
+- **last_swarm_critique:** 976
+- **last_swarm_goal:** 711
 - **anti_pattern:** 367
 - **strategy:** 186
-- **tool:** 150
+- **tool:** 151
 - **hand_result:** 77
 - **aktuell_organfehler:** 23
 
 ---
+
+### `tool:ferne-träume-miteinander-verbinden`
+*15.09. 17:57 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Ferne Träume miteinander verbinden'. Datei: data/tools/ferne-träume-miteinander-verbinden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*15.09. 17:56 UTC · Quelle: critic*
+
+score=8; issues=Der Ähnlichkeits-Schwellenwert (0.12) ist hart codiert und kann nicht angepasst werden.; Die Ausgabedatei wird immer im Datenverzeichnis geschrieben – keine Konfiguration des Ausgabepfads.; Themen-Extraktion verwendet eine statische Stoppwortli
+
+### `last_swarm_goal`
+*15.09. 17:53 UTC · Quelle: system*
+
+Ferne Träume miteinander verbinden
+
+### `dream:20260915175237:5:39b268`
+*15.09. 17:52 UTC · Quelle: dream*
+
+Combining dream replay with swarm analysis produces cross‑domain insights that improve skill proposal quality.
+
+### `dream:20260915175237:4:120465`
+*15.09. 17:52 UTC · Quelle: dream*
+
+Reflex actions for updating swarm information are reliable but must be scheduled periodically to avoid staleness.
+
+### `dream:20260915175237:3:2c3095`
+*15.09. 17:52 UTC · Quelle: dream*
+
+Aggressive pruning of facts without considering access frequency leads to loss of potentially valuable knowledge.
+
+### `dream:20260915175237:2:e07073`
+*15.09. 17:52 UTC · Quelle: dream*
+
+The system's ability to switch to a less‑loaded model after consecutive failures shows that adaptive routing can restore functionality.
+
+### `dream:20260915175237:1:0ab882`
+*15.09. 17:52 UTC · Quelle: dream*
+
+Repeated 429 and timeout errors across models reveal that rate‑limit handling is a critical failure point.
 
 ### `dream:20260915174126:5:6d36b6`
 *15.09. 17:41 UTC · Quelle: dream*
@@ -41181,56 +41221,6 @@ NVIDIA Nemotron-3-Ultra consistently succeeds but exhibits high latency variance
 *01.09. 17:56 UTC · Quelle: dream*
 
 Free-tier models on OpenRouter frequently hit 429 rate limits, making them unreliable for latency-sensitive pipelines.
-
-### `dream:20260901174831:5:58f9a2`
-*01.09. 17:48 UTC · Quelle: dream*
-
-Latency variance across successful models (15–116s) makes timeout tuning a moving target.
-
-### `dream:20260901174831:4:022a94`
-*01.09. 17:48 UTC · Quelle: dream*
-
-High metabolic stress (1.0) forces aggressive budget cuts (max_tasks=3, max_iterations=1) that starve recovery actions.
-
-### `dream:20260901174831:3:4b610c`
-*01.09. 17:48 UTC · Quelle: dream*
-
-The skill-to-ability pipeline fails at the filesystem layer: relative paths don't resolve to the real data root (ZOETRON_DATA).
-
-### `dream:20260901174831:2:de43f7`
-*01.09. 17:48 UTC · Quelle: dream*
-
-Upstream provider overload (502) cascades into local failures even when HTTP status is 200.
-
-### `dream:20260901174831:1:ec37ee`
-*01.09. 17:48 UTC · Quelle: dream*
-
-Free-tier models consistently hit rate limits (429) under load, making them unreliable for production workflows.
-
-### `dream:20260901174029:5:007d77`
-*01.09. 17:40 UTC · Quelle: dream*
-
-Event pruning is effective at maintaining memory hygiene, but skill completion remains a bottleneck.
-
-### `dream:20260901174029:4:8118ae`
-*01.09. 17:40 UTC · Quelle: dream*
-
-Reflex-based execution successfully converged the swarm run, proving that automated, local-first tools can bypass external dependencies.
-
-### `dream:20260901174029:3:40027a`
-*01.09. 17:40 UTC · Quelle: dream*
-
-Stale artifacts block cognitive space and should be aggressively pruned or completed to maintain system focus.
-
-### `dream:20260901174029:2:c651f3`
-*01.09. 17:40 UTC · Quelle: dream*
-
-There is a significant gap between proposed skills and completed implementations, indicating a need to prioritize building over ideating.
-
-### `dream:20260901174029:1:3c779f`
-*01.09. 17:40 UTC · Quelle: dream*
-
-Free LLM endpoints are highly volatile and prone to rate-limiting (429) and upstream overloads (502), requiring robust failover mechanisms.
 
 ### `last_swarm_critique`
 *01.09. 17:03 UTC · Quelle: critic*

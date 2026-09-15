@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 17:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 17:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 21×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
@@ -35,12 +35,17 @@
 - Veraltete Schwarmdaten aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Swarm-Ziele aktualisieren *(wieder aufgegriffen: 4×)*
+- Ferne Träume kombinieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 3×)*
 - Schwarmdaten aktualisieren *(wieder aufgegriffen: 3×)*
-- Ferngedächtnisse verbinden *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Combining dream replay with swarm analysis produces cross‑domain insights that improve skill proposal quality.
+- Reflex actions for updating swarm information are reliable but must be scheduled periodically to avoid staleness.
+- Aggressive pruning of facts without considering access frequency leads to loss of potentially valuable knowledge.
+- The system's ability to switch to a less‑loaded model after consecutive failures shows that adaptive routing can restore functionality.
+- Repeated 429 and timeout errors across models reveal that rate‑limit handling is a critical failure point.
 - Self-diagnosis found no internal errors, yet external API failures still cause task failures, so health checks must include external dependencies.
 - No facts or events were pruned, suggesting that current memory thresholds are either too high or the dataset is small.
 - Reflex-driven refresh of stale swarm information prevented data decay without manual intervention.
@@ -51,11 +56,6 @@
 - The model dots-studio/dots-3-note-preview:free consistently succeeds and can serve as a default fallback.
 - Timeout errors often stem from large models; switching to a smaller, faster model improves reliability.
 - Consecutive 429 errors from a model signal rate limiting and should trigger temporary blacklisting.
-- Combining dream and swarm analysis yields novel insights, indicating cross-module synergy is valuable.
-- Pruning facts and events improves performance but must retain high-access or recent items to preserve knowledge.
-- nvidia/nemotron-3-ultra-550b-a55b:free times out frequently, suggesting it is overloaded or unstable.
-- dots-studio/dots-3-note-preview:free is the only model that consistently succeeds with latency under 30s.
-- Repeated 429 errors from google/gemma models show they are rate-limited and should be blacklisted after consecutive failures.
 
 ---
 
