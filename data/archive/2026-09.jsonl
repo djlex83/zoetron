@@ -52988,3 +52988,24 @@
 {"ts": 1788891796.704287, "kind": "reflex_used", "payload": {"goal": "Alte Schwarm-Erkenntnisse wieder nutzen", "tool": "alte-marktanalysen-wieder-auf-den-neuest.py", "ok": true}}
 {"ts": 1788891797.250568, "kind": "act_done", "payload": {"goal_title": "Alte Schwarm-Erkenntnisse wieder nutzen", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1788892363.8882296, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788287972.223522, "key": "dream:20260901183932:1:9533b6", "value": "The `z-ai/glm-5.2:free` model is consistently rate-limited (429) and should be temporarily blacklisted in favor of `nvidia/nemotron-3-ultra-550b-a55b:free`.", "source": "dream"}
+{"ts": 1788287972.223653, "key": "dream:20260901183932:2:ac37d9", "value": "The system repeatedly generates identical skill proposals (e.g., circuit breakers, model routers) without implementing them, indicating a bottleneck in the skill-conversion reflex.", "source": "dream"}
+{"ts": 1788287972.2237766, "key": "dream:20260901183932:3:12dc8f", "value": "High latency on the fallback model (`nvidia/nemotron-3-ultra-550b-a55b:free`) suggests the need for timeout-bounded LLM calls to prevent system stalls.", "source": "dream"}
+{"ts": 1788287972.2238789, "key": "dream:20260901183932:4:80582f", "value": "A CI failure in `herzschlag: organzyklus + gedächtnis-sync [hermes-daemon]` indicates that memory synchronization is fragile and needs error handling.", "source": "dream"}
+{"ts": 1788287972.223981, "key": "dream:20260901183932:5:115c60", "value": "Drive goals are correctly identifying the system's stagnation (stale analyses, unused skills) but the system struggles to autonomously close these loops.", "source": "dream"}
+{"ts": 1788892433.1911283, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788892434.747138, "kind": "prune_run", "payload": {"facts_pruned": 5, "events_pruned": 0}}
+{"ts": 1788892500.4482896, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 62.1, "tokens_ein": 1354, "tokens_aus": 896}}
+{"ts": 1788892500.4488907, "kind": "skill_proposal", "payload": {"proposal": "Deploy model_router with per-provider circuit breakers tracking 429/502 rates, p95 latency, and success rate; auto-failover to flash models when 429 rate >20% or p95 >30s."}}
+{"ts": 1788892500.4489524, "kind": "skill_proposal", "payload": {"proposal": "Enforce absolute path resolution in all hand_actions by prepending ZOETRON_DATA to relative inputs before execution to eliminate path-related failures."}}
+{"ts": 1788892500.4490051, "kind": "skill_proposal", "payload": {"proposal": "Create dream_promotion_daemon that validates, tests against replayed failures, and deploys exactly one skill proposal per sleep cycle with automatic rollback on regression."}}
+{"ts": 1788892500.4490557, "kind": "skill_proposal", "payload": {"proposal": "Add convergence_guardrail that detects stalled optimization scores across 3+ cycles and triggers emergency evolution restart or model switch automatically."}}
+{"ts": 1788892500.449106, "kind": "skill_proposal", "payload": {"proposal": "Extend reflex cycle with swarm_knowledge_refresh that periodically re-runs market-data update and feeds fresh facts into router's provider scoring."}}
+{"ts": 1788892500.4491563, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788892609.4446785, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 107.2, "tokens_ein": 491, "tokens_aus": 951}}
+{"ts": 1788892609.4448555, "kind": "drive_goal", "payload": {"title": "Modell zuverlässiger machen", "why": "Das Modell macht oft Fehler. Wenn es besser vorhersagt, klappen mehr Aufgaben.", "signal": "failure"}}
+{"ts": 1788892609.4449196, "kind": "drive_goal", "payload": {"title": "Schwarm-Wissen aktualisieren", "why": "Alte Infos über den Schwarm sind veraltet. Frische Daten helfen bei gemeinsamer Arbeit.", "signal": "stale"}}
+{"ts": 1788892609.4449723, "kind": "drive_goal", "payload": {"title": "Mehr mit Schwarm zusammenarbeiten", "why": "Der Schwarm wird kaum genutzt. Gemeinsam lösen wir schwierigere Probleme.", "signal": "gap"}}
+{"ts": 1788892611.9670577, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.25, "gelesen": 15}}
+{"ts": 1788892611.9698396, "kind": "reflex_used", "payload": {"goal": "Modellfehler reduzieren", "tool": "modellfehler-stark-reduzieren.py", "ok": true}}
+{"ts": 1788892612.3933914, "kind": "act_done", "payload": {"goal_title": "Modellfehler reduzieren", "score": null, "converged": true, "mode": "reflex"}}
