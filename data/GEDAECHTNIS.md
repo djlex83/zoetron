@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11222 Fakten** · Stand 2026-09-15 14:25 UTC · aktualisiert bei jedem Herzschlag
+**11216 Fakten** · Stand 2026-09-15 14:36 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7113
-- **swarm_artifact:** 1619
+- **swarm_artifact:** 1613
 - **last_swarm_critique:** 972
 - **last_swarm_goal:** 707
 - **anti_pattern:** 371
@@ -13,6 +13,31 @@
 - **aktuell_organfehler:** 23
 
 ---
+
+### `dream:20260915143337:5:1ccd13`
+*15.09. 14:33 UTC · Quelle: dream*
+
+Event pruning removed many events while facts remained unchanged, showing that event cleanup is independent of fact updates.
+
+### `dream:20260915143337:4:3fd96c`
+*15.09. 14:33 UTC · Quelle: dream*
+
+The reflex for combining dreams achieved convergence, demonstrating that specialized reflexes can complete complex tasks autonomously.
+
+### `dream:20260915143337:3:750cf0`
+*15.09. 14:33 UTC · Quelle: dream*
+
+The circuit breaker is opened but timeouts still occur, suggesting the breaker does not fully prevent calls to failing models.
+
+### `dream:20260915143337:2:4d20cd`
+*15.09. 14:33 UTC · Quelle: dream*
+
+Only the model "dots-studio/dots-3-note-preview:free" returned successful responses, making it the current most reliable option.
+
+### `dream:20260915143337:1:762f24`
+*15.09. 14:33 UTC · Quelle: dream*
+
+The system frequently encounters 429 Too Many Requests and read timeouts, indicating rate limiting and network instability as primary failure causes.
 
 ### `dream:20260915142224:5:016a1b`
 *15.09. 14:22 UTC · Quelle: dream*
@@ -41196,31 +41221,6 @@ score=7; issues=Auto-resolved contradictions are computed but not applied to sem
 *01.09. 14:23 UTC · Quelle: system*
 
 Veraltete Analysedaten erneuern und aktualisieren
-
-### `dream:20260901142215:5:2c6267`
-*01.09. 14:22 UTC · Quelle: dream*
-
-Simulation-based revision (5 risks → 3 patches) catches defects before deployment; simulation should be a mandatory gate for all artifact changes.
-
-### `dream:20260901142215:4:72190b`
-*01.09. 14:22 UTC · Quelle: dream*
-
-Evolutionary search (3 variants, 2 cycles) lifted scores from 4 to 7–9, proving iterative variant generation with critic feedback is a high-leverage pattern.
-
-### `dream:20260901142215:3:ac28b4`
-*01.09. 14:22 UTC · Quelle: dream*
-
-Calibration error of 4 (predicted 8 vs actual 4) reveals systematic overestimation of task complexity; historical actuals must feed future predictions.
-
-### `dream:20260901142215:2:8d4715`
-*01.09. 14:22 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra-550b-a55b:free succeeds reliably but shows high latency variance (48–137 s), requiring async invocation with configurable timeout budgets.
-
-### `dream:20260901142215:1:b57b4c`
-*01.09. 14:22 UTC · Quelle: dream*
-
-The model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limiting errors, making it unreliable without exponential backoff and automatic fallback routing.
 
 ### `last_swarm_critique`
 *01.09. 14:06 UTC · Quelle: critic*

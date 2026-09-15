@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-15 14:23:46",
+ "stand": "2026-09-15 14:34:17",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -105,6 +105,12 @@
    "quote": 0.0
   },
   {
+   "tool": "alte-schwarm-informationen-erneuern-und-.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "verbessere-die-modell-genauigkeit.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -181,18 +187,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-schwarm-informationen-erneuern-und-.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-stark-reduzieren.py",

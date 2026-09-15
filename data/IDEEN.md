@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 14:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-15 14:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning removed many events while facts remained unchanged, showing that event cleanup is independent of fact updates.
+- The reflex for combining dreams achieved convergence, demonstrating that specialized reflexes can complete complex tasks autonomously.
+- The circuit breaker is opened but timeouts still occur, suggesting the breaker does not fully prevent calls to failing models.
+- Only the model "dots-studio/dots-3-note-preview:free" returned successful responses, making it the current most reliable option.
+- The system frequently encounters 429 Too Many Requests and read timeouts, indicating rate limiting and network instability as primary failure causes.
 - Multiple skill proposals are generated but none are tracked, leading to potential duplication of effort.
 - Consistent pruning of facts and events highlights the need for ongoing memory consolidation to maintain relevance.
 - The reflex action successfully updated stale group data, proving that automated data refresh can be reliable.
@@ -51,11 +56,6 @@
 - Timeout errors from large models such as nvidia/nemotron-3-ultra-550b suggest that very large models are unsuitable for latency-sensitive tasks.
 - The system's periodic pruning of facts and events successfully maintains memory efficiency and prevents information overload.
 - Repeated 429 Too Many Requests errors from Google Gemma models indicate severe rate limiting, which can be circumvented by switching to alternative mo
-- Combining old memories can generate novel insights beyond individual recollections.
-- Stale swarm data can interfere with collaboration, requiring periodic updates.
-- Pruning old facts and events reduces memory overhead and improves performance.
-- The dots-studio model succeeded with low latency, showing it is currently more reliable.
-- Repeated 429 errors from free Google models indicate rate limiting as a primary failure cause.
 
 ---
 
