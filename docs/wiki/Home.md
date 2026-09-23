@@ -20,7 +20,7 @@ ein LLM erforschen – Schritt für Schritt, mit ehrlichem Scoring.
 | [[Roadmap]] | Erreicht + als Nächstes: Memory vergrößern → Embeddings → LoRA → API |
 | [[Session-2026-08-23]] | Doku des großen Organausbaus |
 | [[Session-2026-08-25]] | Verlust und Wiederherstellung, Vererbung, Selbstdiagnose |
-| [[Session-2026-09-23]] | Systemcheck, Pause, Handmodell über der Basislinie (versiegelt geprüft) |
+| [[Session-2026-09-23]] | Systemcheck, Pause mit Pausenschalter, Bereinigung, Handmodell über der Basislinie (versiegelt geprüft) |
 | [[FAQ]] | Häufige Fragen |
 
 **Live-System:** github.com/djlex83/zoetron · CI: grün · Tests: 65/65 ·
